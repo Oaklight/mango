@@ -2,6 +2,9 @@
 
 gamegpt graph utils
 
+## depandency
+- networkx: `pip install networkx`
+
 ## major functions
 
 [digraph.py](./src/digraph.py)
