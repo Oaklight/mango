@@ -1,2 +1,3 @@
-# graphtools
-utility codebase for graph-related projects
+# gamegpt_utils
+
+gamegpt graph utils
