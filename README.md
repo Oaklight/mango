@@ -4,6 +4,7 @@ gamegpt graph utils
 
 ## depandency
 - networkx: `pip install networkx`
+- openai: `pip install openai`
 
 ## major functions
 
