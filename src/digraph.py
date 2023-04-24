@@ -8,7 +8,7 @@ opposite_directions = {}
 openai.api_key = "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"
 
 
-def loadOppositeDirecions(directionFile):
+def load_opposite_direcions(directionFile):
     '''
     load cached opposite direction files in case useful 
     '''
@@ -62,7 +62,7 @@ def query_chatgpt(prompt, message):
     return text.strip()
 
 
-def getOppositeDirection(direction: str):
+def get_opposite_direction(direction: str):
     '''
     check if direction is in the cache, if not query gpt-3.5-turbo for result and cache it
     '''
@@ -87,15 +87,15 @@ def getOppositeDirection(direction: str):
     return opposite_directions[direction]
 
 
-def buildGraphFromFile(pathFile: str = "data/paths.txt",
-                       oppositeFile: str = "data/opposite.txt") -> object:
+def build_graph_from_file(pathFile: str = "data/paths.txt",
+                          oppositeFile: str = "data/opposite.txt") -> object:
     '''
     builds a graph from a txt file, each line is in format "from,to"
     '''
     with open(pathFile, 'r') as f:
         lines = f.readlines()
 
-    loadOppositeDirecions(oppositeFile)
+    load_opposite_direcions(oppositeFile)
     # build graph from file
 
     G = networkx.DiGraph()
@@ -108,7 +108,9 @@ def buildGraphFromFile(pathFile: str = "data/paths.txt",
         print(elements)
         srcNode, direction, dstNode = elements
         G.add_edge(srcNode, dstNode, direction=direction)
-        G.add_edge(dstNode, srcNode, direction=getOppositeDirection(direction))
+        G.add_edge(dstNode,
+                   srcNode,
+                   direction=get_opposite_direction(direction))
 
     # persist oposite directions as txt
     with open(oppositeFile, "w") as f:
@@ -299,8 +301,8 @@ def print_all_paths(g: object, all_paths: list):
 
 
 if __name__ == "__main__":
-    g = buildGraphFromFile('../data/Zork_Locations.txt',
-                           '../data/Zork_opposite_directions.txt')
+    g = build_graph_from_file('../data/Zork_Locations.txt',
+                              '../data/Zork_opposite_directions.txt')
     print(g)
     plot_graph(g)
 
