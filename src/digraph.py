@@ -335,11 +335,9 @@ if __name__ == "__main__":
         allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
         print_all_paths(g, allPaths)
 
-        # # verify path test
-        # srcNode, dstNode, paths2verify = parse_path(
-        #     "../data/Zork_paths2verify.txt")
-        # print(srcNode, dstNode)
-        # result = verify_path(g, srcNode, dstNode, paths2verify)
-        # print(f"VERIFIED RESULT: \033[1m{result}\033[0m")
-
-    # demo_plt()
+        # verify path test
+        srcNode, dstNode, paths2verify = parse_path(
+            "../data/Zork_paths2verify.txt")
+        print(srcNode, dstNode)
+        result = verify_path(g, srcNode, dstNode, paths2verify)
+        print(f"VERIFIED RESULT: \033[1m{result}\033[0m")
