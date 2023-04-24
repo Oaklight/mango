@@ -31,12 +31,11 @@ gamegpt graph utils
 
 ## examples
 1. shortest path btw any two nodes: [test_shortest_path.py](./src/test_shortest_path.py)
-
-
 2. all paths btw any two nodes, sorted by path length: [test_all_paths.py](./src/test_all_paths.py)
-
-
 3. verify path btw any two nodes: [test_verify_path.py](./src/test_verify_path.py)
+```bash
+python run test_*.py
+```
 
 
 ## data format
