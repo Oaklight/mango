@@ -93,3 +93,4 @@ studio --> go south --> gallery
 gallery --> go west --> east of chasm
 east of chasm --> go north --> cellar
 ```
+When verify path direction, program will first seek an exact match. If not available, it will resort to query gpt for similar directional sentence check (by function [`same_direction_test`](https://github.com/Oaklight/gamegpt_utils/blob/8624faa807f1ee5438214f37a4adc36181072e42/src/digraph.py#L232) )
