@@ -2,10 +2,9 @@ import networkx
 import openai
 import time
 import matplotlib.pyplot as plt
+from config import *
 
 opposite_directions = {}
-
-openai.api_key = "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"
 
 
 def load_opposite_direcions(directionFile):
