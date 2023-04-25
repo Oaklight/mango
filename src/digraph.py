@@ -107,6 +107,8 @@ def build_graph_from_file(pathFile: str = "data/paths.txt",
         print(elements)
         srcNode, direction, dstNode = elements
         G.add_edge(srcNode, dstNode, direction=direction)
+
+        # TODO: drop reverse path if direction is not from valid direction list
         G.add_edge(dstNode,
                    srcNode,
                    direction=get_opposite_direction(direction))
