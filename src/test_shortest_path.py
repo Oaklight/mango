@@ -2,7 +2,6 @@ from digraph import build_graph_from_file, plot_graph, get_shortest_path, print_
 
 g = build_graph_from_file('../data/Zork_Locations.txt',
                           '../data/Zork_opposite_directions.txt')
-print(g)
 plot_graph(g)
 
 while True:
