@@ -144,6 +144,7 @@ def plot_graph(g: object):
                                        rotate=False)
 
     plt.show(block=False)
+    print("\n============ MAP READY =============\n")
 
 
 def get_shortest_path(g: object, src: str, dst: str):
@@ -171,38 +172,46 @@ def get_all_paths(g: object, src: str, dst: str):
 def verify_path(g: object, srcNode, dstNode, paths2verify: list):
     '''
     given srcNode and dstNode, verify if the paths2verify is valid
-    paths2verify is a list of triplet: (srcNode, dstNode, direction)
+    paths2verify is a list of `direction`
     '''
     # empty path: false
     if len(paths2verify) == 0:
         print("empty path")
         return False
-    # not start from srcNode: false
-    if paths2verify[0][0] != srcNode:
-        print("not start from srcNode ", srcNode, paths2verify[0][0])
-        return False
-    # not end with dstNode: false
-    if paths2verify[-1][1] != dstNode:
-        print("not end with dstNode ", dstNode, paths2verify[-1][1])
+    if srcNode == dstNode:
+        print("srcNode == dstNode, ONLY CHECK DIFFERENT NODES")
         return False
 
-    # check if each edge is valid
-    for i in range(len(paths2verify) - 1):
-        # check if edge is adjacent, if not, false
-        if paths2verify[i][1] != paths2verify[i + 1][0]:
-            print("edge not adjacent ", paths2verify[i][1],
-                  paths2verify[i + 1][0])
-            return False
-        # check if edge direction is correct, if not, false
-        # if paths2verify[i][2] != get_edge_direction(g, paths2verify[i][0],
-        #                                             paths2verify[i][1]):
-        if same_direction_test(
-                paths2verify[i][2],
-                get_edge_direction(g, paths2verify[i][0],
-                                   paths2verify[i][1])) is False:
-            print("edge direction not correct")
-            return False
+    # TODO: check each step is a valid step
+    print("CHECK FROM \033[1m[" + srcNode + "]\033[0m TO \033[1m[" + dstNode +
+          "]\033[0m")
 
+    via_list = [srcNode]
+    node = srcNode
+    # iterate over neighbors of node, check if edge direction is correct
+    for i in range(len(paths2verify)):
+        neighbors = list(g.neighbors(node))
+        check_edge_directions = [
+            same_direction_test(paths2verify[i],
+                                get_edge_direction(g, node, each))
+            for each in neighbors
+        ]
+        # assert at least 1 True instance
+        if not any(check_edge_directions):
+            print("edge direction not correct ", node, paths2verify[i],
+                  check_edge_directions)
+            return False
+        else:
+            assert check_edge_directions.count(
+                True) == 1, "more than 1 edge direction is correct, MAP ERROR"
+            node = neighbors[check_edge_directions.index(True)]
+            via_list.append(node)
+    # check if the last node is dstNode
+    if node != dstNode:
+        print("not end with dstNode ", dstNode, node)
+        return False
+
+    print_path(g, via_list)
     return True
 
 
@@ -223,9 +232,8 @@ def parse_path(pathFile: str = "data/paths2verify.txt"):
         line = line.strip('\ufeff')
         if line == "":
             continue
-        elements = [each.strip().lower() for each in line.split("-->")]
-        prevNode, direction, node = elements
-        paths2verify.append((prevNode, node, direction))
+        direction = line.strip().lower()
+        paths2verify.append(direction)
     return srcNode, dstNode, paths2verify
 
 
@@ -240,19 +248,7 @@ def same_direction_test(given_direction: str, proposed_direction: str):
     # exact match or gpt similar test
     if given_direction == proposed_direction:
         return True
-    else:
-        # query gpt for verify similar string
-        message = "answer if {given} and {proposed} mean the same? no reasoning, just True or False"
-        prompt = f"given: {given_direction}\nproposed: {proposed_direction}"
-        gpt_answer = query_chatgpt(prompt, message).strip().title()
-        if gpt_answer[-1] in ['.', '?', '!']:
-            gpt_answer = gpt_answer[:-1]
-        # print(f"GIVEN {given_direction} vs. PROPOSED {proposed_direction}, MEANS THE SAME? {gpt_answer}")
-        # print the answer in red
-        print("\033[92mGIVEN\033[0m [" + given_direction +
-              "] vs. \033[91mPROPOSED\033[0m [" + proposed_direction +
-              "], MEANS THE SAME? \033[1m" + gpt_answer + "\033[0m")
-        return eval(gpt_answer)
+    return False
 
 
 def get_edge_direction(G, n1, n2):
@@ -275,9 +271,6 @@ def print_path(g: object, path: list):
     else:
         for node in path[1:]:
             direction = get_edge_direction(g, prevNode, node)
-            # append above string in red
-            # current_step = f"START_FROM [{prevNode}], DO ({direction}), ARRIVE_AT [{node}]"
-            # adapt current step to color print prevNode, direction and node in bold black
             current_step = ("START_FROM \033[1m[" + prevNode +
                             "]\033[0m, DO \033[1m(" + direction +
                             ")\033[0m, ARRIVE_AT \033[1m[" + node + "]\033[0m")
@@ -302,7 +295,6 @@ def print_all_paths(g: object, all_paths: list):
 if __name__ == "__main__":
     g = build_graph_from_file('../data/Zork_Locations.txt',
                               '../data/Zork_opposite_directions.txt')
-    print(g)
     plot_graph(g)
 
     while True:
@@ -337,6 +329,5 @@ if __name__ == "__main__":
         # verify path test
         srcNode, dstNode, paths2verify = parse_path(
             "../data/Zork_paths2verify.txt")
-        print(srcNode, dstNode)
         result = verify_path(g, srcNode, dstNode, paths2verify)
         print(f"VERIFIED RESULT: \033[1m{result}\033[0m")
