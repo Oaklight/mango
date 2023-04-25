@@ -79,17 +79,17 @@ for simplicity, each opposite direction is proposed by query gpt-3.5-turbo (by f
 A list of paths to verify, with the following format:
 ```
 srcNode, dstNode
-srcNode --> direction --> midNode1
-midNode1 --> direction --> midNode2
+direction1
+direction2
 ...
-midNodeN --> direction --> dstNode
+directionN
 ```
 For example:
 ```
 kitchen, cellar
-kitchen --> go down the floor --> studio
-studio --> go south --> gallery
-gallery --> go west --> east of chasm
-east of chasm --> go north --> cellar
+go down the floor
+go south
+go west
+go north
 ```
 When verify path direction, program will first seek an exact match. If not available, it will resort to query gpt for similar directional sentence check (by function [`same_direction_test`](https://github.com/Oaklight/gamegpt_utils/blob/8624faa807f1ee5438214f37a4adc36181072e42/src/digraph.py#L232) )
