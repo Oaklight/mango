@@ -39,33 +39,9 @@ def load_valid_actions(actionFile):
             ]
             opposite_directions[fromDir] = toDir
             opposite_directions[toDir] = fromDir
-                # TODO: see if we need to check allowed action in "non-directions"?
+            # TODO: see if we need to check allowed action in "non-directions"?
 
     print(opposite_directions)
-
-
-def load_opposite_direcions(directionFile):
-    '''
-    load cached opposite direction files in case useful 
-    '''
-    # test if directionFile not exist, create an empty txt file
-    try:
-        with open(directionFile, 'r') as f:
-            pass
-    except FileNotFoundError:
-        with open(directionFile, 'w') as f:
-            pass
-
-    # each line is in format "direction -- opposite"
-    with open(directionFile, 'r') as f:
-        for line in f:
-            line = line.strip()
-            fromDir, toDir = [
-                each.strip().lower() for each in line.split('-->')
-            ]
-            opposite_directions[fromDir] = toDir
-            opposite_directions[toDir] = fromDir
-    return opposite_directions
 
 
 def query_chatgpt(prompt, message):
@@ -102,7 +78,7 @@ def get_opposite_direction(direction: str):
     '''
     check if direction is in the cache, if not query gpt-3.5-turbo for result and cache it
     '''
-    direction = direction.lower()
+    direction = direction.lower().strip()
     if direction not in opposite_directions:
         message = "answer opposite direction of given '{input_phrase}' without reasoning. If it's not a direction, return 'no clue'."
         opposite = query_chatgpt(direction, message).lower()
@@ -142,7 +118,7 @@ def build_graph_from_file(pathFile: str = "data/gameName.map",
         if line == "":
             continue
         elements = [each.strip().lower() for each in line.split("-->")]
-        print(elements)
+        # print(elements)
         srcNode, direction, dstNode = elements
         G.add_edge(srcNode, dstNode, direction=direction)
 
@@ -351,8 +327,7 @@ def print_all_paths(g: object, all_paths: list, verbose: bool = True):
 
 
 if __name__ == "__main__":
-    g = build_graph_from_file('../data/zork1.map',
-                              '../data/zork1.actions')
+    g = build_graph_from_file('../data/zork1.map', '../data/zork1.actions')
     plot_graph(g)
 
     while True:
@@ -385,7 +360,6 @@ if __name__ == "__main__":
         print_all_paths(g, allPaths)
 
         # verify path test
-        srcNode, dstNode, paths2verify = parse_path(
-            "../data/zork1.verify")
+        srcNode, dstNode, paths2verify = parse_path("../data/zork1.verify")
         result = verify_path(g, srcNode, dstNode, paths2verify)
         print(f"VERIFIED RESULT: \033[1m{result}\033[0m")
