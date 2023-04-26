@@ -79,6 +79,10 @@ class Location:
     # return Location struct as a markdown string, where name is H1 title, directions and items are H2 titles, their entries are plain text, serialize use each struct.__repr__
     def __repr__(self) -> str:
         # serialize directions
+        # sort directions and items by action and name
+        self.directions.sort(key=lambda direction: direction.action)
+        self.items.sort(key=lambda item: item.name)
+
         directions = "\n".join(
             [direction.__repr__() for direction in self.directions])
         # serialize items
@@ -176,6 +180,23 @@ def buildMap(mapMarkdown: str = "../data/map.md"):
 
     # keep prompt for locations if not recieve "map done" or "no more"
     while True:
+        # print current available locations' names
+        printColor("--------------------------------------------------", 'b')
+        printColor("Current available locations: ", 'b')
+        # printColor(", ".join([location.name for location in gameMap]), 'b')
+        # print each line as a bullet point, with their available directions' action and item names
+        for location in gameMap:
+            # print(f"- {location.name}")
+            printColor(f"- {location.name}: ", 'b', inline=True)
+            printColor("|directions| ", 'g', inline=True)
+            print(f"{[direction.action for direction in location.directions]} ", end="")
+            if len(location.items) > 0:
+                # ptrString += f"|items| {[item.name for item in location.items]}"
+                printColor("|items| ", 'r', inline=True)
+                print(f" {[item.name for item in location.items]} ")
+            else:
+                print()
+        printColor("--------------------------------------------------", 'b')
         newLocation, updateFlag = addLocation()
         if newLocation is None:
             break
@@ -209,6 +230,7 @@ def loadMap(mapMarkdown: str = "../data/map.md"):
     # append to gameMap at end of lines or when new location is created
     for line in lines:
         strType, content = parseLine(line)
+        # print(strType, content)
         # if line is H1 title, it's a new location, create new location, with title as name, skip description
         if strType == "H1":
             name = content
@@ -231,8 +253,12 @@ def loadMap(mapMarkdown: str = "../data/map.md"):
                 newItem = Item(name, description, action)
                 newLocation.items.append(newItem)
         if strType == "empty":
-            gameMap.append(newLocation)
-            newLocation = None
+            if newLocation is not None:
+                gameMap.append(newLocation)
+                newLocation = None
+            else:
+                # continuous empty lines, skip
+                continue
 
     # append last location
     if newLocation is not None:
@@ -246,7 +272,7 @@ def persistMap(gameMap: list, mapMarkdown: str = "../data/map.md"):
     gameMap.sort(key=lambda location: location.name)
     # persist gameMap to map.md
     with open(mapMarkdown, "w") as f:
-        f.write("\n\n".join([location.__repr__() for location in gameMap]))
+        f.write("\n".join([location.__repr__() for location in gameMap]))
 
 
 # main test
