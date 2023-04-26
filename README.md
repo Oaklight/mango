@@ -9,26 +9,30 @@ gamegpt graph utils
 
 ## major functions
 
-[digraph.py](./src/digraph.py)
+- [`digraph.py`](./src/digraph.py)
+  - graph utils: 
+    - `build_graph_from_file(pathFile: str = "data/gameName.map" actionFile: str = "data/gameName.actions", verbose: bool = True)`
+    - `get_opposite_direction(direction: str)`
+    - `plot_graph(g: object)`
+    - `get_edge_direction(G, n1, n2)`
+    - ~~`query_chatgpt(prompt, message)`~~ (deprecated)
+    - `load_valid_actions(actionFile)`
+  - shortest path related
+    - `get_shortest_path(g: object, src: str, dst: str)`
+    - `print_path(g: object, path: list, verbose: bool = True)`
+  - all paths related
+    - `get_all_paths(g: object, src: str, dst: str)`
+    - `print_all_paths(g: object, all_paths: list, verbose: bool = True)`
+  - verify path related
+    - `verify_path(g: object, srcNode, dstNode, paths2verify: list)`
+    - `parse_path(pathFile: str = "data/path2.verify")`
+    - `same_direction_test(given_direction: str, proposed_direction: str)`
 
-- common utils: 
-  - `build_graph_from_file(pathFile: str = "data/paths.txt", oppositeFile: str = "data/opposite.txt")`
-  - `get_opposite_direction(direction: str)`
-  - `plot_graph(g: object)`
-  - `get_edge_direction(G, n1, n2)`
-  - `query_chatgpt(prompt, message)`
-  - `load_opposite_direcions(directionFile)`
-- shortest path related
-  - `get_shortest_path(g: object, src: str, dst: str)`
-  - `print_path(g: object, path: list)`
-- all paths related
-  - `get_all_paths(g: object, src: str, dst: str)`
-  - `print_all_paths(g: object, all_paths: list)`
-- verify path related
-  - `verify_path(g: object, srcNode, dstNode, paths2verify: list)`
-  - `parse_path(pathFile: str = "data/paths2verify.txt")`
-  - `same_direction_test(given_direction: str, proposed_direction: str)`
+- [`map_builder.py`](./src/map_builder.py): build game map from a list of paths interactively, dump as markdown.
+  > this module is in beta testing
+  - sample of zork1 map: [map.md](./data/map.md)
 
+- [`utils.py`](./src/utils.py): common util functions
 ## examples
 1. shortest path btw any two nodes: [test_shortest_path.py](./src/test_shortest_path.py)
 2. all paths btw any two nodes, sorted by path length: [test_all_paths.py](./src/test_all_paths.py)
@@ -40,56 +44,60 @@ python run test_*.py
 
 ## data format
 
-### *_locations.txt
-it's used for building the game map, each line is a path with format:
-```
-srcNode --> direction --> dstNode
-```
-For example:
-```
-Living Room --> go down --> Cellar
-Cellar --> go south --> East of Chasm
-East of Chasm --> go east --> Gallery
-Gallery --> go north --> Studio
-Studio --> go up chimney --> Kitchen
-Kitchen --> go up --> Attic
-Attic --> go down --> Kitchen
-Kitchen --> go west --> Living Room
-```
+### *.map
+it's used for building the game map, each line is a path with format: `srcNode --> direction --> dstNode`
 
-### *_opposite_directions.txt
-The cache file for opposite directions, each line is a pair of opposite directions, for example:
+For example: [zork1.map](./data/zork1.map)
 ```
-go east --> go west
-go west --> go east
-enter house --> exit house
-exit house --> enter house
-go down --> go up
-go up --> go down
-go up chimney --> climb down chimney
-climb down chimney --> go up chimney
-go southeast --> northwest
+West of House --> S --> South of House
+South of House --> E --> Behind House
+Behind House --> W --> Kitchen
+Kitchen --> W --> Living Room
+Living Room --> D --> Cellar
 ```
+> note: another markdown syntax is in development: [map.md](./data/map.md)
 
-for simplicity, each opposite direction is proposed by query gpt-3.5-turbo (by function [`get_opposite_direction`](https://github.com/Oaklight/gamegpt_utils/blob/f7a16d686a279bb3281dd5f412e0b96ade474d25/src/digraph.py#L65)
-), and then manually checked and modified.
+### *.actions
+The cache file for valid actions, with "Direction:" and "Non Direction:" sections. For example: [zork1.actions](./data/zork1.actions)
+```
+Direction:
+
+N -- S
+E -- W
+SE -- NW
+NE -- SW
+U -- D
 
 
-### *_paths2verify.txt
+Non direction:
+
+Get egg -- Drop egg
+Open window
+Open sack
+Get garlic -- Drop garlic
+Get lamp
+Light lamp -- Douse lamp
+```
+
+~~for simplicity, each opposite direction is proposed by query gpt-3.5-turbo (by function [`get_opposite_direction`](https://github.com/Oaklight/gamegpt_utils/blob/f7a16d686a279bb3281dd5f412e0b96ade474d25/src/digraph.py#L65)
+), and then manually checked and modified.~~
+
+
+### *.verify
 A list of paths to verify, with the following format:
 ```
 srcNode, dstNode
-direction1
-direction2
+action1
+action2
 ...
-directionN
+actionN
 ```
 For example:
 ```
 kitchen, cellar
-go down the floor
-go south
-go west
-go north
+d
+s
+w
+n
 ```
-When verify path direction, program will first seek an exact match. If not available, it will resort to query gpt for similar directional sentence check (by function [`same_direction_test`](https://github.com/Oaklight/gamegpt_utils/blob/8624faa807f1ee5438214f37a4adc36181072e42/src/digraph.py#L232) )
+When verify path direction, program will first seek an **exact match**. ~~If not available, it will resort to query gpt for similar directional sentence check (by function [`same_direction_test`](https://github.com/Oaklight/gamegpt_utils/blob/8624faa807f1ee5438214f37a4adc36181072e42/src/digraph.py#L232) )~~
