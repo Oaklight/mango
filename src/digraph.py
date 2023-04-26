@@ -7,6 +7,43 @@ from config import *
 opposite_directions = {}
 
 
+def load_valid_actions(actionFile):
+    '''
+    load valid action files. Each file has two sections
+    - Directions
+    - Non directions
+    '''
+    # test if actionFile not exist, create an empty txt file
+    try:
+        with open(actionFile, 'r') as f:
+            pass
+    except FileNotFoundError:
+        with open(actionFile, 'w') as f:
+            pass
+
+    with open(actionFile, 'r') as f:
+        for line in f:
+            line = line.strip().lower()
+            if line == "direction:":
+                continue
+            elif line == "non direction:":
+                break
+            # skip empty line
+            elif line == "":
+                continue
+
+            # parse non-empty lines
+            print("line: ", line)
+            fromDir, toDir = [
+                each.strip().lower() for each in line.split('--')
+            ]
+            opposite_directions[fromDir] = toDir
+            opposite_directions[toDir] = fromDir
+                # TODO: see if we need to check allowed action in "non-directions"?
+
+    print(opposite_directions)
+
+
 def load_opposite_direcions(directionFile):
     '''
     load cached opposite direction files in case useful 
@@ -95,7 +132,7 @@ def build_graph_from_file(pathFile: str = "data/gameName.map",
     with open(pathFile, 'r') as f:
         lines = f.readlines()
 
-    load_opposite_direcions(oppositeFile)
+    load_valid_actions(actionFile)
     # build graph from file
 
     G = networkx.DiGraph()
@@ -110,14 +147,20 @@ def build_graph_from_file(pathFile: str = "data/gameName.map",
         G.add_edge(srcNode, dstNode, direction=direction)
 
         # TODO: drop reverse path if direction is not from valid direction list
+        if direction not in opposite_directions:
+            if verbose:
+                print(
+                    f"direction [{direction}] not in opposite_directions, skip reverse path"
+                )
+            continue
         G.add_edge(dstNode,
                    srcNode,
                    direction=get_opposite_direction(direction))
 
-    # persist oposite directions as txt
-    with open(oppositeFile, "w") as f:
-        for key, value in opposite_directions.items():
-            f.write(key + " --> " + value + "\n")
+    # # persist oposite directions as txt
+    # with open(oppositeFile, "w") as f:
+    #     for key, value in opposite_directions.items():
+    #         f.write(key + " --> " + value + "\n")
     return G
 
 
