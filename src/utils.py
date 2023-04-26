@@ -1,40 +1,49 @@
 # color print without extra library, in green
-def printGreen(text):
-    print("\033[92m {}\033[00m".format(text))
+def printGreen(text, inline=False):
+    if not inline:
+        print("\033[92m {}\033[00m".format(text))
+    else:
+        print("\033[92m {}\033[00m".format(text), end="")
 
 
 # , red, bold black
-def printRed(text):
-    print("\033[91m {}\033[00m".format(text))
+def printRed(text, inline=False):
+    if not inline:
+        print("\033[91m {}\033[00m".format(text))
+    else:
+        print("\033[91m {}\033[00m".format(text), end="")
 
 
 # , bold black
-def printBlack(text):
-    print("\033[1m {}\033[00m".format(text))
+def printBlack(text, inline=False):
+    if not inline:
+        print("\033[1m {}\033[00m".format(text))
+    else:
+        print("\033[1m {}\033[00m".format(text), end="")
 
 
 # general color print, receive txt and color
-def printColor(text, color):
+def printColor(text, color, inline=False):
     if color == "green" or color == "g":
-        printGreen(text)
+        printGreen(text, inline)
     elif color == "red" or color == "r":
-        printRed(text)
+        printRed(text, inline)
     elif color == "black" or color == "b":
-        printBlack(text)
+        printBlack(text, inline)
     else:
-        print(text)
+        print(text, end="" if inline else "\n")
 
 
 # general input with color, receive txt and color
-def inputColor(text, color):
+def inputColor(text, color, inline=False):
     if color == "green" or color == "g":
-        printGreen(text)
+        printGreen(text, inline)
     elif color == "red" or color == "r":
-        printRed(text)
+        printRed(text, inline)
     elif color == "black" or color == "b":
-        printBlack(text)
+        printBlack(text, inline)
     else:
-        print(text)
+        print(text, end="" if inline else "\n")
     return input()
 
 
