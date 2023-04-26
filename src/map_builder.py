@@ -1,3 +1,4 @@
+import argparse
 from utils import inputColor, printColor, parseLine, extractDirectionText, extractItemText
 '''
 map should be a list of locations
@@ -95,12 +96,12 @@ class Location:
             printColor(f"Enter a DIRECTION for [{self.name}]", 'g')
             # prompt to receive a direction
             # add new direction to directions
-            action = inputColor("action? ", 'g')
+            action = inputColor("action? ", 'g', inline=True)
             # if action is "done", break
             if action == "done" or action == "no more" or action == "none" or action == "":
                 break
 
-            toWhere = inputColor("to where? ", 'g')
+            toWhere = inputColor("to where? ", 'g', inline=True)
             newDirection = Direction(action, toWhere)
             self.directions.append(newDirection)
             print()
@@ -115,11 +116,11 @@ class Location:
             # prompt to receive a item
             printColor(f"Enter an ITEM for [{self.name}] ", 'r')
             # if item is "done", break
-            item = inputColor("what item?: ", 'r')
+            item = inputColor("what item?: ", 'r', inline=True)
             if item == "no more" or item == "none" or item == "done" or item == "":
                 break
 
-            action = inputColor("action available? ", 'r')
+            action = inputColor("action available? ", 'r', inline=True)
             description = inputColor("Any item description? ", 'r')
             newItem = Item(item, action=action, description=description)
             self.items.append(newItem)
@@ -131,7 +132,7 @@ class Location:
 def addLocation(gameMapDict: dict = None):
     updateFlag = False
 
-    name = inputColor("Enter a LOCATION name: ", 'b')
+    name = inputColor("Enter a LOCATION name: ", 'b', inline=True)
     if name == "map done" or name == "no more" or name == "done" or name == "":
         return None
 
@@ -255,9 +256,20 @@ if __name__ == "__main__":
     # with open("map.md", "w") as f:
     #     f.write(location.__repr__())
 
-    mapMarkdown = "../data/map.md"
-    gameMap = loadMap(mapMarkdown)
-    print(gameMap)
+    # gameMap = loadMap(mapMarkdown)
+    # print(gameMap)
 
     # build map test
-    buildMap(mapMarkdown)
+    # argparse to get map.md, it's a required argument
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--map", help="map markdown file", default="../data/map.md")
+    args = parser.parse_args()
+    mapMarkdown = args.map
+    printColor(f"map markdown file: {mapMarkdown}", 'b')
+    # prompt to confirm before continue
+
+    confirm = inputColor("Continue? (y/n) ", 'b', inline=True)
+    if confirm == "y":
+        buildMap(mapMarkdown)
+    else:
+        printColor("Aborted!", 'b')
