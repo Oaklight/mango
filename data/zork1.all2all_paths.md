@@ -1,7395 +1,7395 @@
-<!-- line:  n -- s
-line:  e -- w
-line:  se -- nw
-line:  ne -- sw
-line:  u -- d
-{'n': 's', 's': 'n', 'e': 'w', 'w': 'e', 'se': 'nw', 'nw': 'se', 'ne': 'sw', 'sw': 'ne', 'u': 'd', 'd': 'u'}
-opposite direction of [s] is [n]
-opposite direction of [e] is [w]
-opposite direction of [w] is [e]
-opposite direction of [w] is [e]
-opposite direction of [d] is [u]
-opposite direction of [s] is [n]
-opposite direction of [e] is [w]
-opposite direction of [n] is [s]
-opposite direction of [u] is [d]
-opposite direction of [u] is [d]
-opposite direction of [d] is [u]
-opposite direction of [w] is [e]
-opposite direction of [d] is [u]
-opposite direction of [n] is [s]
-opposite direction of [e] is [w]
-opposite direction of [e] is [w]
-opposite direction of [se] is [nw]
-opposite direction of [e] is [w]
-opposite direction of [d] is [u]
-opposite direction of [s] is [n]
-opposite direction of [e] is [w]
-opposite direction of [w] is [e]
-opposite direction of [s] is [n]
+line:  north -- south
+line:  east -- west
+line:  southeast -- northwest
+line:  northeast -- southwest
+line:  up -- down
+{'north': 'south', 'south': 'north', 'east': 'west', 'west': 'east', 'southeast': 'northwest', 'northwest': 'southeast', 'northeast': 'southwest', 'southwest': 'northeast', 'up': 'down', 'down': 'up'}
+opposite direction of [south] is [north]
+opposite direction of [east] is [west]
+opposite direction of [west] is [east]
+opposite direction of [west] is [east]
+opposite direction of [down] is [up]
+opposite direction of [south] is [north]
+opposite direction of [east] is [west]
+opposite direction of [north] is [south]
+opposite direction of [up] is [down]
+opposite direction of [up] is [down]
+opposite direction of [down] is [up]
+opposite direction of [west] is [east]
+opposite direction of [down] is [up]
+opposite direction of [north] is [south]
+opposite direction of [east] is [west]
+opposite direction of [east] is [west]
+opposite direction of [southeast] is [northwest]
+opposite direction of [east] is [west]
+opposite direction of [down] is [up]
+opposite direction of [south] is [north]
+opposite direction of [east] is [west]
+opposite direction of [west] is [east]
+opposite direction of [south] is [north]
 direction [pray] not in opposite_directions, skip reverse path
-opposite direction of [s] is [n]
-opposite direction of [n] is [s]
-opposite direction of [e] is [w]
-opposite direction of [d] is [u]
-opposite direction of [d] is [u]
-opposite direction of [n] is [s]
-opposite direction of [sw] is [ne]
-opposite direction of [u] is [d]
-opposite direction of [u] is [d]
-opposite direction of [nw] is [se]
-opposite direction of [w] is [e]
-opposite direction of [w] is [e]
-opposite direction of [w] is [e]
+opposite direction of [south] is [north]
+opposite direction of [north] is [south]
+opposite direction of [east] is [west]
+opposite direction of [down] is [up]
+opposite direction of [down] is [up]
+opposite direction of [north] is [south]
+opposite direction of [southwest] is [northeast]
+opposite direction of [up] is [down]
+opposite direction of [up] is [down]
+opposite direction of [northwest] is [southeast]
+opposite direction of [west] is [east]
+opposite direction of [west] is [east]
+opposite direction of [west] is [east]
 
-============ MAP READY ============= -->
+============ MAP READY =============
 
 # west of house --> south of house
-s
+south
 
 # west of house --> behind house
-s
-e
+south
+east
 
 # west of house --> kitchen
-s
-e
-w
+south
+east
+west
 
 # west of house --> living room
-s
-e
-w
-w
+south
+east
+west
+west
 
 # west of house --> living room
-s
-e
-w
-d
-s
-w
-n
-u
+south
+east
+west
+down
+south
+west
+north
+up
 
 # west of house --> cellar
-s
-e
-w
-w
-d
+south
+east
+west
+west
+down
 
 # west of house --> cellar
-s
-e
-w
-d
-s
-w
-n
+south
+east
+west
+down
+south
+west
+north
 
 # west of house --> east of chasm
-s
-e
-w
-w
-d
-s
+south
+east
+west
+west
+down
+south
 
 # west of house --> east of chasm
-s
-e
-w
-d
-s
-w
+south
+east
+west
+down
+south
+west
 
 # west of house --> gallery
-s
-e
-w
-d
-s
+south
+east
+west
+down
+south
 
 # west of house --> gallery
-s
-e
-w
-w
-d
-s
-e
+south
+east
+west
+west
+down
+south
+east
 
 # west of house --> studio
-s
-e
-w
-d
+south
+east
+west
+down
 
 # west of house --> studio
-s
-e
-w
-w
-d
-s
-e
-n
+south
+east
+west
+west
+down
+south
+east
+north
 
 # west of house --> attic
-s
-e
-w
-u
+south
+east
+west
+up
 
 # west of house --> the troll room
-s
-e
-w
-w
-d
-n
+south
+east
+west
+west
+down
+north
 
 # west of house --> the troll room
-s
-e
-w
-d
-s
-w
-n
-n
+south
+east
+west
+down
+south
+west
+north
+north
 
 # west of house --> east-west passage
-s
-e
-w
-w
-d
-n
-e
+south
+east
+west
+west
+down
+north
+east
 
 # west of house --> east-west passage
-s
-e
-w
-d
-s
-w
-n
-n
-e
+south
+east
+west
+down
+south
+west
+north
+north
+east
 
 # west of house --> round room
-s
-e
-w
-w
-d
-n
-e
-e
+south
+east
+west
+west
+down
+north
+east
+east
 
 # west of house --> round room
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
 
 # west of house --> engravings cave
-s
-e
-w
-w
-d
-n
-e
-e
-se
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
 
 # west of house --> engravings cave
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
 
 # west of house --> dome room
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
 
 # west of house --> dome room
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # west of house --> torch room
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # west of house --> torch room
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # west of house --> temple
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # west of house --> temple
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # west of house --> egyptian room
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # west of house --> egyptian room
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # west of house --> altar
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # west of house --> altar
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # west of house --> forest
-s
-e
-e
-s
+south
+east
+east
+south
 
 # west of house --> forest
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # west of house --> forest
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # west of house --> clearing
-s
-e
-e
+south
+east
+east
 
 # west of house --> clearing
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # west of house --> clearing
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # west of house --> canyon view
-s
-e
-e
-se
+south
+east
+east
+southeast
 
 # west of house --> canyon view
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # west of house --> canyon view
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # west of house --> rocky ledge
-s
-e
-e
-se
-d
+south
+east
+east
+southeast
+down
 
 # west of house --> rocky ledge
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # west of house --> rocky ledge
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # west of house --> canyon bottom
-s
-e
-e
-se
-d
-d
+south
+east
+east
+southeast
+down
+down
 
 # west of house --> canyon bottom
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # west of house --> canyon bottom
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # west of house --> end of rainbow
-s
-e
-e
-se
-d
-d
-ne
+south
+east
+east
+southeast
+down
+down
+northeast
 
 # west of house --> end of rainbow
-s
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # west of house --> end of rainbow
-s
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # south of house --> behind house
-e
+east
 
 # south of house --> kitchen
-e
-w
+east
+west
 
 # south of house --> living room
-e
-w
-w
+east
+west
+west
 
 # south of house --> living room
-e
-w
-d
-s
-w
-n
-u
+east
+west
+down
+south
+west
+north
+up
 
 # south of house --> cellar
-e
-w
-w
-d
+east
+west
+west
+down
 
 # south of house --> cellar
-e
-w
-d
-s
-w
-n
+east
+west
+down
+south
+west
+north
 
 # south of house --> east of chasm
-e
-w
-w
-d
-s
+east
+west
+west
+down
+south
 
 # south of house --> east of chasm
-e
-w
-d
-s
-w
+east
+west
+down
+south
+west
 
 # south of house --> gallery
-e
-w
-d
-s
+east
+west
+down
+south
 
 # south of house --> gallery
-e
-w
-w
-d
-s
-e
+east
+west
+west
+down
+south
+east
 
 # south of house --> studio
-e
-w
-d
+east
+west
+down
 
 # south of house --> studio
-e
-w
-w
-d
-s
-e
-n
+east
+west
+west
+down
+south
+east
+north
 
 # south of house --> attic
-e
-w
-u
+east
+west
+up
 
 # south of house --> the troll room
-e
-w
-w
-d
-n
+east
+west
+west
+down
+north
 
 # south of house --> the troll room
-e
-w
-d
-s
-w
-n
-n
+east
+west
+down
+south
+west
+north
+north
 
 # south of house --> east-west passage
-e
-w
-w
-d
-n
-e
+east
+west
+west
+down
+north
+east
 
 # south of house --> east-west passage
-e
-w
-d
-s
-w
-n
-n
-e
+east
+west
+down
+south
+west
+north
+north
+east
 
 # south of house --> round room
-e
-w
-w
-d
-n
-e
-e
+east
+west
+west
+down
+north
+east
+east
 
 # south of house --> round room
-e
-w
-d
-s
-w
-n
-n
-e
-e
+east
+west
+down
+south
+west
+north
+north
+east
+east
 
 # south of house --> engravings cave
-e
-w
-w
-d
-n
-e
-e
-se
+east
+west
+west
+down
+north
+east
+east
+southeast
 
 # south of house --> engravings cave
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
 
 # south of house --> dome room
-e
-w
-w
-d
-n
-e
-e
-se
-e
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
 
 # south of house --> dome room
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # south of house --> torch room
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # south of house --> torch room
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # south of house --> temple
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # south of house --> temple
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # south of house --> egyptian room
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # south of house --> egyptian room
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # south of house --> altar
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # south of house --> altar
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # south of house --> forest
-e
-e
-s
+east
+east
+south
 
 # south of house --> forest
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # south of house --> forest
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # south of house --> clearing
-e
-e
+east
+east
 
 # south of house --> clearing
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # south of house --> clearing
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # south of house --> canyon view
-e
-e
-se
+east
+east
+southeast
 
 # south of house --> canyon view
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # south of house --> canyon view
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # south of house --> rocky ledge
-e
-e
-se
-d
+east
+east
+southeast
+down
 
 # south of house --> rocky ledge
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # south of house --> rocky ledge
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # south of house --> canyon bottom
-e
-e
-se
-d
-d
+east
+east
+southeast
+down
+down
 
 # south of house --> canyon bottom
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # south of house --> canyon bottom
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # south of house --> end of rainbow
-e
-e
-se
-d
-d
-ne
+east
+east
+southeast
+down
+down
+northeast
 
 # south of house --> end of rainbow
-e
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # south of house --> end of rainbow
-e
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # behind house --> kitchen
-w
+west
 
 # behind house --> living room
-w
-w
+west
+west
 
 # behind house --> living room
-w
-d
-s
-w
-n
-u
+west
+down
+south
+west
+north
+up
 
 # behind house --> cellar
-w
-w
-d
+west
+west
+down
 
 # behind house --> cellar
-w
-d
-s
-w
-n
+west
+down
+south
+west
+north
 
 # behind house --> east of chasm
-w
-w
-d
-s
+west
+west
+down
+south
 
 # behind house --> east of chasm
-w
-d
-s
-w
+west
+down
+south
+west
 
 # behind house --> gallery
-w
-d
-s
+west
+down
+south
 
 # behind house --> gallery
-w
-w
-d
-s
-e
+west
+west
+down
+south
+east
 
 # behind house --> studio
-w
-d
+west
+down
 
 # behind house --> studio
-w
-w
-d
-s
-e
-n
+west
+west
+down
+south
+east
+north
 
 # behind house --> attic
-w
-u
+west
+up
 
 # behind house --> the troll room
-w
-w
-d
-n
+west
+west
+down
+north
 
 # behind house --> the troll room
-w
-d
-s
-w
-n
-n
+west
+down
+south
+west
+north
+north
 
 # behind house --> east-west passage
-w
-w
-d
-n
-e
+west
+west
+down
+north
+east
 
 # behind house --> east-west passage
-w
-d
-s
-w
-n
-n
-e
+west
+down
+south
+west
+north
+north
+east
 
 # behind house --> round room
-w
-w
-d
-n
-e
-e
+west
+west
+down
+north
+east
+east
 
 # behind house --> round room
-w
-d
-s
-w
-n
-n
-e
-e
+west
+down
+south
+west
+north
+north
+east
+east
 
 # behind house --> engravings cave
-w
-w
-d
-n
-e
-e
-se
+west
+west
+down
+north
+east
+east
+southeast
 
 # behind house --> engravings cave
-w
-d
-s
-w
-n
-n
-e
-e
-se
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
 
 # behind house --> dome room
-w
-w
-d
-n
-e
-e
-se
-e
+west
+west
+down
+north
+east
+east
+southeast
+east
 
 # behind house --> dome room
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # behind house --> torch room
-w
-w
-d
-n
-e
-e
-se
-e
-d
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # behind house --> torch room
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # behind house --> temple
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # behind house --> temple
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # behind house --> egyptian room
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # behind house --> egyptian room
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # behind house --> altar
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # behind house --> altar
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # behind house --> forest
-e
-s
+east
+south
 
 # behind house --> forest
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # behind house --> forest
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # behind house --> clearing
-e
+east
 
 # behind house --> clearing
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # behind house --> clearing
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # behind house --> canyon view
-e
-se
+east
+southeast
 
 # behind house --> canyon view
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # behind house --> canyon view
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # behind house --> rocky ledge
-e
-se
-d
+east
+southeast
+down
 
 # behind house --> rocky ledge
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # behind house --> rocky ledge
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # behind house --> canyon bottom
-e
-se
-d
-d
+east
+southeast
+down
+down
 
 # behind house --> canyon bottom
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # behind house --> canyon bottom
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # behind house --> end of rainbow
-e
-se
-d
-d
-ne
+east
+southeast
+down
+down
+northeast
 
 # behind house --> end of rainbow
-w
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # behind house --> end of rainbow
-w
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # kitchen --> living room
-w
+west
 
 # kitchen --> living room
-d
-s
-w
-n
-u
+down
+south
+west
+north
+up
 
 # kitchen --> cellar
-w
-d
+west
+down
 
 # kitchen --> cellar
-d
-s
-w
-n
+down
+south
+west
+north
 
 # kitchen --> east of chasm
-w
-d
-s
+west
+down
+south
 
 # kitchen --> east of chasm
-d
-s
-w
+down
+south
+west
 
 # kitchen --> gallery
-d
-s
+down
+south
 
 # kitchen --> gallery
-w
-d
-s
-e
+west
+down
+south
+east
 
 # kitchen --> studio
-d
+down
 
 # kitchen --> studio
-w
-d
-s
-e
-n
+west
+down
+south
+east
+north
 
 # kitchen --> attic
-u
+up
 
 # kitchen --> the troll room
-w
-d
-n
+west
+down
+north
 
 # kitchen --> the troll room
-d
-s
-w
-n
-n
+down
+south
+west
+north
+north
 
 # kitchen --> east-west passage
-w
-d
-n
-e
+west
+down
+north
+east
 
 # kitchen --> east-west passage
-d
-s
-w
-n
-n
-e
+down
+south
+west
+north
+north
+east
 
 # kitchen --> round room
-w
-d
-n
-e
-e
+west
+down
+north
+east
+east
 
 # kitchen --> round room
-d
-s
-w
-n
-n
-e
-e
+down
+south
+west
+north
+north
+east
+east
 
 # kitchen --> engravings cave
-w
-d
-n
-e
-e
-se
+west
+down
+north
+east
+east
+southeast
 
 # kitchen --> engravings cave
-d
-s
-w
-n
-n
-e
-e
-se
+down
+south
+west
+north
+north
+east
+east
+southeast
 
 # kitchen --> dome room
-w
-d
-n
-e
-e
-se
-e
+west
+down
+north
+east
+east
+southeast
+east
 
 # kitchen --> dome room
-d
-s
-w
-n
-n
-e
-e
-se
-e
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # kitchen --> torch room
-w
-d
-n
-e
-e
-se
-e
-d
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # kitchen --> torch room
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # kitchen --> temple
-w
-d
-n
-e
-e
-se
-e
-d
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # kitchen --> temple
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # kitchen --> egyptian room
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # kitchen --> egyptian room
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # kitchen --> altar
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # kitchen --> altar
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # kitchen --> forest
-e
-e
-s
+east
+east
+south
 
 # kitchen --> forest
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # kitchen --> forest
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # kitchen --> clearing
-e
-e
+east
+east
 
 # kitchen --> clearing
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # kitchen --> clearing
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # kitchen --> canyon view
-e
-e
-se
+east
+east
+southeast
 
 # kitchen --> canyon view
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # kitchen --> canyon view
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # kitchen --> rocky ledge
-e
-e
-se
-d
+east
+east
+southeast
+down
 
 # kitchen --> rocky ledge
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # kitchen --> rocky ledge
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # kitchen --> canyon bottom
-e
-e
-se
-d
-d
+east
+east
+southeast
+down
+down
 
 # kitchen --> canyon bottom
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # kitchen --> canyon bottom
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # kitchen --> end of rainbow
-e
-e
-se
-d
-d
-ne
+east
+east
+southeast
+down
+down
+northeast
 
 # kitchen --> end of rainbow
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # kitchen --> end of rainbow
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # living room --> cellar
-d
+down
 
 # living room --> cellar
-e
-d
-s
-w
-n
+east
+down
+south
+west
+north
 
 # living room --> east of chasm
-d
-s
+down
+south
 
 # living room --> east of chasm
-e
-d
-s
-w
+east
+down
+south
+west
 
 # living room --> east of chasm
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
-s
-w
+north
+west
+west
+down
+south
+west
 
 # living room --> gallery
-e
-d
-s
+east
+down
+south
 
 # living room --> gallery
-d
-s
-e
+down
+south
+east
 
 # living room --> gallery
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
-s
+north
+west
+west
+down
+south
 
 # living room --> studio
-e
-d
+east
+down
 
 # living room --> studio
-d
-s
-e
-n
+down
+south
+east
+north
 
 # living room --> studio
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
+north
+west
+west
+down
 
 # living room --> attic
-e
-u
+east
+up
 
 # living room --> attic
-d
-s
-e
-n
-u
-u
+down
+south
+east
+north
+up
+up
 
 # living room --> attic
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-u
+north
+west
+west
+up
 
 # living room --> the troll room
-d
-n
+down
+north
 
 # living room --> the troll room
-e
-d
-s
-w
-n
-n
+east
+down
+south
+west
+north
+north
 
 # living room --> east-west passage
-d
-n
-e
+down
+north
+east
 
 # living room --> east-west passage
-e
-d
-s
-w
-n
-n
-e
+east
+down
+south
+west
+north
+north
+east
 
 # living room --> round room
-d
-n
-e
-e
+down
+north
+east
+east
 
 # living room --> round room
-e
-d
-s
-w
-n
-n
-e
-e
+east
+down
+south
+west
+north
+north
+east
+east
 
 # living room --> engravings cave
-d
-n
-e
-e
-se
+down
+north
+east
+east
+southeast
 
 # living room --> engravings cave
-e
-d
-s
-w
-n
-n
-e
-e
-se
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
 
 # living room --> dome room
-d
-n
-e
-e
-se
-e
+down
+north
+east
+east
+southeast
+east
 
 # living room --> dome room
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # living room --> torch room
-d
-n
-e
-e
-se
-e
-d
+down
+north
+east
+east
+southeast
+east
+down
 
 # living room --> torch room
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # living room --> temple
-d
-n
-e
-e
-se
-e
-d
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # living room --> temple
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # living room --> egyptian room
-d
-n
-e
-e
-se
-e
-d
-s
-e
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # living room --> egyptian room
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # living room --> altar
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # living room --> altar
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # living room --> forest
-e
-e
-e
-s
+east
+east
+east
+south
 
 # living room --> forest
-d
-s
-e
-n
-u
-e
-e
-s
+down
+south
+east
+north
+up
+east
+east
+south
 
 # living room --> forest
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # living room --> forest
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # living room --> clearing
-e
-e
-e
+east
+east
+east
 
 # living room --> clearing
-d
-s
-e
-n
-u
-e
-e
+down
+south
+east
+north
+up
+east
+east
 
 # living room --> clearing
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # living room --> clearing
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # living room --> canyon view
-e
-e
-e
-se
+east
+east
+east
+southeast
 
 # living room --> canyon view
-d
-s
-e
-n
-u
-e
-e
-se
+down
+south
+east
+north
+up
+east
+east
+southeast
 
 # living room --> canyon view
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # living room --> canyon view
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # living room --> rocky ledge
-e
-e
-e
-se
-d
+east
+east
+east
+southeast
+down
 
 # living room --> rocky ledge
-d
-s
-e
-n
-u
-e
-e
-se
-d
+down
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # living room --> rocky ledge
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # living room --> rocky ledge
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # living room --> canyon bottom
-e
-e
-e
-se
-d
-d
+east
+east
+east
+southeast
+down
+down
 
 # living room --> canyon bottom
-d
-s
-e
-n
-u
-e
-e
-se
-d
-d
+down
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # living room --> canyon bottom
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # living room --> canyon bottom
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # living room --> end of rainbow
-e
-e
-e
-se
-d
-d
-ne
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # living room --> end of rainbow
-d
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+down
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # living room --> end of rainbow
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # living room --> end of rainbow
-e
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+east
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # cellar --> east of chasm
-s
+south
 
 # cellar --> east of chasm
-u
-e
-d
-s
-w
+up
+east
+down
+south
+west
 
 # cellar --> east of chasm
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
-s
-w
+north
+west
+west
+down
+south
+west
 
 # cellar --> gallery
-s
-e
+south
+east
 
 # cellar --> gallery
-u
-e
-d
-s
+up
+east
+down
+south
 
 # cellar --> gallery
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
-s
+north
+west
+west
+down
+south
 
 # cellar --> studio
-u
-e
-d
+up
+east
+down
 
 # cellar --> studio
-s
-e
-n
+south
+east
+north
 
 # cellar --> studio
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
+north
+west
+west
+down
 
 # cellar --> attic
-u
-e
-u
+up
+east
+up
 
 # cellar --> attic
-s
-e
-n
-u
-u
+south
+east
+north
+up
+up
 
 # cellar --> attic
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-u
+north
+west
+west
+up
 
 # cellar --> the troll room
-n
+north
 
 # cellar --> east-west passage
-n
-e
+north
+east
 
 # cellar --> round room
-n
-e
-e
+north
+east
+east
 
 # cellar --> engravings cave
-n
-e
-e
-se
+north
+east
+east
+southeast
 
 # cellar --> dome room
-n
-e
-e
-se
-e
+north
+east
+east
+southeast
+east
 
 # cellar --> torch room
-n
-e
-e
-se
-e
-d
+north
+east
+east
+southeast
+east
+down
 
 # cellar --> temple
-n
-e
-e
-se
-e
-d
-s
+north
+east
+east
+southeast
+east
+down
+south
 
 # cellar --> egyptian room
-n
-e
-e
-se
-e
-d
-s
-e
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # cellar --> altar
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # cellar --> forest
-u
-e
-e
-e
-s
+up
+east
+east
+east
+south
 
 # cellar --> forest
-s
-e
-n
-u
-e
-e
-s
+south
+east
+north
+up
+east
+east
+south
 
 # cellar --> forest
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # cellar --> clearing
-u
-e
-e
-e
+up
+east
+east
+east
 
 # cellar --> clearing
-s
-e
-n
-u
-e
-e
+south
+east
+north
+up
+east
+east
 
 # cellar --> clearing
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # cellar --> canyon view
-u
-e
-e
-e
-se
+up
+east
+east
+east
+southeast
 
 # cellar --> canyon view
-s
-e
-n
-u
-e
-e
-se
+south
+east
+north
+up
+east
+east
+southeast
 
 # cellar --> canyon view
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # cellar --> rocky ledge
-u
-e
-e
-e
-se
-d
+up
+east
+east
+east
+southeast
+down
 
 # cellar --> rocky ledge
-s
-e
-n
-u
-e
-e
-se
-d
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # cellar --> rocky ledge
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # cellar --> canyon bottom
-u
-e
-e
-e
-se
-d
-d
+up
+east
+east
+east
+southeast
+down
+down
 
 # cellar --> canyon bottom
-s
-e
-n
-u
-e
-e
-se
-d
-d
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # cellar --> canyon bottom
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # cellar --> end of rainbow
-u
-e
-e
-e
-se
-d
-d
-ne
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # cellar --> end of rainbow
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # cellar --> end of rainbow
-n
-e
-e
-se
-e
-d
-s
-s
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # east of chasm --> gallery
-e
+east
 
 # east of chasm --> gallery
-n
-u
-e
-d
-s
+north
+up
+east
+down
+south
 
 # east of chasm --> gallery
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
-s
+north
+west
+west
+down
+south
 
 # east of chasm --> studio
-e
-n
+east
+north
 
 # east of chasm --> studio
-n
-u
-e
-d
+north
+up
+east
+down
 
 # east of chasm --> studio
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
+north
+west
+west
+down
 
 # east of chasm --> attic
-n
-u
-e
-u
+north
+up
+east
+up
 
 # east of chasm --> attic
-e
-n
-u
-u
+east
+north
+up
+up
 
 # east of chasm --> attic
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-u
+north
+west
+west
+up
 
 # east of chasm --> the troll room
-n
-n
+north
+north
 
 # east of chasm --> the troll room
-e
-n
-u
-w
-d
-n
+east
+north
+up
+west
+down
+north
 
 # east of chasm --> east-west passage
-n
-n
-e
+north
+north
+east
 
 # east of chasm --> east-west passage
-e
-n
-u
-w
-d
-n
-e
+east
+north
+up
+west
+down
+north
+east
 
 # east of chasm --> round room
-n
-n
-e
-e
+north
+north
+east
+east
 
 # east of chasm --> round room
-e
-n
-u
-w
-d
-n
-e
-e
+east
+north
+up
+west
+down
+north
+east
+east
 
 # east of chasm --> engravings cave
-n
-n
-e
-e
-se
+north
+north
+east
+east
+southeast
 
 # east of chasm --> engravings cave
-e
-n
-u
-w
-d
-n
-e
-e
-se
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
 
 # east of chasm --> dome room
-n
-n
-e
-e
-se
-e
+north
+north
+east
+east
+southeast
+east
 
 # east of chasm --> dome room
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
 
 # east of chasm --> torch room
-n
-n
-e
-e
-se
-e
-d
+north
+north
+east
+east
+southeast
+east
+down
 
 # east of chasm --> torch room
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # east of chasm --> temple
-n
-n
-e
-e
-se
-e
-d
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # east of chasm --> temple
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # east of chasm --> egyptian room
-n
-n
-e
-e
-se
-e
-d
-s
-e
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # east of chasm --> egyptian room
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # east of chasm --> altar
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # east of chasm --> altar
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # east of chasm --> forest
-n
-u
-e
-e
-e
-s
+north
+up
+east
+east
+east
+south
 
 # east of chasm --> forest
-e
-n
-u
-e
-e
-s
+east
+north
+up
+east
+east
+south
 
 # east of chasm --> forest
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # east of chasm --> forest
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # east of chasm --> clearing
-n
-u
-e
-e
-e
+north
+up
+east
+east
+east
 
 # east of chasm --> clearing
-e
-n
-u
-e
-e
+east
+north
+up
+east
+east
 
 # east of chasm --> clearing
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # east of chasm --> clearing
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # east of chasm --> canyon view
-n
-u
-e
-e
-e
-se
+north
+up
+east
+east
+east
+southeast
 
 # east of chasm --> canyon view
-e
-n
-u
-e
-e
-se
+east
+north
+up
+east
+east
+southeast
 
 # east of chasm --> canyon view
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # east of chasm --> canyon view
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # east of chasm --> rocky ledge
-n
-u
-e
-e
-e
-se
-d
+north
+up
+east
+east
+east
+southeast
+down
 
 # east of chasm --> rocky ledge
-e
-n
-u
-e
-e
-se
-d
+east
+north
+up
+east
+east
+southeast
+down
 
 # east of chasm --> rocky ledge
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # east of chasm --> rocky ledge
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # east of chasm --> canyon bottom
-n
-u
-e
-e
-e
-se
-d
-d
+north
+up
+east
+east
+east
+southeast
+down
+down
 
 # east of chasm --> canyon bottom
-e
-n
-u
-e
-e
-se
-d
-d
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # east of chasm --> canyon bottom
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # east of chasm --> canyon bottom
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # east of chasm --> end of rainbow
-n
-u
-e
-e
-e
-se
-d
-d
-ne
+north
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # east of chasm --> end of rainbow
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # east of chasm --> end of rainbow
-n
-n
-e
-e
-se
-e
-d
-s
-s
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # east of chasm --> end of rainbow
-e
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+east
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # gallery --> studio
-n
+north
 
 # gallery --> studio
-w
-n
-u
-e
-d
+west
+north
+up
+east
+down
 
 # gallery --> studio
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-d
+north
+west
+west
+down
 
 # gallery --> attic
-n
-u
-u
+north
+up
+up
 
 # gallery --> attic
-w
-n
-u
-e
-u
+west
+north
+up
+east
+up
 
 # gallery --> attic
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-u
+north
+west
+west
+up
 
 # gallery --> the troll room
-w
-n
-n
+west
+north
+north
 
 # gallery --> the troll room
-n
-u
-w
-d
-n
+north
+up
+west
+down
+north
 
 # gallery --> east-west passage
-w
-n
-n
-e
+west
+north
+north
+east
 
 # gallery --> east-west passage
-n
-u
-w
-d
-n
-e
+north
+up
+west
+down
+north
+east
 
 # gallery --> round room
-w
-n
-n
-e
-e
+west
+north
+north
+east
+east
 
 # gallery --> round room
-n
-u
-w
-d
-n
-e
-e
+north
+up
+west
+down
+north
+east
+east
 
 # gallery --> engravings cave
-w
-n
-n
-e
-e
-se
+west
+north
+north
+east
+east
+southeast
 
 # gallery --> engravings cave
-n
-u
-w
-d
-n
-e
-e
-se
+north
+up
+west
+down
+north
+east
+east
+southeast
 
 # gallery --> dome room
-w
-n
-n
-e
-e
-se
-e
+west
+north
+north
+east
+east
+southeast
+east
 
 # gallery --> dome room
-n
-u
-w
-d
-n
-e
-e
-se
-e
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
 
 # gallery --> torch room
-w
-n
-n
-e
-e
-se
-e
-d
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # gallery --> torch room
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # gallery --> temple
-w
-n
-n
-e
-e
-se
-e
-d
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # gallery --> temple
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # gallery --> egyptian room
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # gallery --> egyptian room
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # gallery --> altar
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # gallery --> altar
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # gallery --> forest
-n
-u
-e
-e
-s
+north
+up
+east
+east
+south
 
 # gallery --> forest
-w
-n
-u
-e
-e
-e
-s
+west
+north
+up
+east
+east
+east
+south
 
 # gallery --> forest
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # gallery --> forest
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # gallery --> clearing
-n
-u
-e
-e
+north
+up
+east
+east
 
 # gallery --> clearing
-w
-n
-u
-e
-e
-e
+west
+north
+up
+east
+east
+east
 
 # gallery --> clearing
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # gallery --> clearing
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # gallery --> canyon view
-n
-u
-e
-e
-se
+north
+up
+east
+east
+southeast
 
 # gallery --> canyon view
-w
-n
-u
-e
-e
-e
-se
+west
+north
+up
+east
+east
+east
+southeast
 
 # gallery --> canyon view
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # gallery --> canyon view
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # gallery --> rocky ledge
-n
-u
-e
-e
-se
-d
+north
+up
+east
+east
+southeast
+down
 
 # gallery --> rocky ledge
-w
-n
-u
-e
-e
-e
-se
-d
+west
+north
+up
+east
+east
+east
+southeast
+down
 
 # gallery --> rocky ledge
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # gallery --> rocky ledge
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # gallery --> canyon bottom
-n
-u
-e
-e
-se
-d
-d
+north
+up
+east
+east
+southeast
+down
+down
 
 # gallery --> canyon bottom
-w
-n
-u
-e
-e
-e
-se
-d
-d
+west
+north
+up
+east
+east
+east
+southeast
+down
+down
 
 # gallery --> canyon bottom
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # gallery --> canyon bottom
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # gallery --> end of rainbow
-n
-u
-e
-e
-se
-d
-d
-ne
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # gallery --> end of rainbow
-w
-n
-u
-e
-e
-e
-se
-d
-d
-ne
+west
+north
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # gallery --> end of rainbow
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # gallery --> end of rainbow
-n
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+north
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # studio --> attic
-u
-u
+up
+up
 
 # studio --> attic
-s
-w
-n
-u
-e
-u
+south
+west
+north
+up
+east
+up
 
 # studio --> attic
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-w
-w
-u
+north
+west
+west
+up
 
 # studio --> the troll room
-s
-w
-n
-n
+south
+west
+north
+north
 
 # studio --> the troll room
-u
-w
-d
-n
+up
+west
+down
+north
 
 # studio --> east-west passage
-s
-w
-n
-n
-e
+south
+west
+north
+north
+east
 
 # studio --> east-west passage
-u
-w
-d
-n
-e
+up
+west
+down
+north
+east
 
 # studio --> round room
-s
-w
-n
-n
-e
-e
+south
+west
+north
+north
+east
+east
 
 # studio --> round room
-u
-w
-d
-n
-e
-e
+up
+west
+down
+north
+east
+east
 
 # studio --> engravings cave
-s
-w
-n
-n
-e
-e
-se
+south
+west
+north
+north
+east
+east
+southeast
 
 # studio --> engravings cave
-u
-w
-d
-n
-e
-e
-se
+up
+west
+down
+north
+east
+east
+southeast
 
 # studio --> dome room
-s
-w
-n
-n
-e
-e
-se
-e
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # studio --> dome room
-u
-w
-d
-n
-e
-e
-se
-e
+up
+west
+down
+north
+east
+east
+southeast
+east
 
 # studio --> torch room
-s
-w
-n
-n
-e
-e
-se
-e
-d
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # studio --> torch room
-u
-w
-d
-n
-e
-e
-se
-e
-d
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # studio --> temple
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # studio --> temple
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # studio --> egyptian room
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # studio --> egyptian room
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # studio --> altar
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # studio --> altar
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # studio --> forest
-u
-e
-e
-s
+up
+east
+east
+south
 
 # studio --> forest
-s
-w
-n
-u
-e
-e
-e
-s
+south
+west
+north
+up
+east
+east
+east
+south
 
 # studio --> forest
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # studio --> forest
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # studio --> clearing
-u
-e
-e
+up
+east
+east
 
 # studio --> clearing
-s
-w
-n
-u
-e
-e
-e
+south
+west
+north
+up
+east
+east
+east
 
 # studio --> clearing
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # studio --> clearing
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # studio --> canyon view
-u
-e
-e
-se
+up
+east
+east
+southeast
 
 # studio --> canyon view
-s
-w
-n
-u
-e
-e
-e
-se
+south
+west
+north
+up
+east
+east
+east
+southeast
 
 # studio --> canyon view
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # studio --> canyon view
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # studio --> rocky ledge
-u
-e
-e
-se
-d
+up
+east
+east
+southeast
+down
 
 # studio --> rocky ledge
-s
-w
-n
-u
-e
-e
-e
-se
-d
+south
+west
+north
+up
+east
+east
+east
+southeast
+down
 
 # studio --> rocky ledge
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # studio --> rocky ledge
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # studio --> canyon bottom
-u
-e
-e
-se
-d
-d
+up
+east
+east
+southeast
+down
+down
 
 # studio --> canyon bottom
-s
-w
-n
-u
-e
-e
-e
-se
-d
-d
+south
+west
+north
+up
+east
+east
+east
+southeast
+down
+down
 
 # studio --> canyon bottom
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # studio --> canyon bottom
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # studio --> end of rainbow
-u
-e
-e
-se
-d
-d
-ne
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # studio --> end of rainbow
-s
-w
-n
-u
-e
-e
-e
-se
-d
-d
-ne
+south
+west
+north
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # studio --> end of rainbow
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # studio --> end of rainbow
-u
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+up
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # attic --> the troll room
-d
-w
-d
-n
+down
+west
+down
+north
 
 # attic --> the troll room
-d
-d
-s
-w
-n
-n
+down
+down
+south
+west
+north
+north
 
 # attic --> east-west passage
-d
-w
-d
-n
-e
+down
+west
+down
+north
+east
 
 # attic --> east-west passage
-d
-d
-s
-w
-n
-n
-e
+down
+down
+south
+west
+north
+north
+east
 
 # attic --> round room
-d
-w
-d
-n
-e
-e
+down
+west
+down
+north
+east
+east
 
 # attic --> round room
-d
-d
-s
-w
-n
-n
-e
-e
+down
+down
+south
+west
+north
+north
+east
+east
 
 # attic --> engravings cave
-d
-w
-d
-n
-e
-e
-se
+down
+west
+down
+north
+east
+east
+southeast
 
 # attic --> engravings cave
-d
-d
-s
-w
-n
-n
-e
-e
-se
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
 
 # attic --> dome room
-d
-w
-d
-n
-e
-e
-se
-e
+down
+west
+down
+north
+east
+east
+southeast
+east
 
 # attic --> dome room
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
 
 # attic --> torch room
-d
-w
-d
-n
-e
-e
-se
-e
-d
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
 
 # attic --> torch room
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
 
 # attic --> temple
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
 
 # attic --> temple
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
 
 # attic --> egyptian room
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-e
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # attic --> egyptian room
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-e
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+east
 
 # attic --> altar
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # attic --> altar
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 
 # attic --> forest
-d
-e
-e
-s
+down
+east
+east
+south
 
 # attic --> forest
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # attic --> forest
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # attic --> clearing
-d
-e
-e
+down
+east
+east
 
 # attic --> clearing
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # attic --> clearing
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # attic --> canyon view
-d
-e
-e
-se
+down
+east
+east
+southeast
 
 # attic --> canyon view
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # attic --> canyon view
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # attic --> rocky ledge
-d
-e
-e
-se
-d
+down
+east
+east
+southeast
+down
 
 # attic --> rocky ledge
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # attic --> rocky ledge
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # attic --> canyon bottom
-d
-e
-e
-se
-d
-d
+down
+east
+east
+southeast
+down
+down
 
 # attic --> canyon bottom
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # attic --> canyon bottom
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # attic --> end of rainbow
-d
-e
-e
-se
-d
-d
-ne
+down
+east
+east
+southeast
+down
+down
+northeast
 
 # attic --> end of rainbow
-d
-w
-d
-n
-e
-e
-se
-e
-d
-s
-s
+down
+west
+down
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # attic --> end of rainbow
-d
-d
-s
-w
-n
-n
-e
-e
-se
-e
-d
-s
-s
+down
+down
+south
+west
+north
+north
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # the troll room --> east-west passage
-e
+east
 
 # the troll room --> round room
-e
-e
+east
+east
 
 # the troll room --> engravings cave
-e
-e
-se
+east
+east
+southeast
 
 # the troll room --> dome room
-e
-e
-se
-e
+east
+east
+southeast
+east
 
 # the troll room --> torch room
-e
-e
-se
-e
-d
+east
+east
+southeast
+east
+down
 
 # the troll room --> temple
-e
-e
-se
-e
-d
-s
+east
+east
+southeast
+east
+down
+south
 
 # the troll room --> egyptian room
-e
-e
-se
-e
-d
-s
-e
+east
+east
+southeast
+east
+down
+south
+east
 
 # the troll room --> altar
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 
 # the troll room --> forest
-s
-u
-e
-e
-e
-s
+south
+up
+east
+east
+east
+south
 
 # the troll room --> forest
-s
-s
-e
-n
-u
-e
-e
-s
+south
+south
+east
+north
+up
+east
+east
+south
 
 # the troll room --> forest
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 pray
 
 # the troll room --> clearing
-s
-u
-e
-e
-e
+south
+up
+east
+east
+east
 
 # the troll room --> clearing
-s
-s
-e
-n
-u
-e
-e
+south
+south
+east
+north
+up
+east
+east
 
 # the troll room --> clearing
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # the troll room --> canyon view
-s
-u
-e
-e
-e
-se
+south
+up
+east
+east
+east
+southeast
 
 # the troll room --> canyon view
-s
-s
-e
-n
-u
-e
-e
-se
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # the troll room --> canyon view
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # the troll room --> rocky ledge
-s
-u
-e
-e
-e
-se
-d
+south
+up
+east
+east
+east
+southeast
+down
 
 # the troll room --> rocky ledge
-s
-s
-e
-n
-u
-e
-e
-se
-d
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # the troll room --> rocky ledge
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # the troll room --> canyon bottom
-s
-u
-e
-e
-e
-se
-d
-d
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # the troll room --> canyon bottom
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # the troll room --> canyon bottom
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # the troll room --> end of rainbow
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # the troll room --> end of rainbow
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # the troll room --> end of rainbow
-e
-e
-se
-e
-d
-s
-s
+east
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # east-west passage --> round room
-e
+east
 
 # east-west passage --> engravings cave
-e
-se
+east
+southeast
 
 # east-west passage --> dome room
-e
-se
-e
+east
+southeast
+east
 
 # east-west passage --> torch room
-e
-se
-e
-d
+east
+southeast
+east
+down
 
 # east-west passage --> temple
-e
-se
-e
-d
-s
+east
+southeast
+east
+down
+south
 
 # east-west passage --> egyptian room
-e
-se
-e
-d
-s
-e
+east
+southeast
+east
+down
+south
+east
 
 # east-west passage --> altar
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 
 # east-west passage --> forest
-w
-s
-u
-e
-e
-e
-s
+west
+south
+up
+east
+east
+east
+south
 
 # east-west passage --> forest
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 pray
 
 # east-west passage --> forest
-w
-s
-s
-e
-n
-u
-e
-e
-s
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # east-west passage --> clearing
-w
-s
-u
-e
-e
-e
+west
+south
+up
+east
+east
+east
 
 # east-west passage --> clearing
-w
-s
-s
-e
-n
-u
-e
-e
+west
+south
+south
+east
+north
+up
+east
+east
 
 # east-west passage --> clearing
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # east-west passage --> canyon view
-w
-s
-u
-e
-e
-e
-se
+west
+south
+up
+east
+east
+east
+southeast
 
 # east-west passage --> canyon view
-w
-s
-s
-e
-n
-u
-e
-e
-se
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # east-west passage --> canyon view
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # east-west passage --> rocky ledge
-w
-s
-u
-e
-e
-e
-se
-d
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # east-west passage --> rocky ledge
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # east-west passage --> rocky ledge
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # east-west passage --> canyon bottom
-w
-s
-u
-e
-e
-e
-se
-d
-d
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # east-west passage --> canyon bottom
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # east-west passage --> canyon bottom
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # east-west passage --> end of rainbow
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # east-west passage --> end of rainbow
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # east-west passage --> end of rainbow
-e
-se
-e
-d
-s
-s
+east
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # round room --> engravings cave
-se
+southeast
 
 # round room --> dome room
-se
-e
+southeast
+east
 
 # round room --> torch room
-se
-e
-d
+southeast
+east
+down
 
 # round room --> temple
-se
-e
-d
-s
+southeast
+east
+down
+south
 
 # round room --> egyptian room
-se
-e
-d
-s
-e
+southeast
+east
+down
+south
+east
 
 # round room --> altar
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 
 # round room --> forest
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 pray
 
 # round room --> forest
-w
-w
-s
-u
-e
-e
-e
-s
+west
+west
+south
+up
+east
+east
+east
+south
 
 # round room --> forest
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # round room --> clearing
-w
-w
-s
-u
-e
-e
-e
+west
+west
+south
+up
+east
+east
+east
 
 # round room --> clearing
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 pray
-n
+north
 
 # round room --> clearing
-w
-w
-s
-s
-e
-n
-u
-e
-e
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # round room --> canyon view
-w
-w
-s
-u
-e
-e
-e
-se
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # round room --> canyon view
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # round room --> canyon view
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # round room --> rocky ledge
-w
-w
-s
-u
-e
-e
-e
-se
-d
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # round room --> rocky ledge
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # round room --> rocky ledge
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # round room --> canyon bottom
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # round room --> canyon bottom
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # round room --> canyon bottom
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # round room --> end of rainbow
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # round room --> end of rainbow
-se
-e
-d
-s
-s
+southeast
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # round room --> end of rainbow
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # engravings cave --> dome room
-e
+east
 
 # engravings cave --> torch room
-e
-d
+east
+down
 
 # engravings cave --> temple
-e
-d
-s
+east
+down
+south
 
 # engravings cave --> egyptian room
-e
-d
-s
-e
+east
+down
+south
+east
 
 # engravings cave --> altar
-e
-d
-s
-s
+east
+down
+south
+south
 
 # engravings cave --> forest
-e
-d
-s
-s
+east
+down
+south
+south
 pray
 
 # engravings cave --> forest
-nw
-w
-w
-s
-u
-e
-e
-e
-s
+northwest
+west
+west
+south
+up
+east
+east
+east
+south
 
 # engravings cave --> forest
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # engravings cave --> clearing
-e
-d
-s
-s
+east
+down
+south
+south
 pray
-n
+north
 
 # engravings cave --> clearing
-nw
-w
-w
-s
-u
-e
-e
-e
+northwest
+west
+west
+south
+up
+east
+east
+east
 
 # engravings cave --> clearing
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # engravings cave --> canyon view
-e
-d
-s
-s
+east
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # engravings cave --> canyon view
-nw
-w
-w
-s
-u
-e
-e
-e
-se
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # engravings cave --> canyon view
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # engravings cave --> rocky ledge
-e
-d
-s
-s
+east
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # engravings cave --> rocky ledge
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # engravings cave --> rocky ledge
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # engravings cave --> canyon bottom
-e
-d
-s
-s
+east
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # engravings cave --> canyon bottom
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # engravings cave --> canyon bottom
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # engravings cave --> end of rainbow
-e
-d
-s
-s
+east
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # engravings cave --> end of rainbow
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # engravings cave --> end of rainbow
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # dome room --> torch room
-d
+down
 
 # dome room --> temple
-d
-s
+down
+south
 
 # dome room --> egyptian room
-d
-s
-e
+down
+south
+east
 
 # dome room --> altar
-d
-s
-s
+down
+south
+south
 
 # dome room --> forest
-d
-s
-s
+down
+south
+south
 pray
 
 # dome room --> forest
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-s
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+south
 
 # dome room --> forest
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # dome room --> clearing
-d
-s
-s
+down
+south
+south
 pray
-n
+north
 
 # dome room --> clearing
-w
-nw
-w
-w
-s
-u
-e
-e
-e
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
 
 # dome room --> clearing
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # dome room --> canyon view
-d
-s
-s
+down
+south
+south
 pray
-n
-se
+north
+southeast
 
 # dome room --> canyon view
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # dome room --> canyon view
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # dome room --> rocky ledge
-d
-s
-s
+down
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # dome room --> rocky ledge
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # dome room --> rocky ledge
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # dome room --> canyon bottom
-d
-s
-s
+down
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # dome room --> canyon bottom
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # dome room --> canyon bottom
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # dome room --> end of rainbow
-d
-s
-s
+down
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # dome room --> end of rainbow
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # dome room --> end of rainbow
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # torch room --> temple
-s
+south
 
 # torch room --> egyptian room
-s
-e
+south
+east
 
 # torch room --> altar
-s
-s
+south
+south
 
 # torch room --> forest
-s
-s
+south
+south
 pray
 
 # torch room --> forest
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-s
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+south
 
 # torch room --> forest
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # torch room --> clearing
-s
-s
+south
+south
 pray
-n
+north
 
 # torch room --> clearing
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
 
 # torch room --> clearing
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # torch room --> canyon view
-s
-s
+south
+south
 pray
-n
-se
+north
+southeast
 
 # torch room --> canyon view
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # torch room --> canyon view
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # torch room --> rocky ledge
-s
-s
+south
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # torch room --> rocky ledge
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # torch room --> rocky ledge
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # torch room --> canyon bottom
-s
-s
+south
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # torch room --> canyon bottom
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # torch room --> canyon bottom
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # torch room --> end of rainbow
-s
-s
+south
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # torch room --> end of rainbow
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # torch room --> end of rainbow
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # temple --> egyptian room
-e
+east
 
 # temple --> altar
-s
+south
 
 # temple --> forest
-s
+south
 pray
 
 # temple --> forest
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-s
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+south
 
 # temple --> forest
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # temple --> clearing
-s
+south
 pray
-n
+north
 
 # temple --> clearing
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
 
 # temple --> clearing
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # temple --> canyon view
-s
+south
 pray
-n
-se
+north
+southeast
 
 # temple --> canyon view
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # temple --> canyon view
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # temple --> rocky ledge
-s
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # temple --> rocky ledge
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # temple --> rocky ledge
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # temple --> canyon bottom
-s
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # temple --> canyon bottom
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # temple --> canyon bottom
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # temple --> end of rainbow
-s
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # temple --> end of rainbow
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # temple --> end of rainbow
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # egyptian room --> altar
-w
-s
+west
+south
 
 # egyptian room --> forest
-w
-s
+west
+south
 pray
 
 # egyptian room --> forest
-w
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-s
+west
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+south
 
 # egyptian room --> forest
-w
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+west
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # egyptian room --> clearing
-w
-s
+west
+south
 pray
-n
+north
 
 # egyptian room --> clearing
-w
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
+west
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
 
 # egyptian room --> clearing
-w
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
+west
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # egyptian room --> canyon view
-w
-s
+west
+south
 pray
-n
-se
+north
+southeast
 
 # egyptian room --> canyon view
-w
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
+west
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # egyptian room --> canyon view
-w
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+west
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # egyptian room --> rocky ledge
-w
-s
+west
+south
 pray
-n
-se
-d
+north
+southeast
+down
 
 # egyptian room --> rocky ledge
-w
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
+west
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # egyptian room --> rocky ledge
-w
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+west
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # egyptian room --> canyon bottom
-w
-s
+west
+south
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # egyptian room --> canyon bottom
-w
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+west
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # egyptian room --> canyon bottom
-w
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+west
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # egyptian room --> end of rainbow
-w
-s
+west
+south
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # egyptian room --> end of rainbow
-w
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+west
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # egyptian room --> end of rainbow
-w
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+west
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # altar --> forest
 pray
 
 # altar --> forest
-n
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-s
+north
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+south
 
 # altar --> forest
-n
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-s
+north
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+south
 
 # altar --> clearing
 pray
-n
+north
 
 # altar --> clearing
-n
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
+north
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
 
 # altar --> clearing
-n
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
+north
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
 
 # altar --> canyon view
 pray
-n
-se
+north
+southeast
 
 # altar --> canyon view
-n
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
+north
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
 
 # altar --> canyon view
-n
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
+north
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
 
 # altar --> rocky ledge
 pray
-n
-se
-d
+north
+southeast
+down
 
 # altar --> rocky ledge
-n
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
+north
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
 
 # altar --> rocky ledge
-n
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
+north
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
 
 # altar --> canyon bottom
 pray
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # altar --> canyon bottom
-n
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
+north
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
 
 # altar --> canyon bottom
-n
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
+north
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
 
 # altar --> end of rainbow
 pray
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # altar --> end of rainbow
-n
-n
-u
-w
-nw
-w
-w
-s
-u
-e
-e
-e
-se
-d
-d
-ne
+north
+north
+up
+west
+northwest
+west
+west
+south
+up
+east
+east
+east
+southeast
+down
+down
+northeast
 
 # altar --> end of rainbow
-n
-n
-u
-w
-nw
-w
-w
-s
-s
-e
-n
-u
-e
-e
-se
-d
-d
-ne
+north
+north
+up
+west
+northwest
+west
+west
+south
+south
+east
+north
+up
+east
+east
+southeast
+down
+down
+northeast
 
 # forest --> clearing
-n
+north
 
 # forest --> canyon view
-n
-se
+north
+southeast
 
 # forest --> rocky ledge
-n
-se
-d
+north
+southeast
+down
 
 # forest --> canyon bottom
-n
-se
-d
-d
+north
+southeast
+down
+down
 
 # forest --> end of rainbow
-n
-se
-d
-d
-ne
+north
+southeast
+down
+down
+northeast
 
 # clearing --> canyon view
-se
+southeast
 
 # clearing --> rocky ledge
-se
-d
+southeast
+down
 
 # clearing --> canyon bottom
-se
-d
-d
+southeast
+down
+down
 
 # clearing --> end of rainbow
-se
-d
-d
-ne
+southeast
+down
+down
+northeast
 
 # canyon view --> rocky ledge
-d
+down
 
 # canyon view --> canyon bottom
-d
-d
+down
+down
 
 # canyon view --> end of rainbow
-d
-d
-ne
+down
+down
+northeast
 
 # rocky ledge --> canyon bottom
-d
+down
 
 # rocky ledge --> end of rainbow
-d
-ne
+down
+northeast
 
 # canyon bottom --> end of rainbow
-ne
+northeast
 

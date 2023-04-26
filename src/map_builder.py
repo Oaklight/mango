@@ -47,7 +47,7 @@ enter house --> kitchen
 class Direction:
 
     def __init__(self, action, toWhere):
-        self.action = action
+        self.action = abbr2full(action)
         self.toWhere = toWhere
 
     def __repr__(self) -> str:
@@ -273,6 +273,38 @@ def persistMap(gameMap: list, mapMarkdown: str = "../data/map.md"):
     # persist gameMap to map.md
     with open(mapMarkdown, "w") as f:
         f.write("\n".join([location.__repr__() for location in gameMap]))
+
+
+def abbr2full(abbr: str) -> str:
+    # # check if it's abbr or full name
+    if abbr not in ["n", "s", "e", "w", "ne", "nw", "se", "sw", "u", "d"]:
+        return abbr
+
+    # convert abbr to full name
+    if abbr == "n":
+        return "north"
+    elif abbr == "s":
+        return "south"
+    elif abbr == "e":
+        return "east"
+    elif abbr == "w":
+        return "west"
+    # including combinations
+    elif abbr == "ne":
+        return "northeast"
+    elif abbr == "nw":
+        return "northwest"
+    elif abbr == "se":
+        return "southeast"
+    elif abbr == "sw":
+        return "southwest"
+    # including vertical directions
+    elif abbr == "u":
+        return "up"
+    elif abbr == "d":
+        return "down"
+    else:
+        return None
 
 
 # main test
