@@ -306,36 +306,48 @@ def get_edge_direction(G, n1, n2):
         print("Edge not found.")
 
 
-def print_path(g: object, path: list):
+def print_path(g: object, path: list, verbose: bool = True):
     '''
     print the path (list of nodes) with detailed direction
     '''
+    # get srcNode and dstNode and print them
+    srcNode = path[0]
+    dstNode = path[-1]
+    print(f'# {srcNode} --> {dstNode}')
+
     prevNode = path[0]
     path_details = []
     if len(path) == 1:
-        print(f'ARRIVE_AT: \033[1m[{prevNode}]\033[0m.')
+        if verbose:
+            print(f'ARRIVE_AT: \033[1m[{prevNode}]\033[0m.')
     else:
         for node in path[1:]:
             direction = get_edge_direction(g, prevNode, node)
-            current_step = ("START_FROM \033[1m[" + prevNode +
-                            "]\033[0m, DO \033[1m(" + direction +
-                            ")\033[0m, ARRIVE_AT \033[1m[" + node + "]\033[0m")
+            if verbose:
+                current_step = ("START_FROM \033[1m[" + prevNode +
+                                "]\033[0m, DO \033[1m(" + direction +
+                                ")\033[0m, ARRIVE_AT \033[1m[" + node +
+                                "]\033[0m")
+            else:
+                current_step = direction
             path_details.append(current_step)
             prevNode = node
     path_string = "\n".join(path_details) + "\n"
     print(path_string)
 
 
-def print_all_paths(g: object, all_paths: list):
+def print_all_paths(g: object, all_paths: list, verbose: bool = True):
     '''
     iterate over all paths and print each
     '''
-    print(f"FOUND \033[1m{len(all_paths)}\033[0m PATHS\n")
+    if verbose:
+        print(f"FOUND \033[1m{len(all_paths)}\033[0m PATHS\n")
     # sort all_paths by len of each
     all_paths.sort(key=lambda x: len(x))
     for path in all_paths:
-        print(f"LENGTH OF CURRENT PATH: \033[1m{len(path)}\033[0m")
-        print_path(g, path)
+        if verbose:
+            print(f"LENGTH OF CURRENT PATH: \033[1m{len(path)}\033[0m")
+        print_path(g, path, verbose=verbose)
 
 
 if __name__ == "__main__":
