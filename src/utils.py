@@ -54,6 +54,7 @@ def inputColor(text, color, inline=False):
 def parseLine(line: str) -> tuple[str, str]:
     strType = None
     content = None
+    line = line.strip()
     if line == "":
         strType = "empty"
         content = ""
