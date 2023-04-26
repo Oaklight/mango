@@ -86,8 +86,9 @@ def get_opposite_direction(direction: str):
     return opposite_directions[direction]
 
 
-def build_graph_from_file(pathFile: str = "data/paths.txt",
-                          oppositeFile: str = "data/opposite.txt") -> object:
+def build_graph_from_file(pathFile: str = "data/gameName.map",
+                          actionFile: str = "data/gameName.actions",
+                          verbose: bool = True) -> object:
     '''
     builds a graph from a txt file, each line is in format "from,to"
     '''
@@ -217,7 +218,7 @@ def verify_path(g: object, srcNode, dstNode, paths2verify: list):
     return True
 
 
-def parse_path(pathFile: str = "data/paths2verify.txt"):
+def parse_path(pathFile: str = "data/path2.verify"):
     '''
     parse paths2verify file to a list of triplets (srcNode, dstNode, direction)
     '''
@@ -295,8 +296,8 @@ def print_all_paths(g: object, all_paths: list):
 
 
 if __name__ == "__main__":
-    g = build_graph_from_file('../data/Zork_Locations.txt',
-                              '../data/Zork_opposite_directions.txt')
+    g = build_graph_from_file('../data/zork1.map',
+                              '../data/zork1.actions')
     plot_graph(g)
 
     while True:
@@ -330,6 +331,6 @@ if __name__ == "__main__":
 
         # verify path test
         srcNode, dstNode, paths2verify = parse_path(
-            "../data/Zork_paths2verify.txt")
+            "../data/zork1.verify")
         result = verify_path(g, srcNode, dstNode, paths2verify)
         print(f"VERIFIED RESULT: \033[1m{result}\033[0m")
