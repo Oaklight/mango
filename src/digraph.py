@@ -44,6 +44,42 @@ def load_valid_actions(actionFile):
     print(opposite_directions)
 
 
+def intuitive_reverse_map(pathFile: str = "data/gameName.map",
+                          actionFile: str = "data/gameName.actions"):
+    '''
+    build a reverse map from a txt file, each line is in format "from,to"
+    '''
+    with open(pathFile, 'r') as f:
+        lines = f.readlines()
+        lines.reverse()
+
+    load_valid_actions(actionFile)
+    # build graph from file
+
+    reverse_map_list = []
+
+    # from last step walk intuitively back to the first step
+    for line in lines:
+        line = line.strip('\ufeff')
+        if line == "":
+            continue
+        elements = [each.strip().lower() for each in line.split("-->")]
+        # print(elements)
+        srcNode, direction, dstNode = elements
+        if direction not in opposite_directions:
+            print(
+                f"direction [{direction}] not in opposite_directions, skip reverse path"
+            )
+            reverse_map_list.append("")
+            continue
+        reverse_step = f"{dstNode} --> {get_opposite_direction(direction)} --> {srcNode}"
+        reverse_map_list.append(reverse_step)
+    
+    # dump list to file line by line
+    with open(pathFile+".reversed", "w") as f:
+        for line in reverse_map_list:
+            f.write(line + "\n")
+
 def query_chatgpt(prompt, message):
     if message == "":
         query_messages = [{"role": "user", "content": prompt}]
