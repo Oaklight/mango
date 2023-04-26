@@ -51,7 +51,7 @@ def intuitive_reverse_map(pathFile: str = "data/gameName.map",
     '''
     with open(pathFile, 'r') as f:
         lines = f.readlines()
-        lines.reverse()
+        # lines.reverse()
 
     load_valid_actions(actionFile)
     # build graph from file
