@@ -44,25 +44,25 @@ opposite direction of [west] is [east]
 
 ============ MAP READY =============
 
-# west of house --> south of house
+# west of house --> south of house || diff_shortest: 0
 south
 
-# west of house --> behind house
+# west of house --> behind house || diff_shortest: 0
 south
 east
 
-# west of house --> kitchen
+# west of house --> kitchen || diff_shortest: 0
 south
 east
 west
 
-# west of house --> living room
+# west of house --> living room || diff_shortest: 0
 south
 east
 west
 west
 
-# west of house --> living room
+# west of house --> living room || diff_shortest: 4
 south
 east
 west
@@ -72,14 +72,14 @@ west
 north
 up
 
-# west of house --> cellar
+# west of house --> cellar || diff_shortest: 0
 south
 east
 west
 west
 down
 
-# west of house --> cellar
+# west of house --> cellar || diff_shortest: 2
 south
 east
 west
@@ -88,7 +88,7 @@ south
 west
 north
 
-# west of house --> east of chasm
+# west of house --> east of chasm || diff_shortest: 0
 south
 east
 west
@@ -96,7 +96,7 @@ west
 down
 south
 
-# west of house --> east of chasm
+# west of house --> east of chasm || diff_shortest: 0
 south
 east
 west
@@ -104,14 +104,14 @@ down
 south
 west
 
-# west of house --> gallery
+# west of house --> gallery || diff_shortest: 0
 south
 east
 west
 down
 south
 
-# west of house --> gallery
+# west of house --> gallery || diff_shortest: 2
 south
 east
 west
@@ -120,13 +120,13 @@ down
 south
 east
 
-# west of house --> studio
+# west of house --> studio || diff_shortest: 0
 south
 east
 west
 down
 
-# west of house --> studio
+# west of house --> studio || diff_shortest: 4
 south
 east
 west
@@ -136,13 +136,13 @@ south
 east
 north
 
-# west of house --> attic
+# west of house --> attic || diff_shortest: 0
 south
 east
 west
 up
 
-# west of house --> the troll room
+# west of house --> the troll room || diff_shortest: 0
 south
 east
 west
@@ -150,7 +150,7 @@ west
 down
 north
 
-# west of house --> the troll room
+# west of house --> the troll room || diff_shortest: 2
 south
 east
 west
@@ -160,7 +160,7 @@ west
 north
 north
 
-# west of house --> east-west passage
+# west of house --> east-west passage || diff_shortest: 0
 south
 east
 west
@@ -169,7 +169,7 @@ down
 north
 east
 
-# west of house --> east-west passage
+# west of house --> east-west passage || diff_shortest: 2
 south
 east
 west
@@ -180,7 +180,7 @@ north
 north
 east
 
-# west of house --> round room
+# west of house --> round room || diff_shortest: 0
 south
 east
 west
@@ -190,7 +190,7 @@ north
 east
 east
 
-# west of house --> round room
+# west of house --> round room || diff_shortest: 2
 south
 east
 west
@@ -202,7 +202,7 @@ north
 east
 east
 
-# west of house --> engravings cave
+# west of house --> engravings cave || diff_shortest: 0
 south
 east
 west
@@ -213,7 +213,7 @@ east
 east
 southeast
 
-# west of house --> engravings cave
+# west of house --> engravings cave || diff_shortest: 2
 south
 east
 west
@@ -226,7 +226,7 @@ east
 east
 southeast
 
-# west of house --> dome room
+# west of house --> dome room || diff_shortest: 0
 south
 east
 west
@@ -238,7 +238,7 @@ east
 southeast
 east
 
-# west of house --> dome room
+# west of house --> dome room || diff_shortest: 2
 south
 east
 west
@@ -252,7 +252,7 @@ east
 southeast
 east
 
-# west of house --> torch room
+# west of house --> torch room || diff_shortest: 0
 south
 east
 west
@@ -265,7 +265,7 @@ southeast
 east
 down
 
-# west of house --> torch room
+# west of house --> torch room || diff_shortest: 2
 south
 east
 west
@@ -280,7 +280,7 @@ southeast
 east
 down
 
-# west of house --> temple
+# west of house --> temple || diff_shortest: 0
 south
 east
 west
@@ -294,7 +294,7 @@ east
 down
 south
 
-# west of house --> temple
+# west of house --> temple || diff_shortest: 2
 south
 east
 west
@@ -310,7 +310,7 @@ east
 down
 south
 
-# west of house --> egyptian room
+# west of house --> egyptian room || diff_shortest: 0
 south
 east
 west
@@ -325,7 +325,7 @@ down
 south
 east
 
-# west of house --> egyptian room
+# west of house --> egyptian room || diff_shortest: 2
 south
 east
 west
@@ -342,7 +342,7 @@ down
 south
 east
 
-# west of house --> altar
+# west of house --> altar || diff_shortest: 0
 south
 east
 west
@@ -357,7 +357,7 @@ down
 south
 south
 
-# west of house --> altar
+# west of house --> altar || diff_shortest: 2
 south
 east
 west
@@ -374,13 +374,13 @@ down
 south
 south
 
-# west of house --> forest
+# west of house --> forest || diff_shortest: 0
 south
 east
 east
 south
 
-# west of house --> forest
+# west of house --> forest || diff_shortest: 10
 south
 east
 west
@@ -396,7 +396,7 @@ south
 south
 pray
 
-# west of house --> forest
+# west of house --> forest || diff_shortest: 12
 south
 east
 west
@@ -414,12 +414,12 @@ south
 south
 pray
 
-# west of house --> clearing
+# west of house --> clearing || diff_shortest: 0
 south
 east
 east
 
-# west of house --> clearing
+# west of house --> clearing || diff_shortest: 12
 south
 east
 west
@@ -436,7 +436,7 @@ south
 pray
 north
 
-# west of house --> clearing
+# west of house --> clearing || diff_shortest: 14
 south
 east
 west
@@ -455,13 +455,13 @@ south
 pray
 north
 
-# west of house --> canyon view
+# west of house --> canyon view || diff_shortest: 0
 south
 east
 east
 southeast
 
-# west of house --> canyon view
+# west of house --> canyon view || diff_shortest: 12
 south
 east
 west
@@ -479,7 +479,7 @@ pray
 north
 southeast
 
-# west of house --> canyon view
+# west of house --> canyon view || diff_shortest: 14
 south
 east
 west
@@ -499,14 +499,14 @@ pray
 north
 southeast
 
-# west of house --> rocky ledge
+# west of house --> rocky ledge || diff_shortest: 0
 south
 east
 east
 southeast
 down
 
-# west of house --> rocky ledge
+# west of house --> rocky ledge || diff_shortest: 12
 south
 east
 west
@@ -525,7 +525,7 @@ north
 southeast
 down
 
-# west of house --> rocky ledge
+# west of house --> rocky ledge || diff_shortest: 14
 south
 east
 west
@@ -546,7 +546,7 @@ north
 southeast
 down
 
-# west of house --> canyon bottom
+# west of house --> canyon bottom || diff_shortest: 0
 south
 east
 east
@@ -554,7 +554,7 @@ southeast
 down
 down
 
-# west of house --> canyon bottom
+# west of house --> canyon bottom || diff_shortest: 12
 south
 east
 west
@@ -574,7 +574,7 @@ southeast
 down
 down
 
-# west of house --> canyon bottom
+# west of house --> canyon bottom || diff_shortest: 14
 south
 east
 west
@@ -596,7 +596,7 @@ southeast
 down
 down
 
-# west of house --> end of rainbow
+# west of house --> end of rainbow || diff_shortest: 0
 south
 east
 east
@@ -605,7 +605,7 @@ down
 down
 northeast
 
-# west of house --> end of rainbow
+# west of house --> end of rainbow || diff_shortest: 12
 south
 east
 west
@@ -626,7 +626,7 @@ down
 down
 northeast
 
-# west of house --> end of rainbow
+# west of house --> end of rainbow || diff_shortest: 14
 south
 east
 west
@@ -649,19 +649,19 @@ down
 down
 northeast
 
-# south of house --> behind house
+# south of house --> behind house || diff_shortest: 0
 east
 
-# south of house --> kitchen
+# south of house --> kitchen || diff_shortest: 0
 east
 west
 
-# south of house --> living room
+# south of house --> living room || diff_shortest: 0
 east
 west
 west
 
-# south of house --> living room
+# south of house --> living room || diff_shortest: 4
 east
 west
 down
@@ -670,13 +670,13 @@ west
 north
 up
 
-# south of house --> cellar
+# south of house --> cellar || diff_shortest: 0
 east
 west
 west
 down
 
-# south of house --> cellar
+# south of house --> cellar || diff_shortest: 2
 east
 west
 down
@@ -684,27 +684,27 @@ south
 west
 north
 
-# south of house --> east of chasm
+# south of house --> east of chasm || diff_shortest: 0
 east
 west
 west
 down
 south
 
-# south of house --> east of chasm
+# south of house --> east of chasm || diff_shortest: 0
 east
 west
 down
 south
 west
 
-# south of house --> gallery
+# south of house --> gallery || diff_shortest: 0
 east
 west
 down
 south
 
-# south of house --> gallery
+# south of house --> gallery || diff_shortest: 2
 east
 west
 west
@@ -712,12 +712,12 @@ down
 south
 east
 
-# south of house --> studio
+# south of house --> studio || diff_shortest: 0
 east
 west
 down
 
-# south of house --> studio
+# south of house --> studio || diff_shortest: 4
 east
 west
 west
@@ -726,19 +726,19 @@ south
 east
 north
 
-# south of house --> attic
+# south of house --> attic || diff_shortest: 0
 east
 west
 up
 
-# south of house --> the troll room
+# south of house --> the troll room || diff_shortest: 0
 east
 west
 west
 down
 north
 
-# south of house --> the troll room
+# south of house --> the troll room || diff_shortest: 2
 east
 west
 down
@@ -747,7 +747,7 @@ west
 north
 north
 
-# south of house --> east-west passage
+# south of house --> east-west passage || diff_shortest: 0
 east
 west
 west
@@ -755,7 +755,7 @@ down
 north
 east
 
-# south of house --> east-west passage
+# south of house --> east-west passage || diff_shortest: 2
 east
 west
 down
@@ -765,7 +765,7 @@ north
 north
 east
 
-# south of house --> round room
+# south of house --> round room || diff_shortest: 0
 east
 west
 west
@@ -774,7 +774,7 @@ north
 east
 east
 
-# south of house --> round room
+# south of house --> round room || diff_shortest: 2
 east
 west
 down
@@ -785,7 +785,7 @@ north
 east
 east
 
-# south of house --> engravings cave
+# south of house --> engravings cave || diff_shortest: 0
 east
 west
 west
@@ -795,7 +795,7 @@ east
 east
 southeast
 
-# south of house --> engravings cave
+# south of house --> engravings cave || diff_shortest: 2
 east
 west
 down
@@ -807,7 +807,7 @@ east
 east
 southeast
 
-# south of house --> dome room
+# south of house --> dome room || diff_shortest: 0
 east
 west
 west
@@ -818,7 +818,7 @@ east
 southeast
 east
 
-# south of house --> dome room
+# south of house --> dome room || diff_shortest: 2
 east
 west
 down
@@ -831,7 +831,7 @@ east
 southeast
 east
 
-# south of house --> torch room
+# south of house --> torch room || diff_shortest: 0
 east
 west
 west
@@ -843,7 +843,7 @@ southeast
 east
 down
 
-# south of house --> torch room
+# south of house --> torch room || diff_shortest: 2
 east
 west
 down
@@ -857,7 +857,7 @@ southeast
 east
 down
 
-# south of house --> temple
+# south of house --> temple || diff_shortest: 0
 east
 west
 west
@@ -870,7 +870,7 @@ east
 down
 south
 
-# south of house --> temple
+# south of house --> temple || diff_shortest: 2
 east
 west
 down
@@ -885,7 +885,7 @@ east
 down
 south
 
-# south of house --> egyptian room
+# south of house --> egyptian room || diff_shortest: 0
 east
 west
 west
@@ -899,7 +899,7 @@ down
 south
 east
 
-# south of house --> egyptian room
+# south of house --> egyptian room || diff_shortest: 2
 east
 west
 down
@@ -915,7 +915,7 @@ down
 south
 east
 
-# south of house --> altar
+# south of house --> altar || diff_shortest: 0
 east
 west
 west
@@ -929,7 +929,7 @@ down
 south
 south
 
-# south of house --> altar
+# south of house --> altar || diff_shortest: 2
 east
 west
 down
@@ -945,12 +945,12 @@ down
 south
 south
 
-# south of house --> forest
+# south of house --> forest || diff_shortest: 0
 east
 east
 south
 
-# south of house --> forest
+# south of house --> forest || diff_shortest: 10
 east
 west
 west
@@ -965,7 +965,7 @@ south
 south
 pray
 
-# south of house --> forest
+# south of house --> forest || diff_shortest: 12
 east
 west
 down
@@ -982,11 +982,11 @@ south
 south
 pray
 
-# south of house --> clearing
+# south of house --> clearing || diff_shortest: 0
 east
 east
 
-# south of house --> clearing
+# south of house --> clearing || diff_shortest: 12
 east
 west
 west
@@ -1002,7 +1002,7 @@ south
 pray
 north
 
-# south of house --> clearing
+# south of house --> clearing || diff_shortest: 14
 east
 west
 down
@@ -1020,12 +1020,12 @@ south
 pray
 north
 
-# south of house --> canyon view
+# south of house --> canyon view || diff_shortest: 0
 east
 east
 southeast
 
-# south of house --> canyon view
+# south of house --> canyon view || diff_shortest: 12
 east
 west
 west
@@ -1042,7 +1042,7 @@ pray
 north
 southeast
 
-# south of house --> canyon view
+# south of house --> canyon view || diff_shortest: 14
 east
 west
 down
@@ -1061,13 +1061,13 @@ pray
 north
 southeast
 
-# south of house --> rocky ledge
+# south of house --> rocky ledge || diff_shortest: 0
 east
 east
 southeast
 down
 
-# south of house --> rocky ledge
+# south of house --> rocky ledge || diff_shortest: 12
 east
 west
 west
@@ -1085,7 +1085,7 @@ north
 southeast
 down
 
-# south of house --> rocky ledge
+# south of house --> rocky ledge || diff_shortest: 14
 east
 west
 down
@@ -1105,14 +1105,14 @@ north
 southeast
 down
 
-# south of house --> canyon bottom
+# south of house --> canyon bottom || diff_shortest: 0
 east
 east
 southeast
 down
 down
 
-# south of house --> canyon bottom
+# south of house --> canyon bottom || diff_shortest: 12
 east
 west
 west
@@ -1131,7 +1131,7 @@ southeast
 down
 down
 
-# south of house --> canyon bottom
+# south of house --> canyon bottom || diff_shortest: 14
 east
 west
 down
@@ -1152,7 +1152,7 @@ southeast
 down
 down
 
-# south of house --> end of rainbow
+# south of house --> end of rainbow || diff_shortest: 0
 east
 east
 southeast
@@ -1160,7 +1160,7 @@ down
 down
 northeast
 
-# south of house --> end of rainbow
+# south of house --> end of rainbow || diff_shortest: 12
 east
 west
 west
@@ -1180,7 +1180,7 @@ down
 down
 northeast
 
-# south of house --> end of rainbow
+# south of house --> end of rainbow || diff_shortest: 14
 east
 west
 down
@@ -1202,14 +1202,14 @@ down
 down
 northeast
 
-# behind house --> kitchen
+# behind house --> kitchen || diff_shortest: 0
 west
 
-# behind house --> living room
+# behind house --> living room || diff_shortest: 0
 west
 west
 
-# behind house --> living room
+# behind house --> living room || diff_shortest: 4
 west
 down
 south
@@ -1217,47 +1217,47 @@ west
 north
 up
 
-# behind house --> cellar
+# behind house --> cellar || diff_shortest: 0
 west
 west
 down
 
-# behind house --> cellar
+# behind house --> cellar || diff_shortest: 2
 west
 down
 south
 west
 north
 
-# behind house --> east of chasm
+# behind house --> east of chasm || diff_shortest: 0
 west
 west
 down
 south
 
-# behind house --> east of chasm
+# behind house --> east of chasm || diff_shortest: 0
 west
 down
 south
 west
 
-# behind house --> gallery
+# behind house --> gallery || diff_shortest: 0
 west
 down
 south
 
-# behind house --> gallery
+# behind house --> gallery || diff_shortest: 2
 west
 west
 down
 south
 east
 
-# behind house --> studio
+# behind house --> studio || diff_shortest: 0
 west
 down
 
-# behind house --> studio
+# behind house --> studio || diff_shortest: 4
 west
 west
 down
@@ -1265,17 +1265,17 @@ south
 east
 north
 
-# behind house --> attic
+# behind house --> attic || diff_shortest: 0
 west
 up
 
-# behind house --> the troll room
+# behind house --> the troll room || diff_shortest: 0
 west
 west
 down
 north
 
-# behind house --> the troll room
+# behind house --> the troll room || diff_shortest: 2
 west
 down
 south
@@ -1283,14 +1283,14 @@ west
 north
 north
 
-# behind house --> east-west passage
+# behind house --> east-west passage || diff_shortest: 0
 west
 west
 down
 north
 east
 
-# behind house --> east-west passage
+# behind house --> east-west passage || diff_shortest: 2
 west
 down
 south
@@ -1299,7 +1299,7 @@ north
 north
 east
 
-# behind house --> round room
+# behind house --> round room || diff_shortest: 0
 west
 west
 down
@@ -1307,7 +1307,7 @@ north
 east
 east
 
-# behind house --> round room
+# behind house --> round room || diff_shortest: 2
 west
 down
 south
@@ -1317,7 +1317,7 @@ north
 east
 east
 
-# behind house --> engravings cave
+# behind house --> engravings cave || diff_shortest: 0
 west
 west
 down
@@ -1326,7 +1326,7 @@ east
 east
 southeast
 
-# behind house --> engravings cave
+# behind house --> engravings cave || diff_shortest: 2
 west
 down
 south
@@ -1337,7 +1337,7 @@ east
 east
 southeast
 
-# behind house --> dome room
+# behind house --> dome room || diff_shortest: 0
 west
 west
 down
@@ -1347,7 +1347,7 @@ east
 southeast
 east
 
-# behind house --> dome room
+# behind house --> dome room || diff_shortest: 2
 west
 down
 south
@@ -1359,7 +1359,7 @@ east
 southeast
 east
 
-# behind house --> torch room
+# behind house --> torch room || diff_shortest: 0
 west
 west
 down
@@ -1370,7 +1370,7 @@ southeast
 east
 down
 
-# behind house --> torch room
+# behind house --> torch room || diff_shortest: 2
 west
 down
 south
@@ -1383,7 +1383,7 @@ southeast
 east
 down
 
-# behind house --> temple
+# behind house --> temple || diff_shortest: 0
 west
 west
 down
@@ -1395,7 +1395,7 @@ east
 down
 south
 
-# behind house --> temple
+# behind house --> temple || diff_shortest: 2
 west
 down
 south
@@ -1409,7 +1409,7 @@ east
 down
 south
 
-# behind house --> egyptian room
+# behind house --> egyptian room || diff_shortest: 0
 west
 west
 down
@@ -1422,7 +1422,7 @@ down
 south
 east
 
-# behind house --> egyptian room
+# behind house --> egyptian room || diff_shortest: 2
 west
 down
 south
@@ -1437,7 +1437,7 @@ down
 south
 east
 
-# behind house --> altar
+# behind house --> altar || diff_shortest: 0
 west
 west
 down
@@ -1450,7 +1450,7 @@ down
 south
 south
 
-# behind house --> altar
+# behind house --> altar || diff_shortest: 2
 west
 down
 south
@@ -1465,11 +1465,11 @@ down
 south
 south
 
-# behind house --> forest
+# behind house --> forest || diff_shortest: 0
 east
 south
 
-# behind house --> forest
+# behind house --> forest || diff_shortest: 10
 west
 west
 down
@@ -1483,7 +1483,7 @@ south
 south
 pray
 
-# behind house --> forest
+# behind house --> forest || diff_shortest: 12
 west
 down
 south
@@ -1499,10 +1499,10 @@ south
 south
 pray
 
-# behind house --> clearing
+# behind house --> clearing || diff_shortest: 0
 east
 
-# behind house --> clearing
+# behind house --> clearing || diff_shortest: 12
 west
 west
 down
@@ -1517,7 +1517,7 @@ south
 pray
 north
 
-# behind house --> clearing
+# behind house --> clearing || diff_shortest: 14
 west
 down
 south
@@ -1534,11 +1534,11 @@ south
 pray
 north
 
-# behind house --> canyon view
+# behind house --> canyon view || diff_shortest: 0
 east
 southeast
 
-# behind house --> canyon view
+# behind house --> canyon view || diff_shortest: 12
 west
 west
 down
@@ -1554,7 +1554,7 @@ pray
 north
 southeast
 
-# behind house --> canyon view
+# behind house --> canyon view || diff_shortest: 14
 west
 down
 south
@@ -1572,12 +1572,12 @@ pray
 north
 southeast
 
-# behind house --> rocky ledge
+# behind house --> rocky ledge || diff_shortest: 0
 east
 southeast
 down
 
-# behind house --> rocky ledge
+# behind house --> rocky ledge || diff_shortest: 12
 west
 west
 down
@@ -1594,7 +1594,7 @@ north
 southeast
 down
 
-# behind house --> rocky ledge
+# behind house --> rocky ledge || diff_shortest: 14
 west
 down
 south
@@ -1613,13 +1613,13 @@ north
 southeast
 down
 
-# behind house --> canyon bottom
+# behind house --> canyon bottom || diff_shortest: 0
 east
 southeast
 down
 down
 
-# behind house --> canyon bottom
+# behind house --> canyon bottom || diff_shortest: 12
 west
 west
 down
@@ -1637,7 +1637,7 @@ southeast
 down
 down
 
-# behind house --> canyon bottom
+# behind house --> canyon bottom || diff_shortest: 14
 west
 down
 south
@@ -1657,14 +1657,14 @@ southeast
 down
 down
 
-# behind house --> end of rainbow
+# behind house --> end of rainbow || diff_shortest: 0
 east
 southeast
 down
 down
 northeast
 
-# behind house --> end of rainbow
+# behind house --> end of rainbow || diff_shortest: 12
 west
 west
 down
@@ -1683,7 +1683,7 @@ down
 down
 northeast
 
-# behind house --> end of rainbow
+# behind house --> end of rainbow || diff_shortest: 14
 west
 down
 south
@@ -1704,78 +1704,78 @@ down
 down
 northeast
 
-# kitchen --> living room
+# kitchen --> living room || diff_shortest: 0
 west
 
-# kitchen --> living room
+# kitchen --> living room || diff_shortest: 4
 down
 south
 west
 north
 up
 
-# kitchen --> cellar
+# kitchen --> cellar || diff_shortest: 0
 west
 down
 
-# kitchen --> cellar
+# kitchen --> cellar || diff_shortest: 2
 down
 south
 west
 north
 
-# kitchen --> east of chasm
+# kitchen --> east of chasm || diff_shortest: 0
 west
 down
 south
 
-# kitchen --> east of chasm
+# kitchen --> east of chasm || diff_shortest: 0
 down
 south
 west
 
-# kitchen --> gallery
+# kitchen --> gallery || diff_shortest: 0
 down
 south
 
-# kitchen --> gallery
+# kitchen --> gallery || diff_shortest: 2
 west
 down
 south
 east
 
-# kitchen --> studio
+# kitchen --> studio || diff_shortest: 0
 down
 
-# kitchen --> studio
+# kitchen --> studio || diff_shortest: 4
 west
 down
 south
 east
 north
 
-# kitchen --> attic
+# kitchen --> attic || diff_shortest: 0
 up
 
-# kitchen --> the troll room
+# kitchen --> the troll room || diff_shortest: 0
 west
 down
 north
 
-# kitchen --> the troll room
+# kitchen --> the troll room || diff_shortest: 2
 down
 south
 west
 north
 north
 
-# kitchen --> east-west passage
+# kitchen --> east-west passage || diff_shortest: 0
 west
 down
 north
 east
 
-# kitchen --> east-west passage
+# kitchen --> east-west passage || diff_shortest: 2
 down
 south
 west
@@ -1783,14 +1783,14 @@ north
 north
 east
 
-# kitchen --> round room
+# kitchen --> round room || diff_shortest: 0
 west
 down
 north
 east
 east
 
-# kitchen --> round room
+# kitchen --> round room || diff_shortest: 2
 down
 south
 west
@@ -1799,7 +1799,7 @@ north
 east
 east
 
-# kitchen --> engravings cave
+# kitchen --> engravings cave || diff_shortest: 0
 west
 down
 north
@@ -1807,7 +1807,7 @@ east
 east
 southeast
 
-# kitchen --> engravings cave
+# kitchen --> engravings cave || diff_shortest: 2
 down
 south
 west
@@ -1817,7 +1817,7 @@ east
 east
 southeast
 
-# kitchen --> dome room
+# kitchen --> dome room || diff_shortest: 0
 west
 down
 north
@@ -1826,7 +1826,7 @@ east
 southeast
 east
 
-# kitchen --> dome room
+# kitchen --> dome room || diff_shortest: 2
 down
 south
 west
@@ -1837,7 +1837,7 @@ east
 southeast
 east
 
-# kitchen --> torch room
+# kitchen --> torch room || diff_shortest: 0
 west
 down
 north
@@ -1847,7 +1847,7 @@ southeast
 east
 down
 
-# kitchen --> torch room
+# kitchen --> torch room || diff_shortest: 2
 down
 south
 west
@@ -1859,7 +1859,7 @@ southeast
 east
 down
 
-# kitchen --> temple
+# kitchen --> temple || diff_shortest: 0
 west
 down
 north
@@ -1870,7 +1870,7 @@ east
 down
 south
 
-# kitchen --> temple
+# kitchen --> temple || diff_shortest: 2
 down
 south
 west
@@ -1883,7 +1883,7 @@ east
 down
 south
 
-# kitchen --> egyptian room
+# kitchen --> egyptian room || diff_shortest: 0
 west
 down
 north
@@ -1895,7 +1895,7 @@ down
 south
 east
 
-# kitchen --> egyptian room
+# kitchen --> egyptian room || diff_shortest: 2
 down
 south
 west
@@ -1909,7 +1909,7 @@ down
 south
 east
 
-# kitchen --> altar
+# kitchen --> altar || diff_shortest: 0
 west
 down
 north
@@ -1921,7 +1921,7 @@ down
 south
 south
 
-# kitchen --> altar
+# kitchen --> altar || diff_shortest: 2
 down
 south
 west
@@ -1935,12 +1935,12 @@ down
 south
 south
 
-# kitchen --> forest
+# kitchen --> forest || diff_shortest: 0
 east
 east
 south
 
-# kitchen --> forest
+# kitchen --> forest || diff_shortest: 8
 west
 down
 north
@@ -1953,7 +1953,7 @@ south
 south
 pray
 
-# kitchen --> forest
+# kitchen --> forest || diff_shortest: 10
 down
 south
 west
@@ -1968,11 +1968,11 @@ south
 south
 pray
 
-# kitchen --> clearing
+# kitchen --> clearing || diff_shortest: 0
 east
 east
 
-# kitchen --> clearing
+# kitchen --> clearing || diff_shortest: 10
 west
 down
 north
@@ -1986,7 +1986,7 @@ south
 pray
 north
 
-# kitchen --> clearing
+# kitchen --> clearing || diff_shortest: 12
 down
 south
 west
@@ -2002,12 +2002,12 @@ south
 pray
 north
 
-# kitchen --> canyon view
+# kitchen --> canyon view || diff_shortest: 0
 east
 east
 southeast
 
-# kitchen --> canyon view
+# kitchen --> canyon view || diff_shortest: 10
 west
 down
 north
@@ -2022,7 +2022,7 @@ pray
 north
 southeast
 
-# kitchen --> canyon view
+# kitchen --> canyon view || diff_shortest: 12
 down
 south
 west
@@ -2039,13 +2039,13 @@ pray
 north
 southeast
 
-# kitchen --> rocky ledge
+# kitchen --> rocky ledge || diff_shortest: 0
 east
 east
 southeast
 down
 
-# kitchen --> rocky ledge
+# kitchen --> rocky ledge || diff_shortest: 10
 west
 down
 north
@@ -2061,7 +2061,7 @@ north
 southeast
 down
 
-# kitchen --> rocky ledge
+# kitchen --> rocky ledge || diff_shortest: 12
 down
 south
 west
@@ -2079,14 +2079,14 @@ north
 southeast
 down
 
-# kitchen --> canyon bottom
+# kitchen --> canyon bottom || diff_shortest: 0
 east
 east
 southeast
 down
 down
 
-# kitchen --> canyon bottom
+# kitchen --> canyon bottom || diff_shortest: 10
 west
 down
 north
@@ -2103,7 +2103,7 @@ southeast
 down
 down
 
-# kitchen --> canyon bottom
+# kitchen --> canyon bottom || diff_shortest: 12
 down
 south
 west
@@ -2122,7 +2122,7 @@ southeast
 down
 down
 
-# kitchen --> end of rainbow
+# kitchen --> end of rainbow || diff_shortest: 0
 east
 east
 southeast
@@ -2130,7 +2130,7 @@ down
 down
 northeast
 
-# kitchen --> end of rainbow
+# kitchen --> end of rainbow || diff_shortest: 10
 west
 down
 north
@@ -2148,7 +2148,7 @@ down
 down
 northeast
 
-# kitchen --> end of rainbow
+# kitchen --> end of rainbow || diff_shortest: 12
 down
 south
 west
@@ -2168,27 +2168,27 @@ down
 down
 northeast
 
-# living room --> cellar
+# living room --> cellar || diff_shortest: 0
 down
 
-# living room --> cellar
+# living room --> cellar || diff_shortest: 4
 east
 down
 south
 west
 north
 
-# living room --> east of chasm
+# living room --> east of chasm || diff_shortest: 0
 down
 south
 
-# living room --> east of chasm
+# living room --> east of chasm || diff_shortest: 2
 east
 down
 south
 west
 
-# living room --> east of chasm
+# living room --> east of chasm || diff_shortest: 14
 down
 north
 east
@@ -2206,17 +2206,17 @@ down
 south
 west
 
-# living room --> gallery
+# living room --> gallery || diff_shortest: 0
 east
 down
 south
 
-# living room --> gallery
+# living room --> gallery || diff_shortest: 0
 down
 south
 east
 
-# living room --> gallery
+# living room --> gallery || diff_shortest: 12
 down
 north
 east
@@ -2233,17 +2233,17 @@ west
 down
 south
 
-# living room --> studio
+# living room --> studio || diff_shortest: 0
 east
 down
 
-# living room --> studio
+# living room --> studio || diff_shortest: 2
 down
 south
 east
 north
 
-# living room --> studio
+# living room --> studio || diff_shortest: 12
 down
 north
 east
@@ -2259,11 +2259,11 @@ west
 west
 down
 
-# living room --> attic
+# living room --> attic || diff_shortest: 0
 east
 up
 
-# living room --> attic
+# living room --> attic || diff_shortest: 4
 down
 south
 east
@@ -2271,7 +2271,7 @@ north
 up
 up
 
-# living room --> attic
+# living room --> attic || diff_shortest: 12
 down
 north
 east
@@ -2287,11 +2287,11 @@ west
 west
 up
 
-# living room --> the troll room
+# living room --> the troll room || diff_shortest: 0
 down
 north
 
-# living room --> the troll room
+# living room --> the troll room || diff_shortest: 4
 east
 down
 south
@@ -2299,12 +2299,12 @@ west
 north
 north
 
-# living room --> east-west passage
+# living room --> east-west passage || diff_shortest: 0
 down
 north
 east
 
-# living room --> east-west passage
+# living room --> east-west passage || diff_shortest: 4
 east
 down
 south
@@ -2313,13 +2313,13 @@ north
 north
 east
 
-# living room --> round room
+# living room --> round room || diff_shortest: 0
 down
 north
 east
 east
 
-# living room --> round room
+# living room --> round room || diff_shortest: 4
 east
 down
 south
@@ -2329,14 +2329,14 @@ north
 east
 east
 
-# living room --> engravings cave
+# living room --> engravings cave || diff_shortest: 0
 down
 north
 east
 east
 southeast
 
-# living room --> engravings cave
+# living room --> engravings cave || diff_shortest: 4
 east
 down
 south
@@ -2347,7 +2347,7 @@ east
 east
 southeast
 
-# living room --> dome room
+# living room --> dome room || diff_shortest: 0
 down
 north
 east
@@ -2355,7 +2355,7 @@ east
 southeast
 east
 
-# living room --> dome room
+# living room --> dome room || diff_shortest: 4
 east
 down
 south
@@ -2367,7 +2367,7 @@ east
 southeast
 east
 
-# living room --> torch room
+# living room --> torch room || diff_shortest: 0
 down
 north
 east
@@ -2376,7 +2376,7 @@ southeast
 east
 down
 
-# living room --> torch room
+# living room --> torch room || diff_shortest: 4
 east
 down
 south
@@ -2389,7 +2389,7 @@ southeast
 east
 down
 
-# living room --> temple
+# living room --> temple || diff_shortest: 0
 down
 north
 east
@@ -2399,7 +2399,7 @@ east
 down
 south
 
-# living room --> temple
+# living room --> temple || diff_shortest: 4
 east
 down
 south
@@ -2413,7 +2413,7 @@ east
 down
 south
 
-# living room --> egyptian room
+# living room --> egyptian room || diff_shortest: 0
 down
 north
 east
@@ -2424,7 +2424,7 @@ down
 south
 east
 
-# living room --> egyptian room
+# living room --> egyptian room || diff_shortest: 4
 east
 down
 south
@@ -2439,7 +2439,7 @@ down
 south
 east
 
-# living room --> altar
+# living room --> altar || diff_shortest: 0
 down
 north
 east
@@ -2450,7 +2450,7 @@ down
 south
 south
 
-# living room --> altar
+# living room --> altar || diff_shortest: 4
 east
 down
 south
@@ -2465,13 +2465,13 @@ down
 south
 south
 
-# living room --> forest
+# living room --> forest || diff_shortest: 0
 east
 east
 east
 south
 
-# living room --> forest
+# living room --> forest || diff_shortest: 4
 down
 south
 east
@@ -2481,7 +2481,7 @@ east
 east
 south
 
-# living room --> forest
+# living room --> forest || diff_shortest: 6
 down
 north
 east
@@ -2493,7 +2493,7 @@ south
 south
 pray
 
-# living room --> forest
+# living room --> forest || diff_shortest: 10
 east
 down
 south
@@ -2509,12 +2509,12 @@ south
 south
 pray
 
-# living room --> clearing
+# living room --> clearing || diff_shortest: 0
 east
 east
 east
 
-# living room --> clearing
+# living room --> clearing || diff_shortest: 4
 down
 south
 east
@@ -2523,7 +2523,7 @@ up
 east
 east
 
-# living room --> clearing
+# living room --> clearing || diff_shortest: 8
 down
 north
 east
@@ -2536,7 +2536,7 @@ south
 pray
 north
 
-# living room --> clearing
+# living room --> clearing || diff_shortest: 12
 east
 down
 south
@@ -2553,13 +2553,13 @@ south
 pray
 north
 
-# living room --> canyon view
+# living room --> canyon view || diff_shortest: 0
 east
 east
 east
 southeast
 
-# living room --> canyon view
+# living room --> canyon view || diff_shortest: 4
 down
 south
 east
@@ -2569,7 +2569,7 @@ east
 east
 southeast
 
-# living room --> canyon view
+# living room --> canyon view || diff_shortest: 8
 down
 north
 east
@@ -2583,7 +2583,7 @@ pray
 north
 southeast
 
-# living room --> canyon view
+# living room --> canyon view || diff_shortest: 12
 east
 down
 south
@@ -2601,14 +2601,14 @@ pray
 north
 southeast
 
-# living room --> rocky ledge
+# living room --> rocky ledge || diff_shortest: 0
 east
 east
 east
 southeast
 down
 
-# living room --> rocky ledge
+# living room --> rocky ledge || diff_shortest: 4
 down
 south
 east
@@ -2619,7 +2619,7 @@ east
 southeast
 down
 
-# living room --> rocky ledge
+# living room --> rocky ledge || diff_shortest: 8
 down
 north
 east
@@ -2634,7 +2634,7 @@ north
 southeast
 down
 
-# living room --> rocky ledge
+# living room --> rocky ledge || diff_shortest: 12
 east
 down
 south
@@ -2653,7 +2653,7 @@ north
 southeast
 down
 
-# living room --> canyon bottom
+# living room --> canyon bottom || diff_shortest: 0
 east
 east
 east
@@ -2661,7 +2661,7 @@ southeast
 down
 down
 
-# living room --> canyon bottom
+# living room --> canyon bottom || diff_shortest: 4
 down
 south
 east
@@ -2673,7 +2673,7 @@ southeast
 down
 down
 
-# living room --> canyon bottom
+# living room --> canyon bottom || diff_shortest: 8
 down
 north
 east
@@ -2689,7 +2689,7 @@ southeast
 down
 down
 
-# living room --> canyon bottom
+# living room --> canyon bottom || diff_shortest: 12
 east
 down
 south
@@ -2709,7 +2709,7 @@ southeast
 down
 down
 
-# living room --> end of rainbow
+# living room --> end of rainbow || diff_shortest: 0
 east
 east
 east
@@ -2718,7 +2718,7 @@ down
 down
 northeast
 
-# living room --> end of rainbow
+# living room --> end of rainbow || diff_shortest: 4
 down
 south
 east
@@ -2731,7 +2731,7 @@ down
 down
 northeast
 
-# living room --> end of rainbow
+# living room --> end of rainbow || diff_shortest: 8
 down
 north
 east
@@ -2748,7 +2748,7 @@ down
 down
 northeast
 
-# living room --> end of rainbow
+# living room --> end of rainbow || diff_shortest: 12
 east
 down
 south
@@ -2769,17 +2769,17 @@ down
 down
 northeast
 
-# cellar --> east of chasm
+# cellar --> east of chasm || diff_shortest: 0
 south
 
-# cellar --> east of chasm
+# cellar --> east of chasm || diff_shortest: 4
 up
 east
 down
 south
 west
 
-# cellar --> east of chasm
+# cellar --> east of chasm || diff_shortest: 14
 north
 east
 east
@@ -2796,17 +2796,17 @@ down
 south
 west
 
-# cellar --> gallery
+# cellar --> gallery || diff_shortest: 0
 south
 east
 
-# cellar --> gallery
+# cellar --> gallery || diff_shortest: 2
 up
 east
 down
 south
 
-# cellar --> gallery
+# cellar --> gallery || diff_shortest: 12
 north
 east
 east
@@ -2822,17 +2822,17 @@ west
 down
 south
 
-# cellar --> studio
+# cellar --> studio || diff_shortest: 0
 up
 east
 down
 
-# cellar --> studio
+# cellar --> studio || diff_shortest: 0
 south
 east
 north
 
-# cellar --> studio
+# cellar --> studio || diff_shortest: 10
 north
 east
 east
@@ -2847,19 +2847,19 @@ west
 west
 down
 
-# cellar --> attic
+# cellar --> attic || diff_shortest: 0
 up
 east
 up
 
-# cellar --> attic
+# cellar --> attic || diff_shortest: 2
 south
 east
 north
 up
 up
 
-# cellar --> attic
+# cellar --> attic || diff_shortest: 10
 north
 east
 east
@@ -2874,32 +2874,32 @@ west
 west
 up
 
-# cellar --> the troll room
+# cellar --> the troll room || diff_shortest: 0
 north
 
-# cellar --> east-west passage
+# cellar --> east-west passage || diff_shortest: 0
 north
 east
 
-# cellar --> round room
+# cellar --> round room || diff_shortest: 0
 north
 east
 east
 
-# cellar --> engravings cave
+# cellar --> engravings cave || diff_shortest: 0
 north
 east
 east
 southeast
 
-# cellar --> dome room
+# cellar --> dome room || diff_shortest: 0
 north
 east
 east
 southeast
 east
 
-# cellar --> torch room
+# cellar --> torch room || diff_shortest: 0
 north
 east
 east
@@ -2907,7 +2907,7 @@ southeast
 east
 down
 
-# cellar --> temple
+# cellar --> temple || diff_shortest: 0
 north
 east
 east
@@ -2916,7 +2916,7 @@ east
 down
 south
 
-# cellar --> egyptian room
+# cellar --> egyptian room || diff_shortest: 0
 north
 east
 east
@@ -2926,7 +2926,7 @@ down
 south
 east
 
-# cellar --> altar
+# cellar --> altar || diff_shortest: 0
 north
 east
 east
@@ -2936,14 +2936,14 @@ down
 south
 south
 
-# cellar --> forest
+# cellar --> forest || diff_shortest: 0
 up
 east
 east
 east
 south
 
-# cellar --> forest
+# cellar --> forest || diff_shortest: 2
 south
 east
 north
@@ -2952,7 +2952,7 @@ east
 east
 south
 
-# cellar --> forest
+# cellar --> forest || diff_shortest: 4
 north
 east
 east
@@ -2963,13 +2963,13 @@ south
 south
 pray
 
-# cellar --> clearing
+# cellar --> clearing || diff_shortest: 0
 up
 east
 east
 east
 
-# cellar --> clearing
+# cellar --> clearing || diff_shortest: 2
 south
 east
 north
@@ -2977,7 +2977,7 @@ up
 east
 east
 
-# cellar --> clearing
+# cellar --> clearing || diff_shortest: 6
 north
 east
 east
@@ -2989,14 +2989,14 @@ south
 pray
 north
 
-# cellar --> canyon view
+# cellar --> canyon view || diff_shortest: 0
 up
 east
 east
 east
 southeast
 
-# cellar --> canyon view
+# cellar --> canyon view || diff_shortest: 2
 south
 east
 north
@@ -3005,7 +3005,7 @@ east
 east
 southeast
 
-# cellar --> canyon view
+# cellar --> canyon view || diff_shortest: 6
 north
 east
 east
@@ -3018,7 +3018,7 @@ pray
 north
 southeast
 
-# cellar --> rocky ledge
+# cellar --> rocky ledge || diff_shortest: 0
 up
 east
 east
@@ -3026,7 +3026,7 @@ east
 southeast
 down
 
-# cellar --> rocky ledge
+# cellar --> rocky ledge || diff_shortest: 2
 south
 east
 north
@@ -3036,7 +3036,7 @@ east
 southeast
 down
 
-# cellar --> rocky ledge
+# cellar --> rocky ledge || diff_shortest: 6
 north
 east
 east
@@ -3050,7 +3050,7 @@ north
 southeast
 down
 
-# cellar --> canyon bottom
+# cellar --> canyon bottom || diff_shortest: 0
 up
 east
 east
@@ -3059,7 +3059,7 @@ southeast
 down
 down
 
-# cellar --> canyon bottom
+# cellar --> canyon bottom || diff_shortest: 2
 south
 east
 north
@@ -3070,7 +3070,7 @@ southeast
 down
 down
 
-# cellar --> canyon bottom
+# cellar --> canyon bottom || diff_shortest: 6
 north
 east
 east
@@ -3085,7 +3085,7 @@ southeast
 down
 down
 
-# cellar --> end of rainbow
+# cellar --> end of rainbow || diff_shortest: 0
 up
 east
 east
@@ -3095,7 +3095,7 @@ down
 down
 northeast
 
-# cellar --> end of rainbow
+# cellar --> end of rainbow || diff_shortest: 2
 south
 east
 north
@@ -3107,7 +3107,7 @@ down
 down
 northeast
 
-# cellar --> end of rainbow
+# cellar --> end of rainbow || diff_shortest: 6
 north
 east
 east
@@ -3123,17 +3123,17 @@ down
 down
 northeast
 
-# east of chasm --> gallery
+# east of chasm --> gallery || diff_shortest: 0
 east
 
-# east of chasm --> gallery
+# east of chasm --> gallery || diff_shortest: 4
 north
 up
 east
 down
 south
 
-# east of chasm --> gallery
+# east of chasm --> gallery || diff_shortest: 14
 north
 north
 east
@@ -3150,17 +3150,17 @@ west
 down
 south
 
-# east of chasm --> studio
+# east of chasm --> studio || diff_shortest: 0
 east
 north
 
-# east of chasm --> studio
+# east of chasm --> studio || diff_shortest: 2
 north
 up
 east
 down
 
-# east of chasm --> studio
+# east of chasm --> studio || diff_shortest: 12
 north
 north
 east
@@ -3176,19 +3176,19 @@ west
 west
 down
 
-# east of chasm --> attic
+# east of chasm --> attic || diff_shortest: 0
 north
 up
 east
 up
 
-# east of chasm --> attic
+# east of chasm --> attic || diff_shortest: 0
 east
 north
 up
 up
 
-# east of chasm --> attic
+# east of chasm --> attic || diff_shortest: 10
 north
 north
 east
@@ -3204,11 +3204,11 @@ west
 west
 up
 
-# east of chasm --> the troll room
+# east of chasm --> the troll room || diff_shortest: 0
 north
 north
 
-# east of chasm --> the troll room
+# east of chasm --> the troll room || diff_shortest: 4
 east
 north
 up
@@ -3216,12 +3216,12 @@ west
 down
 north
 
-# east of chasm --> east-west passage
+# east of chasm --> east-west passage || diff_shortest: 0
 north
 north
 east
 
-# east of chasm --> east-west passage
+# east of chasm --> east-west passage || diff_shortest: 4
 east
 north
 up
@@ -3230,13 +3230,13 @@ down
 north
 east
 
-# east of chasm --> round room
+# east of chasm --> round room || diff_shortest: 0
 north
 north
 east
 east
 
-# east of chasm --> round room
+# east of chasm --> round room || diff_shortest: 4
 east
 north
 up
@@ -3246,14 +3246,14 @@ north
 east
 east
 
-# east of chasm --> engravings cave
+# east of chasm --> engravings cave || diff_shortest: 0
 north
 north
 east
 east
 southeast
 
-# east of chasm --> engravings cave
+# east of chasm --> engravings cave || diff_shortest: 4
 east
 north
 up
@@ -3264,7 +3264,7 @@ east
 east
 southeast
 
-# east of chasm --> dome room
+# east of chasm --> dome room || diff_shortest: 0
 north
 north
 east
@@ -3272,7 +3272,7 @@ east
 southeast
 east
 
-# east of chasm --> dome room
+# east of chasm --> dome room || diff_shortest: 4
 east
 north
 up
@@ -3284,7 +3284,7 @@ east
 southeast
 east
 
-# east of chasm --> torch room
+# east of chasm --> torch room || diff_shortest: 0
 north
 north
 east
@@ -3293,7 +3293,7 @@ southeast
 east
 down
 
-# east of chasm --> torch room
+# east of chasm --> torch room || diff_shortest: 4
 east
 north
 up
@@ -3306,7 +3306,7 @@ southeast
 east
 down
 
-# east of chasm --> temple
+# east of chasm --> temple || diff_shortest: 0
 north
 north
 east
@@ -3316,7 +3316,7 @@ east
 down
 south
 
-# east of chasm --> temple
+# east of chasm --> temple || diff_shortest: 4
 east
 north
 up
@@ -3330,7 +3330,7 @@ east
 down
 south
 
-# east of chasm --> egyptian room
+# east of chasm --> egyptian room || diff_shortest: 0
 north
 north
 east
@@ -3341,7 +3341,7 @@ down
 south
 east
 
-# east of chasm --> egyptian room
+# east of chasm --> egyptian room || diff_shortest: 4
 east
 north
 up
@@ -3356,7 +3356,7 @@ down
 south
 east
 
-# east of chasm --> altar
+# east of chasm --> altar || diff_shortest: 0
 north
 north
 east
@@ -3367,7 +3367,7 @@ down
 south
 south
 
-# east of chasm --> altar
+# east of chasm --> altar || diff_shortest: 4
 east
 north
 up
@@ -3382,7 +3382,7 @@ down
 south
 south
 
-# east of chasm --> forest
+# east of chasm --> forest || diff_shortest: 0
 north
 up
 east
@@ -3390,7 +3390,7 @@ east
 east
 south
 
-# east of chasm --> forest
+# east of chasm --> forest || diff_shortest: 0
 east
 north
 up
@@ -3398,7 +3398,7 @@ east
 east
 south
 
-# east of chasm --> forest
+# east of chasm --> forest || diff_shortest: 4
 north
 north
 east
@@ -3410,7 +3410,7 @@ south
 south
 pray
 
-# east of chasm --> forest
+# east of chasm --> forest || diff_shortest: 8
 east
 north
 up
@@ -3426,21 +3426,21 @@ south
 south
 pray
 
-# east of chasm --> clearing
+# east of chasm --> clearing || diff_shortest: 0
 north
 up
 east
 east
 east
 
-# east of chasm --> clearing
+# east of chasm --> clearing || diff_shortest: 0
 east
 north
 up
 east
 east
 
-# east of chasm --> clearing
+# east of chasm --> clearing || diff_shortest: 6
 north
 north
 east
@@ -3453,7 +3453,7 @@ south
 pray
 north
 
-# east of chasm --> clearing
+# east of chasm --> clearing || diff_shortest: 10
 east
 north
 up
@@ -3470,7 +3470,7 @@ south
 pray
 north
 
-# east of chasm --> canyon view
+# east of chasm --> canyon view || diff_shortest: 0
 north
 up
 east
@@ -3478,7 +3478,7 @@ east
 east
 southeast
 
-# east of chasm --> canyon view
+# east of chasm --> canyon view || diff_shortest: 0
 east
 north
 up
@@ -3486,7 +3486,7 @@ east
 east
 southeast
 
-# east of chasm --> canyon view
+# east of chasm --> canyon view || diff_shortest: 6
 north
 north
 east
@@ -3500,7 +3500,7 @@ pray
 north
 southeast
 
-# east of chasm --> canyon view
+# east of chasm --> canyon view || diff_shortest: 10
 east
 north
 up
@@ -3518,7 +3518,7 @@ pray
 north
 southeast
 
-# east of chasm --> rocky ledge
+# east of chasm --> rocky ledge || diff_shortest: 0
 north
 up
 east
@@ -3527,7 +3527,7 @@ east
 southeast
 down
 
-# east of chasm --> rocky ledge
+# east of chasm --> rocky ledge || diff_shortest: 0
 east
 north
 up
@@ -3536,7 +3536,7 @@ east
 southeast
 down
 
-# east of chasm --> rocky ledge
+# east of chasm --> rocky ledge || diff_shortest: 6
 north
 north
 east
@@ -3551,7 +3551,7 @@ north
 southeast
 down
 
-# east of chasm --> rocky ledge
+# east of chasm --> rocky ledge || diff_shortest: 10
 east
 north
 up
@@ -3570,7 +3570,7 @@ north
 southeast
 down
 
-# east of chasm --> canyon bottom
+# east of chasm --> canyon bottom || diff_shortest: 0
 north
 up
 east
@@ -3580,7 +3580,7 @@ southeast
 down
 down
 
-# east of chasm --> canyon bottom
+# east of chasm --> canyon bottom || diff_shortest: 0
 east
 north
 up
@@ -3590,7 +3590,7 @@ southeast
 down
 down
 
-# east of chasm --> canyon bottom
+# east of chasm --> canyon bottom || diff_shortest: 6
 north
 north
 east
@@ -3606,7 +3606,7 @@ southeast
 down
 down
 
-# east of chasm --> canyon bottom
+# east of chasm --> canyon bottom || diff_shortest: 10
 east
 north
 up
@@ -3626,7 +3626,7 @@ southeast
 down
 down
 
-# east of chasm --> end of rainbow
+# east of chasm --> end of rainbow || diff_shortest: 0
 north
 up
 east
@@ -3637,7 +3637,7 @@ down
 down
 northeast
 
-# east of chasm --> end of rainbow
+# east of chasm --> end of rainbow || diff_shortest: 0
 east
 north
 up
@@ -3648,7 +3648,7 @@ down
 down
 northeast
 
-# east of chasm --> end of rainbow
+# east of chasm --> end of rainbow || diff_shortest: 6
 north
 north
 east
@@ -3665,7 +3665,7 @@ down
 down
 northeast
 
-# east of chasm --> end of rainbow
+# east of chasm --> end of rainbow || diff_shortest: 10
 east
 north
 up
@@ -3686,17 +3686,17 @@ down
 down
 northeast
 
-# gallery --> studio
+# gallery --> studio || diff_shortest: 0
 north
 
-# gallery --> studio
+# gallery --> studio || diff_shortest: 4
 west
 north
 up
 east
 down
 
-# gallery --> studio
+# gallery --> studio || diff_shortest: 14
 west
 north
 north
@@ -3713,19 +3713,19 @@ west
 west
 down
 
-# gallery --> attic
+# gallery --> attic || diff_shortest: 0
 north
 up
 up
 
-# gallery --> attic
+# gallery --> attic || diff_shortest: 2
 west
 north
 up
 east
 up
 
-# gallery --> attic
+# gallery --> attic || diff_shortest: 12
 west
 north
 north
@@ -3742,25 +3742,25 @@ west
 west
 up
 
-# gallery --> the troll room
+# gallery --> the troll room || diff_shortest: 0
 west
 north
 north
 
-# gallery --> the troll room
+# gallery --> the troll room || diff_shortest: 2
 north
 up
 west
 down
 north
 
-# gallery --> east-west passage
+# gallery --> east-west passage || diff_shortest: 0
 west
 north
 north
 east
 
-# gallery --> east-west passage
+# gallery --> east-west passage || diff_shortest: 2
 north
 up
 west
@@ -3768,14 +3768,14 @@ down
 north
 east
 
-# gallery --> round room
+# gallery --> round room || diff_shortest: 0
 west
 north
 north
 east
 east
 
-# gallery --> round room
+# gallery --> round room || diff_shortest: 2
 north
 up
 west
@@ -3784,7 +3784,7 @@ north
 east
 east
 
-# gallery --> engravings cave
+# gallery --> engravings cave || diff_shortest: 0
 west
 north
 north
@@ -3792,7 +3792,7 @@ east
 east
 southeast
 
-# gallery --> engravings cave
+# gallery --> engravings cave || diff_shortest: 2
 north
 up
 west
@@ -3802,7 +3802,7 @@ east
 east
 southeast
 
-# gallery --> dome room
+# gallery --> dome room || diff_shortest: 0
 west
 north
 north
@@ -3811,7 +3811,7 @@ east
 southeast
 east
 
-# gallery --> dome room
+# gallery --> dome room || diff_shortest: 2
 north
 up
 west
@@ -3822,7 +3822,7 @@ east
 southeast
 east
 
-# gallery --> torch room
+# gallery --> torch room || diff_shortest: 0
 west
 north
 north
@@ -3832,7 +3832,7 @@ southeast
 east
 down
 
-# gallery --> torch room
+# gallery --> torch room || diff_shortest: 2
 north
 up
 west
@@ -3844,7 +3844,7 @@ southeast
 east
 down
 
-# gallery --> temple
+# gallery --> temple || diff_shortest: 0
 west
 north
 north
@@ -3855,7 +3855,7 @@ east
 down
 south
 
-# gallery --> temple
+# gallery --> temple || diff_shortest: 2
 north
 up
 west
@@ -3868,7 +3868,7 @@ east
 down
 south
 
-# gallery --> egyptian room
+# gallery --> egyptian room || diff_shortest: 0
 west
 north
 north
@@ -3880,7 +3880,7 @@ down
 south
 east
 
-# gallery --> egyptian room
+# gallery --> egyptian room || diff_shortest: 2
 north
 up
 west
@@ -3894,7 +3894,7 @@ down
 south
 east
 
-# gallery --> altar
+# gallery --> altar || diff_shortest: 0
 west
 north
 north
@@ -3906,7 +3906,7 @@ down
 south
 south
 
-# gallery --> altar
+# gallery --> altar || diff_shortest: 2
 north
 up
 west
@@ -3920,14 +3920,14 @@ down
 south
 south
 
-# gallery --> forest
+# gallery --> forest || diff_shortest: 0
 north
 up
 east
 east
 south
 
-# gallery --> forest
+# gallery --> forest || diff_shortest: 2
 west
 north
 up
@@ -3936,7 +3936,7 @@ east
 east
 south
 
-# gallery --> forest
+# gallery --> forest || diff_shortest: 6
 west
 north
 north
@@ -3949,7 +3949,7 @@ south
 south
 pray
 
-# gallery --> forest
+# gallery --> forest || diff_shortest: 8
 north
 up
 west
@@ -3964,13 +3964,13 @@ south
 south
 pray
 
-# gallery --> clearing
+# gallery --> clearing || diff_shortest: 0
 north
 up
 east
 east
 
-# gallery --> clearing
+# gallery --> clearing || diff_shortest: 2
 west
 north
 up
@@ -3978,7 +3978,7 @@ east
 east
 east
 
-# gallery --> clearing
+# gallery --> clearing || diff_shortest: 8
 west
 north
 north
@@ -3992,7 +3992,7 @@ south
 pray
 north
 
-# gallery --> clearing
+# gallery --> clearing || diff_shortest: 10
 north
 up
 west
@@ -4008,14 +4008,14 @@ south
 pray
 north
 
-# gallery --> canyon view
+# gallery --> canyon view || diff_shortest: 0
 north
 up
 east
 east
 southeast
 
-# gallery --> canyon view
+# gallery --> canyon view || diff_shortest: 2
 west
 north
 up
@@ -4024,7 +4024,7 @@ east
 east
 southeast
 
-# gallery --> canyon view
+# gallery --> canyon view || diff_shortest: 8
 west
 north
 north
@@ -4039,7 +4039,7 @@ pray
 north
 southeast
 
-# gallery --> canyon view
+# gallery --> canyon view || diff_shortest: 10
 north
 up
 west
@@ -4056,7 +4056,7 @@ pray
 north
 southeast
 
-# gallery --> rocky ledge
+# gallery --> rocky ledge || diff_shortest: 0
 north
 up
 east
@@ -4064,7 +4064,7 @@ east
 southeast
 down
 
-# gallery --> rocky ledge
+# gallery --> rocky ledge || diff_shortest: 2
 west
 north
 up
@@ -4074,7 +4074,7 @@ east
 southeast
 down
 
-# gallery --> rocky ledge
+# gallery --> rocky ledge || diff_shortest: 8
 west
 north
 north
@@ -4090,7 +4090,7 @@ north
 southeast
 down
 
-# gallery --> rocky ledge
+# gallery --> rocky ledge || diff_shortest: 10
 north
 up
 west
@@ -4108,7 +4108,7 @@ north
 southeast
 down
 
-# gallery --> canyon bottom
+# gallery --> canyon bottom || diff_shortest: 0
 north
 up
 east
@@ -4117,7 +4117,7 @@ southeast
 down
 down
 
-# gallery --> canyon bottom
+# gallery --> canyon bottom || diff_shortest: 2
 west
 north
 up
@@ -4128,7 +4128,7 @@ southeast
 down
 down
 
-# gallery --> canyon bottom
+# gallery --> canyon bottom || diff_shortest: 8
 west
 north
 north
@@ -4145,7 +4145,7 @@ southeast
 down
 down
 
-# gallery --> canyon bottom
+# gallery --> canyon bottom || diff_shortest: 10
 north
 up
 west
@@ -4164,7 +4164,7 @@ southeast
 down
 down
 
-# gallery --> end of rainbow
+# gallery --> end of rainbow || diff_shortest: 0
 north
 up
 east
@@ -4174,7 +4174,7 @@ down
 down
 northeast
 
-# gallery --> end of rainbow
+# gallery --> end of rainbow || diff_shortest: 2
 west
 north
 up
@@ -4186,7 +4186,7 @@ down
 down
 northeast
 
-# gallery --> end of rainbow
+# gallery --> end of rainbow || diff_shortest: 8
 west
 north
 north
@@ -4204,7 +4204,7 @@ down
 down
 northeast
 
-# gallery --> end of rainbow
+# gallery --> end of rainbow || diff_shortest: 10
 north
 up
 west
@@ -4224,11 +4224,11 @@ down
 down
 northeast
 
-# studio --> attic
+# studio --> attic || diff_shortest: 0
 up
 up
 
-# studio --> attic
+# studio --> attic || diff_shortest: 4
 south
 west
 north
@@ -4236,7 +4236,7 @@ up
 east
 up
 
-# studio --> attic
+# studio --> attic || diff_shortest: 14
 south
 west
 north
@@ -4254,33 +4254,33 @@ west
 west
 up
 
-# studio --> the troll room
+# studio --> the troll room || diff_shortest: 0
 south
 west
 north
 north
 
-# studio --> the troll room
+# studio --> the troll room || diff_shortest: 0
 up
 west
 down
 north
 
-# studio --> east-west passage
+# studio --> east-west passage || diff_shortest: 0
 south
 west
 north
 north
 east
 
-# studio --> east-west passage
+# studio --> east-west passage || diff_shortest: 0
 up
 west
 down
 north
 east
 
-# studio --> round room
+# studio --> round room || diff_shortest: 0
 south
 west
 north
@@ -4288,7 +4288,7 @@ north
 east
 east
 
-# studio --> round room
+# studio --> round room || diff_shortest: 0
 up
 west
 down
@@ -4296,7 +4296,7 @@ north
 east
 east
 
-# studio --> engravings cave
+# studio --> engravings cave || diff_shortest: 0
 south
 west
 north
@@ -4305,7 +4305,7 @@ east
 east
 southeast
 
-# studio --> engravings cave
+# studio --> engravings cave || diff_shortest: 0
 up
 west
 down
@@ -4314,7 +4314,7 @@ east
 east
 southeast
 
-# studio --> dome room
+# studio --> dome room || diff_shortest: 0
 south
 west
 north
@@ -4324,7 +4324,7 @@ east
 southeast
 east
 
-# studio --> dome room
+# studio --> dome room || diff_shortest: 0
 up
 west
 down
@@ -4334,7 +4334,7 @@ east
 southeast
 east
 
-# studio --> torch room
+# studio --> torch room || diff_shortest: 0
 south
 west
 north
@@ -4345,7 +4345,7 @@ southeast
 east
 down
 
-# studio --> torch room
+# studio --> torch room || diff_shortest: 0
 up
 west
 down
@@ -4356,7 +4356,7 @@ southeast
 east
 down
 
-# studio --> temple
+# studio --> temple || diff_shortest: 0
 south
 west
 north
@@ -4368,7 +4368,7 @@ east
 down
 south
 
-# studio --> temple
+# studio --> temple || diff_shortest: 0
 up
 west
 down
@@ -4380,7 +4380,7 @@ east
 down
 south
 
-# studio --> egyptian room
+# studio --> egyptian room || diff_shortest: 0
 south
 west
 north
@@ -4393,7 +4393,7 @@ down
 south
 east
 
-# studio --> egyptian room
+# studio --> egyptian room || diff_shortest: 0
 up
 west
 down
@@ -4406,7 +4406,7 @@ down
 south
 east
 
-# studio --> altar
+# studio --> altar || diff_shortest: 0
 south
 west
 north
@@ -4419,7 +4419,7 @@ down
 south
 south
 
-# studio --> altar
+# studio --> altar || diff_shortest: 0
 up
 west
 down
@@ -4432,13 +4432,13 @@ down
 south
 south
 
-# studio --> forest
+# studio --> forest || diff_shortest: 0
 up
 east
 east
 south
 
-# studio --> forest
+# studio --> forest || diff_shortest: 4
 south
 west
 north
@@ -4448,7 +4448,7 @@ east
 east
 south
 
-# studio --> forest
+# studio --> forest || diff_shortest: 8
 south
 west
 north
@@ -4462,7 +4462,7 @@ south
 south
 pray
 
-# studio --> forest
+# studio --> forest || diff_shortest: 8
 up
 west
 down
@@ -4476,12 +4476,12 @@ south
 south
 pray
 
-# studio --> clearing
+# studio --> clearing || diff_shortest: 0
 up
 east
 east
 
-# studio --> clearing
+# studio --> clearing || diff_shortest: 4
 south
 west
 north
@@ -4490,7 +4490,7 @@ east
 east
 east
 
-# studio --> clearing
+# studio --> clearing || diff_shortest: 10
 south
 west
 north
@@ -4505,7 +4505,7 @@ south
 pray
 north
 
-# studio --> clearing
+# studio --> clearing || diff_shortest: 10
 up
 west
 down
@@ -4520,13 +4520,13 @@ south
 pray
 north
 
-# studio --> canyon view
+# studio --> canyon view || diff_shortest: 0
 up
 east
 east
 southeast
 
-# studio --> canyon view
+# studio --> canyon view || diff_shortest: 4
 south
 west
 north
@@ -4536,7 +4536,7 @@ east
 east
 southeast
 
-# studio --> canyon view
+# studio --> canyon view || diff_shortest: 10
 south
 west
 north
@@ -4552,7 +4552,7 @@ pray
 north
 southeast
 
-# studio --> canyon view
+# studio --> canyon view || diff_shortest: 10
 up
 west
 down
@@ -4568,14 +4568,14 @@ pray
 north
 southeast
 
-# studio --> rocky ledge
+# studio --> rocky ledge || diff_shortest: 0
 up
 east
 east
 southeast
 down
 
-# studio --> rocky ledge
+# studio --> rocky ledge || diff_shortest: 4
 south
 west
 north
@@ -4586,7 +4586,7 @@ east
 southeast
 down
 
-# studio --> rocky ledge
+# studio --> rocky ledge || diff_shortest: 10
 south
 west
 north
@@ -4603,7 +4603,7 @@ north
 southeast
 down
 
-# studio --> rocky ledge
+# studio --> rocky ledge || diff_shortest: 10
 up
 west
 down
@@ -4620,7 +4620,7 @@ north
 southeast
 down
 
-# studio --> canyon bottom
+# studio --> canyon bottom || diff_shortest: 0
 up
 east
 east
@@ -4628,7 +4628,7 @@ southeast
 down
 down
 
-# studio --> canyon bottom
+# studio --> canyon bottom || diff_shortest: 4
 south
 west
 north
@@ -4640,7 +4640,7 @@ southeast
 down
 down
 
-# studio --> canyon bottom
+# studio --> canyon bottom || diff_shortest: 10
 south
 west
 north
@@ -4658,7 +4658,7 @@ southeast
 down
 down
 
-# studio --> canyon bottom
+# studio --> canyon bottom || diff_shortest: 10
 up
 west
 down
@@ -4676,7 +4676,7 @@ southeast
 down
 down
 
-# studio --> end of rainbow
+# studio --> end of rainbow || diff_shortest: 0
 up
 east
 east
@@ -4685,7 +4685,7 @@ down
 down
 northeast
 
-# studio --> end of rainbow
+# studio --> end of rainbow || diff_shortest: 4
 south
 west
 north
@@ -4698,7 +4698,7 @@ down
 down
 northeast
 
-# studio --> end of rainbow
+# studio --> end of rainbow || diff_shortest: 10
 south
 west
 north
@@ -4717,7 +4717,7 @@ down
 down
 northeast
 
-# studio --> end of rainbow
+# studio --> end of rainbow || diff_shortest: 10
 up
 west
 down
@@ -4736,13 +4736,13 @@ down
 down
 northeast
 
-# attic --> the troll room
+# attic --> the troll room || diff_shortest: 0
 down
 west
 down
 north
 
-# attic --> the troll room
+# attic --> the troll room || diff_shortest: 2
 down
 down
 south
@@ -4750,14 +4750,14 @@ west
 north
 north
 
-# attic --> east-west passage
+# attic --> east-west passage || diff_shortest: 0
 down
 west
 down
 north
 east
 
-# attic --> east-west passage
+# attic --> east-west passage || diff_shortest: 2
 down
 down
 south
@@ -4766,7 +4766,7 @@ north
 north
 east
 
-# attic --> round room
+# attic --> round room || diff_shortest: 0
 down
 west
 down
@@ -4774,7 +4774,7 @@ north
 east
 east
 
-# attic --> round room
+# attic --> round room || diff_shortest: 2
 down
 down
 south
@@ -4784,7 +4784,7 @@ north
 east
 east
 
-# attic --> engravings cave
+# attic --> engravings cave || diff_shortest: 0
 down
 west
 down
@@ -4793,7 +4793,7 @@ east
 east
 southeast
 
-# attic --> engravings cave
+# attic --> engravings cave || diff_shortest: 2
 down
 down
 south
@@ -4804,7 +4804,7 @@ east
 east
 southeast
 
-# attic --> dome room
+# attic --> dome room || diff_shortest: 0
 down
 west
 down
@@ -4814,7 +4814,7 @@ east
 southeast
 east
 
-# attic --> dome room
+# attic --> dome room || diff_shortest: 2
 down
 down
 south
@@ -4826,7 +4826,7 @@ east
 southeast
 east
 
-# attic --> torch room
+# attic --> torch room || diff_shortest: 0
 down
 west
 down
@@ -4837,7 +4837,7 @@ southeast
 east
 down
 
-# attic --> torch room
+# attic --> torch room || diff_shortest: 2
 down
 down
 south
@@ -4850,7 +4850,7 @@ southeast
 east
 down
 
-# attic --> temple
+# attic --> temple || diff_shortest: 0
 down
 west
 down
@@ -4862,7 +4862,7 @@ east
 down
 south
 
-# attic --> temple
+# attic --> temple || diff_shortest: 2
 down
 down
 south
@@ -4876,7 +4876,7 @@ east
 down
 south
 
-# attic --> egyptian room
+# attic --> egyptian room || diff_shortest: 0
 down
 west
 down
@@ -4889,7 +4889,7 @@ down
 south
 east
 
-# attic --> egyptian room
+# attic --> egyptian room || diff_shortest: 2
 down
 down
 south
@@ -4904,7 +4904,7 @@ down
 south
 east
 
-# attic --> altar
+# attic --> altar || diff_shortest: 0
 down
 west
 down
@@ -4917,7 +4917,7 @@ down
 south
 south
 
-# attic --> altar
+# attic --> altar || diff_shortest: 2
 down
 down
 south
@@ -4932,13 +4932,13 @@ down
 south
 south
 
-# attic --> forest
+# attic --> forest || diff_shortest: 0
 down
 east
 east
 south
 
-# attic --> forest
+# attic --> forest || diff_shortest: 8
 down
 west
 down
@@ -4952,7 +4952,7 @@ south
 south
 pray
 
-# attic --> forest
+# attic --> forest || diff_shortest: 10
 down
 down
 south
@@ -4968,12 +4968,12 @@ south
 south
 pray
 
-# attic --> clearing
+# attic --> clearing || diff_shortest: 0
 down
 east
 east
 
-# attic --> clearing
+# attic --> clearing || diff_shortest: 10
 down
 west
 down
@@ -4988,7 +4988,7 @@ south
 pray
 north
 
-# attic --> clearing
+# attic --> clearing || diff_shortest: 12
 down
 down
 south
@@ -5005,13 +5005,13 @@ south
 pray
 north
 
-# attic --> canyon view
+# attic --> canyon view || diff_shortest: 0
 down
 east
 east
 southeast
 
-# attic --> canyon view
+# attic --> canyon view || diff_shortest: 10
 down
 west
 down
@@ -5027,7 +5027,7 @@ pray
 north
 southeast
 
-# attic --> canyon view
+# attic --> canyon view || diff_shortest: 12
 down
 down
 south
@@ -5045,14 +5045,14 @@ pray
 north
 southeast
 
-# attic --> rocky ledge
+# attic --> rocky ledge || diff_shortest: 0
 down
 east
 east
 southeast
 down
 
-# attic --> rocky ledge
+# attic --> rocky ledge || diff_shortest: 10
 down
 west
 down
@@ -5069,7 +5069,7 @@ north
 southeast
 down
 
-# attic --> rocky ledge
+# attic --> rocky ledge || diff_shortest: 12
 down
 down
 south
@@ -5088,7 +5088,7 @@ north
 southeast
 down
 
-# attic --> canyon bottom
+# attic --> canyon bottom || diff_shortest: 0
 down
 east
 east
@@ -5096,7 +5096,7 @@ southeast
 down
 down
 
-# attic --> canyon bottom
+# attic --> canyon bottom || diff_shortest: 10
 down
 west
 down
@@ -5114,7 +5114,7 @@ southeast
 down
 down
 
-# attic --> canyon bottom
+# attic --> canyon bottom || diff_shortest: 12
 down
 down
 south
@@ -5134,7 +5134,7 @@ southeast
 down
 down
 
-# attic --> end of rainbow
+# attic --> end of rainbow || diff_shortest: 0
 down
 east
 east
@@ -5143,7 +5143,7 @@ down
 down
 northeast
 
-# attic --> end of rainbow
+# attic --> end of rainbow || diff_shortest: 10
 down
 west
 down
@@ -5162,7 +5162,7 @@ down
 down
 northeast
 
-# attic --> end of rainbow
+# attic --> end of rainbow || diff_shortest: 12
 down
 down
 south
@@ -5183,32 +5183,32 @@ down
 down
 northeast
 
-# the troll room --> east-west passage
+# the troll room --> east-west passage || diff_shortest: 0
 east
 
-# the troll room --> round room
+# the troll room --> round room || diff_shortest: 0
 east
 east
 
-# the troll room --> engravings cave
+# the troll room --> engravings cave || diff_shortest: 0
 east
 east
 southeast
 
-# the troll room --> dome room
+# the troll room --> dome room || diff_shortest: 0
 east
 east
 southeast
 east
 
-# the troll room --> torch room
+# the troll room --> torch room || diff_shortest: 0
 east
 east
 southeast
 east
 down
 
-# the troll room --> temple
+# the troll room --> temple || diff_shortest: 0
 east
 east
 southeast
@@ -5216,7 +5216,7 @@ east
 down
 south
 
-# the troll room --> egyptian room
+# the troll room --> egyptian room || diff_shortest: 0
 east
 east
 southeast
@@ -5225,7 +5225,7 @@ down
 south
 east
 
-# the troll room --> altar
+# the troll room --> altar || diff_shortest: 0
 east
 east
 southeast
@@ -5234,7 +5234,7 @@ down
 south
 south
 
-# the troll room --> forest
+# the troll room --> forest || diff_shortest: 0
 south
 up
 east
@@ -5242,7 +5242,7 @@ east
 east
 south
 
-# the troll room --> forest
+# the troll room --> forest || diff_shortest: 2
 south
 south
 east
@@ -5252,7 +5252,7 @@ east
 east
 south
 
-# the troll room --> forest
+# the troll room --> forest || diff_shortest: 2
 east
 east
 southeast
@@ -5262,14 +5262,14 @@ south
 south
 pray
 
-# the troll room --> clearing
+# the troll room --> clearing || diff_shortest: 0
 south
 up
 east
 east
 east
 
-# the troll room --> clearing
+# the troll room --> clearing || diff_shortest: 2
 south
 south
 east
@@ -5278,7 +5278,7 @@ up
 east
 east
 
-# the troll room --> clearing
+# the troll room --> clearing || diff_shortest: 4
 east
 east
 southeast
@@ -5289,7 +5289,7 @@ south
 pray
 north
 
-# the troll room --> canyon view
+# the troll room --> canyon view || diff_shortest: 0
 south
 up
 east
@@ -5297,7 +5297,7 @@ east
 east
 southeast
 
-# the troll room --> canyon view
+# the troll room --> canyon view || diff_shortest: 2
 south
 south
 east
@@ -5307,7 +5307,7 @@ east
 east
 southeast
 
-# the troll room --> canyon view
+# the troll room --> canyon view || diff_shortest: 4
 east
 east
 southeast
@@ -5319,7 +5319,7 @@ pray
 north
 southeast
 
-# the troll room --> rocky ledge
+# the troll room --> rocky ledge || diff_shortest: 0
 south
 up
 east
@@ -5328,7 +5328,7 @@ east
 southeast
 down
 
-# the troll room --> rocky ledge
+# the troll room --> rocky ledge || diff_shortest: 2
 south
 south
 east
@@ -5339,7 +5339,7 @@ east
 southeast
 down
 
-# the troll room --> rocky ledge
+# the troll room --> rocky ledge || diff_shortest: 4
 east
 east
 southeast
@@ -5352,7 +5352,7 @@ north
 southeast
 down
 
-# the troll room --> canyon bottom
+# the troll room --> canyon bottom || diff_shortest: 0
 south
 up
 east
@@ -5362,7 +5362,7 @@ southeast
 down
 down
 
-# the troll room --> canyon bottom
+# the troll room --> canyon bottom || diff_shortest: 2
 south
 south
 east
@@ -5374,7 +5374,7 @@ southeast
 down
 down
 
-# the troll room --> canyon bottom
+# the troll room --> canyon bottom || diff_shortest: 4
 east
 east
 southeast
@@ -5388,7 +5388,7 @@ southeast
 down
 down
 
-# the troll room --> end of rainbow
+# the troll room --> end of rainbow || diff_shortest: 0
 south
 up
 east
@@ -5399,7 +5399,7 @@ down
 down
 northeast
 
-# the troll room --> end of rainbow
+# the troll room --> end of rainbow || diff_shortest: 2
 south
 south
 east
@@ -5412,7 +5412,7 @@ down
 down
 northeast
 
-# the troll room --> end of rainbow
+# the troll room --> end of rainbow || diff_shortest: 4
 east
 east
 southeast
@@ -5427,32 +5427,32 @@ down
 down
 northeast
 
-# east-west passage --> round room
+# east-west passage --> round room || diff_shortest: 0
 east
 
-# east-west passage --> engravings cave
+# east-west passage --> engravings cave || diff_shortest: 0
 east
 southeast
 
-# east-west passage --> dome room
+# east-west passage --> dome room || diff_shortest: 0
 east
 southeast
 east
 
-# east-west passage --> torch room
+# east-west passage --> torch room || diff_shortest: 0
 east
 southeast
 east
 down
 
-# east-west passage --> temple
+# east-west passage --> temple || diff_shortest: 0
 east
 southeast
 east
 down
 south
 
-# east-west passage --> egyptian room
+# east-west passage --> egyptian room || diff_shortest: 0
 east
 southeast
 east
@@ -5460,7 +5460,7 @@ down
 south
 east
 
-# east-west passage --> altar
+# east-west passage --> altar || diff_shortest: 0
 east
 southeast
 east
@@ -5468,7 +5468,7 @@ down
 south
 south
 
-# east-west passage --> forest
+# east-west passage --> forest || diff_shortest: 0
 west
 south
 up
@@ -5477,7 +5477,7 @@ east
 east
 south
 
-# east-west passage --> forest
+# east-west passage --> forest || diff_shortest: 0
 east
 southeast
 east
@@ -5486,7 +5486,7 @@ south
 south
 pray
 
-# east-west passage --> forest
+# east-west passage --> forest || diff_shortest: 2
 west
 south
 south
@@ -5497,7 +5497,7 @@ east
 east
 south
 
-# east-west passage --> clearing
+# east-west passage --> clearing || diff_shortest: 0
 west
 south
 up
@@ -5505,7 +5505,7 @@ east
 east
 east
 
-# east-west passage --> clearing
+# east-west passage --> clearing || diff_shortest: 2
 west
 south
 south
@@ -5515,7 +5515,7 @@ up
 east
 east
 
-# east-west passage --> clearing
+# east-west passage --> clearing || diff_shortest: 2
 east
 southeast
 east
@@ -5525,7 +5525,7 @@ south
 pray
 north
 
-# east-west passage --> canyon view
+# east-west passage --> canyon view || diff_shortest: 0
 west
 south
 up
@@ -5534,7 +5534,7 @@ east
 east
 southeast
 
-# east-west passage --> canyon view
+# east-west passage --> canyon view || diff_shortest: 2
 west
 south
 south
@@ -5545,7 +5545,7 @@ east
 east
 southeast
 
-# east-west passage --> canyon view
+# east-west passage --> canyon view || diff_shortest: 2
 east
 southeast
 east
@@ -5556,7 +5556,7 @@ pray
 north
 southeast
 
-# east-west passage --> rocky ledge
+# east-west passage --> rocky ledge || diff_shortest: 0
 west
 south
 up
@@ -5566,7 +5566,7 @@ east
 southeast
 down
 
-# east-west passage --> rocky ledge
+# east-west passage --> rocky ledge || diff_shortest: 2
 west
 south
 south
@@ -5578,7 +5578,7 @@ east
 southeast
 down
 
-# east-west passage --> rocky ledge
+# east-west passage --> rocky ledge || diff_shortest: 2
 east
 southeast
 east
@@ -5590,7 +5590,7 @@ north
 southeast
 down
 
-# east-west passage --> canyon bottom
+# east-west passage --> canyon bottom || diff_shortest: 0
 west
 south
 up
@@ -5601,7 +5601,7 @@ southeast
 down
 down
 
-# east-west passage --> canyon bottom
+# east-west passage --> canyon bottom || diff_shortest: 2
 west
 south
 south
@@ -5614,7 +5614,7 @@ southeast
 down
 down
 
-# east-west passage --> canyon bottom
+# east-west passage --> canyon bottom || diff_shortest: 2
 east
 southeast
 east
@@ -5627,7 +5627,7 @@ southeast
 down
 down
 
-# east-west passage --> end of rainbow
+# east-west passage --> end of rainbow || diff_shortest: 0
 west
 south
 up
@@ -5639,7 +5639,7 @@ down
 down
 northeast
 
-# east-west passage --> end of rainbow
+# east-west passage --> end of rainbow || diff_shortest: 2
 west
 south
 south
@@ -5653,7 +5653,7 @@ down
 down
 northeast
 
-# east-west passage --> end of rainbow
+# east-west passage --> end of rainbow || diff_shortest: 2
 east
 southeast
 east
@@ -5667,39 +5667,39 @@ down
 down
 northeast
 
-# round room --> engravings cave
+# round room --> engravings cave || diff_shortest: 0
 southeast
 
-# round room --> dome room
+# round room --> dome room || diff_shortest: 0
 southeast
 east
 
-# round room --> torch room
+# round room --> torch room || diff_shortest: 0
 southeast
 east
 down
 
-# round room --> temple
+# round room --> temple || diff_shortest: 0
 southeast
 east
 down
 south
 
-# round room --> egyptian room
+# round room --> egyptian room || diff_shortest: 0
 southeast
 east
 down
 south
 east
 
-# round room --> altar
+# round room --> altar || diff_shortest: 0
 southeast
 east
 down
 south
 south
 
-# round room --> forest
+# round room --> forest || diff_shortest: 0
 southeast
 east
 down
@@ -5707,7 +5707,7 @@ south
 south
 pray
 
-# round room --> forest
+# round room --> forest || diff_shortest: 2
 west
 west
 south
@@ -5717,7 +5717,7 @@ east
 east
 south
 
-# round room --> forest
+# round room --> forest || diff_shortest: 4
 west
 west
 south
@@ -5729,7 +5729,7 @@ east
 east
 south
 
-# round room --> clearing
+# round room --> clearing || diff_shortest: 0
 west
 west
 south
@@ -5738,7 +5738,7 @@ east
 east
 east
 
-# round room --> clearing
+# round room --> clearing || diff_shortest: 0
 southeast
 east
 down
@@ -5747,7 +5747,7 @@ south
 pray
 north
 
-# round room --> clearing
+# round room --> clearing || diff_shortest: 2
 west
 west
 south
@@ -5758,7 +5758,7 @@ up
 east
 east
 
-# round room --> canyon view
+# round room --> canyon view || diff_shortest: 0
 west
 west
 south
@@ -5768,7 +5768,7 @@ east
 east
 southeast
 
-# round room --> canyon view
+# round room --> canyon view || diff_shortest: 0
 southeast
 east
 down
@@ -5778,7 +5778,7 @@ pray
 north
 southeast
 
-# round room --> canyon view
+# round room --> canyon view || diff_shortest: 2
 west
 west
 south
@@ -5790,7 +5790,7 @@ east
 east
 southeast
 
-# round room --> rocky ledge
+# round room --> rocky ledge || diff_shortest: 0
 west
 west
 south
@@ -5801,7 +5801,7 @@ east
 southeast
 down
 
-# round room --> rocky ledge
+# round room --> rocky ledge || diff_shortest: 0
 southeast
 east
 down
@@ -5812,7 +5812,7 @@ north
 southeast
 down
 
-# round room --> rocky ledge
+# round room --> rocky ledge || diff_shortest: 2
 west
 west
 south
@@ -5825,7 +5825,7 @@ east
 southeast
 down
 
-# round room --> canyon bottom
+# round room --> canyon bottom || diff_shortest: 0
 west
 west
 south
@@ -5837,7 +5837,7 @@ southeast
 down
 down
 
-# round room --> canyon bottom
+# round room --> canyon bottom || diff_shortest: 0
 southeast
 east
 down
@@ -5849,7 +5849,7 @@ southeast
 down
 down
 
-# round room --> canyon bottom
+# round room --> canyon bottom || diff_shortest: 2
 west
 west
 south
@@ -5863,7 +5863,7 @@ southeast
 down
 down
 
-# round room --> end of rainbow
+# round room --> end of rainbow || diff_shortest: 0
 west
 west
 south
@@ -5876,7 +5876,7 @@ down
 down
 northeast
 
-# round room --> end of rainbow
+# round room --> end of rainbow || diff_shortest: 0
 southeast
 east
 down
@@ -5889,7 +5889,7 @@ down
 down
 northeast
 
-# round room --> end of rainbow
+# round room --> end of rainbow || diff_shortest: 2
 west
 west
 south
@@ -5904,38 +5904,38 @@ down
 down
 northeast
 
-# engravings cave --> dome room
+# engravings cave --> dome room || diff_shortest: 0
 east
 
-# engravings cave --> torch room
+# engravings cave --> torch room || diff_shortest: 0
 east
 down
 
-# engravings cave --> temple
+# engravings cave --> temple || diff_shortest: 0
 east
 down
 south
 
-# engravings cave --> egyptian room
+# engravings cave --> egyptian room || diff_shortest: 0
 east
 down
 south
 east
 
-# engravings cave --> altar
+# engravings cave --> altar || diff_shortest: 0
 east
 down
 south
 south
 
-# engravings cave --> forest
+# engravings cave --> forest || diff_shortest: 0
 east
 down
 south
 south
 pray
 
-# engravings cave --> forest
+# engravings cave --> forest || diff_shortest: 4
 northwest
 west
 west
@@ -5946,7 +5946,7 @@ east
 east
 south
 
-# engravings cave --> forest
+# engravings cave --> forest || diff_shortest: 6
 northwest
 west
 west
@@ -5959,7 +5959,7 @@ east
 east
 south
 
-# engravings cave --> clearing
+# engravings cave --> clearing || diff_shortest: 0
 east
 down
 south
@@ -5967,7 +5967,7 @@ south
 pray
 north
 
-# engravings cave --> clearing
+# engravings cave --> clearing || diff_shortest: 2
 northwest
 west
 west
@@ -5977,7 +5977,7 @@ east
 east
 east
 
-# engravings cave --> clearing
+# engravings cave --> clearing || diff_shortest: 4
 northwest
 west
 west
@@ -5989,7 +5989,7 @@ up
 east
 east
 
-# engravings cave --> canyon view
+# engravings cave --> canyon view || diff_shortest: 0
 east
 down
 south
@@ -5998,7 +5998,7 @@ pray
 north
 southeast
 
-# engravings cave --> canyon view
+# engravings cave --> canyon view || diff_shortest: 2
 northwest
 west
 west
@@ -6009,7 +6009,7 @@ east
 east
 southeast
 
-# engravings cave --> canyon view
+# engravings cave --> canyon view || diff_shortest: 4
 northwest
 west
 west
@@ -6022,7 +6022,7 @@ east
 east
 southeast
 
-# engravings cave --> rocky ledge
+# engravings cave --> rocky ledge || diff_shortest: 0
 east
 down
 south
@@ -6032,7 +6032,7 @@ north
 southeast
 down
 
-# engravings cave --> rocky ledge
+# engravings cave --> rocky ledge || diff_shortest: 2
 northwest
 west
 west
@@ -6044,7 +6044,7 @@ east
 southeast
 down
 
-# engravings cave --> rocky ledge
+# engravings cave --> rocky ledge || diff_shortest: 4
 northwest
 west
 west
@@ -6058,7 +6058,7 @@ east
 southeast
 down
 
-# engravings cave --> canyon bottom
+# engravings cave --> canyon bottom || diff_shortest: 0
 east
 down
 south
@@ -6069,7 +6069,7 @@ southeast
 down
 down
 
-# engravings cave --> canyon bottom
+# engravings cave --> canyon bottom || diff_shortest: 2
 northwest
 west
 west
@@ -6082,7 +6082,7 @@ southeast
 down
 down
 
-# engravings cave --> canyon bottom
+# engravings cave --> canyon bottom || diff_shortest: 4
 northwest
 west
 west
@@ -6097,7 +6097,7 @@ southeast
 down
 down
 
-# engravings cave --> end of rainbow
+# engravings cave --> end of rainbow || diff_shortest: 0
 east
 down
 south
@@ -6109,7 +6109,7 @@ down
 down
 northeast
 
-# engravings cave --> end of rainbow
+# engravings cave --> end of rainbow || diff_shortest: 2
 northwest
 west
 west
@@ -6123,7 +6123,7 @@ down
 down
 northeast
 
-# engravings cave --> end of rainbow
+# engravings cave --> end of rainbow || diff_shortest: 4
 northwest
 west
 west
@@ -6139,30 +6139,30 @@ down
 down
 northeast
 
-# dome room --> torch room
+# dome room --> torch room || diff_shortest: 0
 down
 
-# dome room --> temple
+# dome room --> temple || diff_shortest: 0
 down
 south
 
-# dome room --> egyptian room
+# dome room --> egyptian room || diff_shortest: 0
 down
 south
 east
 
-# dome room --> altar
+# dome room --> altar || diff_shortest: 0
 down
 south
 south
 
-# dome room --> forest
+# dome room --> forest || diff_shortest: 0
 down
 south
 south
 pray
 
-# dome room --> forest
+# dome room --> forest || diff_shortest: 6
 west
 northwest
 west
@@ -6174,7 +6174,7 @@ east
 east
 south
 
-# dome room --> forest
+# dome room --> forest || diff_shortest: 8
 west
 northwest
 west
@@ -6188,14 +6188,14 @@ east
 east
 south
 
-# dome room --> clearing
+# dome room --> clearing || diff_shortest: 0
 down
 south
 south
 pray
 north
 
-# dome room --> clearing
+# dome room --> clearing || diff_shortest: 4
 west
 northwest
 west
@@ -6206,7 +6206,7 @@ east
 east
 east
 
-# dome room --> clearing
+# dome room --> clearing || diff_shortest: 6
 west
 northwest
 west
@@ -6219,7 +6219,7 @@ up
 east
 east
 
-# dome room --> canyon view
+# dome room --> canyon view || diff_shortest: 0
 down
 south
 south
@@ -6227,7 +6227,7 @@ pray
 north
 southeast
 
-# dome room --> canyon view
+# dome room --> canyon view || diff_shortest: 4
 west
 northwest
 west
@@ -6239,7 +6239,7 @@ east
 east
 southeast
 
-# dome room --> canyon view
+# dome room --> canyon view || diff_shortest: 6
 west
 northwest
 west
@@ -6253,7 +6253,7 @@ east
 east
 southeast
 
-# dome room --> rocky ledge
+# dome room --> rocky ledge || diff_shortest: 0
 down
 south
 south
@@ -6262,7 +6262,7 @@ north
 southeast
 down
 
-# dome room --> rocky ledge
+# dome room --> rocky ledge || diff_shortest: 4
 west
 northwest
 west
@@ -6275,7 +6275,7 @@ east
 southeast
 down
 
-# dome room --> rocky ledge
+# dome room --> rocky ledge || diff_shortest: 6
 west
 northwest
 west
@@ -6290,7 +6290,7 @@ east
 southeast
 down
 
-# dome room --> canyon bottom
+# dome room --> canyon bottom || diff_shortest: 0
 down
 south
 south
@@ -6300,7 +6300,7 @@ southeast
 down
 down
 
-# dome room --> canyon bottom
+# dome room --> canyon bottom || diff_shortest: 4
 west
 northwest
 west
@@ -6314,7 +6314,7 @@ southeast
 down
 down
 
-# dome room --> canyon bottom
+# dome room --> canyon bottom || diff_shortest: 6
 west
 northwest
 west
@@ -6330,7 +6330,7 @@ southeast
 down
 down
 
-# dome room --> end of rainbow
+# dome room --> end of rainbow || diff_shortest: 0
 down
 south
 south
@@ -6341,7 +6341,7 @@ down
 down
 northeast
 
-# dome room --> end of rainbow
+# dome room --> end of rainbow || diff_shortest: 4
 west
 northwest
 west
@@ -6356,7 +6356,7 @@ down
 down
 northeast
 
-# dome room --> end of rainbow
+# dome room --> end of rainbow || diff_shortest: 6
 west
 northwest
 west
@@ -6373,23 +6373,23 @@ down
 down
 northeast
 
-# torch room --> temple
+# torch room --> temple || diff_shortest: 0
 south
 
-# torch room --> egyptian room
+# torch room --> egyptian room || diff_shortest: 0
 south
 east
 
-# torch room --> altar
+# torch room --> altar || diff_shortest: 0
 south
 south
 
-# torch room --> forest
+# torch room --> forest || diff_shortest: 0
 south
 south
 pray
 
-# torch room --> forest
+# torch room --> forest || diff_shortest: 8
 up
 west
 northwest
@@ -6402,7 +6402,7 @@ east
 east
 south
 
-# torch room --> forest
+# torch room --> forest || diff_shortest: 10
 up
 west
 northwest
@@ -6417,13 +6417,13 @@ east
 east
 south
 
-# torch room --> clearing
+# torch room --> clearing || diff_shortest: 0
 south
 south
 pray
 north
 
-# torch room --> clearing
+# torch room --> clearing || diff_shortest: 6
 up
 west
 northwest
@@ -6435,7 +6435,7 @@ east
 east
 east
 
-# torch room --> clearing
+# torch room --> clearing || diff_shortest: 8
 up
 west
 northwest
@@ -6449,14 +6449,14 @@ up
 east
 east
 
-# torch room --> canyon view
+# torch room --> canyon view || diff_shortest: 0
 south
 south
 pray
 north
 southeast
 
-# torch room --> canyon view
+# torch room --> canyon view || diff_shortest: 6
 up
 west
 northwest
@@ -6469,7 +6469,7 @@ east
 east
 southeast
 
-# torch room --> canyon view
+# torch room --> canyon view || diff_shortest: 8
 up
 west
 northwest
@@ -6484,7 +6484,7 @@ east
 east
 southeast
 
-# torch room --> rocky ledge
+# torch room --> rocky ledge || diff_shortest: 0
 south
 south
 pray
@@ -6492,7 +6492,7 @@ north
 southeast
 down
 
-# torch room --> rocky ledge
+# torch room --> rocky ledge || diff_shortest: 6
 up
 west
 northwest
@@ -6506,7 +6506,7 @@ east
 southeast
 down
 
-# torch room --> rocky ledge
+# torch room --> rocky ledge || diff_shortest: 8
 up
 west
 northwest
@@ -6522,7 +6522,7 @@ east
 southeast
 down
 
-# torch room --> canyon bottom
+# torch room --> canyon bottom || diff_shortest: 0
 south
 south
 pray
@@ -6531,7 +6531,7 @@ southeast
 down
 down
 
-# torch room --> canyon bottom
+# torch room --> canyon bottom || diff_shortest: 6
 up
 west
 northwest
@@ -6546,7 +6546,7 @@ southeast
 down
 down
 
-# torch room --> canyon bottom
+# torch room --> canyon bottom || diff_shortest: 8
 up
 west
 northwest
@@ -6563,7 +6563,7 @@ southeast
 down
 down
 
-# torch room --> end of rainbow
+# torch room --> end of rainbow || diff_shortest: 0
 south
 south
 pray
@@ -6573,7 +6573,7 @@ down
 down
 northeast
 
-# torch room --> end of rainbow
+# torch room --> end of rainbow || diff_shortest: 6
 up
 west
 northwest
@@ -6589,7 +6589,7 @@ down
 down
 northeast
 
-# torch room --> end of rainbow
+# torch room --> end of rainbow || diff_shortest: 8
 up
 west
 northwest
@@ -6607,17 +6607,17 @@ down
 down
 northeast
 
-# temple --> egyptian room
+# temple --> egyptian room || diff_shortest: 0
 east
 
-# temple --> altar
+# temple --> altar || diff_shortest: 0
 south
 
-# temple --> forest
+# temple --> forest || diff_shortest: 0
 south
 pray
 
-# temple --> forest
+# temple --> forest || diff_shortest: 10
 north
 up
 west
@@ -6631,7 +6631,7 @@ east
 east
 south
 
-# temple --> forest
+# temple --> forest || diff_shortest: 12
 north
 up
 west
@@ -6647,12 +6647,12 @@ east
 east
 south
 
-# temple --> clearing
+# temple --> clearing || diff_shortest: 0
 south
 pray
 north
 
-# temple --> clearing
+# temple --> clearing || diff_shortest: 8
 north
 up
 west
@@ -6665,7 +6665,7 @@ east
 east
 east
 
-# temple --> clearing
+# temple --> clearing || diff_shortest: 10
 north
 up
 west
@@ -6680,13 +6680,13 @@ up
 east
 east
 
-# temple --> canyon view
+# temple --> canyon view || diff_shortest: 0
 south
 pray
 north
 southeast
 
-# temple --> canyon view
+# temple --> canyon view || diff_shortest: 8
 north
 up
 west
@@ -6700,7 +6700,7 @@ east
 east
 southeast
 
-# temple --> canyon view
+# temple --> canyon view || diff_shortest: 10
 north
 up
 west
@@ -6716,14 +6716,14 @@ east
 east
 southeast
 
-# temple --> rocky ledge
+# temple --> rocky ledge || diff_shortest: 0
 south
 pray
 north
 southeast
 down
 
-# temple --> rocky ledge
+# temple --> rocky ledge || diff_shortest: 8
 north
 up
 west
@@ -6738,7 +6738,7 @@ east
 southeast
 down
 
-# temple --> rocky ledge
+# temple --> rocky ledge || diff_shortest: 10
 north
 up
 west
@@ -6755,7 +6755,7 @@ east
 southeast
 down
 
-# temple --> canyon bottom
+# temple --> canyon bottom || diff_shortest: 0
 south
 pray
 north
@@ -6763,7 +6763,7 @@ southeast
 down
 down
 
-# temple --> canyon bottom
+# temple --> canyon bottom || diff_shortest: 8
 north
 up
 west
@@ -6779,7 +6779,7 @@ southeast
 down
 down
 
-# temple --> canyon bottom
+# temple --> canyon bottom || diff_shortest: 10
 north
 up
 west
@@ -6797,7 +6797,7 @@ southeast
 down
 down
 
-# temple --> end of rainbow
+# temple --> end of rainbow || diff_shortest: 0
 south
 pray
 north
@@ -6806,7 +6806,7 @@ down
 down
 northeast
 
-# temple --> end of rainbow
+# temple --> end of rainbow || diff_shortest: 8
 north
 up
 west
@@ -6823,7 +6823,7 @@ down
 down
 northeast
 
-# temple --> end of rainbow
+# temple --> end of rainbow || diff_shortest: 10
 north
 up
 west
@@ -6842,16 +6842,16 @@ down
 down
 northeast
 
-# egyptian room --> altar
+# egyptian room --> altar || diff_shortest: 0
 west
 south
 
-# egyptian room --> forest
+# egyptian room --> forest || diff_shortest: 0
 west
 south
 pray
 
-# egyptian room --> forest
+# egyptian room --> forest || diff_shortest: 10
 west
 north
 up
@@ -6866,7 +6866,7 @@ east
 east
 south
 
-# egyptian room --> forest
+# egyptian room --> forest || diff_shortest: 12
 west
 north
 up
@@ -6883,13 +6883,13 @@ east
 east
 south
 
-# egyptian room --> clearing
+# egyptian room --> clearing || diff_shortest: 0
 west
 south
 pray
 north
 
-# egyptian room --> clearing
+# egyptian room --> clearing || diff_shortest: 8
 west
 north
 up
@@ -6903,7 +6903,7 @@ east
 east
 east
 
-# egyptian room --> clearing
+# egyptian room --> clearing || diff_shortest: 10
 west
 north
 up
@@ -6919,14 +6919,14 @@ up
 east
 east
 
-# egyptian room --> canyon view
+# egyptian room --> canyon view || diff_shortest: 0
 west
 south
 pray
 north
 southeast
 
-# egyptian room --> canyon view
+# egyptian room --> canyon view || diff_shortest: 8
 west
 north
 up
@@ -6941,7 +6941,7 @@ east
 east
 southeast
 
-# egyptian room --> canyon view
+# egyptian room --> canyon view || diff_shortest: 10
 west
 north
 up
@@ -6958,7 +6958,7 @@ east
 east
 southeast
 
-# egyptian room --> rocky ledge
+# egyptian room --> rocky ledge || diff_shortest: 0
 west
 south
 pray
@@ -6966,7 +6966,7 @@ north
 southeast
 down
 
-# egyptian room --> rocky ledge
+# egyptian room --> rocky ledge || diff_shortest: 8
 west
 north
 up
@@ -6982,7 +6982,7 @@ east
 southeast
 down
 
-# egyptian room --> rocky ledge
+# egyptian room --> rocky ledge || diff_shortest: 10
 west
 north
 up
@@ -7000,7 +7000,7 @@ east
 southeast
 down
 
-# egyptian room --> canyon bottom
+# egyptian room --> canyon bottom || diff_shortest: 0
 west
 south
 pray
@@ -7009,7 +7009,7 @@ southeast
 down
 down
 
-# egyptian room --> canyon bottom
+# egyptian room --> canyon bottom || diff_shortest: 8
 west
 north
 up
@@ -7026,7 +7026,7 @@ southeast
 down
 down
 
-# egyptian room --> canyon bottom
+# egyptian room --> canyon bottom || diff_shortest: 10
 west
 north
 up
@@ -7045,7 +7045,7 @@ southeast
 down
 down
 
-# egyptian room --> end of rainbow
+# egyptian room --> end of rainbow || diff_shortest: 0
 west
 south
 pray
@@ -7055,7 +7055,7 @@ down
 down
 northeast
 
-# egyptian room --> end of rainbow
+# egyptian room --> end of rainbow || diff_shortest: 8
 west
 north
 up
@@ -7073,7 +7073,7 @@ down
 down
 northeast
 
-# egyptian room --> end of rainbow
+# egyptian room --> end of rainbow || diff_shortest: 10
 west
 north
 up
@@ -7093,10 +7093,10 @@ down
 down
 northeast
 
-# altar --> forest
+# altar --> forest || diff_shortest: 0
 pray
 
-# altar --> forest
+# altar --> forest || diff_shortest: 12
 north
 north
 up
@@ -7111,7 +7111,7 @@ east
 east
 south
 
-# altar --> forest
+# altar --> forest || diff_shortest: 14
 north
 north
 up
@@ -7128,11 +7128,11 @@ east
 east
 south
 
-# altar --> clearing
+# altar --> clearing || diff_shortest: 0
 pray
 north
 
-# altar --> clearing
+# altar --> clearing || diff_shortest: 10
 north
 north
 up
@@ -7146,7 +7146,7 @@ east
 east
 east
 
-# altar --> clearing
+# altar --> clearing || diff_shortest: 12
 north
 north
 up
@@ -7162,12 +7162,12 @@ up
 east
 east
 
-# altar --> canyon view
+# altar --> canyon view || diff_shortest: 0
 pray
 north
 southeast
 
-# altar --> canyon view
+# altar --> canyon view || diff_shortest: 10
 north
 north
 up
@@ -7182,7 +7182,7 @@ east
 east
 southeast
 
-# altar --> canyon view
+# altar --> canyon view || diff_shortest: 12
 north
 north
 up
@@ -7199,13 +7199,13 @@ east
 east
 southeast
 
-# altar --> rocky ledge
+# altar --> rocky ledge || diff_shortest: 0
 pray
 north
 southeast
 down
 
-# altar --> rocky ledge
+# altar --> rocky ledge || diff_shortest: 10
 north
 north
 up
@@ -7221,7 +7221,7 @@ east
 southeast
 down
 
-# altar --> rocky ledge
+# altar --> rocky ledge || diff_shortest: 12
 north
 north
 up
@@ -7239,14 +7239,14 @@ east
 southeast
 down
 
-# altar --> canyon bottom
+# altar --> canyon bottom || diff_shortest: 0
 pray
 north
 southeast
 down
 down
 
-# altar --> canyon bottom
+# altar --> canyon bottom || diff_shortest: 10
 north
 north
 up
@@ -7263,7 +7263,7 @@ southeast
 down
 down
 
-# altar --> canyon bottom
+# altar --> canyon bottom || diff_shortest: 12
 north
 north
 up
@@ -7282,7 +7282,7 @@ southeast
 down
 down
 
-# altar --> end of rainbow
+# altar --> end of rainbow || diff_shortest: 0
 pray
 north
 southeast
@@ -7290,7 +7290,7 @@ down
 down
 northeast
 
-# altar --> end of rainbow
+# altar --> end of rainbow || diff_shortest: 10
 north
 north
 up
@@ -7308,7 +7308,7 @@ down
 down
 northeast
 
-# altar --> end of rainbow
+# altar --> end of rainbow || diff_shortest: 12
 north
 north
 up
@@ -7328,68 +7328,68 @@ down
 down
 northeast
 
-# forest --> clearing
+# forest --> clearing || diff_shortest: 0
 north
 
-# forest --> canyon view
+# forest --> canyon view || diff_shortest: 0
 north
 southeast
 
-# forest --> rocky ledge
+# forest --> rocky ledge || diff_shortest: 0
 north
 southeast
 down
 
-# forest --> canyon bottom
+# forest --> canyon bottom || diff_shortest: 0
 north
 southeast
 down
 down
 
-# forest --> end of rainbow
+# forest --> end of rainbow || diff_shortest: 0
 north
 southeast
 down
 down
 northeast
 
-# clearing --> canyon view
+# clearing --> canyon view || diff_shortest: 0
 southeast
 
-# clearing --> rocky ledge
+# clearing --> rocky ledge || diff_shortest: 0
 southeast
 down
 
-# clearing --> canyon bottom
+# clearing --> canyon bottom || diff_shortest: 0
 southeast
 down
 down
 
-# clearing --> end of rainbow
+# clearing --> end of rainbow || diff_shortest: 0
 southeast
 down
 down
 northeast
 
-# canyon view --> rocky ledge
+# canyon view --> rocky ledge || diff_shortest: 0
 down
 
-# canyon view --> canyon bottom
+# canyon view --> canyon bottom || diff_shortest: 0
 down
 down
 
-# canyon view --> end of rainbow
+# canyon view --> end of rainbow || diff_shortest: 0
 down
 down
 northeast
 
-# rocky ledge --> canyon bottom
+# rocky ledge --> canyon bottom || diff_shortest: 0
 down
 
-# rocky ledge --> end of rainbow
+# rocky ledge --> end of rainbow || diff_shortest: 0
 down
 northeast
 
-# canyon bottom --> end of rainbow
+# canyon bottom --> end of rainbow || diff_shortest: 0
 northeast
 

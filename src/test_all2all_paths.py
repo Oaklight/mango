@@ -12,7 +12,7 @@ all_pairs = list(itertools.combinations(g.nodes(), 2))
 
 for srcNode, dstNode in all_pairs:
     allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
-    print_all_paths(g, allPaths, verbose=False)
+    print_all_paths(g, allPaths, verbose=False, diff_shortest=True)
 
 # while True:
 
