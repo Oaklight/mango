@@ -282,14 +282,19 @@ def get_edge_direction(G, n1, n2):
         print("Edge not found.")
 
 
-def print_path(g: object, path: list, verbose: bool = True):
+def print_path(g: object,
+               path: list,
+               verbose: bool = True,
+               shortest_length: int = None):
     '''
     print the path (list of nodes) with detailed direction
     '''
     # get srcNode and dstNode and print them
     srcNode = path[0]
     dstNode = path[-1]
-    print(f'# {srcNode} --> {dstNode}')
+    print(f'# {srcNode} --> {dstNode}',
+          end=f" || diff_shortest: {len(path)-shortest_length}\n"
+          if shortest_length else "\n")
 
     prevNode = path[0]
     path_details = []
@@ -312,7 +317,7 @@ def print_path(g: object, path: list, verbose: bool = True):
     print(path_string)
 
 
-def print_all_paths(g: object, all_paths: list, verbose: bool = True):
+def print_all_paths(g: object, all_paths: list, verbose: bool = True, diff_shortest: bool = False):
     '''
     iterate over all paths and print each
     '''
@@ -320,10 +325,14 @@ def print_all_paths(g: object, all_paths: list, verbose: bool = True):
         print(f"FOUND \033[1m{len(all_paths)}\033[0m PATHS\n")
     # sort all_paths by len of each
     all_paths.sort(key=lambda x: len(x))
+    shortest_len = len(all_paths[0])
     for path in all_paths:
         if verbose:
             print(f"LENGTH OF CURRENT PATH: \033[1m{len(path)}\033[0m")
-        print_path(g, path, verbose=verbose)
+        if diff_shortest:
+            print_path(g, path, verbose=verbose, shortest_length=shortest_len)
+        else:
+            print_path(g, path, verbose=verbose)
 
 
 if __name__ == "__main__":
