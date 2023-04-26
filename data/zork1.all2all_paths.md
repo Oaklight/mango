@@ -1,4 +1,4 @@
-line:  north -- south
+<!-- line:  north -- south
 line:  east -- west
 line:  southeast -- northwest
 line:  northeast -- southwest
@@ -42,7 +42,7 @@ opposite direction of [west] is [east]
 opposite direction of [west] is [east]
 opposite direction of [west] is [east]
 
-============ MAP READY =============
+============ MAP READY ============= -->
 
 # west of house --> south of house || diff_shortest: 0
 south
