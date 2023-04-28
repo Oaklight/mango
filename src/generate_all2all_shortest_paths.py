@@ -10,7 +10,9 @@ parser.add_argument("--actions", "-a", type=str, default="../data/zork1.actions"
 parser.add_argument("--output_dir", "-odir", type=str, default="../data/")
 args = parser.parse_args()
 args.output_path = (
-    args.output_dir + args.map.split("/")[-1].split(".")[0] + ".all2all_shortest_paths.md"
+    args.output_dir
+    + args.map.split("/")[-1].split(".")[0]
+    + ".all2all_shortest_paths.md"
 )
 
 printColor(f"building map: {args.map}, actions: {args.actions}", "b")
