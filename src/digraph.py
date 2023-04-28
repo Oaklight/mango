@@ -328,9 +328,15 @@ def print_path(g: object,
     # get srcNode and dstNode and print them
     srcNode = path[0]
     dstNode = path[-1]
-    print(f'# {srcNode} --> {dstNode}',
-          end=f" || diff_shortest: {len(path)-shortest_length}\n"
-          if shortest_length else "\n")
+    # print(f'# {srcNode} --> {dstNode}',
+    #       end=f" || diff_shortest: {len(path)-shortest_length}\n"
+    #       if shortest_length else "\n")
+
+    path_string = f"# {srcNode} --> {dstNode}"
+    if shortest_length:
+        path_string += f" || diff_shortest: {len(path)-shortest_length}\n"
+    else:
+        path_string += "\n"
 
     prevNode = path[0]
     path_details = []
@@ -349,8 +355,10 @@ def print_path(g: object,
                 current_step = direction
             path_details.append(current_step)
             prevNode = node
-    path_string = "\n".join(path_details) + "\n"
+    path_string += "\n".join(path_details) + "\n"
     print(path_string)
+
+    return path_string
 
 
 def print_all_paths(g: object, all_paths: list, verbose: bool = True, diff_shortest: bool = False):
@@ -362,13 +370,21 @@ def print_all_paths(g: object, all_paths: list, verbose: bool = True, diff_short
     # sort all_paths by len of each
     all_paths.sort(key=lambda x: len(x))
     shortest_len = len(all_paths[0])
+
+    path_list = ""
     for path in all_paths:
         if verbose:
             print(f"LENGTH OF CURRENT PATH: \033[1m{len(path)}\033[0m")
         if diff_shortest:
-            print_path(g, path, verbose=verbose, shortest_length=shortest_len)
+            path_string = print_path(
+                g, path, verbose=verbose, shortest_length=shortest_len
+            )
         else:
-            print_path(g, path, verbose=verbose)
+            path_string = print_path(g, path, verbose=verbose)
+        path_list += path_string + "\n"
+
+    # return a string of concatenated paths
+    return path_list
 
 
 if __name__ == "__main__":
