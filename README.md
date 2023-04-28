@@ -4,22 +4,23 @@ gamegpt graph utils
 
 <!-- TOC -->
 
-  - [1. Games & Files](#1-games--files)
-  - [2. Code specs](#2-code-specs)
-      - [2.1. Depandencies](#21-depandencies)
-      - [2.2. Major functions](#22-major-functions)
-  - [3. How to run?](#3-how-to-run)
-  - [4. Games & Files](#4-games--files)
-  - [5. Data format](#5-data-format)
-      - [5.1. *.map](#51-map)
-      - [5.2. *.actions](#52-actions)
-      - [5.3. *.verify](#53-verify)
+- [gamegpt_utils](#gamegpt_utils)
+    - [1. Games & Files](#1-games--files)
+    - [2. Code specs](#2-code-specs)
+        - [2.1. Depandencies](#21-depandencies)
+        - [2.2. Major functions](#22-major-functions)
+    - [3. How to run?](#3-how-to-run)
+    - [4. Games & Files](#4-games--files)
+    - [5. Data format](#5-data-format)
+        - [5.1. *.map](#51-map)
+        - [5.2. *.actions](#52-actions)
+        - [5.3. *.verify](#53-verify)
 
 <!-- /TOC -->
 
 ##  Games & Files
 
-- zork1
+<!-- - zork1
   - map: [zork1.map](./data/zork1.map)
   - map.reversed: [zork1.map.reversed](./data/zork1.map.reversed)
   - actions: [zork1.actions](./data/zork1.actions)
@@ -31,6 +32,12 @@ gamegpt graph utils
   - actions: [omniquest.actions](./data/omniquest.actions)
   - all2all paths: [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md)
   - all2all shortest paths: [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md)
+ -->
+<!-- make above into a table -->
+| game | map | map.reversed | actions | all2all paths | all2all shortest paths |
+| --- | --- | --- | --- | --- | --- |
+| zork1 | [zork1.map](./data/zork1.map) | [zork1.map.reversed](./data/zork1.map.reversed) | [zork1.actions](./data/zork1.actions) | [zork1.all2all_paths.md](./data/zork1.all2all_paths.md) | [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md) |
+| omniquest | [omniquest.map](./data/omniquest.map) | [omniquest.map.reversed](./data/omniquest.map.reversed) | [omniquest.actions](./data/omniquest.actions) | [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md) | [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md) |
 
 
 
