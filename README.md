@@ -2,12 +2,28 @@
 
 gamegpt graph utils
 
-## depandency
+<!-- vscode-markdown-toc -->
+* 1. [depandency](#depandency)
+* 2. [major functions](#majorfunctions)
+* 3. [How to run?](#Howtorun)
+* 4. [Games & Files](#GamesFiles)
+* 5. [data format](#dataformat)
+	* 5.1. [*.map](#.map)
+	* 5.2. [*.actions](#.actions)
+	* 5.3. [*.verify](#.verify)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+##  1. <a name='depandency'></a>depandency
 - networkx: `pip install networkx`
 - openai: `pip install openai`
 - matplotlib: `pip install matplotlib`
 
-## major functions
+##  2. <a name='majorfunctions'></a>major functions
 
 - [`digraph.py`](./src/digraph.py)
   - graph utils: 
@@ -33,7 +49,7 @@ gamegpt graph utils
   - sample of zork1 map: [map.md](./data/map.md)
 
 - [`utils.py`](./src/utils.py): common util functions
-## examples
+##  3. <a name='Howtorun'></a> How to run?
 1. shortest path btw any two nodes: [test_shortest_path.py](./src/test_shortest_path.py)
 2. all paths btw any two nodes, sorted by path length: [test_all_paths.py](./src/test_all_paths.py)
 3. verify path btw any two nodes: [test_verify_path.py](./src/test_verify_path.py)
@@ -41,10 +57,24 @@ gamegpt graph utils
 python run test_*.py
 ```
 
+##  4. <a name='GamesFiles'></a>Games & Files
+- zork1
+  - map: [zork1.map](./data/zork1.map)
+  - map.reversed: [zork1.map.reversed](./data/zork1.map.reversed)
+  - actions: [zork1.actions](./data/zork1.actions)
+  - all2all paths: [zork1.all2all_paths.md](./data/zork1.all2all_paths.md)
+  - all2all shortest paths: [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md)
+- omniquest
+  - map: [omniquest.map](./data/omniquest.map)
+  - map.reversed: [omniquest.map.reversed](./data/omniquest.map.reversed)
+  - actions: [omniquest.actions](./data/omniquest.actions)
+  - all2all paths: [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md)
+  - all2all shortest paths: [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md)
 
-## data format
 
-### *.map
+##  5. <a name='dataformat'></a>data format
+
+###  5.1. <a name='.map'></a>*.map
 it's used for building the game map, each line is a path with format: `srcNode --> direction --> dstNode`
 
 For example: [zork1.map](./data/zork1.map)
@@ -57,7 +87,7 @@ Living Room --> D --> Cellar
 ```
 > note: another markdown syntax is in development: [map.md](./data/map.md)
 
-### *.actions
+###  5.2. <a name='.actions'></a>*.actions
 The cache file for valid actions, with "Direction:" and "Non Direction:" sections. For example: [zork1.actions](./data/zork1.actions)
 ```
 Direction:
@@ -83,7 +113,7 @@ Light lamp -- Douse lamp
 ), and then manually checked and modified.~~
 
 
-### *.verify
+###  5.3. <a name='.verify'></a>*.verify
 A list of paths to verify, with the following format:
 ```
 srcNode, dstNode
