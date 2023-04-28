@@ -331,3 +331,4 @@ if __name__ == "__main__":
         buildMap(mapMarkdown)
     else:
         printColor("Aborted!", 'b')
+        exit(1)
