@@ -15,7 +15,7 @@ gamegpt graph utils
         - [4.2. *.actions](#42-actions)
         - [4.3. *.verify](#43-verify)
         - [4.4. *.map.reversed generated](#44-mapreversed-generated)
-        - [4.5. *.all2all_paths.md generated](#45-all2all_pathsmd-generated)
+        - [4.5. *.all2all_paths.md/json generated](#45-all2all_pathsmdjson-generated)
         - [4.6. *.all2all_shortest_paths.md generated](#46-all2all_shortest_pathsmd-generated)
 
 <!-- /TOC -->
@@ -26,20 +26,28 @@ gamegpt graph utils
   - map: [zork1.map](./data/zork1.map)
   - map.reversed: [zork1.map.reversed](./data/zork1.map.reversed)
   - actions: [zork1.actions](./data/zork1.actions)
-  - all2all paths: [zork1.all2all_paths.md](./data/zork1.all2all_paths.md)
-  - all2all shortest paths: [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md)
+  - all2all paths: 
+    - [zork1.all2all_paths.md](./data/zork1.all2all_paths.md)
+    - [zork1.all2all_paths.json](./data/zork1.all2all_paths.json)
+  - all2all shortest paths:
+    - [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md)
+    - [zork1.all2all_shortest_paths.json](./data/zork1.all2all_shortest_paths.json)
 - omniquest
   - map: [omniquest.map](./data/omniquest.map)
   - map.reversed: [omniquest.map.reversed](./data/omniquest.map.reversed)
   - actions: [omniquest.actions](./data/omniquest.actions)
-  - all2all paths: [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md)
-  - all2all shortest paths: [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md)
+  - all2all paths: 
+    - [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md)
+    - [omniquest.all2all_paths.json](./data/omniquest.all2all_paths.json)
+  - all2all shortest paths: 
+    - [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md)
+    - [omniquest.all2all_shortest_paths.json](./data/omniquest.all2all_shortest_paths.json)
  -->
 <!-- make above into a table -->
 | game | map | map.reversed | actions | all2all paths | all2all shortest paths |
 | --- | --- | --- | --- | --- | --- |
-| zork1 | [zork1.map](./data/zork1.map) | [zork1.map.reversed](./data/zork1.map.reversed) | [zork1.actions](./data/zork1.actions) | [zork1.all2all_paths.md](./data/zork1.all2all_paths.md) | [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md) |
-| omniquest | [omniquest.map](./data/omniquest.map) | [omniquest.map.reversed](./data/omniquest.map.reversed) | [omniquest.actions](./data/omniquest.actions) | [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md) | [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md) |
+| zork1 | [zork1.map](./data/zork1.map) | [zork1.map.reversed](./data/zork1.map.reversed) | [zork1.actions](./data/zork1.actions) | [zork1.all2all_paths.md](./data/zork1.all2all_paths.md) [zork1.all2all_paths.json](./data/zork1.all2all_paths.json) | [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md) [zork1.all2all_shortest_paths.json](./data/zork1.all2all_shortest_paths.json) |
+| omniquest | [omniquest.map](./data/omniquest.map) | [omniquest.map.reversed](./data/omniquest.map.reversed) | [omniquest.actions](./data/omniquest.actions) | [omniquest.all2all_paths.md](./data/omniquest.all2all_paths.md) [omniquest.all2all_paths.json](./data/omniquest.all2all_paths.json) | [omniquest.all2all_shortest_paths.md](./data/omniquest.all2all_shortest_paths.md) [omniquest.all2all_shortest_paths.json](./data/omniquest.all2all_shortest_paths.json) |
 
 ## Code specs
 
@@ -169,7 +177,7 @@ living room --> east --> kitchen
 cellar --> up --> living room
 ```
 
-### *.all2all_paths.md (generated)
+### *.all2all_paths.(md/json) (generated)
 
 it's used for path test
 
@@ -185,6 +193,8 @@ diff_shortest is the difference btw shortest path and current path, if diff_shor
   action2
   ...
   ```
+  
+  For example: [zork1.all2all_paths.md](./data/zork1.all2all_paths.md)
 
 - json (not available yet)
 
@@ -201,10 +211,13 @@ diff_shortest is the difference btw shortest path and current path, if diff_shor
   }
   ```
 
-For example: [zork1.all2all_paths.md](./data/zork1.all2all_paths.md)
+  For example: [zork1.all2all_paths.json](./data/zork1.all2all_paths.json)
 
 ### *.all2all_shortest_paths.md (generated)
 
 it's used for path test, similar format as *.all2all_paths.md, but only contains shortest paths. thus diff_shortest is not included
 
-For example: [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md)
+For example:
+
+- Markdown: [zork1.all2all_shortest_paths.md](./data/zork1.all2all_shortest_paths.md)
+- Json: [zork1.all2all_shortest_paths.json](./data/zork1.all2all_shortest_paths.json)
