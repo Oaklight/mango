@@ -17,6 +17,7 @@ if confirm == "y":
     g = build_graph_from_file(args.map, args.actions)
 else:
     printColor("Aborted!", "b")
+    exit(1)
 
 plot_graph(g)
 

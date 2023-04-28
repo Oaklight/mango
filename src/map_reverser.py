@@ -19,3 +19,4 @@ if confirm == "y":
     intuitive_reverse_map(args.map, args.actions)
 else:
     printColor("Aborted!", "b")
+    exit(1)
