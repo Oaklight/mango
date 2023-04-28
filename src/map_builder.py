@@ -1,6 +1,13 @@
 import argparse
-from utils import inputColor, printColor, parseLine, extractDirectionText, extractItemText
-'''
+from utils import (
+    inputColor,
+    printColor,
+    parseLine,
+    extractDirectionText,
+    extractItemText,
+)
+
+"""
 map should be a list of locations
 location should have name, description, directions, items
 direction should have action, toWhere
@@ -40,12 +47,11 @@ enter house --> kitchen
 
 ...
 ```
-'''
+"""
 
 
 # struct of a direction, has action and toWhere
 class Direction:
-
     def __init__(self, action, toWhere):
         self.action = abbr2full(action)
         self.toWhere = toWhere
@@ -56,8 +62,7 @@ class Direction:
 
 # struct of items, may have action and description
 class Item:
-
-    def __init__(self, name, description='', action: str = None):
+    def __init__(self, name, description="", action: str = None):
         self.name = name
         self.description = description
         # TODO: action should be a list of actions, take care later
@@ -69,8 +74,7 @@ class Item:
 
 # struct of a location, must have directions and may have items, optional description
 class Location:
-
-    def __init__(self, name, description=''):
+    def __init__(self, name, description=""):
         self.name = name
         self.description = description
         self.directions = []
@@ -83,8 +87,7 @@ class Location:
         self.directions.sort(key=lambda direction: direction.action)
         self.items.sort(key=lambda item: item.name)
 
-        directions = "\n".join(
-            [direction.__repr__() for direction in self.directions])
+        directions = "\n".join([direction.__repr__() for direction in self.directions])
         # serialize items
         items = "\n".join([item.__repr__() for item in self.items])
         # serialize location
@@ -95,17 +98,22 @@ class Location:
         # self.directions.append(direction)
         # keep prompt for directions if not recieve "done"
         # print black bar
-        printColor("--------------------------------------------------", 'b')
+        printColor("--------------------------------------------------", "b")
         while True:
-            printColor(f"Enter a DIRECTION for [{self.name}]", 'g')
+            printColor(f"Enter a DIRECTION for [{self.name}]", "g")
             # prompt to receive a direction
             # add new direction to directions
-            action = inputColor("action? ", 'g', inline=True)
+            action = inputColor("action? ", "g", inline=True)
             # if action is "done", break
-            if action == "done" or action == "no more" or action == "none" or action == "":
+            if (
+                action == "done"
+                or action == "no more"
+                or action == "none"
+                or action == ""
+            ):
                 break
 
-            toWhere = inputColor("to where? ", 'g', inline=True)
+            toWhere = inputColor("to where? ", "g", inline=True)
             newDirection = Direction(action, toWhere)
             self.directions.append(newDirection)
             print()
@@ -115,17 +123,17 @@ class Location:
         # self.items.append(item)
         # keep prompt for items if not recieve "no more" or "none"
         # print black bar
-        printColor("--------------------------------------------------", 'b')
+        printColor("--------------------------------------------------", "b")
         while True:
             # prompt to receive a item
-            printColor(f"Enter an ITEM for [{self.name}] ", 'r')
+            printColor(f"Enter an ITEM for [{self.name}] ", "r")
             # if item is "done", break
-            item = inputColor("what item?: ", 'r', inline=True)
+            item = inputColor("what item?: ", "r", inline=True)
             if item == "no more" or item == "none" or item == "done" or item == "":
                 break
 
-            action = inputColor("action available? ", 'r', inline=True)
-            description = inputColor("Any item description? ", 'r')
+            action = inputColor("action available? ", "r", inline=True)
+            description = inputColor("Any item description? ", "r")
             newItem = Item(item, action=action, description=description)
             self.items.append(newItem)
             print()
@@ -136,19 +144,19 @@ class Location:
 def addLocation(gameMapDict: dict = None):
     updateFlag = False
 
-    name = inputColor("Enter a LOCATION name: ", 'b', inline=True)
+    name = inputColor("Enter a LOCATION name: ", "b", inline=True)
     if name == "map done" or name == "no more" or name == "done" or name == "":
         return None
 
     # check if location already exist, if so it's an update
     if gameMapDict is not None and name in gameMapDict:
-        printColor(f"Location [{name}] already EXISTS!", 'b')
+        printColor(f"Location [{name}] already EXISTS!", "b")
         newLocation = gameMapDict[name]
         updateFlag = True
         print(newLocation)
-        printColor(f"Update location [{name}]", 'b')
+        printColor(f"Update location [{name}]", "b")
     else:
-        description = inputColor("Any LOCATION description? ", 'b')
+        description = inputColor("Any LOCATION description? ", "b")
         newLocation = Location(name, description)
 
     # FIXME: assume adding new entries, we don't check if entry already exist
@@ -158,7 +166,7 @@ def addLocation(gameMapDict: dict = None):
 
     # printColor(f"Location [{name}] added: {newLocation}", 'b')
     # print new location
-    printColor(f"Location [{name}] added!", 'b')
+    printColor(f"Location [{name}] added!", "b")
     print()
     return newLocation, updateFlag
 
@@ -181,22 +189,22 @@ def buildMap(mapMarkdown: str = "../data/map.md"):
     # keep prompt for locations if not recieve "map done" or "no more"
     while True:
         # print current available locations' names
-        printColor("--------------------------------------------------", 'b')
-        printColor("Current available locations: ", 'b')
+        printColor("--------------------------------------------------", "b")
+        printColor("Current available locations: ", "b")
         # printColor(", ".join([location.name for location in gameMap]), 'b')
         # print each line as a bullet point, with their available directions' action and item names
         for location in gameMap:
             # print(f"- {location.name}")
-            printColor(f"- {location.name}: ", 'b', inline=True)
-            printColor("|directions| ", 'g', inline=True)
+            printColor(f"- {location.name}: ", "b", inline=True)
+            printColor("|directions| ", "g", inline=True)
             print(f"{[direction.action for direction in location.directions]} ", end="")
             if len(location.items) > 0:
                 # ptrString += f"|items| {[item.name for item in location.items]}"
-                printColor("|items| ", 'r', inline=True)
+                printColor("|items| ", "r", inline=True)
                 print(f" {[item.name for item in location.items]} ")
             else:
                 print()
-        printColor("--------------------------------------------------", 'b')
+        printColor("--------------------------------------------------", "b")
         newLocation, updateFlag = addLocation()
         if newLocation is None:
             break
@@ -323,12 +331,12 @@ if __name__ == "__main__":
     parser.add_argument("--map", help="map markdown file", default="../data/map.md")
     args = parser.parse_args()
     mapMarkdown = args.map
-    printColor(f"map markdown file: {mapMarkdown}", 'b')
+    printColor(f"map markdown file: {mapMarkdown}", "b")
     # prompt to confirm before continue
 
-    confirm = inputColor("Continue? (y/n) ", 'b', inline=True)
+    confirm = inputColor("Continue? (y/n) ", "b", inline=True)
     if confirm == "y":
         buildMap(mapMarkdown)
     else:
-        printColor("Aborted!", 'b')
+        printColor("Aborted!", "b")
         exit(1)
