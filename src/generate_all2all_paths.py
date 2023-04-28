@@ -2,6 +2,7 @@ import argparse
 import itertools
 
 from digraph import build_graph_from_file, get_all_paths, plot_graph, print_all_paths
+from md2json import md2json
 from utils import inputColor, printColor
 
 parser = argparse.ArgumentParser()
@@ -37,3 +38,6 @@ for srcNode, dstNode in all_pairs:
     f.write(path_string)
 
 f.close()
+
+# generate json version
+md2json(args.output_path)
