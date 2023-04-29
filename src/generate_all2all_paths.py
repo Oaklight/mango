@@ -8,7 +8,7 @@ from utils import inputColor, printColor
 parser = argparse.ArgumentParser()
 parser.add_argument("--map", "-m", type=str, default="../data/zork1.map")
 parser.add_argument("--actions", "-a", type=str, default="../data/zork1.actions")
-parser.add_argument("--reverse_map", type=str, default="../data/zork1.map.reversed")
+parser.add_argument("--reverse_map", '-r', type=str, default="../data/zork1.map.reversed")
 parser.add_argument("--output_dir", "-odir", type=str, default="../data/")
 args = parser.parse_args()
 args.output_path = (
