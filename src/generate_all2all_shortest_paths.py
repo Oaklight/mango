@@ -50,4 +50,4 @@ for srcNode, dstNode in all_pairs:
 f.close()
 
 # generate json version
-md2json(args.output_path)
+md2json(args.output_path, write2file=True)
