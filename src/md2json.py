@@ -28,7 +28,7 @@ import os
 #   ```
 
 
-def md2json(md):
+def md2json(md, write2file=False):
     """convert md version to json version
 
     Args:
@@ -70,16 +70,47 @@ def md2json(md):
         else:
             unit["actions"].append(line)
 
-    json_file = md[:-2] + "json"
-    with open(json_file, "w") as f:
-        json.dump(unit_list, f, indent=4)
-    # iterate over md file line by line, if empty skip, if H1, title is "srdNode --> dstNode || diff_shortest: *", if others, append to actions
+    if write2file:
+        # save to json file
+        with open(md.replace(".md", ".json"), "w") as f:
+            json.dump(unit_list, f, indent=4)
+
+    return unit_list
+
 
 
 if __name__ == "__main__":
     # read in md file
-    parser = argparse.ArgumentParser()
-    parser.add_argument("md", type=str, help="path to md file")
+    parser = argparse.ArgumentParser(
+        description="Convert Markdown file to JSON, YAML, or TOML"
+    )
+    parser.add_argument("md", type=str, help="the path to the Markdown file to convert")
+    parser.add_argument(
+        "format",
+        type=str,
+        help='the format to convert to (either "json", "yaml", or "toml")',
+    )
+
+    # Parse command-line arguments
     args = parser.parse_args()
 
-    md2json(args.md)
+    # Convert Markdown to JSON
+    json_data = md2json(args.md)
+    
+    # Convert JSON to desired format
+    if args.format == 'json':
+        output_data = json.dumps(json_data, indent=4)
+    # elif args.format == 'yaml':
+    #     output_data = yaml.dump(json_data, indent=4)
+    # elif args.format == 'toml':
+    #     output_data = toml.dumps(json_data)
+    else:
+        raise ValueError('Invalid output format specified')
+
+    # Save output to file with same name in same folder
+    basename, _ = os.path.splitext(args.md)
+    output_filename = f'{basename}.{args.format}'
+    with open(output_filename, 'w') as f:
+        f.write(output_data)
+        
+    print(f'Successfully converted {args.md} to {output_filename}')
