@@ -81,8 +81,11 @@ gamegpt graph utils
 - [`map_builder.py`](./src/map_builder.py): build game map from a list of paths interactively, dump as markdown.
   > this module is in beta testing
   - sample of zork1 map: [map.md](./data/map.md)
+- [`map_reverser.py`](./src/map_reverser.py): beta testing, provide naive map reverse function (deprecated)
 
 - [`utils.py`](./src/utils.py): common util functions
+
+- [`md2json.py`](./src/md2json.py): convert markdown file to json file (more data format support in the future)
 
 ## How to run?
 
