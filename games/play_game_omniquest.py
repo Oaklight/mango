@@ -1,8 +1,14 @@
 from jericho import *
 # Create the environment, optionally specifying a random seed
+from argparse import ArgumentParser
+
+parser = ArgumentParser()
+parser.add_argument("--jericho_path", '-j', type=str, default="z-machine-games-master/jericho-game-suite")
+parser.add_argument("--output_dir", '-odir', type=str, default="./maps")
+args = parser.parse_args()
 
 game_name = 'omniquest.z5'
-env = FrotzEnv("z-machine-games-master/jericho-game-suite/{}".format(game_name))
+env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
 
 # direction dict
 direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
@@ -46,8 +52,11 @@ for act in walkthrough:
         if oppo_direction_valid == True:
             desc = 'None'
         else:
-            desc = observation
-
+            obsrv_splitted = observation.strip().split('\n')
+            if len(obsrv_splitted) == 1:
+                desc = obsrv_splitted[0]
+            else:
+                desc = '{} || {}'.format(obsrv_splitted[0], "".join(obsrv_splitted[1:]))
         sample = {
             'loc_before': loc_before,
             'act': act,
@@ -63,12 +72,12 @@ for act in walkthrough:
 assert done == True
 print ('Scored', info['score'], 'out of', env.get_max_score())
 
-outfile = './{}.map'.format(game_name.split('.')[0])
+outfile = '{}/{}.map'.format(args.output_dir, game_name.split('.')[0])
 with open(outfile, 'w', encoding='utf-8') as fout:
     for sample in map_list:
         fout.write('{} --> {} --> {}\n'.format(sample['loc_before'], sample['act'], sample['loc_after']))
 
-outfile = './{}.map.reversed'.format(game_name.split('.')[0])
+outfile = '{}/{}.map.reversed'.format(args.output_dir, game_name.split('.')[0])
 with open(outfile, 'w', encoding='utf-8') as fout:
     for sample in map_list:
         if sample['oppo_direction_valid']:
