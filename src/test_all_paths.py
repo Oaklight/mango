@@ -6,7 +6,7 @@ from utils import inputColor, printColor
 parser = argparse.ArgumentParser()
 parser.add_argument("--map", type=str, default="../data/zork1.map")
 parser.add_argument("--actions", type=str, default="../data/zork1.actions")
-parser.add_argument("--reverse_map", type=str, default="../data/zork1.map.reversed")
+parser.add_argument("--reverse_map", '-r', type=str, default="../data/zork1.map.reversed")
 args = parser.parse_args()
 if args.actions == 'None' or args.actions == 'none' or args.actions == '':
     args.actions = None
