@@ -3,6 +3,7 @@ import openai
 import time
 import matplotlib.pyplot as plt
 from config import *
+from utils import printColor
 
 opposite_directions = {}
 
@@ -139,18 +140,37 @@ def build_graph_from_file(
     """
     with open(pathFile, "r") as f:
         lines = f.readlines()
-
-    load_valid_actions(actionFile)
+    
+    if actionFile is None:
+        print("No action file provided, skip reverse links.")
+    else:
+        load_valid_actions(actionFile)
     # build graph from file
 
     G = networkx.DiGraph()
 
     for line in lines:
-        line = line.strip("\ufeff")
+        line = line.strip("\ufeff").strip()
+        printColor(line, 'b', inline=True)
         if line == "":
+            print("skip empty line")
             continue
-        elements = [each.strip().lower() for each in line.split("-->")]
-        # print(elements)
+        if ',' in line:
+            print("revered path detected")
+            splitted_elements = [each.strip().lower() for each in line.split(",")]
+            path = splitted_elements[0]
+            validCheck = splitted_elements[1]
+            obsv = splitted_elements[2] if len(splitted_elements) > 2 else None
+
+            if validCheck == "false":
+                print("invalid path detected", path, obsv)
+                continue
+        else:
+            print("normal path detected")
+            path = line
+
+        elements = [each.strip().lower() for each in path.split("-->")]
+        print(elements)
         srcNode, direction, dstNode = elements
         G.add_edge(srcNode, dstNode, direction=direction)
 
@@ -167,6 +187,21 @@ def build_graph_from_file(
     # with open(oppositeFile, "w") as f:
     #     for key, value in opposite_directions.items():
     #         f.write(key + " --> " + value + "\n")
+    return G
+
+
+def build_graph_from_file_with_reverse(
+    pathFile: str = "data/gameName.map",
+    reverseFile: str = "data/gameName.map.reversed",
+    verbose: bool = True,
+) -> object:
+    '''
+    build map graph based on forward map (pathFile) and reverse map (reverseFile)
+    '''
+    forward_G = build_graph_from_file(pathFile, actionFile=None, verbose=verbose)
+    backward_G = build_graph_from_file(reverseFile, actionFile=None, verbose=verbose)
+
+    G = networkx.compose(forward_G, backward_G)
     return G
 
 
