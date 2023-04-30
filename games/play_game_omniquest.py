@@ -26,22 +26,38 @@ opposite_direction_dict = {
     'southeast': 'northwest'
 }
 
-
 # walkthrough
 walkthrough = env.get_walkthrough()
 walkthrough_direction = [direction_abbrv_dict[w.lower()] for w in walkthrough if w.lower() in direction_abbrv_vocab]
 print ('===> walkthrough direction: {}'.format(walkthrough_direction))
 
+map_list = []
+walkthrough_list = []
+
 initial_observation, info = env.reset()
 print ('init ob: {}, info: {}'.format(initial_observation, info))
-map_list = []
 loc_before = 'Large Clearing'
 done = False
+sample_info = {
+    'act': 'Init',
+    'observation': initial_observation,
+    'step': info['moves'] - 1
+}
+walkthrough_list.append(sample_info)
+
 for act in walkthrough:
     observation, reward, done, info = env.step(act)
     valid_actions = env.get_valid_actions()
     # print('===> act: {}, observation: {}, reward: {}, done: {}, info: {}'.format(act,observation,reward,done,info))
     # print ('==> valid actions: {}'.format(valid_actions))
+    sample_info = {
+        'act': act,
+        'observation': observation,
+        'step': info['moves'] - 1
+    }
+    print (sample_info)
+    walkthrough_list.append(sample_info)
+
     if act.lower() in direction_abbrv_vocab:
         observation_abbr = observation.split('\n')[1]
 
@@ -71,6 +87,13 @@ for act in walkthrough:
 
 assert done == True
 print ('Scored', info['score'], 'out of', env.get_max_score())
+
+outfile = '{}/{}.walkthrough'.format(args.output_dir, game_name.split('.')[0])
+with open(outfile, 'w', encoding='utf-8') as fout:
+    fout.write('===========\n')
+    for sample in walkthrough_list:
+        fout.write('==>STEP NUM: {}\n==>ACT: {}\n==>OBSERVATION: {}\n'.format(sample['step'], sample['act'], sample['observation'].strip()))
+        fout.write('\n===========\n')
 
 outfile = '{}/{}.map'.format(args.output_dir, game_name.split('.')[0])
 with open(outfile, 'w', encoding='utf-8') as fout:
