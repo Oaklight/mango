@@ -14,7 +14,7 @@ There is a small mailbox here.
 ## ACT: N
 ## OBSERVATION: North of House
 You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
-
+## MOVE: west of house --> N --> north of house
 ***
 # STEP NUM: 2
 ## ACT: N
