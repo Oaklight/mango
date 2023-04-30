@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 parser = ArgumentParser()
 parser.add_argument("--jericho_path", '-j', type=str, default="z-machine-games-master/jericho-game-suite")
 parser.add_argument("--output_dir", '-odir', type=str, default="./maps")
-parser.add_argument("--walk_md", '-md', store_true=True, default=False, help='toggle to output walkthrough.md, otherwise output walkthrough.txt')
+parser.add_argument("--walk_md", '-md', action='store_true', help='toggle to output walkthrough.md, otherwise output walkthrough.txt')
 args = parser.parse_args()
 
 game_name = 'zork1.z5'
