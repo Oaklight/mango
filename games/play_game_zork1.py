@@ -5,6 +5,7 @@ from argparse import ArgumentParser
 parser = ArgumentParser()
 parser.add_argument("--jericho_path", '-j', type=str, default="z-machine-games-master/jericho-game-suite")
 parser.add_argument("--output_dir", '-odir', type=str, default="./maps")
+parser.add_argument("--walk_md", '-md', store_true=True, default=False, help='toggle to output walkthrough.md, otherwise output walkthrough.txt')
 args = parser.parse_args()
 
 game_name = 'zork1.z5'
@@ -89,12 +90,20 @@ for act in walkthrough:
 assert done == True
 print ('Scored', info['score'], 'out of', env.get_max_score())
 
-outfile = '{}/{}.walkthrough'.format(args.output_dir, game_name.split('.')[0])
-with open(outfile, 'w', encoding='utf-8') as fout:
-    fout.write('===========\n')
-    for sample in walkthrough_list:
-        fout.write('==>STEP NUM: {}\n==>ACT: {}\n==>OBSERVATION: {}\n'.format(sample['step'], sample['act'], sample['observation'].strip()))
-        fout.write('\n===========\n')
+if args.walk_md:
+    outfile = '{}/{}.walkthrough.md'.format(args.output_dir, game_name.split('.')[0])
+    with open(outfile, 'w', encoding='utf-8') as fout:
+        fout.write('***\n')
+        for sample in walkthrough_list:
+            fout.write('# STEP NUM: {}\n## ACT: {}\n## OBSERVATION: {}\n'.format(sample['step'], sample['act'], sample['observation'].strip()))
+            fout.write('\n***\n')
+else:
+    outfile = '{}/{}.walkthrough'.format(args.output_dir, game_name.split('.')[0])
+    with open(outfile, 'w', encoding='utf-8') as fout:
+        fout.write('===========\n')
+        for sample in walkthrough_list:
+            fout.write('==>STEP NUM: {}\n==>ACT: {}\n==>OBSERVATION: {}\n'.format(sample['step'], sample['act'], sample['observation'].strip()))
+            fout.write('\n===========\n')
 
 outfile = '{}/{}.map'.format(args.output_dir, game_name.split('.')[0])
 with open(outfile, 'w', encoding='utf-8') as fout:
