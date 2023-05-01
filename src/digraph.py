@@ -140,7 +140,7 @@ def build_graph_from_file(
     """
     with open(pathFile, "r") as f:
         lines = f.readlines()
-    
+
     if actionFile is None:
         print("No action file provided, skip reverse links.")
     else:
@@ -151,16 +151,17 @@ def build_graph_from_file(
 
     for line in lines:
         line = line.strip("\ufeff").strip()
-        printColor(line, 'b', inline=True)
+        printColor(line, "b", inline=True)
         if line == "":
             print("skip empty line")
             continue
-        if ',' in line:
+        if "," in line:
             print("revered path detected")
             splitted_elements = [each.strip().lower() for each in line.split(",")]
             path = splitted_elements[0]
             validCheck = splitted_elements[1]
-            obsv = splitted_elements[2] if len(splitted_elements) > 2 else None
+            stepNum = splitted_elements[2] if len(splitted_elements) > 2 else None
+            obsv = splitted_elements[3] if len(splitted_elements) > 3 else None
 
             if validCheck == "false":
                 print("invalid path detected", path, obsv)
@@ -174,7 +175,6 @@ def build_graph_from_file(
         srcNode, direction, dstNode = elements
         G.add_edge(srcNode, dstNode, direction=direction)
 
-        # TODO: drop reverse path if direction is not from valid direction list
         if direction not in opposite_directions:
             if verbose:
                 print(
@@ -183,10 +183,6 @@ def build_graph_from_file(
             continue
         G.add_edge(dstNode, srcNode, direction=get_opposite_direction(direction))
 
-    # # persist oposite directions as txt
-    # with open(oppositeFile, "w") as f:
-    #     for key, value in opposite_directions.items():
-    #         f.write(key + " --> " + value + "\n")
     return G
 
 
@@ -195,13 +191,16 @@ def build_graph_from_file_with_reverse(
     reverseFile: str = "data/gameName.map.reversed",
     verbose: bool = True,
 ) -> object:
-    '''
+    """
     build map graph based on forward map (pathFile) and reverse map (reverseFile)
-    '''
-    forward_G = build_graph_from_file(pathFile, actionFile=None, verbose=verbose)
-    backward_G = build_graph_from_file(reverseFile, actionFile=None, verbose=verbose)
+    """
+    G_forward = build_graph_from_file(pathFile, actionFile=None, verbose=verbose)
+    G_backward = build_graph_from_file(reverseFile, actionFile=None, verbose=verbose)
 
-    G = networkx.compose(forward_G, backward_G)
+    G = networkx.compose(G_forward, G_backward)
+    setattr(G, "forward", G_forward)
+    setattr(G, "backward", G_backward)
+
     return G
 
 
@@ -350,79 +349,145 @@ def get_edge_direction(G, n1, n2):
         print("Edge not found.")
 
 
-def print_path(
-    g: object, path: list, verbose: bool = True, shortest_length: int = None
-):
+# def print_path(
+#     g: object, path: list, verbose: bool = True, shortest_length: int = None
+# ):
+#     """
+#     print the path (list of nodes) with detailed direction
+#     """
+#     # get srcNode and dstNode and print them
+#     srcNode = path[0]
+#     dstNode = path[-1]
+
+#     path_string = f"# {srcNode} --> {dstNode}\n"
+#     path_json = {"srcNode": srcNode, "dstNode": dstNode}
+#     if shortest_length:
+#         diff_shortest = len(path) - shortest_length
+#         path_string += f" || diff_shortest: {diff_shortest}\n"
+#         path_json["diff_shortest"] = diff_shortest
+#     else:
+#         path_string += "\n"
+
+#     prevNode = path[0]
+#     path_details = []
+#     if len(path) == 1:
+#         if verbose:
+#             print(f"ARRIVE_AT: \033[1m[{prevNode}]\033[0m.")
+#     else:
+#         for node in path[1:]:
+#             seen = g.forward.has_edge(prevNode, node)
+#             path_json['seen'] = seen
+#             direction = get_edge_direction(g, prevNode, node)
+#             path_json['action'] = direction
+#             if verbose:
+#                 current_step = (
+#                     "START_FROM \033[1m["
+#                     + prevNode
+#                     + "]\033[0m, DO \033[1m("
+#                     + direction
+#                     + ")\033[0m, ARRIVE_AT \033[1m["
+#                     + node
+#                     + "]\033[0m, SEEN \033[1m["
+#                     + str(seen)
+#                     + "]\033[0m"
+#                 )
+#             else:
+#                 current_step = direction + "SEEN" if seen else direction + "UNSEEN"
+#             path_details.append(current_step)
+#             prevNode = node
+#     path_string += "\n".join(path_details) + "\n"
+#     print(path_string)
+
+#     return path_string, path_json
+
+
+def get_path_json(g, path, shortest_length=None):
     """
-    print the path (list of nodes) with detailed direction
+    return path json
     """
     # get srcNode and dstNode and print them
     srcNode = path[0]
     dstNode = path[-1]
-    # print(f'# {srcNode} --> {dstNode}',
-    #       end=f" || diff_shortest: {len(path)-shortest_length}\n"
-    #       if shortest_length else "\n")
 
-    path_string = f"# {srcNode} --> {dstNode}"
+    path_json = {"srcNode": srcNode, "dstNode": dstNode}
     if shortest_length:
-        path_string += f" || diff_shortest: {len(path)-shortest_length}\n"
-    else:
-        path_string += "\n"
+        diff_shortest = len(path) - shortest_length
+        path_json["diff_shortest"] = diff_shortest
 
     prevNode = path[0]
     path_details = []
     if len(path) == 1:
-        if verbose:
-            print(f"ARRIVE_AT: \033[1m[{prevNode}]\033[0m.")
+        pass
     else:
         for node in path[1:]:
+            seen = g.forward.has_edge(prevNode, node)
             direction = get_edge_direction(g, prevNode, node)
-            if verbose:
-                current_step = (
-                    "START_FROM \033[1m["
-                    + prevNode
-                    + "]\033[0m, DO \033[1m("
-                    + direction
-                    + ")\033[0m, ARRIVE_AT \033[1m["
-                    + node
-                    + "]\033[0m"
-                )
-            else:
-                current_step = direction
-            path_details.append(current_step)
+            # path_details.append((prevNode, node, direction, seen))
+            # use dict instead
+            path_details.append(
+                {
+                    "prevNode": prevNode,
+                    "node": node,
+                    "action": direction,
+                    "seen": seen,
+                }
+            )
             prevNode = node
-    path_string += "\n".join(path_details) + "\n"
-    print(path_string)
+    path_json["path_details"] = path_details
+    path_json["step_count"] = len(path_details)
+    # TODO: include path_hash
+    return path_json
 
-    return path_string
+
+# def print_all_paths(
+#     g: object, all_paths: list, verbose: bool = True, diff_shortest: bool = False
+# ):
+#     """
+#     iterate over all paths and print each
+#     """
+#     if verbose:
+#         print(f"FOUND \033[1m{len(all_paths)}\033[0m PATHS\n")
+#     # sort all_paths by len of each
+#     all_paths.sort(key=lambda x: len(x))
+#     shortest_len = len(all_paths[0])
+
+#     path_list = ""
+#     path_json_list = []
+#     for path in all_paths:
+#         if verbose:
+#             print(f"LENGTH OF CURRENT PATH: \033[1m{len(path)}\033[0m")
+#         if diff_shortest:
+#             path_string, path_json = print_path(
+#                 g, path, verbose=verbose, shortest_length=shortest_len
+#             )
+#         else:
+#             path_string, path_json = print_path(g, path, verbose=verbose)
+#         path_list += path_string + "\n"
+#         path_json_list.append(path_json)
+
+#     # return a string of concatenated paths
+#     return path_list, path_json_list
 
 
-def print_all_paths(
-    g: object, all_paths: list, verbose: bool = True, diff_shortest: bool = False
-):
+def get_all_paths_json(g, all_paths, diff_shortest=False):
     """
     iterate over all paths and print each
     """
-    if verbose:
-        print(f"FOUND \033[1m{len(all_paths)}\033[0m PATHS\n")
     # sort all_paths by len of each
     all_paths.sort(key=lambda x: len(x))
     shortest_len = len(all_paths[0])
 
-    path_list = ""
+    path_json_list = []
     for path in all_paths:
-        if verbose:
-            print(f"LENGTH OF CURRENT PATH: \033[1m{len(path)}\033[0m")
         if diff_shortest:
-            path_string = print_path(
-                g, path, verbose=verbose, shortest_length=shortest_len
-            )
+            path_json = get_path_json(g, path, shortest_length=shortest_len)
         else:
-            path_string = print_path(g, path, verbose=verbose)
-        path_list += path_string + "\n"
+            path_json = get_path_json(g, path)
+        path_json_list.append(path_json)
 
+    # TODO: include not_unique, if srcNode and dstNode has same annotation name siblings
     # return a string of concatenated paths
-    return path_list
+    return path_json_list
 
 
 if __name__ == "__main__":
@@ -451,11 +516,11 @@ if __name__ == "__main__":
 
         # shortest path test
         shortestPath = get_shortest_path(g, src=srcNode, dst=dstNode)
-        print_path(g, shortestPath)
+        # print_path(g, shortestPath)
 
         # all path test
         allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
-        print_all_paths(g, allPaths)
+        # print_all_paths(g, allPaths)
 
         # verify path test
         srcNode, dstNode, paths2verify = parse_path("../data/zork1.verify")
