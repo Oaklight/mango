@@ -4,56 +4,34 @@ import json
 
 from digraph import (
     build_graph_from_file,
-    get_all_paths,
-    plot_graph,
     build_graph_from_file_with_reverse,
+    get_all_paths,
     get_all_paths_json,
+    plot_graph,
 )
-from md2json import md2json
-from utils import inputColor, printColor
+from utils import confirm_continue, get_args_all2all
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--map", "-m", type=str, default="../data/zork1.map")
-parser.add_argument("--actions", "-a", type=str, default="../data/zork1.actions")
-parser.add_argument(
-    "--reverse_map", "-r", type=str, default="../data/zork1.map.reversed"
-)
-parser.add_argument("--output_dir", "-odir", type=str, default="../data/")
-args = parser.parse_args()
-args.output_path = (
-    args.output_dir + args.map.split("/")[-1].split(".")[0] + ".all2all.json"
-)
-if args.actions == "None" or args.actions == "none" or args.actions == "":
-    args.actions = None
-if args.reverse_map == "None" or args.reverse_map == "none" or args.reverse_map == "":
-    args.reverse_map = None
+if __name__ == "__main__":
+    args = get_args_all2all()
+    confirm_continue()
 
-printColor(f"building map: {args.map}, actions: {args.actions}", "b")
-# prompt to confirm before continue
-confirm = inputColor("Continue? (y/n) ", "b", inline=True)
-if confirm == "y":
     if args.reverse_map:
         g = build_graph_from_file_with_reverse(args.map, args.reverse_map)
     else:
         g = build_graph_from_file(args.map, args.actions)
-else:
-    printColor("Aborted!", "b")
-    exit(1)
 
-plot_graph(g)
+    plot_graph(g)
 
-# generate pair-wise all paths between all nodes
-# get generator of zip of any two different nodes from graph
-all_pairs = list(itertools.combinations(g.nodes(), 2))
-# print(all_pairs)
+    # generate pair-wise all paths between all nodes
+    # get generator of zip of any two different nodes from graph
+    all_pairs = list(itertools.combinations(g.nodes(), 2))
+    # print(all_pairs)
 
+    all_paths_json = []
+    for srcNode, dstNode in all_pairs:
+        allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
+        all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
 
-all_paths_json = []
-for srcNode, dstNode in all_pairs:
-    allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
-    all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
-
-# f = open(args.output_path, "w")
-# dump to json
-with open(args.output_path, "w") as f:
-    json.dump(all_paths_json, f, indent=4)
+    # dump to json
+    with open(args.output_path, "w") as f:
+        json.dump(all_paths_json, f, indent=4)
