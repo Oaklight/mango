@@ -1,4 +1,6 @@
 from jericho import * # https://jericho-py.readthedocs.io/en/latest/index.html
+from argparse import ArgumentParser
+
 
 direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
                         'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest',
@@ -36,22 +38,27 @@ def read_csv(path_in, max_steps = 70):
     return valid_moves
 
 def main():
+    parser = ArgumentParser()
+    parser.add_argument("--jericho_path", '-j', type=str, default="z-machine-games-master/jericho-game-suite")
+    parser.add_argument("--output_dir", '-odir', type=str, default="./maps")
+    args = parser.parse_args()
+
     game_name = 'zork1.z5'
     max_steps = 70
     print ('Game: {}, Max steps: {}'.format(game_name, max_steps))
 
-    env = FrotzEnv("{}/{}".format('./z-machine-games-master/jericho-game-suite', game_name))
+    env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
 
     # walkthrough
     walkthrough = env.get_walkthrough()
     walkthrough = [direction_abbrv_dict[item.lower()] if item.lower() in direction_vocab_abbrv else item.lower() for item in walkthrough]
 
     # annotated valid moves
-    file_path = './maps/{}.valid_moves.csv'.format(game_name.split('.')[0])
+    file_path = '{}/{}.valid_moves.csv'.format(args.output_dir, game_name.split('.')[0])
     print ("From {}".format(file_path))
     valid_moves = read_csv(file_path, max_steps= max_steps)
 
-    output_file = './maps/{}.map.human'.format(game_name.split('.')[0])
+    output_file = '{}/{}.map.human'.format(args.output_dir, game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
         for step_idx, move in enumerate(valid_moves):
             move['act'] = walkthrough[step_idx]

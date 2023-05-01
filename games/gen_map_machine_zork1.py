@@ -1,4 +1,6 @@
 from jericho import * # https://jericho-py.readthedocs.io/en/latest/index.html
+from argparse import ArgumentParser
+
 
 direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
                         'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest',
@@ -19,12 +21,17 @@ opposite_direction_dict = {
 }
 
 def main():
+    parser = ArgumentParser()
+    parser.add_argument("--jericho_path", '-j', type=str, default="z-machine-games-master/jericho-game-suite")
+    parser.add_argument("--output_dir", '-odir', type=str, default="./maps")
+    args = parser.parse_args()
+
     game_name = 'zork1.z5'
     max_steps = 70
     print ('Game: {}, Max steps: {}'.format(game_name, max_steps))
 
     # env
-    env = FrotzEnv("{}/{}".format('./z-machine-games-master/jericho-game-suite', game_name))
+    env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
     initial_observation, info = env.reset()
     location_before = env.get_player_location().name.strip().lower()
     location_before_id = env.get_player_location().num
@@ -87,7 +94,7 @@ def main():
             location_before = location_after
             location_before_id = location_after_id
 
-    output_file = './maps/{}.map.machine'.format(game_name.split('.')[0])
+    output_file = '{}/{}.map.machine'.format(args.output_dir,game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
         for item in map_list:
             fout.write('{} (obj{}) --> {} --> {} (obj{}), step {}\n'.format(item['location_before'],
@@ -98,7 +105,7 @@ def main():
                                                                               item['step_num']))
     print ("Saved to {}".format(output_file))
 
-    output_file = './maps/{}.map.machine.reversed'.format(game_name.split('.')[0])
+    output_file = '{}/{}.map.machine.reversed'.format(args.output_dir, game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
         for item in map_reversed_list:
             if item['act'] != None:
