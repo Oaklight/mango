@@ -69,10 +69,10 @@ gamegpt graph utils
     - `load_valid_actions(actionFile)`
   - shortest path related
     - `get_shortest_path(g: object, src: str, dst: str)`
-    - `print_path(g: object, path: list, verbose: bool = True)`
+    - `def get_path_json(g, path, shortest_length=None)`
   - all paths related
     - `get_all_paths(g: object, src: str, dst: str)`
-    - `print_all_paths(g: object, all_paths: list, verbose: bool = True)`
+    - `get_all_paths_json(g, all_paths, diff_shortest=False)`
   - verify path related
     - `verify_path(g: object, srcNode, dstNode, paths2verify: list)`
     - `parse_path(pathFile: str = "data/path2.verify")`
