@@ -8,6 +8,9 @@ import json
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("walkthrough_file", type=str, help="path to walkthrough file")
+    parser.add_argument(
+        "--csvOrjson", "-coj", type=str, default="csv", help="output to csv file"
+    )
     args = parser.parse_args()
 
     if args.walkthrough_file.endswith(".md"):
@@ -52,6 +55,28 @@ if __name__ == "__main__":
     print(f"{len(valid_moves)} valid moves found in {args.walkthrough_file}")
     # dump valid moves to json file
     # output file name is gamename.valid_moves.json, gamename is part of walkthrough_file, in md mode, gamename.walkthrough.md, in txt mode, gamename.walkthrough
-    output_file = args.walkthrough_file.split(".walkthrough")[0] + ".valid_moves.json"
-    with open(output_file, "w") as f:
-        json.dump(valid_moves, f, indent=4)
+    if args.csvOrjson == "csv":
+        output_file = (
+            args.walkthrough_file.split(".walkthrough")[0] + ".valid_moves.csv"
+        )
+        with open(output_file, "w") as f:
+            f.write("Step Num, Location Before, Location After\n")
+            # write lines starting with step number, regardless of whether it's in valid_moves
+            for i in range(step_num):
+                if i == 0:
+                    continue
+                if i in valid_moves:
+                    f.write(
+                        f"{i}, {valid_moves[i]['srcNode']}, {valid_moves[i]['dstNode']}\n"
+                    )
+                else:
+                    f.write(f"{i}, , \n")
+
+    elif args.csvOrjson == "json":
+        output_file = (
+            args.walkthrough_file.split(".walkthrough")[0] + ".valid_moves.json"
+        )
+        with open(output_file, "w") as f:
+            json.dump(valid_moves, f, indent=4)
+    else:
+        raise NotImplementedError
