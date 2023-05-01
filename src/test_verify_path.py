@@ -17,6 +17,6 @@ if __name__ == "__main__":
     plot_graph(g)
 
     # verify path test
-    srcNode, dstNode, paths2verify = parse_path("../data/zork1.verify")
-    result = verify_path(g, srcNode, dstNode, paths2verify)
+    src_node, dst_node, paths2verify = parse_path("../data/zork1.verify")
+    result = verify_path(g, src_node, dst_node, paths2verify)
     print(f"VERIFIED RESULT: \033[1m{result}\033[0m")

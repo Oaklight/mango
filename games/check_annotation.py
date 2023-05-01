@@ -40,21 +40,21 @@ if __name__ == "__main__":
 
             if f"{TARGET_HEADER}MOVE: " in line:
                 move = line.split(f"{TARGET_HEADER}MOVE:")[1]
-                srcNode, action, dstNode = [
+                src_node, action, dst_node = [
                     each.strip().lower() for each in move.split("-->")
                 ]
                 valid_moves[step_num] = {
-                    "srcNode": srcNode,
+                    "src_node": src_node,
                     "action": action,
-                    "dstNode": dstNode,
+                    "dst_node": dst_node,
                 }
                 print(
-                    f"FOUND valid move [{step_num}]: {srcNode} --> {action} --> {dstNode}"
+                    f"FOUND valid move [{step_num}]: {src_node} --> {action} --> {dst_node}"
                 )
 
     print(f"{len(valid_moves)} valid moves found in {args.walkthrough_file}")
     # dump valid moves to json file
-    # output file name is gamename.valid_moves.json, gamename is part of walkthrough_file, in md mode, gamename.walkthrough.md, in txt mode, gamename.walkthrough
+    # output file name is game.valid_moves.json, game is part of walkthrough_file, in md mode, game.walkthrough.md, in txt mode, game.walkthrough
     if args.csvOrjson == "csv":
         output_file = (
             args.walkthrough_file.split(".walkthrough")[0] + ".valid_moves.csv"
@@ -67,7 +67,7 @@ if __name__ == "__main__":
                     continue
                 if i in valid_moves:
                     f.write(
-                        f"{i}, {valid_moves[i]['srcNode']}, {valid_moves[i]['dstNode']}\n"
+                        f"{i}, {valid_moves[i]['src_node']}, {valid_moves[i]['dst_node']}\n"
                     )
                 else:
                     f.write(f"{i}, , \n")
