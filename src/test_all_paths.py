@@ -23,27 +23,27 @@ if __name__ == "__main__":
     plot_graph(g)
 
     while True:
-        # prompt for srcNode and dstNode, check if they exist in graph first
+        # prompt for src_node and dst_node, check if they exist in graph first
         while True:
             print("\033[92mWhere are you from? \033[0m")
-            srcNode = input().strip().lower()
-            # check if srcNode exist in graph
-            if srcNode not in g.nodes:
-                print(f"[{srcNode}] is not a valid location.")
+            src_node = input().strip().lower()
+            # check if src_node exist in graph
+            if src_node not in g.nodes:
+                print(f"[{src_node}] is not a valid location.")
                 continue
             break
 
         while True:
             print("\033[92mWhere are you going? \033[0m")
-            dstNode = input().strip().lower()
-            # check if dstNode exist in graph
-            if dstNode not in g.nodes:
-                print(f"[{dstNode}] is not a valid location.")
+            dst_node = input().strip().lower()
+            # check if dst_node exist in graph
+            if dst_node not in g.nodes:
+                print(f"[{dst_node}] is not a valid location.")
                 continue
             break
 
         # all path test
-        all_paths = get_all_paths(g, src=srcNode, dst=dstNode)
+        all_paths = get_all_paths(g, src=src_node, dst=dst_node)
         all_paths_json = get_all_paths_json(g, all_paths, diff_shortest=True)
         
         # TODO: use dumped json to print only the actions

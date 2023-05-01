@@ -28,8 +28,8 @@ if __name__ == "__main__":
     # print(all_pairs)
 
     all_paths_json = []
-    for srcNode, dstNode in all_pairs:
-        allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
+    for src_node, dst_node in all_pairs:
+        allPaths = get_all_paths(g, src=src_node, dst=dst_node)
         all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
 
     # dump to json

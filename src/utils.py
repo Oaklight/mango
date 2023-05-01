@@ -2,7 +2,7 @@
 import argparse
 
 
-def printGreen(text, inline=False):
+def print_green(text, inline=False):
     if not inline:
         print("\033[92m {}\033[00m".format(text))
     else:
@@ -10,7 +10,7 @@ def printGreen(text, inline=False):
 
 
 # , red, bold black
-def printRed(text, inline=False):
+def print_red(text, inline=False):
     if not inline:
         print("\033[91m {}\033[00m".format(text))
     else:
@@ -18,7 +18,7 @@ def printRed(text, inline=False):
 
 
 # , bold black
-def printBlack(text, inline=False):
+def print_black(text, inline=False):
     if not inline:
         print("\033[1m {}\033[00m".format(text))
     else:
@@ -26,25 +26,25 @@ def printBlack(text, inline=False):
 
 
 # general color print, receive txt and color
-def printColor(text, color, inline=False):
+def print_color(text, color, inline=False):
     if color == "green" or color == "g":
-        printGreen(text, inline)
+        print_green(text, inline)
     elif color == "red" or color == "r":
-        printRed(text, inline)
+        print_red(text, inline)
     elif color == "black" or color == "b":
-        printBlack(text, inline)
+        print_black(text, inline)
     else:
         print(text, end="" if inline else "\n")
 
 
 # general input with color, receive txt and color
-def inputColor(text, color, inline=False):
+def input_color(text, color, inline=False):
     if color == "green" or color == "g":
-        printGreen(text, inline)
+        print_green(text, inline)
     elif color == "red" or color == "r":
-        printRed(text, inline)
+        print_red(text, inline)
     elif color == "black" or color == "b":
-        printBlack(text, inline)
+        print_black(text, inline)
     else:
         print(text, end="" if inline else "\n")
     return input()
@@ -54,32 +54,32 @@ def inputColor(text, color, inline=False):
 # return type and content.
 # There is no other type of line in the markdown file
 # raise error if line is not one of the four types
-def parseLine(line: str) -> tuple[str, str]:
-    strType = None
+def parse_line(line: str) -> tuple[str, str]:
+    str_type = None
     content = None
     line = line.strip()
     if line == "":
-        strType = "empty"
+        str_type = "empty"
         content = ""
     elif line.startswith("# "):
-        strType = "H1"
+        str_type = "H1"
         content = line[2:]
     elif line.startswith("## "):
-        strType = "H2"
+        str_type = "H2"
         content = line[3:]
     else:
-        strType = "plain"
+        str_type = "plain"
         content = line
 
-    return strType, content.strip().lower()
+    return str_type, content.strip().lower()
 
 
-def extractDirectionText(line: str) -> tuple[str, str]:
-    action, toWhere = [each.strip().lower() for each in line.split("-->")]
-    return action, toWhere
+def extract_direction_text(line: str) -> tuple[str, str]:
+    action, to_where = [each.strip().lower() for each in line.split("-->")]
+    return action, to_where
 
 
-def extractItemText(line: str) -> tuple[str, str, str]:
+def extract_item_text(line: str) -> tuple[str, str, str]:
     name = line.split("(")[0].strip()
     description = line.split("(")[1].split(")")[0].strip()
     actions = line.split("[")[1].split("]")[0].strip()
@@ -116,14 +116,14 @@ def get_args_all2all():
 def print_args(args):
     # for each of args' attributes, print it out. Using vars(args) returns a dict
     for k, v in vars(args).items():
-        printColor(f"\t{k}: ", "b", inline=True)
+        print_color(f"\t{k}: ", "b", inline=True)
         print(v)
 
 
 def confirm_continue():
-    confirm = inputColor("Continue? (y/n) ", "b", inline=True)
+    confirm = input_color("Continue? (y/n) ", "b", inline=True)
     if confirm == "y":
         pass
     else:
-        printColor("Aborted!", "b")
+        print_color("Aborted!", "b")
         exit(1)

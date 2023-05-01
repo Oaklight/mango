@@ -6,7 +6,7 @@ import os
 # - markdown
 
 #   ```markdown
-#   # srcNode --> dstNode || diff_shortest: *
+#   # src_node --> dst_node || diff_shortest: *
 #   action1
 #   action2
 #   ...
@@ -16,8 +16,8 @@ import os
 
 #   ```json
 #   {
-#     "srcNode": "srcNode",
-#     "dstNode": "dstNode",
+#     "src_node": "src_node",
+#     "dst_node": "dst_node",
 #     "diff_shortest": diff_shortest,
 #     "actions": [
 #       "action1",
@@ -39,7 +39,7 @@ def md2json(md, write2file=False):
     """
     # read in file line by line
     # if empty skip
-    # if H1, title is "srdNode --> dstNode || diff_shortest: *"
+    # if H1, title is "srdNode --> dst_node || diff_shortest: *"
     # if others, append to actions
     with open(md, "r") as f:
         lines = f.readlines()
@@ -62,9 +62,9 @@ def md2json(md, write2file=False):
             else:
                 fromTo = line[1:].strip()
                 diff_shortest = 0
-            srcNode, dstNode = [each.strip() for each in fromTo.split("-->")]
-            unit["srcNode"] = srcNode
-            unit["dstNode"] = dstNode
+            src_node, dst_node = [each.strip() for each in fromTo.split("-->")]
+            unit["src_node"] = src_node
+            unit["dst_node"] = dst_node
             unit["diff_shortest"] = diff_shortest
             unit["actions"] = []
         else:

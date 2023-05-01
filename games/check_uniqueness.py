@@ -18,11 +18,11 @@ if __name__ == "__main__":
     with open(args.code2anno_json, "r") as f:
         code2anno = json.load(f)
 
-    # check each path in paths, if either of its srcNode or dstNode has siblings with the same annotation, then it is not unique
+    # check each path in paths, if either of its src_node or dst_node has siblings with the same annotation, then it is not unique
     # how do we know if a node has siblings? check if anno2code[anno] has more than one element
     # TODO maybe we need to check if path is shortest path? if not, technically it is not unique
     for path in paths:
-        src, dst = path["srcNode"], path["dstNode"]
+        src, dst = path["src_node"], path["dst_node"]
         src_anno, dst_anno = code2anno[src], code2anno[dst]
         if len(anno2code[src_anno]) > 1 or len(anno2code[dst_anno]) > 1:
             path["unique"] = False

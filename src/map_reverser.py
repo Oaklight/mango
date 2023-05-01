@@ -1,7 +1,7 @@
 import argparse
 
 from digraph import intuitive_reverse_map
-from utils import inputColor, printColor
+from utils import input_color, print_color
 
 # argparse to read in the map and actions files
 # call intuitive_reverse_map with the map and actions files
@@ -12,11 +12,11 @@ parser.add_argument("--map", type=str, default="../data/zork1.map")
 parser.add_argument("--actions", type=str, default="../data/zork1.actions")
 args = parser.parse_args()
 
-printColor(f"processing map: {args.map}, actions: {args.actions}", "b")
+print_color(f"processing map: {args.map}, actions: {args.actions}", "b")
 # prompt to confirm before continue
-confirm = inputColor("Continue? (y/n) ", "b", inline=True)
+confirm = input_color("Continue? (y/n) ", "b", inline=True)
 if confirm == "y":
     intuitive_reverse_map(args.map, args.actions)
 else:
-    printColor("Aborted!", "b")
+    print_color("Aborted!", "b")
     exit(1)

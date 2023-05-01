@@ -3,26 +3,26 @@ import openai
 import time
 import matplotlib.pyplot as plt
 from config import *
-from utils import printColor
+from utils import print_color
 
 opposite_directions = {}
 
 
-def load_valid_actions(actionFile):
+def load_valid_actions(action_file):
     """
     load valid action files. Each file has two sections
     - Directions
     - Non directions
     """
-    # test if actionFile not exist, create an empty txt file
+    # test if action_file not exist, create an empty txt file
     try:
-        with open(actionFile, "r") as f:
+        with open(action_file, "r") as f:
             pass
     except FileNotFoundError:
-        with open(actionFile, "w") as f:
+        with open(action_file, "w") as f:
             pass
 
-    with open(actionFile, "r") as f:
+    with open(action_file, "r") as f:
         for line in f:
             line = line.strip().lower()
             if line == "direction:":
@@ -35,25 +35,25 @@ def load_valid_actions(actionFile):
 
             # parse non-empty lines
             print("line: ", line)
-            fromDir, toDir = [each.strip().lower() for each in line.split("--")]
-            opposite_directions[fromDir] = toDir
-            opposite_directions[toDir] = fromDir
+            from_dir, to_dir = [each.strip().lower() for each in line.split("--")]
+            opposite_directions[from_dir] = to_dir
+            opposite_directions[to_dir] = from_dir
             # TODO: see if we need to check allowed action in "non-directions"?
 
     print(opposite_directions)
 
 
 def intuitive_reverse_map(
-    pathFile: str = "data/gameName.map", actionFile: str = "data/gameName.actions"
+    path_file: str = "data/game.map", action_file: str = "data/game.actions"
 ):
     """
     build a reverse map from a txt file, each line is in format "from,to"
     """
-    with open(pathFile, "r") as f:
+    with open(path_file, "r") as f:
         lines = f.readlines()
         # lines.reverse()
 
-    load_valid_actions(actionFile)
+    load_valid_actions(action_file)
     # build graph from file
 
     reverse_map_list = []
@@ -65,7 +65,7 @@ def intuitive_reverse_map(
             continue
         elements = [each.strip().lower() for each in line.split("-->")]
         # print(elements)
-        srcNode, direction, dstNode = elements
+        src_node, direction, dst_node = elements
         if direction not in opposite_directions:
             print(
                 f"direction [{direction}] not in opposite_directions, skip reverse path"
@@ -73,12 +73,12 @@ def intuitive_reverse_map(
             reverse_map_list.append("")
             continue
         reverse_step = (
-            f"{dstNode} --> {get_opposite_direction(direction)} --> {srcNode}"
+            f"{dst_node} --> {get_opposite_direction(direction)} --> {src_node}"
         )
         reverse_map_list.append(reverse_step)
 
     # dump list to file line by line
-    with open(pathFile + ".reversed", "w") as f:
+    with open(path_file + ".reversed", "w") as f:
         for line in reverse_map_list:
             f.write(line + "\n")
 
@@ -131,27 +131,27 @@ def get_opposite_direction(direction: str):
 
 
 def build_graph_from_file(
-    pathFile: str = "data/gameName.map",
-    actionFile: str = "data/gameName.actions",
+    path_file: str = "data/game.map",
+    action_file: str = "data/game.actions",
     verbose: bool = True,
 ) -> object:
     """
     builds a graph from a txt file, each line is in format "from,to"
     """
-    with open(pathFile, "r") as f:
+    with open(path_file, "r") as f:
         lines = f.readlines()
 
-    if actionFile is None:
+    if action_file is None:
         print("No action file provided, skip reverse links.")
     else:
-        load_valid_actions(actionFile)
+        load_valid_actions(action_file)
     # build graph from file
 
     G = networkx.DiGraph()
 
     for line in lines:
         line = line.strip("\ufeff").strip()
-        printColor(line, "b", inline=True)
+        print_color(line, "b", inline=True)
         if line == "":
             print("skip empty line")
             continue
@@ -159,11 +159,11 @@ def build_graph_from_file(
             print("revered path detected")
             splitted_elements = [each.strip().lower() for each in line.split(",")]
             path = splitted_elements[0]
-            validCheck = splitted_elements[1]
-            stepNum = splitted_elements[2] if len(splitted_elements) > 2 else None
+            valid_check = splitted_elements[1]
+            step_num = splitted_elements[2] if len(splitted_elements) > 2 else None
             obsv = splitted_elements[3] if len(splitted_elements) > 3 else None
 
-            if validCheck == "false":
+            if valid_check == "false":
                 print("invalid path detected", path, obsv)
                 continue
         else:
@@ -172,8 +172,8 @@ def build_graph_from_file(
 
         elements = [each.strip().lower() for each in path.split("-->")]
         print(elements)
-        srcNode, direction, dstNode = elements
-        G.add_edge(srcNode, dstNode, direction=direction)
+        src_node, direction, dst_node = elements
+        G.add_edge(src_node, dst_node, direction=direction)
 
         if direction not in opposite_directions:
             if verbose:
@@ -181,21 +181,21 @@ def build_graph_from_file(
                     f"direction [{direction}] not in opposite_directions, skip reverse path"
                 )
             continue
-        G.add_edge(dstNode, srcNode, direction=get_opposite_direction(direction))
+        G.add_edge(dst_node, src_node, direction=get_opposite_direction(direction))
 
     return G
 
 
 def build_graph_from_file_with_reverse(
-    pathFile: str = "data/gameName.map",
-    reverseFile: str = "data/gameName.map.reversed",
+    path_file: str = "data/game.map",
+    reverse_file: str = "data/game.map.reversed",
     verbose: bool = True,
 ) -> object:
     """
-    build map graph based on forward map (pathFile) and reverse map (reverseFile)
+    build map graph based on forward map (path_file) and reverse map (reverse_file)
     """
-    G_forward = build_graph_from_file(pathFile, actionFile=None, verbose=verbose)
-    G_backward = build_graph_from_file(reverseFile, actionFile=None, verbose=verbose)
+    G_forward = build_graph_from_file(path_file, action_file=None, verbose=verbose)
+    G_backward = build_graph_from_file(reverse_file, action_file=None, verbose=verbose)
 
     G = networkx.compose(G_forward, G_backward)
     setattr(G, "forward", G_forward)
@@ -255,26 +255,26 @@ def get_all_paths(g: object, src: str, dst: str):
         return []
 
 
-def verify_path(g: object, srcNode, dstNode, paths2verify: list):
+def verify_path(g: object, src_node, dst_node, paths2verify: list):
     """
-    given srcNode and dstNode, verify if the paths2verify is valid
+    given src_node and dst_node, verify if the paths2verify is valid
     paths2verify is a list of `direction`
     """
     # empty path: false
     if len(paths2verify) == 0:
         print("empty path")
         return False
-    if srcNode == dstNode:
-        print("srcNode == dstNode, ONLY CHECK DIFFERENT NODES")
+    if src_node == dst_node:
+        print("src_node == dst_node, ONLY CHECK DIFFERENT NODES")
         return False
 
     # TODO: check each step is a valid step
     print(
-        "CHECK FROM \033[1m[" + srcNode + "]\033[0m TO \033[1m[" + dstNode + "]\033[0m"
+        "CHECK FROM \033[1m[" + src_node + "]\033[0m TO \033[1m[" + dst_node + "]\033[0m"
     )
 
-    via_list = [srcNode]
-    node = srcNode
+    via_list = [src_node]
+    node = src_node
     # iterate over neighbors of node, check if edge direction is correct
     for i in range(len(paths2verify)):
         neighbors = list(g.neighbors(node))
@@ -297,21 +297,21 @@ def verify_path(g: object, srcNode, dstNode, paths2verify: list):
             ), "more than 1 edge direction is correct, MAP ERROR"
             node = neighbors[check_edge_directions.index(True)]
             via_list.append(node)
-    # check if the last node is dstNode
-    if node != dstNode:
-        print("not end with dstNode ", dstNode, node)
+    # check if the last node is dst_node
+    if node != dst_node:
+        print("not end with dst_node ", dst_node, node)
         return False
 
     return True
 
 
-def parse_path(pathFile: str = "data/path2.verify"):
+def parse_path(path_file: str = "data/path2.verify"):
     """
-    parse paths2verify file to a list of triplets (srcNode, dstNode, direction)
+    parse paths2verify file to a list of triplets (src_node, dst_node, direction)
     """
-    with open(pathFile, "r") as f:
-        # first line is srcNode, dstNode
-        srcNode, dstNode = [each.strip().lower() for each in f.readline().split(",")]
+    with open(path_file, "r") as f:
+        # first line is src_node, dst_node
+        src_node, dst_node = [each.strip().lower() for each in f.readline().split(",")]
         # rest are paths2verify proposed
         lines = f.readlines()
 
@@ -322,7 +322,7 @@ def parse_path(pathFile: str = "data/path2.verify"):
             continue
         direction = line.strip().lower()
         paths2verify.append(direction)
-    return srcNode, dstNode, paths2verify
+    return src_node, dst_node, paths2verify
 
 
 def same_direction_test(given_direction: str, proposed_direction: str):
@@ -352,34 +352,34 @@ def get_path_json(g, path, shortest_length=None):
     """
     return path json
     """
-    # get srcNode and dstNode and print them
-    srcNode = path[0]
-    dstNode = path[-1]
+    # get src_node and dst_node and print them
+    src_node = path[0]
+    dst_node = path[-1]
 
-    path_json = {"srcNode": srcNode, "dstNode": dstNode}
+    path_json = {"src_node": src_node, "dst_node": dst_node}
     if shortest_length:
         diff_shortest = len(path) - shortest_length
         path_json["diff_shortest"] = diff_shortest
 
-    prevNode = path[0]
+    prev_node = path[0]
     path_details = []
     if len(path) == 1:
         pass
     else:
         for node in path[1:]:
-            seen = g.forward.has_edge(prevNode, node)
-            direction = get_edge_direction(g, prevNode, node)
-            # path_details.append((prevNode, node, direction, seen))
+            seen = g.forward.has_edge(prev_node, node)
+            direction = get_edge_direction(g, prev_node, node)
+            # path_details.append((prev_node, node, direction, seen))
             # use dict instead
             path_details.append(
                 {
-                    "prevNode": prevNode,
+                    "prev_node": prev_node,
                     "node": node,
                     "action": direction,
                     "seen": seen,
                 }
             )
-            prevNode = node
+            prev_node = node
     path_json["path_details"] = path_details
     path_json["step_count"] = len(path_details)
 
@@ -410,34 +410,34 @@ if __name__ == "__main__":
     plot_graph(g)
 
     while True:
-        # prompt for srcNode and dstNode, check if they exist in graph first
+        # prompt for src_node and dst_node, check if they exist in graph first
         while True:
             print("\033[92mWhere are you from? \033[0m")
-            srcNode = input().strip().lower()
-            # check if srcNode exist in graph
-            if srcNode not in g.nodes:
-                print(f"[{srcNode}] is not a valid location.")
+            src_node = input().strip().lower()
+            # check if src_node exist in graph
+            if src_node not in g.nodes:
+                print(f"[{src_node}] is not a valid location.")
                 continue
             break
 
         while True:
             print("\033[92mWhere are you going? \033[0m")
-            dstNode = input().strip().lower()
-            # check if dstNode exist in graph
-            if dstNode not in g.nodes:
-                print(f"[{dstNode}] is not a valid location.")
+            dst_node = input().strip().lower()
+            # check if dst_node exist in graph
+            if dst_node not in g.nodes:
+                print(f"[{dst_node}] is not a valid location.")
                 continue
             break
 
         # shortest path test
-        shortestPath = get_shortest_path(g, src=srcNode, dst=dstNode)
+        shortestPath = get_shortest_path(g, src=src_node, dst=dst_node)
         # print_path(g, shortestPath)
 
         # all path test
-        allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
+        allPaths = get_all_paths(g, src=src_node, dst=dst_node)
         # print_all_paths(g, allPaths)
 
         # verify path test
-        srcNode, dstNode, paths2verify = parse_path("../data/zork1.verify")
-        result = verify_path(g, srcNode, dstNode, paths2verify)
+        src_node, dst_node, paths2verify = parse_path("../data/zork1.verify")
+        result = verify_path(g, src_node, dst_node, paths2verify)
         print(f"VERIFIED RESULT: \033[1m{result}\033[0m")

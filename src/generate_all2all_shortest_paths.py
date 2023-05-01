@@ -10,7 +10,7 @@ from digraph import (
     get_path_json,
 )
 from md2json import md2json
-from utils import inputColor, printColor
+from utils import input_color, print_color
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--map", "-m", type=str, default="../data/zork1.map")
@@ -28,16 +28,16 @@ if args.actions == "None" or args.actions == "none" or args.actions == "":
 if args.reverse_map == "None" or args.reverse_map == "none" or args.reverse_map == "":
     args.reverse_map = None
 
-printColor(f"building map: {args.map}, actions: {args.actions}", "b")
+print_color(f"building map: {args.map}, actions: {args.actions}", "b")
 # prompt to confirm before continue
-confirm = inputColor("Continue? (y/n) ", "b", inline=True)
+confirm = input_color("Continue? (y/n) ", "b", inline=True)
 if confirm == "y":
     if args.reverse_map:
         g = build_graph_from_file_with_reverse(args.map, args.reverse_map)
     else:
         g = build_graph_from_file(args.map, args.actions)
 else:
-    printColor("Aborted!", "b")
+    print_color("Aborted!", "b")
     exit(1)
 
 plot_graph(g)
@@ -49,8 +49,8 @@ all_pairs = list(itertools.combinations(g.nodes(), 2))
 
 
 shortest_paths_json = []
-for srcNode, dstNode in all_pairs:
-    shortest_paths = get_shortest_path(g, src=srcNode, dst=dstNode)
+for src_node, dst_node in all_pairs:
+    shortest_paths = get_shortest_path(g, src=src_node, dst=dst_node)
     shortest_paths_json.append(get_path_json(g, shortest_paths))
 
 # f = open(args.output_path, "w")

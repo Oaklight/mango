@@ -61,12 +61,12 @@ gamegpt graph utils
 
 - [`digraph.py`](./src/digraph.py)
   - graph utils:
-    - `build_graph_from_file(pathFile: str = "data/gameName.map" actionFile: str = "data/gameName.actions", verbose: bool = True)`
+    - `build_graph_from_file(path_file: str = "data/game.map" action_file: str = "data/game.actions", verbose: bool = True)`
     - `get_opposite_direction(direction: str)`
     - `plot_graph(g: object)`
     - `get_edge_direction(G, n1, n2)`
     - ~~`query_chatgpt(prompt, message)`~~ (deprecated)
-    - `load_valid_actions(actionFile)`
+    - `load_valid_actions(action_file)`
   - shortest path related
     - `get_shortest_path(g: object, src: str, dst: str)`
     - `def get_path_json(g, path, shortest_length=None)`
@@ -74,8 +74,8 @@ gamegpt graph utils
     - `get_all_paths(g: object, src: str, dst: str)`
     - `get_all_paths_json(g, all_paths, diff_shortest=False)`
   - verify path related
-    - `verify_path(g: object, srcNode, dstNode, paths2verify: list)`
-    - `parse_path(pathFile: str = "data/path2.verify")`
+    - `verify_path(g: object, src_node, dst_node, paths2verify: list)`
+    - `parse_path(path_file: str = "data/path2.verify")`
     - `same_direction_test(given_direction: str, proposed_direction: str)`
 
 - [`map_builder.py`](./src/map_builder.py): build game map from a list of paths interactively, dump as markdown.
@@ -101,7 +101,7 @@ python run test_*.py
 
 ### *.map
 
-it's used for building the game map, each line is a path with format: `srcNode --> direction --> dstNode`
+it's used for building the game map, each line is a path with format: `src_node --> direction --> dst_node`
 
 For example: [zork1.map](./data/zork1.map)
 
@@ -147,7 +147,7 @@ Light lamp -- Douse lamp
 A list of paths to verify, with the following format:
 
 ```
-srcNode, dstNode
+src_node, dst_node
 action1
 action2
 ...
@@ -168,7 +168,7 @@ When verify path direction, program will first seek an **exact match**. ~~If not
 
 ### *.map.reversed (generated)
 
-it's used for path test, each line is a path with format: `dstNode --> direction --> srcNode`
+it's used for path test, each line is a path with format: `dst_node --> direction --> src_node`
 
 For example: [zork1.map.reversed](./data/zork1.map.reversed)
 
@@ -191,7 +191,7 @@ diff_shortest is the difference btw shortest path and current path, if diff_shor
 - markdown
 
   ```markdown
-  # srcNode --> dstNode || diff_shortest: *
+  # src_node --> dst_node || diff_shortest: *
   action1
   action2
   ...
@@ -203,8 +203,8 @@ diff_shortest is the difference btw shortest path and current path, if diff_shor
 
   ```json
   {
-    "srcNode": "srcNode",
-    "dstNode": "dstNode",
+    "src_node": "src_node",
+    "dst_node": "dst_node",
     "diff_shortest": diff_shortest,
     "actions": [
       "action1",
