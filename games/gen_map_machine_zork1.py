@@ -26,7 +26,7 @@ def main():
     # env
     env = FrotzEnv("{}/{}".format('./z-machine-games-master/jericho-game-suite', game_name))
     initial_observation, info = env.reset()
-    location_before = env.get_player_location().name.strip()
+    location_before = env.get_player_location().name.strip().lower()
     location_before_id = env.get_player_location().num
 
     # walkthrough
@@ -37,7 +37,7 @@ def main():
     map_reversed_list = []
     for step_idx, act in enumerate(walkthrough[:max_steps]):
         observation, reward, done, info = env.step(act)
-        location_after = env.get_player_location().name.strip()
+        location_after = env.get_player_location().name.strip().lower()
         location_after_id = env.get_player_location().num
         if location_after != location_before: # location_after_id != location_before_id
             map_list.append({
