@@ -1,0 +1,108 @@
+from jericho import * # https://jericho-py.readthedocs.io/en/latest/index.html
+
+direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
+                        'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest',
+                        'u': 'up', 'd': 'down'} # jericho.defines.ABBRV_DICT
+direction_vocab_abbrv = direction_abbrv_dict.keys()
+direction_vocab = direction_abbrv_dict.values()
+opposite_direction_dict = {
+    'east': 'west',
+    'west': 'east',
+    'north': 'south',
+    'south': 'north',
+    'northeast': 'southwest',
+    'southwest': 'northeast',
+    'northwest': 'southeast',
+    'southeast': 'northwest',
+    'up': 'up',
+    'down': 'down'
+}
+
+def main():
+    game_name = 'zork1.z5'
+    max_steps = 70
+    print ('Game: {}, Max steps: {}'.format(game_name, max_steps))
+
+    # env
+    env = FrotzEnv("{}/{}".format('./z-machine-games-master/jericho-game-suite', game_name))
+    initial_observation, info = env.reset()
+    location_before = env.get_player_location().name.strip()
+
+    # walkthrough
+    walkthrough = env.get_walkthrough()
+    walkthrough = [direction_abbrv_dict[item.lower()] if item.lower() in direction_vocab_abbrv else item.lower() for item in walkthrough]
+
+    map_list = []
+    map_reversed_list = []
+    for step_idx, act in enumerate(walkthrough[:max_steps]):
+        observation, reward, done, info = env.step(act)
+        location_after = env.get_player_location().name.strip()
+        if location_after != location_before:
+            map_list.append({
+                'location_before': location_before,
+                'act': act,
+                'location_after': location_after,
+                'step_num': step_idx + 1
+            })
+
+            # reverse
+            valid_actions = env.get_valid_actions()
+            if act in direction_vocab:
+                if opposite_direction_dict[act] in valid_actions:
+                    desc = 'None'
+                else:
+                    obsrv_splitted = observation.split('\n')
+                    if len(obsrv_splitted) == 1:
+                        desc = obsrv_splitted[0]
+                    else:
+                        desc = '{} || {}'.format(obsrv_splitted[0], "".join(obsrv_splitted[1:]))
+
+                map_reversed_list.append({
+                    'location_before': location_after,
+                    'act': opposite_direction_dict[act],
+                    'location_after': location_before,
+                    'step_num': step_idx + 1,
+                    'desc': desc
+                }
+                )
+            else:
+                map_reversed_list.append({
+                    'location_before': None,
+                    'act': None,
+                    'location_after': None,
+                    'step_num': None,
+                    'desc': None
+                }
+                )
+
+            location_before = location_after
+
+    output_file = './maps/{}.map.machine'.format(game_name.split('.')[0])
+    with open(output_file,'w', encoding='utf-8') as fout:
+        for item in map_list:
+            fout.write('{} --> {} --> {}, step {}\n'.format(item['location_before'],
+                                                            item['act'],
+                                                            item['location_after'],
+                                                            item['step_num']))
+    print ("Saved to {}".format(output_file))
+
+    output_file = './maps/{}.map.machine.reversed'.format(game_name.split('.')[0])
+    with open(output_file,'w', encoding='utf-8') as fout:
+        for item in map_reversed_list:
+            if item['act'] != None:
+                fout.write('{} --> {} --> {}, step {}, desc: {}\n'.format(item['location_before'],
+                                                                item['act'],
+                                                                item['location_after'],
+                                                                item['step_num'],
+                                                                item['desc']))
+            else:
+                fout.write('\n')
+
+    print ("Saved to {}".format(output_file))
+    print ("Good Job!")
+
+
+
+
+if __name__ == '__main__':
+    main()
