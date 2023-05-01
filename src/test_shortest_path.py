@@ -1,55 +1,51 @@
 import argparse
+import itertools
 import json
 
-from digraph import build_graph_from_file, get_shortest_path, plot_graph, build_graph_from_file_with_reverse, get_path_json
-from utils import inputColor, printColor
+from digraph import (
+    build_graph_from_file,
+    build_graph_from_file_with_reverse,
+    get_shortest_path,
+    get_path_json,
+    plot_graph,
+)
+from utils import confirm_continue, get_args_all2all
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--map", type=str, default="../data/zork1.map")
-parser.add_argument("--actions", type=str, default="../data/zork1.actions")
-parser.add_argument("--reverse_map", '-r', type=str, default="../data/zork1.map.reversed")
-args = parser.parse_args()
-if args.actions == 'None' or args.actions == 'none' or args.actions == '':
-    args.actions = None
-if args.reverse_map == 'None' or args.reverse_map == 'none' or args.reverse_map == '':
-    args.reverse_map = None
+if __name__ == "__main__":
+    args = get_args_all2all()
+    confirm_continue()
 
-printColor(f"building map: {args.map}, actions: {args.actions}", "b")
-# prompt to confirm before continue
-confirm = inputColor("Continue? (y/n) ", "b", inline=True)
-if confirm == "y":
     if args.reverse_map:
-        g = build_graph_from_file_with_reverse(args.map, args.reverse_map, args.actions)
+        g = build_graph_from_file_with_reverse(args.map, args.reverse_map)
     else:
         g = build_graph_from_file(args.map, args.actions)
-else:
-    printColor("Aborted!", "b")
-    exit(1)
 
-plot_graph(g)
-
-while True:
-    # prompt for srcNode and dstNode, check if they exist in graph first
-    while True:
-        print("\033[92mWhere are you from? \033[0m")
-        srcNode = input().strip().lower()
-        # check if srcNode exist in graph
-        if srcNode not in g.nodes:
-            print(f"[{srcNode}] is not a valid location.")
-            continue
-        break
+    plot_graph(g)
 
     while True:
-        print("\033[92mWhere are you going? \033[0m")
-        dstNode = input().strip().lower()
-        # check if dstNode exist in graph
-        if dstNode not in g.nodes:
-            print(f"[{dstNode}] is not a valid location.")
-            continue
-        break
+        # prompt for srcNode and dstNode, check if they exist in graph first
+        while True:
+            print("\033[92mWhere are you from? \033[0m")
+            srcNode = input().strip().lower()
+            # check if srcNode exist in graph
+            if srcNode not in g.nodes:
+                print(f"[{srcNode}] is not a valid location.")
+                continue
+            break
 
-    # shortest path test
-    shortestPath = get_shortest_path(g, src=srcNode, dst=dstNode)
-    shortest_path_json = get_path_json(g, shortestPath)
-    with open("shortest.json", "w") as f:
-        json.dump(shortest_path_json, f, indent=4)
+        while True:
+            print("\033[92mWhere are you going? \033[0m")
+            dstNode = input().strip().lower()
+            # check if dstNode exist in graph
+            if dstNode not in g.nodes:
+                print(f"[{dstNode}] is not a valid location.")
+                continue
+            break
+
+        # shortest path test
+        shortest_path = get_shortest_path(g, src=srcNode, dst=dstNode)
+        shortest_path_json = get_path_json(g, shortest_path)
+
+        # TODO: use dumped json to print only the actions
+        with open("shortest.json", "w") as f:
+            json.dump(shortest_path_json, f, indent=4)
