@@ -14,12 +14,14 @@ There is a small mailbox here.
 ## ACT: N
 ## OBSERVATION: North of House
 You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
+## MOVE: west of house --> N --> north of house
 
 ***
 # STEP NUM: 2
 ## ACT: N
 ## OBSERVATION: Forest Path
 This is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.
+## MOVE: north of house --> N --> forest path
 
 ***
 # STEP NUM: 3
@@ -28,6 +30,7 @@ This is a path winding through a dimly lit forest. The path heads north-south he
 You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach.
 Beside you on the branch is a small bird's nest.
 In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged by a childless songbird. The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl. Unlike most eggs, this one is hinged and closed with a delicate looking clasp. The egg appears extremely fragile.
+## MOVE: forest path --> U --> up a tree
 
 ***
 # STEP NUM: 4
@@ -38,17 +41,20 @@ In the bird's nest is a large egg encrusted with precious jewels, apparently sca
 # STEP NUM: 5
 ## ACT: D
 ## OBSERVATION: Forest Path
+## MOVE: up a tree --> D --> forest path
 
 ***
 # STEP NUM: 6
 ## ACT: S
 ## OBSERVATION: North of House
+## MOVE: forest path --> S --> north of house
 
 ***
 # STEP NUM: 7
 ## ACT: E
 ## OBSERVATION: Behind House
 You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is slightly ajar.
+## MOVE: north of house --> E --> behind house
 
 ***
 # STEP NUM: 8
@@ -64,6 +70,7 @@ On the table is an elongated brown sack, smelling of hot peppers.
 A bottle is sitting on the table.
 The glass bottle contains:
   A quantity of water
+## MOVE: behind house --> W --> kitchen
 
 ***
 # STEP NUM: 10
@@ -82,6 +89,7 @@ The glass bottle contains:
 You are in the living room. There is a doorway to the east, a wooden door with strange gothic lettering to the west, which appears to be nailed shut, a trophy case, and a large oriental rug in the center of the room.
 Above the trophy case hangs an elvish sword of great antiquity.
 A battery-powered brass lantern is on the trophy case.
+## MOVE: kitchen --> W --> living room
 
 ***
 # STEP NUM: 13
@@ -98,12 +106,14 @@ The glass bottle contains:
 There is a brown sack here.
 The brown sack contains:
   A lunch
+## MOVE: living room --> E --> kitchen
 
 ***
 # STEP NUM: 15
 ## ACT: U
 ## OBSERVATION: You have moved into a dark place.
 It is pitch black. You are likely to be eaten by a grue.
+## MOVE: kitchen --> U --> a dark place 1
 
 ***
 # STEP NUM: 16
@@ -114,6 +124,7 @@ Attic
 This is the attic. The only exit is a stairway leading down.
 A large coil of rope is lying in the corner.
 On a table is a nasty-looking knife.
+## MOVE: a dark place 1 --> Light lamp --> attic
 
 ***
 # STEP NUM: 17
@@ -135,6 +146,7 @@ The glass bottle contains:
 There is a brown sack here.
 The brown sack contains:
   A lunch
+## MOVE: attic --> D --> kitchen
 
 ***
 # STEP NUM: 20
@@ -146,6 +158,7 @@ The brown sack contains:
 ## ACT: W
 ## OBSERVATION: Living Room
 Above the trophy case hangs an elvish sword of great antiquity.
+## MOVE: kitchen --> W --> living room
 
 ***
 # STEP NUM: 22
@@ -170,6 +183,7 @@ The trap door crashes shut, and you hear someone barring it.
 
 It is pitch black. You are likely to be eaten by a grue.
 Your sword is glowing with a faint blue glow.
+## MOVE: living room --> D --> a dark place 2
 
 ***
 # STEP NUM: 26
@@ -178,6 +192,7 @@ Your sword is glowing with a faint blue glow.
 
 Cellar
 You are in a dark and damp cellar with a narrow passageway leading north, and a crawlway to the south. On the west is the bottom of a steep metal ramp which is unclimbable.
+## MOVE: a dark place 2 --> Light lamp --> cellar
 
 ***
 # STEP NUM: 27
@@ -186,6 +201,7 @@ You are in a dark and damp cellar with a narrow passageway leading north, and a 
 This is a small room with passages to the east and south and a forbidding hole leading west. Bloodstains and deep scratches (perhaps made by an axe) mar the walls.
 A nasty-looking troll, brandishing a bloody axe, blocks all passages out of the room.
 Your sword has begun to glow very brightly.
+## MOVE: cellar --> N --> the troll room
 
 ***
 # STEP NUM: 28
@@ -204,12 +220,14 @@ Your sword is no longer glowing.
 ## ACT: E
 ## OBSERVATION: East-West Passage
 This is a narrow east-west passageway. There is a narrow stairway leading down at the north end of the room.
+## MOVE: the troll room --> E --> east-west passage
 
 ***
 # STEP NUM: 31
 ## ACT: E
 ## OBSERVATION: Round Room
 This is a circular stone room with passages in all directions. Several of them have unfortunately been blocked by cave-ins.
+## MOVE: east-west passage --> E --> round room
 
 ***
 # STEP NUM: 32
@@ -217,12 +235,14 @@ This is a circular stone room with passages in all directions. Several of them h
 ## OBSERVATION: Engravings Cave
 You have entered a low cave with passages leading northwest and east.
 There are old engravings on the walls here.
+## MOVE: round room --> Se --> engravings cave
 
 ***
 # STEP NUM: 33
 ## ACT: E
 ## OBSERVATION: Dome Room
 You are at the periphery of a large dome, which forms the ceiling of another room below. Protecting you from a precipitous drop is a wooden railing which circles the dome.
+## MOVE: dome room --> E --> dome room
 
 ***
 # STEP NUM: 34
@@ -236,6 +256,7 @@ You are at the periphery of a large dome, which forms the ceiling of another roo
 This is a large room with a prominent doorway leading to a down staircase. Above you is a large dome. Up around the edge of the dome (20 feet up) is a wooden railing. In the center of the room sits a white marble pedestal.
 A piece of rope descends from the railing above, ending some five feet above your head.
 Sitting on the pedestal is a flaming torch, made of ivory.
+## MOVE: dome room --> D --> torch room
 
 ***
 # STEP NUM: 36
@@ -253,6 +274,7 @@ Sitting on the pedestal is a flaming torch, made of ivory.
 ## OBSERVATION: Temple
 This is the north end of a large temple. On the east wall is an ancient inscription, probably a prayer in a long-forgotten language. Below the prayer is a staircase leading down. The west wall is solid granite. The exit to the north end of the room is through huge marble pillars.
 There is a brass bell here.
+## MOVE: torch room --> D --> temple
 
 ***
 # STEP NUM: 39
@@ -261,6 +283,7 @@ There is a brass bell here.
 This is the south end of a large temple. In front of you is what appears to be an altar. In one corner is a small hole in the floor which leads into darkness. You probably could not get back up it.
 On the two ends of the altar are burning candles.
 On the altar is a large black book, open to page 569.
+## MOVE: temple --> S --> altar
 
 ***
 # STEP NUM: 40
@@ -287,6 +310,7 @@ On the altar is a large black book, open to page 569.
 ## ACT: N
 ## OBSERVATION: Temple
 There is a brass bell here.
+## MOVE: altar --> N --> temple
 
 ***
 # STEP NUM: 45
@@ -299,6 +323,7 @@ There is a brass bell here.
 ## OBSERVATION: Egyptian Room
 This is a room which looks like an Egyptian tomb. There is an ascending staircase to the west.
 The solid-gold coffin used for the burial of Ramses II is here.
+## MOVE: temple --> E --> egyptian room
 
 ***
 # STEP NUM: 47
@@ -315,33 +340,39 @@ A sceptre, possibly that of ancient Egypt itself, is in the coffin. The sceptre 
 # STEP NUM: 49
 ## ACT: W
 ## OBSERVATION: Temple
+## MOVE: egyptian room --> W --> temple
 
 ***
 # STEP NUM: 50
 ## ACT: S
 ## OBSERVATION: Altar
 There is a sword here.
+## MOVE: temple --> S --> altar
 
 ***
 # STEP NUM: 51
 ## ACT: Pray
 ## OBSERVATION: Forest
 This is a forest, with trees in all directions. To the east, there appears to be sunlight.
+## MOVE: altar --> Pray --> forest
 
 ***
 # STEP NUM: 52
 ## ACT: E
 ## OBSERVATION: Forest Path
+## MOVE: forest --> E --> forest path
 
 ***
 # STEP NUM: 53
 ## ACT: S
 ## OBSERVATION: North of House
+## MOVE: forest path --> S --> north of house
 
 ***
 # STEP NUM: 54
 ## ACT: E
 ## OBSERVATION: Behind House
+## MOVE: north of house --> E --> behind house
 
 ***
 # STEP NUM: 55
@@ -353,11 +384,13 @@ The glass bottle contains:
 There is a brown sack here.
 The brown sack contains:
   A lunch
+## MOVE: behind house --> W --> kitchen
 
 ***
 # STEP NUM: 56
 ## ACT: W
 ## OBSERVATION: Living Room
+## MOVE: kitchen --> W --> living room
 
 ***
 # STEP NUM: 57
@@ -405,48 +438,57 @@ clove of garlic: Dropped.
 ## ACT: D
 ## OBSERVATION: Cellar
 There is a bloody axe here.
+## MOVE: living room --> D --> cellar
 
 ***
 # STEP NUM: 63
 ## ACT: N
 ## OBSERVATION: The Troll Room
+## MOVE: cellar --> N --> troll room
 
 ***
 # STEP NUM: 64
 ## ACT: E
 ## OBSERVATION: East-West Passage
+## MOVE: troll room --> E --> east-west passage
 
 ***
 # STEP NUM: 65
 ## ACT: E
 ## OBSERVATION: Round Room
+## MOVE: east-west passage --> E --> round room
 
 ***
 # STEP NUM: 66
 ## ACT: Se
 ## OBSERVATION: Engravings Cave
 There are old engravings on the walls here.
+## MOVE: round room --> Se --> engravings cave
 
 ***
 # STEP NUM: 67
 ## ACT: E
 ## OBSERVATION: Dome Room
+## MOVE: engravings cave --> E --> dome room
 
 ***
 # STEP NUM: 68
 ## ACT: D
 ## OBSERVATION: Torch Room
+## MOVE: dome room --> D --> torch room
 
 ***
 # STEP NUM: 69
 ## ACT: D
 ## OBSERVATION: Temple
+## MOVE: torch room --> D --> temple
 
 ***
 # STEP NUM: 70
 ## ACT: D
 ## OBSERVATION: Egyptian Room
 The solid-gold coffin used for the burial of Ramses II is here.
+## MOVE: temple --> D --> egyptian room
 
 ***
 # STEP NUM: 71
