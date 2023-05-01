@@ -27,6 +27,7 @@ def main():
     env = FrotzEnv("{}/{}".format('./z-machine-games-master/jericho-game-suite', game_name))
     initial_observation, info = env.reset()
     location_before = env.get_player_location().name.strip()
+    location_before_id = env.get_player_location().num
 
     # walkthrough
     walkthrough = env.get_walkthrough()
@@ -37,11 +38,14 @@ def main():
     for step_idx, act in enumerate(walkthrough[:max_steps]):
         observation, reward, done, info = env.step(act)
         location_after = env.get_player_location().name.strip()
-        if location_after != location_before:
+        location_after_id = env.get_player_location().num
+        if location_after != location_before: # location_after_id != location_before_id
             map_list.append({
                 'location_before': location_before,
+                'location_before_id': location_before_id,
                 'act': act,
                 'location_after': location_after,
+                'location_after_id': location_after_id,
                 'step_num': step_idx + 1
             })
 
@@ -59,8 +63,10 @@ def main():
 
                 map_reversed_list.append({
                     'location_before': location_after,
+                    'location_before_id': location_after_id,
                     'act': opposite_direction_dict[act],
                     'location_after': location_before,
+                    'location_after_id': location_before_id,
                     'step_num': step_idx + 1,
                     'desc': desc
                 }
@@ -68,14 +74,17 @@ def main():
             else:
                 map_reversed_list.append({
                     'location_before': None,
+                    'location_before_id': None,
                     'act': None,
                     'location_after': None,
+                    'location_after_id': None,
                     'step_num': None,
                     'desc': None
                 }
                 )
 
             location_before = location_after
+            location_before_id = location_after_id
 
     output_file = './maps/{}.map.machine'.format(game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
