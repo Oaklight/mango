@@ -34,12 +34,14 @@ You can see a tree here.
 ## ACT: e
 ## OBSERVATION: Small Path
 The path branches here.  There are paths to the west and south that continue into the forest.  The path to the east appears to lead into some rather rocky territory.
+## MOVE: large clearing --> e --> small path
 
 ***
 # STEP NUM: 3
 ## ACT: s
 ## OBSERVATION: Fork in Path
 This path forks to the southwest and southeast.
+## MOVE: small path --> s --> fork in path
 
 ***
 # STEP NUM: 4
@@ -48,6 +50,7 @@ This path forks to the southwest and southeast.
 This appears to be the end of the path.  There is an exit to the northeast.
 
 You can see a match here.
+## MOVE: fork in path --> sw --> end of path
 
 ***
 # STEP NUM: 5
@@ -58,6 +61,7 @@ You can see a match here.
 # STEP NUM: 6
 ## ACT: ne
 ## OBSERVATION: Fork in Path
+## MOVE: end of path --> ne --> fork in path
 
 ***
 # STEP NUM: 7
@@ -66,6 +70,7 @@ You can see a match here.
 This appears to be the end of the path.  There is an exit to the northwest.
 
 You can see a raincoat (which is closed) here.
+## MOVE: fork in path --> se --> end of path
 
 ***
 # STEP NUM: 8
@@ -91,23 +96,27 @@ You can see a raincoat (which is closed) here.
 # STEP NUM: 12
 ## ACT: nw
 ## OBSERVATION: Fork in Path
+## MOVE: end of path --> nw --> fork in path
 
 ***
 # STEP NUM: 13
 ## ACT: n
 ## OBSERVATION: Small Path
+## MOVE: fork in path --> n --> small path
 
 ***
 # STEP NUM: 14
 ## ACT: e
 ## OBSERVATION: Canyon Entrance
 This is the entrance to a canyon formed by an ancient river.  The canyon is to the east.  There is a sandy path to the northwest that seems to lead to a beach.  There is a path leading into a forest to the west.
+## MOVE: small path --> e --> canyon entrance
 
 ***
 # STEP NUM: 15
 ## ACT: e
 ## OBSERVATION: Canyon Path
 The path here is a riverbed that has long since gone dry.  The river has cut several meandering passages into the canyon, forming what looks like two rather large boulders.  A passage to the north appears to go around the larger boulder, while a narrow gap to the southeast seems to go around the smaller boulder.  A passage to the east cuts the rock into its separate sections.  And of course, the passage to the west goes back the way you came.
+## MOVE: canyon entrance --> e --> canyon path
 
 ***
 # STEP NUM: 16
@@ -116,6 +125,7 @@ The path here is a riverbed that has long since gone dry.  The river has cut sev
 This clearing is apparently a brief widening of some ancient river.  There are various small passages winding around two large boulders.  These are to the north, south, and west.
 
 You can see a shovel here.
+## MOVE: canyon path --> n --> small clearing
 
 ***
 # STEP NUM: 17
@@ -126,17 +136,20 @@ You can see a shovel here.
 # STEP NUM: 18
 ## ACT: s
 ## OBSERVATION: Canyon Path
+## MOVE: small clearing --> s --> canyon path
 
 ***
 # STEP NUM: 19
 ## ACT: w
 ## OBSERVATION: Canyon Entrance
+## MOVE: canyon path --> w --> canyon entrance
 
 ***
 # STEP NUM: 20
 ## ACT: nw
 ## OBSERVATION: Endless Beach
 This is a beach that seems to stretch on forever to the east and west.  There is nothing particularly notable about the beach, except that it has white sand.  The ocean is to the north.  You see an island on the horizon.  There is a path winding across the dunes to the southeast.
+## MOVE: canyon entrance --> nw --> endless beach
 
 ***
 # STEP NUM: 21
@@ -148,18 +161,21 @@ This is a beach that seems to stretch on forever to the east and west.  There is
 ## ACT: n
 ## OBSERVATION: Ocean
 The water is a bit deep, but with the snorkel on you can breathe.  The shore is to the south.  The island looms ahead to the north.
+## MOVE: endless beach --> n --> ocean
 
 ***
 # STEP NUM: 23
 ## ACT: n
 ## OBSERVATION: Island Coast
 This is the main section of the island.  The primary landmark on the island is a towering rock, which lies along the coast here.  There is a path to the rest of the island to the north.
+## MOVE: ocean --> n --> island coast
 
 ***
 # STEP NUM: 24
 ## ACT: n
 ## OBSERVATION: Sandy Beach
 This is an area with particularly soft earth.  There is a path back to the main section of the island to the south.
+## MOVE: island coast --> n --> sandy beach
 
 ***
 # STEP NUM: 25
@@ -170,6 +186,7 @@ This is an area with particularly soft earth.  There is a path back to the main 
 # STEP NUM: 26
 ## ACT: s
 ## OBSERVATION: Island Coast
+## MOVE: sandy beach --> s --> island coast
 
 ***
 # STEP NUM: 27
@@ -178,6 +195,7 @@ This is an area with particularly soft earth.  There is a path back to the main 
 
 Cylindrical Room
 This is a cylindrical room.  The walls are smooth and unclimbable.  There are no prominent features in this room, except for a torch securely fastened to the wall.  There appears to be no way out of this room.
+## MOVE: island coast --> push rock --> cylindrical room
 
 ***
 # STEP NUM: 28
@@ -194,12 +212,14 @@ This is a cylindrical room.  The walls are smooth and unclimbable.  There are no
 ## ACT: se
 ## OBSERVATION: Giant Cavern
 This is a large room which has corridors leaving the room in four different directions:  northwest, northeast, west, and south.
+## MOVE: cylindrical room --> se --> giant cavern
 
 ***
 # STEP NUM: 31
 ## ACT: ne
 ## OBSERVATION: Small Cavern
 This is a small cavern with passages to the southeast, southwest, and north.
+## MOVE: giant cavern --> ne --> small cavern
 
 ***
 # STEP NUM: 32
@@ -208,6 +228,7 @@ This is a small cavern with passages to the southeast, southwest, and north.
 This passageway is rather damp and twists in all directions.  All of these are dead ends except for the passages to the north, northwest, southwest, and southeast.
 
 You can see a sword here.
+## MOVE: small cavern --> se --> twisting passageway
 
 ***
 # STEP NUM: 33
@@ -221,6 +242,7 @@ You can see a sword here.
 This is a store that appears to be deserted.  There are exits to the south and east.
 
 You can see a parka here.
+## MOVE: twisting passageway --> n --> blue ridge mountain sports
 
 ***
 # STEP NUM: 35
@@ -232,6 +254,7 @@ You can see a parka here.
 ## ACT: e
 ## OBSERVATION: Dirt Cave
 This is a damp cave with moist ground.  There is an exit to the west.
+## MOVE: blue ridge mountain sports --> e --> dirt cave
 
 ***
 # STEP NUM: 37
@@ -242,17 +265,20 @@ This is a damp cave with moist ground.  There is an exit to the west.
 # STEP NUM: 38
 ## ACT: w
 ## OBSERVATION: Blue Ridge Mountain Sports
+## MOVE: dirt cave --> w --> blue ridge mountain sports
 
 ***
 # STEP NUM: 39
 ## ACT: s
 ## OBSERVATION: Twisting Passageway
+## MOVE: blue ridge mountain sports --> s --> twisting passageway
 
 ***
 # STEP NUM: 40
 ## ACT: se
 ## OBSERVATION: Intersection
 You have come across a shimmering lake.  This is an intersection with paths to the northwest, northeast, southwest, and southeast.
+## MOVE: twisting passageway --> se --> intersection
 
 ***
 # STEP NUM: 41
@@ -264,6 +290,7 @@ There is an old man here.
 "I haven't had a smoke in 12 years," he says.  "Please, PLEASE give me a match!"
 
 You can also see a scroll here.
+## MOVE: intersection --> se --> east path
 
 ***
 # STEP NUM: 42
@@ -295,6 +322,7 @@ find us behind the wall of ice.
 ## ACT: sw
 ## OBSERVATION: South Lake
 This is an area south of the majestic lake.  There are many exits here, such as northwest, northeast, southeast, and south.
+## MOVE: east path --> sw --> south lake
 
 ***
 # STEP NUM: 46
@@ -303,6 +331,7 @@ This is an area south of the majestic lake.  There are many exits here, such as 
 There is a cool draft coming from the southeast.  There are other exits to the southwest and northwest.
 
 Since it is so cold, it might be wise to put on a jacket of some sort.
+## MOVE: south lake --> se --> chilly corridor
 
 ***
 # STEP NUM: 47
@@ -314,6 +343,7 @@ Since it is so cold, it might be wise to put on a jacket of some sort.
 ## ACT: se
 ## OBSERVATION: Ice Room
 This is a COLD room filled with ice.  Slush fills a hole in the center of the room.  There is an exit to the northwest.
+## MOVE: chilly corridor --> se --> ice room
 
 ***
 # STEP NUM: 49
@@ -335,6 +365,7 @@ Finally a fish!  You take it.
 # STEP NUM: 52
 ## ACT: nw
 ## OBSERVATION: Chilly Corridor
+## MOVE: ice room --> nw --> chilly corridor
 
 ***
 # STEP NUM: 53
@@ -343,6 +374,7 @@ Finally a fish!  You take it.
 This room smells of steaming rice.  Some song is playing in the distance, and it is saying something about rice patties.  Exits are to the northeast and north.
 
 You can see some rice here.
+## MOVE: chilly corridor --> sw --> rice room
 
 ***
 # STEP NUM: 54
@@ -359,17 +391,20 @@ You can see some rice here.
 ## ACT: n
 ## OBSERVATION: Musty Corridor
 This somewhat non-descript room has a particularly musty odor.  There are exits to the north and south.
+## MOVE: rice room --> n --> musty corridor
 
 ***
 # STEP NUM: 57
 ## ACT: n
 ## OBSERVATION: South Lake
+## MOVE: musty corridor --> n --> south lake
 
 ***
 # STEP NUM: 58
 ## ACT: nw
 ## OBSERVATION: West Path
 This is a section of the path that continues to the northeast and southeast, as well as branching to the west.
+## MOVE: south lake --> nw --> west path
 
 ***
 # STEP NUM: 59
@@ -378,6 +413,7 @@ This is a section of the path that continues to the northeast and southeast, as 
 This is a tall chamber with columns lining the door to the west.  The exit is to the east.
 
 You can see a samurai here.
+## MOVE: west path --> w --> guardian chamber
 
 ***
 # STEP NUM: 60
@@ -390,6 +426,7 @@ You can see a samurai here.
 ## OBSERVATION: Jeweled Room
 This is an ornately decorated room with absurdly large and tacky jewels plastered to the wall.
 In the center of the room is a diamond cage.  There is an exit to the east.
+## MOVE: guardian chamber --> w --> jeweled room
 
 ***
 # STEP NUM: 62
@@ -412,32 +449,38 @@ The cage and crystal suddenly vanish, leaving the wings.
 # STEP NUM: 65
 ## ACT: e
 ## OBSERVATION: Guardian Chamber
+## MOVE: jeweled room --> e --> guardian chamber
 
 ***
 # STEP NUM: 66
 ## ACT: e
 ## OBSERVATION: West Path
+## MOVE: guardian chamber --> e --> west path
 
 ***
 # STEP NUM: 67
 ## ACT: ne
 ## OBSERVATION: Intersection
+## MOVE: west path --> ne --> intersection
 
 ***
 # STEP NUM: 68
 ## ACT: nw
 ## OBSERVATION: Slimy Passageway
 This is a slippery tunnel which has exits to the north, northeast, and southeast.
+## MOVE: intersection --> nw --> slimy passageway
 
 ***
 # STEP NUM: 69
 ## ACT: n
 ## OBSERVATION: Giant Cavern
+## MOVE: slimy passageway --> n --> giant cavern
 
 ***
 # STEP NUM: 70
 ## ACT: ne
 ## OBSERVATION: Small Cavern
+## MOVE: giant cavern --> ne --> small cavern
 
 ***
 # STEP NUM: 71
