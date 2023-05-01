@@ -1,6 +1,7 @@
 import argparse
+import json
 
-from digraph import build_graph_from_file, get_all_paths, plot_graph, print_all_paths, build_graph_from_file_with_reverse
+from digraph import build_graph_from_file, get_all_paths, plot_graph, build_graph_from_file_with_reverse, get_all_paths_json
 from utils import inputColor, printColor
 
 parser = argparse.ArgumentParser()
@@ -48,5 +49,7 @@ while True:
         break
 
     # all path test
-    allPaths = get_all_paths(g, src=srcNode, dst=dstNode)
-    print_all_paths(g, allPaths)
+    all_paths = get_all_paths(g, src=srcNode, dst=dstNode)
+    all_paths_json = get_all_paths_json(g, all_paths, diff_shortest=True)
+    with open("all2all.json", "w") as f:
+        json.dump(all_paths_json, f, indent=4)
