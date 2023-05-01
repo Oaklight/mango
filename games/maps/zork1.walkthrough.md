@@ -242,7 +242,7 @@ There are old engravings on the walls here.
 ## ACT: E
 ## OBSERVATION: Dome Room
 You are at the periphery of a large dome, which forms the ceiling of another room below. Protecting you from a precipitous drop is a wooden railing which circles the dome.
-## MOVE: dome room --> E --> dome room
+## MOVE: engravings cave --> E --> dome room
 
 ***
 # STEP NUM: 34
