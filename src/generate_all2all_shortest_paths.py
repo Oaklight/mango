@@ -51,7 +51,7 @@ all_pairs = list(itertools.combinations(g.nodes(), 2))
 shortest_paths_json = []
 for srcNode, dstNode in all_pairs:
     shortest_paths = get_shortest_path(g, src=srcNode, dst=dstNode)
-    shortest_paths_json += get_path_json(g, shortest_paths, diff_shortest=True)
+    shortest_paths_json.append(get_path_json(g, shortest_paths))
 
 # f = open(args.output_path, "w")
 # dump to json
