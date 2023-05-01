@@ -1,6 +1,7 @@
 import argparse
+import json
 
-from digraph import build_graph_from_file, get_shortest_path, plot_graph, print_path, build_graph_from_file_with_reverse
+from digraph import build_graph_from_file, get_shortest_path, plot_graph, build_graph_from_file_with_reverse, get_path_json
 from utils import inputColor, printColor
 
 parser = argparse.ArgumentParser()
@@ -49,4 +50,6 @@ while True:
 
     # shortest path test
     shortestPath = get_shortest_path(g, src=srcNode, dst=dstNode)
-    print_path(g, shortestPath)
+    shortest_path_json = get_path_json(g, shortestPath)
+    with open("shortest.json", "w") as f:
+        json.dump(shortest_path_json, f, indent=4)
