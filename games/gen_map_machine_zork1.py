@@ -39,7 +39,7 @@ def main():
         observation, reward, done, info = env.step(act)
         location_after = env.get_player_location().name.strip().lower()
         location_after_id = env.get_player_location().num
-        if location_after != location_before: # location_after_id != location_before_id
+        if location_after_id != location_before_id:
             map_list.append({
                 'location_before': location_before,
                 'location_before_id': location_before_id,
@@ -71,6 +71,7 @@ def main():
                     'desc': desc
                 }
                 )
+
             else:
                 map_reversed_list.append({
                     'location_before': None,
@@ -89,21 +90,25 @@ def main():
     output_file = './maps/{}.map.machine'.format(game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
         for item in map_list:
-            fout.write('{} --> {} --> {}, step {}\n'.format(item['location_before'],
-                                                            item['act'],
-                                                            item['location_after'],
-                                                            item['step_num']))
+            fout.write('{} (obj{}) --> {} --> {} (obj{}), step {}\n'.format(item['location_before'],
+                                                                              item['location_before_id'],
+                                                                              item['act'],
+                                                                              item['location_after'],
+                                                                              item['location_after_id'],
+                                                                              item['step_num']))
     print ("Saved to {}".format(output_file))
 
     output_file = './maps/{}.map.machine.reversed'.format(game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
         for item in map_reversed_list:
             if item['act'] != None:
-                fout.write('{} --> {} --> {}, step {}, desc: {}\n'.format(item['location_before'],
-                                                                item['act'],
-                                                                item['location_after'],
-                                                                item['step_num'],
-                                                                item['desc']))
+                fout.write('{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n'.format(item['location_before'],
+                                                                                            item['location_before_id'],
+                                                                                            item['act'],
+                                                                                            item['location_after'],
+                                                                                            item['location_after_id'],
+                                                                                            item['step_num'],
+                                                                                            item['desc']))
             else:
                 fout.write('\n')
 
