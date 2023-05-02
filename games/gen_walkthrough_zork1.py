@@ -11,11 +11,10 @@ args = parser.parse_args()
 game_name = 'zork1.z5'
 env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
 
-# direction dict
-# todo: not wens, like 'pray'
 direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
-                        'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest'} # jericho.defines.ABBRV_DICT
-direction_abbrv_vocab = direction_abbrv_dict.keys()
+                        'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest',
+                        'u': 'up', 'd': 'down'} # jericho.defines.ABBRV_DICT
+direction_vocab_abbrv = direction_abbrv_dict.keys()
 direction_vocab = direction_abbrv_dict.values()
 opposite_direction_dict = {
     'east': 'west',
@@ -25,13 +24,15 @@ opposite_direction_dict = {
     'northeast': 'southwest',
     'southwest': 'northeast',
     'northwest': 'southeast',
-    'southeast': 'northwest'
+    'southeast': 'northwest',
+    'up': 'up',
+    'down': 'down'
 }
 
 # walkthrough
 walkthrough = env.get_walkthrough()
-walkthrough_direction = [direction_abbrv_dict[w.lower()] for w in walkthrough if w.lower() in direction_abbrv_vocab]
-print ('===> walkthrough direction: {}'.format(walkthrough_direction))
+walkthrough = [direction_abbrv_dict[w.lower()] if w.lower() in direction_vocab_abbrv else w.lower() for w in walkthrough]
+print ('===> walkthrough: {}'.format(walkthrough))
 
 map_list = []
 walkthrough_list = []
@@ -47,6 +48,7 @@ sample_info = {
 }
 walkthrough_list.append(sample_info)
 
+move_list = []
 for act in walkthrough:
     observation, reward, done, info = env.step(act)
     valid_actions = env.get_valid_actions()
@@ -59,9 +61,10 @@ for act in walkthrough:
     }
     print (sample_info)
     walkthrough_list.append(sample_info)
+    move_list.append(act)
 
     # todo: check loc_before and loc_after
-    if act.lower() in direction_abbrv_vocab:
+    if act.lower() in direction_vocab_abbrv:
         act = direction_abbrv_dict[act.lower()]
         oppo_act = opposite_direction_dict[act]
         valid_actions = [a for a in valid_actions if a in direction_vocab]
@@ -87,6 +90,8 @@ for act in walkthrough:
         # print (sample)
         loc_before = observation.split('\n')[0]
 
+print ("all moves: \n{}".format(set(move_list[:70])))
+
 assert done == True
 print ('Scored', info['score'], 'out of', env.get_max_score())
 
@@ -104,6 +109,11 @@ else:
         for sample in walkthrough_list:
             fout.write('==>STEP NUM: {}\n==>ACT: {}\n==>OBSERVATION: {}\n'.format(sample['step'], sample['act'], sample['observation'].strip()))
             fout.write('\n===========\n')
+
+outfile = '{}/{}.walkthrough_moves_70'.format(args.output_dir, game_name.split('.')[0])
+with open(outfile, 'w', encoding='utf-8') as fout:
+    for sample in set(move_list[:70]):
+        fout.write('{}\n'.format(sample))
 
 outfile = '{}/{}.map'.format(args.output_dir, game_name.split('.')[0])
 with open(outfile, 'w', encoding='utf-8') as fout:
