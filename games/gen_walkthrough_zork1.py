@@ -16,18 +16,6 @@ direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
                         'u': 'up', 'd': 'down'} # jericho.defines.ABBRV_DICT
 direction_vocab_abbrv = direction_abbrv_dict.keys()
 direction_vocab = direction_abbrv_dict.values()
-opposite_direction_dict = {
-    'east': 'west',
-    'west': 'east',
-    'north': 'south',
-    'south': 'north',
-    'northeast': 'southwest',
-    'southwest': 'northeast',
-    'northwest': 'southeast',
-    'southeast': 'northwest',
-    'up': 'up',
-    'down': 'down'
-}
 
 # walkthrough
 walkthrough = env.get_walkthrough()
@@ -36,7 +24,6 @@ print ('===> walkthrough: {}'.format(walkthrough))
 
 map_list = []
 walkthrough_list = []
-
 initial_observation, info = env.reset()
 print ('init ob: {}, info: {}'.format(initial_observation, info))
 loc_before = 'West of House'
@@ -47,12 +34,8 @@ sample_info = {
     'step': info['moves']
 }
 walkthrough_list.append(sample_info)
-
 for act in walkthrough:
     observation, reward, done, info = env.step(act)
-    valid_actions = env.get_valid_actions()
-    # print('act: {}, observation: {}, reward: {}, done: {}, info: {}'.format(act,observation.replace('\n','||'),reward,done,info))
-    # print ('==> valid actions: {}'.format(valid_actions))
     sample_info = {
         'act': act,
         'observation': observation,
