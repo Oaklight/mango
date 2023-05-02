@@ -48,7 +48,6 @@ sample_info = {
 }
 walkthrough_list.append(sample_info)
 
-move_list = []
 for act in walkthrough:
     observation, reward, done, info = env.step(act)
     valid_actions = env.get_valid_actions()
@@ -61,36 +60,6 @@ for act in walkthrough:
     }
     print (sample_info)
     walkthrough_list.append(sample_info)
-    move_list.append(act)
-
-    # todo: check loc_before and loc_after
-    if act.lower() in direction_vocab_abbrv:
-        act = direction_abbrv_dict[act.lower()]
-        oppo_act = opposite_direction_dict[act]
-        valid_actions = [a for a in valid_actions if a in direction_vocab]
-        oppo_direction_valid = (oppo_act in valid_actions)
-        if oppo_direction_valid == True:
-            desc = 'None'
-        else:
-            obsrv_splitted = observation.split('\n')
-            if len(obsrv_splitted) == 1:
-                desc = obsrv_splitted[0]
-            else:
-                desc = '{} || {}'.format(obsrv_splitted[0], "".join(obsrv_splitted[1:]))
-
-        sample = {
-            'loc_before': loc_before,
-            'act': act,
-            'loc_after': observation.split('\n')[0],
-            'valid_actions': valid_actions,
-            'oppo_direction_valid': oppo_direction_valid,
-            'description': desc
-        }
-        map_list.append(sample)
-        # print (sample)
-        loc_before = observation.split('\n')[0]
-
-print ("all moves: \n{}".format(set(move_list[:70])))
 
 assert done == True
 print ('Scored', info['score'], 'out of', env.get_max_score())
@@ -109,23 +78,5 @@ else:
         for sample in walkthrough_list:
             fout.write('==>STEP NUM: {}\n==>ACT: {}\n==>OBSERVATION: {}\n'.format(sample['step'], sample['act'], sample['observation'].strip()))
             fout.write('\n===========\n')
-
-outfile = '{}/{}.walkthrough_moves_70'.format(args.output_dir, game_name.split('.')[0])
-with open(outfile, 'w', encoding='utf-8') as fout:
-    for sample in set(move_list[:70]):
-        fout.write('{}\n'.format(sample))
-
-outfile = '{}/{}.map'.format(args.output_dir, game_name.split('.')[0])
-with open(outfile, 'w', encoding='utf-8') as fout:
-    for sample in map_list:
-        fout.write('{} --> {} --> {}\n'.format(sample['loc_before'], sample['act'], sample['loc_after']))
-
-outfile = '{}/{}.map.reversed'.format(args.output_dir, game_name.split('.')[0])
-with open(outfile, 'w', encoding='utf-8') as fout:
-    for sample in map_list:
-        if sample['oppo_direction_valid']:
-            fout.write('{} --> {} --> {}, True\n'.format(sample['loc_after'], opposite_direction_dict[sample['act']], sample['loc_before']))
-        else:
-            fout.write('{} --> {} --> {}, False, {}\n'.format(sample['loc_after'], opposite_direction_dict[sample['act']], sample['loc_before'], sample['description']))
 
 print ('Well Done!')

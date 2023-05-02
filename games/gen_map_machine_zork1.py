@@ -42,6 +42,7 @@ def main():
 
     map_list = []
     map_reversed_list = []
+    move_list = []
     for step_idx, act in enumerate(walkthrough[:max_steps]):
         observation, reward, done, info = env.step(act)
         location_after = env.get_player_location().name.strip().lower()
@@ -55,7 +56,7 @@ def main():
                 'location_after_id': location_after_id,
                 'step_num': step_idx + 1
             })
-
+            move_list.append(act)
             # reverse
             valid_actions = env.get_valid_actions()
             if act in direction_vocab:
@@ -118,6 +119,11 @@ def main():
                                                                                             item['desc']))
             else:
                 fout.write('\n')
+
+    outfile = '{}/{}.walkthrough_moves_70'.format(args.output_dir, game_name.split('.')[0])
+    with open(outfile, 'w', encoding='utf-8') as fout:
+        for sample in set(move_list):
+            fout.write('{}\n'.format(sample))
 
     print ("Saved to {}".format(output_file))
     print ("Good Job!")
