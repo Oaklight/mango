@@ -120,7 +120,7 @@ def main():
             else:
                 fout.write('\n')
 
-    outfile = '{}/{}.walkthrough_moves_70'.format(args.output_dir, game_name.split('.')[0])
+    outfile = '{}/{}.walkthrough.moves.{}'.format(args.output_dir, game_name.split('.')[0], max_steps)
     with open(outfile, 'w', encoding='utf-8') as fout:
         for sample in set(move_list).union(set(direction_vocab)) :
             fout.write('{}\n'.format(sample))
