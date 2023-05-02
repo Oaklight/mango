@@ -122,7 +122,7 @@ def main():
 
     outfile = '{}/{}.walkthrough_moves_70'.format(args.output_dir, game_name.split('.')[0])
     with open(outfile, 'w', encoding='utf-8') as fout:
-        for sample in set(move_list):
+        for sample in set(move_list).union(set(direction_vocab)) :
             fout.write('{}\n'.format(sample))
 
     print ("Saved to {}".format(output_file))
