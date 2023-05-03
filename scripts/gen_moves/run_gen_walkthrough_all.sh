@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#lgop.z3 error
 path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 files=$(ls $path)
 for filename in $files
