@@ -40,6 +40,7 @@ def get_args():
 
     args = parser.parse_args()
     args.output_path = args.game_data_dir
+    print("game data dir: {}".format(args.game_data_dir))
 
     # game name in this case is the name of the last layer folder
     args.game_name = args.game_data_dir.split("/")[-1]
@@ -137,11 +138,17 @@ if __name__ == "__main__":
     # cast anno2code entry from set to list
     for anno in anno2code.keys():
         anno2code[anno] = list(anno2code[anno])
-
+        # sort anno2code entry
+        anno2code[anno].sort()
+        
     # write to json file
-    with open(args.output_path + ".code2anno.json", "w") as f:
+    with open(
+        os.path.join(args.output_path, f"{args.game_name}.code2anno.json"), "w"
+    ) as f:
         json.dump(code2anno, f, indent=4)
-    with open(args.output_path + ".anno2code.json", "w") as f:
+    with open(
+        os.path.join(args.output_path, f"{args.game_name}.anno2code.json"), "w"
+    ) as f:
         json.dump(anno2code, f, indent=4)
 
     print("Done processing!\n")
