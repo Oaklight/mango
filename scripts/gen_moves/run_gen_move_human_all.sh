@@ -12,8 +12,9 @@ do
     # skip if this file not exists
     if [ ! -f $valid_moves ]; then
         continue
+    else
+        python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env
     fi
-    python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env
 done
 
 echo "Good Job!"
