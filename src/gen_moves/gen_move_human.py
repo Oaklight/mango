@@ -138,19 +138,7 @@ def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
     ]  # len must be 1
     jericho_path_for_game = os.path.join(jericho_path, jericho_files[0])
 
-    game_name = jericho_path_for_game.split("/")[-1].split(".")[0]
-    max_steps = min(len(valid_moves), 70)
-    print("Game: {}, Max steps: {}".format(game_name, max_steps))
-
-    # convert valid_moves to list, sorted by step number, int
-    valid_moves = [
-        valid_moves[key] for key in sorted(valid_moves.keys(), key=lambda x: int(x))
-    ]
-    valid_moves = valid_moves[:max_steps]
-    print(len(valid_moves))
-
     env = FrotzEnv(jericho_path_for_game)
-
     # walkthrough
     walkthrough = env.get_walkthrough()
     walkthrough = [
@@ -160,8 +148,18 @@ def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
         for item in walkthrough
     ]
 
+    max_steps = min(len(walkthrough), 70)
+    print("Game: {}, Max steps: {}".format(game_name, max_steps))
+
+    # convert valid_moves to list, sorted by step number, int
+    valid_moves = [
+        valid_moves[key] for key in sorted(valid_moves.keys(), key=lambda x: int(x))
+    ]
+    valid_moves = valid_moves[:max_steps]
+    print(len(valid_moves))
+
     # annotated valid moves
-    output_file = "{}/{}.map.human".format(args.output_dir, game_name)
+    output_file = "{}/{}.map.human".format(output_dir, game_name)
     with open(output_file, "w", encoding="utf-8") as fout:
         for step_idx, move in enumerate(valid_moves):
             try:
