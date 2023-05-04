@@ -184,7 +184,7 @@ def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
     print("Good Job!")
 
 
-if __name__ == "__main__":
+def get_args():
     parser = argparse.ArgumentParser()
     # walkthrough_file, valid_move_csv as mutually exclusive
     group = parser.add_mutually_exclusive_group(required=True)
@@ -206,6 +206,11 @@ if __name__ == "__main__":
     else:
         args.output_dir = "/".join(args.valid_move_csv.split("/")[:-1])
         args.game_name = args.valid_move_csv.split("/")[-1].split(".")[0]
+    return args
+
+
+if __name__ == "__main__":
+    args = get_args()
 
     if args.valid_move_csv:
         valid_moves = read_csv(args.valid_move_csv)
