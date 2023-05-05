@@ -68,11 +68,11 @@ cd gamegpt_utils
 
 ，包括：
 
-- path: 一般情况是指`data/maps`，具体folder取决于在哪里运行这个脚本
-- game: 具体folder的名字
-- jericho_path: jericho游戏的位置，比如：`z-machine-games-master/jericho-game-suite`
+- path: 一般情况是指`data/maps`，具体path取决于在哪里运行这个脚本：如果在gamegpt_utils执行，则为`data/maps`，如果在scripts执行，则为`../data/maps`；
+- game: 具体folder的名字，比如zork1、905；
+- jericho_path: jericho游戏的位置，比如：`z-machine-games-master/jericho-game-suite`，具体path取决于哪里运行，参考path的解释。
 
-生成的结果在`data/maps/<game>`下面
+对应游戏生成的结果在`data/maps/<game>`下面
 
 ### 生成所有游戏的 game.map.human, game.anno2code.json, game.anno2code.json
 
