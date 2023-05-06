@@ -273,7 +273,11 @@ def verify_path(g: object, src_node, dst_node, paths2verify: list):
 
     # TODO: check each step is a valid step
     print(
-        "CHECK FROM \033[1m[" + src_node + "]\033[0m TO \033[1m[" + dst_node + "]\033[0m"
+        "CHECK FROM \033[1m["
+        + src_node
+        + "]\033[0m TO \033[1m["
+        + dst_node
+        + "]\033[0m"
     )
 
     via_list = [src_node]
@@ -281,9 +285,13 @@ def verify_path(g: object, src_node, dst_node, paths2verify: list):
     # iterate over neighbors of node, check if edge direction is correct
     for i in range(len(paths2verify)):
         neighbors = list(g.neighbors(node))
+        node_neighbor_edge_directions = [
+            get_edge_direction(g, node, each) for each in neighbors
+        ]
+        # print(node_neighbor_edge_directions)
         check_edge_directions = [
-            same_direction_test(paths2verify[i], get_edge_direction(g, node, each))
-            for each in neighbors
+            same_direction_test(paths2verify[i], each)
+            for each in node_neighbor_edge_directions
         ]
         # assert at least 1 True instance
         if not any(check_edge_directions):
@@ -295,9 +303,12 @@ def verify_path(g: object, src_node, dst_node, paths2verify: list):
             )
             return False
         else:
-            assert (
-                check_edge_directions.count(True) == 1
-            ), "more than 1 edge direction is correct, MAP ERROR"
+            assert check_edge_directions.count(True) == 1, (
+                f"more than 1 edge direction is correct, MAP ERROR [{src_node}] --> [{dst_node}], via {node}, go {paths2verify[i]}",
+                neighbors,
+                node_neighbor_edge_directions,
+                check_edge_directions,
+            )
             node = neighbors[check_edge_directions.index(True)]
             via_list.append(node)
     # check if the last node is dst_node
@@ -333,6 +344,7 @@ def same_direction_test(given_direction: str, proposed_direction: str):
     check if given direction is the same as correct direction
     """
     # strip and lower
+    # print(given_direction, proposed_direction)
     given_direction = given_direction.strip().lower()
     proposed_direction = proposed_direction.strip().lower()
 
@@ -393,11 +405,15 @@ def get_all_paths_json(g, all_paths, diff_shortest=False):
     """
     iterate over all paths and print each
     """
+    path_json_list = []
+    if len(all_paths) == 0:
+        print("no path found")
+        return path_json_list
+
     # sort all_paths by len of each
     all_paths.sort(key=lambda x: len(x))
     shortest_len = len(all_paths[0])
 
-    path_json_list = []
     for path in all_paths:
         if diff_shortest:
             path_json = get_path_json(g, path, shortest_length=shortest_len)
