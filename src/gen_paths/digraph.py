@@ -136,7 +136,10 @@ def build_graph_from_file(
     verbose: bool = True,
 ) -> object:
     """
-    builds a graph from a txt file, each line is in format "from,to"
+    builds a graph from a csv file,
+    - forward path: path (src_node --> action --> dst_node), step_num
+    - backward path: path (dst_node --> opposite_action --> src_node), step_num, description
+      if description is "None" this is a valid path, otherwise it's an invalid path
     """
     with open(path_file, "r") as f:
         lines = f.readlines()
@@ -155,21 +158,21 @@ def build_graph_from_file(
         if line == "":
             print("skip empty line")
             continue
-        if "," in line:
+        if "desc:" in line:
             print("revered path detected")
-            splitted_elements = [each.strip().lower() for each in line.split(",")]
-            path = splitted_elements[0]
-            valid_check = splitted_elements[1]
-            step_num = splitted_elements[2] if len(splitted_elements) > 2 else None
-            obsv = splitted_elements[3] if len(splitted_elements) > 3 else None
+            # parse reversed path
+            line, desc = [each.strip().lower() for each in line.split("desc:")]
 
-            if valid_check == "false":
-                print("invalid path detected", path, obsv)
+            if desc != "None":
+                print("invalid path detected", line, desc)
                 continue
         else:
             print("normal path detected")
-            path = line
+            # path = line
 
+        splitted_elements = [each.strip().lower() for each in line.split(",")]
+        path = splitted_elements[0]
+        step_num = int(splitted_elements[1].split("step")[1].strip())
         elements = [each.strip().lower() for each in path.split("-->")]
         print(elements)
         src_node, direction, dst_node = elements
