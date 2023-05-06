@@ -258,6 +258,107 @@ def get_all_paths(g: object, src: str, dst: str):
         return []
 
 
+def anno_to_code(anno: str, anno2code: dict):
+    """
+    convert annotation to code
+    anno and keys in anno2code may not be in the same case, so lower case all keys in anno2code
+    """
+    anno = anno.lower()
+    anno2code = {k.lower(): v for k, v in anno2code.items()}
+
+    if anno in anno2code:
+        return anno2code[anno][0]
+    else:
+        print(f"anno [{anno}] is not in anno2code")
+        return None
+
+
+PathCheck = {
+    0: "ERROR: empty path",
+    1: "ERROR: node not in anno2code",
+    2: "ERROR: prev_node not in anno2code",
+    3: "ERROR: 1st prev_node != src_node",
+    4: "ERROR: node not in prev_node.neighbor()",
+    5: "ERROR: edge not adjacent",
+    6: "ERROR: action is not valid",
+    7: "GOOD: seen",  # the 1st cheering one :) it means the edge is in the forward subgraph
+    8: "GOOD: unseen",  # the 2nd cheering one :) it means the edge is in the backward subgraph
+}
+
+
+def walk_and_label_path(g: object, src_anno: str, path: list[dict], anno2code: dict):
+    """
+    given src_annotation and path, walk along the path and label the path
+    src_anno: annotation of src_node
+    anno2code: mapping from annotation to codename list, usually len(codenames) == 1
+    code2anno: mapping from codename to annotation, one to one mapping
+    path: list of dict: {"prev_node", "node", "action"}
+    return dst_anno, stop_step, labeled path, and path check message
+    """
+
+    if len(path) == 0:
+        return None, -2, path, PathCheck[0]
+
+    # check if src_anno is in anno2code
+    src_node = anno_to_code(src_anno, anno2code)
+    if src_node is None:
+        return None, -1, path, PathCheck[1]
+
+    # walk along the path
+
+    # load first prev_node, check if it is in anno2code
+    # print(path[0], type(path[0]))
+    prev_node = path[0]["prev_node"]
+    prev_node = anno_to_code(prev_node, anno2code)
+    if prev_node is None:
+        path[0]["msg"] = PathCheck[2]
+        return None, 0, path, PathCheck[2]
+
+    # check if path[0]["prev_node"] is src_node
+    if prev_node != src_node:
+        path[0]["msg"] = PathCheck[3]
+        return None, 0, path, PathCheck[3]
+
+    for i in range(len(path)):
+        # check current line's prev_node is the same as previous line's node. If not , edges not adjacent
+        if i > 0:
+            if path[i]["prev_node"] != path[i - 1]["node"]:
+                path[i]["msg"] = PathCheck[5]
+                return prev_node, i, path, PathCheck[5]
+
+        node = path[i]["node"]
+        node = anno_to_code(node, anno2code)
+        if node is None:
+            path[i]["msg"] = PathCheck[1]
+            return prev_node, i, path, PathCheck[1]
+
+        # check if node is neighbor of prev_node
+        if node not in g.neighbors(prev_node):
+            path[i]["msg"] = PathCheck[4]
+            return prev_node, i, path, PathCheck[4]
+
+        # nodes are all good, now check if action is valid
+        action = path[i]["action"]
+        real_action = g[prev_node][node]["direction"]
+        if action != real_action:
+            path[i]["msg"] = PathCheck[6]
+            return prev_node, i, path, PathCheck[6]
+
+        # all good, check if edge is in the forward subgraph
+        if g.forward.has_edge(prev_node, node):
+            path[i]["msg"] = PathCheck[7]
+        else:
+            path[i]["msg"] = PathCheck[8]
+
+        # update prev_node
+        prev_node = node
+
+    # done walking
+    dst_node = prev_node
+    # dst_anno = code2anno[dst_node]
+    return dst_node, len(path), path, "all good"
+
+
 def verify_path(g: object, src_node, dst_node, paths2verify: list):
     """
     given src_node and dst_node, verify if the paths2verify is valid
