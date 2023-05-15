@@ -1,47 +1,42 @@
-Small Path --> west --> Large Clearing, True
-Fork in Path --> north --> Small Path, True
-End of Path --> northeast --> Fork in Path, False, End of Path || This appears to be the end of the path.  There is an exit to the northeast.You can see a match here.
-Fork in Path --> southwest --> End of Path, False, Fork in Path
-End of Path --> northwest --> Fork in Path, False, End of Path || This appears to be the end of the path.  There is an exit to the northwest.You can see a raincoat (which is closed) here.
-Fork in Path --> southeast --> End of Path, False, Fork in Path
-Small Path --> south --> Fork in Path, True
-Canyon Entrance --> west --> Small Path, True
-Canyon Path --> west --> Canyon Entrance, True
-Small Clearing --> south --> Canyon Path, False, Small Clearing || This clearing is apparently a brief widening of some ancient river.  There are various small passages winding around two large boulders.  These are to the north, south, and west.You can see a shovel here.
-Canyon Path --> north --> Small Clearing, True
-Canyon Entrance --> east --> Canyon Path, True
-Endless Beach --> southeast --> Canyon Entrance, False, Endless Beach || This is a beach that seems to stretch on forever to the east and west.  There is nothing particularly notable about the beach, except that it has white sand.  The ocean is to the north.  You see an island on the horizon.  There is a path winding across the dunes to the southeast.
-Ocean --> south --> Endless Beach, True
-Island Coast --> south --> Ocean, False, Island Coast || This is the main section of the island.  The primary landmark on the island is a towering rock, which lies along the coast here.  There is a path to the rest of the island to the north.
-Sandy Beach --> south --> Island Coast, True
-Island Coast --> north --> Sandy Beach, True
-Giant Cavern --> northwest --> Island Coast, False, Giant Cavern || This is a large room which has corridors leaving the room in four different directions:  northwest, northeast, west, and south.
-Small Cavern --> southwest --> Giant Cavern, False, Small Cavern || This is a small cavern with passages to the southeast, southwest, and north.
-Twisting Passageway --> northwest --> Small Cavern, False, Twisting Passageway || This passageway is rather damp and twists in all directions.  All of these are dead ends except for the passages to the north, northwest, southwest, and southeast.You can see a sword here.
-Blue Ridge Mountain Sports --> south --> Twisting Passageway, True
-Dirt Cave --> west --> Blue Ridge Mountain Sports, True
-Blue Ridge Mountain Sports --> east --> Dirt Cave, True
-Twisting Passageway --> north --> Blue Ridge Mountain Sports, True
-Intersection --> northwest --> Twisting Passageway, False, Intersection || You have come across a shimmering lake.  This is an intersection with paths to the northwest, northeast, southwest, and southeast.
-East Path --> northwest --> Intersection, False, East Path || This is a path that came from the northwest and continues to the southwest.There is an old man here."I haven't had a smoke in 12 years," he says.  "Please, PLEASE give me a match!"You can also see a scroll here.
-South Lake --> northeast --> East Path, False, South Lake || This is an area south of the majestic lake.  There are many exits here, such as northwest, northeast, southeast, and south.
-Chilly Corridor --> northwest --> South Lake, False, Chilly Corridor || There is a cool draft coming from the southeast.  There are other exits to the southwest and northwest.Since it is so cold, it might be wise to put on a jacket of some sort.
-Ice Room --> northwest --> Chilly Corridor, False, Ice Room || This is a COLD room filled with ice.  Slush fills a hole in the center of the room.  There is an exit to the northwest.
-Chilly Corridor --> southeast --> Ice Room, False, Chilly Corridor
-Rice Room --> northeast --> Chilly Corridor, False, Rice Room || This room smells of steaming rice.  Some song is playing in the distance, and it is saying something about rice patties.  Exits are to the northeast and north.You can see some rice here.
-Musty Corridor --> south --> Rice Room, True
-South Lake --> south --> Musty Corridor, True
-West Path --> southeast --> South Lake, False, West Path || This is a section of the path that continues to the northeast and southeast, as well as branching to the west.
-Guardian Chamber --> east --> West Path, True
-Jeweled Room --> east --> Guardian Chamber, True
-Guardian Chamber --> west --> Jeweled Room, True
-West Path --> west --> Guardian Chamber, True
-Intersection --> southwest --> West Path, False, Intersection
-Slimy Passageway --> southeast --> Intersection, False, Slimy Passageway || This is a slippery tunnel which has exits to the north, northeast, and southeast.
-Giant Cavern --> south --> Slimy Passageway, True
-Small Cavern --> southwest --> Giant Cavern, False, Small Cavern
-Organ Room --> south --> Small Cavern, True
-Small Cavern --> north --> Organ Room, True
-Giant Cavern --> northeast --> Small Cavern, False, Giant Cavern
-Cold Passage --> east --> Giant Cavern, True
-Ledge --> east --> Cold Passage, True
+Small Path (obj34) --> west --> Large Clearing (obj28), step 2, desc: None
+Fork in Path (obj36) --> north --> Small Path (obj34), step 3, desc: None
+End of Path (obj37) --> northeast --> Fork in Path (obj36), step 4, desc:  || End of PathThis appears to be the end of the path.  There is an exit to the northeast.You can see a match here.
+Fork in Path (obj36) --> southwest --> End of Path (obj37), step 6, desc:  || Fork in Path
+End of Path (obj39) --> northwest --> Fork in Path (obj36), step 7, desc:  || End of PathThis appears to be the end of the path.  There is an exit to the northwest.You can see a raincoat (which is closed) here.
+Fork in Path (obj36) --> southeast --> End of Path (obj39), step 12, desc:  || Fork in Path
+Small Path (obj34) --> south --> Fork in Path (obj36), step 13, desc: None
+Canyon Entrance (obj41) --> west --> Small Path (obj34), step 14, desc: None
+Canyon Path (obj47) --> west --> Canyon Entrance (obj41), step 15, desc: None
+Small Clearing (obj51) --> south --> Canyon Path (obj47), step 16, desc:  || Small ClearingThis clearing is apparently a brief widening of some ancient river.  There are various small passages winding around two large boulders.  These are to the north, south, and west.You can see a shovel here.
+Canyon Path (obj47) --> north --> Small Clearing (obj51), step 18, desc: None
+Canyon Entrance (obj41) --> east --> Canyon Path (obj47), step 19, desc: None
+Endless Beach (obj55) --> southeast --> Canyon Entrance (obj41), step 20, desc:  || Endless BeachThis is a beach that seems to stretch on forever to the east and west.  There is nothing particularly notable about the beach, except that it has white sand.  The ocean is to the north.  You see an island on the horizon.  There is a path winding across the dunes to the southeast.
+Ocean (obj61) --> south --> Endless Beach (obj55), step 22, desc: None
+Island Coast (obj63) --> south --> Ocean (obj61), step 23, desc:  || Island CoastThis is the main section of the island.  The primary landmark on the island is a towering rock, which lies along the coast here.  There is a path to the rest of the island to the north.
+Sandy Beach (obj66) --> south --> Island Coast (obj63), step 24, desc: None
+Island Coast (obj63) --> north --> Sandy Beach (obj66), step 26, desc: None
+Giant Cavern (obj74) --> northwest --> Cylindrical Room (obj69), step 30, desc:  || Giant CavernThis is a large room which has corridors leaving the room in four different directions:  northwest, northeast, west, and south.
+Small Cavern (obj77) --> southwest --> Giant Cavern (obj74), step 31, desc:  || Small CavernThis is a small cavern with passages to the southeast, southwest, and north.
+Twisting Passageway (obj89) --> northwest --> Small Cavern (obj77), step 32, desc:  || Twisting PassagewayThis passageway is rather damp and twists in all directions.  All of these are dead ends except for the passages to the north, northwest, southwest, and southeast.You can see a sword here.
+Blue Ridge Mountain Sports (obj92) --> south --> Twisting Passageway (obj89), step 34, desc: None
+Dirt Cave (obj95) --> west --> Blue Ridge Mountain Sports (obj92), step 36, desc: None
+Blue Ridge Mountain Sports (obj92) --> east --> Dirt Cave (obj95), step 38, desc: None
+Twisting Passageway (obj89) --> north --> Blue Ridge Mountain Sports (obj92), step 39, desc: None
+Intersection (obj99) --> northwest --> Twisting Passageway (obj89), step 40, desc:  || IntersectionYou have come across a shimmering lake.  This is an intersection with paths to the northwest, northeast, southwest, and southeast.
+East Path (obj102) --> northwest --> Intersection (obj99), step 41, desc:  || East PathThis is a path that came from the northwest and continues to the southwest.There is an old man here."I haven't had a smoke in 12 years," he says.  "Please, PLEASE give me a match!"You can also see a scroll here.
+South Lake (obj107) --> northeast --> East Path (obj102), step 45, desc:  || South LakeThis is an area south of the majestic lake.  There are many exits here, such as northwest, northeast, southeast, and south.
+Chilly Corridor (obj108) --> northwest --> South Lake (obj107), step 46, desc:  || Chilly CorridorThere is a cool draft coming from the southeast.  There are other exits to the southwest and northwest.Since it is so cold, it might be wise to put on a jacket of some sort.
+Ice Room (obj116) --> northwest --> Chilly Corridor (obj108), step 48, desc:  || Ice RoomThis is a COLD room filled with ice.  Slush fills a hole in the center of the room.  There is an exit to the northwest.
+Chilly Corridor (obj108) --> southeast --> Ice Room (obj116), step 52, desc:  || Chilly Corridor
+Rice Room (obj113) --> northeast --> Chilly Corridor (obj108), step 53, desc:  || Rice RoomThis room smells of steaming rice.  Some song is playing in the distance, and it is saying something about rice patties.  Exits are to the northeast and north.You can see some rice here.
+Musty Corridor (obj111) --> south --> Rice Room (obj113), step 56, desc: None
+South Lake (obj107) --> south --> Musty Corridor (obj111), step 57, desc: None
+West Path (obj106) --> southeast --> South Lake (obj107), step 58, desc:  || West PathThis is a section of the path that continues to the northeast and southeast, as well as branching to the west.
+Guardian Chamber (obj121) --> east --> West Path (obj106), step 59, desc: None
+Jeweled Room (obj126) --> east --> Guardian Chamber (obj121), step 61, desc: None
+Guardian Chamber (obj121) --> west --> Jeweled Room (obj126), step 65, desc: None
+West Path (obj106) --> west --> Guardian Chamber (obj121), step 66, desc: None
+Intersection (obj99) --> southwest --> West Path (obj106), step 67, desc:  || Intersection
+Slimy Passageway (obj86) --> southeast --> Intersection (obj99), step 68, desc:  || Slimy PassagewayThis is a slippery tunnel which has exits to the north, northeast, and southeast.
+Giant Cavern (obj74) --> south --> Slimy Passageway (obj86), step 69, desc: None
+Small Cavern (obj77) --> southwest --> Giant Cavern (obj74), step 70, desc:  || Small Cavern
