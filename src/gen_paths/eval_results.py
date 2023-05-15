@@ -1,3 +1,4 @@
+import argparse
 import glob
 import json
 import os
@@ -165,13 +166,123 @@ def extract_actions(string):
     return actions
 
 
+def plot_length_dist(each_version, length_count, plot_dir):
+    plt.figure(figsize=(20, 12))
+    plt.bar(length_count.keys(), length_count.values(), width=0.7)
+    plt.xticks(
+        np.arange(min(length_count.keys()), max(length_count.keys()) + 1, 1.0),
+        rotation=15,
+    )
+    plt.xlabel("length of path")
+    plt.ylabel("count")
+    plt.title(f"length distribution of {each_version}")
+    plt.savefig(os.path.join(plot_dir, each_version, "length_distribution.png"))
+    plt.clf()
+
+
+def plot_error_type_dist(
+    each_version, error_type_step_count, error_type_step_count_mean, plot_dir
+):
+    plt.figure(figsize=(20, 12))
+    for each_error_type in error_type_step_count:
+        plt.bar(each_error_type, error_type_step_count_mean[each_error_type], width=0.7)
+    plt.legend(error_type_step_count.keys(), loc="upper left")
+    # plt.xticks(rotation=15, ha='right') with full ticks step 1
+    plt.xticks(rotation=15, ha="right")
+    plt.xlabel("error type")
+    plt.ylabel("mean of stop step")
+    plt.title(f"error type distribution of {each_version}")
+    plt.savefig(os.path.join(plot_dir, each_version, "error_type_distribution.png"))
+    plt.clf()
+
+
+def plot_error_type_dist_count(each_version, error_type_step_count, plot_dir):
+    plt.figure(figsize=(20, 12))
+    for each_error_type in error_type_step_count:
+        plt.bar(each_error_type, len(error_type_step_count[each_error_type]), width=0.7)
+    plt.legend(error_type_step_count.keys(), loc="upper left")
+    plt.xticks(rotation=15, ha="right")
+    plt.xlabel("error type")
+    plt.ylabel("count")
+    plt.title(f"error type distribution of {each_version}")
+    plt.savefig(
+        os.path.join(plot_dir, each_version, "error_type_distribution_count.png")
+    )
+    plt.clf()
+
+
+def plot_stop_step_dists(each_version, error_type_step_count, plot_dir):
+    plt.figure(figsize=(20, 12))
+    for each_error_type in error_type_step_count:
+        if len(error_type_step_count[each_error_type]) == 0:
+            continue
+            # plt.hist(error_type_step_count[each_error_type]) same bin size but smaller in visual
+        plt.hist(
+            error_type_step_count[each_error_type],
+            bins=range(
+                min(error_type_step_count[each_error_type]),
+                max(error_type_step_count[each_error_type]) + 1,
+                1,
+            ),
+        )
+        plt.xticks(rotation=15)
+        plt.xlabel("stop step")
+        plt.ylabel("count")
+        plt.title(f"stop step distribution of {each_error_type}")
+        # camel case of each_error_type
+        each_error_type_camel = (
+            each_error_type.title().replace(" ", "").replace(":", "")
+        )
+        plt.savefig(
+            os.path.join(
+                plot_dir,
+                each_version,
+                f"stop_step_distribution_{each_error_type_camel}.png",
+            )
+        )
+        plt.clf()
+
+
 if __name__ == "__main__":
-    all2all_json = "./data/maps/zork1/zork1.all2all.json"
+    # argparse to readin game folder
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--maps_dir", "-m", type=str, default="./data/maps", help="path to maps folder"
+    )
+    parser.add_argument("--game", "-g", type=str, required=True, help="game name")
+    parser.add_argument(
+        "--gpt_result_dir",
+        "-r",
+        type=str,
+        required=True,
+        help="path to gpt result files",
+    )
+    parser.add_argument(
+        "--output_dir", "-odir", type=str, required=True, help="path to output file"
+    )
+    args = parser.parse_args()
+
+    # test existence of game folder
+    tgt_path = os.path.join(args.maps_dir, args.game)
+    if not os.path.exists(tgt_path):
+        print("path does not exist")
+        exit(1)
+
+    # test existence of gpt result folder
+    if not os.path.exists(args.gpt_result_dir):
+        print("path does not exist")
+        exit(1)
+
+    # test existence of output folder
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+
+    all2all_json = os.path.join(tgt_path, f"{args.game}.all2all.json")
     with open(all2all_json, "r") as f:
         all2all = json.load(f)
 
-    anno2code_json = "./data/maps/zork1/zork1.anno2code.json"
-    code2anno_json = "./data/maps/zork1/zork1.code2anno.json"
+    anno2code_json = os.path.join(tgt_path, f"{args.game}.anno2code.json")
+    code2anno_json = os.path.join(tgt_path, f"{args.game}.code2anno.json")
     with open(anno2code_json, "r") as f:
         anno2code = json.load(f)
         # anno2code = {k.lower(): v for k, v in anno2code.items()}
@@ -179,14 +290,14 @@ if __name__ == "__main__":
         code2anno = json.load(f)
         # code2anno = {k.lower(): v for k, v in code2anno.items()}
 
-    map_file = "./data/maps/zork1/zork1.map.machine"
-    map_file_reversed = "./data/maps/zork1/zork1.map.machine.reversed"
+    map_file = os.path.join(tgt_path, f"{args.game}.map.machine")
+    map_file_reversed = os.path.join(tgt_path, f"{args.game}.map.machine.reversed")
     g = build_graph_from_file_with_reverse(map_file, map_file_reversed, verbose=False)
 
     print("\n\n\n\n\n")
 
     verify_collections = {}
-    gpt_result_dir = "./data/gpt-zork-results/results/"
+    gpt_result_dir = args.gpt_result_dir
     gpt_prompt_version = [
         "pathgen-gpt-3.5-turbo/",
         "pathgen-gpt-4/",
@@ -220,7 +331,9 @@ if __name__ == "__main__":
             "collection": current_collection,
         }
 
-    with open("./data/verify_results.json", "w") as f:
+    with open(
+        os.path.join(args.output_dir, args.game, "verify_results.json"), "w"
+    ) as f:
         json.dump(verify_collections, f, indent=4)
 
     # compute stats from verify_collections
@@ -275,78 +388,21 @@ if __name__ == "__main__":
         print("error_type_step_count", error_type_step_count)
         print()
 
+        plot_dir = os.path.join(args.output_dir, args.game, "eval_plots")
         # make dir for each version
-        if not os.path.exists(f"./data/eval_plots/zork1/{each_version}"):
-            os.makedirs(f"./data/eval_plots/zork1/{each_version}")
+        if not os.path.exists(os.path.join(plot_dir, f"{each_version}")):
+            os.makedirs(os.path.join(plot_dir, f"{each_version}"))
 
         # matplotlib plot histogram of length_count, bar label pointing at the center of each bar
-        plt.figure(figsize=(20, 12))
-        plt.bar(length_count.keys(), length_count.values(), width=0.7)
-        plt.xticks(
-            np.arange(min(length_count.keys()), max(length_count.keys()) + 1, 1.0),
-            rotation=15,
-        )
-        plt.xlabel("length of path")
-        plt.ylabel("count")
-        plt.title(f"length distribution of {each_version}")
-        plt.savefig(f"./data/eval_plots/zork1/{each_version}/length_distribution.png")
-        plt.clf()
+        plot_length_dist(each_version, length_count, plot_dir)
 
         # matplotlib plot means of error_type_step_count, no bar label, use legend instead, with digits on top of each bar
-        plt.figure(figsize=(20, 12))
-        for each_error_type in error_type_step_count:
-            plt.bar(
-                each_error_type, error_type_step_count_mean[each_error_type], width=0.7
-            )
-        plt.legend(error_type_step_count.keys(), loc="upper left")
-        # plt.xticks(rotation=15, ha='right') with full ticks step 1
-        plt.xticks(rotation=15, ha="right")
-        plt.xlabel("error type")
-        plt.ylabel("mean of stop step")
-        plt.title(f"error type distribution of {each_version}")
-        plt.savefig(
-            f"./data/eval_plots/zork1/{each_version}/error_type_distribution.png"
+        plot_error_type_dist(
+            each_version, error_type_step_count, error_type_step_count_mean, plot_dir
         )
-        plt.clf()
 
         # matplotlib plot histogram of error_type_step_count
-        plt.figure(figsize=(20, 12))
-        for each_error_type in error_type_step_count:
-            plt.bar(
-                each_error_type, len(error_type_step_count[each_error_type]), width=0.7
-            )
-        plt.legend(error_type_step_count.keys(), loc="upper left")
-        plt.xticks(rotation=15, ha="right")
-        plt.xlabel("error type")
-        plt.ylabel("count")
-        plt.title(f"error type distribution of {each_version}")
-        plt.savefig(
-            f"./data/eval_plots/zork1/{each_version}/error_type_distribution_count.png"
-        )
-        plt.clf()
-
+        plot_error_type_dist_count(each_version, error_type_step_count, plot_dir)
 
         # matplotlib plot distribution of stop_step for each error type
-        plt.figure(figsize=(20, 12))
-        for each_error_type in error_type_step_count:
-            if len(error_type_step_count[each_error_type]) == 0:
-                continue
-            # plt.hist(error_type_step_count[each_error_type]) same bin size but smaller in visual
-            plt.hist(
-                error_type_step_count[each_error_type],
-                bins=range(
-                    min(error_type_step_count[each_error_type]),
-                    max(error_type_step_count[each_error_type]) + 1,
-                    1,
-                ),
-            )
-            plt.xticks(rotation=15)
-            plt.xlabel("stop step")
-            plt.ylabel("count")
-            plt.title(f"stop step distribution of {each_error_type}")
-            # camel case of each_error_type
-            each_error_type_camel = each_error_type.title().replace(" ", "")
-            plt.savefig(
-                f"./data/eval_plots/zork1/{each_version}/stop_step_distribution_{each_error_type_camel}.png"
-            )
-            plt.clf()
+        plot_stop_step_dists(each_version, error_type_step_count, plot_dir)
