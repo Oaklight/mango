@@ -1,6 +1,7 @@
 import argparse
 import glob
 import json
+import math
 import os
 
 from matplotlib import pyplot as plt
@@ -13,6 +14,7 @@ from digraph import (
     PathCheck,
     anno_to_code,
 )
+import uuid
 
 
 # # FIXME: use name exactly as in provided files, for example use "the troll room" instead of "troll room"
@@ -20,6 +22,83 @@ from digraph import (
 #     if str_txt == "troll room":
 #         return "the troll room"
 #     return str_txt
+
+# there might be repeated tests, use latest results?
+visited_jsons = {}
+
+
+def compute_json_uuid(gpt_json, level="micro"):
+    with open(gpt_json, "r") as f:
+        gpt_json_dict = json.load(f)
+    # compute a hash for the json dict
+    # use the src and dst node as the hash
+    src_node = gpt_json_dict["src_node"]
+    dst_node = gpt_json_dict["dst_node"]
+    task = gpt_json_dict["task"]
+    path_gt = gpt_json_dict["path_gt"]
+    question = gpt_json_dict["question"]
+    if level == "micro":
+        str_pack = f"{src_node}_{dst_node}_{task}_{path_gt}_{question}"
+    elif level == "macro":
+        str_pack = f"{src_node}_{dst_node}_{task}_{question}"
+    else:
+        raise ValueError(f"level {level} not supported")
+    uuid_value = uuid.uuid3(uuid.NAMESPACE_DNS, str_pack)
+    return str(uuid_value)
+
+
+def load_all_jsons(json_dir):
+    # get a list of all files in the directory using glob
+    gpt_result_jsons = glob.glob(os.path.join(json_dir, "*.json"))
+    for each_json_path in gpt_result_jsons:
+        __load_json(each_json_path)
+    print(f"loaded {len(visited_jsons)} jsons")
+
+
+def __load_json(json_file):
+    with open(json_file, "r") as f:
+        json_loaded = json.load(f)
+    # name of jsonfile has a timestamp: "results_2023-05-13-03-22-51_393.json"
+    timestamp = json_file.split("_")[1].split(".")[0]
+    rand_num = json_file.split("_")[2].split(".")[0]
+
+    # if the json file has been visited before, check if the new one is newer
+    # and put older one in "history" field, if current one is older than the existing one, directly add it to "history"
+    # if not, add it to visited_jsons
+    if json_file in visited_jsons:
+        if visited_jsons[json_file]["timestamp"] < timestamp:
+            tmp_json = visited_jsons[json_file]
+            visited_jsons[json_file] = {
+                "timestamp": timestamp,
+                "rand_num": rand_num,
+                "json_loaded": json_loaded,
+                "history": [],
+            }
+            # move all history to the new one
+            for each in tmp_json["history"]:
+                visited_jsons[json_file]["history"].append(each)
+            # add the old one to history
+            tmp_json.pop("history")
+            visited_jsons[json_file]["history"].append(tmp_json)
+            # sort the history by timestamp
+            visited_jsons[json_file]["history"].sort(
+                key=lambda x: x["timestamp"], reverse=True
+            )
+        else:
+            visited_jsons[json_file]["history"].append(
+                {
+                    "timestamp": timestamp,
+                    "rand_num": rand_num,
+                    "json_loaded": json_loaded,
+                }
+            )
+    else:
+        visited_jsons[json_file] = {
+            "timestamp": timestamp,
+            "rand_num": rand_num,
+            "json_loaded": json_loaded,
+            "history": [],
+        }
 
 
 def verify_pathgen_simple(g, anno2code, each_json_path):
@@ -375,6 +454,73 @@ def parse_args():
     return args
 
 
+def recompute_for_uuid(verify_json):
+    """
+    there might be multiple runs of the same test
+    but we only want to count the best of each test
+    identify the best of each test by uuid
+    """
+    with open(verify_json, "r") as f:
+        verify_dupli = json.load(f)
+    gpt_prompt_versions = list(verify_dupli.keys())
+    # "pathgen-gpt-3.5-turbo/": {
+    #     "correct_num": 51,
+    #     "total_num": 220,
+    #     "accuracy": 0.2318181818181818,
+    #     "collection": {
+    # run check on each version individually, go over collection of each version
+
+    # compute best on micro uuid
+    for each_version in gpt_prompt_versions:
+        current_collection = verify_dupli[each_version]["collection"]
+        uuid_best = {}
+
+        for each_entry_name, each_entry in current_collection.items():
+            uuid = each_entry["micro_uuid"]
+            verify_result = each_entry["verify_result"]
+
+            if uuid not in uuid_best:
+                uuid_best[uuid] = (verify_result, each_entry_name)
+            else:
+                if uuid_best[uuid][0] < verify_result:
+                    uuid_best[uuid] = (verify_result, each_entry_name)
+        # update collection with best of each uuid and recalculate accuracy
+        verify_dupli[each_version]["collection_dedupli"] = []
+        correct_num = 0
+
+        for each_uuid in uuid_best:
+            verify_dupli[each_version]["collection_dedupli"].append(
+                current_collection[uuid_best[each_uuid][1]]
+            )
+            if uuid_best[each_uuid][0] == 1:
+                correct_num += 1
+        verify_dupli[each_version]["correct_num_dedupli"] = correct_num
+        verify_dupli[each_version]["total_num_dedupli"] = len(uuid_best)
+        verify_dupli[each_version]["accuracy_dedupli"] = correct_num / len(uuid_best)
+
+    # dump back to verify_json
+    with open(verify_json, "w") as f:
+        json.dump(verify_dupli, f, indent=4)
+
+
+def random_guess_rate(all2all, code2anno):
+    """
+    for stepnav, random guess correctness rate is 1/num_locations
+    for pathgen, random guess correctness rate is (1/{num_actions + stop})^avg_path_len
+    """
+    total_steps = 0
+    total_entries = float(len(all2all))
+    for each in all2all:
+        total_steps += int(each["step_count"])
+    avg_entries = total_steps / total_entries
+
+    total_locs = len(code2anno.keys())
+
+    stepnav_random_guess_rate = 1.0 / total_locs
+    pathgen_random_guess_rate = math.pow(1.0 / (total_locs + 1), avg_entries)
+    return stepnav_random_guess_rate, pathgen_random_guess_rate
+
+
 if __name__ == "__main__":
     # argparse to readin game folder
     args = parse_args()
@@ -421,6 +567,9 @@ if __name__ == "__main__":
         "stepnav-gpt-3.5-turbo/",
         "stepnav-gpt-4/",
     ]
+    random_guess_rate_stepnav, random_guess_rate_pathgen = random_guess_rate(
+        all2all, code2anno
+    )
 
     for each_version in gpt_prompt_version:
         current_path = f"{gpt_result_dir}/{each_version}"
@@ -431,6 +580,8 @@ if __name__ == "__main__":
         total = 0
         current_collection = {}
         for each_json in gpt_result_jsons:
+            micro_uuid = compute_json_uuid(each_json, level="micro")
+            macro_uuid = compute_json_uuid(each_json, level="macro")
             if "pathgen" in each_version:
                 if args.simple:
                     verify_result, verify_pack = verify_pathgen_simple(
@@ -449,13 +600,21 @@ if __name__ == "__main__":
             if verify_result:
                 correct += 1
             total += 1
+            verify_pack["micro_uuid"] = micro_uuid
+            verify_pack["macro_uuid"] = macro_uuid
             current_collection[each_json] = verify_pack
 
+        random_guess = (
+            random_guess_rate_pathgen
+            if "pathgen" in each_version
+            else random_guess_rate_stepnav
+        )
         verify_collections[each_version] = {
             "correct_num": correct,
             "total_num": total,
             "accuracy": correct / total,
             "collection": current_collection,
+            "random_guess_rate": random_guess,
         }
 
     if args.simple:
@@ -466,6 +625,7 @@ if __name__ == "__main__":
         json_output = os.path.join(args.output_dir, args.game, "verify_results.json")
     with open(json_output, "w") as f:
         json.dump(verify_collections, f, indent=4)
+    recompute_for_uuid(json_output)
 
     if not args.simple:
         # compute stats from verify_collections
