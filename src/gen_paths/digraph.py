@@ -286,6 +286,36 @@ PathCheck = {
 }
 
 
+def walk_path_to_dst(g: object, src_anno: str, actions: list[str], anno2code: dict):
+    """
+    given src_annotation and actions, walk along the actions and return dst_anno
+    """
+    if len(actions) == 0:
+        return None, "ERROR: empty action list"
+
+    src_node = anno_to_code(src_anno, anno2code)
+    if src_node is None:
+        return None, "ERROR: src_anno not in anno2code"
+
+    prev_node = src_node
+    for i in range(len(actions)):
+        action = actions[i]
+        neighbors = list(g.neighbors(prev_node))
+        pos_directions = [g[prev_node][each]["direction"] for each in neighbors]
+        print(neighbors)
+        print(pos_directions)
+        # if action not in pos_directions then stay at the same node
+        if action not in pos_directions:
+            pass
+        # else move to the next node
+        else:
+            next_node = neighbors[pos_directions.index(action)]
+            prev_node = next_node
+
+    # by now prev_node is the dst_node
+    return prev_node, "GOOD: arrived"
+
+
 def walk_and_label_path(g: object, src_anno: str, path: list[dict], anno2code: dict):
     """
     given src_annotation and path, walk along the path and label the path
