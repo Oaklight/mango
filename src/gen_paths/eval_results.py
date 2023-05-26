@@ -9,6 +9,7 @@ import numpy as np
 from digraph import (
     build_graph_from_file_with_reverse,
     walk_and_label_path,
+    walk_path_to_dst,
     PathCheck,
     anno_to_code,
 )
@@ -19,6 +20,58 @@ from digraph import (
 #     if str_txt == "troll room":
 #         return "the troll room"
 #     return str_txt
+
+
+def verify_pathgen_simple(g, anno2code, each_json_path):
+    print("verifying ", each_json_path)
+    with open(each_json_path, "r") as f:
+        gpt_results = json.load(f)
+
+    src_anno = gpt_results["src_node"]
+    dst_anno = gpt_results["dst_node"]
+    dst_requested = anno_to_code(dst_anno, anno2code)
+    path_gpt = []
+
+    # check if each entry of path_gpt is in the correct format
+    good_format, path_gpt = check_format(gpt_results)
+    msg = "bad format" if not good_format else ""
+
+    if not good_format:
+        print("bad format")
+        verify_result = False
+        return verify_result, {
+            "verify_result": verify_result,
+            "src_anno": src_anno,
+            "dst_anno": dst_anno,
+            "action_gpt": None,
+            "dst_gpt": None,
+            "dst_requested": dst_requested,
+            "verify_msg": msg,
+        }
+
+    # extract action from path_gpt
+    path_gpt_actions = [each["action"] for each in path_gpt]
+    dst_gpt, msg = walk_path_to_dst(g, src_anno, path_gpt_actions, anno2code)
+
+    if (
+        dst_requested is None
+        or dst_gpt is None
+        or dst_gpt.lower() != dst_requested.lower()
+    ):
+        print("wrong path, fail to arrive at dst", dst_gpt, dst_requested)
+        verify_result = False
+    else:
+        print("correct")
+        verify_result = True
+    return verify_result, {
+        "verify_result": verify_result,
+        "src_anno": src_anno,
+        "dst_anno": dst_anno,
+        "action_gpt": path_gpt_actions,
+        "dst_gpt": dst_gpt,
+        "dst_requested": dst_requested,
+        "verify_msg": msg,
+    }
 
 
 def verify_pathgen(g, anno2code, each_json_path):
@@ -74,6 +127,10 @@ def verify_pathgen(g, anno2code, each_json_path):
 def check_format(gpt_results):
     good_format = True
     path_gpt = []
+    if "path" not in gpt_results:
+        good_format = False
+        return good_format, path_gpt
+
     for i, each in enumerate(gpt_results["path"]):
         if isinstance(each, dict):
             # check if it has the correct keys
@@ -95,6 +152,54 @@ def check_format(gpt_results):
             good_format = False
             break
     return good_format, path_gpt
+
+
+def verify_stepnav_simple(anno2code, g, each_json_path):
+    print("verifying ", each_json_path)
+    with open(each_json_path, "r") as f:
+        gpt_results = json.load(f)
+
+    src_anno = gpt_results["src_node"]
+    action_requested = extract_actions(gpt_results["question"])
+    path_gpt = []
+
+    # check if each entry of path_gpt is in the correct format
+    good_format, path_gpt = check_format(gpt_results)
+    msg = "bad format" if not good_format else ""
+
+    if not good_format:
+        verify_result = False
+        return verify_result, {
+            "verify_result": verify_result,
+            "src_anno": src_anno,
+            "action_requested": action_requested,
+            "dst_gpt": None,
+            "dst_requested": None,
+            "verify_msg": msg,
+        }
+
+    dst_gpt = anno_to_code(path_gpt[-1]["node"], anno2code)
+    dst_requested, msg = walk_path_to_dst(g, src_anno, action_requested, anno2code)
+
+    # check if the dst node is correct
+    if (
+        dst_requested is None
+        or dst_gpt is None
+        or dst_gpt.lower() != dst_requested.lower()
+    ):
+        print("wrong dst node", dst_gpt, dst_requested)
+        verify_result = False
+    else:
+        print("correct")
+        verify_result = True
+    return verify_result, {
+        "verify_result": verify_result,
+        "src_anno": src_anno,
+        "action_requested": action_requested,
+        "dst_gpt": dst_gpt,
+        "dst_requested": dst_requested,
+        "verify_msg": msg,
+    }
 
 
 def verify_stepnav(anno2code, g, each_json_path):
@@ -243,8 +348,7 @@ def plot_stop_step_dists(each_version, error_type_step_count, plot_dir):
         plt.clf()
 
 
-if __name__ == "__main__":
-    # argparse to readin game folder
+def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--maps_dir", "-m", type=str, default="./data/maps", help="path to maps folder"
@@ -260,7 +364,20 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_dir", "-odir", type=str, required=True, help="path to output file"
     )
+    # toggle to use simple function, "--simple" or "-s"
+    parser.add_argument(
+        "--simple",
+        "-s",
+        action="store_true",
+        help="use simple function to check path",
+    )
     args = parser.parse_args()
+    return args
+
+
+if __name__ == "__main__":
+    # argparse to readin game folder
+    args = parse_args()
 
     # test existence of game folder
     tgt_path = os.path.join(args.maps_dir, args.game)
@@ -315,9 +432,19 @@ if __name__ == "__main__":
         current_collection = {}
         for each_json in gpt_result_jsons:
             if "pathgen" in each_version:
-                verify_result, verify_pack = verify_pathgen(g, anno2code, each_json)
+                if args.simple:
+                    verify_result, verify_pack = verify_pathgen_simple(
+                        g, anno2code, each_json
+                    )
+                else:
+                    verify_result, verify_pack = verify_pathgen(g, anno2code, each_json)
             elif "stepnav" in each_version:
-                verify_result, verify_pack = verify_stepnav(anno2code, g, each_json)
+                if args.simple:
+                    verify_result, verify_pack = verify_stepnav_simple(
+                        anno2code, g, each_json
+                    )
+                else:
+                    verify_result, verify_pack = verify_stepnav(anno2code, g, each_json)
 
             if verify_result:
                 correct += 1
@@ -331,78 +458,86 @@ if __name__ == "__main__":
             "collection": current_collection,
         }
 
-    with open(
-        os.path.join(args.output_dir, args.game, "verify_results.json"), "w"
-    ) as f:
+    if args.simple:
+        json_output = os.path.join(
+            args.output_dir, args.game, "verify_results_simple.json"
+        )
+    else:
+        json_output = os.path.join(args.output_dir, args.game, "verify_results.json")
+    with open(json_output, "w") as f:
         json.dump(verify_collections, f, indent=4)
 
-    # compute stats from verify_collections
-    for each_version in gpt_prompt_version:
-        # for each type of error in PathCheck, count its appearance in the collection
-        # error_count is of the same keys as the PathCheck
-        error_type_step_count = {v: [] for v in PathCheck.values()}
-        error_type_step_count_mean = {}
-        length_count = {}
+    if not args.simple:
+        # compute stats from verify_collections
+        for each_version in gpt_prompt_version:
+            # for each type of error in PathCheck, count its appearance in the collection
+            # error_count is of the same keys as the PathCheck
+            error_type_step_count = {v: [] for v in PathCheck.values()}
+            error_type_step_count_mean = {}
+            length_count = {}
 
-        for each_pack in verify_collections[each_version]["collection"].values():
-            verify_result = each_pack["verify_result"]
-            stop_step = each_pack["stop_step"]
-            verify_msg = each_pack["verify_msg"]
-            path_checked = each_pack["path_checked"]
+            for each_pack in verify_collections[each_version]["collection"].values():
+                verify_result = each_pack["verify_result"]
+                stop_step = each_pack["stop_step"]
+                verify_msg = each_pack["verify_msg"]
+                path_checked = each_pack["path_checked"]
 
-            # get length of path_checked
-            if len(path_checked) not in length_count:
-                length_count[len(path_checked)] = 1
-            else:
-                length_count[len(path_checked)] += 1
-
-            # get error count
-            if verify_msg not in error_type_step_count:
-                error_type_step_count[verify_msg] = [int(stop_step)]
-            else:
-                error_type_step_count[verify_msg].append(int(stop_step))
-
-            # locate error path by finding the last entry of path with "msg"
-            if stop_step >= 0 and verify_msg == PathCheck[6]:
-                wrong_step = path_checked[stop_step]
-                wrong_src_anno = wrong_step["prev_node"]
-                wrong_dst_anno = wrong_step["node"]
-                wrong_src_code = anno_to_code(wrong_src_anno, anno2code)
-                wrong_dst_code = anno_to_code(wrong_dst_anno, anno2code)
-                wrong_action = wrong_step["action"]
-                # check if g.forward has (wrong_src_code, wrong_dst_code)
-                if g.forward.has_edge(wrong_src_code, wrong_dst_code):
-                    error_type_step_count[PathCheck[7]].append(int(stop_step))
+                # get length of path_checked
+                if len(path_checked) not in length_count:
+                    length_count[len(path_checked)] = 1
                 else:
-                    error_type_step_count[PathCheck[8]].append(int(stop_step))
+                    length_count[len(path_checked)] += 1
 
-        # # drop GOOD: *
-        # error_type_step_count.pop(PathCheck[7], None)
-        # error_type_step_count.pop(PathCheck[8], None)
+                # get error count
+                if verify_msg not in error_type_step_count:
+                    error_type_step_count[verify_msg] = [int(stop_step)]
+                else:
+                    error_type_step_count[verify_msg].append(int(stop_step))
 
-        # compute mean of each error type
-        for each_error_type, stop_step_list in error_type_step_count.items():
-            error_type_step_count_mean[each_error_type] = np.mean(stop_step_list)
+                # locate error path by finding the last entry of path with "msg"
+                if stop_step >= 0 and verify_msg == PathCheck[6]:
+                    wrong_step = path_checked[stop_step]
+                    wrong_src_anno = wrong_step["prev_node"]
+                    wrong_dst_anno = wrong_step["node"]
+                    wrong_src_code = anno_to_code(wrong_src_anno, anno2code)
+                    wrong_dst_code = anno_to_code(wrong_dst_anno, anno2code)
+                    wrong_action = wrong_step["action"]
+                    # check if g.forward has (wrong_src_code, wrong_dst_code)
+                    if g.forward.has_edge(wrong_src_code, wrong_dst_code):
+                        error_type_step_count[PathCheck[7]].append(int(stop_step))
+                    else:
+                        error_type_step_count[PathCheck[8]].append(int(stop_step))
 
-        print("length_count", length_count)
-        print("error_type_step_count", error_type_step_count)
-        print()
+            # # drop GOOD: *
+            # error_type_step_count.pop(PathCheck[7], None)
+            # error_type_step_count.pop(PathCheck[8], None)
 
-        plot_dir = os.path.join(args.output_dir, args.game, "eval_plots")
-        # make dir for each version
-        if not os.path.exists(os.path.join(plot_dir, f"{each_version}")):
-            os.makedirs(os.path.join(plot_dir, f"{each_version}"))
+            # compute mean of each error type
+            for each_error_type, stop_step_list in error_type_step_count.items():
+                error_type_step_count_mean[each_error_type] = np.mean(stop_step_list)
 
-        # matplotlib plot histogram of length_count, bar label pointing at the center of each bar
-        plot_length_dist(each_version, length_count, plot_dir)
+            print("length_count", length_count)
+            print("error_type_step_count", error_type_step_count)
+            print()
 
-        # matplotlib plot means of error_type_step_count, no bar label, use legend instead, with digits on top of each bar
-        plot_error_type_dist(
-            each_version, error_type_step_count, error_type_step_count_mean, plot_dir
-        )
+            plot_dir = os.path.join(args.output_dir, args.game, "eval_plots")
+            # make dir for each version
+            if not os.path.exists(os.path.join(plot_dir, f"{each_version}")):
+                os.makedirs(os.path.join(plot_dir, f"{each_version}"))
 
-        # matplotlib plot histogram of error_type_step_count
-        plot_error_type_dist_count(each_version, error_type_step_count, plot_dir)
+            # matplotlib plot histogram of length_count, bar label pointing at the center of each bar
+            plot_length_dist(each_version, length_count, plot_dir)
 
-        # matplotlib plot distribution of stop_step for each error type
-        plot_stop_step_dists(each_version, error_type_step_count, plot_dir)
+            # matplotlib plot means of error_type_step_count, no bar label, use legend instead, with digits on top of each bar
+            plot_error_type_dist(
+                each_version,
+                error_type_step_count,
+                error_type_step_count_mean,
+                plot_dir,
+            )
+
+            # matplotlib plot histogram of error_type_step_count
+            plot_error_type_dist_count(each_version, error_type_step_count, plot_dir)
+
+            # matplotlib plot distribution of stop_step for each error type
+            plot_stop_step_dists(each_version, error_type_step_count, plot_dir)
