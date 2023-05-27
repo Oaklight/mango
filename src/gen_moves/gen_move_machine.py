@@ -78,7 +78,7 @@ def gen_move_machine(args):
                                                                             item['step_num']))
     print ("Saved to {}".format(output_file))
 
-    output_file = '{}/{}.walkthrough.moves.{}'.format(output_dir, game_name.split('.')[0], max_steps)
+    output_file = '{}/{}.moves'.format(output_dir, game_name.split('.')[0])
     valid_moves = list(set(move_list).union(set(direction_vocab)))
     # sort valid_moves by str content
     valid_moves = sorted(valid_moves, key=lambda x: str(x))
