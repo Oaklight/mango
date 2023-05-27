@@ -79,8 +79,11 @@ def gen_move_machine(args):
     print ("Saved to {}".format(output_file))
 
     output_file = '{}/{}.walkthrough.moves.{}'.format(output_dir, game_name.split('.')[0], max_steps)
+    valid_moves = list(set(move_list).union(set(direction_vocab)))
+    # sort valid_moves by str content
+    valid_moves = sorted(valid_moves, key=lambda x: str(x))
     with open(output_file, 'w', encoding='utf-8') as fout:
-        for sample in set(move_list).union(set(direction_vocab)) :
+        for sample in valid_moves :
             fout.write('{}\n'.format(sample))
     print ("Saved to {}".format(output_file))
     print ("Good Job!")
