@@ -454,6 +454,7 @@ def parse_args():
     return args
 
 
+
 def recompute_for_uuid(verify_json):
     """
     there might be multiple runs of the same test
@@ -473,30 +474,55 @@ def recompute_for_uuid(verify_json):
     # compute best on micro uuid
     for each_version in gpt_prompt_versions:
         current_collection = verify_dupli[each_version]["collection"]
-        uuid_best = {}
+        micro_uuid_best = {}
+        macro_uuid_best = {}
 
         for each_entry_name, each_entry in current_collection.items():
-            uuid = each_entry["micro_uuid"]
+            micro_uuid = each_entry["micro_uuid"]
+            macro_uuid = each_entry["macro_uuid"]
             verify_result = each_entry["verify_result"]
 
-            if uuid not in uuid_best:
-                uuid_best[uuid] = (verify_result, each_entry_name)
+            # find best of each micro uuid
+            if micro_uuid not in micro_uuid_best:
+                micro_uuid_best[micro_uuid] = (verify_result, each_entry_name)
             else:
-                if uuid_best[uuid][0] < verify_result:
-                    uuid_best[uuid] = (verify_result, each_entry_name)
+                if micro_uuid_best[micro_uuid][0] < verify_result:
+                    micro_uuid_best[micro_uuid] = (verify_result, each_entry_name)
+            
+            # find best of each macro uuid
+            if macro_uuid not in macro_uuid_best:
+                macro_uuid_best[macro_uuid] = (verify_result, each_entry_name)
+            else:
+                if macro_uuid_best[macro_uuid][0] < verify_result:
+                    macro_uuid_best[macro_uuid] = (verify_result, each_entry_name)
+            
         # update collection with best of each uuid and recalculate accuracy
-        verify_dupli[each_version]["collection_dedupli"] = []
-        correct_num = 0
+        verify_dupli[each_version]["collection_micro"] = []
+        verify_dupli[each_version]["collection_macro"] = []
+        micro_correct_num = 0
+        macro_correct_num = 0
 
-        for each_uuid in uuid_best:
-            verify_dupli[each_version]["collection_dedupli"].append(
-                current_collection[uuid_best[each_uuid][1]]
+        # recalculate micro metrics
+        for each_uuid in micro_uuid_best:
+            verify_dupli[each_version]["collection_micro"].append(
+                current_collection[micro_uuid_best[each_uuid][1]]
             )
-            if uuid_best[each_uuid][0] == 1:
-                correct_num += 1
-        verify_dupli[each_version]["correct_num_dedupli"] = correct_num
-        verify_dupli[each_version]["total_num_dedupli"] = len(uuid_best)
-        verify_dupli[each_version]["accuracy_dedupli"] = correct_num / len(uuid_best)
+            if micro_uuid_best[each_uuid][0] == 1:
+                micro_correct_num += 1
+        verify_dupli[each_version]["correct_num_micro"] = micro_correct_num
+        verify_dupli[each_version]["total_num_micro"] = len(micro_uuid_best)
+        verify_dupli[each_version]["accuracy_micro"] = micro_correct_num / len(micro_uuid_best)
+
+        # recalculate macro metrics
+        for each_uuid in macro_uuid_best:
+            verify_dupli[each_version]["collection_macro"].append(
+                current_collection[macro_uuid_best[each_uuid][1]]
+            )
+            if macro_uuid_best[each_uuid][0] == 1:
+                macro_correct_num += 1
+        verify_dupli[each_version]["correct_num_macro"] = macro_correct_num
+        verify_dupli[each_version]["total_num_macro"] = len(macro_uuid_best)
+        verify_dupli[each_version]["accuracy_macro"] = macro_correct_num / len(macro_uuid_best)
 
     # dump back to verify_json
     with open(verify_json, "w") as f:
