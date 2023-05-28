@@ -1,0 +1,19 @@
+Landing (obj33) --> north --> Cell (obj25), step 15, desc: None
+Corridor (obj37) --> west --> Landing (obj33), step 16, desc: None
+Armoury (obj43) --> north --> Corridor (obj37), step 17, desc: None
+Corridor (obj37) --> south --> Armoury (obj43), step 22, desc: None
+Landing (obj33) --> east --> Corridor (obj37), step 23, desc: None
+Corridor (obj35) --> east --> Landing (obj33), step 24, desc: None
+Corridor (obj36) --> east --> Corridor (obj35), step 25, desc: None
+Control Room (obj40) --> north --> Corridor (obj36), step 26, desc: None
+Corridor (obj36) --> south --> Control Room (obj40), step 35, desc: None
+Hall (obj38) --> south --> Corridor (obj36), step 36, desc: None
+Lift (obj48) --> south --> Hall (obj38), step 38, desc: None
+Lift (obj50) --> down --> Lift (obj48), step 39, desc: The lift shoots downwards and gradually comes to a halt... || LiftThe bottom of the lift. There's a button with "Up" written on it and also a door to the north.
+Hallway (obj52) --> south --> Lift (obj50), step 40, desc: None
+Office (obj53) --> south --> Hallway (obj52), step 41, desc: None
+Bar (obj57) --> west --> Office (obj53), step 53, desc: None
+Office (obj53) --> east --> Bar (obj57), step 59, desc: None
+Bar (obj57) --> west --> Office (obj53), step 61, desc: None
+Office (obj53) --> east --> Bar (obj57), step 63, desc: None
+Officer's Room (obj63) --> east --> Office (obj53), step 64, desc: None
