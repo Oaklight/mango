@@ -5,6 +5,7 @@
     - [2. Run](#2-run)
         - [2.1. 生成一个游戏的 game.map.human, game.anno2code.json, game.anno2code.json](#21-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E6%B8%B8%E6%88%8F%E7%9A%84-gamemaphuman-gameanno2codejson-gameanno2codejson)
         - [2.2. 生成所有游戏的 game.map.human, game.anno2code.json, game.anno2code.json](#22-%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%B8%B8%E6%88%8F%E7%9A%84-gamemaphuman-gameanno2codejson-gameanno2codejson)
+    - [3. pipeline](#3-pipeline)
 
 <!-- /TOC -->
 
@@ -86,4 +87,44 @@ cd gamegpt_utils
 
 # 再此基础上生成 game.anno2code.json, game.anno2code.json， 仅对 game.map.human 存在的文件夹操作
 ./scripts/gen_moves/run_gen_move_final_all.sh -p <path> -j <jericho_path>
+```
+
+## pipeline
+
+对于每个游戏，我们有如下的工作流程：
+
+```mermaid
+flowchart TB
+A[[jericho engine]] --`run_gen_walkthrough_all.sh`--> B([game.walkthrough])
+B --human annotation--> C[(game.valid_moves.csv)]
+B --`run_gen_move_machine_all.sh`--> D[game.map.machine] & E([game.moves])
+C --`run_gen_move_human_all.sh`--> F[game.map.human]
+D & F --`run_gen_move_final_all.sh`--> J([game.code2anno.json]) & G([game.anno2code.json])
+D & G--`run_gen_move_reversed_all.sh`--> H[game.map.reversed]
+H & G & F --`run_gen_all2all.sh`--> I([game.all2all.json \n game.all2all.shortest.json])
+
+
+subgraph "pre-human"
+B
+E
+D
+end
+
+subgraph "post-human"
+H
+F
+G
+J
+end
+
+subgraph "human annotation"
+C
+end
+
+
+style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+style E fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+style G fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+style J fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+style I fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 ```
