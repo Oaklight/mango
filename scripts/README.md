@@ -95,14 +95,13 @@ cd gamegpt_utils
 
 ```mermaid
 flowchart TB
-A[[jericho engine]] --`run_gen_walkthrough_all.sh`--> B([game.walkthrough])
-B --human annotation--> C[(game.valid_moves.csv)]
-B --`run_gen_move_machine_all.sh`--> D[game.map.machine] & E([game.moves])
-C --`run_gen_move_human_all.sh`--> F[game.map.human]
-D & F --`run_gen_move_final_all.sh`--> J([game.code2anno.json]) & G([game.anno2code.json])
-D & G--`run_gen_move_reversed_all.sh`--> H[game.map.reversed]
-H & G & F --`run_gen_all2all.sh`--> I([game.all2all.json \n game.all2all.shortest.json])
-
+A[[jericho engine]] --> |`run_gen_walkthrough_all.sh`| B([game.walkthrough])
+B --> |human annotation| C[(game.valid_moves.csv)]
+B ---> |`run_gen_move_machine_all.sh`| D[game.map.machine] & E([game.moves])
+C --> |`run_gen_move_human_all.sh`| F[game.map.human]
+D & G--> |`run_gen_move_reversed_all.sh`| H[game.map.reversed]
+D & F --> |`run_gen_move_final_all.sh`| anno&code
+H & G & J & F --> |`run_gen_all2all.sh`| I([game.all2all.json \n game.all2all.shortest.json])
 
 subgraph "pre-human"
 B
@@ -112,15 +111,17 @@ end
 
 subgraph "post-human"
 H
-F
-G
-J
+    subgraph anno&code
+    J([game.code2anno.json])
+    G([game.anno2code.json])
+    end
+I
 end
 
 subgraph "human annotation"
+F
 C
 end
-
 
 style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style E fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
