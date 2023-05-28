@@ -1,3 +1,4 @@
+import glob
 from jericho import * # https://jericho-py.readthedocs.io/en/latest/index.html
 import os
 import argparse
@@ -39,6 +40,26 @@ def load_code2anno(input_file_path):
         return_dict[obj_number] = code2anno_dict[key]
     return return_dict
 
+
+def load_forward_map_nodes(human_map_file_path):
+    human_forward_nodes = {}
+    with open(human_map_file_path, "r") as f:
+        lines_forward = f.readlines()
+    for i in range(len(lines_forward)):
+            # get step_num and path
+        line_forward = lines_forward[i].strip("\ufeff").strip()
+        if len(line_forward) == 0:
+            continue
+        path_forward, step_num_forward = [each.strip().lower() for each in line_forward.split(", step")]
+        step_num_forward = int(step_num_forward)
+            # get src_node, direction, dst_node
+        elements_forward = [each.strip().lower() for each in path_forward.split("-->")]
+        print(elements_forward)
+        src_node_forward, _, dst_node_forward = elements_forward
+        human_forward_nodes[step_num_forward] = (src_node_forward, dst_node_forward)
+    return human_forward_nodes
+
+
 def gen_move_reversed(args):
     game_name = args.game_name
     game_name_raw = game_name.split('.')[0]
@@ -49,13 +70,27 @@ def gen_move_reversed(args):
     try:
         code2anno_file_path = '{}/{}/{}.code2anno.json'.format(args.input_dir,game_name_raw,game_name_raw)
         codeid2anno_dict = load_code2anno(code2anno_file_path)
+        human_map_file_path = '{}/{}/{}.map.human'.format(args.input_dir,game_name_raw,game_name_raw)
+        human_forward_nodes = load_forward_map_nodes(human_map_file_path)
+            
     except Exception as e:
         print ("code2anno file not existed.")
         print(f"Error: {str(e)}")
         return -1
 
     # env
-    env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
+    # search for game_name in jericho_path. The real game file should be game_name.z3 or .z5 or .z8
+    # by cross checking with entries in glob
+    game_file_path = None
+    for game_file in glob.glob(f"{args.jericho_path}/*"):
+        if game_name in game_file:
+            game_file_path = game_file
+            break
+    if game_file_path is None:
+        print(f"Game file {game_name} not found in {args.jericho_path}")
+        return -1
+    env = FrotzEnv(game_file_path)
+
     env.reset()
     location_before = env.get_player_location().name.strip().lower()
     location_before_id = env.get_player_location().num
@@ -110,8 +145,14 @@ def gen_move_reversed(args):
     output_file = '{}/{}.map.reversed'.format(output_dir,game_name_raw)
     with open(output_file,'w', encoding='utf-8') as fout:
         for item in map_reversed_list:
-            if item['act'] != None:
-                fout.write('{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n'.format(item['location_before'],
+            if item['act'] != None and item['step_num'] in human_forward_nodes:
+                    print(f"step_num: {item['step_num']} is good")
+                    # human forward map: src_node --> direction --> dst_node
+                    # reversed map: dst_node --> opposite_direction --> src_node
+                    print(f"human forward nodes: {human_forward_nodes[item['step_num']]}")
+                    print(f"machine reversed nodes: {(item['location_before'], item['location_after'])}")
+                    if item['location_before'].strip().lower() == human_forward_nodes[item['step_num']][1] and item['location_after'].strip().lower() == human_forward_nodes[item['step_num']][0]:
+                        fout.write('{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n'.format(item['location_before'],
                                                                                           item['location_before_id'],
                                                                                           item['act'],
                                                                                           item['location_after'],
