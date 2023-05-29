@@ -64,9 +64,9 @@ then
     for game in $games; do
         generate_for_game $game
     done
-    echo "Good Job! Done for all games!"
+    echo "Done for all games!"
 else
     echo "Generating for $game_tgt..."
     generate_for_game $game_tgt
-    echo "Good Job! Done for $game_tgt!"
+    echo "Done for $game_tgt!"
 fi
