@@ -90,8 +90,7 @@ def gen_move_reversed(args):
         human_forward_nodes = load_forward_map_nodes(human_map_file_path)
 
     except Exception as e:
-        print("code2anno file not existed.")
-        print(f"Error: {str(e)}")
+        print("code2anno file not existed.", f"Error: {str(e)}", sep="\n")
         return -1
 
     # env
@@ -144,17 +143,6 @@ def gen_move_reversed(args):
                         "desc": desc,
                     }
                 )
-            # else:
-            #     map_reversed_list.append({
-            #         'location_before': None,
-            #         'location_before_id': None,
-            #         'act': None,
-            #         'location_after': None,
-            #         'location_after_id': None,
-            #         'step_num': None,
-            #         'desc': None
-            #     }
-            #     )
             location_before_id = location_after_id
 
     output_dir = args.output_dir + "/" + game_name_raw
@@ -165,30 +153,38 @@ def gen_move_reversed(args):
     with open(output_file, "w", encoding="utf-8") as fout:
         for item in map_reversed_list:
             if item["act"] != None and item["step_num"] in human_forward_nodes:
-                print(f"step_num: {item['step_num']} is good")
                 # human forward map: src_node --> direction --> dst_node
                 # reversed map: dst_node --> opposite_direction --> src_node
-                print(f"human forward nodes: {human_forward_nodes[item['step_num']]}")
                 print(
-                    f"machine reversed nodes: {(item['location_before'], item['location_after'])}"
+                    f"step_num: {item['step_num']} is good",
+                    f"human forward nodes: {human_forward_nodes[item['step_num']]}",
+                    f"machine reversed nodes: {(item['location_before'], item['location_after'])}",
+                    sep="\n",
                 )
-                if (
+                # as long as the conflict is deem resolved, the entries from human and machine should have the same set of nodes, whenever the step_num is the same
+                # if (
+                #     item["location_before"].strip().lower()
+                #     == human_forward_nodes[item["step_num"]][1]
+                #     and item["location_after"].strip().lower()
+                #     == human_forward_nodes[item["step_num"]][0]
+                # ):
+                assert (
                     item["location_before"].strip().lower()
                     == human_forward_nodes[item["step_num"]][1]
                     and item["location_after"].strip().lower()
                     == human_forward_nodes[item["step_num"]][0]
-                ):
-                    fout.write(
-                        "{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n".format(
-                            item["location_before"],
-                            item["location_before_id"],
-                            item["act"],
-                            item["location_after"],
-                            item["location_after_id"],
-                            item["step_num"],
-                            item["desc"],
-                        )
+                ), f"step_num: {item['step_num']} is not good, human forward nodes: {human_forward_nodes[item['step_num']]}, machine reversed nodes: {(item['location_before'], item['location_after'])}"
+                fout.write(
+                    "{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n".format(
+                        item["location_before"],
+                        item["location_before_id"],
+                        item["act"],
+                        item["location_after"],
+                        item["location_after_id"],
+                        item["step_num"],
+                        item["desc"],
                     )
+                )
             # else:
             #     fout.write('\n')
     print("Good Job!")
