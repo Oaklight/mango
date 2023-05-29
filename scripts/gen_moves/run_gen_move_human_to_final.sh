@@ -34,23 +34,28 @@ function generate_for_game {
     # skip if this file not exists
     if [ ! -f $valid_moves ]; then
         echo "File $valid_moves not exists"
-        exit 1
     else
         python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env
         map_machine="$path/$1/$1.map.machine"
         map_human="$path/$1/$1.map.human"
         if [ ! -f $map_machine ] || [ ! -f $map_human ] ; then
             echo "File $map_machine or $map_human not exists"
-            exit 1
         else
             python ./src/gen_moves/gen_move_final.py -d $path/$1
-        fi
-        # check if anno2code.json and code2anno.json exist after previous line, if not, then the annotation is not resolved. map.human should be removed until the annotation is resolved
-        anno2code="$path/$1/anno2code.json"
-        code2anno="$path/$1/code2anno.json"
-        if [ ! -f $anno2code ] || [ ! -f $code2anno ] ; then
-            echo "File $anno2code or $code2anno not exists"
-            rm $map_human
+            # check if anno2code.json and code2anno.json exist after previous line, if not, then the annotation is not resolved. map.human should be removed until the annotation is resolved
+            anno2code="$path/$1/$1.anno2code.json"
+            code2anno="$path/$1/$1.code2anno.json"
+            if [ ! -f $anno2code ] || [ ! -f $code2anno ] ; then
+                echo "File $anno2code or $code2anno not exists"
+                rm $map_human
+                # remove anno2code and code2anno if exists
+                if [ -f $anno2code ]; then
+                    rm $anno2code
+                fi
+                if [ -f $code2anno ]; then
+                    rm $code2anno
+                fi
+            fi
         fi
     fi
 }
