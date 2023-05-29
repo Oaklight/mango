@@ -67,6 +67,7 @@ def sanity_check(machine_dict, human_dict):
     - get common step numbers, appear in both machine and human
     - get diff step numbers, appear in machine but not human
     - get diff step numbers, appear in human but not machine
+    - get diff in src, act, dst when step number is the same, namely on common steps
     """
     # sort step number list for stable order
     common_steps = sorted(
@@ -78,19 +79,34 @@ def sanity_check(machine_dict, human_dict):
     human_only_steps = sorted(
         list(set(human_dict.keys()).difference(set(machine_dict.keys())))
     )
+
+    # further sanity check on common steps, to see if src, act, dst are the same
+    conflict_anno_list = node_conflict_check(machine_dict, human_dict, common_steps)
+
     # print to notify user
     print(
-        "common steps: {}, machine only steps: {}, human only steps: {}".format(
-            len(common_steps), len(machine_only_steps), len(human_only_steps)
-        )
+        "General Stats:",
+        "- [num: {}] common steps".format(len(common_steps)),
+        "- [num: {}] machine only steps: {}".format(
+            len(machine_only_steps), machine_only_steps
+        ),
+        "- [num: {}] human only steps: {}".format(
+            len(human_only_steps), human_only_steps
+        ),
+        "- [num: {}] conflict annotations on common steps: {}".format(
+            len(conflict_anno_list), conflict_anno_list
+        ),
+        sep="\n",
     )
-    print("machine only steps: {}".format(machine_only_steps))
-    print("human only steps: {}".format(human_only_steps))
     # wait for signal, Y/n, Y as default, check to see if user wants to continue
     # if not, exit
     # if yes, continue
     # return step sets for further processing
-    if len(machine_only_steps) == 0 and len(human_only_steps) == 0:
+    if (
+        len(machine_only_steps) == 0
+        and len(human_only_steps) == 0
+        and len(conflict_anno_list) == 0
+    ):
         print("No difference found, exiting...")
         return common_steps, machine_only_steps, human_only_steps
     else:
@@ -105,7 +121,37 @@ def sanity_check(machine_dict, human_dict):
                 print("Invalid input, please enter y or n")
 
 
-def load_both_maps(get_dict, args):
+def node_conflict_check(machine_dict, human_dict, common_steps):
+    """
+    in machine dict, nodes with same name ARE the same location. 在machine dict中的同名节点对应的step_num应当在human dict中也有，且对应的节点也是同名节点。
+    # help me translate the above sentence
+    translate: in machine dict, nodes with same name ARE the same location. In the machine dict, the step_num corresponding to the nodes with the same name should also be in the human dict, and the corresponding nodes are also nodes with the same human annotation.
+    """
+    # create mapping of human anno with machine code at each step. check if machine code exist already. If not, add it to the mapping. if exist but different, put into conflict list
+    conflict_anno_list = {}
+    code2anno_tmp = {}
+    for step in common_steps:
+        # check src
+        code = machine_dict[step]["src"]
+        anno = human_dict[step]["src"]
+        if code not in code2anno_tmp:
+            code2anno_tmp[code] = set()
+        code2anno_tmp[code].add(anno)
+        # check dst
+        code = machine_dict[step]["dst"]
+        anno = human_dict[step]["dst"]
+        if code not in code2anno_tmp:
+            code2anno_tmp[code] = set()
+        code2anno_tmp[code].add(anno)
+
+    for code in code2anno_tmp:
+        if len(code2anno_tmp[code]) > 1:
+            conflict_anno_list[code] = list(code2anno_tmp[code])
+
+    return conflict_anno_list
+
+
+def load_both_maps(args):
     with open(args.machine_code, "r") as f:
         machine_lines = f.readlines()
     with open(args.human_anno, "r") as f:
@@ -123,13 +169,13 @@ if __name__ == "__main__":
     print("Processing {}...".format(args.game_name))
     # read in game.map.human and game.map.machine
     # go over each line in game.map.machine, grab nodeCode and find the corresponding node name in game.map.human
-    machine_dict, human_dict = load_both_maps(get_dict, args)
+    machine_dict, human_dict = load_both_maps(args)
 
     common_steps, machine_only_steps, human_only_steps = sanity_check(
         machine_dict, human_dict
     )
     print("Reload both maps after resolution")
-    machine_dict, human_dict = load_both_maps(get_dict, args)
+    machine_dict, human_dict = load_both_maps(args)
 
     code2anno = OrderedDict()
     anno2code = OrderedDict()
