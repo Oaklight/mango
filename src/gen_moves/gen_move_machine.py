@@ -1,3 +1,4 @@
+import glob
 from jericho import * # https://jericho-py.readthedocs.io/en/latest/index.html
 import os
 import argparse
@@ -29,7 +30,17 @@ def gen_move_machine(args):
     print ('Game: {}, Max steps: {}'.format(game_name, max_steps))
 
     # env
-    env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
+    # env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
+    game_file_path = None
+    for game_file in glob.glob(f"{args.jericho_path}/*"):
+        if game_name in game_file:
+            game_file_path = game_file
+            break
+    if game_file_path is None:
+        print(f"Game file {game_name} not found in {args.jericho_path}")
+        return -1
+    env = FrotzEnv(game_file_path)
+    
     env.reset()
     location_before = env.get_player_location().name.strip().lower()
     location_before_id = env.get_player_location().num
