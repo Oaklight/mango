@@ -123,30 +123,43 @@ def sanity_check(machine_dict, human_dict):
 
 def node_conflict_check(machine_dict, human_dict, common_steps):
     """
-    in machine dict, nodes with same name ARE the same location. 在machine dict中的同名节点对应的step_num应当在human dict中也有，且对应的节点也是同名节点。
-    # help me translate the above sentence
-    translate: in machine dict, nodes with same name ARE the same location. In the machine dict, the step_num corresponding to the nodes with the same name should also be in the human dict, and the corresponding nodes are also nodes with the same human annotation.
+    In machine dict, nodes with same code ARE the same location. After conflict resolve, it must be able to achieve the same human annotation content for the same machine code in matching steps
     """
+
+    def __conflict_counter(which: str):
+        code = machine_dict[step][which]
+        anno = human_dict[step][which]
+        if code not in code2anno_tmp:
+            code2anno_tmp[code] = set()
+        code2anno_tmp[code].add(anno)
+        if anno not in anno_step_map:
+            anno_step_map[anno] = set()
+        anno_step_map[anno].add((step, which))
+        if code not in code_step_map:
+            code_step_map[code] = set()
+        code_step_map[code].add((step, which))
+
     # create mapping of human anno with machine code at each step. check if machine code exist already. If not, add it to the mapping. if exist but different, put into conflict list
-    conflict_anno_list = {}
-    code2anno_tmp = {}
+    conflict_anno_list = {}  # conflict list, from code (unique) to anno (list)
+    code2anno_tmp = {}  # tmp mapping of code to anno, for tracking and debugging
+    anno_step_map = {}  # where each anno appears
+    code_step_map = {}  # where each code appears
     for step in common_steps:
-        # check src
-        code = machine_dict[step]["src"]
-        anno = human_dict[step]["src"]
-        if code not in code2anno_tmp:
-            code2anno_tmp[code] = set()
-        code2anno_tmp[code].add(anno)
-        # check dst
-        code = machine_dict[step]["dst"]
-        anno = human_dict[step]["dst"]
-        if code not in code2anno_tmp:
-            code2anno_tmp[code] = set()
-        code2anno_tmp[code].add(anno)
+        # check src & dst
+        __conflict_counter("src")
+        __conflict_counter("dst")
 
     for code in code2anno_tmp:
         if len(code2anno_tmp[code]) > 1:
             conflict_anno_list[code] = list(code2anno_tmp[code])
+            # collect where each conflicted anno appears, by replacing anno with tuple of (anno, [step_num])
+            conflict_anno_list[code] = [
+                (
+                    anno,
+                    sorted(list(anno_step_map[anno].intersection(code_step_map[code]))),
+                )
+                for anno in conflict_anno_list[code]
+            ]
 
     return conflict_anno_list
 
