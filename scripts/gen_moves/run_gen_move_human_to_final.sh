@@ -12,7 +12,7 @@
 
 # if not provided, prints the help message
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_human_to_final.sh -p <path> -g <game> -j <jericho_env>"
+    echo "Usage: ./run_gen_move_human_to_final.sh -p <path> -j <jericho_env> [-g <game>]"
     exit 1
 fi
 
@@ -26,26 +26,47 @@ do
     esac
 done
 
-games=$(ls $path)
-# for game in $games check if it matches
-for game in $games; do
-    if [[ $game != $game_tgt ]]; then
-        continue
-    fi
-    valid_moves="$path/$game/$game.valid_moves.csv"
+
+# generate for a specific game
+function generate_for_game {
+    echo "Generating for $1..."
+    valid_moves="$path/$1/$1.valid_moves.csv"
     # skip if this file not exists
     if [ ! -f $valid_moves ]; then
-        continue
+        echo "File $valid_moves not exists"
+        exit 1
     else
         python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env
-        map_machine="$path/$game/$game.map.machine"
-        map_human="$path/$game/$game.map.human"
+        map_machine="$path/$1/$1.map.machine"
+        map_human="$path/$1/$1.map.human"
         if [ ! -f $map_machine ] || [ ! -f $map_human ] ; then
-            continue
+            echo "File $map_machine or $map_human not exists"
+            exit 1
         else
-            python ./src/gen_moves/gen_move_final.py -d $path/$game
+            python ./src/gen_moves/gen_move_final.py -d $path/$1
+        fi
+        # check if anno2code.json and code2anno.json exist after previous line, if not, then the annotation is not resolved. map.human should be removed until the annotation is resolved
+        anno2code="$path/$1/anno2code.json"
+        code2anno="$path/$1/code2anno.json"
+        if [ ! -f $anno2code ] || [ ! -f $code2anno ] ; then
+            echo "File $anno2code or $code2anno not exists"
+            rm $map_human
         fi
     fi
-done
+}
 
-echo "Good Job!"
+
+# use it directly if g not provided
+if [ -z "$game_tgt" ]
+then
+    echo "Generating for all games..."
+    games=$(ls $path)
+    for game in $games; do
+        generate_for_game $game
+    done
+    echo "Good Job! Done for all games!"
+else
+    echo "Generating for $game_tgt..."
+    generate_for_game $game_tgt
+    echo "Good Job! Done for $game_tgt!"
+fi
