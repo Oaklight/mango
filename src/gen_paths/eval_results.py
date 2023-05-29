@@ -3,6 +3,7 @@ import glob
 import json
 import math
 import os
+import networkx as nx
 
 from matplotlib import pyplot as plt
 import numpy as np
@@ -109,6 +110,7 @@ def verify_pathgen_simple(g, anno2code, each_json_path):
     src_anno = gpt_results["src_node"]
     dst_anno = gpt_results["dst_node"]
     dst_requested = anno_to_code(dst_anno, anno2code)
+    src_requested = anno_to_code(src_anno, anno2code)
     path_gpt = []
 
     # check if each entry of path_gpt is in the correct format
@@ -122,6 +124,7 @@ def verify_pathgen_simple(g, anno2code, each_json_path):
             "verify_result": verify_result,
             "src_anno": src_anno,
             "dst_anno": dst_anno,
+            "dist_shortest": nx.shortest_path_length(g, src_requested, dst_requested),
             "action_gpt": None,
             "dst_gpt": None,
             "dst_requested": dst_requested,
@@ -146,6 +149,7 @@ def verify_pathgen_simple(g, anno2code, each_json_path):
         "verify_result": verify_result,
         "src_anno": src_anno,
         "dst_anno": dst_anno,
+        "dist_shortest": nx.shortest_path_length(g, src_requested, dst_requested),
         "action_gpt": path_gpt_actions,
         "dst_gpt": dst_gpt,
         "dst_requested": dst_requested,
@@ -254,6 +258,7 @@ def verify_stepnav_simple(anno2code, g, each_json_path):
             "action_requested": action_requested,
             "dst_gpt": None,
             "dst_requested": None,
+            "dist_shortest": len(action_requested),
             "verify_msg": msg,
         }
 
@@ -277,6 +282,7 @@ def verify_stepnav_simple(anno2code, g, each_json_path):
         "action_requested": action_requested,
         "dst_gpt": dst_gpt,
         "dst_requested": dst_requested,
+        "dist_shortest": len(action_requested),
         "verify_msg": msg,
     }
 
@@ -454,7 +460,6 @@ def parse_args():
     return args
 
 
-
 def recompute_for_uuid(verify_json):
     """
     there might be multiple runs of the same test
@@ -474,59 +479,131 @@ def recompute_for_uuid(verify_json):
     # compute best on micro uuid
     for each_version in gpt_prompt_versions:
         current_collection = verify_dupli[each_version]["collection"]
-        micro_uuid_best = {}
-        macro_uuid_best = {}
+        (
+            micro_uuid_best,
+            macro_uuid_best,
+            micro_length_acc,
+            macro_length_acc,
+        ) = counting_on_level(current_collection)
 
-        for each_entry_name, each_entry in current_collection.items():
-            micro_uuid = each_entry["micro_uuid"]
-            macro_uuid = each_entry["macro_uuid"]
-            verify_result = each_entry["verify_result"]
-
-            # find best of each micro uuid
-            if micro_uuid not in micro_uuid_best:
-                micro_uuid_best[micro_uuid] = (verify_result, each_entry_name)
-            else:
-                if micro_uuid_best[micro_uuid][0] < verify_result:
-                    micro_uuid_best[micro_uuid] = (verify_result, each_entry_name)
-            
-            # find best of each macro uuid
-            if macro_uuid not in macro_uuid_best:
-                macro_uuid_best[macro_uuid] = (verify_result, each_entry_name)
-            else:
-                if macro_uuid_best[macro_uuid][0] < verify_result:
-                    macro_uuid_best[macro_uuid] = (verify_result, each_entry_name)
-            
         # update collection with best of each uuid and recalculate accuracy
-        verify_dupli[each_version]["collection_micro"] = []
-        verify_dupli[each_version]["collection_macro"] = []
-        micro_correct_num = 0
-        macro_correct_num = 0
 
         # recalculate micro metrics
-        for each_uuid in micro_uuid_best:
-            verify_dupli[each_version]["collection_micro"].append(
-                current_collection[micro_uuid_best[each_uuid][1]]
-            )
-            if micro_uuid_best[each_uuid][0] == 1:
-                micro_correct_num += 1
-        verify_dupli[each_version]["correct_num_micro"] = micro_correct_num
-        verify_dupli[each_version]["total_num_micro"] = len(micro_uuid_best)
-        verify_dupli[each_version]["accuracy_micro"] = micro_correct_num / len(micro_uuid_best)
+        verify_dupli = verify_amend_acc(
+            verify_dupli,
+            each_version,
+            current_collection,
+            micro_uuid_best,
+            level="micro",
+        )
 
         # recalculate macro metrics
-        for each_uuid in macro_uuid_best:
-            verify_dupli[each_version]["collection_macro"].append(
-                current_collection[macro_uuid_best[each_uuid][1]]
-            )
-            if macro_uuid_best[each_uuid][0] == 1:
-                macro_correct_num += 1
-        verify_dupli[each_version]["correct_num_macro"] = macro_correct_num
-        verify_dupli[each_version]["total_num_macro"] = len(macro_uuid_best)
-        verify_dupli[each_version]["accuracy_macro"] = macro_correct_num / len(macro_uuid_best)
+        verify_dupli = verify_amend_acc(
+            verify_dupli,
+            each_version,
+            current_collection,
+            macro_uuid_best,
+            level="macro",
+        )
+
+        # plot acc vs length
+        plot_acc_vs_dist(verify_json, each_version, micro_length_acc, macro_length_acc)
 
     # dump back to verify_json
     with open(verify_json, "w") as f:
         json.dump(verify_dupli, f, indent=4)
+
+
+def counting_on_level(current_collection):
+    macro_uuid_best, macro_length_acc = __count_helper(
+        current_collection, level="macro"
+    )
+    micro_uuid_best, micro_length_acc = __count_helper(
+        current_collection, level="micro"
+    )
+
+    return micro_uuid_best, macro_uuid_best, micro_length_acc, macro_length_acc
+
+
+def __count_helper(current_collection, level):
+    level_uuid_best = {}
+    level_length_acc = {}
+
+    for each_entry_name, each_entry in current_collection.items():
+        level_uuid = each_entry[f"{level}_uuid"]
+        verify_result = each_entry["verify_result"]
+        dist_shortest = each_entry["dist_shortest"]
+
+        # accumulate length and accuracy for each macro uuid
+        if dist_shortest not in level_length_acc:
+            level_length_acc[dist_shortest] = {
+                "good": 0,
+                "bad": 0,
+            }
+        if verify_result:
+            level_length_acc[dist_shortest]["good"] += 1
+        else:
+            level_length_acc[dist_shortest]["bad"] += 1
+
+        # find best of each macro uuid
+        if level_uuid not in level_uuid_best:
+            level_uuid_best[level_uuid] = (verify_result, each_entry_name)
+        else:
+            if level_uuid_best[level_uuid][0] < verify_result:
+                level_uuid_best[level_uuid] = (verify_result, each_entry_name)
+
+    return level_uuid_best, level_length_acc
+
+
+def verify_amend_acc(
+    verify_dupli, each_version, current_collection, level_uuid_best, level
+):
+    correct_num_level = 0
+    verify_dupli[each_version][f"collection_{level}"] = []
+
+    for each_uuid in level_uuid_best:
+        verify_dupli[each_version][f"collection_{level}"].append(
+            current_collection[level_uuid_best[each_uuid][1]]
+        )
+        if level_uuid_best[each_uuid][0] == 1:
+            correct_num_level += 1
+    verify_dupli[each_version][f"correct_num_{level}"] = correct_num_level
+    verify_dupli[each_version][f"total_num_{level}"] = len(level_uuid_best)
+    verify_dupli[each_version][f"accuracy_{level}"] = correct_num_level / len(
+        level_uuid_best
+    )
+    return verify_dupli
+
+
+def plot_acc_vs_dist(verify_json, each_version, micro_length_acc, macro_length_acc):
+    micro_length_acc = sorted(micro_length_acc.items(), key=lambda x: x[0])
+    macro_length_acc = sorted(macro_length_acc.items(), key=lambda x: x[0])
+    micro_length = [each[0] for each in micro_length_acc]
+    micro_acc = [
+        each[1]["good"] / (each[1]["good"] + each[1]["bad"])
+        for each in micro_length_acc
+    ]
+    macro_length = [each[0] for each in macro_length_acc]
+    macro_acc = [
+        each[1]["good"] / (each[1]["good"] + each[1]["bad"])
+        for each in macro_length_acc
+    ]
+    # subplot for micro and macro
+    fig, axs = plt.subplots(2, 1, figsize=(10, 10))
+    axs[0].plot(micro_length, micro_acc)
+    axs[0].set_xlabel("dist(src, dst))")
+    axs[0].set_ylabel("accuracy")
+    axs[0].set_title("accuracy vs dist(src, dst) - micro")
+    axs[1].plot(macro_length, macro_acc)
+    axs[1].set_xlabel("dist(src, dst)")
+    axs[1].set_ylabel("accuracy")
+    axs[1].set_title("accuracy vs dist(src, dst) - macro")
+    # get verify_dir from verify_json
+    verify_dir = os.path.dirname(verify_json)
+    plt.savefig(
+        os.path.join(verify_dir, f"{each_version.split('/')[0]}_acc_vs_length.png")
+    )
+    plt.close()
 
 
 def random_guess_rate(all2all, code2anno):
@@ -579,9 +656,10 @@ if __name__ == "__main__":
         code2anno = json.load(f)
         # code2anno = {k.lower(): v for k, v in code2anno.items()}
 
-    map_file = os.path.join(tgt_path, f"{args.game}.map.machine")
-    map_file_reversed = os.path.join(tgt_path, f"{args.game}.map.machine.reversed")
+    map_file = os.path.join(tgt_path, f"{args.game}.map.human")
+    map_file_reversed = os.path.join(tgt_path, f"{args.game}.map.reversed")
     g = build_graph_from_file_with_reverse(map_file, map_file_reversed, verbose=False)
+    print(g.nodes)
 
     print("\n\n\n\n\n")
 
