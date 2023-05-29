@@ -93,4 +93,4 @@ cd gamegpt_utils
 
 对于每个游戏，我们有如下的工作流程：
 
-![](pipeline-1.svg)
+![](pipeline-1.png)
