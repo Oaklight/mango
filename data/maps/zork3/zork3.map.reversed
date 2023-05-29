@@ -1,0 +1,33 @@
+Junction (obj63) --> north --> Endless Stair (obj64), step 2, desc: None
+Barren Area (obj62) --> east --> Junction (obj63), step 4, desc: None
+Cliff (obj58) --> east --> Barren Area (obj62), step 5, desc: None
+Barren Area (obj62) --> west --> Cliff (obj58), step 7, desc: None
+Junction (obj63) --> west --> Barren Area (obj62), step 8, desc: None
+Damp Passage (obj152) --> west --> Junction (obj63), step 9, desc: None
+Engravings Room (obj154) --> southwest --> Damp Passage (obj152), step 10, desc: None
+Dead End (obj153) --> northwest --> Engravings Room (obj154), step 11, desc: None
+Damp Passage (obj152) --> east --> Dead End (obj153), step 12, desc: None
+Engravings Room (obj154) --> southwest --> Damp Passage (obj152), step 13, desc: None
+Damp Passage (obj152) --> northeast --> Engravings Room (obj154), step 16, desc: None
+Junction (obj63) --> east --> Damp Passage (obj152), step 17, desc: None
+Creepy Crawl (obj78) --> north --> Junction (obj63), step 18, desc: None
+Foggy Room (obj53) --> north --> Creepy Crawl (obj78), step 19, desc: None
+Lake Shore (obj52) --> north --> Foggy Room (obj53), step 20, desc: None
+Underwater (obj46) --> down --> On the Lake (obj48), step 24, desc: Underwater || You are below the surface of the lake. It turns out that the lake is quite shallow and the bottom is only a few feet below you. Considering the frigid temperature of the water, you should probably not plan an extended stay.  The lake bottom is sandy and a few hearty plants and algae live there.Out of the corner of your eye, a small, shiny object appears in the sand. A moment later, it is gone!
+Western Shore (obj45) --> east --> On the Lake (obj48), step 27, desc: Western Shore || You are on the western shore of the lake. The ground here is quite hard, but a few sickly reeds manage to grow near the water's edge. The only path leads into the rock to the south.
+Scenic Vista (obj43) --> north --> Western Shore (obj45), step 28, desc: None
+Western Shore (obj45) --> south --> Scenic Vista (obj43), step 40, desc: None
+Underwater (obj46) --> down --> On the Lake (obj48), step 42, desc: Underwater || There is a Frobozz Magic Grue Repellent here.
+Southern Shore (obj15) --> north --> On the Lake (obj48), step 45, desc: Southern Shore || You are on the south shore of the lake. Rock formations prevent movement to the west and thickening swamp to the east makes the going all but impossible. To the south, where the beach meets a rock formation, you can make out a dark passage sloping steeply upward into the rock.
+pitch black (obj14) --> north --> Southern Shore (obj15), step 46, desc: None
+pitch black (obj13) --> north --> pitch black (obj14), step 48, desc: None
+Key Room (obj12) --> west --> pitch black (obj13), step 49, desc: None
+Aqueduct (obj11) --> down --> Key Room (obj12), step 52, desc: Aqueduct || You are in a wide stone channel, part of the water supply system for the Great Underground Empire. The source of water was a waterfall to the south, which has long since dried up. Water flowed along the aqueduct to the north. This region is lit from above, although the source of light is not apparent.
+High Arch (obj10) --> south --> Aqueduct (obj11), step 53, desc: None
+Water Slide (obj9) --> south --> High Arch (obj10), step 54, desc: None
+Damp Passage (obj152) --> south --> Water Slide (obj9), step 55, desc: Damp Passage || There is a torch here.
+Junction (obj63) --> east --> Damp Passage (obj152), step 57, desc: None
+Barren Area (obj62) --> east --> Junction (obj63), step 58, desc: None
+Cliff (obj58) --> east --> Barren Area (obj62), step 59, desc: None
+Cliff Ledge (obj55) --> down --> Cliff (obj58), step 60, desc: None
+Cliff Ledge (obj55) --> down --> Cliff (obj58), step 70, desc: None
