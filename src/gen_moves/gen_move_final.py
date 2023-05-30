@@ -242,6 +242,16 @@ if __name__ == "__main__":
         anno2code[anno] = list(anno2code[anno])
         # sort anno2code entry
         anno2code[anno].sort()
+    
+    # prompt to alert unusual cases
+    # multiple machine code map to the same human anno
+    for code in code2anno.keys():
+        if len(anno2code[code2anno[code]]) > 1:
+            print(
+                "Warning: {} machine code map to the same human anno {}".format(
+                    code, code2anno[code]
+                )
+            )
 
     # write to json file
     with open(
