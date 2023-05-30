@@ -161,7 +161,7 @@ def build_graph_from_file(
         if "desc:" in line:
             print("revered path detected")
             # parse reversed path
-            line, desc = [each.strip().lower() for each in line.split("desc:")]
+            line, desc = [each.strip().lower() for each in line.split(", desc:")]
 
             if desc != "None":
                 print("invalid path detected", line, desc)
@@ -170,9 +170,8 @@ def build_graph_from_file(
             print("normal path detected")
             # path = line
 
-        splitted_elements = [each.strip().lower() for each in line.split(",")]
-        path = splitted_elements[0]
-        step_num = int(splitted_elements[1].split("step")[1].strip())
+        path, step_num = [each.strip().lower() for each in line.split(", step")]
+        step_num = int(step_num)
         elements = [each.strip().lower() for each in path.split("-->")]
         print(elements)
         src_node, direction, dst_node = elements
@@ -197,6 +196,78 @@ def build_graph_from_file_with_reverse(
     """
     build map graph based on forward map (path_file) and reverse map (reverse_file)
     """
+    # reverse map should have less or equal number of edges than forward map
+    # each matching entry of reverse map should have the same set of nodes as its counterpart in forward map
+
+    # load forward and reverse map file and count its number of lines
+    with open(path_file, "r") as f:
+        lines_forward = f.readlines()
+    with open(reverse_file, "r") as f:
+        lines_reverse = f.readlines()
+    num_lines_forward = len(lines_forward)
+    num_lines_reverse = len(lines_reverse)
+    assert (
+        num_lines_reverse <= num_lines_forward
+    ), "reverse map should have less or equal number of edges than forward map"
+
+    # go over each entry of both file, check if entries with matching step_num has same set of nodes
+    # forward entry: West of House --> north --> North of House, step 1
+    # backward entry: North of House (obj81) --> south --> West of House (obj180), step 1, desc: North of House || You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
+    # backward entry with non-None description is an invalid path
+    # i-th reverse entry must have bigger or equal step_num than i-th forward entry
+    reverse_nodes = {}
+    forward_nodes = {}
+    for i in range(num_lines_reverse):
+        # get step_num and path
+        line_reverse = lines_reverse[i].strip("\ufeff").strip()
+        line_reverse = line_reverse.split(", desc:")[0].strip()
+        if len(line_reverse) == 0:
+            continue
+        path_reverse, step_num_reverse = [
+            each.strip().lower() for each in line_reverse.split(", step")
+        ]
+        step_num_reverse = int(step_num_reverse)
+        # get src_node, direction, dst_node
+        elements_reverse = [each.strip().lower() for each in path_reverse.split("-->")]
+        print(elements_reverse)
+        src_node_reverse, _, dst_node_reverse = elements_reverse
+        reverse_nodes[step_num_reverse] = (src_node_reverse, dst_node_reverse)
+
+    print("\n\n\n\n\n\n")
+    for i in range(num_lines_forward):
+        # get step_num and path
+        line_forward = lines_forward[i].strip("\ufeff").strip()
+        if len(line_forward) == 0:
+            continue
+        path_forward, step_num_forward = [
+            each.strip().lower() for each in line_forward.split(", step")
+        ]
+        step_num_forward = int(step_num_forward)
+        # get src_node, direction, dst_node
+        elements_forward = [each.strip().lower() for each in path_forward.split("-->")]
+        print(elements_forward)
+        src_node_forward, _, dst_node_forward = elements_forward
+        forward_nodes[step_num_forward] = (src_node_forward, dst_node_forward)
+
+    # check if reverse map has same set of nodes as forward map
+    for step_num in reverse_nodes:
+        assert (
+            step_num in forward_nodes
+        ), "reverse map should have less or equal number of edges than forward map"
+        assert forward_nodes[step_num][0] in reverse_nodes[step_num][1], (
+            f"[{step_num}] forward src_node should be in reverse dst_node",
+            forward_nodes[step_num][0],
+            reverse_nodes[step_num][1],
+        )
+        assert forward_nodes[step_num][1] in reverse_nodes[step_num][0], (
+            f"[{step_num}] forward dst_node should be in reverse src_node",
+            forward_nodes[step_num][1],
+            reverse_nodes[step_num][0],
+        )
+        print(reverse_nodes[step_num], forward_nodes[step_num])
+    # exit(-1)
+    # In some cases, human map may contain more or less entries than the machine forward map.
+    # reverse map is from machine forward map.
     G_forward = build_graph_from_file(path_file, action_file=None, verbose=verbose)
     G_backward = build_graph_from_file(reverse_file, action_file=None, verbose=verbose)
 
