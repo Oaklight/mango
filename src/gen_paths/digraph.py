@@ -254,12 +254,15 @@ def build_graph_from_file_with_reverse(
         assert (
             step_num in forward_nodes
         ), "reverse map should have less or equal number of edges than forward map"
-        assert forward_nodes[step_num][0] in reverse_nodes[step_num][1], (
+        # since namespace converted, we just need to check forward node has the same id as reverse node
+        forward_id = forward_nodes[step_num][0].split("(")[-1].split(")")[0]
+        assert forward_id in reverse_nodes[step_num][1], (
             f"[{step_num}] forward src_node should be in reverse dst_node",
             forward_nodes[step_num][0],
             reverse_nodes[step_num][1],
         )
-        assert forward_nodes[step_num][1] in reverse_nodes[step_num][0], (
+        forward_id = forward_nodes[step_num][1].split("(")[-1].split(")")[0]
+        assert forward_id in reverse_nodes[step_num][0], (
             f"[{step_num}] forward dst_node should be in reverse src_node",
             forward_nodes[step_num][1],
             reverse_nodes[step_num][0],
