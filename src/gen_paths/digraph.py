@@ -220,7 +220,11 @@ def build_graph_from_file_with_reverse(
     for i in range(num_lines_reverse):
         # get step_num and path
         line_reverse = lines_reverse[i].strip("\ufeff").strip()
-        line_reverse = line_reverse.split(", desc:")[0].strip()
+        line_reverse, skip_flag = line_reverse.split(", desc:")
+        line_reverse = line_reverse.strip()
+        if skip_flag != "None":
+            print("skip invalid path", line_reverse)
+            continue
         if len(line_reverse) == 0:
             continue
         path_reverse, step_num_reverse = [
