@@ -32,6 +32,11 @@ if __name__ == "__main__":
         allPaths = get_all_paths(g, src=src_node, dst=dst_node)
         all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
 
+    # if all_paths_json is empty, abort dumping
+    if len(all_paths_json) == 0:
+        print("No paths found. Abort dumping.")
+        exit(2)
+
     # dump to json
     with open(args.output_path, "w") as f:
         json.dump(all_paths_json, f, indent=4)
