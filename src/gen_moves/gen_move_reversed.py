@@ -173,7 +173,7 @@ def gen_move_reversed(args):
                     == human_forward_nodes[item["step_num"]][1]
                     and item["location_after"].strip().lower()
                     == human_forward_nodes[item["step_num"]][0]
-                ), f"step_num: {item['step_num']} is not good, human forward nodes: {human_forward_nodes[item['step_num']]}, machine reversed nodes: {(item['location_before'], item['location_after'])}"
+                ), f"step_num: {item['step_num']} is not good, human forward nodes: {human_forward_nodes[item['step_num']]}, machine reversed nodes: {(item['location_before'], item['location_after'])}\nALERT: [gen_move_merge.py might be ran already]"
                 fout.write(
                     "{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n".format(
                         item["location_before"],

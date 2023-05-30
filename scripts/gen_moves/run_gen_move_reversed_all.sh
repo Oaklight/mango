@@ -34,6 +34,7 @@ then
         --max_steps 70 \
         -idir ./data/maps \
         -odir ./data/maps
+        python ./src/gen_moves/gen_move_merge.py -p ./data/maps -g $filename
     done
     echo "Good Job!"
 fi
@@ -44,4 +45,5 @@ python ./src/gen_moves/gen_move_reversed.py -g $game_name \
 --max_steps 70 \
 -idir ./data/maps \
 -odir ./data/maps
+python ./src/gen_moves/gen_move_merge.py -p ./data/maps -g $game_name
 echo "Good Job!"
