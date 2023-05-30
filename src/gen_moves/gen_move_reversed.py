@@ -31,8 +31,8 @@ opposite_direction_dict = {
     "southwest": "northeast",
     "northwest": "southeast",
     "southeast": "northwest",
-    "up": "up",
-    "down": "down",
+    "up": "down",
+    "down": "up",
 }
 
 
