@@ -1,34 +1,34 @@
-Forest --> east --> Meadow, step 1
-Meadow --> north --> Lakeside, step 2
-Lakeside --> down --> Bog, step 4
-Bog --> swim --> Lakeside, step 7
-Lakeside --> west --> Dismal Swamp, step 9
-Dismal Swamp --> west --> Grove, step 10
-Grove --> east --> Dismal Swamp, step 14
-Dismal Swamp --> climb tree --> Tree Top, step 15
-Tree Top --> down --> Dismal Swamp, step 17
-Dismal Swamp --> go stump --> Inside Stump, step 20
-Inside Stump --> down --> Root Chamber, step 25
-Root Chamber --> up --> Inside Stump, step 27
-Inside Stump --> down --> Root Chamber, step 29
-Root Chamber --> down --> Hole, step 30
-Hole --> down --> Hall, step 34
-Hall --> down --> Cavern, step 36
-Cavern --> south --> Anteroom, step 37
-Anteroom --> north --> Cavern, step 39
-Cavern --> down --> Maze (exit North, South, East, Down), step 40
-Maze (exit North, South, East, Down) --> down --> Maze (exit West, Up), step 41
-Maze (exit West, Up) --> west --> Maze (exit North, South, East, West, Up, Down; rock ALADDIN), step 43
-Maze (exit North, South, East, West, Up, Down; rock ALADDIN) --> north --> Maze (exit North, South, East, West, Up, Down; arrow down), step 44
-Maze (exit North, South, East, West, Up, Down; arrow down) --> down --> Chasm, step 46
-Chasm --> up --> Maze (exit North, South, East, West, Up, Down; arrow down), step 48
-Maze (exit North, South, East, West, Up, Down; arrow down) --> up --> Maze (exit North, South, East, West, Up, Down; rock ALADDIN), step 49
-Maze (exit North, South, East, West, Up, Down; rock ALADDIN) --> away --> Meadow, step 50
-Meadow --> south --> Dismal Swamp, step 52
-Dismal Swamp --> north --> Meadow, step 56
-Meadow --> east --> Lakeside, step 57
-Lakeside --> west --> Dismal Swamp, step 60
-Dismal Swamp --> go stump --> Inside Stump, step 61
-Inside Stump --> up --> Dismal Swamp, step 64
-Dismal Swamp --> go stump --> Inside Stump, step 68
-Inside Stump --> down --> Root Chamber, step 70
+forest (obj32) --> east --> meadow (obj35), step 1
+meadow (obj35) --> north --> lakeside (obj24), step 2
+lakeside (obj24) --> down --> bog (obj30), step 4
+bog (obj30) --> swim --> lakeside (obj24), step 7
+lakeside (obj24) --> west --> dismal swamp (obj43), step 9
+dismal swamp (obj43) --> west --> grove (obj40), step 10
+grove (obj40) --> east --> dismal swamp (obj43), step 14
+dismal swamp (obj43) --> climb tree --> tree top (obj52), step 15
+tree top (obj52) --> down --> dismal swamp (obj43), step 17
+dismal swamp (obj43) --> go stump --> inside stump (obj55), step 20
+inside stump (obj55) --> down --> root chamber (obj62), step 25
+root chamber (obj62) --> up --> inside stump (obj55), step 27
+inside stump (obj55) --> down --> root chamber (obj62), step 29
+root chamber (obj62) --> down --> hole (obj65), step 30
+hole (obj65) --> down --> hall (obj67), step 34
+hall (obj67) --> down --> cavern (obj68), step 36
+cavern (obj68) --> south --> anteroom (obj72), step 37
+anteroom (obj72) --> north --> cavern (obj68), step 39
+cavern (obj68) --> down --> maze (obj75), step 40
+maze (obj75) --> down --> maze (obj76), step 41
+maze (obj76) --> west --> maze (obj78), step 43
+maze (obj78) --> north --> maze (obj82), step 44
+maze (obj82) --> down --> chasm (obj85), step 46
+chasm (obj85) --> up --> maze (obj82), step 48
+maze (obj82) --> up --> maze (obj78), step 49
+maze (obj78) --> away --> meadow (obj35), step 50
+meadow (obj35) --> south --> dismal swamp (obj43), step 52
+dismal swamp (obj43) --> north --> meadow (obj35), step 56
+meadow (obj35) --> east --> lakeside (obj24), step 57
+lakeside (obj24) --> west --> dismal swamp (obj43), step 60
+dismal swamp (obj43) --> go stump --> inside stump (obj55), step 61
+inside stump (obj55) --> up --> dismal swamp (obj43), step 64
+dismal swamp (obj43) --> go stump --> inside stump (obj55), step 68
+inside stump (obj55) --> down --> root chamber (obj62), step 70
