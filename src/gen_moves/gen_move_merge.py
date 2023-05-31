@@ -95,13 +95,13 @@ if __name__ == "__main__":
             line = line.split(" --> ")
             src = line[0]
             dst = line[2]
-            src = anno_to_code(src, anno2code)
-            dst = anno_to_code(dst, anno2code)
-            if src is None or dst is None:
+            src_code = anno_to_code(src, anno2code)
+            dst_code = anno_to_code(dst, anno2code)
+            if src_code is None or dst_code is None:
                 # abort!
-                print(f"[{args.game}.map.human] | abort! src or dst is None", src, dst)
+                print(f"[{args.game}.map.human] | abort! [at step {step_num}] src or dst is None: ", src, dst)
                 exit(1)
-            human_lines.append(f"{src} --> {line[1]} --> {dst}, step {step_num}")
+            human_lines.append(f"{src_code} --> {line[1]} --> {dst_code}, step {step_num}")
     # dump back to map.human
     with open(map_human_path, "w") as f:
         for line in human_lines:
@@ -119,18 +119,18 @@ if __name__ == "__main__":
             line, step_num = line_step.split(", step ")
             line = line.split(" --> ")
             # in map.reversed: locations are named as "Junction (obj63)", "(obj63)" is the id, Junction is the annotation
-            src = line[0].lower().split("(")[0].strip()
-            dst = line[2].lower().split("(")[0].strip()
-            src = anno_to_code(src, anno2code)
-            dst = anno_to_code(dst, anno2code)
-            if src is None or dst is None:
+            src = line[0].lower().split("(obj")[0].strip()
+            dst = line[2].lower().split("(obj")[0].strip()
+            src_code = anno_to_code(src, anno2code)
+            dst_code = anno_to_code(dst, anno2code)
+            if src_code is None or dst_code is None:
                 # abort!
                 print(
-                    f"[{args.game}.map.reversed] | abort! src or dst is None", src, dst
+                    f"[{args.game}.map.reversed] | abort! [at step {step_num}] src or dst is None: ", src, dst
                 )
                 exit(1)
             reversed_lines.append(
-                f"{src} --> {line[1]} --> {dst}, step {step_num}, desc: {desc}"
+                f"{src_code} --> {line[1]} --> {dst_code}, step {step_num}, desc: {desc}"
             )
     # dump back to map.reversed
     with open(map_reversed_path, "w") as f:
