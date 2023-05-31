@@ -79,3 +79,6 @@ else
         echo "Missing release files for $game"
     fi
 fi
+
+# run release_status.py to update status sheet
+python src/release_status.py
