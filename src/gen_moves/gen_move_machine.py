@@ -78,6 +78,10 @@ def gen_move_machine(args):
     if os.path.exists(output_dir) == False:
         os.makedirs(output_dir)
 
+    if len(map_list) == 0:
+        print ("No map generated!")
+        return -1
+    
     output_file = '{}/{}.map.machine'.format(output_dir,game_name.split('.')[0])
     with open(output_file,'w', encoding='utf-8') as fout:
         for item in map_list:
