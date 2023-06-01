@@ -5,7 +5,18 @@ import matplotlib.pyplot as plt
 from config import *
 from utils import print_color
 
-opposite_directions = {}
+opposite_directions = {
+    "east": "west",
+    "west": "east",
+    "north": "south",
+    "south": "north",
+    "up": "down",
+    "down": "up",
+    "northeast": "southwest",
+    "southwest": "northeast",
+    "northwest": "southeast",
+    "southeast": "northwest",
+}
 
 
 def load_valid_actions(action_file):
