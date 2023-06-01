@@ -1,19 +1,19 @@
-Cell --> south --> Landing, step 15
-Landing --> east --> Corridor(south into a room and west to old cell), step 16
-Corridor(south into a room and west to old cell) --> south --> Armoury, step 17
-Armoury --> north --> Corridor(south into a room and west to old cell), step 22
-Corridor(south into a room and west to old cell) --> west --> Landing, step 23
-Landing --> west --> Corridor(east old cell and stretches further west), step 24
-Corridor(east old cell and stretches further west) --> west --> Corridor(east to old cell and north to hall), step 25
-Corridor(east to old cell and north to hall) --> south --> Control Room, step 26
-Control Room --> north --> Corridor(east to old cell and north to hall), step 35
-Corridor(east to old cell and north to hall) --> north --> Hall, step 36
-Hall --> north --> Lift(down button and a door to south), step 38
-Lift(down button and a door to south) --> down --> Lift(up button and a door to north), step 39
-Lift(up button and a door to north) --> north --> Hallway, step 40
-Hallway --> north --> Office, step 41
-Office --> east --> Bar, step 53
-Bar --> west --> Office, step 59
-Office --> east --> Bar, step 61
-Bar --> west --> Office, step 63
-Office --> west --> Officer's Room, step 64
+cell (obj25) --> south --> landing (obj33), step 15
+landing (obj33) --> east --> corridor (obj37), step 16
+corridor (obj37) --> south --> armoury (obj43), step 17
+armoury (obj43) --> north --> corridor (obj37), step 22
+corridor (obj37) --> west --> landing (obj33), step 23
+landing (obj33) --> west --> corridor (obj35), step 24
+corridor (obj35) --> west --> corridor (obj36), step 25
+corridor (obj36) --> south --> control room (obj40), step 26
+control room (obj40) --> north --> corridor (obj36), step 35
+corridor (obj36) --> north --> hall (obj38), step 36
+hall (obj38) --> north --> lift (obj48), step 38
+lift (obj48) --> down --> lift (obj50), step 39
+lift (obj50) --> north --> hallway (obj52), step 40
+hallway (obj52) --> north --> office (obj53), step 41
+office (obj53) --> east --> bar (obj57), step 53
+bar (obj57) --> west --> office (obj53), step 59
+office (obj53) --> east --> bar (obj57), step 61
+bar (obj57) --> west --> office (obj53), step 63
+office (obj53) --> west --> officer's room (obj63), step 64
