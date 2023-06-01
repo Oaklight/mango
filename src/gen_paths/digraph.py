@@ -163,7 +163,7 @@ def build_graph_from_file(
             # parse reversed path
             line, desc = [each.strip().lower() for each in line.split(", desc:")]
 
-            if desc != "None":
+            if desc != "none":
                 print("invalid path detected", line, desc)
                 continue
         else:
