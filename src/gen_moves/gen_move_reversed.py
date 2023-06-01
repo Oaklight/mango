@@ -115,7 +115,9 @@ def gen_move_reversed(args):
 
     map_reversed_list = []
     for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
+        print(f"at step: {step_idx+1} | action taken: {act}")
         observation, reward, done, info = env.step(act)
+        print("observation: {}".format(observation))
         act_unabbrev = unabbreviate(act)
         location_after_id = env.get_player_location().num
         if location_after_id != location_before_id:
@@ -131,18 +133,23 @@ def gen_move_reversed(args):
                         desc = "{} || {}".format(
                             obsrv_splitted[0], "".join(obsrv_splitted[1:])
                         )
-
-                map_reversed_list.append(
-                    {
-                        "location_before": codeid2anno_dict[location_after_id],
-                        "location_before_id": location_after_id,
-                        "act": opposite_direction_dict[act_unabbrev],
-                        "location_after": codeid2anno_dict[location_before_id],
-                        "location_after_id": location_before_id,
-                        "step_num": step_idx + 1,
-                        "desc": desc,
-                    }
-                )
+                try:
+                    map_reversed_list.append(
+                        {
+                            "location_before": codeid2anno_dict[location_after_id],
+                            "location_before_id": location_after_id,
+                            "act": opposite_direction_dict[act_unabbrev],
+                            "location_after": codeid2anno_dict[location_before_id],
+                            "location_after_id": location_before_id,
+                            "step_num": step_idx + 1,
+                            "desc": desc,
+                        }
+                    )
+                except Exception as e:
+                    print(e)
+                    print(observation)
+                    print(location_after_id)
+                    print(codeid2anno_dict)
             location_before_id = location_after_id
 
     output_dir = args.output_dir + "/" + game_name_raw
