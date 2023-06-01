@@ -188,14 +188,6 @@ def build_graph_from_file(
         src_node, direction, dst_node = elements
         G.add_edge(src_node, dst_node, direction=direction)
 
-        if direction not in opposite_directions:
-            if verbose:
-                print(
-                    f"direction [{direction}] not in opposite_directions, skip reverse path"
-                )
-            continue
-        G.add_edge(dst_node, src_node, direction=get_opposite_direction(direction))
-
     return G
 
 
@@ -233,8 +225,9 @@ def build_graph_from_file_with_reverse(
         line_reverse = lines_reverse[i].strip("\ufeff").strip()
         line_reverse, skip_flag = line_reverse.split(", desc:")
         line_reverse = line_reverse.strip()
+        skip_flag = skip_flag.strip()
         if skip_flag != "None":
-            print("skip invalid path", line_reverse)
+            print("skip invalid path", line_reverse, f"[{skip_flag}]")
             continue
         if len(line_reverse) == 0:
             continue
