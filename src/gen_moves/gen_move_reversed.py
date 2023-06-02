@@ -114,17 +114,57 @@ def gen_move_reversed(args):
     walkthrough_acts = env.get_walkthrough()
 
     map_reversed_list = []
+
     for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
+        """
+        for each step at step_idx, walk along walkthrough actions until step_idx, then take a reverse attempt
+        """
+        env.reset()
+        location_before = env.get_player_location().name.strip().lower()
+        location_before_id = env.get_player_location().num
+        for i in range(step_idx):
+            env.step(walkthrough_acts[i])
+        # get the last location id before step_idx
+        should_fall_back_id = env.get_player_location().num
+
+        # take the step_idx-th step
         print(f"at step: {step_idx+1} | action taken: {act}")
         observation, reward, done, info = env.step(act)
+
         print("observation: {}".format(observation))
         act_unabbrev = unabbreviate(act)
         location_after_id = env.get_player_location().num
-        if location_after_id != location_before_id:
+
+    
+        # if location_after_id != location_before_id:
+        if location_after_id != should_fall_back_id:
             valid_actions = [unabbreviate(va) for va in env.get_valid_actions()]
+            print("valid actions: {}".format(valid_actions))
+            print("act_unabbrev: {}".format(act_unabbrev))
+    
             if act_unabbrev in direction_vocab:
-                if opposite_direction_dict[act_unabbrev] in valid_actions:
-                    desc = "None"
+                print(f"valid action [{act_unabbrev}]")
+
+                reverse_act = opposite_direction_dict[act_unabbrev]
+                if reverse_act in valid_actions:
+                    print(f"valid reverse action [{reverse_act}]")
+
+                    # step the reverse action
+                    observation, reward, done, info = env.step(reverse_act)
+                    actual_fall_back_id = env.get_player_location().num
+                    print(f"actual_fall_back_id: {actual_fall_back_id} | should_fall_back_id: {should_fall_back_id}")
+
+                    if should_fall_back_id == actual_fall_back_id:
+                        print("opposite direction valid: {}".format(reverse_act))
+                        desc = "None"
+                    else:
+                        obsrv_splitted = observation.split("\n")
+                        if len(obsrv_splitted) == 1:
+                            desc = obsrv_splitted[0]
+                        else:
+                            desc = "{} || {}".format(
+                                obsrv_splitted[0], "".join(obsrv_splitted[1:])
+                            )
                 else:
                     obsrv_splitted = observation.split("\n")
                     if len(obsrv_splitted) == 1:
@@ -138,9 +178,9 @@ def gen_move_reversed(args):
                         {
                             "location_before": codeid2anno_dict[location_after_id],
                             "location_before_id": location_after_id,
-                            "act": opposite_direction_dict[act_unabbrev],
-                            "location_after": codeid2anno_dict[location_before_id],
-                            "location_after_id": location_before_id,
+                            "act": reverse_act,
+                            "location_after": codeid2anno_dict[should_fall_back_id],
+                            "location_after_id": should_fall_back_id,
                             "step_num": step_idx + 1,
                             "desc": desc,
                         }
