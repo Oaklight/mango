@@ -1,40 +1,46 @@
-outside the door of a small flint hut --> south --> in a garden of luxurious flowers, step 1
-in a garden of luxurious flowers --> north --> in a rock garden, step 2
-in a rock garden --> south --> in a garden of exotic vegetables, step 3
-garden --> north --> brick wall, step 4
-brick wall --> north --> in a long north-south alley, step 5
-in a long north-south alley --> north --> at the north end of the alley, step 6
-at the north end of the alley --> south --> in the alley, step 8
-in the alley --> south --> on a north-south path, step 10
-on a north-south path --> south --> in the vegetable garden, step 11
-in the vegetable garden --> south --> in a shrubbery, step 12
-in a shrubbery --> east --> in the garden at the remnants of a bonfire, step 15
-in the garden at the remnants of a bonfire --> north --> in the flower garden, step 17
-in the flower garden --> east --> outside the house., step 18
-outside the house. --> west --> at an old, untended grave, step 19
-at an old, untended grave --> north --> in a small well-maintained sandpit, step 20
-in a small well-maintained sandpit --> south --> at the old grave, step 23
-at the old grave --> east --> outside the house, step 25
-outside the house --> east --> at the edge of a large, perfectly calm lake, step 26
-at the edge of a large, perfectly calm lake --> west --> outside the house, step 29
-outside the house --> north --> inside the hut, step 32
-inside the hut --> down --> in a large quadrangular cellar, step 36
-in a large quadrangular cellar --> west --> in the mad scientist's laboratory, step 37
-in the mad scientist's laboratory --> west --> in a high tunnel to the west of the laboratory, step 38
-in a high tunnel to the west of the laboratory --> west --> on a wooden plank, step 40
-on a wooden plank --> west --> in a high east-west tunnel, step 41
-in a high east-west tunnel --> north --> in a small alcove to the north of the high tunnel, step 45
-in a small alcove to the north of the high tunnel --> south --> in the east-west tunnel by the alcove, step 46
-in the east-west tunnel by the alcove --> west --> in a high east-west tunnel, step 47
-in a high east-west tunnel --> west --> in a secret cavern, step 48
-in a secret cavern --> south --> in a low damp chamber, step 50
-in a low damp chamber --> north --> in the secret cavern, step 54
-in the secret cavern --> east --> in a high east-west tunnel, step 55
-in a high east-west tunnel --> east --> in the east-west tunnel by the alcove, step 56
-in the east-west tunnel by the alcove --> east --> on a wooden plank, step 57
-on a wooden plank --> east --> in the tunnel between the laboratory and the wiring, step 58
-in the tunnel between the laboratory and the wiring --> east --> in the laboratory, step 59
-in the laboratory --> east --> in the cellar, step 61
-in the cellar --> east --> at a complicated junction of passages, step 62
-at a complicated junction of passages --> east --> in the entrance hall to what appears to be a haunted house, step 63
-in the entrance hall to what appears to be a haunted house --> east --> in a large bedroom in the haunted house, step 64
+(start) (obj53) --> south --> (path1) (obj55), step 1
+(path1) (obj55) --> north --> (path2) (obj56), step 2
+(path2) (obj56) --> south --> (path3) (obj57), step 3
+(path3) (obj57) --> north --> (wall1) (obj62), step 4
+(wall1) (obj62) --> north --> (wall2) (obj63), step 5
+(wall2) (obj63) --> north --> (wall3) (obj64), step 6
+(wall3) (obj64) --> south --> (wall2) (obj63), step 8
+(wall2) (obj63) --> south --> (wall1) (obj62), step 10
+(wall1) (obj62) --> south --> (path3) (obj57), step 11
+(path3) (obj57) --> south --> (path4) (obj58), step 12
+(path4) (obj58) --> east --> (path5) (obj59), step 15
+(path5) (obj59) --> north --> (path1) (obj55), step 17
+(path1) (obj55) --> east --> (start) (obj53), step 18
+(start) (obj53) --> west --> (grave) (obj60), step 19
+(grave) (obj60) --> north --> (sandpit) (obj65), step 20
+(sandpit) (obj65) --> south --> (grave) (obj60), step 23
+(grave) (obj60) --> east --> (start) (obj53), step 25
+(start) (obj53) --> east --> (lake) (obj61), step 26
+(lake) (obj61) --> west --> (start) (obj53), step 29
+(start) (obj53) --> north --> (inhut) (obj54), step 32
+(inhut) (obj54) --> down --> (cellar) (obj66), step 36
+(cellar) (obj66) --> west --> (frankrm) (obj67), step 37
+(frankrm) (obj67) --> west --> (gap3) (obj86), step 38
+(gap3) (obj86) --> west --> (gap2) (obj85), step 40
+(gap2) (obj85) --> west --> (gap1) (obj84), step 41
+(gap1) (obj84) --> north --> (alcove) (obj82), step 45
+(alcove) (obj82) --> south --> (gap1) (obj84), step 46
+(gap1) (obj84) --> west --> (gap0) (obj83), step 47
+(gap0) (obj83) --> west --> (secretch) (obj87), step 48
+(secretch) (obj87) --> south --> (slimerm) (obj101), step 50
+(slimerm) (obj101) --> north --> (secretch) (obj87), step 54
+(secretch) (obj87) --> east --> (gap0) (obj83), step 55
+(gap0) (obj83) --> east --> (gap1) (obj84), step 56
+(gap1) (obj84) --> east --> (gap2) (obj85), step 57
+(gap2) (obj85) --> east --> (gap3) (obj86), step 58
+(gap3) (obj86) --> east --> (frankrm) (obj67), step 59
+(frankrm) (obj67) --> east --> (cellar) (obj66), step 61
+(cellar) (obj66) --> east --> (junction) (obj111), step 62
+(junction) (obj111) --> east --> (house1) (obj113), step 63
+(house1) (obj113) --> east --> (poltroom) (obj117), step 64
+(poltroom) (obj117) --> west --> small bedroom (obj1), step 65
+small bedroom (obj1) --> east --> (poltroom) (obj117), step 66
+(poltroom) (obj117) --> west --> pantry (obj2), step 67
+pantry (obj2) --> east --> study (obj3), step 68
+study (obj3) --> north --> kitchen (obj4), step 69
+study (obj3) --> south --> living room (obj5), step 70
