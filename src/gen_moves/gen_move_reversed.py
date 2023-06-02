@@ -35,6 +35,11 @@ opposite_direction_dict = {
     "down": "up",
 }
 
+TRINITY_STUCK_STEPS = set(
+    [8, 13, 23, 29, 33, 35, 39, 43, 47, 49, 58, 59, 60, 65, 68, 69]
+)
+# post issues at jericho repo: https://github.com/microsoft/jericho/issues/64
+
 
 def load_code2anno(input_file_path):
     # object id --> anno str
@@ -134,13 +139,18 @@ def gen_move_reversed(args):
         print("observation: {}".format(observation))
         act_unabbrev = unabbreviate(act)
         location_after_id = env.get_player_location().num
-        location_after_loc = codeid2anno_dict[location_after_id] if location_after_id in codeid2anno_dict else "not found"
-        print(
-            f"at location: [{location_after_loc}]({location_after_id})"
+        location_after_loc = (
+            codeid2anno_dict[location_after_id]
+            if location_after_id in codeid2anno_dict
+            else "not found"
         )
+        print(f"at location: [{location_after_loc}]({location_after_id})")
 
         # if location_after_id != location_before_id:
         if location_after_id != should_fall_back_id:
+            if game_name == "trinity" and step_idx in TRINITY_STUCK_STEPS:
+                continue
+
             valid_actions = {unabbreviate(va): va for va in env.get_valid_actions()}
             print(f"current valid actions: {valid_actions}")
 
@@ -159,7 +169,11 @@ def gen_move_reversed(args):
                         has_reverse_act = True
                         jericho_reverse.append(valid_actions[va])
                 # get the shortest named possible reverse action, to rescue phrases and exact match mixed case
-                jericho_reverse = sorted(jericho_reverse, key=lambda x: len(x))[0] if has_reverse_act else ""
+                jericho_reverse = (
+                    sorted(jericho_reverse, key=lambda x: len(x))[0]
+                    if has_reverse_act
+                    else ""
+                )
 
                 if has_reverse_act:
                     print(
