@@ -134,25 +134,42 @@ def gen_move_reversed(args):
         print("observation: {}".format(observation))
         act_unabbrev = unabbreviate(act)
         location_after_id = env.get_player_location().num
+        print(
+            f"at location: [{codeid2anno_dict[location_after_id]}]({location_after_id})"
+        )
 
-    
         # if location_after_id != location_before_id:
         if location_after_id != should_fall_back_id:
-            valid_actions = [unabbreviate(va) for va in env.get_valid_actions()]
-            print("valid actions: {}".format(valid_actions))
-            print("act_unabbrev: {}".format(act_unabbrev))
-    
+            valid_actions = {unabbreviate(va): va for va in env.get_valid_actions()}
+            print(f"current valid actions: {valid_actions}")
+
             if act_unabbrev in direction_vocab:
                 print(f"valid action [{act_unabbrev}]")
 
+                # get the reverse action
                 reverse_act = opposite_direction_dict[act_unabbrev]
-                if reverse_act in valid_actions:
-                    print(f"valid reverse action [{reverse_act}]")
+
+                # if reverse_act in valid_actions:
+                # test each entry of the valid_actions, because some game use phrase like "go back" instead of "back"
+                has_reverse_act = False
+                jericho_reverse = ""
+                for va in valid_actions.keys():
+                    if reverse_act in va:
+                        has_reverse_act = True
+                        jericho_reverse = valid_actions[va]
+                        break
+
+                if has_reverse_act:
+                    print(
+                        f"valid reverse action [{reverse_act}] == jericho_reverse: {jericho_reverse}"
+                    )
 
                     # step the reverse action
-                    observation, reward, done, info = env.step(reverse_act)
+                    observation, reward, done, info = env.step(jericho_reverse)
                     actual_fall_back_id = env.get_player_location().num
-                    print(f"actual_fall_back_id: {actual_fall_back_id} | should_fall_back_id: {should_fall_back_id}")
+                    print(
+                        f"actual_fall_back_id: [{codeid2anno_dict[actual_fall_back_id]}]({actual_fall_back_id}) | should_fall_back_id: [{codeid2anno_dict[should_fall_back_id]}]({should_fall_back_id})"
+                    )
 
                     if should_fall_back_id == actual_fall_back_id:
                         print("opposite direction valid: {}".format(reverse_act))
@@ -191,6 +208,7 @@ def gen_move_reversed(args):
                     print(location_after_id)
                     print(codeid2anno_dict)
             location_before_id = location_after_id
+            print("================")
 
     output_dir = args.output_dir + "/" + game_name_raw
     if os.path.exists(output_dir) == False:
