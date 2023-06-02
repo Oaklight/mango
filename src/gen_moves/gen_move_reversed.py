@@ -134,8 +134,9 @@ def gen_move_reversed(args):
         print("observation: {}".format(observation))
         act_unabbrev = unabbreviate(act)
         location_after_id = env.get_player_location().num
+        location_after_loc = codeid2anno_dict[location_after_id] if location_after_id in codeid2anno_dict else "not found"
         print(
-            f"at location: [{codeid2anno_dict[location_after_id]}]({location_after_id})"
+            f"at location: [{location_after_loc}]({location_after_id})"
         )
 
         # if location_after_id != location_before_id:
@@ -152,12 +153,13 @@ def gen_move_reversed(args):
                 # if reverse_act in valid_actions:
                 # test each entry of the valid_actions, because some game use phrase like "go back" instead of "back"
                 has_reverse_act = False
-                jericho_reverse = ""
+                jericho_reverse = []
                 for va in valid_actions.keys():
                     if reverse_act in va:
                         has_reverse_act = True
-                        jericho_reverse = valid_actions[va]
-                        break
+                        jericho_reverse.append(valid_actions[va])
+                # get the shortest named possible reverse action, to rescue phrases and exact match mixed case
+                jericho_reverse = sorted(jericho_reverse, key=lambda x: len(x))[0] if has_reverse_act else ""
 
                 if has_reverse_act:
                     print(
@@ -167,8 +169,18 @@ def gen_move_reversed(args):
                     # step the reverse action
                     observation, reward, done, info = env.step(jericho_reverse)
                     actual_fall_back_id = env.get_player_location().num
+                    actual_fall_back_loc = (
+                        codeid2anno_dict[actual_fall_back_id]
+                        if actual_fall_back_id in codeid2anno_dict
+                        else "not found"
+                    )
+                    should_fall_back_loc = (
+                        codeid2anno_dict[should_fall_back_id]
+                        if should_fall_back_id in codeid2anno_dict
+                        else "not found"
+                    )
                     print(
-                        f"actual_fall_back_id: [{codeid2anno_dict[actual_fall_back_id]}]({actual_fall_back_id}) | should_fall_back_id: [{codeid2anno_dict[should_fall_back_id]}]({should_fall_back_id})"
+                        f"actual_fall_back_id: [{actual_fall_back_loc}]({actual_fall_back_id}) | should_fall_back_id: [{should_fall_back_loc}]({should_fall_back_id})"
                     )
 
                     if should_fall_back_id == actual_fall_back_id:
