@@ -36,6 +36,7 @@ then
             cp "$map_path/$game/$game.anno2code.json" "$game_release_dir/$game.anno2code.json"
             cp "$map_path/$game/$game.walkthrough" "$game_release_dir/$game.walkthrough"
             cp "$map_path/$game/$game.moves" "$game_release_dir/$game.moves"
+            cp "$map_path/$game/$game.all_pairs.json" "$game_release_dir/$game.all_pairs.json"
             echo "Release $game"
         else
             echo "Missing release files for $game"
@@ -55,6 +56,7 @@ else
         cp "$map_path/$game/$game.anno2code.json" "$game_release_dir/$game.anno2code.json"
         cp "$map_path/$game/$game.walkthrough" "$game_release_dir/$game.walkthrough"
         cp "$map_path/$game/$game.moves" "$game_release_dir/$game.moves"
+        cp "$map_path/$game/$game.all_pairs.json" "$game_release_dir/$game.all_pairs.json"
         echo "Release $game"
     else
         echo "Missing release files for $game"

@@ -1,6 +1,7 @@
 import argparse
 import itertools
 import json
+import os
 
 from digraph import (
     build_graph_from_file,
@@ -30,11 +31,18 @@ if __name__ == "__main__":
     # all_pairs = list(itertools.permutations(g.nodes(), 2))
     # print(all_pairs)
 
+    all_pairs_dict = {}
     all_paths_json = []
     for src_node, dst_node in all_pairs:
         print(f"Generating paths from {src_node} to {dst_node}...")
         allPaths = get_all_paths(g, src=src_node, dst=dst_node)
         all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
+
+        all_pairs_dict[src_node + " -> " + dst_node] = {
+            "src_node": src_node,
+            "dst_node": dst_node,
+            "num_paths": len(allPaths),
+        }
 
     # sort by src, dst, diff_shortest, step_count
     # additionally sort by elements in path_details
@@ -59,3 +67,16 @@ if __name__ == "__main__":
     # dump to json
     with open(args.output_path, "w") as f:
         json.dump(all_paths_json, f, indent=4)
+
+    # dump another file for all node pairs
+    pair_json_path = os.path.join(
+        os.path.dirname(args.output_path),
+        args.map.split("/")[-1].split(".")[0] + ".all_pairs.json",
+    )
+    # sort by src, dst, num_paths
+    all_pairs_dict = sorted(
+        all_pairs_dict.items(),
+        key=lambda x: (x[1]["src_node"], x[1]["dst_node"], x[1]["num_paths"]),
+    )
+    with open(pair_json_path, "w") as f:
+        json.dump(all_pairs_dict, f, indent=4)
