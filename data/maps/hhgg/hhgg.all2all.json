@@ -15,52 +15,6 @@
     },
     {
         "src_node": "bed (obj161)",
-        "dst_node": "front porch (obj151)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "bed (obj161)",
-                "node": "bedroom (obj168)",
-                "action": "get up",
-                "seen": true
-            },
-            {
-                "prev_node": "bedroom (obj168)",
-                "node": "front porch (obj151)",
-                "action": "south",
-                "seen": true
-            }
-        ],
-        "step_count": 2
-    },
-    {
-        "src_node": "bed (obj161)",
-        "dst_node": "front house (obj149)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "bed (obj161)",
-                "node": "bedroom (obj168)",
-                "action": "get up",
-                "seen": true
-            },
-            {
-                "prev_node": "bedroom (obj168)",
-                "node": "front porch (obj151)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "front porch (obj151)",
-                "node": "front house (obj149)",
-                "action": "south",
-                "seen": true
-            }
-        ],
-        "step_count": 3
-    },
-    {
-        "src_node": "bed (obj161)",
         "dst_node": "country lane (obj137)",
         "diff_shortest": 0,
         "path_details": [
@@ -90,44 +44,6 @@
             }
         ],
         "step_count": 4
-    },
-    {
-        "src_node": "bed (obj161)",
-        "dst_node": "pub (obj134)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "bed (obj161)",
-                "node": "bedroom (obj168)",
-                "action": "get up",
-                "seen": true
-            },
-            {
-                "prev_node": "bedroom (obj168)",
-                "node": "front porch (obj151)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "front porch (obj151)",
-                "node": "front house (obj149)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "pub (obj134)",
-                "action": "enter pub",
-                "seen": true
-            }
-        ],
-        "step_count": 5
     },
     {
         "src_node": "bed (obj161)",
@@ -169,7 +85,7 @@
     },
     {
         "src_node": "bed (obj161)",
-        "dst_node": "voghold (obj121)",
+        "dst_node": "front house (obj149)",
         "diff_shortest": 0,
         "path_details": [
             {
@@ -189,27 +105,29 @@
                 "node": "front house (obj149)",
                 "action": "south",
                 "seen": true
-            },
+            }
+        ],
+        "step_count": 3
+    },
+    {
+        "src_node": "bed (obj161)",
+        "dst_node": "front porch (obj151)",
+        "diff_shortest": 0,
+        "path_details": [
             {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
+                "prev_node": "bed (obj161)",
+                "node": "bedroom (obj168)",
+                "action": "get up",
                 "seen": true
             },
             {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
+                "prev_node": "bedroom (obj168)",
+                "node": "front porch (obj151)",
+                "action": "south",
                 "seen": true
             }
         ],
-        "step_count": 6
+        "step_count": 2
     },
     {
         "src_node": "bed (obj161)",
@@ -262,24 +180,16 @@
         "step_count": 7
     },
     {
-        "src_node": "bedroom (obj168)",
-        "dst_node": "front porch (obj151)",
+        "src_node": "bed (obj161)",
+        "dst_node": "pub (obj134)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "bedroom (obj168)",
-                "node": "front porch (obj151)",
-                "action": "south",
+                "prev_node": "bed (obj161)",
+                "node": "bedroom (obj168)",
+                "action": "get up",
                 "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "bedroom (obj168)",
-        "dst_node": "front house (obj149)",
-        "diff_shortest": 0,
-        "path_details": [
+            },
             {
                 "prev_node": "bedroom (obj168)",
                 "node": "front porch (obj151)",
@@ -291,9 +201,65 @@
                 "node": "front house (obj149)",
                 "action": "south",
                 "seen": true
+            },
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "pub (obj134)",
+                "action": "enter pub",
+                "seen": true
             }
         ],
-        "step_count": 2
+        "step_count": 5
+    },
+    {
+        "src_node": "bed (obj161)",
+        "dst_node": "voghold (obj121)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "bed (obj161)",
+                "node": "bedroom (obj168)",
+                "action": "get up",
+                "seen": true
+            },
+            {
+                "prev_node": "bedroom (obj168)",
+                "node": "front porch (obj151)",
+                "action": "south",
+                "seen": true
+            },
+            {
+                "prev_node": "front porch (obj151)",
+                "node": "front house (obj149)",
+                "action": "south",
+                "seen": true
+            },
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            }
+        ],
+        "step_count": 6
     },
     {
         "src_node": "bedroom (obj168)",
@@ -320,38 +286,6 @@
             }
         ],
         "step_count": 3
-    },
-    {
-        "src_node": "bedroom (obj168)",
-        "dst_node": "pub (obj134)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "bedroom (obj168)",
-                "node": "front porch (obj151)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "front porch (obj151)",
-                "node": "front house (obj149)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "pub (obj134)",
-                "action": "enter pub",
-                "seen": true
-            }
-        ],
-        "step_count": 4
     },
     {
         "src_node": "bedroom (obj168)",
@@ -387,7 +321,7 @@
     },
     {
         "src_node": "bedroom (obj168)",
-        "dst_node": "voghold (obj121)",
+        "dst_node": "front house (obj149)",
         "diff_shortest": 0,
         "path_details": [
             {
@@ -401,27 +335,23 @@
                 "node": "front house (obj149)",
                 "action": "south",
                 "seen": true
-            },
+            }
+        ],
+        "step_count": 2
+    },
+    {
+        "src_node": "bedroom (obj168)",
+        "dst_node": "front porch (obj151)",
+        "diff_shortest": 0,
+        "path_details": [
             {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
+                "prev_node": "bedroom (obj168)",
+                "node": "front porch (obj151)",
+                "action": "south",
                 "seen": true
             }
         ],
-        "step_count": 5
+        "step_count": 1
     },
     {
         "src_node": "bedroom (obj168)",
@@ -468,18 +398,294 @@
         "step_count": 6
     },
     {
-        "src_node": "front porch (obj151)",
-        "dst_node": "front house (obj149)",
+        "src_node": "bedroom (obj168)",
+        "dst_node": "pub (obj134)",
         "diff_shortest": 0,
         "path_details": [
+            {
+                "prev_node": "bedroom (obj168)",
+                "node": "front porch (obj151)",
+                "action": "south",
+                "seen": true
+            },
             {
                 "prev_node": "front porch (obj151)",
                 "node": "front house (obj149)",
                 "action": "south",
                 "seen": true
+            },
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "pub (obj134)",
+                "action": "enter pub",
+                "seen": true
+            }
+        ],
+        "step_count": 4
+    },
+    {
+        "src_node": "bedroom (obj168)",
+        "dst_node": "voghold (obj121)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "bedroom (obj168)",
+                "node": "front porch (obj151)",
+                "action": "south",
+                "seen": true
+            },
+            {
+                "prev_node": "front porch (obj151)",
+                "node": "front house (obj149)",
+                "action": "south",
+                "seen": true
+            },
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            }
+        ],
+        "step_count": 5
+    },
+    {
+        "src_node": "country lane (obj137)",
+        "dst_node": "dark (obj25)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
             }
         ],
         "step_count": 1
+    },
+    {
+        "src_node": "country lane (obj137)",
+        "dst_node": "poetry appreciatichair (obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            },
+            {
+                "prev_node": "voghold (obj121)",
+                "node": "poetry appreciatichair (obj107)",
+                "action": "z",
+                "seen": true
+            }
+        ],
+        "step_count": 3
+    },
+    {
+        "src_node": "country lane (obj137)",
+        "dst_node": "pub (obj134)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "pub (obj134)",
+                "action": "enter pub",
+                "seen": true
+            }
+        ],
+        "step_count": 1
+    },
+    {
+        "src_node": "country lane (obj137)",
+        "dst_node": "voghold (obj121)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            }
+        ],
+        "step_count": 2
+    },
+    {
+        "src_node": "dark (obj25)",
+        "dst_node": "poetry appreciatichair (obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            },
+            {
+                "prev_node": "voghold (obj121)",
+                "node": "poetry appreciatichair (obj107)",
+                "action": "z",
+                "seen": true
+            }
+        ],
+        "step_count": 2
+    },
+    {
+        "src_node": "dark (obj25)",
+        "dst_node": "voghold (obj121)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            }
+        ],
+        "step_count": 1
+    },
+    {
+        "src_node": "front house (obj149)",
+        "dst_node": "country lane (obj137)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            }
+        ],
+        "step_count": 1
+    },
+    {
+        "src_node": "front house (obj149)",
+        "dst_node": "dark (obj25)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            }
+        ],
+        "step_count": 2
+    },
+    {
+        "src_node": "front house (obj149)",
+        "dst_node": "poetry appreciatichair (obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            },
+            {
+                "prev_node": "voghold (obj121)",
+                "node": "poetry appreciatichair (obj107)",
+                "action": "z",
+                "seen": true
+            }
+        ],
+        "step_count": 4
+    },
+    {
+        "src_node": "front house (obj149)",
+        "dst_node": "pub (obj134)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "pub (obj134)",
+                "action": "enter pub",
+                "seen": true
+            }
+        ],
+        "step_count": 2
+    },
+    {
+        "src_node": "front house (obj149)",
+        "dst_node": "voghold (obj121)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "front house (obj149)",
+                "node": "country lane (obj137)",
+                "action": "follow ford",
+                "seen": true
+            },
+            {
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
+                "seen": true
+            }
+        ],
+        "step_count": 3
     },
     {
         "src_node": "front porch (obj151)",
@@ -500,32 +706,6 @@
             }
         ],
         "step_count": 2
-    },
-    {
-        "src_node": "front porch (obj151)",
-        "dst_node": "pub (obj134)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "front porch (obj151)",
-                "node": "front house (obj149)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "pub (obj134)",
-                "action": "enter pub",
-                "seen": true
-            }
-        ],
-        "step_count": 3
     },
     {
         "src_node": "front porch (obj151)",
@@ -555,7 +735,7 @@
     },
     {
         "src_node": "front porch (obj151)",
-        "dst_node": "voghold (obj121)",
+        "dst_node": "front house (obj149)",
         "diff_shortest": 0,
         "path_details": [
             {
@@ -563,27 +743,9 @@
                 "node": "front house (obj149)",
                 "action": "south",
                 "seen": true
-            },
-            {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
-                "seen": true
             }
         ],
-        "step_count": 4
+        "step_count": 1
     },
     {
         "src_node": "front porch (obj151)",
@@ -624,24 +786,16 @@
         "step_count": 5
     },
     {
-        "src_node": "front house (obj149)",
-        "dst_node": "country lane (obj137)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "front house (obj149)",
+        "src_node": "front porch (obj151)",
         "dst_node": "pub (obj134)",
         "diff_shortest": 0,
         "path_details": [
+            {
+                "prev_node": "front porch (obj151)",
+                "node": "front house (obj149)",
+                "action": "south",
+                "seen": true
+            },
             {
                 "prev_node": "front house (obj149)",
                 "node": "country lane (obj137)",
@@ -655,59 +809,19 @@
                 "seen": true
             }
         ],
-        "step_count": 2
+        "step_count": 3
     },
     {
-        "src_node": "front house (obj149)",
-        "dst_node": "dark (obj25)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            }
-        ],
-        "step_count": 2
-    },
-    {
-        "src_node": "front house (obj149)",
+        "src_node": "front porch (obj151)",
         "dst_node": "voghold (obj121)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "front house (obj149)",
-                "node": "country lane (obj137)",
-                "action": "follow ford",
+                "prev_node": "front porch (obj151)",
+                "node": "front house (obj149)",
+                "action": "south",
                 "seen": true
             },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
-                "seen": true
-            }
-        ],
-        "step_count": 3
-    },
-    {
-        "src_node": "front house (obj149)",
-        "dst_node": "poetry appreciatichair (obj107)",
-        "diff_shortest": 0,
-        "path_details": [
             {
                 "prev_node": "front house (obj149)",
                 "node": "country lane (obj137)",
@@ -724,92 +838,12 @@
                 "prev_node": "dark (obj25)",
                 "node": "voghold (obj121)",
                 "action": "examine shadow",
-                "seen": true
-            },
-            {
-                "prev_node": "voghold (obj121)",
-                "node": "poetry appreciatichair (obj107)",
-                "action": "z",
                 "seen": true
             }
         ],
         "step_count": 4
     },
     {
-        "src_node": "country lane (obj137)",
-        "dst_node": "pub (obj134)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "pub (obj134)",
-                "action": "enter pub",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "country lane (obj137)",
-        "dst_node": "dark (obj25)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "country lane (obj137)",
-        "dst_node": "voghold (obj121)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
-                "seen": true
-            }
-        ],
-        "step_count": 2
-    },
-    {
-        "src_node": "country lane (obj137)",
-        "dst_node": "poetry appreciatichair (obj107)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
-                "seen": true
-            },
-            {
-                "prev_node": "voghold (obj121)",
-                "node": "poetry appreciatichair (obj107)",
-                "action": "z",
-                "seen": true
-            }
-        ],
-        "step_count": 3
-    },
-    {
         "src_node": "pub (obj134)",
         "dst_node": "dark (obj25)",
         "diff_shortest": 0,
@@ -828,32 +862,6 @@
             }
         ],
         "step_count": 2
-    },
-    {
-        "src_node": "pub (obj134)",
-        "dst_node": "voghold (obj121)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "pub (obj134)",
-                "node": "country lane (obj137)",
-                "action": "exit",
-                "seen": true
-            },
-            {
-                "prev_node": "country lane (obj137)",
-                "node": "dark (obj25)",
-                "action": "push green button",
-                "seen": true
-            },
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
-                "seen": true
-            }
-        ],
-        "step_count": 3
     },
     {
         "src_node": "pub (obj134)",
@@ -888,38 +896,30 @@
         "step_count": 4
     },
     {
-        "src_node": "dark (obj25)",
+        "src_node": "pub (obj134)",
         "dst_node": "voghold (obj121)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "dark (obj25)",
-        "dst_node": "poetry appreciatichair (obj107)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "dark (obj25)",
-                "node": "voghold (obj121)",
-                "action": "examine shadow",
+                "prev_node": "pub (obj134)",
+                "node": "country lane (obj137)",
+                "action": "exit",
                 "seen": true
             },
             {
-                "prev_node": "voghold (obj121)",
-                "node": "poetry appreciatichair (obj107)",
-                "action": "z",
+                "prev_node": "country lane (obj137)",
+                "node": "dark (obj25)",
+                "action": "push green button",
+                "seen": true
+            },
+            {
+                "prev_node": "dark (obj25)",
+                "node": "voghold (obj121)",
+                "action": "examine shadow",
                 "seen": true
             }
         ],
-        "step_count": 2
+        "step_count": 3
     },
     {
         "src_node": "voghold (obj121)",
