@@ -8,8 +8,15 @@ from matplotlib import pyplot as plt
 
 
 def compute_hash(json_obj):
-    json_str = json.dumps(json_obj, sort_keys=True)
-    json_str = json_str.replace('"seen": true,', "")
+    # make deep copy of json_obj
+    # json_obj_copy = json_obj.copy() AttributeError: 'str' object has no attribute 'copy'
+    json_obj_copy = json.loads(json.dumps(json_obj))
+    delete_keys = ["seen", "num_paths"]
+    for key in delete_keys:
+        if key in json_obj_copy:
+            del json_obj_copy[key]
+    json_str = json.dumps(json_obj_copy, sort_keys=True)
+    # json_str = json_str.replace('"seen": true,', "")
     hash_object = hashlib.md5(json_str.encode())
     return hash_object.hexdigest()
 
@@ -32,8 +39,9 @@ def find_difference(json1, json2):
 
     new_objects = [dict2[key] for key in new_keys]
     drop_objects = [dict1[key] for key in drop_keys]
+    same_objects = [dict1[key] for key in same_keys]
 
-    return new_objects, drop_objects, same_keys
+    return new_objects, drop_objects, same_objects
 
 
 # now check difference of *.code2anno.json in each folder from intersect_data_path
@@ -44,7 +52,9 @@ def check_dump_diff(
     new_file_path = f"{latest_data_path[each]}/{each}.{tgt_file}.json"
 
     # find_difference
-    new_objects, drop_objects, same_keys = find_difference(old_file_path, new_file_path)
+    new_objects, drop_objects, same_objects = find_difference(
+        old_file_path, new_file_path
+    )
 
     print(f"Found {len(new_objects)} new objects, {len(drop_objects)} dropped objects.")
     print()
@@ -57,36 +67,56 @@ def check_dump_diff(
 
     if len(new_objects) != 0:
         additional_file_path = f"{each_diff_path}/{each}.{tgt_file}.new.json"
-        new_objects = sorted(
-            new_objects,
-            key=lambda x: (
-                x["src_node"],
-                x["dst_node"],
-                x["diff_shortest"],
-                x["step_count"],
-                x["path_details"][0]["prev_node"],
-                x["path_details"][0]["node"],
-                x["path_details"][0]["action"],
-            ),
-        )
+        if tgt_file != "all_pairs":
+            new_objects = sorted(
+                new_objects,
+                key=lambda x: (
+                    x["src_node"],
+                    x["dst_node"],
+                    x["diff_shortest"],
+                    x["step_count"],
+                    x["path_details"][0]["prev_node"],
+                    x["path_details"][0]["node"],
+                    x["path_details"][0]["action"],
+                ),
+            )
+        else:
+            new_objects = sorted(
+                new_objects,
+                key=lambda x: (
+                    x["src_node"],
+                    x["dst_node"],
+                    x["num_paths"],
+                ),
+            )
         # dump new object to additional_file_path
         with open(additional_file_path, "w") as f:
             json.dump(new_objects, f, indent=4)
 
     if len(drop_objects) != 0:
         dropped_file_path = f"{each_diff_path}/{each}.{tgt_file}.drop.json"
-        drop_objects = sorted(
-            drop_objects,
-            key=lambda x: (
-                x["src_node"],
-                x["dst_node"],
-                x["diff_shortest"],
-                x["step_count"],
-                x["path_details"][0]["prev_node"],
-                x["path_details"][0]["node"],
-                x["path_details"][0]["action"],
-            ),
-        )
+        if tgt_file != "all_pairs":
+            drop_objects = sorted(
+                drop_objects,
+                key=lambda x: (
+                    x["src_node"],
+                    x["dst_node"],
+                    x["diff_shortest"],
+                    x["step_count"],
+                    x["path_details"][0]["prev_node"],
+                    x["path_details"][0]["node"],
+                    x["path_details"][0]["action"],
+                ),
+            )
+        else:
+            drop_objects = sorted(
+                drop_objects,
+                key=lambda x: (
+                    x["src_node"],
+                    x["dst_node"],
+                    x["num_paths"],
+                ),
+            )
         # dump dropped object to dropped_file_path
         with open(dropped_file_path, "w") as f:
             json.dump(drop_objects, f, indent=4)
@@ -95,6 +125,8 @@ def check_dump_diff(
     step_count_dict_add = {}
     diff_shortest_dict_drop = {}
     step_count_dict_drop = {}
+    all_pairs_old = {}
+
     if tgt_file == "all2all":
         # plot distribution histogram of diff_shortest and step_count
         for each in new_objects:
@@ -112,29 +144,54 @@ def check_dump_diff(
             step_count_dict_drop[each["step_count"]] = (
                 step_count_dict_drop.get(each["step_count"], 0) + 1
             )
+            pair_name = f"{each['src_node']} -> {each['dst_node']}"
+            if pair_name not in all_pairs_old:
+                all_pairs_old[pair_name] = {
+                    "src_node": each["src_node"],
+                    "dst_node": each["dst_node"],
+                    "num_paths": 0,
+                }
+            all_pairs_old[pair_name]["num_paths"] += 1
+
+        for each in same_objects:
+            pair_name = f"{each['src_node']} -> {each['dst_node']}"
+            if pair_name not in all_pairs_old:
+                all_pairs_old[pair_name] = {
+                    "src_node": each["src_node"],
+                    "dst_node": each["dst_node"],
+                    "num_paths": 0,
+                }
+            all_pairs_old[pair_name]["num_paths"] += 1
 
     return (
         len(new_objects),
         len(drop_objects),
-        len(same_keys),
+        len(same_objects),
         (diff_shortest_dict_add, step_count_dict_add),
         (diff_shortest_dict_drop, step_count_dict_drop),
+        list(all_pairs_old.values()),
     )
 
 
 if __name__ == "__main__":
     latest_data_path = "./data/maps-release"
+
     old_data_path = ["../gpt-games/maps_batch_1", "../gpt-games/maps_batch_2"]
     diff_data_path = "./data/maps-diff-fjd"
+
+    # old_data_path = "./data/maps-release-copy"
+    # diff_data_path = "./data/maps-diff-copy"
 
     # test path existence or create
     if not os.path.exists(diff_data_path):
         os.makedirs(diff_data_path)
 
-    # glob to get all folder names in all elements from old_data_path, and only the last layer folder name
+    # glob to get all folder names in all elements from old_data_path, and only the last layer folder name then flatten the list
     old_data_path = [glob.glob(f"{each}/*") for each in old_data_path]
-    # flatten the list
     old_data_path = [item for sublist in old_data_path for item in sublist]
+
+    # old_data_path = glob.glob(f"{old_data_path}/*")
+
     # get the last layer folder name, use it as key, and path as value
     old_data_path = {each.split("/")[-1]: each for each in old_data_path}
     # print(old_data_path)
@@ -155,13 +212,14 @@ if __name__ == "__main__":
     anno2code_drop, anno2code_add = 0, 0
     code2anno_drop, code2anno_add = 0, 0
     all2all_drop, all2all_add = 0, 0
+    allpairs_drop, allpairs_add = 0, 0
     diff_num_dict = {}
 
     for each in intersect_data_path:
         print(f"Checking {each}...")
 
         tgt_file = "anno2code"
-        anno2code_add, anno2code_drop, anno2code_same, _, _ = check_dump_diff(
+        anno2code_add, anno2code_drop, anno2code_same, _, _, _ = check_dump_diff(
             find_difference,
             latest_data_path,
             old_data_path,
@@ -171,7 +229,7 @@ if __name__ == "__main__":
         )
 
         tgt_file = "code2anno"
-        code2anno_add, code2anno_drop, code2anno_same, _, _ = check_dump_diff(
+        code2anno_add, code2anno_drop, code2anno_same, _, _, _ = check_dump_diff(
             find_difference,
             latest_data_path,
             old_data_path,
@@ -187,7 +245,28 @@ if __name__ == "__main__":
             all2all_same,
             all2all_add_stats,
             all2all_drop_stats,
+            all_pairs_old,
         ) = check_dump_diff(
+            find_difference,
+            latest_data_path,
+            old_data_path,
+            diff_data_path,
+            each,
+            tgt_file,
+        )
+
+        # dump all_pair_old, sort first
+        all_pairs_old = sorted(
+            all_pairs_old,
+            key=lambda x: (x["src_node"], x["dst_node"], x["num_paths"]),
+        )
+        with open(
+            f"{old_data_path[each]}/{each}.all_pairs.json", "w", encoding="utf-8"
+        ) as f:
+            json.dump(all_pairs_old, f, indent=4)
+
+        tgt_file = "all_pairs"
+        allpairs_add, allpairs_drop, allpairs_same, _, _, _ = check_dump_diff(
             find_difference,
             latest_data_path,
             old_data_path,
@@ -204,6 +283,8 @@ if __name__ == "__main__":
             or code2anno_add != 0
             or all2all_drop != 0
             or all2all_add != 0
+            or allpairs_drop != 0
+            or allpairs_add != 0
         ):
             diff_num_dict[each] = {
                 "anno2code_drop": anno2code_drop,
@@ -217,6 +298,11 @@ if __name__ == "__main__":
                 "all2all_same": all2all_same,
                 "all2all_rate": (all2all_add + all2all_same)
                 / float(all2all_same + all2all_drop),
+                "allpairs_drop": allpairs_drop,
+                "allpairs_add": allpairs_add,
+                "allpairs_same": allpairs_same,
+                "allpairs_rate": (allpairs_add + allpairs_same)
+                / float(allpairs_same + allpairs_drop),
             }
 
             diff_shortest_dict_add, step_count_dict_add = all2all_add_stats
@@ -296,6 +382,10 @@ if __name__ == "__main__":
                 "all2all_add",
                 "all2all_same",
                 "all2all_total_change_rate",
+                "allpair_drop",
+                "allpair_add",
+                "allpair_same",
+                "allpair_total_change_rate",
             ]
         )
         for key, val in diff_num_dict.items():
@@ -312,5 +402,9 @@ if __name__ == "__main__":
                     val["all2all_add"],
                     val["all2all_same"],
                     val["all2all_rate"],
+                    val["allpairs_drop"],
+                    val["allpairs_add"],
+                    val["allpairs_same"],
+                    val["allpairs_rate"],
                 ]
             )
