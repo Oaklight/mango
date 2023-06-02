@@ -24,14 +24,32 @@ if __name__ == "__main__":
 
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
-    # all_pairs = list(itertools.combinations(g.nodes(), 2)) # this has some issue: AB or BA will be included, not both
-    all_pairs = list(itertools.permutations(g.nodes(), 2))  # this will include both AB and BA
+    # this has some issue: AB or BA will be included, not both
+    all_pairs = list(itertools.combinations(g.nodes(), 2))
+    # this will include both AB and BA
+    # all_pairs = list(itertools.permutations(g.nodes(), 2))
     # print(all_pairs)
 
     all_paths_json = []
     for src_node, dst_node in all_pairs:
+        print(f"Generating paths from {src_node} to {dst_node}...")
         allPaths = get_all_paths(g, src=src_node, dst=dst_node)
         all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
+
+    # sort by src, dst, diff_shortest, step_count
+    # additionally sort by elements in path_details
+    all_paths_json = sorted(
+        all_paths_json,
+        key=lambda x: (
+            x["src_node"],
+            x["dst_node"],
+            x["diff_shortest"],
+            x["step_count"],
+            x["path_details"][0]["prev_node"],
+            x["path_details"][0]["node"],
+            x["path_details"][0]["action"],
+        ),
+    )
 
     # if all_paths_json is empty, abort dumping
     if len(all_paths_json) == 0:
