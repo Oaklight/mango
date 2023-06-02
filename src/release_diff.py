@@ -57,12 +57,36 @@ def check_dump_diff(
 
     if len(new_objects) != 0:
         additional_file_path = f"{each_diff_path}/{each}.{tgt_file}.new.json"
+        new_objects = sorted(
+            new_objects,
+            key=lambda x: (
+                x["src_node"],
+                x["dst_node"],
+                x["diff_shortest"],
+                x["step_count"],
+                x["path_details"][0]["prev_node"],
+                x["path_details"][0]["node"],
+                x["path_details"][0]["action"],
+            ),
+        )
         # dump new object to additional_file_path
         with open(additional_file_path, "w") as f:
             json.dump(new_objects, f, indent=4)
 
     if len(drop_objects) != 0:
         dropped_file_path = f"{each_diff_path}/{each}.{tgt_file}.drop.json"
+        drop_objects = sorted(
+            drop_objects,
+            key=lambda x: (
+                x["src_node"],
+                x["dst_node"],
+                x["diff_shortest"],
+                x["step_count"],
+                x["path_details"][0]["prev_node"],
+                x["path_details"][0]["node"],
+                x["path_details"][0]["action"],
+            ),
+        )
         # dump dropped object to dropped_file_path
         with open(dropped_file_path, "w") as f:
             json.dump(drop_objects, f, indent=4)
@@ -271,7 +295,7 @@ if __name__ == "__main__":
                 "all2all_drop",
                 "all2all_add",
                 "all2all_same",
-                "all2all_rate",
+                "all2all_total_change_rate",
             ]
         )
         for key, val in diff_num_dict.items():
