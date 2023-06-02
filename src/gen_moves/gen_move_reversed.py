@@ -35,13 +35,11 @@ opposite_direction_dict = {
     "down": "up",
 }
 
-TRINITY_STUCK_STEPS = set(
-    [8, 13, 23, 29, 33, 35, 39, 43, 47, 49, 58, 59, 60, 65, 68, 69]
-)
 # post issues at jericho repo: https://github.com/microsoft/jericho/issues/64
-SHERLOCK_STUCK_LOC_ID = set(
-    [111, 3, 37, 33, 93, 71, 5, 73, 1, 85, 295, 52, 57, 21, 69, 27, 12]
-)
+TRINITY_STUCK_STEPS = (8, 13, 23, 29, 33, 35, 39, 43, 47, 49, 58, 59, 60, 65, 68, 69)
+TRINITY_STUCK_LOC_ID = (79, 354, 144, 355, 531, 179, 371, 121, 438, 576, 323, 319, 575, 80, 316)
+SHERLOCK_STUCK_LOC_ID = (111, 3, 37, 33, 93, 71, 5, 73, 1, 85, 295, 52, 57, 21, 69, 27, 12)
+
 
 def load_code2anno(input_file_path):
     # object id --> anno str
@@ -150,7 +148,7 @@ def gen_move_reversed(args):
 
         # if location_after_id != location_before_id:
         if location_after_id != should_fall_back_id:
-            if game_name == "trinity" and step_idx in TRINITY_STUCK_STEPS:
+            if game_name == "trinity" and location_after_id in TRINITY_STUCK_LOC_ID:
                 continue
             if game_name == "sherlock" and location_after_id in SHERLOCK_STUCK_LOC_ID:
                 continue
