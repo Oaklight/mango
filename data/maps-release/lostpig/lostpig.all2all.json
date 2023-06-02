@@ -1,32 +1,32 @@
 [
     {
-        "src_node": "outside (obj93)",
-        "dst_node": "hole (obj102)",
+        "src_node": "(groom) (obj194)",
+        "dst_node": "shelf room (obj157)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "outside (obj93)",
-                "node": "hole (obj102)",
-                "action": "northeast",
+                "prev_node": "(groom) (obj194)",
+                "node": "shelf room (obj157)",
+                "action": "east",
                 "seen": true
             }
         ],
         "step_count": 1
     },
     {
-        "src_node": "outside (obj93)",
-        "dst_node": "fountaroom (obj111)",
+        "src_node": "fountaroom (obj111)",
+        "dst_node": "(groom) (obj194)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "outside (obj93)",
-                "node": "hole (obj102)",
-                "action": "northeast",
+                "prev_node": "fountaroom (obj111)",
+                "node": "tabroom (obj147)",
+                "action": "southwest",
                 "seen": true
             },
             {
-                "prev_node": "hole (obj102)",
-                "node": "fountaroom (obj111)",
+                "prev_node": "tabroom (obj147)",
+                "node": "(groom) (obj194)",
                 "action": "east",
                 "seen": true
             }
@@ -34,16 +34,136 @@
         "step_count": 2
     },
     {
-        "src_node": "outside (obj93)",
+        "src_node": "fountaroom (obj111)",
+        "dst_node": "shelf room (obj157)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "fountaroom (obj111)",
+                "node": "tabroom (obj147)",
+                "action": "southwest",
+                "seen": true
+            },
+            {
+                "prev_node": "tabroom (obj147)",
+                "node": "(groom) (obj194)",
+                "action": "east",
+                "seen": true
+            },
+            {
+                "prev_node": "(groom) (obj194)",
+                "node": "shelf room (obj157)",
+                "action": "east",
+                "seen": true
+            }
+        ],
+        "step_count": 3
+    },
+    {
+        "src_node": "fountaroom (obj111)",
         "dst_node": "statue room (obj128)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "outside (obj93)",
-                "node": "hole (obj102)",
-                "action": "northeast",
+                "prev_node": "fountaroom (obj111)",
+                "node": "statue room (obj128)",
+                "action": "north",
+                "seen": true
+            }
+        ],
+        "step_count": 1
+    },
+    {
+        "src_node": "fountaroom (obj111)",
+        "dst_node": "tabroom (obj147)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "fountaroom (obj111)",
+                "node": "tabroom (obj147)",
+                "action": "southwest",
+                "seen": true
+            }
+        ],
+        "step_count": 1
+    },
+    {
+        "src_node": "hole (obj102)",
+        "dst_node": "(groom) (obj194)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "hole (obj102)",
+                "node": "fountaroom (obj111)",
+                "action": "east",
                 "seen": true
             },
+            {
+                "prev_node": "fountaroom (obj111)",
+                "node": "tabroom (obj147)",
+                "action": "southwest",
+                "seen": true
+            },
+            {
+                "prev_node": "tabroom (obj147)",
+                "node": "(groom) (obj194)",
+                "action": "east",
+                "seen": true
+            }
+        ],
+        "step_count": 3
+    },
+    {
+        "src_node": "hole (obj102)",
+        "dst_node": "fountaroom (obj111)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "hole (obj102)",
+                "node": "fountaroom (obj111)",
+                "action": "east",
+                "seen": true
+            }
+        ],
+        "step_count": 1
+    },
+    {
+        "src_node": "hole (obj102)",
+        "dst_node": "shelf room (obj157)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "hole (obj102)",
+                "node": "fountaroom (obj111)",
+                "action": "east",
+                "seen": true
+            },
+            {
+                "prev_node": "fountaroom (obj111)",
+                "node": "tabroom (obj147)",
+                "action": "southwest",
+                "seen": true
+            },
+            {
+                "prev_node": "tabroom (obj147)",
+                "node": "(groom) (obj194)",
+                "action": "east",
+                "seen": true
+            },
+            {
+                "prev_node": "(groom) (obj194)",
+                "node": "shelf room (obj157)",
+                "action": "east",
+                "seen": true
+            }
+        ],
+        "step_count": 4
+    },
+    {
+        "src_node": "hole (obj102)",
+        "dst_node": "statue room (obj128)",
+        "diff_shortest": 0,
+        "path_details": [
             {
                 "prev_node": "hole (obj102)",
                 "node": "fountaroom (obj111)",
@@ -57,19 +177,13 @@
                 "seen": true
             }
         ],
-        "step_count": 3
+        "step_count": 2
     },
     {
-        "src_node": "outside (obj93)",
+        "src_node": "hole (obj102)",
         "dst_node": "tabroom (obj147)",
         "diff_shortest": 0,
         "path_details": [
-            {
-                "prev_node": "outside (obj93)",
-                "node": "hole (obj102)",
-                "action": "northeast",
-                "seen": true
-            },
             {
                 "prev_node": "hole (obj102)",
                 "node": "fountaroom (obj111)",
@@ -83,7 +197,7 @@
                 "seen": true
             }
         ],
-        "step_count": 3
+        "step_count": 2
     },
     {
         "src_node": "outside (obj93)",
@@ -116,6 +230,40 @@
             }
         ],
         "step_count": 4
+    },
+    {
+        "src_node": "outside (obj93)",
+        "dst_node": "fountaroom (obj111)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "outside (obj93)",
+                "node": "hole (obj102)",
+                "action": "northeast",
+                "seen": true
+            },
+            {
+                "prev_node": "hole (obj102)",
+                "node": "fountaroom (obj111)",
+                "action": "east",
+                "seen": true
+            }
+        ],
+        "step_count": 2
+    },
+    {
+        "src_node": "outside (obj93)",
+        "dst_node": "hole (obj102)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "outside (obj93)",
+                "node": "hole (obj102)",
+                "action": "northeast",
+                "seen": true
+            }
+        ],
+        "step_count": 1
     },
     {
         "src_node": "outside (obj93)",
@@ -156,24 +304,16 @@
         "step_count": 5
     },
     {
-        "src_node": "hole (obj102)",
-        "dst_node": "fountaroom (obj111)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "hole (obj102)",
-                "node": "fountaroom (obj111)",
-                "action": "east",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "hole (obj102)",
+        "src_node": "outside (obj93)",
         "dst_node": "statue room (obj128)",
         "diff_shortest": 0,
         "path_details": [
+            {
+                "prev_node": "outside (obj93)",
+                "node": "hole (obj102)",
+                "action": "northeast",
+                "seen": true
+            },
             {
                 "prev_node": "hole (obj102)",
                 "node": "fountaroom (obj111)",
@@ -187,33 +327,19 @@
                 "seen": true
             }
         ],
-        "step_count": 2
+        "step_count": 3
     },
     {
-        "src_node": "hole (obj102)",
+        "src_node": "outside (obj93)",
         "dst_node": "tabroom (obj147)",
         "diff_shortest": 0,
         "path_details": [
             {
-                "prev_node": "hole (obj102)",
-                "node": "fountaroom (obj111)",
-                "action": "east",
+                "prev_node": "outside (obj93)",
+                "node": "hole (obj102)",
+                "action": "northeast",
                 "seen": true
             },
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "tabroom (obj147)",
-                "action": "southwest",
-                "seen": true
-            }
-        ],
-        "step_count": 2
-    },
-    {
-        "src_node": "hole (obj102)",
-        "dst_node": "(groom) (obj194)",
-        "diff_shortest": 0,
-        "path_details": [
             {
                 "prev_node": "hole (obj102)",
                 "node": "fountaroom (obj111)",
@@ -224,142 +350,10 @@
                 "prev_node": "fountaroom (obj111)",
                 "node": "tabroom (obj147)",
                 "action": "southwest",
-                "seen": true
-            },
-            {
-                "prev_node": "tabroom (obj147)",
-                "node": "(groom) (obj194)",
-                "action": "east",
                 "seen": true
             }
         ],
         "step_count": 3
-    },
-    {
-        "src_node": "hole (obj102)",
-        "dst_node": "shelf room (obj157)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "hole (obj102)",
-                "node": "fountaroom (obj111)",
-                "action": "east",
-                "seen": true
-            },
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "tabroom (obj147)",
-                "action": "southwest",
-                "seen": true
-            },
-            {
-                "prev_node": "tabroom (obj147)",
-                "node": "(groom) (obj194)",
-                "action": "east",
-                "seen": true
-            },
-            {
-                "prev_node": "(groom) (obj194)",
-                "node": "shelf room (obj157)",
-                "action": "east",
-                "seen": true
-            }
-        ],
-        "step_count": 4
-    },
-    {
-        "src_node": "fountaroom (obj111)",
-        "dst_node": "statue room (obj128)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "statue room (obj128)",
-                "action": "north",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "fountaroom (obj111)",
-        "dst_node": "tabroom (obj147)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "tabroom (obj147)",
-                "action": "southwest",
-                "seen": true
-            }
-        ],
-        "step_count": 1
-    },
-    {
-        "src_node": "fountaroom (obj111)",
-        "dst_node": "(groom) (obj194)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "tabroom (obj147)",
-                "action": "southwest",
-                "seen": true
-            },
-            {
-                "prev_node": "tabroom (obj147)",
-                "node": "(groom) (obj194)",
-                "action": "east",
-                "seen": true
-            }
-        ],
-        "step_count": 2
-    },
-    {
-        "src_node": "fountaroom (obj111)",
-        "dst_node": "shelf room (obj157)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "tabroom (obj147)",
-                "action": "southwest",
-                "seen": true
-            },
-            {
-                "prev_node": "tabroom (obj147)",
-                "node": "(groom) (obj194)",
-                "action": "east",
-                "seen": true
-            },
-            {
-                "prev_node": "(groom) (obj194)",
-                "node": "shelf room (obj157)",
-                "action": "east",
-                "seen": true
-            }
-        ],
-        "step_count": 3
-    },
-    {
-        "src_node": "statue room (obj128)",
-        "dst_node": "tabroom (obj147)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "statue room (obj128)",
-                "node": "fountaroom (obj111)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "fountaroom (obj111)",
-                "node": "tabroom (obj147)",
-                "action": "southwest",
-                "seen": true
-            }
-        ],
-        "step_count": 2
     },
     {
         "src_node": "statue room (obj128)",
@@ -420,6 +414,26 @@
         "step_count": 4
     },
     {
+        "src_node": "statue room (obj128)",
+        "dst_node": "tabroom (obj147)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "statue room (obj128)",
+                "node": "fountaroom (obj111)",
+                "action": "south",
+                "seen": true
+            },
+            {
+                "prev_node": "fountaroom (obj111)",
+                "node": "tabroom (obj147)",
+                "action": "southwest",
+                "seen": true
+            }
+        ],
+        "step_count": 2
+    },
+    {
         "src_node": "tabroom (obj147)",
         "dst_node": "(groom) (obj194)",
         "diff_shortest": 0,
@@ -452,19 +466,5 @@
             }
         ],
         "step_count": 2
-    },
-    {
-        "src_node": "(groom) (obj194)",
-        "dst_node": "shelf room (obj157)",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "(groom) (obj194)",
-                "node": "shelf room (obj157)",
-                "action": "east",
-                "seen": true
-            }
-        ],
-        "step_count": 1
     }
 ]
