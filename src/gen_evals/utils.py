@@ -107,12 +107,21 @@ def extract_actions(string):
     return actions
 
 
-def check_format(gpt_results):
+def check_format(gpt_results, dst_only=False):
     good_format = True
     path_gpt = []
     if "path" not in gpt_results:
         good_format = False
         return good_format, path_gpt
+
+    if dst_only:
+        last_element = gpt_results["path"][-1]
+        if isinstance(last_element, dict):
+            if "prev_node" in last_element and "node" in last_element:
+                path_gpt.append(last_element)
+            else:
+                good_format = False
+                return good_format, path_gpt
 
     for i, each in enumerate(gpt_results["path"]):
         if isinstance(each, dict):
@@ -199,7 +208,10 @@ def recompute_for_uuid(verify_json):
                 current_collection, level="micro", field="route_length"
             )
             plot_acc_vs_route_length(
-                verify_json, each_version, micro_acc_vs_route_length, macro_acc_vs_route_length
+                verify_json,
+                each_version,
+                micro_acc_vs_route_length,
+                macro_acc_vs_route_length,
             )
 
     # dump back to verify_json
