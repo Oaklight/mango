@@ -116,3 +116,5 @@ if __name__ == "__main__":
         # rename all *_acc_vs_length.png to *_acc_vs_length.nice.png
         for each_png in glob.glob(f"{args.output_dir}/*_acc_vs_term_dist.png"):
             os.rename(each_png, each_png.replace(".png", ".nice.png"))
+        for each_png in glob.glob(f"{args.output_dir}/*_acc_vs_route_length.png"):
+            os.rename(each_png, each_png.replace(".png", ".nice.png"))

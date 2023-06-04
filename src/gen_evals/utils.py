@@ -156,14 +156,10 @@ def recompute_for_uuid(verify_json):
     # compute best on micro uuid
     for each_version in gpt_prompt_versions:
         current_collection = verify_dupli[each_version]["collection"]
-        (
-            micro_uuid_best,
-            macro_uuid_best,
-            micro_length_acc,
-            macro_length_acc,
-        ) = counting_on_level(current_collection)
 
         # update collection with best of each uuid and recalculate accuracy
+        macro_uuid_best = __count_helper_best(current_collection, level="macro")
+        micro_uuid_best = __count_helper_best(current_collection, level="micro")
 
         # recalculate micro metrics
         verify_dupli = verify_amend_acc(
@@ -183,35 +179,59 @@ def recompute_for_uuid(verify_json):
             level="macro",
         )
 
+        macro_acc_vs_term_dist = __count_helper_trend(
+            current_collection, level="macro", field="dist_shortest"
+        )
+        micro_acc_vs_term_dist = __count_helper_trend(
+            current_collection, level="micro", field="dist_shortest"
+        )
         # plot acc vs length
         plot_acc_vs_term_dist(
-            verify_json, each_version, micro_length_acc, macro_length_acc
+            verify_json, each_version, micro_acc_vs_term_dist, macro_acc_vs_term_dist
         )
+
+        # if "route_length" is a field of first entry of collection, then plot acc vs route length
+        if "route_length" in current_collection[list(current_collection.keys())[0]]:
+            macro_acc_vs_route_length = __count_helper_trend(
+                current_collection, level="macro", field="route_length"
+            )
+            micro_acc_vs_route_length = __count_helper_trend(
+                current_collection, level="micro", field="route_length"
+            )
+            plot_acc_vs_route_length(
+                verify_json, each_version, micro_acc_vs_route_length, macro_acc_vs_route_length
+            )
 
     # dump back to verify_json
     with open(verify_json, "w") as f:
         json.dump(verify_dupli, f, indent=4)
 
 
-def counting_on_level(current_collection):
-    macro_uuid_best, macro_length_acc = __count_helper(
-        current_collection, level="macro"
-    )
-    micro_uuid_best, micro_length_acc = __count_helper(
-        current_collection, level="micro"
-    )
-
-    return micro_uuid_best, macro_uuid_best, micro_length_acc, macro_length_acc
-
-
-def __count_helper(current_collection, level):
+def __count_helper_best(current_collection, level):
     level_uuid_best = {}
+
+    for each_entry_name, each_entry in current_collection.items():
+        level_uuid = each_entry[f"{level}_uuid"]
+        verify_result = each_entry["verify_result"]
+
+        # find best of each macro uuid
+        if level_uuid not in level_uuid_best:
+            level_uuid_best[level_uuid] = (verify_result, each_entry_name)
+        else:
+            if level_uuid_best[level_uuid][0] < verify_result:
+                level_uuid_best[level_uuid] = (verify_result, each_entry_name)
+
+    return level_uuid_best
+
+
+def __count_helper_trend(current_collection, level, field="dist_shortest"):
+    pass
     level_length_acc = {}
 
     for each_entry_name, each_entry in current_collection.items():
         level_uuid = each_entry[f"{level}_uuid"]
         verify_result = each_entry["verify_result"]
-        dist_shortest = each_entry["dist_shortest"]
+        dist_shortest = each_entry[field]
 
         # accumulate length and accuracy for each macro uuid
         if dist_shortest not in level_length_acc:
@@ -224,14 +244,7 @@ def __count_helper(current_collection, level):
         else:
             level_length_acc[dist_shortest]["bad"] += 1
 
-        # find best of each macro uuid
-        if level_uuid not in level_uuid_best:
-            level_uuid_best[level_uuid] = (verify_result, each_entry_name)
-        else:
-            if level_uuid_best[level_uuid][0] < verify_result:
-                level_uuid_best[level_uuid] = (verify_result, each_entry_name)
-
-    return level_uuid_best, level_length_acc
+    return level_length_acc
 
 
 def verify_amend_acc(
