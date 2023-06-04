@@ -86,11 +86,11 @@ if __name__ == "__main__":
 
             if args.simple:
                 verify_result, verify_pack = verify_stepnav_simple(
-                    anno2code, g, each_json, args.verbose
+                    g, anno2code, each_json, args.verbose
                 )
             else:
                 verify_result, verify_pack = verify_stepnav_hard(
-                    anno2code, g, each_json, args.verbose
+                    g, anno2code, each_json, args.verbose
                 )
 
             if verify_result:
@@ -123,5 +123,9 @@ if __name__ == "__main__":
         version = "nice" if args.simple else "harsh"
         for each_png in glob.glob(f"{args.output_dir}/*_acc_vs_term_dist.png"):
             os.rename(each_png, each_png.replace(".png", f".{version}.png"))
+
         for each_png in glob.glob(f"{args.output_dir}/*_acc_vs_route_length.png"):
             os.rename(each_png, each_png.replace(".png", f".{version}.png"))
+
+        for each_png in glob.glob(f"{args.output_dir}/*.png"):
+            os.rename(each_png, each_png.replace("stepnav-gpt-4", "desti_finding"))

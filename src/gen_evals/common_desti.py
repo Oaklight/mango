@@ -11,7 +11,7 @@ from gen_evals.utils import check_format, extract_actions
 from gen_paths.digraph import anno_to_code, walk_path_to_dst, walk_and_label_path
 
 
-def verify_stepnav_simple(anno2code, g, each_json_path, verbose=True):
+def verify_stepnav_simple(g, anno2code, each_json_path, verbose=True):
     if verbose:
         print("verifying ", each_json_path)
     with open(each_json_path, "r") as f:
@@ -28,7 +28,7 @@ def verify_stepnav_simple(anno2code, g, each_json_path, verbose=True):
     # default values
     verify_result = False
     verify_pack = {
-        "verify_result": verify_result,
+        "verify_result": False,
         "src_requested": src_requested,
         "dst_requested": dst_requested,
         "action_requested": action_requested,
@@ -43,6 +43,9 @@ def verify_stepnav_simple(anno2code, g, each_json_path, verbose=True):
     msg = "bad format" if not good_format else ""
 
     if not good_format:
+        if verbose:
+            print("bad format: ", msg)
+
         verify_pack["verify_msg"] = msg
         return verify_result, verify_pack
 
@@ -54,9 +57,9 @@ def verify_stepnav_simple(anno2code, g, each_json_path, verbose=True):
         or dst_gpt is None
         or dst_gpt.lower() != dst_requested.lower()
     ):
+        msg = f"wrong dst node {dst_gpt} {dst_requested}"
         if verbose:
-            print("wrong dst node", dst_gpt, dst_requested)
-        msg = "wrong dst node"
+            print(msg)
     else:
         if verbose:
             print("correct", dst_gpt, dst_requested)
@@ -69,7 +72,7 @@ def verify_stepnav_simple(anno2code, g, each_json_path, verbose=True):
     return verify_result, verify_pack
 
 
-def verify_stepnav_hard(anno2code, g, each_json_path, verbose=True):
+def verify_stepnav_hard(g, anno2code, each_json_path, verbose=True):
     if verbose:
         print("verifying ", each_json_path)
     with open(each_json_path, "r") as f:
@@ -86,7 +89,7 @@ def verify_stepnav_hard(anno2code, g, each_json_path, verbose=True):
     # default values
     verify_result = False
     verify_pack = {
-        "verify_result": verify_result,
+        "verify_result": False,
         "src_requested": src_requested,
         "dst_requested": dst_requested,
         "action_requested": action_requested,
@@ -109,7 +112,9 @@ def verify_stepnav_hard(anno2code, g, each_json_path, verbose=True):
                 break
 
     if not good_format:
-        print
+        if verbose:
+            print("bad format: ", msg)
+
         verify_pack["verify_msg"] = msg
 
         verify_result = False
@@ -118,6 +123,7 @@ def verify_stepnav_hard(anno2code, g, each_json_path, verbose=True):
         # -3 means bad format, -2 means empty path, -1 means bad src node, 0 means bad 1st prev_node.
         verify_pack["stop_step"] = -3
         verify_pack["path_checked"] = path_gpt
+        verify_pack["verify_msg"] = msg
 
         return verify_result, verify_pack
 
@@ -126,7 +132,7 @@ def verify_stepnav_hard(anno2code, g, each_json_path, verbose=True):
         g, gpt_results["src_node"], path_gpt, anno2code
     )
     if msg == "all good":
-        msg = "walk_and_label_path: all good, the generated path leads to somewhere"
+        msg = "walk_and_label_path: the generated path leads to somewhere"
         print(msg)
 
         if stop_node_code == dst_requested:
@@ -134,7 +140,7 @@ def verify_stepnav_hard(anno2code, g, each_json_path, verbose=True):
             msg = "arrive at dst!"
         else:
             msg = "stop at somewhere else, not dst requested"
-            print(msg)
+        print(msg)
 
         verify_pack["verify_result"] = verify_result
         verify_pack["stop_node_code"] = stop_node_code
