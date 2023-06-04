@@ -107,7 +107,7 @@ ax2.barh(
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r1)
 ax1.set_ylim(
-    -whitespace, max(r1) + 2 * whitespace
+    -whitespace, max(r1) + 2.5 * whitespace
 )  # Adjust the y-axis limits as needed
 ax1.set_yticks(r1, game_names)
 ax1.yaxis.tick_right()
@@ -150,7 +150,7 @@ for handle, label in zip(handles, labels):
         unique_labels.append(label)
         unique_handles.append(handle)
 
-fig.legend(unique_handles, unique_labels, loc="upper center", ncol=3, fontsize="large")
+fig.legend(unique_handles, unique_labels, loc="upper center", ncol=3, fontsize="large", bbox_to_anchor=(0.5, 0.99))
 
 
 # Add extra space on the left and right sides of the plot
