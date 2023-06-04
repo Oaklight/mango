@@ -38,8 +38,8 @@ def verify_stepnav_simple(anno2code, g, each_json_path, verbose=True):
         "verify_msg": "",  # to be changed
     }
 
-    # check if each entry of path_gpt is in the correct format
-    good_format, path_gpt = check_format(gpt_results)
+    # FIXME: no need to check format as long as it has useable dst node
+    good_format, path_gpt = check_format(gpt_results, dst_only=True)
     msg = "bad format" if not good_format else ""
 
     if not good_format:
