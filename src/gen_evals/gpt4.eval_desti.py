@@ -14,7 +14,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_evals.common_desti import verify_stepnav_simple
+from gen_evals.common_desti import verify_stepnav_simple, verify_stepnav_hard
 from gen_evals.utils import (
     compute_json_uuid,
     parse_args,
@@ -24,6 +24,7 @@ from gen_evals.utils import (
 from gen_paths.digraph import (
     build_graph_from_file_with_reverse,
 )
+
 
 if __name__ == "__main__":
     """
@@ -77,6 +78,9 @@ if __name__ == "__main__":
 
         current_collection = {}
         for each_json in gpt_result_jsons:
+            if args.verbose:
+                print(f"Evaluating: [{each_json}]")
+
             micro_uuid = compute_json_uuid(each_json, level="micro")
             macro_uuid = compute_json_uuid(each_json, level="macro")
 
@@ -85,8 +89,9 @@ if __name__ == "__main__":
                     anno2code, g, each_json, args.verbose
                 )
             else:
-                # FIXME: take care of harse test
-                raise NotImplementedError
+                verify_result, verify_pack = verify_stepnav_hard(
+                    anno2code, g, each_json, args.verbose
+                )
 
             if verify_result:
                 correct += 1
@@ -108,13 +113,15 @@ if __name__ == "__main__":
         if args.simple:
             json_output = os.path.join(args.output_dir, "destination.nice.json")
         else:
-            raise NotImplementedError
+            json_output = os.path.join(args.output_dir, "destination.harsh.json")
         with open(json_output, "w") as f:
             json.dump(verify_collections, f, indent=4)
 
         recompute_for_uuid(json_output)  # hash and deduplicate, then plot
-        # rename all *_acc_vs_length.png to *_acc_vs_length.nice.png
+        # rename all *_acc_vs_length.png to *_acc_vs_length.harsh.png
+
+        version = "nice" if args.simple else "harsh"
         for each_png in glob.glob(f"{args.output_dir}/*_acc_vs_term_dist.png"):
-            os.rename(each_png, each_png.replace(".png", ".nice.png"))
+            os.rename(each_png, each_png.replace(".png", f".{version}.png"))
         for each_png in glob.glob(f"{args.output_dir}/*_acc_vs_route_length.png"):
-            os.rename(each_png, each_png.replace(".png", ".nice.png"))
+            os.rename(each_png, each_png.replace(".png", f".{version}.png"))
