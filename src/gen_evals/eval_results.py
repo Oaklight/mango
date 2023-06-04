@@ -3,20 +3,24 @@ import glob
 import json
 import math
 import os
+import sys
+import uuid
+
 import networkx as nx
-
-from matplotlib import pyplot as plt
 import numpy as np
+from matplotlib import pyplot as plt
 
-from digraph import (
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+
+from gen_paths.digraph import (
+    PathCheck,
+    anno_to_code,
     build_graph_from_file_with_reverse,
     walk_and_label_path,
     walk_path_to_dst,
-    PathCheck,
-    anno_to_code,
 )
-import uuid
-
 
 # # FIXME: use name exactly as in provided files, for example use "the troll room" instead of "troll room"
 # def str_txt)

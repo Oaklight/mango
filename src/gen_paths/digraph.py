@@ -1,9 +1,14 @@
-import time
+import os
+import sys
 
 import matplotlib.pyplot as plt
 import networkx
-import openai
-from utils import print_color
+
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+
+from gen_paths.utils import print_color
 
 opposite_directions = {
     "east": "west",

@@ -1,15 +1,20 @@
-import argparse
-import itertools
 import json
+import os
+import sys
 
-from digraph import (
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+
+from gen_paths.digraph import (
     build_graph_from_file,
     build_graph_from_file_with_reverse,
     get_all_paths,
     get_all_paths_json,
     plot_graph,
 )
-from utils import confirm_continue, get_args_all2all
+from gen_paths.utils import confirm_continue, get_args_all2all
+
 
 if __name__ == "__main__":
     args = get_args_all2all()
