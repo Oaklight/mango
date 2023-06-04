@@ -1,0 +1,3875 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 7,
+        "total_num": 66,
+        "accuracy": 0.10606060606060606,
+        "collection": {
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-15_901.json": {
+                "verify_result": true,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "34001499-11e7-37a0-ad70-6b13ba6e411e",
+                "macro_uuid": "307f8503-c55c-38e4-96bb-3e3256105b0d"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-24-01_885.json": {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "db7d2efe-ad7b-310d-98d7-047acc960d34",
+                "macro_uuid": "a7bcbbfd-17a9-3da4-a051-18064ed90884"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-24-26_356.json": {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, north (obj189)",
+                "micro_uuid": "59bd0e94-9b1a-39fc-82b7-560145518f86",
+                "macro_uuid": "b0707fc3-f4df-30df-840b-189018ba60d5"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-45_666.json": {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), hallway (obj226)",
+                "micro_uuid": "89b87436-95b8-39b2-ab03-a9df86debc6d",
+                "macro_uuid": "d8c38357-9d29-3423-b5dd-d67e0c64dcf8"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-11_841.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), crawl space, south (obj102)",
+                "micro_uuid": "52816bde-8814-3b00-996c-436c855662e7",
+                "macro_uuid": "feb9e62f-73eb-3b06-8646-1acf405a25ba"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-27_818.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "b1ebf0f3-e781-31cb-96f5-189dce1b18e7",
+                "macro_uuid": "cbd296b8-b5b8-31d9-a608-218592e883b3"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-41_111.json": {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "1244cfa2-b0cb-3d67-ba84-204f821fcc3d",
+                "macro_uuid": "61fb1406-8be2-3f45-b349-06e5f223c93f"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-22-31_140.json": {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "west",
+                    "north",
+                    "up",
+                    "down",
+                    "south"
+                ],
+                "dst_gpt": "foyer (obj120)",
+                "verify_msg": "wrong path, fail to arrive at dst: foyer (obj120), crawl space, south (obj102)",
+                "micro_uuid": "0a8d77bd-8f90-3251-8735-36ec8e211a2e",
+                "macro_uuid": "049e00b6-7658-3237-83cd-91a2ff917b46"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-22-08_109.json": {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "f49a1220-dd53-306d-86d3-ec25ea3e9bff",
+                "macro_uuid": "f46537fa-2c00-3e26-b867-164e84335ebe"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-16_592.json": {
+                "verify_result": true,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "18352b53-bd8f-3efb-9817-4241834e6363",
+                "macro_uuid": "c0e7fe36-dd39-3fc1-a9e6-abe8d49f2b65"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-15-20_186.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), short hall (obj229)",
+                "micro_uuid": "26d7c3a5-d30e-30a5-9cb8-f5c8a2e7aa0e",
+                "macro_uuid": "ca34f908-549d-3349-9c9a-4fba907c6a5c"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-23-31_941.json": {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up",
+                    "down"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, south (obj102)",
+                "micro_uuid": "6a17f666-e996-3564-bdb5-4ce64e665602",
+                "macro_uuid": "69322d3c-d054-3eba-b0ba-46ccd7452dd2"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-22-35_543.json": {
+                "verify_result": true,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "0a6578f6-9b1b-3fa2-b3a4-d7be3df7508b",
+                "macro_uuid": "9131e527-56b2-36f8-87c7-506d9511df4d"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-52_910.json": {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "5bff2da0-7778-384b-9d48-cfb2b64270aa",
+                "macro_uuid": "759d1a55-8f23-36bb-8371-153cac96a9f9"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-29_493.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), screening room (obj233)",
+                "micro_uuid": "747600a5-962c-3d1b-bd1b-b153fec61b09",
+                "macro_uuid": "e6956b5f-ae31-3694-8f02-756c084df328"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-49_844.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "914affb0-2c89-3e70-9dfc-993640710db3",
+                "macro_uuid": "bd87b03b-d69a-321f-b0b2-47150206cc7d"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-17-16_213.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), short hall (obj229)",
+                "micro_uuid": "852f0194-a08d-3bd7-8cde-8f3e096b9924",
+                "macro_uuid": "85891c5d-a95e-3571-81c7-d3125e5f6311"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-24_629.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), short hall (obj229)",
+                "micro_uuid": "5418eceb-f29d-364a-a207-cab605fcf002",
+                "macro_uuid": "45604b75-f3f8-3342-945e-b2ec481b4e05"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-48_902.json": {
+                "verify_result": false,
+                "src_anno": "Parlor",
+                "src_requested": "parlor (obj5)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "a91ebd77-a101-34c4-a6a4-71a07394dedc",
+                "macro_uuid": "e92d2e4d-86d7-3d2f-8904-2dfe531078aa"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-22-45_785.json": {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "wrong path, fail to arrive at dst: projection booth (obj69), living room (obj79)",
+                "micro_uuid": "6319e0b1-6a75-3605-a7af-d520f75ee006",
+                "macro_uuid": "0ec1b92f-a195-3c3c-89a0-c5cd65be504f"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-24-41_415.json": {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: hallway (obj226), parlor (obj5)",
+                "micro_uuid": "bb2b0d6e-ccd2-35ef-8703-819f43808861",
+                "macro_uuid": "12e6c618-46f9-33f0-a9d6-670f9e7c7ae4"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-17-59_428.json": {
+                "verify_result": true,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east",
+                    "south",
+                    "north",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e08146f0-8056-379a-87c1-ba64886a4ca2",
+                "macro_uuid": "686d2e74-4ebb-307c-930f-11439f06755c"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-16-56_326.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "56170596-b6a9-36ab-9a8c-1aec33645ecf",
+                "macro_uuid": "9921ac6d-acae-38a4-a423-e71f4be0bf7a"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-18-19_511.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "wrong path, fail to arrive at dst: living room (obj79), hallway (obj226)",
+                "micro_uuid": "3356d84c-73c8-3070-a8ab-55e395bcdb04",
+                "macro_uuid": "9e1e9f13-f888-3820-b036-2c4e1a9b79ed"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-16-25_813.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), parlor (obj5)",
+                "micro_uuid": "2081336e-de22-3afa-a1f6-5bad818df784",
+                "macro_uuid": "9acb493b-3a23-31b3-ae22-0b07b9e0b4da"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-18_861.json": {
+                "verify_result": true,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "624da7c1-5b8e-3822-a7f8-e799da02ab82",
+                "macro_uuid": "dbf2776d-235c-37f7-92bc-ce4c35c73f13"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-23-04_353.json": {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), parlor (obj5)",
+                "micro_uuid": "b2b51df2-8c17-3e44-8022-13564085b1e7",
+                "macro_uuid": "dcf1524c-54f2-3ef9-871b-afccd0b31d81"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-15-05_636.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "open door"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), foyer (obj120)",
+                "micro_uuid": "80d7ac43-4086-3f0b-9d03-aa8934f4abea",
+                "macro_uuid": "c8adf054-6405-313e-b90a-bbad86adb5e0"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-34_030.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "foyer (obj120)",
+                "verify_msg": "wrong path, fail to arrive at dst: foyer (obj120), living room (obj79)",
+                "micro_uuid": "ede34c6b-3ce9-3a90-9312-42074c5b71d5",
+                "macro_uuid": "280add82-ab14-3a24-8c94-868b80269a9a"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-18-40_695.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), parlor (obj5)",
+                "micro_uuid": "c6c9d4f3-c0b4-3e6f-8892-d75f57370f81",
+                "macro_uuid": "372e706a-a0c6-3e27-b948-34a6969226b9"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-15_391.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "8b4f578d-fbc8-36f4-b8ec-132fe6c62181",
+                "macro_uuid": "7661f726-4074-333a-878c-cc4a9fe3cdbb"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-45_333.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), hallway (obj226)",
+                "micro_uuid": "14edb4db-7843-38ec-a0f5-481713f65bdc",
+                "macro_uuid": "70d5e753-8185-3194-948d-4a1b9116d636"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-24-28_878.json": {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "5b6372c4-4098-3be1-bca9-31783791beb9",
+                "macro_uuid": "8b317492-bb8a-34e6-8829-749cdd0159b6"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-17-27_096.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), screening room (obj233)",
+                "micro_uuid": "69892786-2bd2-3680-be55-be8bd84fe8c9",
+                "macro_uuid": "1f594bb6-a8a5-3fa1-a53d-9706d413b054"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-02_981.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "up"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), crawl space, north (obj189)",
+                "micro_uuid": "45526e2e-612b-39f1-a03f-42a2dd96908c",
+                "macro_uuid": "a60769ec-564a-38e4-b856-a25ad0e9181f"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-24_103.json": {
+                "verify_result": true,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d700245d-ccc7-3699-8a30-98bb03464b6a",
+                "macro_uuid": "cf0ab386-06be-3c8d-9532-ad47d0d3424c"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-17-39_797.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "a5a90350-c45c-3879-9b84-8b02c2ef3d14",
+                "macro_uuid": "aaebf88f-e5da-3a12-a206-5e3d26d8b21e"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-23-44_387.json": {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "wrong path, fail to arrive at dst: projection booth (obj69), living room (obj79)",
+                "micro_uuid": "8d9c7a3d-21d5-3bbc-922f-ca2a305432e8",
+                "macro_uuid": "7abb7d63-b6cd-3aba-9d5f-41debaa73f6d"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-22-55_188.json": {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "0257edf8-a332-33f4-b7d8-7f5a8c7715a1",
+                "macro_uuid": "66485d76-edf6-36c6-9369-40a49f592574"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-16-40_899.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "8de7e1db-1c93-386c-bdc2-8d777da5cdcb",
+                "macro_uuid": "13e8e0f4-f5e6-3d91-886d-55ea31eafcdb"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-24-35_213.json": {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7e906b5d-4587-30e3-b852-28fc3d645c04",
+                "macro_uuid": "ea0283c1-baa7-3bbc-bab1-013275e46456"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-15-12_491.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), game room (obj95)",
+                "micro_uuid": "0bb74d83-73c0-3c8e-b396-c1540241bd6f",
+                "macro_uuid": "e92186df-0469-325a-acd3-c3e3bb120925"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-55_758.json": {
+                "verify_result": false,
+                "src_anno": "Parlor",
+                "src_requested": "parlor (obj5)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "wrong path, fail to arrive at dst: parlor (obj5), crawl space, south (obj102)",
+                "micro_uuid": "9757bf42-23c9-3fd8-9436-4435948e2206",
+                "macro_uuid": "ec9a2756-7ef9-30f2-900e-5d7eb822f798"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-18-55_241.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "5d444e33-004f-3842-a1e4-5ca5c9c88e79",
+                "macro_uuid": "90cfb78e-a7eb-3b9b-b0d6-2d69531c1fd5"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-15-31_680.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), screening room (obj233)",
+                "micro_uuid": "2aa60215-d79f-3a11-a263-68c7678bc4bb",
+                "macro_uuid": "3af9d923-0c1e-304a-9ec1-ec280cefd1d5"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-15-44_801.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "b0ac420b-5b51-3af8-89f5-8210250c9333",
+                "macro_uuid": "cfc22481-0d9d-3c9d-94f3-198e9c47a863"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-17-08_499.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), game room (obj95)",
+                "micro_uuid": "e219b315-f69b-3d3b-9ef1-39e9696faec0",
+                "macro_uuid": "dc4245a3-3470-36f5-aaee-5ea3d27c0dc1"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-14-59_771.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Front Porch",
+                "dst_requested": "front porch (obj182)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), front porch (obj182)",
+                "micro_uuid": "16262344-607b-39f1-811a-b185f1030dfe",
+                "macro_uuid": "aa893a92-09be-30b7-886f-f062ebc5f8ce"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-16-04_980.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "south",
+                    "north",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "wrong path, fail to arrive at dst: parlor (obj5), living room (obj79)",
+                "micro_uuid": "f9528942-2c45-3b3d-ac7c-cf778ecce878",
+                "macro_uuid": "377a1454-e64d-363c-b4d9-7594caf60dba"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-20_889.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), screening room (obj233)",
+                "micro_uuid": "72550936-e2f7-3d63-a0b5-32411da4d174",
+                "macro_uuid": "48f97e8c-fb2d-3d8a-baa0-49cf8f01ec5b"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-20_235.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), game room (obj95)",
+                "micro_uuid": "f9017cdd-258a-360f-8b50-5ecd3b77238b",
+                "macro_uuid": "2d101c33-d273-3b32-aed1-9e1a90f09322"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-59_317.json": {
+                "verify_result": false,
+                "src_anno": "Crawl Space, North",
+                "src_requested": "crawl space, north (obj189)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "e87a48cf-8039-3aae-a47a-43b7ae82e29c",
+                "macro_uuid": "be41faa7-4db0-3d8b-8d28-426aed521d80"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-28_064.json": {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "a32f3ff1-7674-393d-bac7-076ee273adc5",
+                "macro_uuid": "4d61ecbd-18ae-3ddb-bac0-ed97192cedbe"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-16-14_580.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), hallway (obj226)",
+                "micro_uuid": "b80d3dce-b805-347c-9575-13030f42edaa",
+                "macro_uuid": "391ef35a-1207-3f15-9073-064169d3c447"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-24-10_902.json": {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), parlor (obj5)",
+                "micro_uuid": "53f5d951-14a0-3011-ae2e-c19c3f9c9351",
+                "macro_uuid": "7c28d3ab-b919-36c8-8dc4-3d5b44527c3d"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-38_432.json": {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), living room (obj79)",
+                "micro_uuid": "aa1290da-4e77-3225-ac54-4a3de947c4b0",
+                "macro_uuid": "bccbc087-74c2-3250-8b6e-6652f55818a2"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-10_382.json": {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "crawl space, north (obj189)",
+                "verify_msg": "wrong path, fail to arrive at dst: crawl space, north (obj189), crawl space, south (obj102)",
+                "micro_uuid": "3622a282-b47e-346c-80b8-313fc801ed0a",
+                "macro_uuid": "56136ae8-1887-3471-975d-ef2c16b4648f"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-55_234.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "88ba9456-227c-3764-a097-237e1abcdb48",
+                "macro_uuid": "19658612-07fa-3e8e-b141-af1e4df59d32"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-20-41_303.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "f910a7a8-27b7-368c-b71e-21f61758df69",
+                "macro_uuid": "dc85b0e2-fe7d-35ed-b2c6-ffb37a0fd6ad"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-23-17_673.json": {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, north (obj189)",
+                "micro_uuid": "7e497b46-bd40-3070-835c-3741703a0dbc",
+                "macro_uuid": "0f1d2734-8c79-3165-a25e-92cde76c03c4"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-17-01_317.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), foyer (obj120)",
+                "micro_uuid": "35ada021-a28e-383d-80f6-a9379cf4375b",
+                "macro_uuid": "d18c87e9-da96-35d4-b993-7d47ccd30fa7"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-25-00_490.json": {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "north",
+                    "north",
+                    "down"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "7ca45647-01bc-359a-945f-d23fb050c73e",
+                "macro_uuid": "a0f48d56-d1c7-3ccc-8bf2-07e65f505a3c"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-40_520.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: hallway (obj226), living room (obj79)",
+                "micro_uuid": "4fa10946-b32b-3d3d-aee5-c0679943e99d",
+                "macro_uuid": "26f457d9-5111-3160-8678-f3caa2ba631f"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-19-36_009.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), projection booth (obj69)",
+                "micro_uuid": "865feea9-1317-3c61-9e78-c843ef3f3e17",
+                "macro_uuid": "7dcb2281-263f-35d3-818b-490061261b25"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-04_147.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "wrong path, fail to arrive at dst: living room (obj79), crawl space, north (obj189)",
+                "micro_uuid": "0582e25d-3a28-333f-8f0d-b01725a51421",
+                "macro_uuid": "34982477-babb-3cf0-a197-eb37ec1fa0ff"
+            },
+            "../gpt-games-results//hollywood/results//pathgen-gpt-3.5-turbo/results_2023-06-01-17-21-15_674.json": {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "southwest",
+                    "down"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), crawl space, south (obj102)",
+                "micro_uuid": "26f64a5d-80c2-381d-a4ed-303568615e02",
+                "macro_uuid": "be705e0c-8cd1-3e35-b6ed-33fe4400d4d7"
+            }
+        },
+        "random_guess_rate": 0.00017910166908621474,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "34001499-11e7-37a0-ad70-6b13ba6e411e",
+                "macro_uuid": "307f8503-c55c-38e4-96bb-3e3256105b0d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "db7d2efe-ad7b-310d-98d7-047acc960d34",
+                "macro_uuid": "a7bcbbfd-17a9-3da4-a051-18064ed90884"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, north (obj189)",
+                "micro_uuid": "59bd0e94-9b1a-39fc-82b7-560145518f86",
+                "macro_uuid": "b0707fc3-f4df-30df-840b-189018ba60d5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), hallway (obj226)",
+                "micro_uuid": "89b87436-95b8-39b2-ab03-a9df86debc6d",
+                "macro_uuid": "d8c38357-9d29-3423-b5dd-d67e0c64dcf8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), crawl space, south (obj102)",
+                "micro_uuid": "52816bde-8814-3b00-996c-436c855662e7",
+                "macro_uuid": "feb9e62f-73eb-3b06-8646-1acf405a25ba"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "b1ebf0f3-e781-31cb-96f5-189dce1b18e7",
+                "macro_uuid": "cbd296b8-b5b8-31d9-a608-218592e883b3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "1244cfa2-b0cb-3d67-ba84-204f821fcc3d",
+                "macro_uuid": "61fb1406-8be2-3f45-b349-06e5f223c93f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "west",
+                    "north",
+                    "up",
+                    "down",
+                    "south"
+                ],
+                "dst_gpt": "foyer (obj120)",
+                "verify_msg": "wrong path, fail to arrive at dst: foyer (obj120), crawl space, south (obj102)",
+                "micro_uuid": "0a8d77bd-8f90-3251-8735-36ec8e211a2e",
+                "macro_uuid": "049e00b6-7658-3237-83cd-91a2ff917b46"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "f49a1220-dd53-306d-86d3-ec25ea3e9bff",
+                "macro_uuid": "f46537fa-2c00-3e26-b867-164e84335ebe"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "18352b53-bd8f-3efb-9817-4241834e6363",
+                "macro_uuid": "c0e7fe36-dd39-3fc1-a9e6-abe8d49f2b65"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), short hall (obj229)",
+                "micro_uuid": "26d7c3a5-d30e-30a5-9cb8-f5c8a2e7aa0e",
+                "macro_uuid": "ca34f908-549d-3349-9c9a-4fba907c6a5c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up",
+                    "down"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, south (obj102)",
+                "micro_uuid": "6a17f666-e996-3564-bdb5-4ce64e665602",
+                "macro_uuid": "69322d3c-d054-3eba-b0ba-46ccd7452dd2"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "0a6578f6-9b1b-3fa2-b3a4-d7be3df7508b",
+                "macro_uuid": "9131e527-56b2-36f8-87c7-506d9511df4d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "5bff2da0-7778-384b-9d48-cfb2b64270aa",
+                "macro_uuid": "759d1a55-8f23-36bb-8371-153cac96a9f9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), screening room (obj233)",
+                "micro_uuid": "747600a5-962c-3d1b-bd1b-b153fec61b09",
+                "macro_uuid": "e6956b5f-ae31-3694-8f02-756c084df328"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "914affb0-2c89-3e70-9dfc-993640710db3",
+                "macro_uuid": "bd87b03b-d69a-321f-b0b2-47150206cc7d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), short hall (obj229)",
+                "micro_uuid": "852f0194-a08d-3bd7-8cde-8f3e096b9924",
+                "macro_uuid": "85891c5d-a95e-3571-81c7-d3125e5f6311"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), short hall (obj229)",
+                "micro_uuid": "5418eceb-f29d-364a-a207-cab605fcf002",
+                "macro_uuid": "45604b75-f3f8-3342-945e-b2ec481b4e05"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Parlor",
+                "src_requested": "parlor (obj5)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "a91ebd77-a101-34c4-a6a4-71a07394dedc",
+                "macro_uuid": "e92d2e4d-86d7-3d2f-8904-2dfe531078aa"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "wrong path, fail to arrive at dst: projection booth (obj69), living room (obj79)",
+                "micro_uuid": "6319e0b1-6a75-3605-a7af-d520f75ee006",
+                "macro_uuid": "0ec1b92f-a195-3c3c-89a0-c5cd65be504f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: hallway (obj226), parlor (obj5)",
+                "micro_uuid": "bb2b0d6e-ccd2-35ef-8703-819f43808861",
+                "macro_uuid": "12e6c618-46f9-33f0-a9d6-670f9e7c7ae4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east",
+                    "south",
+                    "north",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e08146f0-8056-379a-87c1-ba64886a4ca2",
+                "macro_uuid": "686d2e74-4ebb-307c-930f-11439f06755c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "56170596-b6a9-36ab-9a8c-1aec33645ecf",
+                "macro_uuid": "9921ac6d-acae-38a4-a423-e71f4be0bf7a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "wrong path, fail to arrive at dst: living room (obj79), hallway (obj226)",
+                "micro_uuid": "3356d84c-73c8-3070-a8ab-55e395bcdb04",
+                "macro_uuid": "9e1e9f13-f888-3820-b036-2c4e1a9b79ed"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), parlor (obj5)",
+                "micro_uuid": "2081336e-de22-3afa-a1f6-5bad818df784",
+                "macro_uuid": "9acb493b-3a23-31b3-ae22-0b07b9e0b4da"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "624da7c1-5b8e-3822-a7f8-e799da02ab82",
+                "macro_uuid": "dbf2776d-235c-37f7-92bc-ce4c35c73f13"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), parlor (obj5)",
+                "micro_uuid": "b2b51df2-8c17-3e44-8022-13564085b1e7",
+                "macro_uuid": "dcf1524c-54f2-3ef9-871b-afccd0b31d81"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "open door"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), foyer (obj120)",
+                "micro_uuid": "80d7ac43-4086-3f0b-9d03-aa8934f4abea",
+                "macro_uuid": "c8adf054-6405-313e-b90a-bbad86adb5e0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "foyer (obj120)",
+                "verify_msg": "wrong path, fail to arrive at dst: foyer (obj120), living room (obj79)",
+                "micro_uuid": "ede34c6b-3ce9-3a90-9312-42074c5b71d5",
+                "macro_uuid": "280add82-ab14-3a24-8c94-868b80269a9a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), parlor (obj5)",
+                "micro_uuid": "c6c9d4f3-c0b4-3e6f-8892-d75f57370f81",
+                "macro_uuid": "372e706a-a0c6-3e27-b948-34a6969226b9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "8b4f578d-fbc8-36f4-b8ec-132fe6c62181",
+                "macro_uuid": "7661f726-4074-333a-878c-cc4a9fe3cdbb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), hallway (obj226)",
+                "micro_uuid": "14edb4db-7843-38ec-a0f5-481713f65bdc",
+                "macro_uuid": "70d5e753-8185-3194-948d-4a1b9116d636"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "5b6372c4-4098-3be1-bca9-31783791beb9",
+                "macro_uuid": "8b317492-bb8a-34e6-8829-749cdd0159b6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), screening room (obj233)",
+                "micro_uuid": "69892786-2bd2-3680-be55-be8bd84fe8c9",
+                "macro_uuid": "1f594bb6-a8a5-3fa1-a53d-9706d413b054"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "up"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), crawl space, north (obj189)",
+                "micro_uuid": "45526e2e-612b-39f1-a03f-42a2dd96908c",
+                "macro_uuid": "a60769ec-564a-38e4-b856-a25ad0e9181f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d700245d-ccc7-3699-8a30-98bb03464b6a",
+                "macro_uuid": "cf0ab386-06be-3c8d-9532-ad47d0d3424c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "a5a90350-c45c-3879-9b84-8b02c2ef3d14",
+                "macro_uuid": "aaebf88f-e5da-3a12-a206-5e3d26d8b21e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "wrong path, fail to arrive at dst: projection booth (obj69), living room (obj79)",
+                "micro_uuid": "8d9c7a3d-21d5-3bbc-922f-ca2a305432e8",
+                "macro_uuid": "7abb7d63-b6cd-3aba-9d5f-41debaa73f6d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "0257edf8-a332-33f4-b7d8-7f5a8c7715a1",
+                "macro_uuid": "66485d76-edf6-36c6-9369-40a49f592574"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "8de7e1db-1c93-386c-bdc2-8d777da5cdcb",
+                "macro_uuid": "13e8e0f4-f5e6-3d91-886d-55ea31eafcdb"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7e906b5d-4587-30e3-b852-28fc3d645c04",
+                "macro_uuid": "ea0283c1-baa7-3bbc-bab1-013275e46456"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), game room (obj95)",
+                "micro_uuid": "0bb74d83-73c0-3c8e-b396-c1540241bd6f",
+                "macro_uuid": "e92186df-0469-325a-acd3-c3e3bb120925"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Parlor",
+                "src_requested": "parlor (obj5)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "wrong path, fail to arrive at dst: parlor (obj5), crawl space, south (obj102)",
+                "micro_uuid": "9757bf42-23c9-3fd8-9436-4435948e2206",
+                "macro_uuid": "ec9a2756-7ef9-30f2-900e-5d7eb822f798"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "5d444e33-004f-3842-a1e4-5ca5c9c88e79",
+                "macro_uuid": "90cfb78e-a7eb-3b9b-b0d6-2d69531c1fd5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), screening room (obj233)",
+                "micro_uuid": "2aa60215-d79f-3a11-a263-68c7678bc4bb",
+                "macro_uuid": "3af9d923-0c1e-304a-9ec1-ec280cefd1d5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "b0ac420b-5b51-3af8-89f5-8210250c9333",
+                "macro_uuid": "cfc22481-0d9d-3c9d-94f3-198e9c47a863"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), game room (obj95)",
+                "micro_uuid": "e219b315-f69b-3d3b-9ef1-39e9696faec0",
+                "macro_uuid": "dc4245a3-3470-36f5-aaee-5ea3d27c0dc1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Front Porch",
+                "dst_requested": "front porch (obj182)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), front porch (obj182)",
+                "micro_uuid": "16262344-607b-39f1-811a-b185f1030dfe",
+                "macro_uuid": "aa893a92-09be-30b7-886f-f062ebc5f8ce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "south",
+                    "north",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "wrong path, fail to arrive at dst: parlor (obj5), living room (obj79)",
+                "micro_uuid": "f9528942-2c45-3b3d-ac7c-cf778ecce878",
+                "macro_uuid": "377a1454-e64d-363c-b4d9-7594caf60dba"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), screening room (obj233)",
+                "micro_uuid": "72550936-e2f7-3d63-a0b5-32411da4d174",
+                "macro_uuid": "48f97e8c-fb2d-3d8a-baa0-49cf8f01ec5b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), game room (obj95)",
+                "micro_uuid": "f9017cdd-258a-360f-8b50-5ecd3b77238b",
+                "macro_uuid": "2d101c33-d273-3b32-aed1-9e1a90f09322"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Crawl Space, North",
+                "src_requested": "crawl space, north (obj189)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "e87a48cf-8039-3aae-a47a-43b7ae82e29c",
+                "macro_uuid": "be41faa7-4db0-3d8b-8d28-426aed521d80"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "a32f3ff1-7674-393d-bac7-076ee273adc5",
+                "macro_uuid": "4d61ecbd-18ae-3ddb-bac0-ed97192cedbe"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), hallway (obj226)",
+                "micro_uuid": "b80d3dce-b805-347c-9575-13030f42edaa",
+                "macro_uuid": "391ef35a-1207-3f15-9073-064169d3c447"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), parlor (obj5)",
+                "micro_uuid": "53f5d951-14a0-3011-ae2e-c19c3f9c9351",
+                "macro_uuid": "7c28d3ab-b919-36c8-8dc4-3d5b44527c3d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), living room (obj79)",
+                "micro_uuid": "aa1290da-4e77-3225-ac54-4a3de947c4b0",
+                "macro_uuid": "bccbc087-74c2-3250-8b6e-6652f55818a2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "crawl space, north (obj189)",
+                "verify_msg": "wrong path, fail to arrive at dst: crawl space, north (obj189), crawl space, south (obj102)",
+                "micro_uuid": "3622a282-b47e-346c-80b8-313fc801ed0a",
+                "macro_uuid": "56136ae8-1887-3471-975d-ef2c16b4648f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "88ba9456-227c-3764-a097-237e1abcdb48",
+                "macro_uuid": "19658612-07fa-3e8e-b141-af1e4df59d32"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "f910a7a8-27b7-368c-b71e-21f61758df69",
+                "macro_uuid": "dc85b0e2-fe7d-35ed-b2c6-ffb37a0fd6ad"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, north (obj189)",
+                "micro_uuid": "7e497b46-bd40-3070-835c-3741703a0dbc",
+                "macro_uuid": "0f1d2734-8c79-3165-a25e-92cde76c03c4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), foyer (obj120)",
+                "micro_uuid": "35ada021-a28e-383d-80f6-a9379cf4375b",
+                "macro_uuid": "d18c87e9-da96-35d4-b993-7d47ccd30fa7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "north",
+                    "north",
+                    "down"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "7ca45647-01bc-359a-945f-d23fb050c73e",
+                "macro_uuid": "a0f48d56-d1c7-3ccc-8bf2-07e65f505a3c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: hallway (obj226), living room (obj79)",
+                "micro_uuid": "4fa10946-b32b-3d3d-aee5-c0679943e99d",
+                "macro_uuid": "26f457d9-5111-3160-8678-f3caa2ba631f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), projection booth (obj69)",
+                "micro_uuid": "865feea9-1317-3c61-9e78-c843ef3f3e17",
+                "macro_uuid": "7dcb2281-263f-35d3-818b-490061261b25"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "wrong path, fail to arrive at dst: living room (obj79), crawl space, north (obj189)",
+                "micro_uuid": "0582e25d-3a28-333f-8f0d-b01725a51421",
+                "macro_uuid": "34982477-babb-3cf0-a197-eb37ec1fa0ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "southwest",
+                    "down"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), crawl space, south (obj102)",
+                "micro_uuid": "26f64a5d-80c2-381d-a4ed-303568615e02",
+                "macro_uuid": "be705e0c-8cd1-3e35-b6ed-33fe4400d4d7"
+            }
+        ],
+        "correct_num_micro": 7,
+        "total_num_micro": 66,
+        "accuracy_micro": 0.10606060606060606,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "34001499-11e7-37a0-ad70-6b13ba6e411e",
+                "macro_uuid": "307f8503-c55c-38e4-96bb-3e3256105b0d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "db7d2efe-ad7b-310d-98d7-047acc960d34",
+                "macro_uuid": "a7bcbbfd-17a9-3da4-a051-18064ed90884"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, north (obj189)",
+                "micro_uuid": "59bd0e94-9b1a-39fc-82b7-560145518f86",
+                "macro_uuid": "b0707fc3-f4df-30df-840b-189018ba60d5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), hallway (obj226)",
+                "micro_uuid": "89b87436-95b8-39b2-ab03-a9df86debc6d",
+                "macro_uuid": "d8c38357-9d29-3423-b5dd-d67e0c64dcf8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), crawl space, south (obj102)",
+                "micro_uuid": "52816bde-8814-3b00-996c-436c855662e7",
+                "macro_uuid": "feb9e62f-73eb-3b06-8646-1acf405a25ba"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "b1ebf0f3-e781-31cb-96f5-189dce1b18e7",
+                "macro_uuid": "cbd296b8-b5b8-31d9-a608-218592e883b3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "1244cfa2-b0cb-3d67-ba84-204f821fcc3d",
+                "macro_uuid": "61fb1406-8be2-3f45-b349-06e5f223c93f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "west",
+                    "north",
+                    "up",
+                    "down",
+                    "south"
+                ],
+                "dst_gpt": "foyer (obj120)",
+                "verify_msg": "wrong path, fail to arrive at dst: foyer (obj120), crawl space, south (obj102)",
+                "micro_uuid": "0a8d77bd-8f90-3251-8735-36ec8e211a2e",
+                "macro_uuid": "049e00b6-7658-3237-83cd-91a2ff917b46"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "f49a1220-dd53-306d-86d3-ec25ea3e9bff",
+                "macro_uuid": "f46537fa-2c00-3e26-b867-164e84335ebe"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "18352b53-bd8f-3efb-9817-4241834e6363",
+                "macro_uuid": "c0e7fe36-dd39-3fc1-a9e6-abe8d49f2b65"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), short hall (obj229)",
+                "micro_uuid": "26d7c3a5-d30e-30a5-9cb8-f5c8a2e7aa0e",
+                "macro_uuid": "ca34f908-549d-3349-9c9a-4fba907c6a5c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up",
+                    "down"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, south (obj102)",
+                "micro_uuid": "6a17f666-e996-3564-bdb5-4ce64e665602",
+                "macro_uuid": "69322d3c-d054-3eba-b0ba-46ccd7452dd2"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "0a6578f6-9b1b-3fa2-b3a4-d7be3df7508b",
+                "macro_uuid": "9131e527-56b2-36f8-87c7-506d9511df4d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "5bff2da0-7778-384b-9d48-cfb2b64270aa",
+                "macro_uuid": "759d1a55-8f23-36bb-8371-153cac96a9f9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), screening room (obj233)",
+                "micro_uuid": "747600a5-962c-3d1b-bd1b-b153fec61b09",
+                "macro_uuid": "e6956b5f-ae31-3694-8f02-756c084df328"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "914affb0-2c89-3e70-9dfc-993640710db3",
+                "macro_uuid": "bd87b03b-d69a-321f-b0b2-47150206cc7d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), short hall (obj229)",
+                "micro_uuid": "852f0194-a08d-3bd7-8cde-8f3e096b9924",
+                "macro_uuid": "85891c5d-a95e-3571-81c7-d3125e5f6311"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Short Hall",
+                "dst_requested": "short hall (obj229)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), short hall (obj229)",
+                "micro_uuid": "5418eceb-f29d-364a-a207-cab605fcf002",
+                "macro_uuid": "45604b75-f3f8-3342-945e-b2ec481b4e05"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Parlor",
+                "src_requested": "parlor (obj5)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "a91ebd77-a101-34c4-a6a4-71a07394dedc",
+                "macro_uuid": "e92d2e4d-86d7-3d2f-8904-2dfe531078aa"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "wrong path, fail to arrive at dst: projection booth (obj69), living room (obj79)",
+                "micro_uuid": "6319e0b1-6a75-3605-a7af-d520f75ee006",
+                "macro_uuid": "0ec1b92f-a195-3c3c-89a0-c5cd65be504f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: hallway (obj226), parlor (obj5)",
+                "micro_uuid": "bb2b0d6e-ccd2-35ef-8703-819f43808861",
+                "macro_uuid": "12e6c618-46f9-33f0-a9d6-670f9e7c7ae4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east",
+                    "south",
+                    "north",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e08146f0-8056-379a-87c1-ba64886a4ca2",
+                "macro_uuid": "686d2e74-4ebb-307c-930f-11439f06755c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "56170596-b6a9-36ab-9a8c-1aec33645ecf",
+                "macro_uuid": "9921ac6d-acae-38a4-a423-e71f4be0bf7a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "wrong path, fail to arrive at dst: living room (obj79), hallway (obj226)",
+                "micro_uuid": "3356d84c-73c8-3070-a8ab-55e395bcdb04",
+                "macro_uuid": "9e1e9f13-f888-3820-b036-2c4e1a9b79ed"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), parlor (obj5)",
+                "micro_uuid": "2081336e-de22-3afa-a1f6-5bad818df784",
+                "macro_uuid": "9acb493b-3a23-31b3-ae22-0b07b9e0b4da"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "624da7c1-5b8e-3822-a7f8-e799da02ab82",
+                "macro_uuid": "dbf2776d-235c-37f7-92bc-ce4c35c73f13"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), parlor (obj5)",
+                "micro_uuid": "b2b51df2-8c17-3e44-8022-13564085b1e7",
+                "macro_uuid": "dcf1524c-54f2-3ef9-871b-afccd0b31d81"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "open door"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), foyer (obj120)",
+                "micro_uuid": "80d7ac43-4086-3f0b-9d03-aa8934f4abea",
+                "macro_uuid": "c8adf054-6405-313e-b90a-bbad86adb5e0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "foyer (obj120)",
+                "verify_msg": "wrong path, fail to arrive at dst: foyer (obj120), living room (obj79)",
+                "micro_uuid": "ede34c6b-3ce9-3a90-9312-42074c5b71d5",
+                "macro_uuid": "280add82-ab14-3a24-8c94-868b80269a9a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), parlor (obj5)",
+                "micro_uuid": "c6c9d4f3-c0b4-3e6f-8892-d75f57370f81",
+                "macro_uuid": "372e706a-a0c6-3e27-b948-34a6969226b9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, south (obj102)",
+                "micro_uuid": "8b4f578d-fbc8-36f4-b8ec-132fe6c62181",
+                "macro_uuid": "7661f726-4074-333a-878c-cc4a9fe3cdbb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), hallway (obj226)",
+                "micro_uuid": "14edb4db-7843-38ec-a0f5-481713f65bdc",
+                "macro_uuid": "70d5e753-8185-3194-948d-4a1b9116d636"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "5b6372c4-4098-3be1-bca9-31783791beb9",
+                "macro_uuid": "8b317492-bb8a-34e6-8829-749cdd0159b6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), screening room (obj233)",
+                "micro_uuid": "69892786-2bd2-3680-be55-be8bd84fe8c9",
+                "macro_uuid": "1f594bb6-a8a5-3fa1-a53d-9706d413b054"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "up"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), crawl space, north (obj189)",
+                "micro_uuid": "45526e2e-612b-39f1-a03f-42a2dd96908c",
+                "macro_uuid": "a60769ec-564a-38e4-b856-a25ad0e9181f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d700245d-ccc7-3699-8a30-98bb03464b6a",
+                "macro_uuid": "cf0ab386-06be-3c8d-9532-ad47d0d3424c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "a5a90350-c45c-3879-9b84-8b02c2ef3d14",
+                "macro_uuid": "aaebf88f-e5da-3a12-a206-5e3d26d8b21e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "projection booth (obj69)",
+                "verify_msg": "wrong path, fail to arrive at dst: projection booth (obj69), living room (obj79)",
+                "micro_uuid": "8d9c7a3d-21d5-3bbc-922f-ca2a305432e8",
+                "macro_uuid": "7abb7d63-b6cd-3aba-9d5f-41debaa73f6d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "0257edf8-a332-33f4-b7d8-7f5a8c7715a1",
+                "macro_uuid": "66485d76-edf6-36c6-9369-40a49f592574"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "8de7e1db-1c93-386c-bdc2-8d777da5cdcb",
+                "macro_uuid": "13e8e0f4-f5e6-3d91-886d-55ea31eafcdb"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7e906b5d-4587-30e3-b852-28fc3d645c04",
+                "macro_uuid": "ea0283c1-baa7-3bbc-bab1-013275e46456"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), game room (obj95)",
+                "micro_uuid": "0bb74d83-73c0-3c8e-b396-c1540241bd6f",
+                "macro_uuid": "e92186df-0469-325a-acd3-c3e3bb120925"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Parlor",
+                "src_requested": "parlor (obj5)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "wrong path, fail to arrive at dst: parlor (obj5), crawl space, south (obj102)",
+                "micro_uuid": "9757bf42-23c9-3fd8-9436-4435948e2206",
+                "macro_uuid": "ec9a2756-7ef9-30f2-900e-5d7eb822f798"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "5d444e33-004f-3842-a1e4-5ca5c9c88e79",
+                "macro_uuid": "90cfb78e-a7eb-3b9b-b0d6-2d69531c1fd5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), screening room (obj233)",
+                "micro_uuid": "2aa60215-d79f-3a11-a263-68c7678bc4bb",
+                "macro_uuid": "3af9d923-0c1e-304a-9ec1-ec280cefd1d5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "west",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), projection booth (obj69)",
+                "micro_uuid": "b0ac420b-5b51-3af8-89f5-8210250c9333",
+                "macro_uuid": "cfc22481-0d9d-3c9d-94f3-198e9c47a863"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), game room (obj95)",
+                "micro_uuid": "e219b315-f69b-3d3b-9ef1-39e9696faec0",
+                "macro_uuid": "dc4245a3-3470-36f5-aaee-5ea3d27c0dc1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Front Porch",
+                "dst_requested": "front porch (obj182)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), front porch (obj182)",
+                "micro_uuid": "16262344-607b-39f1-811a-b185f1030dfe",
+                "macro_uuid": "aa893a92-09be-30b7-886f-f062ebc5f8ce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "south",
+                    "north",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "parlor (obj5)",
+                "verify_msg": "wrong path, fail to arrive at dst: parlor (obj5), living room (obj79)",
+                "micro_uuid": "f9528942-2c45-3b3d-ac7c-cf778ecce878",
+                "macro_uuid": "377a1454-e64d-363c-b4d9-7594caf60dba"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Screening Room",
+                "dst_requested": "screening room (obj233)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), screening room (obj233)",
+                "micro_uuid": "72550936-e2f7-3d63-a0b5-32411da4d174",
+                "macro_uuid": "48f97e8c-fb2d-3d8a-baa0-49cf8f01ec5b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), game room (obj95)",
+                "micro_uuid": "f9017cdd-258a-360f-8b50-5ecd3b77238b",
+                "macro_uuid": "2d101c33-d273-3b32-aed1-9e1a90f09322"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Crawl Space, North",
+                "src_requested": "crawl space, north (obj189)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "e87a48cf-8039-3aae-a47a-43b7ae82e29c",
+                "macro_uuid": "be41faa7-4db0-3d8b-8d28-426aed521d80"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj226)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "south junction (obj2)",
+                "verify_msg": "wrong path, fail to arrive at dst: south junction (obj2), crawl space, north (obj189)",
+                "micro_uuid": "a32f3ff1-7674-393d-bac7-076ee273adc5",
+                "macro_uuid": "4d61ecbd-18ae-3ddb-bac0-ed97192cedbe"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), hallway (obj226)",
+                "micro_uuid": "b80d3dce-b805-347c-9575-13030f42edaa",
+                "macro_uuid": "391ef35a-1207-3f15-9073-064169d3c447"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Projection Booth",
+                "src_requested": "projection booth (obj69)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), parlor (obj5)",
+                "micro_uuid": "53f5d951-14a0-3011-ae2e-c19c3f9c9351",
+                "macro_uuid": "7c28d3ab-b919-36c8-8dc4-3d5b44527c3d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Short Hall",
+                "src_requested": "short hall (obj229)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), living room (obj79)",
+                "micro_uuid": "aa1290da-4e77-3225-ac54-4a3de947c4b0",
+                "macro_uuid": "bccbc087-74c2-3250-8b6e-6652f55818a2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "crawl space, north (obj189)",
+                "verify_msg": "wrong path, fail to arrive at dst: crawl space, north (obj189), crawl space, south (obj102)",
+                "micro_uuid": "3622a282-b47e-346c-80b8-313fc801ed0a",
+                "macro_uuid": "56136ae8-1887-3471-975d-ef2c16b4648f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Parlor",
+                "dst_requested": "parlor (obj5)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), parlor (obj5)",
+                "micro_uuid": "88ba9456-227c-3764-a097-237e1abcdb48",
+                "macro_uuid": "19658612-07fa-3e8e-b141-af1e4df59d32"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj226)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), hallway (obj226)",
+                "micro_uuid": "f910a7a8-27b7-368c-b71e-21f61758df69",
+                "macro_uuid": "dc85b0e2-fe7d-35ed-b2c6-ffb37a0fd6ad"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Screening Room",
+                "src_requested": "screening room (obj233)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "screening room (obj233)",
+                "verify_msg": "wrong path, fail to arrive at dst: screening room (obj233), crawl space, north (obj189)",
+                "micro_uuid": "7e497b46-bd40-3070-835c-3741703a0dbc",
+                "macro_uuid": "0f1d2734-8c79-3165-a25e-92cde76c03c4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), foyer (obj120)",
+                "micro_uuid": "35ada021-a28e-383d-80f6-a9379cf4375b",
+                "macro_uuid": "d18c87e9-da96-35d4-b993-7d47ccd30fa7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "living room (obj79)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "north",
+                    "west",
+                    "west",
+                    "north",
+                    "north",
+                    "down"
+                ],
+                "dst_gpt": "game room (obj95)",
+                "verify_msg": "wrong path, fail to arrive at dst: game room (obj95), crawl space, north (obj189)",
+                "micro_uuid": "7ca45647-01bc-359a-945f-d23fb050c73e",
+                "macro_uuid": "a0f48d56-d1c7-3ccc-8bf2-07e65f505a3c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Living Room",
+                "dst_requested": "living room (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "hallway (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: hallway (obj226), living room (obj79)",
+                "micro_uuid": "4fa10946-b32b-3d3d-aee5-c0679943e99d",
+                "macro_uuid": "26f457d9-5111-3160-8678-f3caa2ba631f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Projection Booth",
+                "dst_requested": "projection booth (obj69)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "short hall (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: short hall (obj229), projection booth (obj69)",
+                "micro_uuid": "865feea9-1317-3c61-9e78-c843ef3f3e17",
+                "macro_uuid": "7dcb2281-263f-35d3-818b-490061261b25"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Crawl Space, North",
+                "dst_requested": "crawl space, north (obj189)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "north",
+                    "up"
+                ],
+                "dst_gpt": "living room (obj79)",
+                "verify_msg": "wrong path, fail to arrive at dst: living room (obj79), crawl space, north (obj189)",
+                "micro_uuid": "0582e25d-3a28-333f-8f0d-b01725a51421",
+                "macro_uuid": "34982477-babb-3cf0-a197-eb37ec1fa0ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Game Room",
+                "src_requested": "game room (obj95)",
+                "dst_anno": "Crawl Space, South",
+                "dst_requested": "crawl space, south (obj102)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "southwest",
+                    "down"
+                ],
+                "dst_gpt": "front porch (obj182)",
+                "verify_msg": "wrong path, fail to arrive at dst: front porch (obj182), crawl space, south (obj102)",
+                "micro_uuid": "26f64a5d-80c2-381d-a4ed-303568615e02",
+                "macro_uuid": "be705e0c-8cd1-3e35-b6ed-33fe4400d4d7"
+            }
+        ],
+        "correct_num_macro": 7,
+        "total_num_macro": 66,
+        "accuracy_macro": 0.10606060606060606
+    }
+}

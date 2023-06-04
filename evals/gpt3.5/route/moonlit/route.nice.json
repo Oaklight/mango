@@ -1,0 +1,797 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 4,
+        "total_num": 15,
+        "accuracy": 0.26666666666666666,
+        "collection": {
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-30_794.json": {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Undying Garden",
+                "dst_requested": "undying garden (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), undying garden (obj102)",
+                "micro_uuid": "39f60272-68d2-3712-a55b-d0ad470c7f1f",
+                "macro_uuid": "3c74a3f0-2576-3b9b-9910-1faaa8bd4fb7"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-53_704.json": {
+                "verify_result": false,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "up",
+                    "north"
+                ],
+                "dst_gpt": "undying garden (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: undying garden (obj102), hall of hawks (obj155)",
+                "micro_uuid": "f9fae009-dd21-310f-aab2-eff9219eb8f6",
+                "macro_uuid": "60f39eea-9a4f-3e31-9961-ad58afcfc13e"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-29_592.json": {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Undying Garden",
+                "dst_requested": "undying garden (obj102)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), undying garden (obj102)",
+                "micro_uuid": "8d18a61d-59c9-3f57-bab6-7f540a573427",
+                "macro_uuid": "4f03ef08-8b00-3414-a82a-25142a0a4b82"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-49_477.json": {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), skeletal banquet (obj143)",
+                "micro_uuid": "e4493411-78b0-367c-8c1f-7d3236a1132d",
+                "macro_uuid": "1ffa09be-9f38-349c-a88a-960a31648e90"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-49_411.json": {
+                "verify_result": true,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c079466b-93b8-383d-b582-50c193c51880",
+                "macro_uuid": "310a41c5-4cad-37bc-ac2f-9aa5386d83aa"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-37-13_468.json": {
+                "verify_result": false,
+                "src_anno": "Skeletal Banquet",
+                "src_requested": "skeletal banquet (obj143)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "up",
+                    "north",
+                    "southwest"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "wrong path, fail to arrive at dst: skeletal banquet (obj143), passage of storms (obj160)",
+                "micro_uuid": "bacd1da9-d9f6-3e4e-a6dc-637aa28dcde5",
+                "macro_uuid": "637c795d-a821-3703-8d07-d51d63c44f61"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-56_839.json": {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "up",
+                    "north",
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), passage of storms (obj160)",
+                "micro_uuid": "da026b2e-9444-3725-a3bf-32312119a364",
+                "macro_uuid": "67b11dce-ff70-352f-a36c-4d460be0ceac"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-37-10_142.json": {
+                "verify_result": false,
+                "src_anno": "Skeletal Banquet",
+                "src_requested": "skeletal banquet (obj143)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "6067692e-05ac-30ad-b67f-74867524ed70",
+                "macro_uuid": "0032c0f7-94cf-3516-8bc2-7986a3b61e34"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-32_472.json": {
+                "verify_result": true,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "down",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "eecbbe5c-a5e6-347e-93ce-42b1f15c51eb",
+                "macro_uuid": "e7b67c1a-2c4a-36ea-b0b4-6f609e1d3931"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-29_174.json": {
+                "verify_result": true,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Shadow Armory",
+                "dst_requested": "shadow armory (obj91)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "down"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f4cdbf8e-ed6c-3808-baf5-a0bb1a90dd6c",
+                "macro_uuid": "e2167194-25ed-3554-b59f-46e9f1de1661"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-34_867.json": {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), passage of storms (obj160)",
+                "micro_uuid": "f1f98e4f-6f2a-3455-941d-1fe2497a39d6",
+                "macro_uuid": "59d76f88-6b5d-3354-8f85-8cd4c26083dd"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-48_679.json": {
+                "verify_result": false,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "ec5a1214-dcd4-30c0-a0cf-2e91c0241b70",
+                "macro_uuid": "a4c3fe57-820f-3d93-8b6f-49cb0c97d544"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-37-18_646.json": {
+                "verify_result": true,
+                "src_anno": "Hall of Hawks",
+                "src_requested": "hall of hawks (obj155)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "up",
+                    "down",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "passage of storms (obj160)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "57f0b2ad-b86e-374a-9eb7-a5ec99f9d545",
+                "macro_uuid": "1580c51e-300a-38dd-aac2-ece11297e7a3"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-36-51_518.json": {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), hall of hawks (obj155)",
+                "micro_uuid": "a23204b0-6637-39e7-924e-ba5bcc617427",
+                "macro_uuid": "0dd15fb1-ea48-3d8a-b7ca-1c199b10b0b9"
+            },
+            "../gpt-games-results//moonlit/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-37-05_663.json": {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "down",
+                    "north",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "wrong path, fail to arrive at dst: skeletal banquet (obj143), hall of hawks (obj155)",
+                "micro_uuid": "895777c7-74f3-3a36-9f78-3ac1d0857626",
+                "macro_uuid": "bc8fd279-f27b-34c6-bd91-016d214b5512"
+            }
+        },
+        "random_guess_rate": 0.010668529766830817,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Undying Garden",
+                "dst_requested": "undying garden (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), undying garden (obj102)",
+                "micro_uuid": "39f60272-68d2-3712-a55b-d0ad470c7f1f",
+                "macro_uuid": "3c74a3f0-2576-3b9b-9910-1faaa8bd4fb7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "up",
+                    "north"
+                ],
+                "dst_gpt": "undying garden (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: undying garden (obj102), hall of hawks (obj155)",
+                "micro_uuid": "f9fae009-dd21-310f-aab2-eff9219eb8f6",
+                "macro_uuid": "60f39eea-9a4f-3e31-9961-ad58afcfc13e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Undying Garden",
+                "dst_requested": "undying garden (obj102)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), undying garden (obj102)",
+                "micro_uuid": "8d18a61d-59c9-3f57-bab6-7f540a573427",
+                "macro_uuid": "4f03ef08-8b00-3414-a82a-25142a0a4b82"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), skeletal banquet (obj143)",
+                "micro_uuid": "e4493411-78b0-367c-8c1f-7d3236a1132d",
+                "macro_uuid": "1ffa09be-9f38-349c-a88a-960a31648e90"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c079466b-93b8-383d-b582-50c193c51880",
+                "macro_uuid": "310a41c5-4cad-37bc-ac2f-9aa5386d83aa"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Skeletal Banquet",
+                "src_requested": "skeletal banquet (obj143)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "up",
+                    "north",
+                    "southwest"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "wrong path, fail to arrive at dst: skeletal banquet (obj143), passage of storms (obj160)",
+                "micro_uuid": "bacd1da9-d9f6-3e4e-a6dc-637aa28dcde5",
+                "macro_uuid": "637c795d-a821-3703-8d07-d51d63c44f61"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "up",
+                    "north",
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), passage of storms (obj160)",
+                "micro_uuid": "da026b2e-9444-3725-a3bf-32312119a364",
+                "macro_uuid": "67b11dce-ff70-352f-a36c-4d460be0ceac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Skeletal Banquet",
+                "src_requested": "skeletal banquet (obj143)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "6067692e-05ac-30ad-b67f-74867524ed70",
+                "macro_uuid": "0032c0f7-94cf-3516-8bc2-7986a3b61e34"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "down",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "eecbbe5c-a5e6-347e-93ce-42b1f15c51eb",
+                "macro_uuid": "e7b67c1a-2c4a-36ea-b0b4-6f609e1d3931"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Shadow Armory",
+                "dst_requested": "shadow armory (obj91)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "down"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f4cdbf8e-ed6c-3808-baf5-a0bb1a90dd6c",
+                "macro_uuid": "e2167194-25ed-3554-b59f-46e9f1de1661"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), passage of storms (obj160)",
+                "micro_uuid": "f1f98e4f-6f2a-3455-941d-1fe2497a39d6",
+                "macro_uuid": "59d76f88-6b5d-3354-8f85-8cd4c26083dd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "ec5a1214-dcd4-30c0-a0cf-2e91c0241b70",
+                "macro_uuid": "a4c3fe57-820f-3d93-8b6f-49cb0c97d544"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hall of Hawks",
+                "src_requested": "hall of hawks (obj155)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "up",
+                    "down",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "passage of storms (obj160)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "57f0b2ad-b86e-374a-9eb7-a5ec99f9d545",
+                "macro_uuid": "1580c51e-300a-38dd-aac2-ece11297e7a3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), hall of hawks (obj155)",
+                "micro_uuid": "a23204b0-6637-39e7-924e-ba5bcc617427",
+                "macro_uuid": "0dd15fb1-ea48-3d8a-b7ca-1c199b10b0b9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "down",
+                    "north",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "wrong path, fail to arrive at dst: skeletal banquet (obj143), hall of hawks (obj155)",
+                "micro_uuid": "895777c7-74f3-3a36-9f78-3ac1d0857626",
+                "macro_uuid": "bc8fd279-f27b-34c6-bd91-016d214b5512"
+            }
+        ],
+        "correct_num_micro": 4,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.26666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Undying Garden",
+                "dst_requested": "undying garden (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), undying garden (obj102)",
+                "micro_uuid": "39f60272-68d2-3712-a55b-d0ad470c7f1f",
+                "macro_uuid": "3c74a3f0-2576-3b9b-9910-1faaa8bd4fb7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "up",
+                    "north"
+                ],
+                "dst_gpt": "undying garden (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: undying garden (obj102), hall of hawks (obj155)",
+                "micro_uuid": "f9fae009-dd21-310f-aab2-eff9219eb8f6",
+                "macro_uuid": "60f39eea-9a4f-3e31-9961-ad58afcfc13e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Undying Garden",
+                "dst_requested": "undying garden (obj102)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), undying garden (obj102)",
+                "micro_uuid": "8d18a61d-59c9-3f57-bab6-7f540a573427",
+                "macro_uuid": "4f03ef08-8b00-3414-a82a-25142a0a4b82"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), skeletal banquet (obj143)",
+                "micro_uuid": "e4493411-78b0-367c-8c1f-7d3236a1132d",
+                "macro_uuid": "1ffa09be-9f38-349c-a88a-960a31648e90"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c079466b-93b8-383d-b582-50c193c51880",
+                "macro_uuid": "310a41c5-4cad-37bc-ac2f-9aa5386d83aa"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Skeletal Banquet",
+                "src_requested": "skeletal banquet (obj143)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "up",
+                    "north",
+                    "southwest"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "wrong path, fail to arrive at dst: skeletal banquet (obj143), passage of storms (obj160)",
+                "micro_uuid": "bacd1da9-d9f6-3e4e-a6dc-637aa28dcde5",
+                "macro_uuid": "637c795d-a821-3703-8d07-d51d63c44f61"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "up",
+                    "north",
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), passage of storms (obj160)",
+                "micro_uuid": "da026b2e-9444-3725-a3bf-32312119a364",
+                "macro_uuid": "67b11dce-ff70-352f-a36c-4d460be0ceac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Skeletal Banquet",
+                "src_requested": "skeletal banquet (obj143)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "6067692e-05ac-30ad-b67f-74867524ed70",
+                "macro_uuid": "0032c0f7-94cf-3516-8bc2-7986a3b61e34"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Skeletal Banquet",
+                "dst_requested": "skeletal banquet (obj143)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "down",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "eecbbe5c-a5e6-347e-93ce-42b1f15c51eb",
+                "macro_uuid": "e7b67c1a-2c4a-36ea-b0b4-6f609e1d3931"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Shadow Armory",
+                "dst_requested": "shadow armory (obj91)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "down"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f4cdbf8e-ed6c-3808-baf5-a0bb1a90dd6c",
+                "macro_uuid": "e2167194-25ed-3554-b59f-46e9f1de1661"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "moonlit chamber (obj82)",
+                "verify_msg": "wrong path, fail to arrive at dst: moonlit chamber (obj82), passage of storms (obj160)",
+                "micro_uuid": "f1f98e4f-6f2a-3455-941d-1fe2497a39d6",
+                "macro_uuid": "59d76f88-6b5d-3354-8f85-8cd4c26083dd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Undying Garden",
+                "src_requested": "undying garden (obj102)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "ec5a1214-dcd4-30c0-a0cf-2e91c0241b70",
+                "macro_uuid": "a4c3fe57-820f-3d93-8b6f-49cb0c97d544"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hall of Hawks",
+                "src_requested": "hall of hawks (obj155)",
+                "dst_anno": "Passage of Storms",
+                "dst_requested": "passage of storms (obj160)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "up",
+                    "down",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "passage of storms (obj160)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "57f0b2ad-b86e-374a-9eb7-a5ec99f9d545",
+                "macro_uuid": "1580c51e-300a-38dd-aac2-ece11297e7a3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Shadow Armory",
+                "src_requested": "shadow armory (obj91)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "shadow armory (obj91)",
+                "verify_msg": "wrong path, fail to arrive at dst: shadow armory (obj91), hall of hawks (obj155)",
+                "micro_uuid": "a23204b0-6637-39e7-924e-ba5bcc617427",
+                "macro_uuid": "0dd15fb1-ea48-3d8a-b7ca-1c199b10b0b9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Moonlit Chamber",
+                "src_requested": "moonlit chamber (obj82)",
+                "dst_anno": "Hall of Hawks",
+                "dst_requested": "hall of hawks (obj155)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "down",
+                    "north",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "skeletal banquet (obj143)",
+                "verify_msg": "wrong path, fail to arrive at dst: skeletal banquet (obj143), hall of hawks (obj155)",
+                "micro_uuid": "895777c7-74f3-3a36-9f78-3ac1d0857626",
+                "macro_uuid": "bc8fd279-f27b-34c6-bd91-016d214b5512"
+            }
+        ],
+        "correct_num_macro": 4,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.26666666666666666
+    }
+}
