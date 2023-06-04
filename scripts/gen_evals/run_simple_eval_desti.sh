@@ -22,10 +22,10 @@ then
     for game in $games
     do
         # run eval on all games
-        python src/gen_evals/$model_name.eval_df_simple.py -r $path_to_model_results/$game/results/ --simple -odir ./evals/$model_name -g $game
+        python src/gen_evals/$model_name.eval_desti.nice.py -r $path_to_model_results/$game/results/ --simple -odir ./evals/$model_name -g $game
     done
 else
     # run eval on specific game
-    python src/gen_evals/$model_name.eval_df_simple.py -r $path_to_model_results/$game/results/ --simple -odir ./evals/$model_name -g $game
+    python src/gen_evals/$model_name.eval_desti.nice.py -r $path_to_model_results/$game/results/ --simple -odir ./evals/$model_name -g $game
 fi
 
