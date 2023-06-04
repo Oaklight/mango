@@ -319,7 +319,7 @@ if __name__ == "__main__":
             )
             # fix x range
             plt.xlim(0, 30)
-            plt.title(f"diff_shortest distribution of {tgt_file} added")
+            plt.title(f"diff_shortest distribution of all2all added")
             plt.xlabel("diff_shortest")
             plt.ylabel("count")
             plt.subplot(1, 2, 2)
@@ -330,10 +330,10 @@ if __name__ == "__main__":
                 width=0.5,
             )
             plt.xlim(0, 30)
-            plt.title(f"step_count distribution of {tgt_file} added")
+            plt.title(f"step_count distribution of all2all added")
             plt.xlabel("step_count")
             plt.ylabel("count")
-            plt.savefig(f"{diff_data_path}/{each}_{tgt_file}_diff_add_stats.png")
+            plt.savefig(f"{diff_data_path}/{each}_all2all_diff_add_stats.png")
             plt.close()
 
             # plot distribution histogram of step_count
@@ -346,7 +346,7 @@ if __name__ == "__main__":
                 width=0.5,
             )
             plt.xlim(0, 30)
-            plt.title(f"diff_shortest distribution of {tgt_file} dropped")
+            plt.title(f"diff_shortest distribution of all2all dropped")
             plt.xlabel("diff_shortest")
             plt.ylabel("count")
             plt.subplot(1, 2, 2)
@@ -357,10 +357,10 @@ if __name__ == "__main__":
                 width=0.5,
             )
             plt.xlim(0, 30)
-            plt.title(f"step_count distribution of {tgt_file} dropped")
+            plt.title(f"step_count distribution of all2all dropped")
             plt.xlabel("step_count")
             plt.ylabel("count")
-            plt.savefig(f"{diff_data_path}/{each}_{tgt_file}_diff_drop_stats.png")
+            plt.savefig(f"{diff_data_path}/{each}_all2all_diff_drop_stats.png")
             plt.close()
 
     # drop a csv file to record the numbers
