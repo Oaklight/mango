@@ -46,6 +46,9 @@ if __name__ == "__main__":
         shortest_path = get_shortest_path(g, src=src_node, dst=dst_node)
         shortest_path_json = get_path_json(g, shortest_path)
 
+        print(f"Shortest path from [{src_node}] to [{dst_node}] is:")
+        print(shortest_path)
+
         # TODO: use dumped json to print only the actions
         with open("shortest.json", "w") as f:
             json.dump(shortest_path_json, f, indent=4)

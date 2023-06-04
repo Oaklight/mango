@@ -45,7 +45,11 @@ if __name__ == "__main__":
         # all path test
         all_paths = get_all_paths(g, src=src_node, dst=dst_node)
         all_paths_json = get_all_paths_json(g, all_paths, diff_shortest=True)
-        
+
+        print(f"All paths from [{src_node}] to [{dst_node}] are:")
+        for i, each in enumerate(all_paths):
+            print(f"Path {i+1}: {each}")
+
         # TODO: use dumped json to print only the actions
         with open("all2all.json", "w") as f:
             json.dump(all_paths_json, f, indent=4)
