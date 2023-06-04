@@ -8,7 +8,7 @@ import numpy as np
 from colors import COLOR_MAP
 
 
-def random_guess_rate(all2all, code2anno):
+def random_guess_rate(all2all, anno2code):
     """
     for stepnav, random guess correctness rate is 1/num_locations
     for pathgen, random guess correctness rate is (1/{num_actions + stop})^avg_path_len
@@ -19,7 +19,7 @@ def random_guess_rate(all2all, code2anno):
         total_steps += int(each["step_count"])
     avg_entries = total_steps / total_entries
 
-    total_locs = len(code2anno.keys())
+    total_locs = len(anno2code.keys())
 
     stepnav_random_guess_rate = 1.0 / total_locs
     pathgen_random_guess_rate = math.pow(1.0 / (total_locs + 1), avg_entries)
@@ -40,10 +40,10 @@ random_scores = []
 # get number of entry in each game folder
 for game_name in game_names:
     all2all_path = f"./data/maps-release/{game_name}/{game_name}.all2all.json"
-    code2anno_path = f"./data/maps-release/{game_name}/{game_name}.code2anno.json"
+    anno2code_path = f"./data/maps-release/{game_name}/{game_name}.anno2code.json"
     all2all = json.load(open(all2all_path))
-    code2anno = json.load(open(code2anno_path))
-    random_rate = random_guess_rate(all2all, code2anno)
+    anno2code = json.load(open(anno2code_path))
+    random_rate = random_guess_rate(all2all, anno2code)
     # json load the file and count entry number
     random_scores.append(random_rate[1])  # route finding is pathgen
 
