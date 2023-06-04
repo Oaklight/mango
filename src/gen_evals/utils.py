@@ -90,9 +90,9 @@ def compute_json_uuid(gpt_json, level="micro"):
     path_gt = gpt_json_dict["path_gt"]
     question = gpt_json_dict["question"]
     if level == "micro":
-        str_pack = f"{src_node}_{dst_node}_{task}_{path_gt}_{question}"
+        str_pack = f"{src_node}_{dst_node}_{task}_{path_gt}"
     elif level == "macro":
-        str_pack = f"{src_node}_{dst_node}_{task}_{question}"
+        str_pack = f"{src_node}_{dst_node}_{task}"
     else:
         raise ValueError(f"level {level} not supported")
     uuid_value = uuid.uuid3(uuid.NAMESPACE_DNS, str_pack)
