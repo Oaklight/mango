@@ -56,6 +56,8 @@ function generate_for_game {
                     rm $code2anno
                 fi
             fi
+            # extract nodes' first appearance step info when everything ready
+            python ./src/gen_moves/gen_node_step_map.py -m $path -g $game_tgt
         fi
     fi
 }
