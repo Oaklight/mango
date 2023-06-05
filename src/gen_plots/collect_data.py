@@ -50,12 +50,16 @@ def collect_data(eval_dir, temp_dir):
 
         task_names = os.listdir(model_path)
         for task_name in task_names:
+            avg_acc_nice = 0
+            avg_acc_harsh = 0
+
             task_path = f"{model_path}/{task_name}"
             assert os.path.exists(
                 task_path
             ), f"task folder does not exist!: {task_path}"
 
             game_names = os.listdir(task_path)
+            print(f"found {len(game_names)} games in {task_name}")
             for game_name in game_names:
                 game_path = f"{task_path}/{game_name}"
                 assert os.path.exists(
@@ -84,18 +88,18 @@ def collect_data(eval_dir, temp_dir):
                 harsh = harsh[list(harsh.keys())[0]]
 
                 if "desti" in task_name:
-                    # read "accuracy_micro" from nice and harsh
                     nice_acc = nice["accuracy_micro"]
                     harsh_acc = harsh["accuracy_micro"]
+                    # read "accuracy_micro" from nice and harsh
                     # add to game_acc
                     if game_name not in game_acc_desti:
                         game_acc_desti[game_name] = {}
                     game_acc_desti[game_name]["nice"] = nice_acc
                     game_acc_desti[game_name]["harsh"] = harsh_acc
                 elif "route" in task_name:
+                    nice_acc = nice["accuracy_macro"]
+                    harsh_acc = harsh["accuracy_macro"]
                     # read "accuracy_micro" from nice and harsh
-                    nice_acc = nice["accuracy_micro"]
-                    harsh_acc = harsh["accuracy_micro"]
                     # add to game_acc
                     if game_name not in game_acc_route:
                         game_acc_route[game_name] = {}
@@ -103,6 +107,17 @@ def collect_data(eval_dir, temp_dir):
                     game_acc_route[game_name]["harsh"] = harsh_acc
                 else:
                     raise ValueError("task name is not valid!")
+                avg_acc_nice += nice_acc
+                avg_acc_harsh += harsh_acc
+
+            # add field of avg acc of nice and hash
+            if "desti" in task_name:
+                game_acc_desti["avg_nice"] = avg_acc_nice / len(game_names)
+                game_acc_desti["avg_harsh"] = avg_acc_harsh / len(game_names)
+
+            elif "route" in task_name:
+                game_acc_route["avg_nice"] = avg_acc_nice / len(game_names)
+                game_acc_route["avg_harsh"] = avg_acc_harsh / len(game_names)
 
             # dump game_acc to json file
             json.dump(
