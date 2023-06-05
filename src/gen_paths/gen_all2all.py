@@ -48,15 +48,19 @@ if __name__ == "__main__":
     for src_node, dst_node in all_pairs:
         print(f"Generating paths from {src_node} to {dst_node}...")
         allPaths = get_all_paths(g, src=src_node, dst=dst_node)
-        all_paths_json += get_all_paths_json(
+        current_all_paths_json = get_all_paths_json(
             g, allPaths, diff_shortest=True, node_step_map=node_step_map
         )
+        all_paths_json += current_all_paths_json
 
         all_pairs_dict.append(
             {
                 "src_node": src_node,
                 "dst_node": dst_node,
                 "num_paths": len(allPaths),
+                "path_min_cutoffs": [
+                    path["path_min_cutoff"] for path in current_all_paths_json
+                ],
             }
         )
 
