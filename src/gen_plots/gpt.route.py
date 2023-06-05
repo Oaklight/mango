@@ -62,22 +62,22 @@ bar_width = 5
 space_btw_bar = 1
 
 # Set the positions of the bars on the x-axis
-r1 = np.arange(len(game_names)) * 20
-r2 = [x + (bar_width + space_btw_bar) for x in r1]
-r3 = [x - (bar_width + space_btw_bar) for x in r1]
+r2 = np.arange(len(game_names)) * 20
+r1 = [x + (bar_width + space_btw_bar) for x in r2]
+r3 = [x - (bar_width + space_btw_bar) for x in r2]
 
 # Make the plot
 plt.barh(
-    r1,
+    r1, random_scores, height=bar_width, label="random guess", color=COLOR_MAP["random"]
+)
+plt.barh(
+    r2,
     model1_scores,
     height=bar_width,
     label="GPT-3.5-turbo",
     color=COLOR_MAP["gpt3.5"],
 )
-plt.barh(r2, model2_scores, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
-plt.barh(
-    r3, random_scores, height=bar_width, label="random guess", color=COLOR_MAP["random"]
-)
+plt.barh(r3, model2_scores, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
 
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r1)

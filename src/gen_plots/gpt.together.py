@@ -66,43 +66,43 @@ bar_width = 5
 space_btw_bar = 1
 
 # Set the positions of the bars on the x-axis
-r1 = np.arange(len(game_names)) * 20
-r2 = [x + (bar_width + space_btw_bar) for x in r1]
-r3 = [x - (bar_width + space_btw_bar) for x in r1]
+r2 = np.arange(len(game_names)) * 20
+r1 = [x + (bar_width + space_btw_bar) for x in r2]
+r3 = [x - (bar_width + space_btw_bar) for x in r2]
 
 # Plot the scores for DF - Model 1, Model 2, and Random
 ax1.barh(
     r1,
-    model1_scores_DF,
-    height=bar_width,
-    label="GPT-3.5-turbo",
-    color=COLOR_MAP["gpt3.5"],
-)
-ax1.barh(r2, model2_scores_DF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
-ax1.barh(
-    r3,
     random_scores_DF,
     height=bar_width,
     label="random guess",
     color=COLOR_MAP["random"],
 )
-
-# Plot the scores for RF - Model 1, Model 2, and Random
-ax2.barh(
-    r1,
-    model1_scores_RF,
+ax1.barh(
+    r2,
+    model1_scores_DF,
     height=bar_width,
     label="GPT-3.5-turbo",
     color=COLOR_MAP["gpt3.5"],
 )
-ax2.barh(r2, model2_scores_RF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
+ax1.barh(r3, model2_scores_DF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
+
+# Plot the scores for RF - Model 1, Model 2, and Random
 ax2.barh(
-    r3,
+    r1,
     random_scores_RF,
     height=bar_width,
     label="random guess",
     color=COLOR_MAP["random"],
 )
+ax2.barh(
+    r2,
+    model1_scores_RF,
+    height=bar_width,
+    label="GPT-3.5-turbo",
+    color=COLOR_MAP["gpt3.5"],
+)
+ax2.barh(r3, model2_scores_RF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
 
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r1)
