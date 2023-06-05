@@ -37,7 +37,7 @@ print(len(game_names))
 
 # random scores
 np.random.seed(25)
-random_scores = []
+random_scores = {}
 
 # get number of entry in each game folder
 for game_name in game_names:
@@ -45,14 +45,39 @@ for game_name in game_names:
     anno2code_path = f"./data/maps-release/{game_name}/{game_name}.anno2code.json"
     all2all = json.load(open(all2all_path))
     anno2code = json.load(open(anno2code_path))
-    random_rate = random_guess_rate(all2all, anno2code)
+    random_desti, random_route = random_guess_rate(all2all, anno2code)
     # json load the file and count entry number
-    random_scores.append(random_rate[1])  # route finding is pathgen
+    random_scores[game_name] = random_route
 
 
-model1_scores = np.random.uniform(0.3, 1, num_games)
-model2_scores = np.random.uniform(0.3, 1, num_games)
+model1_scores = np.random.uniform(0.3, 1, num_games)  # fake data for gpt3.5
+model2_scores = np.random.uniform(0.3, 1, num_games)  # fake data for gpt4
+# update these to a dict like random_scores
+model1_scores = {k: model1_scores[i] for i, k in enumerate(game_names)}
+model2_scores = {k: model2_scores[i] for i, k in enumerate(game_names)}
 
+# load real data from ./data/{model}
+model1_real_path = "./src/gen_plots/data/gpt3.5/route.json"
+model2_real_path = "./src/gen_plots/data/gpt4/route.json"
+model1_real = json.load(open(model1_real_path))
+model2_real = json.load(open(model2_real_path))
+# "905": {
+#     "desti_harsh": 1.0,
+#     "desti_nice": 1.0,
+#     "route_harsh": 1.0,
+#     "route_nice": 1.0
+# },
+# replace fake data with real data, use nice version, skip if game name missed
+for game_name in game_names:
+    if game_name in model1_real:
+        model1_scores[game_name] = model1_real[game_name]["nice"]
+    if game_name in model2_real:
+        model2_scores[game_name] = model2_real[game_name]["nice"]
+
+# skip games that are not in the real data by edit the game_names list
+game_names = [
+    each for each in game_names if each in model1_real and each in model2_real
+]
 
 # ============== following is the plotting part ==============
 
@@ -70,16 +95,26 @@ r3 = [x - (bar_width + space_btw_bar) for x in r2]
 
 # Make the plot
 plt.barh(
-    r1, random_scores, height=bar_width, label="random guess", color=COLOR_MAP["random"]
+    r1,
+    [random_scores[each] for each in game_names],
+    height=bar_width,
+    label="random guess",
+    color=COLOR_MAP["random"],
 )
 plt.barh(
     r2,
-    model1_scores,
+    [model1_scores[each] for each in game_names],
     height=bar_width,
     label="GPT-3.5-turbo",
     color=COLOR_MAP["gpt3.5"],
 )
-plt.barh(r3, model2_scores, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
+plt.barh(
+    r3,
+    [model2_scores[each] for each in game_names],
+    height=bar_width,
+    label="GPT-4",
+    color=COLOR_MAP["gpt4"],
+)
 
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r1)

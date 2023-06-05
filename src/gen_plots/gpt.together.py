@@ -36,8 +36,8 @@ print(len(game_names))
 
 # Generate dummy random scores for each model and task
 np.random.seed(25)
-random_scores_DF = []
-random_scores_RF = []
+random_scores_DF = {}
+random_scores_RF = {}
 
 # get number of entry in each game folder
 for game_name in game_names:
@@ -45,17 +45,48 @@ for game_name in game_names:
     anno2code_path = f"./data/maps-release/{game_name}/{game_name}.anno2code.json"
     all2all = json.load(open(all2all_path))
     anno2code = json.load(open(anno2code_path))
-    random_DF, random_RF = random_guess_rate(all2all, anno2code)
+    random_desti, random_route = random_guess_rate(all2all, anno2code)
     # json load the file and count entry number
-    random_scores_DF.append(random_DF)  # destination finding is stepnav
-    random_scores_RF.append(random_RF)  # route finding is pathgen
+    random_scores_DF[game_name] = random_desti
+    random_scores_RF[game_name] = random_route
 
 
 model1_scores_DF = np.random.uniform(0.3, 1, num_games)
 model2_scores_DF = np.random.uniform(0.3, 1, num_games)
 model1_scores_RF = np.random.uniform(0.3, 1, num_games)
 model2_scores_RF = np.random.uniform(0.3, 1, num_games)
+model1_scores_DF = {k: model1_scores_DF[i] for i, k in enumerate(game_names)}
+model2_scores_DF = {k: model2_scores_DF[i] for i, k in enumerate(game_names)}
+model1_scores_RF = {k: model1_scores_RF[i] for i, k in enumerate(game_names)}
+model2_scores_RF = {k: model2_scores_RF[i] for i, k in enumerate(game_names)}
 
+# load real data from ./data/{model}
+model1_real_path_route = "./src/gen_plots/data/gpt3.5/route.json"
+model2_real_path_route = "./src/gen_plots/data/gpt4/route.json"
+model1_real_path_desti = "./src/gen_plots/data/gpt3.5/desti.json"
+model2_real_path_desti = "./src/gen_plots/data/gpt4/desti.json"
+model1_real_route = json.load(open(model1_real_path_route))
+model2_real_route = json.load(open(model2_real_path_route))
+model1_real_desti = json.load(open(model1_real_path_desti))
+model2_real_desti = json.load(open(model2_real_path_desti))
+# "905": {
+#     "desti_harsh": 1.0,
+#     "desti_nice": 1.0,
+#     "route_harsh": 1.0,
+#     "route_nice": 1.0
+# },
+# replace fake data with real data, use nice version, skip if game name missed
+for game_name in game_names:
+    # route
+    if game_name in model1_real_route:
+        model1_scores_RF[game_name] = model1_real_route[game_name]["nice"]
+    if game_name in model2_real_route:
+        model2_scores_RF[game_name] = model2_real_route[game_name]["nice"]
+    # desti
+    if game_name in model1_real_desti:
+        model1_scores_DF[game_name] = model1_real_desti[game_name]["nice"]
+    if game_name in model2_real_desti:
+        model2_scores_DF[game_name] = model2_real_desti[game_name]["nice"]
 
 # ============== following is the plotting part ==============
 
@@ -75,36 +106,48 @@ r3 = [x - (bar_width + space_btw_bar) for x in r2]
 # Plot the scores for DF - Model 1, Model 2, and Random
 ax1.barh(
     r1,
-    random_scores_DF,
+    [random_scores_DF[each] for each in game_names],
     height=bar_width,
     label="random guess",
     color=COLOR_MAP["random"],
 )
 ax1.barh(
     r2,
-    model1_scores_DF,
+    [model1_scores_DF[each] for each in game_names],
     height=bar_width,
     label="GPT-3.5-turbo",
     color=COLOR_MAP["gpt3.5"],
 )
-ax1.barh(r3, model2_scores_DF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
+ax1.barh(
+    r3,
+    [model2_scores_DF[each] for each in game_names],
+    height=bar_width,
+    label="GPT-4",
+    color=COLOR_MAP["gpt4"],
+)
 
 # Plot the scores for RF - Model 1, Model 2, and Random
 ax2.barh(
     r1,
-    random_scores_RF,
+    [random_scores_RF[each] for each in game_names],
     height=bar_width,
     label="random guess",
     color=COLOR_MAP["random"],
 )
 ax2.barh(
     r2,
-    model1_scores_RF,
+    [model1_scores_RF[each] for each in game_names],
     height=bar_width,
     label="GPT-3.5-turbo",
     color=COLOR_MAP["gpt3.5"],
 )
-ax2.barh(r3, model2_scores_RF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
+ax2.barh(
+    r3,
+    [model2_scores_RF[each] for each in game_names],
+    height=bar_width,
+    label="GPT-4",
+    color=COLOR_MAP["gpt4"],
+)
 
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r2)
