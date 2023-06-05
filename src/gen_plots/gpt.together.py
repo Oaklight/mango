@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from colors import COLOR_MAP
 
+GLOBAL_FONTSIZE = 13
+
 
 def random_guess_rate(all2all, anno2code):
     """
@@ -62,11 +64,11 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 20), sharey=True)
 plt.tight_layout()
 
 # Calculate the width for each bar group
-bar_width = 5
+bar_width = 6
 space_btw_bar = 1
 
 # Set the positions of the bars on the x-axis
-r2 = np.arange(len(game_names)) * 20
+r2 = np.arange(len(game_names)) * 30
 r1 = [x + (bar_width + space_btw_bar) for x in r2]
 r3 = [x - (bar_width + space_btw_bar) for x in r2]
 
@@ -105,22 +107,30 @@ ax2.barh(
 ax2.barh(r3, model2_scores_RF, height=bar_width, label="GPT-4", color=COLOR_MAP["gpt4"])
 
 # Set the y-axis labels as test names
-whitespace = 0.02 * max(r1)
+whitespace = 0.02 * max(r2)
 ax1.set_ylim(
-    -whitespace, max(r1) + 2.5 * whitespace
+    -whitespace, max(r2) + 2.5 * whitespace
 )  # Adjust the y-axis limits as needed
-ax1.set_yticks(r1, game_names)
+ax1.set_yticks(r2, game_names, fontsize=GLOBAL_FONTSIZE, ha="left")
 ax1.yaxis.tick_right()
 
 # Set the x-axis labels
-ax1.set_xlabel("accuracy of destination finding")
-ax2.set_xlabel("accuracy of route finding")
+ax1.set_xlabel("accuracy of destination finding", fontsize=GLOBAL_FONTSIZE)
+ax2.set_xlabel("accuracy of route finding", fontsize=GLOBAL_FONTSIZE)
 
 # Set the x-axis limits
 ax1.set_xlim(1.1, 0)  # Set the x-axis range for DF
 ax2.set_xlim(0, 1.1)  # Set the x-axis range for RF
-ax1.set_xticks([0, 0.25, 0.5, 0.75, 1.0], ["0%", "25%", "50%", "75%", "100%"])
-ax2.set_xticks([0, 0.25, 0.5, 0.75, 1.0], ["0%", "25%", "50%", "75%", "100%"])
+ax1.set_xticks(
+    [0, 0.25, 0.5, 0.75, 1.0],
+    ["0%", "25%", "50%", "75%", "100%"],
+    fontsize=GLOBAL_FONTSIZE,
+)
+ax2.set_xticks(
+    [0, 0.25, 0.5, 0.75, 1.0],
+    ["0%", "25%", "50%", "75%", "100%"],
+    fontsize=GLOBAL_FONTSIZE,
+)
 
 # Add dotted lines at x=0.5 and x=1
 ax1.axvline(0.25, color="gray", linestyle="dotted")
@@ -150,11 +160,17 @@ for handle, label in zip(handles, labels):
         unique_labels.append(label)
         unique_handles.append(handle)
 
-fig.legend(unique_handles, unique_labels, loc="upper center", ncol=3, fontsize="large", bbox_to_anchor=(0.5, 0.99))
-
+fig.legend(
+    unique_handles,
+    unique_labels,
+    loc="upper center",
+    ncol=3,
+    fontsize="large",
+    bbox_to_anchor=(0.5, 0.99),
+)
 
 # Add extra space on the left and right sides of the plot
-plt.subplots_adjust(wspace=0.4)  # Adjust the value as needed
+plt.subplots_adjust(wspace=0.5)  # Adjust the value as needed
 
 # Save the plot as a PNG file
 png_path = "./evals/scoreboard_together.png"
