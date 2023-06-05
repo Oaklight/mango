@@ -63,7 +63,7 @@ def plot_for_task(model1_real_path, model2_real_path, task="desti"):
 
     # nice version
     plot_vs(
-        EVAL_DIR + f"/gpt35_vs_gpt4.{task}.nice.png",
+        EVAL_DIR + f"/gpt35_vs_gpt4_{task}_nice_png",
         GLOBAL_FONTSIZE,
         model1_nice_scores,
         model2_nice_scores,
@@ -71,7 +71,7 @@ def plot_for_task(model1_real_path, model2_real_path, task="desti"):
     )
     # harsh version
     plot_vs(
-        EVAL_DIR + f"/gpt35_vs_gpt4.{task}.harsh.png",
+        EVAL_DIR + f"/gpt35_vs_gpt4_{task}_harsh_png",
         GLOBAL_FONTSIZE,
         model1_harsh_scores,
         model2_harsh_scores,
