@@ -1,5 +1,7 @@
 # color print without extra library, in green
 import argparse
+import hashlib
+import json
 
 
 def print_green(text, inline=False):
@@ -128,3 +130,47 @@ def confirm_continue():
     else:
         print_color("Aborted!", "b")
         exit(1)
+
+
+def compute_hash(json_obj, mode="all2all"):
+    accept_modes = ["all2all", "allpairs", "path_details"]
+    assert mode in accept_modes, f"mode must be one of {accept_modes}"
+
+    # make deep copy of json_obj
+    # json_obj_copy = json_obj.copy() AttributeError: 'str' object has no attribute 'copy'
+    json_obj_copy = json.loads(json.dumps(json_obj))
+    delete_keys_all2all = [
+        "seen",
+        "seen_in_forward",
+        "step_min_cutoff",
+        "path_min_cutoff",
+        "all_steps_seen_in_forward",
+    ]
+    delete_keys_allpairs = ["num_paths", "path_min_cutoffs"]
+    # for key in delete_keys:
+    #     if key in json_obj_copy:
+    #         del json_obj_copy[key]
+    if mode == "all2all":
+        path_details = json_obj_copy["path_details"]
+        for i, entry in enumerate(path_details):
+            for key in delete_keys_all2all:
+                if key in entry:
+                    del entry[key]
+            path_details[i] = entry
+        json_obj_copy["path_details"] = path_details
+        for key in delete_keys_all2all:
+            if key in json_obj_copy:
+                del json_obj_copy[key]
+    elif mode == "all_pairs":
+        for key in delete_keys_allpairs:
+            if key in json_obj_copy:
+                del json_obj_copy[key]
+    elif mode == "path_details":
+        for key in delete_keys_all2all:
+            if key in json_obj_copy:
+                del json_obj_copy[key]
+
+    json_str = json.dumps(json_obj_copy, sort_keys=True)
+    # json_str = json_str.replace('"seen": true,', "")
+    hash_object = hashlib.md5(json_str.encode())
+    return hash_object.hexdigest()
