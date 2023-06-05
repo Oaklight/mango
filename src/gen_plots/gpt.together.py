@@ -51,10 +51,10 @@ for game_name in game_names:
     random_scores_RF[game_name] = random_route
 
 
-model1_scores_DF = np.random.uniform(0.3, 1, num_games)
-model2_scores_DF = np.random.uniform(0.3, 1, num_games)
-model1_scores_RF = np.random.uniform(0.3, 1, num_games)
-model2_scores_RF = np.random.uniform(0.3, 1, num_games)
+model1_scores_DF = np.zeros(num_games)
+model2_scores_DF = np.zeros(num_games)
+model1_scores_RF = np.zeros(num_games)
+model2_scores_RF = np.zeros(num_games)
 model1_scores_DF = {k: model1_scores_DF[i] for i, k in enumerate(game_names)}
 model2_scores_DF = {k: model2_scores_DF[i] for i, k in enumerate(game_names)}
 model1_scores_RF = {k: model1_scores_RF[i] for i, k in enumerate(game_names)}

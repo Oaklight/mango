@@ -50,8 +50,10 @@ for game_name in game_names:
     random_scores[game_name] = random_desti
 
 
-model1_scores = np.random.uniform(0.3, 1, num_games)  # fake data for gpt3.5
-model2_scores = np.random.uniform(0.3, 1, num_games)  # fake data for gpt4
+# generate zero array
+model1_scores = np.zeros(num_games)
+model2_scores = np.zeros(num_games)
+
 # update these to a dict like random_scores
 model1_scores = {k: model1_scores[i] for i, k in enumerate(game_names)}
 model2_scores = {k: model2_scores[i] for i, k in enumerate(game_names)}
@@ -72,10 +74,10 @@ for game_name in game_names:
     if game_name in model2_real:
         model2_scores[game_name] = model2_real[game_name]["nice"]
 
-# skip games that are not in the real data by edit the game_names list
-game_names = [
-    each for each in game_names if each in model1_real and each in model2_real
-]
+# # skip games that are not in the real data by edit the game_names list
+# game_names = [
+#     each for each in game_names if each in model1_real and each in model2_real
+# ]
 
 # ============== following is the plotting part ==============
 
