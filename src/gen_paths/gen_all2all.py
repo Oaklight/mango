@@ -28,6 +28,13 @@ if __name__ == "__main__":
 
     plot_graph(g)
 
+    # load node_step_map
+    node_step_map = None
+    if args.node_step_map:
+        with open(args.node_step_map, "r") as f:
+            node_step_map = json.load(f)
+            node_step_map = {k.lower(): int(v) for k, v in node_step_map.items()}
+
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
     # this has some issue: AB or BA will be included, not both
@@ -41,7 +48,9 @@ if __name__ == "__main__":
     for src_node, dst_node in all_pairs:
         print(f"Generating paths from {src_node} to {dst_node}...")
         allPaths = get_all_paths(g, src=src_node, dst=dst_node)
-        all_paths_json += get_all_paths_json(g, allPaths, diff_shortest=True)
+        all_paths_json += get_all_paths_json(
+            g, allPaths, diff_shortest=True, node_step_map=node_step_map
+        )
 
         all_pairs_dict.append(
             {
