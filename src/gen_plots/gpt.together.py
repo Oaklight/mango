@@ -38,6 +38,14 @@ print(len(game_names))
 np.random.seed(25)
 random_scores_DF = {}
 random_scores_RF = {}
+avg_acc_RF = {
+    "gpt3.5": 0.0,
+    "gpt4": 0.0,
+}
+avg_acc_DF = {
+    "gpt3.5": 0.0,
+    "gpt4": 0.0,
+}
 
 # get number of entry in each game folder
 for game_name in game_names:
@@ -69,14 +77,11 @@ model1_real_route = json.load(open(model1_real_path_route))
 model2_real_route = json.load(open(model2_real_path_route))
 model1_real_desti = json.load(open(model1_real_path_desti))
 model2_real_desti = json.load(open(model2_real_path_desti))
-# "905": {
-#     "desti_harsh": 1.0,
-#     "desti_nice": 1.0,
-#     "route_harsh": 1.0,
-#     "route_nice": 1.0
-# },
+
 # replace fake data with real data, use nice version, skip if game name missed
+presented_games = []
 for game_name in game_names:
+    presented_games.append(game_name)
     # route
     if game_name in model1_real_route:
         model1_scores_RF[game_name] = model1_real_route[game_name]["nice"]
@@ -87,6 +92,11 @@ for game_name in game_names:
         model1_scores_DF[game_name] = model1_real_desti[game_name]["nice"]
     if game_name in model2_real_desti:
         model2_scores_DF[game_name] = model2_real_desti[game_name]["nice"]
+
+avg_acc_RF["gpt3.5"] = model1_real_route['avg_nice']
+avg_acc_RF["gpt4"] = model2_real_route['avg_nice']
+avg_acc_DF["gpt3.5"] = model1_real_desti['avg_nice']
+avg_acc_DF["gpt4"] = model2_real_desti['avg_nice']
 
 # ============== following is the plotting part ==============
 
@@ -115,7 +125,7 @@ ax1.barh(
     r2,
     [model1_scores_DF[each] for each in game_names],
     height=bar_width,
-    label="GPT-3.5-turbo",
+    label="GPT-3.5",
     color=COLOR_MAP["gpt3.5"],
 )
 ax1.barh(
@@ -138,7 +148,7 @@ ax2.barh(
     r2,
     [model1_scores_RF[each] for each in game_names],
     height=bar_width,
-    label="GPT-3.5-turbo",
+    label="GPT-3.5",
     color=COLOR_MAP["gpt3.5"],
 )
 ax2.barh(
@@ -152,7 +162,7 @@ ax2.barh(
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r2)
 ax1.set_ylim(
-    -whitespace, max(r2) + 2.5 * whitespace
+    -whitespace, max(r2) + 3.5 * whitespace
 )  # Adjust the y-axis limits as needed
 ax1.set_yticks(r2, game_names, fontsize=GLOBAL_FONTSIZE, ha="left")
 ax1.yaxis.tick_right()
@@ -184,6 +194,32 @@ ax2.axvline(0.25, color="gray", linestyle="dotted")
 ax2.axvline(0.5, color="gray", linestyle="dotted")
 ax2.axvline(0.75, color="gray", linestyle="dotted")
 ax2.axvline(1, color="gray", linestyle="dotted")
+
+# plot avg accuracy for each model, using color of the model dotted
+ax1.axvline(
+    avg_acc_DF["gpt3.5"],
+    color=COLOR_MAP["gpt3.5"],
+    linestyle="dashed",
+    label="avg accuracy of GPT-3.5",
+)
+ax1.axvline(
+    avg_acc_DF["gpt4"],
+    color=COLOR_MAP["gpt4"],
+    linestyle="dashed",
+    label="avg accuracy of GPT-4",
+)
+ax2.axvline(
+    avg_acc_RF["gpt3.5"],
+    color=COLOR_MAP["gpt3.5"],
+    linestyle="dashed",
+    label="avg accuracy of GPT-3.5",
+)
+ax2.axvline(
+    avg_acc_RF["gpt4"],
+    color=COLOR_MAP["gpt4"],
+    linestyle="dashed",
+    label="avg accuracy of GPT-4",
+)
 
 # # Set the title for each subplot
 # ax1.set_title("DF Scores")
