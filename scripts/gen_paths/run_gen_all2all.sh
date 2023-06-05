@@ -11,14 +11,14 @@ while getopts p:g: flag
 do
     case "${flag}" in
         p) map_path=${OPTARG};;
-        g) game=${OPTARG};;
+        g) tgt_game=${OPTARG};;
     esac
 done
 
 games=$(ls $map_path)
 
 
-if [ -z "$game" ]
+if [ -z "$tgt_game" ]
 then
     for game in $games
     do
@@ -30,6 +30,7 @@ then
         python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
     done
 else
+    game=$tgt_game
     map_human="$map_path/$game/$game.map.human"
     map_reversed="$map_path/$game/$game.map.reversed"
     node_step_map="$map_path/$game/$game.node_step.json"
@@ -37,10 +38,11 @@ else
     python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
 fi
 
+echo "Done generating all2all"
 
 # GAME RELEASE
 # if g not specified, release all games
-if [ -z "$game" ]
+if [ -z "$tgt_game" ]
 then
     for game in $games
     do
@@ -64,6 +66,7 @@ then
         fi
     done
 else
+    game=$tgt_game
     # release by copy game.all2all.json, game.code2anno.json, game.anno2code.json, game.walkthrough, game.moves to data/maps/game to release folder
     release_dir="./data/maps-release"
     mkdir -p $release_dir
@@ -84,5 +87,8 @@ else
     fi
 fi
 
+echo "Done releasing"
+
 # run release_status.py to update status sheet
 python src/release_status.py
+echo "Done updating status sheet"
