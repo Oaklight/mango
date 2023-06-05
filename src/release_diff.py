@@ -7,28 +7,53 @@ import os
 from matplotlib import pyplot as plt
 
 
-def compute_hash(json_obj):
+def compute_hash(json_obj, mode="all2all"):
     # make deep copy of json_obj
     # json_obj_copy = json_obj.copy() AttributeError: 'str' object has no attribute 'copy'
     json_obj_copy = json.loads(json.dumps(json_obj))
-    delete_keys = ["seen", "num_paths"]
-    for key in delete_keys:
-        if key in json_obj_copy:
-            del json_obj_copy[key]
+    delete_keys_all2all = [
+        "seen",
+        "seen_in_forward",
+        "step_min_cutoff",
+        "path_min_cutoff",
+        "all_steps_seen_in_forward",
+    ]
+    delete_keys_allpairs = ["num_paths", "path_min_cutoffs"]
+    # for key in delete_keys:
+    #     if key in json_obj_copy:
+    #         del json_obj_copy[key]
+    if mode == "all2all":
+        path_details = json_obj_copy["path_details"]
+        for i, entry in enumerate(path_details):
+            for key in delete_keys_all2all:
+                if key in entry:
+                    del entry[key]
+            path_details[i] = entry
+        json_obj_copy["path_details"] = path_details
+        for key in delete_keys_all2all:
+            if key in json_obj_copy:
+                del json_obj_copy[key]
+    elif mode == "all_pairs":
+        for key in delete_keys_allpairs:
+            if key in json_obj_copy:
+                del json_obj_copy[key]
+    else:
+        pass
+
     json_str = json.dumps(json_obj_copy, sort_keys=True)
     # json_str = json_str.replace('"seen": true,', "")
     hash_object = hashlib.md5(json_str.encode())
     return hash_object.hexdigest()
 
 
-def find_difference(json1, json2):
+def find_difference(json1, json2, mode="all2all"):
     # json2 is newer one. I want to know which of json2 is different from json1, or not in json1
     with open(json1) as file1, open(json2) as file2:
         data1 = json.load(file1)
         data2 = json.load(file2)
 
-    dict1 = {compute_hash(obj): obj for obj in data1}
-    dict2 = {compute_hash(obj): obj for obj in data2}
+    dict1 = {compute_hash(obj, mode): obj for obj in data1}
+    dict2 = {compute_hash(obj, mode): obj for obj in data2}
 
     # same keys
     same_keys = set(dict1.keys()).intersection(set(dict2.keys()))
@@ -53,7 +78,7 @@ def check_dump_diff(
 
     # find_difference
     new_objects, drop_objects, same_objects = find_difference(
-        old_file_path, new_file_path
+        old_file_path, new_file_path, mode=tgt_file
     )
 
     print(f"Found {len(new_objects)} new objects, {len(drop_objects)} dropped objects.")
