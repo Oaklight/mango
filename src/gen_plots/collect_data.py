@@ -4,6 +4,7 @@
 # under each task folder, there are 53 game folders
 # each game folder has a json file for "harsh" eval and a json file for "nice" eval
 
+import csv
 import json
 import argparse
 import os
@@ -134,6 +135,29 @@ def collect_data(eval_dir, temp_dir):
             )
         print_color(f"[{model_name}] Eval data collection finished!", "black")
 
+    # dump avg_acc to csv
+    # create csv file
+    csv_file = open(f"{EVAL_DIR}/avg_acc.csv", "w")
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(
+        ["model_name", "desti_nice", "desti_harsh", "route_nice", "route_harsh"]
+    )
+    # for each model, read desti.json and route.json
+    # read nice and harsh avg acc
+    for model_name in model_names:
+        desti = json.load(open(f"{TEMP_DIR}/{model_name}/desti.json"))
+        route = json.load(open(f"{TEMP_DIR}/{model_name}/route.json"))
+        csv_writer.writerow(
+            [
+                model_name,
+                desti["avg_nice"],
+                desti["avg_harsh"],
+                route["avg_nice"],
+                route["avg_harsh"],
+            ]
+        )
+    csv_file.close()
+    print_color(f"avg_acc.csv file created!", "black")
 
 if __name__ == "__main__":
     # argparse to get eval and local folder path
