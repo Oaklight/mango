@@ -418,7 +418,7 @@ def get_edge_direction(G, n1, n2):
         print("Edge not found.")
 
 
-def get_path_json(g, path, shortest_length=None):
+def get_path_json(g, path, shortest_length=None, node_step_map: dict = None):
     """
     return path json
     """
@@ -441,22 +441,31 @@ def get_path_json(g, path, shortest_length=None):
             direction = get_edge_direction(g, prev_node, node)
             # path_details.append((prev_node, node, direction, seen))
             # use dict instead
-            path_details.append(
-                {
-                    "prev_node": prev_node,
-                    "node": node,
-                    "action": direction,
-                    "seen": seen,
-                }
-            )
+            entry = {
+                "prev_node": prev_node,
+                "node": node,
+                "action": direction,
+                "seen_in_forward": seen,
+            }
+            if node_step_map is not None:
+                entry["step_min_cutoff"] = max(
+                    node_step_map[prev_node], node_step_map[node]
+                )
+            path_details.append(entry)
             prev_node = node
     path_json["path_details"] = path_details
     path_json["step_count"] = len(path_details)
+    path_json["path_min_cutoff"] = max(
+        [each["step_min_cutoff"] for each in path_details]
+    )
+    path_json["all_steps_seen_in_forward"] = all(
+        [each["seen_in_forward"] for each in path_details]
+    )
 
     return path_json
 
 
-def get_all_paths_json(g, all_paths, diff_shortest=False):
+def get_all_paths_json(g, all_paths, diff_shortest=False, node_step_map: dict = None):
     """
     iterate over all paths and print each
     """
@@ -471,9 +480,11 @@ def get_all_paths_json(g, all_paths, diff_shortest=False):
 
     for path in all_paths:
         if diff_shortest:
-            path_json = get_path_json(g, path, shortest_length=shortest_len)
+            path_json = get_path_json(
+                g, path, shortest_length=shortest_len, node_step_map=node_step_map
+            )
         else:
-            path_json = get_path_json(g, path)
+            path_json = get_path_json(g, path, node_step_map=node_step_map)
         path_json_list.append(path_json)
 
     return path_json_list
