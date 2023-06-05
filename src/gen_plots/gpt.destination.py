@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from colors import COLOR_MAP
 
+GLOBAL_FONTSIZE = 13
+
 
 def random_guess_rate(all2all, anno2code):
     """
@@ -82,14 +84,18 @@ plt.barh(r3, model2_scores, height=bar_width, label="GPT-4", color=COLOR_MAP["gp
 # Set the y-axis labels as test names
 whitespace = 0.02 * max(r1)
 plt.ylim(-whitespace, max(r1) + 4 * whitespace)  # Adjust the y-axis limits as needed
-plt.yticks(r1, game_names)
+plt.yticks(r1, game_names, fontsize=GLOBAL_FONTSIZE)
 
 # Set the labels and title
-plt.xlabel("accuracy of destination finding")
+plt.xlabel("accuracy of destination finding", fontsize=GLOBAL_FONTSIZE)
 
 # Convert x-axis labels to percentage scores for specific ticks
 plt.xlim(0, 1.1)
-plt.xticks([0, 0.25, 0.5, 0.75, 1.0], ["0%", "25%", "50%", "75%", "100%"])
+plt.xticks(
+    [0, 0.25, 0.5, 0.75, 1.0],
+    ["0%", "25%", "50%", "75%", "100%"],
+    fontsize=GLOBAL_FONTSIZE,
+)
 
 # Add dotted lines at x=0.5 and x=1
 plt.axvline(0.25, color="gray", linestyle="dotted")
@@ -102,7 +108,7 @@ plt.legend(loc="upper right", ncol=1)
 
 # Save the plot as a PNG file
 png_path = "./evals/scoreboard_destination.png"
-plt.savefig(png_path, bbox_inches='tight', dpi=300)
+plt.savefig(png_path, bbox_inches="tight", dpi=300)
 
 # Display the plot
 plt.show()
