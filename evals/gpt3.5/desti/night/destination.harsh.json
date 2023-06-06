@@ -1,8 +1,8 @@
 {
     "stepnav-gpt-3.5-turbo/": {
-        "correct_num": 30,
+        "correct_num": 36,
         "total_num": 279,
-        "accuracy": 0.10752688172043011,
+        "accuracy": 0.12903225806451613,
         "collection": {
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-07-15_169.dropped.json": {
                 "verify_result": false,
@@ -96,7 +96,7 @@
                 "macro_uuid": "59c4b31e-1aa0-3f0a-a7af-98e493a2ed58"
             },
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-12-19_552.dropped.json": {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj94)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -107,8 +107,32 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "edfbed26-8dc7-395c-9c26-8eb3ea456eca",
                 "macro_uuid": "3fa96644-b327-3e2e-acf6-5a881e271aea"
             },
@@ -257,28 +281,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "b067640a-4f05-381e-867a-58a20a3c46bc",
@@ -311,16 +332,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj40)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj40)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (3rd floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "f8acda68-0a29-3563-a999-a588f9bdc111",
@@ -712,28 +732,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "419d3462-7eab-3ea4-b581-afc03ac439ac",
@@ -804,16 +821,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (first floor) (obj63)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (first floor) (obj63)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "782556ea-bad7-3a04-81ef-410b959ac9a8",
@@ -1104,34 +1120,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "4715a494-9c0e-3cfa-b98d-7e996ccb2cc6",
@@ -1718,40 +1730,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj98)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "89b488a5-5338-3432-846f-57b3f23cb974",
@@ -1840,40 +1847,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "6537bde9-38ea-3b60-a357-b49573b8a2b2",
@@ -2003,16 +2005,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj39)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj39)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Hall (3rd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "ccb26514-fe69-3518-96cf-c511a31b91b3",
@@ -2027,16 +2028,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj98)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "809c38f8-9c4d-3f36-af8f-9e1aee6a653c",
@@ -2098,22 +2098,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "up",
-                        "msg": "GOOD: seen"
+                        "action": "up"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "13edad52-9af7-38b9-8856-74871cfbe579",
@@ -2260,22 +2258,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "da996671-b553-3582-a5e7-b8509cfa622c",
@@ -2361,7 +2357,7 @@
                 "macro_uuid": "26caabf6-dcc2-369a-bba5-ae77867817c8"
             },
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-12-03_151.dropped.json": {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj92)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -2374,8 +2370,42 @@
                 ],
                 "route_length": 6,
                 "dist_shortest": 6,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 1)",
+                        "node": "Maze of Twisty Passages (stop 2)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "1bc00439-bd34-372d-bde5-d94a56b68909",
                 "macro_uuid": "96a63171-30fd-33f8-9b75-32db0e7418a2"
             },
@@ -2450,16 +2480,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "fa810f17-c43f-3fa3-bc1a-c09374663527",
@@ -2539,34 +2568,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "2770b515-39d3-3a26-b1a5-c8ab2032d5e2",
@@ -3150,34 +3175,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj96)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj96)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "2dafbc51-9f2e-39aa-8b8f-a0056141eeb1",
@@ -3458,7 +3479,7 @@
                 "macro_uuid": "d3e52f29-d16d-35b6-aa61-0715d77c55b6"
             },
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-11-35_911.dropped.json": {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj92)",
                 "dst_requested": "maze of twisty passages (obj94)",
                 "action_requested": [
@@ -3467,8 +3488,22 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "maze of twisty passages (obj94)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "maze of twisty passages (obj94)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 1)",
+                        "node": "Maze of Twisty Passages (stop 2)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "3119395c-8be7-3923-a579-6fb7a6f56cab",
                 "macro_uuid": "519931aa-0ae8-3f25-acd8-f326b28b0d35"
             },
@@ -3519,16 +3554,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj64)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj64)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "f560ca29-2595-3158-b4e8-0e32be5f3051",
@@ -3717,16 +3751,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "16ff6370-60f8-3e6e-b70b-76100f9e7413",
@@ -3912,34 +3945,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "efe49864-9e39-33c5-b657-139ee953d1e1",
@@ -4083,16 +4112,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside computer site (obj36)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside computer site (obj36)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     }
                 ],
                 "micro_uuid": "d7e5ab9f-21a1-3ebd-a23e-0dcc65c9fae0",
@@ -4192,16 +4220,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "f052bc1c-f8a0-3416-8769-0d437a134aca",
@@ -4588,40 +4615,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Stairwell (First Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "up",
-                        "msg": "GOOD: seen"
+                        "action": "up"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "06ea8822-d127-3047-91dd-f9ae74ca9662",
@@ -4821,7 +4843,7 @@
                 "macro_uuid": "c71900a0-cded-3ade-9707-38a00af3e31d"
             },
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-12-35_331.dropped.json": {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj95)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -4831,8 +4853,27 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "3c829a77-4acf-3942-ae47-f82585b78449",
                 "macro_uuid": "802530f7-fb83-3016-9f4a-e59bc8711763"
             },
@@ -4846,22 +4887,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (third floor) (obj38)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (third floor) (obj38)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     }
                 ],
                 "micro_uuid": "c1dda1d6-9a25-32ea-98eb-08f8250b0dac",
@@ -4894,7 +4933,7 @@
                 "macro_uuid": "d17194d8-1319-3ebf-b553-7b0678ebed3c"
             },
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-12-02_108.dropped.json": {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj93)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -4906,8 +4945,37 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "8679c8e4-d090-32df-a395-8b124cef2907",
                 "macro_uuid": "c71900a0-cded-3ade-9707-38a00af3e31d"
             },
@@ -4941,16 +5009,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (third floor) (obj38)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (third floor) (obj38)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     }
                 ],
                 "micro_uuid": "51aca631-bafa-3913-8a6f-b2961463fcb3",
@@ -5088,16 +5155,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj93)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj93)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "5bd29f0f-8d31-3731-b70c-ad77ed54fe09",
@@ -5239,22 +5305,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj94)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj94)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "e05eafc6-676f-3c69-bc49-ec117bc8b866",
@@ -5526,22 +5590,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "a7e3d55f-0f56-34dc-b7ed-1a54082835e6",
@@ -5572,35 +5634,7 @@
                 "route_length": 1,
                 "dist_shortest": 1,
                 "dst_gpt": null,
-                "verify_msg": "stop at somewhere else, not dst requested",
-                "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 2)",
-                        "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 3)",
-                        "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 4)",
-                        "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 5)",
-                        "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    }
-                ],
+                "verify_msg": "",
                 "micro_uuid": "9e09b381-fea9-3577-83b5-f63adb805e96",
                 "macro_uuid": "9d41d2d1-fe58-3dcc-ad02-64734be0c6dc"
             },
@@ -5705,41 +5739,37 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "janitor's closet (obj70)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "janitor's closet (obj70)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall Outside Elevator (1st floor)",
                         "node": "Janitor's Closet",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "2ebb1703-4b13-3e1f-8079-853a555fc033",
                 "macro_uuid": "56c0084a-5bae-3f1b-868a-29754d82f21b"
             },
             "../gpt-games-results//night/results//stepnav-gpt-3.5-turbo/results_2023-05-31-07-12-32_082.dropped.json": {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj96)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -5748,8 +5778,22 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "686e5c52-a6c8-3909-bb1f-bd58493402e4",
                 "macro_uuid": "aace7eb3-3296-31cb-8fc3-a04e56012e51"
             },
@@ -5764,28 +5808,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "0b3773fc-e85d-3c7f-aef4-afdee4db2d02",
@@ -5805,46 +5846,40 @@
                 ],
                 "route_length": 6,
                 "dist_shortest": 6,
-                "dst_gpt": null,
+                "dst_gpt": "gnome's lair (obj99)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "gnome's lair (obj99)",
-                "stop_step": 6,
+                "stop_step": 5,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 6)",
                         "node": "Gnome's Lair",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "9f79750a-6a2f-3360-8c08-524f45602a8f",
@@ -5969,16 +6004,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "4c974933-d538-3ba7-bd5d-c3fd2f1b12d1",
@@ -6400,28 +6434,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj95)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj95)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "faa9c24a-5ddb-3221-ad36-982a442dba19",
@@ -6614,7 +6645,7 @@
                 "macro_uuid": "59c4b31e-1aa0-3f0a-a7af-98e493a2ed58"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj94)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -6625,8 +6656,32 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "edfbed26-8dc7-395c-9c26-8eb3ea456eca",
                 "macro_uuid": "3fa96644-b327-3e2e-acf6-5a881e271aea"
             },
@@ -6775,28 +6830,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "b067640a-4f05-381e-867a-58a20a3c46bc",
@@ -6829,16 +6881,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj40)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj40)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (3rd floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "f8acda68-0a29-3563-a999-a588f9bdc111",
@@ -7230,28 +7281,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "419d3462-7eab-3ea4-b581-afc03ac439ac",
@@ -7322,16 +7370,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (first floor) (obj63)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (first floor) (obj63)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "782556ea-bad7-3a04-81ef-410b959ac9a8",
@@ -7622,34 +7669,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "4715a494-9c0e-3cfa-b98d-7e996ccb2cc6",
@@ -8236,40 +8279,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj98)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "89b488a5-5338-3432-846f-57b3f23cb974",
@@ -8358,40 +8396,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "6537bde9-38ea-3b60-a357-b49573b8a2b2",
@@ -8521,16 +8554,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj39)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj39)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Hall (3rd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "ccb26514-fe69-3518-96cf-c511a31b91b3",
@@ -8545,16 +8577,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj98)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "809c38f8-9c4d-3f36-af8f-9e1aee6a653c",
@@ -8616,22 +8647,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "up",
-                        "msg": "GOOD: seen"
+                        "action": "up"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "13edad52-9af7-38b9-8856-74871cfbe579",
@@ -8778,22 +8807,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "da996671-b553-3582-a5e7-b8509cfa622c",
@@ -8879,7 +8906,7 @@
                 "macro_uuid": "26caabf6-dcc2-369a-bba5-ae77867817c8"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj92)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -8892,8 +8919,42 @@
                 ],
                 "route_length": 6,
                 "dist_shortest": 6,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 1)",
+                        "node": "Maze of Twisty Passages (stop 2)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "1bc00439-bd34-372d-bde5-d94a56b68909",
                 "macro_uuid": "96a63171-30fd-33f8-9b75-32db0e7418a2"
             },
@@ -8968,16 +9029,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "fa810f17-c43f-3fa3-bc1a-c09374663527",
@@ -9057,34 +9117,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "2770b515-39d3-3a26-b1a5-c8ab2032d5e2",
@@ -9668,34 +9724,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj96)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj96)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "2dafbc51-9f2e-39aa-8b8f-a0056141eeb1",
@@ -9976,7 +10028,7 @@
                 "macro_uuid": "d3e52f29-d16d-35b6-aa61-0715d77c55b6"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj92)",
                 "dst_requested": "maze of twisty passages (obj94)",
                 "action_requested": [
@@ -9985,8 +10037,22 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "maze of twisty passages (obj94)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "maze of twisty passages (obj94)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 1)",
+                        "node": "Maze of Twisty Passages (stop 2)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "3119395c-8be7-3923-a579-6fb7a6f56cab",
                 "macro_uuid": "519931aa-0ae8-3f25-acd8-f326b28b0d35"
             },
@@ -10037,16 +10103,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj64)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj64)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "f560ca29-2595-3158-b4e8-0e32be5f3051",
@@ -10235,16 +10300,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "16ff6370-60f8-3e6e-b70b-76100f9e7413",
@@ -10430,34 +10494,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "efe49864-9e39-33c5-b657-139ee953d1e1",
@@ -10601,16 +10661,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside computer site (obj36)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside computer site (obj36)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     }
                 ],
                 "micro_uuid": "d7e5ab9f-21a1-3ebd-a23e-0dcc65c9fae0",
@@ -10710,16 +10769,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "f052bc1c-f8a0-3416-8769-0d437a134aca",
@@ -11106,40 +11164,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Stairwell (First Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "up",
-                        "msg": "GOOD: seen"
+                        "action": "up"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "06ea8822-d127-3047-91dd-f9ae74ca9662",
@@ -11339,7 +11392,7 @@
                 "macro_uuid": "c71900a0-cded-3ade-9707-38a00af3e31d"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj95)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -11349,8 +11402,27 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "3c829a77-4acf-3942-ae47-f82585b78449",
                 "macro_uuid": "802530f7-fb83-3016-9f4a-e59bc8711763"
             },
@@ -11364,22 +11436,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (third floor) (obj38)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (third floor) (obj38)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     }
                 ],
                 "micro_uuid": "c1dda1d6-9a25-32ea-98eb-08f8250b0dac",
@@ -11412,7 +11482,7 @@
                 "macro_uuid": "d17194d8-1319-3ebf-b553-7b0678ebed3c"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj93)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -11424,8 +11494,37 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "8679c8e4-d090-32df-a395-8b124cef2907",
                 "macro_uuid": "c71900a0-cded-3ade-9707-38a00af3e31d"
             },
@@ -11459,16 +11558,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (third floor) (obj38)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (third floor) (obj38)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     }
                 ],
                 "micro_uuid": "51aca631-bafa-3913-8a6f-b2961463fcb3",
@@ -11606,16 +11704,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj93)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj93)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "5bd29f0f-8d31-3731-b70c-ad77ed54fe09",
@@ -11757,22 +11854,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj94)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj94)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "e05eafc6-676f-3c69-bc49-ec117bc8b866",
@@ -12044,22 +12139,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "a7e3d55f-0f56-34dc-b7ed-1a54082835e6",
@@ -12090,35 +12183,7 @@
                 "route_length": 1,
                 "dist_shortest": 1,
                 "dst_gpt": null,
-                "verify_msg": "stop at somewhere else, not dst requested",
-                "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 2)",
-                        "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 3)",
-                        "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 4)",
-                        "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 5)",
-                        "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    }
-                ],
+                "verify_msg": "",
                 "micro_uuid": "9e09b381-fea9-3577-83b5-f63adb805e96",
                 "macro_uuid": "9d41d2d1-fe58-3dcc-ad02-64734be0c6dc"
             },
@@ -12223,41 +12288,37 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "janitor's closet (obj70)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "janitor's closet (obj70)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall Outside Elevator (1st floor)",
                         "node": "Janitor's Closet",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "2ebb1703-4b13-3e1f-8079-853a555fc033",
                 "macro_uuid": "56c0084a-5bae-3f1b-868a-29754d82f21b"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj96)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -12266,8 +12327,22 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "686e5c52-a6c8-3909-bb1f-bd58493402e4",
                 "macro_uuid": "aace7eb3-3296-31cb-8fc3-a04e56012e51"
             },
@@ -12282,28 +12357,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "0b3773fc-e85d-3c7f-aef4-afdee4db2d02",
@@ -12323,46 +12395,40 @@
                 ],
                 "route_length": 6,
                 "dist_shortest": 6,
-                "dst_gpt": null,
+                "dst_gpt": "gnome's lair (obj99)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "gnome's lair (obj99)",
-                "stop_step": 6,
+                "stop_step": 5,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 6)",
                         "node": "Gnome's Lair",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "9f79750a-6a2f-3360-8c08-524f45602a8f",
@@ -12487,16 +12553,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "4c974933-d538-3ba7-bd5d-c3fd2f1b12d1",
@@ -12918,28 +12983,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj95)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj95)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "faa9c24a-5ddb-3221-ad36-982a442dba19",
@@ -13038,9 +13100,9 @@
                 "macro_uuid": "dc3e88ed-a289-37f0-8205-bbd440efd553"
             }
         ],
-        "correct_num_micro": 30,
+        "correct_num_micro": 36,
         "total_num_micro": 279,
-        "accuracy_micro": 0.10752688172043011,
+        "accuracy_micro": 0.12903225806451613,
         "collection_macro": [
             {
                 "verify_result": false,
@@ -13134,7 +13196,7 @@
                 "macro_uuid": "59c4b31e-1aa0-3f0a-a7af-98e493a2ed58"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj94)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -13145,8 +13207,32 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
-                "verify_msg": "",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
                 "micro_uuid": "edfbed26-8dc7-395c-9c26-8eb3ea456eca",
                 "macro_uuid": "3fa96644-b327-3e2e-acf6-5a881e271aea"
             },
@@ -13255,19 +13341,38 @@
                 "macro_uuid": "2c5da0c3-91d5-3e06-b3b4-29d9feec118e"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj95)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
                     "follow mouse",
                     "follow mouse",
-                    "east"
+                    "follow mouse"
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "50f5e60e-0c45-3897-8312-1bb2615b488c",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
+                "micro_uuid": "3c829a77-4acf-3942-ae47-f82585b78449",
                 "macro_uuid": "802530f7-fb83-3016-9f4a-e59bc8711763"
             },
             {
@@ -13295,28 +13400,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "b067640a-4f05-381e-867a-58a20a3c46bc",
@@ -13335,40 +13437,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj98)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "89b488a5-5338-3432-846f-57b3f23cb974",
@@ -13383,16 +13480,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj40)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj40)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (3rd floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "f8acda68-0a29-3563-a999-a588f9bdc111",
@@ -13470,16 +13566,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj93)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj93)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "5bd29f0f-8d31-3731-b70c-ad77ed54fe09",
@@ -13794,28 +13889,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "419d3462-7eab-3ea4-b581-afc03ac439ac",
@@ -13886,16 +13978,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (first floor) (obj63)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (first floor) (obj63)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "782556ea-bad7-3a04-81ef-410b959ac9a8",
@@ -14148,34 +14239,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Stairwell (First Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "4715a494-9c0e-3cfa-b98d-7e996ccb2cc6",
@@ -14640,40 +14727,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "6537bde9-38ea-3b60-a357-b49573b8a2b2",
@@ -14780,16 +14862,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj39)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj39)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Hall (3rd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "ccb26514-fe69-3518-96cf-c511a31b91b3",
@@ -14804,16 +14885,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj98)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "809c38f8-9c4d-3f36-af8f-9e1aee6a653c",
@@ -14875,22 +14955,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "up",
-                        "msg": "GOOD: seen"
+                        "action": "up"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "13edad52-9af7-38b9-8856-74871cfbe579",
@@ -14984,22 +15062,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "da996671-b553-3582-a5e7-b8509cfa622c",
@@ -15072,58 +15148,52 @@
                 "src_requested": "maze of twisty passages (obj92)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
-                    "east",
                     "follow mouse",
                     "follow mouse",
                     "follow mouse",
                     "follow mouse",
-                    "east"
+                    "follow mouse",
+                    "follow mouse"
                 ],
                 "route_length": 6,
                 "dist_shortest": 6,
-                "dst_gpt": null,
+                "dst_gpt": "gnome's lair (obj99)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "gnome's lair (obj99)",
-                "stop_step": 6,
+                "stop_step": 5,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 5)",
                         "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 6)",
                         "node": "Gnome's Lair",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
-                "micro_uuid": "9f79750a-6a2f-3360-8c08-524f45602a8f",
+                "micro_uuid": "1bc00439-bd34-372d-bde5-d94a56b68909",
                 "macro_uuid": "96a63171-30fd-33f8-9b75-32db0e7418a2"
             },
             {
@@ -15197,16 +15267,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "fa810f17-c43f-3fa3-bc1a-c09374663527",
@@ -15241,34 +15310,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "2770b515-39d3-3a26-b1a5-c8ab2032d5e2",
@@ -15676,34 +15741,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj96)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj96)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 4)",
                         "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "2dafbc51-9f2e-39aa-8b8f-a0056141eeb1",
@@ -15877,45 +15938,57 @@
                 "src_requested": "maze of twisty passages (obj92)",
                 "dst_requested": "maze of twisty passages (obj94)",
                 "action_requested": [
-                    "east",
+                    "follow mouse",
                     "follow mouse"
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj94)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj94)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
-                "micro_uuid": "e05eafc6-676f-3c69-bc49-ec117bc8b866",
+                "micro_uuid": "3119395c-8be7-3923-a579-6fb7a6f56cab",
                 "macro_uuid": "519931aa-0ae8-3f25-acd8-f326b28b0d35"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj96)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
                     "follow mouse",
-                    "east"
+                    "follow mouse"
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3cdf9186-2bce-33b7-8ba9-5acd9c310151",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
+                "micro_uuid": "686e5c52-a6c8-3909-bb1f-bd58493402e4",
                 "macro_uuid": "aace7eb3-3296-31cb-8fc3-a04e56012e51"
             },
             {
@@ -15927,16 +16000,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj64)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj64)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "f560ca29-2595-3158-b4e8-0e32be5f3051",
@@ -16026,16 +16098,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (second floor) (obj47)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (second floor) (obj47)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     }
                 ],
                 "micro_uuid": "16ff6370-60f8-3e6e-b70b-76100f9e7413",
@@ -16135,34 +16206,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "outside physics office (obj48)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "outside physics office (obj48)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (Third Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "down",
-                        "msg": "GOOD: seen"
+                        "action": "down"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "efe49864-9e39-33c5-b657-139ee953d1e1",
@@ -16239,28 +16306,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "maze of twisty passages (obj95)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "maze of twisty passages (obj95)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Maze of Twisty Passages (stop 1)",
                         "node": "Maze of Twisty Passages (stop 2)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 2)",
                         "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     },
                     {
                         "prev_node": "Maze of Twisty Passages (stop 3)",
                         "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
+                        "action": "follow mouse"
                     }
                 ],
                 "micro_uuid": "faa9c24a-5ddb-3221-ad36-982a442dba19",
@@ -16300,16 +16364,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside computer site (obj36)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside computer site (obj36)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Computer Site",
                         "node": "Hall Outside Computer Site",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
+                        "action": "northeast"
                     }
                 ],
                 "micro_uuid": "d7e5ab9f-21a1-3ebd-a23e-0dcc65c9fae0",
@@ -16358,16 +16421,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "f052bc1c-f8a0-3416-8769-0d437a134aca",
@@ -16563,40 +16625,35 @@
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 5,
+                "stop_step": 4,
                 "path_checked": [
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Stairwell (First Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     },
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Stairwell (Second Floor)",
-                        "action": "up",
-                        "msg": "GOOD: seen"
+                        "action": "up"
                     },
                     {
                         "prev_node": "Stairwell (Second Floor)",
                         "node": "Outside Physics Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "06ea8822-d127-3047-91dd-f9ae74ca9662",
@@ -16688,7 +16745,7 @@
                 "macro_uuid": "392e426c-e359-33be-91b1-1c99e87e6728"
             },
             {
-                "verify_result": false,
+                "verify_result": true,
                 "src_requested": "maze of twisty passages (obj93)",
                 "dst_requested": "gnome's lair (obj99)",
                 "action_requested": [
@@ -16696,13 +16753,42 @@
                     "follow mouse",
                     "follow mouse",
                     "follow mouse",
-                    "east"
+                    "follow mouse"
                 ],
                 "route_length": 5,
                 "dist_shortest": 5,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "fa57778c-94d8-3a1f-a5d4-f2bd1fb4d5c2",
+                "dst_gpt": "gnome's lair (obj99)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "gnome's lair (obj99)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 2)",
+                        "node": "Maze of Twisty Passages (stop 3)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 3)",
+                        "node": "Maze of Twisty Passages (stop 4)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 4)",
+                        "node": "Maze of Twisty Passages (stop 5)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 5)",
+                        "node": "Maze of Twisty Passages (stop 6)",
+                        "action": "follow mouse"
+                    },
+                    {
+                        "prev_node": "Maze of Twisty Passages (stop 6)",
+                        "node": "Gnome's Lair",
+                        "action": "follow mouse"
+                    }
+                ],
+                "micro_uuid": "8679c8e4-d090-32df-a395-8b124cef2907",
                 "macro_uuid": "c71900a0-cded-3ade-9707-38a00af3e31d"
             },
             {
@@ -16715,22 +16801,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (third floor) (obj38)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (third floor) (obj38)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Hall (3rd floor, middle of north/south hall)",
                         "node": "Hall Outside Computer Site",
-                        "action": "north",
-                        "msg": "GOOD: seen"
+                        "action": "north"
                     },
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     }
                 ],
                 "micro_uuid": "c1dda1d6-9a25-32ea-98eb-08f8250b0dac",
@@ -16792,16 +16876,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "stairwell (third floor) (obj38)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "stairwell (third floor) (obj38)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Hall Outside Computer Site",
                         "node": "Stairwell (Third Floor)",
-                        "action": "west",
-                        "msg": "GOOD: seen"
+                        "action": "west"
                     }
                 ],
                 "micro_uuid": "51aca631-bafa-3913-8a6f-b2961463fcb3",
@@ -16961,22 +17044,20 @@
                 ],
                 "route_length": 2,
                 "dist_shortest": 2,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj66)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj66)",
-                "stop_step": 2,
+                "stop_step": 1,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "a7e3d55f-0f56-34dc-b7ed-1a54082835e6",
@@ -17007,35 +17088,7 @@
                 "route_length": 1,
                 "dist_shortest": 1,
                 "dst_gpt": null,
-                "verify_msg": "stop at somewhere else, not dst requested",
-                "stop_node_code": "maze of twisty passages (obj98)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 2)",
-                        "node": "Maze of Twisty Passages (stop 3)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 3)",
-                        "node": "Maze of Twisty Passages (stop 4)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 4)",
-                        "node": "Maze of Twisty Passages (stop 5)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Maze of Twisty Passages (stop 5)",
-                        "node": "Maze of Twisty Passages (stop 6)",
-                        "action": "follow mouse",
-                        "msg": "GOOD: seen"
-                    }
-                ],
+                "verify_msg": "",
                 "micro_uuid": "9e09b381-fea9-3577-83b5-f63adb805e96",
                 "macro_uuid": "9d41d2d1-fe58-3dcc-ad02-64734be0c6dc"
             },
@@ -17114,34 +17167,30 @@
                 ],
                 "route_length": 4,
                 "dist_shortest": 4,
-                "dst_gpt": null,
+                "dst_gpt": "janitor's closet (obj70)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "janitor's closet (obj70)",
-                "stop_step": 4,
+                "stop_step": 3,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall Outside Elevator (1st floor)",
                         "node": "Janitor's Closet",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "2ebb1703-4b13-3e1f-8079-853a555fc033",
@@ -17158,28 +17207,25 @@
                 ],
                 "route_length": 3,
                 "dist_shortest": 3,
-                "dst_gpt": null,
+                "dst_gpt": "hall outside elevator (obj67)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall outside elevator (obj67)",
-                "stop_step": 3,
+                "stop_step": 2,
                 "path_checked": [
                     {
                         "prev_node": "Stairwell (First Floor)",
                         "node": "Hall (1st floor, north end of north/south hall)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Hall (1st floor, north end of north/south hall)",
                         "node": "Hall (1st floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     },
                     {
                         "prev_node": "Hall (1st floor, middle of north/south hall)",
                         "node": "Hall Outside Elevator (1st floor)",
-                        "action": "east",
-                        "msg": "GOOD: seen"
+                        "action": "east"
                     }
                 ],
                 "micro_uuid": "0b3773fc-e85d-3c7f-aef4-afdee4db2d02",
@@ -17285,16 +17331,15 @@
                 ],
                 "route_length": 1,
                 "dist_shortest": 1,
-                "dst_gpt": null,
+                "dst_gpt": "hall (obj53)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "hall (obj53)",
-                "stop_step": 1,
+                "stop_step": 0,
                 "path_checked": [
                     {
                         "prev_node": "Outside Physics Office",
                         "node": "Hall (2nd floor, middle of north/south hall)",
-                        "action": "south",
-                        "msg": "GOOD: seen"
+                        "action": "south"
                     }
                 ],
                 "micro_uuid": "4c974933-d538-3ba7-bd5d-c3fd2f1b12d1",
@@ -17450,8 +17495,8 @@
                 "macro_uuid": "271c528b-32de-3d22-ada6-8aedcc9b1277"
             }
         ],
-        "correct_num_macro": 30,
+        "correct_num_macro": 34,
         "total_num_macro": 190,
-        "accuracy_macro": 0.15789473684210525
+        "accuracy_macro": 0.17894736842105263
     }
 }
