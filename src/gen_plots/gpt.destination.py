@@ -7,7 +7,7 @@ import numpy as np
 from colors import COLOR_MAP
 
 GLOBAL_FONTSIZE = 13
-
+TEMP_DATA = "./temp_data/gpt"
 
 def random_guess_rate(all2all, anno2code):
     """
@@ -62,8 +62,8 @@ model1_scores = {k: model1_scores[i] for i, k in enumerate(game_names)}
 model2_scores = {k: model2_scores[i] for i, k in enumerate(game_names)}
 
 # load real data from ./data/{model}
-model1_real_path = "./src/gen_plots/data/gpt3.5/desti.json"
-model2_real_path = "./src/gen_plots/data/gpt4/desti.json"
+model1_real_path = f"{TEMP_DATA}/gpt3.5/desti.json"
+model2_real_path = f"{TEMP_DATA}/gpt4/desti.json"
 model1_real = json.load(open(model1_real_path))
 model2_real = json.load(open(model2_real_path))
 
@@ -162,4 +162,4 @@ png_path = "./evals/scoreboard_destination.png"
 plt.savefig(png_path, bbox_inches="tight", dpi=300)
 
 # Display the plot
-plt.show()
+# plt.show()

@@ -173,4 +173,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # collect_data(args) use kwarg
-    collect_data(**vars(args))
+    collect_data(eval_dir=args.eval_dir, temp_dir=args.temp_dir)

@@ -7,7 +7,7 @@ import numpy as np
 from colors import COLOR_MAP
 
 GLOBAL_FONTSIZE = 13
-
+TEMP_DATA = "./temp_data/gpt"
 
 def random_guess_rate(all2all, anno2code):
     """
@@ -69,10 +69,10 @@ model1_scores_RF = {k: model1_scores_RF[i] for i, k in enumerate(game_names)}
 model2_scores_RF = {k: model2_scores_RF[i] for i, k in enumerate(game_names)}
 
 # load real data from ./data/{model}
-model1_real_path_route = "./src/gen_plots/data/gpt3.5/route.json"
-model2_real_path_route = "./src/gen_plots/data/gpt4/route.json"
-model1_real_path_desti = "./src/gen_plots/data/gpt3.5/desti.json"
-model2_real_path_desti = "./src/gen_plots/data/gpt4/desti.json"
+model1_real_path_route = f"{TEMP_DATA}/gpt3.5/route.json"
+model2_real_path_route = f"{TEMP_DATA}/gpt4/route.json"
+model1_real_path_desti = f"{TEMP_DATA}/gpt3.5/desti.json"
+model2_real_path_desti = f"{TEMP_DATA}/gpt4/desti.json"
 model1_real_route = json.load(open(model1_real_path_route))
 model2_real_route = json.load(open(model2_real_path_route))
 model1_real_desti = json.load(open(model1_real_path_desti))
@@ -256,4 +256,4 @@ png_path = "./evals/scoreboard_together.png"
 plt.savefig(png_path, bbox_inches="tight", dpi=300)
 
 # Display the plot
-plt.show()
+# plt.show()
