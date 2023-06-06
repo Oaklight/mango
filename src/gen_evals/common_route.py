@@ -159,6 +159,13 @@ def verify_pathgen_hard(g, anno2code, each_json_path, verbose=True):
         verify_pack["stop_step"] = stop_step
         verify_pack["path_checked"] = path_labeled
         verify_pack["verify_msg"] = msg
+    else:
+        verify_result = False
+        verify_pack["verify_result"] = verify_result
+        verify_pack["stop_node_code"] = stop_node_code
+        verify_pack["stop_step"] = stop_step
+        verify_pack["path_checked"] = path_labeled
+        verify_pack["verify_msg"] = msg
 
     if verify_result:
         assert (
