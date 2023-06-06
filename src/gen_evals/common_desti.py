@@ -38,7 +38,6 @@ def verify_stepnav_simple(g, anno2code, each_json_path, verbose=True):
         "verify_msg": "",  # to be changed
     }
 
-    # FIXME: no need to check format as long as it has useable dst node
     good_format, path_gpt = check_format(gpt_results, dst_only=True)
     msg = "bad format" if not good_format else ""
 
@@ -155,7 +154,10 @@ def verify_stepnav_hard(g, anno2code, each_json_path, verbose=True):
         stop_step = 0
         for i in range(len(path_gpt)):
             # if path_gpt[i]["prev_node"] != path_gt[i]["prev_node"]: anno_to_code
-            if anno_to_code(path_gpt[i]["prev_node"], anno2code) != path_gt[i]["prev_node"]:
+            if (
+                anno_to_code(path_gpt[i]["prev_node"], anno2code)
+                != path_gt[i]["prev_node"]
+            ):
                 good_format = False
                 msg = f"wrong prev_node, at step {i}, aborting"
                 break

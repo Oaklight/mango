@@ -266,7 +266,7 @@ def anno_to_code(anno: str, anno2code: dict):
     if anno is None:
         return None
 
-    anno = anno.lower()
+    anno = anno.lower() if isinstance(anno, str) else str(anno)
     anno2code = {k.lower(): v for k, v in anno2code.items()}
 
     if anno in anno2code:
