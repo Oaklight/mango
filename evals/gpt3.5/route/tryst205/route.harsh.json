@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
-        "correct_num": 9,
-        "total_num": 36,
-        "accuracy": 0.25,
+        "correct_num": 10,
+        "total_num": 37,
+        "accuracy": 0.2702702702702703,
         "collection": {
             "../gpt-games-results//tryst205/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-31-37_003.json": {
                 "verify_result": false,
@@ -795,6 +795,36 @@
                 ],
                 "micro_uuid": "c9e4a491-7691-3233-9af5-21b606e997aa",
                 "macro_uuid": "b98b7f63-50c1-31fc-916e-52ecb56279e3"
+            },
+            "../gpt-games-results//tryst205/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-30-38_715.json": {
+                "verify_result": true,
+                "src_anno": "On the Floor",
+                "src_requested": "on the floor (obj24)",
+                "dst_anno": "Kids' Bathroom",
+                "dst_requested": "kids' bathroom (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kids' bathroom (obj69)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "On the Floor",
+                        "node": "Upstairs Hallway",
+                        "action": "stand",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Upstairs Hallway",
+                        "node": "Kids' Bathroom",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6442108a-7779-3c79-baf7-12396ec3fc83",
+                "macro_uuid": "c6a9f753-7635-3b3f-becc-8aea980c297f"
             },
             "../gpt-games-results//tryst205/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-30-37_838.json": {
                 "verify_result": true,

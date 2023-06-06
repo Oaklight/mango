@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 23,
-        "total_num": 210,
-        "accuracy": 0.10952380952380952,
+        "total_num": 211,
+        "accuracy": 0.10900473933649289,
         "collection": {
             "../gpt-games-results//inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-27-55_369.json": {
                 "verify_result": false,
@@ -7030,6 +7030,75 @@
                 ],
                 "micro_uuid": "3eb7a65b-8241-3a52-939a-cd830bc619fe",
                 "macro_uuid": "bb0d67a8-b591-39a9-815e-01a9b3564c08"
+            },
+            "../gpt-games-results//inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-14-28_333.json": {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "Glass Hall",
+                "dst_requested": "glass hall (obj86)",
+                "connectivity": true,
+                "dist_shortest": 9,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "storage tent (obj21)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Storage Tent",
+                        "node": "Center of Camp",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Center of Camp",
+                        "node": "In the Desert",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "In the Desert",
+                        "node": "Center of Camp",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Center of Camp",
+                        "node": "Roboff's Tent",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Roboff's Tent",
+                        "node": "Round Room",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Round Room",
+                        "node": "T-Intersection (east/west/south, west to Round Room)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+                        "node": "Storage Tent",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Storage Tent",
+                        "node": "Center of Camp",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Center of Camp",
+                        "node": "In the Desert",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "In the Desert",
+                        "node": "Center of Camp",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "5ea63e4a-2b00-3c8e-9732-40adfafb317b",
+                "macro_uuid": "6c193ed4-be3c-3b9b-ae0e-6bfea7d2daf6"
             },
             "../gpt-games-results//inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-15-12_680.json": {
                 "verify_result": false,

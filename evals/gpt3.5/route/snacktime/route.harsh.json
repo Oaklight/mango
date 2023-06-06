@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
-        "correct_num": 4,
-        "total_num": 6,
-        "accuracy": 0.6666666666666666,
+        "correct_num": 5,
+        "total_num": 7,
+        "accuracy": 0.7142857142857143,
         "collection": {
             "../gpt-games-results//snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-03-48-31_465.json": {
                 "verify_result": true,
@@ -128,6 +128,48 @@
                 ],
                 "micro_uuid": "5b008b06-e533-36a9-aa6d-f4eaa777ab7a",
                 "macro_uuid": "543a7823-5335-3beb-91b3-43c9ed1bc0e3"
+            },
+            "../gpt-games-results//snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-11-03-07_622.json": {
+                "verify_result": true,
+                "src_anno": "Sitting Room (on the long soft thing)",
+                "src_requested": "(obj54)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj60)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Sitting Room (on the long soft thing)",
+                        "node": "Sitting Room",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Sitting Room",
+                        "node": "Food Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Food Room",
+                        "node": "Sitting Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Sitting Room",
+                        "node": "Sleeping Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "1fdce30d-bd77-32b9-bafa-de2c469d148e",
+                "macro_uuid": "b63f8037-2075-3b5d-abac-3a8a2f431211"
             },
             "../gpt-games-results//snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-03-48-25_334.json": {
                 "verify_result": true,

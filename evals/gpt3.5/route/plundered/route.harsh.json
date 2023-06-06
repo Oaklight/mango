@@ -1,0 +1,4442 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 4,
+        "total_num": 45,
+        "accuracy": 0.08888888888888889,
+        "collection": {
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-26-59_009.json": {
+                "verify_result": true,
+                "src_anno": "Aft Hold",
+                "src_requested": "aft hold (obj46)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hold (obj101)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c6c3aeaf-2d39-39c6-b998-136f2ba5fa21",
+                "macro_uuid": "3f1bb946-97a5-34b1-a012-88e7e1256c1b"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-35-02_602.json": {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "c49d52ce-8734-3394-81f5-481ada878c37",
+                "macro_uuid": "9e422f60-7ceb-3a80-a658-05a4cccf5752"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-32-47_588.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "63d34ed2-f520-398f-9469-dfa04d329365",
+                "macro_uuid": "5abf94ed-daa2-3f3a-ab14-99eaf83fbf98"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-33-45_949.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "5aa52a51-a56e-3a98-876c-0390517d6070",
+                "macro_uuid": "a9c30dfe-4e5b-39cc-bcc0-131ee06ec7cd"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-38_724.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Cabin",
+                "dst_requested": "cabin (obj80)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Cabin",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "99512bda-355e-350d-bb49-a20911541043",
+                "macro_uuid": "75902b1a-80c0-329b-b81f-e95539b217ca"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-30-41_507.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "09d64f00-89a5-30bc-a61c-dd799cb9015c",
+                "macro_uuid": "63185a81-d839-3595-a85d-958ba96ccdd0"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-30-08_221.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "1892fb48-7bb1-39b2-8f5b-558e7b9f67d6",
+                "macro_uuid": "a0fa0a86-4f33-38dc-90e5-5bce474dd704"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-27-43_783.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "eec7faeb-73be-3c3c-b69c-c553025396b6",
+                "macro_uuid": "e27ab1d6-5c47-3834-b98a-8de8f3dcd1f5"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-29-41_971.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "39bb5a15-a6a4-33b4-9527-adb65ca79a31",
+                "macro_uuid": "fad13195-67b9-33f6-aa4c-5963a1467dcc"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-34-22_552.json": {
+                "verify_result": true,
+                "src_anno": "Hold",
+                "src_requested": "hold (obj101)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "crew's quarters (obj193)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "b4ec1fee-ec31-3d70-8ec7-63f6c2c5971c",
+                "macro_uuid": "6e65811a-c6b0-322e-b2ae-7219b0d03335"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-31-04_863.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "391c630f-7449-3789-8d8f-4cfbcdaed6ce",
+                "macro_uuid": "26fd0848-6a13-3b8e-a83d-53f08fcfd793"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-30-23_531.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Landing",
+                        "action": "squeeze through the opening between cupboard and wall"
+                    }
+                ],
+                "micro_uuid": "ff0bdeb1-064a-301e-902e-0b9aa8ab74be",
+                "macro_uuid": "9fa6af63-73f7-358c-8a72-4c1a739323b1"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-45_776.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "592d792b-490c-3861-b5b3-d7785b760024",
+                "macro_uuid": "038d75f7-d170-3017-85bc-21383be8a89f"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-01_360.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "811291cd-a4c8-3f00-934b-df5dfdadd747",
+                "macro_uuid": "44ae52f3-dab7-3220-a42c-2eb1a4069e46"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-20_824.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "845198b0-0820-34ed-b7ea-d36adf792ce7",
+                "macro_uuid": "f2b83c69-934a-3bbb-86bd-e170f22ea822"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-29-46_664.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "70da8262-e6bd-3413-ab62-8c3cf9c02c84",
+                "macro_uuid": "b597c15d-b382-3738-a15a-08cc5d2b2768"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-29-44_642.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "stand up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "694ebb36-231d-3572-bff7-5368a00cf43a",
+                "macro_uuid": "d602c84e-2a69-3a38-a018-17d2819dcf66"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-32-48_466.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "e57a7cc2-9d8a-31ba-a2bd-b094cdbe5178",
+                "macro_uuid": "02be7c74-e011-30fb-a048-819dc8c83a48"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-30-12_318.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "5b2807d7-a658-386c-9eb6-a69cce6fed80",
+                "macro_uuid": "e05c4083-55f8-3eec-9b80-77dd65762292"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-38-48_679.json": {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "94dc1471-95eb-3619-a6c7-770e9248ebd6",
+                "macro_uuid": "2875080a-44bb-33bf-ac67-87c3b41b3dc6"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-26-41_530.json": {
+                "verify_result": true,
+                "src_anno": "Aft Hold",
+                "src_requested": "aft hold (obj46)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "crew's quarters (obj193)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e1463a03-e0b5-3063-9c45-1f49c69edb2d",
+                "macro_uuid": "9a01352e-f7d1-34a6-b658-bbe19e376a71"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-29-03_552.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "59f88076-2ecd-3e59-a52d-964d15face16",
+                "macro_uuid": "572b1522-ae16-3cdf-b4e2-8ddabb4180e1"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-44_206.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Deck",
+                "dst_requested": "deck (obj77)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "10001e84-32d2-3a71-ac42-1c046ec4df1e",
+                "macro_uuid": "fd349c57-b68c-3440-8b30-9eaebdcb4549"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-29-00_548.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "squeeze through the opening between cupboard and wall.",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "db98e5ab-b258-3101-a63f-92367340cde7",
+                "macro_uuid": "6d894ee2-faa1-3f43-a2ca-6b086d6208b4"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-33-01_611.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "afc80813-a710-33bc-9439-47213b82f625",
+                "macro_uuid": "5a2da1b7-ebd0-31f6-8b28-343bec61d35c"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-42_437.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "stand up"
+                    }
+                ],
+                "micro_uuid": "90c63206-9a6a-3354-a14a-e7768ac3acea",
+                "macro_uuid": "8bc3123f-6041-3722-832e-d448cab7dc7f"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-29-47_976.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "329dde8f-5803-30a9-8a87-bfddf14fa2b8",
+                "macro_uuid": "854d5515-1b9a-31f2-9bb9-f8e480917179"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-32-41_463.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a328580d-b014-3f35-8cb8-9ff6bb3b48e9",
+                "macro_uuid": "45d39134-81d0-395e-a9ec-6ef234a91b35"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-31-42_924.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "8c6eed24-975c-3db6-a417-378ca3b3d141",
+                "macro_uuid": "ee0ce42b-b8d5-3fd5-9003-110929c038bc"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-43_093.json": {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "stand up"
+                    }
+                ],
+                "micro_uuid": "336675e8-fd8b-3454-9d6b-b479398b4991",
+                "macro_uuid": "6f15fa08-e5c3-3c04-9142-4a87a6c19214"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-32-43_888.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "daff852e-6585-33d5-bad1-39132e6d02d9",
+                "macro_uuid": "24f0a6e5-7f28-3fe2-9062-eec89c569aa6"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-30-00_157.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Deck",
+                "dst_requested": "deck (obj77)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Deck",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "7cc1e198-02ac-3038-882a-bc907b6a4e0d",
+                "macro_uuid": "31e1b775-0ffc-3892-8052-68c3246128cd"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-38-48_162.json": {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Aft Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "07bd7f55-effe-3e4a-84ca-78c7e5ba99e4",
+                "macro_uuid": "9f386ad4-9ae7-36e5-a3bb-27e11c5708a2"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-31-04_973.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "down",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "276ea951-051a-385f-a25b-8093617d3b3c",
+                "macro_uuid": "eed17ff9-5464-3f07-8a94-a8652343b40f"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-05_756.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "b178f55c-bd06-3ccd-8a58-13317cc38226",
+                "macro_uuid": "5f2c9de8-68fc-3795-9803-05fb6b0ed6f1"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-33-01_113.json": {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "069415e5-2821-3c49-a320-5b29bb5ae5c1",
+                "macro_uuid": "c305c8fa-b7b8-3806-bd40-c2cb4394c8b7"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-30-41_486.json": {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "da478789-8e97-3bc4-b694-efae432c122d",
+                "macro_uuid": "4b2b67ca-db64-3e61-b519-2c5bc893e5bb"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-27-40_911.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "111c9b98-8426-3032-a60d-9a314cefb495",
+                "macro_uuid": "d190fc41-8585-3f21-88d6-4b2cd6d98b40"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-28-20_178.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "b37616c2-e436-30aa-9682-dee773fe9fd0",
+                "macro_uuid": "b5c0ff7d-65e4-3fdc-9229-7110c8c18ed8"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-35-22_748.json": {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "21f89798-aaaf-3a04-af2d-d96f0b07c198",
+                "macro_uuid": "751a1cff-f4a4-326d-bb37-d7d9a407860b"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-31-03_174.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "f981cd67-09d3-394a-ac25-686b15ad3255",
+                "macro_uuid": "cdf33e7e-1420-33c0-a015-c836ad7f48c1"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-39-05_879.json": {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "aft hold (obj46)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e0e248ad-31e9-3aab-8a18-41a563b22ce4",
+                "macro_uuid": "302437ba-029c-360e-8ae6-61cdd0c2b070"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-35-44_991.json": {
+                "verify_result": true,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "sleeping cupboard (obj127)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d17451a3-5c16-3512-a160-6558360543f5",
+                "macro_uuid": "ac59cee9-1ae0-32b4-ba9c-c84dbf082566"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-35-02_111.json": {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "3fa1c81a-6dae-3b71-82b4-45ed8159ec90",
+                "macro_uuid": "6795bbf6-bd71-35bf-bac7-48c1d06d9a30"
+            },
+            "../gpt-games-results//plundered/results//pathgen-gpt-3.5-turbo/results_2023-06-04-17-27-24_268.json": {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "667d065d-4e2d-3089-9998-e210a09c7587",
+                "macro_uuid": "8d046d75-85fb-3ea3-976b-aff178279cce"
+            }
+        },
+        "random_guess_rate": 1.3866294722203334e-09,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Aft Hold",
+                "src_requested": "aft hold (obj46)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hold (obj101)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c6c3aeaf-2d39-39c6-b998-136f2ba5fa21",
+                "macro_uuid": "3f1bb946-97a5-34b1-a012-88e7e1256c1b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "c49d52ce-8734-3394-81f5-481ada878c37",
+                "macro_uuid": "9e422f60-7ceb-3a80-a658-05a4cccf5752"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "63d34ed2-f520-398f-9469-dfa04d329365",
+                "macro_uuid": "5abf94ed-daa2-3f3a-ab14-99eaf83fbf98"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "5aa52a51-a56e-3a98-876c-0390517d6070",
+                "macro_uuid": "a9c30dfe-4e5b-39cc-bcc0-131ee06ec7cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Cabin",
+                "dst_requested": "cabin (obj80)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Cabin",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "99512bda-355e-350d-bb49-a20911541043",
+                "macro_uuid": "75902b1a-80c0-329b-b81f-e95539b217ca"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "09d64f00-89a5-30bc-a61c-dd799cb9015c",
+                "macro_uuid": "63185a81-d839-3595-a85d-958ba96ccdd0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "1892fb48-7bb1-39b2-8f5b-558e7b9f67d6",
+                "macro_uuid": "a0fa0a86-4f33-38dc-90e5-5bce474dd704"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "eec7faeb-73be-3c3c-b69c-c553025396b6",
+                "macro_uuid": "e27ab1d6-5c47-3834-b98a-8de8f3dcd1f5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "39bb5a15-a6a4-33b4-9527-adb65ca79a31",
+                "macro_uuid": "fad13195-67b9-33f6-aa4c-5963a1467dcc"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hold",
+                "src_requested": "hold (obj101)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "crew's quarters (obj193)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "b4ec1fee-ec31-3d70-8ec7-63f6c2c5971c",
+                "macro_uuid": "6e65811a-c6b0-322e-b2ae-7219b0d03335"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "391c630f-7449-3789-8d8f-4cfbcdaed6ce",
+                "macro_uuid": "26fd0848-6a13-3b8e-a83d-53f08fcfd793"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Landing",
+                        "action": "squeeze through the opening between cupboard and wall"
+                    }
+                ],
+                "micro_uuid": "ff0bdeb1-064a-301e-902e-0b9aa8ab74be",
+                "macro_uuid": "9fa6af63-73f7-358c-8a72-4c1a739323b1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "592d792b-490c-3861-b5b3-d7785b760024",
+                "macro_uuid": "038d75f7-d170-3017-85bc-21383be8a89f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "811291cd-a4c8-3f00-934b-df5dfdadd747",
+                "macro_uuid": "44ae52f3-dab7-3220-a42c-2eb1a4069e46"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "845198b0-0820-34ed-b7ea-d36adf792ce7",
+                "macro_uuid": "f2b83c69-934a-3bbb-86bd-e170f22ea822"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "70da8262-e6bd-3413-ab62-8c3cf9c02c84",
+                "macro_uuid": "b597c15d-b382-3738-a15a-08cc5d2b2768"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "stand up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "694ebb36-231d-3572-bff7-5368a00cf43a",
+                "macro_uuid": "d602c84e-2a69-3a38-a018-17d2819dcf66"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "e57a7cc2-9d8a-31ba-a2bd-b094cdbe5178",
+                "macro_uuid": "02be7c74-e011-30fb-a048-819dc8c83a48"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "5b2807d7-a658-386c-9eb6-a69cce6fed80",
+                "macro_uuid": "e05c4083-55f8-3eec-9b80-77dd65762292"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "94dc1471-95eb-3619-a6c7-770e9248ebd6",
+                "macro_uuid": "2875080a-44bb-33bf-ac67-87c3b41b3dc6"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Aft Hold",
+                "src_requested": "aft hold (obj46)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "crew's quarters (obj193)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e1463a03-e0b5-3063-9c45-1f49c69edb2d",
+                "macro_uuid": "9a01352e-f7d1-34a6-b658-bbe19e376a71"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "59f88076-2ecd-3e59-a52d-964d15face16",
+                "macro_uuid": "572b1522-ae16-3cdf-b4e2-8ddabb4180e1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Deck",
+                "dst_requested": "deck (obj77)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "10001e84-32d2-3a71-ac42-1c046ec4df1e",
+                "macro_uuid": "fd349c57-b68c-3440-8b30-9eaebdcb4549"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "squeeze through the opening between cupboard and wall.",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "db98e5ab-b258-3101-a63f-92367340cde7",
+                "macro_uuid": "6d894ee2-faa1-3f43-a2ca-6b086d6208b4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "afc80813-a710-33bc-9439-47213b82f625",
+                "macro_uuid": "5a2da1b7-ebd0-31f6-8b28-343bec61d35c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "stand up"
+                    }
+                ],
+                "micro_uuid": "90c63206-9a6a-3354-a14a-e7768ac3acea",
+                "macro_uuid": "8bc3123f-6041-3722-832e-d448cab7dc7f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "329dde8f-5803-30a9-8a87-bfddf14fa2b8",
+                "macro_uuid": "854d5515-1b9a-31f2-9bb9-f8e480917179"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a328580d-b014-3f35-8cb8-9ff6bb3b48e9",
+                "macro_uuid": "45d39134-81d0-395e-a9ec-6ef234a91b35"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "8c6eed24-975c-3db6-a417-378ca3b3d141",
+                "macro_uuid": "ee0ce42b-b8d5-3fd5-9003-110929c038bc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "stand up"
+                    }
+                ],
+                "micro_uuid": "336675e8-fd8b-3454-9d6b-b479398b4991",
+                "macro_uuid": "6f15fa08-e5c3-3c04-9142-4a87a6c19214"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "daff852e-6585-33d5-bad1-39132e6d02d9",
+                "macro_uuid": "24f0a6e5-7f28-3fe2-9062-eec89c569aa6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Deck",
+                "dst_requested": "deck (obj77)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Deck",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "7cc1e198-02ac-3038-882a-bc907b6a4e0d",
+                "macro_uuid": "31e1b775-0ffc-3892-8052-68c3246128cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Aft Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "07bd7f55-effe-3e4a-84ca-78c7e5ba99e4",
+                "macro_uuid": "9f386ad4-9ae7-36e5-a3bb-27e11c5708a2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "down",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "276ea951-051a-385f-a25b-8093617d3b3c",
+                "macro_uuid": "eed17ff9-5464-3f07-8a94-a8652343b40f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "b178f55c-bd06-3ccd-8a58-13317cc38226",
+                "macro_uuid": "5f2c9de8-68fc-3795-9803-05fb6b0ed6f1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "069415e5-2821-3c49-a320-5b29bb5ae5c1",
+                "macro_uuid": "c305c8fa-b7b8-3806-bd40-c2cb4394c8b7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "da478789-8e97-3bc4-b694-efae432c122d",
+                "macro_uuid": "4b2b67ca-db64-3e61-b519-2c5bc893e5bb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "111c9b98-8426-3032-a60d-9a314cefb495",
+                "macro_uuid": "d190fc41-8585-3f21-88d6-4b2cd6d98b40"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "b37616c2-e436-30aa-9682-dee773fe9fd0",
+                "macro_uuid": "b5c0ff7d-65e4-3fdc-9229-7110c8c18ed8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "21f89798-aaaf-3a04-af2d-d96f0b07c198",
+                "macro_uuid": "751a1cff-f4a4-326d-bb37-d7d9a407860b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "f981cd67-09d3-394a-ac25-686b15ad3255",
+                "macro_uuid": "cdf33e7e-1420-33c0-a015-c836ad7f48c1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "aft hold (obj46)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e0e248ad-31e9-3aab-8a18-41a563b22ce4",
+                "macro_uuid": "302437ba-029c-360e-8ae6-61cdd0c2b070"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "sleeping cupboard (obj127)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d17451a3-5c16-3512-a160-6558360543f5",
+                "macro_uuid": "ac59cee9-1ae0-32b4-ba9c-c84dbf082566"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "3fa1c81a-6dae-3b71-82b4-45ed8159ec90",
+                "macro_uuid": "6795bbf6-bd71-35bf-bac7-48c1d06d9a30"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "667d065d-4e2d-3089-9998-e210a09c7587",
+                "macro_uuid": "8d046d75-85fb-3ea3-976b-aff178279cce"
+            }
+        ],
+        "correct_num_micro": 4,
+        "total_num_micro": 45,
+        "accuracy_micro": 0.08888888888888889,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Aft Hold",
+                "src_requested": "aft hold (obj46)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hold (obj101)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c6c3aeaf-2d39-39c6-b998-136f2ba5fa21",
+                "macro_uuid": "3f1bb946-97a5-34b1-a012-88e7e1256c1b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "c49d52ce-8734-3394-81f5-481ada878c37",
+                "macro_uuid": "9e422f60-7ceb-3a80-a658-05a4cccf5752"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "63d34ed2-f520-398f-9469-dfa04d329365",
+                "macro_uuid": "5abf94ed-daa2-3f3a-ab14-99eaf83fbf98"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "5aa52a51-a56e-3a98-876c-0390517d6070",
+                "macro_uuid": "a9c30dfe-4e5b-39cc-bcc0-131ee06ec7cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Cabin",
+                "dst_requested": "cabin (obj80)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Cabin",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "99512bda-355e-350d-bb49-a20911541043",
+                "macro_uuid": "75902b1a-80c0-329b-b81f-e95539b217ca"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "09d64f00-89a5-30bc-a61c-dd799cb9015c",
+                "macro_uuid": "63185a81-d839-3595-a85d-958ba96ccdd0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "1892fb48-7bb1-39b2-8f5b-558e7b9f67d6",
+                "macro_uuid": "a0fa0a86-4f33-38dc-90e5-5bce474dd704"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "eec7faeb-73be-3c3c-b69c-c553025396b6",
+                "macro_uuid": "e27ab1d6-5c47-3834-b98a-8de8f3dcd1f5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "39bb5a15-a6a4-33b4-9527-adb65ca79a31",
+                "macro_uuid": "fad13195-67b9-33f6-aa4c-5963a1467dcc"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hold",
+                "src_requested": "hold (obj101)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "crew's quarters (obj193)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "b4ec1fee-ec31-3d70-8ec7-63f6c2c5971c",
+                "macro_uuid": "6e65811a-c6b0-322e-b2ae-7219b0d03335"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "391c630f-7449-3789-8d8f-4cfbcdaed6ce",
+                "macro_uuid": "26fd0848-6a13-3b8e-a83d-53f08fcfd793"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Landing",
+                        "action": "squeeze through the opening between cupboard and wall"
+                    }
+                ],
+                "micro_uuid": "ff0bdeb1-064a-301e-902e-0b9aa8ab74be",
+                "macro_uuid": "9fa6af63-73f7-358c-8a72-4c1a739323b1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "592d792b-490c-3861-b5b3-d7785b760024",
+                "macro_uuid": "038d75f7-d170-3017-85bc-21383be8a89f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "811291cd-a4c8-3f00-934b-df5dfdadd747",
+                "macro_uuid": "44ae52f3-dab7-3220-a42c-2eb1a4069e46"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "845198b0-0820-34ed-b7ea-d36adf792ce7",
+                "macro_uuid": "f2b83c69-934a-3bbb-86bd-e170f22ea822"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "70da8262-e6bd-3413-ab62-8c3cf9c02c84",
+                "macro_uuid": "b597c15d-b382-3738-a15a-08cc5d2b2768"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "stand up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "694ebb36-231d-3572-bff7-5368a00cf43a",
+                "macro_uuid": "d602c84e-2a69-3a38-a018-17d2819dcf66"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "e57a7cc2-9d8a-31ba-a2bd-b094cdbe5178",
+                "macro_uuid": "02be7c74-e011-30fb-a048-819dc8c83a48"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "5b2807d7-a658-386c-9eb6-a69cce6fed80",
+                "macro_uuid": "e05c4083-55f8-3eec-9b80-77dd65762292"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "94dc1471-95eb-3619-a6c7-770e9248ebd6",
+                "macro_uuid": "2875080a-44bb-33bf-ac67-87c3b41b3dc6"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Aft Hold",
+                "src_requested": "aft hold (obj46)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "crew's quarters (obj193)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e1463a03-e0b5-3063-9c45-1f49c69edb2d",
+                "macro_uuid": "9a01352e-f7d1-34a6-b658-bbe19e376a71"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "59f88076-2ecd-3e59-a52d-964d15face16",
+                "macro_uuid": "572b1522-ae16-3cdf-b4e2-8ddabb4180e1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Deck",
+                "dst_requested": "deck (obj77)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "10001e84-32d2-3a71-ac42-1c046ec4df1e",
+                "macro_uuid": "fd349c57-b68c-3440-8b30-9eaebdcb4549"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "squeeze through the opening between cupboard and wall.",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "db98e5ab-b258-3101-a63f-92367340cde7",
+                "macro_uuid": "6d894ee2-faa1-3f43-a2ca-6b086d6208b4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj92)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "afc80813-a710-33bc-9439-47213b82f625",
+                "macro_uuid": "5a2da1b7-ebd0-31f6-8b28-343bec61d35c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Captain's Quarters, on the bed",
+                "dst_requested": "bed (obj131)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "stand up"
+                    }
+                ],
+                "micro_uuid": "90c63206-9a6a-3354-a14a-e7768ac3acea",
+                "macro_uuid": "8bc3123f-6041-3722-832e-d448cab7dc7f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Cabin, on the bed",
+                        "action": "stand up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Deck",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "329dde8f-5803-30a9-8a87-bfddf14fa2b8",
+                "macro_uuid": "854d5515-1b9a-31f2-9bb9-f8e480917179"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a328580d-b014-3f35-8cb8-9ff6bb3b48e9",
+                "macro_uuid": "45d39134-81d0-395e-a9ec-6ef234a91b35"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "8c6eed24-975c-3db6-a417-378ca3b3d141",
+                "macro_uuid": "ee0ce42b-b8d5-3fd5-9003-110929c038bc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin, on the bed",
+                "src_requested": "bed (obj213)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj213)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "in"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "stand up"
+                    }
+                ],
+                "micro_uuid": "336675e8-fd8b-3454-9d6b-b479398b4991",
+                "macro_uuid": "6f15fa08-e5c3-3c04-9142-4a87a6c19214"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Captain's Quarters, on the bed",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out"
+                    }
+                ],
+                "micro_uuid": "daff852e-6585-33d5-bad1-39132e6d02d9",
+                "macro_uuid": "24f0a6e5-7f28-3fe2-9062-eec89c569aa6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Deck",
+                "dst_requested": "deck (obj77)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Deck",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "7cc1e198-02ac-3038-882a-bc907b6a4e0d",
+                "macro_uuid": "31e1b775-0ffc-3892-8052-68c3246128cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Aft Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "07bd7f55-effe-3e4a-84ca-78c7e5ba99e4",
+                "macro_uuid": "9f386ad4-9ae7-36e5-a3bb-27e11c5708a2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "down",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hold",
+                        "node": "Crew's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "276ea951-051a-385f-a25b-8093617d3b3c",
+                "macro_uuid": "eed17ff9-5464-3f07-8a94-a8652343b40f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "b178f55c-bd06-3ccd-8a58-13317cc38226",
+                "macro_uuid": "5f2c9de8-68fc-3795-9803-05fb6b0ed6f1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Deck",
+                "src_requested": "deck (obj77)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "deck (obj77)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Deck",
+                        "node": "Aft Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "069415e5-2821-3c49-a320-5b29bb5ae5c1",
+                "macro_uuid": "c305c8fa-b7b8-3806-bd40-c2cb4394c8b7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cabin",
+                "src_requested": "cabin (obj80)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cabin (obj80)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cabin",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "da478789-8e97-3bc4-b694-efae432c122d",
+                "macro_uuid": "4b2b67ca-db64-3e61-b519-2c5bc893e5bb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Captain's Quarters",
+                "dst_requested": "captain's quarters (obj169)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Captain's Quarters",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "111c9b98-8426-3032-a60d-9a314cefb495",
+                "macro_uuid": "d190fc41-8585-3f21-88d6-4b2cd6d98b40"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in"
+                    }
+                ],
+                "micro_uuid": "b37616c2-e436-30aa-9682-dee773fe9fd0",
+                "macro_uuid": "b5c0ff7d-65e4-3fdc-9229-7110c8c18ed8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Hold",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "21f89798-aaaf-3a04-af2d-d96f0b07c198",
+                "macro_uuid": "751a1cff-f4a4-326d-bb37-d7d9a407860b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters",
+                "src_requested": "captain's quarters (obj169)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Landing",
+                        "action": "north",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aft Hold",
+                        "node": "Hold",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "f981cd67-09d3-394a-ac25-686b15ad3255",
+                "macro_uuid": "cdf33e7e-1420-33c0-a015-c836ad7f48c1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sleeping Cupboard",
+                "src_requested": "sleeping cupboard (obj127)",
+                "dst_anno": "Hold",
+                "dst_requested": "hold (obj101)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "aft hold (obj46)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Sleeping Cupboard",
+                        "node": "Landing",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e0e248ad-31e9-3aab-8a18-41a563b22ce4",
+                "macro_uuid": "302437ba-029c-360e-8ae6-61cdd0c2b070"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Sleeping Cupboard",
+                "dst_requested": "sleeping cupboard (obj127)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "sleeping cupboard (obj127)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Sleeping Cupboard",
+                        "action": "in",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d17451a3-5c16-3512-a160-6558360543f5",
+                "macro_uuid": "ac59cee9-1ae0-32b4-ba9c-c84dbf082566"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj92)",
+                "dst_anno": "Crew's Quarters",
+                "dst_requested": "crew's quarters (obj193)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "landing (obj92)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Crew's Quarters",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "3fa1c81a-6dae-3b71-82b4-45ed8159ec90",
+                "macro_uuid": "6795bbf6-bd71-35bf-bac7-48c1d06d9a30"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Captain's Quarters, on the bed",
+                "src_requested": "bed (obj131)",
+                "dst_anno": "Aft Hold",
+                "dst_requested": "aft hold (obj46)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj131)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Captain's Quarters, on the bed",
+                        "node": "Captain's Quarters",
+                        "action": "out",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Captain's Quarters",
+                        "node": "Landing",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Aft Hold",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "667d065d-4e2d-3089-9998-e210a09c7587",
+                "macro_uuid": "8d046d75-85fb-3ea3-976b-aff178279cce"
+            }
+        ],
+        "correct_num_macro": 4,
+        "total_num_macro": 45,
+        "accuracy_macro": 0.08888888888888889
+    }
+}

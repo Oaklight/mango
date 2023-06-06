@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 10,
-        "total_num": 136,
-        "accuracy": 0.07352941176470588,
+        "total_num": 137,
+        "accuracy": 0.072992700729927,
         "collection": {
             "../gpt-games-results//deephome/results//pathgen-gpt-3.5-turbo/results_2023-05-31-01-53-10_931.json": {
                 "verify_result": true,
@@ -4946,6 +4946,40 @@
                 ],
                 "micro_uuid": "1efa9559-70d5-3907-975b-32b3707a7969",
                 "macro_uuid": "73129d0e-95db-3018-aa01-1421b16bef18"
+            },
+            "../gpt-games-results//deephome/results//pathgen-gpt-3.5-turbo/results_2023-05-31-01-41-05_187.json": {
+                "verify_result": false,
+                "src_anno": "Northern Guard Post",
+                "src_requested": "northern guard post (obj70)",
+                "dst_anno": "Railway Station (Main Hall)",
+                "dst_requested": "railway station (obj87)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "northern guard post (obj70)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Northern Guard Post",
+                        "node": "the abandoned city of Deephome",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "the abandoned city of Deephome",
+                        "node": "Main Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Railway Station (Main Hall)",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "3211a113-9491-37d8-a835-71f5a875ceee",
+                "macro_uuid": "57b69151-c2ce-345b-ac51-a04f3d22b9fb"
             },
             "../gpt-games-results//deephome/results//pathgen-gpt-3.5-turbo/results_2023-05-31-01-43-25_939.json": {
                 "verify_result": false,

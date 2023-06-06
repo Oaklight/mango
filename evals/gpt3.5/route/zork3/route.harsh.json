@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 25,
-        "total_num": 306,
-        "accuracy": 0.08169934640522876,
+        "total_num": 307,
+        "accuracy": 0.08143322475570032,
         "collection": {
             "../gpt-games-results//zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-44-45_139.json": {
                 "verify_result": false,
@@ -8648,6 +8648,46 @@
                 ],
                 "micro_uuid": "36b85ba4-ad66-3374-91ec-edde5358f1f3",
                 "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            "../gpt-games-results//zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-13_360.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "c87fef11-466d-30cb-9c39-55a83cc630f5",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
             },
             "../gpt-games-results//zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-12-23-00_608.json": {
                 "verify_result": false,
@@ -22935,6 +22975,46 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "c87fef11-466d-30cb-9c39-55a83cc630f5",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Barren Area",
                 "src_requested": "barren area (obj62)",
                 "dst_anno": "Water Slide",
@@ -28084,46 +28164,6 @@
                 ],
                 "micro_uuid": "224e7793-95c5-3b7b-a48e-69178a7b3e8e",
                 "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Cliff",
-                "src_requested": "cliff (obj58)",
-                "dst_anno": "Damp Passage",
-                "dst_requested": "damp passage (obj152)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "cliff ledge (obj55)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Cliff",
-                        "node": "Cliff Ledge",
-                        "action": "down",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Cliff Ledge",
-                        "node": "Barren Area",
-                        "action": "west",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "northeast"
-                    }
-                ],
-                "micro_uuid": "c87fef11-466d-30cb-9c39-55a83cc630f5",
-                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
             },
             {
                 "verify_result": false,

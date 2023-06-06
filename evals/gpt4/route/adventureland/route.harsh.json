@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
         "correct_num": 51,
-        "total_num": 181,
-        "accuracy": 0.281767955801105,
+        "total_num": 182,
+        "accuracy": 0.2802197802197802,
         "collection": {
             "../gpt-games-results//adventureland/results//pathgen-gpt-4/results_2023-05-31-06-14-33_674.json": {
                 "verify_result": true,
@@ -887,6 +887,85 @@
                 ],
                 "micro_uuid": "c24574f7-3b3f-3ed0-8043-24ceb5836e92",
                 "macro_uuid": "66fe4ef7-9f17-3664-b7f1-833351e5ecb8"
+            },
+            "../gpt-games-results//adventureland/results//pathgen-gpt-4/results_2023-05-31-06-10-50_628.json": {
+                "verify_result": false,
+                "src_anno": "Lakeside",
+                "src_requested": "lakeside (obj24)",
+                "dst_anno": "Chasm",
+                "dst_requested": "chasm (obj85)",
+                "connectivity": true,
+                "dist_shortest": 11,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lakeside (obj24)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lakeside",
+                        "node": "Meadow",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Meadow",
+                        "node": "Dismal Swamp",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Dismal Swamp",
+                        "node": "Inside Stump",
+                        "action": "go stump"
+                    },
+                    {
+                        "prev_node": "Inside Stump",
+                        "node": "Root Chamber",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Root Chamber",
+                        "node": "Hole",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hole",
+                        "node": "Hall",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hall",
+                        "node": "Cavern",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cavern",
+                        "node": "Maze (exit North, South, East, Down)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, Down)",
+                        "node": "Maze (exit West, Up)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Maze (exit West, Up)",
+                        "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+                        "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+                        "node": "Chasm",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "1fef1a53-c102-3849-b4f6-74ed6ef56161",
+                "macro_uuid": "6eae9b65-2b75-393b-a3cf-accca548c5c5"
             },
             "../gpt-games-results//adventureland/results//pathgen-gpt-4/results_2023-05-31-06-11-13_948.json": {
                 "verify_result": true,
@@ -9505,6 +9584,85 @@
                 "macro_uuid": "66fe4ef7-9f17-3664-b7f1-833351e5ecb8"
             },
             {
+                "verify_result": false,
+                "src_anno": "Lakeside",
+                "src_requested": "lakeside (obj24)",
+                "dst_anno": "Chasm",
+                "dst_requested": "chasm (obj85)",
+                "connectivity": true,
+                "dist_shortest": 11,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lakeside (obj24)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lakeside",
+                        "node": "Meadow",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Meadow",
+                        "node": "Dismal Swamp",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Dismal Swamp",
+                        "node": "Inside Stump",
+                        "action": "go stump"
+                    },
+                    {
+                        "prev_node": "Inside Stump",
+                        "node": "Root Chamber",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Root Chamber",
+                        "node": "Hole",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hole",
+                        "node": "Hall",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hall",
+                        "node": "Cavern",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cavern",
+                        "node": "Maze (exit North, South, East, Down)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, Down)",
+                        "node": "Maze (exit West, Up)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Maze (exit West, Up)",
+                        "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+                        "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+                        "node": "Chasm",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "1fef1a53-c102-3849-b4f6-74ed6ef56161",
+                "macro_uuid": "6eae9b65-2b75-393b-a3cf-accca548c5c5"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "Dismal Swamp",
                 "src_requested": "dismal swamp (obj43)",
@@ -11513,85 +11671,6 @@
                 ],
                 "micro_uuid": "62a206c9-b6dd-3ce8-ab44-fbcdf4dde5f7",
                 "macro_uuid": "75a6ab21-311e-355d-bea4-4830086be03c"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Lakeside",
-                "src_requested": "lakeside (obj24)",
-                "dst_anno": "Chasm",
-                "dst_requested": "chasm (obj85)",
-                "connectivity": true,
-                "dist_shortest": 11,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "lakeside (obj24)",
-                "stop_step": 0,
-                "path_checked": [
-                    {
-                        "prev_node": "Lakeside",
-                        "node": "Meadow",
-                        "action": "south",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Meadow",
-                        "node": "Dismal Swamp",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Dismal Swamp",
-                        "node": "Inside Stump",
-                        "action": "go stump"
-                    },
-                    {
-                        "prev_node": "Inside Stump",
-                        "node": "Root Chamber",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Root Chamber",
-                        "node": "Hole",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Hole",
-                        "node": "Hall",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Hall",
-                        "node": "Cavern",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Cavern",
-                        "node": "Maze (exit North, South, East, Down)",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Maze (exit North, South, East, Down)",
-                        "node": "Maze (exit West, Up)",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Maze (exit West, Up)",
-                        "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
-                        "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
-                        "node": "Chasm",
-                        "action": "down"
-                    }
-                ],
-                "micro_uuid": "1fef1a53-c102-3849-b4f6-74ed6ef56161",
-                "macro_uuid": "6eae9b65-2b75-393b-a3cf-accca548c5c5"
             },
             {
                 "verify_result": false,
@@ -18123,6 +18202,85 @@
                 "macro_uuid": "66fe4ef7-9f17-3664-b7f1-833351e5ecb8"
             },
             {
+                "verify_result": false,
+                "src_anno": "Lakeside",
+                "src_requested": "lakeside (obj24)",
+                "dst_anno": "Chasm",
+                "dst_requested": "chasm (obj85)",
+                "connectivity": true,
+                "dist_shortest": 11,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lakeside (obj24)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lakeside",
+                        "node": "Meadow",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Meadow",
+                        "node": "Dismal Swamp",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Dismal Swamp",
+                        "node": "Inside Stump",
+                        "action": "go stump"
+                    },
+                    {
+                        "prev_node": "Inside Stump",
+                        "node": "Root Chamber",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Root Chamber",
+                        "node": "Hole",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hole",
+                        "node": "Hall",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hall",
+                        "node": "Cavern",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cavern",
+                        "node": "Maze (exit North, South, East, Down)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, Down)",
+                        "node": "Maze (exit West, Up)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Maze (exit West, Up)",
+                        "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+                        "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+                        "node": "Chasm",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "1fef1a53-c102-3849-b4f6-74ed6ef56161",
+                "macro_uuid": "6eae9b65-2b75-393b-a3cf-accca548c5c5"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "Dismal Swamp",
                 "src_requested": "dismal swamp (obj43)",
@@ -19998,85 +20156,6 @@
                 ],
                 "micro_uuid": "62a206c9-b6dd-3ce8-ab44-fbcdf4dde5f7",
                 "macro_uuid": "75a6ab21-311e-355d-bea4-4830086be03c"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Lakeside",
-                "src_requested": "lakeside (obj24)",
-                "dst_anno": "Chasm",
-                "dst_requested": "chasm (obj85)",
-                "connectivity": true,
-                "dist_shortest": 11,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "lakeside (obj24)",
-                "stop_step": 0,
-                "path_checked": [
-                    {
-                        "prev_node": "Lakeside",
-                        "node": "Meadow",
-                        "action": "south",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Meadow",
-                        "node": "Dismal Swamp",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Dismal Swamp",
-                        "node": "Inside Stump",
-                        "action": "go stump"
-                    },
-                    {
-                        "prev_node": "Inside Stump",
-                        "node": "Root Chamber",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Root Chamber",
-                        "node": "Hole",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Hole",
-                        "node": "Hall",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Hall",
-                        "node": "Cavern",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Cavern",
-                        "node": "Maze (exit North, South, East, Down)",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Maze (exit North, South, East, Down)",
-                        "node": "Maze (exit West, Up)",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Maze (exit West, Up)",
-                        "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
-                        "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
-                        "node": "Chasm",
-                        "action": "down"
-                    }
-                ],
-                "micro_uuid": "1fef1a53-c102-3849-b4f6-74ed6ef56161",
-                "macro_uuid": "6eae9b65-2b75-393b-a3cf-accca548c5c5"
             },
             {
                 "verify_result": false,

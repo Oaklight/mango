@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
         "correct_num": 77,
-        "total_num": 210,
-        "accuracy": 0.36666666666666664,
+        "total_num": 211,
+        "accuracy": 0.36492890995260663,
         "collection": {
             "../gpt-games-results//inhumane/results//pathgen-gpt-4/results_2023-06-01-18-43-05_937.json": {
                 "verify_result": false,
@@ -1292,6 +1292,25 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "7eea9e7b-108b-33ad-a75a-b44cd5ae83f2",
                 "macro_uuid": "92802fbf-a8fe-3c6c-ba68-eadd315d1d40"
+            },
+            "../gpt-games-results//inhumane/results//pathgen-gpt-4/results_2023-06-01-18-53-19_249.json": {
+                "verify_result": false,
+                "src_anno": "Roboff's Tent",
+                "src_requested": "roboff's tent (obj25)",
+                "dst_anno": "South Branch",
+                "dst_requested": "south branch (obj50)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), south branch (obj50)",
+                "micro_uuid": "392d376d-b3a6-3a63-9bd7-8c92a9bb47ed",
+                "macro_uuid": "395c1f7f-abf8-37a2-9f53-8aa62d5a410a"
             },
             "../gpt-games-results//inhumane/results//pathgen-gpt-4/results_2023-06-01-18-37-40_501.json": {
                 "verify_result": false,

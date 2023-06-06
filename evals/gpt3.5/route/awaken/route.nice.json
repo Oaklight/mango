@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 24,
-        "total_num": 212,
-        "accuracy": 0.11320754716981132,
+        "total_num": 213,
+        "accuracy": 0.11267605633802817,
         "collection": {
             "../gpt-games-results//awaken/results//pathgen-gpt-3.5-turbo/results_2023-06-01-16-41-50_426.json": {
                 "verify_result": true,
@@ -1399,6 +1399,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: north side of the church (obj45), steeple chamber (obj98)",
                 "micro_uuid": "81174424-ca01-37a9-9d9e-e2873aff9051",
                 "macro_uuid": "08e7493a-e3a0-3940-a7fc-26c3ed165877"
+            },
+            "../gpt-games-results//awaken/results//pathgen-gpt-3.5-turbo/results_2023-06-01-16-39-00_010.json": {
+                "verify_result": false,
+                "src_anno": "West Side of the Church",
+                "src_requested": "west side of the church (obj43)",
+                "dst_anno": "Sanctuary",
+                "dst_requested": "sanctuary (obj75)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "north side of the church (obj45)",
+                "verify_msg": "wrong path, fail to arrive at dst: north side of the church (obj45), sanctuary (obj75)",
+                "micro_uuid": "e1ea9e1a-3d3a-3ec2-9cd4-db5cd9f702e6",
+                "macro_uuid": "e39ff5f2-6149-39e8-9f0a-18c8bd0b0b83"
             },
             "../gpt-games-results//awaken/results//pathgen-gpt-3.5-turbo/results_2023-06-01-16-40-06_398.json": {
                 "verify_result": false,
@@ -5617,6 +5636,25 @@
                 "verify_result": false,
                 "src_anno": "West Side of the Church",
                 "src_requested": "west side of the church (obj43)",
+                "dst_anno": "Sanctuary",
+                "dst_requested": "sanctuary (obj75)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "north side of the church (obj45)",
+                "verify_msg": "wrong path, fail to arrive at dst: north side of the church (obj45), sanctuary (obj75)",
+                "micro_uuid": "e1ea9e1a-3d3a-3ec2-9cd4-db5cd9f702e6",
+                "macro_uuid": "e39ff5f2-6149-39e8-9f0a-18c8bd0b0b83"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "West Side of the Church",
+                "src_requested": "west side of the church (obj43)",
                 "dst_anno": "Steeple Chamber",
                 "dst_requested": "steeple chamber (obj98)",
                 "connectivity": true,
@@ -6639,25 +6677,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: front of the church (obj51), east side of the church (obj47)",
                 "micro_uuid": "88cc52e5-a1e9-35ff-b4f4-a619aa9c3e5e",
                 "macro_uuid": "fe501fb2-d783-3cae-8b8b-0e69701d11d5"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "West Side of the Church",
-                "src_requested": "west side of the church (obj43)",
-                "dst_anno": "Sanctuary",
-                "dst_requested": "sanctuary (obj75)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "south",
-                    "north"
-                ],
-                "dst_gpt": "north side of the church (obj45)",
-                "verify_msg": "wrong path, fail to arrive at dst: north side of the church (obj45), sanctuary (obj75)",
-                "micro_uuid": "e1ea9e1a-3d3a-3ec2-9cd4-db5cd9f702e6",
-                "macro_uuid": "e39ff5f2-6149-39e8-9f0a-18c8bd0b0b83"
             },
             {
                 "verify_result": false,

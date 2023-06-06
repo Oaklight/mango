@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 32,
-        "total_num": 231,
-        "accuracy": 0.13852813852813853,
+        "total_num": 233,
+        "accuracy": 0.13733905579399142,
         "collection": {
             "../gpt-games-results//ludicorp/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-45-39_647.json": {
                 "verify_result": false,
@@ -1934,6 +1934,33 @@
                 "micro_uuid": "f75745c2-10f5-3982-8086-ce809f7b6bd7",
                 "macro_uuid": "aea70111-2d08-3cff-adc2-9b0062c398d1"
             },
+            "../gpt-games-results//ludicorp/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-46-07_257.json": {
+                "verify_result": false,
+                "src_anno": "Corner Of the Carpark",
+                "src_requested": "corner of the carpark (obj162)",
+                "dst_anno": "North-South Corridoor",
+                "dst_requested": "north-south corridoor (obj197)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "southwest",
+                    "east",
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "east",
+                    "south",
+                    "north",
+                    "north",
+                    "down",
+                    "north"
+                ],
+                "dst_gpt": "corner of the carpark (obj162)",
+                "verify_msg": "wrong path, fail to arrive at dst: corner of the carpark (obj162), north-south corridoor (obj197)",
+                "micro_uuid": "b007833d-865d-3b32-910e-25f06966f706",
+                "macro_uuid": "01c69cd2-3e46-3ed0-8bc9-2e428cf71ff8"
+            },
             "../gpt-games-results//ludicorp/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-54-55_255.json": {
                 "verify_result": true,
                 "src_anno": "The Delivery Bay Gateway",
@@ -2767,6 +2794,20 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "580f251b-9732-384a-8777-9ee679fb5dd7",
                 "macro_uuid": "f5c1837b-5ec2-3142-8e47-7e3ca5f6f9ab"
+            },
+            "../gpt-games-results//ludicorp/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-55-39_877.json": {
+                "verify_result": false,
+                "src_anno": "Bike Shed",
+                "src_requested": "bike shed (obj172)",
+                "dst_anno": "North-South Corridoor",
+                "dst_requested": "north-south corridoor (obj197)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "4b695ba6-ac76-30bc-80be-2e3a6bed9920",
+                "macro_uuid": "6256da27-0e27-3e54-96de-4f6d04f3a83b"
             },
             "../gpt-games-results//ludicorp/results//pathgen-gpt-3.5-turbo/results_2023-06-01-00-44-50_504.json": {
                 "verify_result": false,
@@ -7146,6 +7187,33 @@
                 "macro_uuid": "aea70111-2d08-3cff-adc2-9b0062c398d1"
             },
             {
+                "verify_result": false,
+                "src_anno": "Corner Of the Carpark",
+                "src_requested": "corner of the carpark (obj162)",
+                "dst_anno": "North-South Corridoor",
+                "dst_requested": "north-south corridoor (obj197)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "southwest",
+                    "east",
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "east",
+                    "south",
+                    "north",
+                    "north",
+                    "down",
+                    "north"
+                ],
+                "dst_gpt": "corner of the carpark (obj162)",
+                "verify_msg": "wrong path, fail to arrive at dst: corner of the carpark (obj162), north-south corridoor (obj197)",
+                "micro_uuid": "b007833d-865d-3b32-910e-25f06966f706",
+                "macro_uuid": "01c69cd2-3e46-3ed0-8bc9-2e428cf71ff8"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "The Delivery Bay Gateway",
                 "src_requested": "the delivery bay gateway (obj158)",
@@ -7981,6 +8049,20 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Bike Shed",
+                "src_requested": "bike shed (obj172)",
+                "dst_anno": "North-South Corridoor",
+                "dst_requested": "north-south corridoor (obj197)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "4b695ba6-ac76-30bc-80be-2e3a6bed9920",
+                "macro_uuid": "6256da27-0e27-3e54-96de-4f6d04f3a83b"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Corner Of the Carpark",
                 "src_requested": "corner of the carpark (obj162)",
                 "dst_anno": "East Of Office",
@@ -8285,20 +8367,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: long corridor, west end (obj176), north-south corridoor (obj197)",
                 "micro_uuid": "c27bec85-f23a-3a2a-9fe5-87b3214e7bcf",
                 "macro_uuid": "a6ac4571-d363-3877-987c-52752e9be1e2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bike Shed",
-                "src_requested": "bike shed (obj172)",
-                "dst_anno": "North-South Corridoor",
-                "dst_requested": "north-south corridoor (obj197)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "4b695ba6-ac76-30bc-80be-2e3a6bed9920",
-                "macro_uuid": "6256da27-0e27-3e54-96de-4f6d04f3a83b"
             },
             {
                 "verify_result": false,
@@ -10346,33 +10414,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: damp corner (obj167), storage shed (obj174)",
                 "micro_uuid": "ad3fafed-6c39-3bf1-a9eb-3be7d3fc146d",
                 "macro_uuid": "445332fe-01f2-3d9c-b3d1-0704781e5ed1"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Corner Of the Carpark",
-                "src_requested": "corner of the carpark (obj162)",
-                "dst_anno": "North-South Corridoor",
-                "dst_requested": "north-south corridoor (obj197)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "southwest",
-                    "east",
-                    "east",
-                    "east",
-                    "east",
-                    "south",
-                    "east",
-                    "south",
-                    "north",
-                    "north",
-                    "down",
-                    "north"
-                ],
-                "dst_gpt": "corner of the carpark (obj162)",
-                "verify_msg": "wrong path, fail to arrive at dst: corner of the carpark (obj162), north-south corridoor (obj197)",
-                "micro_uuid": "b007833d-865d-3b32-910e-25f06966f706",
-                "macro_uuid": "01c69cd2-3e46-3ed0-8bc9-2e428cf71ff8"
             },
             {
                 "verify_result": false,
@@ -12359,6 +12400,33 @@
                 "macro_uuid": "aea70111-2d08-3cff-adc2-9b0062c398d1"
             },
             {
+                "verify_result": false,
+                "src_anno": "Corner Of the Carpark",
+                "src_requested": "corner of the carpark (obj162)",
+                "dst_anno": "North-South Corridoor",
+                "dst_requested": "north-south corridoor (obj197)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "southwest",
+                    "east",
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "east",
+                    "south",
+                    "north",
+                    "north",
+                    "down",
+                    "north"
+                ],
+                "dst_gpt": "corner of the carpark (obj162)",
+                "verify_msg": "wrong path, fail to arrive at dst: corner of the carpark (obj162), north-south corridoor (obj197)",
+                "micro_uuid": "b007833d-865d-3b32-910e-25f06966f706",
+                "macro_uuid": "01c69cd2-3e46-3ed0-8bc9-2e428cf71ff8"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "The Delivery Bay Gateway",
                 "src_requested": "the delivery bay gateway (obj158)",
@@ -13194,6 +13262,20 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Bike Shed",
+                "src_requested": "bike shed (obj172)",
+                "dst_anno": "North-South Corridoor",
+                "dst_requested": "north-south corridoor (obj197)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "4b695ba6-ac76-30bc-80be-2e3a6bed9920",
+                "macro_uuid": "6256da27-0e27-3e54-96de-4f6d04f3a83b"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Corner Of the Carpark",
                 "src_requested": "corner of the carpark (obj162)",
                 "dst_anno": "East Of Office",
@@ -13498,20 +13580,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: long corridor, west end (obj176), north-south corridoor (obj197)",
                 "micro_uuid": "c27bec85-f23a-3a2a-9fe5-87b3214e7bcf",
                 "macro_uuid": "a6ac4571-d363-3877-987c-52752e9be1e2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bike Shed",
-                "src_requested": "bike shed (obj172)",
-                "dst_anno": "North-South Corridoor",
-                "dst_requested": "north-south corridoor (obj197)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "4b695ba6-ac76-30bc-80be-2e3a6bed9920",
-                "macro_uuid": "6256da27-0e27-3e54-96de-4f6d04f3a83b"
             },
             {
                 "verify_result": false,
@@ -15559,33 +15627,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: damp corner (obj167), storage shed (obj174)",
                 "micro_uuid": "ad3fafed-6c39-3bf1-a9eb-3be7d3fc146d",
                 "macro_uuid": "445332fe-01f2-3d9c-b3d1-0704781e5ed1"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Corner Of the Carpark",
-                "src_requested": "corner of the carpark (obj162)",
-                "dst_anno": "North-South Corridoor",
-                "dst_requested": "north-south corridoor (obj197)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "southwest",
-                    "east",
-                    "east",
-                    "east",
-                    "east",
-                    "south",
-                    "east",
-                    "south",
-                    "north",
-                    "north",
-                    "down",
-                    "north"
-                ],
-                "dst_gpt": "corner of the carpark (obj162)",
-                "verify_msg": "wrong path, fail to arrive at dst: corner of the carpark (obj162), north-south corridoor (obj197)",
-                "micro_uuid": "b007833d-865d-3b32-910e-25f06966f706",
-                "macro_uuid": "01c69cd2-3e46-3ed0-8bc9-2e428cf71ff8"
             },
             {
                 "verify_result": false,

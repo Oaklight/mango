@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
-        "correct_num": 51,
-        "total_num": 78,
-        "accuracy": 0.6538461538461539,
+        "correct_num": 52,
+        "total_num": 79,
+        "accuracy": 0.6582278481012658,
         "collection": {
             "../gpt-games-results//infidel/results//pathgen-gpt-4/results_2023-06-01-09-38-55_247.json": {
                 "verify_result": false,
@@ -1123,6 +1123,54 @@
                 ],
                 "micro_uuid": "9745290a-cff8-3203-aac6-a4230397248c",
                 "macro_uuid": "5c7dcce1-eae5-33f5-a47f-2c7c527df709"
+            },
+            "../gpt-games-results//infidel/results//pathgen-gpt-4/results_2023-06-01-09-51-14_928.json": {
+                "verify_result": true,
+                "src_anno": "River Bank",
+                "src_requested": "river bank (obj82)",
+                "dst_anno": "Desert (out of sight of encampment)",
+                "dst_requested": "desert (obj54)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "desert (obj54)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "River Bank",
+                        "node": "Near the Nile",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Near the Nile",
+                        "node": "Outside Your Tent",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Desert (within sight of encampment)",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Desert (within sight of encampment)",
+                        "node": "Desert (out of sight of encampment)",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "ca68face-a53b-3ebb-9687-c1aba08d939d",
+                "macro_uuid": "197abb91-8bac-33cb-b49a-c9aa00895fc9"
             },
             "../gpt-games-results//infidel/results//pathgen-gpt-4/results_2023-06-01-09-45-57_629.json": {
                 "verify_result": true,
@@ -4399,6 +4447,54 @@
             },
             {
                 "verify_result": true,
+                "src_anno": "River Bank",
+                "src_requested": "river bank (obj82)",
+                "dst_anno": "Desert (out of sight of encampment)",
+                "dst_requested": "desert (obj54)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "desert (obj54)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "River Bank",
+                        "node": "Near the Nile",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Near the Nile",
+                        "node": "Outside Your Tent",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Desert (within sight of encampment)",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Desert (within sight of encampment)",
+                        "node": "Desert (out of sight of encampment)",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "ca68face-a53b-3ebb-9687-c1aba08d939d",
+                "macro_uuid": "197abb91-8bac-33cb-b49a-c9aa00895fc9"
+            },
+            {
+                "verify_result": true,
                 "src_anno": "Work Tent",
                 "src_requested": "work tent (obj62)",
                 "dst_anno": "Desert (within sight of encampment)",
@@ -4725,54 +4821,6 @@
                 ],
                 "micro_uuid": "2f6292ce-3f24-36da-b959-13083a180623",
                 "macro_uuid": "bc14971b-d513-318f-8c69-8c11f7b5403d"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "River Bank",
-                "src_requested": "river bank (obj82)",
-                "dst_anno": "Desert (out of sight of encampment)",
-                "dst_requested": "desert (obj54)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "desert (obj54)",
-                "stop_step": 5,
-                "path_checked": [
-                    {
-                        "prev_node": "River Bank",
-                        "node": "Near the Nile",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Near the Nile",
-                        "node": "Outside Your Tent",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Outside Your Tent",
-                        "node": "Northern Path",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Northern Path",
-                        "node": "Desert (within sight of encampment)",
-                        "action": "southeast",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Desert (within sight of encampment)",
-                        "node": "Desert (out of sight of encampment)",
-                        "action": "southeast",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "ca68face-a53b-3ebb-9687-c1aba08d939d",
-                "macro_uuid": "197abb91-8bac-33cb-b49a-c9aa00895fc9"
             },
             {
                 "verify_result": true,
@@ -7674,6 +7722,54 @@
             },
             {
                 "verify_result": true,
+                "src_anno": "River Bank",
+                "src_requested": "river bank (obj82)",
+                "dst_anno": "Desert (out of sight of encampment)",
+                "dst_requested": "desert (obj54)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "desert (obj54)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "River Bank",
+                        "node": "Near the Nile",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Near the Nile",
+                        "node": "Outside Your Tent",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Desert (within sight of encampment)",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Desert (within sight of encampment)",
+                        "node": "Desert (out of sight of encampment)",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "ca68face-a53b-3ebb-9687-c1aba08d939d",
+                "macro_uuid": "197abb91-8bac-33cb-b49a-c9aa00895fc9"
+            },
+            {
+                "verify_result": true,
                 "src_anno": "Work Tent",
                 "src_requested": "work tent (obj62)",
                 "dst_anno": "Desert (within sight of encampment)",
@@ -8000,54 +8096,6 @@
                 ],
                 "micro_uuid": "2f6292ce-3f24-36da-b959-13083a180623",
                 "macro_uuid": "bc14971b-d513-318f-8c69-8c11f7b5403d"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "River Bank",
-                "src_requested": "river bank (obj82)",
-                "dst_anno": "Desert (out of sight of encampment)",
-                "dst_requested": "desert (obj54)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "desert (obj54)",
-                "stop_step": 5,
-                "path_checked": [
-                    {
-                        "prev_node": "River Bank",
-                        "node": "Near the Nile",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Near the Nile",
-                        "node": "Outside Your Tent",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Outside Your Tent",
-                        "node": "Northern Path",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Northern Path",
-                        "node": "Desert (within sight of encampment)",
-                        "action": "southeast",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Desert (within sight of encampment)",
-                        "node": "Desert (out of sight of encampment)",
-                        "action": "southeast",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "ca68face-a53b-3ebb-9687-c1aba08d939d",
-                "macro_uuid": "197abb91-8bac-33cb-b49a-c9aa00895fc9"
             },
             {
                 "verify_result": true,
