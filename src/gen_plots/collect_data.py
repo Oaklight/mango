@@ -59,7 +59,12 @@ def collect_data(eval_dir, temp_dir):
                 task_path
             ), f"task folder does not exist!: {task_path}"
 
-            game_names = os.listdir(task_path)
+            # game_names = os.listdir(task_path) # only consider folder
+            game_names = [
+                each
+                for each in os.listdir(task_path)
+                if os.path.isdir(f"{task_path}/{each}")
+            ]
             print(f"found {len(game_names)} games in {task_name}")
             for game_name in game_names:
                 game_path = f"{task_path}/{game_name}"
@@ -158,6 +163,7 @@ def collect_data(eval_dir, temp_dir):
         )
     csv_file.close()
     print_color(f"avg_acc.csv file created!", "black")
+
 
 if __name__ == "__main__":
     # argparse to get eval and local folder path

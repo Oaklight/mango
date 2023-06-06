@@ -19,6 +19,9 @@ GLOBAL_FONTSIZE = 11
 
 
 def plot_acc_vs_term_dist(save_path, length_acc):
+    # length_acc = {key: value for key, value in length_acc.items() if key is not None} I want to see which key is none
+    for k, v in length_acc.items():
+        assert k is not None, f"key is none??? [{save_path}] | length_acc: {length_acc}"
     length_acc = sorted(length_acc.items(), key=lambda x: x[0])
     micro_length = [each[0] for each in length_acc]
     micro_acc = [
@@ -149,7 +152,7 @@ model_names = [
 
 
 # get games under each model's eval dir
-def regress_plot_individual_desti(plot_acc_vs_sth_for_task, each_model_dir):
+def regress_plot_individual_desti(each_model_dir):
     print("======== processing DESTINATION finding plots ========")
     desti_dir = os.path.join(each_model_dir, "desti")
     desti_games = [
@@ -235,7 +238,7 @@ def regress_plot_individual_desti(plot_acc_vs_sth_for_task, each_model_dir):
     )
 
 
-def regress_plot_individual_route(plot_acc_vs_sth_for_task, each_model_dir):
+def regress_plot_individual_route(each_model_dir):
     print("======== processing ROUTE finding plots ========")
     route_dir = os.path.join(each_model_dir, "route")
     route_games = [
@@ -401,10 +404,10 @@ if __name__ == "__main__":
         # there should be "route.harsh.json" and "route.nice.json" in "route/{game}" dir
 
         # process desti
-        regress_plot_individual_desti(plot_acc_vs_sth_for_task, each_model_dir)
+        regress_plot_individual_desti(each_model_dir)
 
         # # process route
-        regress_plot_individual_route(plot_acc_vs_sth_for_task, each_model_dir)
+        regress_plot_individual_route(each_model_dir)
 
         # process desti regression error bar for all games
         regress_plot_all_game(each_model_dir, "desti")
