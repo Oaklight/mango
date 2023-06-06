@@ -257,7 +257,7 @@ def verify_amend_acc(
     verify_dupli[each_version][f"total_num_{level}"] = len(level_uuid_best)
     verify_dupli[each_version][f"accuracy_{level}"] = correct_num_level / len(
         level_uuid_best
-    )
+    ) if len(level_uuid_best) != 0 else 0
     return verify_dupli
 
 
