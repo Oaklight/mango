@@ -40,7 +40,7 @@ if __name__ == "__main__":
     games = [
         f
         for f in os.listdir(INFER_DIR)
-        if os.path.isdir(os.path.join(INFER_DIR, f)) and not f.startswith(".")
+        if os.path.isdir(os.path.join(INFER_DIR, f)) and not f.startswith(".") and not f.startswith("outputs_diff")
     ]
     print(len(games))
 
