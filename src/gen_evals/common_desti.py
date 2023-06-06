@@ -42,6 +42,19 @@ def verify_stepnav_simple(g, anno2code, each_json_path, verbose=True):
     good_format, path_gpt = check_format(gpt_results, dst_only=True)
     msg = "bad format" if not good_format else ""
 
+    if good_format:
+        if len(action_requested) != 0 and len(path_gpt) == 0:
+            good_format = False
+            msg = "empty path_gpt when action_requested is not empty"
+            if verbose:
+                print("bad format: ", msg)
+
+        elif path_gpt[-1]["node"] is None:
+            good_format = False
+            msg = "bad format: dst node is None"
+            if verbose:
+                print("bad format: ", msg)
+
     if not good_format:
         if verbose:
             print("bad format: ", msg)
