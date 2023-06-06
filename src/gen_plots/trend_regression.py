@@ -15,6 +15,7 @@ sys.path.append(parent)
 from gen_evals.utils import __count_helper_trend
 
 EVAL_DIR = "./evals"
+GLOBAL_FONTSIZE = 11
 
 
 def plot_acc_vs_term_dist(save_path, length_acc):
@@ -34,21 +35,34 @@ def plot_acc_vs_term_dist(save_path, length_acc):
     micro_line = np.poly1d([slope, intercept])
 
     plt.figure(figsize=(10, 10))
-    plt.plot(micro_length, micro_acc)
-    plt.plot(micro_length, micro_line(micro_length), "--r", label="Fitted line")
-    plt.xlabel("dist(src, dst)")
-    plt.ylabel("accuracy")
+    plt.plot(micro_length, micro_acc, color="steelblue", label="Accuracy")
+    plt.plot(
+        micro_length,
+        micro_line(micro_length),
+        linestyle="dashed",
+        label="Fitted line",
+        color="lightcoral",
+    )
+    plt.xlabel("dist(src, dst)", fontsize=GLOBAL_FONTSIZE)
+    plt.ylabel("accuracy", fontsize=GLOBAL_FONTSIZE)
 
     # Add slope and confidence interval to the plot
-    plt.text(0.7, 0.9, f"Slope: {slope:.2f}", transform=plt.gca().transAxes)
+    plt.text(
+        0.7,
+        0.9,
+        f"Slope: {slope:.2f}",
+        transform=plt.gca().transAxes,
+        fontsize=GLOBAL_FONTSIZE,
+    )
     plt.text(
         0.7,
         0.85,
         f"Confidence Interval: [{conf_int[0]:.2f}, {conf_int[1]:.2f}]",
         transform=plt.gca().transAxes,
+        fontsize=GLOBAL_FONTSIZE,
     )
 
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=300, bbox_inches="tight")
     plt.close()
     return slope, conf_int
 
@@ -71,21 +85,34 @@ def plot_acc_vs_route_length(save_path, macro_length_acc):
     macro_line = np.poly1d([slope, intercept])
 
     plt.figure(figsize=(10, 10))
-    plt.plot(macro_length, macro_acc)
-    plt.plot(macro_length, macro_line(macro_length), "--r", label="Fitted Line")
-    plt.xlabel("requested route length")
-    plt.ylabel("accuracy")
+    plt.plot(macro_length, macro_acc, color="steelblue", label="Accuracy")
+    plt.plot(
+        macro_length,
+        macro_line(macro_length),
+        linestyle="dashed",
+        label="Fitted Line",
+        color="lightcoral",
+    )
+    plt.xlabel("requested route length", fontsize=GLOBAL_FONTSIZE)
+    plt.ylabel("accuracy", fontsize=GLOBAL_FONTSIZE)
 
     # Add slope and confidence interval to the plot
-    plt.text(0.7, 0.9, f"Slope: {slope:.2f}", transform=plt.gca().transAxes)
+    plt.text(
+        0.7,
+        0.9,
+        f"Slope: {slope:.2f}",
+        transform=plt.gca().transAxes,
+        fontsize=GLOBAL_FONTSIZE,
+    )
     plt.text(
         0.7,
         0.85,
         f"Confidence Interval: [{conf_int[0]:.2f}, {conf_int[1]:.2f}]",
         transform=plt.gca().transAxes,
+        fontsize=GLOBAL_FONTSIZE,
     )
 
-    plt.savefig(save_path)
+    plt.savefig(save_path, dpi=300, bbox_inches="tight")
     plt.close()
     return slope, conf_int
 
@@ -120,14 +147,9 @@ model_names = [
     each for each in os.listdir(EVAL_DIR) if os.path.isdir(os.path.join(EVAL_DIR, each))
 ]
 
-# get games under each model's eval dir
-for each_model in model_names:
-    each_model_dir = os.path.join(EVAL_DIR, each_model)
-    # there should be "desti" and "route" folders under each model dir, within which are games folders
-    # there should be "destination.harsh.json" and "destination.nice.json" in "desti/{game}" dir
-    # there should be "route.harsh.json" and "route.nice.json" in "route/{game}" dir
 
-    # process desti
+# get games under each model's eval dir
+def regress_plot_individual_desti(plot_acc_vs_sth_for_task, each_model_dir):
     print("======== processing DESTINATION finding plots ========")
     desti_dir = os.path.join(each_model_dir, "desti")
     desti_games = [
@@ -212,7 +234,8 @@ for each_model in model_names:
         sort_keys=True,
     )
 
-    # process route
+
+def regress_plot_individual_route(plot_acc_vs_sth_for_task, each_model_dir):
     print("======== processing ROUTE finding plots ========")
     route_dir = os.path.join(each_model_dir, "route")
     route_games = [
@@ -296,3 +319,94 @@ for each_model in model_names:
         indent=4,
         sort_keys=True,
     )
+
+
+def plot_slopes_with_error_bars(slope_data, save_path):
+    test_names = []
+    slopes = []
+    conf_intervals = []
+    for test in slope_data:
+        if (
+            slope_data[test]["slope"] is not None
+            and slope_data[test]["conf_int"] is not None
+        ):
+            test_names.append(test)
+            slopes.append(slope_data[test]["slope"])
+            conf_intervals.append(slope_data[test]["conf_int"])
+    # check if conf_intervals is a list of list of size 2
+    assert all(
+        [len(each) == 2 for each in conf_intervals]
+    ), "conf_intervals should be a list of list of size 2"
+
+    # Convert confidence intervals to error bars
+    errors = np.abs(np.array(conf_intervals).T - np.array(slopes))
+
+    # Plot the slopes with error bars
+    plt.figure(figsize=(10, 6))
+    # error bar plot
+    plt.errorbar(
+        test_names,
+        slopes,
+        yerr=errors,
+        fmt="o",
+        capsize=5,
+        alpha=0.5,
+        color="steelblue",
+    )
+    # # scattered plot
+    # plt.scatter( # plot scattered points
+    #     test_names,
+    #     slopes,
+    #     marker="o",
+    #     color="steelblue",
+    #     alpha=0.5,
+    #     label="Slope",
+    # )
+    plt.ylabel("Slope", fontsize=GLOBAL_FONTSIZE)
+    plt.xticks(rotation=30, ha="right", fontsize=GLOBAL_FONTSIZE)
+    plt.yticks(fontsize=GLOBAL_FONTSIZE)
+    # plt.subplots_adjust(bottom=0.2)
+    # add horizontal dashed line at y=0, lightcoral
+    plt.axhline(y=0, color="lightcoral", linestyle="dashed")
+
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    plt.close()
+    # plt.show()
+
+
+def regress_plot_all_game_desti(each_model_dir, task):
+    assert task in ["desti", "route"], "task should be either desti or route"
+
+    task_path = os.path.join(each_model_dir, task)
+
+    harsh_slope_conf_int_dict = json.load(
+        open(os.path.join(task_path, f"{task}_finding_error_bar_reg_harsh.json"), "r")
+    )
+    save_path = os.path.join(task_path, f"{task}_finding_error_bar_reg_harsh.png")
+    plot_slopes_with_error_bars(harsh_slope_conf_int_dict, save_path)
+
+    nice_slope_conf_int_dict = json.load(
+        open(os.path.join(task_path, f"{task}_finding_error_bar_reg_nice.json"), "r")
+    )
+    save_path = os.path.join(task_path, f"{task}_finding_error_bar_reg_nice.png")
+    plot_slopes_with_error_bars(nice_slope_conf_int_dict, save_path)
+
+
+if __name__ == "__main__":
+    for each_model in model_names:
+        each_model_dir = os.path.join(EVAL_DIR, each_model)
+        # there should be "desti" and "route" folders under each model dir, within which are games folders
+        # there should be "destination.harsh.json" and "destination.nice.json" in "desti/{game}" dir
+        # there should be "route.harsh.json" and "route.nice.json" in "route/{game}" dir
+
+        # process desti
+        regress_plot_individual_desti(plot_acc_vs_sth_for_task, each_model_dir)
+
+        # # process route
+        regress_plot_individual_route(plot_acc_vs_sth_for_task, each_model_dir)
+
+        # process desti regression error bar for all games
+        regress_plot_all_game_desti(each_model_dir, "desti")
+        # process route regression error bar for all games
+        regress_plot_all_game_desti(each_model_dir, "route")
