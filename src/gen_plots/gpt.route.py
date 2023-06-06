@@ -1,4 +1,3 @@
-# generate dummy acc number for model A and model B, 53 entry each, use random number btw 0.3 and 1
 import json
 import math
 import os
@@ -38,6 +37,10 @@ print(len(game_names))
 # random scores
 np.random.seed(25)
 random_scores = {}
+avg_acc_RF = {
+    "gpt3.5": 0.0,
+    "gpt4": 0.0,
+}
 
 # get number of entry in each game folder
 for game_name in game_names:
@@ -63,12 +66,7 @@ model1_real_path = "./src/gen_plots/data/gpt3.5/route.json"
 model2_real_path = "./src/gen_plots/data/gpt4/route.json"
 model1_real = json.load(open(model1_real_path))
 model2_real = json.load(open(model2_real_path))
-# "905": {
-#     "desti_harsh": 1.0,
-#     "desti_nice": 1.0,
-#     "route_harsh": 1.0,
-#     "route_nice": 1.0
-# },
+
 # replace fake data with real data, use nice version, skip if game name missed
 for game_name in game_names:
     if game_name in model1_real:
@@ -76,10 +74,8 @@ for game_name in game_names:
     if game_name in model2_real:
         model2_scores[game_name] = model2_real[game_name]["nice"]
 
-# # skip games that are not in the real data by edit the game_names list
-# game_names = [
-#     each for each in game_names if each in model1_real and each in model2_real
-# ]
+avg_acc_RF["gpt3.5"] = model1_real["avg_nice"]
+avg_acc_RF["gpt4"] = model2_real["avg_nice"]
 
 # ============== following is the plotting part ==============
 
@@ -140,8 +136,25 @@ plt.axvline(0.5, color="gray", linestyle="dotted")
 plt.axvline(0.75, color="gray", linestyle="dotted")
 plt.axvline(1, color="gray", linestyle="dotted")
 
+# plot avg accuracy for each model
+plt.axvline(
+    avg_acc_RF["gpt3.5"],
+    color=COLOR_MAP["gpt3.5"],
+    linestyle="dashed",
+    label="avg accuracy of GPT-3.5",
+)
+plt.axvline(
+    avg_acc_RF["gpt4"],
+    color=COLOR_MAP["gpt4"],
+    linestyle="dashed",
+    label="avg accuracy of GPT-4",
+)
 # Move the legend to the upper right corner
-plt.legend(loc="upper right", ncol=1)
+plt.legend(
+    loc="upper right",
+    ncol=2,
+    fontsize="large",
+)
 
 # Save the plot as a PNG file
 png_path = "./evals/scoreboard_route.png"

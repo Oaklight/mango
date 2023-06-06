@@ -1,29 +1,9 @@
 {
     "pathgen-gpt-4/": {
-        "correct_num": 15,
-        "total_num": 21,
-        "accuracy": 0.7142857142857143,
+        "correct_num": 13,
+        "total_num": 15,
+        "accuracy": 0.8666666666666667,
         "collection": {
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-49_649.json": {
-                "verify_result": false,
-                "src_anno": "Fountain Room",
-                "src_requested": "fountaroom (obj111)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "south",
-                    "southwest",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "(groom) (obj194)",
-                "verify_msg": "wrong path, fail to arrive at dst: (groom) (obj194), shelf room (obj157)",
-                "micro_uuid": "134389d3-8d80-3c2f-8da7-71d322f1f8a7",
-                "macro_uuid": "26c8d0be-391d-3e39-9b34-79aaa54c8f5d"
-            },
             "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-17_962.json": {
                 "verify_result": true,
                 "src_anno": "Hole",
@@ -160,20 +140,6 @@
                 "micro_uuid": "484ea72d-04f3-3fc9-9a74-784072615780",
                 "macro_uuid": "29b0a503-84a0-37db-ae51-cf06eac01330"
             },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-57-00_643.json": {
-                "verify_result": false,
-                "src_anno": "Closet",
-                "src_requested": "(groom) (obj194)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ee93807a-635f-33c1-a809-111e0f6b9f9c",
-                "macro_uuid": "401aa8eb-7e06-32f5-9669-b710d6b03f70"
-            },
             "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-36_122.json": {
                 "verify_result": true,
                 "src_anno": "Fountain Room",
@@ -222,45 +188,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
                 "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-54_685.json": {
-                "verify_result": true,
-                "src_anno": "Table Room",
-                "src_requested": "tabroom (obj147)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "shelf room (obj157)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "7e7f88fb-da45-3daf-aa89-2b6cdf8b04c2",
-                "macro_uuid": "eaa73560-32dc-3b49-9ca5-4224d1c09e53"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-14_835.json": {
-                "verify_result": true,
-                "src_anno": "Outside",
-                "src_requested": "outside (obj93)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "northeast",
-                    "east",
-                    "north",
-                    "south",
-                    "southwest",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "shelf room (obj157)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "a3222727-df66-3bdb-8556-cfc35d9233a1",
-                "macro_uuid": "1baeedbd-74d6-3bbb-8f9e-18c86a9852ed"
             },
             "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-14_778.json": {
                 "verify_result": true,
@@ -330,69 +257,11 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "e8852c20-0c52-3816-8bf7-62090b9dabc5",
                 "macro_uuid": "357aa5f8-0a8c-3b47-9158-e3bf1d2a86d6"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-31_327.json": {
-                "verify_result": false,
-                "src_anno": "Hole",
-                "src_requested": "hole (obj102)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "statue room (obj128)",
-                "verify_msg": "wrong path, fail to arrive at dst: statue room (obj128), shelf room (obj157)",
-                "micro_uuid": "70bf7330-6201-3c41-be0a-0e73eab426ab",
-                "macro_uuid": "76d2c09e-8558-3a51-8445-d6803780d917"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-38_775.json": {
-                "verify_result": false,
-                "src_anno": "Statue Room",
-                "src_requested": "statue room (obj128)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "southwest",
-                    "east"
-                ],
-                "dst_gpt": "(groom) (obj194)",
-                "verify_msg": "wrong path, fail to arrive at dst: (groom) (obj194), shelf room (obj157)",
-                "micro_uuid": "747e8b06-1114-3dda-9505-d267d161b6e0",
-                "macro_uuid": "c35dc5c0-f706-31dc-a7ce-d114570011c9"
             }
         },
         "random_guess_rate": 0.007075966127061771,
         "collection_micro": [
             {
-                "verify_result": false,
-                "src_anno": "Fountain Room",
-                "src_requested": "fountaroom (obj111)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "south",
-                    "southwest",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "(groom) (obj194)",
-                "verify_msg": "wrong path, fail to arrive at dst: (groom) (obj194), shelf room (obj157)",
-                "micro_uuid": "134389d3-8d80-3c2f-8da7-71d322f1f8a7",
-                "macro_uuid": "26c8d0be-391d-3e39-9b34-79aaa54c8f5d"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Hole",
                 "src_requested": "hole (obj102)",
@@ -529,20 +398,6 @@
                 "macro_uuid": "29b0a503-84a0-37db-ae51-cf06eac01330"
             },
             {
-                "verify_result": false,
-                "src_anno": "Closet",
-                "src_requested": "(groom) (obj194)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ee93807a-635f-33c1-a809-111e0f6b9f9c",
-                "macro_uuid": "401aa8eb-7e06-32f5-9669-b710d6b03f70"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Fountain Room",
                 "src_requested": "fountaroom (obj111)",
@@ -590,45 +445,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
                 "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Table Room",
-                "src_requested": "tabroom (obj147)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "shelf room (obj157)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "7e7f88fb-da45-3daf-aa89-2b6cdf8b04c2",
-                "macro_uuid": "eaa73560-32dc-3b49-9ca5-4224d1c09e53"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Outside",
-                "src_requested": "outside (obj93)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "northeast",
-                    "east",
-                    "north",
-                    "south",
-                    "southwest",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "shelf room (obj157)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "a3222727-df66-3bdb-8556-cfc35d9233a1",
-                "macro_uuid": "1baeedbd-74d6-3bbb-8f9e-18c86a9852ed"
             },
             {
                 "verify_result": true,
@@ -698,71 +514,13 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "e8852c20-0c52-3816-8bf7-62090b9dabc5",
                 "macro_uuid": "357aa5f8-0a8c-3b47-9158-e3bf1d2a86d6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Hole",
-                "src_requested": "hole (obj102)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "statue room (obj128)",
-                "verify_msg": "wrong path, fail to arrive at dst: statue room (obj128), shelf room (obj157)",
-                "micro_uuid": "70bf7330-6201-3c41-be0a-0e73eab426ab",
-                "macro_uuid": "76d2c09e-8558-3a51-8445-d6803780d917"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Statue Room",
-                "src_requested": "statue room (obj128)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "southwest",
-                    "east"
-                ],
-                "dst_gpt": "(groom) (obj194)",
-                "verify_msg": "wrong path, fail to arrive at dst: (groom) (obj194), shelf room (obj157)",
-                "micro_uuid": "747e8b06-1114-3dda-9505-d267d161b6e0",
-                "macro_uuid": "c35dc5c0-f706-31dc-a7ce-d114570011c9"
             }
         ],
-        "correct_num_micro": 15,
-        "total_num_micro": 21,
-        "accuracy_micro": 0.7142857142857143,
+        "correct_num_micro": 13,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.8666666666666667,
         "collection_macro": [
             {
-                "verify_result": false,
-                "src_anno": "Fountain Room",
-                "src_requested": "fountaroom (obj111)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "south",
-                    "southwest",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "(groom) (obj194)",
-                "verify_msg": "wrong path, fail to arrive at dst: (groom) (obj194), shelf room (obj157)",
-                "micro_uuid": "134389d3-8d80-3c2f-8da7-71d322f1f8a7",
-                "macro_uuid": "26c8d0be-391d-3e39-9b34-79aaa54c8f5d"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Hole",
                 "src_requested": "hole (obj102)",
@@ -899,20 +657,6 @@
                 "macro_uuid": "29b0a503-84a0-37db-ae51-cf06eac01330"
             },
             {
-                "verify_result": false,
-                "src_anno": "Closet",
-                "src_requested": "(groom) (obj194)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ee93807a-635f-33c1-a809-111e0f6b9f9c",
-                "macro_uuid": "401aa8eb-7e06-32f5-9669-b710d6b03f70"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Fountain Room",
                 "src_requested": "fountaroom (obj111)",
@@ -960,45 +704,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
                 "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Table Room",
-                "src_requested": "tabroom (obj147)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "shelf room (obj157)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "7e7f88fb-da45-3daf-aa89-2b6cdf8b04c2",
-                "macro_uuid": "eaa73560-32dc-3b49-9ca5-4224d1c09e53"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Outside",
-                "src_requested": "outside (obj93)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "northeast",
-                    "east",
-                    "north",
-                    "south",
-                    "southwest",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "shelf room (obj157)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "a3222727-df66-3bdb-8556-cfc35d9233a1",
-                "macro_uuid": "1baeedbd-74d6-3bbb-8f9e-18c86a9852ed"
             },
             {
                 "verify_result": true,
@@ -1068,48 +773,10 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "e8852c20-0c52-3816-8bf7-62090b9dabc5",
                 "macro_uuid": "357aa5f8-0a8c-3b47-9158-e3bf1d2a86d6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Hole",
-                "src_requested": "hole (obj102)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "statue room (obj128)",
-                "verify_msg": "wrong path, fail to arrive at dst: statue room (obj128), shelf room (obj157)",
-                "micro_uuid": "70bf7330-6201-3c41-be0a-0e73eab426ab",
-                "macro_uuid": "76d2c09e-8558-3a51-8445-d6803780d917"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Statue Room",
-                "src_requested": "statue room (obj128)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "southwest",
-                    "east"
-                ],
-                "dst_gpt": "(groom) (obj194)",
-                "verify_msg": "wrong path, fail to arrive at dst: (groom) (obj194), shelf room (obj157)",
-                "micro_uuid": "747e8b06-1114-3dda-9505-d267d161b6e0",
-                "macro_uuid": "c35dc5c0-f706-31dc-a7ce-d114570011c9"
             }
         ],
-        "correct_num_macro": 15,
-        "total_num_macro": 21,
-        "accuracy_macro": 0.7142857142857143
+        "correct_num_macro": 13,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.8666666666666667
     }
 }

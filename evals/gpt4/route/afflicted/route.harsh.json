@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
-        "correct_num": 53,
-        "total_num": 55,
-        "accuracy": 0.9636363636363636,
+        "correct_num": 44,
+        "total_num": 45,
+        "accuracy": 0.9777777777777777,
         "collection": {
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-17-18_700.json": {
                 "verify_result": true,
@@ -320,7 +320,35 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj119)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "19th Street",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "50214ae7-0c6c-3d88-b0bc-6ed9e6ebde53",
                 "macro_uuid": "eee5db76-35cb-32df-b3d4-097ca95d034e"
             },
@@ -347,126 +375,6 @@
                 ],
                 "micro_uuid": "4b57d208-512f-36f7-93a3-911a02006390",
                 "macro_uuid": "6e4cebdc-db25-33a5-89a1-4f32f9674692"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-23-12_596.json": {
-                "verify_result": true,
-                "src_anno": "Dish Room",
-                "src_requested": "(obj195)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "5e11cdc5-1f3a-3348-b53d-9d3658294710",
-                "macro_uuid": "f82c82d3-a935-33ac-85f7-732b608bb40a"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-18-48_722.json": {
-                "verify_result": true,
-                "src_anno": "19th Street",
-                "src_requested": "(obj66)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 10,
-                "path_checked": [
-                    {
-                        "prev_node": "19th Street",
-                        "node": "Dining Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Galley Kitchen",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Winding Hall",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Dish Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Crypt",
-                        "action": "down",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Crypt",
-                        "node": "Dish Room",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "d689e9d0-d091-35aa-9f2c-b1752d2bc90e",
-                "macro_uuid": "eff0ddbc-c018-388c-bc4c-74d68177efb6"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-18-49_940.json": {
                 "verify_result": true,
@@ -768,84 +676,6 @@
                 "micro_uuid": "e798bad0-c1d9-3b08-9d7f-e7956738a086",
                 "macro_uuid": "dc3550ea-e71b-3610-af33-81e652677f74"
             },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-22-47_534.json": {
-                "verify_result": true,
-                "src_anno": "Winding Hall",
-                "src_requested": "(obj177)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "03adf218-236d-3ba9-bb9b-ee90a0ed1b07",
-                "macro_uuid": "94865c34-4bfe-31c6-92ca-06feb0523cfa"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-23-13_559.json": {
-                "verify_result": true,
-                "src_anno": "Refrigerator",
-                "src_requested": "(obj189)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Refrigerator",
-                        "node": "Winding Hall",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "eabe806f-7c09-31c3-bf4c-7914f77f6748",
-                "macro_uuid": "da2fe3ae-689e-3dc9-b24a-fc524ab20e18"
-            },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-17-46_393.json": {
                 "verify_result": true,
                 "src_anno": "19th Street",
@@ -959,42 +789,6 @@
                 ],
                 "micro_uuid": "369e1c65-bd56-3f38-95cb-e8ed6a44ec7d",
                 "macro_uuid": "6f0ab449-3813-311d-98c1-3264af9bf8f9"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-20-03_643.json": {
-                "verify_result": true,
-                "src_anno": "Dining Room",
-                "src_requested": "(obj81)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Bar",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Bar",
-                        "node": "Dining Room",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "02b27f01-6d38-3613-85c6-59b024010a96",
-                "macro_uuid": "d2802d67-25ae-36eb-bfae-ba5cd89da36a"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-18-47_105.json": {
                 "verify_result": true,
@@ -1260,54 +1054,6 @@
                 "micro_uuid": "b2806399-1fcb-33b8-97fc-c71531524ec7",
                 "macro_uuid": "86268cf9-4fac-3642-af19-a55468cd8a93"
             },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-23-40_701.json": {
-                "verify_result": true,
-                "src_anno": "Crypt",
-                "src_requested": "(obj214)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 5,
-                "path_checked": [
-                    {
-                        "prev_node": "Crypt",
-                        "node": "Dish Room",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "acf6193a-7ad8-3956-a2f2-8ea554aacadc",
-                "macro_uuid": "2736d171-deb7-3cbe-bbca-562dcfe3cb9f"
-            },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-19-16_652.json": {
                 "verify_result": true,
                 "src_anno": "Dining Room",
@@ -1422,36 +1168,6 @@
                 "micro_uuid": "795ee5ee-551b-35f4-9add-ea5c4ddc8af7",
                 "macro_uuid": "feb3456c-b377-3d1e-b774-36829043c7c8"
             },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-22-02_989.json": {
-                "verify_result": true,
-                "src_anno": "Galley Kitchen",
-                "src_requested": "(obj119)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "84c02da2-7f82-3747-9ac5-f38c9f979a57",
-                "macro_uuid": "feefa787-4bfd-3c26-9e04-2e858e4cd370"
-            },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-21-34_935.json": {
                 "verify_result": true,
                 "src_anno": "Lavatory",
@@ -1535,42 +1251,6 @@
                 ],
                 "micro_uuid": "5a789f23-400a-368f-975c-9d5709b68a5a",
                 "macro_uuid": "55f9a27f-9177-32f2-bf08-b49f14142288"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-21-47_568.json": {
-                "verify_result": true,
-                "src_anno": "Lavatory",
-                "src_requested": "(obj148)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Lavatory",
-                        "node": "Bar",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Bar",
-                        "node": "Dining Room",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "51e0abc5-8f4e-38f5-a854-020c6cb37562",
-                "macro_uuid": "ef96dd07-f506-3c24-bf2d-a35477eef5f9"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-21-42_170.json": {
                 "verify_result": true,
@@ -1710,42 +1390,6 @@
                 "micro_uuid": "32a3ff61-40a6-32e9-8495-6d70e516cdaf",
                 "macro_uuid": "099571fd-3913-30be-9e2d-3d09acb767d5"
             },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-19-28_793.json": {
-                "verify_result": true,
-                "src_anno": "19th Street East",
-                "src_requested": "(obj74)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "19th Street East",
-                        "node": "19th Street",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "19th Street",
-                        "node": "Dining Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "4baf69df-36b2-3d9c-8f88-2bbdde623bd8",
-                "macro_uuid": "aae79236-77ea-38db-9a34-a7beb7b56d68"
-            },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-17-45_385.json": {
                 "verify_result": true,
                 "src_anno": "19th Street",
@@ -1817,20 +1461,6 @@
                 ],
                 "micro_uuid": "431fcdee-2c1d-3fbe-9482-07e9262a933e",
                 "macro_uuid": "ad343606-325c-3582-b627-eb9512939a8a"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-21-10_180.json": {
-                "verify_result": false,
-                "src_anno": "Bar",
-                "src_requested": "(obj99)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f9d8b657-245b-3ed1-b6ad-de8c094e036f",
-                "macro_uuid": "3d07d6ca-6c51-3e9b-91ba-477ec920d0cd"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-4/results_2023-06-01-14-17-22_311.json": {
                 "verify_result": true,
@@ -2307,7 +1937,35 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj119)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "19th Street",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "50214ae7-0c6c-3d88-b0bc-6ed9e6ebde53",
                 "macro_uuid": "eee5db76-35cb-32df-b3d4-097ca95d034e"
             },
@@ -2334,126 +1992,6 @@
                 ],
                 "micro_uuid": "4b57d208-512f-36f7-93a3-911a02006390",
                 "macro_uuid": "6e4cebdc-db25-33a5-89a1-4f32f9674692"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Dish Room",
-                "src_requested": "(obj195)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "5e11cdc5-1f3a-3348-b53d-9d3658294710",
-                "macro_uuid": "f82c82d3-a935-33ac-85f7-732b608bb40a"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "19th Street",
-                "src_requested": "(obj66)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 10,
-                "path_checked": [
-                    {
-                        "prev_node": "19th Street",
-                        "node": "Dining Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Galley Kitchen",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Winding Hall",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Dish Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Crypt",
-                        "action": "down",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Crypt",
-                        "node": "Dish Room",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "d689e9d0-d091-35aa-9f2c-b1752d2bc90e",
-                "macro_uuid": "eff0ddbc-c018-388c-bc4c-74d68177efb6"
             },
             {
                 "verify_result": true,
@@ -2757,84 +2295,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Winding Hall",
-                "src_requested": "(obj177)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "03adf218-236d-3ba9-bb9b-ee90a0ed1b07",
-                "macro_uuid": "94865c34-4bfe-31c6-92ca-06feb0523cfa"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Refrigerator",
-                "src_requested": "(obj189)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Refrigerator",
-                        "node": "Winding Hall",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "eabe806f-7c09-31c3-bf4c-7914f77f6748",
-                "macro_uuid": "da2fe3ae-689e-3dc9-b24a-fc524ab20e18"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "19th Street",
                 "src_requested": "(obj66)",
                 "dst_anno": "Winding Hall",
@@ -2946,42 +2406,6 @@
                 ],
                 "micro_uuid": "369e1c65-bd56-3f38-95cb-e8ed6a44ec7d",
                 "macro_uuid": "6f0ab449-3813-311d-98c1-3264af9bf8f9"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Dining Room",
-                "src_requested": "(obj81)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Bar",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Bar",
-                        "node": "Dining Room",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "02b27f01-6d38-3613-85c6-59b024010a96",
-                "macro_uuid": "d2802d67-25ae-36eb-bfae-ba5cd89da36a"
             },
             {
                 "verify_result": true,
@@ -3249,54 +2673,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Crypt",
-                "src_requested": "(obj214)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 5,
-                "path_checked": [
-                    {
-                        "prev_node": "Crypt",
-                        "node": "Dish Room",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "acf6193a-7ad8-3956-a2f2-8ea554aacadc",
-                "macro_uuid": "2736d171-deb7-3cbe-bbca-562dcfe3cb9f"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Dining Room",
                 "src_requested": "(obj81)",
                 "dst_anno": "Bar",
@@ -3411,36 +2787,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Galley Kitchen",
-                "src_requested": "(obj119)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "84c02da2-7f82-3747-9ac5-f38c9f979a57",
-                "macro_uuid": "feefa787-4bfd-3c26-9e04-2e858e4cd370"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Lavatory",
                 "src_requested": "(obj148)",
                 "dst_anno": "Refrigerator",
@@ -3522,42 +2868,6 @@
                 ],
                 "micro_uuid": "5a789f23-400a-368f-975c-9d5709b68a5a",
                 "macro_uuid": "55f9a27f-9177-32f2-bf08-b49f14142288"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Lavatory",
-                "src_requested": "(obj148)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Lavatory",
-                        "node": "Bar",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Bar",
-                        "node": "Dining Room",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "51e0abc5-8f4e-38f5-a854-020c6cb37562",
-                "macro_uuid": "ef96dd07-f506-3c24-bf2d-a35477eef5f9"
             },
             {
                 "verify_result": true,
@@ -3699,42 +3009,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "19th Street East",
-                "src_requested": "(obj74)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "19th Street East",
-                        "node": "19th Street",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "19th Street",
-                        "node": "Dining Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "4baf69df-36b2-3d9c-8f88-2bbdde623bd8",
-                "macro_uuid": "aae79236-77ea-38db-9a34-a7beb7b56d68"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "19th Street",
                 "src_requested": "(obj66)",
                 "dst_anno": "Lavatory",
@@ -3804,20 +3078,6 @@
                 ],
                 "micro_uuid": "431fcdee-2c1d-3fbe-9482-07e9262a933e",
                 "macro_uuid": "ad343606-325c-3582-b627-eb9512939a8a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar",
-                "src_requested": "(obj99)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f9d8b657-245b-3ed1-b6ad-de8c094e036f",
-                "macro_uuid": "3d07d6ca-6c51-3e9b-91ba-477ec920d0cd"
             },
             {
                 "verify_result": true,
@@ -3976,9 +3236,9 @@
                 "macro_uuid": "3cf52383-6a61-38af-864d-78669b0c7454"
             }
         ],
-        "correct_num_micro": 53,
-        "total_num_micro": 55,
-        "accuracy_micro": 0.9636363636363636,
+        "correct_num_micro": 44,
+        "total_num_micro": 45,
+        "accuracy_micro": 0.9777777777777777,
         "collection_macro": [
             {
                 "verify_result": true,
@@ -4296,7 +3556,35 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj119)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "19th Street",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "50214ae7-0c6c-3d88-b0bc-6ed9e6ebde53",
                 "macro_uuid": "eee5db76-35cb-32df-b3d4-097ca95d034e"
             },
@@ -4323,126 +3611,6 @@
                 ],
                 "micro_uuid": "4b57d208-512f-36f7-93a3-911a02006390",
                 "macro_uuid": "6e4cebdc-db25-33a5-89a1-4f32f9674692"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Dish Room",
-                "src_requested": "(obj195)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "5e11cdc5-1f3a-3348-b53d-9d3658294710",
-                "macro_uuid": "f82c82d3-a935-33ac-85f7-732b608bb40a"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "19th Street",
-                "src_requested": "(obj66)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 10,
-                "path_checked": [
-                    {
-                        "prev_node": "19th Street",
-                        "node": "Dining Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Galley Kitchen",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Winding Hall",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Dish Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Crypt",
-                        "action": "down",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Crypt",
-                        "node": "Dish Room",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "d689e9d0-d091-35aa-9f2c-b1752d2bc90e",
-                "macro_uuid": "eff0ddbc-c018-388c-bc4c-74d68177efb6"
             },
             {
                 "verify_result": true,
@@ -4746,84 +3914,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Winding Hall",
-                "src_requested": "(obj177)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "03adf218-236d-3ba9-bb9b-ee90a0ed1b07",
-                "macro_uuid": "94865c34-4bfe-31c6-92ca-06feb0523cfa"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Refrigerator",
-                "src_requested": "(obj189)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Refrigerator",
-                        "node": "Winding Hall",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "eabe806f-7c09-31c3-bf4c-7914f77f6748",
-                "macro_uuid": "da2fe3ae-689e-3dc9-b24a-fc524ab20e18"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "19th Street",
                 "src_requested": "(obj66)",
                 "dst_anno": "Winding Hall",
@@ -4935,42 +4025,6 @@
                 ],
                 "micro_uuid": "369e1c65-bd56-3f38-95cb-e8ed6a44ec7d",
                 "macro_uuid": "6f0ab449-3813-311d-98c1-3264af9bf8f9"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Dining Room",
-                "src_requested": "(obj81)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Bar",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Bar",
-                        "node": "Dining Room",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "02b27f01-6d38-3613-85c6-59b024010a96",
-                "macro_uuid": "d2802d67-25ae-36eb-bfae-ba5cd89da36a"
             },
             {
                 "verify_result": true,
@@ -5238,54 +4292,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Crypt",
-                "src_requested": "(obj214)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 5,
-                "path_checked": [
-                    {
-                        "prev_node": "Crypt",
-                        "node": "Dish Room",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dish Room",
-                        "node": "Winding Hall",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Winding Hall",
-                        "node": "Galley Kitchen",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "acf6193a-7ad8-3956-a2f2-8ea554aacadc",
-                "macro_uuid": "2736d171-deb7-3cbe-bbca-562dcfe3cb9f"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Dining Room",
                 "src_requested": "(obj81)",
                 "dst_anno": "Bar",
@@ -5400,36 +4406,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Galley Kitchen",
-                "src_requested": "(obj119)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Galley Kitchen",
-                        "node": "Dining Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "84c02da2-7f82-3747-9ac5-f38c9f979a57",
-                "macro_uuid": "feefa787-4bfd-3c26-9e04-2e858e4cd370"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Lavatory",
                 "src_requested": "(obj148)",
                 "dst_anno": "Refrigerator",
@@ -5511,42 +4487,6 @@
                 ],
                 "micro_uuid": "5a789f23-400a-368f-975c-9d5709b68a5a",
                 "macro_uuid": "55f9a27f-9177-32f2-bf08-b49f14142288"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Lavatory",
-                "src_requested": "(obj148)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Lavatory",
-                        "node": "Bar",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Bar",
-                        "node": "Dining Room",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "51e0abc5-8f4e-38f5-a854-020c6cb37562",
-                "macro_uuid": "ef96dd07-f506-3c24-bf2d-a35477eef5f9"
             },
             {
                 "verify_result": true,
@@ -5688,42 +4628,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "19th Street East",
-                "src_requested": "(obj74)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "(obj129)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "19th Street East",
-                        "node": "19th Street",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "19th Street",
-                        "node": "Dining Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Dining Room",
-                        "node": "Nikolai's Office",
-                        "action": "up",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "4baf69df-36b2-3d9c-8f88-2bbdde623bd8",
-                "macro_uuid": "aae79236-77ea-38db-9a34-a7beb7b56d68"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "19th Street",
                 "src_requested": "(obj66)",
                 "dst_anno": "Lavatory",
@@ -5793,20 +4697,6 @@
                 ],
                 "micro_uuid": "431fcdee-2c1d-3fbe-9482-07e9262a933e",
                 "macro_uuid": "ad343606-325c-3582-b627-eb9512939a8a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar",
-                "src_requested": "(obj99)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f9d8b657-245b-3ed1-b6ad-de8c094e036f",
-                "macro_uuid": "3d07d6ca-6c51-3e9b-91ba-477ec920d0cd"
             },
             {
                 "verify_result": true,
@@ -5965,8 +4855,8 @@
                 "macro_uuid": "3cf52383-6a61-38af-864d-78669b0c7454"
             }
         ],
-        "correct_num_macro": 53,
-        "total_num_macro": 55,
-        "accuracy_macro": 0.9636363636363636
+        "correct_num_macro": 44,
+        "total_num_macro": 45,
+        "accuracy_macro": 0.9777777777777777
     }
 }

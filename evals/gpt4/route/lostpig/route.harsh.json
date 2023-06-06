@@ -1,23 +1,9 @@
 {
     "pathgen-gpt-4/": {
-        "correct_num": 15,
-        "total_num": 21,
-        "accuracy": 0.7142857142857143,
+        "correct_num": 13,
+        "total_num": 15,
+        "accuracy": 0.8666666666666667,
         "collection": {
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-49_649.json": {
-                "verify_result": false,
-                "src_anno": "Fountain Room",
-                "src_requested": "fountaroom (obj111)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "134389d3-8d80-3c2f-8da7-71d322f1f8a7",
-                "macro_uuid": "26c8d0be-391d-3e39-9b34-79aaa54c8f5d"
-            },
             "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-17_962.json": {
                 "verify_result": true,
                 "src_anno": "Hole",
@@ -208,7 +194,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside",
+                        "node": "Fountain Room",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Fountain Room",
+                        "node": "Statue Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "d232264c-0ccd-384d-b255-5972b7ff4417",
                 "macro_uuid": "d3153a0e-7a93-3e4d-b933-dc2f68568907"
             },
@@ -241,23 +242,6 @@
                 ],
                 "micro_uuid": "484ea72d-04f3-3fc9-9a74-784072615780",
                 "macro_uuid": "29b0a503-84a0-37db-ae51-cf06eac01330"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-57-00_643.json": {
-                "verify_result": false,
-                "src_anno": "Closet",
-                "src_requested": "(groom) (obj194)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "stop_node_code": null,
-                "stop_step": -3,
-                "path_checked": [],
-                "micro_uuid": "ee93807a-635f-33c1-a809-111e0f6b9f9c",
-                "macro_uuid": "401aa8eb-7e06-32f5-9669-b710d6b03f70"
             },
             "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-36_122.json": {
                 "verify_result": true,
@@ -337,96 +321,6 @@
                 "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
                 "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
             },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-54_685.json": {
-                "verify_result": true,
-                "src_anno": "Table Room",
-                "src_requested": "tabroom (obj147)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "shelf room (obj157)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Table Room",
-                        "node": "Closet",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Closet",
-                        "node": "Shelf Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "7e7f88fb-da45-3daf-aa89-2b6cdf8b04c2",
-                "macro_uuid": "eaa73560-32dc-3b49-9ca5-4224d1c09e53"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-14_835.json": {
-                "verify_result": true,
-                "src_anno": "Outside",
-                "src_requested": "outside (obj93)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "shelf room (obj157)",
-                "stop_step": 7,
-                "path_checked": [
-                    {
-                        "prev_node": "Outside",
-                        "node": "Hole",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Hole",
-                        "node": "Fountain Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Fountain Room",
-                        "node": "Statue Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Statue Room",
-                        "node": "Fountain Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Fountain Room",
-                        "node": "Table Room",
-                        "action": "southwest",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Table Room",
-                        "node": "Closet",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Closet",
-                        "node": "Shelf Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "a3222727-df66-3bdb-8556-cfc35d9233a1",
-                "macro_uuid": "1baeedbd-74d6-3bbb-8f9e-18c86a9852ed"
-            },
             "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-14_778.json": {
                 "verify_result": true,
                 "src_anno": "Hole",
@@ -467,7 +361,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside",
+                        "node": "Fountain Room",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Fountain Room",
+                        "node": "Table Room",
+                        "action": "southwest"
+                    },
+                    {
+                        "prev_node": "Table Room",
+                        "node": "Closet",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "ef7c9e0c-9316-336f-91cc-894fed6cc02e",
                 "macro_uuid": "96036701-1523-3eed-8158-7726eb66697a"
             },
@@ -530,53 +444,11 @@
                 ],
                 "micro_uuid": "e8852c20-0c52-3816-8bf7-62090b9dabc5",
                 "macro_uuid": "357aa5f8-0a8c-3b47-9158-e3bf1d2a86d6"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-31_327.json": {
-                "verify_result": false,
-                "src_anno": "Hole",
-                "src_requested": "hole (obj102)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "70bf7330-6201-3c41-be0a-0e73eab426ab",
-                "macro_uuid": "76d2c09e-8558-3a51-8445-d6803780d917"
-            },
-            "../gpt-games-results//lostpig/results//pathgen-gpt-4/results_2023-05-30-23-56-38_775.json": {
-                "verify_result": false,
-                "src_anno": "Statue Room",
-                "src_requested": "statue room (obj128)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "747e8b06-1114-3dda-9505-d267d161b6e0",
-                "macro_uuid": "c35dc5c0-f706-31dc-a7ce-d114570011c9"
             }
         },
         "random_guess_rate": 0.007075966127061771,
         "collection_micro": [
             {
-                "verify_result": false,
-                "src_anno": "Fountain Room",
-                "src_requested": "fountaroom (obj111)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "134389d3-8d80-3c2f-8da7-71d322f1f8a7",
-                "macro_uuid": "26c8d0be-391d-3e39-9b34-79aaa54c8f5d"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Hole",
                 "src_requested": "hole (obj102)",
@@ -766,7 +638,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside",
+                        "node": "Fountain Room",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Fountain Room",
+                        "node": "Statue Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "d232264c-0ccd-384d-b255-5972b7ff4417",
                 "macro_uuid": "d3153a0e-7a93-3e4d-b933-dc2f68568907"
             },
@@ -799,23 +686,6 @@
                 ],
                 "micro_uuid": "484ea72d-04f3-3fc9-9a74-784072615780",
                 "macro_uuid": "29b0a503-84a0-37db-ae51-cf06eac01330"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Closet",
-                "src_requested": "(groom) (obj194)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "stop_node_code": null,
-                "stop_step": -3,
-                "path_checked": [],
-                "micro_uuid": "ee93807a-635f-33c1-a809-111e0f6b9f9c",
-                "macro_uuid": "401aa8eb-7e06-32f5-9669-b710d6b03f70"
             },
             {
                 "verify_result": true,
@@ -897,96 +767,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Table Room",
-                "src_requested": "tabroom (obj147)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "shelf room (obj157)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Table Room",
-                        "node": "Closet",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Closet",
-                        "node": "Shelf Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "7e7f88fb-da45-3daf-aa89-2b6cdf8b04c2",
-                "macro_uuid": "eaa73560-32dc-3b49-9ca5-4224d1c09e53"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Outside",
-                "src_requested": "outside (obj93)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "shelf room (obj157)",
-                "stop_step": 7,
-                "path_checked": [
-                    {
-                        "prev_node": "Outside",
-                        "node": "Hole",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Hole",
-                        "node": "Fountain Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Fountain Room",
-                        "node": "Statue Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Statue Room",
-                        "node": "Fountain Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Fountain Room",
-                        "node": "Table Room",
-                        "action": "southwest",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Table Room",
-                        "node": "Closet",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Closet",
-                        "node": "Shelf Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "a3222727-df66-3bdb-8556-cfc35d9233a1",
-                "macro_uuid": "1baeedbd-74d6-3bbb-8f9e-18c86a9852ed"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Hole",
                 "src_requested": "hole (obj102)",
                 "dst_anno": "Table Room",
@@ -1025,7 +805,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside",
+                        "node": "Fountain Room",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Fountain Room",
+                        "node": "Table Room",
+                        "action": "southwest"
+                    },
+                    {
+                        "prev_node": "Table Room",
+                        "node": "Closet",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "ef7c9e0c-9316-336f-91cc-894fed6cc02e",
                 "macro_uuid": "96036701-1523-3eed-8158-7726eb66697a"
             },
@@ -1088,55 +888,13 @@
                 ],
                 "micro_uuid": "e8852c20-0c52-3816-8bf7-62090b9dabc5",
                 "macro_uuid": "357aa5f8-0a8c-3b47-9158-e3bf1d2a86d6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Hole",
-                "src_requested": "hole (obj102)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "70bf7330-6201-3c41-be0a-0e73eab426ab",
-                "macro_uuid": "76d2c09e-8558-3a51-8445-d6803780d917"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Statue Room",
-                "src_requested": "statue room (obj128)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "747e8b06-1114-3dda-9505-d267d161b6e0",
-                "macro_uuid": "c35dc5c0-f706-31dc-a7ce-d114570011c9"
             }
         ],
-        "correct_num_micro": 15,
-        "total_num_micro": 21,
-        "accuracy_micro": 0.7142857142857143,
+        "correct_num_micro": 13,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.8666666666666667,
         "collection_macro": [
             {
-                "verify_result": false,
-                "src_anno": "Fountain Room",
-                "src_requested": "fountaroom (obj111)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "134389d3-8d80-3c2f-8da7-71d322f1f8a7",
-                "macro_uuid": "26c8d0be-391d-3e39-9b34-79aaa54c8f5d"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Hole",
                 "src_requested": "hole (obj102)",
@@ -1326,7 +1084,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside",
+                        "node": "Fountain Room",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Fountain Room",
+                        "node": "Statue Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "d232264c-0ccd-384d-b255-5972b7ff4417",
                 "macro_uuid": "d3153a0e-7a93-3e4d-b933-dc2f68568907"
             },
@@ -1359,23 +1132,6 @@
                 ],
                 "micro_uuid": "484ea72d-04f3-3fc9-9a74-784072615780",
                 "macro_uuid": "29b0a503-84a0-37db-ae51-cf06eac01330"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Closet",
-                "src_requested": "(groom) (obj194)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "stop_node_code": null,
-                "stop_step": -3,
-                "path_checked": [],
-                "micro_uuid": "ee93807a-635f-33c1-a809-111e0f6b9f9c",
-                "macro_uuid": "401aa8eb-7e06-32f5-9669-b710d6b03f70"
             },
             {
                 "verify_result": true,
@@ -1457,96 +1213,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Table Room",
-                "src_requested": "tabroom (obj147)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "shelf room (obj157)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Table Room",
-                        "node": "Closet",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Closet",
-                        "node": "Shelf Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "7e7f88fb-da45-3daf-aa89-2b6cdf8b04c2",
-                "macro_uuid": "eaa73560-32dc-3b49-9ca5-4224d1c09e53"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Outside",
-                "src_requested": "outside (obj93)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "shelf room (obj157)",
-                "stop_step": 7,
-                "path_checked": [
-                    {
-                        "prev_node": "Outside",
-                        "node": "Hole",
-                        "action": "northeast",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Hole",
-                        "node": "Fountain Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Fountain Room",
-                        "node": "Statue Room",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Statue Room",
-                        "node": "Fountain Room",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Fountain Room",
-                        "node": "Table Room",
-                        "action": "southwest",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Table Room",
-                        "node": "Closet",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Closet",
-                        "node": "Shelf Room",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "a3222727-df66-3bdb-8556-cfc35d9233a1",
-                "macro_uuid": "1baeedbd-74d6-3bbb-8f9e-18c86a9852ed"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Hole",
                 "src_requested": "hole (obj102)",
                 "dst_anno": "Table Room",
@@ -1585,7 +1251,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside",
+                        "node": "Fountain Room",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Fountain Room",
+                        "node": "Table Room",
+                        "action": "southwest"
+                    },
+                    {
+                        "prev_node": "Table Room",
+                        "node": "Closet",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "ef7c9e0c-9316-336f-91cc-894fed6cc02e",
                 "macro_uuid": "96036701-1523-3eed-8158-7726eb66697a"
             },
@@ -1648,38 +1334,10 @@
                 ],
                 "micro_uuid": "e8852c20-0c52-3816-8bf7-62090b9dabc5",
                 "macro_uuid": "357aa5f8-0a8c-3b47-9158-e3bf1d2a86d6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Hole",
-                "src_requested": "hole (obj102)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "70bf7330-6201-3c41-be0a-0e73eab426ab",
-                "macro_uuid": "76d2c09e-8558-3a51-8445-d6803780d917"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Statue Room",
-                "src_requested": "statue room (obj128)",
-                "dst_anno": "Shelf Room",
-                "dst_requested": "shelf room (obj157)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "747e8b06-1114-3dda-9505-d267d161b6e0",
-                "macro_uuid": "c35dc5c0-f706-31dc-a7ce-d114570011c9"
             }
         ],
-        "correct_num_macro": 15,
-        "total_num_macro": 21,
-        "accuracy_macro": 0.7142857142857143
+        "correct_num_macro": 13,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.8666666666666667
     }
 }

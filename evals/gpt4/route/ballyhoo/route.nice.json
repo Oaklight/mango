@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
-        "correct_num": 67,
-        "total_num": 176,
-        "accuracy": 0.3806818181818182,
+        "correct_num": 55,
+        "total_num": 119,
+        "accuracy": 0.46218487394957986,
         "collection": {
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-53_183.json": {
                 "verify_result": false,
@@ -22,25 +22,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), campwest (obj94)",
                 "micro_uuid": "a1532c7d-77b4-36af-a114-9746a68a059c",
                 "macro_uuid": "7d34853a-4446-3e12-a4a3-45d55a8da6ae"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-01-10_270.json": {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "f6684a97-d9fa-3b09-9dbf-4df11ffc96be",
-                "macro_uuid": "121b0778-86ae-355d-893e-e5bcb70167b1"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-05-39_034.json": {
                 "verify_result": false,
@@ -82,24 +63,6 @@
                 "micro_uuid": "a87614b3-cbca-39e2-bc58-0f6c10039668",
                 "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-04_600.json": {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "3a61037a-6e3c-3767-8c29-9caf614f08f0",
-                "macro_uuid": "2b86a87d-26f1-39e8-81ca-b07d3de9ab84"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-53_417.json": {
                 "verify_result": true,
                 "src_anno": "Back Yard",
@@ -120,25 +83,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "91cf9aeb-5b72-3eb9-8f12-aa4a27705d67",
                 "macro_uuid": "332729e0-8bbc-3bf5-b9dd-47d3a0397120"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-11-54_729.json": {
-                "verify_result": false,
-                "src_anno": "Midway Entrance",
-                "src_requested": "midway entrance (obj87)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "0985b041-9cd1-31e2-93a6-e6afb94945ee",
-                "macro_uuid": "ad2a316d-8e42-3631-8e47-f8c5f0a65813"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-55-34_870.json": {
                 "verify_result": true,
@@ -199,52 +143,6 @@
                 "micro_uuid": "9e8d44f9-0cf0-3259-8f3b-cf53ff878031",
                 "macro_uuid": "96fc8350-f893-3e61-b302-f18d946ce2f2"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-04-16_548.json": {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southwest",
-                    "south",
-                    "southwest"
-                ],
-                "dst_gpt": "in wings (obj81)",
-                "verify_msg": "wrong path, fail to arrive at dst: in wings (obj81), menagerie nook (obj121)",
-                "micro_uuid": "a2b4cbf1-74e5-36e5-87f1-a3a3f6e75875",
-                "macro_uuid": "d70f48f1-431f-3676-8580-846feac6e0d7"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-48_618.json": {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie nook (obj121)",
-                "micro_uuid": "129286ee-9c2d-38ca-8991-cca92324568c",
-                "macro_uuid": "57c47dc4-656b-37ef-b525-d75d99d8aab8"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-00_081.json": {
                 "verify_result": false,
                 "src_anno": "In the Wings",
@@ -263,25 +161,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
                 "micro_uuid": "df94ce60-84f3-3140-a67c-fa1260355a1d",
                 "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-01-01_918.json": {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "f52da043-50df-3348-906f-1a635b66925d",
-                "macro_uuid": "121b0778-86ae-355d-893e-e5bcb70167b1"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-03_018.json": {
                 "verify_result": true,
@@ -323,48 +202,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "58432797-93af-3523-a450-66e3d59a12bc",
                 "macro_uuid": "52d28c70-3f51-305d-a3b9-e97b06d04378"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-06_697.json": {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "29cdce2e-4fda-348e-9c2b-dca342cd4475",
-                "macro_uuid": "2b86a87d-26f1-39e8-81ca-b07d3de9ab84"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-07-52_104.json": {
-                "verify_result": false,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "733edc6b-b240-3da4-b9a6-48b91835f9d2",
-                "macro_uuid": "83264803-da61-3c68-a955-435834829d82"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-19_051.json": {
                 "verify_result": false,
@@ -423,25 +260,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "59eba32a-2d0f-3d31-b1f2-9bbfef6a3e70",
                 "macro_uuid": "c2553c03-d072-3bef-b2df-7600886b5899"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-14_560.json": {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), midway entrance (obj87)",
-                "micro_uuid": "d2cfc6b3-bb0f-3e1c-99b9-d668d9948013",
-                "macro_uuid": "e5aa4f80-9093-3a78-9bdb-9f244dcec4b6"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-09_869.json": {
                 "verify_result": false,
@@ -505,28 +323,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inprop tent (obj1), campwest (obj94)",
                 "micro_uuid": "fe8d24bb-1724-3b58-b600-ea2a196af505",
                 "macro_uuid": "1ef8fb24-1bf4-31ca-8dcb-e76146b5fe2a"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-06-03_448.json": {
-                "verify_result": false,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "northwest"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "7c08fa74-da1e-397b-adeb-d4118aa9e902",
-                "macro_uuid": "d0e7960c-f5b5-3985-9d20-83b1b85d00ac"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-33_426.json": {
                 "verify_result": false,
@@ -773,30 +569,6 @@
                 "micro_uuid": "44a79684-6ebb-3462-a945-d793b0f4ee2c",
                 "macro_uuid": "cd225cfa-27ef-3e08-996e-c06f13584c57"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-04_480.json": {
-                "verify_result": false,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "northwest"
-                ],
-                "dst_gpt": "platform (obj56)",
-                "verify_msg": "wrong path, fail to arrive at dst: platform (obj56), menagerie nook (obj121)",
-                "micro_uuid": "6915c41c-6e6c-3bc1-bb82-1baf6f93b635",
-                "macro_uuid": "61fdeda5-88b2-3c7b-a09e-3fd8751ba0b0"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-56-21_304.json": {
                 "verify_result": false,
                 "src_anno": "Beside the Big Top",
@@ -976,27 +748,6 @@
                 "micro_uuid": "1ed33792-eede-3a19-8437-c97f5ae8cec0",
                 "macro_uuid": "dc7bdca8-a3cc-3848-bb2c-f5e70380fa86"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-06-03_958.json": {
-                "verify_result": false,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "b4b143da-bd3e-3679-9d69-71f503e7669e",
-                "macro_uuid": "30c74a65-dd2b-386d-86ce-34a00e548224"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-04-10_573.json": {
                 "verify_result": false,
                 "src_anno": "Near White Wagon",
@@ -1053,28 +804,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: platform (obj70), campeast (obj201)",
                 "micro_uuid": "f267e461-3c75-3cab-ad35-925bf3a3f0e4",
                 "macro_uuid": "32ce180e-823a-34bd-8f5b-ec572be6ffe2"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-25_320.json": {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "bd556b35-42c5-3dc1-9455-cfdc16174fff",
-                "macro_uuid": "ae8f8989-2b97-3713-85f7-15d6617ef2bb"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-01-27_916.json": {
                 "verify_result": true,
@@ -1136,51 +865,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), clown alley (obj157)",
                 "micro_uuid": "669bd388-affe-396b-b7fe-c3a8808e61ee",
                 "macro_uuid": "19459a0a-b5cd-3f9f-8722-fd0dbfc040a8"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-46_015.json": {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), menagerie nook (obj121)",
-                "micro_uuid": "200b3c9c-ad8d-30e4-8dda-d39b4707a675",
-                "macro_uuid": "57c47dc4-656b-37ef-b525-d75d99d8aab8"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-04-55_010.json": {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), menagerie (obj175)",
-                "micro_uuid": "381974f9-1f25-3655-8df0-c2b0fff676a1",
-                "macro_uuid": "8c0c063f-499a-3015-82da-89f36949c182"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-55-33_466.json": {
                 "verify_result": true,
@@ -1257,45 +941,6 @@
                 "micro_uuid": "10ac53c0-35be-3b96-830b-33a81e990777",
                 "macro_uuid": "74590d0b-14d8-3537-be3e-833c155a1e68"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-56-04_533.json": {
-                "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "north",
-                    "south",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), midway entrance (obj87)",
-                "micro_uuid": "bee89e70-d97c-3ee9-b9b7-933bb3698f3b",
-                "macro_uuid": "524481cb-972e-3877-93cc-acfbd8606d89"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-00-22_397.json": {
-                "verify_result": false,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "f5442c51-a91f-3592-985e-963a88b9525e",
-                "macro_uuid": "d72d426f-256e-329d-bcec-1cbd74de7315"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-11-10_803.json": {
                 "verify_result": false,
                 "src_anno": "Clown Alley",
@@ -1318,34 +963,6 @@
                 "micro_uuid": "db955d44-f6cc-384c-ac33-7dfac738c842",
                 "macro_uuid": "c81affbf-315c-3497-95df-5f34200e8113"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-00-02_040.json": {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "west",
-                    "east",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "5e5732ce-e22f-3c1b-b520-066f8eb12d09",
-                "macro_uuid": "04a66d38-e327-32dc-8ad7-c6453eb145ab"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-55-27_519.json": {
                 "verify_result": true,
                 "src_anno": "Connection",
@@ -1366,28 +983,6 @@
                 "micro_uuid": "8c7e018f-f808-383c-8c28-afcdc76bd3ca",
                 "macro_uuid": "8f535bc6-2e1f-34ca-8978-7f7b76cceb85"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-12-30_775.json": {
-                "verify_result": false,
-                "src_anno": "Midway Entrance",
-                "src_requested": "midway entrance (obj87)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "in wings (obj81)",
-                "verify_msg": "wrong path, fail to arrive at dst: in wings (obj81), menagerie nook (obj121)",
-                "micro_uuid": "56636ef7-a719-3c6f-b0af-3c1e68a2977f",
-                "macro_uuid": "17bf146e-bbb7-311e-9f97-7eb9e31d500f"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-52-31_227.json": {
                 "verify_result": false,
                 "src_anno": "In the Wings",
@@ -1404,31 +999,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
                 "micro_uuid": "e5e7612d-d6fa-382c-ada0-5a0b72ad9d8a",
                 "macro_uuid": "bcc48d5a-b7e0-320b-ab2d-f3f178b77e48"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-08-31_248.json": {
-                "verify_result": false,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "72f6d595-714a-3726-b8a0-07efe443c964",
-                "macro_uuid": "aef8bcdf-d37c-3c56-9c69-6fcc90ad99cb"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-57-57_758.json": {
                 "verify_result": true,
@@ -1447,27 +1017,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "9ac15115-c3bd-37fd-be05-f580728b1e37",
                 "macro_uuid": "2ef2c15d-ee3e-3310-aaa7-d11317e1a66b"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-34_269.json": {
-                "verify_result": false,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "80dc9180-e987-3d94-a64e-5aa72df9dbd8",
-                "macro_uuid": "f7535f03-db68-3a31-b0ff-4b1d23c89240"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-06_715.json": {
                 "verify_result": true,
@@ -1490,28 +1039,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "d15dc728-b72c-3705-9dbd-339b14dd8122",
                 "macro_uuid": "2a72aa35-dd08-3ce9-959a-b667598e9f6c"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-43_936.json": {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "1e417530-edec-30ca-8916-39350ffccba7",
-                "macro_uuid": "ae8f8989-2b97-3713-85f7-15d6617ef2bb"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-08-46_707.json": {
                 "verify_result": false,
@@ -1580,24 +1107,6 @@
                 "micro_uuid": "b6d407fa-7d48-3baf-a576-0cadfd59d056",
                 "macro_uuid": "e0081abe-57a1-33c4-b348-e7a629a9d0bd"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-05-21_861.json": {
-                "verify_result": true,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "6e1db731-069a-34fa-b6ad-2828d07fd8c3",
-                "macro_uuid": "d01b2899-c926-301c-a18a-b4467be7bcf8"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-54_299.json": {
                 "verify_result": false,
                 "src_anno": "Clown Alley",
@@ -1616,23 +1125,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), under bleachers (obj206)",
                 "micro_uuid": "43431302-2ebe-37c5-815a-9b44455d37c7",
                 "macro_uuid": "55ec04eb-3c06-3869-9e48-674c936a6243"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-57-58_775.json": {
-                "verify_result": true,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "a2c7ab56-d836-3ede-8421-2d6fc7c98ef4",
-                "macro_uuid": "47bae9ba-ca3e-3406-b945-638794a6f95c"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-57-32_798.json": {
                 "verify_result": true,
@@ -1794,26 +1286,6 @@
                 "micro_uuid": "4ad59b72-66fd-36d0-86e4-15a558187e84",
                 "macro_uuid": "d68ac656-b25a-38f9-9e46-25eef63b9ff5"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-16_258.json": {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "fcbdc89e-44f4-3225-8d3d-af5393a33060",
-                "macro_uuid": "e5aa4f80-9093-3a78-9bdb-9f244dcec4b6"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-52-35_171.json": {
                 "verify_result": true,
                 "src_anno": "In the Wings",
@@ -1868,24 +1340,6 @@
                 "micro_uuid": "a683ec4c-b6bb-3a9e-a544-f58989ef08b5",
                 "macro_uuid": "fb60678f-00ff-391c-a399-ab6d2dd04eeb"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-00-39_396.json": {
-                "verify_result": true,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "54218179-8869-3a92-9446-b266f2e3f1b9",
-                "macro_uuid": "0bb581d5-2259-3f2e-ab7e-78257f39c7a7"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-07_268.json": {
                 "verify_result": true,
                 "src_anno": "In the Wings",
@@ -1922,28 +1376,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), campwest (obj94)",
                 "micro_uuid": "b6691a46-3b4d-34f0-a65d-84c0b0293949",
                 "macro_uuid": "fbadef0b-cd7b-36a4-a677-319d1f2b2f81"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-07-04_783.json": {
-                "verify_result": false,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "615f5d84-62e0-3ce8-b0f5-cbc35ed78dfe",
-                "macro_uuid": "2f720546-3c41-39e1-8c07-7a86c5c4ecfe"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-48_511.json": {
                 "verify_result": false,
@@ -2046,96 +1478,6 @@
                 "micro_uuid": "142d3553-d809-3625-a5c5-5f39332c5af6",
                 "macro_uuid": "1da3de24-b246-30d5-a83f-3b35800d91b2"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-57-09_151.json": {
-                "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southwest",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), menagerie nook (obj121)",
-                "micro_uuid": "a6e55345-955a-3a10-af52-86d5b493224f",
-                "macro_uuid": "7c721627-b882-3dc2-9185-04c7a28b1fdb"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-06-29_246.json": {
-                "verify_result": true,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "9f6d8c63-cb30-3cd5-9069-3b1d4017b0af",
-                "macro_uuid": "f164368e-bb41-3491-94b7-6e6ac24b50b9"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-05-01_844.json": {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "inprop tent (obj1)",
-                "verify_msg": "wrong path, fail to arrive at dst: inprop tent (obj1), menagerie nook (obj121)",
-                "micro_uuid": "4785e9d9-2ece-393c-925c-393f5540a021",
-                "macro_uuid": "72efb7e7-dcd2-3fcc-b792-4dedb218c045"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-58-37_483.json": {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "3c1305cc-8e8a-3b65-8c8a-867cb558cce9",
-                "macro_uuid": "3e13e333-2033-3026-a7a9-8690f00f4af3"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-13_546.json": {
                 "verify_result": false,
                 "src_anno": "Back Yard",
@@ -2173,23 +1515,6 @@
                 "micro_uuid": "a42d17b0-bbfa-37ce-b10e-218a2be441a1",
                 "macro_uuid": "39ab1404-8d50-34dc-b147-4073a717a8fa"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-58-15_487.json": {
-                "verify_result": true,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "6094149e-601e-3efc-9450-9c3fdb2db2f9",
-                "macro_uuid": "47bae9ba-ca3e-3406-b945-638794a6f95c"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-59_493.json": {
                 "verify_result": true,
                 "src_anno": "Back Yard",
@@ -2210,47 +1535,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "702ea725-57ff-3415-9c08-2d0b978a9222",
                 "macro_uuid": "332729e0-8bbc-3bf5-b9dd-47d3a0397120"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-08-19_789.json": {
-                "verify_result": true,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "63190fd2-185b-3068-9156-0bdd48664b04",
-                "macro_uuid": "e2e2ae4f-57e0-3571-8422-0781412ec72d"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-01-13_556.json": {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "437ca829-de11-360d-a3f1-c0c963305b21",
-                "macro_uuid": "2a86f096-ab3d-368b-89ec-8f7f2b6358fc"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-02-51_654.json": {
                 "verify_result": true,
@@ -2289,30 +1573,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), campeast (obj201)",
                 "micro_uuid": "63b9f2a1-ae63-3239-a130-ffc3aae8c448",
                 "macro_uuid": "0b3ecde3-811e-394f-ab9c-9eec284f090a"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-09_201.json": {
-                "verify_result": false,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "b8b1a771-9f79-3197-b05b-25f90f8b99e5",
-                "macro_uuid": "0452d64e-2677-3dbc-933b-a2c6d5cc23ca"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-02-28_709.json": {
                 "verify_result": false,
@@ -2377,27 +1637,6 @@
                 "micro_uuid": "c0c4f513-a69b-328b-8015-a6e40195898b",
                 "macro_uuid": "a695f310-bd09-3600-ba7e-a9d067d45519"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-44_710.json": {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "ed04b1bd-e1b2-3957-b452-d6d42ba9b92a",
-                "macro_uuid": "d70f48f1-431f-3676-8580-846feac6e0d7"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-09-02_843.json": {
                 "verify_result": false,
                 "src_anno": "Camp, East",
@@ -2461,25 +1700,6 @@
                 "micro_uuid": "45d2ca8a-41cd-3b3d-ad93-931d2d243d18",
                 "macro_uuid": "b07d610b-1657-3bc0-8d78-783d671d53fc"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-56-04_662.json": {
-                "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "3fa2ff05-bf6d-399d-b35b-a921bc57a179",
-                "macro_uuid": "05406090-1018-3663-91be-bd542ce9ccc2"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-57-05_889.json": {
                 "verify_result": true,
                 "src_anno": "Beside the Big Top",
@@ -2498,54 +1718,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "b44b5714-1b9e-30eb-bec2-13f42cd2f3ec",
                 "macro_uuid": "5d75a077-71c1-3ad2-802e-05f5e4f2f037"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-44_105.json": {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "84a2822a-3d86-3a5f-abcf-0f2a70f73840",
-                "macro_uuid": "34717cd1-2005-3e9d-bdb2-89dfc7946ad2"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-55_979.json": {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie nook (obj121)",
-                "micro_uuid": "387d7889-5180-3713-b79f-9ac96e5b6c1a",
-                "macro_uuid": "08c82a17-5cd3-3397-be28-2ad2378b2c1c"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-23_516.json": {
                 "verify_result": true,
@@ -2743,27 +1915,6 @@
                 "micro_uuid": "63ee93b7-8a1d-3138-a250-ffbffe44275a",
                 "macro_uuid": "09a32270-b999-3f56-8428-cb5c0b2e065b"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-11-59_699.json": {
-                "verify_result": false,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "deafd19d-b4ba-3620-8b01-3ba9a2a7f019",
-                "macro_uuid": "15673334-a7e7-37d3-abfd-1085845c1f77"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-05-35_293.json": {
                 "verify_result": true,
                 "src_anno": "Platform (west side)",
@@ -2855,47 +2006,6 @@
                 "micro_uuid": "4056c071-81e7-39d3-ad56-b2d9283a35dd",
                 "macro_uuid": "d1ce376a-f22e-3cf6-b9ce-bb3b762f9c78"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-12-14_405.json": {
-                "verify_result": false,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "back yard (obj4)",
-                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), menagerie nook (obj121)",
-                "micro_uuid": "008a1302-b183-399b-8d87-e053db15a448",
-                "macro_uuid": "55761004-e637-38c6-af30-cd70d1bb68b9"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-11-24_1000.json": {
-                "verify_result": true,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "0c33c41b-5a34-3515-996e-c37aad46f612",
-                "macro_uuid": "1cad2a12-d7c9-342a-b7a3-350a5e021f36"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-05-15_982.json": {
                 "verify_result": false,
                 "src_anno": "Performance Ring",
@@ -2938,25 +2048,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), clown alley (obj157)",
                 "micro_uuid": "93a1f4cc-2da2-347c-9dc8-82c584c3b31d",
                 "macro_uuid": "070571a5-727e-3ab1-a160-0bae1b061988"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-06_730.json": {
-                "verify_result": true,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "0d244c38-3324-3ea5-a38f-eb199409d1dd",
-                "macro_uuid": "55980a37-fcfd-3d0a-b7cd-811f8f5ba67b"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-43_725.json": {
                 "verify_result": true,
@@ -3039,54 +2130,6 @@
                 "micro_uuid": "970a5838-b1d9-334f-93e2-fed20273d586",
                 "macro_uuid": "c2553c03-d072-3bef-b2df-7600886b5899"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-07-32_843.json": {
-                "verify_result": false,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "west",
-                    "east",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "fee24fd9-03be-364b-8bb7-f0db6497987d",
-                "macro_uuid": "b27159e2-f8bb-3355-9af5-a44fdf547253"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-07-45_907.json": {
-                "verify_result": true,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "5e6f31fa-f74a-31e5-a2a7-4c22d26f025d",
-                "macro_uuid": "f174264d-98ed-3740-bf44-02d5bdf9729f"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-35_371.json": {
                 "verify_result": false,
                 "src_anno": "Connection",
@@ -3104,23 +2147,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
                 "micro_uuid": "36fb18ae-9245-3365-b1b2-caf8cbb7b895",
                 "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-50_485.json": {
-                "verify_result": true,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "7e80edd8-370f-3e06-9e95-5db283f53d21",
-                "macro_uuid": "b7dfe0a4-bf21-34ef-ac0c-b543373ef3f0"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-10_147.json": {
                 "verify_result": false,
@@ -3142,48 +2168,6 @@
                 "micro_uuid": "e9a54e7c-f255-3d0c-8533-f75355cd5e8a",
                 "macro_uuid": "ae7b4e61-14ab-3769-9c78-5e84ad672973"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-12_965.json": {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "7481b04e-2cd3-3c86-a9d0-c73238ace197",
-                "macro_uuid": "30aabd3b-5807-3c1b-a628-0c6e81d169bf"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-47_341.json": {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "baf3dcde-bcbd-3609-ab0c-5b58c9b00055",
-                "macro_uuid": "08c82a17-5cd3-3397-be28-2ad2378b2c1c"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-54_844.json": {
                 "verify_result": true,
                 "src_anno": "Connection",
@@ -3201,110 +2185,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "a7f71186-7512-3773-8f58-9cfed47c51d4",
                 "macro_uuid": "268687e2-d92a-3e90-b4e8-0935dbb8e3f3"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-02-47_998.json": {
-                "verify_result": true,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "c52b0d18-7b4d-320d-8d88-f8ac6bd5be25",
-                "macro_uuid": "55980a37-fcfd-3d0a-b7cd-811f8f5ba67b"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-03-10_106.json": {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "bcd134c3-231a-3cab-a87f-ec15f1bcad37",
-                "macro_uuid": "30aabd3b-5807-3c1b-a628-0c6e81d169bf"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-04-26_047.json": {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "south",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "f8f44155-3962-3b92-93f8-e0bfcb5d96c1",
-                "macro_uuid": "04bc7ff6-9da7-3688-9cea-a3ccc267eb72"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-01-13_291.json": {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "8875a4e9-e2d0-3a35-b090-49abe72b8ad9",
-                "macro_uuid": "2a86f096-ab3d-368b-89ec-8f7f2b6358fc"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-51_124.json": {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "back yard (obj4)",
-                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), menagerie nook (obj121)",
-                "micro_uuid": "0fce4682-e9c8-30f2-92ff-f7922b75b4ed",
-                "macro_uuid": "04a66d38-e327-32dc-8ad7-c6453eb145ab"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-05-39_941.json": {
                 "verify_result": true,
@@ -3390,29 +2270,6 @@
                 "micro_uuid": "9aada91a-520c-333b-a18c-b561386deb34",
                 "macro_uuid": "cd9bdc0f-0a69-36f1-8474-b4340c617a87"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-10-50_168.json": {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "c8b96971-309a-3faa-9ca4-9bc24e42aace",
-                "macro_uuid": "34717cd1-2005-3e9d-bdb2-89dfc7946ad2"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-57_395.json": {
                 "verify_result": true,
                 "src_anno": "Back Yard",
@@ -3480,41 +2337,6 @@
                 "micro_uuid": "11f72a04-601a-3332-8b63-d2d17ff66235",
                 "macro_uuid": "a3e2e50a-cf0f-3cd9-8490-b2641d23a48e"
             },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-12-01_304.json": {
-                "verify_result": false,
-                "src_anno": "Menagerie",
-                "src_requested": "menagerie (obj175)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "west",
-                    "south"
-                ],
-                "dst_gpt": "menagerie (obj175)",
-                "verify_msg": "wrong path, fail to arrive at dst: menagerie (obj175), menagerie nook (obj121)",
-                "micro_uuid": "ecdb166c-3499-3113-b816-86e468a86247",
-                "macro_uuid": "ad337a30-8a1a-3de7-8445-ebe758512541"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-08-00-53_820.json": {
-                "verify_result": true,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "e8142478-ac56-3599-9d42-b9fe6d8c5e4d",
-                "macro_uuid": "0bb581d5-2259-3f2e-ab7e-78257f39c7a7"
-            },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-57_804.json": {
                 "verify_result": false,
                 "src_anno": "Back Yard",
@@ -3532,28 +2354,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), campeast (obj201)",
                 "micro_uuid": "08424742-333f-3f4f-907f-7540e086674c",
                 "macro_uuid": "42f66a9e-4aa6-3acb-b6c9-a2c6642326f7"
-            },
-            "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-58-38_448.json": {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "a5979653-b7bb-3986-a1ef-40fb78668796",
-                "macro_uuid": "3e13e333-2033-3026-a7a9-8690f00f4af3"
             },
             "../gpt-games-results//ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-28_685.json": {
                 "verify_result": true,
@@ -3596,25 +2396,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "f6684a97-d9fa-3b09-9dbf-4df11ffc96be",
-                "macro_uuid": "121b0778-86ae-355d-893e-e5bcb70167b1"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Performance Ring",
                 "src_requested": "performance ring (obj131)",
                 "dst_anno": "Clown Alley",
@@ -3654,24 +2435,6 @@
                 "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
             },
             {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "3a61037a-6e3c-3767-8c29-9caf614f08f0",
-                "macro_uuid": "2b86a87d-26f1-39e8-81ca-b07d3de9ab84"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
@@ -3691,25 +2454,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "91cf9aeb-5b72-3eb9-8f12-aa4a27705d67",
                 "macro_uuid": "332729e0-8bbc-3bf5-b9dd-47d3a0397120"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Midway Entrance",
-                "src_requested": "midway entrance (obj87)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "0985b041-9cd1-31e2-93a6-e6afb94945ee",
-                "macro_uuid": "ad2a316d-8e42-3631-8e47-f8c5f0a65813"
             },
             {
                 "verify_result": true,
@@ -3772,52 +2516,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southwest",
-                    "south",
-                    "southwest"
-                ],
-                "dst_gpt": "in wings (obj81)",
-                "verify_msg": "wrong path, fail to arrive at dst: in wings (obj81), menagerie nook (obj121)",
-                "micro_uuid": "a2b4cbf1-74e5-36e5-87f1-a3a3f6e75875",
-                "macro_uuid": "d70f48f1-431f-3676-8580-846feac6e0d7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie nook (obj121)",
-                "micro_uuid": "129286ee-9c2d-38ca-8991-cca92324568c",
-                "macro_uuid": "57c47dc4-656b-37ef-b525-d75d99d8aab8"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Inside Prop Tent",
@@ -3834,25 +2532,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
                 "micro_uuid": "df94ce60-84f3-3140-a67c-fa1260355a1d",
                 "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "f52da043-50df-3348-906f-1a635b66925d",
-                "macro_uuid": "121b0778-86ae-355d-893e-e5bcb70167b1"
             },
             {
                 "verify_result": true,
@@ -3894,48 +2573,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "58432797-93af-3523-a450-66e3d59a12bc",
                 "macro_uuid": "52d28c70-3f51-305d-a3b9-e97b06d04378"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "29cdce2e-4fda-348e-9c2b-dca342cd4475",
-                "macro_uuid": "2b86a87d-26f1-39e8-81ca-b07d3de9ab84"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "733edc6b-b240-3da4-b9a6-48b91835f9d2",
-                "macro_uuid": "83264803-da61-3c68-a955-435834829d82"
             },
             {
                 "verify_result": false,
@@ -3994,25 +2631,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "59eba32a-2d0f-3d31-b1f2-9bbfef6a3e70",
                 "macro_uuid": "c2553c03-d072-3bef-b2df-7600886b5899"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), midway entrance (obj87)",
-                "micro_uuid": "d2cfc6b3-bb0f-3e1c-99b9-d668d9948013",
-                "macro_uuid": "e5aa4f80-9093-3a78-9bdb-9f244dcec4b6"
             },
             {
                 "verify_result": false,
@@ -4076,28 +2694,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inprop tent (obj1), campwest (obj94)",
                 "micro_uuid": "fe8d24bb-1724-3b58-b600-ea2a196af505",
                 "macro_uuid": "1ef8fb24-1bf4-31ca-8dcb-e76146b5fe2a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "northwest"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "7c08fa74-da1e-397b-adeb-d4118aa9e902",
-                "macro_uuid": "d0e7960c-f5b5-3985-9d20-83b1b85d00ac"
             },
             {
                 "verify_result": false,
@@ -4346,30 +2942,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "northwest"
-                ],
-                "dst_gpt": "platform (obj56)",
-                "verify_msg": "wrong path, fail to arrive at dst: platform (obj56), menagerie nook (obj121)",
-                "micro_uuid": "6915c41c-6e6c-3bc1-bb82-1baf6f93b635",
-                "macro_uuid": "61fdeda5-88b2-3c7b-a09e-3fd8751ba0b0"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Beside the Big Top",
                 "src_requested": "bebig top (obj230)",
                 "dst_anno": "Inside Prop Tent",
@@ -4549,27 +3121,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "b4b143da-bd3e-3679-9d69-71f503e7669e",
-                "macro_uuid": "30c74a65-dd2b-386d-86ce-34a00e548224"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Near White Wagon",
                 "src_requested": "near white wagon (obj148)",
                 "dst_anno": "Camp, West",
@@ -4624,28 +3175,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: platform (obj70), campeast (obj201)",
                 "micro_uuid": "f267e461-3c75-3cab-ad35-925bf3a3f0e4",
                 "macro_uuid": "32ce180e-823a-34bd-8f5b-ec572be6ffe2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "bd556b35-42c5-3dc1-9455-cfdc16174fff",
-                "macro_uuid": "ae8f8989-2b97-3713-85f7-15d6617ef2bb"
             },
             {
                 "verify_result": true,
@@ -4707,51 +3236,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), clown alley (obj157)",
                 "micro_uuid": "669bd388-affe-396b-b7fe-c3a8808e61ee",
                 "macro_uuid": "19459a0a-b5cd-3f9f-8722-fd0dbfc040a8"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), menagerie nook (obj121)",
-                "micro_uuid": "200b3c9c-ad8d-30e4-8dda-d39b4707a675",
-                "macro_uuid": "57c47dc4-656b-37ef-b525-d75d99d8aab8"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), menagerie (obj175)",
-                "micro_uuid": "381974f9-1f25-3655-8df0-c2b0fff676a1",
-                "macro_uuid": "8c0c063f-499a-3015-82da-89f36949c182"
             },
             {
                 "verify_result": true,
@@ -4830,45 +3314,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "north",
-                    "south",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), midway entrance (obj87)",
-                "micro_uuid": "bee89e70-d97c-3ee9-b9b7-933bb3698f3b",
-                "macro_uuid": "524481cb-972e-3877-93cc-acfbd8606d89"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "f5442c51-a91f-3592-985e-963a88b9525e",
-                "macro_uuid": "d72d426f-256e-329d-bcec-1cbd74de7315"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Clown Alley",
                 "src_requested": "clown alley (obj157)",
                 "dst_anno": "Midway Entrance",
@@ -4888,34 +3333,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
                 "micro_uuid": "db955d44-f6cc-384c-ac33-7dfac738c842",
                 "macro_uuid": "c81affbf-315c-3497-95df-5f34200e8113"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "west",
-                    "east",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "5e5732ce-e22f-3c1b-b520-066f8eb12d09",
-                "macro_uuid": "04a66d38-e327-32dc-8ad7-c6453eb145ab"
             },
             {
                 "verify_result": true,
@@ -4939,28 +3356,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Midway Entrance",
-                "src_requested": "midway entrance (obj87)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "in wings (obj81)",
-                "verify_msg": "wrong path, fail to arrive at dst: in wings (obj81), menagerie nook (obj121)",
-                "micro_uuid": "56636ef7-a719-3c6f-b0af-3c1e68a2977f",
-                "macro_uuid": "17bf146e-bbb7-311e-9f97-7eb9e31d500f"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Back Yard",
@@ -4975,31 +3370,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
                 "micro_uuid": "e5e7612d-d6fa-382c-ada0-5a0b72ad9d8a",
                 "macro_uuid": "bcc48d5a-b7e0-320b-ab2d-f3f178b77e48"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "72f6d595-714a-3726-b8a0-07efe443c964",
-                "macro_uuid": "aef8bcdf-d37c-3c56-9c69-6fcc90ad99cb"
             },
             {
                 "verify_result": true,
@@ -5018,27 +3388,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "9ac15115-c3bd-37fd-be05-f580728b1e37",
                 "macro_uuid": "2ef2c15d-ee3e-3310-aaa7-d11317e1a66b"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "80dc9180-e987-3d94-a64e-5aa72df9dbd8",
-                "macro_uuid": "f7535f03-db68-3a31-b0ff-4b1d23c89240"
             },
             {
                 "verify_result": true,
@@ -5061,28 +3410,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "d15dc728-b72c-3705-9dbd-339b14dd8122",
                 "macro_uuid": "2a72aa35-dd08-3ce9-959a-b667598e9f6c"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "1e417530-edec-30ca-8916-39350ffccba7",
-                "macro_uuid": "ae8f8989-2b97-3713-85f7-15d6617ef2bb"
             },
             {
                 "verify_result": false,
@@ -5152,24 +3479,6 @@
                 "macro_uuid": "e0081abe-57a1-33c4-b348-e7a629a9d0bd"
             },
             {
-                "verify_result": true,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "6e1db731-069a-34fa-b6ad-2828d07fd8c3",
-                "macro_uuid": "d01b2899-c926-301c-a18a-b4467be7bcf8"
-            },
-            {
                 "verify_result": false,
                 "src_anno": "Clown Alley",
                 "src_requested": "clown alley (obj157)",
@@ -5187,23 +3496,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), under bleachers (obj206)",
                 "micro_uuid": "43431302-2ebe-37c5-815a-9b44455d37c7",
                 "macro_uuid": "55ec04eb-3c06-3869-9e48-674c936a6243"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "a2c7ab56-d836-3ede-8421-2d6fc7c98ef4",
-                "macro_uuid": "47bae9ba-ca3e-3406-b945-638794a6f95c"
             },
             {
                 "verify_result": true,
@@ -5366,26 +3658,6 @@
                 "macro_uuid": "d68ac656-b25a-38f9-9e46-25eef63b9ff5"
             },
             {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "fcbdc89e-44f4-3225-8d3d-af5393a33060",
-                "macro_uuid": "e5aa4f80-9093-3a78-9bdb-9f244dcec4b6"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
@@ -5441,24 +3713,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "54218179-8869-3a92-9446-b266f2e3f1b9",
-                "macro_uuid": "0bb581d5-2259-3f2e-ab7e-78257f39c7a7"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Platform (west side)",
@@ -5493,28 +3747,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), campwest (obj94)",
                 "micro_uuid": "b6691a46-3b4d-34f0-a65d-84c0b0293949",
                 "macro_uuid": "fbadef0b-cd7b-36a4-a677-319d1f2b2f81"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "615f5d84-62e0-3ce8-b0f5-cbc35ed78dfe",
-                "macro_uuid": "2f720546-3c41-39e1-8c07-7a86c5c4ecfe"
             },
             {
                 "verify_result": false,
@@ -5619,96 +3851,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southwest",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), menagerie nook (obj121)",
-                "micro_uuid": "a6e55345-955a-3a10-af52-86d5b493224f",
-                "macro_uuid": "7c721627-b882-3dc2-9185-04c7a28b1fdb"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "9f6d8c63-cb30-3cd5-9069-3b1d4017b0af",
-                "macro_uuid": "f164368e-bb41-3491-94b7-6e6ac24b50b9"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "inprop tent (obj1)",
-                "verify_msg": "wrong path, fail to arrive at dst: inprop tent (obj1), menagerie nook (obj121)",
-                "micro_uuid": "4785e9d9-2ece-393c-925c-393f5540a021",
-                "macro_uuid": "72efb7e7-dcd2-3fcc-b792-4dedb218c045"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "3c1305cc-8e8a-3b65-8c8a-867cb558cce9",
-                "macro_uuid": "3e13e333-2033-3026-a7a9-8690f00f4af3"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
                 "dst_anno": "Inside Prop Tent",
@@ -5746,23 +3888,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "6094149e-601e-3efc-9450-9c3fdb2db2f9",
-                "macro_uuid": "47bae9ba-ca3e-3406-b945-638794a6f95c"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
                 "dst_anno": "on the tightrope",
@@ -5781,47 +3906,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "702ea725-57ff-3415-9c08-2d0b978a9222",
                 "macro_uuid": "332729e0-8bbc-3bf5-b9dd-47d3a0397120"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "63190fd2-185b-3068-9156-0bdd48664b04",
-                "macro_uuid": "e2e2ae4f-57e0-3571-8422-0781412ec72d"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "437ca829-de11-360d-a3f1-c0c963305b21",
-                "macro_uuid": "2a86f096-ab3d-368b-89ec-8f7f2b6358fc"
             },
             {
                 "verify_result": true,
@@ -5860,30 +3944,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), campeast (obj201)",
                 "micro_uuid": "63b9f2a1-ae63-3239-a130-ffc3aae8c448",
                 "macro_uuid": "0b3ecde3-811e-394f-ab9c-9eec284f090a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "b8b1a771-9f79-3197-b05b-25f90f8b99e5",
-                "macro_uuid": "0452d64e-2677-3dbc-933b-a2c6d5cc23ca"
             },
             {
                 "verify_result": false,
@@ -5950,27 +4010,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "ed04b1bd-e1b2-3957-b452-d6d42ba9b92a",
-                "macro_uuid": "d70f48f1-431f-3676-8580-846feac6e0d7"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Camp, East",
                 "src_requested": "campeast (obj201)",
                 "dst_anno": "Under the Bleachers",
@@ -6033,25 +4072,6 @@
                 "macro_uuid": "b07d610b-1657-3bc0-8d78-783d671d53fc"
             },
             {
-                "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "3fa2ff05-bf6d-399d-b35b-a921bc57a179",
-                "macro_uuid": "05406090-1018-3663-91be-bd542ce9ccc2"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Beside the Big Top",
                 "src_requested": "bebig top (obj230)",
@@ -6069,54 +4089,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "b44b5714-1b9e-30eb-bec2-13f42cd2f3ec",
                 "macro_uuid": "5d75a077-71c1-3ad2-802e-05f5e4f2f037"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "84a2822a-3d86-3a5f-abcf-0f2a70f73840",
-                "macro_uuid": "34717cd1-2005-3e9d-bdb2-89dfc7946ad2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie nook (obj121)",
-                "micro_uuid": "387d7889-5180-3713-b79f-9ac96e5b6c1a",
-                "macro_uuid": "08c82a17-5cd3-3397-be28-2ad2378b2c1c"
             },
             {
                 "verify_result": true,
@@ -6315,27 +4287,6 @@
                 "macro_uuid": "09a32270-b999-3f56-8428-cb5c0b2e065b"
             },
             {
-                "verify_result": false,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "deafd19d-b4ba-3620-8b01-3ba9a2a7f019",
-                "macro_uuid": "15673334-a7e7-37d3-abfd-1085845c1f77"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Platform (west side)",
                 "src_requested": "platform (obj56)",
@@ -6428,47 +4379,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "back yard (obj4)",
-                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), menagerie nook (obj121)",
-                "micro_uuid": "008a1302-b183-399b-8d87-e053db15a448",
-                "macro_uuid": "55761004-e637-38c6-af30-cd70d1bb68b9"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "0c33c41b-5a34-3515-996e-c37aad46f612",
-                "macro_uuid": "1cad2a12-d7c9-342a-b7a3-350a5e021f36"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Performance Ring",
                 "src_requested": "performance ring (obj131)",
                 "dst_anno": "Camp, West",
@@ -6509,25 +4419,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), clown alley (obj157)",
                 "micro_uuid": "93a1f4cc-2da2-347c-9dc8-82c584c3b31d",
                 "macro_uuid": "070571a5-727e-3ab1-a160-0bae1b061988"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "0d244c38-3324-3ea5-a38f-eb199409d1dd",
-                "macro_uuid": "55980a37-fcfd-3d0a-b7cd-811f8f5ba67b"
             },
             {
                 "verify_result": true,
@@ -6612,54 +4503,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "west",
-                    "east",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "fee24fd9-03be-364b-8bb7-f0db6497987d",
-                "macro_uuid": "b27159e2-f8bb-3355-9af5-a44fdf547253"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "5e6f31fa-f74a-31e5-a2a7-4c22d26f025d",
-                "macro_uuid": "f174264d-98ed-3740-bf44-02d5bdf9729f"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Connection",
                 "src_requested": "connection (obj57)",
                 "dst_anno": "Inside Prop Tent",
@@ -6675,23 +4518,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
                 "micro_uuid": "36fb18ae-9245-3365-b1b2-caf8cbb7b895",
                 "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "7e80edd8-370f-3e06-9e95-5db283f53d21",
-                "macro_uuid": "b7dfe0a4-bf21-34ef-ac0c-b543373ef3f0"
             },
             {
                 "verify_result": false,
@@ -6714,48 +4540,6 @@
                 "macro_uuid": "ae7b4e61-14ab-3769-9c78-5e84ad672973"
             },
             {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "7481b04e-2cd3-3c86-a9d0-c73238ace197",
-                "macro_uuid": "30aabd3b-5807-3c1b-a628-0c6e81d169bf"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "baf3dcde-bcbd-3609-ab0c-5b58c9b00055",
-                "macro_uuid": "08c82a17-5cd3-3397-be28-2ad2378b2c1c"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Connection",
                 "src_requested": "connection (obj57)",
@@ -6772,110 +4556,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "a7f71186-7512-3773-8f58-9cfed47c51d4",
                 "macro_uuid": "268687e2-d92a-3e90-b4e8-0935dbb8e3f3"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "c52b0d18-7b4d-320d-8d88-f8ac6bd5be25",
-                "macro_uuid": "55980a37-fcfd-3d0a-b7cd-811f8f5ba67b"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "bcd134c3-231a-3cab-a87f-ec15f1bcad37",
-                "macro_uuid": "30aabd3b-5807-3c1b-a628-0c6e81d169bf"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "south",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "f8f44155-3962-3b92-93f8-e0bfcb5d96c1",
-                "macro_uuid": "04bc7ff6-9da7-3688-9cea-a3ccc267eb72"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "8875a4e9-e2d0-3a35-b090-49abe72b8ad9",
-                "macro_uuid": "2a86f096-ab3d-368b-89ec-8f7f2b6358fc"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "back yard (obj4)",
-                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), menagerie nook (obj121)",
-                "micro_uuid": "0fce4682-e9c8-30f2-92ff-f7922b75b4ed",
-                "macro_uuid": "04a66d38-e327-32dc-8ad7-c6453eb145ab"
             },
             {
                 "verify_result": true,
@@ -6962,29 +4642,6 @@
                 "macro_uuid": "cd9bdc0f-0a69-36f1-8474-b4340c617a87"
             },
             {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "c8b96971-309a-3faa-9ca4-9bc24e42aace",
-                "macro_uuid": "34717cd1-2005-3e9d-bdb2-89dfc7946ad2"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
@@ -7053,41 +4710,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Menagerie",
-                "src_requested": "menagerie (obj175)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "west",
-                    "south"
-                ],
-                "dst_gpt": "menagerie (obj175)",
-                "verify_msg": "wrong path, fail to arrive at dst: menagerie (obj175), menagerie nook (obj121)",
-                "micro_uuid": "ecdb166c-3499-3113-b816-86e468a86247",
-                "macro_uuid": "ad337a30-8a1a-3de7-8445-ebe758512541"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "e8142478-ac56-3599-9d42-b9fe6d8c5e4d",
-                "macro_uuid": "0bb581d5-2259-3f2e-ab7e-78257f39c7a7"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
                 "dst_anno": "Camp, East",
@@ -7103,28 +4725,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), campeast (obj201)",
                 "micro_uuid": "08424742-333f-3f4f-907f-7540e086674c",
                 "macro_uuid": "42f66a9e-4aa6-3acb-b6c9-a2c6642326f7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "a5979653-b7bb-3986-a1ef-40fb78668796",
-                "macro_uuid": "3e13e333-2033-3026-a7a9-8690f00f4af3"
             },
             {
                 "verify_result": true,
@@ -7144,9 +4744,9 @@
                 "macro_uuid": "29be3015-fbfc-331d-b714-4c3dc07410c1"
             }
         ],
-        "correct_num_micro": 67,
-        "total_num_micro": 176,
-        "accuracy_micro": 0.3806818181818182,
+        "correct_num_micro": 55,
+        "total_num_micro": 119,
+        "accuracy_micro": 0.46218487394957986,
         "collection_macro": [
             {
                 "verify_result": false,
@@ -7166,25 +4766,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), campwest (obj94)",
                 "micro_uuid": "a1532c7d-77b4-36af-a114-9746a68a059c",
                 "macro_uuid": "7d34853a-4446-3e12-a4a3-45d55a8da6ae"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "f6684a97-d9fa-3b09-9dbf-4df11ffc96be",
-                "macro_uuid": "121b0778-86ae-355d-893e-e5bcb70167b1"
             },
             {
                 "verify_result": false,
@@ -7227,24 +4808,6 @@
                 "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
             },
             {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "3a61037a-6e3c-3767-8c29-9caf614f08f0",
-                "macro_uuid": "2b86a87d-26f1-39e8-81ca-b07d3de9ab84"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
@@ -7264,25 +4827,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "91cf9aeb-5b72-3eb9-8f12-aa4a27705d67",
                 "macro_uuid": "332729e0-8bbc-3bf5-b9dd-47d3a0397120"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Midway Entrance",
-                "src_requested": "midway entrance (obj87)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "0985b041-9cd1-31e2-93a6-e6afb94945ee",
-                "macro_uuid": "ad2a316d-8e42-3631-8e47-f8c5f0a65813"
             },
             {
                 "verify_result": true,
@@ -7342,52 +4886,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: platform (obj70), campeast (obj201)",
                 "micro_uuid": "9e8d44f9-0cf0-3259-8f3b-cf53ff878031",
                 "macro_uuid": "96fc8350-f893-3e61-b302-f18d946ce2f2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southwest",
-                    "south",
-                    "southwest"
-                ],
-                "dst_gpt": "in wings (obj81)",
-                "verify_msg": "wrong path, fail to arrive at dst: in wings (obj81), menagerie nook (obj121)",
-                "micro_uuid": "a2b4cbf1-74e5-36e5-87f1-a3a3f6e75875",
-                "macro_uuid": "d70f48f1-431f-3676-8580-846feac6e0d7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie nook (obj121)",
-                "micro_uuid": "129286ee-9c2d-38ca-8991-cca92324568c",
-                "macro_uuid": "57c47dc4-656b-37ef-b525-d75d99d8aab8"
             },
             {
                 "verify_result": false,
@@ -7451,30 +4949,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "733edc6b-b240-3da4-b9a6-48b91835f9d2",
-                "macro_uuid": "83264803-da61-3c68-a955-435834829d82"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Near White Wagon",
                 "src_requested": "near white wagon (obj148)",
                 "dst_anno": "Performance Ring",
@@ -7530,25 +5004,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "59eba32a-2d0f-3d31-b1f2-9bbfef6a3e70",
                 "macro_uuid": "c2553c03-d072-3bef-b2df-7600886b5899"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), midway entrance (obj87)",
-                "micro_uuid": "d2cfc6b3-bb0f-3e1c-99b9-d668d9948013",
-                "macro_uuid": "e5aa4f80-9093-3a78-9bdb-9f244dcec4b6"
             },
             {
                 "verify_result": false,
@@ -7612,28 +5067,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inprop tent (obj1), campwest (obj94)",
                 "micro_uuid": "fe8d24bb-1724-3b58-b600-ea2a196af505",
                 "macro_uuid": "1ef8fb24-1bf4-31ca-8dcb-e76146b5fe2a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "northwest"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "7c08fa74-da1e-397b-adeb-d4118aa9e902",
-                "macro_uuid": "d0e7960c-f5b5-3985-9d20-83b1b85d00ac"
             },
             {
                 "verify_result": false,
@@ -7861,30 +5294,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "northwest"
-                ],
-                "dst_gpt": "platform (obj56)",
-                "verify_msg": "wrong path, fail to arrive at dst: platform (obj56), menagerie nook (obj121)",
-                "micro_uuid": "6915c41c-6e6c-3bc1-bb82-1baf6f93b635",
-                "macro_uuid": "61fdeda5-88b2-3c7b-a09e-3fd8751ba0b0"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Clown Alley",
                 "src_requested": "clown alley (obj157)",
                 "dst_anno": "Menagerie",
@@ -8003,27 +5412,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "b4b143da-bd3e-3679-9d69-71f503e7669e",
-                "macro_uuid": "30c74a65-dd2b-386d-86ce-34a00e548224"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Near White Wagon",
                 "src_requested": "near white wagon (obj148)",
                 "dst_anno": "Camp, West",
@@ -8078,28 +5466,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: platform (obj70), campeast (obj201)",
                 "micro_uuid": "f267e461-3c75-3cab-ad35-925bf3a3f0e4",
                 "macro_uuid": "32ce180e-823a-34bd-8f5b-ec572be6ffe2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, East",
-                "src_requested": "campeast (obj201)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "bd556b35-42c5-3dc1-9455-cfdc16174fff",
-                "macro_uuid": "ae8f8989-2b97-3713-85f7-15d6617ef2bb"
             },
             {
                 "verify_result": true,
@@ -8161,30 +5527,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), clown alley (obj157)",
                 "micro_uuid": "669bd388-affe-396b-b7fe-c3a8808e61ee",
                 "macro_uuid": "19459a0a-b5cd-3f9f-8722-fd0dbfc040a8"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "clown alley (obj157)",
-                "verify_msg": "wrong path, fail to arrive at dst: clown alley (obj157), menagerie (obj175)",
-                "micro_uuid": "381974f9-1f25-3655-8df0-c2b0fff676a1",
-                "macro_uuid": "8c0c063f-499a-3015-82da-89f36949c182"
             },
             {
                 "verify_result": true,
@@ -8263,45 +5605,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "north",
-                    "south",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), midway entrance (obj87)",
-                "micro_uuid": "bee89e70-d97c-3ee9-b9b7-933bb3698f3b",
-                "macro_uuid": "524481cb-972e-3877-93cc-acfbd8606d89"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "f5442c51-a91f-3592-985e-963a88b9525e",
-                "macro_uuid": "d72d426f-256e-329d-bcec-1cbd74de7315"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Clown Alley",
                 "src_requested": "clown alley (obj157)",
                 "dst_anno": "Midway Entrance",
@@ -8321,34 +5624,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
                 "micro_uuid": "db955d44-f6cc-384c-ac33-7dfac738c842",
                 "macro_uuid": "c81affbf-315c-3497-95df-5f34200e8113"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "west",
-                    "east",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "5e5732ce-e22f-3c1b-b520-066f8eb12d09",
-                "macro_uuid": "04a66d38-e327-32dc-8ad7-c6453eb145ab"
             },
             {
                 "verify_result": true,
@@ -8372,28 +5647,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Midway Entrance",
-                "src_requested": "midway entrance (obj87)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "in wings (obj81)",
-                "verify_msg": "wrong path, fail to arrive at dst: in wings (obj81), menagerie nook (obj121)",
-                "micro_uuid": "56636ef7-a719-3c6f-b0af-3c1e68a2977f",
-                "macro_uuid": "17bf146e-bbb7-311e-9f97-7eb9e31d500f"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Back Yard",
@@ -8408,31 +5661,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
                 "micro_uuid": "e5e7612d-d6fa-382c-ada0-5a0b72ad9d8a",
                 "macro_uuid": "bcc48d5a-b7e0-320b-ab2d-f3f178b77e48"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "72f6d595-714a-3726-b8a0-07efe443c964",
-                "macro_uuid": "aef8bcdf-d37c-3c56-9c69-6fcc90ad99cb"
             },
             {
                 "verify_result": true,
@@ -8451,27 +5679,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "9ac15115-c3bd-37fd-be05-f580728b1e37",
                 "macro_uuid": "2ef2c15d-ee3e-3310-aaa7-d11317e1a66b"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie nook (obj121)",
-                "micro_uuid": "80dc9180-e987-3d94-a64e-5aa72df9dbd8",
-                "macro_uuid": "f7535f03-db68-3a31-b0ff-4b1d23c89240"
             },
             {
                 "verify_result": true,
@@ -8561,41 +5768,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: bebig top (obj230), under bleachers (obj206)",
                 "micro_uuid": "b6d407fa-7d48-3baf-a576-0cadfd59d056",
                 "macro_uuid": "e0081abe-57a1-33c4-b348-e7a629a9d0bd"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Performance Ring",
-                "src_requested": "performance ring (obj131)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "6e1db731-069a-34fa-b6ad-2828d07fd8c3",
-                "macro_uuid": "d01b2899-c926-301c-a18a-b4467be7bcf8"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "a2c7ab56-d836-3ede-8421-2d6fc7c98ef4",
-                "macro_uuid": "47bae9ba-ca3e-3406-b945-638794a6f95c"
             },
             {
                 "verify_result": true,
@@ -8777,24 +5949,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "54218179-8869-3a92-9446-b266f2e3f1b9",
-                "macro_uuid": "0bb581d5-2259-3f2e-ab7e-78257f39c7a7"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Platform (west side)",
@@ -8829,28 +5983,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), campwest (obj94)",
                 "micro_uuid": "b6691a46-3b4d-34f0-a65d-84c0b0293949",
                 "macro_uuid": "fbadef0b-cd7b-36a4-a677-319d1f2b2f81"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "615f5d84-62e0-3ce8-b0f5-cbc35ed78dfe",
-                "macro_uuid": "2f720546-3c41-39e1-8c07-7a86c5c4ecfe"
             },
             {
                 "verify_result": false,
@@ -8933,96 +6065,6 @@
                 "macro_uuid": "09a32270-b999-3f56-8428-cb5c0b2e065b"
             },
             {
-                "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southwest",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), menagerie nook (obj121)",
-                "micro_uuid": "a6e55345-955a-3a10-af52-86d5b493224f",
-                "macro_uuid": "7c721627-b882-3dc2-9185-04c7a28b1fdb"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "9f6d8c63-cb30-3cd5-9069-3b1d4017b0af",
-                "macro_uuid": "f164368e-bb41-3491-94b7-6e6ac24b50b9"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "inprop tent (obj1)",
-                "verify_msg": "wrong path, fail to arrive at dst: inprop tent (obj1), menagerie nook (obj121)",
-                "micro_uuid": "4785e9d9-2ece-393c-925c-393f5540a021",
-                "macro_uuid": "72efb7e7-dcd2-3fcc-b792-4dedb218c045"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Beside the Big Top",
-                "src_requested": "bebig top (obj230)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "3c1305cc-8e8a-3b65-8c8a-867cb558cce9",
-                "macro_uuid": "3e13e333-2033-3026-a7a9-8690f00f4af3"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Camp, East",
                 "src_requested": "campeast (obj201)",
@@ -9038,47 +6080,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "a42d17b0-bbfa-37ce-b10e-218a2be441a1",
                 "macro_uuid": "39ab1404-8d50-34dc-b147-4073a717a8fa"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "63190fd2-185b-3068-9156-0bdd48664b04",
-                "macro_uuid": "e2e2ae4f-57e0-3571-8422-0781412ec72d"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Back Yard",
-                "src_requested": "back yard (obj4)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "437ca829-de11-360d-a3f1-c0c963305b21",
-                "macro_uuid": "2a86f096-ab3d-368b-89ec-8f7f2b6358fc"
             },
             {
                 "verify_result": false,
@@ -9097,30 +6098,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), campeast (obj201)",
                 "micro_uuid": "63b9f2a1-ae63-3239-a130-ffc3aae8c448",
                 "macro_uuid": "0b3ecde3-811e-394f-ab9c-9eec284f090a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Platform (east side)",
-                "src_requested": "platform (obj70)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "b8b1a771-9f79-3197-b05b-25f90f8b99e5",
-                "macro_uuid": "0452d64e-2677-3dbc-933b-a2c6d5cc23ca"
             },
             {
                 "verify_result": false,
@@ -9228,25 +6205,6 @@
                 "macro_uuid": "fb251480-04bf-3aed-9a70-f8fc1b0b456b"
             },
             {
-                "verify_result": false,
-                "src_anno": "Connection",
-                "src_requested": "connection (obj57)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "3fa2ff05-bf6d-399d-b35b-a921bc57a179",
-                "macro_uuid": "05406090-1018-3663-91be-bd542ce9ccc2"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Beside the Big Top",
                 "src_requested": "bebig top (obj230)",
@@ -9264,54 +6222,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "b44b5714-1b9e-30eb-bec2-13f42cd2f3ec",
                 "macro_uuid": "5d75a077-71c1-3ad2-802e-05f5e4f2f037"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie (obj175)",
-                "micro_uuid": "84a2822a-3d86-3a5f-abcf-0f2a70f73840",
-                "macro_uuid": "34717cd1-2005-3e9d-bdb2-89dfc7946ad2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Camp, West",
-                "src_requested": "campwest (obj94)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "north",
-                    "north",
-                    "south",
-                    "south",
-                    "east",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), menagerie nook (obj121)",
-                "micro_uuid": "387d7889-5180-3713-b79f-9ac96e5b6c1a",
-                "macro_uuid": "08c82a17-5cd3-3397-be28-2ad2378b2c1c"
             },
             {
                 "verify_result": true,
@@ -9451,27 +6361,6 @@
                 "macro_uuid": "e97515b5-b16d-3ad0-9a3d-d2b947694a65"
             },
             {
-                "verify_result": false,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "campwest (obj94)",
-                "verify_msg": "wrong path, fail to arrive at dst: campwest (obj94), menagerie (obj175)",
-                "micro_uuid": "deafd19d-b4ba-3620-8b01-3ba9a2a7f019",
-                "macro_uuid": "15673334-a7e7-37d3-abfd-1085845c1f77"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Platform (west side)",
                 "src_requested": "platform (obj56)",
@@ -9524,47 +6413,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "west",
-                    "south",
-                    "east",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "back yard (obj4)",
-                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), menagerie nook (obj121)",
-                "micro_uuid": "008a1302-b183-399b-8d87-e053db15a448",
-                "macro_uuid": "55761004-e637-38c6-af30-cd70d1bb68b9"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Under the Bleachers",
-                "src_requested": "under bleachers (obj206)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "southwest",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "0c33c41b-5a34-3515-996e-c37aad46f612",
-                "macro_uuid": "1cad2a12-d7c9-342a-b7a3-350a5e021f36"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Performance Ring",
                 "src_requested": "performance ring (obj131)",
                 "dst_anno": "Camp, West",
@@ -9608,25 +6456,6 @@
             },
             {
                 "verify_result": true,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "0d244c38-3324-3ea5-a38f-eb199409d1dd",
-                "macro_uuid": "55980a37-fcfd-3d0a-b7cd-811f8f5ba67b"
-            },
-            {
-                "verify_result": true,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Platform (east side)",
@@ -9667,71 +6496,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Platform (west side)",
-                "src_requested": "platform (obj56)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": [
-                    "down",
-                    "south",
-                    "south",
-                    "west",
-                    "south",
-                    "west",
-                    "east",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "northwest"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie nook (obj121)",
-                "micro_uuid": "fee24fd9-03be-364b-8bb7-f0db6497987d",
-                "macro_uuid": "b27159e2-f8bb-3355-9af5-a44fdf547253"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "on the tightrope",
-                "src_requested": "walking a tightrope (obj62)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "west",
-                    "west",
-                    "down",
-                    "south",
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "5e6f31fa-f74a-31e5-a2a7-4c22d26f025d",
-                "macro_uuid": "f174264d-98ed-3740-bf44-02d5bdf9729f"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "In the Wings",
-                "src_requested": "in wings (obj81)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "south",
-                    "east"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "7e80edd8-370f-3e06-9e95-5db283f53d21",
-                "macro_uuid": "b7dfe0a4-bf21-34ef-ac0c-b543373ef3f0"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "In the Wings",
                 "src_requested": "in wings (obj81)",
                 "dst_anno": "Under the Bleachers",
@@ -9751,26 +6515,6 @@
                 "macro_uuid": "ae7b4e61-14ab-3769-9c78-5e84ad672973"
             },
             {
-                "verify_result": false,
-                "src_anno": "Inside Prop Tent",
-                "src_requested": "inprop tent (obj1)",
-                "dst_anno": "Menagerie",
-                "dst_requested": "menagerie (obj175)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "north",
-                    "east",
-                    "east",
-                    "north"
-                ],
-                "dst_gpt": "midway entrance (obj87)",
-                "verify_msg": "wrong path, fail to arrive at dst: midway entrance (obj87), menagerie (obj175)",
-                "micro_uuid": "7481b04e-2cd3-3c86-a9d0-c73238ace197",
-                "macro_uuid": "30aabd3b-5807-3c1b-a628-0c6e81d169bf"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Connection",
                 "src_requested": "connection (obj57)",
@@ -9787,25 +6531,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "a7f71186-7512-3773-8f58-9cfed47c51d4",
                 "macro_uuid": "268687e2-d92a-3e90-b4e8-0935dbb8e3f3"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Near White Wagon",
-                "src_requested": "near white wagon (obj148)",
-                "dst_anno": "Midway Entrance",
-                "dst_requested": "midway entrance (obj87)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "south",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "wrong path, fail to arrive at dst: campeast (obj201), midway entrance (obj87)",
-                "micro_uuid": "f8f44155-3962-3b92-93f8-e0bfcb5d96c1",
-                "macro_uuid": "04bc7ff6-9da7-3688-9cea-a3ccc267eb72"
             },
             {
                 "verify_result": true,
@@ -9859,23 +6584,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Menagerie",
-                "src_requested": "menagerie (obj175)",
-                "dst_anno": "Menagerie Nook",
-                "dst_requested": "menagerie nook (obj121)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "west",
-                    "south"
-                ],
-                "dst_gpt": "menagerie (obj175)",
-                "verify_msg": "wrong path, fail to arrive at dst: menagerie (obj175), menagerie nook (obj121)",
-                "micro_uuid": "ecdb166c-3499-3113-b816-86e468a86247",
-                "macro_uuid": "ad337a30-8a1a-3de7-8445-ebe758512541"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Back Yard",
                 "src_requested": "back yard (obj4)",
                 "dst_anno": "Camp, East",
@@ -9910,8 +6618,8 @@
                 "macro_uuid": "29be3015-fbfc-331d-b714-4c3dc07410c1"
             }
         ],
-        "correct_num_macro": 49,
-        "total_num_macro": 136,
-        "accuracy_macro": 0.3602941176470588
+        "correct_num_macro": 40,
+        "total_num_macro": 94,
+        "accuracy_macro": 0.425531914893617
     }
 }

@@ -14,7 +14,59 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dead end (obj78)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dead End",
+                        "node": "Disused Observatory",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "5fae5e4f-35a1-310b-aaae-796c66dcaaad",
                 "macro_uuid": "0cf3c21c-c706-3f04-91b2-07720fb4b957"
             },
@@ -238,7 +290,34 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "88fd81cb-eebb-3d2f-905c-68341ac9691a",
                 "macro_uuid": "dce8ec89-e04b-3820-a56c-f017c6c7f9a3"
             },
@@ -293,7 +372,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "d93e1ac0-fa01-3b50-825a-b6faa35c6dfb",
                 "macro_uuid": "596ef1d5-2f53-3468-a212-973303d84bf6"
             },
@@ -307,7 +407,48 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "bed3db15-ad98-3ef1-a0fa-7bff865a4cad",
                 "macro_uuid": "3715ed46-0c09-368a-b2b0-ab41cfed0258"
             },
@@ -321,7 +462,34 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "11e27648-9414-30a7-a20a-5be582d41e01",
                 "macro_uuid": "a72bfae6-3e07-35b6-9f47-74cf1270ca8d"
             },
@@ -335,7 +503,27 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "20459e29-e2d9-32ee-b14c-e9f31eec6b0d",
                 "macro_uuid": "a58a7bb4-bc1a-3682-af2c-e7ed1eb8bda5"
             },
@@ -349,7 +537,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "81f65367-479f-382c-a9dd-5bd156291631",
                 "macro_uuid": "9efe3912-281a-3d72-a85b-b3ee1a81670a"
             },
@@ -411,7 +614,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "9f3f53cc-014d-30ad-aa7b-9e46768716a3",
                 "macro_uuid": "60039221-ddaa-3aa7-9c5d-7de7268c928b"
             },
@@ -425,7 +649,27 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "2de3f3f4-f222-3a53-be3e-0ccf954600f3",
                 "macro_uuid": "4b755547-c3d5-35bb-ba0d-3c5be300293c"
             },
@@ -631,7 +875,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "8cfa3b38-1507-3514-aa13-1ddc2f1d8fcf",
                 "macro_uuid": "97e7293b-5780-3d93-999e-6658634442e3"
             },
@@ -645,7 +910,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "4f9b0f63-f68a-3995-a7b3-2aeca9f93292",
                 "macro_uuid": "ee502769-9360-3b8e-9729-c6ed8d65357a"
             },
@@ -719,7 +1016,58 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Dead End",
+                        "node": "East Annexe",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Old Furniture",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "615fce90-15df-3688-a330-434ec507c50d",
                 "macro_uuid": "7f203b42-4f83-3818-80c3-754638248938"
             },
@@ -733,7 +1081,28 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "022dc677-1eec-3340-856e-d6f8ef3ff1f5",
                 "macro_uuid": "f249c9de-1c15-3807-ac64-42f6935a24cb"
             },
@@ -789,7 +1158,23 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dead End",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "ab478daa-016a-37ef-aee0-c143a87670da",
                 "macro_uuid": "ee79b6b2-f361-3b09-a5d8-1c1eff840872"
             },
@@ -940,7 +1325,53 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dark Room",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "abdb3e86-f223-38e7-8a73-56a7f1b00502",
                 "macro_uuid": "295fdef8-7faf-3a73-8fd2-ef558a10d058"
             },
@@ -1050,7 +1481,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "da94e4c2-f1d2-355e-8a77-58f39987c3b0",
                 "macro_uuid": "86170913-ad24-3e0b-b517-b6e7cc65f508"
             },
@@ -1064,7 +1527,34 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "5d0bd463-df12-3b2e-86a7-63a0040c7f99",
                 "macro_uuid": "6f05b24c-4882-3c53-b547-677a404a58af"
             },
@@ -1078,7 +1568,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "58fbee6d-9c89-3607-8000-fbd12b014d63",
                 "macro_uuid": "bbf87958-979e-3226-8bbf-25c2ae81ca45"
             },
@@ -1092,7 +1614,45 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "2c71cc82-5d79-34c0-9b86-f77d109d7993",
                 "macro_uuid": "a80f430c-98f9-3460-862d-37feaf10c794"
             },
@@ -1106,7 +1666,33 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "c7c38e4f-e97f-32dd-8e3a-bc2439e9f44d",
                 "macro_uuid": "2a02df39-a58c-3d65-9ca5-b6753d693644"
             },
@@ -1227,7 +1813,28 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "6d4930e0-d25e-32dd-be3d-730d76cc6c12",
                 "macro_uuid": "a231c9d6-c66b-3181-8d2d-3d61447f1ef0"
             },
@@ -1343,7 +1950,33 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "7e8d8971-dd5c-3739-8fca-0cf5f38907b4",
                 "macro_uuid": "0983485d-5f14-3c25-a368-668af8b0283f"
             },
@@ -1465,7 +2098,34 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "10ee9fbf-4497-35ba-929f-2ec8b3a9cc81",
                 "macro_uuid": "58681fec-58c9-3641-bb9b-afe865cb06a1"
             },
@@ -1479,7 +2139,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "56f3e956-6f16-37af-bf72-fa77b33e98ba",
                 "macro_uuid": "616a1fbf-ab61-3b58-ae64-659ba2e7c28a"
             },
@@ -1493,7 +2174,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "149f0e60-b4a2-3a27-9d1a-a5138df9b0d8",
                 "macro_uuid": "2b4f2d83-3cfd-3707-afad-3d68281e7c9a"
             },
@@ -1507,7 +2203,47 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "754ec811-507c-3577-b9bd-9f272bb418b9",
                 "macro_uuid": "ab160070-c9bf-385b-9a91-cbc5787405fc"
             },
@@ -1521,7 +2257,28 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "02682810-cad0-3f68-8a9b-36315ec2ca8d",
                 "macro_uuid": "b4d37479-61d3-3438-aa69-880c69e0de2b"
             },
@@ -1649,7 +2406,34 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "df2a7f92-71b0-371f-a213-5e19d773a454",
                 "macro_uuid": "36568632-fd32-30cc-8943-fc99af05ebc2"
             },
@@ -1663,7 +2447,23 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "aaa85d0b-477a-31b1-be9c-78c3844d09e0",
                 "macro_uuid": "deb7c0bd-9b33-3f7d-8c4d-cb72811ed0f5"
             },
@@ -1886,7 +2686,33 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "5e0bd3fb-5713-3948-abf5-96d01ba2da23",
                 "macro_uuid": "2635080c-7c9b-35c1-af32-3c49b0caf1b0"
             },
@@ -1960,7 +2786,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "62253e66-eca0-3a29-9931-cd726a8522ab",
                 "macro_uuid": "ac272b84-3293-3aad-9448-0001a7f44a31"
             },
@@ -2058,7 +2900,34 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "3b73d759-5c42-3dec-b009-e240f8d42af5",
                 "macro_uuid": "793c2089-69cf-340f-945a-76ab121aa191"
             },
@@ -2072,7 +2941,58 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Dead End",
+                        "node": "Disused Observatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "e3ebb35b-1314-39c3-a1b9-716ed5c5fa7a",
                 "macro_uuid": "43640a48-2200-3fb1-a041-43289dffe413"
             },
@@ -2086,7 +3006,23 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Over the East Wing",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Library Storage",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "6e9917cb-36b3-3cc0-aa88-eb8372eb9133",
                 "macro_uuid": "631fb4d9-700c-3644-ade6-aea454de92b7"
             },
@@ -2100,7 +3036,29 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "ee62b3a5-b32e-3ca4-880e-fb9386a75670",
                 "macro_uuid": "e050550f-e460-3d42-9458-7f2744865f26"
             },
@@ -2114,7 +3072,34 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "0ea4772a-de25-39d2-9c4b-9fcd3628b6be",
                 "macro_uuid": "a16d281c-1359-37c6-8dce-ebca53274ef3"
             },
@@ -2158,7 +3143,58 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "13731175-0a15-335d-b4a3-d0f1f301dd07",
                 "macro_uuid": "6d37326e-65e9-3a68-a461-4f29913fae75"
             },
@@ -2172,7 +3208,34 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "70750402-1bff-3c46-a737-a023167ec9ff",
                 "macro_uuid": "1e6e8c4f-8b9d-392a-9eb2-d358cf300574"
             },
@@ -2216,7 +3279,40 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "c2f7da62-30ed-31d6-88fb-1bf7ba0d725d",
                 "macro_uuid": "25f136ad-95e0-33fd-a8b0-88eb591448af"
             },
@@ -2320,7 +3416,48 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "4fc6fe85-b5c4-3167-ac94-6c5133bb61dd",
                 "macro_uuid": "48fa9c3f-feb5-3ef6-83ef-16bb75f3f42d"
             },
@@ -2373,7 +3510,59 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dead end (obj78)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dead End",
+                        "node": "Disused Observatory",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "5fae5e4f-35a1-310b-aaae-796c66dcaaad",
                 "macro_uuid": "0cf3c21c-c706-3f04-91b2-07720fb4b957"
             },
@@ -2597,7 +3786,34 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "88fd81cb-eebb-3d2f-905c-68341ac9691a",
                 "macro_uuid": "dce8ec89-e04b-3820-a56c-f017c6c7f9a3"
             },
@@ -2652,7 +3868,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "d93e1ac0-fa01-3b50-825a-b6faa35c6dfb",
                 "macro_uuid": "596ef1d5-2f53-3468-a212-973303d84bf6"
             },
@@ -2666,7 +3903,48 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "bed3db15-ad98-3ef1-a0fa-7bff865a4cad",
                 "macro_uuid": "3715ed46-0c09-368a-b2b0-ab41cfed0258"
             },
@@ -2680,7 +3958,34 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "11e27648-9414-30a7-a20a-5be582d41e01",
                 "macro_uuid": "a72bfae6-3e07-35b6-9f47-74cf1270ca8d"
             },
@@ -2694,7 +3999,27 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "20459e29-e2d9-32ee-b14c-e9f31eec6b0d",
                 "macro_uuid": "a58a7bb4-bc1a-3682-af2c-e7ed1eb8bda5"
             },
@@ -2708,7 +4033,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "81f65367-479f-382c-a9dd-5bd156291631",
                 "macro_uuid": "9efe3912-281a-3d72-a85b-b3ee1a81670a"
             },
@@ -2770,7 +4110,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "9f3f53cc-014d-30ad-aa7b-9e46768716a3",
                 "macro_uuid": "60039221-ddaa-3aa7-9c5d-7de7268c928b"
             },
@@ -2784,7 +4145,27 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "2de3f3f4-f222-3a53-be3e-0ccf954600f3",
                 "macro_uuid": "4b755547-c3d5-35bb-ba0d-3c5be300293c"
             },
@@ -2990,7 +4371,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "8cfa3b38-1507-3514-aa13-1ddc2f1d8fcf",
                 "macro_uuid": "97e7293b-5780-3d93-999e-6658634442e3"
             },
@@ -3004,7 +4406,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "4f9b0f63-f68a-3995-a7b3-2aeca9f93292",
                 "macro_uuid": "ee502769-9360-3b8e-9729-c6ed8d65357a"
             },
@@ -3078,7 +4512,58 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Dead End",
+                        "node": "East Annexe",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Old Furniture",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "615fce90-15df-3688-a330-434ec507c50d",
                 "macro_uuid": "7f203b42-4f83-3818-80c3-754638248938"
             },
@@ -3092,7 +4577,28 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "022dc677-1eec-3340-856e-d6f8ef3ff1f5",
                 "macro_uuid": "f249c9de-1c15-3807-ac64-42f6935a24cb"
             },
@@ -3148,7 +4654,23 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dead End",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "ab478daa-016a-37ef-aee0-c143a87670da",
                 "macro_uuid": "ee79b6b2-f361-3b09-a5d8-1c1eff840872"
             },
@@ -3299,7 +4821,53 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dark Room",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "abdb3e86-f223-38e7-8a73-56a7f1b00502",
                 "macro_uuid": "295fdef8-7faf-3a73-8fd2-ef558a10d058"
             },
@@ -3409,7 +4977,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "da94e4c2-f1d2-355e-8a77-58f39987c3b0",
                 "macro_uuid": "86170913-ad24-3e0b-b517-b6e7cc65f508"
             },
@@ -3423,7 +5023,34 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "5d0bd463-df12-3b2e-86a7-63a0040c7f99",
                 "macro_uuid": "6f05b24c-4882-3c53-b547-677a404a58af"
             },
@@ -3437,7 +5064,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "58fbee6d-9c89-3607-8000-fbd12b014d63",
                 "macro_uuid": "bbf87958-979e-3226-8bbf-25c2ae81ca45"
             },
@@ -3451,7 +5110,45 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "2c71cc82-5d79-34c0-9b86-f77d109d7993",
                 "macro_uuid": "a80f430c-98f9-3460-862d-37feaf10c794"
             },
@@ -3465,7 +5162,33 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "c7c38e4f-e97f-32dd-8e3a-bc2439e9f44d",
                 "macro_uuid": "2a02df39-a58c-3d65-9ca5-b6753d693644"
             },
@@ -3586,7 +5309,28 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "6d4930e0-d25e-32dd-be3d-730d76cc6c12",
                 "macro_uuid": "a231c9d6-c66b-3181-8d2d-3d61447f1ef0"
             },
@@ -3702,7 +5446,33 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "7e8d8971-dd5c-3739-8fca-0cf5f38907b4",
                 "macro_uuid": "0983485d-5f14-3c25-a368-668af8b0283f"
             },
@@ -3824,7 +5594,34 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "10ee9fbf-4497-35ba-929f-2ec8b3a9cc81",
                 "macro_uuid": "58681fec-58c9-3641-bb9b-afe865cb06a1"
             },
@@ -3838,7 +5635,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "56f3e956-6f16-37af-bf72-fa77b33e98ba",
                 "macro_uuid": "616a1fbf-ab61-3b58-ae64-659ba2e7c28a"
             },
@@ -3852,7 +5670,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "149f0e60-b4a2-3a27-9d1a-a5138df9b0d8",
                 "macro_uuid": "2b4f2d83-3cfd-3707-afad-3d68281e7c9a"
             },
@@ -3866,7 +5699,47 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "754ec811-507c-3577-b9bd-9f272bb418b9",
                 "macro_uuid": "ab160070-c9bf-385b-9a91-cbc5787405fc"
             },
@@ -3880,7 +5753,28 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "02682810-cad0-3f68-8a9b-36315ec2ca8d",
                 "macro_uuid": "b4d37479-61d3-3438-aa69-880c69e0de2b"
             },
@@ -4008,7 +5902,34 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "df2a7f92-71b0-371f-a213-5e19d773a454",
                 "macro_uuid": "36568632-fd32-30cc-8943-fc99af05ebc2"
             },
@@ -4022,7 +5943,23 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "aaa85d0b-477a-31b1-be9c-78c3844d09e0",
                 "macro_uuid": "deb7c0bd-9b33-3f7d-8c4d-cb72811ed0f5"
             },
@@ -4245,7 +6182,33 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "5e0bd3fb-5713-3948-abf5-96d01ba2da23",
                 "macro_uuid": "2635080c-7c9b-35c1-af32-3c49b0caf1b0"
             },
@@ -4319,7 +6282,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "62253e66-eca0-3a29-9931-cd726a8522ab",
                 "macro_uuid": "ac272b84-3293-3aad-9448-0001a7f44a31"
             },
@@ -4417,7 +6396,34 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "3b73d759-5c42-3dec-b009-e240f8d42af5",
                 "macro_uuid": "793c2089-69cf-340f-945a-76ab121aa191"
             },
@@ -4431,7 +6437,58 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Dead End",
+                        "node": "Disused Observatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "e3ebb35b-1314-39c3-a1b9-716ed5c5fa7a",
                 "macro_uuid": "43640a48-2200-3fb1-a041-43289dffe413"
             },
@@ -4445,7 +6502,23 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Over the East Wing",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Library Storage",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "6e9917cb-36b3-3cc0-aa88-eb8372eb9133",
                 "macro_uuid": "631fb4d9-700c-3644-ade6-aea454de92b7"
             },
@@ -4459,7 +6532,29 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "ee62b3a5-b32e-3ca4-880e-fb9386a75670",
                 "macro_uuid": "e050550f-e460-3d42-9458-7f2744865f26"
             },
@@ -4473,7 +6568,34 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "0ea4772a-de25-39d2-9c4b-9fcd3628b6be",
                 "macro_uuid": "a16d281c-1359-37c6-8dce-ebca53274ef3"
             },
@@ -4517,7 +6639,58 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "13731175-0a15-335d-b4a3-d0f1f301dd07",
                 "macro_uuid": "6d37326e-65e9-3a68-a461-4f29913fae75"
             },
@@ -4531,7 +6704,34 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "70750402-1bff-3c46-a737-a023167ec9ff",
                 "macro_uuid": "1e6e8c4f-8b9d-392a-9eb2-d358cf300574"
             },
@@ -4575,7 +6775,40 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "c2f7da62-30ed-31d6-88fb-1bf7ba0d725d",
                 "macro_uuid": "25f136ad-95e0-33fd-a8b0-88eb591448af"
             },
@@ -4679,7 +6912,48 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "4fc6fe85-b5c4-3167-ac94-6c5133bb61dd",
                 "macro_uuid": "48fa9c3f-feb5-3ef6-83ef-16bb75f3f42d"
             },
@@ -4734,7 +7008,59 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dead end (obj78)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dead End",
+                        "node": "Disused Observatory",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "5fae5e4f-35a1-310b-aaae-796c66dcaaad",
                 "macro_uuid": "0cf3c21c-c706-3f04-91b2-07720fb4b957"
             },
@@ -4958,7 +7284,34 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "88fd81cb-eebb-3d2f-905c-68341ac9691a",
                 "macro_uuid": "dce8ec89-e04b-3820-a56c-f017c6c7f9a3"
             },
@@ -5013,7 +7366,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "d93e1ac0-fa01-3b50-825a-b6faa35c6dfb",
                 "macro_uuid": "596ef1d5-2f53-3468-a212-973303d84bf6"
             },
@@ -5027,7 +7401,48 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "bed3db15-ad98-3ef1-a0fa-7bff865a4cad",
                 "macro_uuid": "3715ed46-0c09-368a-b2b0-ab41cfed0258"
             },
@@ -5041,7 +7456,34 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "11e27648-9414-30a7-a20a-5be582d41e01",
                 "macro_uuid": "a72bfae6-3e07-35b6-9f47-74cf1270ca8d"
             },
@@ -5055,7 +7497,27 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "20459e29-e2d9-32ee-b14c-e9f31eec6b0d",
                 "macro_uuid": "a58a7bb4-bc1a-3682-af2c-e7ed1eb8bda5"
             },
@@ -5069,7 +7531,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "81f65367-479f-382c-a9dd-5bd156291631",
                 "macro_uuid": "9efe3912-281a-3d72-a85b-b3ee1a81670a"
             },
@@ -5131,7 +7608,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "9f3f53cc-014d-30ad-aa7b-9e46768716a3",
                 "macro_uuid": "60039221-ddaa-3aa7-9c5d-7de7268c928b"
             },
@@ -5145,7 +7643,27 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "2de3f3f4-f222-3a53-be3e-0ccf954600f3",
                 "macro_uuid": "4b755547-c3d5-35bb-ba0d-3c5be300293c"
             },
@@ -5351,7 +7869,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "8cfa3b38-1507-3514-aa13-1ddc2f1d8fcf",
                 "macro_uuid": "97e7293b-5780-3d93-999e-6658634442e3"
             },
@@ -5365,7 +7904,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "4f9b0f63-f68a-3995-a7b3-2aeca9f93292",
                 "macro_uuid": "ee502769-9360-3b8e-9729-c6ed8d65357a"
             },
@@ -5439,7 +8010,58 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Dead End",
+                        "node": "East Annexe",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Old Furniture",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "615fce90-15df-3688-a330-434ec507c50d",
                 "macro_uuid": "7f203b42-4f83-3818-80c3-754638248938"
             },
@@ -5453,7 +8075,28 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "022dc677-1eec-3340-856e-d6f8ef3ff1f5",
                 "macro_uuid": "f249c9de-1c15-3807-ac64-42f6935a24cb"
             },
@@ -5509,7 +8152,23 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dead End",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "ab478daa-016a-37ef-aee0-c143a87670da",
                 "macro_uuid": "ee79b6b2-f361-3b09-a5d8-1c1eff840872"
             },
@@ -5660,7 +8319,53 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dark Room",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "abdb3e86-f223-38e7-8a73-56a7f1b00502",
                 "macro_uuid": "295fdef8-7faf-3a73-8fd2-ef558a10d058"
             },
@@ -5770,7 +8475,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "da94e4c2-f1d2-355e-8a77-58f39987c3b0",
                 "macro_uuid": "86170913-ad24-3e0b-b517-b6e7cc65f508"
             },
@@ -5784,7 +8521,34 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "East Annexe",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "5d0bd463-df12-3b2e-86a7-63a0040c7f99",
                 "macro_uuid": "6f05b24c-4882-3c53-b547-677a404a58af"
             },
@@ -5798,7 +8562,39 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "58fbee6d-9c89-3607-8000-fbd12b014d63",
                 "macro_uuid": "bbf87958-979e-3226-8bbf-25c2ae81ca45"
             },
@@ -5812,7 +8608,45 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "2c71cc82-5d79-34c0-9b86-f77d109d7993",
                 "macro_uuid": "a80f430c-98f9-3460-862d-37feaf10c794"
             },
@@ -5826,7 +8660,33 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "c7c38e4f-e97f-32dd-8e3a-bc2439e9f44d",
                 "macro_uuid": "2a02df39-a58c-3d65-9ca5-b6753d693644"
             },
@@ -5947,7 +8807,28 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "6d4930e0-d25e-32dd-be3d-730d76cc6c12",
                 "macro_uuid": "a231c9d6-c66b-3181-8d2d-3d61447f1ef0"
             },
@@ -6063,7 +8944,33 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "7e8d8971-dd5c-3739-8fca-0cf5f38907b4",
                 "macro_uuid": "0983485d-5f14-3c25-a368-668af8b0283f"
             },
@@ -6185,7 +9092,34 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "10ee9fbf-4497-35ba-929f-2ec8b3a9cc81",
                 "macro_uuid": "58681fec-58c9-3641-bb9b-afe865cb06a1"
             },
@@ -6199,7 +9133,28 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "56f3e956-6f16-37af-bf72-fa77b33e98ba",
                 "macro_uuid": "616a1fbf-ab61-3b58-ae64-659ba2e7c28a"
             },
@@ -6213,7 +9168,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "149f0e60-b4a2-3a27-9d1a-a5138df9b0d8",
                 "macro_uuid": "2b4f2d83-3cfd-3707-afad-3d68281e7c9a"
             },
@@ -6227,7 +9197,47 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "754ec811-507c-3577-b9bd-9f272bb418b9",
                 "macro_uuid": "ab160070-c9bf-385b-9a91-cbc5787405fc"
             },
@@ -6241,7 +9251,28 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "02682810-cad0-3f68-8a9b-36315ec2ca8d",
                 "macro_uuid": "b4d37479-61d3-3438-aa69-880c69e0de2b"
             },
@@ -6369,7 +9400,34 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Inside Cupboard",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "df2a7f92-71b0-371f-a213-5e19d773a454",
                 "macro_uuid": "36568632-fd32-30cc-8943-fc99af05ebc2"
             },
@@ -6383,7 +9441,23 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "aaa85d0b-477a-31b1-be9c-78c3844d09e0",
                 "macro_uuid": "deb7c0bd-9b33-3f7d-8c4d-cb72811ed0f5"
             },
@@ -6606,7 +9680,33 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "5e0bd3fb-5713-3948-abf5-96d01ba2da23",
                 "macro_uuid": "2635080c-7c9b-35c1-af32-3c49b0caf1b0"
             },
@@ -6680,7 +9780,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "62253e66-eca0-3a29-9931-cd726a8522ab",
                 "macro_uuid": "ac272b84-3293-3aad-9448-0001a7f44a31"
             },
@@ -6778,7 +9894,34 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "3b73d759-5c42-3dec-b009-e240f8d42af5",
                 "macro_uuid": "793c2089-69cf-340f-945a-76ab121aa191"
             },
@@ -6792,7 +9935,58 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Dead End",
+                        "node": "Disused Observatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "e3ebb35b-1314-39c3-a1b9-716ed5c5fa7a",
                 "macro_uuid": "43640a48-2200-3fb1-a041-43289dffe413"
             },
@@ -6806,7 +10000,23 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "overeast w (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Over the East Wing",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Library Storage",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "6e9917cb-36b3-3cc0-aa88-eb8372eb9133",
                 "macro_uuid": "631fb4d9-700c-3644-ade6-aea454de92b7"
             },
@@ -6820,7 +10030,29 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "ee62b3a5-b32e-3ca4-880e-fb9386a75670",
                 "macro_uuid": "e050550f-e460-3d42-9458-7f2744865f26"
             },
@@ -6834,7 +10066,34 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Over the East Wing",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Dark Room",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "0ea4772a-de25-39d2-9c4b-9fcd3628b6be",
                 "macro_uuid": "a16d281c-1359-37c6-8dce-ebca53274ef3"
             },
@@ -6878,7 +10137,58 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "east annexe (obj74)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Disused Observatory",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Disused Observatory",
+                        "node": "Library Storage",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "13731175-0a15-335d-b4a3-d0f1f301dd07",
                 "macro_uuid": "6d37326e-65e9-3a68-a461-4f29913fae75"
             },
@@ -6892,7 +10202,34 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Over the East Wing",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "Disused Observatory",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "70750402-1bff-3c46-a737-a023167ec9ff",
                 "macro_uuid": "1e6e8c4f-8b9d-392a-9eb2-d358cf300574"
             },
@@ -6936,7 +10273,40 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "storage room (obj116)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Storage Room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Storage Room",
+                        "node": "Over the East Wing",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    }
+                ],
                 "micro_uuid": "c2f7da62-30ed-31d6-88fb-1bf7ba0d725d",
                 "macro_uuid": "25f136ad-95e0-33fd-a8b0-88eb591448af"
             },
@@ -7040,7 +10410,48 @@
                 "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "'s lair (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Old Winery",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Over the East Wing",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Over the East Wing",
+                        "node": "East Annexe",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "East Annexe",
+                        "node": "Dead End",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "4fc6fe85-b5c4-3167-ac94-6c5133bb61dd",
                 "macro_uuid": "48fa9c3f-feb5-3ef6-83ef-16bb75f3f42d"
             },

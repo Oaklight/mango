@@ -93,10 +93,10 @@ for game_name in game_names:
     if game_name in model2_real_desti:
         model2_scores_DF[game_name] = model2_real_desti[game_name]["nice"]
 
-avg_acc_RF["gpt3.5"] = model1_real_route['avg_nice']
-avg_acc_RF["gpt4"] = model2_real_route['avg_nice']
-avg_acc_DF["gpt3.5"] = model1_real_desti['avg_nice']
-avg_acc_DF["gpt4"] = model2_real_desti['avg_nice']
+avg_acc_RF["gpt3.5"] = model1_real_route["avg_nice"]
+avg_acc_RF["gpt4"] = model2_real_route["avg_nice"]
+avg_acc_DF["gpt3.5"] = model1_real_desti["avg_nice"]
+avg_acc_DF["gpt4"] = model2_real_desti["avg_nice"]
 
 # ============== following is the plotting part ==============
 

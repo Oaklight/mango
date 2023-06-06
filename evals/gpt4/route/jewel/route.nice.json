@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
         "correct_num": 96,
-        "total_num": 136,
-        "accuracy": 0.7058823529411765,
+        "total_num": 120,
+        "accuracy": 0.8,
         "collection": {
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-09-53_509.json": {
                 "verify_result": true,
@@ -67,36 +67,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "1ce23a1a-a847-38d4-bb45-5d1c92e5379c",
                 "macro_uuid": "61c97fd1-5c1c-3653-a527-d5ff28bc1818"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-17-35_816.json": {
-                "verify_result": false,
-                "src_anno": "On the Ledge",
-                "src_requested": "on the ledge (obj66)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "west",
-                    "down",
-                    "down",
-                    "down",
-                    "east",
-                    "east",
-                    "southeast",
-                    "east",
-                    "west",
-                    "south",
-                    "north",
-                    "down",
-                    "up",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "east-west passage (obj79)",
-                "verify_msg": "wrong path, fail to arrive at dst: east-west passage (obj79), quarry (obj76)",
-                "micro_uuid": "38f7c759-3d84-3396-bcab-e330dccee169",
-                "macro_uuid": "dbc5d39c-f244-39c3-b039-1c1d89c0f0bf"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-06-37_457.json": {
                 "verify_result": true,
@@ -327,20 +297,6 @@
                 "micro_uuid": "2ad6e026-c584-3da3-b39f-29fbbab92b45",
                 "macro_uuid": "dada6714-e0b6-3a5a-9fc6-d9053826d4ed"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-31-47_949.json": {
-                "verify_result": false,
-                "src_anno": "East-West Passage",
-                "src_requested": "east-west passage (obj79)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ba0c26db-eac7-3654-863f-164e53999fe7",
-                "macro_uuid": "2e518e0b-9eac-3ae6-960c-a459e7a2a668"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-48_194.json": {
                 "verify_result": false,
                 "src_anno": "Fifth Layer of the Earth's Crust",
@@ -357,29 +313,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: rocky plateau, sixth layer (obj26), tight fit (obj42)",
                 "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
                 "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-43-11_010.json": {
-                "verify_result": false,
-                "src_anno": "Cleaning Closet",
-                "src_requested": "cleaning closet (obj87)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "up",
-                    "south",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "up",
-                    "north"
-                ],
-                "dst_gpt": "narrow passage (obj54)",
-                "verify_msg": "wrong path, fail to arrive at dst: narrow passage (obj54), quarry (obj76)",
-                "micro_uuid": "5e614dcf-d2ff-31ce-b53d-5934b621d819",
-                "macro_uuid": "ac0276b4-e933-39b0-a6af-82b8f6ed6420"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-11-00_776.json": {
                 "verify_result": true,
@@ -606,20 +539,6 @@
                 "micro_uuid": "76632659-61e9-3e8b-b413-970e9a201ecf",
                 "macro_uuid": "16594a16-fbba-3b6f-b3e5-9b41d2ee2cfb"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-16-25_260.json": {
-                "verify_result": false,
-                "src_anno": "Middle Shaft",
-                "src_requested": "middle shaft (obj61)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ff6878aa-efa7-3b93-ac6f-8b24100ccd0e",
-                "macro_uuid": "58d38258-2b26-327e-b341-d95e3dd854a4"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-40_047.json": {
                 "verify_result": true,
                 "src_anno": "Fifth Layer of the Earth's Crust",
@@ -674,20 +593,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "41ff206a-7307-3b1b-b3db-43c64a6f10a8",
                 "macro_uuid": "4f89769c-dcaa-3035-9617-a13d284a24e4"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-09-41_105.json": {
-                "verify_result": false,
-                "src_anno": "Fifth Layer of the Earth's Crust",
-                "src_requested": "rocky plateau, sixth layer (obj26)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "b71442be-1cdf-3938-9d40-d6caf3818918",
-                "macro_uuid": "79890d31-7f2b-3a46-8163-352f982513db"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-12-58_717.json": {
                 "verify_result": true,
@@ -849,30 +754,6 @@
                 "micro_uuid": "b45274f3-ff70-3335-8b2b-a5cdac1fe596",
                 "macro_uuid": "a50ceb6e-9c9b-3dba-acb4-0d80ee4e00d3"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-16-42_785.json": {
-                "verify_result": false,
-                "src_anno": "Top of the Shaft",
-                "src_requested": "top of the shaft (obj62)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "down",
-                    "down",
-                    "down",
-                    "east",
-                    "east",
-                    "southeast",
-                    "west",
-                    "west",
-                    "west"
-                ],
-                "dst_gpt": "carved steps (obj80)",
-                "verify_msg": "wrong path, fail to arrive at dst: carved steps (obj80), quarry (obj76)",
-                "micro_uuid": "d0a979aa-4d74-33dd-867c-00ec1eb2ef58",
-                "macro_uuid": "fd56a5ba-4f61-3298-ab0e-715d6a1295e3"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-47-39_330.json": {
                 "verify_result": true,
                 "src_anno": "Narrow Passage",
@@ -925,38 +806,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
                 "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-27-39_206.json": {
-                "verify_result": false,
-                "src_anno": "Fifth Layer Dropoff",
-                "src_requested": "fifth layer dropoff (obj44)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "down",
-                    "down",
-                    "southeast",
-                    "west",
-                    "west",
-                    "south",
-                    "north",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "west",
-                    "climb porous wall",
-                    "up",
-                    "up",
-                    "east",
-                    "unknown"
-                ],
-                "dst_gpt": "on the ledge (obj66)",
-                "verify_msg": "wrong path, fail to arrive at dst: on the ledge (obj66), quarry (obj76)",
-                "micro_uuid": "57af10b9-ca4e-3688-9d01-499bde0ef2da",
-                "macro_uuid": "55e2565a-5eec-32da-85d7-9786c9ce5e21"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-31-31_102.json": {
                 "verify_result": true,
@@ -1121,20 +970,6 @@
                 "micro_uuid": "9ce74930-4423-348f-914b-b6bbca447120",
                 "macro_uuid": "bfc5c897-176e-3c02-9e29-8ec155b0ea6f"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-33-35_071.json": {
-                "verify_result": false,
-                "src_anno": "Carved Steps",
-                "src_requested": "carved steps (obj80)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "bb592e26-1ae1-3b1a-871a-7d6379c264d2",
-                "macro_uuid": "0a99be85-f5b2-3739-a2ed-49a00685f92a"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-08-42_261.json": {
                 "verify_result": false,
                 "src_anno": "Cool Cavern",
@@ -1201,20 +1036,6 @@
                 "micro_uuid": "0491c9b2-6a89-30cf-a948-204dfa2272de",
                 "macro_uuid": "b5cb3cc0-f331-3fee-b67b-808fbb2b7191"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-11-05_854.json": {
-                "verify_result": false,
-                "src_anno": "Tight Fit",
-                "src_requested": "tight fit (obj42)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "fc7bd9d2-15d1-33b8-9e64-2d92f58f9efe",
-                "macro_uuid": "0d85689b-1a05-3f46-b316-94da16adea88"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-14-41_106.json": {
                 "verify_result": true,
                 "src_anno": "Lonely Burial Ground",
@@ -1252,34 +1073,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "cc2cb6d8-fe4f-307c-9a18-bacc11661811",
                 "macro_uuid": "17bed0f2-b99c-3b55-9508-91bc224dfc9d"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-15-48_912.json": {
-                "verify_result": false,
-                "src_anno": "Shaft Base",
-                "src_requested": "shaft base (obj60)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "4557c7ac-8a71-3aa8-97a2-b64bbce1db3e",
-                "macro_uuid": "c29335f8-4058-3cc9-abf5-42752d711c3b"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-14-35_288.json": {
-                "verify_result": false,
-                "src_anno": "Narrow Passage",
-                "src_requested": "narrow passage (obj54)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "e0e55614-eecc-3ab6-9329-40e93ce3e81f",
-                "macro_uuid": "f22fd458-09e7-36b4-ae13-dc4e4a94092b"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-43_400.json": {
                 "verify_result": false,
@@ -1461,20 +1254,6 @@
                 "micro_uuid": "dd3e46ab-210e-398f-a13a-80ff46fbb836",
                 "macro_uuid": "df8f30ff-3b40-3d70-b532-2b9fd1c7d743"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-14-22_458.json": {
-                "verify_result": false,
-                "src_anno": "Moss-Filled Cave",
-                "src_requested": "moss-filled cave (obj83)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "11d04adc-6955-3ea8-b49a-0c37ceb0d19d",
-                "macro_uuid": "68950179-f880-315d-8bbf-d5550021c752"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-16-18_676.json": {
                 "verify_result": true,
                 "src_anno": "Top of the Shaft",
@@ -1548,32 +1327,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: mineralized corridor (obj35), cleaning closet (obj87)",
                 "micro_uuid": "5d0abbfe-ed42-32f1-969f-c584be0fb535",
                 "macro_uuid": "42c12e32-e719-36fc-9274-4e37e56e1228"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-16-25_718.json": {
-                "verify_result": false,
-                "src_anno": "Lonely Burial Ground",
-                "src_requested": "lonely burial ground (obj93)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "west",
-                    "climb porous wall",
-                    "up",
-                    "up",
-                    "east",
-                    "unknown"
-                ],
-                "dst_gpt": "on the ledge (obj66)",
-                "verify_msg": "wrong path, fail to arrive at dst: on the ledge (obj66), quarry (obj76)",
-                "micro_uuid": "082220dc-170a-35d3-b8de-7a7fc2273d65",
-                "macro_uuid": "a63ac235-38f2-3f60-830e-2d08b288fc3f"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-08-45_683.json": {
                 "verify_result": false,
@@ -2246,20 +1999,6 @@
                 "micro_uuid": "d713b3a9-7872-3d29-a148-957d04a12c0a",
                 "macro_uuid": "bdf66a2d-a52c-38d0-b4e2-8a3661b057f9"
             },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-04-59_584.json": {
-                "verify_result": false,
-                "src_anno": "Cool Cavern",
-                "src_requested": "cool cavern (obj32)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "321c8d21-0337-3204-85b5-b3c6ec3f968f",
-                "macro_uuid": "5f7308cf-a0e7-3e20-821e-3916ad0daf79"
-            },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-28-58_957.json": {
                 "verify_result": true,
                 "src_anno": "East-West Passage",
@@ -2276,20 +2015,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "94a60f90-411f-3136-a359-4bf163a59a79",
                 "macro_uuid": "c488bd1d-5edf-3451-b522-35d44e002ee7"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-10-09_173.json": {
-                "verify_result": false,
-                "src_anno": "Mineralized Corridor",
-                "src_requested": "mineralized corridor (obj35)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "9436cd38-ffe0-39fa-a5f4-4c38842b8f03",
-                "macro_uuid": "0f5c603b-7c14-3a9b-95b4-22b3a6665934"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-11-32-36_751.json": {
                 "verify_result": true,
@@ -2384,28 +2109,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "4063dfcf-08e1-3b30-9ad2-bb63979e0c91",
                 "macro_uuid": "ecbc4376-6876-3695-9ba7-aac023f50688"
-            },
-            "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-16-20_267.json": {
-                "verify_result": false,
-                "src_anno": "Gaseous Geyser",
-                "src_requested": "gaseous geyser (obj56)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "east",
-                    "east",
-                    "southeast",
-                    "east",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "cool cavern (obj32)",
-                "verify_msg": "wrong path, fail to arrive at dst: cool cavern (obj32), quarry (obj76)",
-                "micro_uuid": "1dabe4e1-ced0-325f-b39d-569da53c36dc",
-                "macro_uuid": "aa48da8b-f5d1-3bc4-8d04-c8c9b442f122"
             },
             "../gpt-games-results//jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-41_537.json": {
                 "verify_result": false,
@@ -2755,36 +2458,6 @@
                 "macro_uuid": "61c97fd1-5c1c-3653-a527-d5ff28bc1818"
             },
             {
-                "verify_result": false,
-                "src_anno": "On the Ledge",
-                "src_requested": "on the ledge (obj66)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "west",
-                    "down",
-                    "down",
-                    "down",
-                    "east",
-                    "east",
-                    "southeast",
-                    "east",
-                    "west",
-                    "south",
-                    "north",
-                    "down",
-                    "up",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "east-west passage (obj79)",
-                "verify_msg": "wrong path, fail to arrive at dst: east-west passage (obj79), quarry (obj76)",
-                "micro_uuid": "38f7c759-3d84-3396-bcab-e330dccee169",
-                "macro_uuid": "dbc5d39c-f244-39c3-b039-1c1d89c0f0bf"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Mineralized Corridor",
                 "src_requested": "mineralized corridor (obj35)",
@@ -3015,20 +2688,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "East-West Passage",
-                "src_requested": "east-west passage (obj79)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ba0c26db-eac7-3654-863f-164e53999fe7",
-                "macro_uuid": "2e518e0b-9eac-3ae6-960c-a459e7a2a668"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Fifth Layer of the Earth's Crust",
                 "src_requested": "rocky plateau, sixth layer (obj26)",
                 "dst_anno": "Tight Fit",
@@ -3043,29 +2702,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: rocky plateau, sixth layer (obj26), tight fit (obj42)",
                 "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
                 "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Cleaning Closet",
-                "src_requested": "cleaning closet (obj87)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "up",
-                    "south",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "up",
-                    "north"
-                ],
-                "dst_gpt": "narrow passage (obj54)",
-                "verify_msg": "wrong path, fail to arrive at dst: narrow passage (obj54), quarry (obj76)",
-                "micro_uuid": "5e614dcf-d2ff-31ce-b53d-5934b621d819",
-                "macro_uuid": "ac0276b4-e933-39b0-a6af-82b8f6ed6420"
             },
             {
                 "verify_result": true,
@@ -3293,20 +2929,6 @@
                 "macro_uuid": "16594a16-fbba-3b6f-b3e5-9b41d2ee2cfb"
             },
             {
-                "verify_result": false,
-                "src_anno": "Middle Shaft",
-                "src_requested": "middle shaft (obj61)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ff6878aa-efa7-3b93-ac6f-8b24100ccd0e",
-                "macro_uuid": "58d38258-2b26-327e-b341-d95e3dd854a4"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Fifth Layer of the Earth's Crust",
                 "src_requested": "rocky plateau, sixth layer (obj26)",
@@ -3360,20 +2982,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "41ff206a-7307-3b1b-b3db-43c64a6f10a8",
                 "macro_uuid": "4f89769c-dcaa-3035-9617-a13d284a24e4"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Fifth Layer of the Earth's Crust",
-                "src_requested": "rocky plateau, sixth layer (obj26)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "b71442be-1cdf-3938-9d40-d6caf3818918",
-                "macro_uuid": "79890d31-7f2b-3a46-8163-352f982513db"
             },
             {
                 "verify_result": true,
@@ -3536,30 +3144,6 @@
                 "macro_uuid": "a50ceb6e-9c9b-3dba-acb4-0d80ee4e00d3"
             },
             {
-                "verify_result": false,
-                "src_anno": "Top of the Shaft",
-                "src_requested": "top of the shaft (obj62)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "down",
-                    "down",
-                    "down",
-                    "east",
-                    "east",
-                    "southeast",
-                    "west",
-                    "west",
-                    "west"
-                ],
-                "dst_gpt": "carved steps (obj80)",
-                "verify_msg": "wrong path, fail to arrive at dst: carved steps (obj80), quarry (obj76)",
-                "micro_uuid": "d0a979aa-4d74-33dd-867c-00ec1eb2ef58",
-                "macro_uuid": "fd56a5ba-4f61-3298-ab0e-715d6a1295e3"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Narrow Passage",
                 "src_requested": "narrow passage (obj54)",
@@ -3611,38 +3195,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
                 "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Fifth Layer Dropoff",
-                "src_requested": "fifth layer dropoff (obj44)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "down",
-                    "down",
-                    "southeast",
-                    "west",
-                    "west",
-                    "south",
-                    "north",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "west",
-                    "climb porous wall",
-                    "up",
-                    "up",
-                    "east",
-                    "unknown"
-                ],
-                "dst_gpt": "on the ledge (obj66)",
-                "verify_msg": "wrong path, fail to arrive at dst: on the ledge (obj66), quarry (obj76)",
-                "micro_uuid": "57af10b9-ca4e-3688-9d01-499bde0ef2da",
-                "macro_uuid": "55e2565a-5eec-32da-85d7-9786c9ce5e21"
             },
             {
                 "verify_result": true,
@@ -3809,20 +3361,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Carved Steps",
-                "src_requested": "carved steps (obj80)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "bb592e26-1ae1-3b1a-871a-7d6379c264d2",
-                "macro_uuid": "0a99be85-f5b2-3739-a2ed-49a00685f92a"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Cool Cavern",
                 "src_requested": "cool cavern (obj32)",
                 "dst_anno": "East-West Passage",
@@ -3888,20 +3426,6 @@
                 "macro_uuid": "b5cb3cc0-f331-3fee-b67b-808fbb2b7191"
             },
             {
-                "verify_result": false,
-                "src_anno": "Tight Fit",
-                "src_requested": "tight fit (obj42)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "fc7bd9d2-15d1-33b8-9e64-2d92f58f9efe",
-                "macro_uuid": "0d85689b-1a05-3f46-b316-94da16adea88"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Lonely Burial Ground",
                 "src_requested": "lonely burial ground (obj93)",
@@ -3938,34 +3462,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "cc2cb6d8-fe4f-307c-9a18-bacc11661811",
                 "macro_uuid": "17bed0f2-b99c-3b55-9508-91bc224dfc9d"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Shaft Base",
-                "src_requested": "shaft base (obj60)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "4557c7ac-8a71-3aa8-97a2-b64bbce1db3e",
-                "macro_uuid": "c29335f8-4058-3cc9-abf5-42752d711c3b"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Narrow Passage",
-                "src_requested": "narrow passage (obj54)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "e0e55614-eecc-3ab6-9329-40e93ce3e81f",
-                "macro_uuid": "f22fd458-09e7-36b4-ae13-dc4e4a94092b"
             },
             {
                 "verify_result": false,
@@ -4148,20 +3644,6 @@
                 "macro_uuid": "df8f30ff-3b40-3d70-b532-2b9fd1c7d743"
             },
             {
-                "verify_result": false,
-                "src_anno": "Moss-Filled Cave",
-                "src_requested": "moss-filled cave (obj83)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "11d04adc-6955-3ea8-b49a-0c37ceb0d19d",
-                "macro_uuid": "68950179-f880-315d-8bbf-d5550021c752"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Top of the Shaft",
                 "src_requested": "top of the shaft (obj62)",
@@ -4234,32 +3716,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: mineralized corridor (obj35), cleaning closet (obj87)",
                 "micro_uuid": "5d0abbfe-ed42-32f1-969f-c584be0fb535",
                 "macro_uuid": "42c12e32-e719-36fc-9274-4e37e56e1228"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Lonely Burial Ground",
-                "src_requested": "lonely burial ground (obj93)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "west",
-                    "climb porous wall",
-                    "up",
-                    "up",
-                    "east",
-                    "unknown"
-                ],
-                "dst_gpt": "on the ledge (obj66)",
-                "verify_msg": "wrong path, fail to arrive at dst: on the ledge (obj66), quarry (obj76)",
-                "micro_uuid": "082220dc-170a-35d3-b8de-7a7fc2273d65",
-                "macro_uuid": "a63ac235-38f2-3f60-830e-2d08b288fc3f"
             },
             {
                 "verify_result": false,
@@ -4933,20 +4389,6 @@
                 "macro_uuid": "bdf66a2d-a52c-38d0-b4e2-8a3661b057f9"
             },
             {
-                "verify_result": false,
-                "src_anno": "Cool Cavern",
-                "src_requested": "cool cavern (obj32)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "321c8d21-0337-3204-85b5-b3c6ec3f968f",
-                "macro_uuid": "5f7308cf-a0e7-3e20-821e-3916ad0daf79"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "East-West Passage",
                 "src_requested": "east-west passage (obj79)",
@@ -4962,20 +4404,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "94a60f90-411f-3136-a359-4bf163a59a79",
                 "macro_uuid": "c488bd1d-5edf-3451-b522-35d44e002ee7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Mineralized Corridor",
-                "src_requested": "mineralized corridor (obj35)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "9436cd38-ffe0-39fa-a5f4-4c38842b8f03",
-                "macro_uuid": "0f5c603b-7c14-3a9b-95b4-22b3a6665934"
             },
             {
                 "verify_result": true,
@@ -5070,28 +4498,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "4063dfcf-08e1-3b30-9ad2-bb63979e0c91",
                 "macro_uuid": "ecbc4376-6876-3695-9ba7-aac023f50688"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Gaseous Geyser",
-                "src_requested": "gaseous geyser (obj56)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "east",
-                    "east",
-                    "southeast",
-                    "east",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "cool cavern (obj32)",
-                "verify_msg": "wrong path, fail to arrive at dst: cool cavern (obj32), quarry (obj76)",
-                "micro_uuid": "1dabe4e1-ced0-325f-b39d-569da53c36dc",
-                "macro_uuid": "aa48da8b-f5d1-3bc4-8d04-c8c9b442f122"
             },
             {
                 "verify_result": false,
@@ -5375,8 +4781,8 @@
             }
         ],
         "correct_num_micro": 96,
-        "total_num_micro": 136,
-        "accuracy_micro": 0.7058823529411765,
+        "total_num_micro": 120,
+        "accuracy_micro": 0.8,
         "collection_macro": [
             {
                 "verify_result": true,
@@ -5441,36 +4847,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "1ce23a1a-a847-38d4-bb45-5d1c92e5379c",
                 "macro_uuid": "61c97fd1-5c1c-3653-a527-d5ff28bc1818"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "On the Ledge",
-                "src_requested": "on the ledge (obj66)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "west",
-                    "down",
-                    "down",
-                    "down",
-                    "east",
-                    "east",
-                    "southeast",
-                    "east",
-                    "west",
-                    "south",
-                    "north",
-                    "down",
-                    "up",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "east-west passage (obj79)",
-                "verify_msg": "wrong path, fail to arrive at dst: east-west passage (obj79), quarry (obj76)",
-                "micro_uuid": "38f7c759-3d84-3396-bcab-e330dccee169",
-                "macro_uuid": "dbc5d39c-f244-39c3-b039-1c1d89c0f0bf"
             },
             {
                 "verify_result": true,
@@ -5703,20 +5079,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "East-West Passage",
-                "src_requested": "east-west passage (obj79)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ba0c26db-eac7-3654-863f-164e53999fe7",
-                "macro_uuid": "2e518e0b-9eac-3ae6-960c-a459e7a2a668"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Fifth Layer of the Earth's Crust",
                 "src_requested": "rocky plateau, sixth layer (obj26)",
                 "dst_anno": "Tight Fit",
@@ -5731,29 +5093,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: rocky plateau, sixth layer (obj26), tight fit (obj42)",
                 "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
                 "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Cleaning Closet",
-                "src_requested": "cleaning closet (obj87)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": [
-                    "up",
-                    "south",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "up",
-                    "north"
-                ],
-                "dst_gpt": "narrow passage (obj54)",
-                "verify_msg": "wrong path, fail to arrive at dst: narrow passage (obj54), quarry (obj76)",
-                "micro_uuid": "5e614dcf-d2ff-31ce-b53d-5934b621d819",
-                "macro_uuid": "ac0276b4-e933-39b0-a6af-82b8f6ed6420"
             },
             {
                 "verify_result": true,
@@ -5981,20 +5320,6 @@
                 "macro_uuid": "16594a16-fbba-3b6f-b3e5-9b41d2ee2cfb"
             },
             {
-                "verify_result": false,
-                "src_anno": "Middle Shaft",
-                "src_requested": "middle shaft (obj61)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "ff6878aa-efa7-3b93-ac6f-8b24100ccd0e",
-                "macro_uuid": "58d38258-2b26-327e-b341-d95e3dd854a4"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Fifth Layer of the Earth's Crust",
                 "src_requested": "rocky plateau, sixth layer (obj26)",
@@ -6048,20 +5373,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "41ff206a-7307-3b1b-b3db-43c64a6f10a8",
                 "macro_uuid": "4f89769c-dcaa-3035-9617-a13d284a24e4"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Fifth Layer of the Earth's Crust",
-                "src_requested": "rocky plateau, sixth layer (obj26)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "b71442be-1cdf-3938-9d40-d6caf3818918",
-                "macro_uuid": "79890d31-7f2b-3a46-8163-352f982513db"
             },
             {
                 "verify_result": true,
@@ -6224,30 +5535,6 @@
                 "macro_uuid": "a50ceb6e-9c9b-3dba-acb4-0d80ee4e00d3"
             },
             {
-                "verify_result": false,
-                "src_anno": "Top of the Shaft",
-                "src_requested": "top of the shaft (obj62)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "down",
-                    "down",
-                    "down",
-                    "east",
-                    "east",
-                    "southeast",
-                    "west",
-                    "west",
-                    "west"
-                ],
-                "dst_gpt": "carved steps (obj80)",
-                "verify_msg": "wrong path, fail to arrive at dst: carved steps (obj80), quarry (obj76)",
-                "micro_uuid": "d0a979aa-4d74-33dd-867c-00ec1eb2ef58",
-                "macro_uuid": "fd56a5ba-4f61-3298-ab0e-715d6a1295e3"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Narrow Passage",
                 "src_requested": "narrow passage (obj54)",
@@ -6299,38 +5586,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
                 "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Fifth Layer Dropoff",
-                "src_requested": "fifth layer dropoff (obj44)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "down",
-                    "down",
-                    "southeast",
-                    "west",
-                    "west",
-                    "south",
-                    "north",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "west",
-                    "climb porous wall",
-                    "up",
-                    "up",
-                    "east",
-                    "unknown"
-                ],
-                "dst_gpt": "on the ledge (obj66)",
-                "verify_msg": "wrong path, fail to arrive at dst: on the ledge (obj66), quarry (obj76)",
-                "micro_uuid": "57af10b9-ca4e-3688-9d01-499bde0ef2da",
-                "macro_uuid": "55e2565a-5eec-32da-85d7-9786c9ce5e21"
             },
             {
                 "verify_result": true,
@@ -6497,20 +5752,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Carved Steps",
-                "src_requested": "carved steps (obj80)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "bb592e26-1ae1-3b1a-871a-7d6379c264d2",
-                "macro_uuid": "0a99be85-f5b2-3739-a2ed-49a00685f92a"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Cool Cavern",
                 "src_requested": "cool cavern (obj32)",
                 "dst_anno": "East-West Passage",
@@ -6576,20 +5817,6 @@
                 "macro_uuid": "b5cb3cc0-f331-3fee-b67b-808fbb2b7191"
             },
             {
-                "verify_result": false,
-                "src_anno": "Tight Fit",
-                "src_requested": "tight fit (obj42)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "fc7bd9d2-15d1-33b8-9e64-2d92f58f9efe",
-                "macro_uuid": "0d85689b-1a05-3f46-b316-94da16adea88"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Lonely Burial Ground",
                 "src_requested": "lonely burial ground (obj93)",
@@ -6626,34 +5853,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "cc2cb6d8-fe4f-307c-9a18-bacc11661811",
                 "macro_uuid": "17bed0f2-b99c-3b55-9508-91bc224dfc9d"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Shaft Base",
-                "src_requested": "shaft base (obj60)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "4557c7ac-8a71-3aa8-97a2-b64bbce1db3e",
-                "macro_uuid": "c29335f8-4058-3cc9-abf5-42752d711c3b"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Narrow Passage",
-                "src_requested": "narrow passage (obj54)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "e0e55614-eecc-3ab6-9329-40e93ce3e81f",
-                "macro_uuid": "f22fd458-09e7-36b4-ae13-dc4e4a94092b"
             },
             {
                 "verify_result": false,
@@ -6836,20 +6035,6 @@
                 "macro_uuid": "df8f30ff-3b40-3d70-b532-2b9fd1c7d743"
             },
             {
-                "verify_result": false,
-                "src_anno": "Moss-Filled Cave",
-                "src_requested": "moss-filled cave (obj83)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "11d04adc-6955-3ea8-b49a-0c37ceb0d19d",
-                "macro_uuid": "68950179-f880-315d-8bbf-d5550021c752"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "Top of the Shaft",
                 "src_requested": "top of the shaft (obj62)",
@@ -6922,32 +6107,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: mineralized corridor (obj35), cleaning closet (obj87)",
                 "micro_uuid": "5d0abbfe-ed42-32f1-969f-c584be0fb535",
                 "macro_uuid": "42c12e32-e719-36fc-9274-4e37e56e1228"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Lonely Burial Ground",
-                "src_requested": "lonely burial ground (obj93)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "east",
-                    "northwest",
-                    "west",
-                    "west",
-                    "climb porous wall",
-                    "up",
-                    "up",
-                    "east",
-                    "unknown"
-                ],
-                "dst_gpt": "on the ledge (obj66)",
-                "verify_msg": "wrong path, fail to arrive at dst: on the ledge (obj66), quarry (obj76)",
-                "micro_uuid": "082220dc-170a-35d3-b8de-7a7fc2273d65",
-                "macro_uuid": "a63ac235-38f2-3f60-830e-2d08b288fc3f"
             },
             {
                 "verify_result": false,
@@ -7621,20 +6780,6 @@
                 "macro_uuid": "bdf66a2d-a52c-38d0-b4e2-8a3661b057f9"
             },
             {
-                "verify_result": false,
-                "src_anno": "Cool Cavern",
-                "src_requested": "cool cavern (obj32)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "321c8d21-0337-3204-85b5-b3c6ec3f968f",
-                "macro_uuid": "5f7308cf-a0e7-3e20-821e-3916ad0daf79"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "East-West Passage",
                 "src_requested": "east-west passage (obj79)",
@@ -7650,20 +6795,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "94a60f90-411f-3136-a359-4bf163a59a79",
                 "macro_uuid": "c488bd1d-5edf-3451-b522-35d44e002ee7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Mineralized Corridor",
-                "src_requested": "mineralized corridor (obj35)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "9436cd38-ffe0-39fa-a5f4-4c38842b8f03",
-                "macro_uuid": "0f5c603b-7c14-3a9b-95b4-22b3a6665934"
             },
             {
                 "verify_result": true,
@@ -7758,28 +6889,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "4063dfcf-08e1-3b30-9ad2-bb63979e0c91",
                 "macro_uuid": "ecbc4376-6876-3695-9ba7-aac023f50688"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Gaseous Geyser",
-                "src_requested": "gaseous geyser (obj56)",
-                "dst_anno": "Quarry",
-                "dst_requested": "quarry (obj76)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "east",
-                    "east",
-                    "southeast",
-                    "east",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "dst_gpt": "cool cavern (obj32)",
-                "verify_msg": "wrong path, fail to arrive at dst: cool cavern (obj32), quarry (obj76)",
-                "micro_uuid": "1dabe4e1-ced0-325f-b39d-569da53c36dc",
-                "macro_uuid": "aa48da8b-f5d1-3bc4-8d04-c8c9b442f122"
             },
             {
                 "verify_result": false,
@@ -8063,7 +7172,7 @@
             }
         ],
         "correct_num_macro": 96,
-        "total_num_macro": 136,
-        "accuracy_macro": 0.7058823529411765
+        "total_num_macro": 120,
+        "accuracy_macro": 0.8
     }
 }
