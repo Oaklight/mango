@@ -263,6 +263,9 @@ def anno_to_code(anno: str, anno2code: dict):
     convert annotation to code
     anno and keys in anno2code may not be in the same case, so lower case all keys in anno2code
     """
+    if anno is None:
+        return None
+
     anno = anno.lower()
     anno2code = {k.lower(): v for k, v in anno2code.items()}
 
