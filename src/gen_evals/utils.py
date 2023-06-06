@@ -314,30 +314,8 @@ def skip_due_to_cutoff(
             )
             return False
 
-        # compute hash on path_gt
-        path_gt = gpt_result["path_gt"]
-        path_gt_hash = compute_hash(path_gt, mode="path_details")
-
-        matched_path = []  # should be one and only one
-        for each_entry in matching_entry:
-            # compute hash on path_details of each entry
-            path_details_hash = compute_hash(
-                each_entry["path_details"], mode="path_details"
-            )
-            if path_gt_hash == path_details_hash:
-                matched_path.append(each_entry)
-        # assert only one match
-        if len(matched_path) == 0:
-            print(
-                f"matched path not found for given gpt result, possibly DROPPED for whatever reason [{src_code}] -> dst_code: [{dst_code}] | length: [{len(path_gt)}]",
-                file=sys.stderr,
-            )
-            print(f"src_code: [{src_code}] -> dst_code: [{dst_code}]")
-            print(f"length: [{len(path_gt)}] | path_gt: [{path_gt}]")
-            return False
-
         # compare the cutoff step
-        matched_cutoffs = [each["path_min_cutoff"] for each in matched_path]
+        matched_cutoffs = [each["path_min_cutoff"] for each in matching_entry]
         assert len(matched_cutoffs) > 0, f"[{each_json}]: matched_cutoffs is empty"
         min_cutoff_required = min(matched_cutoffs)
 
