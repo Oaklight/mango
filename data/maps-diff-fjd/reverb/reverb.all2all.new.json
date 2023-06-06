@@ -8,53 +8,19 @@
                 "prev_node": "mayor's office (obj73)",
                 "node": "office building, third floor (obj66)",
                 "action": "west",
-                "seen": false
+                "seen_in_forward": false,
+                "step_min_cutoff": 21
             },
             {
                 "prev_node": "office building, third floor (obj66)",
                 "node": "roof of office building (obj94)",
                 "action": "north",
-                "seen": true
+                "seen_in_forward": true,
+                "step_min_cutoff": 67
             }
         ],
-        "step_count": 2
-    },
-    {
-        "src_node": "mayor's office (obj73)",
-        "dst_node": "roof of office building (obj94)",
-        "diff_shortest": 3,
-        "path_details": [
-            {
-                "prev_node": "mayor's office (obj73)",
-                "node": "hangin' out (obj85)",
-                "action": "jump out window",
-                "seen": true
-            },
-            {
-                "prev_node": "hangin' out (obj85)",
-                "node": "law office (obj67)",
-                "action": "jump",
-                "seen": true
-            },
-            {
-                "prev_node": "law office (obj67)",
-                "node": "office building, second floor (obj64)",
-                "action": "west",
-                "seen": true
-            },
-            {
-                "prev_node": "office building, second floor (obj64)",
-                "node": "office building, third floor (obj66)",
-                "action": "south",
-                "seen": true
-            },
-            {
-                "prev_node": "office building, third floor (obj66)",
-                "node": "roof of office building (obj94)",
-                "action": "north",
-                "seen": true
-            }
-        ],
-        "step_count": 5
+        "step_count": 2,
+        "path_min_cutoff": 67,
+        "all_steps_seen_in_forward": false
     }
 ]
