@@ -5,7 +5,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
-TEMP_DIR = "./src/gen_plots/data"
+TEMP_DATA = "./temp_data/gpt"
 EVAL_DIR = "./evals"
 GLOBAL_FONTSIZE = 13
 
@@ -32,7 +32,8 @@ def plot_vs(savepath, font_size, model1_nice_scores, model2_nice_scores, game_na
     plt.ylabel("gpt4", fontsize=font_size)
     plt.xticks(fontsize=font_size)
     plt.savefig(savepath, dpi=300, bbox_inches="tight")
-    plt.show()
+    plt.close()
+    # plt.show()
 
 
 def plot_for_task(model1_real_path, model2_real_path, task="desti"):
