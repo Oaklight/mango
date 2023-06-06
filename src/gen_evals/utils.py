@@ -7,10 +7,12 @@ import uuid
 
 from matplotlib import pyplot as plt
 
-
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
+
+from gen_paths.digraph import anno_to_code
+from gen_paths.utils import compute_hash
 
 
 def parse_args():
@@ -28,6 +30,9 @@ def parse_args():
     )
     parser.add_argument(
         "--output_dir", "-odir", type=str, required=True, help="path to output file"
+    )
+    parser.add_argument(
+        "--cutoff_json", "-c", type=str, required=True, help="path to cutoff json file"
     )
     # toggle to use simple function, "--simple" or "-s"
     parser.add_argument(
@@ -345,3 +350,88 @@ def plot_acc_vs_route_length(
         )
     )
     plt.close()
+
+
+def skip_due_to_cutoff(
+    task, each_json, global_cutoff_step, anno2code, all_pairs=None, all2all=None
+):
+    # all_pairs must be provided when task == "desti"
+    # all2all must be provided when task == "route"
+    assert task in ["desti", "route"], "task must be either desti or route"
+    if task == "desti":
+        assert all_pairs is not None, "all_pairs must be provided"
+    elif task == "route":
+        assert all2all is not None, "all2all must be provided"
+
+    # load the json file
+    with open(each_json, "r") as f:
+        gpt_result = json.load(f)
+    min_cutoff_required = None
+
+    if task == "desti":
+        dst_anno = gpt_result["dst_node"]
+        dst_code = anno_to_code(dst_anno, anno2code)
+        src_anno = gpt_result["src_node"]
+        src_code = anno_to_code(src_anno, anno2code)
+        # find matching entry in all_pairs with src_code and dst_code
+        matching_entry = None
+        for each_entry in all_pairs:
+            if (
+                each_entry["src_node"] == src_code
+                and each_entry["dst_node"] == dst_code
+            ):
+                matching_entry = each_entry
+                break
+        assert matching_entry is not None, "matching entry not found"
+        min_cutoff_required = min(matching_entry["path_min_cutoffs"])
+        # print(f"min_cutoff_required: [{min_cutoff_required}]")
+
+    elif task == "route":
+        dst_anno = gpt_result["dst_node"]
+        dst_code = anno_to_code(dst_anno, anno2code)
+        src_anno = gpt_result["src_node"]
+        src_code = anno_to_code(src_anno, anno2code)
+        # find matching entry in all_pairs with src_code and dst_code
+        matching_entry = []
+        for each_entry in all2all:
+            if (
+                each_entry["src_node"] == src_code
+                and each_entry["dst_node"] == dst_code
+            ):
+                matching_entry.append(each_entry)
+        assert len(matching_entry) > 0, "matching entry not found"
+
+        # compute hash on path_gt
+        path_gt = gpt_result["path_gt"]
+        path_gt_hash = compute_hash(path_gt, mode="path_details")
+
+        matched_path = []  # should be one and only one
+        for each_entry in matching_entry:
+            # compute hash on path_details of each entry
+            path_details_hash = compute_hash(
+                each_entry["path_details"], mode="path_details"
+            )
+            if path_gt_hash == path_details_hash:
+                matched_path.append(each_entry)
+        # assert only one match
+        if len(matched_path) == 0:
+            print(
+                f"matched path not found for given gpt result, possibly DROPPED for whatever reason [{src_code}] -> dst_code: [{dst_code}] | length: [{len(path_gt)}]", file=sys.stderr
+            )
+            print(f"src_code: [{src_code}] -> dst_code: [{dst_code}]")
+            print(f"length: [{len(path_gt)}] | path_gt: [{path_gt}]")
+            return False
+
+        # compare the cutoff step
+        matched_cutoffs = [each["path_min_cutoff"] for each in matched_path]
+        assert len(matched_cutoffs) > 0, f"[{each_json}]: matched_cutoffs is empty"
+        min_cutoff_required = min(matched_cutoffs)
+
+    assert min_cutoff_required is not None, "min_cutoff_required is None"
+
+    if min_cutoff_required > global_cutoff_step:
+        print(f"min_cutoff_required: [{min_cutoff_required}]")
+        print(f"global_cutoff_step: [{global_cutoff_step}]")
+        print(f"skipping: [{each_json}]")
+        return True
+    return False

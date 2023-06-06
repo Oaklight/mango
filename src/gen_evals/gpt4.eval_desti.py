@@ -1,29 +1,21 @@
-import argparse
 import glob
 import json
-import math
 import os
 import sys
-import uuid
-
-import networkx as nx
-import numpy as np
-from matplotlib import pyplot as plt
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_evals.common_desti import verify_stepnav_simple, verify_stepnav_hard
+from gen_evals.common_desti import verify_stepnav_hard, verify_stepnav_simple
 from gen_evals.utils import (
     compute_json_uuid,
     parse_args,
     random_guess_rate,
     recompute_for_uuid,
+    skip_due_to_cutoff,
 )
-from gen_paths.digraph import (
-    build_graph_from_file_with_reverse,
-)
+from gen_paths.digraph import build_graph_from_file_with_reverse
 
 
 if __name__ == "__main__":
@@ -48,6 +40,17 @@ if __name__ == "__main__":
     with open(code2anno_json, "r") as f:
         code2anno = json.load(f)
         code2anno = {k.lower(): v for k, v in code2anno.items()}
+
+    # load cutoff info
+    cutoff_json = args.cutoff_json
+    with open(cutoff_json, "r") as f:
+        cutoff_info = json.load(f)
+        global_cutoff_step = int(cutoff_info[args.game])
+
+    # load all_pairs.json
+    all_pairs_json = os.path.join(args.tgt_path, f"{args.game}.all_pairs.json")
+    with open(all_pairs_json, "r") as f:
+        all_pairs = json.load(f)
 
     # load and build the map
     print(f"Loading map: [{args.game}]")
@@ -83,6 +86,12 @@ if __name__ == "__main__":
 
             micro_uuid = compute_json_uuid(each_json, level="micro")
             macro_uuid = compute_json_uuid(each_json, level="macro")
+
+            # skip due to cutoff
+            if skip_due_to_cutoff(
+                "desti", each_json, global_cutoff_step, anno2code, all_pairs=all_pairs
+            ):
+                continue
 
             if args.simple:
                 verify_result, verify_pack = verify_stepnav_simple(

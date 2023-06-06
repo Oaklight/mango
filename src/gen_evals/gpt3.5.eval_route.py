@@ -1,30 +1,21 @@
-import argparse
 import glob
 import json
-import math
 import os
 import sys
-import uuid
-
-import networkx as nx
-import numpy as np
-from matplotlib import pyplot as plt
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_evals.common_route import verify_pathgen_simple, verify_pathgen_hard
+from gen_evals.common_route import verify_pathgen_hard, verify_pathgen_simple
 from gen_evals.utils import (
     compute_json_uuid,
     parse_args,
     random_guess_rate,
     recompute_for_uuid,
+    skip_due_to_cutoff,
 )
-from gen_paths.digraph import (
-    build_graph_from_file_with_reverse,
-)
-
+from gen_paths.digraph import build_graph_from_file_with_reverse
 
 if __name__ == "__main__":
     """
@@ -48,6 +39,17 @@ if __name__ == "__main__":
     with open(code2anno_json, "r") as f:
         code2anno = json.load(f)
         code2anno = {k.lower(): v for k, v in code2anno.items()}
+
+    # load cutoff info
+    cutoff_json = args.cutoff_json
+    with open(cutoff_json, "r") as f:
+        cutoff_info = json.load(f)
+        global_cutoff_step = int(cutoff_info[args.game])
+
+    # load all2all.json
+    all2all_json = os.path.join(args.tgt_path, f"{args.game}.all2all.json")
+    with open(all2all_json, "r") as f:
+        all2all = json.load(f)
 
     # load and build the map
     print(f"Loading map: [{args.game}]")
@@ -78,12 +80,19 @@ if __name__ == "__main__":
 
         current_collection = {}
         for each_json in gpt_result_jsons:
-            if args.verbose:
-                print(f"Evaluating: [{each_json}]")
+            # if args.verbose:
+            print(f"Evaluating: [{each_json}]")
 
             micro_uuid = compute_json_uuid(each_json, level="micro")
             macro_uuid = compute_json_uuid(each_json, level="macro")
 
+            # skip due to cutoff
+            if skip_due_to_cutoff(
+                "route", each_json, global_cutoff_step, anno2code, all2all=all2all
+            ):
+                continue
+            
+            print(f"walking the route...")
             if args.simple:
                 verify_result, verify_pack = verify_pathgen_simple(
                     g, anno2code, each_json, args.verbose
@@ -125,4 +134,6 @@ if __name__ == "__main__":
             os.rename(each_png, each_png.replace(".png", f".{version}.png"))
 
         for each_png in glob.glob(f"{args.output_dir}/*.png"):
-            os.rename(each_png, each_png.replace("pathgen-gpt-3.5-turbo", "route_finding"))
+            os.rename(
+                each_png, each_png.replace("pathgen-gpt-3.5-turbo", "route_finding")
+            )
