@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
         "correct_num": 7,
-        "total_num": 36,
-        "accuracy": 0.19444444444444445,
+        "total_num": 28,
+        "accuracy": 0.25,
         "collection": {
             "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-58-27_328.json": {
                 "verify_result": false,
@@ -14,7 +14,63 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "follow ford",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "5e92e669-cacf-346c-817e-46952be09e8b",
                 "macro_uuid": "f22d7ce2-ccf8-3b37-8f37-df8bbcab7c5a"
             },
@@ -28,37 +84,36 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    }
+                ],
                 "micro_uuid": "3f4fe381-c4b2-3401-bf65-b09c7e8f5f07",
                 "macro_uuid": "69ba6c23-a7b5-36bc-bf31-605b83d554e9"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-57-43_598.json": {
-                "verify_result": false,
-                "src_anno": "pitch black",
-                "src_requested": "bed (obj161)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "cce8bf25-7a1e-329c-aaa5-9b649ae2124b",
-                "macro_uuid": "edc7af6e-44f9-3d84-b11b-1ee65cc8dfb6"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-59-57_688.json": {
-                "verify_result": false,
-                "src_anno": "Front of House",
-                "src_requested": "front house (obj149)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "b72775ec-2b76-3e67-813a-592b1b3a2514",
-                "macro_uuid": "9339cf1b-8424-3828-8c8a-b3f071c606d3"
             },
             "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-59-22_968.json": {
                 "verify_result": false,
@@ -70,7 +125,48 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "c7154d17-92d1-3452-a6e7-47e837a23006",
                 "macro_uuid": "fc14e7d8-0564-38d7-b25c-2a23eb2cbc98"
             },
@@ -84,23 +180,25 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "cf12327a-6186-3595-8ae3-04cd5b7f382c",
                 "macro_uuid": "085842b1-f1fb-32c3-8089-5d407f8c51c0"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-11-00-43_695.json": {
-                "verify_result": false,
-                "src_anno": "Dark",
-                "src_requested": "dark (obj25)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "a6440cde-8f63-3503-b698-54aaecc16adb",
-                "macro_uuid": "affa81fe-4c24-3766-9920-cf8fe00a5ffe"
             },
             "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-59-11_986.json": {
                 "verify_result": false,
@@ -112,37 +210,19 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "e31a026c-251b-3f3b-a14b-5c19ddf5a6fd",
                 "macro_uuid": "7fc61ce1-3c7f-391e-ae3e-9856d10769e0"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-11-00-14_707.json": {
-                "verify_result": false,
-                "src_anno": "Country Lane",
-                "src_requested": "country lane (obj137)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "25792ad8-8036-3ef0-8772-6bd45ac0ab3e",
-                "macro_uuid": "a68d2545-3734-3ece-920c-e378382d0fba"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-11-00-39_754.json": {
-                "verify_result": false,
-                "src_anno": "Vogon Hold",
-                "src_requested": "voghold (obj121)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "942c9fe4-1863-3097-aeda-87be8b2c2431",
-                "macro_uuid": "d189968f-a15c-3d31-8e02-22625779963b"
             },
             "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-56-57_537.json": {
                 "verify_result": true,
@@ -250,7 +330,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj161)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "turn on light",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    }
+                ],
                 "micro_uuid": "cf0989b7-490e-36d8-b0f5-1ebf7af5b21b",
                 "macro_uuid": "cc34470c-4c3c-3d47-ba76-86c3dac24600"
             },
@@ -264,7 +374,17 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "dark (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "b49e592d-d9d6-34b0-a621-ac78bc02f9a6",
                 "macro_uuid": "6ee3ed37-7599-3818-875f-b2fe3c53fc4b"
             },
@@ -350,7 +470,49 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "bd097a7d-c04f-36f0-b1ca-c68c84391330",
                 "macro_uuid": "578e335b-c3be-3d7e-8384-ccc06d28a9fa"
             },
@@ -364,7 +526,39 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "96ec2076-1eb3-3ec9-8b98-e9717c4a5b68",
                 "macro_uuid": "9065e22f-0c49-3bf5-b60e-b430ebc00cd8"
             },
@@ -378,23 +572,31 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "8edb376d-e156-3d09-8d34-3f5cac5b0e77",
                 "macro_uuid": "801926c3-0612-3a64-ac59-0ff4e09425b2"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-59-33_312.json": {
-                "verify_result": false,
-                "src_anno": "Front Porch",
-                "src_requested": "front porch (obj151)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3fc4beea-2d33-3db8-a8cd-d07e2aed8f13",
-                "macro_uuid": "98d2f313-d684-3fcf-a867-f0a19685915a"
             },
             "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-11-00-00_597.json": {
                 "verify_result": false,
@@ -406,7 +608,28 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "pub (obj134)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Dark",
+                        "action": "push green button",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "a0616215-ffd4-3e9d-a79b-da83abe605e8",
                 "macro_uuid": "4eb9f323-89a0-3018-a68c-9bf01e29bb44"
             },
@@ -420,7 +643,35 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "8da3bad9-c494-3ad1-a502-d4cb72379182",
                 "macro_uuid": "393fe474-3e64-3bd7-b9d8-6b29495b7523"
             },
@@ -434,7 +685,54 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "369ab2ee-7229-3668-94a0-c7945fa9a52e",
                 "macro_uuid": "f4d5adb3-8273-3db9-9527-7dd2689618bd"
             },
@@ -448,7 +746,43 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "4ba77875-edf7-3d06-b54d-4a430eb66760",
                 "macro_uuid": "3324cc62-a8f6-305b-a882-bbf303e49b2b"
             },
@@ -462,7 +796,48 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Front Porch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Bedroom",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "pitch black",
+                        "action": "push green button"
+                    },
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "examine shadow"
+                    }
+                ],
                 "micro_uuid": "76ff01da-e86b-348c-83e1-670db2acbb98",
                 "macro_uuid": "53508ace-a34f-3a32-8fd5-ddc4ef77a3c5"
             },
@@ -476,7 +851,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "260f26ab-2276-3370-b490-c0d58439dcd9",
                 "macro_uuid": "21129e53-0f69-3ad9-8187-648badfcfe82"
             },
@@ -490,7 +880,37 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "b8fbd897-4429-3866-8cbe-dcd5d233ed53",
                 "macro_uuid": "1ef68790-d2f2-32f2-97e6-291c42748ff8"
             },
@@ -504,7 +924,42 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "3b07db8d-4dab-3879-8c43-54adaaaabafa",
                 "macro_uuid": "fd303a9e-044b-3647-9f4f-59ada9eb1ac0"
             },
@@ -518,7 +973,55 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "b44ce7b4-6628-36d3-9b00-2bc362fdce1c",
                 "macro_uuid": "2a4a9122-736e-3eef-bfee-8067c0ad9f7a"
             },
@@ -556,7 +1059,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "front porch (obj151)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "8db5658a-be64-32e9-b447-8be832c75f05",
                 "macro_uuid": "96b8c79a-968f-3db9-806f-21c113b96277"
             },
@@ -570,37 +1088,45 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Front Porch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Bedroom",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "pitch black",
+                        "action": "turn off light"
+                    },
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "ac761277-3834-3d0d-850f-e70be9b1fcaf",
                 "macro_uuid": "ec596dec-5432-3f73-9852-63aca4dfe475"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-11-00-31_420.json": {
-                "verify_result": false,
-                "src_anno": "Pub",
-                "src_requested": "pub (obj134)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "ae5cb96c-2d34-3ae7-b528-8d3987d0ef3f",
-                "macro_uuid": "71261d36-cf92-3f49-8f01-1e1a0109ee07"
-            },
-            "../gpt-games-results//hhgg/results//pathgen-gpt-4/results_2023-06-01-10-59-05_161.json": {
-                "verify_result": false,
-                "src_anno": "Bedroom",
-                "src_requested": "bedroom (obj168)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3443539c-c224-3c0f-867a-7f939df19a98",
-                "macro_uuid": "46edaeb4-b784-3f51-8dde-646dae8476a8"
             }
         },
         "random_guess_rate": 0.0010000000000000002,
@@ -615,7 +1141,63 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "follow ford",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "5e92e669-cacf-346c-817e-46952be09e8b",
                 "macro_uuid": "f22d7ce2-ccf8-3b37-8f37-df8bbcab7c5a"
             },
@@ -629,37 +1211,36 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    }
+                ],
                 "micro_uuid": "3f4fe381-c4b2-3401-bf65-b09c7e8f5f07",
                 "macro_uuid": "69ba6c23-a7b5-36bc-bf31-605b83d554e9"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "pitch black",
-                "src_requested": "bed (obj161)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "cce8bf25-7a1e-329c-aaa5-9b649ae2124b",
-                "macro_uuid": "edc7af6e-44f9-3d84-b11b-1ee65cc8dfb6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Front of House",
-                "src_requested": "front house (obj149)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "b72775ec-2b76-3e67-813a-592b1b3a2514",
-                "macro_uuid": "9339cf1b-8424-3828-8c8a-b3f071c606d3"
             },
             {
                 "verify_result": false,
@@ -671,7 +1252,48 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "c7154d17-92d1-3452-a6e7-47e837a23006",
                 "macro_uuid": "fc14e7d8-0564-38d7-b25c-2a23eb2cbc98"
             },
@@ -685,23 +1307,25 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "cf12327a-6186-3595-8ae3-04cd5b7f382c",
                 "macro_uuid": "085842b1-f1fb-32c3-8089-5d407f8c51c0"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dark",
-                "src_requested": "dark (obj25)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "a6440cde-8f63-3503-b698-54aaecc16adb",
-                "macro_uuid": "affa81fe-4c24-3766-9920-cf8fe00a5ffe"
             },
             {
                 "verify_result": false,
@@ -713,37 +1337,19 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "e31a026c-251b-3f3b-a14b-5c19ddf5a6fd",
                 "macro_uuid": "7fc61ce1-3c7f-391e-ae3e-9856d10769e0"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Country Lane",
-                "src_requested": "country lane (obj137)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "25792ad8-8036-3ef0-8772-6bd45ac0ab3e",
-                "macro_uuid": "a68d2545-3734-3ece-920c-e378382d0fba"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Vogon Hold",
-                "src_requested": "voghold (obj121)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "942c9fe4-1863-3097-aeda-87be8b2c2431",
-                "macro_uuid": "d189968f-a15c-3d31-8e02-22625779963b"
             },
             {
                 "verify_result": true,
@@ -851,7 +1457,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj161)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "turn on light",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    }
+                ],
                 "micro_uuid": "cf0989b7-490e-36d8-b0f5-1ebf7af5b21b",
                 "macro_uuid": "cc34470c-4c3c-3d47-ba76-86c3dac24600"
             },
@@ -865,7 +1501,17 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "dark (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "b49e592d-d9d6-34b0-a621-ac78bc02f9a6",
                 "macro_uuid": "6ee3ed37-7599-3818-875f-b2fe3c53fc4b"
             },
@@ -951,7 +1597,49 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "bd097a7d-c04f-36f0-b1ca-c68c84391330",
                 "macro_uuid": "578e335b-c3be-3d7e-8384-ccc06d28a9fa"
             },
@@ -965,7 +1653,39 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "96ec2076-1eb3-3ec9-8b98-e9717c4a5b68",
                 "macro_uuid": "9065e22f-0c49-3bf5-b60e-b430ebc00cd8"
             },
@@ -979,23 +1699,31 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "8edb376d-e156-3d09-8d34-3f5cac5b0e77",
                 "macro_uuid": "801926c3-0612-3a64-ac59-0ff4e09425b2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Front Porch",
-                "src_requested": "front porch (obj151)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3fc4beea-2d33-3db8-a8cd-d07e2aed8f13",
-                "macro_uuid": "98d2f313-d684-3fcf-a867-f0a19685915a"
             },
             {
                 "verify_result": false,
@@ -1007,7 +1735,28 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "pub (obj134)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Dark",
+                        "action": "push green button",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "a0616215-ffd4-3e9d-a79b-da83abe605e8",
                 "macro_uuid": "4eb9f323-89a0-3018-a68c-9bf01e29bb44"
             },
@@ -1021,7 +1770,35 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "8da3bad9-c494-3ad1-a502-d4cb72379182",
                 "macro_uuid": "393fe474-3e64-3bd7-b9d8-6b29495b7523"
             },
@@ -1035,7 +1812,54 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "369ab2ee-7229-3668-94a0-c7945fa9a52e",
                 "macro_uuid": "f4d5adb3-8273-3db9-9527-7dd2689618bd"
             },
@@ -1049,7 +1873,43 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "4ba77875-edf7-3d06-b54d-4a430eb66760",
                 "macro_uuid": "3324cc62-a8f6-305b-a882-bbf303e49b2b"
             },
@@ -1063,7 +1923,48 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Front Porch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Bedroom",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "pitch black",
+                        "action": "push green button"
+                    },
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "examine shadow"
+                    }
+                ],
                 "micro_uuid": "76ff01da-e86b-348c-83e1-670db2acbb98",
                 "macro_uuid": "53508ace-a34f-3a32-8fd5-ddc4ef77a3c5"
             },
@@ -1077,7 +1978,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "260f26ab-2276-3370-b490-c0d58439dcd9",
                 "macro_uuid": "21129e53-0f69-3ad9-8187-648badfcfe82"
             },
@@ -1091,7 +2007,37 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "b8fbd897-4429-3866-8cbe-dcd5d233ed53",
                 "macro_uuid": "1ef68790-d2f2-32f2-97e6-291c42748ff8"
             },
@@ -1105,7 +2051,42 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "3b07db8d-4dab-3879-8c43-54adaaaabafa",
                 "macro_uuid": "fd303a9e-044b-3647-9f4f-59ada9eb1ac0"
             },
@@ -1119,7 +2100,55 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "b44ce7b4-6628-36d3-9b00-2bc362fdce1c",
                 "macro_uuid": "2a4a9122-736e-3eef-bfee-8067c0ad9f7a"
             },
@@ -1157,7 +2186,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "front porch (obj151)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "8db5658a-be64-32e9-b447-8be832c75f05",
                 "macro_uuid": "96b8c79a-968f-3db9-806f-21c113b96277"
             },
@@ -1171,42 +2215,50 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Front Porch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Bedroom",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "pitch black",
+                        "action": "turn off light"
+                    },
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "ac761277-3834-3d0d-850f-e70be9b1fcaf",
                 "macro_uuid": "ec596dec-5432-3f73-9852-63aca4dfe475"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Pub",
-                "src_requested": "pub (obj134)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "ae5cb96c-2d34-3ae7-b528-8d3987d0ef3f",
-                "macro_uuid": "71261d36-cf92-3f49-8f01-1e1a0109ee07"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bedroom",
-                "src_requested": "bedroom (obj168)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3443539c-c224-3c0f-867a-7f939df19a98",
-                "macro_uuid": "46edaeb4-b784-3f51-8dde-646dae8476a8"
             }
         ],
         "correct_num_micro": 7,
-        "total_num_micro": 36,
-        "accuracy_micro": 0.19444444444444445,
+        "total_num_micro": 28,
+        "accuracy_micro": 0.25,
         "collection_macro": [
             {
                 "verify_result": false,
@@ -1218,7 +2270,63 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "follow ford",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "5e92e669-cacf-346c-817e-46952be09e8b",
                 "macro_uuid": "f22d7ce2-ccf8-3b37-8f37-df8bbcab7c5a"
             },
@@ -1232,37 +2340,36 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    }
+                ],
                 "micro_uuid": "3f4fe381-c4b2-3401-bf65-b09c7e8f5f07",
                 "macro_uuid": "69ba6c23-a7b5-36bc-bf31-605b83d554e9"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "pitch black",
-                "src_requested": "bed (obj161)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "cce8bf25-7a1e-329c-aaa5-9b649ae2124b",
-                "macro_uuid": "edc7af6e-44f9-3d84-b11b-1ee65cc8dfb6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Front of House",
-                "src_requested": "front house (obj149)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "b72775ec-2b76-3e67-813a-592b1b3a2514",
-                "macro_uuid": "9339cf1b-8424-3828-8c8a-b3f071c606d3"
             },
             {
                 "verify_result": false,
@@ -1274,7 +2381,48 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "c7154d17-92d1-3452-a6e7-47e837a23006",
                 "macro_uuid": "fc14e7d8-0564-38d7-b25c-2a23eb2cbc98"
             },
@@ -1288,23 +2436,25 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "cf12327a-6186-3595-8ae3-04cd5b7f382c",
                 "macro_uuid": "085842b1-f1fb-32c3-8089-5d407f8c51c0"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dark",
-                "src_requested": "dark (obj25)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "a6440cde-8f63-3503-b698-54aaecc16adb",
-                "macro_uuid": "affa81fe-4c24-3766-9920-cf8fe00a5ffe"
             },
             {
                 "verify_result": false,
@@ -1316,37 +2466,19 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "e31a026c-251b-3f3b-a14b-5c19ddf5a6fd",
                 "macro_uuid": "7fc61ce1-3c7f-391e-ae3e-9856d10769e0"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Country Lane",
-                "src_requested": "country lane (obj137)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "25792ad8-8036-3ef0-8772-6bd45ac0ab3e",
-                "macro_uuid": "a68d2545-3734-3ece-920c-e378382d0fba"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Vogon Hold",
-                "src_requested": "voghold (obj121)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "942c9fe4-1863-3097-aeda-87be8b2c2431",
-                "macro_uuid": "d189968f-a15c-3d31-8e02-22625779963b"
             },
             {
                 "verify_result": true,
@@ -1454,7 +2586,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bed (obj161)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "turn on light",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    }
+                ],
                 "micro_uuid": "cf0989b7-490e-36d8-b0f5-1ebf7af5b21b",
                 "macro_uuid": "cc34470c-4c3c-3d47-ba76-86c3dac24600"
             },
@@ -1468,7 +2630,17 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "dark (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "b49e592d-d9d6-34b0-a621-ac78bc02f9a6",
                 "macro_uuid": "6ee3ed37-7599-3818-875f-b2fe3c53fc4b"
             },
@@ -1554,7 +2726,49 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "bd097a7d-c04f-36f0-b1ca-c68c84391330",
                 "macro_uuid": "578e335b-c3be-3d7e-8384-ccc06d28a9fa"
             },
@@ -1568,7 +2782,39 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "96ec2076-1eb3-3ec9-8b98-e9717c4a5b68",
                 "macro_uuid": "9065e22f-0c49-3bf5-b60e-b430ebc00cd8"
             },
@@ -1582,23 +2828,31 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "8edb376d-e156-3d09-8d34-3f5cac5b0e77",
                 "macro_uuid": "801926c3-0612-3a64-ac59-0ff4e09425b2"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Front Porch",
-                "src_requested": "front porch (obj151)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3fc4beea-2d33-3db8-a8cd-d07e2aed8f13",
-                "macro_uuid": "98d2f313-d684-3fcf-a867-f0a19685915a"
             },
             {
                 "verify_result": false,
@@ -1610,7 +2864,28 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "pub (obj134)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Dark",
+                        "action": "push green button",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "a0616215-ffd4-3e9d-a79b-da83abe605e8",
                 "macro_uuid": "4eb9f323-89a0-3018-a68c-9bf01e29bb44"
             },
@@ -1624,7 +2899,35 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "8da3bad9-c494-3ad1-a502-d4cb72379182",
                 "macro_uuid": "393fe474-3e64-3bd7-b9d8-6b29495b7523"
             },
@@ -1638,7 +2941,54 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "369ab2ee-7229-3668-94a0-c7945fa9a52e",
                 "macro_uuid": "f4d5adb3-8273-3db9-9527-7dd2689618bd"
             },
@@ -1652,7 +3002,43 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "4ba77875-edf7-3d06-b54d-4a430eb66760",
                 "macro_uuid": "3324cc62-a8f6-305b-a882-bbf303e49b2b"
             },
@@ -1666,7 +3052,48 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Front Porch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Bedroom",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "pitch black",
+                        "action": "push green button"
+                    },
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "examine shadow"
+                    }
+                ],
                 "micro_uuid": "76ff01da-e86b-348c-83e1-670db2acbb98",
                 "macro_uuid": "53508ace-a34f-3a32-8fd5-ddc4ef77a3c5"
             },
@@ -1680,7 +3107,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "260f26ab-2276-3370-b490-c0d58439dcd9",
                 "macro_uuid": "21129e53-0f69-3ad9-8187-648badfcfe82"
             },
@@ -1694,7 +3136,37 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "b8fbd897-4429-3866-8cbe-dcd5d233ed53",
                 "macro_uuid": "1ef68790-d2f2-32f2-97e6-291c42748ff8"
             },
@@ -1708,7 +3180,42 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Dark",
+                        "node": "Vogon Hold",
+                        "action": "smell"
+                    }
+                ],
                 "micro_uuid": "3b07db8d-4dab-3879-8c43-54adaaaabafa",
                 "macro_uuid": "fd303a9e-044b-3647-9f4f-59ada9eb1ac0"
             },
@@ -1722,7 +3229,55 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Bedroom",
+                        "action": "get up",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Front of House",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "enter pub"
+                    },
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Dark",
+                        "action": "push green button"
+                    }
+                ],
                 "micro_uuid": "b44ce7b4-6628-36d3-9b00-2bc362fdce1c",
                 "macro_uuid": "2a4a9122-736e-3eef-bfee-8067c0ad9f7a"
             },
@@ -1760,7 +3315,22 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "front porch (obj151)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Country Lane",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Pub",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "8db5658a-be64-32e9-b447-8be832c75f05",
                 "macro_uuid": "96b8c79a-968f-3db9-806f-21c113b96277"
             },
@@ -1774,41 +3344,49 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "country lane (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pub",
+                        "node": "Country Lane",
+                        "action": "exit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Country Lane",
+                        "node": "Front of House",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Front of House",
+                        "node": "Front Porch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Front Porch",
+                        "node": "Bedroom",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "pitch black",
+                        "action": "turn off light"
+                    },
+                    {
+                        "prev_node": "pitch black",
+                        "node": "Dark",
+                        "action": "wait"
+                    }
+                ],
                 "micro_uuid": "ac761277-3834-3d0d-850f-e70be9b1fcaf",
                 "macro_uuid": "ec596dec-5432-3f73-9852-63aca4dfe475"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Pub",
-                "src_requested": "pub (obj134)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "ae5cb96c-2d34-3ae7-b528-8d3987d0ef3f",
-                "macro_uuid": "71261d36-cf92-3f49-8f01-1e1a0109ee07"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bedroom",
-                "src_requested": "bedroom (obj168)",
-                "dst_anno": "Captain's Quarters, in the poetry appreciation chair",
-                "dst_requested": "poetry appreciatichair (obj107)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3443539c-c224-3c0f-867a-7f939df19a98",
-                "macro_uuid": "46edaeb4-b784-3f51-8dde-646dae8476a8"
             }
         ],
         "correct_num_macro": 7,
-        "total_num_macro": 36,
-        "accuracy_macro": 0.19444444444444445
+        "total_num_macro": 28,
+        "accuracy_macro": 0.25
     }
 }

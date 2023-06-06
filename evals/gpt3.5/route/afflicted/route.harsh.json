@@ -1,23 +1,9 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 19,
-        "total_num": 55,
-        "accuracy": 0.34545454545454546,
+        "total_num": 45,
+        "accuracy": 0.4222222222222222,
         "collection": {
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-14-20_470.json": {
-                "verify_result": false,
-                "src_anno": "19th Street",
-                "src_requested": "(obj66)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "d689e9d0-d091-35aa-9f2c-b1752d2bc90e",
-                "macro_uuid": "eff0ddbc-c018-388c-bc4c-74d68177efb6"
-            },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-14-13_322.json": {
                 "verify_result": true,
                 "src_anno": "19th Street East",
@@ -58,23 +44,19 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "d11a5f3f-afa0-39b6-bc16-30fe42553bb3",
                 "macro_uuid": "f1ba5fb1-7204-3c3a-9b4c-32b159c0ad4a"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-16-39_471.json": {
-                "verify_result": false,
-                "src_anno": "Refrigerator",
-                "src_requested": "(obj189)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "eabe806f-7c09-31c3-bf4c-7914f77f6748",
-                "macro_uuid": "da2fe3ae-689e-3dc9-b24a-fc524ab20e18"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-37_014.json": {
                 "verify_result": false,
@@ -86,7 +68,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "e5734fad-a3c5-3c26-b786-625c56bdd794",
                 "macro_uuid": "14056229-f0c7-39c7-b0bb-795ce2aff49e"
             },
@@ -100,23 +102,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "a482c0d4-47e1-387e-b5a0-0ece2fb5663a",
                 "macro_uuid": "9c0ea058-cc5d-3b34-80db-e5450aefb7d7"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-14-59_812.json": {
-                "verify_result": false,
-                "src_anno": "19th Street East",
-                "src_requested": "(obj74)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "4baf69df-36b2-3d9c-8f88-2bbdde623bd8",
-                "macro_uuid": "aae79236-77ea-38db-9a34-a7beb7b56d68"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-16-16_870.json": {
                 "verify_result": true,
@@ -164,7 +167,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj189)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Refrigerator",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "c98975ae-08ed-332f-8765-7da0b002acb2",
                 "macro_uuid": "019ead4d-1410-3930-9940-85364b5d78c3"
             },
@@ -214,37 +237,40 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "795ee5ee-551b-35f4-9add-ea5c4ddc8af7",
                 "macro_uuid": "feb3456c-b377-3d1e-b774-36829043c7c8"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-16-17_060.json": {
-                "verify_result": false,
-                "src_anno": "Galley Kitchen",
-                "src_requested": "(obj119)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "84c02da2-7f82-3747-9ac5-f38c9f979a57",
-                "macro_uuid": "feefa787-4bfd-3c26-9e04-2e858e4cd370"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-58_237.json": {
-                "verify_result": false,
-                "src_anno": "Lavatory",
-                "src_requested": "(obj148)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "51e0abc5-8f4e-38f5-a854-020c6cb37562",
-                "macro_uuid": "ef96dd07-f506-3c24-bf2d-a35477eef5f9"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-37_617.json": {
                 "verify_result": false,
@@ -256,7 +282,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "05bfe1ba-140c-37c3-8e4f-6c309aa78d77",
                 "macro_uuid": "efba1841-3989-3fd6-b5b2-920a0c0ae4ab"
             },
@@ -294,7 +340,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "50214ae7-0c6c-3d88-b0bc-6ed9e6ebde53",
                 "macro_uuid": "eee5db76-35cb-32df-b3d4-097ca95d034e"
             },
@@ -332,7 +408,22 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "7f962ceb-4aed-3dfe-8f99-2c53312e14f2",
                 "macro_uuid": "e8afd705-5f21-3599-9fc0-60fb80e99991"
             },
@@ -466,7 +557,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "517a5d8a-dfc1-3a89-a689-754627f16d3f",
                 "macro_uuid": "1fd197d9-4351-375b-96f9-3eb93557404a"
             },
@@ -480,37 +601,35 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "19th Street East",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "81e6b2e8-a745-3fd6-8506-11e2fb7ee799",
                 "macro_uuid": "3d70b6e7-b221-37e9-b2cd-67b610c7563a"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-16-42_345.json": {
-                "verify_result": false,
-                "src_anno": "Winding Hall",
-                "src_requested": "(obj177)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "03adf218-236d-3ba9-bb9b-ee90a0ed1b07",
-                "macro_uuid": "94865c34-4bfe-31c6-92ca-06feb0523cfa"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-37_080.json": {
-                "verify_result": false,
-                "src_anno": "Bar",
-                "src_requested": "(obj99)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f9d8b657-245b-3ed1-b6ad-de8c094e036f",
-                "macro_uuid": "3d07d6ca-6c51-3e9b-91ba-477ec920d0cd"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-14-51_024.json": {
                 "verify_result": false,
@@ -522,7 +641,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "41b0035b-15aa-3256-9c12-be2060674043",
                 "macro_uuid": "f49c436e-85b9-3d7e-ab3e-4d9c05e80db1"
             },
@@ -536,7 +665,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "4f106f56-9d2d-3754-8686-c66f68ff8497",
                 "macro_uuid": "b120ba9c-2146-3d7c-8fc3-4ca301a740d1"
             },
@@ -640,7 +779,32 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "89f7c603-0574-3583-9d23-159303b644aa",
                 "macro_uuid": "656b1cf7-267e-3f45-9552-94e168df6468"
             },
@@ -680,20 +844,6 @@
                 "micro_uuid": "5a789f23-400a-368f-975c-9d5709b68a5a",
                 "macro_uuid": "55f9a27f-9177-32f2-bf08-b49f14142288"
             },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-17-11_560.json": {
-                "verify_result": false,
-                "src_anno": "Dish Room",
-                "src_requested": "(obj195)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "5e11cdc5-1f3a-3348-b53d-9d3658294710",
-                "macro_uuid": "f82c82d3-a935-33ac-85f7-732b608bb40a"
-            },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-33_343.json": {
                 "verify_result": false,
                 "src_anno": "Lavatory",
@@ -704,7 +854,17 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "39090bc4-9494-3210-a822-c9ed39d0bb10",
                 "macro_uuid": "3cf52383-6a61-38af-864d-78669b0c7454"
             },
@@ -742,23 +902,44 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "b2806399-1fcb-33b8-97fc-c71531524ec7",
                 "macro_uuid": "86268cf9-4fac-3642-af19-a55468cd8a93"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-15_213.json": {
-                "verify_result": false,
-                "src_anno": "Dining Room",
-                "src_requested": "(obj81)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "02b27f01-6d38-3613-85c6-59b024010a96",
-                "macro_uuid": "d2802d67-25ae-36eb-bfae-ba5cd89da36a"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-15-52_225.json": {
                 "verify_result": true,
@@ -783,20 +964,6 @@
                 ],
                 "micro_uuid": "ed053ea0-a74e-3a39-aace-b2333955171c",
                 "macro_uuid": "976e656e-26f9-329b-abc3-d56a02bfa789"
-            },
-            "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-17-00_628.json": {
-                "verify_result": false,
-                "src_anno": "Crypt",
-                "src_requested": "(obj214)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "acf6193a-7ad8-3956-a2f2-8ea554aacadc",
-                "macro_uuid": "2736d171-deb7-3cbe-bbca-562dcfe3cb9f"
             },
             "../gpt-games-results//afflicted/results//pathgen-gpt-3.5-turbo/results_2023-06-01-14-16-34_024.json": {
                 "verify_result": true,
@@ -856,7 +1023,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj119)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "7882427d-808b-3a39-b178-3e44acbc45dc",
                 "macro_uuid": "ce4329c3-9e88-3334-8006-eccbb77601a4"
             },
@@ -870,7 +1047,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "d962dae8-fa5d-35ee-8998-759de6213587",
                 "macro_uuid": "3580a0a2-3cf1-33a1-bba9-14cf4f48ead7"
             },
@@ -914,7 +1111,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "0adda01a-6cb4-33dd-acbb-0c27218ae76c",
                 "macro_uuid": "f04affa7-c8c9-3dd9-8cd8-d46672ae6dfa"
             },
@@ -928,7 +1141,27 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "52badd94-9cc9-33b0-a746-340576c2199c",
                 "macro_uuid": "e485b164-1933-363a-bbc7-81c365d6f84b"
             },
@@ -942,7 +1175,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "431fcdee-2c1d-3fbe-9482-07e9262a933e",
                 "macro_uuid": "ad343606-325c-3582-b627-eb9512939a8a"
             },
@@ -956,7 +1209,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj189)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Refrigerator",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "53ec954d-14f8-3d62-b81f-bef19222027b",
                 "macro_uuid": "8b7979bf-9c7b-324f-8c84-bb52dde14e31"
             },
@@ -1024,7 +1292,17 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "35c97cfd-7e1b-3227-9f57-bc63dbc667be",
                 "macro_uuid": "4e472d1b-338c-3cdf-bda2-8be5b4776c37"
             },
@@ -1038,7 +1316,32 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "d18aae13-53c2-3080-a823-cf414adf6336",
                 "macro_uuid": "51c0b6b7-2965-3e9f-bf18-d1f679ed1b89"
             },
@@ -1052,7 +1355,22 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "bda8240b-d0be-3990-89a3-53f55ea0685a",
                 "macro_uuid": "b8fe39f3-0cee-387b-b847-d2c9eb80c12e"
             },
@@ -1066,7 +1384,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "38f679a4-362c-367e-a252-4ad7d62b1869",
                 "macro_uuid": "aa1f6647-3aa4-3471-a89b-d3f4f9f79992"
             },
@@ -1080,7 +1408,32 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "19th Street",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "58b4ec91-a27c-32c6-9fcf-e484bacfa489",
                 "macro_uuid": "020c53ee-29e3-3ceb-a76a-b03e2debf7a7"
             }
@@ -1088,20 +1441,6 @@
         "random_guess_rate": 0.0006627056808357364,
         "collection_micro": [
             {
-                "verify_result": false,
-                "src_anno": "19th Street",
-                "src_requested": "(obj66)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "d689e9d0-d091-35aa-9f2c-b1752d2bc90e",
-                "macro_uuid": "eff0ddbc-c018-388c-bc4c-74d68177efb6"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "19th Street East",
                 "src_requested": "(obj74)",
@@ -1141,23 +1480,19 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "d11a5f3f-afa0-39b6-bc16-30fe42553bb3",
                 "macro_uuid": "f1ba5fb1-7204-3c3a-9b4c-32b159c0ad4a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Refrigerator",
-                "src_requested": "(obj189)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "eabe806f-7c09-31c3-bf4c-7914f77f6748",
-                "macro_uuid": "da2fe3ae-689e-3dc9-b24a-fc524ab20e18"
             },
             {
                 "verify_result": false,
@@ -1169,7 +1504,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "e5734fad-a3c5-3c26-b786-625c56bdd794",
                 "macro_uuid": "14056229-f0c7-39c7-b0bb-795ce2aff49e"
             },
@@ -1183,23 +1538,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "a482c0d4-47e1-387e-b5a0-0ece2fb5663a",
                 "macro_uuid": "9c0ea058-cc5d-3b34-80db-e5450aefb7d7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "19th Street East",
-                "src_requested": "(obj74)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "4baf69df-36b2-3d9c-8f88-2bbdde623bd8",
-                "macro_uuid": "aae79236-77ea-38db-9a34-a7beb7b56d68"
             },
             {
                 "verify_result": true,
@@ -1247,7 +1603,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj189)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Refrigerator",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "c98975ae-08ed-332f-8765-7da0b002acb2",
                 "macro_uuid": "019ead4d-1410-3930-9940-85364b5d78c3"
             },
@@ -1297,37 +1673,40 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "795ee5ee-551b-35f4-9add-ea5c4ddc8af7",
                 "macro_uuid": "feb3456c-b377-3d1e-b774-36829043c7c8"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Galley Kitchen",
-                "src_requested": "(obj119)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "84c02da2-7f82-3747-9ac5-f38c9f979a57",
-                "macro_uuid": "feefa787-4bfd-3c26-9e04-2e858e4cd370"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Lavatory",
-                "src_requested": "(obj148)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "51e0abc5-8f4e-38f5-a854-020c6cb37562",
-                "macro_uuid": "ef96dd07-f506-3c24-bf2d-a35477eef5f9"
             },
             {
                 "verify_result": false,
@@ -1339,7 +1718,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "05bfe1ba-140c-37c3-8e4f-6c309aa78d77",
                 "macro_uuid": "efba1841-3989-3fd6-b5b2-920a0c0ae4ab"
             },
@@ -1377,7 +1776,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "50214ae7-0c6c-3d88-b0bc-6ed9e6ebde53",
                 "macro_uuid": "eee5db76-35cb-32df-b3d4-097ca95d034e"
             },
@@ -1415,7 +1844,22 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "7f962ceb-4aed-3dfe-8f99-2c53312e14f2",
                 "macro_uuid": "e8afd705-5f21-3599-9fc0-60fb80e99991"
             },
@@ -1549,7 +1993,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "517a5d8a-dfc1-3a89-a689-754627f16d3f",
                 "macro_uuid": "1fd197d9-4351-375b-96f9-3eb93557404a"
             },
@@ -1563,37 +2037,35 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "19th Street East",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "81e6b2e8-a745-3fd6-8506-11e2fb7ee799",
                 "macro_uuid": "3d70b6e7-b221-37e9-b2cd-67b610c7563a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Winding Hall",
-                "src_requested": "(obj177)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "03adf218-236d-3ba9-bb9b-ee90a0ed1b07",
-                "macro_uuid": "94865c34-4bfe-31c6-92ca-06feb0523cfa"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar",
-                "src_requested": "(obj99)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f9d8b657-245b-3ed1-b6ad-de8c094e036f",
-                "macro_uuid": "3d07d6ca-6c51-3e9b-91ba-477ec920d0cd"
             },
             {
                 "verify_result": false,
@@ -1605,7 +2077,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "41b0035b-15aa-3256-9c12-be2060674043",
                 "macro_uuid": "f49c436e-85b9-3d7e-ab3e-4d9c05e80db1"
             },
@@ -1619,7 +2101,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "4f106f56-9d2d-3754-8686-c66f68ff8497",
                 "macro_uuid": "b120ba9c-2146-3d7c-8fc3-4ca301a740d1"
             },
@@ -1723,7 +2215,32 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "89f7c603-0574-3583-9d23-159303b644aa",
                 "macro_uuid": "656b1cf7-267e-3f45-9552-94e168df6468"
             },
@@ -1765,20 +2282,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Dish Room",
-                "src_requested": "(obj195)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "5e11cdc5-1f3a-3348-b53d-9d3658294710",
-                "macro_uuid": "f82c82d3-a935-33ac-85f7-732b608bb40a"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Lavatory",
                 "src_requested": "(obj148)",
                 "dst_anno": "Winding Hall",
@@ -1787,7 +2290,17 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "39090bc4-9494-3210-a822-c9ed39d0bb10",
                 "macro_uuid": "3cf52383-6a61-38af-864d-78669b0c7454"
             },
@@ -1825,23 +2338,44 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "b2806399-1fcb-33b8-97fc-c71531524ec7",
                 "macro_uuid": "86268cf9-4fac-3642-af19-a55468cd8a93"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dining Room",
-                "src_requested": "(obj81)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "02b27f01-6d38-3613-85c6-59b024010a96",
-                "macro_uuid": "d2802d67-25ae-36eb-bfae-ba5cd89da36a"
             },
             {
                 "verify_result": true,
@@ -1866,20 +2400,6 @@
                 ],
                 "micro_uuid": "ed053ea0-a74e-3a39-aace-b2333955171c",
                 "macro_uuid": "976e656e-26f9-329b-abc3-d56a02bfa789"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Crypt",
-                "src_requested": "(obj214)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "acf6193a-7ad8-3956-a2f2-8ea554aacadc",
-                "macro_uuid": "2736d171-deb7-3cbe-bbca-562dcfe3cb9f"
             },
             {
                 "verify_result": true,
@@ -1939,7 +2459,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj119)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "7882427d-808b-3a39-b178-3e44acbc45dc",
                 "macro_uuid": "ce4329c3-9e88-3334-8006-eccbb77601a4"
             },
@@ -1953,7 +2483,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "d962dae8-fa5d-35ee-8998-759de6213587",
                 "macro_uuid": "3580a0a2-3cf1-33a1-bba9-14cf4f48ead7"
             },
@@ -1997,7 +2547,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "0adda01a-6cb4-33dd-acbb-0c27218ae76c",
                 "macro_uuid": "f04affa7-c8c9-3dd9-8cd8-d46672ae6dfa"
             },
@@ -2011,7 +2577,27 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "52badd94-9cc9-33b0-a746-340576c2199c",
                 "macro_uuid": "e485b164-1933-363a-bbc7-81c365d6f84b"
             },
@@ -2025,7 +2611,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "431fcdee-2c1d-3fbe-9482-07e9262a933e",
                 "macro_uuid": "ad343606-325c-3582-b627-eb9512939a8a"
             },
@@ -2039,7 +2645,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj189)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Refrigerator",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "53ec954d-14f8-3d62-b81f-bef19222027b",
                 "macro_uuid": "8b7979bf-9c7b-324f-8c84-bb52dde14e31"
             },
@@ -2107,7 +2728,17 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "35c97cfd-7e1b-3227-9f57-bc63dbc667be",
                 "macro_uuid": "4e472d1b-338c-3cdf-bda2-8be5b4776c37"
             },
@@ -2121,7 +2752,32 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "d18aae13-53c2-3080-a823-cf414adf6336",
                 "macro_uuid": "51c0b6b7-2965-3e9f-bf18-d1f679ed1b89"
             },
@@ -2135,7 +2791,22 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "bda8240b-d0be-3990-89a3-53f55ea0685a",
                 "macro_uuid": "b8fe39f3-0cee-387b-b847-d2c9eb80c12e"
             },
@@ -2149,7 +2820,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "38f679a4-362c-367e-a252-4ad7d62b1869",
                 "macro_uuid": "aa1f6647-3aa4-3471-a89b-d3f4f9f79992"
             },
@@ -2163,29 +2844,40 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "19th Street",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "58b4ec91-a27c-32c6-9fcf-e484bacfa489",
                 "macro_uuid": "020c53ee-29e3-3ceb-a76a-b03e2debf7a7"
             }
         ],
         "correct_num_micro": 19,
-        "total_num_micro": 55,
-        "accuracy_micro": 0.34545454545454546,
+        "total_num_micro": 45,
+        "accuracy_micro": 0.4222222222222222,
         "collection_macro": [
-            {
-                "verify_result": false,
-                "src_anno": "19th Street",
-                "src_requested": "(obj66)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "d689e9d0-d091-35aa-9f2c-b1752d2bc90e",
-                "macro_uuid": "eff0ddbc-c018-388c-bc4c-74d68177efb6"
-            },
             {
                 "verify_result": true,
                 "src_anno": "19th Street East",
@@ -2226,23 +2918,19 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "d11a5f3f-afa0-39b6-bc16-30fe42553bb3",
                 "macro_uuid": "f1ba5fb1-7204-3c3a-9b4c-32b159c0ad4a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Refrigerator",
-                "src_requested": "(obj189)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "eabe806f-7c09-31c3-bf4c-7914f77f6748",
-                "macro_uuid": "da2fe3ae-689e-3dc9-b24a-fc524ab20e18"
             },
             {
                 "verify_result": false,
@@ -2254,7 +2942,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "e5734fad-a3c5-3c26-b786-625c56bdd794",
                 "macro_uuid": "14056229-f0c7-39c7-b0bb-795ce2aff49e"
             },
@@ -2268,23 +2976,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "a482c0d4-47e1-387e-b5a0-0ece2fb5663a",
                 "macro_uuid": "9c0ea058-cc5d-3b34-80db-e5450aefb7d7"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "19th Street East",
-                "src_requested": "(obj74)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "4baf69df-36b2-3d9c-8f88-2bbdde623bd8",
-                "macro_uuid": "aae79236-77ea-38db-9a34-a7beb7b56d68"
             },
             {
                 "verify_result": true,
@@ -2332,7 +3041,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj189)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Refrigerator",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "c98975ae-08ed-332f-8765-7da0b002acb2",
                 "macro_uuid": "019ead4d-1410-3930-9940-85364b5d78c3"
             },
@@ -2382,37 +3111,40 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "795ee5ee-551b-35f4-9add-ea5c4ddc8af7",
                 "macro_uuid": "feb3456c-b377-3d1e-b774-36829043c7c8"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Galley Kitchen",
-                "src_requested": "(obj119)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "84c02da2-7f82-3747-9ac5-f38c9f979a57",
-                "macro_uuid": "feefa787-4bfd-3c26-9e04-2e858e4cd370"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Lavatory",
-                "src_requested": "(obj148)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "51e0abc5-8f4e-38f5-a854-020c6cb37562",
-                "macro_uuid": "ef96dd07-f506-3c24-bf2d-a35477eef5f9"
             },
             {
                 "verify_result": false,
@@ -2424,7 +3156,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "05bfe1ba-140c-37c3-8e4f-6c309aa78d77",
                 "macro_uuid": "efba1841-3989-3fd6-b5b2-920a0c0ae4ab"
             },
@@ -2462,7 +3214,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "50214ae7-0c6c-3d88-b0bc-6ed9e6ebde53",
                 "macro_uuid": "eee5db76-35cb-32df-b3d4-097ca95d034e"
             },
@@ -2500,7 +3282,22 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "7f962ceb-4aed-3dfe-8f99-2c53312e14f2",
                 "macro_uuid": "e8afd705-5f21-3599-9fc0-60fb80e99991"
             },
@@ -2634,7 +3431,37 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "517a5d8a-dfc1-3a89-a689-754627f16d3f",
                 "macro_uuid": "1fd197d9-4351-375b-96f9-3eb93557404a"
             },
@@ -2648,37 +3475,35 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "19th Street East",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "81e6b2e8-a745-3fd6-8506-11e2fb7ee799",
                 "macro_uuid": "3d70b6e7-b221-37e9-b2cd-67b610c7563a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Winding Hall",
-                "src_requested": "(obj177)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "03adf218-236d-3ba9-bb9b-ee90a0ed1b07",
-                "macro_uuid": "94865c34-4bfe-31c6-92ca-06feb0523cfa"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar",
-                "src_requested": "(obj99)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f9d8b657-245b-3ed1-b6ad-de8c094e036f",
-                "macro_uuid": "3d07d6ca-6c51-3e9b-91ba-477ec920d0cd"
             },
             {
                 "verify_result": false,
@@ -2690,7 +3515,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "41b0035b-15aa-3256-9c12-be2060674043",
                 "macro_uuid": "f49c436e-85b9-3d7e-ab3e-4d9c05e80db1"
             },
@@ -2704,7 +3539,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "4f106f56-9d2d-3754-8686-c66f68ff8497",
                 "macro_uuid": "b120ba9c-2146-3d7c-8fc3-4ca301a740d1"
             },
@@ -2808,7 +3653,32 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "89f7c603-0574-3583-9d23-159303b644aa",
                 "macro_uuid": "656b1cf7-267e-3f45-9552-94e168df6468"
             },
@@ -2850,20 +3720,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Dish Room",
-                "src_requested": "(obj195)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "5e11cdc5-1f3a-3348-b53d-9d3658294710",
-                "macro_uuid": "f82c82d3-a935-33ac-85f7-732b608bb40a"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Lavatory",
                 "src_requested": "(obj148)",
                 "dst_anno": "Winding Hall",
@@ -2872,7 +3728,17 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "39090bc4-9494-3210-a822-c9ed39d0bb10",
                 "macro_uuid": "3cf52383-6a61-38af-864d-78669b0c7454"
             },
@@ -2910,23 +3776,44 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "b2806399-1fcb-33b8-97fc-c71531524ec7",
                 "macro_uuid": "86268cf9-4fac-3642-af19-a55468cd8a93"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dining Room",
-                "src_requested": "(obj81)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "02b27f01-6d38-3613-85c6-59b024010a96",
-                "macro_uuid": "d2802d67-25ae-36eb-bfae-ba5cd89da36a"
             },
             {
                 "verify_result": true,
@@ -2951,20 +3838,6 @@
                 ],
                 "micro_uuid": "ed053ea0-a74e-3a39-aace-b2333955171c",
                 "macro_uuid": "976e656e-26f9-329b-abc3-d56a02bfa789"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Crypt",
-                "src_requested": "(obj214)",
-                "dst_anno": "Nikolai's Office",
-                "dst_requested": "(obj129)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "acf6193a-7ad8-3956-a2f2-8ea554aacadc",
-                "macro_uuid": "2736d171-deb7-3cbe-bbca-562dcfe3cb9f"
             },
             {
                 "verify_result": true,
@@ -3024,7 +3897,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj119)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "7882427d-808b-3a39-b178-3e44acbc45dc",
                 "macro_uuid": "ce4329c3-9e88-3334-8006-eccbb77601a4"
             },
@@ -3038,7 +3921,27 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Dining Room",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "d962dae8-fa5d-35ee-8998-759de6213587",
                 "macro_uuid": "3580a0a2-3cf1-33a1-bba9-14cf4f48ead7"
             },
@@ -3082,7 +3985,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Lavatory",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "0adda01a-6cb4-33dd-acbb-0c27218ae76c",
                 "macro_uuid": "f04affa7-c8c9-3dd9-8cd8-d46672ae6dfa"
             },
@@ -3096,7 +4015,27 @@
                 "dist_shortest": 5,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "52badd94-9cc9-33b0-a746-340576c2199c",
                 "macro_uuid": "e485b164-1933-363a-bbc7-81c365d6f84b"
             },
@@ -3110,7 +4049,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Bar",
+                        "node": "Lavatory",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "431fcdee-2c1d-3fbe-9482-07e9262a933e",
                 "macro_uuid": "ad343606-325c-3582-b627-eb9512939a8a"
             },
@@ -3124,7 +4083,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj189)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Refrigerator",
+                        "node": "Winding Hall",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "53ec954d-14f8-3d62-b81f-bef19222027b",
                 "macro_uuid": "8b7979bf-9c7b-324f-8c84-bb52dde14e31"
             },
@@ -3192,7 +4166,17 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj74)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street East",
+                        "node": "Bar",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "35c97cfd-7e1b-3227-9f57-bc63dbc667be",
                 "macro_uuid": "4e472d1b-338c-3cdf-bda2-8be5b4776c37"
             },
@@ -3206,7 +4190,32 @@
                 "dist_shortest": 6,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj148)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Lavatory",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Winding Hall",
+                        "node": "Dish Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dish Room",
+                        "node": "Crypt",
+                        "action": "down"
+                    }
+                ],
                 "micro_uuid": "d18aae13-53c2-3080-a823-cf414adf6336",
                 "macro_uuid": "51c0b6b7-2965-3e9f-bf18-d1f679ed1b89"
             },
@@ -3220,7 +4229,22 @@
                 "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Galley Kitchen",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Refrigerator",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "bda8240b-d0be-3990-89a3-53f55ea0685a",
                 "macro_uuid": "b8fe39f3-0cee-387b-b847-d2c9eb80c12e"
             },
@@ -3234,7 +4258,17 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Bar",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "38f679a4-362c-367e-a252-4ad7d62b1869",
                 "macro_uuid": "aa1f6647-3aa4-3471-a89b-d3f4f9f79992"
             },
@@ -3248,13 +4282,38 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj99)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar",
+                        "node": "19th Street",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "19th Street",
+                        "node": "Dining Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Dining Room",
+                        "node": "Galley Kitchen",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Galley Kitchen",
+                        "node": "Winding Hall",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "58b4ec91-a27c-32c6-9fcf-e484bacfa489",
                 "macro_uuid": "020c53ee-29e3-3ceb-a76a-b03e2debf7a7"
             }
         ],
         "correct_num_macro": 19,
-        "total_num_macro": 55,
-        "accuracy_macro": 0.34545454545454546
+        "total_num_macro": 45,
+        "accuracy_macro": 0.4222222222222222
     }
 }

@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
         "correct_num": 20,
-        "total_num": 42,
-        "accuracy": 0.47619047619047616,
+        "total_num": 31,
+        "accuracy": 0.6451612903225806,
         "collection": {
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-17-58-52_014.json": {
                 "verify_result": true,
@@ -34,20 +34,6 @@
                 "micro_uuid": "c4fe9a35-96b7-3fb5-8915-b1b4eaa3bba9",
                 "macro_uuid": "a8ac81de-dc21-32dc-820f-064348d1a0ca"
             },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-02-32_967.json": {
-                "verify_result": false,
-                "src_anno": "Arcade corner (SW corner)",
-                "src_requested": "(obj97)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "314eb8ea-a81a-31d8-9d45-0eef1fd6d4df",
-                "macro_uuid": "31e6198d-2bd1-318c-b9cd-7bc682de8acd"
-            },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-00-31_264.json": {
                 "verify_result": false,
                 "src_anno": "Dark corner (SE corner)",
@@ -58,7 +44,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "27060e53-1ff0-314a-9247-ad8c8ad54d2d",
                 "macro_uuid": "fca16634-7e79-396c-8087-b2b0886da00c"
             },
@@ -132,23 +133,24 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj69)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "VIP lounge (NW corner)",
+                        "action": "northwest"
+                    }
+                ],
                 "micro_uuid": "52eaabd5-3341-34f9-b334-f07d6c5f1066",
                 "macro_uuid": "244bd03d-8c2e-3352-bc82-33efefbae67e"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-02-55_474.json": {
-                "verify_result": false,
-                "src_anno": "Artist hangout (NE corner)",
-                "src_requested": "(obj62)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "49782fce-e54f-3848-ba97-ef6bc7c124f4",
-                "macro_uuid": "47744cac-e710-3e66-9bc2-d5b8b52e64da"
             },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-01-22_129.json": {
                 "verify_result": true,
@@ -196,23 +198,24 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Entrance (southern side)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "9c7a0682-42c3-386b-b02a-98ac64338a05",
                 "macro_uuid": "f248e85d-1aec-310e-9bf6-d44630b4edf6"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-03-14_112.json": {
-                "verify_result": false,
-                "src_anno": "VIP lounge (NW corner)",
-                "src_requested": "(obj52)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "5eb9196b-6f62-3c69-ba1e-5b53161c4e4e",
-                "macro_uuid": "b3885af9-13e5-32b9-99f8-24b0a4f90678"
             },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-02-30_929.json": {
                 "verify_result": true,
@@ -243,34 +246,6 @@
                 ],
                 "micro_uuid": "0bddfde5-1776-3753-89b2-893591062173",
                 "macro_uuid": "f9d006c3-9b94-3ec9-814b-4906b47e1d7f"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-01-34_672.json": {
-                "verify_result": false,
-                "src_anno": "Dark corner (SE corner)",
-                "src_requested": "(obj107)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "35cc642e-b1b8-3801-86f4-27500837ea83",
-                "macro_uuid": "c34c6886-1536-3276-bc68-475cab8f1e66"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-17-59-32_038.json": {
-                "verify_result": false,
-                "src_anno": "on the stage",
-                "src_requested": "(obj58)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "662d28f6-295a-3c6c-adf2-1c690c65e595",
-                "macro_uuid": "d96533b5-2ff7-3b6b-89aa-3d799b7ce385"
             },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-00-15_431.json": {
                 "verify_result": true,
@@ -312,23 +287,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Artist hangout (NE corner)",
+                        "action": "northeast"
+                    }
+                ],
                 "micro_uuid": "53f2fbd7-b6e9-3f1b-aab8-826d181f433a",
                 "macro_uuid": "0f136ba4-dc01-3c47-b0f0-d889899c2222"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-03-11_063.json": {
-                "verify_result": false,
-                "src_anno": "Bar (western side)",
-                "src_requested": "(obj69)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "50ca1b0a-5fda-32b0-a2a5-278d15812167",
-                "macro_uuid": "532d7edf-9d9a-3b9d-9cdb-8e2ba083ed77"
             },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-01-53_743.json": {
                 "verify_result": true,
@@ -448,7 +424,22 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Entrance (southern side)",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "32598009-d83a-3f22-af92-44ccca3ce656",
                 "macro_uuid": "991f83d2-2725-3665-8787-dc51b7b46456"
             },
@@ -554,20 +545,6 @@
                 "micro_uuid": "06944a45-37b7-30b8-9eba-ddaf3d440310",
                 "macro_uuid": "f078b8bb-7fa4-35ce-9ee8-355509e40291"
             },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-00-15_105.json": {
-                "verify_result": false,
-                "src_anno": "Dance floor (center of the club)",
-                "src_requested": "(obj81)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "c7d9fa4b-f541-368f-ae32-7e5cdb2ebe0d",
-                "macro_uuid": "d4e671b9-5e6b-31d0-8081-d6cba0947293"
-            },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-17-59-17_103.json": {
                 "verify_result": true,
                 "src_anno": "on the stage",
@@ -632,7 +609,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "VIP lounge (NW corner)",
+                        "action": "northwest"
+                    }
+                ],
                 "micro_uuid": "019398f6-aa0f-3d38-8a0c-3b4124bb0656",
                 "macro_uuid": "62a64ac3-6bea-3d70-84ef-d0d57781dc53"
             },
@@ -646,23 +643,25 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Artist hangout (NE corner)",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "ab8cf7ba-a564-3cce-81a8-c5081b8b22f8",
                 "macro_uuid": "b45e13b6-bb40-3575-add8-e6ca104770e0"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-03-20_558.json": {
-                "verify_result": false,
-                "src_anno": "Bar (western side)",
-                "src_requested": "(obj69)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "e0a915db-6b2e-3153-aef0-b1b45e171149",
-                "macro_uuid": "532d7edf-9d9a-3b9d-9cdb-8e2ba083ed77"
             },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-00-53_527.json": {
                 "verify_result": true,
@@ -764,7 +763,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "288f2e5c-81ef-3730-80b5-1bdb56f5f11b",
                 "macro_uuid": "7e1990da-3d8c-325f-a014-8fb9705f4a1a"
             },
@@ -778,7 +792,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "on the stage",
+                        "node": "Dance floor (center of the club)",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "southwest",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "9830713f-780d-377b-b04b-21b12ff94fc3",
                 "macro_uuid": "e9bdb0c3-e1fe-3956-a3c4-7d478626a661"
             },
@@ -792,7 +822,23 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "southwest",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "1454c482-cd31-3374-a866-d74ec434f0ae",
                 "macro_uuid": "fc57f216-d5ca-37bd-9561-9fb1651135f2"
             },
@@ -832,20 +878,6 @@
                 "micro_uuid": "cfec6282-ed3c-3a27-b006-dd15763ef72f",
                 "macro_uuid": "4b777e34-ee3f-37d6-bb94-74c7168ec8e5"
             },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-03-15_262.json": {
-                "verify_result": false,
-                "src_anno": "VIP lounge (NW corner)",
-                "src_requested": "(obj52)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "631a304d-b93f-3269-a7f4-64ebad6537eb",
-                "macro_uuid": "b3885af9-13e5-32b9-99f8-24b0a4f90678"
-            },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-02-13_776.json": {
                 "verify_result": false,
                 "src_anno": "Arcade corner (SW corner)",
@@ -856,37 +888,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "1f8a38d3-369e-3791-bf1d-ac2a9455a917",
                 "macro_uuid": "20b5c8b2-7c59-3f9c-8526-9c180aee3817"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-01-14_773.json": {
-                "verify_result": false,
-                "src_anno": "Dark corner (SE corner)",
-                "src_requested": "(obj107)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3e87a252-2c93-3b4c-920a-f72523be9871",
-                "macro_uuid": "c34c6886-1536-3276-bc68-475cab8f1e66"
-            },
-            "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-18-01-56_456.json": {
-                "verify_result": false,
-                "src_anno": "Entrance (southern side)",
-                "src_requested": "(obj103)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "46091415-d9e5-3809-be7b-83d6f6ce1008",
-                "macro_uuid": "5319e39b-dda2-3c1f-954a-c8b0890c25f3"
             },
             "../gpt-games-results//yomomma/results//pathgen-gpt-4/results_2023-06-01-17-59-46_875.json": {
                 "verify_result": true,
@@ -947,20 +966,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Arcade corner (SW corner)",
-                "src_requested": "(obj97)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "314eb8ea-a81a-31d8-9d45-0eef1fd6d4df",
-                "macro_uuid": "31e6198d-2bd1-318c-b9cd-7bc682de8acd"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Dark corner (SE corner)",
                 "src_requested": "(obj107)",
                 "dst_anno": "Arcade corner (SW corner)",
@@ -969,7 +974,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "27060e53-1ff0-314a-9247-ad8c8ad54d2d",
                 "macro_uuid": "fca16634-7e79-396c-8087-b2b0886da00c"
             },
@@ -1043,23 +1063,24 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj69)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "VIP lounge (NW corner)",
+                        "action": "northwest"
+                    }
+                ],
                 "micro_uuid": "52eaabd5-3341-34f9-b334-f07d6c5f1066",
                 "macro_uuid": "244bd03d-8c2e-3352-bc82-33efefbae67e"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Artist hangout (NE corner)",
-                "src_requested": "(obj62)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "49782fce-e54f-3848-ba97-ef6bc7c124f4",
-                "macro_uuid": "47744cac-e710-3e66-9bc2-d5b8b52e64da"
             },
             {
                 "verify_result": true,
@@ -1107,23 +1128,24 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Entrance (southern side)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "9c7a0682-42c3-386b-b02a-98ac64338a05",
                 "macro_uuid": "f248e85d-1aec-310e-9bf6-d44630b4edf6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "VIP lounge (NW corner)",
-                "src_requested": "(obj52)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "5eb9196b-6f62-3c69-ba1e-5b53161c4e4e",
-                "macro_uuid": "b3885af9-13e5-32b9-99f8-24b0a4f90678"
             },
             {
                 "verify_result": true,
@@ -1154,34 +1176,6 @@
                 ],
                 "micro_uuid": "0bddfde5-1776-3753-89b2-893591062173",
                 "macro_uuid": "f9d006c3-9b94-3ec9-814b-4906b47e1d7f"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dark corner (SE corner)",
-                "src_requested": "(obj107)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "35cc642e-b1b8-3801-86f4-27500837ea83",
-                "macro_uuid": "c34c6886-1536-3276-bc68-475cab8f1e66"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "on the stage",
-                "src_requested": "(obj58)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "662d28f6-295a-3c6c-adf2-1c690c65e595",
-                "macro_uuid": "d96533b5-2ff7-3b6b-89aa-3d799b7ce385"
             },
             {
                 "verify_result": true,
@@ -1223,23 +1217,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Artist hangout (NE corner)",
+                        "action": "northeast"
+                    }
+                ],
                 "micro_uuid": "53f2fbd7-b6e9-3f1b-aab8-826d181f433a",
                 "macro_uuid": "0f136ba4-dc01-3c47-b0f0-d889899c2222"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar (western side)",
-                "src_requested": "(obj69)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "50ca1b0a-5fda-32b0-a2a5-278d15812167",
-                "macro_uuid": "532d7edf-9d9a-3b9d-9cdb-8e2ba083ed77"
             },
             {
                 "verify_result": true,
@@ -1359,7 +1354,22 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Entrance (southern side)",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "32598009-d83a-3f22-af92-44ccca3ce656",
                 "macro_uuid": "991f83d2-2725-3665-8787-dc51b7b46456"
             },
@@ -1466,20 +1476,6 @@
                 "macro_uuid": "f078b8bb-7fa4-35ce-9ee8-355509e40291"
             },
             {
-                "verify_result": false,
-                "src_anno": "Dance floor (center of the club)",
-                "src_requested": "(obj81)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "c7d9fa4b-f541-368f-ae32-7e5cdb2ebe0d",
-                "macro_uuid": "d4e671b9-5e6b-31d0-8081-d6cba0947293"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "on the stage",
                 "src_requested": "(obj58)",
@@ -1543,7 +1539,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "VIP lounge (NW corner)",
+                        "action": "northwest"
+                    }
+                ],
                 "micro_uuid": "019398f6-aa0f-3d38-8a0c-3b4124bb0656",
                 "macro_uuid": "62a64ac3-6bea-3d70-84ef-d0d57781dc53"
             },
@@ -1557,23 +1573,25 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Artist hangout (NE corner)",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
                 "micro_uuid": "ab8cf7ba-a564-3cce-81a8-c5081b8b22f8",
                 "macro_uuid": "b45e13b6-bb40-3575-add8-e6ca104770e0"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar (western side)",
-                "src_requested": "(obj69)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "e0a915db-6b2e-3153-aef0-b1b45e171149",
-                "macro_uuid": "532d7edf-9d9a-3b9d-9cdb-8e2ba083ed77"
             },
             {
                 "verify_result": true,
@@ -1675,7 +1693,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "288f2e5c-81ef-3730-80b5-1bdb56f5f11b",
                 "macro_uuid": "7e1990da-3d8c-325f-a014-8fb9705f4a1a"
             },
@@ -1689,7 +1722,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "on the stage",
+                        "node": "Dance floor (center of the club)",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "southwest",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "9830713f-780d-377b-b04b-21b12ff94fc3",
                 "macro_uuid": "e9bdb0c3-e1fe-3956-a3c4-7d478626a661"
             },
@@ -1703,7 +1752,23 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "southwest",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "1454c482-cd31-3374-a866-d74ec434f0ae",
                 "macro_uuid": "fc57f216-d5ca-37bd-9561-9fb1651135f2"
             },
@@ -1745,20 +1810,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "VIP lounge (NW corner)",
-                "src_requested": "(obj52)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "631a304d-b93f-3269-a7f4-64ebad6537eb",
-                "macro_uuid": "b3885af9-13e5-32b9-99f8-24b0a4f90678"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Arcade corner (SW corner)",
                 "src_requested": "(obj97)",
                 "dst_anno": "Bar (western side)",
@@ -1767,37 +1818,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "1f8a38d3-369e-3791-bf1d-ac2a9455a917",
                 "macro_uuid": "20b5c8b2-7c59-3f9c-8526-9c180aee3817"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dark corner (SE corner)",
-                "src_requested": "(obj107)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "3e87a252-2c93-3b4c-920a-f72523be9871",
-                "macro_uuid": "c34c6886-1536-3276-bc68-475cab8f1e66"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Entrance (southern side)",
-                "src_requested": "(obj103)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "46091415-d9e5-3809-be7b-83d6f6ce1008",
-                "macro_uuid": "5319e39b-dda2-3c1f-954a-c8b0890c25f3"
             },
             {
                 "verify_result": true,
@@ -1825,8 +1863,8 @@
             }
         ],
         "correct_num_micro": 20,
-        "total_num_micro": 42,
-        "accuracy_micro": 0.47619047619047616,
+        "total_num_micro": 31,
+        "accuracy_micro": 0.6451612903225806,
         "collection_macro": [
             {
                 "verify_result": true,
@@ -1860,20 +1898,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Arcade corner (SW corner)",
-                "src_requested": "(obj97)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "314eb8ea-a81a-31d8-9d45-0eef1fd6d4df",
-                "macro_uuid": "31e6198d-2bd1-318c-b9cd-7bc682de8acd"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Dark corner (SE corner)",
                 "src_requested": "(obj107)",
                 "dst_anno": "Arcade corner (SW corner)",
@@ -1882,7 +1906,22 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "27060e53-1ff0-314a-9247-ad8c8ad54d2d",
                 "macro_uuid": "fca16634-7e79-396c-8087-b2b0886da00c"
             },
@@ -1956,23 +1995,24 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj69)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "VIP lounge (NW corner)",
+                        "action": "northwest"
+                    }
+                ],
                 "micro_uuid": "52eaabd5-3341-34f9-b334-f07d6c5f1066",
                 "macro_uuid": "244bd03d-8c2e-3352-bc82-33efefbae67e"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Artist hangout (NE corner)",
-                "src_requested": "(obj62)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "49782fce-e54f-3848-ba97-ef6bc7c124f4",
-                "macro_uuid": "47744cac-e710-3e66-9bc2-d5b8b52e64da"
             },
             {
                 "verify_result": true,
@@ -2020,23 +2060,24 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Entrance (southern side)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "west"
+                    }
+                ],
                 "micro_uuid": "9c7a0682-42c3-386b-b02a-98ac64338a05",
                 "macro_uuid": "f248e85d-1aec-310e-9bf6-d44630b4edf6"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "VIP lounge (NW corner)",
-                "src_requested": "(obj52)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "5eb9196b-6f62-3c69-ba1e-5b53161c4e4e",
-                "macro_uuid": "b3885af9-13e5-32b9-99f8-24b0a4f90678"
             },
             {
                 "verify_result": true,
@@ -2067,34 +2108,6 @@
                 ],
                 "micro_uuid": "0bddfde5-1776-3753-89b2-893591062173",
                 "macro_uuid": "f9d006c3-9b94-3ec9-814b-4906b47e1d7f"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Dark corner (SE corner)",
-                "src_requested": "(obj107)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "35cc642e-b1b8-3801-86f4-27500837ea83",
-                "macro_uuid": "c34c6886-1536-3276-bc68-475cab8f1e66"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "on the stage",
-                "src_requested": "(obj58)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "662d28f6-295a-3c6c-adf2-1c690c65e595",
-                "macro_uuid": "d96533b5-2ff7-3b6b-89aa-3d799b7ce385"
             },
             {
                 "verify_result": true,
@@ -2136,23 +2149,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Artist hangout (NE corner)",
+                        "action": "northeast"
+                    }
+                ],
                 "micro_uuid": "53f2fbd7-b6e9-3f1b-aab8-826d181f433a",
                 "macro_uuid": "0f136ba4-dc01-3c47-b0f0-d889899c2222"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Bar (western side)",
-                "src_requested": "(obj69)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "50ca1b0a-5fda-32b0-a2a5-278d15812167",
-                "macro_uuid": "532d7edf-9d9a-3b9d-9cdb-8e2ba083ed77"
             },
             {
                 "verify_result": true,
@@ -2272,7 +2286,22 @@
                 "dist_shortest": 1,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Dark corner (SE corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Entrance (southern side)",
+                        "action": "south"
+                    }
+                ],
                 "micro_uuid": "32598009-d83a-3f22-af92-44ccca3ce656",
                 "macro_uuid": "991f83d2-2725-3665-8787-dc51b7b46456"
             },
@@ -2343,20 +2372,6 @@
                 "macro_uuid": "b378a3b1-8534-352f-8c63-e2241b44fff1"
             },
             {
-                "verify_result": false,
-                "src_anno": "Dance floor (center of the club)",
-                "src_requested": "(obj81)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "c7d9fa4b-f541-368f-ae32-7e5cdb2ebe0d",
-                "macro_uuid": "d4e671b9-5e6b-31d0-8081-d6cba0947293"
-            },
-            {
                 "verify_result": true,
                 "src_anno": "on the stage",
                 "src_requested": "(obj58)",
@@ -2420,7 +2435,27 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "VIP lounge (NW corner)",
+                        "action": "northwest"
+                    }
+                ],
                 "micro_uuid": "019398f6-aa0f-3d38-8a0c-3b4124bb0656",
                 "macro_uuid": "62a64ac3-6bea-3d70-84ef-d0d57781dc53"
             },
@@ -2524,7 +2559,23 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj81)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "on the stage",
+                        "node": "Dance floor (center of the club)",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "southwest",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "9830713f-780d-377b-b04b-21b12ff94fc3",
                 "macro_uuid": "e9bdb0c3-e1fe-3956-a3c4-7d478626a661"
             },
@@ -2538,7 +2589,23 @@
                 "dist_shortest": 2,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bar (western side)",
+                        "node": "Arcade corner (SW corner)",
+                        "action": "southwest",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
                 "micro_uuid": "1454c482-cd31-3374-a866-d74ec434f0ae",
                 "macro_uuid": "fc57f216-d5ca-37bd-9561-9fb1651135f2"
             },
@@ -2588,23 +2655,24 @@
                 "dist_shortest": 3,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj97)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Arcade corner (SW corner)",
+                        "node": "Dance floor (center of the club)",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Dance floor (center of the club)",
+                        "node": "Bar (western side)",
+                        "action": "north"
+                    }
+                ],
                 "micro_uuid": "1f8a38d3-369e-3791-bf1d-ac2a9455a917",
                 "macro_uuid": "20b5c8b2-7c59-3f9c-8526-9c180aee3817"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Entrance (southern side)",
-                "src_requested": "(obj103)",
-                "dst_anno": "Hall of Fame (eastern side)",
-                "dst_requested": "(obj83)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "46091415-d9e5-3809-be7b-83d6f6ce1008",
-                "macro_uuid": "5319e39b-dda2-3c1f-954a-c8b0890c25f3"
             },
             {
                 "verify_result": true,
@@ -2632,7 +2700,7 @@
             }
         ],
         "correct_num_macro": 19,
-        "total_num_macro": 36,
-        "accuracy_macro": 0.5277777777777778
+        "total_num_macro": 28,
+        "accuracy_macro": 0.6785714285714286
     }
 }
