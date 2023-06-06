@@ -1,0 +1,1514 @@
+{
+    "path_gen_llama": {
+        "correct_num": 0,
+        "total_num": 15,
+        "accuracy": 0.0,
+        "collection": {
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_17.json": {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "east-west passage (obj79)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7512b8a8-245b-320e-938e-6b8fc99c1b0e",
+                "macro_uuid": "40e17e33-1ce6-3411-ba8d-e3ed2f4346d1"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_18.json": {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Cool Cavern"
+                    }
+                ],
+                "micro_uuid": "d4fa783f-fe33-3064-aa5c-eb13d8d7cfcb",
+                "macro_uuid": "5eca0f2b-fce0-3ef9-8c88-43b618081b0b"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_45.json": {
+                "verify_result": false,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "fifth layer dropoff (obj44)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "examine gaping",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "throw book at outcrop",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit"
+                    }
+                ],
+                "micro_uuid": "7007abac-e434-385f-b465-f7f5739fc77b",
+                "macro_uuid": "530200a4-2e05-35b8-8da3-010151a6d01e"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_33.json": {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "9602e460-696f-33bd-a1e5-9ab04dc81478",
+                "macro_uuid": "99bc0577-359e-346a-a045-8bbcb3fd11ff"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_46.json": {
+                "verify_result": false,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "71758fd8-9926-3e03-86d0-30e78cc6edfa",
+                "macro_uuid": "8961845e-8817-38f2-8414-5d6f556017e2"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_0.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Cool Cavern",
+                "dst_requested": "cool cavern (obj32)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "da89917b-e04b-38b6-b9c5-dd1279476680",
+                "macro_uuid": "b08db69c-0b35-3812-afb2-96ddb657b17d"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_58.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer Dropoff",
+                "src_requested": "fifth layer dropoff (obj44)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "fifth layer dropoff (obj44)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "up",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "d2fb2a22-88a8-39f9-99a7-9e90f0ed37d1",
+                "macro_uuid": "2eac8951-17e4-3c0b-a81e-3fa6e93fed42"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_1.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "55a561af-3d9b-32ec-ae3f-74e8b6642a54",
+                "macro_uuid": "2746ddc3-b329-392f-8e30-109b95ed52b6"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_19.json": {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "ae57fb66-ef33-3780-b9c7-ef8c2c4258da",
+                "macro_uuid": "f0de7523-753e-3b5d-b74f-99e4d30031c2"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_32.json": {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "79807a55-64c2-36d8-b77d-eaa07bc6b523",
+                "macro_uuid": "5f52f334-e62a-36b8-a124-e2570afa57c0"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_31.json": {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer of the Earth's Crust"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer of the Earth's Crust",
+                        "node": "Minorized Corridor"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Minorized Corridor",
+                        "node": "Cool Cavern"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "a0599a57-77e6-3f61-be64-9dfc5ec8e1a2",
+                "macro_uuid": "3abcbb50-8d3c-3350-b1a7-70fdaf02bdf6"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_2.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
+                "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_3.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "88f56212-8d9b-318a-b3a8-91442c639780",
+                "macro_uuid": "febba0f1-59bd-3276-bb0c-373dce344287"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_4.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "b55203fd-3d8d-3ef1-86cb-26a15dda9055",
+                "macro_uuid": "2e89c937-6dca-3990-9214-d37e097343a0"
+            },
+            "../mango-inhouse-llms/llama/jewel/results//path_gen_llama/pathgen_results_16.json": {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "cool cavern (obj32)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
+                "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
+            }
+        },
+        "random_guess_rate": 3.023381529181432e-06,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "east-west passage (obj79)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7512b8a8-245b-320e-938e-6b8fc99c1b0e",
+                "macro_uuid": "40e17e33-1ce6-3411-ba8d-e3ed2f4346d1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Cool Cavern"
+                    }
+                ],
+                "micro_uuid": "d4fa783f-fe33-3064-aa5c-eb13d8d7cfcb",
+                "macro_uuid": "5eca0f2b-fce0-3ef9-8c88-43b618081b0b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "fifth layer dropoff (obj44)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "examine gaping",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "throw book at outcrop",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit"
+                    }
+                ],
+                "micro_uuid": "7007abac-e434-385f-b465-f7f5739fc77b",
+                "macro_uuid": "530200a4-2e05-35b8-8da3-010151a6d01e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "9602e460-696f-33bd-a1e5-9ab04dc81478",
+                "macro_uuid": "99bc0577-359e-346a-a045-8bbcb3fd11ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "71758fd8-9926-3e03-86d0-30e78cc6edfa",
+                "macro_uuid": "8961845e-8817-38f2-8414-5d6f556017e2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Cool Cavern",
+                "dst_requested": "cool cavern (obj32)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "da89917b-e04b-38b6-b9c5-dd1279476680",
+                "macro_uuid": "b08db69c-0b35-3812-afb2-96ddb657b17d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer Dropoff",
+                "src_requested": "fifth layer dropoff (obj44)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "fifth layer dropoff (obj44)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "up",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "d2fb2a22-88a8-39f9-99a7-9e90f0ed37d1",
+                "macro_uuid": "2eac8951-17e4-3c0b-a81e-3fa6e93fed42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "55a561af-3d9b-32ec-ae3f-74e8b6642a54",
+                "macro_uuid": "2746ddc3-b329-392f-8e30-109b95ed52b6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "ae57fb66-ef33-3780-b9c7-ef8c2c4258da",
+                "macro_uuid": "f0de7523-753e-3b5d-b74f-99e4d30031c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "79807a55-64c2-36d8-b77d-eaa07bc6b523",
+                "macro_uuid": "5f52f334-e62a-36b8-a124-e2570afa57c0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer of the Earth's Crust"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer of the Earth's Crust",
+                        "node": "Minorized Corridor"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Minorized Corridor",
+                        "node": "Cool Cavern"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "a0599a57-77e6-3f61-be64-9dfc5ec8e1a2",
+                "macro_uuid": "3abcbb50-8d3c-3350-b1a7-70fdaf02bdf6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
+                "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "88f56212-8d9b-318a-b3a8-91442c639780",
+                "macro_uuid": "febba0f1-59bd-3276-bb0c-373dce344287"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "b55203fd-3d8d-3ef1-86cb-26a15dda9055",
+                "macro_uuid": "2e89c937-6dca-3990-9214-d37e097343a0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "cool cavern (obj32)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
+                "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "east-west passage (obj79)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7512b8a8-245b-320e-938e-6b8fc99c1b0e",
+                "macro_uuid": "40e17e33-1ce6-3411-ba8d-e3ed2f4346d1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Cool Cavern"
+                    }
+                ],
+                "micro_uuid": "d4fa783f-fe33-3064-aa5c-eb13d8d7cfcb",
+                "macro_uuid": "5eca0f2b-fce0-3ef9-8c88-43b618081b0b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "fifth layer dropoff (obj44)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "examine gaping",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "throw book at outcrop",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit"
+                    }
+                ],
+                "micro_uuid": "7007abac-e434-385f-b465-f7f5739fc77b",
+                "macro_uuid": "530200a4-2e05-35b8-8da3-010151a6d01e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "9602e460-696f-33bd-a1e5-9ab04dc81478",
+                "macro_uuid": "99bc0577-359e-346a-a045-8bbcb3fd11ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Fifth Layer Dropoff",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "71758fd8-9926-3e03-86d0-30e78cc6edfa",
+                "macro_uuid": "8961845e-8817-38f2-8414-5d6f556017e2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Cool Cavern",
+                "dst_requested": "cool cavern (obj32)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "da89917b-e04b-38b6-b9c5-dd1279476680",
+                "macro_uuid": "b08db69c-0b35-3812-afb2-96ddb657b17d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer Dropoff",
+                "src_requested": "fifth layer dropoff (obj44)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "fifth layer dropoff (obj44)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "up",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "d2fb2a22-88a8-39f9-99a7-9e90f0ed37d1",
+                "macro_uuid": "2eac8951-17e4-3c0b-a81e-3fa6e93fed42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "55a561af-3d9b-32ec-ae3f-74e8b6642a54",
+                "macro_uuid": "2746ddc3-b329-392f-8e30-109b95ed52b6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "ae57fb66-ef33-3780-b9c7-ef8c2c4258da",
+                "macro_uuid": "f0de7523-753e-3b5d-b74f-99e4d30031c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer Dropoff"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer Dropoff",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "79807a55-64c2-36d8-b77d-eaa07bc6b523",
+                "macro_uuid": "5f52f334-e62a-36b8-a124-e2570afa57c0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "mineralized corridor (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Tight Fit",
+                        "node": "Fifth Layer of the Earth's Crust"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Fifth Layer of the Earth's Crust",
+                        "node": "Minorized Corridor"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Minorized Corridor",
+                        "node": "Cool Cavern"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Cool Cavern",
+                        "node": "East-West Passage"
+                    }
+                ],
+                "micro_uuid": "a0599a57-77e6-3f61-be64-9dfc5ec8e1a2",
+                "macro_uuid": "3abcbb50-8d3c-3350-b1a7-70fdaf02bdf6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
+                "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "88f56212-8d9b-318a-b3a8-91442c639780",
+                "macro_uuid": "febba0f1-59bd-3276-bb0c-373dce344287"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "b55203fd-3d8d-3ef1-86cb-26a15dda9055",
+                "macro_uuid": "2e89c937-6dca-3990-9214-d37e097343a0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "cool cavern (obj32)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Cool Cavern",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Tight Fit",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Tight Fit",
+                        "node": "Mineralized Corridor",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "southeast",
+                        "prev_node": "Mineralized Corridor",
+                        "node": "Cool Cavern",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
+                "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.0
+    }
+}

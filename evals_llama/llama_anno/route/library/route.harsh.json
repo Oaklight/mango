@@ -1,0 +1,2018 @@
+{
+    "path_gen_llama_anno": {
+        "correct_num": 0,
+        "total_num": 21,
+        "accuracy": 0.0,
+        "collection": {
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_3.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Computer Lab",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Lobby"
+                    }
+                ],
+                "micro_uuid": "58b6dd02-b124-3c62-a892-ac954066f8d2",
+                "macro_uuid": "323ab8e8-32b1-3402-8fc4-736a60573ea8"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_9.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stacks",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "dc5dfce9-52d5-3dbb-94e2-73ab0aec1eb9",
+                "macro_uuid": "e159d84e-8f4b-3ad4-af69-c6601c9d7216"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_6.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "87e60a93-658d-3cec-8c13-734a86dfb345",
+                "macro_uuid": "62254ef6-0594-3a7c-9ca4-b020d54f8f7f"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_16.json": {
+                "verify_result": false,
+                "src_anno": "Second Floor Stacks",
+                "src_requested": "second floor stacks (obj54)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "second floor stacks (obj54)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "eeeed1e6-ee91-3fb5-ad53-bf3cba87139e",
+                "macro_uuid": "ad79a0f8-ab25-3171-97df-0144fd544faf"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_18.json": {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "d995aa50-3e77-3358-aa70-2567fa4092ce",
+                "macro_uuid": "efcc5251-66c0-33c6-a34c-ccb849a3143b"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_14.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "b4636e4e-1809-3eb9-87ca-12cdbc51615c",
+                "macro_uuid": "7202c081-4e9a-380a-a176-5275341d9917"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_12.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "de101b9a-1324-313a-8f8d-a1f2651e4773",
+                "macro_uuid": "a65e430b-c0fe-37d1-a534-a20f03789d7c"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_1.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Ground Floor Stairwell",
+                "dst_requested": "ground floor stairwell (obj47)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Computer Lab",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Lobby"
+                    }
+                ],
+                "micro_uuid": "52b0eebd-59b5-3d17-8d91-7e133711265e",
+                "macro_uuid": "b1174d01-71ae-30b6-9ccf-5b4b3c338d34"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_7.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "e73669e1-c4e0-38a7-8d08-adec127b831e",
+                "macro_uuid": "aa2c0c64-d83e-3e87-90d1-8bd790f1e79f"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_8.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "1bcaa0b5-a0cf-339f-8a0f-1e21703270e8",
+                "macro_uuid": "42b152cc-2605-384f-a402-bd6dc9e5f4cc"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_15.json": {
+                "verify_result": false,
+                "src_anno": "Rare Books Room",
+                "src_requested": "rare books room (obj69)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "cf61fc9f-2408-3c10-be55-80e742183b26",
+                "macro_uuid": "bb023a3f-7bb2-303a-9127-6645f922ada3"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_5.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "6dde609b-05b4-3b2c-b154-c0bc4dd0fb92",
+                "macro_uuid": "5998ae6d-6265-3097-8bea-97b90b2dd36e"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_2.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "c6596ca0-2904-38a8-b08d-47abf92669ae",
+                "macro_uuid": "bfe9503e-3d28-3c2c-9a08-4def1e9abdf3"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_20.json": {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "second floor stairwell (obj51)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "bab2a4bd-cea1-32df-8999-048c88ad8ae0",
+                "macro_uuid": "eabac8be-85d1-3e60-96c9-c7347804a74a"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_11.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stairwell",
+                "dst_requested": "ground floor stairwell (obj47)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8b9d745b-35dc-3f19-8f46-9446e279b8da",
+                "macro_uuid": "53a30e82-d5ae-3355-aef4-c18444b3b592"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_17.json": {
+                "verify_result": false,
+                "src_anno": "Second Floor Stacks",
+                "src_requested": "second floor stacks (obj54)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "second floor stacks (obj54)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Ground Floor Stacks",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    }
+                ],
+                "micro_uuid": "079ae979-3f5d-369e-ac7e-21a3e3cba159",
+                "macro_uuid": "e44d6387-75c6-3f3c-b974-84f2a164830c"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_10.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stacks",
+                "dst_requested": "ground floor stacks (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    }
+                ],
+                "micro_uuid": "611f7a4f-2fa9-31b5-8aba-a77603e3f24f",
+                "macro_uuid": "cdb0a18c-9650-3c6c-8e43-8327068609a8"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_0.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "18b8c682-2870-3280-ad79-6f41254eb3af",
+                "macro_uuid": "dcd85c9b-1638-3c67-a299-22f4cc86102e"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_4.json": {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "5363cdf5-d23a-3149-a459-bb1dd1f1ab33",
+                "macro_uuid": "832ac955-bf8e-3eb1-b8f6-8a249dec8274"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_13.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "d8a9ca05-672c-31a8-ae9a-c504175e9ff8",
+                "macro_uuid": "24cf0b8e-e681-30de-8f15-f5e4f27f40d2"
+            },
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_19.json": {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    }
+                ],
+                "micro_uuid": "e17d345b-1760-3ed0-86dc-4312f63d52d5",
+                "macro_uuid": "2534ff7d-2aa9-37d1-8657-1449f6eb01ef"
+            }
+        },
+        "random_guess_rate": 0.005804665191941204,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Computer Lab",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Lobby"
+                    }
+                ],
+                "micro_uuid": "58b6dd02-b124-3c62-a892-ac954066f8d2",
+                "macro_uuid": "323ab8e8-32b1-3402-8fc4-736a60573ea8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stacks",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "dc5dfce9-52d5-3dbb-94e2-73ab0aec1eb9",
+                "macro_uuid": "e159d84e-8f4b-3ad4-af69-c6601c9d7216"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "87e60a93-658d-3cec-8c13-734a86dfb345",
+                "macro_uuid": "62254ef6-0594-3a7c-9ca4-b020d54f8f7f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stacks",
+                "src_requested": "second floor stacks (obj54)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "second floor stacks (obj54)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "eeeed1e6-ee91-3fb5-ad53-bf3cba87139e",
+                "macro_uuid": "ad79a0f8-ab25-3171-97df-0144fd544faf"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "d995aa50-3e77-3358-aa70-2567fa4092ce",
+                "macro_uuid": "efcc5251-66c0-33c6-a34c-ccb849a3143b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "b4636e4e-1809-3eb9-87ca-12cdbc51615c",
+                "macro_uuid": "7202c081-4e9a-380a-a176-5275341d9917"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "de101b9a-1324-313a-8f8d-a1f2651e4773",
+                "macro_uuid": "a65e430b-c0fe-37d1-a534-a20f03789d7c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Ground Floor Stairwell",
+                "dst_requested": "ground floor stairwell (obj47)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Computer Lab",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Lobby"
+                    }
+                ],
+                "micro_uuid": "52b0eebd-59b5-3d17-8d91-7e133711265e",
+                "macro_uuid": "b1174d01-71ae-30b6-9ccf-5b4b3c338d34"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "e73669e1-c4e0-38a7-8d08-adec127b831e",
+                "macro_uuid": "aa2c0c64-d83e-3e87-90d1-8bd790f1e79f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "1bcaa0b5-a0cf-339f-8a0f-1e21703270e8",
+                "macro_uuid": "42b152cc-2605-384f-a402-bd6dc9e5f4cc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Rare Books Room",
+                "src_requested": "rare books room (obj69)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "cf61fc9f-2408-3c10-be55-80e742183b26",
+                "macro_uuid": "bb023a3f-7bb2-303a-9127-6645f922ada3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "6dde609b-05b4-3b2c-b154-c0bc4dd0fb92",
+                "macro_uuid": "5998ae6d-6265-3097-8bea-97b90b2dd36e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "c6596ca0-2904-38a8-b08d-47abf92669ae",
+                "macro_uuid": "bfe9503e-3d28-3c2c-9a08-4def1e9abdf3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "second floor stairwell (obj51)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "bab2a4bd-cea1-32df-8999-048c88ad8ae0",
+                "macro_uuid": "eabac8be-85d1-3e60-96c9-c7347804a74a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stairwell",
+                "dst_requested": "ground floor stairwell (obj47)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8b9d745b-35dc-3f19-8f46-9446e279b8da",
+                "macro_uuid": "53a30e82-d5ae-3355-aef4-c18444b3b592"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stacks",
+                "src_requested": "second floor stacks (obj54)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "second floor stacks (obj54)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Ground Floor Stacks",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    }
+                ],
+                "micro_uuid": "079ae979-3f5d-369e-ac7e-21a3e3cba159",
+                "macro_uuid": "e44d6387-75c6-3f3c-b974-84f2a164830c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stacks",
+                "dst_requested": "ground floor stacks (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    }
+                ],
+                "micro_uuid": "611f7a4f-2fa9-31b5-8aba-a77603e3f24f",
+                "macro_uuid": "cdb0a18c-9650-3c6c-8e43-8327068609a8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "18b8c682-2870-3280-ad79-6f41254eb3af",
+                "macro_uuid": "dcd85c9b-1638-3c67-a299-22f4cc86102e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "5363cdf5-d23a-3149-a459-bb1dd1f1ab33",
+                "macro_uuid": "832ac955-bf8e-3eb1-b8f6-8a249dec8274"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "d8a9ca05-672c-31a8-ae9a-c504175e9ff8",
+                "macro_uuid": "24cf0b8e-e681-30de-8f15-f5e4f27f40d2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    }
+                ],
+                "micro_uuid": "e17d345b-1760-3ed0-86dc-4312f63d52d5",
+                "macro_uuid": "2534ff7d-2aa9-37d1-8657-1449f6eb01ef"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 21,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Computer Lab",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Lobby"
+                    }
+                ],
+                "micro_uuid": "58b6dd02-b124-3c62-a892-ac954066f8d2",
+                "macro_uuid": "323ab8e8-32b1-3402-8fc4-736a60573ea8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stacks",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "dc5dfce9-52d5-3dbb-94e2-73ab0aec1eb9",
+                "macro_uuid": "e159d84e-8f4b-3ad4-af69-c6601c9d7216"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "87e60a93-658d-3cec-8c13-734a86dfb345",
+                "macro_uuid": "62254ef6-0594-3a7c-9ca4-b020d54f8f7f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stacks",
+                "src_requested": "second floor stacks (obj54)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "second floor stacks (obj54)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "eeeed1e6-ee91-3fb5-ad53-bf3cba87139e",
+                "macro_uuid": "ad79a0f8-ab25-3171-97df-0144fd544faf"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    }
+                ],
+                "micro_uuid": "d995aa50-3e77-3358-aa70-2567fa4092ce",
+                "macro_uuid": "efcc5251-66c0-33c6-a34c-ccb849a3143b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "b4636e4e-1809-3eb9-87ca-12cdbc51615c",
+                "macro_uuid": "7202c081-4e9a-380a-a176-5275341d9917"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "de101b9a-1324-313a-8f8d-a1f2651e4773",
+                "macro_uuid": "a65e430b-c0fe-37d1-a534-a20f03789d7c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Ground Floor Stairwell",
+                "dst_requested": "ground floor stairwell (obj47)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Rare Books Room",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Computer Lab"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Computer Lab",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Lobby"
+                    }
+                ],
+                "micro_uuid": "52b0eebd-59b5-3d17-8d91-7e133711265e",
+                "macro_uuid": "b1174d01-71ae-30b6-9ccf-5b4b3c338d34"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "e73669e1-c4e0-38a7-8d08-adec127b831e",
+                "macro_uuid": "aa2c0c64-d83e-3e87-90d1-8bd790f1e79f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "1bcaa0b5-a0cf-339f-8a0f-1e21703270e8",
+                "macro_uuid": "42b152cc-2605-384f-a402-bd6dc9e5f4cc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Rare Books Room",
+                "src_requested": "rare books room (obj69)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "cf61fc9f-2408-3c10-be55-80e742183b26",
+                "macro_uuid": "bb023a3f-7bb2-303a-9127-6645f922ada3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stairwell",
+                "src_requested": "ground floor stairwell (obj47)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "6dde609b-05b4-3b2c-b154-c0bc4dd0fb92",
+                "macro_uuid": "5998ae6d-6265-3097-8bea-97b90b2dd36e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "c6596ca0-2904-38a8-b08d-47abf92669ae",
+                "macro_uuid": "bfe9503e-3d28-3c2c-9a08-4def1e9abdf3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "second floor stairwell (obj51)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "bab2a4bd-cea1-32df-8999-048c88ad8ae0",
+                "macro_uuid": "eabac8be-85d1-3e60-96c9-c7347804a74a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stairwell",
+                "dst_requested": "ground floor stairwell (obj47)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8b9d745b-35dc-3f19-8f46-9446e279b8da",
+                "macro_uuid": "53a30e82-d5ae-3355-aef4-c18444b3b592"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stacks",
+                "src_requested": "second floor stacks (obj54)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "second floor stacks (obj54)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Ground Floor Stacks",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Ground Floor Stairwell"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Second Floor Stairwell"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    }
+                ],
+                "micro_uuid": "079ae979-3f5d-369e-ac7e-21a3e3cba159",
+                "macro_uuid": "e44d6387-75c6-3f3c-b974-84f2a164830c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stacks",
+                "dst_requested": "ground floor stacks (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    }
+                ],
+                "micro_uuid": "611f7a4f-2fa9-31b5-8aba-a77603e3f24f",
+                "macro_uuid": "cdb0a18c-9650-3c6c-8e43-8327068609a8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Computer Lab",
+                "dst_requested": "computer lab (obj61)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "18b8c682-2870-3280-ad79-6f41254eb3af",
+                "macro_uuid": "dcd85c9b-1638-3c67-a299-22f4cc86102e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ground Floor Stacks",
+                "src_requested": "ground floor stacks (obj35)",
+                "dst_anno": "Second Floor Stairwell",
+                "dst_requested": "second floor stairwell (obj51)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "5363cdf5-d23a-3149-a459-bb1dd1f1ab33",
+                "macro_uuid": "832ac955-bf8e-3eb1-b8f6-8a249dec8274"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Second Floor Stacks",
+                "dst_requested": "second floor stacks (obj54)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "d8a9ca05-672c-31a8-ae9a-c504175e9ff8",
+                "macro_uuid": "24cf0b8e-e681-30de-8f15-f5e4f27f40d2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor Stairwell",
+                "src_requested": "second floor stairwell (obj51)",
+                "dst_anno": "Rare Books Room",
+                "dst_requested": "rare books room (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "ground floor stacks (obj35)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Ground Floor Stacks",
+                        "node": "Second Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "up",
+                        "prev_node": "Second Floor Stairwell",
+                        "node": "Second Floor Stacks"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Second Floor Stacks",
+                        "node": "Rare Books Room"
+                    }
+                ],
+                "micro_uuid": "e17d345b-1760-3ed0-86dc-4312f63d52d5",
+                "macro_uuid": "2534ff7d-2aa9-37d1-8657-1449f6eb01ef"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 21,
+        "accuracy_macro": 0.0
+    }
+}

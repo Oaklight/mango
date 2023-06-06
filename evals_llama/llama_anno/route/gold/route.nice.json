@@ -1,0 +1,2636 @@
+{
+    "path_gen_llama_anno": {
+        "correct_num": 5,
+        "total_num": 55,
+        "accuracy": 0.09090909090909091,
+        "collection": {
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_3.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the porch (obj108)",
+                "micro_uuid": "d8feffe8-aa01-3d77-a861-ba58db641daa",
+                "macro_uuid": "5c328a4c-c3cc-39c5-86f7-0d31daeb896a"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_9.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the kitchen (obj39)",
+                "micro_uuid": "e51cd3a0-29bb-309f-af78-de3f4cde8d12",
+                "macro_uuid": "5c5bd73d-794a-3c02-8ea9-b6f43c051870"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_77.json": {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), at the top of the beanstalk (obj167)",
+                "micro_uuid": "3bb09665-c0a4-3b0d-b872-3e7db6e9d877",
+                "macro_uuid": "98fdf769-366e-36f4-9057-3781a10b7e46"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_6.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney",
+                    "in",
+                    "north",
+                    "east",
+                    "north",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the potting shed (obj169)",
+                "micro_uuid": "e6c68278-d9d2-3c40-b98f-7b5e4e1e5541",
+                "macro_uuid": "e9dc64a8-446e-39e1-9dac-2e9e121860ac"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_84.json": {
+                "verify_result": false,
+                "src_anno": "At the top of the beanstalk",
+                "src_requested": "at the top of the beanstalk (obj167)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "wrong path, fail to arrive at dst: at the top of the beanstalk (obj167), on the roof (obj127)",
+                "micro_uuid": "088b3dbe-5f3f-37fc-89ab-15f975037cf5",
+                "macro_uuid": "6219ec4c-d5de-361b-a91c-a547c34ad45c"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_90.json": {
+                "verify_result": true,
+                "src_anno": "On the roof",
+                "src_requested": "on the roof (obj127)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "da9ed1f2-cc79-3119-acd3-1e7031db436f",
+                "macro_uuid": "f65e185e-6e1a-3585-a756-5d1abe957b57"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_39.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "4140014f-837f-37f1-9d16-3da4df6ffe18",
+                "macro_uuid": "138ef53d-c79d-3742-aa37-8b10edde5a36"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_16.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "99e19814-4f3b-305e-9b3e-c71f8f102b36",
+                "macro_uuid": "d7ddeb4e-d4fd-3fc2-b5a3-9ce85ed7831a"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_28.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "1e3d1602-dee3-3578-bdcb-f51eabe4f2cf",
+                "macro_uuid": "0b2f6037-a33c-3eb3-a03d-294b88471712"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_50.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "7a7f37c4-0203-3714-88d5-5bddbfe9d309",
+                "macro_uuid": "1932c362-de61-3770-abb7-dedaf3f0aef8"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_18.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "e8e3736e-f7b0-3b13-9c18-f5090cb34d92",
+                "macro_uuid": "60430691-2015-32e5-9273-cbe198420ab4"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_60.json": {
+                "verify_result": false,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the kitchen (obj39), in a small meadow (obj190)",
+                "micro_uuid": "5a16ecb1-ee2c-3055-9574-35d22d2cba62",
+                "macro_uuid": "3990d9cd-d6ce-371a-b7fd-d284afa6b515"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_72.json": {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), in the kitchen (obj39)",
+                "micro_uuid": "7024434c-8dfd-348e-8e91-3512f60fb4b2",
+                "macro_uuid": "18ad03e0-dc68-33ab-9ed3-3fb6e55555bc"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_14.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at a fork in the path (obj168)",
+                "micro_uuid": "4afc1455-4749-3ca0-b811-0bb0dfe5aa59",
+                "macro_uuid": "1ef69c8f-d82e-3aae-bf03-7a992e072c1a"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_1.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), at a fork in the path (obj168)",
+                "micro_uuid": "713aa4d0-566b-3a09-8bbc-0fcdfa5efc9b",
+                "macro_uuid": "c2cd2b70-e998-3b24-9add-44990d96ad34"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_79.json": {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), in the kitchen (obj39)",
+                "micro_uuid": "a83a2721-2e61-307e-90b3-5fa7fa8dcbf4",
+                "macro_uuid": "3b307bf5-675e-3e67-a127-5008af8958a5"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_51.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "c31790fb-27fb-379a-a5be-4e19baf65569",
+                "macro_uuid": "4bc0b278-d704-3bac-9183-150608c9a4c6"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_41.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in a small meadow (obj190)",
+                "micro_uuid": "a0d4f096-c69f-3d34-ab3e-35bdba70ba9e",
+                "macro_uuid": "76a96528-7575-3a0a-9051-2923145fed3b"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_7.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), at the top of the beanstalk (obj167)",
+                "micro_uuid": "843238f9-6d0e-3774-a20d-001bd3696e8a",
+                "macro_uuid": "dbf4dc3e-1898-3d59-806b-f645050d8d09"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_29.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "d2be30ea-9a94-3fd3-adaf-e8eb0a413b5c",
+                "macro_uuid": "741c143d-914e-39b0-9328-85adfcf41451"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_8.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the roof (obj127)",
+                "micro_uuid": "ce19e07b-7fc0-317d-b7ea-fe3bc72f79a4",
+                "macro_uuid": "498769b1-7aa5-3f19-97ee-0a651a8561ab"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_15.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a clearing in the forest (obj74)",
+                "micro_uuid": "ec9ff17f-d7c9-34f7-b385-e30457cc4b18",
+                "macro_uuid": "b30dba14-16bc-3e7b-b1c0-ebdb196bbba3"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_71.json": {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), on the roof (obj127)",
+                "micro_uuid": "05111083-2bce-3344-b51b-98b7a2f427b9",
+                "macro_uuid": "5e6de789-1866-3820-961d-e17632bd4efd"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_62.json": {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "720d1051-8b94-3712-9d59-04d8394c30f3",
+                "macro_uuid": "25e82da7-1413-382c-979f-bf5d31e8856a"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_33.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), on the roof (obj127)",
+                "micro_uuid": "db0f7b1e-f8be-38b2-b0b8-b451a5ae11ff",
+                "macro_uuid": "bf03a261-f934-367a-9381-f3c6d0ffdd67"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_54.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "2c925daa-8b92-3e40-82c0-1901b1f26fa4",
+                "macro_uuid": "3a82cc39-e472-36ba-8a5e-39edeecb9b1e"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_5.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a small meadow (obj190)",
+                "micro_uuid": "229c5600-7a75-3356-841d-6e3a965eb174",
+                "macro_uuid": "3e02f057-a4b5-359f-964c-a947a05deba2"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_2.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a clearing in the forest (obj74)",
+                "micro_uuid": "0805865c-9e6f-39b3-8527-81e3f56fa551",
+                "macro_uuid": "928fa40b-2605-38c8-8456-c04f0e4843f6"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_30.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "f82c6259-eb5b-39e5-a0cb-85c3f7c9fe3c",
+                "macro_uuid": "4cfbc25e-c542-3acb-bd47-3b1f6a250d36"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_34.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), in the kitchen (obj39)",
+                "micro_uuid": "0c7f58bc-e90a-300e-b7dd-e3024599605a",
+                "macro_uuid": "1ab22545-a80a-3342-9608-0c2d32805494"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_20.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "0a4cbaa6-d280-34c6-9ac3-80a06180313b",
+                "macro_uuid": "b4196733-6f1d-33d6-aad2-bac128a63d3c"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_32.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), at the top of the beanstalk (obj167)",
+                "micro_uuid": "112a6bd0-4444-3e23-ad36-49b70377304d",
+                "macro_uuid": "a35154d1-8a95-3df7-a7ab-069e685021b6"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_61.json": {
+                "verify_result": false,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "ec59e198-e3d9-3885-b09e-fe7fa1226b49",
+                "macro_uuid": "cc8f05dd-21f9-3a0a-a121-1dd0ead7fc25"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_55.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the kitchen (obj39)",
+                "micro_uuid": "aca211b4-e810-3533-a16f-8fb553dd9178",
+                "macro_uuid": "6e5daf5e-395b-3b0d-a1c2-cd49069b2a33"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_52.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "in"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the potting shed (obj169)",
+                "micro_uuid": "11213afd-eede-3c36-841e-37fede188a30",
+                "macro_uuid": "3302100c-5f5e-3e5d-b72f-72d29668c6ce"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_17.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "d15996f9-658f-334d-9452-d8075378c46b",
+                "macro_uuid": "0f012702-7b63-38ab-94b1-e10c0c2f9dee"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_31.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "2d052573-30ad-38c1-82e6-dbfb6ca4053b",
+                "macro_uuid": "9c9335f9-46b1-3daa-a949-9b9664b6f82e"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_78.json": {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), on the roof (obj127)",
+                "micro_uuid": "73197642-2d71-3bd7-aa98-64be007a1627",
+                "macro_uuid": "0ab4909b-2968-39e5-b42b-e5ffc6791696"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_70.json": {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), at the top of the beanstalk (obj167)",
+                "micro_uuid": "732ed74d-4511-3630-895d-c66b09eb4762",
+                "macro_uuid": "1a7a99dd-4373-3816-9c40-1a6a0615afe2"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_44.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "73e57f1e-e0b0-35f5-9210-95dbe8e5b7e1",
+                "macro_uuid": "24cfc9fa-dabb-36e8-b680-02a426a83082"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_45.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the kitchen (obj39)",
+                "micro_uuid": "dff2cf60-0d13-3ca7-859f-e00cb1114eec",
+                "macro_uuid": "8f026d54-6592-35b8-ab69-60654af49f75"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_27.json": {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "2a0d8f55-b3ad-30b8-8b18-0fbc20923de7",
+                "macro_uuid": "33885071-3e01-3885-ab4b-1e489c6ac18c"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_0.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On a path in the forest",
+                "dst_requested": "on a path in the forest (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on a path in the forest (obj189)",
+                "micro_uuid": "f0e98a9e-94c6-396a-81a2-45f6465895be",
+                "macro_uuid": "480bc2e2-f906-359c-a94d-8f7ddefc0568"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_64.json": {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9f14275f-7630-35fb-9099-834b041d2811",
+                "macro_uuid": "0da0c4f2-637e-31b9-bca0-bcb3957036d6"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_85.json": {
+                "verify_result": false,
+                "src_anno": "At the top of the beanstalk",
+                "src_requested": "at the top of the beanstalk (obj167)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "wrong path, fail to arrive at dst: at the top of the beanstalk (obj167), in the kitchen (obj39)",
+                "micro_uuid": "2ad8902a-5be4-3eb4-8078-9f3709c1777c",
+                "macro_uuid": "a20932a5-d513-3372-9f16-5a6bdd085427"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_21.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "cd06829b-fca8-372b-be7e-8bcd438303d2",
+                "macro_uuid": "991cc75b-7dc6-3215-bbc8-3d4768cee93c"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_53.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "304e16ee-11ec-3548-86cb-b7a9ea766620",
+                "macro_uuid": "06540f3b-d0d1-33da-9111-3e7a1ce28c4d"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_4.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the garden (obj128)",
+                "micro_uuid": "7d909847-5abc-3d22-80a8-f9e9f300ffaa",
+                "macro_uuid": "8fa61361-53f1-3a3e-94a6-5411aafcbe04"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_69.json": {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "80cea1ef-56f5-3add-80d8-0fb3bc241002",
+                "macro_uuid": "4fdcdfd0-c0e2-368f-960f-5aca313884ef"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_40.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the garden (obj128)",
+                "micro_uuid": "a46be1fc-e3b0-37f0-9ebb-9650a6a41789",
+                "macro_uuid": "7ad00fed-20db-331e-be1f-7c9983fc3694"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_19.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "5421e608-5b93-3bc7-a7a5-579cabab3586",
+                "macro_uuid": "d7ecbec6-106d-3827-a84b-8eff0046176f"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_42.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "26365ebc-a503-3c6b-ba7c-5431d9c8d435",
+                "macro_uuid": "a8a73eb2-47f5-311b-a2d3-e0b6663f51a5"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_22.json": {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the kitchen (obj39)",
+                "micro_uuid": "ae458855-4185-387c-9002-2795d666a883",
+                "macro_uuid": "e32fc288-7c1e-3721-83ca-f3ae1aee4798"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_43.json": {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "08b2dbf6-2b59-36f0-ba1f-188c56c91adc",
+                "macro_uuid": "911280f9-2130-3147-9916-0b6c6ba7b419"
+            },
+            "../mango-inhouse-llms/llama/gold/results//path_gen_llama_anno/pathgen_anno_results_63.json": {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "on the roof (obj127)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "94fcdf6c-37d4-3186-bb3f-90b26a573fc1",
+                "macro_uuid": "55fa5217-d022-336b-84f2-5152fb4ff85b"
+            }
+        },
+        "random_guess_rate": 2.2083576010747954e-05,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the porch (obj108)",
+                "micro_uuid": "d8feffe8-aa01-3d77-a861-ba58db641daa",
+                "macro_uuid": "5c328a4c-c3cc-39c5-86f7-0d31daeb896a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the kitchen (obj39)",
+                "micro_uuid": "e51cd3a0-29bb-309f-af78-de3f4cde8d12",
+                "macro_uuid": "5c5bd73d-794a-3c02-8ea9-b6f43c051870"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), at the top of the beanstalk (obj167)",
+                "micro_uuid": "3bb09665-c0a4-3b0d-b872-3e7db6e9d877",
+                "macro_uuid": "98fdf769-366e-36f4-9057-3781a10b7e46"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney",
+                    "in",
+                    "north",
+                    "east",
+                    "north",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the potting shed (obj169)",
+                "micro_uuid": "e6c68278-d9d2-3c40-b98f-7b5e4e1e5541",
+                "macro_uuid": "e9dc64a8-446e-39e1-9dac-2e9e121860ac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At the top of the beanstalk",
+                "src_requested": "at the top of the beanstalk (obj167)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "wrong path, fail to arrive at dst: at the top of the beanstalk (obj167), on the roof (obj127)",
+                "micro_uuid": "088b3dbe-5f3f-37fc-89ab-15f975037cf5",
+                "macro_uuid": "6219ec4c-d5de-361b-a91c-a547c34ad45c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On the roof",
+                "src_requested": "on the roof (obj127)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "da9ed1f2-cc79-3119-acd3-1e7031db436f",
+                "macro_uuid": "f65e185e-6e1a-3585-a756-5d1abe957b57"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "4140014f-837f-37f1-9d16-3da4df6ffe18",
+                "macro_uuid": "138ef53d-c79d-3742-aa37-8b10edde5a36"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "99e19814-4f3b-305e-9b3e-c71f8f102b36",
+                "macro_uuid": "d7ddeb4e-d4fd-3fc2-b5a3-9ce85ed7831a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "1e3d1602-dee3-3578-bdcb-f51eabe4f2cf",
+                "macro_uuid": "0b2f6037-a33c-3eb3-a03d-294b88471712"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "7a7f37c4-0203-3714-88d5-5bddbfe9d309",
+                "macro_uuid": "1932c362-de61-3770-abb7-dedaf3f0aef8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "e8e3736e-f7b0-3b13-9c18-f5090cb34d92",
+                "macro_uuid": "60430691-2015-32e5-9273-cbe198420ab4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the kitchen (obj39), in a small meadow (obj190)",
+                "micro_uuid": "5a16ecb1-ee2c-3055-9574-35d22d2cba62",
+                "macro_uuid": "3990d9cd-d6ce-371a-b7fd-d284afa6b515"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), in the kitchen (obj39)",
+                "micro_uuid": "7024434c-8dfd-348e-8e91-3512f60fb4b2",
+                "macro_uuid": "18ad03e0-dc68-33ab-9ed3-3fb6e55555bc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at a fork in the path (obj168)",
+                "micro_uuid": "4afc1455-4749-3ca0-b811-0bb0dfe5aa59",
+                "macro_uuid": "1ef69c8f-d82e-3aae-bf03-7a992e072c1a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), at a fork in the path (obj168)",
+                "micro_uuid": "713aa4d0-566b-3a09-8bbc-0fcdfa5efc9b",
+                "macro_uuid": "c2cd2b70-e998-3b24-9add-44990d96ad34"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), in the kitchen (obj39)",
+                "micro_uuid": "a83a2721-2e61-307e-90b3-5fa7fa8dcbf4",
+                "macro_uuid": "3b307bf5-675e-3e67-a127-5008af8958a5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "c31790fb-27fb-379a-a5be-4e19baf65569",
+                "macro_uuid": "4bc0b278-d704-3bac-9183-150608c9a4c6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in a small meadow (obj190)",
+                "micro_uuid": "a0d4f096-c69f-3d34-ab3e-35bdba70ba9e",
+                "macro_uuid": "76a96528-7575-3a0a-9051-2923145fed3b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), at the top of the beanstalk (obj167)",
+                "micro_uuid": "843238f9-6d0e-3774-a20d-001bd3696e8a",
+                "macro_uuid": "dbf4dc3e-1898-3d59-806b-f645050d8d09"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "d2be30ea-9a94-3fd3-adaf-e8eb0a413b5c",
+                "macro_uuid": "741c143d-914e-39b0-9328-85adfcf41451"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the roof (obj127)",
+                "micro_uuid": "ce19e07b-7fc0-317d-b7ea-fe3bc72f79a4",
+                "macro_uuid": "498769b1-7aa5-3f19-97ee-0a651a8561ab"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a clearing in the forest (obj74)",
+                "micro_uuid": "ec9ff17f-d7c9-34f7-b385-e30457cc4b18",
+                "macro_uuid": "b30dba14-16bc-3e7b-b1c0-ebdb196bbba3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), on the roof (obj127)",
+                "micro_uuid": "05111083-2bce-3344-b51b-98b7a2f427b9",
+                "macro_uuid": "5e6de789-1866-3820-961d-e17632bd4efd"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "720d1051-8b94-3712-9d59-04d8394c30f3",
+                "macro_uuid": "25e82da7-1413-382c-979f-bf5d31e8856a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), on the roof (obj127)",
+                "micro_uuid": "db0f7b1e-f8be-38b2-b0b8-b451a5ae11ff",
+                "macro_uuid": "bf03a261-f934-367a-9381-f3c6d0ffdd67"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "2c925daa-8b92-3e40-82c0-1901b1f26fa4",
+                "macro_uuid": "3a82cc39-e472-36ba-8a5e-39edeecb9b1e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a small meadow (obj190)",
+                "micro_uuid": "229c5600-7a75-3356-841d-6e3a965eb174",
+                "macro_uuid": "3e02f057-a4b5-359f-964c-a947a05deba2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a clearing in the forest (obj74)",
+                "micro_uuid": "0805865c-9e6f-39b3-8527-81e3f56fa551",
+                "macro_uuid": "928fa40b-2605-38c8-8456-c04f0e4843f6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "f82c6259-eb5b-39e5-a0cb-85c3f7c9fe3c",
+                "macro_uuid": "4cfbc25e-c542-3acb-bd47-3b1f6a250d36"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), in the kitchen (obj39)",
+                "micro_uuid": "0c7f58bc-e90a-300e-b7dd-e3024599605a",
+                "macro_uuid": "1ab22545-a80a-3342-9608-0c2d32805494"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "0a4cbaa6-d280-34c6-9ac3-80a06180313b",
+                "macro_uuid": "b4196733-6f1d-33d6-aad2-bac128a63d3c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), at the top of the beanstalk (obj167)",
+                "micro_uuid": "112a6bd0-4444-3e23-ad36-49b70377304d",
+                "macro_uuid": "a35154d1-8a95-3df7-a7ab-069e685021b6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "ec59e198-e3d9-3885-b09e-fe7fa1226b49",
+                "macro_uuid": "cc8f05dd-21f9-3a0a-a121-1dd0ead7fc25"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the kitchen (obj39)",
+                "micro_uuid": "aca211b4-e810-3533-a16f-8fb553dd9178",
+                "macro_uuid": "6e5daf5e-395b-3b0d-a1c2-cd49069b2a33"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "in"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the potting shed (obj169)",
+                "micro_uuid": "11213afd-eede-3c36-841e-37fede188a30",
+                "macro_uuid": "3302100c-5f5e-3e5d-b72f-72d29668c6ce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "d15996f9-658f-334d-9452-d8075378c46b",
+                "macro_uuid": "0f012702-7b63-38ab-94b1-e10c0c2f9dee"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "2d052573-30ad-38c1-82e6-dbfb6ca4053b",
+                "macro_uuid": "9c9335f9-46b1-3daa-a949-9b9664b6f82e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), on the roof (obj127)",
+                "micro_uuid": "73197642-2d71-3bd7-aa98-64be007a1627",
+                "macro_uuid": "0ab4909b-2968-39e5-b42b-e5ffc6791696"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), at the top of the beanstalk (obj167)",
+                "micro_uuid": "732ed74d-4511-3630-895d-c66b09eb4762",
+                "macro_uuid": "1a7a99dd-4373-3816-9c40-1a6a0615afe2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "73e57f1e-e0b0-35f5-9210-95dbe8e5b7e1",
+                "macro_uuid": "24cfc9fa-dabb-36e8-b680-02a426a83082"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the kitchen (obj39)",
+                "micro_uuid": "dff2cf60-0d13-3ca7-859f-e00cb1114eec",
+                "macro_uuid": "8f026d54-6592-35b8-ab69-60654af49f75"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "2a0d8f55-b3ad-30b8-8b18-0fbc20923de7",
+                "macro_uuid": "33885071-3e01-3885-ab4b-1e489c6ac18c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On a path in the forest",
+                "dst_requested": "on a path in the forest (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on a path in the forest (obj189)",
+                "micro_uuid": "f0e98a9e-94c6-396a-81a2-45f6465895be",
+                "macro_uuid": "480bc2e2-f906-359c-a94d-8f7ddefc0568"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9f14275f-7630-35fb-9099-834b041d2811",
+                "macro_uuid": "0da0c4f2-637e-31b9-bca0-bcb3957036d6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At the top of the beanstalk",
+                "src_requested": "at the top of the beanstalk (obj167)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "wrong path, fail to arrive at dst: at the top of the beanstalk (obj167), in the kitchen (obj39)",
+                "micro_uuid": "2ad8902a-5be4-3eb4-8078-9f3709c1777c",
+                "macro_uuid": "a20932a5-d513-3372-9f16-5a6bdd085427"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "cd06829b-fca8-372b-be7e-8bcd438303d2",
+                "macro_uuid": "991cc75b-7dc6-3215-bbc8-3d4768cee93c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "304e16ee-11ec-3548-86cb-b7a9ea766620",
+                "macro_uuid": "06540f3b-d0d1-33da-9111-3e7a1ce28c4d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the garden (obj128)",
+                "micro_uuid": "7d909847-5abc-3d22-80a8-f9e9f300ffaa",
+                "macro_uuid": "8fa61361-53f1-3a3e-94a6-5411aafcbe04"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "80cea1ef-56f5-3add-80d8-0fb3bc241002",
+                "macro_uuid": "4fdcdfd0-c0e2-368f-960f-5aca313884ef"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the garden (obj128)",
+                "micro_uuid": "a46be1fc-e3b0-37f0-9ebb-9650a6a41789",
+                "macro_uuid": "7ad00fed-20db-331e-be1f-7c9983fc3694"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "5421e608-5b93-3bc7-a7a5-579cabab3586",
+                "macro_uuid": "d7ecbec6-106d-3827-a84b-8eff0046176f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "26365ebc-a503-3c6b-ba7c-5431d9c8d435",
+                "macro_uuid": "a8a73eb2-47f5-311b-a2d3-e0b6663f51a5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the kitchen (obj39)",
+                "micro_uuid": "ae458855-4185-387c-9002-2795d666a883",
+                "macro_uuid": "e32fc288-7c1e-3721-83ca-f3ae1aee4798"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "08b2dbf6-2b59-36f0-ba1f-188c56c91adc",
+                "macro_uuid": "911280f9-2130-3147-9916-0b6c6ba7b419"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "on the roof (obj127)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "94fcdf6c-37d4-3186-bb3f-90b26a573fc1",
+                "macro_uuid": "55fa5217-d022-336b-84f2-5152fb4ff85b"
+            }
+        ],
+        "correct_num_micro": 5,
+        "total_num_micro": 55,
+        "accuracy_micro": 0.09090909090909091,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the porch (obj108)",
+                "micro_uuid": "d8feffe8-aa01-3d77-a861-ba58db641daa",
+                "macro_uuid": "5c328a4c-c3cc-39c5-86f7-0d31daeb896a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the kitchen (obj39)",
+                "micro_uuid": "e51cd3a0-29bb-309f-af78-de3f4cde8d12",
+                "macro_uuid": "5c5bd73d-794a-3c02-8ea9-b6f43c051870"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), at the top of the beanstalk (obj167)",
+                "micro_uuid": "3bb09665-c0a4-3b0d-b872-3e7db6e9d877",
+                "macro_uuid": "98fdf769-366e-36f4-9057-3781a10b7e46"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney",
+                    "in",
+                    "north",
+                    "east",
+                    "north",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the potting shed (obj169)",
+                "micro_uuid": "e6c68278-d9d2-3c40-b98f-7b5e4e1e5541",
+                "macro_uuid": "e9dc64a8-446e-39e1-9dac-2e9e121860ac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At the top of the beanstalk",
+                "src_requested": "at the top of the beanstalk (obj167)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "wrong path, fail to arrive at dst: at the top of the beanstalk (obj167), on the roof (obj127)",
+                "micro_uuid": "088b3dbe-5f3f-37fc-89ab-15f975037cf5",
+                "macro_uuid": "6219ec4c-d5de-361b-a91c-a547c34ad45c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On the roof",
+                "src_requested": "on the roof (obj127)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "da9ed1f2-cc79-3119-acd3-1e7031db436f",
+                "macro_uuid": "f65e185e-6e1a-3585-a756-5d1abe957b57"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "4140014f-837f-37f1-9d16-3da4df6ffe18",
+                "macro_uuid": "138ef53d-c79d-3742-aa37-8b10edde5a36"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "99e19814-4f3b-305e-9b3e-c71f8f102b36",
+                "macro_uuid": "d7ddeb4e-d4fd-3fc2-b5a3-9ce85ed7831a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the porch (obj108)",
+                "micro_uuid": "1e3d1602-dee3-3578-bdcb-f51eabe4f2cf",
+                "macro_uuid": "0b2f6037-a33c-3eb3-a03d-294b88471712"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "7a7f37c4-0203-3714-88d5-5bddbfe9d309",
+                "macro_uuid": "1932c362-de61-3770-abb7-dedaf3f0aef8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "e8e3736e-f7b0-3b13-9c18-f5090cb34d92",
+                "macro_uuid": "60430691-2015-32e5-9273-cbe198420ab4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the kitchen (obj39), in a small meadow (obj190)",
+                "micro_uuid": "5a16ecb1-ee2c-3055-9574-35d22d2cba62",
+                "macro_uuid": "3990d9cd-d6ce-371a-b7fd-d284afa6b515"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), in the kitchen (obj39)",
+                "micro_uuid": "7024434c-8dfd-348e-8e91-3512f60fb4b2",
+                "macro_uuid": "18ad03e0-dc68-33ab-9ed3-3fb6e55555bc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at a fork in the path (obj168)",
+                "micro_uuid": "4afc1455-4749-3ca0-b811-0bb0dfe5aa59",
+                "macro_uuid": "1ef69c8f-d82e-3aae-bf03-7a992e072c1a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), at a fork in the path (obj168)",
+                "micro_uuid": "713aa4d0-566b-3a09-8bbc-0fcdfa5efc9b",
+                "macro_uuid": "c2cd2b70-e998-3b24-9add-44990d96ad34"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), in the kitchen (obj39)",
+                "micro_uuid": "a83a2721-2e61-307e-90b3-5fa7fa8dcbf4",
+                "macro_uuid": "3b307bf5-675e-3e67-a127-5008af8958a5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "c31790fb-27fb-379a-a5be-4e19baf65569",
+                "macro_uuid": "4bc0b278-d704-3bac-9183-150608c9a4c6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in a small meadow (obj190)",
+                "micro_uuid": "a0d4f096-c69f-3d34-ab3e-35bdba70ba9e",
+                "macro_uuid": "76a96528-7575-3a0a-9051-2923145fed3b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), at the top of the beanstalk (obj167)",
+                "micro_uuid": "843238f9-6d0e-3774-a20d-001bd3696e8a",
+                "macro_uuid": "dbf4dc3e-1898-3d59-806b-f645050d8d09"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "d2be30ea-9a94-3fd3-adaf-e8eb0a413b5c",
+                "macro_uuid": "741c143d-914e-39b0-9328-85adfcf41451"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the roof (obj127)",
+                "micro_uuid": "ce19e07b-7fc0-317d-b7ea-fe3bc72f79a4",
+                "macro_uuid": "498769b1-7aa5-3f19-97ee-0a651a8561ab"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a clearing in the forest (obj74)",
+                "micro_uuid": "ec9ff17f-d7c9-34f7-b385-e30457cc4b18",
+                "macro_uuid": "b30dba14-16bc-3e7b-b1c0-ebdb196bbba3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), on the roof (obj127)",
+                "micro_uuid": "05111083-2bce-3344-b51b-98b7a2f427b9",
+                "macro_uuid": "5e6de789-1866-3820-961d-e17632bd4efd"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "720d1051-8b94-3712-9d59-04d8394c30f3",
+                "macro_uuid": "25e82da7-1413-382c-979f-bf5d31e8856a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), on the roof (obj127)",
+                "micro_uuid": "db0f7b1e-f8be-38b2-b0b8-b451a5ae11ff",
+                "macro_uuid": "bf03a261-f934-367a-9381-f3c6d0ffdd67"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "2c925daa-8b92-3e40-82c0-1901b1f26fa4",
+                "macro_uuid": "3a82cc39-e472-36ba-8a5e-39edeecb9b1e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a small meadow (obj190)",
+                "micro_uuid": "229c5600-7a75-3356-841d-6e3a965eb174",
+                "macro_uuid": "3e02f057-a4b5-359f-964c-a947a05deba2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a clearing in the forest (obj74)",
+                "micro_uuid": "0805865c-9e6f-39b3-8527-81e3f56fa551",
+                "macro_uuid": "928fa40b-2605-38c8-8456-c04f0e4843f6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a small meadow",
+                "dst_requested": "in a small meadow (obj190)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in a small meadow (obj190)",
+                "micro_uuid": "f82c6259-eb5b-39e5-a0cb-85c3f7c9fe3c",
+                "macro_uuid": "4cfbc25e-c542-3acb-bd47-3b1f6a250d36"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), in the kitchen (obj39)",
+                "micro_uuid": "0c7f58bc-e90a-300e-b7dd-e3024599605a",
+                "macro_uuid": "1ab22545-a80a-3342-9608-0c2d32805494"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "0a4cbaa6-d280-34c6-9ac3-80a06180313b",
+                "macro_uuid": "b4196733-6f1d-33d6-aad2-bac128a63d3c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "wrong path, fail to arrive at dst: at a fork in the path (obj168), at the top of the beanstalk (obj167)",
+                "micro_uuid": "112a6bd0-4444-3e23-ad36-49b70377304d",
+                "macro_uuid": "a35154d1-8a95-3df7-a7ab-069e685021b6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "ec59e198-e3d9-3885-b09e-fe7fa1226b49",
+                "macro_uuid": "cc8f05dd-21f9-3a0a-a121-1dd0ead7fc25"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the kitchen (obj39)",
+                "micro_uuid": "aca211b4-e810-3533-a16f-8fb553dd9178",
+                "macro_uuid": "6e5daf5e-395b-3b0d-a1c2-cd49069b2a33"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "in"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the potting shed (obj169)",
+                "micro_uuid": "11213afd-eede-3c36-841e-37fede188a30",
+                "macro_uuid": "3302100c-5f5e-3e5d-b72f-72d29668c6ce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the garden (obj128)",
+                "micro_uuid": "d15996f9-658f-334d-9452-d8075378c46b",
+                "macro_uuid": "0f012702-7b63-38ab-94b1-e10c0c2f9dee"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "2d052573-30ad-38c1-82e6-dbfb6ca4053b",
+                "macro_uuid": "9c9335f9-46b1-3daa-a949-9b9664b6f82e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the potting shed",
+                "src_requested": "in the potting shed (obj169)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "in the potting shed (obj169)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the potting shed (obj169), on the roof (obj127)",
+                "micro_uuid": "73197642-2d71-3bd7-aa98-64be007a1627",
+                "macro_uuid": "0ab4909b-2968-39e5-b42b-e5ffc6791696"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk"
+                ],
+                "dst_gpt": "in a small meadow (obj190)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a small meadow (obj190), at the top of the beanstalk (obj167)",
+                "micro_uuid": "732ed74d-4511-3630-895d-c66b09eb4762",
+                "macro_uuid": "1a7a99dd-4373-3816-9c40-1a6a0615afe2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "73e57f1e-e0b0-35f5-9210-95dbe8e5b7e1",
+                "macro_uuid": "24cfc9fa-dabb-36e8-b680-02a426a83082"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the kitchen (obj39)",
+                "micro_uuid": "dff2cf60-0d13-3ca7-859f-e00cb1114eec",
+                "macro_uuid": "8f026d54-6592-35b8-ab69-60654af49f75"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "2a0d8f55-b3ad-30b8-8b18-0fbc20923de7",
+                "macro_uuid": "33885071-3e01-3885-ab4b-1e489c6ac18c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On a path in the forest",
+                "dst_requested": "on a path in the forest (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on a path in the forest (obj189)",
+                "micro_uuid": "f0e98a9e-94c6-396a-81a2-45f6465895be",
+                "macro_uuid": "480bc2e2-f906-359c-a94d-8f7ddefc0568"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the kitchen (obj39)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9f14275f-7630-35fb-9099-834b041d2811",
+                "macro_uuid": "0da0c4f2-637e-31b9-bca0-bcb3957036d6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At the top of the beanstalk",
+                "src_requested": "at the top of the beanstalk (obj167)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb down chimney"
+                ],
+                "dst_gpt": "at the top of the beanstalk (obj167)",
+                "verify_msg": "wrong path, fail to arrive at dst: at the top of the beanstalk (obj167), in the kitchen (obj39)",
+                "micro_uuid": "2ad8902a-5be4-3eb4-8078-9f3709c1777c",
+                "macro_uuid": "a20932a5-d513-3372-9f16-5a6bdd085427"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, on the roof (obj127)",
+                "micro_uuid": "cd06829b-fca8-372b-be7e-8bcd438303d2",
+                "macro_uuid": "991cc75b-7dc6-3215-bbc8-3d4768cee93c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "304e16ee-11ec-3548-86cb-b7a9ea766620",
+                "macro_uuid": "06540f3b-d0d1-33da-9111-3e7a1ce28c4d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof",
+                    "climb down chimney"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the garden (obj128)",
+                "micro_uuid": "7d909847-5abc-3d22-80a8-f9e9f300ffaa",
+                "macro_uuid": "8fa61361-53f1-3a3e-94a6-5411aafcbe04"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a small meadow",
+                "src_requested": "in a small meadow (obj190)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "80cea1ef-56f5-3add-80d8-0fb3bc241002",
+                "macro_uuid": "4fdcdfd0-c0e2-368f-960f-5aca313884ef"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the garden (obj128)",
+                "micro_uuid": "a46be1fc-e3b0-37f0-9ebb-9650a6a41789",
+                "macro_uuid": "7ad00fed-20db-331e-be1f-7c9983fc3694"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "5421e608-5b93-3bc7-a7a5-579cabab3586",
+                "macro_uuid": "d7ecbec6-106d-3827-a84b-8eff0046176f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the potting shed",
+                "dst_requested": "in the potting shed (obj169)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the potting shed (obj169)",
+                "micro_uuid": "26365ebc-a503-3c6b-ba7c-5431d9c8d435",
+                "macro_uuid": "a8a73eb2-47f5-311b-a2d3-e0b6663f51a5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the kitchen",
+                "dst_requested": "in the kitchen (obj39)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, in the kitchen (obj39)",
+                "micro_uuid": "ae458855-4185-387c-9002-2795d666a883",
+                "macro_uuid": "e32fc288-7c1e-3721-83ca-f3ae1aee4798"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "At the top of the beanstalk",
+                "dst_requested": "at the top of the beanstalk (obj167)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [],
+                "dst_gpt": null,
+                "verify_msg": "wrong path, fail to arrive at dst: None, at the top of the beanstalk (obj167)",
+                "micro_uuid": "08b2dbf6-2b59-36f0-ba1f-188c56c91adc",
+                "macro_uuid": "911280f9-2130-3147-9916-0b6c6ba7b419"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the garden",
+                "src_requested": "in the garden (obj128)",
+                "dst_anno": "On the roof",
+                "dst_requested": "on the roof (obj127)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb beanstalk",
+                    "jump to roof"
+                ],
+                "dst_gpt": "on the roof (obj127)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "94fcdf6c-37d4-3186-bb3f-90b26a573fc1",
+                "macro_uuid": "55fa5217-d022-336b-84f2-5152fb4ff85b"
+            }
+        ],
+        "correct_num_macro": 5,
+        "total_num_macro": 55,
+        "accuracy_macro": 0.09090909090909091
+    }
+}

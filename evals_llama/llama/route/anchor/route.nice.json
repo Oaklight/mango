@@ -1,0 +1,714 @@
+{
+    "path_gen_llama": {
+        "correct_num": 8,
+        "total_num": 17,
+        "accuracy": 0.47058823529411764,
+        "collection": {
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_343.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), file room (obj622)",
+                "micro_uuid": "8d8c984b-c665-3952-b835-722525f072af",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_26.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_48.json": {
+                "verify_result": true,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b4e047c1-dbcb-34e8-aba8-a6bdb35cae7c",
+                "macro_uuid": "1a7a0a87-9227-3096-8e20-6551d27cbe07"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_0.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Alley",
+                "dst_requested": "alley (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), alley (obj107)",
+                "micro_uuid": "d85ea277-2131-3e95-8ad9-be3ef6c5083f",
+                "macro_uuid": "c5d2806e-58d7-346a-be7e-018df1eb0e2c"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_344.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), file room (obj622)",
+                "micro_uuid": "b2260c79-880f-372c-b218-864a3856a15d",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_346.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "narrow street (obj118)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow street (obj118), office (obj627)",
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_1.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), garbage can (obj110)",
+                "micro_uuid": "0b0ace17-2f75-3f4d-bf3f-73e5002bd8a0",
+                "macro_uuid": "a9069c18-c1cd-3179-8689-abd08b80407d"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_324.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_25.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "65a4b743-fd60-3fea-b55f-f3f23499b60b",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_323.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7e5c71d0-d206-357d-8b7e-06e2ba013ac5",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_69.json": {
+                "verify_result": false,
+                "src_anno": "File Room",
+                "src_requested": "file room (obj622)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "wrong path, fail to arrive at dst: file room (obj622), office (obj627)",
+                "micro_uuid": "41b858ea-bdec-3c12-bbc6-5c54e056969e",
+                "macro_uuid": "0a6c87dd-998e-3ba4-bb6b-5dc9e8c47c6e"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_345.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "narrow street (obj118)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow street (obj118), office (obj627)",
+                "micro_uuid": "afc91128-da71-3ccb-adde-6d202579ef52",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_2.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), file room (obj622)",
+                "micro_uuid": "b2260c79-880f-372c-b218-864a3856a15d",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_47.json": {
+                "verify_result": true,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "de3a0e8e-f6e1-3609-921d-bc51ce92bf08",
+                "macro_uuid": "01aa79e6-7f01-3f5f-97c0-131130dd208e"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_3.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "narrow street (obj118)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow street (obj118), office (obj627)",
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_308.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9dd9738a-81f1-31dd-812b-62478e6a2d38",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            "../mango-inhouse-llms/llama/anchor/results//path_gen_llama/pathgen_results_24.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "garbage can (obj110)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "251c4664-51cc-3ada-90e6-f201558fe94f",
+                "macro_uuid": "dac7681d-9b60-3b76-9c5a-39429da0e8e4"
+            }
+        },
+        "random_guess_rate": 2.2992482646337689e-10,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), file room (obj622)",
+                "micro_uuid": "8d8c984b-c665-3952-b835-722525f072af",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b4e047c1-dbcb-34e8-aba8-a6bdb35cae7c",
+                "macro_uuid": "1a7a0a87-9227-3096-8e20-6551d27cbe07"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Alley",
+                "dst_requested": "alley (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), alley (obj107)",
+                "micro_uuid": "d85ea277-2131-3e95-8ad9-be3ef6c5083f",
+                "macro_uuid": "c5d2806e-58d7-346a-be7e-018df1eb0e2c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), file room (obj622)",
+                "micro_uuid": "b2260c79-880f-372c-b218-864a3856a15d",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "narrow street (obj118)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow street (obj118), office (obj627)",
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), garbage can (obj110)",
+                "micro_uuid": "0b0ace17-2f75-3f4d-bf3f-73e5002bd8a0",
+                "macro_uuid": "a9069c18-c1cd-3179-8689-abd08b80407d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "65a4b743-fd60-3fea-b55f-f3f23499b60b",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7e5c71d0-d206-357d-8b7e-06e2ba013ac5",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "File Room",
+                "src_requested": "file room (obj622)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "wrong path, fail to arrive at dst: file room (obj622), office (obj627)",
+                "micro_uuid": "41b858ea-bdec-3c12-bbc6-5c54e056969e",
+                "macro_uuid": "0a6c87dd-998e-3ba4-bb6b-5dc9e8c47c6e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "narrow street (obj118)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow street (obj118), office (obj627)",
+                "micro_uuid": "afc91128-da71-3ccb-adde-6d202579ef52",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "de3a0e8e-f6e1-3609-921d-bc51ce92bf08",
+                "macro_uuid": "01aa79e6-7f01-3f5f-97c0-131130dd208e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9dd9738a-81f1-31dd-812b-62478e6a2d38",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "garbage can (obj110)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "251c4664-51cc-3ada-90e6-f201558fe94f",
+                "macro_uuid": "dac7681d-9b60-3b76-9c5a-39429da0e8e4"
+            }
+        ],
+        "correct_num_micro": 7,
+        "total_num_micro": 14,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), file room (obj622)",
+                "micro_uuid": "8d8c984b-c665-3952-b835-722525f072af",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "office (obj627)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b4e047c1-dbcb-34e8-aba8-a6bdb35cae7c",
+                "macro_uuid": "1a7a0a87-9227-3096-8e20-6551d27cbe07"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Alley",
+                "dst_requested": "alley (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), alley (obj107)",
+                "micro_uuid": "d85ea277-2131-3e95-8ad9-be3ef6c5083f",
+                "macro_uuid": "c5d2806e-58d7-346a-be7e-018df1eb0e2c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can",
+                    "up",
+                    "west"
+                ],
+                "dst_gpt": "narrow street (obj118)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow street (obj118), office (obj627)",
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "outside the real estate office (obj105)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside the real estate office (obj105), garbage can (obj110)",
+                "micro_uuid": "0b0ace17-2f75-3f4d-bf3f-73e5002bd8a0",
+                "macro_uuid": "a9069c18-c1cd-3179-8689-abd08b80407d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "climb can",
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "65a4b743-fd60-3fea-b55f-f3f23499b60b",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "File Room",
+                "src_requested": "file room (obj622)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "wrong path, fail to arrive at dst: file room (obj622), office (obj627)",
+                "micro_uuid": "41b858ea-bdec-3c12-bbc6-5c54e056969e",
+                "macro_uuid": "0a6c87dd-998e-3ba4-bb6b-5dc9e8c47c6e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "up"
+                ],
+                "dst_gpt": "file room (obj622)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "de3a0e8e-f6e1-3609-921d-bc51ce92bf08",
+                "macro_uuid": "01aa79e6-7f01-3f5f-97c0-131130dd208e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "climb can"
+                ],
+                "dst_gpt": "garbage can (obj110)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "251c4664-51cc-3ada-90e6-f201558fe94f",
+                "macro_uuid": "dac7681d-9b60-3b76-9c5a-39429da0e8e4"
+            }
+        ],
+        "correct_num_macro": 5,
+        "total_num_macro": 10,
+        "accuracy_macro": 0.5
+    }
+}

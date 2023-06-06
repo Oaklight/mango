@@ -111,6 +111,10 @@ def extract_actions(string):
 
 
 def check_format(gpt_results, dst_only=False):
+    # replace all "location_before" and "location_after" with "prev_node" and "node"
+    replace_key(gpt_results, "location_before", "prev_node")
+    replace_key(gpt_results, "location_after", "node")
+
     good_format = True
     path_gpt = []
     if "path" not in gpt_results:
@@ -122,12 +126,19 @@ def check_format(gpt_results, dst_only=False):
             good_format = True
             return good_format, path_gpt
         last_element = gpt_results["path"][-1]
+        # print(f"last element is {last_element}")
         if isinstance(last_element, dict):
-            if "prev_node" in last_element and "node" in last_element:
+            # print("last element is a dict")
+            if ("prev_node" in last_element and "node" in last_element) or (
+                "location_before" in last_element and "location_after" in last_element
+            ):
+                # print("last element has the correct keys")
                 path_gpt.append(last_element)
             else:
                 good_format = False
-                return good_format, path_gpt
+            return good_format, path_gpt
+        else:
+            return False, path_gpt
 
     for i, each in enumerate(gpt_results["path"]):
         if isinstance(each, dict):
@@ -255,9 +266,9 @@ def verify_amend_acc(
             correct_num_level += 1
     verify_dupli[each_version][f"correct_num_{level}"] = correct_num_level
     verify_dupli[each_version][f"total_num_{level}"] = len(level_uuid_best)
-    verify_dupli[each_version][f"accuracy_{level}"] = correct_num_level / len(
-        level_uuid_best
-    ) if len(level_uuid_best) != 0 else 0
+    verify_dupli[each_version][f"accuracy_{level}"] = (
+        correct_num_level / len(level_uuid_best) if len(level_uuid_best) != 0 else 0
+    )
     return verify_dupli
 
 
@@ -327,3 +338,15 @@ def skip_due_to_cutoff(
         print(f"skipping: [{each_json}]")
         return True
     return False
+
+
+def replace_key(json_obj, old_key, new_key):
+    if isinstance(json_obj, dict):
+        for key in list(json_obj.keys()):
+            if key == old_key:
+                json_obj[new_key] = json_obj.pop(key)
+            else:
+                replace_key(json_obj[key], old_key, new_key)
+    elif isinstance(json_obj, list):
+        for item in json_obj:
+            replace_key(item, old_key, new_key)
