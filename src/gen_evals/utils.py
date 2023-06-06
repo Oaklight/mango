@@ -5,8 +5,6 @@ import os
 import sys
 import uuid
 
-from matplotlib import pyplot as plt
-
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
@@ -193,32 +191,6 @@ def recompute_for_uuid(verify_json):
             level="macro",
         )
 
-        macro_acc_vs_term_dist = __count_helper_trend(
-            current_collection, level="macro", field="dist_shortest"
-        )
-        micro_acc_vs_term_dist = __count_helper_trend(
-            current_collection, level="micro", field="dist_shortest"
-        )
-        # plot acc vs length
-        plot_acc_vs_term_dist(
-            verify_json, each_version, micro_acc_vs_term_dist, macro_acc_vs_term_dist
-        )
-
-        # if "route_length" is a field of first entry of collection, then plot acc vs route length
-        if "route_length" in current_collection[list(current_collection.keys())[0]]:
-            macro_acc_vs_route_length = __count_helper_trend(
-                current_collection, level="macro", field="route_length"
-            )
-            micro_acc_vs_route_length = __count_helper_trend(
-                current_collection, level="micro", field="route_length"
-            )
-            plot_acc_vs_route_length(
-                verify_json,
-                each_version,
-                micro_acc_vs_route_length,
-                macro_acc_vs_route_length,
-            )
-
     # dump back to verify_json
     with open(verify_json, "w") as f:
         json.dump(verify_dupli, f, indent=4)
@@ -242,11 +214,10 @@ def __count_helper_best(current_collection, level):
 
 
 def __count_helper_trend(current_collection, level, field="dist_shortest"):
-    pass
     level_length_acc = {}
 
-    for each_entry_name, each_entry in current_collection.items():
-        level_uuid = each_entry[f"{level}_uuid"]
+    for each_entry in current_collection:
+        # level_uuid = each_entry[f"{level}_uuid"]
         verify_result = each_entry["verify_result"]
         dist_shortest = each_entry[field]
 
@@ -282,74 +253,6 @@ def verify_amend_acc(
         level_uuid_best
     )
     return verify_dupli
-
-
-def plot_acc_vs_term_dist(
-    verify_json, each_version, micro_length_acc, macro_length_acc
-):
-    micro_length_acc = sorted(micro_length_acc.items(), key=lambda x: x[0])
-    macro_length_acc = sorted(macro_length_acc.items(), key=lambda x: x[0])
-    micro_length = [each[0] for each in micro_length_acc]
-    micro_acc = [
-        each[1]["good"] / (each[1]["good"] + each[1]["bad"])
-        for each in micro_length_acc
-    ]
-    macro_length = [each[0] for each in macro_length_acc]
-    macro_acc = [
-        each[1]["good"] / (each[1]["good"] + each[1]["bad"])
-        for each in macro_length_acc
-    ]
-    # subplot for micro and macro
-    fig, axs = plt.subplots(2, 1, figsize=(10, 10))
-    axs[0].plot(micro_length, micro_acc)
-    axs[0].set_xlabel("dist(src, dst) - micro")
-    axs[0].set_ylabel("accuracy")
-
-    axs[1].plot(macro_length, macro_acc)
-    axs[1].set_xlabel("dist(src, dst) - macro")
-    axs[1].set_ylabel("accuracy")
-
-    # get verify_dir from verify_json
-    verify_dir = os.path.dirname(verify_json)
-    plt.savefig(
-        os.path.join(verify_dir, f"{each_version.split('/')[0]}_acc_vs_term_dist.png")
-    )
-    plt.close()
-
-
-def plot_acc_vs_route_length(
-    verify_json, each_version, micro_length_acc, macro_length_acc
-):
-    micro_length_acc = sorted(micro_length_acc.items(), key=lambda x: x[0])
-    macro_length_acc = sorted(macro_length_acc.items(), key=lambda x: x[0])
-    micro_length = [each[0] for each in micro_length_acc]
-    micro_acc = [
-        each[1]["good"] / (each[1]["good"] + each[1]["bad"])
-        for each in micro_length_acc
-    ]
-    macro_length = [each[0] for each in macro_length_acc]
-    macro_acc = [
-        each[1]["good"] / (each[1]["good"] + each[1]["bad"])
-        for each in macro_length_acc
-    ]
-    # subplot for micro and macro
-    fig, axs = plt.subplots(2, 1, figsize=(10, 10))
-    axs[0].plot(micro_length, micro_acc)
-    axs[0].set_xlabel("route length - micro")
-    axs[0].set_ylabel("accuracy")
-
-    axs[1].plot(macro_length, macro_acc)
-    axs[1].set_xlabel("route length - macro")
-    axs[1].set_ylabel("accuracy")
-
-    # get verify_dir from verify_json
-    verify_dir = os.path.dirname(verify_json)
-    plt.savefig(
-        os.path.join(
-            verify_dir, f"{each_version.split('/')[0]}_acc_vs_route_length.png"
-        )
-    )
-    plt.close()
 
 
 def skip_due_to_cutoff(
@@ -416,7 +319,8 @@ def skip_due_to_cutoff(
         # assert only one match
         if len(matched_path) == 0:
             print(
-                f"matched path not found for given gpt result, possibly DROPPED for whatever reason [{src_code}] -> dst_code: [{dst_code}] | length: [{len(path_gt)}]", file=sys.stderr
+                f"matched path not found for given gpt result, possibly DROPPED for whatever reason [{src_code}] -> dst_code: [{dst_code}] | length: [{len(path_gt)}]",
+                file=sys.stderr,
             )
             print(f"src_code: [{src_code}] -> dst_code: [{dst_code}]")
             print(f"length: [{len(path_gt)}] | path_gt: [{path_gt}]")
