@@ -145,9 +145,12 @@ def compute_hash(json_obj, mode):
         "step_min_cutoff",
         "path_min_cutoff",
         "all_steps_seen_in_forward",
-        "diff_shortest",
+        # "diff_shortest",
     ]
-    delete_keys_allpairs = ["num_paths", "path_min_cutoffs", "diff_shortest"]
+    delete_keys_allpairs = [
+        "num_paths",
+        "path_min_cutoffs",
+    ]  # "diff_shortest"
     # for key in delete_keys:
     #     if key in json_obj_copy:
     #         del json_obj_copy[key]
