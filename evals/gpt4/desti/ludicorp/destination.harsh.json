@@ -1,8 +1,8 @@
 {
     "stepnav-gpt-4/": {
-        "correct_num": 165,
-        "total_num": 231,
-        "accuracy": 0.7142857142857143,
+        "correct_num": 166,
+        "total_num": 232,
+        "accuracy": 0.7155172413793104,
         "collection": {
             "../gpt-games-results//ludicorp/results//stepnav-gpt-4/results_2023-06-01-01-41-59_715.json": {
                 "verify_result": true,
@@ -8311,6 +8311,65 @@
                 ],
                 "micro_uuid": "6fdddbec-1468-30e7-9569-c67f08a05199",
                 "macro_uuid": "f3027ad4-754c-3a8f-8984-bfa16b3b3b20"
+            },
+            "../gpt-games-results//ludicorp/results//stepnav-gpt-4/results_2023-06-01-01-38-38_862.json": {
+                "verify_result": true,
+                "src_requested": "the main carpark (obj157)",
+                "dst_requested": "generator room (obj166)",
+                "action_requested": [
+                    "north",
+                    "east",
+                    "south",
+                    "south",
+                    "down",
+                    "northeast"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "generator room (obj166)",
+                "stop_step": 6,
+                "path_checked": [
+                    {
+                        "prev_node": "The Main Carpark",
+                        "node": "Front Of The Office",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Front Of The Office",
+                        "node": "East Of Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "East Of Office",
+                        "node": "Some Bushes",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Some Bushes",
+                        "node": "Maintanence Stairwell (Top)",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Maintanence Stairwell (Top)",
+                        "node": "Maintanence Stairwell (Bottom)",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Maintanence Stairwell (Bottom)",
+                        "node": "Generator Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "57155c05-3491-34c0-91e1-702d5972d71f",
+                "macro_uuid": "c000f7b1-40dd-37f4-a658-26cef3817011"
             },
             "../gpt-games-results//ludicorp/results//stepnav-gpt-4/results_2023-06-01-01-47-05_807.json": {
                 "verify_result": true,

@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 20,
-        "total_num": 190,
-        "accuracy": 0.10526315789473684,
+        "total_num": 191,
+        "accuracy": 0.10471204188481675,
         "collection": {
             "../gpt-games-results//night/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-47-16_527.json": {
                 "verify_result": false,
@@ -2976,6 +2976,26 @@
                 "verify_msg": "bad format",
                 "micro_uuid": "253957bb-39bf-36d6-b7a8-2fa3ec1744fa",
                 "macro_uuid": "a9e732d1-28a1-3904-bdff-ff57e6a4421f"
+            },
+            "../gpt-games-results//night/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-43-02_737.json": {
+                "verify_result": false,
+                "src_anno": "Hall (3rd floor, middle of north/south hall)",
+                "src_requested": "hall (obj39)",
+                "dst_anno": "Hall (2nd floor, middle of north/south hall)",
+                "dst_requested": "hall (obj53)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "northeast",
+                    "down",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "hall outside elevator (obj40)",
+                "verify_msg": "wrong path, fail to arrive at dst: hall outside elevator (obj40), hall (obj53)",
+                "micro_uuid": "56068cf8-60c5-3a76-b7f6-3de9f20a2ad3",
+                "macro_uuid": "2fbba48c-16be-371e-92ce-bb8d6cd39a4a"
             },
             "../gpt-games-results//night/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-43-57_673.json": {
                 "verify_result": false,

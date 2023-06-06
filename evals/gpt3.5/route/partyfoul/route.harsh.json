@@ -1,0 +1,503 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 3,
+        "total_num": 6,
+        "accuracy": 0.5,
+        "collection": {
+            "../gpt-games-results//partyfoul/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-46-05_279.json": {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "deee7833-9d3e-3632-bcb3-abd855d6e936",
+                "macro_uuid": "dab5db4d-a067-39c9-960e-47f4c5fc07be"
+            },
+            "../gpt-games-results//partyfoul/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-46-02_397.json": {
+                "verify_result": false,
+                "src_anno": "Guest Room",
+                "src_requested": "(obj124)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Guest Room",
+                        "node": "Den",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "16d347d4-dcd4-3a2e-a802-feb4a33d00f2",
+                "macro_uuid": "ec64876a-0f27-3e07-9f5f-b9953217bb55"
+            },
+            "../gpt-games-results//partyfoul/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-46-03_621.json": {
+                "verify_result": false,
+                "src_anno": "Guest Room",
+                "src_requested": "(obj124)",
+                "dst_anno": "Den",
+                "dst_requested": "(obj86)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Guest Room",
+                        "node": "Den",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8327e0d5-e541-3655-842c-b9a6380af91f",
+                "macro_uuid": "63e88f4b-298d-3a60-8338-314325e08724"
+            },
+            "../gpt-games-results//partyfoul/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-46-03_986.json": {
+                "verify_result": true,
+                "src_anno": "Den",
+                "src_requested": "(obj86)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e2dc709f-e1ec-3eec-a687-daf7e2b82a6e",
+                "macro_uuid": "9f9beb89-8156-3453-a1e4-be6c65fb9509"
+            },
+            "../gpt-games-results//partyfoul/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-46-05_937.json": {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Guest Room",
+                "dst_requested": "(obj124)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj86)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Guest Room",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "a6fcbbe3-445c-3b8b-b034-2263d0e30bbc",
+                "macro_uuid": "e84639f0-981f-3750-98d4-28f6ff6375fd"
+            },
+            "../gpt-games-results//partyfoul/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-46-03_505.json": {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Den",
+                "dst_requested": "(obj86)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj86)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3c74fd4c-0f81-3a43-a6df-10adfd80301e",
+                "macro_uuid": "91aa1220-f91d-3f0d-a471-5a6733f75d4f"
+            }
+        },
+        "random_guess_rate": 0.04000000000000001,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "deee7833-9d3e-3632-bcb3-abd855d6e936",
+                "macro_uuid": "dab5db4d-a067-39c9-960e-47f4c5fc07be"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Guest Room",
+                "src_requested": "(obj124)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Guest Room",
+                        "node": "Den",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "16d347d4-dcd4-3a2e-a802-feb4a33d00f2",
+                "macro_uuid": "ec64876a-0f27-3e07-9f5f-b9953217bb55"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Guest Room",
+                "src_requested": "(obj124)",
+                "dst_anno": "Den",
+                "dst_requested": "(obj86)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Guest Room",
+                        "node": "Den",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8327e0d5-e541-3655-842c-b9a6380af91f",
+                "macro_uuid": "63e88f4b-298d-3a60-8338-314325e08724"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Den",
+                "src_requested": "(obj86)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e2dc709f-e1ec-3eec-a687-daf7e2b82a6e",
+                "macro_uuid": "9f9beb89-8156-3453-a1e4-be6c65fb9509"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Guest Room",
+                "dst_requested": "(obj124)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj86)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Guest Room",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "a6fcbbe3-445c-3b8b-b034-2263d0e30bbc",
+                "macro_uuid": "e84639f0-981f-3750-98d4-28f6ff6375fd"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Den",
+                "dst_requested": "(obj86)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj86)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3c74fd4c-0f81-3a43-a6df-10adfd80301e",
+                "macro_uuid": "91aa1220-f91d-3f0d-a471-5a6733f75d4f"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj103)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "deee7833-9d3e-3632-bcb3-abd855d6e936",
+                "macro_uuid": "dab5db4d-a067-39c9-960e-47f4c5fc07be"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Guest Room",
+                "src_requested": "(obj124)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Guest Room",
+                        "node": "Den",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "16d347d4-dcd4-3a2e-a802-feb4a33d00f2",
+                "macro_uuid": "ec64876a-0f27-3e07-9f5f-b9953217bb55"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Guest Room",
+                "src_requested": "(obj124)",
+                "dst_anno": "Den",
+                "dst_requested": "(obj86)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Guest Room",
+                        "node": "Den",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8327e0d5-e541-3655-842c-b9a6380af91f",
+                "macro_uuid": "63e88f4b-298d-3a60-8338-314325e08724"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Den",
+                "src_requested": "(obj86)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "(obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj103)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Den",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e2dc709f-e1ec-3eec-a687-daf7e2b82a6e",
+                "macro_uuid": "9f9beb89-8156-3453-a1e4-be6c65fb9509"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Guest Room",
+                "dst_requested": "(obj124)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "(obj86)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Den",
+                        "node": "Guest Room",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "a6fcbbe3-445c-3b8b-b034-2263d0e30bbc",
+                "macro_uuid": "e84639f0-981f-3750-98d4-28f6ff6375fd"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Living Room",
+                "src_requested": "(obj52)",
+                "dst_anno": "Den",
+                "dst_requested": "(obj86)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "(obj86)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living Room",
+                        "node": "Den",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3c74fd4c-0f81-3a43-a6df-10adfd80301e",
+                "macro_uuid": "91aa1220-f91d-3f0d-a471-5a6733f75d4f"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.5
+    }
+}

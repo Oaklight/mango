@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
-        "correct_num": 16,
-        "total_num": 91,
-        "accuracy": 0.17582417582417584,
+        "correct_num": 27,
+        "total_num": 155,
+        "accuracy": 0.17419354838709677,
         "collection": {
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-23-38_476.json": {
                 "verify_result": false,
@@ -159,6 +159,42 @@
                 "micro_uuid": "3477bd4c-5926-38a7-9f42-207e8e07c6f5",
                 "macro_uuid": "7463bed5-5055-3f39-a486-3ac6f249bb44"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-19_687.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "down",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "ca2a9923-3930-36c3-af62-002fe7dffe0c",
+                "macro_uuid": "6ea02289-d9d2-3eb2-bf1f-c612f6ccdbfc"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-34-02_682.json": {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "99578051-77ff-3517-8270-0123c5c7895c",
+                "macro_uuid": "656dfefb-4b23-3272-bc06-4ad27964c1cd"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-40-11_410.json": {
                 "verify_result": false,
                 "src_anno": "Cave Entrance",
@@ -198,6 +234,27 @@
                 "micro_uuid": "c8374691-8897-3262-a30c-f21edf387d86",
                 "macro_uuid": "66dd1a45-8bbd-366e-bdfd-440672abfd34"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-22_401.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "9e0b78ae-09a9-331e-842a-608f962ccc56",
+                "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-02_061.json": {
                 "verify_result": false,
                 "src_anno": "Inn Cellar",
@@ -215,6 +272,120 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), south end of a road (obj87)",
                 "micro_uuid": "cc77843b-934b-3135-bbf0-696804a1a438",
                 "macro_uuid": "b65cc64d-4a33-35d1-a8d5-2f7049465783"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-25-57_930.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
+                "micro_uuid": "f5064605-9005-31cd-bcb9-61ee791bdf86",
+                "macro_uuid": "d8ad230f-df61-36e1-8118-075b408430be"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-06-01-11-20-49_624.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), forest pathway (obj138)",
+                "micro_uuid": "acb225a2-f9dc-3e9a-89c2-b13998513881",
+                "macro_uuid": "7fd73901-569e-316d-ac8f-0e9637f65592"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-22_283.json": {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ebdc41cc-95d2-3038-975f-79fb681d477d",
+                "macro_uuid": "01ce0bef-1d99-39a1-a9e4-552defa3869f"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-34-27_891.json": {
+                "verify_result": false,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), tree stump (obj106)",
+                "micro_uuid": "fbeef14f-a9de-3833-97d3-3425aaa37d38",
+                "macro_uuid": "2cf574bf-5a54-3842-afa8-abfc7d4fa917"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-00_561.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Cave Entrance",
+                "dst_requested": "cave entrance (obj124)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), cave entrance (obj124)",
+                "micro_uuid": "db7cf8c5-30fc-3d0d-a8e3-5d05f0fb094d",
+                "macro_uuid": "2b89c85a-cab1-38e9-a2f7-81b97c5431b1"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-50_597.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "3e941e1a-5f40-36d1-ac0e-c5e210456cf4",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-40-22_049.json": {
                 "verify_result": true,
@@ -249,6 +420,156 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
                 "micro_uuid": "df321728-7b88-3225-897c-73d47d0cd7b2",
                 "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-01_180.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "dba3f14b-e65c-3674-80be-d469268bf8d3",
+                "macro_uuid": "ff32da08-740b-38cc-931e-eb81045ea6af"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-59_437.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Inside a Cottage",
+                "dst_requested": "inside a cottage (obj236)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), inside a cottage (obj236)",
+                "micro_uuid": "b698a1da-5bf3-3c94-afd9-5efd489b8d17",
+                "macro_uuid": "2a90cb9e-3172-3b71-ba4c-7f41df59839c"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-41_018.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "1f81f3cb-ec9d-3297-bc16-d163aecd0cd2",
+                "macro_uuid": "952c63fe-b2fa-38e8-b57e-12bb0490d840"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-00_715.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "west",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), south end of a road (obj87)",
+                "micro_uuid": "130914fa-f321-332d-a3c2-9ba81243257e",
+                "macro_uuid": "b65cc64d-4a33-35d1-a8d5-2f7049465783"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-05_606.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "8519de6d-3cf8-31c2-9b1f-9bf75075d975",
+                "macro_uuid": "d5976951-4265-3074-a21e-a51083b9365e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-50_023.json": {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), forest pathway (obj138)",
+                "micro_uuid": "4859f11f-9cf7-3035-89ad-99c6e87201c1",
+                "macro_uuid": "cbba94f0-6b99-36fc-b830-679cac0ed546"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-43_646.json": {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), castle forge (obj42)",
+                "micro_uuid": "d5ca3193-3b5a-39bd-9f6c-b85dc86785ad",
+                "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-50_106.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "e8e1c8e8-4766-3805-a946-96e1b4b44338",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-40-07_983.json": {
                 "verify_result": false,
@@ -324,6 +645,23 @@
                 "micro_uuid": "21c06617-df97-3b51-9fb5-77de0c7dae87",
                 "macro_uuid": "93872fd1-f3f9-3079-a339-98dbbd879bf2"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-33-40_399.json": {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d4f4a473-57c4-3b6f-84c5-222a10ec19fc",
+                "macro_uuid": "5d82e093-50c6-347a-b071-53295d395bf8"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-23-34_900.json": {
                 "verify_result": true,
                 "src_anno": "Rocky Mountains",
@@ -382,6 +720,24 @@
                 "micro_uuid": "803e1329-20f2-3f44-8e4f-031cd027c2a4",
                 "macro_uuid": "3ad1f208-9c6c-36d9-9f84-5c63e504add0"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-19_944.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "down",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "a45f60ad-2cba-3038-a67e-f1390ee34d79",
+                "macro_uuid": "6ea02289-d9d2-3eb2-bf1f-c612f6ccdbfc"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-37-02_553.json": {
                 "verify_result": false,
                 "src_anno": "Wasteland by a Castle",
@@ -436,6 +792,23 @@
                 "micro_uuid": "d753de0e-1e57-345f-b7b0-9be2336af19b",
                 "macro_uuid": "2b89c85a-cab1-38e9-a2f7-81b97c5431b1"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-59_621.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "8325ae99-de85-3da0-bdd5-028090308bed",
+                "macro_uuid": "c0851a9c-6368-3b0c-b9d0-13b10b93ba16"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-16_875.json": {
                 "verify_result": false,
                 "src_anno": "Abandoned Inn",
@@ -452,6 +825,29 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), cave entrance (obj124)",
                 "micro_uuid": "698ebd6b-d09b-3f60-9698-8a9852fad169",
                 "macro_uuid": "a230a860-2b49-3b7c-b569-a2d6d72cea2d"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-36-11_023.json": {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "pebbled beach (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: pebbled beach (obj60), tree stump (obj106)",
+                "micro_uuid": "99acd8e5-74d6-3447-813a-55e8150731ec",
+                "macro_uuid": "acebdf2b-391f-3144-a7b8-c58353cd4264"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-34-27_278.json": {
                 "verify_result": false,
@@ -490,6 +886,41 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), cottage (obj129)",
                 "micro_uuid": "e6bb9832-841e-357e-90e6-2b405434da29",
                 "macro_uuid": "c23f86af-9e07-333f-bf53-f1d992d8621c"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-29-38_963.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), north end of a road (obj77)",
+                "micro_uuid": "14777b4f-1acd-373c-86bf-c0ed8cfa24bf",
+                "macro_uuid": "e00b43f9-7ee9-347d-81f4-75f92e95c7f0"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-23-36_562.json": {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "06504eb3-dcd6-3077-b768-740353428fc4",
+                "macro_uuid": "66dd1a45-8bbd-366e-bdfd-440672abfd34"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-25-59_415.json": {
                 "verify_result": false,
@@ -567,6 +998,49 @@
                 "micro_uuid": "444caa48-0c20-369a-8b3e-c6389bd58cd8",
                 "macro_uuid": "f953b1bd-b6bd-39a9-8a93-86a3e7ad1672"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-49_376.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), forest pathway (obj138)",
+                "micro_uuid": "941121bb-0a3b-3f68-8636-12645f79438a",
+                "macro_uuid": "2d0d89fe-3e6b-3d66-a3c1-7e0e62819a13"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-32-27_321.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "cave entrance (obj124)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), forest pathway (obj138)",
+                "micro_uuid": "b66549e2-c4a3-35e7-8458-4a6ab16f698a",
+                "macro_uuid": "16914e21-30c5-355c-8eb5-3452ec59d776"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-34-29_949.json": {
                 "verify_result": false,
                 "src_anno": "North End of a Road",
@@ -625,6 +1099,39 @@
                 "micro_uuid": "b75f1045-996d-36ea-8604-28996e573bbd",
                 "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-33-38_470.json": {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "south end of a road (obj87)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ef12516c-5536-3c94-9a24-64a4cbb52b20",
+                "macro_uuid": "00b945ef-181e-3e15-a527-7c159edcd69c"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-19_267.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "4f798c38-d121-3307-9956-401893db8abe",
+                "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-37_934.json": {
                 "verify_result": false,
                 "src_anno": "Swampy Ground",
@@ -640,6 +1147,27 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
                 "micro_uuid": "e8da73a4-b9e9-3c18-930b-ede410eface8",
                 "macro_uuid": "85e9077f-3a51-33fe-b895-8c7e21ee27e3"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-43_216.json": {
+                "verify_result": false,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), tree stump (obj106)",
+                "micro_uuid": "9648e92b-80d3-3c7a-8cd0-c41bbdaacdc1",
+                "macro_uuid": "7463bed5-5055-3f39-a486-3ac6f249bb44"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-32-00_579.json": {
                 "verify_result": false,
@@ -679,6 +1207,24 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), inside a cottage (obj236)",
                 "micro_uuid": "2a0841c8-5c93-3b1b-bd27-33b033b6d38b",
                 "macro_uuid": "45a05ebc-7b52-3481-874c-708096c971b9"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-00_595.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "ac2f3da0-d5d9-396e-af03-5c13062de0eb",
+                "macro_uuid": "ff32da08-740b-38cc-931e-eb81045ea6af"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-32-01_768.json": {
                 "verify_result": false,
@@ -735,6 +1281,27 @@
                 "micro_uuid": "8f4d55a7-4de8-3295-99a4-68a6a2f4192e",
                 "macro_uuid": "daa5cec1-e1cb-3abb-911e-62318a30ba8d"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-37-29_258.json": {
+                "verify_result": false,
+                "src_anno": "Wasteland by a Castle",
+                "src_requested": "wasteland by a castle (obj50)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), tree stump (obj106)",
+                "micro_uuid": "e4cab484-d21d-3eed-bafd-245e20b2bbcb",
+                "macro_uuid": "3ad1f208-9c6c-36d9-9f84-5c63e504add0"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-44_578.json": {
                 "verify_result": false,
                 "src_anno": "Inn Cellar",
@@ -755,6 +1322,46 @@
                 "micro_uuid": "71378f9e-6499-3aab-96b8-f9b745f750a4",
                 "macro_uuid": "04a7ac9c-828d-3c0f-80c1-03ab7e047e01"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-01_929.json": {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b8cfe294-0938-32cf-b94d-1ec6d5ea7073",
+                "macro_uuid": "ca843823-309f-3dcb-a760-98249e141b7c"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-37-28_450.json": {
+                "verify_result": false,
+                "src_anno": "Wasteland by a Castle",
+                "src_requested": "wasteland by a castle (obj50)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "wrong path, fail to arrive at dst: wasteland by a castle (obj50), forest pathway (obj138)",
+                "micro_uuid": "a5e130d6-896f-3bdc-b2c0-bdd6c0a1f909",
+                "macro_uuid": "b2b410eb-2fec-3366-9c27-42df3e5d4906"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-29-58_990.json": {
                 "verify_result": false,
                 "src_anno": "Inn Cellar",
@@ -771,6 +1378,62 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
                 "micro_uuid": "e225e5c6-1f97-30c7-b8c6-8dabd7f3cd8f",
                 "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-59_149.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "2b2f8c76-8abc-3400-842e-2cb55f15839e",
+                "macro_uuid": "c0851a9c-6368-3b0c-b9d0-13b10b93ba16"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-34-02_508.json": {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9e65b2aa-83ba-3f4b-960b-63eff696addf",
+                "macro_uuid": "656dfefb-4b23-3272-bc06-4ad27964c1cd"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-23_763.json": {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7cfd624a-a180-320c-803f-ac0f6e6862cf",
+                "macro_uuid": "01ce0bef-1d99-39a1-a9e4-552defa3869f"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-20_406.json": {
                 "verify_result": false,
@@ -928,6 +1591,26 @@
                 "micro_uuid": "793ec867-89c9-3ff1-b915-2b9403d4f3dd",
                 "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-05_949.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "d561e736-ce72-333d-bab2-126f74094597",
+                "macro_uuid": "d5976951-4265-3074-a21e-a51083b9365e"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-30_376.json": {
                 "verify_result": false,
                 "src_anno": "Inside the Inn",
@@ -951,6 +1634,24 @@
                 "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), cottage (obj129)",
                 "micro_uuid": "0a663f9d-abdf-37b0-81ba-3b0dc039c8fa",
                 "macro_uuid": "c521c307-ee32-3a9b-bb7a-7f84f40f45d3"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-42_153.json": {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), castle forge (obj42)",
+                "micro_uuid": "c77e9dce-8d43-39d6-a428-58ce6889c385",
+                "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-37-27_211.json": {
                 "verify_result": false,
@@ -994,6 +1695,42 @@
                 "micro_uuid": "c1138832-3c7b-3561-ad74-9087315f3741",
                 "macro_uuid": "cbba94f0-6b99-36fc-b830-679cac0ed546"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-25_320.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Cottage",
+                "dst_requested": "cottage (obj129)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "forbidding castle (obj34)",
+                "verify_msg": "wrong path, fail to arrive at dst: forbidding castle (obj34), cottage (obj129)",
+                "micro_uuid": "83596a4a-cf34-330c-b8d5-394fac18d0aa",
+                "macro_uuid": "46b31fc0-2122-3a83-9ce9-8fe873d002da"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-32-00_383.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rocky mountains (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky mountains (obj148), castle forge (obj42)",
+                "micro_uuid": "9087ae7a-b05d-3a63-858d-604b2ac61882",
+                "macro_uuid": "bcd04e0e-a724-349d-b3d8-9a6e78bab4d3"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-55_367.json": {
                 "verify_result": false,
                 "src_anno": "Inside the Inn",
@@ -1023,6 +1760,84 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), cave entrance (obj124)",
                 "micro_uuid": "fc12c660-c65d-3019-bf86-4131ce300065",
                 "macro_uuid": "2857991f-66d5-364f-92e5-e2241eeba81e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-01_470.json": {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "944a6d6e-cf96-3cdf-8469-624a145afa8c",
+                "macro_uuid": "ca843823-309f-3dcb-a760-98249e141b7c"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-41_235.json": {
+                "verify_result": false,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "down",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), forest pathway (obj138)",
+                "micro_uuid": "496c4044-23ad-3569-a1be-28b241a6136b",
+                "macro_uuid": "f7265e10-692d-376c-b22a-48457fd3620e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-00_417.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
+                "micro_uuid": "0979c39e-24d6-3b00-b306-96f89001dbfb",
+                "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-41_408.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), tree stump (obj106)",
+                "micro_uuid": "b56acd9e-3b5d-304a-8bf5-2d764ce76dc7",
+                "macro_uuid": "6335f520-0430-3811-8db0-bc5fed1753d1"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-24-24_380.json": {
                 "verify_result": false,
@@ -1064,6 +1879,22 @@
                 "micro_uuid": "a9b43966-41f9-3f38-9b89-4d304a1c242b",
                 "macro_uuid": "39043292-c3ca-36a9-b31f-6f2c2315a28f"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-37_355.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
+                "micro_uuid": "7fc1ed3e-7948-337c-a63e-50d8ddbe904f",
+                "macro_uuid": "85e9077f-3a51-33fe-b895-8c7e21ee27e3"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-32-25_387.json": {
                 "verify_result": false,
                 "src_anno": "Swampy Ground",
@@ -1104,6 +1935,25 @@
                 "micro_uuid": "d00a8600-951d-35b1-b071-cf2485c12bc4",
                 "macro_uuid": "e4262b3f-712c-3e34-a696-b19375bbc6fe"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-28_030.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), forest pathway (obj138)",
+                "micro_uuid": "9bb4598d-826e-343d-ab00-cbabf38e722f",
+                "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-37-06_725.json": {
                 "verify_result": false,
                 "src_anno": "Wasteland by a Castle",
@@ -1123,6 +1973,26 @@
                 "micro_uuid": "44d2ec72-db64-32c1-a56b-24e4e41e2c66",
                 "macro_uuid": "b9c8b021-ba56-3c6b-b902-f2b1a9d90d5e"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-51_143.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "faaa5e3c-24db-344f-a797-08f8ffbf9caf",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-25-34_537.json": {
                 "verify_result": true,
                 "src_anno": "Abandoned Inn",
@@ -1138,6 +2008,76 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "f60aaed8-7855-3682-a945-1570a86654d1",
                 "macro_uuid": "72046b1f-ed4b-395a-8292-fed7ba5c0aa1"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-27_143.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "7f904fba-aab2-3507-bc31-1af2801be362",
+                "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-27-59_037.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), north end of a road (obj77)",
+                "micro_uuid": "1ed23dc9-4daf-3eb5-b790-7adada7396d4",
+                "macro_uuid": "91bddd56-6f96-36ac-9a8c-c04304547111"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-55_207.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "ffcd99df-992a-3e71-a72f-1f1a4bea833a",
+                "macro_uuid": "2fc2e3b0-0f1d-3477-bb93-a6b0ef273b78"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-18_501.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "91639d59-2d6e-3427-a8cf-77e50725ef89",
+                "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-39_852.json": {
                 "verify_result": false,
@@ -1157,6 +2097,23 @@
                 "micro_uuid": "857ccb88-ab26-3e0b-b517-ceb1d66bbbcb",
                 "macro_uuid": "7fd73901-569e-316d-ac8f-0e9637f65592"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-59_412.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rocky mountains (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky mountains (obj148), castle forge (obj42)",
+                "micro_uuid": "0a2c1aee-abb3-3327-9887-6b0812d8fe37",
+                "macro_uuid": "bcd04e0e-a724-349d-b3d8-9a6e78bab4d3"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-40_165.json": {
                 "verify_result": false,
                 "src_anno": "Swampy Ground",
@@ -1174,6 +2131,23 @@
                 "micro_uuid": "56f36f15-abc5-3fc2-a8b4-74e4ce4f57b5",
                 "macro_uuid": "39e47d54-b59f-3094-9be5-5d6d6a03fef0"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-33-40_015.json": {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c5d553dc-d285-37ee-b8d7-660f8ae23280",
+                "macro_uuid": "5d82e093-50c6-347a-b071-53295d395bf8"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-41_803.json": {
                 "verify_result": false,
                 "src_anno": "South End of a Road",
@@ -1190,6 +2164,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: lake in the forest (obj93), cave entrance (obj124)",
                 "micro_uuid": "a14e7474-0857-31e4-844a-2ad16f8b0495",
                 "macro_uuid": "74274ede-8c07-33ea-9dce-44b7eed8ada1"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-23-58_200.json": {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "south end of a road (obj87)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "bf0fe482-cb22-343f-8b33-86c4e589f878",
+                "macro_uuid": "8ce670ab-28b8-3a27-a1d3-450b4688bf2d"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-23_036.json": {
                 "verify_result": false,
@@ -1231,6 +2224,58 @@
                 "micro_uuid": "95394f85-6f2c-3bdc-a555-0a6caa9585e4",
                 "macro_uuid": "6335f520-0430-3811-8db0-bc5fed1753d1"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-02_162.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
+                "micro_uuid": "6cf9153f-dc47-3274-a1c7-72e0f5aff683",
+                "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-21_983.json": {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), wasteland by a castle (obj50)",
+                "micro_uuid": "cda746a5-e27a-301e-996d-a545cef501d5",
+                "macro_uuid": "07665bad-3d58-3ba7-8474-cd881d8c039f"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-31-39_421.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "cave entrance (obj124)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), south end of a road (obj87)",
+                "micro_uuid": "04f020dd-1a51-37d2-a6a3-d487f62f1618",
+                "macro_uuid": "39e47d54-b59f-3094-9be5-5d6d6a03fef0"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-51_645.json": {
                 "verify_result": false,
                 "src_anno": "Castle Forge",
@@ -1250,6 +2295,43 @@
                 "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
                 "micro_uuid": "7859e553-56d8-3060-bedc-b427e2d99e99",
                 "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-32-22_822.json": {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), tree stump (obj106)",
+                "micro_uuid": "d1334943-3a15-3c32-b380-db1fe4687a46",
+                "macro_uuid": "f953b1bd-b6bd-39a9-8a93-86a3e7ad1672"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-25-59_533.json": {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), south end of a road (obj87)",
+                "micro_uuid": "93ebdbcb-d8a6-37c4-a9d7-c7469ec03acd",
+                "macro_uuid": "e8b596a8-14f1-35ff-82fa-f080850d43b5"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-40-03_822.json": {
                 "verify_result": false,
@@ -1308,6 +2390,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
                 "micro_uuid": "0fca8db7-2ad1-3309-b6ac-6202d4a709f6",
                 "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-48_282.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), forest pathway (obj138)",
+                "micro_uuid": "4487e83d-50fb-3bfd-bea0-8623587be3f0",
+                "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-26-20_574.json": {
                 "verify_result": false,
@@ -1402,6 +2503,29 @@
                 "micro_uuid": "e074c6fa-c64d-3401-8878-86958923821c",
                 "macro_uuid": "be3aa600-7de9-3421-9756-c104ea2067ed"
             },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-30-51_271.json": {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "up",
+                    "west",
+                    "west",
+                    "west",
+                    "south",
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "forbidding castle (obj34)",
+                "verify_msg": "wrong path, fail to arrive at dst: forbidding castle (obj34), tree stump (obj106)",
+                "micro_uuid": "3e3c256f-080c-3f5f-adbe-93545687d330",
+                "macro_uuid": "04a7ac9c-828d-3c0f-80c1-03ab7e047e01"
+            },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-27-35_430.json": {
                 "verify_result": true,
                 "src_anno": "Inside the Inn",
@@ -1434,6 +2558,47 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), north end of a road (obj77)",
                 "micro_uuid": "fd41d915-2863-3393-a32a-390f1ad450cd",
                 "macro_uuid": "e00b43f9-7ee9-347d-81f4-75f92e95c7f0"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-34-08_442.json": {
+                "verify_result": false,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "forbidding castle (obj34)",
+                "verify_msg": "wrong path, fail to arrive at dst: forbidding castle (obj34), forest pathway (obj138)",
+                "micro_uuid": "85110046-4710-31f3-a07a-35c690583b70",
+                "macro_uuid": "6e3eff8a-554c-3aae-96bc-8b4c7b98da7e"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-28-02_349.json": {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "cottage (obj129)",
+                "verify_msg": "wrong path, fail to arrive at dst: cottage (obj129), south end of a road (obj87)",
+                "micro_uuid": "de4148a6-1df6-3f6f-8a4b-776522f32d82",
+                "macro_uuid": "93872fd1-f3f9-3079-a339-98dbbd879bf2"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-27-36_433.json": {
                 "verify_result": false,
@@ -1502,6 +2667,23 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "431445f8-adde-33bd-9bed-0b0242fc9dfa",
                 "macro_uuid": "3013574b-5200-3153-b7e4-5c4761c0b997"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-20_296.json": {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), wasteland by a castle (obj50)",
+                "micro_uuid": "2a55d120-6733-3a7d-8e3c-003aca73b454",
+                "macro_uuid": "07665bad-3d58-3ba7-8474-cd881d8c039f"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-35-21_892.json": {
                 "verify_result": false,
@@ -1589,6 +2771,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), swampy ground (obj116)",
                 "micro_uuid": "329ad970-f79d-37b6-9ba4-086685fb57ca",
                 "macro_uuid": "9fcf692b-99f8-31c2-8373-e619245f4cac"
+            },
+            "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-38-27_260.json": {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), forest pathway (obj138)",
+                "micro_uuid": "0cbf2054-4fba-3ff3-8445-e908c7f8cb98",
+                "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
             },
             "../gpt-games-results//dragon/results//pathgen-gpt-3.5-turbo/results_2023-05-31-07-37-01_814.json": {
                 "verify_result": true,
@@ -1853,6 +3054,42 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "down",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "ca2a9923-3930-36c3-af62-002fe7dffe0c",
+                "macro_uuid": "6ea02289-d9d2-3eb2-bf1f-c612f6ccdbfc"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "99578051-77ff-3517-8270-0123c5c7895c",
+                "macro_uuid": "656dfefb-4b23-3272-bc06-4ad27964c1cd"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Cave Entrance",
                 "src_requested": "cave entrance (obj124)",
                 "dst_anno": "Forest Pathway",
@@ -1892,6 +3129,27 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "9e0b78ae-09a9-331e-842a-608f962ccc56",
+                "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Inn Cellar",
                 "src_requested": "inn cellar (obj218)",
                 "dst_anno": "South End of a Road",
@@ -1907,6 +3165,120 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), south end of a road (obj87)",
                 "micro_uuid": "cc77843b-934b-3135-bbf0-696804a1a438",
                 "macro_uuid": "b65cc64d-4a33-35d1-a8d5-2f7049465783"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
+                "micro_uuid": "f5064605-9005-31cd-bcb9-61ee791bdf86",
+                "macro_uuid": "d8ad230f-df61-36e1-8118-075b408430be"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), forest pathway (obj138)",
+                "micro_uuid": "acb225a2-f9dc-3e9a-89c2-b13998513881",
+                "macro_uuid": "7fd73901-569e-316d-ac8f-0e9637f65592"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ebdc41cc-95d2-3038-975f-79fb681d477d",
+                "macro_uuid": "01ce0bef-1d99-39a1-a9e4-552defa3869f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), tree stump (obj106)",
+                "micro_uuid": "fbeef14f-a9de-3833-97d3-3425aaa37d38",
+                "macro_uuid": "2cf574bf-5a54-3842-afa8-abfc7d4fa917"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Cave Entrance",
+                "dst_requested": "cave entrance (obj124)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), cave entrance (obj124)",
+                "micro_uuid": "db7cf8c5-30fc-3d0d-a8e3-5d05f0fb094d",
+                "macro_uuid": "2b89c85a-cab1-38e9-a2f7-81b97c5431b1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "3e941e1a-5f40-36d1-ac0e-c5e210456cf4",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
             },
             {
                 "verify_result": true,
@@ -1941,6 +3313,156 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
                 "micro_uuid": "df321728-7b88-3225-897c-73d47d0cd7b2",
                 "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "dba3f14b-e65c-3674-80be-d469268bf8d3",
+                "macro_uuid": "ff32da08-740b-38cc-931e-eb81045ea6af"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Inside a Cottage",
+                "dst_requested": "inside a cottage (obj236)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), inside a cottage (obj236)",
+                "micro_uuid": "b698a1da-5bf3-3c94-afd9-5efd489b8d17",
+                "macro_uuid": "2a90cb9e-3172-3b71-ba4c-7f41df59839c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "1f81f3cb-ec9d-3297-bc16-d163aecd0cd2",
+                "macro_uuid": "952c63fe-b2fa-38e8-b57e-12bb0490d840"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "west",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), south end of a road (obj87)",
+                "micro_uuid": "130914fa-f321-332d-a3c2-9ba81243257e",
+                "macro_uuid": "b65cc64d-4a33-35d1-a8d5-2f7049465783"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "8519de6d-3cf8-31c2-9b1f-9bf75075d975",
+                "macro_uuid": "d5976951-4265-3074-a21e-a51083b9365e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), forest pathway (obj138)",
+                "micro_uuid": "4859f11f-9cf7-3035-89ad-99c6e87201c1",
+                "macro_uuid": "cbba94f0-6b99-36fc-b830-679cac0ed546"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), castle forge (obj42)",
+                "micro_uuid": "d5ca3193-3b5a-39bd-9f6c-b85dc86785ad",
+                "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "e8e1c8e8-4766-3805-a946-96e1b4b44338",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
             },
             {
                 "verify_result": false,
@@ -2018,6 +3540,23 @@
             },
             {
                 "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d4f4a473-57c4-3b6f-84c5-222a10ec19fc",
+                "macro_uuid": "5d82e093-50c6-347a-b071-53295d395bf8"
+            },
+            {
+                "verify_result": true,
                 "src_anno": "Rocky Mountains",
                 "src_requested": "rocky mountains (obj148)",
                 "dst_anno": "Swampy Ground",
@@ -2076,6 +3615,24 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "down",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "a45f60ad-2cba-3038-a67e-f1390ee34d79",
+                "macro_uuid": "6ea02289-d9d2-3eb2-bf1f-c612f6ccdbfc"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Wasteland by a Castle",
                 "src_requested": "wasteland by a castle (obj50)",
                 "dst_anno": "Cave Entrance",
@@ -2130,6 +3687,23 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "8325ae99-de85-3da0-bdd5-028090308bed",
+                "macro_uuid": "c0851a9c-6368-3b0c-b9d0-13b10b93ba16"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Abandoned Inn",
                 "src_requested": "abandoned inn (obj156)",
                 "dst_anno": "Cave Entrance",
@@ -2144,6 +3718,29 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), cave entrance (obj124)",
                 "micro_uuid": "698ebd6b-d09b-3f60-9698-8a9852fad169",
                 "macro_uuid": "a230a860-2b49-3b7c-b569-a2d6d72cea2d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "east",
+                    "east",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "pebbled beach (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: pebbled beach (obj60), tree stump (obj106)",
+                "micro_uuid": "99acd8e5-74d6-3447-813a-55e8150731ec",
+                "macro_uuid": "acebdf2b-391f-3144-a7b8-c58353cd4264"
             },
             {
                 "verify_result": false,
@@ -2182,6 +3779,41 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), cottage (obj129)",
                 "micro_uuid": "e6bb9832-841e-357e-90e6-2b405434da29",
                 "macro_uuid": "c23f86af-9e07-333f-bf53-f1d992d8621c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), north end of a road (obj77)",
+                "micro_uuid": "14777b4f-1acd-373c-86bf-c0ed8cfa24bf",
+                "macro_uuid": "e00b43f9-7ee9-347d-81f4-75f92e95c7f0"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "06504eb3-dcd6-3077-b768-740353428fc4",
+                "macro_uuid": "66dd1a45-8bbd-366e-bdfd-440672abfd34"
             },
             {
                 "verify_result": false,
@@ -2261,6 +3893,49 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), forest pathway (obj138)",
+                "micro_uuid": "941121bb-0a3b-3f68-8636-12645f79438a",
+                "macro_uuid": "2d0d89fe-3e6b-3d66-a3c1-7e0e62819a13"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "cave entrance (obj124)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), forest pathway (obj138)",
+                "micro_uuid": "b66549e2-c4a3-35e7-8458-4a6ab16f698a",
+                "macro_uuid": "16914e21-30c5-355c-8eb5-3452ec59d776"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "North End of a Road",
                 "src_requested": "north end of a road (obj77)",
                 "dst_anno": "Forest Pathway",
@@ -2318,6 +3993,39 @@
                 "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
             },
             {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "south end of a road (obj87)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ef12516c-5536-3c94-9a24-64a4cbb52b20",
+                "macro_uuid": "00b945ef-181e-3e15-a527-7c159edcd69c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "4f798c38-d121-3307-9956-401893db8abe",
+                "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
+            },
+            {
                 "verify_result": false,
                 "src_anno": "Swampy Ground",
                 "src_requested": "swampy ground (obj116)",
@@ -2332,6 +4040,27 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
                 "micro_uuid": "e8da73a4-b9e9-3c18-930b-ede410eface8",
                 "macro_uuid": "85e9077f-3a51-33fe-b895-8c7e21ee27e3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), tree stump (obj106)",
+                "micro_uuid": "9648e92b-80d3-3c7a-8cd0-c41bbdaacdc1",
+                "macro_uuid": "7463bed5-5055-3f39-a486-3ac6f249bb44"
             },
             {
                 "verify_result": false,
@@ -2371,6 +4100,24 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), inside a cottage (obj236)",
                 "micro_uuid": "2a0841c8-5c93-3b1b-bd27-33b033b6d38b",
                 "macro_uuid": "45a05ebc-7b52-3481-874c-708096c971b9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "ac2f3da0-d5d9-396e-af03-5c13062de0eb",
+                "macro_uuid": "ff32da08-740b-38cc-931e-eb81045ea6af"
             },
             {
                 "verify_result": false,
@@ -2429,6 +4176,27 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Wasteland by a Castle",
+                "src_requested": "wasteland by a castle (obj50)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), tree stump (obj106)",
+                "micro_uuid": "e4cab484-d21d-3eed-bafd-245e20b2bbcb",
+                "macro_uuid": "3ad1f208-9c6c-36d9-9f84-5c63e504add0"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Inn Cellar",
                 "src_requested": "inn cellar (obj218)",
                 "dst_anno": "Tree Stump",
@@ -2448,6 +4216,46 @@
                 "macro_uuid": "04a7ac9c-828d-3c0f-80c1-03ab7e047e01"
             },
             {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b8cfe294-0938-32cf-b94d-1ec6d5ea7073",
+                "macro_uuid": "ca843823-309f-3dcb-a760-98249e141b7c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Wasteland by a Castle",
+                "src_requested": "wasteland by a castle (obj50)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "wrong path, fail to arrive at dst: wasteland by a castle (obj50), forest pathway (obj138)",
+                "micro_uuid": "a5e130d6-896f-3bdc-b2c0-bdd6c0a1f909",
+                "macro_uuid": "b2b410eb-2fec-3366-9c27-42df3e5d4906"
+            },
+            {
                 "verify_result": false,
                 "src_anno": "Inn Cellar",
                 "src_requested": "inn cellar (obj218)",
@@ -2463,6 +4271,62 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
                 "micro_uuid": "e225e5c6-1f97-30c7-b8c6-8dabd7f3cd8f",
                 "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "2b2f8c76-8abc-3400-842e-2cb55f15839e",
+                "macro_uuid": "c0851a9c-6368-3b0c-b9d0-13b10b93ba16"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9e65b2aa-83ba-3f4b-960b-63eff696addf",
+                "macro_uuid": "656dfefb-4b23-3272-bc06-4ad27964c1cd"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7cfd624a-a180-320c-803f-ac0f6e6862cf",
+                "macro_uuid": "01ce0bef-1d99-39a1-a9e4-552defa3869f"
             },
             {
                 "verify_result": false,
@@ -2624,6 +4488,26 @@
                 "verify_result": false,
                 "src_anno": "Inside the Inn",
                 "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "d561e736-ce72-333d-bab2-126f74094597",
+                "macro_uuid": "d5976951-4265-3074-a21e-a51083b9365e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
                 "dst_anno": "Cottage",
                 "dst_requested": "cottage (obj129)",
                 "connectivity": true,
@@ -2643,6 +4527,24 @@
                 "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), cottage (obj129)",
                 "micro_uuid": "0a663f9d-abdf-37b0-81ba-3b0dc039c8fa",
                 "macro_uuid": "c521c307-ee32-3a9b-bb7a-7f84f40f45d3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), castle forge (obj42)",
+                "micro_uuid": "c77e9dce-8d43-39d6-a428-58ce6889c385",
+                "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
             },
             {
                 "verify_result": false,
@@ -2688,6 +4590,42 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Cottage",
+                "dst_requested": "cottage (obj129)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "forbidding castle (obj34)",
+                "verify_msg": "wrong path, fail to arrive at dst: forbidding castle (obj34), cottage (obj129)",
+                "micro_uuid": "83596a4a-cf34-330c-b8d5-394fac18d0aa",
+                "macro_uuid": "46b31fc0-2122-3a83-9ce9-8fe873d002da"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rocky mountains (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky mountains (obj148), castle forge (obj42)",
+                "micro_uuid": "9087ae7a-b05d-3a63-858d-604b2ac61882",
+                "macro_uuid": "bcd04e0e-a724-349d-b3d8-9a6e78bab4d3"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Inside the Inn",
                 "src_requested": "inside the inn (obj200)",
                 "dst_anno": "Tree Stump",
@@ -2715,6 +4653,84 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), cave entrance (obj124)",
                 "micro_uuid": "fc12c660-c65d-3019-bf86-4131ce300065",
                 "macro_uuid": "2857991f-66d5-364f-92e5-e2241eeba81e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "944a6d6e-cf96-3cdf-8469-624a145afa8c",
+                "macro_uuid": "ca843823-309f-3dcb-a760-98249e141b7c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "down",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), forest pathway (obj138)",
+                "micro_uuid": "496c4044-23ad-3569-a1be-28b241a6136b",
+                "macro_uuid": "f7265e10-692d-376c-b22a-48457fd3620e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
+                "micro_uuid": "0979c39e-24d6-3b00-b306-96f89001dbfb",
+                "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), tree stump (obj106)",
+                "micro_uuid": "b56acd9e-3b5d-304a-8bf5-2d764ce76dc7",
+                "macro_uuid": "6335f520-0430-3811-8db0-bc5fed1753d1"
             },
             {
                 "verify_result": false,
@@ -2760,6 +4776,22 @@
                 "verify_result": false,
                 "src_anno": "Swampy Ground",
                 "src_requested": "swampy ground (obj116)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
+                "micro_uuid": "7fc1ed3e-7948-337c-a63e-50d8ddbe904f",
+                "macro_uuid": "85e9077f-3a51-33fe-b895-8c7e21ee27e3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
                 "dst_anno": "Forest Pathway",
                 "dst_requested": "forest pathway (obj138)",
                 "connectivity": true,
@@ -2798,6 +4830,25 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), forest pathway (obj138)",
+                "micro_uuid": "9bb4598d-826e-343d-ab00-cbabf38e722f",
+                "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Wasteland by a Castle",
                 "src_requested": "wasteland by a castle (obj50)",
                 "dst_anno": "Cottage",
@@ -2816,6 +4867,26 @@
                 "macro_uuid": "b9c8b021-ba56-3c6b-b902-f2b1a9d90d5e"
             },
             {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "faaa5e3c-24db-344f-a797-08f8ffbf9caf",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "Abandoned Inn",
                 "src_requested": "abandoned inn (obj156)",
@@ -2830,6 +4901,76 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "f60aaed8-7855-3682-a945-1570a86654d1",
                 "macro_uuid": "72046b1f-ed4b-395a-8292-fed7ba5c0aa1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "7f904fba-aab2-3507-bc31-1af2801be362",
+                "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), north end of a road (obj77)",
+                "micro_uuid": "1ed23dc9-4daf-3eb5-b790-7adada7396d4",
+                "macro_uuid": "91bddd56-6f96-36ac-9a8c-c04304547111"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "ffcd99df-992a-3e71-a72f-1f1a4bea833a",
+                "macro_uuid": "2fc2e3b0-0f1d-3477-bb93-a6b0ef273b78"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "91639d59-2d6e-3427-a8cf-77e50725ef89",
+                "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
             },
             {
                 "verify_result": false,
@@ -2853,6 +4994,23 @@
                 "verify_result": false,
                 "src_anno": "Swampy Ground",
                 "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rocky mountains (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky mountains (obj148), castle forge (obj42)",
+                "micro_uuid": "0a2c1aee-abb3-3327-9887-6b0812d8fe37",
+                "macro_uuid": "bcd04e0e-a724-349d-b3d8-9a6e78bab4d3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
                 "dst_anno": "South End of a Road",
                 "dst_requested": "south end of a road (obj87)",
                 "connectivity": true,
@@ -2865,6 +5023,23 @@
                 "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), south end of a road (obj87)",
                 "micro_uuid": "56f36f15-abc5-3fc2-a8b4-74e4ce4f57b5",
                 "macro_uuid": "39e47d54-b59f-3094-9be5-5d6d6a03fef0"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c5d553dc-d285-37ee-b8d7-660f8ae23280",
+                "macro_uuid": "5d82e093-50c6-347a-b071-53295d395bf8"
             },
             {
                 "verify_result": false,
@@ -2882,6 +5057,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: lake in the forest (obj93), cave entrance (obj124)",
                 "micro_uuid": "a14e7474-0857-31e4-844a-2ad16f8b0495",
                 "macro_uuid": "74274ede-8c07-33ea-9dce-44b7eed8ada1"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "south end of a road (obj87)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "bf0fe482-cb22-343f-8b33-86c4e589f878",
+                "macro_uuid": "8ce670ab-28b8-3a27-a1d3-450b4688bf2d"
             },
             {
                 "verify_result": false,
@@ -2925,6 +5119,58 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
+                "micro_uuid": "6cf9153f-dc47-3274-a1c7-72e0f5aff683",
+                "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), wasteland by a castle (obj50)",
+                "micro_uuid": "cda746a5-e27a-301e-996d-a545cef501d5",
+                "macro_uuid": "07665bad-3d58-3ba7-8474-cd881d8c039f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "cave entrance (obj124)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), south end of a road (obj87)",
+                "micro_uuid": "04f020dd-1a51-37d2-a6a3-d487f62f1618",
+                "macro_uuid": "39e47d54-b59f-3094-9be5-5d6d6a03fef0"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Castle Forge",
                 "src_requested": "castle forge (obj42)",
                 "dst_anno": "Tree Stump",
@@ -2942,6 +5188,43 @@
                 "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
                 "micro_uuid": "7859e553-56d8-3060-bedc-b427e2d99e99",
                 "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), tree stump (obj106)",
+                "micro_uuid": "d1334943-3a15-3c32-b380-db1fe4687a46",
+                "macro_uuid": "f953b1bd-b6bd-39a9-8a93-86a3e7ad1672"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), south end of a road (obj87)",
+                "micro_uuid": "93ebdbcb-d8a6-37c4-a9d7-c7469ec03acd",
+                "macro_uuid": "e8b596a8-14f1-35ff-82fa-f080850d43b5"
             },
             {
                 "verify_result": false,
@@ -3000,6 +5283,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
                 "micro_uuid": "0fca8db7-2ad1-3309-b6ac-6202d4a709f6",
                 "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), forest pathway (obj138)",
+                "micro_uuid": "4487e83d-50fb-3bfd-bea0-8623587be3f0",
+                "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
             },
             {
                 "verify_result": false,
@@ -3095,6 +5397,29 @@
                 "macro_uuid": "be3aa600-7de9-3421-9756-c104ea2067ed"
             },
             {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "up",
+                    "west",
+                    "west",
+                    "west",
+                    "south",
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "forbidding castle (obj34)",
+                "verify_msg": "wrong path, fail to arrive at dst: forbidding castle (obj34), tree stump (obj106)",
+                "micro_uuid": "3e3c256f-080c-3f5f-adbe-93545687d330",
+                "macro_uuid": "04a7ac9c-828d-3c0f-80c1-03ab7e047e01"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "Inside the Inn",
                 "src_requested": "inside the inn (obj200)",
@@ -3126,6 +5451,47 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), north end of a road (obj77)",
                 "micro_uuid": "fd41d915-2863-3393-a32a-390f1ad450cd",
                 "macro_uuid": "e00b43f9-7ee9-347d-81f4-75f92e95c7f0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "forbidding castle (obj34)",
+                "verify_msg": "wrong path, fail to arrive at dst: forbidding castle (obj34), forest pathway (obj138)",
+                "micro_uuid": "85110046-4710-31f3-a07a-35c690583b70",
+                "macro_uuid": "6e3eff8a-554c-3aae-96bc-8b4c7b98da7e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "cottage (obj129)",
+                "verify_msg": "wrong path, fail to arrive at dst: cottage (obj129), south end of a road (obj87)",
+                "micro_uuid": "de4148a6-1df6-3f6f-8a4b-776522f32d82",
+                "macro_uuid": "93872fd1-f3f9-3079-a339-98dbbd879bf2"
             },
             {
                 "verify_result": false,
@@ -3194,6 +5560,23 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "431445f8-adde-33bd-9bed-0b0242fc9dfa",
                 "macro_uuid": "3013574b-5200-3153-b7e4-5c4761c0b997"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), wasteland by a castle (obj50)",
+                "micro_uuid": "2a55d120-6733-3a7d-8e3c-003aca73b454",
+                "macro_uuid": "07665bad-3d58-3ba7-8474-cd881d8c039f"
             },
             {
                 "verify_result": false,
@@ -3281,6 +5664,25 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), swampy ground (obj116)",
                 "micro_uuid": "329ad970-f79d-37b6-9ba4-086685fb57ca",
                 "macro_uuid": "9fcf692b-99f8-31c2-8373-e619245f4cac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), forest pathway (obj138)",
+                "micro_uuid": "0cbf2054-4fba-3ff3-8445-e908c7f8cb98",
+                "macro_uuid": "4cfdbae8-9c9c-3ecf-a7d3-4eb8ebb99703"
             },
             {
                 "verify_result": true,
@@ -3386,9 +5788,9 @@
                 "macro_uuid": "cd355eb9-1ca1-3874-bbb5-e7091ca688ce"
             }
         ],
-        "correct_num_micro": 16,
-        "total_num_micro": 91,
-        "accuracy_micro": 0.17582417582417584,
+        "correct_num_micro": 27,
+        "total_num_micro": 155,
+        "accuracy_micro": 0.17419354838709677,
         "collection_macro": [
             {
                 "verify_result": false,
@@ -3546,6 +5948,24 @@
                 "macro_uuid": "7463bed5-5055-3f39-a486-3ac6f249bb44"
             },
             {
+                "verify_result": true,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "99578051-77ff-3517-8270-0123c5c7895c",
+                "macro_uuid": "656dfefb-4b23-3272-bc06-4ad27964c1cd"
+            },
+            {
                 "verify_result": false,
                 "src_anno": "Cave Entrance",
                 "src_requested": "cave entrance (obj124)",
@@ -3586,6 +6006,27 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "9e0b78ae-09a9-331e-842a-608f962ccc56",
+                "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Inn Cellar",
                 "src_requested": "inn cellar (obj218)",
                 "dst_anno": "South End of a Road",
@@ -3601,6 +6042,99 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), south end of a road (obj87)",
                 "micro_uuid": "cc77843b-934b-3135-bbf0-696804a1a438",
                 "macro_uuid": "b65cc64d-4a33-35d1-a8d5-2f7049465783"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
+                "micro_uuid": "f5064605-9005-31cd-bcb9-61ee791bdf86",
+                "macro_uuid": "d8ad230f-df61-36e1-8118-075b408430be"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), forest pathway (obj138)",
+                "micro_uuid": "acb225a2-f9dc-3e9a-89c2-b13998513881",
+                "macro_uuid": "7fd73901-569e-316d-ac8f-0e9637f65592"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "North End of a Road",
+                "src_requested": "north end of a road (obj77)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), tree stump (obj106)",
+                "micro_uuid": "fbeef14f-a9de-3833-97d3-3425aaa37d38",
+                "macro_uuid": "2cf574bf-5a54-3842-afa8-abfc7d4fa917"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Cave Entrance",
+                "dst_requested": "cave entrance (obj124)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), cave entrance (obj124)",
+                "micro_uuid": "db7cf8c5-30fc-3d0d-a8e3-5d05f0fb094d",
+                "macro_uuid": "2b89c85a-cab1-38e9-a2f7-81b97c5431b1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "castle hallway (obj229)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
+                "micro_uuid": "3e941e1a-5f40-36d1-ac0e-c5e210456cf4",
+                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
             },
             {
                 "verify_result": true,
@@ -3635,6 +6169,118 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), wasteland by a castle (obj50)",
                 "micro_uuid": "df321728-7b88-3225-897c-73d47d0cd7b2",
                 "macro_uuid": "6a3edc5c-0e9c-39fc-af71-dc998333d63e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "dba3f14b-e65c-3674-80be-d469268bf8d3",
+                "macro_uuid": "ff32da08-740b-38cc-931e-eb81045ea6af"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Castle Forge",
+                "src_requested": "castle forge (obj42)",
+                "dst_anno": "Inside a Cottage",
+                "dst_requested": "inside a cottage (obj236)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "south",
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), inside a cottage (obj236)",
+                "micro_uuid": "b698a1da-5bf3-3c94-afd9-5efd489b8d17",
+                "macro_uuid": "2a90cb9e-3172-3b71-ba4c-7f41df59839c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "1f81f3cb-ec9d-3297-bc16-d163aecd0cd2",
+                "macro_uuid": "952c63fe-b2fa-38e8-b57e-12bb0490d840"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inside the Inn",
+                "src_requested": "inside the inn (obj200)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "8519de6d-3cf8-31c2-9b1f-9bf75075d975",
+                "macro_uuid": "d5976951-4265-3074-a21e-a51083b9365e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "castle forge (obj42)",
+                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), forest pathway (obj138)",
+                "micro_uuid": "4859f11f-9cf7-3035-89ad-99c6e87201c1",
+                "macro_uuid": "cbba94f0-6b99-36fc-b830-679cac0ed546"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Castle Forge",
+                "dst_requested": "castle forge (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), castle forge (obj42)",
+                "micro_uuid": "d5ca3193-3b5a-39bd-9f6c-b85dc86785ad",
+                "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
             },
             {
                 "verify_result": false,
@@ -3808,19 +6454,20 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Castle Forge",
-                "src_requested": "castle forge (obj42)",
-                "dst_anno": "Cave Entrance",
-                "dst_requested": "cave entrance (obj124)",
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
                 "connectivity": true,
-                "dist_shortest": 5,
+                "dist_shortest": 3,
                 "action_gpt": [
-                    "east"
+                    "north",
+                    "north"
                 ],
-                "dst_gpt": "castle forge (obj42)",
-                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), cave entrance (obj124)",
-                "micro_uuid": "d753de0e-1e57-345f-b7b0-9be2336af19b",
-                "macro_uuid": "2b89c85a-cab1-38e9-a2f7-81b97c5431b1"
+                "dst_gpt": "swampy ground (obj116)",
+                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
+                "micro_uuid": "8325ae99-de85-3da0-bdd5-028090308bed",
+                "macro_uuid": "c0851a9c-6368-3b0c-b9d0-13b10b93ba16"
             },
             {
                 "verify_result": false,
@@ -3841,24 +6488,26 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "North End of a Road",
-                "src_requested": "north end of a road (obj77)",
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
                 "dst_anno": "Tree Stump",
                 "dst_requested": "tree stump (obj106)",
                 "connectivity": true,
-                "dist_shortest": 3,
+                "dist_shortest": 2,
                 "action_gpt": [
-                    "south",
                     "west",
                     "north",
-                    "north",
+                    "south",
+                    "east",
+                    "east",
+                    "east",
                     "south",
                     "west"
                 ],
-                "dst_gpt": "castle forge (obj42)",
-                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), tree stump (obj106)",
-                "micro_uuid": "3a9f1f3d-ee94-36af-8393-634ac32147d4",
-                "macro_uuid": "2cf574bf-5a54-3842-afa8-abfc7d4fa917"
+                "dst_gpt": "pebbled beach (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: pebbled beach (obj60), tree stump (obj106)",
+                "micro_uuid": "99acd8e5-74d6-3447-813a-55e8150731ec",
+                "macro_uuid": "acebdf2b-391f-3144-a7b8-c58353cd4264"
             },
             {
                 "verify_result": false,
@@ -3876,6 +6525,23 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), cottage (obj129)",
                 "micro_uuid": "e6bb9832-841e-357e-90e6-2b405434da29",
                 "macro_uuid": "c23f86af-9e07-333f-bf53-f1d992d8621c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
+                "dst_anno": "North End of a Road",
+                "dst_requested": "north end of a road (obj77)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), north end of a road (obj77)",
+                "micro_uuid": "14777b4f-1acd-373c-86bf-c0ed8cfa24bf",
+                "macro_uuid": "e00b43f9-7ee9-347d-81f4-75f92e95c7f0"
             },
             {
                 "verify_result": false,
@@ -3955,6 +6621,27 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Swampy Ground",
+                "src_requested": "swampy ground (obj116)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "west",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "cave entrance (obj124)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave entrance (obj124), forest pathway (obj138)",
+                "micro_uuid": "b66549e2-c4a3-35e7-8458-4a6ab16f698a",
+                "macro_uuid": "16914e21-30c5-355c-8eb5-3452ec59d776"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "North End of a Road",
                 "src_requested": "north end of a road (obj77)",
                 "dst_anno": "Forest Pathway",
@@ -3979,37 +6666,34 @@
                 "verify_result": true,
                 "src_anno": "North End of a Road",
                 "src_requested": "north end of a road (obj77)",
-                "dst_anno": "Castle Forge",
-                "dst_requested": "castle forge (obj42)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
                 "connectivity": true,
-                "dist_shortest": 3,
+                "dist_shortest": 1,
                 "action_gpt": [
-                    "south",
-                    "west",
-                    "north"
+                    "south"
                 ],
-                "dst_gpt": "castle forge (obj42)",
+                "dst_gpt": "south end of a road (obj87)",
                 "verify_msg": "GOOD: arrived",
-                "micro_uuid": "d1dd6ebe-2d42-3e27-a361-bcb172d9a956",
-                "macro_uuid": "656dfefb-4b23-3272-bc06-4ad27964c1cd"
+                "micro_uuid": "ef12516c-5536-3c94-9a24-64a4cbb52b20",
+                "macro_uuid": "00b945ef-181e-3e15-a527-7c159edcd69c"
             },
             {
                 "verify_result": false,
-                "src_anno": "South End of a Road",
-                "src_requested": "south end of a road (obj87)",
+                "src_anno": "Inn Cellar",
+                "src_requested": "inn cellar (obj218)",
                 "dst_anno": "Castle Forge",
                 "dst_requested": "castle forge (obj42)",
                 "connectivity": true,
-                "dist_shortest": 2,
+                "dist_shortest": 7,
                 "action_gpt": [
-                    "north",
-                    "north",
+                    "west",
                     "north"
                 ],
-                "dst_gpt": "north end of a road (obj77)",
-                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), castle forge (obj42)",
-                "micro_uuid": "b75f1045-996d-36ea-8604-28996e573bbd",
-                "macro_uuid": "74e1ebd2-3ead-3e90-86b2-04a257dc22a8"
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
+                "micro_uuid": "4f798c38-d121-3307-9956-401893db8abe",
+                "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
             },
             {
                 "verify_result": false,
@@ -4026,23 +6710,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
                 "micro_uuid": "e8da73a4-b9e9-3c18-930b-ede410eface8",
                 "macro_uuid": "85e9077f-3a51-33fe-b895-8c7e21ee27e3"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Swampy Ground",
-                "src_requested": "swampy ground (obj116)",
-                "dst_anno": "Wasteland by a Castle",
-                "dst_requested": "wasteland by a castle (obj50)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "swampy ground (obj116)",
-                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
-                "micro_uuid": "fadc6fd3-8158-3228-b15d-28bfe9e6c807",
-                "macro_uuid": "c0851a9c-6368-3b0c-b9d0-13b10b93ba16"
             },
             {
                 "verify_result": false,
@@ -4142,21 +6809,44 @@
                 "macro_uuid": "04a7ac9c-828d-3c0f-80c1-03ab7e047e01"
             },
             {
-                "verify_result": false,
-                "src_anno": "Inn Cellar",
-                "src_requested": "inn cellar (obj218)",
-                "dst_anno": "Castle Forge",
-                "dst_requested": "castle forge (obj42)",
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
                 "connectivity": true,
-                "dist_shortest": 7,
+                "dist_shortest": 5,
                 "action_gpt": [
+                    "south",
                     "west",
-                    "north"
+                    "west",
+                    "south",
+                    "west"
                 ],
-                "dst_gpt": "inn cellar (obj218)",
-                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
-                "micro_uuid": "e225e5c6-1f97-30c7-b8c6-8dabd7f3cd8f",
-                "macro_uuid": "a63b6be0-6cbd-339e-ab20-1ecf502d09cd"
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b8cfe294-0938-32cf-b94d-1ec6d5ea7073",
+                "macro_uuid": "ca843823-309f-3dcb-a760-98249e141b7c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Wasteland by a Castle",
+                "src_requested": "wasteland by a castle (obj50)",
+                "dst_anno": "Forest Pathway",
+                "dst_requested": "forest pathway (obj138)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "wasteland by a castle (obj50)",
+                "verify_msg": "wrong path, fail to arrive at dst: wasteland by a castle (obj50), forest pathway (obj138)",
+                "micro_uuid": "a5e130d6-896f-3bdc-b2c0-bdd6c0a1f909",
+                "macro_uuid": "b2b410eb-2fec-3366-9c27-42df3e5d4906"
             },
             {
                 "verify_result": false,
@@ -4179,43 +6869,6 @@
                 "macro_uuid": "f7265e10-692d-376c-b22a-48457fd3620e"
             },
             {
-                "verify_result": true,
-                "src_anno": "Rocky Mountains",
-                "src_requested": "rocky mountains (obj148)",
-                "dst_anno": "Wasteland by a Castle",
-                "dst_requested": "wasteland by a castle (obj50)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "west",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "wasteland by a castle (obj50)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "f7eda3ac-3fb1-3266-9ca7-b9c496ae6ced",
-                "macro_uuid": "ca843823-309f-3dcb-a760-98249e141b7c"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Abandoned Inn",
-                "src_requested": "abandoned inn (obj156)",
-                "dst_anno": "North End of a Road",
-                "dst_requested": "north end of a road (obj77)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "east",
-                    "west"
-                ],
-                "dst_gpt": "abandoned inn (obj156)",
-                "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), north end of a road (obj77)",
-                "micro_uuid": "f48c3a87-1608-31ec-9594-32da3ebb5189",
-                "macro_uuid": "d8ad230f-df61-36e1-8118-075b408430be"
-            },
-            {
                 "verify_result": false,
                 "src_anno": "Inside a Cottage",
                 "src_requested": "inside a cottage (obj236)",
@@ -4231,43 +6884,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: inside a cottage (obj236), tree stump (obj106)",
                 "micro_uuid": "09a3ec8a-c30f-39fd-a275-a91a7a128768",
                 "macro_uuid": "48df23af-fb80-31b4-8047-30ff5d1002fc"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "South End of a Road",
-                "src_requested": "south end of a road (obj87)",
-                "dst_anno": "Tree Stump",
-                "dst_requested": "tree stump (obj106)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "south",
-                    "east",
-                    "east",
-                    "east",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "pebbled beach (obj60)",
-                "verify_msg": "wrong path, fail to arrive at dst: pebbled beach (obj60), tree stump (obj106)",
-                "micro_uuid": "c6cf6c7d-2cf8-377e-98ce-e6fd41ab4ce2",
-                "macro_uuid": "acebdf2b-391f-3144-a7b8-c58353cd4264"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Inn Cellar",
-                "src_requested": "inn cellar (obj218)",
-                "dst_anno": "Forest Pathway",
-                "dst_requested": "forest pathway (obj138)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "bad format",
-                "micro_uuid": "bc9c87ac-b748-359e-8d69-e31d42be48c1",
-                "macro_uuid": "952c63fe-b2fa-38e8-b57e-12bb0490d840"
             },
             {
                 "verify_result": false,
@@ -4340,48 +6956,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Wasteland by a Castle",
-                "src_requested": "wasteland by a castle (obj50)",
-                "dst_anno": "Forest Pathway",
-                "dst_requested": "forest pathway (obj138)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "north",
-                    "north",
-                    "east",
-                    "east",
-                    "south"
-                ],
-                "dst_gpt": "castle forge (obj42)",
-                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), forest pathway (obj138)",
-                "micro_uuid": "4e264143-249c-3012-af55-dcb13bc0cd38",
-                "macro_uuid": "b2b410eb-2fec-3366-9c27-42df3e5d4906"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "South End of a Road",
-                "src_requested": "south end of a road (obj87)",
-                "dst_anno": "Forest Pathway",
-                "dst_requested": "forest pathway (obj138)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "west",
-                    "north",
-                    "north",
-                    "east",
-                    "east",
-                    "east",
-                    "south"
-                ],
-                "dst_gpt": "castle forge (obj42)",
-                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), forest pathway (obj138)",
-                "micro_uuid": "c1138832-3c7b-3561-ad74-9087315f3741",
-                "macro_uuid": "cbba94f0-6b99-36fc-b830-679cac0ed546"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Inside the Inn",
                 "src_requested": "inside the inn (obj200)",
                 "dst_anno": "Tree Stump",
@@ -4409,6 +6983,26 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), cave entrance (obj124)",
                 "micro_uuid": "fc12c660-c65d-3019-bf86-4131ce300065",
                 "macro_uuid": "2857991f-66d5-364f-92e5-e2241eeba81e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Abandoned Inn",
+                "src_requested": "abandoned inn (obj156)",
+                "dst_anno": "Tree Stump",
+                "dst_requested": "tree stump (obj106)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "down",
+                    "east",
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), tree stump (obj106)",
+                "micro_uuid": "b56acd9e-3b5d-304a-8bf5-2d764ce76dc7",
+                "macro_uuid": "6335f520-0430-3811-8db0-bc5fed1753d1"
             },
             {
                 "verify_result": false,
@@ -4449,26 +7043,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: abandoned inn (obj156), cave entrance (obj124)",
                 "micro_uuid": "a9b43966-41f9-3f38-9b89-4d304a1c242b",
                 "macro_uuid": "39043292-c3ca-36a9-b31f-6f2c2315a28f"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Swampy Ground",
-                "src_requested": "swampy ground (obj116)",
-                "dst_anno": "Forest Pathway",
-                "dst_requested": "forest pathway (obj138)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": [
-                    "east",
-                    "south",
-                    "west",
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "swampy ground (obj116)",
-                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), forest pathway (obj138)",
-                "micro_uuid": "acc35607-c66a-3b20-8268-a0c15bf91b55",
-                "macro_uuid": "16914e21-30c5-355c-8eb5-3452ec59d776"
             },
             {
                 "verify_result": false,
@@ -4527,24 +7101,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Abandoned Inn",
-                "src_requested": "abandoned inn (obj156)",
-                "dst_anno": "Forest Pathway",
-                "dst_requested": "forest pathway (obj138)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "east",
-                    "south"
-                ],
-                "dst_gpt": "inside the inn (obj200)",
-                "verify_msg": "wrong path, fail to arrive at dst: inside the inn (obj200), forest pathway (obj138)",
-                "micro_uuid": "857ccb88-ab26-3e0b-b517-ceb1d66bbbcb",
-                "macro_uuid": "7fd73901-569e-316d-ac8f-0e9637f65592"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Swampy Ground",
                 "src_requested": "swampy ground (obj116)",
                 "dst_anno": "South End of a Road",
@@ -4578,6 +7134,25 @@
                 "macro_uuid": "74274ede-8c07-33ea-9dce-44b7eed8ada1"
             },
             {
+                "verify_result": true,
+                "src_anno": "Rocky Mountains",
+                "src_requested": "rocky mountains (obj148)",
+                "dst_anno": "South End of a Road",
+                "dst_requested": "south end of a road (obj87)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "south end of a road (obj87)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "bf0fe482-cb22-343f-8b33-86c4e589f878",
+                "macro_uuid": "8ce670ab-28b8-3a27-a1d3-450b4688bf2d"
+            },
+            {
                 "verify_result": false,
                 "src_anno": "Inn Cellar",
                 "src_requested": "inn cellar (obj218)",
@@ -4599,43 +7174,20 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Abandoned Inn",
-                "src_requested": "abandoned inn (obj156)",
-                "dst_anno": "Tree Stump",
-                "dst_requested": "tree stump (obj106)",
+                "src_anno": "South End of a Road",
+                "src_requested": "south end of a road (obj87)",
+                "dst_anno": "Wasteland by a Castle",
+                "dst_requested": "wasteland by a castle (obj50)",
                 "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "down",
-                    "east",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "inn cellar (obj218)",
-                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), tree stump (obj106)",
-                "micro_uuid": "95394f85-6f2c-3bdc-a555-0a6caa9585e4",
-                "macro_uuid": "6335f520-0430-3811-8db0-bc5fed1753d1"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Castle Forge",
-                "src_requested": "castle forge (obj42)",
-                "dst_anno": "Tree Stump",
-                "dst_requested": "tree stump (obj106)",
-                "connectivity": true,
-                "dist_shortest": 4,
+                "dist_shortest": 1,
                 "action_gpt": [
                     "north",
-                    "north",
-                    "south",
-                    "west",
                     "north"
                 ],
-                "dst_gpt": "castle hallway (obj229)",
-                "verify_msg": "wrong path, fail to arrive at dst: castle hallway (obj229), tree stump (obj106)",
-                "micro_uuid": "7859e553-56d8-3060-bedc-b427e2d99e99",
-                "macro_uuid": "848316a1-ffb4-30c1-bd5a-697d18adfe30"
+                "dst_gpt": "north end of a road (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), wasteland by a castle (obj50)",
+                "micro_uuid": "cda746a5-e27a-301e-996d-a545cef501d5",
+                "macro_uuid": "07665bad-3d58-3ba7-8474-cd881d8c039f"
             },
             {
                 "verify_result": false,
@@ -4656,47 +7208,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Inside the Inn",
-                "src_requested": "inside the inn (obj200)",
-                "dst_anno": "Wasteland by a Castle",
-                "dst_requested": "wasteland by a castle (obj50)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "dst_gpt": "swampy ground (obj116)",
-                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
-                "micro_uuid": "1dc7a7b7-0e83-3921-9c9c-ff3d14b53ea6",
-                "macro_uuid": "d5976951-4265-3074-a21e-a51083b9365e"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Abandoned Inn",
-                "src_requested": "abandoned inn (obj156)",
-                "dst_anno": "Castle Forge",
-                "dst_requested": "castle forge (obj42)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": [
-                    "east",
-                    "down",
-                    "east",
-                    "south",
-                    "west",
-                    "north"
-                ],
-                "dst_gpt": "inn cellar (obj218)",
-                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), castle forge (obj42)",
-                "micro_uuid": "0fca8db7-2ad1-3309-b6ac-6202d4a709f6",
-                "macro_uuid": "968157ba-0a4a-37fb-858a-a63cca841d58"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Abandoned Inn",
                 "src_requested": "abandoned inn (obj156)",
                 "dst_anno": "Cottage",
@@ -4714,61 +7225,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: rocky mountains (obj148), cottage (obj129)",
                 "micro_uuid": "9b025998-cd69-32dc-878c-f2ad1905af91",
                 "macro_uuid": "2d325517-7c4a-35fc-afdc-a7d0b5ed0f46"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Castle Forge",
-                "src_requested": "castle forge (obj42)",
-                "dst_anno": "Inside a Cottage",
-                "dst_requested": "inside a cottage (obj236)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": [
-                    "north",
-                    "east",
-                    "south",
-                    "west",
-                    "east",
-                    "east"
-                ],
-                "dst_gpt": "castle forge (obj42)",
-                "verify_msg": "wrong path, fail to arrive at dst: castle forge (obj42), inside a cottage (obj236)",
-                "micro_uuid": "02f93e09-7c97-32ad-bc0f-d8bde1566119",
-                "macro_uuid": "2a90cb9e-3172-3b71-ba4c-7f41df59839c"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Abandoned Inn",
-                "src_requested": "abandoned inn (obj156)",
-                "dst_anno": "Wasteland by a Castle",
-                "dst_requested": "wasteland by a castle (obj50)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "east",
-                    "west",
-                    "west"
-                ],
-                "dst_gpt": "swampy ground (obj116)",
-                "verify_msg": "wrong path, fail to arrive at dst: swampy ground (obj116), wasteland by a castle (obj50)",
-                "micro_uuid": "37d46765-e64a-3a2c-aaa0-4334f687993c",
-                "macro_uuid": "ff32da08-740b-38cc-931e-eb81045ea6af"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "North End of a Road",
-                "src_requested": "north end of a road (obj77)",
-                "dst_anno": "South End of a Road",
-                "dst_requested": "south end of a road (obj87)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "south"
-                ],
-                "dst_gpt": "south end of a road (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "4d3b555f-5300-3c99-8c09-e7b93aaff086",
-                "macro_uuid": "00b945ef-181e-3e15-a527-7c159edcd69c"
             },
             {
                 "verify_result": false,
@@ -4803,23 +7259,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "70fb08ef-3589-3d97-9faa-5f943653e34c",
                 "macro_uuid": "45501434-f7f3-3689-ac69-fcd2c75aeb3a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Inn Cellar",
-                "src_requested": "inn cellar (obj218)",
-                "dst_anno": "North End of a Road",
-                "dst_requested": "north end of a road (obj77)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "west",
-                    "east"
-                ],
-                "dst_gpt": "inn cellar (obj218)",
-                "verify_msg": "wrong path, fail to arrive at dst: inn cellar (obj218), north end of a road (obj77)",
-                "micro_uuid": "fd41d915-2863-3393-a32a-390f1ad450cd",
-                "macro_uuid": "e00b43f9-7ee9-347d-81f4-75f92e95c7f0"
             },
             {
                 "verify_result": false,
@@ -4888,23 +7327,6 @@
                 "verify_msg": "GOOD: arrived",
                 "micro_uuid": "431445f8-adde-33bd-9bed-0b0242fc9dfa",
                 "macro_uuid": "3013574b-5200-3153-b7e4-5c4761c0b997"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "South End of a Road",
-                "src_requested": "south end of a road (obj87)",
-                "dst_anno": "Wasteland by a Castle",
-                "dst_requested": "wasteland by a castle (obj50)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": [
-                    "north",
-                    "north"
-                ],
-                "dst_gpt": "north end of a road (obj77)",
-                "verify_msg": "wrong path, fail to arrive at dst: north end of a road (obj77), wasteland by a castle (obj50)",
-                "micro_uuid": "0ca66399-4f88-3971-9f59-7bef105b9248",
-                "macro_uuid": "07665bad-3d58-3ba7-8474-cd881d8c039f"
             },
             {
                 "verify_result": false,
@@ -5042,25 +7464,6 @@
                 "verify_msg": "wrong path, fail to arrive at dst: south end of a road (obj87), cave entrance (obj124)",
                 "micro_uuid": "424d564c-e1f7-3da0-bc5b-d9c8e5fb36f5",
                 "macro_uuid": "4267f103-2dac-34b2-9268-495ed2a9cb3b"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Rocky Mountains",
-                "src_requested": "rocky mountains (obj148)",
-                "dst_anno": "South End of a Road",
-                "dst_requested": "south end of a road (obj87)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": [
-                    "south",
-                    "west",
-                    "west",
-                    "south"
-                ],
-                "dst_gpt": "south end of a road (obj87)",
-                "verify_msg": "GOOD: arrived",
-                "micro_uuid": "3ba25d9e-5548-39d8-a32e-5f0474ac51b9",
-                "macro_uuid": "8ce670ab-28b8-3a27-a1d3-450b4688bf2d"
             },
             {
                 "verify_result": false,

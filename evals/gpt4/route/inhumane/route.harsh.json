@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
         "correct_num": 60,
-        "total_num": 210,
-        "accuracy": 0.2857142857142857,
+        "total_num": 211,
+        "accuracy": 0.2843601895734597,
         "collection": {
             "../gpt-games-results//inhumane/results//pathgen-gpt-4/results_2023-06-01-18-43-05_937.json": {
                 "verify_result": false,
@@ -2817,6 +2817,46 @@
                 ],
                 "micro_uuid": "7eea9e7b-108b-33ad-a75a-b44cd5ae83f2",
                 "macro_uuid": "92802fbf-a8fe-3c6c-ba68-eadd315d1d40"
+            },
+            "../gpt-games-results//inhumane/results//pathgen-gpt-4/results_2023-06-01-18-53-19_249.json": {
+                "verify_result": false,
+                "src_anno": "Roboff's Tent",
+                "src_requested": "roboff's tent (obj25)",
+                "dst_anno": "South Branch",
+                "dst_requested": "south branch (obj50)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "center of camp (obj20)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Roboff's Tent",
+                        "node": "Center of Camp",
+                        "action": "north",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Center of Camp",
+                        "node": "Round Room",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Round Room",
+                        "node": "T-Intersection (east/west/south, west to Round Room)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+                        "node": "South Branch",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "392d376d-b3a6-3a63-9bd7-8c92a9bb47ed",
+                "macro_uuid": "395c1f7f-abf8-37a2-9f53-8aa62d5a410a"
             },
             "../gpt-games-results//inhumane/results//pathgen-gpt-4/results_2023-06-01-18-37-40_501.json": {
                 "verify_result": false,

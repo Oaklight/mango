@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
-        "correct_num": 13,
-        "total_num": 74,
-        "accuracy": 0.17567567567567569,
+        "correct_num": 16,
+        "total_num": 103,
+        "accuracy": 0.1553398058252427,
         "collection": {
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-47_283.json": {
                 "verify_result": false,
@@ -136,6 +136,30 @@
                 "micro_uuid": "39fbdd67-e1b9-3316-9bd9-5336f53f3244",
                 "macro_uuid": "587f5b3b-cacf-32ea-b719-f78aedd97ddd"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-58_516.json": {
+                "verify_result": true,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "fe9e9df0-eead-398e-a8c6-65b2070abdbc",
+                "macro_uuid": "117bfa71-a411-33eb-93eb-68e2078db4c2"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-01_636.json": {
                 "verify_result": true,
                 "src_anno": "Office Building",
@@ -200,6 +224,109 @@
                 "micro_uuid": "7f9d1748-ec56-3b66-95a2-00350052c292",
                 "macro_uuid": "b0aac504-814c-35ee-9c15-3546213b44f8"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-31_440.json": {
+                "verify_result": false,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, by Department Store",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, by Department Store",
+                        "node": "Clothing Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Clothing Department",
+                        "node": "Cosmetics Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Cosmetics Department",
+                        "node": "Hardware Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hardware Department",
+                        "node": "Roof of Office Building",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Roof of Office Building",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "911dac3e-4653-3bf0-afea-ac4cd9dddb2d",
+                "macro_uuid": "a0a188d7-c6d4-31bc-bfc2-73c4240bd264"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-12_739.json": {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "hangin' out",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "18c8a45b-561d-35d5-b670-0ea81fcba1a7",
+                "macro_uuid": "2f31377f-4cbc-3a0f-82bd-fae976c05b14"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-40_191.json": {
                 "verify_result": false,
                 "src_anno": "Law Office",
@@ -263,6 +390,87 @@
                 ],
                 "micro_uuid": "546e8759-0e77-3a01-be63-58682e41effd",
                 "macro_uuid": "45d9daeb-b429-3d60-a4b1-7f3f20585dd8"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-06-46_948.json": {
+                "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "ca776823-48da-3751-86b9-ea9b117de30c",
+                "macro_uuid": "563b8b90-1e97-3a7f-a1c1-8b8833672df9"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-05-06_213.json": {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "af08e1a7-fbdc-3ca7-96ff-c6323c6b7bf1",
+                "macro_uuid": "43651621-644e-3aeb-946e-9ccd938581c8"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-14_925.json": {
                 "verify_result": false,
@@ -368,6 +576,58 @@
                 "micro_uuid": "c1b67b41-e777-3c0d-97e1-e01666471865",
                 "macro_uuid": "ea0609cf-4c07-3f40-822f-e385936def53"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-01-47_531.json": {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "89b3019a-ec6b-361a-9e61-dfc44844cd26",
+                "macro_uuid": "9d42f2aa-cca5-3f10-8e58-ef20166a49ad"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-04-48_289.json": {
                 "verify_result": false,
                 "src_anno": "Street, Near Courthouse",
@@ -408,6 +668,84 @@
                 ],
                 "micro_uuid": "180d7186-b539-3df7-a55a-9e9fd1e12e5d",
                 "macro_uuid": "ddc5fb73-fdc0-394f-90d7-43b6dfbb3f22"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-49_253.json": {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "375991ab-6523-3a91-b9a4-b6d1249af864",
+                "macro_uuid": "101275f9-5ba0-38db-bc42-c110e6b3dc89"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-04-38_263.json": {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "ab6eb07b-232b-30e0-b084-582fa2244590",
+                "macro_uuid": "3927a7e0-0b44-302c-9dbe-01c473d132f0"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-08_100.json": {
                 "verify_result": false,
@@ -536,6 +874,85 @@
                 "micro_uuid": "02124008-525f-35c2-8b29-ef80e1e66ce5",
                 "macro_uuid": "48661b46-bde2-3a2a-be72-7bb5ec8cef89"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-43_420.json": {
+                "verify_result": false,
+                "src_anno": "Law Office",
+                "src_requested": "law office (obj67)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Second Floor",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9fee14fb-3994-3aa0-88d0-b461c5b0a69e",
+                "macro_uuid": "5618c54a-5679-3657-8fac-28d4e2561d97"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-09-29_198.json": {
+                "verify_result": false,
+                "src_anno": "Office Building, Third Floor",
+                "src_requested": "office building, third floor (obj66)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "office building, third floor (obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Office Building, Second Floor",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "5201669e-f947-34a9-b9ee-2edd07740c19",
+                "macro_uuid": "c945397f-a467-3eb9-91d7-9fc06ff51d31"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-57_243.json": {
                 "verify_result": false,
                 "src_anno": "Street, by Pizza Parlor",
@@ -651,6 +1068,56 @@
                 "path_checked": [],
                 "micro_uuid": "c3433378-fb71-3381-bac5-31d9ab8ff866",
                 "macro_uuid": "b0aac504-814c-35ee-9c15-3546213b44f8"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-51_884.json": {
+                "verify_result": false,
+                "src_anno": "Law Office",
+                "src_requested": "law office (obj67)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Second Floor",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "1863f74d-88d6-3109-8cea-344e29f1211a",
+                "macro_uuid": "c9735dd5-413b-32a5-b466-88c24c466ecf"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-17_341.json": {
                 "verify_result": false,
@@ -800,6 +1267,51 @@
                 "micro_uuid": "e71471e0-2516-3399-9965-f06cf171e2eb",
                 "macro_uuid": "72bfe7bd-c929-3c5d-b685-3669a3366947"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-05-46_834.json": {
+                "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "0dacb4da-fab2-367a-bb54-15778cfeab6b",
+                "macro_uuid": "e11d2f52-df18-3979-80aa-45c02f0239e1"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-01-20_565.json": {
                 "verify_result": false,
                 "src_anno": "Behind the Counter",
@@ -835,6 +1347,55 @@
                 ],
                 "micro_uuid": "191aed16-5f01-3163-8d6d-d33ebc303dff",
                 "macro_uuid": "f0d10372-37e7-30a4-a4b1-1cdfae9ae6c2"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-04-08_985.json": {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, by pizza parlor (obj36)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "2a25ec7c-de56-3cae-b135-459f870d0283",
+                "macro_uuid": "c6972d94-f378-32f3-9e97-65e8e284fe26"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-06-23_216.json": {
                 "verify_result": false,
@@ -1315,6 +1876,36 @@
                 "micro_uuid": "384a48c9-cad0-34f8-9eb2-5acc28d078d9",
                 "macro_uuid": "5618c54a-5679-3657-8fac-28d4e2561d97"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-20_251.json": {
+                "verify_result": true,
+                "src_anno": "Office Building",
+                "src_requested": "office building (obj62)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "a8514c14-b3bd-3667-9926-f1e713f6fa2f",
+                "macro_uuid": "7ca9212c-d251-3a4f-8e2b-6e9d7e1b2668"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-05-23_400.json": {
                 "verify_result": false,
                 "src_anno": "Courthouse",
@@ -1578,6 +2169,227 @@
                 "micro_uuid": "9f101001-a738-3356-9409-6c399616235a",
                 "macro_uuid": "01a6f70f-5268-35a6-9d46-1828c2567683"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-05-49_437.json": {
+                "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "3975b5fb-a883-3c8c-8248-97c0a0581070",
+                "macro_uuid": "7781db90-aa9e-3f98-9df3-6420dee397b4"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-06-18_717.json": {
+                "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Downtown",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "88de213d-04a4-3f66-b29f-c8622e363d50",
+                "macro_uuid": "95fef2fc-6071-3d2d-8e60-b9218240a366"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-05-10_781.json": {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "c40d830b-91ac-377a-b9e7-6d572f5fae50",
+                "macro_uuid": "6cdf2a80-0f65-37cf-ad30-4eccc5f4ed65"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-09_822.json": {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "18c8a45b-561d-35d5-b670-0ea81fcba1a7",
+                "macro_uuid": "2f31377f-4cbc-3a0f-82bd-fae976c05b14"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-45_619.json": {
                 "verify_result": false,
                 "src_anno": "Pizza Parlor",
@@ -1735,6 +2547,40 @@
                 "micro_uuid": "0e03d861-967c-30f1-89d4-48051f8ef9ba",
                 "macro_uuid": "904ff780-2423-30d6-8067-86435b7fb3ae"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-06-25_973.json": {
+                "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "downtown (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "f171b74d-d88f-383a-9b6b-0bc4a3705a75",
+                "macro_uuid": "e1c5cf3c-71c4-35ad-8909-c7b13537861d"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-06-44_400.json": {
                 "verify_result": false,
                 "src_anno": "Downtown",
@@ -1866,6 +2712,65 @@
                 "micro_uuid": "634cd5a1-3664-3edb-b378-4ee1a61c137b",
                 "macro_uuid": "9cacc5cd-e927-3278-9e85-bfdd8d446d22"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-21-10-57_846.json": {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Third Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "28e121aa-ad70-3bc7-a1b0-512694e74483",
+                "macro_uuid": "96cd0cc7-10c3-3e8c-9953-f9323e38d85e"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-49_604.json": {
                 "verify_result": false,
                 "src_anno": "Law Office",
@@ -1915,6 +2820,23 @@
                 ],
                 "micro_uuid": "1dc31249-101a-3d1f-aeee-c51d7a51453e",
                 "macro_uuid": "c9735dd5-413b-32a5-b466-88c24c466ecf"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-39_993.json": {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "d6bdff78-813f-349d-a16f-9a14a6f4b76a",
+                "macro_uuid": "b0aac504-814c-35ee-9c15-3546213b44f8"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-00_259.json": {
                 "verify_result": true,
@@ -2007,6 +2929,162 @@
                 "path_checked": [],
                 "micro_uuid": "9f34ae54-1769-3f40-bcea-a590295b0878",
                 "macro_uuid": "8e1c76de-4552-35b0-ba2c-66b9f76125ed"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-04-10_175.json": {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "5ba95755-0e62-3b41-9bf7-b92511eae004",
+                "macro_uuid": "55a19a53-763a-38d3-9d63-7817cb6036f1"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-24_905.json": {
+                "verify_result": false,
+                "src_anno": "Office Building",
+                "src_requested": "office building (obj62)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Mayor's Office",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "85a34f82-9027-3005-9e36-a5af65eb4183",
+                "macro_uuid": "cc933386-87a4-34d6-9d63-7ae41cdc0e8a"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-11_445.json": {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, by pizza parlor (obj36)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9cd07ff8-dc84-3852-9d59-d828620cff0b",
+                "macro_uuid": "29a9da47-a385-340e-81bb-2259e9f7cd75"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-04-48_620.json": {
                 "verify_result": false,
@@ -2224,6 +3302,36 @@
                 "micro_uuid": "09423f3f-1bae-30ef-aa49-2feb6cdf6ba0",
                 "macro_uuid": "2d2b233b-b085-389f-816c-aee3cf9920b4"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-00_442.json": {
+                "verify_result": false,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a103dcef-e3c8-3c81-a3f2-2d10fd8991fa",
+                "macro_uuid": "72bfe7bd-c929-3c5d-b685-3669a3366947"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-14_345.json": {
                 "verify_result": false,
                 "src_anno": "Pizza Parlor",
@@ -2416,6 +3524,35 @@
                 "micro_uuid": "3c3a69d2-1a2c-341e-a0a9-4e64fe9b1396",
                 "macro_uuid": "31930804-8d1e-367b-b0f7-882d74ddf40f"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-20_679.json": {
+                "verify_result": false,
+                "src_anno": "Office Building",
+                "src_requested": "office building (obj62)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "5138aa4b-ab32-39d6-a721-523752b3ca27",
+                "macro_uuid": "45d9daeb-b429-3d60-a4b1-7f3f20585dd8"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-19_911.json": {
                 "verify_result": false,
                 "src_anno": "Pizza Parlor",
@@ -2577,6 +3714,72 @@
                 "micro_uuid": "b2cc3bf1-aff7-3efe-b6e5-cd5d501dfdf8",
                 "macro_uuid": "b9ae2194-fe13-3f45-9bc9-ee8aaa3b40c2"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-06-55_586.json": {
+                "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Street, Near Courthouse",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a9629535-2ee6-3036-922f-d59dc963ea5e",
+                "macro_uuid": "7c0c275e-1147-3dc1-8c53-de840a21246e"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-07-58_030.json": {
                 "verify_result": false,
                 "src_anno": "Office Building, Second Floor",
@@ -2600,6 +3803,30 @@
                 ],
                 "micro_uuid": "ae96380d-ce6e-32ed-ad33-041147988c13",
                 "macro_uuid": "6961870b-1603-3422-97bd-dbe779f9ac98"
+            },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-08-59_298.json": {
+                "verify_result": true,
+                "src_anno": "Office Building, Third Floor",
+                "src_requested": "office building, third floor (obj66)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "mayor's office (obj73)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d5c74c8b-d968-3fce-aaf6-4a4dba929e44",
+                "macro_uuid": "250f59ef-a316-3a43-910c-8ec389606195"
             },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-03-14_048.json": {
                 "verify_result": false,
@@ -2800,6 +4027,54 @@
                 "micro_uuid": "95d8ee17-bcc9-3d13-aa7b-81c836e3ffb5",
                 "macro_uuid": "3927a7e0-0b44-302c-9dbe-01c473d132f0"
             },
+            "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-02-04_893.json": {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 9,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b00a259f-d892-3769-90e0-619e3b720d3e",
+                "macro_uuid": "01a6f70f-5268-35a6-9d46-1828c2567683"
+            },
             "../gpt-games-results//reverb/results//pathgen-gpt-3.5-turbo/results_2023-06-01-05-04-15_194.json": {
                 "verify_result": true,
                 "src_anno": "Street, Near Courthouse",
@@ -2961,6 +4236,30 @@
             },
             {
                 "verify_result": true,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "fe9e9df0-eead-398e-a8c6-65b2070abdbc",
+                "macro_uuid": "117bfa71-a411-33eb-93eb-68e2078db4c2"
+            },
+            {
+                "verify_result": true,
                 "src_anno": "Office Building",
                 "src_requested": "office building (obj62)",
                 "dst_anno": "Law Office",
@@ -3025,6 +4324,109 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, by Department Store",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, by Department Store",
+                        "node": "Clothing Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Clothing Department",
+                        "node": "Cosmetics Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Cosmetics Department",
+                        "node": "Hardware Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hardware Department",
+                        "node": "Roof of Office Building",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Roof of Office Building",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "911dac3e-4653-3bf0-afea-ac4cd9dddb2d",
+                "macro_uuid": "a0a188d7-c6d4-31bc-bfc2-73c4240bd264"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "hangin' out",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "18c8a45b-561d-35d5-b670-0ea81fcba1a7",
+                "macro_uuid": "2f31377f-4cbc-3a0f-82bd-fae976c05b14"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Law Office",
                 "src_requested": "law office (obj67)",
                 "dst_anno": "Office Building, Third Floor",
@@ -3086,6 +4488,87 @@
                 ],
                 "micro_uuid": "546e8759-0e77-3a01-be63-58682e41effd",
                 "macro_uuid": "45d9daeb-b429-3d60-a4b1-7f3f20585dd8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "ca776823-48da-3751-86b9-ea9b117de30c",
+                "macro_uuid": "563b8b90-1e97-3a7f-a1c1-8b8833672df9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "af08e1a7-fbdc-3ca7-96ff-c6323c6b7bf1",
+                "macro_uuid": "43651621-644e-3aeb-946e-9ccd938581c8"
             },
             {
                 "verify_result": false,
@@ -3193,6 +4676,58 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "89b3019a-ec6b-361a-9e61-dfc44844cd26",
+                "macro_uuid": "9d42f2aa-cca5-3f10-8e58-ef20166a49ad"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Street, Near Courthouse",
                 "src_requested": "street, near courthouse (obj52)",
                 "dst_anno": "Office Building, Second Floor",
@@ -3231,6 +4766,84 @@
                 ],
                 "micro_uuid": "180d7186-b539-3df7-a55a-9e9fd1e12e5d",
                 "macro_uuid": "ddc5fb73-fdc0-394f-90d7-43b6dfbb3f22"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "375991ab-6523-3a91-b9a4-b6d1249af864",
+                "macro_uuid": "101275f9-5ba0-38db-bc42-c110e6b3dc89"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "ab6eb07b-232b-30e0-b084-582fa2244590",
+                "macro_uuid": "3927a7e0-0b44-302c-9dbe-01c473d132f0"
             },
             {
                 "verify_result": false,
@@ -3361,6 +4974,85 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Law Office",
+                "src_requested": "law office (obj67)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Second Floor",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9fee14fb-3994-3aa0-88d0-b461c5b0a69e",
+                "macro_uuid": "5618c54a-5679-3657-8fac-28d4e2561d97"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Office Building, Third Floor",
+                "src_requested": "office building, third floor (obj66)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "office building, third floor (obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Office Building, Second Floor",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "5201669e-f947-34a9-b9ee-2edd07740c19",
+                "macro_uuid": "c945397f-a467-3eb9-91d7-9fc06ff51d31"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Street, by Pizza Parlor",
                 "src_requested": "street, by pizza parlor (obj36)",
                 "dst_anno": "Office Building",
@@ -3474,6 +5166,56 @@
                 "path_checked": [],
                 "micro_uuid": "c3433378-fb71-3381-bac5-31d9ab8ff866",
                 "macro_uuid": "b0aac504-814c-35ee-9c15-3546213b44f8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Law Office",
+                "src_requested": "law office (obj67)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Second Floor",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "1863f74d-88d6-3109-8cea-344e29f1211a",
+                "macro_uuid": "c9735dd5-413b-32a5-b466-88c24c466ecf"
             },
             {
                 "verify_result": false,
@@ -3625,6 +5367,51 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "0dacb4da-fab2-367a-bb54-15778cfeab6b",
+                "macro_uuid": "e11d2f52-df18-3979-80aa-45c02f0239e1"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Behind the Counter",
                 "src_requested": "behind the counter (obj29)",
                 "dst_anno": "Street, Near Courthouse",
@@ -3658,6 +5445,55 @@
                 ],
                 "micro_uuid": "191aed16-5f01-3163-8d6d-d33ebc303dff",
                 "macro_uuid": "f0d10372-37e7-30a4-a4b1-1cdfae9ae6c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, by pizza parlor (obj36)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "2a25ec7c-de56-3cae-b135-459f870d0283",
+                "macro_uuid": "c6972d94-f378-32f3-9e97-65e8e284fe26"
             },
             {
                 "verify_result": false,
@@ -4139,6 +5975,36 @@
                 "macro_uuid": "5618c54a-5679-3657-8fac-28d4e2561d97"
             },
             {
+                "verify_result": true,
+                "src_anno": "Office Building",
+                "src_requested": "office building (obj62)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "a8514c14-b3bd-3667-9926-f1e713f6fa2f",
+                "macro_uuid": "7ca9212c-d251-3a4f-8e2b-6e9d7e1b2668"
+            },
+            {
                 "verify_result": false,
                 "src_anno": "Courthouse",
                 "src_requested": "courthouse (obj56)",
@@ -4403,6 +6269,173 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "3975b5fb-a883-3c8c-8248-97c0a0581070",
+                "macro_uuid": "7781db90-aa9e-3f98-9df3-6420dee397b4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Downtown",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "88de213d-04a4-3f66-b29f-c8622e363d50",
+                "macro_uuid": "95fef2fc-6071-3d2d-8e60-b9218240a366"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "c40d830b-91ac-377a-b9e7-6d572f5fae50",
+                "macro_uuid": "6cdf2a80-0f65-37cf-ad30-4eccc5f4ed65"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Pizza Parlor",
                 "src_requested": "pizza parlor (obj30)",
                 "dst_anno": "Law Office",
@@ -4562,6 +6595,40 @@
                 "verify_result": false,
                 "src_anno": "Downtown",
                 "src_requested": "downtown (obj53)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "downtown (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "f171b74d-d88f-383a-9b6b-0bc4a3705a75",
+                "macro_uuid": "e1c5cf3c-71c4-35ad-8909-c7b13537861d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
                 "dst_anno": "Mayor's Office",
                 "dst_requested": "mayor's office (obj73)",
                 "connectivity": true,
@@ -4691,6 +6758,65 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Third Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "28e121aa-ad70-3bc7-a1b0-512694e74483",
+                "macro_uuid": "96cd0cc7-10c3-3e8c-9953-f9323e38d85e"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Law Office",
                 "src_requested": "law office (obj67)",
                 "dst_anno": "hangin' out",
@@ -4738,6 +6864,23 @@
                 ],
                 "micro_uuid": "1dc31249-101a-3d1f-aeee-c51d7a51453e",
                 "macro_uuid": "c9735dd5-413b-32a5-b466-88c24c466ecf"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "d6bdff78-813f-349d-a16f-9a14a6f4b76a",
+                "macro_uuid": "b0aac504-814c-35ee-9c15-3546213b44f8"
             },
             {
                 "verify_result": true,
@@ -4830,6 +6973,162 @@
                 "path_checked": [],
                 "micro_uuid": "9f34ae54-1769-3f40-bcea-a590295b0878",
                 "macro_uuid": "8e1c76de-4552-35b0-ba2c-66b9f76125ed"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "5ba95755-0e62-3b41-9bf7-b92511eae004",
+                "macro_uuid": "55a19a53-763a-38d3-9d63-7817cb6036f1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Office Building",
+                "src_requested": "office building (obj62)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Mayor's Office",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "85a34f82-9027-3005-9e36-a5af65eb4183",
+                "macro_uuid": "cc933386-87a4-34d6-9d63-7ae41cdc0e8a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, by pizza parlor (obj36)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9cd07ff8-dc84-3852-9d59-d828620cff0b",
+                "macro_uuid": "29a9da47-a385-340e-81bb-2259e9f7cd75"
             },
             {
                 "verify_result": false,
@@ -5049,6 +7348,36 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a103dcef-e3c8-3c81-a3f2-2d10fd8991fa",
+                "macro_uuid": "72bfe7bd-c929-3c5d-b685-3669a3366947"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Pizza Parlor",
                 "src_requested": "pizza parlor (obj30)",
                 "dst_anno": "hangin' out",
@@ -5241,6 +7570,35 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Office Building",
+                "src_requested": "office building (obj62)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "5138aa4b-ab32-39d6-a721-523752b3ca27",
+                "macro_uuid": "45d9daeb-b429-3d60-a4b1-7f3f20585dd8"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Pizza Parlor",
                 "src_requested": "pizza parlor (obj30)",
                 "dst_anno": "Courthouse",
@@ -5402,6 +7760,72 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Street, Near Courthouse",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "a9629535-2ee6-3036-922f-d59dc963ea5e",
+                "macro_uuid": "7c0c275e-1147-3dc1-8c53-de840a21246e"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Office Building, Second Floor",
                 "src_requested": "office building, second floor (obj64)",
                 "dst_anno": "Office Building, Third Floor",
@@ -5423,6 +7847,30 @@
                 ],
                 "micro_uuid": "ae96380d-ce6e-32ed-ad33-041147988c13",
                 "macro_uuid": "6961870b-1603-3422-97bd-dbe779f9ac98"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Office Building, Third Floor",
+                "src_requested": "office building, third floor (obj66)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "mayor's office (obj73)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d5c74c8b-d968-3fce-aaf6-4a4dba929e44",
+                "macro_uuid": "250f59ef-a316-3a43-910c-8ec389606195"
             },
             {
                 "verify_result": false,
@@ -5624,6 +8072,54 @@
                 "macro_uuid": "3927a7e0-0b44-302c-9dbe-01c473d132f0"
             },
             {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 9,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b00a259f-d892-3769-90e0-619e3b720d3e",
+                "macro_uuid": "01a6f70f-5268-35a6-9d46-1828c2567683"
+            },
+            {
                 "verify_result": true,
                 "src_anno": "Street, Near Courthouse",
                 "src_requested": "street, near courthouse (obj52)",
@@ -5648,9 +8144,9 @@
                 "macro_uuid": "cfd929a5-3437-3536-97d0-7e1413ef472b"
             }
         ],
-        "correct_num_micro": 13,
-        "total_num_micro": 74,
-        "accuracy_micro": 0.17567567567567569,
+        "correct_num_micro": 16,
+        "total_num_micro": 102,
+        "accuracy_micro": 0.1568627450980392,
         "collection_macro": [
             {
                 "verify_result": false,
@@ -5786,6 +8282,30 @@
             },
             {
                 "verify_result": true,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "law office (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "fe9e9df0-eead-398e-a8c6-65b2070abdbc",
+                "macro_uuid": "117bfa71-a411-33eb-93eb-68e2078db4c2"
+            },
+            {
+                "verify_result": true,
                 "src_anno": "Office Building",
                 "src_requested": "office building (obj62)",
                 "dst_anno": "Law Office",
@@ -5850,6 +8370,109 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Office Building, Second Floor",
+                "src_requested": "office building, second floor (obj64)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "down",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, by Department Store",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, by Department Store",
+                        "node": "Clothing Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Clothing Department",
+                        "node": "Cosmetics Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Cosmetics Department",
+                        "node": "Hardware Department",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hardware Department",
+                        "node": "Roof of Office Building",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Roof of Office Building",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "911dac3e-4653-3bf0-afea-ac4cd9dddb2d",
+                "macro_uuid": "a0a188d7-c6d4-31bc-bfc2-73c4240bd264"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "hangin' out",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "18c8a45b-561d-35d5-b670-0ea81fcba1a7",
+                "macro_uuid": "2f31377f-4cbc-3a0f-82bd-fae976c05b14"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Law Office",
                 "src_requested": "law office (obj67)",
                 "dst_anno": "Office Building, Third Floor",
@@ -5911,6 +8534,87 @@
                 ],
                 "micro_uuid": "546e8759-0e77-3a01-be63-58682e41effd",
                 "macro_uuid": "45d9daeb-b429-3d60-a4b1-7f3f20585dd8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Downtown",
+                "src_requested": "downtown (obj53)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "ca776823-48da-3751-86b9-ea9b117de30c",
+                "macro_uuid": "563b8b90-1e97-3a7f-a1c1-8b8833672df9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "af08e1a7-fbdc-3ca7-96ff-c6323c6b7bf1",
+                "macro_uuid": "43651621-644e-3aeb-946e-9ccd938581c8"
             },
             {
                 "verify_result": false,
@@ -6018,6 +8722,58 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "89b3019a-ec6b-361a-9e61-dfc44844cd26",
+                "macro_uuid": "9d42f2aa-cca5-3f10-8e58-ef20166a49ad"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Street, Near Courthouse",
                 "src_requested": "street, near courthouse (obj52)",
                 "dst_anno": "Office Building, Second Floor",
@@ -6059,42 +8815,32 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Office Building, Second Floor",
-                "src_requested": "office building, second floor (obj64)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
                 "connectivity": true,
-                "dist_shortest": 3,
+                "dist_shortest": 4,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "office building, second floor (obj64)",
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "street, near courthouse (obj52)",
                 "stop_step": 0,
                 "path_checked": [
                     {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Office Building",
-                        "action": "down",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Street, Near Courthouse",
-                        "action": "east"
-                    },
-                    {
                         "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
+                        "node": "Office Building, Second Floor",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
                     },
                     {
-                        "prev_node": "Courthouse",
-                        "node": "hangin' out",
-                        "action": "jump out window"
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
                     }
                 ],
-                "micro_uuid": "c271e00e-a5a2-3926-aaff-510f176779ec",
-                "macro_uuid": "a0a188d7-c6d4-31bc-bfc2-73c4240bd264"
+                "micro_uuid": "ab6eb07b-232b-30e0-b084-582fa2244590",
+                "macro_uuid": "3927a7e0-0b44-302c-9dbe-01c473d132f0"
             },
             {
                 "verify_result": false,
@@ -6183,6 +8929,85 @@
                 ],
                 "micro_uuid": "02124008-525f-35c2-8b29-ef80e1e66ce5",
                 "macro_uuid": "48661b46-bde2-3a2a-be72-7bb5ec8cef89"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Law Office",
+                "src_requested": "law office (obj67)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Second Floor",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9fee14fb-3994-3aa0-88d0-b461c5b0a69e",
+                "macro_uuid": "5618c54a-5679-3657-8fac-28d4e2561d97"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Office Building, Third Floor",
+                "src_requested": "office building, third floor (obj66)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "office building, third floor (obj66)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Office Building, Second Floor",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "hangin' out",
+                        "action": "jump out window"
+                    }
+                ],
+                "micro_uuid": "5201669e-f947-34a9-b9ee-2edd07740c19",
+                "macro_uuid": "c945397f-a467-3eb9-91d7-9fc06ff51d31"
             },
             {
                 "verify_result": false,
@@ -6285,6 +9110,56 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Law Office",
+                "src_requested": "law office (obj67)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "office building, second floor (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Office Building, Second Floor",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "hangin' out",
+                        "action": "up"
+                    }
+                ],
+                "micro_uuid": "1863f74d-88d6-3109-8cea-344e29f1211a",
+                "macro_uuid": "c9735dd5-413b-32a5-b466-88c24c466ecf"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Pizza Parlor",
                 "src_requested": "pizza parlor (obj30)",
                 "dst_anno": "Street, by Pizza Parlor",
@@ -6316,30 +9191,6 @@
                 ],
                 "micro_uuid": "9b64427b-e151-3941-a8a0-aa6041c1a337",
                 "macro_uuid": "f5988368-6462-3e1d-8da0-b27f5b15b55c"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Office Building, Second Floor",
-                "src_requested": "office building, second floor (obj64)",
-                "dst_anno": "Law Office",
-                "dst_requested": "law office (obj67)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "law office (obj67)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "a4cb098c-dc21-3286-a4cf-13df8e94c0bc",
-                "macro_uuid": "117bfa71-a411-33eb-93eb-68e2078db4c2"
             },
             {
                 "verify_result": false,
@@ -6433,6 +9284,51 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "Law Office",
+                "dst_requested": "law office (obj67)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, near courthouse (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Downtown",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "0dacb4da-fab2-367a-bb54-15778cfeab6b",
+                "macro_uuid": "e11d2f52-df18-3979-80aa-45c02f0239e1"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Behind the Counter",
                 "src_requested": "behind the counter (obj29)",
                 "dst_anno": "Street, Near Courthouse",
@@ -6466,6 +9362,55 @@
                 ],
                 "micro_uuid": "191aed16-5f01-3163-8d6d-d33ebc303dff",
                 "macro_uuid": "f0d10372-37e7-30a4-a4b1-1cdfae9ae6c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "street, by pizza parlor (obj36)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Office Building, Third Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "2a25ec7c-de56-3cae-b135-459f870d0283",
+                "macro_uuid": "c6972d94-f378-32f3-9e97-65e8e284fe26"
             },
             {
                 "verify_result": true,
@@ -6621,50 +9566,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Office Building, Third Floor",
-                "src_requested": "office building, third floor (obj66)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
-                "connectivity": true,
-                "dist_shortest": 2,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "office building, third floor (obj66)",
-                "stop_step": 0,
-                "path_checked": [
-                    {
-                        "prev_node": "Office Building, Third Floor",
-                        "node": "Office Building, Second Floor",
-                        "action": "down",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Office Building",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Street, Near Courthouse",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "hangin' out",
-                        "action": "jump out window"
-                    }
-                ],
-                "micro_uuid": "7d3b3650-3cec-3ae2-b29e-e3e6b7e170c7",
-                "macro_uuid": "c945397f-a467-3eb9-91d7-9fc06ff51d31"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Courthouse",
                 "src_requested": "courthouse (obj56)",
                 "dst_anno": "Office Building, Third Floor",
@@ -6734,101 +9635,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Street, Near Courthouse",
-                "src_requested": "street, near courthouse (obj52)",
-                "dst_anno": "Law Office",
-                "dst_requested": "law office (obj67)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "street, near courthouse (obj52)",
-                "stop_step": 0,
-                "path_checked": [
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Office Building, Second Floor",
-                        "action": "north",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "6e9e3be2-2099-3705-a1da-5c20b7bfc519",
-                "macro_uuid": "3927a7e0-0b44-302c-9dbe-01c473d132f0"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Behind the Counter",
-                "src_requested": "behind the counter (obj29)",
-                "dst_anno": "Law Office",
-                "dst_requested": "law office (obj67)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "street, by pizza parlor (obj36)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Behind the Counter",
-                        "node": "Pizza Parlor",
-                        "action": "southwest",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Pizza Parlor",
-                        "node": "Street, by Pizza Parlor",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Street, Near Courthouse",
-                        "action": "east",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "Street, Near Courthouse",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Downtown",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Downtown",
-                        "node": "Office Building",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "0dd65add-fc4e-371c-bab7-c208a934767f",
-                "macro_uuid": "9d42f2aa-cca5-3f10-8e58-ef20166a49ad"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Courthouse",
                 "src_requested": "courthouse (obj56)",
                 "dst_anno": "Mayor's Office",
@@ -6876,41 +9682,6 @@
                 ],
                 "micro_uuid": "ebd3382d-390b-310c-94c3-e161a506b68f",
                 "macro_uuid": "7781db90-aa9e-3f98-9df3-6420dee397b4"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Law Office",
-                "src_requested": "law office (obj67)",
-                "dst_anno": "Mayor's Office",
-                "dst_requested": "mayor's office (obj73)",
-                "connectivity": true,
-                "dist_shortest": 3,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "office building, second floor (obj64)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Law Office",
-                        "node": "Office Building, Second Floor",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Office Building, Third Floor",
-                        "action": "north",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Office Building, Third Floor",
-                        "node": "Mayor's Office",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "384a48c9-cad0-34f8-9eb2-5acc28d078d9",
-                "macro_uuid": "5618c54a-5679-3657-8fac-28d4e2561d97"
             },
             {
                 "verify_result": false,
@@ -7026,55 +9797,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Street, by Pizza Parlor",
-                "src_requested": "street, by pizza parlor (obj36)",
-                "dst_anno": "Mayor's Office",
-                "dst_requested": "mayor's office (obj73)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "street, by pizza parlor (obj36)",
-                "stop_step": 0,
-                "path_checked": [
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Street, Near Courthouse",
-                        "action": "north",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "Office Building",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Law Office",
-                        "node": "Mayor's Office",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "67983e3a-38ec-3330-a5b7-df1633757b52",
-                "macro_uuid": "c6972d94-f378-32f3-9e97-65e8e284fe26"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Office Building",
                 "src_requested": "office building (obj62)",
                 "dst_anno": "Office Building, Third Floor",
@@ -7153,6 +9875,123 @@
             },
             {
                 "verify_result": false,
+                "src_anno": "Courthouse",
+                "src_requested": "courthouse (obj56)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Street, Near Courthouse",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Downtown",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Downtown",
+                        "node": "Office Building",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "hangin' out",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "88de213d-04a4-3f66-b29f-c8622e363d50",
+                "macro_uuid": "95fef2fc-6071-3d2d-8e60-b9218240a366"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "courthouse (obj56)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Courthouse",
+                        "node": "Office Building",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Office Building",
+                        "node": "Office Building, Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Office Building, Second Floor",
+                        "node": "Law Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Law Office",
+                        "node": "Mayor's Office",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "c40d830b-91ac-377a-b9e7-6d572f5fae50",
+                "macro_uuid": "6cdf2a80-0f65-37cf-ad30-4eccc5f4ed65"
+            },
+            {
+                "verify_result": false,
                 "src_anno": "Behind the Counter",
                 "src_requested": "behind the counter (obj29)",
                 "dst_anno": "Office Building, Third Floor",
@@ -7167,51 +10006,6 @@
                 "path_checked": [],
                 "micro_uuid": "c020f139-ed44-38cf-b11d-43b280c24957",
                 "macro_uuid": "f2e6e022-765f-3744-8d0c-d0655aa550ac"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Courthouse",
-                "src_requested": "courthouse (obj56)",
-                "dst_anno": "Law Office",
-                "dst_requested": "law office (obj67)",
-                "connectivity": true,
-                "dist_shortest": 5,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "street, near courthouse (obj52)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "Street, Near Courthouse",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Downtown",
-                        "action": "east",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Downtown",
-                        "node": "Office Building",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "a1ef1e4d-0d27-3920-94bd-2dc68c780b3e",
-                "macro_uuid": "e11d2f52-df18-3979-80aa-45c02f0239e1"
             },
             {
                 "verify_result": false,
@@ -7258,47 +10052,6 @@
                 ],
                 "micro_uuid": "0e03d861-967c-30f1-89d4-48051f8ef9ba",
                 "macro_uuid": "904ff780-2423-30d6-8067-86435b7fb3ae"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Downtown",
-                "src_requested": "downtown (obj53)",
-                "dst_anno": "Mayor's Office",
-                "dst_requested": "mayor's office (obj73)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "office building, second floor (obj64)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Downtown",
-                        "node": "Office Building",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Office Building, Third Floor",
-                        "action": "north",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Office Building, Third Floor",
-                        "node": "Mayor's Office",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "40ee8fc8-b401-3cc1-acb6-2653ab1f1e0f",
-                "macro_uuid": "563b8b90-1e97-3a7f-a1c1-8b8833672df9"
             },
             {
                 "verify_result": false,
@@ -7392,56 +10145,6 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Law Office",
-                "src_requested": "law office (obj67)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
-                "connectivity": true,
-                "dist_shortest": 4,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "office building, second floor (obj64)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Law Office",
-                        "node": "Office Building, Second Floor",
-                        "action": "west",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Office Building",
-                        "action": "south",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Downtown",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Downtown",
-                        "node": "Street, Near Courthouse",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "hangin' out",
-                        "action": "up"
-                    }
-                ],
-                "micro_uuid": "1dc31249-101a-3d1f-aeee-c51d7a51453e",
-                "macro_uuid": "c9735dd5-413b-32a5-b466-88c24c466ecf"
-            },
-            {
-                "verify_result": false,
                 "src_anno": "Street, by Pizza Parlor",
                 "src_requested": "street, by pizza parlor (obj36)",
                 "dst_anno": "Office Building, Third Floor",
@@ -7459,48 +10162,58 @@
             },
             {
                 "verify_result": false,
-                "src_anno": "Street, Near Courthouse",
-                "src_requested": "street, near courthouse (obj52)",
-                "dst_anno": "Mayor's Office",
-                "dst_requested": "mayor's office (obj73)",
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "hangin' out",
+                "dst_requested": "hangin' out (obj85)",
                 "connectivity": true,
-                "dist_shortest": 5,
+                "dist_shortest": 7,
                 "action_gpt": null,
                 "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "courthouse (obj56)",
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pizza parlor (obj30)",
                 "stop_step": 1,
                 "path_checked": [
                     {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south",
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Pizza Parlor",
+                        "action": "north",
                         "msg": "GOOD: seen"
                     },
                     {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Behind the Counter",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Behind the Counter",
+                        "node": "Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Pizza Parlor",
+                        "node": "Street, by Pizza Parlor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Street, by Pizza Parlor",
+                        "node": "Street, Near Courthouse",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Street, Near Courthouse",
+                        "node": "Courthouse",
+                        "action": "south"
+                    },
+                    {
                         "prev_node": "Courthouse",
-                        "node": "Office Building",
-                        "action": "west",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Law Office",
-                        "node": "Mayor's Office",
-                        "action": "east"
+                        "node": "hangin' out",
+                        "action": "jump out window"
                     }
                 ],
-                "micro_uuid": "2b2665b2-b191-3e4d-b17f-9a0e49b698f0",
-                "macro_uuid": "6cdf2a80-0f65-37cf-ad30-4eccc5f4ed65"
+                "micro_uuid": "5ba95755-0e62-3b41-9bf7-b92511eae004",
+                "macro_uuid": "55a19a53-763a-38d3-9d63-7817cb6036f1"
             },
             {
                 "verify_result": false,
@@ -7539,80 +10252,8 @@
                         "action": "jump out window"
                     }
                 ],
-                "micro_uuid": "50158e6c-4a39-32eb-8b7e-8b35bb2e0c49",
+                "micro_uuid": "85a34f82-9027-3005-9e36-a5af65eb4183",
                 "macro_uuid": "cc933386-87a4-34d6-9d63-7ae41cdc0e8a"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Courthouse",
-                "src_requested": "courthouse (obj56)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "pizza parlor (obj30)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "Street, Near Courthouse",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Street, by Pizza Parlor",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Pizza Parlor",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Pizza Parlor",
-                        "node": "Behind the Counter",
-                        "action": "south",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Behind the Counter",
-                        "node": "Street, by Pizza Parlor",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Downtown",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Downtown",
-                        "node": "Office Building",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "up"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Law Office",
-                        "node": "hangin' out",
-                        "action": "jump out window"
-                    }
-                ],
-                "micro_uuid": "7af0cc20-5f28-37ca-a92a-2cc94785da15",
-                "macro_uuid": "95fef2fc-6071-3d2d-8e60-b9218240a366"
             },
             {
                 "verify_result": false,
@@ -7672,105 +10313,6 @@
                 ],
                 "micro_uuid": "09423f3f-1bae-30ef-aa49-2feb6cdf6ba0",
                 "macro_uuid": "2d2b233b-b085-389f-816c-aee3cf9920b4"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Pizza Parlor",
-                "src_requested": "pizza parlor (obj30)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
-                "connectivity": true,
-                "dist_shortest": 8,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "pizza parlor (obj30)",
-                "stop_step": 0,
-                "path_checked": [
-                    {
-                        "prev_node": "Pizza Parlor",
-                        "node": "Street, by Pizza Parlor",
-                        "action": "north",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Street, Near Courthouse",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "Office Building",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "up"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Law Office",
-                        "node": "hangin' out",
-                        "action": "down"
-                    }
-                ],
-                "micro_uuid": "85e82f6b-45ad-364b-91e5-54c1a4faf59f",
-                "macro_uuid": "2f31377f-4cbc-3a0f-82bd-fae976c05b14"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Street, Near Courthouse",
-                "src_requested": "street, near courthouse (obj52)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
-                "connectivity": true,
-                "dist_shortest": 6,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: node not in prev_node.neighbor()",
-                "stop_node_code": "courthouse (obj56)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "Office Building",
-                        "action": "west",
-                        "msg": "ERROR: node not in prev_node.neighbor()"
-                    },
-                    {
-                        "prev_node": "Office Building",
-                        "node": "Office Building, Second Floor",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Office Building, Second Floor",
-                        "node": "Law Office",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Law Office",
-                        "node": "hangin' out",
-                        "action": "jump out window"
-                    }
-                ],
-                "micro_uuid": "21378cfe-29a9-3cde-8005-dfcc58522b8b",
-                "macro_uuid": "43651621-644e-3aeb-946e-9ccd938581c8"
             },
             {
                 "verify_result": false,
@@ -7846,61 +10388,6 @@
                 ],
                 "micro_uuid": "16a9e889-3a6c-3e1a-9743-8432b379c997",
                 "macro_uuid": "418333ac-9d05-32b2-be7c-5305f63fef48"
-            },
-            {
-                "verify_result": false,
-                "src_anno": "Street, by Pizza Parlor",
-                "src_requested": "street, by pizza parlor (obj36)",
-                "dst_anno": "hangin' out",
-                "dst_requested": "hangin' out (obj85)",
-                "connectivity": true,
-                "dist_shortest": 7,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "ERROR: action is not valid",
-                "stop_node_code": "pizza parlor (obj30)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Pizza Parlor",
-                        "action": "north",
-                        "msg": "GOOD: seen"
-                    },
-                    {
-                        "prev_node": "Pizza Parlor",
-                        "node": "Behind the Counter",
-                        "action": "south",
-                        "msg": "ERROR: action is not valid"
-                    },
-                    {
-                        "prev_node": "Behind the Counter",
-                        "node": "Pizza Parlor",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Pizza Parlor",
-                        "node": "Street, by Pizza Parlor",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Street, by Pizza Parlor",
-                        "node": "Street, Near Courthouse",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Street, Near Courthouse",
-                        "node": "Courthouse",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Courthouse",
-                        "node": "hangin' out",
-                        "action": "jump out window"
-                    }
-                ],
-                "micro_uuid": "99fa36f6-4ec8-3ea2-ad36-9dc5cdc0c5f5",
-                "macro_uuid": "55a19a53-763a-38d3-9d63-7817cb6036f1"
             },
             {
                 "verify_result": true,
@@ -7997,6 +10484,30 @@
                 ],
                 "micro_uuid": "ae96380d-ce6e-32ed-ad33-041147988c13",
                 "macro_uuid": "6961870b-1603-3422-97bd-dbe779f9ac98"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Office Building, Third Floor",
+                "src_requested": "office building, third floor (obj66)",
+                "dst_anno": "Mayor's Office",
+                "dst_requested": "mayor's office (obj73)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "mayor's office (obj73)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Office Building, Third Floor",
+                        "node": "Mayor's Office",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d5c74c8b-d968-3fce-aaf6-4a4dba929e44",
+                "macro_uuid": "250f59ef-a316-3a43-910c-8ec389606195"
             },
             {
                 "verify_result": false,
@@ -8114,30 +10625,6 @@
                 ],
                 "micro_uuid": "2c58bedf-011d-3dd3-b932-d21824322ff5",
                 "macro_uuid": "af8bd3d8-adb3-3474-8a62-83c2156c8061"
-            },
-            {
-                "verify_result": true,
-                "src_anno": "Office Building, Third Floor",
-                "src_requested": "office building, third floor (obj66)",
-                "dst_anno": "Mayor's Office",
-                "dst_requested": "mayor's office (obj73)",
-                "connectivity": true,
-                "dist_shortest": 1,
-                "action_gpt": null,
-                "dst_gpt": null,
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "mayor's office (obj73)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Office Building, Third Floor",
-                        "node": "Mayor's Office",
-                        "action": "east",
-                        "msg": "GOOD: seen"
-                    }
-                ],
-                "micro_uuid": "fc680014-1bd6-3956-84f8-b9d6235b542e",
-                "macro_uuid": "250f59ef-a316-3a43-910c-8ec389606195"
             },
             {
                 "verify_result": false,

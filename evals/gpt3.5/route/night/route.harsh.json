@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-3.5-turbo/": {
         "correct_num": 9,
-        "total_num": 190,
-        "accuracy": 0.04736842105263158,
+        "total_num": 191,
+        "accuracy": 0.04712041884816754,
         "collection": {
             "../gpt-games-results//night/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-47-16_527.json": {
                 "verify_result": false,
@@ -5363,6 +5363,51 @@
                 "path_checked": [],
                 "micro_uuid": "253957bb-39bf-36d6-b7a8-2fa3ec1744fa",
                 "macro_uuid": "a9e732d1-28a1-3904-bdff-ff57e6a4421f"
+            },
+            "../gpt-games-results//night/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-43-02_737.json": {
+                "verify_result": false,
+                "src_anno": "Hall (3rd floor, middle of north/south hall)",
+                "src_requested": "hall (obj39)",
+                "dst_anno": "Hall (2nd floor, middle of north/south hall)",
+                "dst_requested": "hall (obj53)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "hall outside elevator (obj40)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hall (3rd floor, middle of north/south hall)",
+                        "node": "Hall Outside Elevator (3rd floor)",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hall Outside Elevator (3rd floor)",
+                        "node": "Stairwell (Third Floor)",
+                        "action": "northeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Stairwell (Third Floor)",
+                        "node": "Stairwell (Second Floor)",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Stairwell (Second Floor)",
+                        "node": "Hall Outside Elevator (2nd floor)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hall Outside Elevator (2nd floor)",
+                        "node": "Hall (2nd floor, middle of north/south hall)",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "56068cf8-60c5-3a76-b7f6-3de9f20a2ad3",
+                "macro_uuid": "2fbba48c-16be-371e-92ce-bb8d6cd39a4a"
             },
             "../gpt-games-results//night/results//pathgen-gpt-3.5-turbo/results_2023-05-31-06-43-57_673.json": {
                 "verify_result": false,

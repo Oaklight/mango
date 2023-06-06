@@ -1,8 +1,8 @@
 {
     "pathgen-gpt-4/": {
-        "correct_num": 96,
-        "total_num": 210,
-        "accuracy": 0.45714285714285713,
+        "correct_num": 97,
+        "total_num": 211,
+        "accuracy": 0.4597156398104265,
         "collection": {
             "../gpt-games-results//enchanter/results//pathgen-gpt-4/results_2023-06-01-13-25-25_213.json": {
                 "verify_result": false,
@@ -7984,6 +7984,48 @@
                 ],
                 "micro_uuid": "7d21820f-2d96-3898-a33d-0013ef6ccab7",
                 "macro_uuid": "1d95fc0e-c85e-37e3-b67d-d47e25218d3c"
+            },
+            "../gpt-games-results//enchanter/results//pathgen-gpt-4/results_2023-06-01-13-18-53_175.json": {
+                "verify_result": true,
+                "src_anno": "Deserted Village",
+                "src_requested": "deserted village (obj196)",
+                "dst_anno": "Outside Gate",
+                "dst_requested": "outside gate (obj101)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside gate (obj101)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Deserted Village",
+                        "node": "Village Outskirts",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Village Outskirts",
+                        "node": "Eastern Fork",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Eastern Fork",
+                        "node": "Western Road",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Western Road",
+                        "node": "Outside Gate",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "96db36c1-151a-3a7c-b9cf-e3a66c2e619b",
+                "macro_uuid": "cfef0e5f-b85f-3798-9e17-d237c989e347"
             },
             "../gpt-games-results//enchanter/results//pathgen-gpt-4/results_2023-06-01-13-18-09_781.json": {
                 "verify_result": true,
