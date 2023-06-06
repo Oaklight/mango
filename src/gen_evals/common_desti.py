@@ -21,7 +21,7 @@ def verify_stepnav_simple(g, anno2code, each_json_path, verbose=True):
     dst_requested = anno_to_code(gpt_results["dst_node"], anno2code)
     # dst_requested, msg = walk_path_to_dst(g, src_anno, action_requested, anno2code)
 
-    action_requested = extract_actions(gpt_results["question"])
+    action_requested = gpt_results["action_list"]
 
     path_gpt = []
 
