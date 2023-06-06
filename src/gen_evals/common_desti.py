@@ -140,10 +140,44 @@ def verify_stepnav_hard(g, anno2code, each_json_path, verbose=True):
 
         return verify_result, verify_pack
 
-    # dst_gpt = anno_to_code(path_gpt[-1]["node"], anno2code)
-    stop_node_code, stop_step, path_labeled, msg = walk_and_label_path(
-        g, gpt_results["src_node"], path_gpt, anno2code
-    )
+    # # dst_gpt = anno_to_code(path_gpt[-1]["node"], anno2code)
+    # stop_node_code, stop_step, path_labeled, msg = walk_and_label_path(
+    #     g, gpt_results["src_node"], path_gpt, anno2code
+    # )
+
+    # simpler way is to directly check the given path_gt
+    path_gt = gpt_results["path_gt"]
+    # compare prev_node, node, action with gt
+    if len(path_gpt) != len(path_gt):
+        good_format = False
+        msg = f"wrong length, aborting"
+    else:
+        stop_step = 0
+        for i in range(len(path_gpt)):
+            # if path_gpt[i]["prev_node"] != path_gt[i]["prev_node"]: anno_to_code
+            if anno_to_code(path_gpt[i]["prev_node"], anno2code) != path_gt[i]["prev_node"]:
+                good_format = False
+                msg = f"wrong prev_node, at step {i}, aborting"
+                break
+            # if path_gpt[i]["node"] != path_gt[i]["node"]:
+            if anno_to_code(path_gpt[i]["node"], anno2code) != path_gt[i]["node"]:
+                good_format = False
+                msg = f"wrong node, at step {i}, aborting"
+                break
+            if path_gpt[i]["action"] != path_gt[i]["action"]:
+                good_format = False
+                msg = f"wrong action, at step {i}, aborting"
+                break
+            stop_step = i
+
+        stop_node_code = anno_to_code(path_gpt[stop_step]["node"], anno2code)
+        path_labeled = path_gpt[: stop_step + 1]
+        msg = "all good" if good_format else msg
+
+    # # dst_gpt = anno_to_code(path_gpt[-1]["node"], anno2code)
+    # stop_node_code, stop_step, path_labeled, msg = walk_and_label_path(
+    #     g, gpt_results["src_node"], path_gpt, anno2code
+    # )
     if msg == "all good":
         msg = "walk_and_label_path: the generated path leads to somewhere"
         print(msg)
@@ -160,6 +194,7 @@ def verify_stepnav_hard(g, anno2code, each_json_path, verbose=True):
         verify_pack["stop_step"] = stop_step
         verify_pack["path_checked"] = path_labeled
         verify_pack["verify_msg"] = msg
+        verify_pack["dst_gpt"] = stop_node_code
 
     if verify_result:
         assert (
