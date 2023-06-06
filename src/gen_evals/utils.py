@@ -118,6 +118,9 @@ def check_format(gpt_results, dst_only=False):
         return good_format, path_gpt
 
     if dst_only:
+        if len(gpt_results["path"]) == 0:
+            good_format = True
+            return good_format, path_gpt
         last_element = gpt_results["path"][-1]
         if isinstance(last_element, dict):
             if "prev_node" in last_element and "node" in last_element:
@@ -220,6 +223,9 @@ def __count_helper_trend(current_collection, level, field="dist_shortest"):
         # level_uuid = each_entry[f"{level}_uuid"]
         verify_result = each_entry["verify_result"]
         dist_shortest = each_entry[field]
+        # when connectivity is False, the dist_shortest is None!
+        if dist_shortest is None:
+            continue
 
         # accumulate length and accuracy for each macro uuid
         if dist_shortest not in level_length_acc:
@@ -302,7 +308,11 @@ def skip_due_to_cutoff(
                 and each_entry["dst_node"] == dst_code
             ):
                 matching_entry.append(each_entry)
-        assert len(matching_entry) > 0, "matching entry not found"
+        if len(matching_entry) == 0:
+            print(
+                f"matched path not found for given gpt result: [{each_json}], LIKELY IT'S A NON_CONNECTED PAIR [{src_code}] -> [{dst_code}]"
+            )
+            return False
 
         # compute hash on path_gt
         path_gt = gpt_result["path_gt"]
