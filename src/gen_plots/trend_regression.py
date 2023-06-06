@@ -375,7 +375,7 @@ def plot_slopes_with_error_bars(slope_data, save_path):
     # plt.show()
 
 
-def regress_plot_all_game_desti(each_model_dir, task):
+def regress_plot_all_game(each_model_dir, task):
     assert task in ["desti", "route"], "task should be either desti or route"
 
     task_path = os.path.join(each_model_dir, task)
@@ -407,6 +407,6 @@ if __name__ == "__main__":
         regress_plot_individual_route(plot_acc_vs_sth_for_task, each_model_dir)
 
         # process desti regression error bar for all games
-        regress_plot_all_game_desti(each_model_dir, "desti")
+        regress_plot_all_game(each_model_dir, "desti")
         # process route regression error bar for all games
-        regress_plot_all_game_desti(each_model_dir, "route")
+        regress_plot_all_game(each_model_dir, "route")
