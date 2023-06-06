@@ -120,7 +120,7 @@ if __name__ == "__main__":
         verify_collections[each_version] = {
             "correct_num": correct,
             "total_num": total,
-            "accuracy": correct / float(total),
+            "accuracy": correct / float(total) if total > 0 else 0,
             "collection": current_collection,
             "random_guess_rate": random_guess,
         }
