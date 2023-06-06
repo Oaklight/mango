@@ -132,8 +132,8 @@ def confirm_continue():
         exit(1)
 
 
-def compute_hash(json_obj, mode="all2all"):
-    accept_modes = ["all2all", "allpairs", "path_details"]
+def compute_hash(json_obj, mode):
+    accept_modes = ["all2all", "all_pairs", "path_details", "anno2code", "code2anno"]
     assert mode in accept_modes, f"mode must be one of {accept_modes}"
 
     # make deep copy of json_obj
@@ -145,8 +145,9 @@ def compute_hash(json_obj, mode="all2all"):
         "step_min_cutoff",
         "path_min_cutoff",
         "all_steps_seen_in_forward",
+        "diff_shortest",
     ]
-    delete_keys_allpairs = ["num_paths", "path_min_cutoffs"]
+    delete_keys_allpairs = ["num_paths", "path_min_cutoffs", "diff_shortest"]
     # for key in delete_keys:
     #     if key in json_obj_copy:
     #         del json_obj_copy[key]
@@ -166,9 +167,14 @@ def compute_hash(json_obj, mode="all2all"):
             if key in json_obj_copy:
                 del json_obj_copy[key]
     elif mode == "path_details":
-        for key in delete_keys_all2all:
-            if key in json_obj_copy:
-                del json_obj_copy[key]
+        for i, entry in enumerate(json_obj_copy):
+            for key in delete_keys_all2all:
+                if key in entry:
+                    del entry[key]
+            json_obj_copy[i] = entry
+    else:
+        # print(f"skip {mode}")
+        pass
 
     json_str = json.dumps(json_obj_copy, sort_keys=True)
     # json_str = json_str.replace('"seen": true,', "")
