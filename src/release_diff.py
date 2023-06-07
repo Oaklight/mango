@@ -7,7 +7,7 @@ import sys
 current = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(current)
 
-from gen_paths.utils import compute_hash
+from gen_paths.utils import compute_hash, compare_path_details
 from matplotlib import pyplot as plt
 
 
@@ -19,6 +19,11 @@ def find_difference(json1, json2, mode="all2all"):
 
     dict1 = {compute_hash(obj, mode): obj for obj in data1}
     dict2 = {compute_hash(obj, mode): obj for obj in data2}
+
+    if len(set(dict1.keys())) != len(dict1.keys()):
+        print("Warning: duplicated keys in dict1")
+    if len(set(dict2.keys())) != len(dict2.keys()):
+        print("Warning: duplicated keys in dict2")
 
     # same keys
     same_keys = set(dict1.keys()).intersection(set(dict2.keys()))
@@ -35,9 +40,7 @@ def find_difference(json1, json2, mode="all2all"):
 
 
 # now check difference of *.code2anno.json in each folder from intersect_data_path
-def check_dump_diff(
-    find_difference, latest_data_path, old_data_path, diff_data_path, each, tgt_file
-):
+def check_dump_diff(latest_data_path, old_data_path, diff_data_path, each, tgt_file):
     old_file_path = f"{old_data_path[each]}/{each}.{tgt_file}.json"
     new_file_path = f"{latest_data_path[each]}/{each}.{tgt_file}.json"
 
@@ -111,6 +114,46 @@ def check_dump_diff(
         with open(dropped_file_path, "w") as f:
             json.dump(drop_objects, f, indent=4)
 
+    len_only_diff_shortest = 0
+    if tgt_file == "all2all":
+        new_objects_not_only_diff_shortest = []
+        new_objects_only_diff_shortes = []
+
+        for each_new in new_objects:
+            src_new = each_new["src_node"]
+            dst_new = each_new["dst_node"]
+            diff_shortest_new = each_new["diff_shortest"]
+            len_new = len(each_new["path_details"])
+
+            for each_drop in drop_objects:
+                src_drop = each_drop["src_node"]
+                dst_drop = each_drop["dst_node"]
+                diff_shortest_drop = each_drop["diff_shortest"]
+                len_drop = len(each_drop["path_details"])
+
+                if src_new != src_drop or dst_new != dst_drop or len_new != len_drop:
+                    continue
+                else:
+                    if compare_path_details(
+                        each_new["path_details"], each_drop["path_details"]
+                    ):
+                        # print(f"found dropped path in new paths")
+                        if diff_shortest_new != diff_shortest_drop:
+                            # print(f"but diff_shortest is different")
+                            new_objects_only_diff_shortes.append(each_new)
+                        else:
+                            # print(f"and diff_shortest is the same")
+                            new_objects_not_only_diff_shortest.append(each_new)
+
+        # create subfolder for new_objects_only_diff_shortest
+        if len(new_objects_only_diff_shortes) != 0:
+            new_objects_only_diff_shortest_path = (
+                f"{each_diff_path}/{each}.{tgt_file}.new_only_diff_shortest.json"
+            )
+            with open(new_objects_only_diff_shortest_path, "w") as f:
+                json.dump(new_objects_only_diff_shortes, f, indent=4)
+            len_only_diff_shortest = len(new_objects_only_diff_shortes)
+
     diff_shortest_dict_add = {}
     step_count_dict_add = {}
     diff_shortest_dict_drop = {}
@@ -154,7 +197,7 @@ def check_dump_diff(
             all_pairs_old[pair_name]["num_paths"] += 1
 
     return (
-        len(new_objects),
+        [len(new_objects), len_only_diff_shortest],
         len(drop_objects),
         len(same_objects),
         (diff_shortest_dict_add, step_count_dict_add),
@@ -210,23 +253,23 @@ if __name__ == "__main__":
 
         tgt_file = "anno2code"
         anno2code_add, anno2code_drop, anno2code_same, _, _, _ = check_dump_diff(
-            find_difference,
             latest_data_path,
             old_data_path,
             diff_data_path,
             each,
             tgt_file,
         )
+        anno2code_add = anno2code_add[0]
 
         tgt_file = "code2anno"
         code2anno_add, code2anno_drop, code2anno_same, _, _, _ = check_dump_diff(
-            find_difference,
             latest_data_path,
             old_data_path,
             diff_data_path,
             each,
             tgt_file,
         )
+        code2anno_add = code2anno_add[0]
 
         tgt_file = "all2all"
         (
@@ -237,13 +280,14 @@ if __name__ == "__main__":
             all2all_drop_stats,
             all_pairs_old,
         ) = check_dump_diff(
-            find_difference,
             latest_data_path,
             old_data_path,
             diff_data_path,
             each,
             tgt_file,
         )
+        all2all_add_only_diff_shortest = all2all_add[1]
+        all2all_add = all2all_add[0]
 
         # dump all_pair_old, sort first
         all_pairs_old = sorted(
@@ -257,13 +301,13 @@ if __name__ == "__main__":
 
         tgt_file = "all_pairs"
         allpairs_add, allpairs_drop, allpairs_same, _, _, _ = check_dump_diff(
-            find_difference,
             latest_data_path,
             old_data_path,
             diff_data_path,
             each,
             tgt_file,
         )
+        allpairs_add = allpairs_add[0]
 
         # add to dict if there is any difference
         if (
@@ -286,6 +330,7 @@ if __name__ == "__main__":
                 "all2all_drop": all2all_drop,
                 "all2all_add": all2all_add,
                 "all2all_same": all2all_same,
+                "all2all_add_only_diff_shortest": all2all_add_only_diff_shortest,
                 "all2all_rate": (all2all_add + all2all_same)
                 / float(all2all_same + all2all_drop),
                 "allpairs_drop": allpairs_drop,
@@ -370,6 +415,7 @@ if __name__ == "__main__":
                 "code2anno_same",
                 "all2all_drop",
                 "all2all_add",
+                "all2all_add_only_diff_shortest",
                 "all2all_same",
                 "all2all_total_change_rate",
                 "allpair_drop",
@@ -390,10 +436,12 @@ if __name__ == "__main__":
                     val["code2anno_same"],
                     val["all2all_drop"],
                     val["all2all_add"],
+                    val["all2all_add_only_diff_shortest"],
                     val["all2all_same"],
                     val["all2all_rate"],
                     val["allpairs_drop"],
                     val["allpairs_add"],
+                    val["allpairs_same"],
                     val["allpairs_same"],
                     val["allpairs_rate"],
                 ]
