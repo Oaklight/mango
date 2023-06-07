@@ -1,0 +1,920 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 10,
+        "total_num": 10,
+        "accuracy": 1.0,
+        "collection": {
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-52-08_089.json": {
+                "verify_result": true,
+                "src_anno": "Living room",
+                "src_requested": "living room (obj50)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c5898fbe-ed3a-3d8d-ae74-8adcc34d8872",
+                "macro_uuid": "100fc189-8568-3e86-8025-146df484b398"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-51-26_877.json": {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Living room",
+                "dst_requested": "living room (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "living room (obj50)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6fb05f78-5832-3b0c-9eb0-15400026b60d",
+                "macro_uuid": "2af42159-8916-39f9-a116-0c58ac9afa14"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-52-30_773.json": {
+                "verify_result": true,
+                "src_anno": "Driveway",
+                "src_requested": "driveway (obj62)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c5738d74-7a44-3d1b-810c-e7d5c615c144",
+                "macro_uuid": "6870ca8d-788f-35a4-8b83-6715b77776ef"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-51-59_746.json": {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "9bd491b0-258e-34d3-9508-c50c4adf3deb",
+                "macro_uuid": "7f5f7089-6ea2-31a2-919e-8b84a255903a"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-52-25_659.json": {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "a0accb29-d0bc-320c-aebd-2f7183a8b136",
+                "macro_uuid": "92b92a85-7d82-379d-a8ce-f82d7d8f8f95"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-51-25_495.json": {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Bathroom",
+                "dst_requested": "bathroom (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "bathroom (obj44)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Bathroom",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "8f630f60-baba-3673-bca9-c81c9ab0adc6",
+                "macro_uuid": "8d0a7ed8-3db1-331c-b4fb-cb5f0b0b7af9"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-51-49_912.json": {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Living room",
+                "dst_requested": "living room (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "living room (obj50)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "0e2dff5b-3465-3287-928e-6118853b28b0",
+                "macro_uuid": "de66b25c-d4fa-336a-bd7e-d5f90692d4ba"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-51-32_172.json": {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3410774e-720c-3f59-a87f-a7c54308ae65",
+                "macro_uuid": "fb92c114-cc97-38c0-bb08-39fbfae16df9"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-52-15_389.json": {
+                "verify_result": true,
+                "src_anno": "Living room",
+                "src_requested": "living room (obj50)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f07c8561-572e-32f9-9e9a-7fdb77f1dbe8",
+                "macro_uuid": "609182d0-eff5-3274-9e50-1adeea30f977"
+            },
+            "../gpt-games-results/905/results//pathgen-gpt-4/results_2023-06-01-10-51-55_764.json": {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c8980c26-72c9-36a3-be20-ca121eec7e4f",
+                "macro_uuid": "bf79ea05-28e8-38d3-b6ae-1eb1b20cd321"
+            }
+        },
+        "random_guess_rate": 0.027777777777777776,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Living room",
+                "src_requested": "living room (obj50)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c5898fbe-ed3a-3d8d-ae74-8adcc34d8872",
+                "macro_uuid": "100fc189-8568-3e86-8025-146df484b398"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Living room",
+                "dst_requested": "living room (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "living room (obj50)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6fb05f78-5832-3b0c-9eb0-15400026b60d",
+                "macro_uuid": "2af42159-8916-39f9-a116-0c58ac9afa14"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Driveway",
+                "src_requested": "driveway (obj62)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c5738d74-7a44-3d1b-810c-e7d5c615c144",
+                "macro_uuid": "6870ca8d-788f-35a4-8b83-6715b77776ef"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "9bd491b0-258e-34d3-9508-c50c4adf3deb",
+                "macro_uuid": "7f5f7089-6ea2-31a2-919e-8b84a255903a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "a0accb29-d0bc-320c-aebd-2f7183a8b136",
+                "macro_uuid": "92b92a85-7d82-379d-a8ce-f82d7d8f8f95"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Bathroom",
+                "dst_requested": "bathroom (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "bathroom (obj44)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Bathroom",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "8f630f60-baba-3673-bca9-c81c9ab0adc6",
+                "macro_uuid": "8d0a7ed8-3db1-331c-b4fb-cb5f0b0b7af9"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Living room",
+                "dst_requested": "living room (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "living room (obj50)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "0e2dff5b-3465-3287-928e-6118853b28b0",
+                "macro_uuid": "de66b25c-d4fa-336a-bd7e-d5f90692d4ba"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3410774e-720c-3f59-a87f-a7c54308ae65",
+                "macro_uuid": "fb92c114-cc97-38c0-bb08-39fbfae16df9"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Living room",
+                "src_requested": "living room (obj50)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f07c8561-572e-32f9-9e9a-7fdb77f1dbe8",
+                "macro_uuid": "609182d0-eff5-3274-9e50-1adeea30f977"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c8980c26-72c9-36a3-be20-ca121eec7e4f",
+                "macro_uuid": "bf79ea05-28e8-38d3-b6ae-1eb1b20cd321"
+            }
+        ],
+        "correct_num_micro": 10,
+        "total_num_micro": 10,
+        "accuracy_micro": 1.0,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Living room",
+                "src_requested": "living room (obj50)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c5898fbe-ed3a-3d8d-ae74-8adcc34d8872",
+                "macro_uuid": "100fc189-8568-3e86-8025-146df484b398"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Living room",
+                "dst_requested": "living room (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "living room (obj50)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6fb05f78-5832-3b0c-9eb0-15400026b60d",
+                "macro_uuid": "2af42159-8916-39f9-a116-0c58ac9afa14"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Driveway",
+                "src_requested": "driveway (obj62)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c5738d74-7a44-3d1b-810c-e7d5c615c144",
+                "macro_uuid": "6870ca8d-788f-35a4-8b83-6715b77776ef"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "9bd491b0-258e-34d3-9508-c50c4adf3deb",
+                "macro_uuid": "7f5f7089-6ea2-31a2-919e-8b84a255903a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "a0accb29-d0bc-320c-aebd-2f7183a8b136",
+                "macro_uuid": "92b92a85-7d82-379d-a8ce-f82d7d8f8f95"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Bathroom",
+                "dst_requested": "bathroom (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "bathroom (obj44)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Bathroom",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "8f630f60-baba-3673-bca9-c81c9ab0adc6",
+                "macro_uuid": "8d0a7ed8-3db1-331c-b4fb-cb5f0b0b7af9"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bathroom",
+                "src_requested": "bathroom (obj44)",
+                "dst_anno": "Living room",
+                "dst_requested": "living room (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "living room (obj50)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bathroom",
+                        "node": "Bedroom",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "0e2dff5b-3465-3287-928e-6118853b28b0",
+                "macro_uuid": "de66b25c-d4fa-336a-bd7e-d5f90692d4ba"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Driveway",
+                "dst_requested": "driveway (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driveway (obj62)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3410774e-720c-3f59-a87f-a7c54308ae65",
+                "macro_uuid": "fb92c114-cc97-38c0-bb08-39fbfae16df9"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Living room",
+                "src_requested": "living room (obj50)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f07c8561-572e-32f9-9e9a-7fdb77f1dbe8",
+                "macro_uuid": "609182d0-eff5-3274-9e50-1adeea30f977"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bedroom",
+                "src_requested": "bedroom (obj25)",
+                "dst_anno": "Inside of the Car",
+                "dst_requested": "driving (obj67)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "driving (obj67)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Bedroom",
+                        "node": "Living room",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Living room",
+                        "node": "Driveway",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Driveway",
+                        "node": "Inside of the Car",
+                        "action": "enter car",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c8980c26-72c9-36a3-be20-ca121eec7e4f",
+                "macro_uuid": "bf79ea05-28e8-38d3-b6ae-1eb1b20cd321"
+            }
+        ],
+        "correct_num_macro": 10,
+        "total_num_macro": 10,
+        "accuracy_macro": 1.0
+    }
+}

@@ -1,0 +1,1904 @@
+{
+    "stepnav-gpt-4/": {
+        "correct_num": 10,
+        "total_num": 28,
+        "accuracy": 0.35714285714285715,
+        "collection": {
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-50-36_309.json": {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "elevator (obj124)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "elevator (obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "e9e9357c-c189-3811-b6ad-aac4d4c45484",
+                "macro_uuid": "67a9255d-be6b-32c9-a7ca-5cbfa0c9b675"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-48-57_089.json": {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "down",
+                    "z"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "63b2c0e9-c2a5-36d0-94e7-1d464ea7b098",
+                "macro_uuid": "bc9b360e-9814-300e-ad20-273e65dbaefa"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-41-07_177.json": {
+                "verify_result": false,
+                "src_requested": "at platform (obj21)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "At Platform",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Place",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Place",
+                        "node": "Terminal Room",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "434157ad-5fff-3529-ae70-b779fde6316d",
+                "macro_uuid": "8dae37e8-e4ce-32e6-88b2-0a0d533da190"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-44-17_289.json": {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "south",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "f580adac-2050-3ee7-a125-073f431c17ac",
+                "macro_uuid": "a5fd58e0-c0d3-3588-b4f0-1dbc2fe5048f"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-47-42_732.json": {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "dc82fd17-b3e3-3523-87ee-ca1fecd07d50",
+                "macro_uuid": "73136b9e-f020-304c-a6bf-213048bca20c"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-50-55_580.json": {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "kitchen (obj33)",
+                "action_requested": [
+                    "west"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "kitchen (obj33)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "090277e2-0ecf-3dea-92ef-cddf6cea07fd",
+                "macro_uuid": "2c8858ca-11e1-32aa-abe2-7e3518b40f76"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-49-23_133.json": {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "down",
+                    "z",
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "f0010645-07ee-3f83-b9b4-b94e2b3b67a0",
+                "macro_uuid": "0f371748-c4b9-3e89-aec5-63fde109c039"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-47-39_723.json": {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again",
+                    "down"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9f02d1d4-232d-3ecb-abc5-1ed56bf75990",
+                "macro_uuid": "e99db062-a628-3d5d-b64f-2e0ac822001c"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-49-23_622.json": {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "down",
+                    "z",
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "Place",
+                        "node": "Basalt Bowl",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "At Platform",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "At Platform",
+                        "node": "Terminal Room",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "d1b8cd47-88d6-33f3-ae16-dfcc3c173c76",
+                "macro_uuid": "649a6486-e294-39b1-aa84-4e8aa58de2a5"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-44-47_051.json": {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "kitchen (obj33)",
+                "action_requested": [
+                    "south",
+                    "west"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "kitchen (obj33)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "bdb67a9b-cde7-38a7-b497-effed1bde5dd",
+                "macro_uuid": "f8853a81-1b19-3bc5-ba60-2f53ad703a49"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-50-17_470.json": {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "north",
+                    "again",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9728595e-9d80-3555-bac2-c93b6b0544fd",
+                "macro_uuid": "430507c6-7d3b-3783-b722-fb35c5dbb4a7"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-44-15_296.json": {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ac3ea37d-aff1-3d78-9f99-7394c2c7889b",
+                "macro_uuid": "9e5de0a8-c056-3540-a155-f454a3e51864"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-46-36_683.json": {
+                "verify_result": true,
+                "src_requested": "elevator (obj124)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "north",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Elevator",
+                        "node": "Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "6317c6a2-3fe5-3cab-8917-cbd63b82d084",
+                "macro_uuid": "7d4f0e46-ff24-334c-a765-5136b6bff83f"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-47-56_242.json": {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "east",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b6bcd33a-6f42-3a40-981c-3e32bb117c84",
+                "macro_uuid": "8f653a0b-1259-36b9-bfb1-6c59a7236a74"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-44-44_552.json": {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "again"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ab65aa44-bf38-30d4-9914-56efc6441a75",
+                "macro_uuid": "18290a12-daee-3458-a08c-b81f20327135"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-42-05_014.json": {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "z",
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "76735fa9-6ff2-3cfd-a8d5-a621defa570c",
+                "macro_uuid": "90567815-2032-38e9-b219-640bf520c032"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-44-02_235.json": {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "again",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "6bdb840b-d2bd-35da-a4f8-087fd9a30846",
+                "macro_uuid": "9f2b26ff-96ae-3e0a-a29f-d96198502e3d"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-50-35_636.json": {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "560e8df0-0312-3037-9875-37d57a21d701",
+                "macro_uuid": "7162ae92-b516-3029-818a-45df34fa62d7"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-47-56_115.json": {
+                "verify_result": true,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "east",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Kitchen",
+                        "node": "Second Floor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "a456d1ad-07f1-3c26-b4bb-72dbf0a72f68",
+                "macro_uuid": "c205d7dd-1a26-304d-86af-f2f06e00ebd2"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-45-01_048.json": {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "second floor (obj137)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "second floor (obj137)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "second floor (obj137)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "c046da23-9b0b-3dd9-bcac-4d4335ad3833",
+                "macro_uuid": "e109877d-956a-3575-9f4c-540203bbc211"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-48-54_948.json": {
+                "verify_result": true,
+                "src_requested": "place (obj152)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "basalt bowl (obj134)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "basalt bowl (obj134)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Place",
+                        "node": "Basalt Bowl",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "8b634aae-bf2d-3bcc-8157-e616527cf39d",
+                "macro_uuid": "c82c0751-ae66-3fa3-b880-ec68a2e75170"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-48-19_308.json": {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "09f3e6c9-ca72-3228-bd9a-e92699701cdd",
+                "macro_uuid": "0522a354-f562-3dcd-82d1-d2e25d3923a3"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-42-19_604.json": {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "z",
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Place",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Place",
+                        "node": "Terminal Room",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "e7f7d21f-0e18-3f6d-951a-345810d6b7a9",
+                "macro_uuid": "97ae6668-6b34-34bf-b4d6-7b854891ea31"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-41-01_129.json": {
+                "verify_result": false,
+                "src_requested": "at platform (obj21)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "b0f178f8-d502-325f-bcb5-ff539149eef8",
+                "macro_uuid": "773747dd-fad8-350b-9371-5abbc68735ac"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-44-19_538.json": {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "south",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "elevator (obj124)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "elevator (obj124)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "0af0282e-37a9-30f3-b9ba-27990ebefdc5",
+                "macro_uuid": "b0c2152a-7231-3530-bc28-9c8fc7ff8334"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-51-18_368.json": {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "north",
+                    "again"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "49200c0b-3564-3921-8251-b29da12c6343",
+                "macro_uuid": "83d975a3-806b-3c4b-9469-aa5646cb93d4"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-50-20_554.json": {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "north",
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b9b2784a-452d-3437-847a-00919138667a",
+                "macro_uuid": "31aeceb3-699f-3d2c-a22b-8aa2a0341b9e"
+            },
+            "../gpt-games-results/lurking/results//stepnav-gpt-4/results_2023-06-04-19-42-00_455.json": {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "z"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "e4fcfe5e-be59-3153-86d7-4eab174b518b",
+                "macro_uuid": "707ef28a-a3bd-3990-b142-fad81cd836b3"
+            }
+        },
+        "random_guess_rate": 0.0625,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "elevator (obj124)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "elevator (obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "e9e9357c-c189-3811-b6ad-aac4d4c45484",
+                "macro_uuid": "67a9255d-be6b-32c9-a7ca-5cbfa0c9b675"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "down",
+                    "z"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "63b2c0e9-c2a5-36d0-94e7-1d464ea7b098",
+                "macro_uuid": "bc9b360e-9814-300e-ad20-273e65dbaefa"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "at platform (obj21)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "At Platform",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Place",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Place",
+                        "node": "Terminal Room",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "434157ad-5fff-3529-ae70-b779fde6316d",
+                "macro_uuid": "8dae37e8-e4ce-32e6-88b2-0a0d533da190"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "south",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "f580adac-2050-3ee7-a125-073f431c17ac",
+                "macro_uuid": "a5fd58e0-c0d3-3588-b4f0-1dbc2fe5048f"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "dc82fd17-b3e3-3523-87ee-ca1fecd07d50",
+                "macro_uuid": "73136b9e-f020-304c-a6bf-213048bca20c"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "kitchen (obj33)",
+                "action_requested": [
+                    "west"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "kitchen (obj33)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "090277e2-0ecf-3dea-92ef-cddf6cea07fd",
+                "macro_uuid": "2c8858ca-11e1-32aa-abe2-7e3518b40f76"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "down",
+                    "z",
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "f0010645-07ee-3f83-b9b4-b94e2b3b67a0",
+                "macro_uuid": "0f371748-c4b9-3e89-aec5-63fde109c039"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again",
+                    "down"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9f02d1d4-232d-3ecb-abc5-1ed56bf75990",
+                "macro_uuid": "e99db062-a628-3d5d-b64f-2e0ac822001c"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "down",
+                    "z",
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "Place",
+                        "node": "Basalt Bowl",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "At Platform",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "At Platform",
+                        "node": "Terminal Room",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "d1b8cd47-88d6-33f3-ae16-dfcc3c173c76",
+                "macro_uuid": "649a6486-e294-39b1-aa84-4e8aa58de2a5"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "kitchen (obj33)",
+                "action_requested": [
+                    "south",
+                    "west"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "kitchen (obj33)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "bdb67a9b-cde7-38a7-b497-effed1bde5dd",
+                "macro_uuid": "f8853a81-1b19-3bc5-ba60-2f53ad703a49"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "north",
+                    "again",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9728595e-9d80-3555-bac2-c93b6b0544fd",
+                "macro_uuid": "430507c6-7d3b-3783-b722-fb35c5dbb4a7"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ac3ea37d-aff1-3d78-9f99-7394c2c7889b",
+                "macro_uuid": "9e5de0a8-c056-3540-a155-f454a3e51864"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "elevator (obj124)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "north",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Elevator",
+                        "node": "Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "6317c6a2-3fe5-3cab-8917-cbd63b82d084",
+                "macro_uuid": "7d4f0e46-ff24-334c-a765-5136b6bff83f"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "east",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b6bcd33a-6f42-3a40-981c-3e32bb117c84",
+                "macro_uuid": "8f653a0b-1259-36b9-bfb1-6c59a7236a74"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "again"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ab65aa44-bf38-30d4-9914-56efc6441a75",
+                "macro_uuid": "18290a12-daee-3458-a08c-b81f20327135"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "z",
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "76735fa9-6ff2-3cfd-a8d5-a621defa570c",
+                "macro_uuid": "90567815-2032-38e9-b219-640bf520c032"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "again",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "6bdb840b-d2bd-35da-a4f8-087fd9a30846",
+                "macro_uuid": "9f2b26ff-96ae-3e0a-a29f-d96198502e3d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "560e8df0-0312-3037-9875-37d57a21d701",
+                "macro_uuid": "7162ae92-b516-3029-818a-45df34fa62d7"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "east",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Kitchen",
+                        "node": "Second Floor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "a456d1ad-07f1-3c26-b4bb-72dbf0a72f68",
+                "macro_uuid": "c205d7dd-1a26-304d-86af-f2f06e00ebd2"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "second floor (obj137)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "second floor (obj137)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "second floor (obj137)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "c046da23-9b0b-3dd9-bcac-4d4335ad3833",
+                "macro_uuid": "e109877d-956a-3575-9f4c-540203bbc211"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "place (obj152)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "basalt bowl (obj134)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "basalt bowl (obj134)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Place",
+                        "node": "Basalt Bowl",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "8b634aae-bf2d-3bcc-8157-e616527cf39d",
+                "macro_uuid": "c82c0751-ae66-3fa3-b880-ec68a2e75170"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "09f3e6c9-ca72-3228-bd9a-e92699701cdd",
+                "macro_uuid": "0522a354-f562-3dcd-82d1-d2e25d3923a3"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "z",
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Place",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Place",
+                        "node": "Terminal Room",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "e7f7d21f-0e18-3f6d-951a-345810d6b7a9",
+                "macro_uuid": "97ae6668-6b34-34bf-b4d6-7b854891ea31"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "at platform (obj21)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "b0f178f8-d502-325f-bcb5-ff539149eef8",
+                "macro_uuid": "773747dd-fad8-350b-9371-5abbc68735ac"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "south",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "elevator (obj124)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "elevator (obj124)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "0af0282e-37a9-30f3-b9ba-27990ebefdc5",
+                "macro_uuid": "b0c2152a-7231-3530-bc28-9c8fc7ff8334"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "north",
+                    "again"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "49200c0b-3564-3921-8251-b29da12c6343",
+                "macro_uuid": "83d975a3-806b-3c4b-9469-aa5646cb93d4"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "north",
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b9b2784a-452d-3437-847a-00919138667a",
+                "macro_uuid": "31aeceb3-699f-3d2c-a22b-8aa2a0341b9e"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "z"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "e4fcfe5e-be59-3153-86d7-4eab174b518b",
+                "macro_uuid": "707ef28a-a3bd-3990-b142-fad81cd836b3"
+            }
+        ],
+        "correct_num_micro": 10,
+        "total_num_micro": 28,
+        "accuracy_micro": 0.35714285714285715,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "elevator (obj124)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "elevator (obj124)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "e9e9357c-c189-3811-b6ad-aac4d4c45484",
+                "macro_uuid": "67a9255d-be6b-32c9-a7ca-5cbfa0c9b675"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "down",
+                    "z"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "63b2c0e9-c2a5-36d0-94e7-1d464ea7b098",
+                "macro_uuid": "bc9b360e-9814-300e-ad20-273e65dbaefa"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "at platform (obj21)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "At Platform",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Place",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Place",
+                        "node": "Terminal Room",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "434157ad-5fff-3529-ae70-b779fde6316d",
+                "macro_uuid": "8dae37e8-e4ce-32e6-88b2-0a0d533da190"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "south",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "f580adac-2050-3ee7-a125-073f431c17ac",
+                "macro_uuid": "a5fd58e0-c0d3-3588-b4f0-1dbc2fe5048f"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "dc82fd17-b3e3-3523-87ee-ca1fecd07d50",
+                "macro_uuid": "73136b9e-f020-304c-a6bf-213048bca20c"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "kitchen (obj33)",
+                "action_requested": [
+                    "west"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "kitchen (obj33)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "090277e2-0ecf-3dea-92ef-cddf6cea07fd",
+                "macro_uuid": "2c8858ca-11e1-32aa-abe2-7e3518b40f76"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "down",
+                    "z",
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "f0010645-07ee-3f83-b9b4-b94e2b3b67a0",
+                "macro_uuid": "0f371748-c4b9-3e89-aec5-63fde109c039"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again",
+                    "down"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9f02d1d4-232d-3ecb-abc5-1ed56bf75990",
+                "macro_uuid": "e99db062-a628-3d5d-b64f-2e0ac822001c"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "place (obj152)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "down",
+                    "z",
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "Place",
+                        "node": "Basalt Bowl",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Basalt Bowl",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "At Platform",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "At Platform",
+                        "node": "Terminal Room",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "d1b8cd47-88d6-33f3-ae16-dfcc3c173c76",
+                "macro_uuid": "649a6486-e294-39b1-aa84-4e8aa58de2a5"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "kitchen (obj33)",
+                "action_requested": [
+                    "south",
+                    "west"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "kitchen (obj33)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "bdb67a9b-cde7-38a7-b497-effed1bde5dd",
+                "macro_uuid": "f8853a81-1b19-3bc5-ba60-2f53ad703a49"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "north",
+                    "again",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9728595e-9d80-3555-bac2-c93b6b0544fd",
+                "macro_uuid": "430507c6-7d3b-3783-b722-fb35c5dbb4a7"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ac3ea37d-aff1-3d78-9f99-7394c2c7889b",
+                "macro_uuid": "9e5de0a8-c056-3540-a155-f454a3e51864"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "elevator (obj124)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "north",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Elevator",
+                        "node": "Second Floor",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "6317c6a2-3fe5-3cab-8917-cbd63b82d084",
+                "macro_uuid": "7d4f0e46-ff24-334c-a765-5136b6bff83f"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "east",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b6bcd33a-6f42-3a40-981c-3e32bb117c84",
+                "macro_uuid": "8f653a0b-1259-36b9-bfb1-6c59a7236a74"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "again"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ab65aa44-bf38-30d4-9914-56efc6441a75",
+                "macro_uuid": "18290a12-daee-3458-a08c-b81f20327135"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "z",
+                    "z",
+                    "south",
+                    "down"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "76735fa9-6ff2-3cfd-a8d5-a621defa570c",
+                "macro_uuid": "90567815-2032-38e9-b219-640bf520c032"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "again",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "6bdb840b-d2bd-35da-a4f8-087fd9a30846",
+                "macro_uuid": "9f2b26ff-96ae-3e0a-a29f-d96198502e3d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "560e8df0-0312-3037-9875-37d57a21d701",
+                "macro_uuid": "7162ae92-b516-3029-818a-45df34fa62d7"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "computer center (obj65)",
+                "action_requested": [
+                    "east",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "computer center (obj65)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "computer center (obj65)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Kitchen",
+                        "node": "Second Floor",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Computer Center",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "a456d1ad-07f1-3c26-b4bb-72dbf0a72f68",
+                "macro_uuid": "c205d7dd-1a26-304d-86af-f2f06e00ebd2"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "second floor (obj137)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "second floor (obj137)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "second floor (obj137)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "c046da23-9b0b-3dd9-bcac-4d4335ad3833",
+                "macro_uuid": "e109877d-956a-3575-9f4c-540203bbc211"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "place (obj152)",
+                "dst_requested": "basalt bowl (obj134)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "basalt bowl (obj134)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "basalt bowl (obj134)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Place",
+                        "node": "Basalt Bowl",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "8b634aae-bf2d-3bcc-8157-e616527cf39d",
+                "macro_uuid": "c82c0751-ae66-3fa3-b880-ec68a2e75170"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "kitchen (obj33)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "east",
+                    "north",
+                    "again"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "09f3e6c9-ca72-3228-bd9a-e92699701cdd",
+                "macro_uuid": "0522a354-f562-3dcd-82d1-d2e25d3923a3"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "z",
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "wrong action, at step wait, aborting",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [
+                    {
+                        "prev_node": "Basalt Bowl",
+                        "node": "Place",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Place",
+                        "node": "Terminal Room",
+                        "action": "wait"
+                    },
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "e7f7d21f-0e18-3f6d-951a-345810d6b7a9",
+                "macro_uuid": "97ae6668-6b34-34bf-b4d6-7b854891ea31"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "at platform (obj21)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "z",
+                    "south",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "b0f178f8-d502-325f-bcb5-ff539149eef8",
+                "macro_uuid": "773747dd-fad8-350b-9371-5abbc68735ac"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "chair (obj62)",
+                "dst_requested": "elevator (obj124)",
+                "action_requested": [
+                    "south",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "elevator (obj124)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "elevator (obj124)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Elevator",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "0af0282e-37a9-30f3-b9ba-27990ebefdc5",
+                "macro_uuid": "b0c2152a-7231-3530-bc28-9c8fc7ff8334"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "place (obj152)",
+                "action_requested": [
+                    "north",
+                    "again"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "49200c0b-3564-3921-8251-b29da12c6343",
+                "macro_uuid": "83d975a3-806b-3c4b-9469-aa5646cb93d4"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "second floor (obj137)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "north",
+                    "again",
+                    "down",
+                    "z"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b9b2784a-452d-3437-847a-00919138667a",
+                "macro_uuid": "31aeceb3-699f-3d2c-a22b-8aa2a0341b9e"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "basalt bowl (obj134)",
+                "dst_requested": "at platform (obj21)",
+                "action_requested": [
+                    "z"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "e4fcfe5e-be59-3153-86d7-4eab174b518b",
+                "macro_uuid": "707ef28a-a3bd-3990-b142-fad81cd836b3"
+            }
+        ],
+        "correct_num_macro": 10,
+        "total_num_macro": 28,
+        "accuracy_macro": 0.35714285714285715
+    }
+}
