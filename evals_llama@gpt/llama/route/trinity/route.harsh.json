@@ -1,0 +1,446 @@
+{
+    "path_gen_llama": {
+        "correct_num": 3,
+        "total_num": 6,
+        "accuracy": 0.5,
+        "collection": {
+            "../mango-inhouse-llms/llama/trinity/results//path_gen_llama/pathgen_results_83.json": {
+                "verify_result": true,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "broad walk (obj354)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Palace Gate",
+                        "node": "Flower Walk",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Flower Walk",
+                        "node": "The Wabe",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "The Wabe",
+                        "node": "Broad Walk",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "46b6d012-1ce2-3ab9-b640-c56ea781c82d",
+                "macro_uuid": "d0cfb838-fd00-3e3b-998d-e1920108dcd7"
+            },
+            "../mango-inhouse-llms/llama/trinity/results//path_gen_llama/pathgen_results_95.json": {
+                "verify_result": false,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "The Wabe",
+                "dst_requested": "wabe (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "f5c9f728-62e4-3680-ab55-1fe0c2b4bbdf",
+                "macro_uuid": "ecbab480-dda0-3064-b090-86e25a2d0e03"
+            },
+            "../mango-inhouse-llms/llama/trinity/results//path_gen_llama/pathgen_results_84.json": {
+                "verify_result": false,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "Flower Walk",
+                "dst_requested": "flower walk (obj250)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "2c6c5947-aba6-36fb-81a9-7d7da7f80070",
+                "macro_uuid": "e2e102b9-e493-3534-8b85-998503076256"
+            },
+            "../mango-inhouse-llms/llama/trinity/results//path_gen_llama/pathgen_results_39.json": {
+                "verify_result": true,
+                "src_anno": "Flower Walk",
+                "src_requested": "flower walk (obj250)",
+                "dst_anno": "The Wabe",
+                "dst_requested": "wabe (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "wabe (obj79)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Flower Walk",
+                        "node": "The Wabe",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "65a7d073-c7aa-3594-9a3d-014c55452fca",
+                "macro_uuid": "1c4b1ff2-82d3-3358-a3c3-3f7f1d523b38"
+            },
+            "../mango-inhouse-llms/llama/trinity/results//path_gen_llama/pathgen_results_118.json": {
+                "verify_result": true,
+                "src_anno": "The Wabe",
+                "src_requested": "wabe (obj79)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "broad walk (obj354)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "The Wabe",
+                        "node": "Broad Walk",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d4653d20-f5ae-3814-983f-81471dd6f2f6",
+                "macro_uuid": "f44a75b2-1e3f-3761-ae7a-53a20e976691"
+            },
+            "../mango-inhouse-llms/llama/trinity/results//path_gen_llama/pathgen_results_28.json": {
+                "verify_result": false,
+                "src_anno": "Flower Walk",
+                "src_requested": "flower walk (obj250)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "flower walk (obj250)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Flower Walk",
+                        "node": "Broad Walk",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "05141298-44bf-360c-98d7-61cc31e3baa6",
+                "macro_uuid": "8bf051c5-ab21-38d0-ac88-e9c71e20dbda"
+            }
+        },
+        "random_guess_rate": 2.9401194111858127e-08,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "broad walk (obj354)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Palace Gate",
+                        "node": "Flower Walk",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Flower Walk",
+                        "node": "The Wabe",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "The Wabe",
+                        "node": "Broad Walk",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "46b6d012-1ce2-3ab9-b640-c56ea781c82d",
+                "macro_uuid": "d0cfb838-fd00-3e3b-998d-e1920108dcd7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "The Wabe",
+                "dst_requested": "wabe (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "f5c9f728-62e4-3680-ab55-1fe0c2b4bbdf",
+                "macro_uuid": "ecbab480-dda0-3064-b090-86e25a2d0e03"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "Flower Walk",
+                "dst_requested": "flower walk (obj250)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "2c6c5947-aba6-36fb-81a9-7d7da7f80070",
+                "macro_uuid": "e2e102b9-e493-3534-8b85-998503076256"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Flower Walk",
+                "src_requested": "flower walk (obj250)",
+                "dst_anno": "The Wabe",
+                "dst_requested": "wabe (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "wabe (obj79)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Flower Walk",
+                        "node": "The Wabe",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "65a7d073-c7aa-3594-9a3d-014c55452fca",
+                "macro_uuid": "1c4b1ff2-82d3-3358-a3c3-3f7f1d523b38"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "The Wabe",
+                "src_requested": "wabe (obj79)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "broad walk (obj354)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "The Wabe",
+                        "node": "Broad Walk",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d4653d20-f5ae-3814-983f-81471dd6f2f6",
+                "macro_uuid": "f44a75b2-1e3f-3761-ae7a-53a20e976691"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Flower Walk",
+                "src_requested": "flower walk (obj250)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "flower walk (obj250)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Flower Walk",
+                        "node": "Broad Walk",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "05141298-44bf-360c-98d7-61cc31e3baa6",
+                "macro_uuid": "8bf051c5-ab21-38d0-ac88-e9c71e20dbda"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "broad walk (obj354)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Palace Gate",
+                        "node": "Flower Walk",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "Flower Walk",
+                        "node": "The Wabe",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "northwest",
+                        "prev_node": "The Wabe",
+                        "node": "Broad Walk",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "46b6d012-1ce2-3ab9-b640-c56ea781c82d",
+                "macro_uuid": "d0cfb838-fd00-3e3b-998d-e1920108dcd7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "The Wabe",
+                "dst_requested": "wabe (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "f5c9f728-62e4-3680-ab55-1fe0c2b4bbdf",
+                "macro_uuid": "ecbab480-dda0-3064-b090-86e25a2d0e03"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Palace Gate",
+                "src_requested": "palace gate (obj236)",
+                "dst_anno": "Flower Walk",
+                "dst_requested": "flower walk (obj250)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "2c6c5947-aba6-36fb-81a9-7d7da7f80070",
+                "macro_uuid": "e2e102b9-e493-3534-8b85-998503076256"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Flower Walk",
+                "src_requested": "flower walk (obj250)",
+                "dst_anno": "The Wabe",
+                "dst_requested": "wabe (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "wabe (obj79)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "Flower Walk",
+                        "node": "The Wabe",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "65a7d073-c7aa-3594-9a3d-014c55452fca",
+                "macro_uuid": "1c4b1ff2-82d3-3358-a3c3-3f7f1d523b38"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "The Wabe",
+                "src_requested": "wabe (obj79)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "broad walk (obj354)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "northwest",
+                        "prev_node": "The Wabe",
+                        "node": "Broad Walk",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "d4653d20-f5ae-3814-983f-81471dd6f2f6",
+                "macro_uuid": "f44a75b2-1e3f-3761-ae7a-53a20e976691"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Flower Walk",
+                "src_requested": "flower walk (obj250)",
+                "dst_anno": "Broad Walk",
+                "dst_requested": "broad walk (obj354)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "flower walk (obj250)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Flower Walk",
+                        "node": "Broad Walk",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "05141298-44bf-360c-98d7-61cc31e3baa6",
+                "macro_uuid": "8bf051c5-ab21-38d0-ac88-e9c71e20dbda"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.5
+    }
+}

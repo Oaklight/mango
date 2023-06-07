@@ -1,0 +1,206 @@
+{
+    "path_gen_llama": {
+        "correct_num": 0,
+        "total_num": 1,
+        "accuracy": 0.0,
+        "collection": {
+            "../mango-inhouse-llms/llama/snacktime/results//path_gen_llama/pathgen_results_0.json": {
+                "verify_result": false,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Food Room",
+                "dst_requested": "(obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj71)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "get on couch",
+                        "prev_node": "Sitting Room",
+                        "node": "Sitting Room (on the long soft thing)",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Sitting Room (on the long soft thing)",
+                        "node": "Sitting Room",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Sitting Room",
+                        "node": "Food Room",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "close cold box",
+                        "prev_node": "Food Room",
+                        "node": "Food Room",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "pull cloth",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "get can",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "close cold box",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Food Room",
+                        "node": "Sitting Room"
+                    }
+                ],
+                "micro_uuid": "d8fc1621-edf1-32cc-83d7-146831abc384",
+                "macro_uuid": "40ee372f-7d52-3d15-8806-1034004d5a61"
+            }
+        },
+        "random_guess_rate": 0.0894427190999916,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Food Room",
+                "dst_requested": "(obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj71)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "get on couch",
+                        "prev_node": "Sitting Room",
+                        "node": "Sitting Room (on the long soft thing)",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Sitting Room (on the long soft thing)",
+                        "node": "Sitting Room",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Sitting Room",
+                        "node": "Food Room",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "close cold box",
+                        "prev_node": "Food Room",
+                        "node": "Food Room",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "pull cloth",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "get can",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "close cold box",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Food Room",
+                        "node": "Sitting Room"
+                    }
+                ],
+                "micro_uuid": "d8fc1621-edf1-32cc-83d7-146831abc384",
+                "macro_uuid": "40ee372f-7d52-3d15-8806-1034004d5a61"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 1,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Food Room",
+                "dst_requested": "(obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "(obj71)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "action": "get on couch",
+                        "prev_node": "Sitting Room",
+                        "node": "Sitting Room (on the long soft thing)",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Sitting Room (on the long soft thing)",
+                        "node": "Sitting Room",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "west",
+                        "prev_node": "Sitting Room",
+                        "node": "Food Room",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "close cold box",
+                        "prev_node": "Food Room",
+                        "node": "Food Room",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "pull cloth",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "get can",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "close cold box",
+                        "prev_node": "Food Room",
+                        "node": "Food Room"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Food Room",
+                        "node": "Sitting Room"
+                    }
+                ],
+                "micro_uuid": "d8fc1621-edf1-32cc-83d7-146831abc384",
+                "macro_uuid": "40ee372f-7d52-3d15-8806-1034004d5a61"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 1,
+        "accuracy_macro": 0.0
+    }
+}
