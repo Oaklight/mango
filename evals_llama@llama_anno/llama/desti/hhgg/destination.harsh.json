@@ -1,0 +1,395 @@
+{
+    "stepnav_llama": {
+        "correct_num": 3,
+        "total_num": 6,
+        "accuracy": 0.5,
+        "collection": {
+            "../mango-inhouse-llms/llama/hhgg/results//stepnav_llama/stepnav_results_0.json": {
+                "verify_result": false,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "bedroom (obj168)",
+                "action_requested": [
+                    "get up"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2c74cafe-3818-38ea-9adf-0c75b7cb1012",
+                "macro_uuid": "be84b8af-27ba-3172-bb0e-bec8f90de2c8"
+            },
+            "../mango-inhouse-llms/llama/hhgg/results//stepnav_llama/stepnav_results_15.json": {
+                "verify_result": true,
+                "src_requested": "front porch (obj151)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "front house (obj149)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Front Porch",
+                        "node": "Front of House"
+                    }
+                ],
+                "micro_uuid": "c1438dac-33bc-39d7-acfc-c1eed0082e52",
+                "macro_uuid": "d49f08eb-cee0-39e2-8562-09422806516d"
+            },
+            "../mango-inhouse-llms/llama/hhgg/results//stepnav_llama/stepnav_results_1.json": {
+                "verify_result": true,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "front porch (obj151)",
+                "action_requested": [
+                    "get up",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "front porch (obj151)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front porch (obj151)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "get up",
+                        "prev_node": "pitch black",
+                        "node": "Bedroom"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch"
+                    }
+                ],
+                "micro_uuid": "bb6d7186-b52b-3f9d-bd36-419135a02ba4",
+                "macro_uuid": "d0b21666-6336-3334-b218-f7cbcf2f3510"
+            },
+            "../mango-inhouse-llms/llama/hhgg/results//stepnav_llama/stepnav_results_2.json": {
+                "verify_result": false,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "get up",
+                    "south",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b1c597b3-d1ff-3b67-9403-c8979ac5ae8b",
+                "macro_uuid": "6b9fa1a6-c189-3801-8675-4aab009a429d"
+            },
+            "../mango-inhouse-llms/llama/hhgg/results//stepnav_llama/stepnav_results_9.json": {
+                "verify_result": true,
+                "src_requested": "bedroom (obj168)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "south",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "front house (obj149)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Front Porch",
+                        "node": "Front of House"
+                    }
+                ],
+                "micro_uuid": "7472dc17-41dc-3eee-a8d7-4f9f691e572a",
+                "macro_uuid": "52867e56-69c1-3276-835d-57264a2f6780"
+            },
+            "../mango-inhouse-llms/llama/hhgg/results//stepnav_llama/stepnav_results_8.json": {
+                "verify_result": false,
+                "src_requested": "bedroom (obj168)",
+                "dst_requested": "front porch (obj151)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "5f2b4f2c-a0ab-3deb-bee7-9792a1969fe9",
+                "macro_uuid": "add2b4e7-77e9-39e6-9925-436f50899aef"
+            }
+        },
+        "random_guess_rate": 0.1111111111111111,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "bedroom (obj168)",
+                "action_requested": [
+                    "get up"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2c74cafe-3818-38ea-9adf-0c75b7cb1012",
+                "macro_uuid": "be84b8af-27ba-3172-bb0e-bec8f90de2c8"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "front porch (obj151)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "front house (obj149)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Front Porch",
+                        "node": "Front of House"
+                    }
+                ],
+                "micro_uuid": "c1438dac-33bc-39d7-acfc-c1eed0082e52",
+                "macro_uuid": "d49f08eb-cee0-39e2-8562-09422806516d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "front porch (obj151)",
+                "action_requested": [
+                    "get up",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "front porch (obj151)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front porch (obj151)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "get up",
+                        "prev_node": "pitch black",
+                        "node": "Bedroom"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch"
+                    }
+                ],
+                "micro_uuid": "bb6d7186-b52b-3f9d-bd36-419135a02ba4",
+                "macro_uuid": "d0b21666-6336-3334-b218-f7cbcf2f3510"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "get up",
+                    "south",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b1c597b3-d1ff-3b67-9403-c8979ac5ae8b",
+                "macro_uuid": "6b9fa1a6-c189-3801-8675-4aab009a429d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "bedroom (obj168)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "south",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "front house (obj149)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Front Porch",
+                        "node": "Front of House"
+                    }
+                ],
+                "micro_uuid": "7472dc17-41dc-3eee-a8d7-4f9f691e572a",
+                "macro_uuid": "52867e56-69c1-3276-835d-57264a2f6780"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "bedroom (obj168)",
+                "dst_requested": "front porch (obj151)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "5f2b4f2c-a0ab-3deb-bee7-9792a1969fe9",
+                "macro_uuid": "add2b4e7-77e9-39e6-9925-436f50899aef"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "bedroom (obj168)",
+                "action_requested": [
+                    "get up"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2c74cafe-3818-38ea-9adf-0c75b7cb1012",
+                "macro_uuid": "be84b8af-27ba-3172-bb0e-bec8f90de2c8"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "front porch (obj151)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "front house (obj149)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Front Porch",
+                        "node": "Front of House"
+                    }
+                ],
+                "micro_uuid": "c1438dac-33bc-39d7-acfc-c1eed0082e52",
+                "macro_uuid": "d49f08eb-cee0-39e2-8562-09422806516d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "front porch (obj151)",
+                "action_requested": [
+                    "get up",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "front porch (obj151)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front porch (obj151)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "get up",
+                        "prev_node": "pitch black",
+                        "node": "Bedroom"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch"
+                    }
+                ],
+                "micro_uuid": "bb6d7186-b52b-3f9d-bd36-419135a02ba4",
+                "macro_uuid": "d0b21666-6336-3334-b218-f7cbcf2f3510"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "bed (obj161)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "get up",
+                    "south",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "b1c597b3-d1ff-3b67-9403-c8979ac5ae8b",
+                "macro_uuid": "6b9fa1a6-c189-3801-8675-4aab009a429d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "bedroom (obj168)",
+                "dst_requested": "front house (obj149)",
+                "action_requested": [
+                    "south",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "front house (obj149)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "front house (obj149)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Bedroom",
+                        "node": "Front Porch"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Front Porch",
+                        "node": "Front of House"
+                    }
+                ],
+                "micro_uuid": "7472dc17-41dc-3eee-a8d7-4f9f691e572a",
+                "macro_uuid": "52867e56-69c1-3276-835d-57264a2f6780"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "bedroom (obj168)",
+                "dst_requested": "front porch (obj151)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "5f2b4f2c-a0ab-3deb-bee7-9792a1969fe9",
+                "macro_uuid": "add2b4e7-77e9-39e6-9925-436f50899aef"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.5
+    }
+}

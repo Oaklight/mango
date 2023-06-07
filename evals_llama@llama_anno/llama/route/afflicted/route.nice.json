@@ -1,0 +1,167 @@
+{
+    "path_gen_llama": {
+        "correct_num": 2,
+        "total_num": 3,
+        "accuracy": 0.6666666666666666,
+        "collection": {
+            "../mango-inhouse-llms/llama/afflicted/results//path_gen_llama/pathgen_results_0.json": {
+                "verify_result": true,
+                "src_anno": "19th Street",
+                "src_requested": "(obj66)",
+                "dst_anno": "19th Street East",
+                "dst_requested": "(obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "(obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e798bad0-c1d9-3b08-9d7f-e7956738a086",
+                "macro_uuid": "dc3550ea-e71b-3610-af33-81e652677f74"
+            },
+            "../mango-inhouse-llms/llama/afflicted/results//path_gen_llama/pathgen_results_1.json": {
+                "verify_result": true,
+                "src_anno": "19th Street",
+                "src_requested": "(obj66)",
+                "dst_anno": "Dining Room",
+                "dst_requested": "(obj81)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(obj81)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9027ab27-c8c2-3477-be74-f34375720443",
+                "macro_uuid": "81ae57c5-7597-3ca5-acc1-ade62df1c400"
+            },
+            "../mango-inhouse-llms/llama/afflicted/results//path_gen_llama/pathgen_results_10.json": {
+                "verify_result": false,
+                "src_anno": "19th Street East",
+                "src_requested": "(obj74)",
+                "dst_anno": "Dining Room",
+                "dst_requested": "(obj81)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj74)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj74), (obj81)",
+                "micro_uuid": "d1b6dffe-b675-39ec-8b26-dc7d8d9be763",
+                "macro_uuid": "b6199fc3-e535-3ceb-9c75-483b47797657"
+            }
+        },
+        "random_guess_rate": 0.0006627056808357364,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "19th Street",
+                "src_requested": "(obj66)",
+                "dst_anno": "19th Street East",
+                "dst_requested": "(obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "(obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e798bad0-c1d9-3b08-9d7f-e7956738a086",
+                "macro_uuid": "dc3550ea-e71b-3610-af33-81e652677f74"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "19th Street",
+                "src_requested": "(obj66)",
+                "dst_anno": "Dining Room",
+                "dst_requested": "(obj81)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(obj81)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9027ab27-c8c2-3477-be74-f34375720443",
+                "macro_uuid": "81ae57c5-7597-3ca5-acc1-ade62df1c400"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "19th Street East",
+                "src_requested": "(obj74)",
+                "dst_anno": "Dining Room",
+                "dst_requested": "(obj81)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj74)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj74), (obj81)",
+                "micro_uuid": "d1b6dffe-b675-39ec-8b26-dc7d8d9be763",
+                "macro_uuid": "b6199fc3-e535-3ceb-9c75-483b47797657"
+            }
+        ],
+        "correct_num_micro": 2,
+        "total_num_micro": 3,
+        "accuracy_micro": 0.6666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "19th Street",
+                "src_requested": "(obj66)",
+                "dst_anno": "19th Street East",
+                "dst_requested": "(obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "(obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e798bad0-c1d9-3b08-9d7f-e7956738a086",
+                "macro_uuid": "dc3550ea-e71b-3610-af33-81e652677f74"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "19th Street",
+                "src_requested": "(obj66)",
+                "dst_anno": "Dining Room",
+                "dst_requested": "(obj81)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(obj81)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9027ab27-c8c2-3477-be74-f34375720443",
+                "macro_uuid": "81ae57c5-7597-3ca5-acc1-ade62df1c400"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "19th Street East",
+                "src_requested": "(obj74)",
+                "dst_anno": "Dining Room",
+                "dst_requested": "(obj81)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj74)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj74), (obj81)",
+                "micro_uuid": "d1b6dffe-b675-39ec-8b26-dc7d8d9be763",
+                "macro_uuid": "b6199fc3-e535-3ceb-9c75-483b47797657"
+            }
+        ],
+        "correct_num_macro": 2,
+        "total_num_macro": 3,
+        "accuracy_macro": 0.6666666666666666
+    }
+}
