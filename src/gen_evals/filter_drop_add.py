@@ -14,16 +14,19 @@ from gen_paths.utils import compute_hash, compare_path_details
 from gen_paths.digraph import anno_to_code
 
 MAP_DIR = "./data/maps"
-# INFER_DIR = "../gpt-games-results"
-INFER_DIR = "../mango-inhouse-llms/llama"
+INFER_DIR = "../gpt-games-results"
+# INFER_DIR = "../mango-inhouse-llms/llama"
 DIFF_DIR = "./data/maps-diff-fjd"
 DIFF_RESULT_DIR = "outputs_diff"
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--tgt_game", "-t", type=str, default="anchor")
+parser.add_argument("--tgt_game", "-t", type=str, default=None)
+parser.add_argument("--infer_data", "-i", type=str, required=True)
+parser.add_argument("--model", "-m", type=str, default="gpt")
 args = parser.parse_args()
 
 TGT_GAME = args.tgt_game
+INFER_DIR = args.infer_data
 
 # get all available games in infered result dir, ignore hidden files and hidden dirs and non-dir files
 games = [
@@ -77,7 +80,7 @@ for game in sorted(games_diff):
     # load such drop_dict
     with open(drop_json_path, "r") as f:
         drop_dict = json.load(f)
-    print(f"game: {game}, drop_dict len: {len(drop_dict)}")
+    # print(f"game: {game}, drop_dict len: {len(drop_dict)}")
 
     # take care of new_only_diff_shortest.json
     new_only_diff_shortest_json_path = os.path.join(
@@ -87,9 +90,9 @@ for game in sorted(games_diff):
     if os.path.exists(new_only_diff_shortest_json_path):
         with open(new_only_diff_shortest_json_path, "r") as f:
             new_only_diff_shortest_dict = json.load(f)
-        print(
-            f"game: {game}, new_only_diff_shortest_dict len: {len(new_only_diff_shortest_dict)}"
-        )
+        # print(
+        #     f"game: {game}, new_only_diff_shortest_dict len: {len(new_only_diff_shortest_dict)}"
+        # )
 
     # compute hash for this json
 
@@ -98,11 +101,21 @@ for game in sorted(games_diff):
     # only "stepnav" subfolders needs to be checked for drop
     # stepnav_gpt35 = os.path.join(infered_files_path, "stepnav-gpt-3.5-turbo")
     # stepnav_gpt4 = os.path.join(infered_files_path, "stepnav-gpt-4")
-    stepnav_gpt35 = os.path.join(infered_files_path, "stepnav_llama")
-    stepnav_gpt4 = os.path.join(infered_files_path, "stepnav_llama_anno")
+    stepnav_gpt35, stepnav_gpt4 = None, None
+    if args.model == "gpt":
+        stepnav_gpt35 = os.path.join(infered_files_path, "stepnav-gpt-3.5-turbo")
+        stepnav_gpt4 = os.path.join(infered_files_path, "stepnav-gpt-4")
+    elif args.model == "llama":
+        stepnav_gpt35 = os.path.join(infered_files_path, "stepnav_llama")
+        stepnav_gpt4 = os.path.join(infered_files_path, "stepnav_llama_anno")
+    elif args.model == "rwkv":
+        stepnav_gpt35 = os.path.join(infered_files_path, "stepnav_rwkv")
+        stepnav_gpt4 = os.path.join(infered_files_path, "stepnav_rwkv_anno")
 
-    print(f"stepnav_gpt35: {len(os.listdir(stepnav_gpt35))}")
-    print(f"stepnav_gpt4: {len(os.listdir(stepnav_gpt4))}")
+    assert stepnav_gpt35 is not None and stepnav_gpt4 is not None, "model not supported!"
+
+    # print(f"stepnav_gpt35: {len(os.listdir(stepnav_gpt35))}")
+    # print(f"stepnav_gpt4: {len(os.listdir(stepnav_gpt4))}")
 
     # get list of all file paths in stepnav_gpt35 and stepnav_gpt4
     stepnav_gpt35_files = [
@@ -124,70 +137,70 @@ for game in sorted(games_diff):
         stepnav_gpt4_files, key=lambda x: x.split("/")[-1], reverse=True
     )
 
-    stepnav_all_files = stepnav_gpt35_files + stepnav_gpt4_files
+    stepnav_all_files = [stepnav_gpt35_files, stepnav_gpt4_files]
 
-    counter = 0
-    # go over each files in stepnav_gpt35, load json
-    for gpt_result_path in stepnav_all_files:
-        with open(gpt_result_path, "r") as f:
-            gpt_result = json.load(f)
-        # find matching entries in drop_dict with same src_node, and dst_node
-        src_node = gpt_result["src_node"]
-        src_code = anno_to_code(src_node, anno2code)
-        dst_node = gpt_result["dst_node"]
-        dst_code = anno_to_code(dst_node, anno2code)
+    for each_model_stepnav in stepnav_all_files:
+        counter = 0
+        # go over each files in stepnav_gpt35, load json
+        for gpt_result_path in each_model_stepnav:
+            with open(gpt_result_path, "r") as f:
+                gpt_result = json.load(f)
+            # find matching entries in drop_dict with same src_node, and dst_node
+            src_node = gpt_result["src_node"]
+            src_code = anno_to_code(src_node, anno2code)
+            dst_node = gpt_result["dst_node"]
+            dst_code = anno_to_code(dst_node, anno2code)
 
-        # check if this result_json uses something in new_only_diff_shortest_dict
-        # if so, skip this result_json but also remove this entry from new_only_diff_shortest_dict
-        skip_once_flag = False
-        coarse_matches_only_diff_shortest = []
-        for obj in new_only_diff_shortest_dict:
-            if (
-                obj["src_node"] == src_code
-                and obj["dst_node"] == dst_code
-                and len(obj["path_details"]) == len(gpt_result["path_gt"])
-                and compare_path_details(obj["path_details"], gpt_result["path_gt"])
-            ):
-                coarse_matches_only_diff_shortest.append(obj)
-                print(f"coarse_matches_only_diff_shortest: +1")
-                skip_once_flag = True
-                break
-        assert (
-            len(coarse_matches_only_diff_shortest) <= 1
-        ), "should be at most 1 match, for only_diff_shortest"
-        if skip_once_flag:
-            continue
+            # check if this result_json uses something in new_only_diff_shortest_dict
+            # if so, skip this result_json but also remove this entry from new_only_diff_shortest_dict
+            skip_once_flag = False
+            coarse_matches_only_diff_shortest = []
+            for obj in new_only_diff_shortest_dict:
+                if (
+                    obj["src_node"] == src_code
+                    and obj["dst_node"] == dst_code
+                    and len(obj["path_details"]) == len(gpt_result["path_gt"])
+                    and compare_path_details(obj["path_details"], gpt_result["path_gt"])
+                ):
+                    coarse_matches_only_diff_shortest.append(obj)
+                    # print(f"coarse_matches_only_diff_shortest: +1")
+                    skip_once_flag = True
+                    break
+            assert (
+                len(coarse_matches_only_diff_shortest) <= 1
+            ), "should be at most 1 match, for only_diff_shortest"
+            if skip_once_flag:
+                continue
 
-        # iterate over drop_hash, test each obj's src and dst to find coarsely matching
-        coarse_matches = []
-        for obj in drop_dict:
-            if (
-                obj["src_node"] == src_code
-                and obj["dst_node"] == dst_code
-                and len(obj["path_details"]) == len(gpt_result["path_gt"])
-            ):
-                # rename this file with "dropped" extension
-                coarse_matches.append(obj)
-                # print(f"coarse match: +1")
+            # iterate over drop_hash, test each obj's src and dst to find coarsely matching
+            coarse_matches = []
+            for obj in drop_dict:
+                if (
+                    obj["src_node"] == src_code
+                    and obj["dst_node"] == dst_code
+                    and len(obj["path_details"]) == len(gpt_result["path_gt"])
+                ):
+                    # rename this file with "dropped" extension
+                    coarse_matches.append(obj)
+                    # print(f"coarse match: +1")
 
-        # compute hash using temp struct
-        path_gt = gpt_result["path_gt"]
-        # hash_code = compute_hash(path_gt, "path_details")
-        # print(temp_struct)
+            # compute hash using temp struct
+            path_gt = gpt_result["path_gt"]
+            # hash_code = compute_hash(path_gt, "path_details")
+            # print(temp_struct)
 
-        # check if it is in drop_dict
-        for obj in coarse_matches:
-            # coarse_match_hash = compute_hash(obj["path_details"], "path_details")
-            # if hash_code == coarse_match_hash:
-            if compare_path_details(obj["path_details"], path_gt):
-                # rename this file with "dropped" extension
-                # os.rename(gpt_result_path, gpt_result_path + ".dropped") when rerun this will introduce multiple .dropped. Fix it:
-                gpt_result_path_new_name = gpt_result_path.replace(
-                    ".json", ".dropped.json"
-                )
-                os.rename(gpt_result_path, gpt_result_path_new_name)
-                print(f"dropped: {gpt_result_path}")
-                counter += 1
-                break
-    print(f"dropped [{counter}] files")
-    break
+            # check if it is in drop_dict
+            for obj in coarse_matches:
+                # coarse_match_hash = compute_hash(obj["path_details"], "path_details")
+                # if hash_code == coarse_match_hash:
+                if compare_path_details(obj["path_details"], path_gt):
+                    # rename this file with "dropped" extension
+                    # os.rename(gpt_result_path, gpt_result_path + ".dropped") when rerun this will introduce multiple .dropped. Fix it:
+                    gpt_result_path_new_name = gpt_result_path.replace(
+                        ".json", ".dropped.json"
+                    )
+                    os.rename(gpt_result_path, gpt_result_path_new_name)
+                    # print(f"dropped: {gpt_result_path}")
+                    counter += 1
+                    break
+        print(f"dropped [{counter}] files")
