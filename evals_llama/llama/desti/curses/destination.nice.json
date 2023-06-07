@@ -1,8 +1,8 @@
 {
     "stepnav_llama": {
-        "correct_num": 4,
-        "total_num": 16,
-        "accuracy": 0.25,
+        "correct_num": 3,
+        "total_num": 15,
+        "accuracy": 0.2,
         "collection": {
             "../mango-inhouse-llms/llama/curses/results//stepnav_llama/stepnav_results_14.json": {
                 "verify_result": false,
@@ -168,21 +168,6 @@
                 "verify_msg": "empty path_gpt when action_requested is not empty",
                 "micro_uuid": "bfea76e9-7824-3920-a393-dc528474f5e5",
                 "macro_uuid": "72c3b4a0-e277-3845-b40e-fd7a9f085284"
-            },
-            "../mango-inhouse-llms/llama/curses/results//stepnav_llama/stepnav_results_46.json": {
-                "verify_result": true,
-                "src_requested": "air cupboard (obj109)",
-                "dst_requested": "pott room (obj112)",
-                "action_requested": [
-                    "push wireless north",
-                    "west"
-                ],
-                "route_length": 2,
-                "dist_shortest": 2,
-                "dst_gpt": "pott room (obj112)",
-                "verify_msg": "",
-                "micro_uuid": "39441d36-0411-3c6b-9491-d0a49654adaa",
-                "macro_uuid": "ff08b33a-6d91-32b6-aab3-9d146c39808d"
             },
             "../mango-inhouse-llms/llama/curses/results//stepnav_llama/stepnav_results_16.json": {
                 "verify_result": false,
@@ -415,21 +400,6 @@
                 "macro_uuid": "72c3b4a0-e277-3845-b40e-fd7a9f085284"
             },
             {
-                "verify_result": true,
-                "src_requested": "air cupboard (obj109)",
-                "dst_requested": "pott room (obj112)",
-                "action_requested": [
-                    "push wireless north",
-                    "west"
-                ],
-                "route_length": 2,
-                "dist_shortest": 2,
-                "dst_gpt": "pott room (obj112)",
-                "verify_msg": "",
-                "micro_uuid": "39441d36-0411-3c6b-9491-d0a49654adaa",
-                "macro_uuid": "ff08b33a-6d91-32b6-aab3-9d146c39808d"
-            },
-            {
                 "verify_result": false,
                 "src_requested": "old furniture (obj47)",
                 "dst_requested": "pott room (obj112)",
@@ -492,9 +462,9 @@
                 "macro_uuid": "ff08b33a-6d91-32b6-aab3-9d146c39808d"
             }
         ],
-        "correct_num_micro": 4,
-        "total_num_micro": 16,
-        "accuracy_micro": 0.25,
+        "correct_num_micro": 3,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.2,
         "collection_macro": [
             {
                 "verify_result": false,
@@ -662,21 +632,6 @@
                 "macro_uuid": "72c3b4a0-e277-3845-b40e-fd7a9f085284"
             },
             {
-                "verify_result": true,
-                "src_requested": "air cupboard (obj109)",
-                "dst_requested": "pott room (obj112)",
-                "action_requested": [
-                    "push wireless north",
-                    "west"
-                ],
-                "route_length": 2,
-                "dist_shortest": 2,
-                "dst_gpt": "pott room (obj112)",
-                "verify_msg": "",
-                "micro_uuid": "39441d36-0411-3c6b-9491-d0a49654adaa",
-                "macro_uuid": "ff08b33a-6d91-32b6-aab3-9d146c39808d"
-            },
-            {
                 "verify_result": false,
                 "src_requested": "old furniture (obj47)",
                 "dst_requested": "pott room (obj112)",
@@ -722,10 +677,25 @@
                 "verify_msg": "",
                 "micro_uuid": "5e6c7bbc-218b-372a-acd3-8d5a5d61ae1d",
                 "macro_uuid": "e495fa60-0d97-3594-ab15-25335a05c9cd"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "air cupboard (obj109)",
+                "dst_requested": "pott room (obj112)",
+                "action_requested": [
+                    "north",
+                    "west"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "c1e0dae8-ea99-30da-8456-0c6bb5dbe964",
+                "macro_uuid": "ff08b33a-6d91-32b6-aab3-9d146c39808d"
             }
         ],
-        "correct_num_macro": 4,
+        "correct_num_macro": 3,
         "total_num_macro": 15,
-        "accuracy_macro": 0.26666666666666666
+        "accuracy_macro": 0.2
     }
 }
