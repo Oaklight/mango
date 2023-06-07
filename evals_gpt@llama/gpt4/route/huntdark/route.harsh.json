@@ -1,0 +1,296 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 0,
+        "total_num": 3,
+        "accuracy": 0.0,
+        "collection": {
+            "../gpt-games-results/huntdark/results//pathgen-gpt-4/results_2023-06-04-15-50-21_288.json": {
+                "verify_result": false,
+                "src_anno": "Bottom of Pit",
+                "src_requested": "bottom of pit (obj71)",
+                "dst_anno": "Tight Crawl",
+                "dst_requested": "tight crawl (obj85)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bottom of pit (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bottom of Pit",
+                        "node": "Tight Crawl",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "86bfd4e3-bfb5-3d0f-86eb-524bbcf5699f",
+                "macro_uuid": "5a486390-360d-300c-abf3-feebb48b49f3"
+            },
+            "../gpt-games-results/huntdark/results//pathgen-gpt-4/results_2023-06-04-15-52-46_388.json": {
+                "verify_result": false,
+                "src_anno": "in Darkness",
+                "src_requested": "dark (obj1)",
+                "dst_anno": "Tight Crawl",
+                "dst_requested": "tight crawl (obj85)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dark (obj1)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "in Darkness",
+                        "node": "Cramped Cavern",
+                        "action": "left",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cramped Cavern",
+                        "node": "Smallish Cave",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Smallish Cave",
+                        "node": "Tight Crawl",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "879edf72-db8e-377f-865f-7727f6af1f25",
+                "macro_uuid": "d3cc97c0-6fd3-352d-9e13-4adf0f7efe32"
+            },
+            "../gpt-games-results/huntdark/results//pathgen-gpt-4/results_2023-06-04-15-52-05_756.json": {
+                "verify_result": false,
+                "src_anno": "in Darkness",
+                "src_requested": "dark (obj1)",
+                "dst_anno": "Bottom of Pit",
+                "dst_requested": "bottom of pit (obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dark (obj1)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "in Darkness",
+                        "node": "Cramped Cavern",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cramped Cavern",
+                        "node": "Smallish Cave",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Smallish Cave",
+                        "node": "Bottom of Pit",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "f465177f-4da6-34ec-8beb-2c1037c9e042",
+                "macro_uuid": "a743af67-c7aa-3a48-99a5-17240e70e8f6"
+            }
+        },
+        "random_guess_rate": 1.4890598028184958e-05,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Bottom of Pit",
+                "src_requested": "bottom of pit (obj71)",
+                "dst_anno": "Tight Crawl",
+                "dst_requested": "tight crawl (obj85)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bottom of pit (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bottom of Pit",
+                        "node": "Tight Crawl",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "86bfd4e3-bfb5-3d0f-86eb-524bbcf5699f",
+                "macro_uuid": "5a486390-360d-300c-abf3-feebb48b49f3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "in Darkness",
+                "src_requested": "dark (obj1)",
+                "dst_anno": "Tight Crawl",
+                "dst_requested": "tight crawl (obj85)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dark (obj1)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "in Darkness",
+                        "node": "Cramped Cavern",
+                        "action": "left",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cramped Cavern",
+                        "node": "Smallish Cave",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Smallish Cave",
+                        "node": "Tight Crawl",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "879edf72-db8e-377f-865f-7727f6af1f25",
+                "macro_uuid": "d3cc97c0-6fd3-352d-9e13-4adf0f7efe32"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "in Darkness",
+                "src_requested": "dark (obj1)",
+                "dst_anno": "Bottom of Pit",
+                "dst_requested": "bottom of pit (obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dark (obj1)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "in Darkness",
+                        "node": "Cramped Cavern",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cramped Cavern",
+                        "node": "Smallish Cave",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Smallish Cave",
+                        "node": "Bottom of Pit",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "f465177f-4da6-34ec-8beb-2c1037c9e042",
+                "macro_uuid": "a743af67-c7aa-3a48-99a5-17240e70e8f6"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 3,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Bottom of Pit",
+                "src_requested": "bottom of pit (obj71)",
+                "dst_anno": "Tight Crawl",
+                "dst_requested": "tight crawl (obj85)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "bottom of pit (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Bottom of Pit",
+                        "node": "Tight Crawl",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "86bfd4e3-bfb5-3d0f-86eb-524bbcf5699f",
+                "macro_uuid": "5a486390-360d-300c-abf3-feebb48b49f3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "in Darkness",
+                "src_requested": "dark (obj1)",
+                "dst_anno": "Tight Crawl",
+                "dst_requested": "tight crawl (obj85)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dark (obj1)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "in Darkness",
+                        "node": "Cramped Cavern",
+                        "action": "left",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cramped Cavern",
+                        "node": "Smallish Cave",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Smallish Cave",
+                        "node": "Tight Crawl",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "879edf72-db8e-377f-865f-7727f6af1f25",
+                "macro_uuid": "d3cc97c0-6fd3-352d-9e13-4adf0f7efe32"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "in Darkness",
+                "src_requested": "dark (obj1)",
+                "dst_anno": "Bottom of Pit",
+                "dst_requested": "bottom of pit (obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "dark (obj1)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "in Darkness",
+                        "node": "Cramped Cavern",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cramped Cavern",
+                        "node": "Smallish Cave",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Smallish Cave",
+                        "node": "Bottom of Pit",
+                        "action": "down"
+                    }
+                ],
+                "micro_uuid": "f465177f-4da6-34ec-8beb-2c1037c9e042",
+                "macro_uuid": "a743af67-c7aa-3a48-99a5-17240e70e8f6"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 3,
+        "accuracy_macro": 0.0
+    }
+}

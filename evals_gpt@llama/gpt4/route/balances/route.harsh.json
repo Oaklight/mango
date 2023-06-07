@@ -1,0 +1,1031 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 3,
+        "total_num": 10,
+        "accuracy": 0.3,
+        "collection": {
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-54-47_644.json": {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "edge of chasm (obj59)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "e6accc55-39a3-32e5-afc3-756f2cf74278",
+                "macro_uuid": "871dbbb6-0683-31bc-a20d-8aa74c12a286"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-58-35_417.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "0ac7c38a-5d9b-3359-9610-d87b953e041d",
+                "macro_uuid": "c1441997-d2ea-3153-b922-373abdd89fa1"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-58-15_143.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "ab02646c-32ba-3cf0-a8e6-ba7e8e4b63c0",
+                "macro_uuid": "11a3b55d-98a4-3aac-b6ae-5e322260410f"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-56-12_976.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "1e2ba1e9-cdd6-3daf-9190-f41fc4a9b592",
+                "macro_uuid": "3accf991-78d5-397f-a276-1fa6c1a5579f"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-56-27_457.json": {
+                "verify_result": true,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "65c66bba-e42f-39d8-ad66-c7040f4965ef",
+                "macro_uuid": "fc561ac6-f59f-3612-b37c-6abcab0728b8"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-56-21_221.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "a16cfb62-de73-3d8b-9289-d7a98bbe647a",
+                "macro_uuid": "cc000f71-cd65-3650-9914-a86d158473a4"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-58-53_617.json": {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "14c5b206-4cab-346b-aaf0-cc7eadfe14fe",
+                "macro_uuid": "802b8be8-71b8-36ce-8ecb-bd8c293710b8"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-57-41_665.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Grasslands, near Hut",
+                        "action": "south",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "in",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "ddafc3d3-b712-387e-bf82-e2640351a589",
+                "macro_uuid": "1c8d6d9e-36ad-3f96-a307-0e2c57e97e3d"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-57-30_570.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Grasslands, near Hut",
+                        "action": "south",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Edge of Chasm",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "43885f6e-b57a-32df-b7b6-9fe4d2909fef",
+                "macro_uuid": "c0661f88-172e-3a92-88dd-d77ff092fa08"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-4/results_2023-06-03-20-58-50_672.json": {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Grasslands, near Hut",
+                "dst_requested": "grasslands, near hut (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7c8ef123-6e8b-3f3b-854d-4fee54ade932",
+                "macro_uuid": "81ce1e00-8eca-3d7f-a3ba-ea698dd8617f"
+            }
+        },
+        "random_guess_rate": 0.0002072023516579046,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "edge of chasm (obj59)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "e6accc55-39a3-32e5-afc3-756f2cf74278",
+                "macro_uuid": "871dbbb6-0683-31bc-a20d-8aa74c12a286"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "0ac7c38a-5d9b-3359-9610-d87b953e041d",
+                "macro_uuid": "c1441997-d2ea-3153-b922-373abdd89fa1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "ab02646c-32ba-3cf0-a8e6-ba7e8e4b63c0",
+                "macro_uuid": "11a3b55d-98a4-3aac-b6ae-5e322260410f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "1e2ba1e9-cdd6-3daf-9190-f41fc4a9b592",
+                "macro_uuid": "3accf991-78d5-397f-a276-1fa6c1a5579f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "65c66bba-e42f-39d8-ad66-c7040f4965ef",
+                "macro_uuid": "fc561ac6-f59f-3612-b37c-6abcab0728b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "a16cfb62-de73-3d8b-9289-d7a98bbe647a",
+                "macro_uuid": "cc000f71-cd65-3650-9914-a86d158473a4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "14c5b206-4cab-346b-aaf0-cc7eadfe14fe",
+                "macro_uuid": "802b8be8-71b8-36ce-8ecb-bd8c293710b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Grasslands, near Hut",
+                        "action": "south",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "in",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "ddafc3d3-b712-387e-bf82-e2640351a589",
+                "macro_uuid": "1c8d6d9e-36ad-3f96-a307-0e2c57e97e3d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Grasslands, near Hut",
+                        "action": "south",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Edge of Chasm",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "43885f6e-b57a-32df-b7b6-9fe4d2909fef",
+                "macro_uuid": "c0661f88-172e-3a92-88dd-d77ff092fa08"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Grasslands, near Hut",
+                "dst_requested": "grasslands, near hut (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7c8ef123-6e8b-3f3b-854d-4fee54ade932",
+                "macro_uuid": "81ce1e00-8eca-3d7f-a3ba-ea698dd8617f"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 10,
+        "accuracy_micro": 0.3,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "edge of chasm (obj59)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "e6accc55-39a3-32e5-afc3-756f2cf74278",
+                "macro_uuid": "871dbbb6-0683-31bc-a20d-8aa74c12a286"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "0ac7c38a-5d9b-3359-9610-d87b953e041d",
+                "macro_uuid": "c1441997-d2ea-3153-b922-373abdd89fa1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "ab02646c-32ba-3cf0-a8e6-ba7e8e4b63c0",
+                "macro_uuid": "11a3b55d-98a4-3aac-b6ae-5e322260410f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "1e2ba1e9-cdd6-3daf-9190-f41fc4a9b592",
+                "macro_uuid": "3accf991-78d5-397f-a276-1fa6c1a5579f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "65c66bba-e42f-39d8-ad66-c7040f4965ef",
+                "macro_uuid": "fc561ac6-f59f-3612-b37c-6abcab0728b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "out",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "a16cfb62-de73-3d8b-9289-d7a98bbe647a",
+                "macro_uuid": "cc000f71-cd65-3650-9914-a86d158473a4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pocket valley (obj54)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Pocket Valley",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "14c5b206-4cab-346b-aaf0-cc7eadfe14fe",
+                "macro_uuid": "802b8be8-71b8-36ce-8ecb-bd8c293710b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Grasslands, near Hut",
+                        "action": "south",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Ramshackle Hut",
+                        "action": "in",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Edge of Chasm",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Edge of Chasm",
+                        "node": "Crest of Hill",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "ddafc3d3-b712-387e-bf82-e2640351a589",
+                "macro_uuid": "1c8d6d9e-36ad-3f96-a307-0e2c57e97e3d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Pocket Valley",
+                        "node": "Grasslands, near Hut",
+                        "action": "south",
+                        "msg": "GOOD: unseen"
+                    },
+                    {
+                        "prev_node": "Grasslands, near Hut",
+                        "node": "Edge of Chasm",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "43885f6e-b57a-32df-b7b6-9fe4d2909fef",
+                "macro_uuid": "c0661f88-172e-3a92-88dd-d77ff092fa08"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Grasslands, near Hut",
+                "dst_requested": "grasslands, near hut (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "grasslands, near hut (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Ramshackle Hut",
+                        "node": "Grasslands, near Hut",
+                        "action": "out",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7c8ef123-6e8b-3f3b-854d-4fee54ade932",
+                "macro_uuid": "81ce1e00-8eca-3d7f-a3ba-ea698dd8617f"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 10,
+        "accuracy_macro": 0.3
+    }
+}

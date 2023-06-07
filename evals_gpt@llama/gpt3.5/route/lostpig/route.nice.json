@@ -1,0 +1,164 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 1,
+        "total_num": 3,
+        "accuracy": 0.3333333333333333,
+        "collection": {
+            "../gpt-games-results/lostpig/results//pathgen-gpt-3.5-turbo/results_2023-05-30-23-54-26_507.json": {
+                "verify_result": true,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Hole",
+                "dst_requested": "hole (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a3d5826d-9599-3521-84ba-912a7f855ac8",
+                "macro_uuid": "2979b032-fa21-3762-8be7-96b368836882"
+            },
+            "../gpt-games-results/lostpig/results//pathgen-gpt-3.5-turbo/results_2023-05-30-23-54-27_474.json": {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: hole (obj102), fountaroom (obj111)",
+                "micro_uuid": "5c52235e-9992-3e27-adb2-17cf263648af",
+                "macro_uuid": "e569b6aa-db6c-344e-95c5-153ceaca84db"
+            },
+            "../gpt-games-results/lostpig/results//pathgen-gpt-3.5-turbo/results_2023-05-30-23-54-47_018.json": {
+                "verify_result": false,
+                "src_anno": "Hole",
+                "src_requested": "hole (obj102)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: hole (obj102), fountaroom (obj111)",
+                "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
+                "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
+            }
+        },
+        "random_guess_rate": 0.007075966127061771,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Hole",
+                "dst_requested": "hole (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a3d5826d-9599-3521-84ba-912a7f855ac8",
+                "macro_uuid": "2979b032-fa21-3762-8be7-96b368836882"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: hole (obj102), fountaroom (obj111)",
+                "micro_uuid": "5c52235e-9992-3e27-adb2-17cf263648af",
+                "macro_uuid": "e569b6aa-db6c-344e-95c5-153ceaca84db"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hole",
+                "src_requested": "hole (obj102)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: hole (obj102), fountaroom (obj111)",
+                "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
+                "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
+            }
+        ],
+        "correct_num_micro": 1,
+        "total_num_micro": 3,
+        "accuracy_micro": 0.3333333333333333,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Hole",
+                "dst_requested": "hole (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a3d5826d-9599-3521-84ba-912a7f855ac8",
+                "macro_uuid": "2979b032-fa21-3762-8be7-96b368836882"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: hole (obj102), fountaroom (obj111)",
+                "micro_uuid": "5c52235e-9992-3e27-adb2-17cf263648af",
+                "macro_uuid": "e569b6aa-db6c-344e-95c5-153ceaca84db"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hole",
+                "src_requested": "hole (obj102)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northeast"
+                ],
+                "dst_gpt": "hole (obj102)",
+                "verify_msg": "wrong path, fail to arrive at dst: hole (obj102), fountaroom (obj111)",
+                "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
+                "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
+            }
+        ],
+        "correct_num_macro": 1,
+        "total_num_macro": 3,
+        "accuracy_macro": 0.3333333333333333
+    }
+}

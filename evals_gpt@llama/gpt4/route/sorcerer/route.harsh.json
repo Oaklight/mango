@@ -1,0 +1,536 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 0,
+        "total_num": 6,
+        "accuracy": 0.0,
+        "collection": {
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-4/results_2023-06-01-03-34-58_796.json": {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj50)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "74340bca-7b23-3271-a08d-c39b09d88ac1",
+                "macro_uuid": "a0da9aae-2d48-3b6c-9218-8308876f6122"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-4/results_2023-06-01-03-32-35_170.json": {
+                "verify_result": false,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "quarters (obj17)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "quarters",
+                        "node": "Your Quarters, in the bed",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Belboz's Quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "09475d23-0a92-3061-9855-83338ebc1230",
+                "macro_uuid": "39e25655-4464-3f16-85fb-346a8cf9d71c"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-4/results_2023-06-01-03-29-52_455.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "quarters",
+                "dst_requested": "quarters (obj17)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Your Quarters",
+                        "action": "get up",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "f3f28ed8-6a32-376d-a2c3-f7cde14edf5c",
+                "macro_uuid": "b5040e96-c629-399d-8b6f-c7388f5024af"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-4/results_2023-06-01-03-29-46_965.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "a15d4676-8d1e-38c3-b41a-7ca193ef55ea",
+                "macro_uuid": "3c3780e1-aa07-31cc-bbf6-00b875c81799"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-4/results_2023-06-01-03-29-46_433.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Belboz's Quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "6853fc2f-1f22-3958-b310-5a7250a4d6d4",
+                "macro_uuid": "d88356ba-cb2b-3fdc-a49b-d6f403ecc8c4"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-4/results_2023-06-01-03-32-26_067.json": {
+                "verify_result": false,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "quarters (obj17)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "quarters",
+                        "node": "Your Quarters, in the bed",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "9d9b735f-ece0-31f7-9167-0c6f4c228e4c",
+                "macro_uuid": "e73d0f15-d14a-3b66-91d3-e8b806bd4eab"
+            }
+        },
+        "random_guess_rate": 3.6132522278174166e-12,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj50)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "74340bca-7b23-3271-a08d-c39b09d88ac1",
+                "macro_uuid": "a0da9aae-2d48-3b6c-9218-8308876f6122"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "quarters (obj17)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "quarters",
+                        "node": "Your Quarters, in the bed",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Belboz's Quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "09475d23-0a92-3061-9855-83338ebc1230",
+                "macro_uuid": "39e25655-4464-3f16-85fb-346a8cf9d71c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "quarters",
+                "dst_requested": "quarters (obj17)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Your Quarters",
+                        "action": "get up",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "f3f28ed8-6a32-376d-a2c3-f7cde14edf5c",
+                "macro_uuid": "b5040e96-c629-399d-8b6f-c7388f5024af"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "a15d4676-8d1e-38c3-b41a-7ca193ef55ea",
+                "macro_uuid": "3c3780e1-aa07-31cc-bbf6-00b875c81799"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Belboz's Quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "6853fc2f-1f22-3958-b310-5a7250a4d6d4",
+                "macro_uuid": "d88356ba-cb2b-3fdc-a49b-d6f403ecc8c4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "quarters (obj17)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "quarters",
+                        "node": "Your Quarters, in the bed",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "9d9b735f-ece0-31f7-9167-0c6f4c228e4c",
+                "macro_uuid": "e73d0f15-d14a-3b66-91d3-e8b806bd4eab"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj50)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "74340bca-7b23-3271-a08d-c39b09d88ac1",
+                "macro_uuid": "a0da9aae-2d48-3b6c-9218-8308876f6122"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "quarters (obj17)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "quarters",
+                        "node": "Your Quarters, in the bed",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Belboz's Quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "09475d23-0a92-3061-9855-83338ebc1230",
+                "macro_uuid": "39e25655-4464-3f16-85fb-346a8cf9d71c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "quarters",
+                "dst_requested": "quarters (obj17)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Your Quarters",
+                        "action": "get up",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "f3f28ed8-6a32-376d-a2c3-f7cde14edf5c",
+                "macro_uuid": "b5040e96-c629-399d-8b6f-c7388f5024af"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "a15d4676-8d1e-38c3-b41a-7ca193ef55ea",
+                "macro_uuid": "3c3780e1-aa07-31cc-bbf6-00b875c81799"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "bed (obj128)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Belboz's Quarters",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "6853fc2f-1f22-3958-b310-5a7250a4d6d4",
+                "macro_uuid": "d88356ba-cb2b-3fdc-a49b-d6f403ecc8c4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "quarters (obj17)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "quarters",
+                        "node": "Your Quarters, in the bed",
+                        "action": "get up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Your Quarters, in the bed",
+                        "node": "Hallway",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "9d9b735f-ece0-31f7-9167-0c6f4c228e4c",
+                "macro_uuid": "e73d0f15-d14a-3b66-91d3-e8b806bd4eab"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.0
+    }
+}

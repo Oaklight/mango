@@ -1,0 +1,821 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 8,
+        "total_num": 15,
+        "accuracy": 0.5333333333333333,
+        "collection": {
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-11-08-52_706.json": {
+                "verify_result": true,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "down",
+                    "southeast",
+                    "west",
+                    "west",
+                    "north",
+                    "down",
+                    "up",
+                    "south",
+                    "south",
+                    "north",
+                    "east",
+                    "east",
+                    "northwest",
+                    "up",
+                    "up"
+                ],
+                "dst_gpt": "fifth layer dropoff (obj44)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7007abac-e434-385f-b465-f7f5739fc77b",
+                "macro_uuid": "530200a4-2e05-35b8-8da3-010151a6d01e"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-48_194.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "northwest",
+                    "up"
+                ],
+                "dst_gpt": "rocky plateau, sixth layer (obj26)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky plateau, sixth layer (obj26), tight fit (obj42)",
+                "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
+                "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-11-00_776.json": {
+                "verify_result": true,
+                "src_anno": "Fifth Layer Dropoff",
+                "src_requested": "fifth layer dropoff (obj44)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "down",
+                    "down",
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d2fb2a22-88a8-39f9-99a7-9e90f0ed37d1",
+                "macro_uuid": "2eac8951-17e4-3c0b-a81e-3fa6e93fed42"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-09-48_120.json": {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "southeast",
+                    "up"
+                ],
+                "dst_gpt": "cool cavern (obj32)",
+                "verify_msg": "wrong path, fail to arrive at dst: cool cavern (obj32), tight fit (obj42)",
+                "micro_uuid": "a0599a57-77e6-3f61-be64-9dfc5ec8e1a2",
+                "macro_uuid": "3abcbb50-8d3c-3350-b1a7-70fdaf02bdf6"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-40_047.json": {
+                "verify_result": true,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Cool Cavern",
+                "dst_requested": "cool cavern (obj32)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "cool cavern (obj32)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "da89917b-e04b-38b6-b9c5-dd1279476680",
+                "macro_uuid": "b08db69c-0b35-3812-afb2-96ddb657b17d"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-11-09-22_777.json": {
+                "verify_result": true,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "down",
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "71758fd8-9926-3e03-86d0-30e78cc6edfa",
+                "macro_uuid": "8961845e-8817-38f2-8414-5d6f556017e2"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-09-53_378.json": {
+                "verify_result": true,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9602e460-696f-33bd-a1e5-9ab04dc81478",
+                "macro_uuid": "99bc0577-359e-346a-a045-8bbcb3fd11ff"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-08-18_033.json": {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest"
+                ],
+                "dst_gpt": "mineralized corridor (obj35)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
+                "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-08-47_426.json": {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "northwest",
+                    "up",
+                    "up"
+                ],
+                "dst_gpt": "fifth layer dropoff (obj44)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d4fa783f-fe33-3064-aa5c-eb13d8d7cfcb",
+                "macro_uuid": "5eca0f2b-fce0-3ef9-8c88-43b618081b0b"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-08-42_261.json": {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest",
+                    "west"
+                ],
+                "dst_gpt": "narrow passage (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow passage (obj54), east-west passage (obj79)",
+                "micro_uuid": "ae57fb66-ef33-3780-b9c7-ef8c2c4258da",
+                "macro_uuid": "f0de7523-753e-3b5d-b74f-99e4d30031c2"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-43_400.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "b55203fd-3d8d-3ef1-86cb-26a15dda9055",
+                "macro_uuid": "2e89c937-6dca-3990-9214-d37e097343a0"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-10-04_063.json": {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southeast",
+                    "west",
+                    "west",
+                    "north",
+                    "down",
+                    "up",
+                    "south",
+                    "up"
+                ],
+                "dst_gpt": "carved steps (obj80)",
+                "verify_msg": "wrong path, fail to arrive at dst: carved steps (obj80), fifth layer dropoff (obj44)",
+                "micro_uuid": "79807a55-64c2-36d8-b77d-eaa07bc6b523",
+                "macro_uuid": "5f52f334-e62a-36b8-a124-e2570afa57c0"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-50_982.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "88f56212-8d9b-318a-b3a8-91442c639780",
+                "macro_uuid": "febba0f1-59bd-3276-bb0c-373dce344287"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-08-25_295.json": {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest",
+                    "up"
+                ],
+                "dst_gpt": "tight fit (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7512b8a8-245b-320e-938e-6b8fc99c1b0e",
+                "macro_uuid": "40e17e33-1ce6-3411-ba8d-e3ed2f4346d1"
+            },
+            "../gpt-games-results/jewel/results//pathgen-gpt-4/results_2023-05-31-00-07-41_537.json": {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "55a561af-3d9b-32ec-ae3f-74e8b6642a54",
+                "macro_uuid": "2746ddc3-b329-392f-8e30-109b95ed52b6"
+            }
+        },
+        "random_guess_rate": 3.023381529181432e-06,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "down",
+                    "southeast",
+                    "west",
+                    "west",
+                    "north",
+                    "down",
+                    "up",
+                    "south",
+                    "south",
+                    "north",
+                    "east",
+                    "east",
+                    "northwest",
+                    "up",
+                    "up"
+                ],
+                "dst_gpt": "fifth layer dropoff (obj44)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7007abac-e434-385f-b465-f7f5739fc77b",
+                "macro_uuid": "530200a4-2e05-35b8-8da3-010151a6d01e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "northwest",
+                    "up"
+                ],
+                "dst_gpt": "rocky plateau, sixth layer (obj26)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky plateau, sixth layer (obj26), tight fit (obj42)",
+                "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
+                "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Fifth Layer Dropoff",
+                "src_requested": "fifth layer dropoff (obj44)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "down",
+                    "down",
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d2fb2a22-88a8-39f9-99a7-9e90f0ed37d1",
+                "macro_uuid": "2eac8951-17e4-3c0b-a81e-3fa6e93fed42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "southeast",
+                    "up"
+                ],
+                "dst_gpt": "cool cavern (obj32)",
+                "verify_msg": "wrong path, fail to arrive at dst: cool cavern (obj32), tight fit (obj42)",
+                "micro_uuid": "a0599a57-77e6-3f61-be64-9dfc5ec8e1a2",
+                "macro_uuid": "3abcbb50-8d3c-3350-b1a7-70fdaf02bdf6"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Cool Cavern",
+                "dst_requested": "cool cavern (obj32)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "cool cavern (obj32)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "da89917b-e04b-38b6-b9c5-dd1279476680",
+                "macro_uuid": "b08db69c-0b35-3812-afb2-96ddb657b17d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "down",
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "71758fd8-9926-3e03-86d0-30e78cc6edfa",
+                "macro_uuid": "8961845e-8817-38f2-8414-5d6f556017e2"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9602e460-696f-33bd-a1e5-9ab04dc81478",
+                "macro_uuid": "99bc0577-359e-346a-a045-8bbcb3fd11ff"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest"
+                ],
+                "dst_gpt": "mineralized corridor (obj35)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
+                "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "northwest",
+                    "up",
+                    "up"
+                ],
+                "dst_gpt": "fifth layer dropoff (obj44)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d4fa783f-fe33-3064-aa5c-eb13d8d7cfcb",
+                "macro_uuid": "5eca0f2b-fce0-3ef9-8c88-43b618081b0b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest",
+                    "west"
+                ],
+                "dst_gpt": "narrow passage (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow passage (obj54), east-west passage (obj79)",
+                "micro_uuid": "ae57fb66-ef33-3780-b9c7-ef8c2c4258da",
+                "macro_uuid": "f0de7523-753e-3b5d-b74f-99e4d30031c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "b55203fd-3d8d-3ef1-86cb-26a15dda9055",
+                "macro_uuid": "2e89c937-6dca-3990-9214-d37e097343a0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southeast",
+                    "west",
+                    "west",
+                    "north",
+                    "down",
+                    "up",
+                    "south",
+                    "up"
+                ],
+                "dst_gpt": "carved steps (obj80)",
+                "verify_msg": "wrong path, fail to arrive at dst: carved steps (obj80), fifth layer dropoff (obj44)",
+                "micro_uuid": "79807a55-64c2-36d8-b77d-eaa07bc6b523",
+                "macro_uuid": "5f52f334-e62a-36b8-a124-e2570afa57c0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "88f56212-8d9b-318a-b3a8-91442c639780",
+                "macro_uuid": "febba0f1-59bd-3276-bb0c-373dce344287"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest",
+                    "up"
+                ],
+                "dst_gpt": "tight fit (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7512b8a8-245b-320e-938e-6b8fc99c1b0e",
+                "macro_uuid": "40e17e33-1ce6-3411-ba8d-e3ed2f4346d1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "55a561af-3d9b-32ec-ae3f-74e8b6642a54",
+                "macro_uuid": "2746ddc3-b329-392f-8e30-109b95ed52b6"
+            }
+        ],
+        "correct_num_micro": 8,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.5333333333333333,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "down",
+                    "southeast",
+                    "west",
+                    "west",
+                    "north",
+                    "down",
+                    "up",
+                    "south",
+                    "south",
+                    "north",
+                    "east",
+                    "east",
+                    "northwest",
+                    "up",
+                    "up"
+                ],
+                "dst_gpt": "fifth layer dropoff (obj44)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7007abac-e434-385f-b465-f7f5739fc77b",
+                "macro_uuid": "530200a4-2e05-35b8-8da3-010151a6d01e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "northwest",
+                    "up"
+                ],
+                "dst_gpt": "rocky plateau, sixth layer (obj26)",
+                "verify_msg": "wrong path, fail to arrive at dst: rocky plateau, sixth layer (obj26), tight fit (obj42)",
+                "micro_uuid": "9384e278-5f9d-3654-9c63-13e255f27d9a",
+                "macro_uuid": "06a1cf0a-f289-3f74-a47e-6a71f64b1e30"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Fifth Layer Dropoff",
+                "src_requested": "fifth layer dropoff (obj44)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "down",
+                    "down",
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d2fb2a22-88a8-39f9-99a7-9e90f0ed37d1",
+                "macro_uuid": "2eac8951-17e4-3c0b-a81e-3fa6e93fed42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "southeast",
+                    "up"
+                ],
+                "dst_gpt": "cool cavern (obj32)",
+                "verify_msg": "wrong path, fail to arrive at dst: cool cavern (obj32), tight fit (obj42)",
+                "micro_uuid": "a0599a57-77e6-3f61-be64-9dfc5ec8e1a2",
+                "macro_uuid": "3abcbb50-8d3c-3350-b1a7-70fdaf02bdf6"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Cool Cavern",
+                "dst_requested": "cool cavern (obj32)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "cool cavern (obj32)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "da89917b-e04b-38b6-b9c5-dd1279476680",
+                "macro_uuid": "b08db69c-0b35-3812-afb2-96ddb657b17d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Tight Fit",
+                "src_requested": "tight fit (obj42)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "down",
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "71758fd8-9926-3e03-86d0-30e78cc6edfa",
+                "macro_uuid": "8961845e-8817-38f2-8414-5d6f556017e2"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southeast",
+                    "west"
+                ],
+                "dst_gpt": "east-west passage (obj79)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9602e460-696f-33bd-a1e5-9ab04dc81478",
+                "macro_uuid": "99bc0577-359e-346a-a045-8bbcb3fd11ff"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest"
+                ],
+                "dst_gpt": "mineralized corridor (obj35)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "54b29e62-7c4f-3809-b386-b16a8b93738b",
+                "macro_uuid": "504c7673-3a29-3a38-8790-f5611329305d"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "northwest",
+                    "up",
+                    "up"
+                ],
+                "dst_gpt": "fifth layer dropoff (obj44)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d4fa783f-fe33-3064-aa5c-eb13d8d7cfcb",
+                "macro_uuid": "5eca0f2b-fce0-3ef9-8c88-43b618081b0b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest",
+                    "west"
+                ],
+                "dst_gpt": "narrow passage (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: narrow passage (obj54), east-west passage (obj79)",
+                "micro_uuid": "ae57fb66-ef33-3780-b9c7-ef8c2c4258da",
+                "macro_uuid": "f0de7523-753e-3b5d-b74f-99e4d30031c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "East-West Passage",
+                "dst_requested": "east-west passage (obj79)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "b55203fd-3d8d-3ef1-86cb-26a15dda9055",
+                "macro_uuid": "2e89c937-6dca-3990-9214-d37e097343a0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Mineralized Corridor",
+                "src_requested": "mineralized corridor (obj35)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southeast",
+                    "west",
+                    "west",
+                    "north",
+                    "down",
+                    "up",
+                    "south",
+                    "up"
+                ],
+                "dst_gpt": "carved steps (obj80)",
+                "verify_msg": "wrong path, fail to arrive at dst: carved steps (obj80), fifth layer dropoff (obj44)",
+                "micro_uuid": "79807a55-64c2-36d8-b77d-eaa07bc6b523",
+                "macro_uuid": "5f52f334-e62a-36b8-a124-e2570afa57c0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Fifth Layer Dropoff",
+                "dst_requested": "fifth layer dropoff (obj44)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "88f56212-8d9b-318a-b3a8-91442c639780",
+                "macro_uuid": "febba0f1-59bd-3276-bb0c-373dce344287"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Cool Cavern",
+                "src_requested": "cool cavern (obj32)",
+                "dst_anno": "Tight Fit",
+                "dst_requested": "tight fit (obj42)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest",
+                    "up"
+                ],
+                "dst_gpt": "tight fit (obj42)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "7512b8a8-245b-320e-938e-6b8fc99c1b0e",
+                "macro_uuid": "40e17e33-1ce6-3411-ba8d-e3ed2f4346d1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Fifth Layer of the Earth's Crust",
+                "src_requested": "rocky plateau, sixth layer (obj26)",
+                "dst_anno": "Mineralized Corridor",
+                "dst_requested": "mineralized corridor (obj35)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "55a561af-3d9b-32ec-ae3f-74e8b6642a54",
+                "macro_uuid": "2746ddc3-b329-392f-8e30-109b95ed52b6"
+            }
+        ],
+        "correct_num_macro": 8,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.5333333333333333
+    }
+}

@@ -1,0 +1,650 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 3,
+        "total_num": 6,
+        "accuracy": 0.5,
+        "collection": {
+            "../gpt-games-results/spirit/results//pathgen-gpt-4/results_2023-06-03-00-53-35_129.json": {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "981239b2-7c16-3072-a41c-5329aabde06a",
+                "macro_uuid": "5489dd11-0d00-381f-b4f4-fc8df993abbb"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-4/results_2023-06-03-00-59-27_395.json": {
+                "verify_result": true,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (nearr quarters) (obj25)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway (near your quarters)",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "708a3581-1f06-3812-a57b-4dcb3abf77b3",
+                "macro_uuid": "7a7a0b5a-5099-3990-80a3-593ab18275f3"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-4/results_2023-06-03-00-53-16_580.json": {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (west end)",
+                        "node": "Hallway (near your quarters)",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "57035531-48c0-3dd5-b1b2-2381b7a414e3",
+                "macro_uuid": "d3c0b85d-b2b7-3b38-9b86-a7cda41fb3fd"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-4/results_2023-06-03-00-54-20_880.json": {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Your Quarters",
+                "dst_requested": "r quarters (obj22)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (west end)",
+                        "node": "Hallway (near your quarters)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Your Quarters",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "ade08c4c-ab55-3e89-bdd6-afcd3ddb8a0c",
+                "macro_uuid": "ff9cf922-a22a-3664-a823-1027f4532136"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-4/results_2023-06-03-00-46-05_907.json": {
+                "verify_result": true,
+                "src_anno": "Hallway (near your quarters)",
+                "src_requested": "hway (nearr quarters) (obj25)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (west end) (obj28)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Hallway (west end)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f4d8127c-6641-37d5-b0cf-d2072e962663",
+                "macro_uuid": "34821561-82ce-387a-ac0b-ddad38fdb571"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-4/results_2023-06-03-00-59-50_207.json": {
+                "verify_result": true,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (west end) (obj28)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway (near your quarters)",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Hallway (west end)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "dce8cdd6-7fd1-353d-be32-b39283f7c9e6",
+                "macro_uuid": "90c0f0d3-7cde-34e1-8ecc-f4c1eec634b7"
+            }
+        },
+        "random_guess_rate": 2.545162486606852e-06,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "981239b2-7c16-3072-a41c-5329aabde06a",
+                "macro_uuid": "5489dd11-0d00-381f-b4f4-fc8df993abbb"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (nearr quarters) (obj25)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway (near your quarters)",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "708a3581-1f06-3812-a57b-4dcb3abf77b3",
+                "macro_uuid": "7a7a0b5a-5099-3990-80a3-593ab18275f3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (west end)",
+                        "node": "Hallway (near your quarters)",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "57035531-48c0-3dd5-b1b2-2381b7a414e3",
+                "macro_uuid": "d3c0b85d-b2b7-3b38-9b86-a7cda41fb3fd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Your Quarters",
+                "dst_requested": "r quarters (obj22)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (west end)",
+                        "node": "Hallway (near your quarters)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Your Quarters",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "ade08c4c-ab55-3e89-bdd6-afcd3ddb8a0c",
+                "macro_uuid": "ff9cf922-a22a-3664-a823-1027f4532136"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway (near your quarters)",
+                "src_requested": "hway (nearr quarters) (obj25)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (west end) (obj28)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Hallway (west end)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f4d8127c-6641-37d5-b0cf-d2072e962663",
+                "macro_uuid": "34821561-82ce-387a-ac0b-ddad38fdb571"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (west end) (obj28)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway (near your quarters)",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Hallway (west end)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "dce8cdd6-7fd1-353d-be32-b39283f7c9e6",
+                "macro_uuid": "90c0f0d3-7cde-34e1-8ecc-f4c1eec634b7"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "981239b2-7c16-3072-a41c-5329aabde06a",
+                "macro_uuid": "5489dd11-0d00-381f-b4f4-fc8df993abbb"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (nearr quarters) (obj25)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway (near your quarters)",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "708a3581-1f06-3812-a57b-4dcb3abf77b3",
+                "macro_uuid": "7a7a0b5a-5099-3990-80a3-593ab18275f3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (west end)",
+                        "node": "Hallway (near your quarters)",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "57035531-48c0-3dd5-b1b2-2381b7a414e3",
+                "macro_uuid": "d3c0b85d-b2b7-3b38-9b86-a7cda41fb3fd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Your Quarters",
+                "dst_requested": "r quarters (obj22)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "monastery chapel (obj20)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Monastery Chapel",
+                        "node": "Main Hall",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Main Hall",
+                        "node": "Cloister Walkway",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Cloister Walkway",
+                        "node": "Monastery Gardens",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Monastery Gardens",
+                        "node": "Hallway (west end)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (west end)",
+                        "node": "Hallway (near your quarters)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Your Quarters",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "ade08c4c-ab55-3e89-bdd6-afcd3ddb8a0c",
+                "macro_uuid": "ff9cf922-a22a-3664-a823-1027f4532136"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway (near your quarters)",
+                "src_requested": "hway (nearr quarters) (obj25)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (west end) (obj28)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Hallway (west end)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f4d8127c-6641-37d5-b0cf-d2072e962663",
+                "macro_uuid": "34821561-82ce-387a-ac0b-ddad38fdb571"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "hway (west end) (obj28)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Quarters",
+                        "node": "Hallway (near your quarters)",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Hallway (near your quarters)",
+                        "node": "Hallway (west end)",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "dce8cdd6-7fd1-353d-be32-b39283f7c9e6",
+                "macro_uuid": "90c0f0d3-7cde-34e1-8ecc-f4c1eec634b7"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.5
+    }
+}

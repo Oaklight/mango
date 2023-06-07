@@ -1,0 +1,1349 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 5,
+        "total_num": 15,
+        "accuracy": 0.3333333333333333,
+        "collection": {
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-18-50_951.json": {
+                "verify_result": true,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Outside Supply Tent",
+                "dst_requested": "outside supply tent (obj68)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside supply tent (obj68)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f3e1920f-5624-3160-9789-2627a5f53f9c",
+                "macro_uuid": "c9f3e7c7-ef47-3a28-b395-7f9270fbe436"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-17-55_520.json": {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "0bb779b6-46d7-39d1-9e23-1af0bcde1333",
+                "macro_uuid": "cffe5366-a0b8-3c97-8827-bb6a1eb7dcbd"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-17-58_085.json": {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "23216c16-991c-36f1-9cdb-b04539a47c12",
+                "macro_uuid": "73dff13e-ad56-3a28-8051-d2e23f8a4079"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-19-12_307.json": {
+                "verify_result": false,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside tent (obj72)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "cbcb7ebe-fe1d-364b-b367-362f601e5e99",
+                "macro_uuid": "de3663a7-8247-3ad8-9890-792625f9412b"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-20-13_840.json": {
+                "verify_result": true,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c0a4c37a-7439-3c1a-9a81-f80f388157e3",
+                "macro_uuid": "d562c29f-bcfd-3daa-9d8b-cdb09430a99c"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-17-53_958.json": {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Supply Tent",
+                "dst_requested": "outside supply tent (obj68)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest"
+                    }
+                ],
+                "micro_uuid": "5ad816bb-5f7d-319d-8b10-fd83f2b9503b",
+                "macro_uuid": "a01818ae-bc6d-3370-962f-f2893d60602e"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-22-34_968.json": {
+                "verify_result": true,
+                "src_anno": "Outside Work Tent",
+                "src_requested": "outside work tent (obj64)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "work tent (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7a379c18-10f0-366b-bb0e-382da26ecc92",
+                "macro_uuid": "e86ff7c3-afab-34d8-b0eb-b1be4d2f4925"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-19-11_362.json": {
+                "verify_result": true,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "4f74078d-a3bf-37ac-b5de-861e25747d12",
+                "macro_uuid": "61531c27-0173-3bf3-af01-492c8ea452f9"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-17-49_874.json": {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Your Tent",
+                "dst_requested": "outside tent (obj72)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "79ce6947-abcf-3dea-9224-9262def93411",
+                "macro_uuid": "6f45d391-7d22-3f79-bb7c-4cb6dc689ddd"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-22-07_887.json": {
+                "verify_result": false,
+                "src_anno": "Supply Tent",
+                "src_requested": "supply tent (obj69)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside supply tent (obj68)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Northern Path",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "c3f99a09-e000-335f-afe7-4eb059c9329e",
+                "macro_uuid": "dc29eb3f-753d-39df-a4e8-71587e436427"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-17-55_124.json": {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "eeb81dad-ea54-331b-b349-6865235224f8",
+                "macro_uuid": "a102ea04-b91d-374c-844e-bbcc0a54e2cc"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-19-09_984.json": {
+                "verify_result": false,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside tent (obj72)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Work Tent",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "d41bd8ec-4402-3f0a-b00c-462cb1b72f67",
+                "macro_uuid": "8c11d232-8c07-3f5c-abd8-8d7579d9850c"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-20-11_959.json": {
+                "verify_result": true,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside work tent (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "57e1aec8-faa0-3a28-b716-34f2a297820a",
+                "macro_uuid": "b6b477f4-2ebe-38b5-9c28-9e38aa442976"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-21-36_133.json": {
+                "verify_result": false,
+                "src_anno": "Supply Tent",
+                "src_requested": "supply tent (obj69)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "10ceef18-6282-3fea-b98a-f7edad0bdceb",
+                "macro_uuid": "1411440c-5a7f-3e24-8d62-03eee8619850"
+            },
+            "../gpt-games-results/infidel/results//pathgen-gpt-3.5-turbo/results_2023-06-01-09-20-15_664.json": {
+                "verify_result": false,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "87707222-0e16-3fa1-9f11-7e83545897bc",
+                "macro_uuid": "cfaf2cee-2686-36ed-b8a1-ec0f698a0f32"
+            }
+        },
+        "random_guess_rate": 3.0227986691687255e-11,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Outside Supply Tent",
+                "dst_requested": "outside supply tent (obj68)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside supply tent (obj68)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f3e1920f-5624-3160-9789-2627a5f53f9c",
+                "macro_uuid": "c9f3e7c7-ef47-3a28-b395-7f9270fbe436"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "0bb779b6-46d7-39d1-9e23-1af0bcde1333",
+                "macro_uuid": "cffe5366-a0b8-3c97-8827-bb6a1eb7dcbd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "23216c16-991c-36f1-9cdb-b04539a47c12",
+                "macro_uuid": "73dff13e-ad56-3a28-8051-d2e23f8a4079"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside tent (obj72)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "cbcb7ebe-fe1d-364b-b367-362f601e5e99",
+                "macro_uuid": "de3663a7-8247-3ad8-9890-792625f9412b"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c0a4c37a-7439-3c1a-9a81-f80f388157e3",
+                "macro_uuid": "d562c29f-bcfd-3daa-9d8b-cdb09430a99c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Supply Tent",
+                "dst_requested": "outside supply tent (obj68)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest"
+                    }
+                ],
+                "micro_uuid": "5ad816bb-5f7d-319d-8b10-fd83f2b9503b",
+                "macro_uuid": "a01818ae-bc6d-3370-962f-f2893d60602e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Work Tent",
+                "src_requested": "outside work tent (obj64)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "work tent (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7a379c18-10f0-366b-bb0e-382da26ecc92",
+                "macro_uuid": "e86ff7c3-afab-34d8-b0eb-b1be4d2f4925"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "4f74078d-a3bf-37ac-b5de-861e25747d12",
+                "macro_uuid": "61531c27-0173-3bf3-af01-492c8ea452f9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Your Tent",
+                "dst_requested": "outside tent (obj72)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "79ce6947-abcf-3dea-9224-9262def93411",
+                "macro_uuid": "6f45d391-7d22-3f79-bb7c-4cb6dc689ddd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Supply Tent",
+                "src_requested": "supply tent (obj69)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside supply tent (obj68)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Northern Path",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "c3f99a09-e000-335f-afe7-4eb059c9329e",
+                "macro_uuid": "dc29eb3f-753d-39df-a4e8-71587e436427"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "eeb81dad-ea54-331b-b349-6865235224f8",
+                "macro_uuid": "a102ea04-b91d-374c-844e-bbcc0a54e2cc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside tent (obj72)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Work Tent",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "d41bd8ec-4402-3f0a-b00c-462cb1b72f67",
+                "macro_uuid": "8c11d232-8c07-3f5c-abd8-8d7579d9850c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside work tent (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "57e1aec8-faa0-3a28-b716-34f2a297820a",
+                "macro_uuid": "b6b477f4-2ebe-38b5-9c28-9e38aa442976"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Supply Tent",
+                "src_requested": "supply tent (obj69)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "10ceef18-6282-3fea-b98a-f7edad0bdceb",
+                "macro_uuid": "1411440c-5a7f-3e24-8d62-03eee8619850"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "87707222-0e16-3fa1-9f11-7e83545897bc",
+                "macro_uuid": "cfaf2cee-2686-36ed-b8a1-ec0f698a0f32"
+            }
+        ],
+        "correct_num_micro": 5,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.3333333333333333,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Outside Supply Tent",
+                "dst_requested": "outside supply tent (obj68)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside supply tent (obj68)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "f3e1920f-5624-3160-9789-2627a5f53f9c",
+                "macro_uuid": "c9f3e7c7-ef47-3a28-b395-7f9270fbe436"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "0bb779b6-46d7-39d1-9e23-1af0bcde1333",
+                "macro_uuid": "cffe5366-a0b8-3c97-8827-bb6a1eb7dcbd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "southeast"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "23216c16-991c-36f1-9cdb-b04539a47c12",
+                "macro_uuid": "73dff13e-ad56-3a28-8051-d2e23f8a4079"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside tent (obj72)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "cbcb7ebe-fe1d-364b-b367-362f601e5e99",
+                "macro_uuid": "de3663a7-8247-3ad8-9890-792625f9412b"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "c0a4c37a-7439-3c1a-9a81-f80f388157e3",
+                "macro_uuid": "d562c29f-bcfd-3daa-9d8b-cdb09430a99c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Supply Tent",
+                "dst_requested": "outside supply tent (obj68)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest"
+                    }
+                ],
+                "micro_uuid": "5ad816bb-5f7d-319d-8b10-fd83f2b9503b",
+                "macro_uuid": "a01818ae-bc6d-3370-962f-f2893d60602e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Work Tent",
+                "src_requested": "outside work tent (obj64)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "work tent (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "7a379c18-10f0-366b-bb0e-382da26ecc92",
+                "macro_uuid": "e86ff7c3-afab-34d8-b0eb-b1be4d2f4925"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Supply Tent",
+                "dst_requested": "supply tent (obj69)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "southwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "4f74078d-a3bf-37ac-b5de-861e25747d12",
+                "macro_uuid": "61531c27-0173-3bf3-af01-492c8ea452f9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Your Tent",
+                "dst_requested": "outside tent (obj72)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "79ce6947-abcf-3dea-9224-9262def93411",
+                "macro_uuid": "6f45d391-7d22-3f79-bb7c-4cb6dc689ddd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Supply Tent",
+                "src_requested": "supply tent (obj69)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside supply tent (obj68)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Supply Tent",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Northern Path",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "c3f99a09-e000-335f-afe7-4eb059c9329e",
+                "macro_uuid": "dc29eb3f-753d-39df-a4e8-71587e436427"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Tent",
+                "src_requested": "tent (obj71)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tent (obj71)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Your Tent",
+                        "node": "Outside Your Tent",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Northern Path",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Northern Path",
+                        "node": "Outside Work Tent",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "eeb81dad-ea54-331b-b349-6865235224f8",
+                "macro_uuid": "a102ea04-b91d-374c-844e-bbcc0a54e2cc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Your Tent",
+                "src_requested": "outside tent (obj72)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "outside tent (obj72)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Your Tent",
+                        "node": "Outside Work Tent",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "d41bd8ec-4402-3f0a-b00c-462cb1b72f67",
+                "macro_uuid": "8c11d232-8c07-3f5c-abd8-8d7579d9850c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Outside Work Tent",
+                "dst_requested": "outside work tent (obj64)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "outside work tent (obj64)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "57e1aec8-faa0-3a28-b716-34f2a297820a",
+                "macro_uuid": "b6b477f4-2ebe-38b5-9c28-9e38aa442976"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Supply Tent",
+                "src_requested": "supply tent (obj69)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "10ceef18-6282-3fea-b98a-f7edad0bdceb",
+                "macro_uuid": "1411440c-5a7f-3e24-8d62-03eee8619850"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Supply Tent",
+                "src_requested": "outside supply tent (obj68)",
+                "dst_anno": "Work Tent",
+                "dst_requested": "work tent (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "supply tent (obj69)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside Supply Tent",
+                        "node": "Supply Tent",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Supply Tent",
+                        "node": "Outside Work Tent",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Outside Work Tent",
+                        "node": "Work Tent",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "87707222-0e16-3fa1-9f11-7e83545897bc",
+                "macro_uuid": "cfaf2cee-2686-36ed-b8a1-ec0f698a0f32"
+            }
+        ],
+        "correct_num_macro": 5,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.3333333333333333
+    }
+}

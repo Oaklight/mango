@@ -1,0 +1,908 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 1,
+        "total_num": 10,
+        "accuracy": 0.1,
+        "collection": {
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-12_621.json": {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Cultural Complex",
+                "dst_requested": "cultural complex (obj34)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "fdf81890-f310-3c57-9762-4537d20c80a4",
+                "macro_uuid": "bada1954-8706-3707-90b8-1e54de5a1b91"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-43-33_674.json": {
+                "verify_result": false,
+                "src_anno": "Cultural Complex",
+                "src_requested": "cultural complex (obj34)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cultural complex (obj34)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "44d762a3-36a3-3fb4-b2ef-5456830dc8e4",
+                "macro_uuid": "7825e970-64d0-3684-a007-6411e2d1a7b3"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-17_451.json": {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "c9333388-f0ec-3818-8a0d-a6088d6b737c",
+                "macro_uuid": "1483c12a-a4a6-30f8-b9f5-b2356a9600ae"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-52_127.json": {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Cultural Complex",
+                "dst_requested": "cultural complex (obj34)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "tunnel",
+                        "action": "down",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "tunnel",
+                        "node": "Cultural Complex",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "d2a5e3e2-5198-3739-983f-64ab923dad21",
+                "macro_uuid": "0665b16f-edd0-38c2-b32b-7284af5501ba"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-35_983.json": {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "tunnel",
+                "dst_requested": "tunnel (obj31)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "5d31f9ba-0dc2-3b15-8cb2-218a233e43e1",
+                "macro_uuid": "137264d8-2545-39be-938d-77eceb0d1f5f"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-13_194.json": {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "28a05dff-4c81-36d2-af4c-505a39160f29",
+                "macro_uuid": "4a176778-c96a-3ca2-ad68-5d4517a63e6e"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-53_593.json": {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "8e2f1ace-9345-3c68-8ac0-5ba667cd5912",
+                "macro_uuid": "f6b6cf35-c15f-3c0d-a346-6704d48f5c27"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-42-55_895.json": {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Cultural Complex",
+                        "action": "northeast",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "5e431748-6780-3576-bcc1-13b3a80cddbd",
+                "macro_uuid": "2827f0d4-4770-3edc-8aad-45b772a4094a"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-44-10_754.json": {
+                "verify_result": true,
+                "src_anno": "Convention Center Lobby",
+                "src_requested": "convention center lobby (obj38)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "souvenir stand (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "230a37f3-dc01-3b22-95b4-fc2c01142726",
+                "macro_uuid": "1160c839-50a7-3d5d-b099-c39765ed37bf"
+            },
+            "../gpt-games-results/ztuu/results//pathgen-gpt-3.5-turbo/results_2023-06-01-08-43-30_694.json": {
+                "verify_result": false,
+                "src_anno": "Cultural Complex",
+                "src_requested": "cultural complex (obj34)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cultural complex (obj34)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "044075c7-76b7-3500-8662-2fde0e55b0cc",
+                "macro_uuid": "d9cef080-2114-32a4-8063-e30f6fd555f9"
+            }
+        },
+        "random_guess_rate": 0.0001558429975203178,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Cultural Complex",
+                "dst_requested": "cultural complex (obj34)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "fdf81890-f310-3c57-9762-4537d20c80a4",
+                "macro_uuid": "bada1954-8706-3707-90b8-1e54de5a1b91"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cultural Complex",
+                "src_requested": "cultural complex (obj34)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cultural complex (obj34)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "44d762a3-36a3-3fb4-b2ef-5456830dc8e4",
+                "macro_uuid": "7825e970-64d0-3684-a007-6411e2d1a7b3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "c9333388-f0ec-3818-8a0d-a6088d6b737c",
+                "macro_uuid": "1483c12a-a4a6-30f8-b9f5-b2356a9600ae"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Cultural Complex",
+                "dst_requested": "cultural complex (obj34)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "tunnel",
+                        "action": "down",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "tunnel",
+                        "node": "Cultural Complex",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "d2a5e3e2-5198-3739-983f-64ab923dad21",
+                "macro_uuid": "0665b16f-edd0-38c2-b32b-7284af5501ba"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "tunnel",
+                "dst_requested": "tunnel (obj31)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "5d31f9ba-0dc2-3b15-8cb2-218a233e43e1",
+                "macro_uuid": "137264d8-2545-39be-938d-77eceb0d1f5f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "28a05dff-4c81-36d2-af4c-505a39160f29",
+                "macro_uuid": "4a176778-c96a-3ca2-ad68-5d4517a63e6e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "8e2f1ace-9345-3c68-8ac0-5ba667cd5912",
+                "macro_uuid": "f6b6cf35-c15f-3c0d-a346-6704d48f5c27"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Cultural Complex",
+                        "action": "northeast",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "5e431748-6780-3576-bcc1-13b3a80cddbd",
+                "macro_uuid": "2827f0d4-4770-3edc-8aad-45b772a4094a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Convention Center Lobby",
+                "src_requested": "convention center lobby (obj38)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "souvenir stand (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "230a37f3-dc01-3b22-95b4-fc2c01142726",
+                "macro_uuid": "1160c839-50a7-3d5d-b099-c39765ed37bf"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cultural Complex",
+                "src_requested": "cultural complex (obj34)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cultural complex (obj34)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "044075c7-76b7-3500-8662-2fde0e55b0cc",
+                "macro_uuid": "d9cef080-2114-32a4-8063-e30f6fd555f9"
+            }
+        ],
+        "correct_num_micro": 1,
+        "total_num_micro": 10,
+        "accuracy_micro": 0.1,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Cultural Complex",
+                "dst_requested": "cultural complex (obj34)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "fdf81890-f310-3c57-9762-4537d20c80a4",
+                "macro_uuid": "bada1954-8706-3707-90b8-1e54de5a1b91"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cultural Complex",
+                "src_requested": "cultural complex (obj34)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cultural complex (obj34)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "44d762a3-36a3-3fb4-b2ef-5456830dc8e4",
+                "macro_uuid": "7825e970-64d0-3684-a007-6411e2d1a7b3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "c9333388-f0ec-3818-8a0d-a6088d6b737c",
+                "macro_uuid": "1483c12a-a4a6-30f8-b9f5-b2356a9600ae"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Cultural Complex",
+                "dst_requested": "cultural complex (obj34)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "tunnel",
+                        "action": "down",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "tunnel",
+                        "node": "Cultural Complex",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "d2a5e3e2-5198-3739-983f-64ab923dad21",
+                "macro_uuid": "0665b16f-edd0-38c2-b32b-7284af5501ba"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "tunnel",
+                "dst_requested": "tunnel (obj31)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "stop_node_code": null,
+                "stop_step": -3,
+                "path_checked": [],
+                "micro_uuid": "5d31f9ba-0dc2-3b15-8cb2-218a233e43e1",
+                "macro_uuid": "137264d8-2545-39be-938d-77eceb0d1f5f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the entrance of tunnel",
+                "src_requested": "new excavation (obj26)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "tunnel (obj31)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "28a05dff-4c81-36d2-af4c-505a39160f29",
+                "macro_uuid": "4a176778-c96a-3ca2-ad68-5d4517a63e6e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Tunnel",
+                        "action": "northeast",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Tunnel",
+                        "node": "Cultural Complex",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "8e2f1ace-9345-3c68-8ac0-5ba667cd5912",
+                "macro_uuid": "f6b6cf35-c15f-3c0d-a346-6704d48f5c27"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "tunnel",
+                "src_requested": "tunnel (obj31)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: 1st prev_node != src_node",
+                "stop_node_code": null,
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the entrance of tunnel",
+                        "node": "Cultural Complex",
+                        "action": "northeast",
+                        "msg": "ERROR: 1st prev_node != src_node"
+                    },
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "5e431748-6780-3576-bcc1-13b3a80cddbd",
+                "macro_uuid": "2827f0d4-4770-3edc-8aad-45b772a4094a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Convention Center Lobby",
+                "src_requested": "convention center lobby (obj38)",
+                "dst_anno": "Souvenir Stand",
+                "dst_requested": "souvenir stand (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "souvenir stand (obj53)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Convention Center Lobby",
+                        "node": "Souvenir Stand",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "230a37f3-dc01-3b22-95b4-fc2c01142726",
+                "macro_uuid": "1160c839-50a7-3d5d-b099-c39765ed37bf"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cultural Complex",
+                "src_requested": "cultural complex (obj34)",
+                "dst_anno": "Convention Center Lobby",
+                "dst_requested": "convention center lobby (obj38)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "cultural complex (obj34)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cultural Complex",
+                        "node": "Convention Center Lobby",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "044075c7-76b7-3500-8662-2fde0e55b0cc",
+                "macro_uuid": "d9cef080-2114-32a4-8063-e30f6fd555f9"
+            }
+        ],
+        "correct_num_macro": 1,
+        "total_num_macro": 10,
+        "accuracy_macro": 0.1
+    }
+}

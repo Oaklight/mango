@@ -1,0 +1,314 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 3,
+        "total_num": 6,
+        "accuracy": 0.5,
+        "collection": {
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-03-12-21_027.json": {
+                "verify_result": true,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get up",
+                    "west"
+                ],
+                "dst_gpt": "hallway (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9d9b735f-ece0-31f7-9167-0c6f4c228e4c",
+                "macro_uuid": "e73d0f15-d14a-3b66-91d3-e8b806bd4eab"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-03-13-40_552.json": {
+                "verify_result": true,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj50)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "'s quarters (obj115)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "74340bca-7b23-3271-a08d-c39b09d88ac1",
+                "macro_uuid": "a0da9aae-2d48-3b6c-9218-8308876f6122"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-03-11-27_502.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "quarters",
+                "dst_requested": "quarters (obj17)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "f3f28ed8-6a32-376d-a2c3-f7cde14edf5c",
+                "macro_uuid": "b5040e96-c629-399d-8b6f-c7388f5024af"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-03-10-59_314.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "bed (obj128)",
+                "verify_msg": "wrong path, fail to arrive at dst: bed (obj128), hallway (obj50)",
+                "micro_uuid": "a15d4676-8d1e-38c3-b41a-7ca193ef55ea",
+                "macro_uuid": "3c3780e1-aa07-31cc-bbf6-00b875c81799"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-03-11-03_002.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "bed (obj128)",
+                "verify_msg": "wrong path, fail to arrive at dst: bed (obj128), 's quarters (obj115)",
+                "micro_uuid": "6853fc2f-1f22-3958-b310-5a7250a4d6d4",
+                "macro_uuid": "d88356ba-cb2b-3fdc-a49b-d6f403ecc8c4"
+            },
+            "../gpt-games-results/sorcerer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-03-12-26_330.json": {
+                "verify_result": true,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "get up",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "'s quarters (obj115)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "09475d23-0a92-3061-9855-83338ebc1230",
+                "macro_uuid": "39e25655-4464-3f16-85fb-346a8cf9d71c"
+            }
+        },
+        "random_guess_rate": 3.6132522278174166e-12,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get up",
+                    "west"
+                ],
+                "dst_gpt": "hallway (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9d9b735f-ece0-31f7-9167-0c6f4c228e4c",
+                "macro_uuid": "e73d0f15-d14a-3b66-91d3-e8b806bd4eab"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj50)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "'s quarters (obj115)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "74340bca-7b23-3271-a08d-c39b09d88ac1",
+                "macro_uuid": "a0da9aae-2d48-3b6c-9218-8308876f6122"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "quarters",
+                "dst_requested": "quarters (obj17)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "f3f28ed8-6a32-376d-a2c3-f7cde14edf5c",
+                "macro_uuid": "b5040e96-c629-399d-8b6f-c7388f5024af"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "bed (obj128)",
+                "verify_msg": "wrong path, fail to arrive at dst: bed (obj128), hallway (obj50)",
+                "micro_uuid": "a15d4676-8d1e-38c3-b41a-7ca193ef55ea",
+                "macro_uuid": "3c3780e1-aa07-31cc-bbf6-00b875c81799"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "bed (obj128)",
+                "verify_msg": "wrong path, fail to arrive at dst: bed (obj128), 's quarters (obj115)",
+                "micro_uuid": "6853fc2f-1f22-3958-b310-5a7250a4d6d4",
+                "macro_uuid": "d88356ba-cb2b-3fdc-a49b-d6f403ecc8c4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "get up",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "'s quarters (obj115)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "09475d23-0a92-3061-9855-83338ebc1230",
+                "macro_uuid": "39e25655-4464-3f16-85fb-346a8cf9d71c"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get up",
+                    "west"
+                ],
+                "dst_gpt": "hallway (obj50)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9d9b735f-ece0-31f7-9167-0c6f4c228e4c",
+                "macro_uuid": "e73d0f15-d14a-3b66-91d3-e8b806bd4eab"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway",
+                "src_requested": "hallway (obj50)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "'s quarters (obj115)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "74340bca-7b23-3271-a08d-c39b09d88ac1",
+                "macro_uuid": "a0da9aae-2d48-3b6c-9218-8308876f6122"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "quarters",
+                "dst_requested": "quarters (obj17)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "bad format",
+                "micro_uuid": "f3f28ed8-6a32-376d-a2c3-f7cde14edf5c",
+                "macro_uuid": "b5040e96-c629-399d-8b6f-c7388f5024af"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Hallway",
+                "dst_requested": "hallway (obj50)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "bed (obj128)",
+                "verify_msg": "wrong path, fail to arrive at dst: bed (obj128), hallway (obj50)",
+                "micro_uuid": "a15d4676-8d1e-38c3-b41a-7ca193ef55ea",
+                "macro_uuid": "3c3780e1-aa07-31cc-bbf6-00b875c81799"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters, in the bed",
+                "src_requested": "bed (obj128)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "bed (obj128)",
+                "verify_msg": "wrong path, fail to arrive at dst: bed (obj128), 's quarters (obj115)",
+                "micro_uuid": "6853fc2f-1f22-3958-b310-5a7250a4d6d4",
+                "macro_uuid": "d88356ba-cb2b-3fdc-a49b-d6f403ecc8c4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "quarters",
+                "src_requested": "quarters (obj17)",
+                "dst_anno": "Belboz's Quarters",
+                "dst_requested": "'s quarters (obj115)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "get up",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "'s quarters (obj115)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "09475d23-0a92-3061-9855-83338ebc1230",
+                "macro_uuid": "39e25655-4464-3f16-85fb-346a8cf9d71c"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.5
+    }
+}
