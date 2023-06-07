@@ -1,0 +1,1553 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 4,
+        "total_num": 28,
+        "accuracy": 0.14285714285714285,
+        "collection": {
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-08_359.json": {
+                "verify_result": true,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest",
+                    "south"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d0e94cc2-18c2-3def-bf79-d880c7918556",
+                "macro_uuid": "dfd87b1a-6705-344e-ae89-7c7bc3efe0e6"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-11_058.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), inside cave (obj72)",
+                "micro_uuid": "532fc957-0ddf-3f89-b05c-9834d122f6d4",
+                "macro_uuid": "4abcd11b-7b63-39f2-b89e-0a88274e1e26"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-49-46_858.json": {
+                "verify_result": false,
+                "src_anno": "Cave Mouth",
+                "src_requested": "cave mouth (obj68)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave mouth (obj68), gorse bushes (obj89)",
+                "micro_uuid": "507f3c09-4f39-3f6b-af1a-20e7ae9e7007",
+                "macro_uuid": "7ba16aef-19da-3157-9ce2-604fdf5cf578"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-12_566.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "south",
+                    "southeast"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), cave mouth (obj68)",
+                "micro_uuid": "cc940951-06fd-341c-9e27-b4e62a87c9ed",
+                "macro_uuid": "5f49850d-87ef-33fa-a57a-057d27b82307"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-49_885.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), crest of hill (obj62)",
+                "micro_uuid": "ddafc3d3-b712-387e-bf82-e2640351a589",
+                "macro_uuid": "1c8d6d9e-36ad-3f96-a307-0e2c57e97e3d"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-27_523.json": {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), crest of hill (obj62)",
+                "micro_uuid": "e6accc55-39a3-32e5-afc3-756f2cf74278",
+                "macro_uuid": "871dbbb6-0683-31bc-a20d-8aa74c12a286"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-12_180.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), edge of chasm (obj59)",
+                "micro_uuid": "1e2ba1e9-cdd6-3daf-9190-f41fc4a9b592",
+                "macro_uuid": "3accf991-78d5-397f-a276-1fa6c1a5579f"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-26_278.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Grasslands, near Hut",
+                "dst_requested": "grasslands, near hut (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), grasslands, near hut (obj53)",
+                "micro_uuid": "7c8ef123-6e8b-3f3b-854d-4fee54ade932",
+                "macro_uuid": "81ce1e00-8eca-3d7f-a3ba-ea698dd8617f"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-04-10-51-44_340.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), edge of chasm (obj59)",
+                "micro_uuid": "0ac7c38a-5d9b-3359-9610-d87b953e041d",
+                "macro_uuid": "c1441997-d2ea-3153-b922-373abdd89fa1"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-45_607.json": {
+                "verify_result": false,
+                "src_anno": "Gorse Bushes",
+                "src_requested": "gorse bushes (obj89)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "down"
+                ],
+                "dst_gpt": "gorse bushes (obj89)",
+                "verify_msg": "wrong path, fail to arrive at dst: gorse bushes (obj89), inside cave (obj72)",
+                "micro_uuid": "520dc43f-8b01-3d6a-87be-07b7e32307ea",
+                "macro_uuid": "e25b7ca5-11a7-36e1-8448-766d0903dddb"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-09_880.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "northwest"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), gorse bushes (obj89)",
+                "micro_uuid": "da15175b-d4a6-3ebd-8684-55f848761ed6",
+                "macro_uuid": "f18db6d3-3fcc-371c-ac58-71da1e629d86"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-51_365.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "southeast"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), cave mouth (obj68)",
+                "micro_uuid": "abf8b023-7760-3d5e-a7ef-3505de1133e5",
+                "macro_uuid": "134fc0e0-18fc-30c6-a356-78505144c25f"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-32_703.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "north",
+                    "south",
+                    "southeast",
+                    "down"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), inside cave (obj72)",
+                "micro_uuid": "301d4b64-3648-3c0c-81b8-fc42165995ff",
+                "macro_uuid": "fbfae111-255e-3b13-970f-d6279921a44a"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-49-57_787.json": {
+                "verify_result": false,
+                "src_anno": "Cave Mouth",
+                "src_requested": "cave mouth (obj68)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "open iron door",
+                    "take featureless white cube",
+                    "write \"cave\" on featureless white cube",
+                    "put gold coin on right pan",
+                    "take bronze coin from left pan",
+                    "gnusto crumpled scroll",
+                    "take featureless white cube",
+                    "open iron door"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave mouth (obj68), inside cave (obj72)",
+                "micro_uuid": "e27784bf-ec26-3a75-ba69-65ceba3e68e0",
+                "macro_uuid": "f828a33b-d9ed-359c-807c-525856ec9257"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-13_007.json": {
+                "verify_result": true,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest",
+                    "south",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inside cave (obj72)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "82ff06d7-9365-380b-89cc-747ab8e4d889",
+                "macro_uuid": "241ec4cf-75c4-3cd8-af7b-5c3bce1b1cb9"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-47_696.json": {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), gorse bushes (obj89)",
+                "micro_uuid": "d3263ed8-5c13-37b1-836d-273583f5a11d",
+                "macro_uuid": "80c12fcb-c11f-3e02-b69a-6f0c91166875"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-09_018.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), cave mouth (obj68)",
+                "micro_uuid": "ec9bde28-3a7a-3802-88bf-cc3cceb3c2ad",
+                "macro_uuid": "34111cf3-c7e4-3efd-b1b3-e657d16112ef"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-27_161.json": {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "crest of hill (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: crest of hill (obj62), cave mouth (obj68)",
+                "micro_uuid": "5c7f0a02-1a46-3f43-ad99-dad771bd207f",
+                "macro_uuid": "5b8e5862-2837-3ef6-ba0c-bdf1338e7188"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-27_279.json": {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "out",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "14c5b206-4cab-346b-aaf0-cc7eadfe14fe",
+                "macro_uuid": "802b8be8-71b8-36ce-8ecb-bd8c293710b8"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-09_228.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), crest of hill (obj62)",
+                "micro_uuid": "ab02646c-32ba-3cf0-a8e6-ba7e8e4b63c0",
+                "macro_uuid": "11a3b55d-98a4-3aac-b6ae-5e322260410f"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-34_503.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), inside cave (obj72)",
+                "micro_uuid": "6a10edca-6c08-394e-a429-2830d876430f",
+                "macro_uuid": "dfcca93c-f3be-34b7-aaa9-49e8e64e27e3"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-14_607.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "mount horse",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), crest of hill (obj62)",
+                "micro_uuid": "a16cfb62-de73-3d8b-9289-d7a98bbe647a",
+                "macro_uuid": "cc000f71-cd65-3650-9914-a86d158473a4"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-06_615.json": {
+                "verify_result": false,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "track, outside temple (obj113)",
+                "verify_msg": "wrong path, fail to arrive at dst: track, outside temple (obj113), gorse bushes (obj89)",
+                "micro_uuid": "b5e27914-562d-37f1-90c0-2f732bf40796",
+                "macro_uuid": "30d94bca-ae83-3f7d-892b-775de5feb11a"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-33_012.json": {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "mount horse",
+                    "east"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), gorse bushes (obj89)",
+                "micro_uuid": "4f6b68de-e05e-38d3-8fa9-8e81829d5912",
+                "macro_uuid": "13fdfa7e-168c-325f-a39b-d32a06c27784"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-27_896.json": {
+                "verify_result": true,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "search furniture",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "65c66bba-e42f-39d8-ad66-c7040f4965ef",
+                "macro_uuid": "fc561ac6-f59f-3612-b37c-6abcab0728b8"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-51-44_984.json": {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), edge of chasm (obj59)",
+                "micro_uuid": "43885f6e-b57a-32df-b7b6-9fe4d2909fef",
+                "macro_uuid": "c0661f88-172e-3a92-88dd-d77ff092fa08"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-50-47_702.json": {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "crest of hill (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: crest of hill (obj62), inside cave (obj72)",
+                "micro_uuid": "c9f06aa3-14e3-3dab-96cf-2063fc54afc0",
+                "macro_uuid": "3f2b3630-5475-3882-b1e1-09d6435c3782"
+            },
+            "../gpt-games-results/balances/results//pathgen-gpt-3.5-turbo/results_2023-06-03-20-52-31_682.json": {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), gorse bushes (obj89)",
+                "micro_uuid": "5e92c21b-dc3a-37ac-8059-2c4c7e71078d",
+                "macro_uuid": "004c4b7f-9107-3743-acf5-ba446c002bf5"
+            }
+        },
+        "random_guess_rate": 0.0002072023516579046,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest",
+                    "south"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d0e94cc2-18c2-3def-bf79-d880c7918556",
+                "macro_uuid": "dfd87b1a-6705-344e-ae89-7c7bc3efe0e6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), inside cave (obj72)",
+                "micro_uuid": "532fc957-0ddf-3f89-b05c-9834d122f6d4",
+                "macro_uuid": "4abcd11b-7b63-39f2-b89e-0a88274e1e26"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cave Mouth",
+                "src_requested": "cave mouth (obj68)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave mouth (obj68), gorse bushes (obj89)",
+                "micro_uuid": "507f3c09-4f39-3f6b-af1a-20e7ae9e7007",
+                "macro_uuid": "7ba16aef-19da-3157-9ce2-604fdf5cf578"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "south",
+                    "southeast"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), cave mouth (obj68)",
+                "micro_uuid": "cc940951-06fd-341c-9e27-b4e62a87c9ed",
+                "macro_uuid": "5f49850d-87ef-33fa-a57a-057d27b82307"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), crest of hill (obj62)",
+                "micro_uuid": "ddafc3d3-b712-387e-bf82-e2640351a589",
+                "macro_uuid": "1c8d6d9e-36ad-3f96-a307-0e2c57e97e3d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), crest of hill (obj62)",
+                "micro_uuid": "e6accc55-39a3-32e5-afc3-756f2cf74278",
+                "macro_uuid": "871dbbb6-0683-31bc-a20d-8aa74c12a286"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), edge of chasm (obj59)",
+                "micro_uuid": "1e2ba1e9-cdd6-3daf-9190-f41fc4a9b592",
+                "macro_uuid": "3accf991-78d5-397f-a276-1fa6c1a5579f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Grasslands, near Hut",
+                "dst_requested": "grasslands, near hut (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), grasslands, near hut (obj53)",
+                "micro_uuid": "7c8ef123-6e8b-3f3b-854d-4fee54ade932",
+                "macro_uuid": "81ce1e00-8eca-3d7f-a3ba-ea698dd8617f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), edge of chasm (obj59)",
+                "micro_uuid": "0ac7c38a-5d9b-3359-9610-d87b953e041d",
+                "macro_uuid": "c1441997-d2ea-3153-b922-373abdd89fa1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Gorse Bushes",
+                "src_requested": "gorse bushes (obj89)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "down"
+                ],
+                "dst_gpt": "gorse bushes (obj89)",
+                "verify_msg": "wrong path, fail to arrive at dst: gorse bushes (obj89), inside cave (obj72)",
+                "micro_uuid": "520dc43f-8b01-3d6a-87be-07b7e32307ea",
+                "macro_uuid": "e25b7ca5-11a7-36e1-8448-766d0903dddb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "northwest"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), gorse bushes (obj89)",
+                "micro_uuid": "da15175b-d4a6-3ebd-8684-55f848761ed6",
+                "macro_uuid": "f18db6d3-3fcc-371c-ac58-71da1e629d86"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "southeast"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), cave mouth (obj68)",
+                "micro_uuid": "abf8b023-7760-3d5e-a7ef-3505de1133e5",
+                "macro_uuid": "134fc0e0-18fc-30c6-a356-78505144c25f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "north",
+                    "south",
+                    "southeast",
+                    "down"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), inside cave (obj72)",
+                "micro_uuid": "301d4b64-3648-3c0c-81b8-fc42165995ff",
+                "macro_uuid": "fbfae111-255e-3b13-970f-d6279921a44a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cave Mouth",
+                "src_requested": "cave mouth (obj68)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "open iron door",
+                    "take featureless white cube",
+                    "write \"cave\" on featureless white cube",
+                    "put gold coin on right pan",
+                    "take bronze coin from left pan",
+                    "gnusto crumpled scroll",
+                    "take featureless white cube",
+                    "open iron door"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave mouth (obj68), inside cave (obj72)",
+                "micro_uuid": "e27784bf-ec26-3a75-ba69-65ceba3e68e0",
+                "macro_uuid": "f828a33b-d9ed-359c-807c-525856ec9257"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest",
+                    "south",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inside cave (obj72)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "82ff06d7-9365-380b-89cc-747ab8e4d889",
+                "macro_uuid": "241ec4cf-75c4-3cd8-af7b-5c3bce1b1cb9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), gorse bushes (obj89)",
+                "micro_uuid": "d3263ed8-5c13-37b1-836d-273583f5a11d",
+                "macro_uuid": "80c12fcb-c11f-3e02-b69a-6f0c91166875"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), cave mouth (obj68)",
+                "micro_uuid": "ec9bde28-3a7a-3802-88bf-cc3cceb3c2ad",
+                "macro_uuid": "34111cf3-c7e4-3efd-b1b3-e657d16112ef"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "crest of hill (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: crest of hill (obj62), cave mouth (obj68)",
+                "micro_uuid": "5c7f0a02-1a46-3f43-ad99-dad771bd207f",
+                "macro_uuid": "5b8e5862-2837-3ef6-ba0c-bdf1338e7188"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "out",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "14c5b206-4cab-346b-aaf0-cc7eadfe14fe",
+                "macro_uuid": "802b8be8-71b8-36ce-8ecb-bd8c293710b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), crest of hill (obj62)",
+                "micro_uuid": "ab02646c-32ba-3cf0-a8e6-ba7e8e4b63c0",
+                "macro_uuid": "11a3b55d-98a4-3aac-b6ae-5e322260410f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), inside cave (obj72)",
+                "micro_uuid": "6a10edca-6c08-394e-a429-2830d876430f",
+                "macro_uuid": "dfcca93c-f3be-34b7-aaa9-49e8e64e27e3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "mount horse",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), crest of hill (obj62)",
+                "micro_uuid": "a16cfb62-de73-3d8b-9289-d7a98bbe647a",
+                "macro_uuid": "cc000f71-cd65-3650-9914-a86d158473a4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "track, outside temple (obj113)",
+                "verify_msg": "wrong path, fail to arrive at dst: track, outside temple (obj113), gorse bushes (obj89)",
+                "micro_uuid": "b5e27914-562d-37f1-90c0-2f732bf40796",
+                "macro_uuid": "30d94bca-ae83-3f7d-892b-775de5feb11a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "mount horse",
+                    "east"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), gorse bushes (obj89)",
+                "micro_uuid": "4f6b68de-e05e-38d3-8fa9-8e81829d5912",
+                "macro_uuid": "13fdfa7e-168c-325f-a39b-d32a06c27784"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "search furniture",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "65c66bba-e42f-39d8-ad66-c7040f4965ef",
+                "macro_uuid": "fc561ac6-f59f-3612-b37c-6abcab0728b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), edge of chasm (obj59)",
+                "micro_uuid": "43885f6e-b57a-32df-b7b6-9fe4d2909fef",
+                "macro_uuid": "c0661f88-172e-3a92-88dd-d77ff092fa08"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "crest of hill (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: crest of hill (obj62), inside cave (obj72)",
+                "micro_uuid": "c9f06aa3-14e3-3dab-96cf-2063fc54afc0",
+                "macro_uuid": "3f2b3630-5475-3882-b1e1-09d6435c3782"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), gorse bushes (obj89)",
+                "micro_uuid": "5e92c21b-dc3a-37ac-8059-2c4c7e71078d",
+                "macro_uuid": "004c4b7f-9107-3743-acf5-ba446c002bf5"
+            }
+        ],
+        "correct_num_micro": 4,
+        "total_num_micro": 28,
+        "accuracy_micro": 0.14285714285714285,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "northwest",
+                    "south"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d0e94cc2-18c2-3def-bf79-d880c7918556",
+                "macro_uuid": "dfd87b1a-6705-344e-ae89-7c7bc3efe0e6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), inside cave (obj72)",
+                "micro_uuid": "532fc957-0ddf-3f89-b05c-9834d122f6d4",
+                "macro_uuid": "4abcd11b-7b63-39f2-b89e-0a88274e1e26"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cave Mouth",
+                "src_requested": "cave mouth (obj68)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave mouth (obj68), gorse bushes (obj89)",
+                "micro_uuid": "507f3c09-4f39-3f6b-af1a-20e7ae9e7007",
+                "macro_uuid": "7ba16aef-19da-3157-9ce2-604fdf5cf578"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "south",
+                    "southeast"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), cave mouth (obj68)",
+                "micro_uuid": "cc940951-06fd-341c-9e27-b4e62a87c9ed",
+                "macro_uuid": "5f49850d-87ef-33fa-a57a-057d27b82307"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), crest of hill (obj62)",
+                "micro_uuid": "ddafc3d3-b712-387e-bf82-e2640351a589",
+                "macro_uuid": "1c8d6d9e-36ad-3f96-a307-0e2c57e97e3d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), crest of hill (obj62)",
+                "micro_uuid": "e6accc55-39a3-32e5-afc3-756f2cf74278",
+                "macro_uuid": "871dbbb6-0683-31bc-a20d-8aa74c12a286"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), edge of chasm (obj59)",
+                "micro_uuid": "1e2ba1e9-cdd6-3daf-9190-f41fc4a9b592",
+                "macro_uuid": "3accf991-78d5-397f-a276-1fa6c1a5579f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Grasslands, near Hut",
+                "dst_requested": "grasslands, near hut (obj53)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), grasslands, near hut (obj53)",
+                "micro_uuid": "7c8ef123-6e8b-3f3b-854d-4fee54ade932",
+                "macro_uuid": "81ce1e00-8eca-3d7f-a3ba-ea698dd8617f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), edge of chasm (obj59)",
+                "micro_uuid": "0ac7c38a-5d9b-3359-9610-d87b953e041d",
+                "macro_uuid": "c1441997-d2ea-3153-b922-373abdd89fa1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Gorse Bushes",
+                "src_requested": "gorse bushes (obj89)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "down"
+                ],
+                "dst_gpt": "gorse bushes (obj89)",
+                "verify_msg": "wrong path, fail to arrive at dst: gorse bushes (obj89), inside cave (obj72)",
+                "micro_uuid": "520dc43f-8b01-3d6a-87be-07b7e32307ea",
+                "macro_uuid": "e25b7ca5-11a7-36e1-8448-766d0903dddb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "northwest"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), gorse bushes (obj89)",
+                "micro_uuid": "da15175b-d4a6-3ebd-8684-55f848761ed6",
+                "macro_uuid": "f18db6d3-3fcc-371c-ac58-71da1e629d86"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "southeast"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), cave mouth (obj68)",
+                "micro_uuid": "abf8b023-7760-3d5e-a7ef-3505de1133e5",
+                "macro_uuid": "134fc0e0-18fc-30c6-a356-78505144c25f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "north",
+                    "south",
+                    "southeast",
+                    "down"
+                ],
+                "dst_gpt": "grasslands, near hut (obj53)",
+                "verify_msg": "wrong path, fail to arrive at dst: grasslands, near hut (obj53), inside cave (obj72)",
+                "micro_uuid": "301d4b64-3648-3c0c-81b8-fc42165995ff",
+                "macro_uuid": "fbfae111-255e-3b13-970f-d6279921a44a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cave Mouth",
+                "src_requested": "cave mouth (obj68)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "open iron door",
+                    "take featureless white cube",
+                    "write \"cave\" on featureless white cube",
+                    "put gold coin on right pan",
+                    "take bronze coin from left pan",
+                    "gnusto crumpled scroll",
+                    "take featureless white cube",
+                    "open iron door"
+                ],
+                "dst_gpt": "cave mouth (obj68)",
+                "verify_msg": "wrong path, fail to arrive at dst: cave mouth (obj68), inside cave (obj72)",
+                "micro_uuid": "e27784bf-ec26-3a75-ba69-65ceba3e68e0",
+                "macro_uuid": "f828a33b-d9ed-359c-807c-525856ec9257"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "northwest",
+                    "south",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "inside cave (obj72)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "82ff06d7-9365-380b-89cc-747ab8e4d889",
+                "macro_uuid": "241ec4cf-75c4-3cd8-af7b-5c3bce1b1cb9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), gorse bushes (obj89)",
+                "micro_uuid": "d3263ed8-5c13-37b1-836d-273583f5a11d",
+                "macro_uuid": "80c12fcb-c11f-3e02-b69a-6f0c91166875"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), cave mouth (obj68)",
+                "micro_uuid": "ec9bde28-3a7a-3802-88bf-cc3cceb3c2ad",
+                "macro_uuid": "34111cf3-c7e4-3efd-b1b3-e657d16112ef"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Cave Mouth",
+                "dst_requested": "cave mouth (obj68)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "crest of hill (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: crest of hill (obj62), cave mouth (obj68)",
+                "micro_uuid": "5c7f0a02-1a46-3f43-ad99-dad771bd207f",
+                "macro_uuid": "5b8e5862-2837-3ef6-ba0c-bdf1338e7188"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "out",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "14c5b206-4cab-346b-aaf0-cc7eadfe14fe",
+                "macro_uuid": "802b8be8-71b8-36ce-8ecb-bd8c293710b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), crest of hill (obj62)",
+                "micro_uuid": "ab02646c-32ba-3cf0-a8e6-ba7e8e4b63c0",
+                "macro_uuid": "11a3b55d-98a4-3aac-b6ae-5e322260410f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), inside cave (obj72)",
+                "micro_uuid": "6a10edca-6c08-394e-a429-2830d876430f",
+                "macro_uuid": "dfcca93c-f3be-34b7-aaa9-49e8e64e27e3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Crest of Hill",
+                "dst_requested": "crest of hill (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "mount horse",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), crest of hill (obj62)",
+                "micro_uuid": "a16cfb62-de73-3d8b-9289-d7a98bbe647a",
+                "macro_uuid": "cc000f71-cd65-3650-9914-a86d158473a4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Crest of Hill",
+                "src_requested": "crest of hill (obj62)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "track, outside temple (obj113)",
+                "verify_msg": "wrong path, fail to arrive at dst: track, outside temple (obj113), gorse bushes (obj89)",
+                "micro_uuid": "b5e27914-562d-37f1-90c0-2f732bf40796",
+                "macro_uuid": "30d94bca-ae83-3f7d-892b-775de5feb11a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "search furniture",
+                    "north",
+                    "north",
+                    "mount horse",
+                    "east"
+                ],
+                "dst_gpt": "edge of chasm (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: edge of chasm (obj59), gorse bushes (obj89)",
+                "micro_uuid": "4f6b68de-e05e-38d3-8fa9-8e81829d5912",
+                "macro_uuid": "13fdfa7e-168c-325f-a39b-d32a06c27784"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Grasslands, near Hut",
+                "src_requested": "grasslands, near hut (obj53)",
+                "dst_anno": "Pocket Valley",
+                "dst_requested": "pocket valley (obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "search furniture",
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "65c66bba-e42f-39d8-ad66-c7040f4965ef",
+                "macro_uuid": "fc561ac6-f59f-3612-b37c-6abcab0728b8"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pocket Valley",
+                "src_requested": "pocket valley (obj54)",
+                "dst_anno": "Edge of Chasm",
+                "dst_requested": "edge of chasm (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "pocket valley (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: pocket valley (obj54), edge of chasm (obj59)",
+                "micro_uuid": "43885f6e-b57a-32df-b7b6-9fe4d2909fef",
+                "macro_uuid": "c0661f88-172e-3a92-88dd-d77ff092fa08"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Edge of Chasm",
+                "src_requested": "edge of chasm (obj59)",
+                "dst_anno": "Inside Cave",
+                "dst_requested": "inside cave (obj72)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "crest of hill (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: crest of hill (obj62), inside cave (obj72)",
+                "micro_uuid": "c9f06aa3-14e3-3dab-96cf-2063fc54afc0",
+                "macro_uuid": "3f2b3630-5475-3882-b1e1-09d6435c3782"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Ramshackle Hut",
+                "src_requested": "ramshackle hut (obj49)",
+                "dst_anno": "Gorse Bushes",
+                "dst_requested": "gorse bushes (obj89)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "ramshackle hut (obj49)",
+                "verify_msg": "wrong path, fail to arrive at dst: ramshackle hut (obj49), gorse bushes (obj89)",
+                "micro_uuid": "5e92c21b-dc3a-37ac-8059-2c4c7e71078d",
+                "macro_uuid": "004c4b7f-9107-3743-acf5-ba446c002bf5"
+            }
+        ],
+        "correct_num_macro": 4,
+        "total_num_macro": 28,
+        "accuracy_macro": 0.14285714285714285
+    }
+}

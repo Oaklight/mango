@@ -1,0 +1,345 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 5,
+        "total_num": 7,
+        "accuracy": 0.7142857142857143,
+        "collection": {
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-03-48-31_465.json": {
+                "verify_result": true,
+                "src_anno": "Sitting Room (on the long soft thing)",
+                "src_requested": "(obj54)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "down",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1fdce30d-bd77-32b9-bafa-de2c469d148e",
+                "macro_uuid": "b63f8037-2075-3b5d-abac-3a8a2f431211"
+            },
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-03-48-26_127.json": {
+                "verify_result": true,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Sitting Room (on the long soft thing)",
+                "dst_requested": "(obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get on couch"
+                ],
+                "dst_gpt": "(obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d15257a7-14b4-3981-9b46-e725a11ed162",
+                "macro_uuid": "06753ec7-22b8-30d8-a320-c252e196de5c"
+            },
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-11-02-52_518.json": {
+                "verify_result": false,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get on couch",
+                    "north"
+                ],
+                "dst_gpt": "(obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj54), (obj60)",
+                "micro_uuid": "88fe95b5-27ff-3610-80f4-3965b326a903",
+                "macro_uuid": "e383d961-dc0f-34e7-9a5e-9672bcf173d6"
+            },
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-11-02-58_362.json": {
+                "verify_result": false,
+                "src_anno": "Food Room",
+                "src_requested": "(obj71)",
+                "dst_anno": "Sitting Room (on the long soft thing)",
+                "dst_requested": "(obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "get on couch"
+                ],
+                "dst_gpt": "(obj71)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj71), (obj54)",
+                "micro_uuid": "5b008b06-e533-36a9-aa6d-f4eaa777ab7a",
+                "macro_uuid": "543a7823-5335-3beb-91b3-43c9ed1bc0e3"
+            },
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-11-03-07_622.json": {
+                "verify_result": true,
+                "src_anno": "Sitting Room (on the long soft thing)",
+                "src_requested": "(obj54)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "down",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1fdce30d-bd77-32b9-bafa-de2c469d148e",
+                "macro_uuid": "b63f8037-2075-3b5d-abac-3a8a2f431211"
+            },
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-03-48-25_334.json": {
+                "verify_result": true,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Food Room",
+                "dst_requested": "(obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "(obj71)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d8fc1621-edf1-32cc-83d7-146831abc384",
+                "macro_uuid": "40ee372f-7d52-3d15-8806-1034004d5a61"
+            },
+            "../gpt-games-results/snacktime/results//pathgen-gpt-3.5-turbo/results_2023-05-31-03-48-27_063.json": {
+                "verify_result": true,
+                "src_anno": "Food Room",
+                "src_requested": "(obj71)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f548522b-66b1-37dd-9822-4a93f42b5b44",
+                "macro_uuid": "fe12031b-d549-3e21-b578-ddee722c88d3"
+            }
+        },
+        "random_guess_rate": 0.0894427190999916,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Sitting Room (on the long soft thing)",
+                "src_requested": "(obj54)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "down",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1fdce30d-bd77-32b9-bafa-de2c469d148e",
+                "macro_uuid": "b63f8037-2075-3b5d-abac-3a8a2f431211"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Sitting Room (on the long soft thing)",
+                "dst_requested": "(obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get on couch"
+                ],
+                "dst_gpt": "(obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d15257a7-14b4-3981-9b46-e725a11ed162",
+                "macro_uuid": "06753ec7-22b8-30d8-a320-c252e196de5c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get on couch",
+                    "north"
+                ],
+                "dst_gpt": "(obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj54), (obj60)",
+                "micro_uuid": "88fe95b5-27ff-3610-80f4-3965b326a903",
+                "macro_uuid": "e383d961-dc0f-34e7-9a5e-9672bcf173d6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Food Room",
+                "src_requested": "(obj71)",
+                "dst_anno": "Sitting Room (on the long soft thing)",
+                "dst_requested": "(obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "get on couch"
+                ],
+                "dst_gpt": "(obj71)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj71), (obj54)",
+                "micro_uuid": "5b008b06-e533-36a9-aa6d-f4eaa777ab7a",
+                "macro_uuid": "543a7823-5335-3beb-91b3-43c9ed1bc0e3"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Food Room",
+                "dst_requested": "(obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "(obj71)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d8fc1621-edf1-32cc-83d7-146831abc384",
+                "macro_uuid": "40ee372f-7d52-3d15-8806-1034004d5a61"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Food Room",
+                "src_requested": "(obj71)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f548522b-66b1-37dd-9822-4a93f42b5b44",
+                "macro_uuid": "fe12031b-d549-3e21-b578-ddee722c88d3"
+            }
+        ],
+        "correct_num_micro": 4,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.6666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Sitting Room (on the long soft thing)",
+                "src_requested": "(obj54)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "down",
+                    "west",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1fdce30d-bd77-32b9-bafa-de2c469d148e",
+                "macro_uuid": "b63f8037-2075-3b5d-abac-3a8a2f431211"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Sitting Room (on the long soft thing)",
+                "dst_requested": "(obj54)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get on couch"
+                ],
+                "dst_gpt": "(obj54)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d15257a7-14b4-3981-9b46-e725a11ed162",
+                "macro_uuid": "06753ec7-22b8-30d8-a320-c252e196de5c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "get on couch",
+                    "north"
+                ],
+                "dst_gpt": "(obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj54), (obj60)",
+                "micro_uuid": "88fe95b5-27ff-3610-80f4-3965b326a903",
+                "macro_uuid": "e383d961-dc0f-34e7-9a5e-9672bcf173d6"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Food Room",
+                "src_requested": "(obj71)",
+                "dst_anno": "Sitting Room (on the long soft thing)",
+                "dst_requested": "(obj54)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "get on couch"
+                ],
+                "dst_gpt": "(obj71)",
+                "verify_msg": "wrong path, fail to arrive at dst: (obj71), (obj54)",
+                "micro_uuid": "5b008b06-e533-36a9-aa6d-f4eaa777ab7a",
+                "macro_uuid": "543a7823-5335-3beb-91b3-43c9ed1bc0e3"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Sitting Room",
+                "src_requested": "(obj48)",
+                "dst_anno": "Food Room",
+                "dst_requested": "(obj71)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "(obj71)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d8fc1621-edf1-32cc-83d7-146831abc384",
+                "macro_uuid": "40ee372f-7d52-3d15-8806-1034004d5a61"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Food Room",
+                "src_requested": "(obj71)",
+                "dst_anno": "Sleeping Room",
+                "dst_requested": "(obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f548522b-66b1-37dd-9822-4a93f42b5b44",
+                "macro_uuid": "fe12031b-d549-3e21-b578-ddee722c88d3"
+            }
+        ],
+        "correct_num_macro": 4,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.6666666666666666
+    }
+}
