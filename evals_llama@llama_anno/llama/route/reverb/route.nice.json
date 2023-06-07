@@ -1,0 +1,542 @@
+{
+    "path_gen_llama": {
+        "correct_num": 5,
+        "total_num": 10,
+        "accuracy": 0.5,
+        "collection": {
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_0.json": {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Pizza Parlor",
+                "dst_requested": "pizza parlor (obj30)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "southwest",
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: courthouse (obj56), pizza parlor (obj30)",
+                "micro_uuid": "6744cbdf-1b3f-3d15-afe9-c6adb471ccd9",
+                "macro_uuid": "19f26d8c-d618-3192-8090-542c3bd3c202"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_1.json": {
+                "verify_result": true,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Street, by Pizza Parlor",
+                "dst_requested": "street, by pizza parlor (obj36)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southwest",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "street, by pizza parlor (obj36)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b319f160-8a70-3707-9756-c93aff26ccd8",
+                "macro_uuid": "5202f311-7018-3859-8209-a4eb380d0818"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_40.json": {
+                "verify_result": true,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "634cd5a1-3664-3edb-b378-4ee1a61c137b",
+                "macro_uuid": "9cacc5cd-e927-3278-9e85-bfdd8d446d22"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_21.json": {
+                "verify_result": true,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "5d7c3c3b-53ec-3486-a4b7-ba0693f5f025",
+                "macro_uuid": "162ed7c5-61a9-3730-bb13-281c57845e33"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_39.json": {
+                "verify_result": true,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "bff40255-ac2b-3480-9617-32290a1ff125",
+                "macro_uuid": "259d189e-8f35-3421-bb43-a5aa999a085e"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_22.json": {
+                "verify_result": true,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "16a9e889-3a6c-3e1a-9743-8432b379c997",
+                "macro_uuid": "418333ac-9d05-32b2-be7c-5305f63fef48"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_20.json": {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Street, by Pizza Parlor",
+                "dst_requested": "street, by pizza parlor (obj36)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: courthouse (obj56), street, by pizza parlor (obj36)",
+                "micro_uuid": "9b64427b-e151-3941-a8a0-aa6041c1a337",
+                "macro_uuid": "f5988368-6462-3e1d-8da0-b27f5b15b55c"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_2.json": {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "southwest",
+                    "west"
+                ],
+                "dst_gpt": "pizza parlor (obj30)",
+                "verify_msg": "wrong path, fail to arrive at dst: pizza parlor (obj30), street, near courthouse (obj52)",
+                "micro_uuid": "191aed16-5f01-3163-8d6d-d33ebc303dff",
+                "macro_uuid": "f0d10372-37e7-30a4-a4b1-1cdfae9ae6c2"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_57.json": {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "wrong path, fail to arrive at dst: street, near courthouse (obj52), courthouse (obj56)",
+                "micro_uuid": "ffcc64f0-1267-3845-89f8-25807502188d",
+                "macro_uuid": "cfd929a5-3437-3536-97d0-7e1413ef472b"
+            },
+            "../mango-inhouse-llms/llama/reverb/results//path_gen_llama/pathgen_results_3.json": {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "behind the counter (obj29)",
+                "verify_msg": "wrong path, fail to arrive at dst: behind the counter (obj29), courthouse (obj56)",
+                "micro_uuid": "2cbc48e2-58a1-3951-8bdb-05a3abda7b1c",
+                "macro_uuid": "60f9f485-f239-354c-b3f7-8b91308aac43"
+            }
+        },
+        "random_guess_rate": 4.0753650210169263e-07,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Pizza Parlor",
+                "dst_requested": "pizza parlor (obj30)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "southwest",
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: courthouse (obj56), pizza parlor (obj30)",
+                "micro_uuid": "6744cbdf-1b3f-3d15-afe9-c6adb471ccd9",
+                "macro_uuid": "19f26d8c-d618-3192-8090-542c3bd3c202"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Street, by Pizza Parlor",
+                "dst_requested": "street, by pizza parlor (obj36)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southwest",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "street, by pizza parlor (obj36)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b319f160-8a70-3707-9756-c93aff26ccd8",
+                "macro_uuid": "5202f311-7018-3859-8209-a4eb380d0818"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "634cd5a1-3664-3edb-b378-4ee1a61c137b",
+                "macro_uuid": "9cacc5cd-e927-3278-9e85-bfdd8d446d22"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "5d7c3c3b-53ec-3486-a4b7-ba0693f5f025",
+                "macro_uuid": "162ed7c5-61a9-3730-bb13-281c57845e33"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "bff40255-ac2b-3480-9617-32290a1ff125",
+                "macro_uuid": "259d189e-8f35-3421-bb43-a5aa999a085e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "16a9e889-3a6c-3e1a-9743-8432b379c997",
+                "macro_uuid": "418333ac-9d05-32b2-be7c-5305f63fef48"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Street, by Pizza Parlor",
+                "dst_requested": "street, by pizza parlor (obj36)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: courthouse (obj56), street, by pizza parlor (obj36)",
+                "micro_uuid": "9b64427b-e151-3941-a8a0-aa6041c1a337",
+                "macro_uuid": "f5988368-6462-3e1d-8da0-b27f5b15b55c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "southwest",
+                    "west"
+                ],
+                "dst_gpt": "pizza parlor (obj30)",
+                "verify_msg": "wrong path, fail to arrive at dst: pizza parlor (obj30), street, near courthouse (obj52)",
+                "micro_uuid": "191aed16-5f01-3163-8d6d-d33ebc303dff",
+                "macro_uuid": "f0d10372-37e7-30a4-a4b1-1cdfae9ae6c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "wrong path, fail to arrive at dst: street, near courthouse (obj52), courthouse (obj56)",
+                "micro_uuid": "ffcc64f0-1267-3845-89f8-25807502188d",
+                "macro_uuid": "cfd929a5-3437-3536-97d0-7e1413ef472b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "behind the counter (obj29)",
+                "verify_msg": "wrong path, fail to arrive at dst: behind the counter (obj29), courthouse (obj56)",
+                "micro_uuid": "2cbc48e2-58a1-3951-8bdb-05a3abda7b1c",
+                "macro_uuid": "60f9f485-f239-354c-b3f7-8b91308aac43"
+            }
+        ],
+        "correct_num_micro": 5,
+        "total_num_micro": 10,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Pizza Parlor",
+                "dst_requested": "pizza parlor (obj30)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "southwest",
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: courthouse (obj56), pizza parlor (obj30)",
+                "micro_uuid": "6744cbdf-1b3f-3d15-afe9-c6adb471ccd9",
+                "macro_uuid": "19f26d8c-d618-3192-8090-542c3bd3c202"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Street, by Pizza Parlor",
+                "dst_requested": "street, by pizza parlor (obj36)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "southwest",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "street, by pizza parlor (obj36)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "b319f160-8a70-3707-9756-c93aff26ccd8",
+                "macro_uuid": "5202f311-7018-3859-8209-a4eb380d0818"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "634cd5a1-3664-3edb-b378-4ee1a61c137b",
+                "macro_uuid": "9cacc5cd-e927-3278-9e85-bfdd8d446d22"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "5d7c3c3b-53ec-3486-a4b7-ba0693f5f025",
+                "macro_uuid": "162ed7c5-61a9-3730-bb13-281c57845e33"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Street, by Pizza Parlor",
+                "src_requested": "street, by pizza parlor (obj36)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "bff40255-ac2b-3480-9617-32290a1ff125",
+                "macro_uuid": "259d189e-8f35-3421-bb43-a5aa999a085e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "16a9e889-3a6c-3e1a-9743-8432b379c997",
+                "macro_uuid": "418333ac-9d05-32b2-be7c-5305f63fef48"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Pizza Parlor",
+                "src_requested": "pizza parlor (obj30)",
+                "dst_anno": "Street, by Pizza Parlor",
+                "dst_requested": "street, by pizza parlor (obj36)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "courthouse (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: courthouse (obj56), street, by pizza parlor (obj36)",
+                "micro_uuid": "9b64427b-e151-3941-a8a0-aa6041c1a337",
+                "macro_uuid": "f5988368-6462-3e1d-8da0-b27f5b15b55c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Street, Near Courthouse",
+                "dst_requested": "street, near courthouse (obj52)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "southwest",
+                    "west"
+                ],
+                "dst_gpt": "pizza parlor (obj30)",
+                "verify_msg": "wrong path, fail to arrive at dst: pizza parlor (obj30), street, near courthouse (obj52)",
+                "micro_uuid": "191aed16-5f01-3163-8d6d-d33ebc303dff",
+                "macro_uuid": "f0d10372-37e7-30a4-a4b1-1cdfae9ae6c2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Street, Near Courthouse",
+                "src_requested": "street, near courthouse (obj52)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "street, near courthouse (obj52)",
+                "verify_msg": "wrong path, fail to arrive at dst: street, near courthouse (obj52), courthouse (obj56)",
+                "micro_uuid": "ffcc64f0-1267-3845-89f8-25807502188d",
+                "macro_uuid": "cfd929a5-3437-3536-97d0-7e1413ef472b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Behind the Counter",
+                "src_requested": "behind the counter (obj29)",
+                "dst_anno": "Courthouse",
+                "dst_requested": "courthouse (obj56)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "behind the counter (obj29)",
+                "verify_msg": "wrong path, fail to arrive at dst: behind the counter (obj29), courthouse (obj56)",
+                "micro_uuid": "2cbc48e2-58a1-3951-8bdb-05a3abda7b1c",
+                "macro_uuid": "60f9f485-f239-354c-b3f7-8b91308aac43"
+            }
+        ],
+        "correct_num_macro": 5,
+        "total_num_macro": 10,
+        "accuracy_macro": 0.5
+    }
+}
