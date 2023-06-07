@@ -1,0 +1,1334 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 2,
+        "total_num": 15,
+        "accuracy": 0.13333333333333333,
+        "collection": {
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-20-52_290.json": {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "edff5e4b-d2b8-386f-ab49-cb7ebb5530fc",
+                "macro_uuid": "33cf504c-6f9c-3d41-b40b-1c7ddfe514bb"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-24-00_004.json": {
+                "verify_result": false,
+                "src_anno": "Airing Cupboard",
+                "src_requested": "air cupboard (obj109)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "air cupboard (obj109)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8884e68e-8543-3580-aaad-5fcf0d45e166",
+                "macro_uuid": "91c19933-2ea2-3799-9f7b-ae504f14991c"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-17-20_558.json": {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Airing Cupboard",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "149f0e60-b4a2-3a27-9d1a-a5138df9b0d8",
+                "macro_uuid": "2b4f2d83-3cfd-3707-afad-3d68281e7c9a"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-22-28_511.json": {
+                "verify_result": false,
+                "src_anno": "Aunt Jemima's Lair",
+                "src_requested": "'s lair (obj107)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "pott room (obj112)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Airing Cupboard",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "6f69b580-ab6a-39e5-a77b-1fcebba505c3",
+                "macro_uuid": "4af65ff1-908d-3209-9c35-df111eea8361"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-17-09_995.json": {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Old Winery",
+                "dst_requested": "old winery (obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "af69cfea-2063-35fa-b9c6-80d60574fb95",
+                "macro_uuid": "9eb0b968-02b4-3495-bec0-269169cf6e61"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-21-07_778.json": {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "780b9fa2-d28f-33b7-b101-a461d82220c0",
+                "macro_uuid": "4d03e716-8f94-3e77-983b-4189e767ed83"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-22-33_354.json": {
+                "verify_result": true,
+                "src_anno": "Aunt Jemima's Lair",
+                "src_requested": "'s lair (obj107)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pott room (obj112)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "ed540e55-9d9a-3e7c-ad91-6c0131da8a7d",
+                "macro_uuid": "3cf12b63-36b1-30e6-b7e6-e3c69b8d85c0"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-17-27_007.json": {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "81f65367-479f-382c-a9dd-5bd156291631",
+                "macro_uuid": "9efe3912-281a-3d72-a85b-b3ee1a81670a"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-19-23_901.json": {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "ca460b0a-185d-35d6-9b8c-e8135b38126b",
+                "macro_uuid": "7797b331-5eb6-3a89-addb-4cafeb5b3269"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-17-15_643.json": {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b9c9825e-5c71-307b-b238-08ac9ccabbfb",
+                "macro_uuid": "06fd88a2-e575-3a7e-b132-a94312c84490"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-20-59_560.json": {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "0ab11253-b9f9-3f54-9d60-59d66da9db05",
+                "macro_uuid": "f6125551-048b-3dc1-8bf9-8ca6619355ea"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-19-15_786.json": {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "9f3f53cc-014d-30ad-aa7b-9e46768716a3",
+                "macro_uuid": "60039221-ddaa-3aa7-9c5d-7de7268c928b"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-19-09_447.json": {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "62253e66-eca0-3a29-9931-cd726a8522ab",
+                "macro_uuid": "ac272b84-3293-3aad-9448-0001a7f44a31"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-19-04_391.json": {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Old Winery",
+                "dst_requested": "old winery (obj103)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "b6094286-199a-3668-85d1-62ebc4887f12",
+                "macro_uuid": "92957ca8-a023-34f6-9694-5d83caf0f746"
+            },
+            "../gpt-games-results/curses/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-17-05_368.json": {
+                "verify_result": true,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Old Furniture",
+                "dst_requested": "old furniture (obj47)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e83f6c00-1668-3f4b-b19d-9f80a4a71b83",
+                "macro_uuid": "255bdcf0-bdec-314e-b100-e3bde55d5c8b"
+            }
+        },
+        "random_guess_rate": 6.691480771828573e-05,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "edff5e4b-d2b8-386f-ab49-cb7ebb5530fc",
+                "macro_uuid": "33cf504c-6f9c-3d41-b40b-1c7ddfe514bb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Airing Cupboard",
+                "src_requested": "air cupboard (obj109)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "air cupboard (obj109)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8884e68e-8543-3580-aaad-5fcf0d45e166",
+                "macro_uuid": "91c19933-2ea2-3799-9f7b-ae504f14991c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Airing Cupboard",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "149f0e60-b4a2-3a27-9d1a-a5138df9b0d8",
+                "macro_uuid": "2b4f2d83-3cfd-3707-afad-3d68281e7c9a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Aunt Jemima's Lair",
+                "src_requested": "'s lair (obj107)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "pott room (obj112)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Airing Cupboard",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "6f69b580-ab6a-39e5-a77b-1fcebba505c3",
+                "macro_uuid": "4af65ff1-908d-3209-9c35-df111eea8361"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Old Winery",
+                "dst_requested": "old winery (obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "af69cfea-2063-35fa-b9c6-80d60574fb95",
+                "macro_uuid": "9eb0b968-02b4-3495-bec0-269169cf6e61"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "780b9fa2-d28f-33b7-b101-a461d82220c0",
+                "macro_uuid": "4d03e716-8f94-3e77-983b-4189e767ed83"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Aunt Jemima's Lair",
+                "src_requested": "'s lair (obj107)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pott room (obj112)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "ed540e55-9d9a-3e7c-ad91-6c0131da8a7d",
+                "macro_uuid": "3cf12b63-36b1-30e6-b7e6-e3c69b8d85c0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "81f65367-479f-382c-a9dd-5bd156291631",
+                "macro_uuid": "9efe3912-281a-3d72-a85b-b3ee1a81670a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "ca460b0a-185d-35d6-9b8c-e8135b38126b",
+                "macro_uuid": "7797b331-5eb6-3a89-addb-4cafeb5b3269"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b9c9825e-5c71-307b-b238-08ac9ccabbfb",
+                "macro_uuid": "06fd88a2-e575-3a7e-b132-a94312c84490"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "0ab11253-b9f9-3f54-9d60-59d66da9db05",
+                "macro_uuid": "f6125551-048b-3dc1-8bf9-8ca6619355ea"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "9f3f53cc-014d-30ad-aa7b-9e46768716a3",
+                "macro_uuid": "60039221-ddaa-3aa7-9c5d-7de7268c928b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "62253e66-eca0-3a29-9931-cd726a8522ab",
+                "macro_uuid": "ac272b84-3293-3aad-9448-0001a7f44a31"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Old Winery",
+                "dst_requested": "old winery (obj103)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "b6094286-199a-3668-85d1-62ebc4887f12",
+                "macro_uuid": "92957ca8-a023-34f6-9694-5d83caf0f746"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Old Furniture",
+                "dst_requested": "old furniture (obj47)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e83f6c00-1668-3f4b-b19d-9f80a4a71b83",
+                "macro_uuid": "255bdcf0-bdec-314e-b100-e3bde55d5c8b"
+            }
+        ],
+        "correct_num_micro": 2,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.13333333333333333,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "edff5e4b-d2b8-386f-ab49-cb7ebb5530fc",
+                "macro_uuid": "33cf504c-6f9c-3d41-b40b-1c7ddfe514bb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Airing Cupboard",
+                "src_requested": "air cupboard (obj109)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "air cupboard (obj109)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Airing Cupboard",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "8884e68e-8543-3580-aaad-5fcf0d45e166",
+                "macro_uuid": "91c19933-2ea2-3799-9f7b-ae504f14991c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Airing Cupboard",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "149f0e60-b4a2-3a27-9d1a-a5138df9b0d8",
+                "macro_uuid": "2b4f2d83-3cfd-3707-afad-3d68281e7c9a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Aunt Jemima's Lair",
+                "src_requested": "'s lair (obj107)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "pott room (obj112)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Potting Room",
+                        "node": "Airing Cupboard",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "6f69b580-ab6a-39e5-a77b-1fcebba505c3",
+                "macro_uuid": "4af65ff1-908d-3209-9c35-df111eea8361"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Old Winery",
+                "dst_requested": "old winery (obj103)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "af69cfea-2063-35fa-b9c6-80d60574fb95",
+                "macro_uuid": "9eb0b968-02b4-3495-bec0-269169cf6e61"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "780b9fa2-d28f-33b7-b101-a461d82220c0",
+                "macro_uuid": "4d03e716-8f94-3e77-983b-4189e767ed83"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Aunt Jemima's Lair",
+                "src_requested": "'s lair (obj107)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pott room (obj112)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "ed540e55-9d9a-3e7c-ad91-6c0131da8a7d",
+                "macro_uuid": "3cf12b63-36b1-30e6-b7e6-e3c69b8d85c0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "attic (obj35)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "81f65367-479f-382c-a9dd-5bd156291631",
+                "macro_uuid": "9efe3912-281a-3d72-a85b-b3ee1a81670a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Potting Room",
+                "dst_requested": "pott room (obj112)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Potting Room",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "ca460b0a-185d-35d6-9b8c-e8135b38126b",
+                "macro_uuid": "7797b331-5eb6-3a89-addb-4cafeb5b3269"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "southeast",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b9c9825e-5c71-307b-b238-08ac9ccabbfb",
+                "macro_uuid": "06fd88a2-e575-3a7e-b132-a94312c84490"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Winery",
+                "src_requested": "old winery (obj103)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old winery (obj103)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Winery",
+                        "node": "Attic",
+                        "action": "up",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Aunt Jemima's Lair",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "0ab11253-b9f9-3f54-9d60-59d66da9db05",
+                "macro_uuid": "f6125551-048b-3dc1-8bf9-8ca6619355ea"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Airing Cupboard",
+                "dst_requested": "air cupboard (obj109)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Airing Cupboard",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "9f3f53cc-014d-30ad-aa7b-9e46768716a3",
+                "macro_uuid": "60039221-ddaa-3aa7-9c5d-7de7268c928b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Aunt Jemima's Lair",
+                "dst_requested": "'s lair (obj107)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Aunt Jemima's Lair",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "62253e66-eca0-3a29-9931-cd726a8522ab",
+                "macro_uuid": "ac272b84-3293-3aad-9448-0001a7f44a31"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Old Furniture",
+                "src_requested": "old furniture (obj47)",
+                "dst_anno": "Old Winery",
+                "dst_requested": "old winery (obj103)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Old Furniture",
+                        "node": "Attic",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Winery",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "b6094286-199a-3668-85d1-62ebc4887f12",
+                "macro_uuid": "92957ca8-a023-34f6-9694-5d83caf0f746"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Attic",
+                "src_requested": "attic (obj35)",
+                "dst_anno": "Old Furniture",
+                "dst_requested": "old furniture (obj47)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "old furniture (obj47)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Attic",
+                        "node": "Old Furniture",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e83f6c00-1668-3f4b-b19d-9f80a4a71b83",
+                "macro_uuid": "255bdcf0-bdec-314e-b100-e3bde55d5c8b"
+            }
+        ],
+        "correct_num_macro": 2,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.13333333333333333
+    }
+}

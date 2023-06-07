@@ -1,0 +1,956 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 3,
+        "total_num": 10,
+        "accuracy": 0.3,
+        "collection": {
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-02-35_439.json": {
+                "verify_result": false,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-01-34_923.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Alley",
+                "dst_requested": "alley (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "university court (obj164)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Narrow Street",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Narrow Street",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "University Court",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "University Court",
+                        "node": "Library",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Library",
+                        "node": "University Court",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "University Court",
+                        "node": "Junction",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Narrow Street",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Narrow Street",
+                        "node": "Outside the Real Estate Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d85ea277-2131-3e95-8ad9-be3ef6c5083f",
+                "macro_uuid": "c5d2806e-58d7-346a-be7e-018df1eb0e2c"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-02-33_690.json": {
+                "verify_result": false,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "65a4b743-fd60-3fea-b55f-f3f23499b60b",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-01-16_876.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside the real estate office (obj105)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Office",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-01-15_188.json": {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b2260c79-880f-372c-b218-864a3856a15d",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-03-56_583.json": {
+                "verify_result": false,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the lower edge of the window",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "b4e047c1-dbcb-34e8-aba8-a6bdb35cae7c",
+                "macro_uuid": "1a7a0a87-9227-3096-8e20-6551d27cbe07"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-03-38_901.json": {
+                "verify_result": false,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the lower edge of the window",
+                        "node": "Alley",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "de3a0e8e-f6e1-3609-921d-bc51ce92bf08",
+                "macro_uuid": "01aa79e6-7f01-3f5f-97c0-131130dd208e"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-02-34_848.json": {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "the lower edge of the window",
+                        "action": "climb can",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "251c4664-51cc-3ada-90e6-f201558fe94f",
+                "macro_uuid": "dac7681d-9b60-3b76-9c5a-39429da0e8e4"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-04-55_009.json": {
+                "verify_result": true,
+                "src_anno": "File Room",
+                "src_requested": "file room (obj622)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "office (obj627)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "41b858ea-bdec-3c12-bbc6-5c54e056969e",
+                "macro_uuid": "0a6c87dd-998e-3ba4-bb6b-5dc9e8c47c6e"
+            },
+            "../gpt-games-results/anchor/results//pathgen-gpt-3.5-turbo/results_2023-06-01-06-01-17_340.json": {
+                "verify_result": true,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "the lower edge of the window",
+                        "action": "climb can",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "0b0ace17-2f75-3f4d-bf3f-73e5002bd8a0",
+                "macro_uuid": "a9069c18-c1cd-3179-8689-abd08b80407d"
+            }
+        },
+        "random_guess_rate": 2.2992482646337689e-10,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Alley",
+                "dst_requested": "alley (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "university court (obj164)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Narrow Street",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Narrow Street",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "University Court",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "University Court",
+                        "node": "Library",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Library",
+                        "node": "University Court",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "University Court",
+                        "node": "Junction",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Narrow Street",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Narrow Street",
+                        "node": "Outside the Real Estate Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d85ea277-2131-3e95-8ad9-be3ef6c5083f",
+                "macro_uuid": "c5d2806e-58d7-346a-be7e-018df1eb0e2c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "65a4b743-fd60-3fea-b55f-f3f23499b60b",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside the real estate office (obj105)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Office",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b2260c79-880f-372c-b218-864a3856a15d",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the lower edge of the window",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "b4e047c1-dbcb-34e8-aba8-a6bdb35cae7c",
+                "macro_uuid": "1a7a0a87-9227-3096-8e20-6551d27cbe07"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the lower edge of the window",
+                        "node": "Alley",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "de3a0e8e-f6e1-3609-921d-bc51ce92bf08",
+                "macro_uuid": "01aa79e6-7f01-3f5f-97c0-131130dd208e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "the lower edge of the window",
+                        "action": "climb can",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "251c4664-51cc-3ada-90e6-f201558fe94f",
+                "macro_uuid": "dac7681d-9b60-3b76-9c5a-39429da0e8e4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "File Room",
+                "src_requested": "file room (obj622)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "office (obj627)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "41b858ea-bdec-3c12-bbc6-5c54e056969e",
+                "macro_uuid": "0a6c87dd-998e-3ba4-bb6b-5dc9e8c47c6e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "the lower edge of the window",
+                        "action": "climb can",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "0b0ace17-2f75-3f4d-bf3f-73e5002bd8a0",
+                "macro_uuid": "a9069c18-c1cd-3179-8689-abd08b80407d"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 10,
+        "accuracy_micro": 0.3,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "b7ab25ca-fca4-374c-bece-7d9cc3271a7e",
+                "macro_uuid": "822c55b6-56a7-3f78-bfb4-080f50e20d8d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Alley",
+                "dst_requested": "alley (obj107)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "university court (obj164)",
+                "stop_step": 5,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Narrow Street",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Narrow Street",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "University Court",
+                        "action": "northwest",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "University Court",
+                        "node": "Library",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Library",
+                        "node": "University Court",
+                        "action": "east",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "University Court",
+                        "node": "Junction",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Narrow Street",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Narrow Street",
+                        "node": "Outside the Real Estate Office",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d85ea277-2131-3e95-8ad9-be3ef6c5083f",
+                "macro_uuid": "c5d2806e-58d7-346a-be7e-018df1eb0e2c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "65a4b743-fd60-3fea-b55f-f3f23499b60b",
+                "macro_uuid": "bfd016fe-2b1e-3c61-b9e7-51308da85ad5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside the real estate office (obj105)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Office",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "dbb092c8-554d-3bfb-8de4-934a1b072eff",
+                "macro_uuid": "3d6954a6-b041-3a6c-b230-4860331aec7a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "alley (obj107)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b2260c79-880f-372c-b218-864a3856a15d",
+                "macro_uuid": "f0683910-54a5-305a-afb3-2f6364b707ec"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the lower edge of the window",
+                        "node": "File Room",
+                        "action": "east",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "b4e047c1-dbcb-34e8-aba8-a6bdb35cae7c",
+                "macro_uuid": "1a7a0a87-9227-3096-8e20-6551d27cbe07"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "the lower edge of the window",
+                "src_requested": "garbage can (obj110)",
+                "dst_anno": "File Room",
+                "dst_requested": "file room (obj622)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "the lower edge of the window",
+                        "node": "Alley",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "File Room",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "de3a0e8e-f6e1-3609-921d-bc51ce92bf08",
+                "macro_uuid": "01aa79e6-7f01-3f5f-97c0-131130dd208e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Alley",
+                "src_requested": "alley (obj107)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Alley",
+                        "node": "the lower edge of the window",
+                        "action": "climb can",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "251c4664-51cc-3ada-90e6-f201558fe94f",
+                "macro_uuid": "dac7681d-9b60-3b76-9c5a-39429da0e8e4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "File Room",
+                "src_requested": "file room (obj622)",
+                "dst_anno": "Office",
+                "dst_requested": "office (obj627)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "office (obj627)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "File Room",
+                        "node": "Office",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "41b858ea-bdec-3c12-bbc6-5c54e056969e",
+                "macro_uuid": "0a6c87dd-998e-3ba4-bb6b-5dc9e8c47c6e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Outside the Real Estate Office",
+                "src_requested": "outside the real estate office (obj105)",
+                "dst_anno": "the lower edge of the window",
+                "dst_requested": "garbage can (obj110)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "garbage can (obj110)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Outside the Real Estate Office",
+                        "node": "Alley",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Alley",
+                        "node": "the lower edge of the window",
+                        "action": "climb can",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "0b0ace17-2f75-3f4d-bf3f-73e5002bd8a0",
+                "macro_uuid": "a9069c18-c1cd-3179-8689-abd08b80407d"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 10,
+        "accuracy_macro": 0.3
+    }
+}

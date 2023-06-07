@@ -1,0 +1,347 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 1,
+        "total_num": 6,
+        "accuracy": 0.16666666666666666,
+        "collection": {
+            "../gpt-games-results/spirit/results//pathgen-gpt-3.5-turbo/results_2023-06-03-00-31-25_427.json": {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), hway (nearr quarters) (obj25)",
+                "micro_uuid": "57035531-48c0-3dd5-b1b2-2381b7a414e3",
+                "macro_uuid": "d3c0b85d-b2b7-3b38-9b86-a7cda41fb3fd"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-3.5-turbo/results_2023-06-03-00-34-40_782.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "hway (near quarters palemond tuffberry) (obj26)",
+                "verify_msg": "wrong path, fail to arrive at dst: hway (near quarters palemond tuffberry) (obj26), hway (west end) (obj28)",
+                "micro_uuid": "dce8cdd6-7fd1-353d-be32-b39283f7c9e6",
+                "macro_uuid": "90c0f0d3-7cde-34e1-8ecc-f4c1eec634b7"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-3.5-turbo/results_2023-06-03-00-32-08_926.json": {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Your Quarters",
+                "dst_requested": "r quarters (obj22)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), r quarters (obj22)",
+                "micro_uuid": "ade08c4c-ab55-3e89-bdd6-afcd3ddb8a0c",
+                "macro_uuid": "ff9cf922-a22a-3664-a823-1027f4532136"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-3.5-turbo/results_2023-06-03-00-27-55_822.json": {
+                "verify_result": true,
+                "src_anno": "Hallway (near your quarters)",
+                "src_requested": "hway (nearr quarters) (obj25)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "hway (west end) (obj28)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f4d8127c-6641-37d5-b0cf-d2072e962663",
+                "macro_uuid": "34821561-82ce-387a-ac0b-ddad38fdb571"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-3.5-turbo/results_2023-06-03-00-31-42_587.json": {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), hway (west end) (obj28)",
+                "micro_uuid": "981239b2-7c16-3072-a41c-5329aabde06a",
+                "macro_uuid": "5489dd11-0d00-381f-b4f4-fc8df993abbb"
+            },
+            "../gpt-games-results/spirit/results//pathgen-gpt-3.5-turbo/results_2023-06-03-00-34-38_153.json": {
+                "verify_result": false,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "r quarters (obj22)",
+                "verify_msg": "wrong path, fail to arrive at dst: r quarters (obj22), hway (nearr quarters) (obj25)",
+                "micro_uuid": "708a3581-1f06-3812-a57b-4dcb3abf77b3",
+                "macro_uuid": "7a7a0b5a-5099-3990-80a3-593ab18275f3"
+            }
+        },
+        "random_guess_rate": 2.545162486606852e-06,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), hway (nearr quarters) (obj25)",
+                "micro_uuid": "57035531-48c0-3dd5-b1b2-2381b7a414e3",
+                "macro_uuid": "d3c0b85d-b2b7-3b38-9b86-a7cda41fb3fd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "hway (near quarters palemond tuffberry) (obj26)",
+                "verify_msg": "wrong path, fail to arrive at dst: hway (near quarters palemond tuffberry) (obj26), hway (west end) (obj28)",
+                "micro_uuid": "dce8cdd6-7fd1-353d-be32-b39283f7c9e6",
+                "macro_uuid": "90c0f0d3-7cde-34e1-8ecc-f4c1eec634b7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Your Quarters",
+                "dst_requested": "r quarters (obj22)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), r quarters (obj22)",
+                "micro_uuid": "ade08c4c-ab55-3e89-bdd6-afcd3ddb8a0c",
+                "macro_uuid": "ff9cf922-a22a-3664-a823-1027f4532136"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway (near your quarters)",
+                "src_requested": "hway (nearr quarters) (obj25)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "hway (west end) (obj28)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f4d8127c-6641-37d5-b0cf-d2072e962663",
+                "macro_uuid": "34821561-82ce-387a-ac0b-ddad38fdb571"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), hway (west end) (obj28)",
+                "micro_uuid": "981239b2-7c16-3072-a41c-5329aabde06a",
+                "macro_uuid": "5489dd11-0d00-381f-b4f4-fc8df993abbb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "r quarters (obj22)",
+                "verify_msg": "wrong path, fail to arrive at dst: r quarters (obj22), hway (nearr quarters) (obj25)",
+                "micro_uuid": "708a3581-1f06-3812-a57b-4dcb3abf77b3",
+                "macro_uuid": "7a7a0b5a-5099-3990-80a3-593ab18275f3"
+            }
+        ],
+        "correct_num_micro": 1,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.16666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), hway (nearr quarters) (obj25)",
+                "micro_uuid": "57035531-48c0-3dd5-b1b2-2381b7a414e3",
+                "macro_uuid": "d3c0b85d-b2b7-3b38-9b86-a7cda41fb3fd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "hway (near quarters palemond tuffberry) (obj26)",
+                "verify_msg": "wrong path, fail to arrive at dst: hway (near quarters palemond tuffberry) (obj26), hway (west end) (obj28)",
+                "micro_uuid": "dce8cdd6-7fd1-353d-be32-b39283f7c9e6",
+                "macro_uuid": "90c0f0d3-7cde-34e1-8ecc-f4c1eec634b7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Your Quarters",
+                "dst_requested": "r quarters (obj22)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), r quarters (obj22)",
+                "micro_uuid": "ade08c4c-ab55-3e89-bdd6-afcd3ddb8a0c",
+                "macro_uuid": "ff9cf922-a22a-3664-a823-1027f4532136"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hallway (near your quarters)",
+                "src_requested": "hway (nearr quarters) (obj25)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "hway (west end) (obj28)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f4d8127c-6641-37d5-b0cf-d2072e962663",
+                "macro_uuid": "34821561-82ce-387a-ac0b-ddad38fdb571"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Monastery Chapel",
+                "src_requested": "monastery chapel (obj20)",
+                "dst_anno": "Hallway (west end)",
+                "dst_requested": "hway (west end) (obj28)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "monastery chapel (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: monastery chapel (obj20), hway (west end) (obj28)",
+                "micro_uuid": "981239b2-7c16-3072-a41c-5329aabde06a",
+                "macro_uuid": "5489dd11-0d00-381f-b4f4-fc8df993abbb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Your Quarters",
+                "src_requested": "r quarters (obj22)",
+                "dst_anno": "Hallway (near your quarters)",
+                "dst_requested": "hway (nearr quarters) (obj25)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "r quarters (obj22)",
+                "verify_msg": "wrong path, fail to arrive at dst: r quarters (obj22), hway (nearr quarters) (obj25)",
+                "micro_uuid": "708a3581-1f06-3812-a57b-4dcb3abf77b3",
+                "macro_uuid": "7a7a0b5a-5099-3990-80a3-593ab18275f3"
+            }
+        ],
+        "correct_num_macro": 1,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.16666666666666666
+    }
+}

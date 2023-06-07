@@ -1,0 +1,818 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 9,
+        "total_num": 15,
+        "accuracy": 0.6,
+        "collection": {
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-10-29_687.json": {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "dfcecad4-6529-326d-8db7-219787962846",
+                "macro_uuid": "c745a73d-3d58-3d1d-b591-36b9cc356683"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-16-47_220.json": {
+                "verify_result": true,
+                "src_anno": "Bottom of a Hole",
+                "src_requested": "bottom of a hole (obj31)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "south",
+                    "down",
+                    "west",
+                    "south",
+                    "south",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "in a pit (obj33)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "13c946d9-c8d2-3ac3-b66c-29699c7609f4",
+                "macro_uuid": "09e4aabe-fee0-3e50-a607-bd08790774a4"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-13-34_821.json": {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), in a pit (obj33)",
+                "micro_uuid": "ad926eb1-25a5-32ec-8b03-b8492a2035b2",
+                "macro_uuid": "276cce5b-4960-36a8-b59a-0ef435f9343c"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-10-27_138.json": {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Center of Camp",
+                "dst_requested": "center of camp (obj20)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ca65b4b4-28bc-3a51-8412-d337f37187e5",
+                "macro_uuid": "9bac1128-fca5-3747-952c-b178b50d2f28"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-10-33_038.json": {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "in a pit (obj33)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c2d3ff6c-10f2-3028-8dd6-f2fbe0b58f11",
+                "macro_uuid": "f96dc0d4-7bfd-3df5-8e0d-75d79450481c"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-10-29_271.json": {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Storage Tent",
+                "dst_requested": "storage tent (obj21)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1a7fec49-a8d6-362e-a54b-452cb818c30c",
+                "macro_uuid": "cea1dd8f-7001-39f0-b215-7d4039142882"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-13-30_500.json": {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), in the desert (obj30)",
+                "micro_uuid": "492ec9eb-0318-3c1b-86fc-059713fad390",
+                "macro_uuid": "93e453fe-3c57-3781-8dff-562676b1f511"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-15-18_265.json": {
+                "verify_result": true,
+                "src_anno": "In the Desert",
+                "src_requested": "in the desert (obj30)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "east",
+                    "dig"
+                ],
+                "dst_gpt": "bottom of a hole (obj31)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e513be7a-e803-3664-b175-899ad081b0af",
+                "macro_uuid": "2661d650-a703-3179-b19c-dec8c8324e4c"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-10-31_705.json": {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "dig"
+                ],
+                "dst_gpt": "bottom of a hole (obj31)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "cacf61c4-85f9-3f33-914a-4f5f56bd9516",
+                "macro_uuid": "e1afc148-3969-3131-9ab8-c71a9ab97309"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-13-31_574.json": {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "dig"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "wrong path, fail to arrive at dst: storage tent (obj21), bottom of a hole (obj31)",
+                "micro_uuid": "3721389c-50e1-3e9a-8fda-b0b4f01d2ae5",
+                "macro_uuid": "b71314b6-b859-30be-9402-637cac604437"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-11-47_667.json": {
+                "verify_result": true,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "Storage Tent",
+                "dst_requested": "storage tent (obj21)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f90971ff-643f-39a0-bb6e-514a4a47002c",
+                "macro_uuid": "96b7335f-1b7b-3afa-80c0-a9082948635c"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-12-13_694.json": {
+                "verify_result": false,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "wrong path, fail to arrive at dst: storage tent (obj21), in a pit (obj33)",
+                "micro_uuid": "5b4a141f-b68b-345a-b90c-9a452314150d",
+                "macro_uuid": "31da2bab-b02a-3668-bfad-c3431f71af36"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-12-11_680.json": {
+                "verify_result": false,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "dig"
+                ],
+                "dst_gpt": "roboff's tent (obj25)",
+                "verify_msg": "wrong path, fail to arrive at dst: roboff's tent (obj25), bottom of a hole (obj31)",
+                "micro_uuid": "1fbbdc7b-abe1-3be5-b029-eb9bea0e44ce",
+                "macro_uuid": "c08f2f34-5a43-342b-bbbf-be3b0c6d1685"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-12-09_538.json": {
+                "verify_result": true,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a4a1f3b5-6a76-328f-8c07-ac713a73ebee",
+                "macro_uuid": "a7eb59ed-8c1a-3940-8720-bb5b55bee8ac"
+            },
+            "../gpt-games-results/inhumane/results//pathgen-gpt-3.5-turbo/results_2023-06-01-18-15-12_680.json": {
+                "verify_result": false,
+                "src_anno": "In the Desert",
+                "src_requested": "in the desert (obj30)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the desert (obj30), in a pit (obj33)",
+                "micro_uuid": "8b201ccc-89a9-3a00-ae26-683c752ec694",
+                "macro_uuid": "56ca0813-572f-3f9d-8a68-01e0129b3c46"
+            }
+        },
+        "random_guess_rate": 4.199646157881668e-09,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "dfcecad4-6529-326d-8db7-219787962846",
+                "macro_uuid": "c745a73d-3d58-3d1d-b591-36b9cc356683"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bottom of a Hole",
+                "src_requested": "bottom of a hole (obj31)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "south",
+                    "down",
+                    "west",
+                    "south",
+                    "south",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "in a pit (obj33)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "13c946d9-c8d2-3ac3-b66c-29699c7609f4",
+                "macro_uuid": "09e4aabe-fee0-3e50-a607-bd08790774a4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), in a pit (obj33)",
+                "micro_uuid": "ad926eb1-25a5-32ec-8b03-b8492a2035b2",
+                "macro_uuid": "276cce5b-4960-36a8-b59a-0ef435f9343c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Center of Camp",
+                "dst_requested": "center of camp (obj20)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ca65b4b4-28bc-3a51-8412-d337f37187e5",
+                "macro_uuid": "9bac1128-fca5-3747-952c-b178b50d2f28"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "in a pit (obj33)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c2d3ff6c-10f2-3028-8dd6-f2fbe0b58f11",
+                "macro_uuid": "f96dc0d4-7bfd-3df5-8e0d-75d79450481c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Storage Tent",
+                "dst_requested": "storage tent (obj21)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1a7fec49-a8d6-362e-a54b-452cb818c30c",
+                "macro_uuid": "cea1dd8f-7001-39f0-b215-7d4039142882"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), in the desert (obj30)",
+                "micro_uuid": "492ec9eb-0318-3c1b-86fc-059713fad390",
+                "macro_uuid": "93e453fe-3c57-3781-8dff-562676b1f511"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the Desert",
+                "src_requested": "in the desert (obj30)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "east",
+                    "dig"
+                ],
+                "dst_gpt": "bottom of a hole (obj31)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e513be7a-e803-3664-b175-899ad081b0af",
+                "macro_uuid": "2661d650-a703-3179-b19c-dec8c8324e4c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "dig"
+                ],
+                "dst_gpt": "bottom of a hole (obj31)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "cacf61c4-85f9-3f33-914a-4f5f56bd9516",
+                "macro_uuid": "e1afc148-3969-3131-9ab8-c71a9ab97309"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "dig"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "wrong path, fail to arrive at dst: storage tent (obj21), bottom of a hole (obj31)",
+                "micro_uuid": "3721389c-50e1-3e9a-8fda-b0b4f01d2ae5",
+                "macro_uuid": "b71314b6-b859-30be-9402-637cac604437"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "Storage Tent",
+                "dst_requested": "storage tent (obj21)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f90971ff-643f-39a0-bb6e-514a4a47002c",
+                "macro_uuid": "96b7335f-1b7b-3afa-80c0-a9082948635c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "wrong path, fail to arrive at dst: storage tent (obj21), in a pit (obj33)",
+                "micro_uuid": "5b4a141f-b68b-345a-b90c-9a452314150d",
+                "macro_uuid": "31da2bab-b02a-3668-bfad-c3431f71af36"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "dig"
+                ],
+                "dst_gpt": "roboff's tent (obj25)",
+                "verify_msg": "wrong path, fail to arrive at dst: roboff's tent (obj25), bottom of a hole (obj31)",
+                "micro_uuid": "1fbbdc7b-abe1-3be5-b029-eb9bea0e44ce",
+                "macro_uuid": "c08f2f34-5a43-342b-bbbf-be3b0c6d1685"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a4a1f3b5-6a76-328f-8c07-ac713a73ebee",
+                "macro_uuid": "a7eb59ed-8c1a-3940-8720-bb5b55bee8ac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Desert",
+                "src_requested": "in the desert (obj30)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the desert (obj30), in a pit (obj33)",
+                "micro_uuid": "8b201ccc-89a9-3a00-ae26-683c752ec694",
+                "macro_uuid": "56ca0813-572f-3f9d-8a68-01e0129b3c46"
+            }
+        ],
+        "correct_num_micro": 9,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.6,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "dfcecad4-6529-326d-8db7-219787962846",
+                "macro_uuid": "c745a73d-3d58-3d1d-b591-36b9cc356683"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Bottom of a Hole",
+                "src_requested": "bottom of a hole (obj31)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "south",
+                    "south",
+                    "down",
+                    "west",
+                    "south",
+                    "south",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "in a pit (obj33)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "13c946d9-c8d2-3ac3-b66c-29699c7609f4",
+                "macro_uuid": "09e4aabe-fee0-3e50-a607-bd08790774a4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), in a pit (obj33)",
+                "micro_uuid": "ad926eb1-25a5-32ec-8b03-b8492a2035b2",
+                "macro_uuid": "276cce5b-4960-36a8-b59a-0ef435f9343c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Center of Camp",
+                "dst_requested": "center of camp (obj20)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ca65b4b4-28bc-3a51-8412-d337f37187e5",
+                "macro_uuid": "9bac1128-fca5-3747-952c-b178b50d2f28"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "in a pit (obj33)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c2d3ff6c-10f2-3028-8dd6-f2fbe0b58f11",
+                "macro_uuid": "f96dc0d4-7bfd-3df5-8e0d-75d79450481c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Storage Tent",
+                "dst_requested": "storage tent (obj21)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1a7fec49-a8d6-362e-a54b-452cb818c30c",
+                "macro_uuid": "cea1dd8f-7001-39f0-b215-7d4039142882"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "east"
+                ],
+                "dst_gpt": "center of camp (obj20)",
+                "verify_msg": "wrong path, fail to arrive at dst: center of camp (obj20), in the desert (obj30)",
+                "micro_uuid": "492ec9eb-0318-3c1b-86fc-059713fad390",
+                "macro_uuid": "93e453fe-3c57-3781-8dff-562676b1f511"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the Desert",
+                "src_requested": "in the desert (obj30)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "west",
+                    "east",
+                    "dig"
+                ],
+                "dst_gpt": "bottom of a hole (obj31)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "e513be7a-e803-3664-b175-899ad081b0af",
+                "macro_uuid": "2661d650-a703-3179-b19c-dec8c8324e4c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In Your Tent",
+                "src_requested": "in your tent (obj18)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "dig"
+                ],
+                "dst_gpt": "bottom of a hole (obj31)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "cacf61c4-85f9-3f33-914a-4f5f56bd9516",
+                "macro_uuid": "e1afc148-3969-3131-9ab8-c71a9ab97309"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Storage Tent",
+                "src_requested": "storage tent (obj21)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "dig"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "wrong path, fail to arrive at dst: storage tent (obj21), bottom of a hole (obj31)",
+                "micro_uuid": "3721389c-50e1-3e9a-8fda-b0b4f01d2ae5",
+                "macro_uuid": "b71314b6-b859-30be-9402-637cac604437"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "Storage Tent",
+                "dst_requested": "storage tent (obj21)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f90971ff-643f-39a0-bb6e-514a4a47002c",
+                "macro_uuid": "96b7335f-1b7b-3afa-80c0-a9082948635c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "dig",
+                    "put amulet in slot"
+                ],
+                "dst_gpt": "storage tent (obj21)",
+                "verify_msg": "wrong path, fail to arrive at dst: storage tent (obj21), in a pit (obj33)",
+                "micro_uuid": "5b4a141f-b68b-345a-b90c-9a452314150d",
+                "macro_uuid": "31da2bab-b02a-3668-bfad-c3431f71af36"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "Bottom of a Hole",
+                "dst_requested": "bottom of a hole (obj31)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "dig"
+                ],
+                "dst_gpt": "roboff's tent (obj25)",
+                "verify_msg": "wrong path, fail to arrive at dst: roboff's tent (obj25), bottom of a hole (obj31)",
+                "micro_uuid": "1fbbdc7b-abe1-3be5-b029-eb9bea0e44ce",
+                "macro_uuid": "c08f2f34-5a43-342b-bbbf-be3b0c6d1685"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Center of Camp",
+                "src_requested": "center of camp (obj20)",
+                "dst_anno": "In the Desert",
+                "dst_requested": "in the desert (obj30)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a4a1f3b5-6a76-328f-8c07-ac713a73ebee",
+                "macro_uuid": "a7eb59ed-8c1a-3940-8720-bb5b55bee8ac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Desert",
+                "src_requested": "in the desert (obj30)",
+                "dst_anno": "In a Pit",
+                "dst_requested": "in a pit (obj33)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "down"
+                ],
+                "dst_gpt": "in the desert (obj30)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the desert (obj30), in a pit (obj33)",
+                "micro_uuid": "8b201ccc-89a9-3a00-ae26-683c752ec694",
+                "macro_uuid": "56ca0813-572f-3f9d-8a68-01e0129b3c46"
+            }
+        ],
+        "correct_num_macro": 9,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.6
+    }
+}

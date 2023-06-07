@@ -1,0 +1,272 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 2,
+        "total_num": 3,
+        "accuracy": 0.6666666666666666,
+        "collection": {
+            "../gpt-games-results/lurking/results//pathgen-gpt-4/results_2023-06-04-19-30-49_104.json": {
+                "verify_result": false,
+                "src_anno": "Second Floor",
+                "src_requested": "second floor (obj137)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "kitchen (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "chair (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Terminal Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b322be11-d0e6-3396-a017-5f18d7ffd994",
+                "macro_uuid": "e83a9df2-7f69-3dd1-94d5-3401f9045cd8"
+            },
+            "../gpt-games-results/lurking/results//pathgen-gpt-4/results_2023-06-04-19-24-45_776.json": {
+                "verify_result": true,
+                "src_anno": "Terminal Room",
+                "src_requested": "chair (obj62)",
+                "dst_anno": "Second Floor",
+                "dst_requested": "second floor (obj137)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "second floor (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3699cdd6-b9da-326d-9c6d-6bc1a740899e",
+                "macro_uuid": "5882e9c3-a3eb-3a78-b42f-6cd6d9bb0eee"
+            },
+            "../gpt-games-results/lurking/results//pathgen-gpt-4/results_2023-06-04-19-24-31_251.json": {
+                "verify_result": true,
+                "src_anno": "Terminal Room",
+                "src_requested": "chair (obj62)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "kitchen (obj33)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "33e9f402-ca84-37a7-a8d6-32b063bf0242",
+                "macro_uuid": "4f31d792-72c0-3d82-89ab-4fa455302423"
+            }
+        },
+        "random_guess_rate": 5.239904587752588e-06,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor",
+                "src_requested": "second floor (obj137)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "kitchen (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "chair (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Terminal Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b322be11-d0e6-3396-a017-5f18d7ffd994",
+                "macro_uuid": "e83a9df2-7f69-3dd1-94d5-3401f9045cd8"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Terminal Room",
+                "src_requested": "chair (obj62)",
+                "dst_anno": "Second Floor",
+                "dst_requested": "second floor (obj137)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "second floor (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3699cdd6-b9da-326d-9c6d-6bc1a740899e",
+                "macro_uuid": "5882e9c3-a3eb-3a78-b42f-6cd6d9bb0eee"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Terminal Room",
+                "src_requested": "chair (obj62)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "kitchen (obj33)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "33e9f402-ca84-37a7-a8d6-32b063bf0242",
+                "macro_uuid": "4f31d792-72c0-3d82-89ab-4fa455302423"
+            }
+        ],
+        "correct_num_micro": 2,
+        "total_num_micro": 3,
+        "accuracy_micro": 0.6666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Second Floor",
+                "src_requested": "second floor (obj137)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "kitchen (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "chair (obj62)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Terminal Room",
+                        "action": "north",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "b322be11-d0e6-3396-a017-5f18d7ffd994",
+                "macro_uuid": "e83a9df2-7f69-3dd1-94d5-3401f9045cd8"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Terminal Room",
+                "src_requested": "chair (obj62)",
+                "dst_anno": "Second Floor",
+                "dst_requested": "second floor (obj137)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "second floor (obj137)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "3699cdd6-b9da-326d-9c6d-6bc1a740899e",
+                "macro_uuid": "5882e9c3-a3eb-3a78-b42f-6cd6d9bb0eee"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Terminal Room",
+                "src_requested": "chair (obj62)",
+                "dst_anno": "Kitchen",
+                "dst_requested": "kitchen (obj33)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "kitchen (obj33)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Terminal Room",
+                        "node": "Second Floor",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Second Floor",
+                        "node": "Kitchen",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "33e9f402-ca84-37a7-a8d6-32b063bf0242",
+                "macro_uuid": "4f31d792-72c0-3d82-89ab-4fa455302423"
+            }
+        ],
+        "correct_num_macro": 2,
+        "total_num_macro": 3,
+        "accuracy_macro": 0.6666666666666666
+    }
+}

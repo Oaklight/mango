@@ -1,0 +1,700 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 4,
+        "total_num": 14,
+        "accuracy": 0.2857142857142857,
+        "collection": {
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-56-25_987.json": {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "a87614b3-cbca-39e2-bc58-0f6c10039668",
+                "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-55-34_870.json": {
+                "verify_result": true,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Beside the Big Top",
+                "dst_requested": "bebig top (obj230)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "bebig top (obj230)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3e5eb74e-648e-3e73-8423-295e8ed1787a",
+                "macro_uuid": "233ad21a-98c5-385d-b554-de689d6a076f"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-00_081.json": {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "df94ce60-84f3-3140-a67c-fa1260355a1d",
+                "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-33_426.json": {
+                "verify_result": false,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "4d56213f-f962-3bd4-9e1a-ede50e97d311",
+                "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-56-21_304.json": {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "8d9c32d5-8a85-33f4-ba11-5b6ab88657d1",
+                "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-53-01_347.json": {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "53d05315-5281-3a7d-b064-bf32840f1818",
+                "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-52-31_227.json": {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
+                "micro_uuid": "e5e7612d-d6fa-382c-ada0-5a0b72ad9d8a",
+                "macro_uuid": "bcc48d5a-b7e0-320b-ab2d-f3f178b77e48"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-52-35_171.json": {
+                "verify_result": true,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Beside the Big Top",
+                "dst_requested": "bebig top (obj230)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "bebig top (obj230)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "94e1acb9-b834-31fa-9c47-2ece89d8e6e3",
+                "macro_uuid": "f1458d01-0a92-3970-a4de-1728ba5c8456"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-58-56_177.json": {
+                "verify_result": false,
+                "src_anno": "Back Yard",
+                "src_requested": "back yard (obj4)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "6eb643dc-61de-3372-a84b-f6b6fcf37c4c",
+                "macro_uuid": "0219c05c-55af-3d0a-93b5-9dddd20f2e6e"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-56-13_134.json": {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
+                "micro_uuid": "a683ec4c-b6bb-3a9e-a544-f58989ef08b5",
+                "macro_uuid": "fb60678f-00ff-391c-a399-ab6d2dd04eeb"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-59-13_546.json": {
+                "verify_result": false,
+                "src_anno": "Back Yard",
+                "src_requested": "back yard (obj4)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "d1b74fd7-acb1-350d-9568-82fe9a3a259c",
+                "macro_uuid": "0219c05c-55af-3d0a-93b5-9dddd20f2e6e"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-52-23_474.json": {
+                "verify_result": true,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Connection",
+                "dst_requested": "connection (obj57)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "connection (obj57)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ba1a1e35-6c72-376b-9d6b-e2225b4d0f81",
+                "macro_uuid": "0ab57773-573c-3a68-b809-13c4e4d4eeda"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-35_371.json": {
+                "verify_result": false,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "36fb18ae-9245-3365-b1b2-caf8cbb7b895",
+                "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
+            },
+            "../gpt-games-results/ballyhoo/results//pathgen-gpt-4/results_2023-06-01-07-54-28_685.json": {
+                "verify_result": true,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "227d8f9c-ea5e-3ef8-aea8-a0bdd8ebbe2f",
+                "macro_uuid": "29be3015-fbfc-331d-b714-4c3dc07410c1"
+            }
+        },
+        "random_guess_rate": 1.6053600608333327e-06,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "a87614b3-cbca-39e2-bc58-0f6c10039668",
+                "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Beside the Big Top",
+                "dst_requested": "bebig top (obj230)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "bebig top (obj230)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3e5eb74e-648e-3e73-8423-295e8ed1787a",
+                "macro_uuid": "233ad21a-98c5-385d-b554-de689d6a076f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "df94ce60-84f3-3140-a67c-fa1260355a1d",
+                "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "4d56213f-f962-3bd4-9e1a-ede50e97d311",
+                "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "8d9c32d5-8a85-33f4-ba11-5b6ab88657d1",
+                "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "53d05315-5281-3a7d-b064-bf32840f1818",
+                "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
+                "micro_uuid": "e5e7612d-d6fa-382c-ada0-5a0b72ad9d8a",
+                "macro_uuid": "bcc48d5a-b7e0-320b-ab2d-f3f178b77e48"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Beside the Big Top",
+                "dst_requested": "bebig top (obj230)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "bebig top (obj230)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "94e1acb9-b834-31fa-9c47-2ece89d8e6e3",
+                "macro_uuid": "f1458d01-0a92-3970-a4de-1728ba5c8456"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Back Yard",
+                "src_requested": "back yard (obj4)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "6eb643dc-61de-3372-a84b-f6b6fcf37c4c",
+                "macro_uuid": "0219c05c-55af-3d0a-93b5-9dddd20f2e6e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
+                "micro_uuid": "a683ec4c-b6bb-3a9e-a544-f58989ef08b5",
+                "macro_uuid": "fb60678f-00ff-391c-a399-ab6d2dd04eeb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Back Yard",
+                "src_requested": "back yard (obj4)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "d1b74fd7-acb1-350d-9568-82fe9a3a259c",
+                "macro_uuid": "0219c05c-55af-3d0a-93b5-9dddd20f2e6e"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Connection",
+                "dst_requested": "connection (obj57)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "connection (obj57)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ba1a1e35-6c72-376b-9d6b-e2225b4d0f81",
+                "macro_uuid": "0ab57773-573c-3a68-b809-13c4e4d4eeda"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "36fb18ae-9245-3365-b1b2-caf8cbb7b895",
+                "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "227d8f9c-ea5e-3ef8-aea8-a0bdd8ebbe2f",
+                "macro_uuid": "29be3015-fbfc-331d-b714-4c3dc07410c1"
+            }
+        ],
+        "correct_num_micro": 4,
+        "total_num_micro": 14,
+        "accuracy_micro": 0.2857142857142857,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "a87614b3-cbca-39e2-bc58-0f6c10039668",
+                "macro_uuid": "3e6fae3a-e1d5-34ef-88f6-cc3b8d35c046"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Beside the Big Top",
+                "dst_requested": "bebig top (obj230)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "bebig top (obj230)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3e5eb74e-648e-3e73-8423-295e8ed1787a",
+                "macro_uuid": "233ad21a-98c5-385d-b554-de689d6a076f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "df94ce60-84f3-3140-a67c-fa1260355a1d",
+                "macro_uuid": "b4f9dccd-2f28-3524-883f-98d2a9cfdc6a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "go under wall"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "wrong path, fail to arrive at dst: back yard (obj4), inprop tent (obj1)",
+                "micro_uuid": "4d56213f-f962-3bd4-9e1a-ede50e97d311",
+                "macro_uuid": "616e5be7-90bb-38c6-8eae-f882702e834f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
+                "micro_uuid": "e5e7612d-d6fa-382c-ada0-5a0b72ad9d8a",
+                "macro_uuid": "bcc48d5a-b7e0-320b-ab2d-f3f178b77e48"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Beside the Big Top",
+                "dst_requested": "bebig top (obj230)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "bebig top (obj230)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "94e1acb9-b834-31fa-9c47-2ece89d8e6e3",
+                "macro_uuid": "f1458d01-0a92-3970-a4de-1728ba5c8456"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Back Yard",
+                "src_requested": "back yard (obj4)",
+                "dst_anno": "Inside Prop Tent",
+                "dst_requested": "inprop tent (obj1)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "north",
+                    "northeast",
+                    "go under wall"
+                ],
+                "dst_gpt": "under bleachers (obj206)",
+                "verify_msg": "wrong path, fail to arrive at dst: under bleachers (obj206), inprop tent (obj1)",
+                "micro_uuid": "6eb643dc-61de-3372-a84b-f6b6fcf37c4c",
+                "macro_uuid": "0219c05c-55af-3d0a-93b5-9dddd20f2e6e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Beside the Big Top",
+                "src_requested": "bebig top (obj230)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "wrong path, fail to arrive at dst: near white wagon (obj148), back yard (obj4)",
+                "micro_uuid": "a683ec4c-b6bb-3a9e-a544-f58989ef08b5",
+                "macro_uuid": "fb60678f-00ff-391c-a399-ab6d2dd04eeb"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the Wings",
+                "src_requested": "in wings (obj81)",
+                "dst_anno": "Connection",
+                "dst_requested": "connection (obj57)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "connection (obj57)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ba1a1e35-6c72-376b-9d6b-e2225b4d0f81",
+                "macro_uuid": "0ab57773-573c-3a68-b809-13c4e4d4eeda"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Connection",
+                "src_requested": "connection (obj57)",
+                "dst_anno": "Back Yard",
+                "dst_requested": "back yard (obj4)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "back yard (obj4)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "227d8f9c-ea5e-3ef8-aea8-a0bdd8ebbe2f",
+                "macro_uuid": "29be3015-fbfc-331d-b714-4c3dc07410c1"
+            }
+        ],
+        "correct_num_macro": 4,
+        "total_num_macro": 10,
+        "accuracy_macro": 0.4
+    }
+}

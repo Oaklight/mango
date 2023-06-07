@@ -1,0 +1,4767 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 7,
+        "total_num": 46,
+        "accuracy": 0.15217391304347827,
+        "collection": {
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-30-46_812.json": {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Junction",
+                "dst_requested": "junction (obj63)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "fb389fd0-4428-3813-ab90-69104ff65c66",
+                "macro_uuid": "225a3e9c-a727-3d72-9ab4-219290144530"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-34-10_043.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "042cfa63-520c-38bb-b135-2f39913ba2ce",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-34_523.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "4108185b-3d73-3492-ab98-48cfc66cd61b",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-31-18_575.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "6ca9eef0-2565-304d-af4c-6cb218c3759b",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-33-02_210.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Aqueduct",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "Key Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "bd28262e-e4f2-3402-91cb-2da929dc52df",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-34-10_766.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "1281405c-ecc6-30b5-9bf9-55b58902af3b",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-44_782.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Western Shore",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "On the Lake",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Underwater",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Underwater",
+                        "node": "On the Lake",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "1d2f557b-57b7-3d9c-b352-dc59b8cedbc5",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-53_756.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down from Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down from Cliff",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "e246707c-3701-3f6c-9075-b13354648360",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-33_535.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "692a6b61-5bdf-3ef3-b443-580e39d2ddba",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-12_507.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "cf1e3c71-707f-3a40-9ab3-08511e490664",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-33-50_837.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "2a738ee6-dc70-3d71-978f-3d2689e52e87",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-07_965.json": {
+                "verify_result": true,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "38c7da18-0e36-3df2-b66b-e38806825394",
+                "macro_uuid": "a7a74770-2801-3f2e-903e-ecfa73667f83"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-33-50_730.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "468104f8-eadd-3c17-891a-5c37cc12ca58",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-31-17_830.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "39e5879d-5f54-3559-9571-0f171791133d",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-31-14_596.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "e8ddec6c-a37d-31e9-9fb9-e7a9b3cd7fa5",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-36-28_799.json": {
+                "verify_result": true,
+                "src_anno": "Damp Passage",
+                "src_requested": "damp passage (obj152)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "engravings (obj154)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6cd98f6c-801e-3092-b396-cbe20f2b8a0d",
+                "macro_uuid": "5fe782ce-f1eb-303c-bd1f-30463014ca00"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-31-15_026.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bbbe2c66-6209-33e7-8a91-a5bf0ca0674b",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-31_482.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "aae0049f-1efc-3fbd-a491-37b6179853b8",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-33-49_229.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "cb9efdb1-3a11-3702-a2d1-bceacf610feb",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-37-29_137.json": {
+                "verify_result": true,
+                "src_anno": "Engravings Room",
+                "src_requested": "engravings (obj154)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "454ae6f6-729d-34c4-9b01-1c18d0af3b76",
+                "macro_uuid": "0bb7237f-670a-3c92-972b-df82e1d78614"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-30-52_404.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "321eeaea-cdf0-32b1-84ab-a321d8e33505",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-12_821.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "895f5520-ba26-37a2-ba77-96648c03fc8d",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-35_466.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "caf0c493-b650-3750-97d3-f36b97c12ac8",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-12-22-39_847.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bd39ea32-6ba5-3efd-a27d-02d58c7812ed",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-31-14_499.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "34c58818-9567-3ec7-9504-2af1cc42208e",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-08_998.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Barren Area",
+                "dst_requested": "barren area (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "8e3112de-c606-3141-a2fe-221f909fb17d",
+                "macro_uuid": "d3f9cdda-c69d-307c-a604-53805f29ab25"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-35_010.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "36b85ba4-ad66-3374-91ec-edde5358f1f3",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-13_360.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "c87fef11-466d-30cb-9c39-55a83cc630f5",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-55_814.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down from Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down from Cliff",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "828caa2c-f045-3006-ba2a-c90d3340fbee",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-35_855.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "a63b2a43-5061-3758-a0f2-22f3c344cb91",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-31_367.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "bbe7ab66-9cb8-3fb0-a766-8880e675d517",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-31_877.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d4a53b72-66ca-38d2-8ddc-cc695e7234bf",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-36-30_194.json": {
+                "verify_result": true,
+                "src_anno": "Damp Passage",
+                "src_requested": "damp passage (obj152)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "67198015-3b71-3b7b-8a2a-c1378cc4d32c",
+                "macro_uuid": "8e366860-0d3e-36a8-8e5b-e4fbf2315929"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-44_345.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Western Shore",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "On the Lake",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Underwater",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Underwater",
+                        "node": "On the Lake",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "spray repellant on myself"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "dc3e34b3-e4d7-341b-b058-9f733b9b6aa1",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-34-10_594.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "453a5b0c-27f2-3ade-8c8c-2e07e0c14d9f",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-34-10_093.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "7f405284-1443-380d-87ea-fd1e5dcb3f5c",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-30-49_684.json": {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "469ee962-1e89-33da-87d8-31e5a23478c6",
+                "macro_uuid": "b093d71e-8213-3ed1-85bf-ef665a70211b"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-32_355.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "429251a7-f504-357f-b7de-8dbac962d47a",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-33-50_576.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "babaeadc-1b48-33ec-a6dc-876b5d7ec768",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-32-33_294.json": {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bda6efe8-5fa5-34b6-956f-3aedac4757f6",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-30-53_775.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "c6052dad-8f83-31bf-8959-8955101a318f",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-31-16_953.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "d1b8b6d0-c8af-3d9f-9fc0-477edda1d67e",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-30-52_106.json": {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "224e7793-95c5-3b7b-a48e-69178a7b3e8e",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-35-13_903.json": {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "c87fef11-466d-30cb-9c39-55a83cc630f5",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-33-48_001.json": {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "15686c5d-c7e5-367d-8dca-526e3e9cd85f",
+                "macro_uuid": "065095e5-5211-36b1-ac64-cadc5595d7fc"
+            },
+            "../gpt-games-results/zork3/results//pathgen-gpt-3.5-turbo/results_2023-05-31-00-30-48_701.json": {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Barren Area",
+                "dst_requested": "barren area (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "1c9a0e75-ff25-355a-82f8-1736abc0b18e",
+                "macro_uuid": "43a58fa4-6800-34dd-84ab-6acb8dc1b889"
+            }
+        },
+        "random_guess_rate": 4.869621128813077e-10,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Junction",
+                "dst_requested": "junction (obj63)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "fb389fd0-4428-3813-ab90-69104ff65c66",
+                "macro_uuid": "225a3e9c-a727-3d72-9ab4-219290144530"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "042cfa63-520c-38bb-b135-2f39913ba2ce",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "4108185b-3d73-3492-ab98-48cfc66cd61b",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "6ca9eef0-2565-304d-af4c-6cb218c3759b",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Aqueduct",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "Key Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "bd28262e-e4f2-3402-91cb-2da929dc52df",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "1281405c-ecc6-30b5-9bf9-55b58902af3b",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Western Shore",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "On the Lake",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Underwater",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Underwater",
+                        "node": "On the Lake",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "1d2f557b-57b7-3d9c-b352-dc59b8cedbc5",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down from Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down from Cliff",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "e246707c-3701-3f6c-9075-b13354648360",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "692a6b61-5bdf-3ef3-b443-580e39d2ddba",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "cf1e3c71-707f-3a40-9ab3-08511e490664",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "2a738ee6-dc70-3d71-978f-3d2689e52e87",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "38c7da18-0e36-3df2-b66b-e38806825394",
+                "macro_uuid": "a7a74770-2801-3f2e-903e-ecfa73667f83"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "468104f8-eadd-3c17-891a-5c37cc12ca58",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "39e5879d-5f54-3559-9571-0f171791133d",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "e8ddec6c-a37d-31e9-9fb9-e7a9b3cd7fa5",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Damp Passage",
+                "src_requested": "damp passage (obj152)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "engravings (obj154)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6cd98f6c-801e-3092-b396-cbe20f2b8a0d",
+                "macro_uuid": "5fe782ce-f1eb-303c-bd1f-30463014ca00"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bbbe2c66-6209-33e7-8a91-a5bf0ca0674b",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "aae0049f-1efc-3fbd-a491-37b6179853b8",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "cb9efdb1-3a11-3702-a2d1-bceacf610feb",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Engravings Room",
+                "src_requested": "engravings (obj154)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "454ae6f6-729d-34c4-9b01-1c18d0af3b76",
+                "macro_uuid": "0bb7237f-670a-3c92-972b-df82e1d78614"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "321eeaea-cdf0-32b1-84ab-a321d8e33505",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "895f5520-ba26-37a2-ba77-96648c03fc8d",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "caf0c493-b650-3750-97d3-f36b97c12ac8",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bd39ea32-6ba5-3efd-a27d-02d58c7812ed",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "34c58818-9567-3ec7-9504-2af1cc42208e",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Barren Area",
+                "dst_requested": "barren area (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "8e3112de-c606-3141-a2fe-221f909fb17d",
+                "macro_uuid": "d3f9cdda-c69d-307c-a604-53805f29ab25"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "36b85ba4-ad66-3374-91ec-edde5358f1f3",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "c87fef11-466d-30cb-9c39-55a83cc630f5",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down from Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down from Cliff",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "828caa2c-f045-3006-ba2a-c90d3340fbee",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "a63b2a43-5061-3758-a0f2-22f3c344cb91",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "bbe7ab66-9cb8-3fb0-a766-8880e675d517",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "down",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d4a53b72-66ca-38d2-8ddc-cc695e7234bf",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Damp Passage",
+                "src_requested": "damp passage (obj152)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "67198015-3b71-3b7b-8a2a-c1378cc4d32c",
+                "macro_uuid": "8e366860-0d3e-36a8-8e5b-e4fbf2315929"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Western Shore",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "On the Lake",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Underwater",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Underwater",
+                        "node": "On the Lake",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "spray repellant on myself"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "dc3e34b3-e4d7-341b-b058-9f733b9b6aa1",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "453a5b0c-27f2-3ade-8c8c-2e07e0c14d9f",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "7f405284-1443-380d-87ea-fd1e5dcb3f5c",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "469ee962-1e89-33da-87d8-31e5a23478c6",
+                "macro_uuid": "b093d71e-8213-3ed1-85bf-ef665a70211b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "429251a7-f504-357f-b7de-8dbac962d47a",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "babaeadc-1b48-33ec-a6dc-876b5d7ec768",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bda6efe8-5fa5-34b6-956f-3aedac4757f6",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "c6052dad-8f83-31bf-8959-8955101a318f",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "d1b8b6d0-c8af-3d9f-9fc0-477edda1d67e",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "224e7793-95c5-3b7b-a48e-69178a7b3e8e",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "15686c5d-c7e5-367d-8dca-526e3e9cd85f",
+                "macro_uuid": "065095e5-5211-36b1-ac64-cadc5595d7fc"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Barren Area",
+                "dst_requested": "barren area (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "1c9a0e75-ff25-355a-82f8-1736abc0b18e",
+                "macro_uuid": "43a58fa4-6800-34dd-84ab-6acb8dc1b889"
+            }
+        ],
+        "correct_num_micro": 7,
+        "total_num_micro": 45,
+        "accuracy_micro": 0.15555555555555556,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Junction",
+                "dst_requested": "junction (obj63)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "fb389fd0-4428-3813-ab90-69104ff65c66",
+                "macro_uuid": "225a3e9c-a727-3d72-9ab4-219290144530"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "042cfa63-520c-38bb-b135-2f39913ba2ce",
+                "macro_uuid": "e11ebbaa-0e7e-3dee-acfe-52e73ecedc42"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "4108185b-3d73-3492-ab98-48cfc66cd61b",
+                "macro_uuid": "0aa49cc5-9b3f-38a0-a1e5-8366e20dbc29"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "north",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "6ca9eef0-2565-304d-af4c-6cb218c3759b",
+                "macro_uuid": "f364b7aa-75fb-35df-8312-92dad3df9b0e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Water Slide",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Aqueduct",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "Key Room",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Damp Passage",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "northwest"
+                    }
+                ],
+                "micro_uuid": "bd28262e-e4f2-3402-91cb-2da929dc52df",
+                "macro_uuid": "0e225afc-f852-3ac8-9d17-39705eed4009"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Western Shore",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "On the Lake",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Underwater",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Underwater",
+                        "node": "On the Lake",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "1d2f557b-57b7-3d9c-b352-dc59b8cedbc5",
+                "macro_uuid": "49cf9d11-ab49-3a8d-a670-66e472f082ff"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "cf1e3c71-707f-3a40-9ab3-08511e490664",
+                "macro_uuid": "951a6423-bc0b-3206-8fef-3cfb97bcd24e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "2a738ee6-dc70-3d71-978f-3d2689e52e87",
+                "macro_uuid": "65c7d60b-9d58-3dc7-bb02-af9dc5f72865"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "38c7da18-0e36-3df2-b66b-e38806825394",
+                "macro_uuid": "a7a74770-2801-3f2e-903e-ecfa73667f83"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "up",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "e8ddec6c-a37d-31e9-9fb9-e7a9b3cd7fa5",
+                "macro_uuid": "b3663ade-45db-345f-9487-b043341cf4d4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Damp Passage",
+                "src_requested": "damp passage (obj152)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "engravings (obj154)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "6cd98f6c-801e-3092-b396-cbe20f2b8a0d",
+                "macro_uuid": "5fe782ce-f1eb-303c-bd1f-30463014ca00"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "aae0049f-1efc-3fbd-a491-37b6179853b8",
+                "macro_uuid": "c83e36a2-6dfb-34f3-b3c8-b59d81273257"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Engravings Room",
+                "src_requested": "engravings (obj154)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "454ae6f6-729d-34c4-9b01-1c18d0af3b76",
+                "macro_uuid": "0bb7237f-670a-3c92-972b-df82e1d78614"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Damp Passage",
+                "dst_requested": "damp passage (obj152)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Damp Passage",
+                        "action": "east",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    }
+                ],
+                "micro_uuid": "321eeaea-cdf0-32b1-84ab-a321d8e33505",
+                "macro_uuid": "bf05c53a-5e43-3a37-b921-0d5e45b2497e"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cliff",
+                "src_requested": "cliff (obj58)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in anno2code",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Down the Cliff",
+                        "action": "down",
+                        "msg": "ERROR: node not in anno2code"
+                    },
+                    {
+                        "prev_node": "Down the Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "up"
+                    },
+                    {
+                        "prev_node": "Cliff Ledge",
+                        "node": "Barren Area",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "caf0c493-b650-3750-97d3-f36b97c12ac8",
+                "macro_uuid": "f23c2270-f3c3-370a-ae91-85aa25ca2c93"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Engravings Room",
+                "dst_requested": "engravings (obj154)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "west",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    }
+                ],
+                "micro_uuid": "bd39ea32-6ba5-3efd-a27d-02d58c7812ed",
+                "macro_uuid": "80a5e1df-6dde-3f3a-82e8-6e06e342ade7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Junction",
+                "src_requested": "junction (obj63)",
+                "dst_anno": "Barren Area",
+                "dst_requested": "barren area (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "junction (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Endless Stair",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Barren Area",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "8e3112de-c606-3141-a2fe-221f909fb17d",
+                "macro_uuid": "d3f9cdda-c69d-307c-a604-53805f29ab25"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Damp Passage",
+                "src_requested": "damp passage (obj152)",
+                "dst_anno": "Dead End",
+                "dst_requested": "dead end (obj153)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "67198015-3b71-3b7b-8a2a-c1378cc4d32c",
+                "macro_uuid": "8e366860-0d3e-36a8-8e5b-e4fbf2315929"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "cliff (obj58)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "469ee962-1e89-33da-87d8-31e5a23478c6",
+                "macro_uuid": "b093d71e-8213-3ed1-85bf-ef665a70211b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Barren Area",
+                "src_requested": "barren area (obj62)",
+                "dst_anno": "Cliff",
+                "dst_requested": "cliff (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "stop at somewhere else, not dst requested",
+                "stop_node_code": "cliff ledge (obj55)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Cliff",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Cliff Ledge",
+                        "action": "down",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "15686c5d-c7e5-367d-8dca-526e3e9cd85f",
+                "macro_uuid": "065095e5-5211-36b1-ac64-cadc5595d7fc"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Endless Stair",
+                "src_requested": "endless stair (obj64)",
+                "dst_anno": "Barren Area",
+                "dst_requested": "barren area (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "barren area (obj62)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Barren Area",
+                        "action": "west",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "1c9a0e75-ff25-355a-82f8-1736abc0b18e",
+                "macro_uuid": "43a58fa4-6800-34dd-84ab-6acb8dc1b889"
+            }
+        ],
+        "correct_num_macro": 7,
+        "total_num_macro": 21,
+        "accuracy_macro": 0.3333333333333333
+    }
+}

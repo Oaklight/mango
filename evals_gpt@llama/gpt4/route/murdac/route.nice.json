@@ -1,0 +1,3902 @@
+{
+    "pathgen-gpt-4/": {
+        "correct_num": 28,
+        "total_num": 67,
+        "accuracy": 0.417910447761194,
+        "collection": {
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-22-58_704.json": {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ed749a45-3f00-3eb1-9798-9e06ad45c9bb",
+                "macro_uuid": "a39c4592-039f-3428-9d75-2fc799c43fce"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-07-34_720.json": {
+                "verify_result": false,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "5d1a1545-0044-3335-b0cf-2b954e0ae10a",
+                "macro_uuid": "8d874684-2a86-3d7f-bec3-e9a899b1437a"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-04-21_714.json": {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (grave) (obj60)",
+                "micro_uuid": "db701bff-1398-3991-bb08-b2e89ffc97aa",
+                "macro_uuid": "6ef7dc44-6033-36e7-8dbd-8e948ce9ed83"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-04-44_084.json": {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (lake) (obj61)",
+                "micro_uuid": "f6a97d4d-e3e1-35be-b1d2-34d0803596bd",
+                "macro_uuid": "2570754d-3551-3f36-a000-83bddbb06eac"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-14-19_426.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "flower garden",
+                "dst_requested": "(path1) (obj55)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path1) (obj55)",
+                "micro_uuid": "4a2ffc85-1a84-391a-ad36-bc4cf08d9e2c",
+                "macro_uuid": "ac480797-b751-3368-894f-7ec2704fb57a"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-18-23_688.json": {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "228bc119-1710-3b08-bb07-65c0ca53b70b",
+                "macro_uuid": "27e187bd-970f-338e-99c1-bc29cbd1cb97"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-47-56_926.json": {
+                "verify_result": true,
+                "src_anno": "old untended grave",
+                "src_requested": "(grave) (obj60)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3d3160e3-324e-33a9-b1f4-acdc66e22622",
+                "macro_uuid": "59784d35-0ebc-3c50-acb7-1df36727a1a9"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-01-18_985.json": {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (grave) (obj60)",
+                "micro_uuid": "7a5e5f97-5d08-328a-b00c-c55214509a56",
+                "macro_uuid": "4e28d85a-1eaa-3a9b-88f6-a97e327c2822"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-59-37_135.json": {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "38ee39ee-193b-3f0e-8635-f43661589a4f",
+                "macro_uuid": "4697efb5-943e-3c7a-822f-4ee40b4cbc53"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-58-55_296.json": {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path4) (obj58), (path3) (obj57)",
+                "micro_uuid": "50dcd242-152f-3b9f-ab95-847f50160fd5",
+                "macro_uuid": "a312ac42-24fe-3fda-b98a-947c65d16f53"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-01-59_311.json": {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (lake) (obj61)",
+                "micro_uuid": "6c453c6c-4728-3eee-ade4-8d32647f03d9",
+                "macro_uuid": "b5adc451-d2fa-3a80-8451-63df5a7a048a"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-21-01_026.json": {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "05c327ef-8714-32b9-952b-71f223f51f66",
+                "macro_uuid": "f265d4ce-218e-3c0b-a175-e39ea818c851"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-20-17_406.json": {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "cfa1743d-cb3a-3828-99de-b81bbdc28a48",
+                "macro_uuid": "e415e308-cbd3-376f-96cb-c8d8bc49599a"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-56-26_959.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "north",
+                    "south",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (path5) (obj59)",
+                "micro_uuid": "c669d043-33c6-317f-a289-50cd95b7bc1a",
+                "macro_uuid": "90840bec-0317-3d44-9cd5-a9292fb39407"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-01-59_420.json": {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (path5) (obj59)",
+                "micro_uuid": "2885b05b-5dc2-3bd9-9485-288c162b8853",
+                "macro_uuid": "bf3147a3-a7ce-38ed-ba10-fdc7ab792cb0"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-57-10_349.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(inhut) (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (inhut) (obj54), (wall3) (obj64)",
+                "micro_uuid": "32bae3dd-93b5-3575-b759-a63873d6bf6c",
+                "macro_uuid": "efc869c1-5553-3d8c-b1da-253d06ac870d"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-19-53_515.json": {
+                "verify_result": false,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "afdcf4f2-8f20-35cc-8abe-59300a731efe",
+                "macro_uuid": "cf41617c-58cb-32f3-8e06-d4c5cd7acda3"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-56-01_688.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (path4) (obj58)",
+                "micro_uuid": "f2882276-62d5-3e2c-9994-a73268730f48",
+                "macro_uuid": "25c59848-4da9-3d68-8995-f8a7e90e1340"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-20-27_248.json": {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9972df53-c85a-374e-9b69-f6f5d0cd3552",
+                "macro_uuid": "e8fadc7b-3c3d-3b24-90d2-659fad82c0b4"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-01-55_840.json": {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "5d279325-c2cc-3638-9377-2534ba28276b",
+                "macro_uuid": "de0d478f-ee73-3ee6-9612-9cd05a97f99f"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-15-16_129.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (sandpit) (obj65)",
+                "micro_uuid": "f1b16187-4832-37f9-9032-f06e15f92e43",
+                "macro_uuid": "cff456fe-e375-3546-80b4-0268929c633d"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-05-01_899.json": {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (path5) (obj59)",
+                "micro_uuid": "9da012ea-72ab-3621-adbc-e61aad6c6964",
+                "macro_uuid": "c25a8028-fbce-3fe6-b561-9b6357761397"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-02-42_498.json": {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "fb9449dd-8334-3591-95a0-135c69f9efac",
+                "macro_uuid": "1bfd344c-3795-300c-a332-4440e7db0cde"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-14-20_301.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "rock garden",
+                "dst_requested": "(path2) (obj56)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path2) (obj56)",
+                "micro_uuid": "64ea06aa-a22f-36ac-8461-363e4b4fb9ee",
+                "macro_uuid": "acbb776d-a7b6-3a4f-a22f-1b146487234f"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-14-07_208.json": {
+                "verify_result": true,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d0c53df4-6e11-36ae-bc55-c65cb3761f67",
+                "macro_uuid": "d55da990-a52c-38d6-9543-068a8f9eaeec"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-24-02_079.json": {
+                "verify_result": false,
+                "src_anno": "kitchen of haunted house",
+                "src_requested": "kitchen (obj4)",
+                "dst_anno": "living room of haunted house",
+                "dst_requested": "living room (obj5)",
+                "connectivity": false,
+                "dist_shortest": null,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "no connectivity, yet path_gpt is not empty",
+                "micro_uuid": "9f7c5e35-8a7d-3d19-b684-66d12250a615",
+                "macro_uuid": "06419e8f-3be4-3522-805a-0ef02b52defc"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-15-31_049.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "(path3) (obj57)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path3) (obj57), (wall1) (obj62)",
+                "micro_uuid": "af12297d-1e92-339d-a4ad-7bf7cad310dd",
+                "macro_uuid": "912a8854-e896-34fd-a446-a1d5f8245110"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-17-14_818.json": {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "07e94ac5-9c1f-3d04-b1e5-8cee2712cafa",
+                "macro_uuid": "a6b1f5fc-a010-3d6a-aa90-a06b0477a425"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-17-33_580.json": {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "44963d7f-3d95-3500-bfcc-023a9d3622b6",
+                "macro_uuid": "d106d76d-a996-3bf0-922b-dbf306102049"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-48-28_894.json": {
+                "verify_result": false,
+                "src_anno": "old untended grave",
+                "src_requested": "(grave) (obj60)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "north",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "(path3) (obj57)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path3) (obj57), (sandpit) (obj65)",
+                "micro_uuid": "c4064c59-2240-3a1a-a9dd-45097ef09a8f",
+                "macro_uuid": "98b979ce-5cd8-3e2d-b54f-b0d7a7eb2ad4"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-17-49_131.json": {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "92f5eb28-f071-391c-b412-2bffe309f13b",
+                "macro_uuid": "36809f38-b0ac-35ae-bb6c-97ec2c915489"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-06-50_425.json": {
+                "verify_result": false,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "17f8c9a2-e92b-350a-aee9-3b9a58cf403e",
+                "macro_uuid": "a40906ed-eef5-34d9-8a4d-7afc6f8f70b3"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-55-22_304.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "24ded5e6-bd91-3f91-af07-c51ad30ca414",
+                "macro_uuid": "e0fd0d14-6acd-3239-95d1-6f1bac9dc07c"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-23-11_676.json": {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d17310ed-320c-3f09-94bd-c983a57dd28e",
+                "macro_uuid": "557203c0-1ba6-3c26-a350-5b417d9ef520"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-58-56_182.json": {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "21463851-6c40-397e-8a74-3542e644dd6e",
+                "macro_uuid": "f149e92a-19a2-3262-9a73-c4a7d5d1d1ca"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-17-24_055.json": {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c4fba3c0-f358-3a96-b495-450e0e633364",
+                "macro_uuid": "7563f205-046b-3fb1-9ca6-0eca1fd3d597"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-59-04_531.json": {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "fd23315d-6df4-340b-9c80-0e11c4c93028",
+                "macro_uuid": "228d18e3-0391-3930-ae42-24e056e27c93"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-23-08_526.json": {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "8be9cb41-bf78-33b9-8414-ba4d838fca85",
+                "macro_uuid": "121c6159-a38b-3ef5-8f90-db9a771694f1"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-17-49_733.json": {
+                "verify_result": false,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (sandpit) (obj65)",
+                "micro_uuid": "65c3817f-96cf-399c-98fc-2884f817e2e8",
+                "macro_uuid": "d70f46b0-f0ca-33ef-83c8-3c400f233c19"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-18-01_418.json": {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(wall2) (obj63)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9b11e294-a625-3674-a78f-d4194a75b237",
+                "macro_uuid": "a1055097-bc9e-35e2-b4c4-fd9be296c3cd"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-14-46_821.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (path5) (obj59)",
+                "micro_uuid": "5d8304ee-991d-3dbb-ac84-998fe2c7b7a1",
+                "macro_uuid": "59b684ad-8a24-306b-8721-598660cba71c"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-55-58_279.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path5) (obj59), (path3) (obj57)",
+                "micro_uuid": "213a0e3c-e4d9-3831-834e-6a4b9e02c9cf",
+                "macro_uuid": "49ce2169-2057-3370-aeae-2537ca8a11d5"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-00-01_247.json": {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path4) (obj58), (wall2) (obj63)",
+                "micro_uuid": "3186306b-9f94-37f3-bbdf-5deab6031b87",
+                "macro_uuid": "5cab621e-5ae9-30a5-9be9-7cb8d3a48adb"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-02-47_817.json": {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north",
+                    "down",
+                    "west"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (wall2) (obj63)",
+                "micro_uuid": "6593d434-3c23-3f9e-9aef-2ce3aaab8d88",
+                "macro_uuid": "5eaba500-ab80-372b-b460-507024f4321a"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-56-40_453.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (wall1) (obj62)",
+                "micro_uuid": "2109bdb4-b855-32e3-8189-37b904e73cc4",
+                "macro_uuid": "61c228e7-ae16-346b-84bf-f24fb1ea07f5"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-22-36_599.json": {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "eceaf0dc-7187-3859-8553-9c80a9a84e18",
+                "macro_uuid": "b6108ed3-d8dd-3ea2-a3e3-489e5b919b51"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-55-37_501.json": {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "54df6d63-2cea-3708-86ed-d8d5ba1b313d",
+                "macro_uuid": "b3773904-6787-3e6e-b630-c6ac34cb8448"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-20-25_646.json": {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c89edbc6-5314-35f8-bd14-435915fe8685",
+                "macro_uuid": "11c24b88-ac99-3f79-899b-e7d7d11e84da"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-23-44_601.json": {
+                "verify_result": false,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 9,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "f797a3d0-a90e-3524-a7b2-173421729bd7",
+                "macro_uuid": "a6dc49d0-2137-36e1-83f6-3536bc175858"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-59-22_416.json": {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3565a9b8-1d1b-3427-8950-a69a2ebb1fe3",
+                "macro_uuid": "2f1b7814-04bf-3314-bf54-a16b81b58a35"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-03-06_062.json": {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "10594ecd-d7d8-338b-8905-8de5ffef7801",
+                "macro_uuid": "2355c02f-ecd5-328c-a54a-1474d311ab52"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-15-29_699.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (wall2) (obj63)",
+                "micro_uuid": "919b3160-ffff-3f29-b54e-28deb595490a",
+                "macro_uuid": "21f4ccae-d424-3bf7-b376-53adf10ab782"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-20-57_122.json": {
+                "verify_result": false,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "6f2eb876-95d4-31ce-8530-229053e71868",
+                "macro_uuid": "5247198d-293e-3b27-bee3-2c6de995c044"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-55-54_346.json": {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "rock garden",
+                "dst_requested": "(path2) (obj56)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "8cb97387-e991-36f0-bd37-fe4b32a4d7e4",
+                "macro_uuid": "82fae167-43d5-3efd-962a-9f0efec9ceb7"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-14-45_573.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path4) (obj58)",
+                "micro_uuid": "4262598e-8f04-323c-b59c-b046ad9653a5",
+                "macro_uuid": "0cb4538f-90f9-3adf-9125-d4dd2c19c408"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-02-20_698.json": {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall2) (obj63)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall2) (obj63), (sandpit) (obj65)",
+                "micro_uuid": "4b40b7d4-de15-3f1c-a135-c9b212de8a8c",
+                "macro_uuid": "fce3661d-eb62-3bd7-9a04-0f451d223cde"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-05-06_306.json": {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (sandpit) (obj65)",
+                "micro_uuid": "4df1f07a-1e4d-3e2e-a0f9-bd6b69ef3ebf",
+                "macro_uuid": "e797e322-ccc8-3cbd-92d7-283cd419e005"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-56-17_062.json": {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4cc08386-729c-3160-9de3-7ed429e3cec7",
+                "macro_uuid": "0c350361-e911-3c82-a54c-c3e3b652c6c1"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-15-33_142.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (wall3) (obj64)",
+                "micro_uuid": "d7d0622b-f876-3439-a5fc-1985361cb47c",
+                "macro_uuid": "1c3b6284-70db-3872-8db3-20c475a06864"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-00-01_387.json": {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (wall3) (obj64)",
+                "micro_uuid": "ff96aa42-0128-30d1-b223-6260c84cd428",
+                "macro_uuid": "751a5640-1089-3cc7-884e-78566b7379f1"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-58-27_878.json": {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "691e0031-a793-3adf-9738-e822ee383b32",
+                "macro_uuid": "5a88c3c8-4cc9-3edc-9c0b-cd8886bb8053"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-14-23_847.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path3) (obj57)",
+                "micro_uuid": "77c5271f-71b2-3765-b920-7d08ba7a5c87",
+                "macro_uuid": "ea4971a6-53cd-33a5-88a5-d0950cebdd27"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-13-44_642.json": {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(inhut) (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (inhut) (obj54), (grave) (obj60)",
+                "micro_uuid": "16eb787f-3815-3b81-a586-38aaa8e18006",
+                "macro_uuid": "2da5aa54-eb04-3abc-bc6d-1eef2d3ff3f2"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-57-01_454.json": {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path5) (obj59), (wall2) (obj63)",
+                "micro_uuid": "c77b0e3e-37d5-3f67-b18c-ee8d75119e2a",
+                "macro_uuid": "7f445dce-6b0e-31a6-94f5-4db89095b701"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-21-59-21_244.json": {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (sandpit) (obj65)",
+                "micro_uuid": "63d7c746-af2d-3add-b1c4-66eb0f75f7ae",
+                "macro_uuid": "0c1ada31-52e0-3a7c-979d-1db536c57f72"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-10-03_041.json": {
+                "verify_result": false,
+                "src_anno": "sandpit",
+                "src_requested": "(sandpit) (obj65)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (lake) (obj61)",
+                "micro_uuid": "f160a007-80b8-3c49-b265-f4b14bbeefc7",
+                "macro_uuid": "fc529971-3c1b-3836-b92f-1491af3cec62"
+            },
+            "../gpt-games-results/murdac/results//pathgen-gpt-4/results_2023-06-03-22-07-21_050.json": {
+                "verify_result": true,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1328bc98-6b4d-3948-bae3-256c6467e0a4",
+                "macro_uuid": "bb959805-daa6-3f9a-9036-add01d5f9dbc"
+            }
+        },
+        "random_guess_rate": 1.1939107127201381e-10,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ed749a45-3f00-3eb1-9798-9e06ad45c9bb",
+                "macro_uuid": "a39c4592-039f-3428-9d75-2fc799c43fce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "5d1a1545-0044-3335-b0cf-2b954e0ae10a",
+                "macro_uuid": "8d874684-2a86-3d7f-bec3-e9a899b1437a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (grave) (obj60)",
+                "micro_uuid": "db701bff-1398-3991-bb08-b2e89ffc97aa",
+                "macro_uuid": "6ef7dc44-6033-36e7-8dbd-8e948ce9ed83"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (lake) (obj61)",
+                "micro_uuid": "f6a97d4d-e3e1-35be-b1d2-34d0803596bd",
+                "macro_uuid": "2570754d-3551-3f36-a000-83bddbb06eac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "flower garden",
+                "dst_requested": "(path1) (obj55)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path1) (obj55)",
+                "micro_uuid": "4a2ffc85-1a84-391a-ad36-bc4cf08d9e2c",
+                "macro_uuid": "ac480797-b751-3368-894f-7ec2704fb57a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "228bc119-1710-3b08-bb07-65c0ca53b70b",
+                "macro_uuid": "27e187bd-970f-338e-99c1-bc29cbd1cb97"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "old untended grave",
+                "src_requested": "(grave) (obj60)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3d3160e3-324e-33a9-b1f4-acdc66e22622",
+                "macro_uuid": "59784d35-0ebc-3c50-acb7-1df36727a1a9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (grave) (obj60)",
+                "micro_uuid": "7a5e5f97-5d08-328a-b00c-c55214509a56",
+                "macro_uuid": "4e28d85a-1eaa-3a9b-88f6-a97e327c2822"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "38ee39ee-193b-3f0e-8635-f43661589a4f",
+                "macro_uuid": "4697efb5-943e-3c7a-822f-4ee40b4cbc53"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path4) (obj58), (path3) (obj57)",
+                "micro_uuid": "50dcd242-152f-3b9f-ab95-847f50160fd5",
+                "macro_uuid": "a312ac42-24fe-3fda-b98a-947c65d16f53"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (lake) (obj61)",
+                "micro_uuid": "6c453c6c-4728-3eee-ade4-8d32647f03d9",
+                "macro_uuid": "b5adc451-d2fa-3a80-8451-63df5a7a048a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "05c327ef-8714-32b9-952b-71f223f51f66",
+                "macro_uuid": "f265d4ce-218e-3c0b-a175-e39ea818c851"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "cfa1743d-cb3a-3828-99de-b81bbdc28a48",
+                "macro_uuid": "e415e308-cbd3-376f-96cb-c8d8bc49599a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "north",
+                    "south",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (path5) (obj59)",
+                "micro_uuid": "c669d043-33c6-317f-a289-50cd95b7bc1a",
+                "macro_uuid": "90840bec-0317-3d44-9cd5-a9292fb39407"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (path5) (obj59)",
+                "micro_uuid": "2885b05b-5dc2-3bd9-9485-288c162b8853",
+                "macro_uuid": "bf3147a3-a7ce-38ed-ba10-fdc7ab792cb0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(inhut) (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (inhut) (obj54), (wall3) (obj64)",
+                "micro_uuid": "32bae3dd-93b5-3575-b759-a63873d6bf6c",
+                "macro_uuid": "efc869c1-5553-3d8c-b1da-253d06ac870d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "afdcf4f2-8f20-35cc-8abe-59300a731efe",
+                "macro_uuid": "cf41617c-58cb-32f3-8e06-d4c5cd7acda3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (path4) (obj58)",
+                "micro_uuid": "f2882276-62d5-3e2c-9994-a73268730f48",
+                "macro_uuid": "25c59848-4da9-3d68-8995-f8a7e90e1340"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9972df53-c85a-374e-9b69-f6f5d0cd3552",
+                "macro_uuid": "e8fadc7b-3c3d-3b24-90d2-659fad82c0b4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "5d279325-c2cc-3638-9377-2534ba28276b",
+                "macro_uuid": "de0d478f-ee73-3ee6-9612-9cd05a97f99f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (sandpit) (obj65)",
+                "micro_uuid": "f1b16187-4832-37f9-9032-f06e15f92e43",
+                "macro_uuid": "cff456fe-e375-3546-80b4-0268929c633d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (path5) (obj59)",
+                "micro_uuid": "9da012ea-72ab-3621-adbc-e61aad6c6964",
+                "macro_uuid": "c25a8028-fbce-3fe6-b561-9b6357761397"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "fb9449dd-8334-3591-95a0-135c69f9efac",
+                "macro_uuid": "1bfd344c-3795-300c-a332-4440e7db0cde"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "rock garden",
+                "dst_requested": "(path2) (obj56)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path2) (obj56)",
+                "micro_uuid": "64ea06aa-a22f-36ac-8461-363e4b4fb9ee",
+                "macro_uuid": "acbb776d-a7b6-3a4f-a22f-1b146487234f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d0c53df4-6e11-36ae-bc55-c65cb3761f67",
+                "macro_uuid": "d55da990-a52c-38d6-9543-068a8f9eaeec"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "kitchen of haunted house",
+                "src_requested": "kitchen (obj4)",
+                "dst_anno": "living room of haunted house",
+                "dst_requested": "living room (obj5)",
+                "connectivity": false,
+                "dist_shortest": null,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "no connectivity, yet path_gpt is not empty",
+                "micro_uuid": "9f7c5e35-8a7d-3d19-b684-66d12250a615",
+                "macro_uuid": "06419e8f-3be4-3522-805a-0ef02b52defc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "(path3) (obj57)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path3) (obj57), (wall1) (obj62)",
+                "micro_uuid": "af12297d-1e92-339d-a4ad-7bf7cad310dd",
+                "macro_uuid": "912a8854-e896-34fd-a446-a1d5f8245110"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "07e94ac5-9c1f-3d04-b1e5-8cee2712cafa",
+                "macro_uuid": "a6b1f5fc-a010-3d6a-aa90-a06b0477a425"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "44963d7f-3d95-3500-bfcc-023a9d3622b6",
+                "macro_uuid": "d106d76d-a996-3bf0-922b-dbf306102049"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "old untended grave",
+                "src_requested": "(grave) (obj60)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "north",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "(path3) (obj57)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path3) (obj57), (sandpit) (obj65)",
+                "micro_uuid": "c4064c59-2240-3a1a-a9dd-45097ef09a8f",
+                "macro_uuid": "98b979ce-5cd8-3e2d-b54f-b0d7a7eb2ad4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "92f5eb28-f071-391c-b412-2bffe309f13b",
+                "macro_uuid": "36809f38-b0ac-35ae-bb6c-97ec2c915489"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "17f8c9a2-e92b-350a-aee9-3b9a58cf403e",
+                "macro_uuid": "a40906ed-eef5-34d9-8a4d-7afc6f8f70b3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "24ded5e6-bd91-3f91-af07-c51ad30ca414",
+                "macro_uuid": "e0fd0d14-6acd-3239-95d1-6f1bac9dc07c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d17310ed-320c-3f09-94bd-c983a57dd28e",
+                "macro_uuid": "557203c0-1ba6-3c26-a350-5b417d9ef520"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "21463851-6c40-397e-8a74-3542e644dd6e",
+                "macro_uuid": "f149e92a-19a2-3262-9a73-c4a7d5d1d1ca"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c4fba3c0-f358-3a96-b495-450e0e633364",
+                "macro_uuid": "7563f205-046b-3fb1-9ca6-0eca1fd3d597"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "fd23315d-6df4-340b-9c80-0e11c4c93028",
+                "macro_uuid": "228d18e3-0391-3930-ae42-24e056e27c93"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "8be9cb41-bf78-33b9-8414-ba4d838fca85",
+                "macro_uuid": "121c6159-a38b-3ef5-8f90-db9a771694f1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (sandpit) (obj65)",
+                "micro_uuid": "65c3817f-96cf-399c-98fc-2884f817e2e8",
+                "macro_uuid": "d70f46b0-f0ca-33ef-83c8-3c400f233c19"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(wall2) (obj63)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9b11e294-a625-3674-a78f-d4194a75b237",
+                "macro_uuid": "a1055097-bc9e-35e2-b4c4-fd9be296c3cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (path5) (obj59)",
+                "micro_uuid": "5d8304ee-991d-3dbb-ac84-998fe2c7b7a1",
+                "macro_uuid": "59b684ad-8a24-306b-8721-598660cba71c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path5) (obj59), (path3) (obj57)",
+                "micro_uuid": "213a0e3c-e4d9-3831-834e-6a4b9e02c9cf",
+                "macro_uuid": "49ce2169-2057-3370-aeae-2537ca8a11d5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path4) (obj58), (wall2) (obj63)",
+                "micro_uuid": "3186306b-9f94-37f3-bbdf-5deab6031b87",
+                "macro_uuid": "5cab621e-5ae9-30a5-9be9-7cb8d3a48adb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north",
+                    "down",
+                    "west"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (wall2) (obj63)",
+                "micro_uuid": "6593d434-3c23-3f9e-9aef-2ce3aaab8d88",
+                "macro_uuid": "5eaba500-ab80-372b-b460-507024f4321a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (wall1) (obj62)",
+                "micro_uuid": "2109bdb4-b855-32e3-8189-37b904e73cc4",
+                "macro_uuid": "61c228e7-ae16-346b-84bf-f24fb1ea07f5"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "eceaf0dc-7187-3859-8553-9c80a9a84e18",
+                "macro_uuid": "b6108ed3-d8dd-3ea2-a3e3-489e5b919b51"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "54df6d63-2cea-3708-86ed-d8d5ba1b313d",
+                "macro_uuid": "b3773904-6787-3e6e-b630-c6ac34cb8448"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c89edbc6-5314-35f8-bd14-435915fe8685",
+                "macro_uuid": "11c24b88-ac99-3f79-899b-e7d7d11e84da"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 9,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "f797a3d0-a90e-3524-a7b2-173421729bd7",
+                "macro_uuid": "a6dc49d0-2137-36e1-83f6-3536bc175858"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3565a9b8-1d1b-3427-8950-a69a2ebb1fe3",
+                "macro_uuid": "2f1b7814-04bf-3314-bf54-a16b81b58a35"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "10594ecd-d7d8-338b-8905-8de5ffef7801",
+                "macro_uuid": "2355c02f-ecd5-328c-a54a-1474d311ab52"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (wall2) (obj63)",
+                "micro_uuid": "919b3160-ffff-3f29-b54e-28deb595490a",
+                "macro_uuid": "21f4ccae-d424-3bf7-b376-53adf10ab782"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "6f2eb876-95d4-31ce-8530-229053e71868",
+                "macro_uuid": "5247198d-293e-3b27-bee3-2c6de995c044"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "rock garden",
+                "dst_requested": "(path2) (obj56)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "8cb97387-e991-36f0-bd37-fe4b32a4d7e4",
+                "macro_uuid": "82fae167-43d5-3efd-962a-9f0efec9ceb7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path4) (obj58)",
+                "micro_uuid": "4262598e-8f04-323c-b59c-b046ad9653a5",
+                "macro_uuid": "0cb4538f-90f9-3adf-9125-d4dd2c19c408"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall2) (obj63)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall2) (obj63), (sandpit) (obj65)",
+                "micro_uuid": "4b40b7d4-de15-3f1c-a135-c9b212de8a8c",
+                "macro_uuid": "fce3661d-eb62-3bd7-9a04-0f451d223cde"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (sandpit) (obj65)",
+                "micro_uuid": "4df1f07a-1e4d-3e2e-a0f9-bd6b69ef3ebf",
+                "macro_uuid": "e797e322-ccc8-3cbd-92d7-283cd419e005"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4cc08386-729c-3160-9de3-7ed429e3cec7",
+                "macro_uuid": "0c350361-e911-3c82-a54c-c3e3b652c6c1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (wall3) (obj64)",
+                "micro_uuid": "d7d0622b-f876-3439-a5fc-1985361cb47c",
+                "macro_uuid": "1c3b6284-70db-3872-8db3-20c475a06864"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (wall3) (obj64)",
+                "micro_uuid": "ff96aa42-0128-30d1-b223-6260c84cd428",
+                "macro_uuid": "751a5640-1089-3cc7-884e-78566b7379f1"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "691e0031-a793-3adf-9738-e822ee383b32",
+                "macro_uuid": "5a88c3c8-4cc9-3edc-9c0b-cd8886bb8053"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path3) (obj57)",
+                "micro_uuid": "77c5271f-71b2-3765-b920-7d08ba7a5c87",
+                "macro_uuid": "ea4971a6-53cd-33a5-88a5-d0950cebdd27"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(inhut) (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (inhut) (obj54), (grave) (obj60)",
+                "micro_uuid": "16eb787f-3815-3b81-a586-38aaa8e18006",
+                "macro_uuid": "2da5aa54-eb04-3abc-bc6d-1eef2d3ff3f2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path5) (obj59), (wall2) (obj63)",
+                "micro_uuid": "c77b0e3e-37d5-3f67-b18c-ee8d75119e2a",
+                "macro_uuid": "7f445dce-6b0e-31a6-94f5-4db89095b701"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (sandpit) (obj65)",
+                "micro_uuid": "63d7c746-af2d-3add-b1c4-66eb0f75f7ae",
+                "macro_uuid": "0c1ada31-52e0-3a7c-979d-1db536c57f72"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "sandpit",
+                "src_requested": "(sandpit) (obj65)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (lake) (obj61)",
+                "micro_uuid": "f160a007-80b8-3c49-b265-f4b14bbeefc7",
+                "macro_uuid": "fc529971-3c1b-3836-b92f-1491af3cec62"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1328bc98-6b4d-3948-bae3-256c6467e0a4",
+                "macro_uuid": "bb959805-daa6-3f9a-9036-add01d5f9dbc"
+            }
+        ],
+        "correct_num_micro": 28,
+        "total_num_micro": 67,
+        "accuracy_micro": 0.417910447761194,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ed749a45-3f00-3eb1-9798-9e06ad45c9bb",
+                "macro_uuid": "a39c4592-039f-3428-9d75-2fc799c43fce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "5d1a1545-0044-3335-b0cf-2b954e0ae10a",
+                "macro_uuid": "8d874684-2a86-3d7f-bec3-e9a899b1437a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (grave) (obj60)",
+                "micro_uuid": "db701bff-1398-3991-bb08-b2e89ffc97aa",
+                "macro_uuid": "6ef7dc44-6033-36e7-8dbd-8e948ce9ed83"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (lake) (obj61)",
+                "micro_uuid": "f6a97d4d-e3e1-35be-b1d2-34d0803596bd",
+                "macro_uuid": "2570754d-3551-3f36-a000-83bddbb06eac"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "flower garden",
+                "dst_requested": "(path1) (obj55)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path1) (obj55)",
+                "micro_uuid": "4a2ffc85-1a84-391a-ad36-bc4cf08d9e2c",
+                "macro_uuid": "ac480797-b751-3368-894f-7ec2704fb57a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "228bc119-1710-3b08-bb07-65c0ca53b70b",
+                "macro_uuid": "27e187bd-970f-338e-99c1-bc29cbd1cb97"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "old untended grave",
+                "src_requested": "(grave) (obj60)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3d3160e3-324e-33a9-b1f4-acdc66e22622",
+                "macro_uuid": "59784d35-0ebc-3c50-acb7-1df36727a1a9"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (grave) (obj60)",
+                "micro_uuid": "7a5e5f97-5d08-328a-b00c-c55214509a56",
+                "macro_uuid": "4e28d85a-1eaa-3a9b-88f6-a97e327c2822"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "38ee39ee-193b-3f0e-8635-f43661589a4f",
+                "macro_uuid": "4697efb5-943e-3c7a-822f-4ee40b4cbc53"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path4) (obj58), (path3) (obj57)",
+                "micro_uuid": "50dcd242-152f-3b9f-ab95-847f50160fd5",
+                "macro_uuid": "a312ac42-24fe-3fda-b98a-947c65d16f53"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (lake) (obj61)",
+                "micro_uuid": "6c453c6c-4728-3eee-ade4-8d32647f03d9",
+                "macro_uuid": "b5adc451-d2fa-3a80-8451-63df5a7a048a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "05c327ef-8714-32b9-952b-71f223f51f66",
+                "macro_uuid": "f265d4ce-218e-3c0b-a175-e39ea818c851"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "cfa1743d-cb3a-3828-99de-b81bbdc28a48",
+                "macro_uuid": "e415e308-cbd3-376f-96cb-c8d8bc49599a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "north",
+                    "south",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (path5) (obj59)",
+                "micro_uuid": "c669d043-33c6-317f-a289-50cd95b7bc1a",
+                "macro_uuid": "90840bec-0317-3d44-9cd5-a9292fb39407"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (path5) (obj59)",
+                "micro_uuid": "2885b05b-5dc2-3bd9-9485-288c162b8853",
+                "macro_uuid": "bf3147a3-a7ce-38ed-ba10-fdc7ab792cb0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(inhut) (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (inhut) (obj54), (wall3) (obj64)",
+                "micro_uuid": "32bae3dd-93b5-3575-b759-a63873d6bf6c",
+                "macro_uuid": "efc869c1-5553-3d8c-b1da-253d06ac870d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "afdcf4f2-8f20-35cc-8abe-59300a731efe",
+                "macro_uuid": "cf41617c-58cb-32f3-8e06-d4c5cd7acda3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (path4) (obj58)",
+                "micro_uuid": "f2882276-62d5-3e2c-9994-a73268730f48",
+                "macro_uuid": "25c59848-4da9-3d68-8995-f8a7e90e1340"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9972df53-c85a-374e-9b69-f6f5d0cd3552",
+                "macro_uuid": "e8fadc7b-3c3d-3b24-90d2-659fad82c0b4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "5d279325-c2cc-3638-9377-2534ba28276b",
+                "macro_uuid": "de0d478f-ee73-3ee6-9612-9cd05a97f99f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "north",
+                    "south",
+                    "east",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (sandpit) (obj65)",
+                "micro_uuid": "f1b16187-4832-37f9-9032-f06e15f92e43",
+                "macro_uuid": "cff456fe-e375-3546-80b4-0268929c633d"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (path5) (obj59)",
+                "micro_uuid": "9da012ea-72ab-3621-adbc-e61aad6c6964",
+                "macro_uuid": "c25a8028-fbce-3fe6-b561-9b6357761397"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "south"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "fb9449dd-8334-3591-95a0-135c69f9efac",
+                "macro_uuid": "1bfd344c-3795-300c-a332-4440e7db0cde"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "rock garden",
+                "dst_requested": "(path2) (obj56)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path2) (obj56)",
+                "micro_uuid": "64ea06aa-a22f-36ac-8461-363e4b4fb9ee",
+                "macro_uuid": "acbb776d-a7b6-3a4f-a22f-1b146487234f"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d0c53df4-6e11-36ae-bc55-c65cb3761f67",
+                "macro_uuid": "d55da990-a52c-38d6-9543-068a8f9eaeec"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "kitchen of haunted house",
+                "src_requested": "kitchen (obj4)",
+                "dst_anno": "living room of haunted house",
+                "dst_requested": "living room (obj5)",
+                "connectivity": false,
+                "dist_shortest": null,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "no connectivity, yet path_gpt is not empty",
+                "micro_uuid": "9f7c5e35-8a7d-3d19-b684-66d12250a615",
+                "macro_uuid": "06419e8f-3be4-3522-805a-0ef02b52defc"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "(path3) (obj57)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path3) (obj57), (wall1) (obj62)",
+                "micro_uuid": "af12297d-1e92-339d-a4ad-7bf7cad310dd",
+                "macro_uuid": "912a8854-e896-34fd-a446-a1d5f8245110"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "07e94ac5-9c1f-3d04-b1e5-8cee2712cafa",
+                "macro_uuid": "a6b1f5fc-a010-3d6a-aa90-a06b0477a425"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "44963d7f-3d95-3500-bfcc-023a9d3622b6",
+                "macro_uuid": "d106d76d-a996-3bf0-922b-dbf306102049"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "old untended grave",
+                "src_requested": "(grave) (obj60)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "north",
+                    "south",
+                    "south",
+                    "north",
+                    "north",
+                    "south"
+                ],
+                "dst_gpt": "(path3) (obj57)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path3) (obj57), (sandpit) (obj65)",
+                "micro_uuid": "c4064c59-2240-3a1a-a9dd-45097ef09a8f",
+                "macro_uuid": "98b979ce-5cd8-3e2d-b54f-b0d7a7eb2ad4"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "92f5eb28-f071-391c-b412-2bffe309f13b",
+                "macro_uuid": "36809f38-b0ac-35ae-bb6c-97ec2c915489"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "17f8c9a2-e92b-350a-aee9-3b9a58cf403e",
+                "macro_uuid": "a40906ed-eef5-34d9-8a4d-7afc6f8f70b3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "west",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (grave) (obj60)",
+                "micro_uuid": "24ded5e6-bd91-3f91-af07-c51ad30ca414",
+                "macro_uuid": "e0fd0d14-6acd-3239-95d1-6f1bac9dc07c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d17310ed-320c-3f09-94bd-c983a57dd28e",
+                "macro_uuid": "557203c0-1ba6-3c26-a350-5b417d9ef520"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "21463851-6c40-397e-8a74-3542e644dd6e",
+                "macro_uuid": "f149e92a-19a2-3262-9a73-c4a7d5d1d1ca"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c4fba3c0-f358-3a96-b495-450e0e633364",
+                "macro_uuid": "7563f205-046b-3fb1-9ca6-0eca1fd3d597"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "fd23315d-6df4-340b-9c80-0e11c4c93028",
+                "macro_uuid": "228d18e3-0391-3930-ae42-24e056e27c93"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "8be9cb41-bf78-33b9-8414-ba4d838fca85",
+                "macro_uuid": "121c6159-a38b-3ef5-8f90-db9a771694f1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (sandpit) (obj65)",
+                "micro_uuid": "65c3817f-96cf-399c-98fc-2884f817e2e8",
+                "macro_uuid": "d70f46b0-f0ca-33ef-83c8-3c400f233c19"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "brick wall (destroyed at some point)",
+                "src_requested": "(wall1) (obj62)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "(wall2) (obj63)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "9b11e294-a625-3674-a78f-d4194a75b237",
+                "macro_uuid": "a1055097-bc9e-35e2-b4c4-fd9be296c3cd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "wrong path, fail to arrive at dst: (lake) (obj61), (path5) (obj59)",
+                "micro_uuid": "5d8304ee-991d-3dbb-ac84-998fe2c7b7a1",
+                "macro_uuid": "59b684ad-8a24-306b-8721-598660cba71c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path5) (obj59), (path3) (obj57)",
+                "micro_uuid": "213a0e3c-e4d9-3831-834e-6a4b9e02c9cf",
+                "macro_uuid": "49ce2169-2057-3370-aeae-2537ca8a11d5"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path4) (obj58), (wall2) (obj63)",
+                "micro_uuid": "3186306b-9f94-37f3-bbdf-5deab6031b87",
+                "macro_uuid": "5cab621e-5ae9-30a5-9be9-7cb8d3a48adb"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north",
+                    "down",
+                    "west"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (wall2) (obj63)",
+                "micro_uuid": "6593d434-3c23-3f9e-9aef-2ce3aaab8d88",
+                "macro_uuid": "5eaba500-ab80-372b-b460-507024f4321a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "brick wall (destroyed at some point)",
+                "dst_requested": "(wall1) (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(path1) (obj55)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path1) (obj55), (wall1) (obj62)",
+                "micro_uuid": "2109bdb4-b855-32e3-8189-37b904e73cc4",
+                "macro_uuid": "61c228e7-ae16-346b-84bf-f24fb1ea07f5"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "eceaf0dc-7187-3859-8553-9c80a9a84e18",
+                "macro_uuid": "b6108ed3-d8dd-3ea2-a3e3-489e5b919b51"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "54df6d63-2cea-3708-86ed-d8d5ba1b313d",
+                "macro_uuid": "b3773904-6787-3e6e-b630-c6ac34cb8448"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path4) (obj58)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "c89edbc6-5314-35f8-bd14-435915fe8685",
+                "macro_uuid": "11c24b88-ac99-3f79-899b-e7d7d11e84da"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "alley (north end)",
+                "src_requested": "(wall3) (obj64)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 9,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "f797a3d0-a90e-3524-a7b2-173421729bd7",
+                "macro_uuid": "a6dc49d0-2137-36e1-83f6-3536bc175858"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "remnants of a bonfire",
+                "dst_requested": "(path5) (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3565a9b8-1d1b-3427-8950-a69a2ebb1fe3",
+                "macro_uuid": "2f1b7814-04bf-3314-bf54-a16b81b58a35"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "10594ecd-d7d8-338b-8905-8de5ffef7801",
+                "macro_uuid": "2355c02f-ecd5-328c-a54a-1474d311ab52"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (wall2) (obj63)",
+                "micro_uuid": "919b3160-ffff-3f29-b54e-28deb595490a",
+                "macro_uuid": "21f4ccae-d424-3bf7-b376-53adf10ab782"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "alley (north/south)",
+                "src_requested": "(wall2) (obj63)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 8,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "north",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path2) (obj56), (sandpit) (obj65)",
+                "micro_uuid": "6f2eb876-95d4-31ce-8530-229053e71868",
+                "macro_uuid": "5247198d-293e-3b27-bee3-2c6de995c044"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "rock garden",
+                "dst_requested": "(path2) (obj56)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(path2) (obj56)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "8cb97387-e991-36f0-bd37-fe4b32a4d7e4",
+                "macro_uuid": "82fae167-43d5-3efd-962a-9f0efec9ceb7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "shrubbery",
+                "dst_requested": "(path4) (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path4) (obj58)",
+                "micro_uuid": "4262598e-8f04-323c-b59c-b046ad9653a5",
+                "macro_uuid": "0cb4538f-90f9-3adf-9125-d4dd2c19c408"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "vegetable garden",
+                "src_requested": "(path3) (obj57)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall2) (obj63)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall2) (obj63), (sandpit) (obj65)",
+                "micro_uuid": "4b40b7d4-de15-3f1c-a135-c9b212de8a8c",
+                "macro_uuid": "fce3661d-eb62-3bd7-9a04-0f451d223cde"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "shrubbery",
+                "src_requested": "(path4) (obj58)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "west",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall3) (obj64)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall3) (obj64), (sandpit) (obj65)",
+                "micro_uuid": "4df1f07a-1e4d-3e2e-a0f9-bd6b69ef3ebf",
+                "macro_uuid": "e797e322-ccc8-3cbd-92d7-283cd419e005"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4cc08386-729c-3160-9de3-7ed429e3cec7",
+                "macro_uuid": "0c350361-e911-3c82-a54c-c3e3b652c6c1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "south",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (wall3) (obj64)",
+                "micro_uuid": "d7d0622b-f876-3439-a5fc-1985361cb47c",
+                "macro_uuid": "1c3b6284-70db-3872-8db3-20c475a06864"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "alley (north end)",
+                "dst_requested": "(wall3) (obj64)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (wall3) (obj64)",
+                "micro_uuid": "ff96aa42-0128-30d1-b223-6260c84cd428",
+                "macro_uuid": "751a5640-1089-3cc7-884e-78566b7379f1"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 6,
+                "action_gpt": [
+                    "south",
+                    "south",
+                    "east",
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "691e0031-a793-3adf-9738-e822ee383b32",
+                "macro_uuid": "5a88c3c8-4cc9-3edc-9c0b-cd8886bb8053"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "vegetable garden",
+                "dst_requested": "(path3) (obj57)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(grave) (obj60)",
+                "verify_msg": "wrong path, fail to arrive at dst: (grave) (obj60), (path3) (obj57)",
+                "micro_uuid": "77c5271f-71b2-3765-b920-7d08ba7a5c87",
+                "macro_uuid": "ea4971a6-53cd-33a5-88a5-d0950cebdd27"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "outside the house",
+                "src_requested": "(start) (obj53)",
+                "dst_anno": "old untended grave",
+                "dst_requested": "(grave) (obj60)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "south",
+                    "south",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "(inhut) (obj54)",
+                "verify_msg": "wrong path, fail to arrive at dst: (inhut) (obj54), (grave) (obj60)",
+                "micro_uuid": "16eb787f-3815-3b81-a586-38aaa8e18006",
+                "macro_uuid": "2da5aa54-eb04-3abc-bc6d-1eef2d3ff3f2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "flower garden",
+                "src_requested": "(path1) (obj55)",
+                "dst_anno": "alley (north/south)",
+                "dst_requested": "(wall2) (obj63)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "east",
+                    "north",
+                    "south",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "(path5) (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: (path5) (obj59), (wall2) (obj63)",
+                "micro_uuid": "c77b0e3e-37d5-3f67-b18c-ee8d75119e2a",
+                "macro_uuid": "7f445dce-6b0e-31a6-94f5-4db89095b701"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "rock garden",
+                "src_requested": "(path2) (obj56)",
+                "dst_anno": "sandpit",
+                "dst_requested": "(sandpit) (obj65)",
+                "connectivity": true,
+                "dist_shortest": 7,
+                "action_gpt": [
+                    "south",
+                    "east",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "(wall1) (obj62)",
+                "verify_msg": "wrong path, fail to arrive at dst: (wall1) (obj62), (sandpit) (obj65)",
+                "micro_uuid": "63d7c746-af2d-3add-b1c4-66eb0f75f7ae",
+                "macro_uuid": "0c1ada31-52e0-3a7c-979d-1db536c57f72"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "sandpit",
+                "src_requested": "(sandpit) (obj65)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(sandpit) (obj65)",
+                "verify_msg": "wrong path, fail to arrive at dst: (sandpit) (obj65), (lake) (obj61)",
+                "micro_uuid": "f160a007-80b8-3c49-b265-f4b14bbeefc7",
+                "macro_uuid": "fc529971-3c1b-3836-b92f-1491af3cec62"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "remnants of a bonfire",
+                "src_requested": "(path5) (obj59)",
+                "dst_anno": "edge of a large calm lake",
+                "dst_requested": "(lake) (obj61)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "east"
+                ],
+                "dst_gpt": "(lake) (obj61)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "1328bc98-6b4d-3948-bae3-256c6467e0a4",
+                "macro_uuid": "bb959805-daa6-3f9a-9036-add01d5f9dbc"
+            }
+        ],
+        "correct_num_macro": 28,
+        "total_num_macro": 67,
+        "accuracy_macro": 0.417910447761194
+    }
+}

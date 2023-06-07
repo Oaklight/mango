@@ -1,0 +1,791 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 9,
+        "total_num": 15,
+        "accuracy": 0.6,
+        "collection": {
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-11-29_292.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the garden (obj128)",
+                "micro_uuid": "7d909847-5abc-3d22-80a8-f9e9f300ffaa",
+                "macro_uuid": "8fa61361-53f1-3a3e-94a6-5411aafcbe04"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-13-21_166.json": {
+                "verify_result": true,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4140014f-837f-37f1-9d16-3da4df6ffe18",
+                "macro_uuid": "138ef53d-c79d-3742-aa37-8b10edde5a36"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-12-03_879.json": {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d15996f9-658f-334d-9452-d8075378c46b",
+                "macro_uuid": "0f012702-7b63-38ab-94b1-e10c0c2f9dee"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-11-20_011.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a clearing in the forest (obj74)",
+                "micro_uuid": "0805865c-9e6f-39b3-8527-81e3f56fa551",
+                "macro_uuid": "928fa40b-2605-38c8-8456-c04f0e4843f6"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-12-39_782.json": {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "2a0d8f55-b3ad-30b8-8b18-0fbc20923de7",
+                "macro_uuid": "33885071-3e01-3885-ab4b-1e489c6ac18c"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-12-40_216.json": {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d2be30ea-9a94-3fd3-adaf-e8eb0a413b5c",
+                "macro_uuid": "741c143d-914e-39b0-9328-85adfcf41451"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-11-29_675.json": {
+                "verify_result": true,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On a path in the forest",
+                "dst_requested": "on a path in the forest (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "on a path in the forest (obj189)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f0e98a9e-94c6-396a-81a2-45f6465895be",
+                "macro_uuid": "480bc2e2-f906-359c-a94d-8f7ddefc0568"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-12-02_124.json": {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "99e19814-4f3b-305e-9b3e-c71f8f102b36",
+                "macro_uuid": "d7ddeb4e-d4fd-3fc2-b5a3-9ce85ed7831a"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-13-21_276.json": {
+                "verify_result": true,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a46be1fc-e3b0-37f0-9ebb-9650a6a41789",
+                "macro_uuid": "7ad00fed-20db-331e-be1f-7c9983fc3694"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-13-58_565.json": {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the garden (obj128)",
+                "micro_uuid": "7a7f37c4-0203-3714-88d5-5bddbfe9d309",
+                "macro_uuid": "1932c362-de61-3770-abb7-dedaf3f0aef8"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-11-58_676.json": {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4afc1455-4749-3ca0-b811-0bb0dfe5aa59",
+                "macro_uuid": "1ef69c8f-d82e-3aae-bf03-7a992e072c1a"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-12-00_376.json": {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ec9ff17f-d7c9-34f7-b385-e30457cc4b18",
+                "macro_uuid": "b30dba14-16bc-3e7b-b1c0-ebdb196bbba3"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-11-21_636.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the porch (obj108)",
+                "micro_uuid": "d8feffe8-aa01-3d77-a861-ba58db641daa",
+                "macro_uuid": "5c328a4c-c3cc-39c5-86f7-0d31daeb896a"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-11-19_058.json": {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "on a path in the forest (obj189)",
+                "verify_msg": "wrong path, fail to arrive at dst: on a path in the forest (obj189), at a fork in the path (obj168)",
+                "micro_uuid": "713aa4d0-566b-3a09-8bbc-0fcdfa5efc9b",
+                "macro_uuid": "c2cd2b70-e998-3b24-9add-44990d96ad34"
+            },
+            "../gpt-games-results/gold/results//pathgen-gpt-3.5-turbo/results_2023-05-31-04-12-39_555.json": {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a clearing in the forest (obj74), on the porch (obj108)",
+                "micro_uuid": "1e3d1602-dee3-3578-bdcb-f51eabe4f2cf",
+                "macro_uuid": "0b2f6037-a33c-3eb3-a03d-294b88471712"
+            }
+        },
+        "random_guess_rate": 2.2083576010747954e-05,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the garden (obj128)",
+                "micro_uuid": "7d909847-5abc-3d22-80a8-f9e9f300ffaa",
+                "macro_uuid": "8fa61361-53f1-3a3e-94a6-5411aafcbe04"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4140014f-837f-37f1-9d16-3da4df6ffe18",
+                "macro_uuid": "138ef53d-c79d-3742-aa37-8b10edde5a36"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d15996f9-658f-334d-9452-d8075378c46b",
+                "macro_uuid": "0f012702-7b63-38ab-94b1-e10c0c2f9dee"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a clearing in the forest (obj74)",
+                "micro_uuid": "0805865c-9e6f-39b3-8527-81e3f56fa551",
+                "macro_uuid": "928fa40b-2605-38c8-8456-c04f0e4843f6"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "2a0d8f55-b3ad-30b8-8b18-0fbc20923de7",
+                "macro_uuid": "33885071-3e01-3885-ab4b-1e489c6ac18c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d2be30ea-9a94-3fd3-adaf-e8eb0a413b5c",
+                "macro_uuid": "741c143d-914e-39b0-9328-85adfcf41451"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On a path in the forest",
+                "dst_requested": "on a path in the forest (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "on a path in the forest (obj189)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f0e98a9e-94c6-396a-81a2-45f6465895be",
+                "macro_uuid": "480bc2e2-f906-359c-a94d-8f7ddefc0568"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "99e19814-4f3b-305e-9b3e-c71f8f102b36",
+                "macro_uuid": "d7ddeb4e-d4fd-3fc2-b5a3-9ce85ed7831a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a46be1fc-e3b0-37f0-9ebb-9650a6a41789",
+                "macro_uuid": "7ad00fed-20db-331e-be1f-7c9983fc3694"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the garden (obj128)",
+                "micro_uuid": "7a7f37c4-0203-3714-88d5-5bddbfe9d309",
+                "macro_uuid": "1932c362-de61-3770-abb7-dedaf3f0aef8"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4afc1455-4749-3ca0-b811-0bb0dfe5aa59",
+                "macro_uuid": "1ef69c8f-d82e-3aae-bf03-7a992e072c1a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ec9ff17f-d7c9-34f7-b385-e30457cc4b18",
+                "macro_uuid": "b30dba14-16bc-3e7b-b1c0-ebdb196bbba3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the porch (obj108)",
+                "micro_uuid": "d8feffe8-aa01-3d77-a861-ba58db641daa",
+                "macro_uuid": "5c328a4c-c3cc-39c5-86f7-0d31daeb896a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "on a path in the forest (obj189)",
+                "verify_msg": "wrong path, fail to arrive at dst: on a path in the forest (obj189), at a fork in the path (obj168)",
+                "micro_uuid": "713aa4d0-566b-3a09-8bbc-0fcdfa5efc9b",
+                "macro_uuid": "c2cd2b70-e998-3b24-9add-44990d96ad34"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a clearing in the forest (obj74), on the porch (obj108)",
+                "micro_uuid": "1e3d1602-dee3-3578-bdcb-f51eabe4f2cf",
+                "macro_uuid": "0b2f6037-a33c-3eb3-a03d-294b88471712"
+            }
+        ],
+        "correct_num_micro": 9,
+        "total_num_micro": 15,
+        "accuracy_micro": 0.6,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in the garden (obj128)",
+                "micro_uuid": "7d909847-5abc-3d22-80a8-f9e9f300ffaa",
+                "macro_uuid": "8fa61361-53f1-3a3e-94a6-5411aafcbe04"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4140014f-837f-37f1-9d16-3da4df6ffe18",
+                "macro_uuid": "138ef53d-c79d-3742-aa37-8b10edde5a36"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d15996f9-658f-334d-9452-d8075378c46b",
+                "macro_uuid": "0f012702-7b63-38ab-94b1-e10c0c2f9dee"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), in a clearing in the forest (obj74)",
+                "micro_uuid": "0805865c-9e6f-39b3-8527-81e3f56fa551",
+                "macro_uuid": "928fa40b-2605-38c8-8456-c04f0e4843f6"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "2a0d8f55-b3ad-30b8-8b18-0fbc20923de7",
+                "macro_uuid": "33885071-3e01-3885-ab4b-1e489c6ac18c"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "d2be30ea-9a94-3fd3-adaf-e8eb0a413b5c",
+                "macro_uuid": "741c143d-914e-39b0-9328-85adfcf41451"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On a path in the forest",
+                "dst_requested": "on a path in the forest (obj189)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "north",
+                    "south",
+                    "south"
+                ],
+                "dst_gpt": "on a path in the forest (obj189)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "f0e98a9e-94c6-396a-81a2-45f6465895be",
+                "macro_uuid": "480bc2e2-f906-359c-a94d-8f7ddefc0568"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "west",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "99e19814-4f3b-305e-9b3e-c71f8f102b36",
+                "macro_uuid": "d7ddeb4e-d4fd-3fc2-b5a3-9ce85ed7831a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "In a clearing in the forest",
+                "src_requested": "in a clearing in the forest (obj74)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west",
+                    "west"
+                ],
+                "dst_gpt": "in the garden (obj128)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "a46be1fc-e3b0-37f0-9ebb-9650a6a41789",
+                "macro_uuid": "7ad00fed-20db-331e-be1f-7c9983fc3694"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "On the porch",
+                "src_requested": "on the porch (obj108)",
+                "dst_anno": "In the garden",
+                "dst_requested": "in the garden (obj128)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "on the porch (obj108)",
+                "verify_msg": "wrong path, fail to arrive at dst: on the porch (obj108), in the garden (obj128)",
+                "micro_uuid": "7a7f37c4-0203-3714-88d5-5bddbfe9d309",
+                "macro_uuid": "1932c362-de61-3770-abb7-dedaf3f0aef8"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "west"
+                ],
+                "dst_gpt": "at a fork in the path (obj168)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "4afc1455-4749-3ca0-b811-0bb0dfe5aa59",
+                "macro_uuid": "1ef69c8f-d82e-3aae-bf03-7a992e072c1a"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "On a path in the forest",
+                "src_requested": "on a path in the forest (obj189)",
+                "dst_anno": "In a clearing in the forest",
+                "dst_requested": "in a clearing in the forest (obj74)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "ec9ff17f-d7c9-34f7-b385-e30457cc4b18",
+                "macro_uuid": "b30dba14-16bc-3e7b-b1c0-ebdb196bbba3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "in the enchanted forest (obj77)",
+                "verify_msg": "wrong path, fail to arrive at dst: in the enchanted forest (obj77), on the porch (obj108)",
+                "micro_uuid": "d8feffe8-aa01-3d77-a861-ba58db641daa",
+                "macro_uuid": "5c328a4c-c3cc-39c5-86f7-0d31daeb896a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "In the enchanted forest",
+                "src_requested": "in the enchanted forest (obj77)",
+                "dst_anno": "At a fork in the path",
+                "dst_requested": "at a fork in the path (obj168)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "on a path in the forest (obj189)",
+                "verify_msg": "wrong path, fail to arrive at dst: on a path in the forest (obj189), at a fork in the path (obj168)",
+                "micro_uuid": "713aa4d0-566b-3a09-8bbc-0fcdfa5efc9b",
+                "macro_uuid": "c2cd2b70-e998-3b24-9add-44990d96ad34"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "At a fork in the path",
+                "src_requested": "at a fork in the path (obj168)",
+                "dst_anno": "On the porch",
+                "dst_requested": "on the porch (obj108)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "in a clearing in the forest (obj74)",
+                "verify_msg": "wrong path, fail to arrive at dst: in a clearing in the forest (obj74), on the porch (obj108)",
+                "micro_uuid": "1e3d1602-dee3-3578-bdcb-f51eabe4f2cf",
+                "macro_uuid": "0b2f6037-a33c-3eb3-a03d-294b88471712"
+            }
+        ],
+        "correct_num_macro": 9,
+        "total_num_macro": 15,
+        "accuracy_macro": 0.6
+    }
+}

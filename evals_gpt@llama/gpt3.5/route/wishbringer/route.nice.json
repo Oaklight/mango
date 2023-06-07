@@ -1,0 +1,1178 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 2,
+        "total_num": 21,
+        "accuracy": 0.09523809523809523,
+        "collection": {
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-03-32_138.json": {
+                "verify_result": true,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "6586843d-d6b3-3819-8a75-5d7398de59f6",
+                "macro_uuid": "89412f4d-3fa0-3bc5-aded-3d55a41402a3"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-04-32_191.json": {
+                "verify_result": false,
+                "src_anno": "Spooky Copse",
+                "src_requested": "spooky copse (obj224)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), twilight glen (obj59)",
+                "micro_uuid": "7af800cc-4fbf-30a6-a4db-0d0342bcc455",
+                "macro_uuid": "1bbb0077-65fe-33c2-91d0-12675780b13a"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-00-42_152.json": {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "outside cottage (obj201)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cottage (obj201), twilight glen (obj59)",
+                "micro_uuid": "42413abd-a8c0-3bd9-b3fe-59c29a8390f5",
+                "macro_uuid": "c8addbd2-14eb-3c18-8322-31cf5443af5b"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-02-34_731.json": {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "outside cemetery (obj204)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cemetery (obj204), spooky copse (obj224)",
+                "micro_uuid": "eae63ebe-f562-3364-afe0-717062575bf1",
+                "macro_uuid": "d6b63a57-40b3-3fa5-a2a5-dd95518dea77"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-04-33_714.json": {
+                "verify_result": false,
+                "src_anno": "Spooky Copse",
+                "src_requested": "spooky copse (obj224)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "twilight glen (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: twilight glen (obj59), open grave (obj58)",
+                "micro_uuid": "691bd5ca-7c5c-38ff-9e1b-0955ef61ade5",
+                "macro_uuid": "359f819d-cf7c-3534-a5de-5add2e3da252"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-01-37_708.json": {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), spooky copse (obj224)",
+                "micro_uuid": "389d2bba-50cc-3569-bb53-afe008902b5b",
+                "macro_uuid": "7708df9d-573f-3bbc-bbd8-78fac5494458"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-00-36_867.json": {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), creepy corner (obj62)",
+                "micro_uuid": "8bc7bf62-de90-362c-88f3-5a22127b41d2",
+                "macro_uuid": "10105bd2-c851-3d33-92c2-5415b16cc30b"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-02-37_030.json": {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), twilight glen (obj59)",
+                "micro_uuid": "ee4d22ca-98d4-3528-a87a-5efc5ac06a9b",
+                "macro_uuid": "7582afb9-dee0-38e6-90d8-713524f15521"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-00-37_169.json": {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), spooky copse (obj224)",
+                "micro_uuid": "0cc6c349-68d2-3ce0-97d6-bbbd6868566f",
+                "macro_uuid": "d9732138-de88-332d-a338-0391299d3751"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-00-31_813.json": {
+                "verify_result": true,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Post Office",
+                "dst_requested": "post office (obj226)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3a5fbd93-82b1-33d0-983c-1afe6a7b4abb",
+                "macro_uuid": "a9fda49a-b3b4-3c78-8065-b7797d08c8be"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-02-31_508.json": {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "outside cemetery (obj204)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cemetery (obj204), creepy corner (obj62)",
+                "micro_uuid": "194d25ba-9abd-33cb-bb6c-2795c4d20f02",
+                "macro_uuid": "0f19b1a9-2e94-33b9-9055-097bddf2bb8b"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-01-32_498.json": {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Outside Cemetery",
+                "dst_requested": "outside cemetery (obj204)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: post office (obj226), outside cemetery (obj204)",
+                "micro_uuid": "d95f0fdf-f373-3bd6-9457-8adaf28b506d",
+                "macro_uuid": "6befe897-8480-35b2-b7ae-4142a93c6913"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-03-35_244.json": {
+                "verify_result": false,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), twilight glen (obj59)",
+                "micro_uuid": "093e6296-43b3-34f1-b922-170402da3303",
+                "macro_uuid": "5c598412-1275-35f7-9eee-6fab7d026fe7"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-02-59_883.json": {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), open grave (obj58)",
+                "micro_uuid": "22c66fbc-8d4f-39ae-b6b8-ab45f3909a0e",
+                "macro_uuid": "7a59e2e6-7c3f-3f5e-a1c1-a15cfa4ceb3f"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-01-16_693.json": {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), open grave (obj58)",
+                "micro_uuid": "729279d9-26e4-393b-8352-0b579eddf706",
+                "macro_uuid": "3edc9316-7dc7-33ab-90e5-171ae9b6962a"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-02-11_949.json": {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "outside cottage (obj201)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cottage (obj201), twilight glen (obj59)",
+                "micro_uuid": "ae2ea06f-0c79-3d4c-9c49-60e108614970",
+                "macro_uuid": "12cbfa80-1916-3c0b-bce4-e05500b036dd"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-02-04_141.json": {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rotary south (obj220)",
+                "verify_msg": "wrong path, fail to arrive at dst: rotary south (obj220), open grave (obj58)",
+                "micro_uuid": "e92abbbe-5ec8-3d8f-a8a4-570650a242c7",
+                "macro_uuid": "bd9ead41-808a-34ad-a9e6-826857231156"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-00-34_680.json": {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Outside Cemetery",
+                "dst_requested": "outside cemetery (obj204)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: post office (obj226), outside cemetery (obj204)",
+                "micro_uuid": "375a8806-600c-359f-ae92-c309e6af961e",
+                "macro_uuid": "7c523a37-53e3-33a0-b636-d889e75a7a4c"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-01-36_183.json": {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), creepy corner (obj62)",
+                "micro_uuid": "e46b54b1-b110-3716-8c08-bf4ce6c4caca",
+                "macro_uuid": "a5670559-d920-3dcf-a40f-b5f4d36bb091"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-03-42_452.json": {
+                "verify_result": false,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "twilight glen (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: twilight glen (obj59), open grave (obj58)",
+                "micro_uuid": "3b0e665f-6064-37eb-95b0-0a3e16847aac",
+                "macro_uuid": "478cca53-8f6b-3825-815f-bbb29221e265"
+            },
+            "../gpt-games-results/wishbringer/results//pathgen-gpt-3.5-turbo/results_2023-06-01-02-05-55_342.json": {
+                "verify_result": false,
+                "src_anno": "Twilight Glen",
+                "src_requested": "twilight glen (obj59)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west",
+                    "east",
+                    "south",
+                    "south",
+                    "north",
+                    "west",
+                    "east",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), open grave (obj58)",
+                "micro_uuid": "52f123e4-e5b3-3e03-a69b-0f9b2d48e5f1",
+                "macro_uuid": "175ac169-adb9-3511-b5b2-f9a3ea403047"
+            }
+        },
+        "random_guess_rate": 6.346302355263618e-09,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "6586843d-d6b3-3819-8a75-5d7398de59f6",
+                "macro_uuid": "89412f4d-3fa0-3bc5-aded-3d55a41402a3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Spooky Copse",
+                "src_requested": "spooky copse (obj224)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), twilight glen (obj59)",
+                "micro_uuid": "7af800cc-4fbf-30a6-a4db-0d0342bcc455",
+                "macro_uuid": "1bbb0077-65fe-33c2-91d0-12675780b13a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "outside cottage (obj201)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cottage (obj201), twilight glen (obj59)",
+                "micro_uuid": "42413abd-a8c0-3bd9-b3fe-59c29a8390f5",
+                "macro_uuid": "c8addbd2-14eb-3c18-8322-31cf5443af5b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "outside cemetery (obj204)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cemetery (obj204), spooky copse (obj224)",
+                "micro_uuid": "eae63ebe-f562-3364-afe0-717062575bf1",
+                "macro_uuid": "d6b63a57-40b3-3fa5-a2a5-dd95518dea77"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Spooky Copse",
+                "src_requested": "spooky copse (obj224)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "twilight glen (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: twilight glen (obj59), open grave (obj58)",
+                "micro_uuid": "691bd5ca-7c5c-38ff-9e1b-0955ef61ade5",
+                "macro_uuid": "359f819d-cf7c-3534-a5de-5add2e3da252"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), spooky copse (obj224)",
+                "micro_uuid": "389d2bba-50cc-3569-bb53-afe008902b5b",
+                "macro_uuid": "7708df9d-573f-3bbc-bbd8-78fac5494458"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), creepy corner (obj62)",
+                "micro_uuid": "8bc7bf62-de90-362c-88f3-5a22127b41d2",
+                "macro_uuid": "10105bd2-c851-3d33-92c2-5415b16cc30b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), twilight glen (obj59)",
+                "micro_uuid": "ee4d22ca-98d4-3528-a87a-5efc5ac06a9b",
+                "macro_uuid": "7582afb9-dee0-38e6-90d8-713524f15521"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), spooky copse (obj224)",
+                "micro_uuid": "0cc6c349-68d2-3ce0-97d6-bbbd6868566f",
+                "macro_uuid": "d9732138-de88-332d-a338-0391299d3751"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Post Office",
+                "dst_requested": "post office (obj226)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3a5fbd93-82b1-33d0-983c-1afe6a7b4abb",
+                "macro_uuid": "a9fda49a-b3b4-3c78-8065-b7797d08c8be"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "outside cemetery (obj204)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cemetery (obj204), creepy corner (obj62)",
+                "micro_uuid": "194d25ba-9abd-33cb-bb6c-2795c4d20f02",
+                "macro_uuid": "0f19b1a9-2e94-33b9-9055-097bddf2bb8b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Outside Cemetery",
+                "dst_requested": "outside cemetery (obj204)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: post office (obj226), outside cemetery (obj204)",
+                "micro_uuid": "d95f0fdf-f373-3bd6-9457-8adaf28b506d",
+                "macro_uuid": "6befe897-8480-35b2-b7ae-4142a93c6913"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), twilight glen (obj59)",
+                "micro_uuid": "093e6296-43b3-34f1-b922-170402da3303",
+                "macro_uuid": "5c598412-1275-35f7-9eee-6fab7d026fe7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), open grave (obj58)",
+                "micro_uuid": "22c66fbc-8d4f-39ae-b6b8-ab45f3909a0e",
+                "macro_uuid": "7a59e2e6-7c3f-3f5e-a1c1-a15cfa4ceb3f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), open grave (obj58)",
+                "micro_uuid": "729279d9-26e4-393b-8352-0b579eddf706",
+                "macro_uuid": "3edc9316-7dc7-33ab-90e5-171ae9b6962a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "outside cottage (obj201)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cottage (obj201), twilight glen (obj59)",
+                "micro_uuid": "ae2ea06f-0c79-3d4c-9c49-60e108614970",
+                "macro_uuid": "12cbfa80-1916-3c0b-bce4-e05500b036dd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rotary south (obj220)",
+                "verify_msg": "wrong path, fail to arrive at dst: rotary south (obj220), open grave (obj58)",
+                "micro_uuid": "e92abbbe-5ec8-3d8f-a8a4-570650a242c7",
+                "macro_uuid": "bd9ead41-808a-34ad-a9e6-826857231156"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Outside Cemetery",
+                "dst_requested": "outside cemetery (obj204)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: post office (obj226), outside cemetery (obj204)",
+                "micro_uuid": "375a8806-600c-359f-ae92-c309e6af961e",
+                "macro_uuid": "7c523a37-53e3-33a0-b636-d889e75a7a4c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), creepy corner (obj62)",
+                "micro_uuid": "e46b54b1-b110-3716-8c08-bf4ce6c4caca",
+                "macro_uuid": "a5670559-d920-3dcf-a40f-b5f4d36bb091"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "twilight glen (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: twilight glen (obj59), open grave (obj58)",
+                "micro_uuid": "3b0e665f-6064-37eb-95b0-0a3e16847aac",
+                "macro_uuid": "478cca53-8f6b-3825-815f-bbb29221e265"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Twilight Glen",
+                "src_requested": "twilight glen (obj59)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west",
+                    "east",
+                    "south",
+                    "south",
+                    "north",
+                    "west",
+                    "east",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), open grave (obj58)",
+                "micro_uuid": "52f123e4-e5b3-3e03-a69b-0f9b2d48e5f1",
+                "macro_uuid": "175ac169-adb9-3511-b5b2-f9a3ea403047"
+            }
+        ],
+        "correct_num_micro": 2,
+        "total_num_micro": 21,
+        "accuracy_micro": 0.09523809523809523,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "6586843d-d6b3-3819-8a75-5d7398de59f6",
+                "macro_uuid": "89412f4d-3fa0-3bc5-aded-3d55a41402a3"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Spooky Copse",
+                "src_requested": "spooky copse (obj224)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), twilight glen (obj59)",
+                "micro_uuid": "7af800cc-4fbf-30a6-a4db-0d0342bcc455",
+                "macro_uuid": "1bbb0077-65fe-33c2-91d0-12675780b13a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "outside cottage (obj201)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cottage (obj201), twilight glen (obj59)",
+                "micro_uuid": "42413abd-a8c0-3bd9-b3fe-59c29a8390f5",
+                "macro_uuid": "c8addbd2-14eb-3c18-8322-31cf5443af5b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "outside cemetery (obj204)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cemetery (obj204), spooky copse (obj224)",
+                "micro_uuid": "eae63ebe-f562-3364-afe0-717062575bf1",
+                "macro_uuid": "d6b63a57-40b3-3fa5-a2a5-dd95518dea77"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Spooky Copse",
+                "src_requested": "spooky copse (obj224)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "twilight glen (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: twilight glen (obj59), open grave (obj58)",
+                "micro_uuid": "691bd5ca-7c5c-38ff-9e1b-0955ef61ade5",
+                "macro_uuid": "359f819d-cf7c-3534-a5de-5add2e3da252"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), spooky copse (obj224)",
+                "micro_uuid": "389d2bba-50cc-3569-bb53-afe008902b5b",
+                "macro_uuid": "7708df9d-573f-3bbc-bbd8-78fac5494458"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), creepy corner (obj62)",
+                "micro_uuid": "8bc7bf62-de90-362c-88f3-5a22127b41d2",
+                "macro_uuid": "10105bd2-c851-3d33-92c2-5415b16cc30b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), twilight glen (obj59)",
+                "micro_uuid": "ee4d22ca-98d4-3528-a87a-5efc5ac06a9b",
+                "macro_uuid": "7582afb9-dee0-38e6-90d8-713524f15521"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Spooky Copse",
+                "dst_requested": "spooky copse (obj224)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), spooky copse (obj224)",
+                "micro_uuid": "0cc6c349-68d2-3ce0-97d6-bbbd6868566f",
+                "macro_uuid": "d9732138-de88-332d-a338-0391299d3751"
+            },
+            {
+                "verify_result": true,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Post Office",
+                "dst_requested": "post office (obj226)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "GOOD: arrived",
+                "micro_uuid": "3a5fbd93-82b1-33d0-983c-1afe6a7b4abb",
+                "macro_uuid": "a9fda49a-b3b4-3c78-8065-b7797d08c8be"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "north"
+                ],
+                "dst_gpt": "outside cemetery (obj204)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cemetery (obj204), creepy corner (obj62)",
+                "micro_uuid": "194d25ba-9abd-33cb-bb6c-2795c4d20f02",
+                "macro_uuid": "0f19b1a9-2e94-33b9-9055-097bddf2bb8b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Outside Cemetery",
+                "dst_requested": "outside cemetery (obj204)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: post office (obj226), outside cemetery (obj204)",
+                "micro_uuid": "d95f0fdf-f373-3bd6-9457-8adaf28b506d",
+                "macro_uuid": "6befe897-8480-35b2-b7ae-4142a93c6913"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), twilight glen (obj59)",
+                "micro_uuid": "093e6296-43b3-34f1-b922-170402da3303",
+                "macro_uuid": "5c598412-1275-35f7-9eee-6fab7d026fe7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside Cemetery",
+                "src_requested": "outside cemetery (obj204)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "north",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), open grave (obj58)",
+                "micro_uuid": "22c66fbc-8d4f-39ae-b6b8-ab45f3909a0e",
+                "macro_uuid": "7a59e2e6-7c3f-3f5e-a1c1-a15cfa4ceb3f"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 4,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "east",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), open grave (obj58)",
+                "micro_uuid": "729279d9-26e4-393b-8352-0b579eddf706",
+                "macro_uuid": "3edc9316-7dc7-33ab-90e5-171ae9b6962a"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Twilight Glen",
+                "dst_requested": "twilight glen (obj59)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east"
+                ],
+                "dst_gpt": "outside cottage (obj201)",
+                "verify_msg": "wrong path, fail to arrive at dst: outside cottage (obj201), twilight glen (obj59)",
+                "micro_uuid": "ae2ea06f-0c79-3d4c-9c49-60e108614970",
+                "macro_uuid": "12cbfa80-1916-3c0b-bce4-e05500b036dd"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 5,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "south",
+                    "north",
+                    "east",
+                    "north"
+                ],
+                "dst_gpt": "rotary south (obj220)",
+                "verify_msg": "wrong path, fail to arrive at dst: rotary south (obj220), open grave (obj58)",
+                "micro_uuid": "e92abbbe-5ec8-3d8f-a8a4-570650a242c7",
+                "macro_uuid": "bd9ead41-808a-34ad-a9e6-826857231156"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hilltop",
+                "src_requested": "hilltop (obj237)",
+                "dst_anno": "Outside Cemetery",
+                "dst_requested": "outside cemetery (obj204)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": [
+                    "south",
+                    "west"
+                ],
+                "dst_gpt": "post office (obj226)",
+                "verify_msg": "wrong path, fail to arrive at dst: post office (obj226), outside cemetery (obj204)",
+                "micro_uuid": "375a8806-600c-359f-ae92-c309e6af961e",
+                "macro_uuid": "7c523a37-53e3-33a0-b636-d889e75a7a4c"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Post Office",
+                "src_requested": "post office (obj226)",
+                "dst_anno": "Creepy Corner",
+                "dst_requested": "creepy corner (obj62)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": [
+                    "south",
+                    "west",
+                    "north"
+                ],
+                "dst_gpt": "hilltop (obj237)",
+                "verify_msg": "wrong path, fail to arrive at dst: hilltop (obj237), creepy corner (obj62)",
+                "micro_uuid": "e46b54b1-b110-3716-8c08-bf4ce6c4caca",
+                "macro_uuid": "a5670559-d920-3dcf-a40f-b5f4d36bb091"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Creepy Corner",
+                "src_requested": "creepy corner (obj62)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "north",
+                    "east",
+                    "west"
+                ],
+                "dst_gpt": "twilight glen (obj59)",
+                "verify_msg": "wrong path, fail to arrive at dst: twilight glen (obj59), open grave (obj58)",
+                "micro_uuid": "3b0e665f-6064-37eb-95b0-0a3e16847aac",
+                "macro_uuid": "478cca53-8f6b-3825-815f-bbb29221e265"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Twilight Glen",
+                "src_requested": "twilight glen (obj59)",
+                "dst_anno": "Open Grave",
+                "dst_requested": "open grave (obj58)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": [
+                    "east",
+                    "west",
+                    "west",
+                    "east",
+                    "south",
+                    "south",
+                    "north",
+                    "west",
+                    "east",
+                    "north",
+                    "north"
+                ],
+                "dst_gpt": "spooky copse (obj224)",
+                "verify_msg": "wrong path, fail to arrive at dst: spooky copse (obj224), open grave (obj58)",
+                "micro_uuid": "52f123e4-e5b3-3e03-a69b-0f9b2d48e5f1",
+                "macro_uuid": "175ac169-adb9-3511-b5b2-f9a3ea403047"
+            }
+        ],
+        "correct_num_macro": 2,
+        "total_num_macro": 21,
+        "accuracy_macro": 0.09523809523809523
+    }
+}

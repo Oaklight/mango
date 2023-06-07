@@ -1,0 +1,647 @@
+{
+    "pathgen-gpt-3.5-turbo/": {
+        "correct_num": 0,
+        "total_num": 6,
+        "accuracy": 0.0,
+        "collection": {
+            "../gpt-games-results/zenon/results//pathgen-gpt-3.5-turbo/results_2023-06-02-23-55-06_456.json": {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj33)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "a6c6c4bc-b7ba-367f-8ad8-d9e5a568a287",
+                "macro_uuid": "8a695ee9-f66c-396d-a8ef-3be6f783f1a4"
+            },
+            "../gpt-games-results/zenon/results//pathgen-gpt-3.5-turbo/results_2023-06-02-23-52-36_201.json": {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Armoury",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Corridor(east old cell and stretches further west)",
+                        "node": "Corridor(east to old cell and north to hall)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Corridor(east to old cell and north to hall)",
+                        "node": "Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hall",
+                        "node": "Lift",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lift",
+                        "node": "Hallway",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Landing",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "d6008293-573e-3436-a094-c9f6a4fc2ad6",
+                "macro_uuid": "8bc915f3-9af5-3d4a-9091-d263912e7b1b"
+            },
+            "../gpt-games-results/zenon/results//pathgen-gpt-3.5-turbo/results_2023-06-02-23-52-03_521.json": {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Corridor(south into a room and west to old cell)",
+                "dst_requested": "corridor (obj37)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "30115276-64f2-315c-9bde-70d22b331204",
+                "macro_uuid": "27ff05bf-dd4f-3007-aa1a-a8731eb3870b"
+            },
+            "../gpt-games-results/zenon/results//pathgen-gpt-3.5-turbo/results_2023-06-02-23-54-09_579.json": {
+                "verify_result": false,
+                "src_anno": "Corridor(south into a room and west to old cell)",
+                "src_requested": "corridor (obj37)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "corridor (obj37)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Cell",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cell",
+                        "node": "Landing",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Corridor(east old cell and stretches further west)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "ee3c41dc-e33c-383c-afb4-c74b58f05021",
+                "macro_uuid": "67acc41a-5b1d-3591-ab6c-4fde19bef4d2"
+            },
+            "../gpt-games-results/zenon/results//pathgen-gpt-3.5-turbo/results_2023-06-02-23-51-42_794.json": {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "2d154be6-3880-3342-8f53-e22f0cdf0020",
+                "macro_uuid": "995887b3-d2e9-369e-96ad-b3aa0a716317"
+            },
+            "../gpt-games-results/zenon/results//pathgen-gpt-3.5-turbo/results_2023-06-02-23-55-22_718.json": {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj33)",
+                "dst_anno": "Corridor(south into a room and west to old cell)",
+                "dst_requested": "corridor (obj37)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "c3baf4cc-ceda-3111-b7d2-391867d9484c",
+                "macro_uuid": "c0cbca9b-b5d5-3f51-81b6-930c238efed1"
+            }
+        },
+        "random_guess_rate": 9.387132965289807e-06,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj33)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "a6c6c4bc-b7ba-367f-8ad8-d9e5a568a287",
+                "macro_uuid": "8a695ee9-f66c-396d-a8ef-3be6f783f1a4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Armoury",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Corridor(east old cell and stretches further west)",
+                        "node": "Corridor(east to old cell and north to hall)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Corridor(east to old cell and north to hall)",
+                        "node": "Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hall",
+                        "node": "Lift",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lift",
+                        "node": "Hallway",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Landing",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "d6008293-573e-3436-a094-c9f6a4fc2ad6",
+                "macro_uuid": "8bc915f3-9af5-3d4a-9091-d263912e7b1b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Corridor(south into a room and west to old cell)",
+                "dst_requested": "corridor (obj37)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "30115276-64f2-315c-9bde-70d22b331204",
+                "macro_uuid": "27ff05bf-dd4f-3007-aa1a-a8731eb3870b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Corridor(south into a room and west to old cell)",
+                "src_requested": "corridor (obj37)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "corridor (obj37)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Cell",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cell",
+                        "node": "Landing",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Corridor(east old cell and stretches further west)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "ee3c41dc-e33c-383c-afb4-c74b58f05021",
+                "macro_uuid": "67acc41a-5b1d-3591-ab6c-4fde19bef4d2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "2d154be6-3880-3342-8f53-e22f0cdf0020",
+                "macro_uuid": "995887b3-d2e9-369e-96ad-b3aa0a716317"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj33)",
+                "dst_anno": "Corridor(south into a room and west to old cell)",
+                "dst_requested": "corridor (obj37)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "c3baf4cc-ceda-3111-b7d2-391867d9484c",
+                "macro_uuid": "c0cbca9b-b5d5-3f51-81b6-930c238efed1"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj33)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "a6c6c4bc-b7ba-367f-8ad8-d9e5a568a287",
+                "macro_uuid": "8a695ee9-f66c-396d-a8ef-3be6f783f1a4"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Landing",
+                "dst_requested": "landing (obj33)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Armoury",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Corridor(east old cell and stretches further west)",
+                        "node": "Corridor(east to old cell and north to hall)",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Corridor(east to old cell and north to hall)",
+                        "node": "Hall",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Hall",
+                        "node": "Lift",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Lift",
+                        "node": "Hallway",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Hallway",
+                        "node": "Landing",
+                        "action": "north"
+                    }
+                ],
+                "micro_uuid": "d6008293-573e-3436-a094-c9f6a4fc2ad6",
+                "macro_uuid": "8bc915f3-9af5-3d4a-9091-d263912e7b1b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Corridor(south into a room and west to old cell)",
+                "dst_requested": "corridor (obj37)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "west"
+                    }
+                ],
+                "micro_uuid": "30115276-64f2-315c-9bde-70d22b331204",
+                "macro_uuid": "27ff05bf-dd4f-3007-aa1a-a8731eb3870b"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Corridor(south into a room and west to old cell)",
+                "src_requested": "corridor (obj37)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "corridor (obj37)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Cell",
+                        "action": "west",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Cell",
+                        "node": "Landing",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(east old cell and stretches further west)",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Corridor(east old cell and stretches further west)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "ee3c41dc-e33c-383c-afb4-c74b58f05021",
+                "macro_uuid": "67acc41a-5b1d-3591-ab6c-4fde19bef4d2"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Cell",
+                "src_requested": "cell (obj25)",
+                "dst_anno": "Armoury",
+                "dst_requested": "armoury (obj43)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "cell (obj25)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Cell",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "south",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "prev_node": "Corridor(south into a room and west to old cell)",
+                        "node": "Armoury",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "2d154be6-3880-3342-8f53-e22f0cdf0020",
+                "macro_uuid": "995887b3-d2e9-369e-96ad-b3aa0a716317"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Landing",
+                "src_requested": "landing (obj33)",
+                "dst_anno": "Corridor(south into a room and west to old cell)",
+                "dst_requested": "corridor (obj37)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "landing (obj33)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "prev_node": "Landing",
+                        "node": "Corridor(south into a room and west to old cell)",
+                        "action": "southwest",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "c3baf4cc-ceda-3111-b7d2-391867d9484c",
+                "macro_uuid": "c0cbca9b-b5d5-3f51-81b6-930c238efed1"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.0
+    }
+}
