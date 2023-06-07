@@ -1,0 +1,386 @@
+{
+    "path_gen_llama_anno": {
+        "correct_num": 1,
+        "total_num": 6,
+        "accuracy": 0.16666666666666666,
+        "collection": {
+            "../mango-inhouse-llms/llama/hollywood/results//path_gen_llama_anno/pathgen_anno_results_12.json": {
+                "verify_result": true,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "game room (obj95)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Front Porch",
+                        "node": "Foyer",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Foyer",
+                        "node": "Game Room",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e219b315-f69b-3d3b-9ef1-39e9696faec0",
+                "macro_uuid": "dc4245a3-3470-36f5-aaee-5ea3d27c0dc1"
+            },
+            "../mango-inhouse-llms/llama/hollywood/results//path_gen_llama_anno/pathgen_anno_results_1.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "80d7ac43-4086-3f0b-9d03-aa8934f4abea",
+                "macro_uuid": "c8adf054-6405-313e-b90a-bbad86adb5e0"
+            },
+            "../mango-inhouse-llms/llama/hollywood/results//path_gen_llama_anno/pathgen_anno_results_2.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "0bb74d83-73c0-3c8e-b396-c1540241bd6f",
+                "macro_uuid": "e92186df-0469-325a-acd3-c3e3bb120925"
+            },
+            "../mango-inhouse-llms/llama/hollywood/results//path_gen_llama_anno/pathgen_anno_results_11.json": {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "35ada021-a28e-383d-80f6-a9379cf4375b",
+                "macro_uuid": "d18c87e9-da96-35d4-b993-7d47ccd30fa7"
+            },
+            "../mango-inhouse-llms/llama/hollywood/results//path_gen_llama_anno/pathgen_anno_results_0.json": {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Front Porch",
+                "dst_requested": "front porch (obj182)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "16262344-607b-39f1-811a-b185f1030dfe",
+                "macro_uuid": "aa893a92-09be-30b7-886f-f062ebc5f8ce"
+            },
+            "../mango-inhouse-llms/llama/hollywood/results//path_gen_llama_anno/pathgen_anno_results_21.json": {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "foyer (obj120)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Foyer",
+                        "node": "Game Room",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "f9017cdd-258a-360f-8b50-5ecd3b77238b",
+                "macro_uuid": "2d101c33-d273-3b32-aed1-9e1a90f09322"
+            }
+        },
+        "random_guess_rate": 0.00017910166908621474,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "game room (obj95)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Front Porch",
+                        "node": "Foyer",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Foyer",
+                        "node": "Game Room",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e219b315-f69b-3d3b-9ef1-39e9696faec0",
+                "macro_uuid": "dc4245a3-3470-36f5-aaee-5ea3d27c0dc1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "80d7ac43-4086-3f0b-9d03-aa8934f4abea",
+                "macro_uuid": "c8adf054-6405-313e-b90a-bbad86adb5e0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "0bb74d83-73c0-3c8e-b396-c1540241bd6f",
+                "macro_uuid": "e92186df-0469-325a-acd3-c3e3bb120925"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "35ada021-a28e-383d-80f6-a9379cf4375b",
+                "macro_uuid": "d18c87e9-da96-35d4-b993-7d47ccd30fa7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Front Porch",
+                "dst_requested": "front porch (obj182)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "16262344-607b-39f1-811a-b185f1030dfe",
+                "macro_uuid": "aa893a92-09be-30b7-886f-f062ebc5f8ce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "foyer (obj120)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Foyer",
+                        "node": "Game Room",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "f9017cdd-258a-360f-8b50-5ecd3b77238b",
+                "macro_uuid": "2d101c33-d273-3b32-aed1-9e1a90f09322"
+            }
+        ],
+        "correct_num_micro": 1,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.16666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "game room (obj95)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Front Porch",
+                        "node": "Foyer",
+                        "msg": "GOOD: seen"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Foyer",
+                        "node": "Game Room",
+                        "msg": "GOOD: seen"
+                    }
+                ],
+                "micro_uuid": "e219b315-f69b-3d3b-9ef1-39e9696faec0",
+                "macro_uuid": "dc4245a3-3470-36f5-aaee-5ea3d27c0dc1"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "80d7ac43-4086-3f0b-9d03-aa8934f4abea",
+                "macro_uuid": "c8adf054-6405-313e-b90a-bbad86adb5e0"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 3,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "0bb74d83-73c0-3c8e-b396-c1540241bd6f",
+                "macro_uuid": "e92186df-0469-325a-acd3-c3e3bb120925"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Front Porch",
+                "src_requested": "front porch (obj182)",
+                "dst_anno": "Foyer",
+                "dst_requested": "foyer (obj120)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "35ada021-a28e-383d-80f6-a9379cf4375b",
+                "macro_uuid": "d18c87e9-da96-35d4-b993-7d47ccd30fa7"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "South Junction",
+                "src_requested": "south junction (obj2)",
+                "dst_anno": "Front Porch",
+                "dst_requested": "front porch (obj182)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "16262344-607b-39f1-811a-b185f1030dfe",
+                "macro_uuid": "aa893a92-09be-30b7-886f-f062ebc5f8ce"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Foyer",
+                "src_requested": "foyer (obj120)",
+                "dst_anno": "Game Room",
+                "dst_requested": "game room (obj95)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "foyer (obj120)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Foyer",
+                        "node": "Game Room",
+                        "msg": "ERROR: action is not valid"
+                    }
+                ],
+                "micro_uuid": "f9017cdd-258a-360f-8b50-5ecd3b77238b",
+                "macro_uuid": "2d101c33-d273-3b32-aed1-9e1a90f09322"
+            }
+        ],
+        "correct_num_macro": 1,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.16666666666666666
+    }
+}
