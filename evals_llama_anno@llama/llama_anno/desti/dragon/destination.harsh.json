@@ -1,0 +1,407 @@
+{
+    "stepnav_llama_anno": {
+        "correct_num": 4,
+        "total_num": 6,
+        "accuracy": 0.6666666666666666,
+        "collection": {
+            "../mango-inhouse-llms/llama/dragon/results//stepnav_llama_anno/stepnav_anno_results_0.json": {
+                "verify_result": true,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "abandoned inn (obj156)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "abandoned inn (obj156)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Rocky Mountains",
+                        "node": "Abandoned Inn"
+                    }
+                ],
+                "micro_uuid": "ee2fab9a-64aa-377e-adc6-0d6359fc1dbd",
+                "macro_uuid": "044752dd-37d2-3d63-9632-7ad801c2e803"
+            },
+            "../mango-inhouse-llms/llama/dragon/results//stepnav_llama_anno/stepnav_anno_results_2.json": {
+                "verify_result": false,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "south",
+                    "east",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "746b5266-31cb-3006-8ad6-9920075ca719",
+                "macro_uuid": "7c14205a-d0cd-3ebc-9788-9bafd71689ef"
+            },
+            "../mango-inhouse-llms/llama/dragon/results//stepnav_llama_anno/stepnav_anno_results_38.json": {
+                "verify_result": true,
+                "src_requested": "abandoned inn (obj156)",
+                "dst_requested": "inside the inn (obj200)",
+                "action_requested": [
+                    "east"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inside the inn (obj200)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Abandoned Inn",
+                        "node": "Inside the Inn"
+                    }
+                ],
+                "micro_uuid": "000db184-0c55-35f7-88a9-771bc7b0f731",
+                "macro_uuid": "0a8d7a49-5ff6-3a9e-bfa7-49e4a70d958a"
+            },
+            "../mango-inhouse-llms/llama/dragon/results//stepnav_llama_anno/stepnav_anno_results_39.json": {
+                "verify_result": false,
+                "src_requested": "abandoned inn (obj156)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "east",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9f4c5396-b8bb-3cce-b31b-52107efcbefb",
+                "macro_uuid": "a68b28ff-3aaa-364d-93e5-00ca688b27ce"
+            },
+            "../mango-inhouse-llms/llama/dragon/results//stepnav_llama_anno/stepnav_anno_results_75.json": {
+                "verify_result": true,
+                "src_requested": "inside the inn (obj200)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inn cellar (obj218)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Inside the Inn",
+                        "node": "Inn Cellar"
+                    }
+                ],
+                "micro_uuid": "1a866326-5b80-38fe-9f19-846cf0cb79f2",
+                "macro_uuid": "6ef09ec0-d356-33cb-88b2-6fcd1ab5c18c"
+            },
+            "../mango-inhouse-llms/llama/dragon/results//stepnav_llama_anno/stepnav_anno_results_1.json": {
+                "verify_result": true,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "inside the inn (obj200)",
+                "action_requested": [
+                    "south",
+                    "east"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inside the inn (obj200)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Rocky Mountains",
+                        "node": "Abandoned Inn"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Abandoned Inn",
+                        "node": "Inside the Inn"
+                    }
+                ],
+                "micro_uuid": "15a6d121-57a7-3790-831b-58ebaa9c9a20",
+                "macro_uuid": "29a11eda-c23b-3016-8b84-74d499a187a8"
+            }
+        },
+        "random_guess_rate": 0.047619047619047616,
+        "collection_micro": [
+            {
+                "verify_result": true,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "abandoned inn (obj156)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "abandoned inn (obj156)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Rocky Mountains",
+                        "node": "Abandoned Inn"
+                    }
+                ],
+                "micro_uuid": "ee2fab9a-64aa-377e-adc6-0d6359fc1dbd",
+                "macro_uuid": "044752dd-37d2-3d63-9632-7ad801c2e803"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "south",
+                    "east",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "746b5266-31cb-3006-8ad6-9920075ca719",
+                "macro_uuid": "7c14205a-d0cd-3ebc-9788-9bafd71689ef"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "abandoned inn (obj156)",
+                "dst_requested": "inside the inn (obj200)",
+                "action_requested": [
+                    "east"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inside the inn (obj200)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Abandoned Inn",
+                        "node": "Inside the Inn"
+                    }
+                ],
+                "micro_uuid": "000db184-0c55-35f7-88a9-771bc7b0f731",
+                "macro_uuid": "0a8d7a49-5ff6-3a9e-bfa7-49e4a70d958a"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "abandoned inn (obj156)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "east",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9f4c5396-b8bb-3cce-b31b-52107efcbefb",
+                "macro_uuid": "a68b28ff-3aaa-364d-93e5-00ca688b27ce"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "inside the inn (obj200)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inn cellar (obj218)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Inside the Inn",
+                        "node": "Inn Cellar"
+                    }
+                ],
+                "micro_uuid": "1a866326-5b80-38fe-9f19-846cf0cb79f2",
+                "macro_uuid": "6ef09ec0-d356-33cb-88b2-6fcd1ab5c18c"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "inside the inn (obj200)",
+                "action_requested": [
+                    "south",
+                    "east"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inside the inn (obj200)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Rocky Mountains",
+                        "node": "Abandoned Inn"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Abandoned Inn",
+                        "node": "Inside the Inn"
+                    }
+                ],
+                "micro_uuid": "15a6d121-57a7-3790-831b-58ebaa9c9a20",
+                "macro_uuid": "29a11eda-c23b-3016-8b84-74d499a187a8"
+            }
+        ],
+        "correct_num_micro": 4,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.6666666666666666,
+        "collection_macro": [
+            {
+                "verify_result": true,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "abandoned inn (obj156)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "abandoned inn (obj156)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "abandoned inn (obj156)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Rocky Mountains",
+                        "node": "Abandoned Inn"
+                    }
+                ],
+                "micro_uuid": "ee2fab9a-64aa-377e-adc6-0d6359fc1dbd",
+                "macro_uuid": "044752dd-37d2-3d63-9632-7ad801c2e803"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "south",
+                    "east",
+                    "down"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "746b5266-31cb-3006-8ad6-9920075ca719",
+                "macro_uuid": "7c14205a-d0cd-3ebc-9788-9bafd71689ef"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "abandoned inn (obj156)",
+                "dst_requested": "inside the inn (obj200)",
+                "action_requested": [
+                    "east"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inside the inn (obj200)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Abandoned Inn",
+                        "node": "Inside the Inn"
+                    }
+                ],
+                "micro_uuid": "000db184-0c55-35f7-88a9-771bc7b0f731",
+                "macro_uuid": "0a8d7a49-5ff6-3a9e-bfa7-49e4a70d958a"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "abandoned inn (obj156)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "east",
+                    "down"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "9f4c5396-b8bb-3cce-b31b-52107efcbefb",
+                "macro_uuid": "a68b28ff-3aaa-364d-93e5-00ca688b27ce"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "inside the inn (obj200)",
+                "dst_requested": "inn cellar (obj218)",
+                "action_requested": [
+                    "down"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "inn cellar (obj218)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inn cellar (obj218)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Inside the Inn",
+                        "node": "Inn Cellar"
+                    }
+                ],
+                "micro_uuid": "1a866326-5b80-38fe-9f19-846cf0cb79f2",
+                "macro_uuid": "6ef09ec0-d356-33cb-88b2-6fcd1ab5c18c"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "rocky mountains (obj148)",
+                "dst_requested": "inside the inn (obj200)",
+                "action_requested": [
+                    "south",
+                    "east"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "inside the inn (obj200)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "inside the inn (obj200)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Rocky Mountains",
+                        "node": "Abandoned Inn"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Abandoned Inn",
+                        "node": "Inside the Inn"
+                    }
+                ],
+                "micro_uuid": "15a6d121-57a7-3790-831b-58ebaa9c9a20",
+                "macro_uuid": "29a11eda-c23b-3016-8b84-74d499a187a8"
+            }
+        ],
+        "correct_num_macro": 4,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.6666666666666666
+    }
+}

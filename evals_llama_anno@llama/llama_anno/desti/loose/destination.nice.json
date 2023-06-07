@@ -1,0 +1,284 @@
+{
+    "stepnav_llama_anno": {
+        "correct_num": 3,
+        "total_num": 6,
+        "accuracy": 0.5,
+        "collection": {
+            "../mango-inhouse-llms/llama/loose/results//stepnav_llama_anno/stepnav_anno_results_0.json": {
+                "verify_result": false,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "forest (obj39)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "fb33ee83-54e3-3c12-a789-062f12a12c9d",
+                "macro_uuid": "53172846-6555-3909-a84c-ee34bef6e9f9"
+            },
+            "../mango-inhouse-llms/llama/loose/results//stepnav_llama_anno/stepnav_anno_results_2.json": {
+                "verify_result": false,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "southwest"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "a6da507e-7363-3940-a635-61659f24374f",
+                "macro_uuid": "ea79d58f-80ee-38a7-b7b6-5f042e9a63e7"
+            },
+            "../mango-inhouse-llms/llama/loose/results//stepnav_llama_anno/stepnav_anno_results_21.json": {
+                "verify_result": true,
+                "src_requested": "deep forest (obj41)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "southwest"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "country lane (obj50)",
+                "verify_msg": "",
+                "micro_uuid": "1958c5b9-f06f-3c48-b66e-7df2d11a2b75",
+                "macro_uuid": "54a64d73-43ae-3bfb-b947-6d74cecef501"
+            },
+            "../mango-inhouse-llms/llama/loose/results//stepnav_llama_anno/stepnav_anno_results_11.json": {
+                "verify_result": false,
+                "src_requested": "forest (obj39)",
+                "dst_requested": "deep forest (obj41)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "eddbf11f-133f-3b1d-bc8c-cf4fabcece11",
+                "macro_uuid": "7c64f493-4499-316c-8de8-fd688ed042d0"
+            },
+            "../mango-inhouse-llms/llama/loose/results//stepnav_llama_anno/stepnav_anno_results_12.json": {
+                "verify_result": true,
+                "src_requested": "forest (obj39)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "north",
+                    "southwest"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "country lane (obj50)",
+                "verify_msg": "",
+                "micro_uuid": "41146af5-1640-3413-a379-c851f20eea6b",
+                "macro_uuid": "e9078878-0e69-33ef-a9f8-0620d47eb87d"
+            },
+            "../mango-inhouse-llms/llama/loose/results//stepnav_llama_anno/stepnav_anno_results_1.json": {
+                "verify_result": true,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "deep forest (obj41)",
+                "action_requested": [
+                    "north",
+                    "north"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "deep forest (obj41)",
+                "verify_msg": "",
+                "micro_uuid": "55e00b89-dd39-32ad-8417-c11462ae5434",
+                "macro_uuid": "9791825f-7986-3556-9e20-a66779b3bb34"
+            }
+        },
+        "random_guess_rate": 0.08333333333333333,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "forest (obj39)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "fb33ee83-54e3-3c12-a789-062f12a12c9d",
+                "macro_uuid": "53172846-6555-3909-a84c-ee34bef6e9f9"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "southwest"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "a6da507e-7363-3940-a635-61659f24374f",
+                "macro_uuid": "ea79d58f-80ee-38a7-b7b6-5f042e9a63e7"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "deep forest (obj41)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "southwest"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "country lane (obj50)",
+                "verify_msg": "",
+                "micro_uuid": "1958c5b9-f06f-3c48-b66e-7df2d11a2b75",
+                "macro_uuid": "54a64d73-43ae-3bfb-b947-6d74cecef501"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "forest (obj39)",
+                "dst_requested": "deep forest (obj41)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "eddbf11f-133f-3b1d-bc8c-cf4fabcece11",
+                "macro_uuid": "7c64f493-4499-316c-8de8-fd688ed042d0"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "forest (obj39)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "north",
+                    "southwest"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "country lane (obj50)",
+                "verify_msg": "",
+                "micro_uuid": "41146af5-1640-3413-a379-c851f20eea6b",
+                "macro_uuid": "e9078878-0e69-33ef-a9f8-0620d47eb87d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "deep forest (obj41)",
+                "action_requested": [
+                    "north",
+                    "north"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "deep forest (obj41)",
+                "verify_msg": "",
+                "micro_uuid": "55e00b89-dd39-32ad-8417-c11462ae5434",
+                "macro_uuid": "9791825f-7986-3556-9e20-a66779b3bb34"
+            }
+        ],
+        "correct_num_micro": 3,
+        "total_num_micro": 6,
+        "accuracy_micro": 0.5,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "forest (obj39)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "fb33ee83-54e3-3c12-a789-062f12a12c9d",
+                "macro_uuid": "53172846-6555-3909-a84c-ee34bef6e9f9"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "southwest"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "a6da507e-7363-3940-a635-61659f24374f",
+                "macro_uuid": "ea79d58f-80ee-38a7-b7b6-5f042e9a63e7"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "deep forest (obj41)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "southwest"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "country lane (obj50)",
+                "verify_msg": "",
+                "micro_uuid": "1958c5b9-f06f-3c48-b66e-7df2d11a2b75",
+                "macro_uuid": "54a64d73-43ae-3bfb-b947-6d74cecef501"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "forest (obj39)",
+                "dst_requested": "deep forest (obj41)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "empty path_gpt when action_requested is not empty",
+                "micro_uuid": "eddbf11f-133f-3b1d-bc8c-cf4fabcece11",
+                "macro_uuid": "7c64f493-4499-316c-8de8-fd688ed042d0"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "forest (obj39)",
+                "dst_requested": "country lane (obj50)",
+                "action_requested": [
+                    "north",
+                    "southwest"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "country lane (obj50)",
+                "verify_msg": "",
+                "micro_uuid": "41146af5-1640-3413-a379-c851f20eea6b",
+                "macro_uuid": "e9078878-0e69-33ef-a9f8-0620d47eb87d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "rickety fence (obj36)",
+                "dst_requested": "deep forest (obj41)",
+                "action_requested": [
+                    "north",
+                    "north"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "deep forest (obj41)",
+                "verify_msg": "",
+                "micro_uuid": "55e00b89-dd39-32ad-8417-c11462ae5434",
+                "macro_uuid": "9791825f-7986-3556-9e20-a66779b3bb34"
+            }
+        ],
+        "correct_num_macro": 3,
+        "total_num_macro": 6,
+        "accuracy_macro": 0.5
+    }
+}

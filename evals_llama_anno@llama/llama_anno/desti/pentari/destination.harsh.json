@@ -1,0 +1,1781 @@
+{
+    "stepnav_llama_anno": {
+        "correct_num": 11,
+        "total_num": 28,
+        "accuracy": 0.39285714285714285,
+        "collection": {
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_3.json": {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "76df2910-79cd-3e0d-8e79-7bcb091263dd",
+                "macro_uuid": "4feb5751-a9d1-39d2-a17f-b849dd4447a0"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_36.json": {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "f720e623-95ff-398a-959a-c24cb59911e3",
+                "macro_uuid": "f17b1ecb-f64b-3059-adb3-2d96c9f46dd6"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_0.json": {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "charlie company compound (obj48)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "95975183-1816-3234-bcdd-4a0ae11cb670",
+                "macro_uuid": "4450c27e-4a74-3066-81a3-8f255c104743"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_35.json": {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "4b9be6c3-900f-3908-94d3-5a8469f03f9f",
+                "macro_uuid": "522de214-1dce-3cc4-a25a-1dc85d65d99a"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_50.json": {
+                "verify_result": false,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "02afde1c-f091-3a62-8e88-e2abb5d06da5",
+                "macro_uuid": "a03e09de-a9c6-3228-81de-7f869196a46e"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_62.json": {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "east"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "library (obj57)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "library (obj57)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    }
+                ],
+                "micro_uuid": "e20c8e3e-68ca-389b-9a5c-8e00888a61a7",
+                "macro_uuid": "775d2562-1de0-3f73-a6b8-861b56f03e22"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_63.json": {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "east",
+                    "covert"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "castle (obj63)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle (obj63)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    },
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    }
+                ],
+                "micro_uuid": "f528bd97-eaee-3c46-a6ac-b9a6cc9139d0",
+                "macro_uuid": "7ed47c51-c5ac-31ee-bdd9-5ef5e3cd99fc"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_4.json": {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "06ca32aa-8284-33c9-ad2d-2145f80ed015",
+                "macro_uuid": "355e7d4e-cbe0-3e27-89c7-06cea4d153d3"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_48.json": {
+                "verify_result": true,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "city"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "entrance hall (obj53)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "entrance hall (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "city",
+                        "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+                        "node": "Entrance Hall"
+                    }
+                ],
+                "micro_uuid": "ed0299d8-1b04-37df-a03c-1c257cc231c5",
+                "macro_uuid": "8e69ffb0-2a58-3f1f-a2c5-46092c44be74"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_76.json": {
+                "verify_result": false,
+                "src_requested": "library (obj57)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "covert",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "56a387f4-03f1-3a29-bd9b-914215b872cd",
+                "macro_uuid": "a0419877-eff9-3a3f-b237-7133bf3bcab0"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_2.json": {
+                "verify_result": true,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Your Quarters",
+                        "node": "Charlie Company Compound"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    },
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "a79131e3-cc9e-32ae-89f2-d3a4eb8f58f5",
+                "macro_uuid": "5e4d0ebb-f08e-3ac1-ac9f-e52ebae80510"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_21.json": {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "29c63dea-e29f-3e2e-a52a-f7b178eb5ada",
+                "macro_uuid": "c934125b-6ca1-3d5b-9010-ca4957216446"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_87.json": {
+                "verify_result": true,
+                "src_requested": "castle (obj63)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "castle entrance (obj64)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle entrance (obj64)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Castle",
+                        "node": "Castle Entrance"
+                    }
+                ],
+                "micro_uuid": "c464e5fc-1ec3-3d9b-8197-33e5c18a2999",
+                "macro_uuid": "34b07830-429a-3be6-b8aa-b2e3ee4d8a79"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_20.json": {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "c5801cde-f63e-3c16-bbd7-d091fed6cb12",
+                "macro_uuid": "1c43b3fe-643a-3b34-a2c5-f380babc73b1"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_64.json": {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": "castle entrance (obj64)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle entrance (obj64)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    },
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Castle",
+                        "node": "Castle Entrance"
+                    }
+                ],
+                "micro_uuid": "7653b6fb-01bf-34bc-90f4-566c75ec36af",
+                "macro_uuid": "1c9ed00f-bca4-3109-aa16-a342ad011570"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_34.json": {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "in",
+                    "city"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "349fa851-5912-3e99-bcfe-e56758932215",
+                "macro_uuid": "d8189928-14e2-3f27-82bc-8cc3e9b7caef"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_22.json": {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "a0e19db7-bb3f-3766-b8e2-beb74fe377f4",
+                "macro_uuid": "716f7280-3c65-3b1a-83c0-66e1411cd218"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_5.json": {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "7b12c4c3-9849-3f39-a967-925d9738d03b",
+                "macro_uuid": "502631e7-78dc-37d7-adcf-192568e66ebc"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_19.json": {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2b47781e-6633-3ca1-ba76-e73036f7deed",
+                "macro_uuid": "cd14c0c5-d14f-39dc-ac6b-badb99574e13"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_33.json": {
+                "verify_result": true,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "in"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "86d40361-18fe-3233-bb45-62d38993f46d",
+                "macro_uuid": "7d3bb745-e38f-3ea1-91e7-cc4e09a3cd2d"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_75.json": {
+                "verify_result": true,
+                "src_requested": "library (obj57)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "covert"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "castle (obj63)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    }
+                ],
+                "micro_uuid": "43f2f567-ce43-32a3-9272-dd19acde55e7",
+                "macro_uuid": "63c5eddd-8365-37d7-a5a2-b633583f5b10"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_37.json": {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2eb98397-7345-3b8b-9283-dde211dd1ed9",
+                "macro_uuid": "74076c95-648e-3331-84f9-46da199395f3"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_18.json": {
+                "verify_result": true,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "north",
+                    "in"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    },
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "a7a9f485-c131-35a1-9829-9c36298b9d20",
+                "macro_uuid": "f9247b17-db46-36cb-bab3-3b5b380a60b8"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_51.json": {
+                "verify_result": false,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ae6d05b8-61df-3284-aa83-ea2beaf2b843",
+                "macro_uuid": "cfb15493-12ee-3c55-9bdc-854c8fe4d9b6"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_1.json": {
+                "verify_result": true,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "charlie company barracks (obj49)",
+                "action_requested": [
+                    "north",
+                    "north"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "charlie company barracks (obj49)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "charlie company barracks (obj49)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Your Quarters",
+                        "node": "Charlie Company Compound"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    }
+                ],
+                "micro_uuid": "dd3cab12-c21a-3044-92dc-3451edbe3bff",
+                "macro_uuid": "095f6026-c8dd-3198-933e-e8a2e9d01c42"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_17.json": {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "charlie company barracks (obj49)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "c9b747dd-f3c3-396c-a133-7d562a4e4b92",
+                "macro_uuid": "15156502-5153-39b3-b500-0099dc206b0f"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_49.json": {
+                "verify_result": true,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "city",
+                    "east"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "library (obj57)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "library (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "city",
+                        "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+                        "node": "Entrance Hall"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    }
+                ],
+                "micro_uuid": "a058a591-a787-3a64-b049-3388fd181cdf",
+                "macro_uuid": "1fbbdf65-9bda-34dc-9b68-c1642ad2b8a4"
+            },
+            "../mango-inhouse-llms/llama/pentari/results//stepnav_llama_anno/stepnav_anno_results_6.json": {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 7,
+                "dist_shortest": 7,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "d7b5d4a0-c4b9-3c44-a3c0-cd4a936a4a02",
+                "macro_uuid": "47167b54-0381-36ee-9306-c204eda0796a"
+            }
+        },
+        "random_guess_rate": 0.05555555555555555,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "76df2910-79cd-3e0d-8e79-7bcb091263dd",
+                "macro_uuid": "4feb5751-a9d1-39d2-a17f-b849dd4447a0"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "f720e623-95ff-398a-959a-c24cb59911e3",
+                "macro_uuid": "f17b1ecb-f64b-3059-adb3-2d96c9f46dd6"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "charlie company compound (obj48)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "95975183-1816-3234-bcdd-4a0ae11cb670",
+                "macro_uuid": "4450c27e-4a74-3066-81a3-8f255c104743"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "4b9be6c3-900f-3908-94d3-5a8469f03f9f",
+                "macro_uuid": "522de214-1dce-3cc4-a25a-1dc85d65d99a"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "02afde1c-f091-3a62-8e88-e2abb5d06da5",
+                "macro_uuid": "a03e09de-a9c6-3228-81de-7f869196a46e"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "east"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "library (obj57)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "library (obj57)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    }
+                ],
+                "micro_uuid": "e20c8e3e-68ca-389b-9a5c-8e00888a61a7",
+                "macro_uuid": "775d2562-1de0-3f73-a6b8-861b56f03e22"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "east",
+                    "covert"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "castle (obj63)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle (obj63)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    },
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    }
+                ],
+                "micro_uuid": "f528bd97-eaee-3c46-a6ac-b9a6cc9139d0",
+                "macro_uuid": "7ed47c51-c5ac-31ee-bdd9-5ef5e3cd99fc"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "06ca32aa-8284-33c9-ad2d-2145f80ed015",
+                "macro_uuid": "355e7d4e-cbe0-3e27-89c7-06cea4d153d3"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "city"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "entrance hall (obj53)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "entrance hall (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "city",
+                        "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+                        "node": "Entrance Hall"
+                    }
+                ],
+                "micro_uuid": "ed0299d8-1b04-37df-a03c-1c257cc231c5",
+                "macro_uuid": "8e69ffb0-2a58-3f1f-a2c5-46092c44be74"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "library (obj57)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "covert",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "56a387f4-03f1-3a29-bd9b-914215b872cd",
+                "macro_uuid": "a0419877-eff9-3a3f-b237-7133bf3bcab0"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Your Quarters",
+                        "node": "Charlie Company Compound"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    },
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "a79131e3-cc9e-32ae-89f2-d3a4eb8f58f5",
+                "macro_uuid": "5e4d0ebb-f08e-3ac1-ac9f-e52ebae80510"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "29c63dea-e29f-3e2e-a52a-f7b178eb5ada",
+                "macro_uuid": "c934125b-6ca1-3d5b-9010-ca4957216446"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "castle (obj63)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "castle entrance (obj64)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle entrance (obj64)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Castle",
+                        "node": "Castle Entrance"
+                    }
+                ],
+                "micro_uuid": "c464e5fc-1ec3-3d9b-8197-33e5c18a2999",
+                "macro_uuid": "34b07830-429a-3be6-b8aa-b2e3ee4d8a79"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "c5801cde-f63e-3c16-bbd7-d091fed6cb12",
+                "macro_uuid": "1c43b3fe-643a-3b34-a2c5-f380babc73b1"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": "castle entrance (obj64)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle entrance (obj64)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    },
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Castle",
+                        "node": "Castle Entrance"
+                    }
+                ],
+                "micro_uuid": "7653b6fb-01bf-34bc-90f4-566c75ec36af",
+                "macro_uuid": "1c9ed00f-bca4-3109-aa16-a342ad011570"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "in",
+                    "city"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "349fa851-5912-3e99-bcfe-e56758932215",
+                "macro_uuid": "d8189928-14e2-3f27-82bc-8cc3e9b7caef"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "a0e19db7-bb3f-3766-b8e2-beb74fe377f4",
+                "macro_uuid": "716f7280-3c65-3b1a-83c0-66e1411cd218"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "7b12c4c3-9849-3f39-a967-925d9738d03b",
+                "macro_uuid": "502631e7-78dc-37d7-adcf-192568e66ebc"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2b47781e-6633-3ca1-ba76-e73036f7deed",
+                "macro_uuid": "cd14c0c5-d14f-39dc-ac6b-badb99574e13"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "in"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "86d40361-18fe-3233-bb45-62d38993f46d",
+                "macro_uuid": "7d3bb745-e38f-3ea1-91e7-cc4e09a3cd2d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "library (obj57)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "covert"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "castle (obj63)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    }
+                ],
+                "micro_uuid": "43f2f567-ce43-32a3-9272-dd19acde55e7",
+                "macro_uuid": "63c5eddd-8365-37d7-a5a2-b633583f5b10"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2eb98397-7345-3b8b-9283-dde211dd1ed9",
+                "macro_uuid": "74076c95-648e-3331-84f9-46da199395f3"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "north",
+                    "in"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    },
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "a7a9f485-c131-35a1-9829-9c36298b9d20",
+                "macro_uuid": "f9247b17-db46-36cb-bab3-3b5b380a60b8"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ae6d05b8-61df-3284-aa83-ea2beaf2b843",
+                "macro_uuid": "cfb15493-12ee-3c55-9bdc-854c8fe4d9b6"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "charlie company barracks (obj49)",
+                "action_requested": [
+                    "north",
+                    "north"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "charlie company barracks (obj49)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "charlie company barracks (obj49)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Your Quarters",
+                        "node": "Charlie Company Compound"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    }
+                ],
+                "micro_uuid": "dd3cab12-c21a-3044-92dc-3451edbe3bff",
+                "macro_uuid": "095f6026-c8dd-3198-933e-e8a2e9d01c42"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "charlie company barracks (obj49)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "c9b747dd-f3c3-396c-a133-7d562a4e4b92",
+                "macro_uuid": "15156502-5153-39b3-b500-0099dc206b0f"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "city",
+                    "east"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "library (obj57)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "library (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "city",
+                        "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+                        "node": "Entrance Hall"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    }
+                ],
+                "micro_uuid": "a058a591-a787-3a64-b049-3388fd181cdf",
+                "macro_uuid": "1fbbdf65-9bda-34dc-9b68-c1642ad2b8a4"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 7,
+                "dist_shortest": 7,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "d7b5d4a0-c4b9-3c44-a3c0-cd4a936a4a02",
+                "macro_uuid": "47167b54-0381-36ee-9306-c204eda0796a"
+            }
+        ],
+        "correct_num_micro": 11,
+        "total_num_micro": 28,
+        "accuracy_micro": 0.39285714285714285,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "76df2910-79cd-3e0d-8e79-7bcb091263dd",
+                "macro_uuid": "4feb5751-a9d1-39d2-a17f-b849dd4447a0"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "f720e623-95ff-398a-959a-c24cb59911e3",
+                "macro_uuid": "f17b1ecb-f64b-3059-adb3-2d96c9f46dd6"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "charlie company compound (obj48)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "95975183-1816-3234-bcdd-4a0ae11cb670",
+                "macro_uuid": "4450c27e-4a74-3066-81a3-8f255c104743"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "4b9be6c3-900f-3908-94d3-5a8469f03f9f",
+                "macro_uuid": "522de214-1dce-3cc4-a25a-1dc85d65d99a"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "02afde1c-f091-3a62-8e88-e2abb5d06da5",
+                "macro_uuid": "a03e09de-a9c6-3228-81de-7f869196a46e"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "east"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "library (obj57)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "library (obj57)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    }
+                ],
+                "micro_uuid": "e20c8e3e-68ca-389b-9a5c-8e00888a61a7",
+                "macro_uuid": "775d2562-1de0-3f73-a6b8-861b56f03e22"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "east",
+                    "covert"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "castle (obj63)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle (obj63)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    },
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    }
+                ],
+                "micro_uuid": "f528bd97-eaee-3c46-a6ac-b9a6cc9139d0",
+                "macro_uuid": "7ed47c51-c5ac-31ee-bdd9-5ef5e3cd99fc"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "06ca32aa-8284-33c9-ad2d-2145f80ed015",
+                "macro_uuid": "355e7d4e-cbe0-3e27-89c7-06cea4d153d3"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "city"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "entrance hall (obj53)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "entrance hall (obj53)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "city",
+                        "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+                        "node": "Entrance Hall"
+                    }
+                ],
+                "micro_uuid": "ed0299d8-1b04-37df-a03c-1c257cc231c5",
+                "macro_uuid": "8e69ffb0-2a58-3f1f-a2c5-46092c44be74"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "library (obj57)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "covert",
+                    "south"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "56a387f4-03f1-3a29-bd9b-914215b872cd",
+                "macro_uuid": "a0419877-eff9-3a3f-b237-7133bf3bcab0"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Your Quarters",
+                        "node": "Charlie Company Compound"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    },
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "a79131e3-cc9e-32ae-89f2-d3a4eb8f58f5",
+                "macro_uuid": "5e4d0ebb-f08e-3ac1-ac9f-e52ebae80510"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "29c63dea-e29f-3e2e-a52a-f7b178eb5ada",
+                "macro_uuid": "c934125b-6ca1-3d5b-9010-ca4957216446"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "castle (obj63)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "south"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "castle entrance (obj64)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle entrance (obj64)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "south",
+                        "prev_node": "Castle",
+                        "node": "Castle Entrance"
+                    }
+                ],
+                "micro_uuid": "c464e5fc-1ec3-3d9b-8197-33e5c18a2999",
+                "macro_uuid": "34b07830-429a-3be6-b8aa-b2e3ee4d8a79"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "c5801cde-f63e-3c16-bbd7-d091fed6cb12",
+                "macro_uuid": "1c43b3fe-643a-3b34-a2c5-f380babc73b1"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "entrance hall (obj53)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": "castle entrance (obj64)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle entrance (obj64)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    },
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    },
+                    {
+                        "action": "south",
+                        "prev_node": "Castle",
+                        "node": "Castle Entrance"
+                    }
+                ],
+                "micro_uuid": "7653b6fb-01bf-34bc-90f4-566c75ec36af",
+                "macro_uuid": "1c9ed00f-bca4-3109-aa16-a342ad011570"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "in",
+                    "city"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "349fa851-5912-3e99-bcfe-e56758932215",
+                "macro_uuid": "d8189928-14e2-3f27-82bc-8cc3e9b7caef"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "a0e19db7-bb3f-3766-b8e2-beb74fe377f4",
+                "macro_uuid": "716f7280-3c65-3b1a-83c0-66e1411cd218"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert"
+                ],
+                "route_length": 6,
+                "dist_shortest": 6,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "7b12c4c3-9849-3f39-a967-925d9738d03b",
+                "macro_uuid": "502631e7-78dc-37d7-adcf-192568e66ebc"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "entrance hall (obj53)",
+                "action_requested": [
+                    "north",
+                    "in",
+                    "city"
+                ],
+                "route_length": 3,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2b47781e-6633-3ca1-ba76-e73036f7deed",
+                "macro_uuid": "cd14c0c5-d14f-39dc-ac6b-badb99574e13"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "in"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "86d40361-18fe-3233-bb45-62d38993f46d",
+                "macro_uuid": "7d3bb745-e38f-3ea1-91e7-cc4e09a3cd2d"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "library (obj57)",
+                "dst_requested": "castle (obj63)",
+                "action_requested": [
+                    "covert"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": "castle (obj63)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "castle (obj63)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "covert",
+                        "prev_node": "Library",
+                        "node": "Castle"
+                    }
+                ],
+                "micro_uuid": "43f2f567-ce43-32a3-9272-dd19acde55e7",
+                "macro_uuid": "63c5eddd-8365-37d7-a5a2-b633583f5b10"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company barracks (obj49)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 5,
+                "dist_shortest": 5,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "2eb98397-7345-3b8b-9283-dde211dd1ed9",
+                "macro_uuid": "74076c95-648e-3331-84f9-46da199395f3"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "pentarian transporter (obj52)",
+                "action_requested": [
+                    "north",
+                    "in"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "pentarian transporter (obj52)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "pentarian transporter (obj52)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    },
+                    {
+                        "action": "in",
+                        "prev_node": "Charlie Company Barracks",
+                        "node": "The Charlie Company Barracks (in the Pentarian Transporter)"
+                    }
+                ],
+                "micro_uuid": "a7a9f485-c131-35a1-9829-9c36298b9d20",
+                "macro_uuid": "f9247b17-db46-36cb-bab3-3b5b380a60b8"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "ae6d05b8-61df-3284-aa83-ea2beaf2b843",
+                "macro_uuid": "cfb15493-12ee-3c55-9bdc-854c8fe4d9b6"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "charlie company barracks (obj49)",
+                "action_requested": [
+                    "north",
+                    "north"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "charlie company barracks (obj49)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "charlie company barracks (obj49)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "north",
+                        "prev_node": "Your Quarters",
+                        "node": "Charlie Company Compound"
+                    },
+                    {
+                        "action": "north",
+                        "prev_node": "Charlie Company Compound",
+                        "node": "Charlie Company Barracks"
+                    }
+                ],
+                "micro_uuid": "dd3cab12-c21a-3044-92dc-3451edbe3bff",
+                "macro_uuid": "095f6026-c8dd-3198-933e-e8a2e9d01c42"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "charlie company compound (obj48)",
+                "dst_requested": "charlie company barracks (obj49)",
+                "action_requested": [
+                    "north"
+                ],
+                "route_length": 1,
+                "dist_shortest": 1,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "c9b747dd-f3c3-396c-a133-7d562a4e4b92",
+                "macro_uuid": "15156502-5153-39b3-b500-0099dc206b0f"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "pentarian transporter (obj52)",
+                "dst_requested": "library (obj57)",
+                "action_requested": [
+                    "city",
+                    "east"
+                ],
+                "route_length": 2,
+                "dist_shortest": 2,
+                "dst_gpt": "library (obj57)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "library (obj57)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "action": "city",
+                        "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+                        "node": "Entrance Hall"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Entrance Hall",
+                        "node": "Library"
+                    }
+                ],
+                "micro_uuid": "a058a591-a787-3a64-b049-3388fd181cdf",
+                "macro_uuid": "1fbbdf65-9bda-34dc-9b68-c1642ad2b8a4"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "your quarters (obj44)",
+                "dst_requested": "castle entrance (obj64)",
+                "action_requested": [
+                    "north",
+                    "north",
+                    "in",
+                    "city",
+                    "east",
+                    "covert",
+                    "south"
+                ],
+                "route_length": 7,
+                "dist_shortest": 7,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "d7b5d4a0-c4b9-3c44-a3c0-cd4a936a4a02",
+                "macro_uuid": "47167b54-0381-36ee-9306-c204eda0796a"
+            }
+        ],
+        "correct_num_macro": 11,
+        "total_num_macro": 28,
+        "accuracy_macro": 0.39285714285714285
+    }
+}

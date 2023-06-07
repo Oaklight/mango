@@ -1,0 +1,107 @@
+{
+    "path_gen_llama_anno": {
+        "correct_num": 0,
+        "total_num": 1,
+        "accuracy": 0.0,
+        "collection": {
+            "../mango-inhouse-llms/llama/library/results//path_gen_llama_anno/pathgen_anno_results_10.json": {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stacks",
+                "dst_requested": "ground floor stacks (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    }
+                ],
+                "micro_uuid": "611f7a4f-2fa9-31b5-8aba-a77603e3f24f",
+                "macro_uuid": "cdb0a18c-9650-3c6c-8e43-8327068609a8"
+            }
+        },
+        "random_guess_rate": 0.005804665191941204,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stacks",
+                "dst_requested": "ground floor stacks (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    }
+                ],
+                "micro_uuid": "611f7a4f-2fa9-31b5-8aba-a77603e3f24f",
+                "macro_uuid": "cdb0a18c-9650-3c6c-8e43-8327068609a8"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 1,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Lobby",
+                "src_requested": "lobby (obj16)",
+                "dst_anno": "Ground Floor Stacks",
+                "dst_requested": "ground floor stacks (obj35)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: node not in prev_node.neighbor()",
+                "stop_node_code": "lobby (obj16)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Lobby",
+                        "node": "Ground Floor Stairwell",
+                        "msg": "ERROR: node not in prev_node.neighbor()"
+                    },
+                    {
+                        "action": "down",
+                        "prev_node": "Ground Floor Stairwell",
+                        "node": "Ground Floor Stacks"
+                    }
+                ],
+                "micro_uuid": "611f7a4f-2fa9-31b5-8aba-a77603e3f24f",
+                "macro_uuid": "cdb0a18c-9650-3c6c-8e43-8327068609a8"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 1,
+        "accuracy_macro": 0.0
+    }
+}
