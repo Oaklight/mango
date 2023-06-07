@@ -80,11 +80,11 @@ def plot_for_task(model1_real_path, model2_real_path, task="desti"):
     )
 
 
-model1_real_path_desti = TEMP_DIR + "/gpt3.5/desti.json"
-model2_real_path_desti = TEMP_DIR + "/gpt4/desti.json"
+model1_real_path_desti = TEMP_DATA + "/gpt3.5/desti.json"
+model2_real_path_desti = TEMP_DATA + "/gpt4/desti.json"
 
-model1_real_path_route = TEMP_DIR + "/gpt3.5/route.json"
-model2_real_path_route = TEMP_DIR + "/gpt4/route.json"
+model1_real_path_route = TEMP_DATA + "/gpt3.5/route.json"
+model2_real_path_route = TEMP_DATA + "/gpt4/route.json"
 
 # plot for route task
 plot_for_task(
