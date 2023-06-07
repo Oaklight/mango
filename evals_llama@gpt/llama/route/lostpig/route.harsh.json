@@ -1,0 +1,209 @@
+{
+    "path_gen_llama": {
+        "correct_num": 0,
+        "total_num": 3,
+        "accuracy": 0.0,
+        "collection": {
+            "../mango-inhouse-llms/llama/lostpig/results//path_gen_llama/pathgen_results_0.json": {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Hole",
+                "dst_requested": "hole (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "a3d5826d-9599-3521-84ba-912a7f855ac8",
+                "macro_uuid": "2979b032-fa21-3762-8be7-96b368836882"
+            },
+            "../mango-inhouse-llms/llama/lostpig/results//path_gen_llama/pathgen_results_1.json": {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Outside",
+                        "node": "Hole",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Hole",
+                        "node": "Fountain Room"
+                    }
+                ],
+                "micro_uuid": "5c52235e-9992-3e27-adb2-17cf263648af",
+                "macro_uuid": "e569b6aa-db6c-344e-95c5-153ceaca84db"
+            },
+            "../mango-inhouse-llms/llama/lostpig/results//path_gen_llama/pathgen_results_6.json": {
+                "verify_result": false,
+                "src_anno": "Hole",
+                "src_requested": "hole (obj102)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
+                "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
+            }
+        },
+        "random_guess_rate": 0.007075966127061771,
+        "collection_micro": [
+            {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Hole",
+                "dst_requested": "hole (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "a3d5826d-9599-3521-84ba-912a7f855ac8",
+                "macro_uuid": "2979b032-fa21-3762-8be7-96b368836882"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Outside",
+                        "node": "Hole",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Hole",
+                        "node": "Fountain Room"
+                    }
+                ],
+                "micro_uuid": "5c52235e-9992-3e27-adb2-17cf263648af",
+                "macro_uuid": "e569b6aa-db6c-344e-95c5-153ceaca84db"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hole",
+                "src_requested": "hole (obj102)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
+                "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
+            }
+        ],
+        "correct_num_micro": 0,
+        "total_num_micro": 3,
+        "accuracy_micro": 0.0,
+        "collection_macro": [
+            {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Hole",
+                "dst_requested": "hole (obj102)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "a3d5826d-9599-3521-84ba-912a7f855ac8",
+                "macro_uuid": "2979b032-fa21-3762-8be7-96b368836882"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Outside",
+                "src_requested": "outside (obj93)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 2,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: action is not valid",
+                "stop_node_code": "outside (obj93)",
+                "stop_step": 0,
+                "path_checked": [
+                    {
+                        "action": "down",
+                        "prev_node": "Outside",
+                        "node": "Hole",
+                        "msg": "ERROR: action is not valid"
+                    },
+                    {
+                        "action": "east",
+                        "prev_node": "Hole",
+                        "node": "Fountain Room"
+                    }
+                ],
+                "micro_uuid": "5c52235e-9992-3e27-adb2-17cf263648af",
+                "macro_uuid": "e569b6aa-db6c-344e-95c5-153ceaca84db"
+            },
+            {
+                "verify_result": false,
+                "src_anno": "Hole",
+                "src_requested": "hole (obj102)",
+                "dst_anno": "Fountain Room",
+                "dst_requested": "fountaroom (obj111)",
+                "connectivity": true,
+                "dist_shortest": 1,
+                "action_gpt": null,
+                "dst_gpt": null,
+                "verify_msg": "ERROR: empty path",
+                "stop_node_code": null,
+                "stop_step": -2,
+                "path_checked": [],
+                "micro_uuid": "3a137801-c038-31cd-a89b-22ef2c7db383",
+                "macro_uuid": "045229da-885a-3558-928a-4892c5043191"
+            }
+        ],
+        "correct_num_macro": 0,
+        "total_num_macro": 3,
+        "accuracy_macro": 0.0
+    }
+}
