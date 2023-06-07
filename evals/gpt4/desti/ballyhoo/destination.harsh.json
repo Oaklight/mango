@@ -1,8 +1,8 @@
 {
     "stepnav-gpt-4/": {
         "correct_num": 78,
-        "total_num": 165,
-        "accuracy": 0.4727272727272727,
+        "total_num": 163,
+        "accuracy": 0.4785276073619632,
         "collection": {
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-40-02_430.json": {
                 "verify_result": true,
@@ -511,6 +511,47 @@
                 "micro_uuid": "402294fe-12a3-3115-8339-4ceeb21a6659",
                 "macro_uuid": "e8804e0e-4319-3153-9515-048cae0463d1"
             },
+            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-34-14_372.json": {
+                "verify_result": true,
+                "src_requested": "near white wagon (obj148)",
+                "dst_requested": "campeast (obj201)",
+                "action_requested": [
+                    "north",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 2,
+                "dst_gpt": "campeast (obj201)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "campeast (obj201)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Near White Wagon",
+                        "node": "Connection",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Camp, East",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "3495ba61-0632-373c-9680-cf77d076015a",
+                "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
+            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-35-16_547.json": {
                 "verify_result": true,
                 "src_requested": "performance ring (obj131)",
@@ -564,67 +605,6 @@
                 "micro_uuid": "66b56a3d-1e7d-35b4-90ee-b65c2c320e0e",
                 "macro_uuid": "c76ac299-1e7d-3361-ae90-73aa036da019"
             },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-41-04_962.dropped.json": {
-                "verify_result": false,
-                "src_requested": "clown alley (obj157)",
-                "dst_requested": "under bleachers (obj206)",
-                "action_requested": [
-                    "search tray",
-                    "go under wall",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "northeast"
-                ],
-                "route_length": 7,
-                "dist_shortest": 7,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "2d02924e-ef1b-333b-8e7a-6f292702f08c",
-                "macro_uuid": "f3b89e58-a471-33ab-b380-f05c8621df0e"
-            },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-24-32_597.dropped.json": {
-                "verify_result": true,
-                "src_requested": "in wings (obj81)",
-                "dst_requested": "near white wagon (obj148)",
-                "action_requested": [
-                    "south",
-                    "west",
-                    "south",
-                    "east"
-                ],
-                "route_length": 4,
-                "dist_shortest": 2,
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "near white wagon (obj148)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "In the Wings",
-                        "node": "Connection",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Near White Wagon",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "9e0fdac2-b932-3506-9e54-4b7f6f9d1a86",
-                "macro_uuid": "62e95db2-8b43-3111-aa2a-185a9762d2b8"
-            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-23-49_030.json": {
                 "verify_result": false,
                 "src_requested": "near white wagon (obj148)",
@@ -644,6 +624,41 @@
                 "verify_msg": "",
                 "micro_uuid": "64ed8728-ad45-3855-a6df-27c2834d34b3",
                 "macro_uuid": "ec386d00-a4b9-3f4f-8207-2b675d5a102a"
+            },
+            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-24-57_110.json": {
+                "verify_result": true,
+                "src_requested": "connection (obj57)",
+                "dst_requested": "near white wagon (obj148)",
+                "action_requested": [
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "route_length": 3,
+                "dist_shortest": 1,
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "near white wagon (obj148)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Near White Wagon",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "7e826742-8450-3519-becc-8d1478c22fa8",
+                "macro_uuid": "45d17644-4d1c-3464-a088-a302db1e7a0e"
             },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-20-03_343.json": {
                 "verify_result": false,
@@ -1631,25 +1646,6 @@
                 "micro_uuid": "9d46644f-b7b7-3c96-9ea4-326ffd0f3746",
                 "macro_uuid": "5866acd4-67b4-303f-89ec-1000b8209aa0"
             },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-34-20_933.dropped.json": {
-                "verify_result": false,
-                "src_requested": "near white wagon (obj148)",
-                "dst_requested": "clown alley (obj157)",
-                "action_requested": [
-                    "north",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "south"
-                ],
-                "route_length": 6,
-                "dist_shortest": 4,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "e604cb70-2dcb-3664-b69e-2a8152fd257e",
-                "macro_uuid": "10beff18-11fe-3688-a1c6-66346bfd942e"
-            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-19-35_058.json": {
                 "verify_result": false,
                 "src_requested": "bebig top (obj230)",
@@ -2002,24 +1998,6 @@
                 ],
                 "micro_uuid": "e34c0508-d6fa-3c98-a571-cf7e5864c68c",
                 "macro_uuid": "7bb71365-4b7c-3aeb-8fc0-d02382480063"
-            },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-34-19_907.dropped.json": {
-                "verify_result": false,
-                "src_requested": "near white wagon (obj148)",
-                "dst_requested": "campwest (obj94)",
-                "action_requested": [
-                    "north",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "route_length": 5,
-                "dist_shortest": 3,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "0b706fa0-abde-3bec-beb6-e2d77939a68f",
-                "macro_uuid": "25469d72-b7c2-3ec4-961e-8b0898871382"
             },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-31-50_283.json": {
                 "verify_result": false,
@@ -2597,6 +2575,47 @@
                 "micro_uuid": "1ccbef5e-fe7f-33a5-a58b-105912e83de2",
                 "macro_uuid": "5069943c-78c9-3b77-9f10-27d3912f7dd3"
             },
+            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-24-32_597.json": {
+                "verify_result": true,
+                "src_requested": "in wings (obj81)",
+                "dst_requested": "near white wagon (obj148)",
+                "action_requested": [
+                    "south",
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "route_length": 4,
+                "dist_shortest": 2,
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "near white wagon (obj148)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "In the Wings",
+                        "node": "Connection",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Near White Wagon",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9e0fdac2-b932-3506-9e54-4b7f6f9d1a86",
+                "macro_uuid": "62e95db2-8b43-3111-aa2a-185a9762d2b8"
+            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-23-01_679.json": {
                 "verify_result": false,
                 "src_requested": "near white wagon (obj148)",
@@ -2663,47 +2682,6 @@
                 "micro_uuid": "b7204162-856a-3550-ad12-1cbca781e578",
                 "macro_uuid": "a77e98a6-5b6a-3472-a1f6-53b3590f7b15"
             },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-34-14_372.dropped.json": {
-                "verify_result": true,
-                "src_requested": "near white wagon (obj148)",
-                "dst_requested": "campeast (obj201)",
-                "action_requested": [
-                    "north",
-                    "west",
-                    "south",
-                    "south"
-                ],
-                "route_length": 4,
-                "dist_shortest": 2,
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "campeast (obj201)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Near White Wagon",
-                        "node": "Connection",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Camp, East",
-                        "action": "south"
-                    }
-                ],
-                "micro_uuid": "3495ba61-0632-373c-9680-cf77d076015a",
-                "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
-            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-26-51_692.json": {
                 "verify_result": false,
                 "src_requested": "bebig top (obj230)",
@@ -2721,6 +2699,25 @@
                 "verify_msg": "",
                 "micro_uuid": "62272327-20a8-3bda-a032-0b24d88333d5",
                 "macro_uuid": "925db189-2399-372a-84c7-f43123b3cd4c"
+            },
+            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-34-20_933.json": {
+                "verify_result": false,
+                "src_requested": "near white wagon (obj148)",
+                "dst_requested": "clown alley (obj157)",
+                "action_requested": [
+                    "north",
+                    "west",
+                    "south",
+                    "south",
+                    "west",
+                    "south"
+                ],
+                "route_length": 6,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "e604cb70-2dcb-3664-b69e-2a8152fd257e",
+                "macro_uuid": "10beff18-11fe-3688-a1c6-66346bfd942e"
             },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-24-42_351.json": {
                 "verify_result": false,
@@ -3632,26 +3629,6 @@
                 "micro_uuid": "0dc54477-ec36-357f-9a80-c18e84829517",
                 "macro_uuid": "49bee43a-800a-3345-b0b2-efb54f3e39f9"
             },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-41-03_831.dropped.json": {
-                "verify_result": false,
-                "src_requested": "clown alley (obj157)",
-                "dst_requested": "under bleachers (obj206)",
-                "action_requested": [
-                    "search tray",
-                    "go under wall",
-                    "east",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast"
-                ],
-                "route_length": 7,
-                "dist_shortest": 7,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f0be2232-4c98-335f-ab0a-577d2934e714",
-                "macro_uuid": "f3b89e58-a471-33ab-b380-f05c8621df0e"
-            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-24-04_027.json": {
                 "verify_result": false,
                 "src_requested": "performance ring (obj131)",
@@ -4151,6 +4128,24 @@
                 "micro_uuid": "19a45f99-625d-374f-b66e-d711a3f9fb8f",
                 "macro_uuid": "014c1c99-b6f7-3506-bef6-eecacb875a86"
             },
+            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-34-19_907.json": {
+                "verify_result": false,
+                "src_requested": "near white wagon (obj148)",
+                "dst_requested": "campwest (obj94)",
+                "action_requested": [
+                    "north",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "route_length": 5,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "0b706fa0-abde-3bec-beb6-e2d77939a68f",
+                "macro_uuid": "25469d72-b7c2-3ec4-961e-8b0898871382"
+            },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-05-21-21-13_694.json": {
                 "verify_result": false,
                 "src_requested": "in wings (obj81)",
@@ -4576,41 +4571,6 @@
                 ],
                 "micro_uuid": "8b136590-8eb9-3ef1-82e1-03d401e78ed6",
                 "macro_uuid": "7cee024d-27d3-37d8-8a7b-afb2575e051b"
-            },
-            "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-24-57_110.dropped.json": {
-                "verify_result": true,
-                "src_requested": "connection (obj57)",
-                "dst_requested": "near white wagon (obj148)",
-                "action_requested": [
-                    "west",
-                    "south",
-                    "east"
-                ],
-                "route_length": 3,
-                "dist_shortest": 1,
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "near white wagon (obj148)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Near White Wagon",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "7e826742-8450-3519-becc-8d1478c22fa8",
-                "macro_uuid": "45d17644-4d1c-3464-a088-a302db1e7a0e"
             },
             "../gpt-games-results/ballyhoo/results//stepnav-gpt-4/results_2023-06-01-08-23-38_990.json": {
                 "verify_result": false,
@@ -5179,6 +5139,47 @@
             },
             {
                 "verify_result": true,
+                "src_requested": "near white wagon (obj148)",
+                "dst_requested": "campeast (obj201)",
+                "action_requested": [
+                    "north",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 2,
+                "dst_gpt": "campeast (obj201)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "campeast (obj201)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Near White Wagon",
+                        "node": "Connection",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Camp, East",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "3495ba61-0632-373c-9680-cf77d076015a",
+                "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
+            },
+            {
+                "verify_result": true,
                 "src_requested": "performance ring (obj131)",
                 "dst_requested": "campwest (obj94)",
                 "action_requested": [
@@ -5232,67 +5233,6 @@
             },
             {
                 "verify_result": false,
-                "src_requested": "clown alley (obj157)",
-                "dst_requested": "under bleachers (obj206)",
-                "action_requested": [
-                    "search tray",
-                    "go under wall",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "northeast"
-                ],
-                "route_length": 7,
-                "dist_shortest": 7,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "2d02924e-ef1b-333b-8e7a-6f292702f08c",
-                "macro_uuid": "f3b89e58-a471-33ab-b380-f05c8621df0e"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "in wings (obj81)",
-                "dst_requested": "near white wagon (obj148)",
-                "action_requested": [
-                    "south",
-                    "west",
-                    "south",
-                    "east"
-                ],
-                "route_length": 4,
-                "dist_shortest": 2,
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "near white wagon (obj148)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "In the Wings",
-                        "node": "Connection",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Near White Wagon",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "9e0fdac2-b932-3506-9e54-4b7f6f9d1a86",
-                "macro_uuid": "62e95db2-8b43-3111-aa2a-185a9762d2b8"
-            },
-            {
-                "verify_result": false,
                 "src_requested": "near white wagon (obj148)",
                 "dst_requested": "walking a tightrope (obj62)",
                 "action_requested": [
@@ -5310,6 +5250,41 @@
                 "verify_msg": "",
                 "micro_uuid": "64ed8728-ad45-3855-a6df-27c2834d34b3",
                 "macro_uuid": "ec386d00-a4b9-3f4f-8207-2b675d5a102a"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "connection (obj57)",
+                "dst_requested": "near white wagon (obj148)",
+                "action_requested": [
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "route_length": 3,
+                "dist_shortest": 1,
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "near white wagon (obj148)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Near White Wagon",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "7e826742-8450-3519-becc-8d1478c22fa8",
+                "macro_uuid": "45d17644-4d1c-3464-a088-a302db1e7a0e"
             },
             {
                 "verify_result": false,
@@ -5469,6 +5444,47 @@
                 ],
                 "micro_uuid": "368fd5b2-a792-3285-93a3-7b89967f9f6f",
                 "macro_uuid": "ed05f336-e959-3bbd-a14f-1fb36c137536"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "in wings (obj81)",
+                "dst_requested": "near white wagon (obj148)",
+                "action_requested": [
+                    "south",
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "route_length": 4,
+                "dist_shortest": 2,
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "near white wagon (obj148)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "In the Wings",
+                        "node": "Connection",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Near White Wagon",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9e0fdac2-b932-3506-9e54-4b7f6f9d1a86",
+                "macro_uuid": "62e95db2-8b43-3111-aa2a-185a9762d2b8"
             },
             {
                 "verify_result": false,
@@ -6258,25 +6274,6 @@
             },
             {
                 "verify_result": false,
-                "src_requested": "near white wagon (obj148)",
-                "dst_requested": "clown alley (obj157)",
-                "action_requested": [
-                    "north",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "south"
-                ],
-                "route_length": 6,
-                "dist_shortest": 4,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "e604cb70-2dcb-3664-b69e-2a8152fd257e",
-                "macro_uuid": "10beff18-11fe-3688-a1c6-66346bfd942e"
-            },
-            {
-                "verify_result": false,
                 "src_requested": "bebig top (obj230)",
                 "dst_requested": "campwest (obj94)",
                 "action_requested": [
@@ -6309,45 +6306,23 @@
                 "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
             },
             {
-                "verify_result": true,
+                "verify_result": false,
                 "src_requested": "near white wagon (obj148)",
-                "dst_requested": "campeast (obj201)",
+                "dst_requested": "clown alley (obj157)",
                 "action_requested": [
                     "north",
                     "west",
                     "south",
+                    "south",
+                    "west",
                     "south"
                 ],
-                "route_length": 4,
-                "dist_shortest": 2,
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "campeast (obj201)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Near White Wagon",
-                        "node": "Connection",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Camp, East",
-                        "action": "south"
-                    }
-                ],
-                "micro_uuid": "3495ba61-0632-373c-9680-cf77d076015a",
-                "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
+                "route_length": 6,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "e604cb70-2dcb-3664-b69e-2a8152fd257e",
+                "macro_uuid": "10beff18-11fe-3688-a1c6-66346bfd942e"
             },
             {
                 "verify_result": true,
@@ -6608,24 +6583,6 @@
                 ],
                 "micro_uuid": "e34c0508-d6fa-3c98-a571-cf7e5864c68c",
                 "macro_uuid": "7bb71365-4b7c-3aeb-8fc0-d02382480063"
-            },
-            {
-                "verify_result": false,
-                "src_requested": "near white wagon (obj148)",
-                "dst_requested": "campwest (obj94)",
-                "action_requested": [
-                    "north",
-                    "west",
-                    "south",
-                    "south",
-                    "west"
-                ],
-                "route_length": 5,
-                "dist_shortest": 3,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "0b706fa0-abde-3bec-beb6-e2d77939a68f",
-                "macro_uuid": "25469d72-b7c2-3ec4-961e-8b0898871382"
             },
             {
                 "verify_result": false,
@@ -7329,6 +7286,24 @@
                 "verify_msg": "",
                 "micro_uuid": "55b507d6-56a9-327e-bff0-67703abd8fd1",
                 "macro_uuid": "a504197e-7363-3dd0-8713-b7c8ec626eba"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "near white wagon (obj148)",
+                "dst_requested": "campwest (obj94)",
+                "action_requested": [
+                    "north",
+                    "west",
+                    "south",
+                    "south",
+                    "west"
+                ],
+                "route_length": 5,
+                "dist_shortest": 3,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "0b706fa0-abde-3bec-beb6-e2d77939a68f",
+                "macro_uuid": "25469d72-b7c2-3ec4-961e-8b0898871382"
             },
             {
                 "verify_result": true,
@@ -8181,26 +8156,6 @@
             },
             {
                 "verify_result": false,
-                "src_requested": "clown alley (obj157)",
-                "dst_requested": "under bleachers (obj206)",
-                "action_requested": [
-                    "search tray",
-                    "go under wall",
-                    "east",
-                    "east",
-                    "north",
-                    "north",
-                    "northeast"
-                ],
-                "route_length": 7,
-                "dist_shortest": 7,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "f0be2232-4c98-335f-ab0a-577d2934e714",
-                "macro_uuid": "f3b89e58-a471-33ab-b380-f05c8621df0e"
-            },
-            {
-                "verify_result": false,
                 "src_requested": "performance ring (obj131)",
                 "dst_requested": "clown alley (obj157)",
                 "action_requested": [
@@ -8456,41 +8411,6 @@
                 "verify_msg": "",
                 "micro_uuid": "9f013b7d-c499-3e0b-a064-a414bf606f26",
                 "macro_uuid": "c6580eac-3115-3956-9a90-1dfa8827d8a9"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "connection (obj57)",
-                "dst_requested": "near white wagon (obj148)",
-                "action_requested": [
-                    "west",
-                    "south",
-                    "east"
-                ],
-                "route_length": 3,
-                "dist_shortest": 1,
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "near white wagon (obj148)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Near White Wagon",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "7e826742-8450-3519-becc-8d1478c22fa8",
-                "macro_uuid": "45d17644-4d1c-3464-a088-a302db1e7a0e"
             },
             {
                 "verify_result": true,
@@ -9181,8 +9101,8 @@
             }
         ],
         "correct_num_micro": 75,
-        "total_num_micro": 160,
-        "accuracy_micro": 0.46875,
+        "total_num_micro": 158,
+        "accuracy_micro": 0.47468354430379744,
         "collection_macro": [
             {
                 "verify_result": true,
@@ -9771,6 +9691,47 @@
             },
             {
                 "verify_result": true,
+                "src_requested": "near white wagon (obj148)",
+                "dst_requested": "campeast (obj201)",
+                "action_requested": [
+                    "north",
+                    "west",
+                    "south",
+                    "south"
+                ],
+                "route_length": 4,
+                "dist_shortest": 2,
+                "dst_gpt": "campeast (obj201)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "campeast (obj201)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Near White Wagon",
+                        "node": "Connection",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Camp, East",
+                        "action": "south"
+                    }
+                ],
+                "micro_uuid": "3495ba61-0632-373c-9680-cf77d076015a",
+                "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
+            },
+            {
+                "verify_result": true,
                 "src_requested": "performance ring (obj131)",
                 "dst_requested": "campwest (obj94)",
                 "action_requested": [
@@ -9823,67 +9784,6 @@
                 "macro_uuid": "c76ac299-1e7d-3361-ae90-73aa036da019"
             },
             {
-                "verify_result": false,
-                "src_requested": "clown alley (obj157)",
-                "dst_requested": "under bleachers (obj206)",
-                "action_requested": [
-                    "search tray",
-                    "go under wall",
-                    "east",
-                    "north",
-                    "east",
-                    "north",
-                    "northeast"
-                ],
-                "route_length": 7,
-                "dist_shortest": 7,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "2d02924e-ef1b-333b-8e7a-6f292702f08c",
-                "macro_uuid": "f3b89e58-a471-33ab-b380-f05c8621df0e"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "in wings (obj81)",
-                "dst_requested": "near white wagon (obj148)",
-                "action_requested": [
-                    "south",
-                    "west",
-                    "south",
-                    "east"
-                ],
-                "route_length": 4,
-                "dist_shortest": 2,
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "near white wagon (obj148)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "In the Wings",
-                        "node": "Connection",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Near White Wagon",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "9e0fdac2-b932-3506-9e54-4b7f6f9d1a86",
-                "macro_uuid": "62e95db2-8b43-3111-aa2a-185a9762d2b8"
-            },
-            {
                 "verify_result": true,
                 "src_requested": "near white wagon (obj148)",
                 "dst_requested": "walking a tightrope (obj62)",
@@ -9929,6 +9829,61 @@
                 ],
                 "micro_uuid": "f6807d22-121f-39dd-9a54-220e3286b5e3",
                 "macro_uuid": "ec386d00-a4b9-3f4f-8207-2b675d5a102a"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "connection (obj57)",
+                "dst_requested": "near white wagon (obj148)",
+                "action_requested": [
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "route_length": 3,
+                "dist_shortest": 1,
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "near white wagon (obj148)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Near White Wagon",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "7e826742-8450-3519-becc-8d1478c22fa8",
+                "macro_uuid": "45d17644-4d1c-3464-a088-a302db1e7a0e"
+            },
+            {
+                "verify_result": false,
+                "src_requested": "clown alley (obj157)",
+                "dst_requested": "under bleachers (obj206)",
+                "action_requested": [
+                    "north",
+                    "go under wall",
+                    "east",
+                    "north",
+                    "east",
+                    "north",
+                    "northeast"
+                ],
+                "route_length": 7,
+                "dist_shortest": 7,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "6174c639-04ae-30a8-917d-036f51c6a6b6",
+                "macro_uuid": "f3b89e58-a471-33ab-b380-f05c8621df0e"
             },
             {
                 "verify_result": true,
@@ -10060,6 +10015,47 @@
                 ],
                 "micro_uuid": "368fd5b2-a792-3285-93a3-7b89967f9f6f",
                 "macro_uuid": "ed05f336-e959-3bbd-a14f-1fb36c137536"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "in wings (obj81)",
+                "dst_requested": "near white wagon (obj148)",
+                "action_requested": [
+                    "south",
+                    "west",
+                    "south",
+                    "east"
+                ],
+                "route_length": 4,
+                "dist_shortest": 2,
+                "dst_gpt": "near white wagon (obj148)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "near white wagon (obj148)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "In the Wings",
+                        "node": "Connection",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Connection",
+                        "node": "Beside the Big Top",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Beside the Big Top",
+                        "node": "Back Yard",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Back Yard",
+                        "node": "Near White Wagon",
+                        "action": "east"
+                    }
+                ],
+                "micro_uuid": "9e0fdac2-b932-3506-9e54-4b7f6f9d1a86",
+                "macro_uuid": "62e95db2-8b43-3111-aa2a-185a9762d2b8"
             },
             {
                 "verify_result": false,
@@ -10801,25 +10797,6 @@
             },
             {
                 "verify_result": false,
-                "src_requested": "near white wagon (obj148)",
-                "dst_requested": "clown alley (obj157)",
-                "action_requested": [
-                    "north",
-                    "west",
-                    "south",
-                    "south",
-                    "west",
-                    "south"
-                ],
-                "route_length": 6,
-                "dist_shortest": 4,
-                "dst_gpt": null,
-                "verify_msg": "",
-                "micro_uuid": "e604cb70-2dcb-3664-b69e-2a8152fd257e",
-                "macro_uuid": "10beff18-11fe-3688-a1c6-66346bfd942e"
-            },
-            {
-                "verify_result": false,
                 "src_requested": "bebig top (obj230)",
                 "dst_requested": "campwest (obj94)",
                 "action_requested": [
@@ -10837,45 +10814,23 @@
                 "macro_uuid": "6106b04f-9f70-3554-a4dd-5233db291075"
             },
             {
-                "verify_result": true,
+                "verify_result": false,
                 "src_requested": "near white wagon (obj148)",
-                "dst_requested": "campeast (obj201)",
+                "dst_requested": "clown alley (obj157)",
                 "action_requested": [
                     "north",
                     "west",
                     "south",
+                    "south",
+                    "west",
                     "south"
                 ],
-                "route_length": 4,
-                "dist_shortest": 2,
-                "dst_gpt": "campeast (obj201)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "campeast (obj201)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Near White Wagon",
-                        "node": "Connection",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Camp, East",
-                        "action": "south"
-                    }
-                ],
-                "micro_uuid": "3495ba61-0632-373c-9680-cf77d076015a",
-                "macro_uuid": "15276212-4dc4-3997-b4e5-39b7b85e7336"
+                "route_length": 6,
+                "dist_shortest": 4,
+                "dst_gpt": null,
+                "verify_msg": "",
+                "micro_uuid": "e604cb70-2dcb-3664-b69e-2a8152fd257e",
+                "macro_uuid": "10beff18-11fe-3688-a1c6-66346bfd942e"
             },
             {
                 "verify_result": true,
@@ -11842,41 +11797,6 @@
                 "verify_msg": "",
                 "micro_uuid": "b2b5ed0b-5b10-33dc-856f-e48d54b2a8cc",
                 "macro_uuid": "014c1c99-b6f7-3506-bef6-eecacb875a86"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "connection (obj57)",
-                "dst_requested": "near white wagon (obj148)",
-                "action_requested": [
-                    "west",
-                    "south",
-                    "east"
-                ],
-                "route_length": 3,
-                "dist_shortest": 1,
-                "dst_gpt": "near white wagon (obj148)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "near white wagon (obj148)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Connection",
-                        "node": "Beside the Big Top",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Beside the Big Top",
-                        "node": "Back Yard",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Back Yard",
-                        "node": "Near White Wagon",
-                        "action": "east"
-                    }
-                ],
-                "micro_uuid": "7e826742-8450-3519-becc-8d1478c22fa8",
-                "macro_uuid": "45d17644-4d1c-3464-a088-a302db1e7a0e"
             },
             {
                 "verify_result": true,
