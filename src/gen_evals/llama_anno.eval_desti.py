@@ -70,6 +70,11 @@ if __name__ == "__main__":
 
         current_path = f"{gpt_result_dir}/{each_version}"
         gpt_result_jsons = glob.glob(f"{current_path}/*.json")
+        gpt_result_jsons = [
+            each_json
+            for each_json in gpt_result_jsons
+            if ".dropped.json" not in each_json
+        ]
 
         correct = 0
         total = 0
