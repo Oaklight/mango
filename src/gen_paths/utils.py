@@ -132,7 +132,7 @@ def confirm_continue():
         exit(1)
 
 
-def compute_hash(json_obj, mode):
+def compute_hash(json_obj, mode, del_diff_shortest=False):
     accept_modes = ["all2all", "all_pairs", "path_details", "anno2code", "code2anno"]
     assert mode in accept_modes, f"mode must be one of {accept_modes}"
 
@@ -151,6 +151,10 @@ def compute_hash(json_obj, mode):
         "num_paths",
         "path_min_cutoffs",
     ]  # "diff_shortest"
+    if del_diff_shortest == True:
+        delete_keys_all2all.append("diff_shortest")
+        delete_keys_allpairs.append("diff_shortest")
+
     # for key in delete_keys:
     #     if key in json_obj_copy:
     #         del json_obj_copy[key]
@@ -183,3 +187,32 @@ def compute_hash(json_obj, mode):
     # json_str = json_str.replace('"seen": true,', "")
     hash_object = hashlib.md5(json_str.encode())
     return hash_object.hexdigest()
+
+
+def compare_path_details(path1, path2):
+    # path1 is newer version, path2 is older version
+    assert len(path1) == len(path2), f"len(path1)={len(path1)}, len(path2)={len(path2)}"
+
+    for i in range(len(path1)):
+        prev_node_1 = path1[i]["prev_node"]
+        prev_node_2 = path2[i]["prev_node"]
+        node_1 = path1[i]["node"]
+        node_2 = path2[i]["node"]
+        action_1 = path1[i]["action"]
+        action_2 = path2[i]["action"]
+        seen_1 = (
+            path1[i]["seen_in_forward"]
+            if "seen_in_forward" in path1[i]
+            else path1[i]["seen"]
+        )
+        seen_2 = path2[i]["seen"]
+        if prev_node_1 != prev_node_2:
+            return False
+        if node_1 != node_2:
+            return False
+        if action_1 != action_2:
+            return False
+        if seen_1 != seen_2:
+            return False
+
+    return True
