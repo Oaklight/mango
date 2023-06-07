@@ -263,6 +263,77 @@
                 "micro_uuid": "143dc0b7-fd36-3f08-b47b-a8081f2f3115",
                 "macro_uuid": "ef2448a5-cc50-39b4-8a8a-23e73211d9d5"
             },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-25-01_967.json": {
+                "verify_result": true,
+                "src_requested": "junction (obj63)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 9,
+                "dist_shortest": 2,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 8,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Damp Passage",
+                        "action": "touch table"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "43d4efd2-e915-3d29-95d0-021eacb62c05",
+                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
+            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-14-52-10_974.json": {
                 "verify_result": true,
                 "src_requested": "barren area (obj62)",
@@ -1215,113 +1286,6 @@
                 "micro_uuid": "659b1181-3331-395a-8ff3-33455b67fc2a",
                 "macro_uuid": "e439658b-2a31-37af-b6b9-1fff555853e1"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-14-31-33_749.dropped.json": {
-                "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 15,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 14,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "c1ad7443-3afe-39de-b556-e40ea6ccb804",
-                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
-            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-53-49_552.json": {
                 "verify_result": true,
                 "src_requested": "cliff (obj58)",
@@ -1562,6 +1526,53 @@
                 ],
                 "micro_uuid": "d8d6eae1-744a-3095-98c0-6923ebe522b9",
                 "macro_uuid": "175e49a8-3e1e-3e3a-844d-8845f293a4db"
+            },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-01-49_357.json": {
+                "verify_result": true,
+                "src_requested": "cliff (obj58)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "east",
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 5,
+                "dist_shortest": 4,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 4,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Barren Area",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "6a8a5b29-0527-377c-8e58-5b392f6788d0",
+                "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-32-38_692.json": {
                 "verify_result": false,
@@ -1873,6 +1884,47 @@
                 "micro_uuid": "445b6f39-a575-3b51-b621-3aa9c919172e",
                 "macro_uuid": "0490b82f-9e22-316e-b9dd-2acd46e9236f"
             },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-23-05_198.json": {
+                "verify_result": true,
+                "src_requested": "endless stair (obj64)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 4,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "b3dc4756-ec4d-3b82-913c-3d16579b0773",
+                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
+            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-19-39_794.json": {
                 "verify_result": true,
                 "src_requested": "engravings (obj154)",
@@ -2089,107 +2141,6 @@
                 ],
                 "micro_uuid": "6658ef73-29ea-3f4a-bea7-5c99b749e8b4",
                 "macro_uuid": "8921edfc-c86a-3a1e-aada-9c6876c36389"
-            },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-26-57_158.dropped.json": {
-                "verify_result": true,
-                "src_requested": "junction (obj63)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 14,
-                "dist_shortest": 2,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 13,
-                "path_checked": [
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "be31ac90-e2a6-3ba0-bd0e-51ce74690b72",
-                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-41-53_784.json": {
                 "verify_result": true,
@@ -2409,35 +2360,6 @@
                 "micro_uuid": "86e8541a-bd98-328c-9573-0413748ddebb",
                 "macro_uuid": "7d114c1e-d033-3bce-84d9-5f87b1efb3dc"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-13-02_091.dropped.json": {
-                "verify_result": true,
-                "src_requested": "damp passage (obj152)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 2,
-                "dist_shortest": 1,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "d33bc2c2-03d3-3345-b42d-3fd8cc7744d1",
-                "macro_uuid": "43e4abe1-39a8-350b-ad1f-c5514c846395"
-            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-16-00-51_450.json": {
                 "verify_result": true,
                 "src_requested": "foggy (obj53)",
@@ -2642,6 +2564,47 @@
                 "micro_uuid": "0726f525-cfec-348f-97be-06cf1cbf1f0f",
                 "macro_uuid": "005c8b0a-764b-3ac9-ba9f-35bca8be73db"
             },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-27-01_829.json": {
+                "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 4,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "602016f8-256e-3e6b-82c0-807172aa6819",
+                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
+            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-52-50_148.json": {
                 "verify_result": true,
                 "src_requested": "barren area (obj62)",
@@ -2833,6 +2796,113 @@
                 ],
                 "micro_uuid": "1d723e65-80e5-366f-805e-e9bae11985a7",
                 "macro_uuid": "60aa87a6-bdac-3c9e-a9f8-835e6b114d72"
+            },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-14-31-33_749.json": {
+                "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 15,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 14,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "c1ad7443-3afe-39de-b556-e40ea6ccb804",
+                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-16-21-01_726.json": {
                 "verify_result": true,
@@ -3391,53 +3461,6 @@
                 "micro_uuid": "af9e6a3f-bc66-3210-872b-9aac92d26aed",
                 "macro_uuid": "2284243f-8dc0-3770-9b9e-1794de92f543"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-01-49_357.dropped.json": {
-                "verify_result": true,
-                "src_requested": "cliff (obj58)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "east",
-                    "east",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 5,
-                "dist_shortest": 4,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 4,
-                "path_checked": [
-                    {
-                        "prev_node": "Cliff",
-                        "node": "Barren Area",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "6a8a5b29-0527-377c-8e58-5b392f6788d0",
-                "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
-            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-16-06-12_084.json": {
                 "verify_result": true,
                 "src_requested": "lake shore (obj52)",
@@ -3774,6 +3797,83 @@
                 "micro_uuid": "2adfbfcc-385a-3ee6-814f-574a91093ae0",
                 "macro_uuid": "318dc5c4-b7b1-3b16-a7e5-2016b1e0d180"
             },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-14-30-12_888.json": {
+                "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 10,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 9,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Damp Passage",
+                        "action": "touch table"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "7449c7ac-8d86-3528-b928-4c6c5e308351",
+                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
+            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-57-46_395.json": {
                 "verify_result": true,
                 "src_requested": "endless stair (obj64)",
@@ -3897,113 +3997,6 @@
                 ],
                 "micro_uuid": "df9613dd-aaa9-30fa-8159-0e437db40598",
                 "macro_uuid": "081785db-c6de-385f-9ac6-fac630c809aa"
-            },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-24-11_114.dropped.json": {
-                "verify_result": true,
-                "src_requested": "endless stair (obj64)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 15,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 14,
-                "path_checked": [
-                    {
-                        "prev_node": "Endless Stair",
-                        "node": "Junction",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "48b9a113-0c32-3ad1-b091-507a36967ce2",
-                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-56-39_131.json": {
                 "verify_result": false,
@@ -4181,6 +4174,89 @@
                 "verify_msg": "",
                 "micro_uuid": "c920d686-add3-358d-8a63-279dd14e39bb",
                 "macro_uuid": "f18f2ec8-c3d0-3a71-ac96-84b036955cf5"
+            },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-03-02_159.json": {
+                "verify_result": true,
+                "src_requested": "cliff (obj58)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 11,
+                "dist_shortest": 4,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 10,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Barren Area",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Damp Passage",
+                        "action": "touch table"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "a2b60d34-9211-3c1b-8020-25da4dd93988",
+                "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-14-50-16_884.json": {
                 "verify_result": true,
@@ -4752,6 +4828,41 @@
                 ],
                 "micro_uuid": "5a76fb03-ee44-3077-86c8-ac44968c815b",
                 "macro_uuid": "10b9219e-79c5-3269-9340-dbe9e2d988eb"
+            },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-25-16_889.json": {
+                "verify_result": true,
+                "src_requested": "junction (obj63)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 3,
+                "dist_shortest": 2,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 2,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "50897993-885d-3f2a-83a3-07181fea7805",
+                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-53-44_560.json": {
                 "verify_result": true,
@@ -6202,41 +6313,6 @@
                 "micro_uuid": "2f5a59bd-4b59-3bb7-9b4e-5bf185c593a1",
                 "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-25-16_889.dropped.json": {
-                "verify_result": true,
-                "src_requested": "junction (obj63)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 3,
-                "dist_shortest": 2,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "50897993-885d-3f2a-83a3-07181fea7805",
-                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
-            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-53-47_896.json": {
                 "verify_result": false,
                 "src_requested": "barren area (obj62)",
@@ -6280,83 +6356,6 @@
                 "verify_msg": "",
                 "micro_uuid": "85e0287a-2a43-32d7-a2bf-5eda7335fb0d",
                 "macro_uuid": "f25d2514-581d-3337-8a76-eb31139a5916"
-            },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-14-30-12_888.dropped.json": {
-                "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 10,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 9,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Damp Passage",
-                        "action": "touch table"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "7449c7ac-8d86-3528-b928-4c6c5e308351",
-                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-16-33-21_010.json": {
                 "verify_result": true,
@@ -6813,89 +6812,6 @@
                 "verify_msg": "",
                 "micro_uuid": "865656b6-17e8-3fb8-ba9e-1863266e51f0",
                 "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
-            },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-03-02_159.dropped.json": {
-                "verify_result": true,
-                "src_requested": "cliff (obj58)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 11,
-                "dist_shortest": 4,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 10,
-                "path_checked": [
-                    {
-                        "prev_node": "Cliff",
-                        "node": "Barren Area",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Damp Passage",
-                        "action": "touch table"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "a2b60d34-9211-3c1b-8020-25da4dd93988",
-                "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-05-29_377.json": {
                 "verify_result": true,
@@ -7665,6 +7581,83 @@
                 "micro_uuid": "2664f680-dd43-320a-b5f4-c17aeedf348a",
                 "macro_uuid": "65bf2a70-cda4-3ac1-947e-0007851b4380"
             },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-23-51_487.json": {
+                "verify_result": true,
+                "src_requested": "endless stair (obj64)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 10,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 9,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Damp Passage",
+                        "action": "touch table"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "15700ee7-5aa0-3beb-ab67-a8d3f115f391",
+                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
+            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-16-58-52_538.json": {
                 "verify_result": true,
                 "src_requested": "southern shore (obj15)",
@@ -8069,6 +8062,113 @@
                 ],
                 "micro_uuid": "f3cb3f46-840b-3a89-b9b2-8148253d3873",
                 "macro_uuid": "61a478fc-164f-3d23-bf33-b8dfd87ecfe0"
+            },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-24-11_114.json": {
+                "verify_result": true,
+                "src_requested": "endless stair (obj64)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 15,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 14,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "48b9a113-0c32-3ad1-b091-507a36967ce2",
+                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-57-10_639.json": {
                 "verify_result": true,
@@ -8861,83 +8961,6 @@
                 ],
                 "micro_uuid": "b183bdc6-2f48-3c80-9af0-c4a226b4a8f6",
                 "macro_uuid": "9f80c194-1604-3031-ab21-1698b1068886"
-            },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-23-51_487.dropped.json": {
-                "verify_result": true,
-                "src_requested": "endless stair (obj64)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 10,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 9,
-                "path_checked": [
-                    {
-                        "prev_node": "Endless Stair",
-                        "node": "Junction",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Damp Passage",
-                        "action": "touch table"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "15700ee7-5aa0-3beb-ab67-a8d3f115f391",
-                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-24-09_032.json": {
                 "verify_result": true,
@@ -9751,33 +9774,21 @@
                 "micro_uuid": "3c45adc1-65bb-36fb-b3bb-f28c0a12a0bf",
                 "macro_uuid": "3c17c22a-3cc0-36da-9333-a948e511f2fc"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-23-05_198.dropped.json": {
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-13-02_091.json": {
                 "verify_result": true,
-                "src_requested": "endless stair (obj64)",
+                "src_requested": "damp passage (obj152)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
-                    "south",
-                    "east",
                     "northeast",
                     "southeast"
                 ],
-                "route_length": 4,
-                "dist_shortest": 3,
+                "route_length": 2,
+                "dist_shortest": 1,
                 "dst_gpt": "dead end (obj153)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "dead end (obj153)",
-                "stop_step": 3,
+                "stop_step": 1,
                 "path_checked": [
-                    {
-                        "prev_node": "Endless Stair",
-                        "node": "Junction",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "east"
-                    },
                     {
                         "prev_node": "Damp Passage",
                         "node": "Engravings Room",
@@ -9789,8 +9800,8 @@
                         "action": "southeast"
                     }
                 ],
-                "micro_uuid": "b3dc4756-ec4d-3b82-913c-3d16579b0773",
-                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
+                "micro_uuid": "d33bc2c2-03d3-3345-b42d-3fd8cc7744d1",
+                "macro_uuid": "43e4abe1-39a8-350b-ad1f-c5514c846395"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-55-45_136.json": {
                 "verify_result": false,
@@ -9993,77 +10004,6 @@
                 "micro_uuid": "c66a64c7-5207-3fb8-8870-345b9da7bc60",
                 "macro_uuid": "971e8ba0-02c6-3b45-a4e9-c9b5f1dbe12d"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-25-01_967.dropped.json": {
-                "verify_result": true,
-                "src_requested": "junction (obj63)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 9,
-                "dist_shortest": 2,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 8,
-                "path_checked": [
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Damp Passage",
-                        "action": "touch table"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "43d4efd2-e915-3d29-95d0-021eacb62c05",
-                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
-            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-55-02_231.json": {
                 "verify_result": false,
                 "src_requested": "damp passage (obj152)",
@@ -10261,119 +10201,6 @@
                 "micro_uuid": "da766c6a-f0f6-3dfd-b42a-df9154f4f46e",
                 "macro_uuid": "5c571d1d-c653-3f38-8a1c-132db7062919"
             },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-04-21_180.dropped.json": {
-                "verify_result": true,
-                "src_requested": "cliff (obj58)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 16,
-                "dist_shortest": 4,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 15,
-                "path_checked": [
-                    {
-                        "prev_node": "Cliff",
-                        "node": "Barren Area",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "8378963f-d657-3588-b6de-f2f2905e9ce5",
-                "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
-            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-23-19_638.json": {
                 "verify_result": true,
                 "src_requested": "endless stair (obj64)",
@@ -10426,47 +10253,6 @@
                 ],
                 "micro_uuid": "3b40bff5-3b2b-39d0-a8e6-09587efe5296",
                 "macro_uuid": "f43f3d24-4c04-39cf-9d5a-f89958c2aed2"
-            },
-            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-27-01_829.dropped.json": {
-                "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "east",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 4,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "602016f8-256e-3e6b-82c0-807172aa6819",
-                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-16-51-18_504.json": {
                 "verify_result": false,
@@ -10618,6 +10404,119 @@
                 "verify_msg": "",
                 "micro_uuid": "619302f2-dd03-315b-8091-d40fac975b18",
                 "macro_uuid": "068ce596-4ec3-3eba-8d55-642672f7db9f"
+            },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-04-21_180.json": {
+                "verify_result": true,
+                "src_requested": "cliff (obj58)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 16,
+                "dist_shortest": 4,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 15,
+                "path_checked": [
+                    {
+                        "prev_node": "Cliff",
+                        "node": "Barren Area",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "8378963f-d657-3588-b6de-f2f2905e9ce5",
+                "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
             },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-06-05-21-53-57_869.json": {
                 "verify_result": false,
@@ -11875,6 +11774,107 @@
                 "micro_uuid": "60200ead-7fe9-3cba-b47f-1ee4e949e712",
                 "macro_uuid": "1d43ffcb-f6ae-3a3e-9b88-736243ad266b"
             },
+            "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-01-26-57_158.json": {
+                "verify_result": true,
+                "src_requested": "junction (obj63)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 14,
+                "dist_shortest": 2,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 13,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "be31ac90-e2a6-3ba0-bd0e-51ce74690b72",
+                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
+            },
             "../gpt-games-results/zork3/results//stepnav-gpt-4/results_2023-05-31-15-22-07_191.json": {
                 "verify_result": true,
                 "src_requested": "engravings (obj154)",
@@ -12198,71 +12198,6 @@
             },
             {
                 "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "8 (obj18)",
-                "action_requested": [
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table"
-                ],
-                "route_length": 8,
-                "dist_shortest": 8,
-                "dst_gpt": "8 (obj18)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "8 (obj18)",
-                "stop_step": 7,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Room 8",
-                        "action": "touch table"
-                    }
-                ],
-                "micro_uuid": "a2794ae3-147d-354d-98bb-d007c163acb5",
-                "macro_uuid": "56ae382f-a4b0-3f78-ae40-634abf8e09e3"
-            },
-            {
-                "verify_result": true,
                 "src_requested": "junction (obj63)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
@@ -12331,6 +12266,71 @@
                 ],
                 "micro_uuid": "43d4efd2-e915-3d29-95d0-021eacb62c05",
                 "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "8 (obj18)",
+                "action_requested": [
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table"
+                ],
+                "route_length": 8,
+                "dist_shortest": 8,
+                "dst_gpt": "8 (obj18)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "8 (obj18)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Room 8",
+                        "action": "touch table"
+                    }
+                ],
+                "micro_uuid": "a2794ae3-147d-354d-98bb-d007c163acb5",
+                "macro_uuid": "56ae382f-a4b0-3f78-ae40-634abf8e09e3"
             },
             {
                 "verify_result": true,
@@ -13150,113 +13150,6 @@
             },
             {
                 "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 15,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 14,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "c1ad7443-3afe-39de-b556-e40ea6ccb804",
-                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
-            },
-            {
-                "verify_result": true,
                 "src_requested": "cliff (obj58)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
@@ -13808,6 +13701,47 @@
             },
             {
                 "verify_result": true,
+                "src_requested": "endless stair (obj64)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 4,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "b3dc4756-ec4d-3b82-913c-3d16579b0773",
+                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
+            },
+            {
+                "verify_result": true,
                 "src_requested": "engravings (obj154)",
                 "dst_requested": "foggy (obj53)",
                 "action_requested": [
@@ -14022,107 +13956,6 @@
                 ],
                 "micro_uuid": "6658ef73-29ea-3f4a-bea7-5c99b749e8b4",
                 "macro_uuid": "8921edfc-c86a-3a1e-aada-9c6876c36389"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "junction (obj63)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 14,
-                "dist_shortest": 2,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 13,
-                "path_checked": [
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "be31ac90-e2a6-3ba0-bd0e-51ce74690b72",
-                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
             },
             {
                 "verify_result": true,
@@ -14341,35 +14174,6 @@
                 ],
                 "micro_uuid": "86e8541a-bd98-328c-9573-0413748ddebb",
                 "macro_uuid": "7d114c1e-d033-3bce-84d9-5f87b1efb3dc"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "damp passage (obj152)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 2,
-                "dist_shortest": 1,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "d33bc2c2-03d3-3345-b42d-3fd8cc7744d1",
-                "macro_uuid": "43e4abe1-39a8-350b-ad1f-c5514c846395"
             },
             {
                 "verify_result": true,
@@ -14766,6 +14570,113 @@
                 ],
                 "micro_uuid": "1d723e65-80e5-366f-805e-e9bae11985a7",
                 "macro_uuid": "60aa87a6-bdac-3c9e-a9f8-835e6b114d72"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 15,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 14,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "c1ad7443-3afe-39de-b556-e40ea6ccb804",
+                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
             },
             {
                 "verify_result": true,
@@ -15662,6 +15573,83 @@
             },
             {
                 "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 10,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 9,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Damp Passage",
+                        "action": "touch table"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "7449c7ac-8d86-3528-b928-4c6c5e308351",
+                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
+            },
+            {
+                "verify_result": true,
                 "src_requested": "endless stair (obj64)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
@@ -15783,113 +15771,6 @@
                 ],
                 "micro_uuid": "df9613dd-aaa9-30fa-8159-0e437db40598",
                 "macro_uuid": "081785db-c6de-385f-9ac6-fac630c809aa"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "endless stair (obj64)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 15,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 14,
-                "path_checked": [
-                    {
-                        "prev_node": "Endless Stair",
-                        "node": "Junction",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "48b9a113-0c32-3ad1-b091-507a36967ce2",
-                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
             },
             {
                 "verify_result": false,
@@ -16641,66 +16522,24 @@
             },
             {
                 "verify_result": true,
-                "src_requested": "barren area (obj62)",
+                "src_requested": "junction (obj63)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
                     "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table",
                     "northeast",
                     "southeast"
                 ],
-                "route_length": 10,
-                "dist_shortest": 3,
+                "route_length": 3,
+                "dist_shortest": 2,
                 "dst_gpt": "dead end (obj153)",
                 "verify_msg": "arrive at dst!",
                 "stop_node_code": "dead end (obj153)",
-                "stop_step": 9,
+                "stop_step": 2,
                 "path_checked": [
                     {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
                         "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
                         "node": "Damp Passage",
-                        "action": "touch table"
+                        "action": "east"
                     },
                     {
                         "prev_node": "Damp Passage",
@@ -16713,8 +16552,8 @@
                         "action": "southeast"
                     }
                 ],
-                "micro_uuid": "7449c7ac-8d86-3528-b928-4c6c5e308351",
-                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
+                "micro_uuid": "50897993-885d-3f2a-83a3-07181fea7805",
+                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
             },
             {
                 "verify_result": true,
@@ -16821,6 +16660,107 @@
                 ],
                 "micro_uuid": "fbf05536-4a43-3e34-b6d1-c6ef5b72fe58",
                 "macro_uuid": "b34cad21-e90b-3680-93d3-39b39ab8694f"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "junction (obj63)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 14,
+                "dist_shortest": 2,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 13,
+                "path_checked": [
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "be31ac90-e2a6-3ba0-bd0e-51ce74690b72",
+                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
             },
             {
                 "verify_result": true,
@@ -17646,6 +17586,142 @@
                 "macro_uuid": "5cfccfd4-03d3-303a-9d03-d6d3f4a136b9"
             },
             {
+                "verify_result": true,
+                "src_requested": "endless stair (obj64)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "south",
+                    "south",
+                    "south",
+                    "east",
+                    "down",
+                    "north",
+                    "north",
+                    "north",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 15,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 14,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Southern Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Southern Shore",
+                        "node": "pitch black 1",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 1",
+                        "node": "pitch black 2",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "pitch black 2",
+                        "node": "Key Room",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Key Room",
+                        "node": "Aqueduct",
+                        "action": "down"
+                    },
+                    {
+                        "prev_node": "Aqueduct",
+                        "node": "High Arch",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "High Arch",
+                        "node": "Water Slide",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Water Slide",
+                        "node": "Damp Passage",
+                        "action": "north"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "48b9a113-0c32-3ad1-b091-507a36967ce2",
+                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "damp passage (obj152)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 2,
+                "dist_shortest": 1,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d33bc2c2-03d3-3345-b42d-3fd8cc7744d1",
+                "macro_uuid": "43e4abe1-39a8-350b-ad1f-c5514c846395"
+            },
+            {
                 "verify_result": false,
                 "src_requested": "cliff (obj58)",
                 "dst_requested": "engravings (obj154)",
@@ -17743,41 +17819,6 @@
                 "verify_msg": "",
                 "micro_uuid": "2f5a59bd-4b59-3bb7-9b4e-5bf185c593a1",
                 "macro_uuid": "f818de64-d948-30c0-8767-da69f9d96c00"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "junction (obj63)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 3,
-                "dist_shortest": 2,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 2,
-                "path_checked": [
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "50897993-885d-3f2a-83a3-07181fea7805",
-                "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
             },
             {
                 "verify_result": false,
@@ -19451,47 +19492,6 @@
                 ],
                 "micro_uuid": "f3cb3f46-840b-3a89-b9b2-8148253d3873",
                 "macro_uuid": "61a478fc-164f-3d23-bf33-b8dfd87ecfe0"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "endless stair (obj64)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "east",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 4,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 3,
-                "path_checked": [
-                    {
-                        "prev_node": "Endless Stair",
-                        "node": "Junction",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Damp Passage",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "b3dc4756-ec4d-3b82-913c-3d16579b0773",
-                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
             },
             {
                 "verify_result": true,
@@ -23204,71 +23204,6 @@
             },
             {
                 "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "8 (obj18)",
-                "action_requested": [
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table"
-                ],
-                "route_length": 8,
-                "dist_shortest": 8,
-                "dst_gpt": "8 (obj18)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "8 (obj18)",
-                "stop_step": 7,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Room 8",
-                        "action": "touch table"
-                    }
-                ],
-                "micro_uuid": "a2794ae3-147d-354d-98bb-d007c163acb5",
-                "macro_uuid": "56ae382f-a4b0-3f78-ae40-634abf8e09e3"
-            },
-            {
-                "verify_result": true,
                 "src_requested": "junction (obj63)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
@@ -23337,6 +23272,71 @@
                 ],
                 "micro_uuid": "43d4efd2-e915-3d29-95d0-021eacb62c05",
                 "macro_uuid": "4bb958dd-2dba-3fb5-9312-802ca445c77a"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "8 (obj18)",
+                "action_requested": [
+                    "east",
+                    "south",
+                    "south",
+                    "south",
+                    "jump lake",
+                    "west",
+                    "south",
+                    "touch table"
+                ],
+                "route_length": 8,
+                "dist_shortest": 8,
+                "dst_gpt": "8 (obj18)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "8 (obj18)",
+                "stop_step": 7,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Creepy Crawl",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Creepy Crawl",
+                        "node": "Foggy Room",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Foggy Room",
+                        "node": "Lake Shore",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Lake Shore",
+                        "node": "On the Lake",
+                        "action": "jump lake"
+                    },
+                    {
+                        "prev_node": "On the Lake",
+                        "node": "Western Shore",
+                        "action": "west"
+                    },
+                    {
+                        "prev_node": "Western Shore",
+                        "node": "Scenic Vista",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Scenic Vista",
+                        "node": "Room 8",
+                        "action": "touch table"
+                    }
+                ],
+                "micro_uuid": "a2794ae3-147d-354d-98bb-d007c163acb5",
+                "macro_uuid": "56ae382f-a4b0-3f78-ae40-634abf8e09e3"
             },
             {
                 "verify_result": true,
@@ -24192,113 +24192,6 @@
             },
             {
                 "verify_result": true,
-                "src_requested": "barren area (obj62)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "east",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "south",
-                    "south",
-                    "south",
-                    "east",
-                    "down",
-                    "north",
-                    "north",
-                    "north",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 15,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 14,
-                "path_checked": [
-                    {
-                        "prev_node": "Barren Area",
-                        "node": "Junction",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Southern Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Southern Shore",
-                        "node": "pitch black 1",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 1",
-                        "node": "pitch black 2",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "pitch black 2",
-                        "node": "Key Room",
-                        "action": "east"
-                    },
-                    {
-                        "prev_node": "Key Room",
-                        "node": "Aqueduct",
-                        "action": "down"
-                    },
-                    {
-                        "prev_node": "Aqueduct",
-                        "node": "High Arch",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "High Arch",
-                        "node": "Water Slide",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Water Slide",
-                        "node": "Damp Passage",
-                        "action": "north"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "c1ad7443-3afe-39de-b556-e40ea6ccb804",
-                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
-            },
-            {
-                "verify_result": true,
                 "src_requested": "cliff (obj58)",
                 "dst_requested": "dead end (obj153)",
                 "action_requested": [
@@ -24820,6 +24713,47 @@
             },
             {
                 "verify_result": true,
+                "src_requested": "endless stair (obj64)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "south",
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 4,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Endless Stair",
+                        "node": "Junction",
+                        "action": "south"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "b3dc4756-ec4d-3b82-913c-3d16579b0773",
+                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
+            },
+            {
+                "verify_result": true,
                 "src_requested": "engravings (obj154)",
                 "dst_requested": "foggy (obj53)",
                 "action_requested": [
@@ -25066,35 +25000,6 @@
             },
             {
                 "verify_result": true,
-                "src_requested": "damp passage (obj152)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 2,
-                "dist_shortest": 1,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 1,
-                "path_checked": [
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "d33bc2c2-03d3-3345-b42d-3fd8cc7744d1",
-                "macro_uuid": "43e4abe1-39a8-350b-ad1f-c5514c846395"
-            },
-            {
-                "verify_result": true,
                 "src_requested": "foggy (obj53)",
                 "dst_requested": "8 (obj18)",
                 "action_requested": [
@@ -25254,6 +25159,47 @@
             },
             {
                 "verify_result": true,
+                "src_requested": "barren area (obj62)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "east",
+                    "east",
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 4,
+                "dist_shortest": 3,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 3,
+                "path_checked": [
+                    {
+                        "prev_node": "Barren Area",
+                        "node": "Junction",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Junction",
+                        "node": "Damp Passage",
+                        "action": "east"
+                    },
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "602016f8-256e-3e6b-82c0-807172aa6819",
+                "macro_uuid": "6065730c-dfca-3dce-824c-632a5788ce1a"
+            },
+            {
+                "verify_result": true,
                 "src_requested": "creepy crawl (obj78)",
                 "dst_requested": "dark place (obj14)",
                 "action_requested": [
@@ -25298,83 +25244,6 @@
                 ],
                 "micro_uuid": "56ddf4ed-990f-3c62-b471-b5201ae93506",
                 "macro_uuid": "4cd2a1e4-25b3-3cdf-bb92-80d4ae15faf3"
-            },
-            {
-                "verify_result": true,
-                "src_requested": "endless stair (obj64)",
-                "dst_requested": "dead end (obj153)",
-                "action_requested": [
-                    "south",
-                    "south",
-                    "south",
-                    "south",
-                    "jump lake",
-                    "west",
-                    "south",
-                    "touch table",
-                    "northeast",
-                    "southeast"
-                ],
-                "route_length": 10,
-                "dist_shortest": 3,
-                "dst_gpt": "dead end (obj153)",
-                "verify_msg": "arrive at dst!",
-                "stop_node_code": "dead end (obj153)",
-                "stop_step": 9,
-                "path_checked": [
-                    {
-                        "prev_node": "Endless Stair",
-                        "node": "Junction",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Junction",
-                        "node": "Creepy Crawl",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Creepy Crawl",
-                        "node": "Foggy Room",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Foggy Room",
-                        "node": "Lake Shore",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Lake Shore",
-                        "node": "On the Lake",
-                        "action": "jump lake"
-                    },
-                    {
-                        "prev_node": "On the Lake",
-                        "node": "Western Shore",
-                        "action": "west"
-                    },
-                    {
-                        "prev_node": "Western Shore",
-                        "node": "Scenic Vista",
-                        "action": "south"
-                    },
-                    {
-                        "prev_node": "Scenic Vista",
-                        "node": "Damp Passage",
-                        "action": "touch table"
-                    },
-                    {
-                        "prev_node": "Damp Passage",
-                        "node": "Engravings Room",
-                        "action": "northeast"
-                    },
-                    {
-                        "prev_node": "Engravings Room",
-                        "node": "Dead End",
-                        "action": "southeast"
-                    }
-                ],
-                "micro_uuid": "15700ee7-5aa0-3beb-ab67-a8d3f115f391",
-                "macro_uuid": "c68e9a84-8fd9-3786-b3fb-f65ceb1f2fe0"
             },
             {
                 "verify_result": true,
@@ -26417,6 +26286,35 @@
                 ],
                 "micro_uuid": "b19b97d9-3c3d-372e-82f1-a17142e6614a",
                 "macro_uuid": "49273d83-c6d2-3427-965e-4a58b2e2c5ab"
+            },
+            {
+                "verify_result": true,
+                "src_requested": "damp passage (obj152)",
+                "dst_requested": "dead end (obj153)",
+                "action_requested": [
+                    "northeast",
+                    "southeast"
+                ],
+                "route_length": 2,
+                "dist_shortest": 1,
+                "dst_gpt": "dead end (obj153)",
+                "verify_msg": "arrive at dst!",
+                "stop_node_code": "dead end (obj153)",
+                "stop_step": 1,
+                "path_checked": [
+                    {
+                        "prev_node": "Damp Passage",
+                        "node": "Engravings Room",
+                        "action": "northeast"
+                    },
+                    {
+                        "prev_node": "Engravings Room",
+                        "node": "Dead End",
+                        "action": "southeast"
+                    }
+                ],
+                "micro_uuid": "d33bc2c2-03d3-3345-b42d-3fd8cc7744d1",
+                "macro_uuid": "43e4abe1-39a8-350b-ad1f-c5514c846395"
             },
             {
                 "verify_result": true,
