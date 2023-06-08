@@ -104,8 +104,6 @@ diff_shortest is the difference btw shortest path and current path, if diff_shor
 
 `diff_shortest = len(actions) - len(shortest_path)`
 
-- json (not available yet)
-
   ```json
   [
     {
