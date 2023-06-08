@@ -10,7 +10,7 @@ EVAL_LLAMA = "./evals_llama"
 EVAL_RWKV = "./evals_rwkv"
 
 # Define the global fontsize
-GLOBAL_FONTSIZE = 14
+GLOBAL_FONTSIZE = 15
 
 
 def read_real_data(model_name, test_type):
@@ -140,11 +140,8 @@ for name, each in all_scores.items():
     )
     # Set the y range
     plt.ylim(y_range)
-    plt.ylabel(
-        "Average accuracy over all tests within cutoffs", fontsize=GLOBAL_FONTSIZE
-    )
-    plt.xticks(fontsize=GLOBAL_FONTSIZE)
     plt.yticks(fontsize=GLOBAL_FONTSIZE)
+    plt.xticks(fontsize=GLOBAL_FONTSIZE, rotation=30)
 
     # horizontal line at y=0.8
     plt.axhline(y=0.8, color="lightcoral", linestyle="--")
