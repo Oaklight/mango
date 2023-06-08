@@ -1,7 +1,7 @@
 temp_data=./temp_data
 log_data=./logs
 
-# ================= GPT =================
+# # ================= GPT =================
 
 # infer_data=../gpt-games-results
 # eval_path=./evals
@@ -38,7 +38,7 @@ log_data=./logs
 # echo "plot trend & error bars"
 # python src/gen_plots/trend_regression.py > $log_data/trend_regression.log
 
-# # ================= llama =================
+# # # ================= llama =================
 
 # infer_data=../mango-inhouse-llms/llama
 # eval_path=./evals_llama
@@ -66,17 +66,9 @@ log_data=./logs
 
 # python src/gen_plots/collect_data.py -e $eval_path -t $temp_data_this
 
-# python src/gen_plots/gpt35_vs_gpt4.py
-
-# python src/gen_plots/gpt.together.py
-# python src/gen_plots/gpt.destination.py
-# python src/gen_plots/gpt.route.py
-
-# python src/gen_plots/trend_regression.py > trend_regression.log
-
 # ================= rwkv =================
 
-
+# exit 0
 
 
 
@@ -106,18 +98,18 @@ python src/gen_evals/min_cutoff.py -c1 $cutoff_json_llama -c2 $cutoff_json_gpt -
 cutoff_json_across=$cross_eval_path/cutoff_step_gpt_llama.json
 
 echo "route gpt4"
-./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -h > $log_data/gpt4-harsh-route.log
-./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -n > $log_data/gpt4-nice-route.log
+./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -h > $log_data/gpt4@llama-harsh-route.log
+./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -n > $log_data/gpt4@llama-nice-route.log
 echo "route gpt3.5"
-./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -h > $log_data/gpt35-harsh-route.log
-./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -n > $log_data/gpt35-nice-route.log
+./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -h > $log_data/gpt35@llama-harsh-route.log
+./scripts/gen_evals/run_eval_route.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -n > $log_data/gpt35@llama-nice-route.log
 
 echo "desti gpt4"
-./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -h > $log_data/gpt4-harsh-desti.log
-./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -n > $log_data/gpt4-nice-desti.log
+./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -h > $log_data/gpt4@llama-harsh-desti.log
+./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt4 -n > $log_data/gpt4@llama-nice-desti.log
 echo "desti gpt3.5"
-./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -h > $log_data/gpt35-harsh-desti.log
-./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -n > $log_data/gpt35-nice-desti.log
+./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -h > $log_data/gpt35@llama-harsh-desti.log
+./scripts/gen_evals/run_eval_desti.sh -p $infer_data -c $cutoff_json_across -e $cross_eval_path -m gpt3.5 -n > $log_data/gpt35@llama-nice-desti.log
 
 echo "collect data"
 sleep 3
