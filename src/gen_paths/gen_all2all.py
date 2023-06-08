@@ -38,9 +38,9 @@ if __name__ == "__main__":
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
     # this has some issue: AB or BA will be included, not both
-    all_pairs = list(itertools.combinations(g.nodes(), 2))
+    # all_pairs = list(itertools.combinations(g.nodes(), 2))
     # this will include both AB and BA
-    # all_pairs = list(itertools.permutations(g.nodes(), 2))
+    all_pairs = list(itertools.permutations(g.nodes(), 2))
     # print(all_pairs)
 
     all_pairs_dict = []
