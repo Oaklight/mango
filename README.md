@@ -61,7 +61,19 @@ Recommend to use conda environment or pip virtual env.
 
 ## How to run?
 
-TBC
+1. generate all2all & all_pairs:
+```bash
+# activate your virtual env or conda env
+# cd to project root dir
+
+./scripts/gen_paths/run_gen_all2all.sh # read the help message prompted
+
+./scripts/gen_paths/run_gen_all2all.sh -p ./data/maps # generate for all games
+
+./scripts/gen_paths/run_gen_all2all.sh -p ./data/maps -g zork1 # generate for zork1 only
+
+# go to ./data/maps/zork1 and ./data/maps-release/zork1 to check the generated files
+```
 
 ## Data format
 
