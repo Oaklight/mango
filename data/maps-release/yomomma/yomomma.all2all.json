@@ -1,6 +1,47 @@
 [
     {
         "src_node": "(obj103)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 8,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj103)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj81)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 8,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj103)",
         "dst_node": "(obj52)",
         "diff_shortest": 0,
         "path_details": [
@@ -300,6 +341,47 @@
         ],
         "step_count": 4,
         "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj103)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj81)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 8,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj103)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj81)",
+                "action": "northwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 8,
         "all_steps_seen_in_forward": false
     },
     {
@@ -734,6 +816,47 @@
     },
     {
         "src_node": "(obj107)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj81)",
+                "action": "northwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 2,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj107)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj81)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 8,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj107)",
         "dst_node": "(obj83)",
         "diff_shortest": 0,
         "path_details": [
@@ -855,6 +978,391 @@
         "step_count": 3,
         "path_min_cutoff": 9,
         "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj62)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj62)",
+                "action": "northeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj62)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj62)",
+                "action": "northeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj69)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj69)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj69)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
     },
     {
         "src_node": "(obj52)",
@@ -923,6 +1431,158 @@
         ],
         "step_count": 4,
         "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj52)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 5,
+        "path_min_cutoff": 34,
         "all_steps_seen_in_forward": true
     },
     {
@@ -1288,6 +1948,116 @@
     },
     {
         "src_node": "(obj62)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj62)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj62)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj62)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj62)",
         "dst_node": "(obj52)",
         "diff_shortest": 0,
         "path_details": [
@@ -1398,6 +2168,23 @@
     },
     {
         "src_node": "(obj62)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj62)",
         "dst_node": "(obj83)",
         "diff_shortest": 0,
         "path_details": [
@@ -1412,6 +2199,323 @@
         "step_count": 1,
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj62)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj62)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
     },
     {
         "src_node": "(obj69)",
@@ -1453,6 +2557,102 @@
         "step_count": 2,
         "path_min_cutoff": 34,
         "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj62)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj62)",
+                "action": "northeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj62)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj62)",
+                "action": "northeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true
     },
     {
         "src_node": "(obj69)",
@@ -1521,6 +2721,158 @@
         ],
         "step_count": 4,
         "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj81)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 24,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj69)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj81)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 5,
+        "path_min_cutoff": 34,
         "all_steps_seen_in_forward": true
     },
     {
@@ -1784,6 +3136,478 @@
         "all_steps_seen_in_forward": true
     },
     {
+        "src_node": "(obj83)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj52)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj52)",
+                "action": "northwest",
+                "seen_in_forward": false,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj52)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj69)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            },
+            {
+                "prev_node": "(obj69)",
+                "node": "(obj52)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj62)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj69)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj69)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 24
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj69)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj52)",
+                "action": "northwest",
+                "seen_in_forward": false,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "(obj52)",
+                "node": "(obj69)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj103)",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj83)",
+        "dst_node": "(obj97)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj83)",
+                "node": "(obj62)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "(obj62)",
+                "node": "(obj81)",
+                "action": "southwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj103)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj97)",
+                "action": "west",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 5,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj97)",
+        "dst_node": "(obj103)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj97)",
+                "node": "(obj103)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            }
+        ],
+        "step_count": 1,
+        "path_min_cutoff": 9,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj97)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj97)",
+                "node": "(obj103)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 9,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj97)",
+        "dst_node": "(obj107)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj97)",
+                "node": "(obj103)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj81)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj81)",
+                "node": "(obj107)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 9,
+        "all_steps_seen_in_forward": true
+    },
+    {
         "src_node": "(obj97)",
         "dst_node": "(obj52)",
         "diff_shortest": 0,
@@ -2154,6 +3978,61 @@
         ],
         "step_count": 5,
         "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": false
+    },
+    {
+        "src_node": "(obj97)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "(obj97)",
+                "node": "(obj103)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj81)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 2,
+        "path_min_cutoff": 9,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "(obj97)",
+        "dst_node": "(obj81)",
+        "diff_shortest": 1,
+        "path_details": [
+            {
+                "prev_node": "(obj97)",
+                "node": "(obj103)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "(obj103)",
+                "node": "(obj107)",
+                "action": "east",
+                "seen_in_forward": false,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "(obj107)",
+                "node": "(obj81)",
+                "action": "northwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 2
+            }
+        ],
+        "step_count": 3,
+        "path_min_cutoff": 9,
         "all_steps_seen_in_forward": false
     },
     {
