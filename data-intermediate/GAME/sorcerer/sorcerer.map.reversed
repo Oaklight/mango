@@ -1,0 +1,29 @@
+hallway (obj50) --> east --> quarters (obj17), step 4, desc: None
+'s quarters (obj115) --> east --> hallway (obj50), step 7, desc: None
+hallway (obj50) --> west --> 's quarters (obj115), step 15, desc: None
+hallway (obj50) --> north --> hallway (obj50), step 16, desc: None
+lobby (obj18) --> north --> hallway (obj50), step 17, desc: None
+store room (obj231) --> east --> lobby (obj18), step 18, desc: None
+lobby (obj18) --> west --> store room (obj231), step 20, desc: None
+library (obj142) --> west --> lobby (obj18), step 24, desc: None
+lobby (obj18) --> east --> library (obj142), step 28, desc: None
+cellar (obj43) --> up --> lobby (obj18), step 29, desc: None
+lobby (obj18) --> down --> cellar (obj43), step 36, desc: None
+hallway (obj50) --> south --> lobby (obj18), step 39, desc: None
+helistar's quarters (obj13) --> east --> hallway (obj50), step 40, desc: None
+forest edge (obj168) --> southwest --> twisted forest (obj36), step 45, desc: Forest Edge || To the west, a path enters the blighted woods, which stretch out of sight. A signpost stands beside another path leading north, and to the east is a wide meadow. At the base of the signpost is a slimy hole leading down.The hellhound stops at the edge of the forest and bellows. After a moment, it turns and slinks into the trees.
+meadow (obj137) --> west --> forest edge (obj168), step 46, desc: None
+river bank (obj163) --> southwest --> meadow (obj137), step 47, desc: River Bank || You are on a muddy bank of a fast-moving river, full of sharp rocks and foaming rapids, flowing to the southwest. The ground is soft and eroded, and continually threatens to dump you into the turbulent waters. A field lies to the southwest, and a trail leads southeast along the bank.
+river bed (obj3) --> up --> river bank (obj163), step 50, desc: None
+hidden cave (obj203) --> southwest --> river bed (obj3), step 51, desc: None
+pbones (obj154) --> up --> hidden cave (obj203), step 55, desc: Pit of Bones || In the center of the room is a deep pit filled with countless bones, an indication of the brutality of dungeon life. There are exits south and southwest. High above you is a small opening in the ceiling.
+torture chamber (obj148) --> north --> pbones (obj154), step 56, desc: None
+dungeon (obj5) --> east --> torture chamber (obj148), step 58, desc: None
+highway (obj52) --> up --> dungeon (obj5), step 59, desc: Highway || This is a wide road winding away to the east and west, perhaps a relic of the Great Underground Empire you read about in history class. A passage leads up to the north.
+bend (obj114) --> east --> highway (obj52), step 60, desc: None
+edge crater (obj246) --> northeast --> bend (obj114), step 61, desc: None
+crater (obj8) --> northeast --> edge crater (obj246), step 62, desc: None
+edge chasm (obj242) --> east --> crater (obj8), step 63, desc: None
+bpassage (obj80) --> east --> edge chasm (obj242), step 67, desc: None
+elbow room (obj108) --> east --> bpassage (obj80), step 68, desc: None
+tree room (obj160) --> south --> elbow room (obj108), step 69, desc: None
