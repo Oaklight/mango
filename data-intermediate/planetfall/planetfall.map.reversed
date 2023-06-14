@@ -1,0 +1,31 @@
+escape pod (obj216) --> east --> deck nine (obj235), step 7, desc: None
+crag (obj194) --> down --> underwater (obj195), step 26, desc: None
+balcony (obj193) --> down --> crag (obj194), step 27, desc: None
+winding stair (obj192) --> down --> balcony (obj193), step 28, desc: None
+courtyard (obj191) --> down --> winding stair (obj192), step 29, desc: Dropped. ||
+plahall (obj189) --> south --> courtyard (obj191), step 30, desc: None
+rec corridor (obj183) --> southwest --> plahall (obj189), step 31, desc: Rec Corridor || This is a wide, east-west hallway. Portals lead north and south, and another corridor branches southwest.
+mess corridor (obj174) --> west --> rec corridor (obj183), step 32, desc: None
+dorm corridor (obj168) --> west --> mess corridor (obj174), step 33, desc: None
+junction (obj161) --> west --> dorm corridor (obj168), step 34, desc: None
+mech north (obj142) --> north --> junction (obj161), step 35, desc: None
+mech corridor (obj141) --> north --> mech north (obj142), step 36, desc: None
+mech south (obj140) --> north --> mech corridor (obj141), step 37, desc: None
+tool room (obj126) --> northeast --> mech south (obj140), step 38, desc: Tool Room || This is apparently a storage room for tools. Exits lead northeast and east.Sitting on the floor below the lowest shelf is a large glass flask.A small device, labelled "Akmee Portabul Laazur", is resting on one of the lower shelves.The laser contains:  An old batteryOn an upper shelf is a metal bar, curved into a U-shape.There is a pair of wide-nosed pliers here.
+mech south (obj140) --> southwest --> tool room (obj126), step 40, desc: Mech Corridor South ||
+mech corridor (obj141) --> south --> mech south (obj140), step 41, desc: None
+mech north (obj142) --> south --> mech corridor (obj141), step 42, desc: None
+junction (obj161) --> south --> mech north (obj142), step 43, desc: None
+admsouth (obj160) --> south --> junction (obj161), step 44, desc: None
+junction (obj161) --> north --> admsouth (obj160), step 47, desc: None
+dorm corridor (obj168) --> east --> junction (obj161), step 48, desc: None
+mess corridor (obj174) --> east --> dorm corridor (obj168), step 49, desc: None
+storage west (obj171) --> south --> mess corridor (obj174), step 54, desc: None
+mess corridor (obj174) --> north --> storage west (obj171), step 57, desc: None
+dorm corridor (obj168) --> west --> mess corridor (obj174), step 58, desc: None
+junction (obj161) --> west --> dorm corridor (obj168), step 59, desc: None
+admsouth (obj160) --> south --> junction (obj161), step 60, desc: None
+admcorridor (obj157) --> south --> admsouth (obj160), step 61, desc: None
+admnorth (obj155) --> south --> admcorridor (obj157), step 65, desc: None
+small office (obj150) --> east --> admnorth (obj155), step 66, desc: None
+large office (obj143) --> east --> small office (obj150), step 69, desc: None
