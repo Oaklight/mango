@@ -1,0 +1,28 @@
+post office (obj226) --> north --> hilltop (obj237), step 1, desc: None
+hilltop (obj237) --> south --> post office (obj226), step 4, desc: As you leave the Post Office, somebody slams and locks the door behind you. || HilltopWhat next?
+outside cemetery (obj204) --> east --> hilltop (obj237), step 5, desc: None
+spooky copse (obj224) --> south --> creepy corner (obj62), step 8, desc: None
+twilight glen (obj59) --> east --> spooky copse (obj224), step 9, desc: None
+spooky copse (obj224) --> west --> twilight glen (obj59), step 10, desc: None
+open grave (obj58) --> up --> spooky copse (obj224), step 11, desc: None
+spooky copse (obj224) --> down --> open grave (obj58), step 13, desc: None
+creepy corner (obj62) --> north --> spooky copse (obj224), step 14, desc: None
+outside cemetery (obj204) --> west --> creepy corner (obj62), step 15, desc: The cemetery is a spooky place. Are you sure you want to go in there? || (Please type YES or NO.)
+hilltop (obj237) --> west --> outside cemetery (obj204), step 16, desc: None
+outside cottage (obj201) --> west --> hilltop (obj237), step 17, desc: None
+rotary south (obj220) --> south --> outside cottage (obj201), step 19, desc: None
+park (obj173) --> south --> rotary south (obj220), step 22, desc: None
+rotary north (obj144) --> south --> park (obj173), step 25, desc: None
+south bridge (obj93) --> south --> rotary north (obj144), step 26, desc: None
+bridge (obj91) --> south --> south bridge (obj93), step 27, desc: None
+north bridge (obj89) --> south --> bridge (obj91), step 28, desc: None
+cliff bottom (obj85) --> west --> north bridge (obj89), step 29, desc: None
+steep trail (obj80) --> down --> cliff bottom (obj85), step 30, desc: None
+cliff edge (obj79) --> down --> steep trail (obj80), step 36, desc: None
+fog (obj81) --> up --> cliff edge (obj79), step 48, desc: Fog || You're lost in a thick cloud of fog.
+cliff bottom (obj85) --> up --> fog (obj81), step 54, desc: A sudden gust of wind dissolves the fog and clears your vision. || Cliff BottomYou're at the bottom of a cliff that rises up from the north bank of the river.A gnarled tree trunk stands nearby, a lone branch its only adornment. A vulture perched on top is watching every move you make.
+north bridge (obj89) --> east --> cliff bottom (obj85), step 57, desc: None
+bridge (obj91) --> north --> north bridge (obj89), step 64, desc: None
+south bridge (obj93) --> north --> bridge (obj91), step 65, desc: None
+river outlet (obj123) --> east --> south bridge (obj93), step 66, desc: None
+lake edge (obj130) --> north --> river outlet (obj123), step 67, desc: None
