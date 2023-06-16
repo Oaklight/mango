@@ -1,233 +1,233 @@
 [
     {
-        "start_node": "Void",
-        "end_node": "Roof",
+        "prev_node": "Void",
+        "node": "Roof",
         "action": "x shape",
-        "step": 3,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 3
     },
     {
-        "start_node": "Roof",
-        "end_node": "Study",
+        "prev_node": "Roof",
+        "node": "Study",
         "action": "down",
-        "step": 6,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 6
     },
     {
-        "start_node": "Study",
-        "end_node": "Hall",
+        "prev_node": "Study",
+        "node": "Hall",
         "action": "down",
-        "step": 18,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 18
     },
     {
-        "start_node": "Study",
-        "end_node": "Storage",
+        "prev_node": "Study",
+        "node": "Storage",
         "action": "south",
-        "step": 23,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 23
     },
     {
-        "start_node": "Study",
-        "end_node": "Roof",
+        "prev_node": "Study",
+        "node": "Roof",
         "action": "up",
-        "step": 6,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 6
     },
     {
-        "start_node": "Hall",
-        "end_node": "Study",
+        "prev_node": "Hall",
+        "node": "Study",
         "action": "up",
-        "step": 24,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 24
     },
     {
-        "start_node": "Hall",
-        "end_node": "Before A Dark Tower",
+        "prev_node": "Hall",
+        "node": "Before A Dark Tower",
         "action": "south",
-        "step": 28,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 28
     },
     {
-        "start_node": "Storage",
-        "end_node": "Study",
+        "prev_node": "Storage",
+        "node": "Study",
         "action": "north",
-        "step": 19,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
     },
     {
-        "start_node": "Before A Dark Tower",
-        "end_node": "Public Square",
+        "prev_node": "Before A Dark Tower",
+        "node": "Public Square",
         "action": "southwest",
-        "step": 30,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 30
     },
     {
-        "start_node": "Before A Dark Tower",
-        "end_node": "Hall",
+        "prev_node": "Before A Dark Tower",
+        "node": "Hall",
         "action": "north",
-        "step": 28,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 28
     },
     {
-        "start_node": "Public Square",
-        "end_node": "Road (east/west)",
+        "prev_node": "Public Square",
+        "node": "Road (east/west)",
         "action": "west",
-        "step": 34,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 34
     },
     {
-        "start_node": "Public Square",
-        "end_node": "Before A Dark Tower",
+        "prev_node": "Public Square",
+        "node": "Before A Dark Tower",
         "action": "northeast",
-        "step": 30,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 30
     },
     {
-        "start_node": "Road (east/west)",
-        "end_node": "A Dark Hallway",
+        "prev_node": "Road (east/west)",
+        "node": "A Dark Hallway",
         "action": "north",
-        "step": 51,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 51
     },
     {
-        "start_node": "Road (east/west)",
-        "end_node": "Crossroads",
+        "prev_node": "Road (east/west)",
+        "node": "Crossroads",
         "action": "west",
-        "step": 52,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 52
     },
     {
-        "start_node": "Road (east/west)",
-        "end_node": "Public Square",
+        "prev_node": "Road (east/west)",
+        "node": "Public Square",
         "action": "east",
-        "step": 34,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 34
     },
     {
-        "start_node": "A Dark Hallway",
-        "end_node": "Library",
+        "prev_node": "A Dark Hallway",
+        "node": "Library",
         "action": "north",
-        "step": 50,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 50
     },
     {
-        "start_node": "A Dark Hallway",
-        "end_node": "Road (east/west)",
+        "prev_node": "A Dark Hallway",
+        "node": "Road (east/west)",
         "action": "south",
-        "step": 36,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 36
     },
     {
-        "start_node": "Library",
-        "end_node": "A Dark Hallway",
+        "prev_node": "Library",
+        "node": "A Dark Hallway",
         "action": "south",
-        "step": 50,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 50
     },
     {
-        "start_node": "Crossroads",
-        "end_node": "Road (north/south)",
+        "prev_node": "Crossroads",
+        "node": "Road (north/south)",
         "action": "north",
-        "step": 54,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 54
     },
     {
-        "start_node": "Crossroads",
-        "end_node": "Dead End",
+        "prev_node": "Crossroads",
+        "node": "Dead End",
         "action": "south",
-        "step": 55,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 55
     },
     {
-        "start_node": "Crossroads",
-        "end_node": "Road (east/west)",
+        "prev_node": "Crossroads",
+        "node": "Road (east/west)",
         "action": "east",
-        "step": 52,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 52
     },
     {
-        "start_node": "Road (north/south)",
-        "end_node": "Crossroads",
+        "prev_node": "Road (north/south)",
+        "node": "Crossroads",
         "action": "south",
-        "step": 53,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 53
     },
     {
-        "start_node": "Dead End",
-        "end_node": "Stairs",
+        "prev_node": "Dead End",
+        "node": "Stairs",
         "action": "down",
-        "step": 60,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 60
     },
     {
-        "start_node": "Dead End",
-        "end_node": "Crossroads",
+        "prev_node": "Dead End",
+        "node": "Crossroads",
         "action": "north",
-        "step": 55,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 55
     },
     {
-        "start_node": "Stairs",
-        "end_node": "Corridor (near stairs)",
+        "prev_node": "Stairs",
+        "node": "Corridor (near stairs)",
         "action": "down",
-        "step": 61,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 61
     },
     {
-        "start_node": "Corridor (near stairs)",
-        "end_node": "Corridor (north/south)",
+        "prev_node": "Corridor (near stairs)",
+        "node": "Corridor (north/south)",
         "action": "north",
-        "step": 64,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 64
     },
     {
-        "start_node": "Corridor (north/south)",
-        "end_node": "Chamber",
+        "prev_node": "Corridor (north/south)",
+        "node": "Chamber",
         "action": "north",
-        "step": 65,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 65
     },
     {
-        "start_node": "Corridor (north/south)",
-        "end_node": "Corridor (near stairs)",
+        "prev_node": "Corridor (north/south)",
+        "node": "Corridor (near stairs)",
         "action": "south",
-        "step": 64,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 64
     },
     {
-        "start_node": "Chamber",
-        "end_node": "Corridor (east/west)",
+        "prev_node": "Chamber",
+        "node": "Corridor (east/west)",
         "action": "east",
-        "step": 67,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 67
     },
     {
-        "start_node": "Chamber",
-        "end_node": "Corridor (north/south)",
+        "prev_node": "Chamber",
+        "node": "Corridor (north/south)",
         "action": "south",
-        "step": 65,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 65
     },
     {
-        "start_node": "Corridor (east/west)",
-        "end_node": "Rock Chamber",
+        "prev_node": "Corridor (east/west)",
+        "node": "Rock Chamber",
         "action": "east",
-        "step": 68,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 68
     },
     {
-        "start_node": "Corridor (east/west)",
-        "end_node": "Chamber",
+        "prev_node": "Corridor (east/west)",
+        "node": "Chamber",
         "action": "west",
-        "step": 67,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 67
     },
     {
-        "start_node": "Rock Chamber",
-        "end_node": "Corridor (east/west)",
+        "prev_node": "Rock Chamber",
+        "node": "Corridor (east/west)",
         "action": "west",
-        "step": 68,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 68
     }
 ]

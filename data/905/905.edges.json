@@ -1,51 +1,51 @@
 [
     {
-        "start_node": "Bedroom",
-        "end_node": "Bathroom",
+        "prev_node": "Bedroom",
+        "node": "Bathroom",
         "action": "south",
-        "step": 10,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 10
     },
     {
-        "start_node": "Bedroom",
-        "end_node": "Living room",
+        "prev_node": "Bedroom",
+        "node": "Living room",
         "action": "east",
-        "step": 15,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 15
     },
     {
-        "start_node": "Bathroom",
-        "end_node": "Bedroom",
+        "prev_node": "Bathroom",
+        "node": "Bedroom",
         "action": "north",
-        "step": 3,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 3
     },
     {
-        "start_node": "Living room",
-        "end_node": "Driveway",
+        "prev_node": "Living room",
+        "node": "Driveway",
         "action": "south",
-        "step": 17,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 17
     },
     {
-        "start_node": "Living room",
-        "end_node": "Bedroom",
+        "prev_node": "Living room",
+        "node": "Bedroom",
         "action": "west",
-        "step": 15,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 15
     },
     {
-        "start_node": "Driveway",
-        "end_node": "Inside of the Car",
+        "prev_node": "Driveway",
+        "node": "Inside of the Car",
         "action": "enter car",
-        "step": 19,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
     },
     {
-        "start_node": "Driveway",
-        "end_node": "Living room",
+        "prev_node": "Driveway",
+        "node": "Living room",
         "action": "north",
-        "step": 17,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 17
     }
 ]

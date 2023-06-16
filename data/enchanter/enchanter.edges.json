@@ -1,303 +1,303 @@
 [
     {
-        "start_node": "Fork",
-        "end_node": "Outside of Shack",
+        "prev_node": "Fork",
+        "node": "Outside of Shack",
         "action": "northeast",
-        "step": 1,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 1
     },
     {
-        "start_node": "Outside of Shack",
-        "end_node": "Inside Shack",
+        "prev_node": "Outside of Shack",
+        "node": "Inside Shack",
         "action": "enter shack",
-        "step": 2,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 2
     },
     {
-        "start_node": "Outside of Shack",
-        "end_node": "Trail",
+        "prev_node": "Outside of Shack",
+        "node": "Trail",
         "action": "northeast",
-        "step": 8,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 8
     },
     {
-        "start_node": "Inside Shack",
-        "end_node": "Outside of Shack",
+        "prev_node": "Inside Shack",
+        "node": "Outside of Shack",
         "action": "exit shack",
-        "step": 7,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 7
     },
     {
-        "start_node": "Trail",
-        "end_node": "Trail Head",
+        "prev_node": "Trail",
+        "node": "Trail Head",
         "action": "southeast",
-        "step": 9,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 9
     },
     {
-        "start_node": "Trail",
-        "end_node": "Outside of Shack",
+        "prev_node": "Trail",
+        "node": "Outside of Shack",
         "action": "southwest",
-        "step": 8,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 8
     },
     {
-        "start_node": "Trail Head",
-        "end_node": "Shady Brook",
+        "prev_node": "Trail Head",
+        "node": "Shady Brook",
         "action": "northeast",
-        "step": 12,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 12
     },
     {
-        "start_node": "Trail Head",
-        "end_node": "Eastern Fork",
+        "prev_node": "Trail Head",
+        "node": "Eastern Fork",
         "action": "southeast",
-        "step": 13,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 13
     },
     {
-        "start_node": "Trail Head",
-        "end_node": "Trail",
+        "prev_node": "Trail Head",
+        "node": "Trail",
         "action": "northwest",
-        "step": 9,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 9
     },
     {
-        "start_node": "Shady Brook",
-        "end_node": "Trail Head",
+        "prev_node": "Shady Brook",
+        "node": "Trail Head",
         "action": "southwest",
-        "step": 10,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 10
     },
     {
-        "start_node": "Eastern Fork",
-        "end_node": "Village Outskirts",
+        "prev_node": "Eastern Fork",
+        "node": "Village Outskirts",
         "action": "southwest",
-        "step": 20,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 20
     },
     {
-        "start_node": "Eastern Fork",
-        "end_node": "Western Road",
+        "prev_node": "Eastern Fork",
+        "node": "Western Road",
         "action": "east",
-        "step": 21,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 21
     },
     {
-        "start_node": "Eastern Fork",
-        "end_node": "Trail Head",
+        "prev_node": "Eastern Fork",
+        "node": "Trail Head",
         "action": "northwest",
-        "step": 13,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 13
     },
     {
-        "start_node": "Village Outskirts",
-        "end_node": "Deserted Village",
+        "prev_node": "Village Outskirts",
+        "node": "Deserted Village",
         "action": "southwest",
-        "step": 19,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
     },
     {
-        "start_node": "Village Outskirts",
-        "end_node": "Eastern Fork",
+        "prev_node": "Village Outskirts",
+        "node": "Eastern Fork",
         "action": "northeast",
-        "step": 14,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 14
     },
     {
-        "start_node": "Deserted Village",
-        "end_node": "Village Outskirts",
+        "prev_node": "Deserted Village",
+        "node": "Village Outskirts",
         "action": "northeast",
-        "step": 15,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 15
     },
     {
-        "start_node": "Western Road",
-        "end_node": "Outside Gate",
+        "prev_node": "Western Road",
+        "node": "Outside Gate",
         "action": "east",
-        "step": 22,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 22
     },
     {
-        "start_node": "Western Road",
-        "end_node": "Eastern Fork",
+        "prev_node": "Western Road",
+        "node": "Eastern Fork",
         "action": "west",
-        "step": 21,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 21
     },
     {
-        "start_node": "Outside Gate",
-        "end_node": "Inside Gate",
+        "prev_node": "Outside Gate",
+        "node": "Inside Gate",
         "action": "east",
-        "step": 25,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 25
     },
     {
-        "start_node": "Outside Gate",
-        "end_node": "Western Road",
+        "prev_node": "Outside Gate",
+        "node": "Western Road",
         "action": "west",
-        "step": 22,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 22
     },
     {
-        "start_node": "Inside Gate",
-        "end_node": "Pebbled Path",
+        "prev_node": "Inside Gate",
+        "node": "Pebbled Path",
         "action": "north",
-        "step": 26,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 26
     },
     {
-        "start_node": "Inside Gate",
-        "end_node": "Outside Gate",
+        "prev_node": "Inside Gate",
+        "node": "Outside Gate",
         "action": "west",
-        "step": 25,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 25
     },
     {
-        "start_node": "Pebbled Path",
-        "end_node": "Tower",
+        "prev_node": "Pebbled Path",
+        "node": "Tower",
         "action": "north",
-        "step": 28,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 28
     },
     {
-        "start_node": "Pebbled Path",
-        "end_node": "Inside Gate",
+        "prev_node": "Pebbled Path",
+        "node": "Inside Gate",
         "action": "south",
-        "step": 26,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 26
     },
     {
-        "start_node": "Tower",
-        "end_node": "Jewel Room",
+        "prev_node": "Tower",
+        "node": "Jewel Room",
         "action": "up",
-        "step": 39,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 39
     },
     {
-        "start_node": "Tower",
-        "end_node": "Hall of Mirrors One",
+        "prev_node": "Tower",
+        "node": "Hall of Mirrors One",
         "action": "east",
-        "step": 40,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 40
     },
     {
-        "start_node": "Tower",
-        "end_node": "Pebbled Path",
+        "prev_node": "Tower",
+        "node": "Pebbled Path",
         "action": "south",
-        "step": 28,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 28
     },
     {
-        "start_node": "Jewel Room",
-        "end_node": "Tower",
+        "prev_node": "Jewel Room",
+        "node": "Tower",
         "action": "down",
-        "step": 29,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 29
     },
     {
-        "start_node": "Hall of Mirrors One",
-        "end_node": "Hall of Mirrors Two",
+        "prev_node": "Hall of Mirrors One",
+        "node": "Hall of Mirrors Two",
         "action": "east",
-        "step": 41,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 41
     },
     {
-        "start_node": "Hall of Mirrors One",
-        "end_node": "Tower",
+        "prev_node": "Hall of Mirrors One",
+        "node": "Tower",
         "action": "west",
-        "step": 40,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 40
     },
     {
-        "start_node": "Hall of Mirrors Two",
-        "end_node": "Hall of Mirrors Three",
+        "prev_node": "Hall of Mirrors Two",
+        "node": "Hall of Mirrors Three",
         "action": "east",
-        "step": 42,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 42
     },
     {
-        "start_node": "Hall of Mirrors Two",
-        "end_node": "Hall of Mirrors One",
+        "prev_node": "Hall of Mirrors Two",
+        "node": "Hall of Mirrors One",
         "action": "west",
-        "step": 41,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 41
     },
     {
-        "start_node": "Hall of Mirrors Three",
-        "end_node": "Hall of Mirrors Four",
+        "prev_node": "Hall of Mirrors Three",
+        "node": "Hall of Mirrors Four",
         "action": "east",
-        "step": 43,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 43
     },
     {
-        "start_node": "Hall of Mirrors Three",
-        "end_node": "Hall of Mirrors Two",
+        "prev_node": "Hall of Mirrors Three",
+        "node": "Hall of Mirrors Two",
         "action": "west",
-        "step": 42,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 42
     },
     {
-        "start_node": "Hall of Mirrors Four",
-        "end_node": "North Gate",
+        "prev_node": "Hall of Mirrors Four",
+        "node": "North Gate",
         "action": "east",
-        "step": 44,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 44
     },
     {
-        "start_node": "Hall of Mirrors Four",
-        "end_node": "Hall of Mirrors Three",
+        "prev_node": "Hall of Mirrors Four",
+        "node": "Hall of Mirrors Three",
         "action": "west",
-        "step": 43,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 43
     },
     {
-        "start_node": "North Gate",
-        "end_node": "Forest",
+        "prev_node": "North Gate",
+        "node": "Forest",
         "action": "north",
-        "step": 63,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 63
     },
     {
-        "start_node": "North Gate",
-        "end_node": "Library",
+        "prev_node": "North Gate",
+        "node": "Library",
         "action": "south",
-        "step": 69,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 69
     },
     {
-        "start_node": "North Gate",
-        "end_node": "Hall of Mirrors Four",
+        "prev_node": "North Gate",
+        "node": "Hall of Mirrors Four",
         "action": "west",
-        "step": 44,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 44
     },
     {
-        "start_node": "Forest",
-        "end_node": "Swamp",
+        "prev_node": "Forest",
+        "node": "Swamp",
         "action": "east",
-        "step": 61,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 61
     },
     {
-        "start_node": "Forest",
-        "end_node": "North Gate",
+        "prev_node": "Forest",
+        "node": "North Gate",
         "action": "south",
-        "step": 47,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 47
     },
     {
-        "start_node": "Swamp",
-        "end_node": "Forest",
+        "prev_node": "Swamp",
+        "node": "Forest",
         "action": "west",
-        "step": 55,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 55
     },
     {
-        "start_node": "Library",
-        "end_node": "North Gate",
+        "prev_node": "Library",
+        "node": "North Gate",
         "action": "north",
-        "step": 64,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 64
     }
 ]

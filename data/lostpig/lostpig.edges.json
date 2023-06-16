@@ -1,79 +1,79 @@
 [
     {
-        "start_node": "Outside",
-        "end_node": "Hole",
+        "prev_node": "Outside",
+        "node": "Hole",
         "action": "northeast",
-        "step": 7,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 7
     },
     {
-        "start_node": "Hole",
-        "end_node": "Fountain Room",
+        "prev_node": "Hole",
+        "node": "Fountain Room",
         "action": "east",
-        "step": 14,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 14
     },
     {
-        "start_node": "Fountain Room",
-        "end_node": "Statue Room",
+        "prev_node": "Fountain Room",
+        "node": "Statue Room",
         "action": "north",
-        "step": 30,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 30
     },
     {
-        "start_node": "Fountain Room",
-        "end_node": "Table Room",
+        "prev_node": "Fountain Room",
+        "node": "Table Room",
         "action": "southwest",
-        "step": 31,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 31
     },
     {
-        "start_node": "Fountain Room",
-        "end_node": "Hole",
+        "prev_node": "Fountain Room",
+        "node": "Hole",
         "action": "west",
-        "step": 14,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 14
     },
     {
-        "start_node": "Statue Room",
-        "end_node": "Fountain Room",
+        "prev_node": "Statue Room",
+        "node": "Fountain Room",
         "action": "south",
-        "step": 23,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 23
     },
     {
-        "start_node": "Table Room",
-        "end_node": "Closet",
+        "prev_node": "Table Room",
+        "node": "Closet",
         "action": "east",
-        "step": 51,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 51
     },
     {
-        "start_node": "Table Room",
-        "end_node": "Fountain Room",
+        "prev_node": "Table Room",
+        "node": "Fountain Room",
         "action": "northeast",
-        "step": 31,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 31
     },
     {
-        "start_node": "Closet",
-        "end_node": "Shelf Room",
+        "prev_node": "Closet",
+        "node": "Shelf Room",
         "action": "east",
-        "step": 70,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
     },
     {
-        "start_node": "Closet",
-        "end_node": "Table Room",
+        "prev_node": "Closet",
+        "node": "Table Room",
         "action": "west",
-        "step": 51,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 51
     },
     {
-        "start_node": "Shelf Room",
-        "end_node": "Closet",
+        "prev_node": "Shelf Room",
+        "node": "Closet",
         "action": "west",
-        "step": 70,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 70
     }
 ]
