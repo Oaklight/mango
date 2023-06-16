@@ -1,79 +1,79 @@
 [
     {
-        "start_node": "pitch black",
-        "end_node": "Bedroom",
+        "prev_node": "pitch black",
+        "node": "Bedroom",
         "action": "get up",
-        "step": 1,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 1
     },
     {
-        "start_node": "Bedroom",
-        "end_node": "Front Porch",
+        "prev_node": "Bedroom",
+        "node": "Front Porch",
         "action": "south",
-        "step": 8,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 8
     },
     {
-        "start_node": "Front Porch",
-        "end_node": "Front of House",
+        "prev_node": "Front Porch",
+        "node": "Front of House",
         "action": "south",
-        "step": 10,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 10
     },
     {
-        "start_node": "Front Porch",
-        "end_node": "Bedroom",
+        "prev_node": "Front Porch",
+        "node": "Bedroom",
         "action": "north",
-        "step": 8,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 8
     },
     {
-        "start_node": "Front of House",
-        "end_node": "Country Lane",
+        "prev_node": "Front of House",
+        "node": "Country Lane",
         "action": "follow ford",
-        "step": 19,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
     },
     {
-        "start_node": "Country Lane",
-        "end_node": "Pub",
+        "prev_node": "Country Lane",
+        "node": "Pub",
         "action": "enter pub",
-        "step": 20,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 20
     },
     {
-        "start_node": "Country Lane",
-        "end_node": "Dark",
+        "prev_node": "Country Lane",
+        "node": "Dark",
         "action": "push green button",
-        "step": 38,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 38
     },
     {
-        "start_node": "Pub",
-        "end_node": "Country Lane",
+        "prev_node": "Pub",
+        "node": "Country Lane",
         "action": "exit",
-        "step": 26,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 26
     },
     {
-        "start_node": "Dark",
-        "end_node": "Vogon Hold",
+        "prev_node": "Dark",
+        "node": "Vogon Hold",
         "action": "examine shadow",
-        "step": 44,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 44
     },
     {
-        "start_node": "Vogon Hold",
-        "end_node": "Captain's Quarters, in the poetry appreciation chair",
+        "prev_node": "Vogon Hold",
+        "node": "Captain's Quarters, in the poetry appreciation chair",
         "action": "z",
-        "step": 59,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 59
     },
     {
-        "start_node": "Captain's Quarters, in the poetry appreciation chair",
-        "end_node": "Vogon Hold",
+        "prev_node": "Captain's Quarters, in the poetry appreciation chair",
+        "node": "Vogon Hold",
         "action": "z",
-        "step": 70,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
     }
 ]

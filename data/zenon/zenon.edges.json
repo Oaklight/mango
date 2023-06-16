@@ -1,184 +1,184 @@
 [
     {
-        "start_node": "Cell",
-        "end_node": "Landing",
+        "prev_node": "Cell",
+        "node": "Landing",
         "action": "south",
-        "step": 15,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 15
     },
     {
-        "start_node": "Landing",
-        "end_node": "Corridor(south into a room and west to old cell)",
+        "prev_node": "Landing",
+        "node": "Corridor(south into a room and west to old cell)",
         "action": "east",
-        "step": 23,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 23
     },
     {
-        "start_node": "Landing",
-        "end_node": "Corridor(east old cell and stretches further west)",
+        "prev_node": "Landing",
+        "node": "Corridor(east old cell and stretches further west)",
         "action": "west",
-        "step": 24,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 24
     },
     {
-        "start_node": "Landing",
-        "end_node": "Cell",
+        "prev_node": "Landing",
+        "node": "Cell",
         "action": "north",
-        "step": 15,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 15
     },
     {
-        "start_node": "Corridor(south into a room and west to old cell)",
-        "end_node": "Armoury",
+        "prev_node": "Corridor(south into a room and west to old cell)",
+        "node": "Armoury",
         "action": "south",
-        "step": 22,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 22
     },
     {
-        "start_node": "Corridor(south into a room and west to old cell)",
-        "end_node": "Landing",
+        "prev_node": "Corridor(south into a room and west to old cell)",
+        "node": "Landing",
         "action": "west",
-        "step": 16,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 16
     },
     {
-        "start_node": "Armoury",
-        "end_node": "Corridor(south into a room and west to old cell)",
+        "prev_node": "Armoury",
+        "node": "Corridor(south into a room and west to old cell)",
         "action": "north",
-        "step": 17,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 17
     },
     {
-        "start_node": "Corridor(east old cell and stretches further west)",
-        "end_node": "Corridor(east to old cell and north to hall)",
+        "prev_node": "Corridor(east old cell and stretches further west)",
+        "node": "Corridor(east to old cell and north to hall)",
         "action": "west",
-        "step": 25,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 25
     },
     {
-        "start_node": "Corridor(east old cell and stretches further west)",
-        "end_node": "Landing",
+        "prev_node": "Corridor(east old cell and stretches further west)",
+        "node": "Landing",
         "action": "east",
-        "step": 24,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 24
     },
     {
-        "start_node": "Corridor(east to old cell and north to hall)",
-        "end_node": "Control Room",
+        "prev_node": "Corridor(east to old cell and north to hall)",
+        "node": "Control Room",
         "action": "south",
-        "step": 35,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 35
     },
     {
-        "start_node": "Corridor(east to old cell and north to hall)",
-        "end_node": "Hall",
+        "prev_node": "Corridor(east to old cell and north to hall)",
+        "node": "Hall",
         "action": "north",
-        "step": 36,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 36
     },
     {
-        "start_node": "Corridor(east to old cell and north to hall)",
-        "end_node": "Corridor(east old cell and stretches further west)",
+        "prev_node": "Corridor(east to old cell and north to hall)",
+        "node": "Corridor(east old cell and stretches further west)",
         "action": "east",
-        "step": 25,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 25
     },
     {
-        "start_node": "Control Room",
-        "end_node": "Corridor(east to old cell and north to hall)",
+        "prev_node": "Control Room",
+        "node": "Corridor(east to old cell and north to hall)",
         "action": "north",
-        "step": 26,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 26
     },
     {
-        "start_node": "Hall",
-        "end_node": "Lift(down button and a door to south)",
+        "prev_node": "Hall",
+        "node": "Lift(down button and a door to south)",
         "action": "north",
-        "step": 38,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 38
     },
     {
-        "start_node": "Hall",
-        "end_node": "Corridor(east to old cell and north to hall)",
+        "prev_node": "Hall",
+        "node": "Corridor(east to old cell and north to hall)",
         "action": "south",
-        "step": 36,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 36
     },
     {
-        "start_node": "Lift(down button and a door to south)",
-        "end_node": "Lift(up button and a door to north)",
+        "prev_node": "Lift(down button and a door to south)",
+        "node": "Lift(up button and a door to north)",
         "action": "down",
-        "step": 39,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 39
     },
     {
-        "start_node": "Lift(down button and a door to south)",
-        "end_node": "Hall",
+        "prev_node": "Lift(down button and a door to south)",
+        "node": "Hall",
         "action": "south",
-        "step": 38,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 38
     },
     {
-        "start_node": "Lift(up button and a door to north)",
-        "end_node": "Hallway",
+        "prev_node": "Lift(up button and a door to north)",
+        "node": "Hallway",
         "action": "north",
-        "step": 40,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 40
     },
     {
-        "start_node": "Lift(up button and a door to north)",
-        "end_node": "Lift(down button and a door to south)",
+        "prev_node": "Lift(up button and a door to north)",
+        "node": "Lift(down button and a door to south)",
         "action": "up",
-        "step": 39,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 39
     },
     {
-        "start_node": "Hallway",
-        "end_node": "Office",
+        "prev_node": "Hallway",
+        "node": "Office",
         "action": "north",
-        "step": 41,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 41
     },
     {
-        "start_node": "Hallway",
-        "end_node": "Lift(up button and a door to north)",
+        "prev_node": "Hallway",
+        "node": "Lift(up button and a door to north)",
         "action": "south",
-        "step": 40,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 40
     },
     {
-        "start_node": "Office",
-        "end_node": "Bar",
+        "prev_node": "Office",
+        "node": "Bar",
         "action": "east",
-        "step": 63,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 63
     },
     {
-        "start_node": "Office",
-        "end_node": "Officer's Room",
+        "prev_node": "Office",
+        "node": "Officer's Room",
         "action": "west",
-        "step": 64,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 64
     },
     {
-        "start_node": "Office",
-        "end_node": "Hallway",
+        "prev_node": "Office",
+        "node": "Hallway",
         "action": "south",
-        "step": 41,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 41
     },
     {
-        "start_node": "Bar",
-        "end_node": "Office",
+        "prev_node": "Bar",
+        "node": "Office",
         "action": "west",
-        "step": 61,
-        "desc": "forward"
+        "seen_in_forward": true,
+        "step_min_cutoff": 61
     },
     {
-        "start_node": "Officer's Room",
-        "end_node": "Office",
+        "prev_node": "Officer's Room",
+        "node": "Office",
         "action": "east",
-        "step": 64,
-        "desc": "reverse"
+        "seen_in_forward": false,
+        "step_min_cutoff": 64
     }
 ]
