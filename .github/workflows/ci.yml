@@ -35,5 +35,5 @@ jobs:
       - name: install dependencies
         run: pip install mkdocs-material 
       
-      - deploy to gh-pages
+      - name: deploy to gh-pages
         run: mkdocs gh-deploy --force
