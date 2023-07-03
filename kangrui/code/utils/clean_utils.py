@@ -44,8 +44,8 @@ def compute_hash_for_path(path:list,feature_list=["prev_node","node","action"]):
     # compute hash for a path:
 #     path = [
 #             {
-#                 "prev_node": "bathroom (obj44)",
-#                 "node": "bedroom (obj25)",
+#                 "prev_node": "Bathroom",
+#                 "node": "Bedroom",
 #                 "action": "north",
 #                 "seen_in_forward": True,
 #                 "step_min_cutoff": 3
