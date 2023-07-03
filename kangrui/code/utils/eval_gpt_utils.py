@@ -7,27 +7,20 @@ import csv
 import pandas as pd
 from collections import deque
 import time
-# general eval functions 
-def get_cutoff(result):
-    # load the json and read off the config field
-
-    if "load_path" in result["config"].keys():
-        load_path = result["config"]["load_path"]
-        # get the last num from walkthrough json filename in the config field, iterate to find walkthrough json
-        for path in load_path:
-            if "walkthrough" in path:
-                cutoff = path.split("/")[-1].split(".")[1].split("_")[-1]
-                cutoff = int(cutoff)
-                return cutoff
-    elif "cut_off" in result["config"].keys():
-        return int(result["config"]["cut_off"])
         
-def find_node_pair(src_node,dst_node,all_pairs):
+def find_pair(task_id,all_pairs):
     pair = None
     for pair in all_pairs:
-        if pair['src_node']==src_node and pair['dst_node']==dst_node:
+        if pair['id']==task_id:
             return pair
     return pair
+
+def find_path(task_id,all2all):
+    path = None
+    for path in all2all:
+        if path['id']==task_id:
+            return path
+    return path
 
 # edit distance score
 def normalized_edit_distance(s1, s2):
@@ -88,111 +81,9 @@ def get_multi_des(G,src_node,actions):
     return bfs_get_multi_des(G,src_node,actions)
 
 
-def eval_df(file,G,all_pairs,eval_difficulty='strict'):
-    #evaluate destination finding given one question
-    with open(file,'r') as f:
-        result_json = json.load(f)
-    
-    if not 'path' in result_json.keys():
-        print(file,'path not existed, skip eval')
-        return -1,-1
-    
-    cutoff=get_cutoff(result_json)
-    src_node=result_json["src_node"]
-    dst_node=result_json["dst_node"]
-    path=result_json['path']
-    actions=result_json["action_list"]
-    dst_nodes=get_multi_des(G,src_node,actions)
-    
-    lower_dst_nodes=[node.lower() for node in dst_nodes]
-
-    assert dst_node.lower() in lower_dst_nodes
-
-    pair=find_node_pair(src_node,dst_node,all_pairs)
-    
-    if (not isinstance(path[-1],dict)) or ('node' not in path[-1].keys()):
-        print(file,'path format error')
-        return -1,-1
-    
-    if pair is None:
-        print(file,'pair is none, skip eval')
-        return -1,-1
-        
-    
-    if pair['num_paths']<1:
-        print(file,'pair unreachable, skip eval')
-        return -1,-1
-    
-    if min(pair['path_min_cutoffs'])>cutoff:
-        print(file,f"path_min_cutoffs {min(pair['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
-        return -1,-1
-    
-    # evaluation begins
-    if eval_difficulty=="strict":
-        flag_eval=path[-1]['node'].lower() in lower_dst_nodes
-    else:
-        flag_eval=max([normalized_edit_distance(path[-1]['node'].lower(), v) for v in lower_dst_nodes])
 
 
-    flag_hard=False
-    for edge in result_json['path_gt']:
-
-        if 'seen' in edge.keys():
-            seen=edge["seen"]
-        elif 'seen_in_forward' in edge.keys():
-            seen=edge['seen_in_forward']
-
-        if seen==False:
-            flag_hard=True
-            break
-    return flag_eval,flag_hard
-
-
-
-def eval_df_gpt_batch(game_name,result_dir,G,all2all,all_pairs,model_name='gpt-4',eval_difficulty='strict'):
-    task_type='stepnav'
-    src_dir=osp.join(result_dir,game_name,'results',f"{task_type}-{model_name}")
-    file_list=[]
-    for file in os.listdir(src_dir):
-        file_list.append(osp.join(src_dir,file))
-    eval_cnt=0
-    total=0
-    
-    hard_total=0
-    hard_eval=0
-    
-    norm_total=0
-    norm_eval=0
-    for file in file_list:  
-        try:
-            flag_eval,flag_hard=eval_df(file,G,all_pairs,eval_difficulty)
-        except Exception as e:
-            print(file,e)
-            continue
-        if flag_eval!=-1:
-            eval_cnt+=flag_eval
-            total+=1
-            if flag_hard:
-                hard_total+=1
-                hard_eval+=flag_eval
-            else:
-                norm_total+=1
-                norm_eval+=flag_eval                       
-        
-    
-    return {
-    'success_cnt': eval_cnt,
-    'reasoning_cnt': 0,
-    'total': total,
-    'hard_success_cnt': hard_eval,
-    'hard_reasoning_cnt': 0,
-    'hard_total': hard_total,
-    'easy_success_cnt': norm_eval,
-    'easy_reasoning_cnt': 0,
-    'easy_total': norm_total,
-}
-
-# specific eval for route finding
+# new eval function sets, for both route_finding and dest_finding
 def nice_eval(G, path, src_node, dst_node,eval_difficulty='strict'):
     assert eval_difficulty in ['strict','loose']
 
@@ -279,102 +170,6 @@ def harsh_eval(G, path, start_node, end_node):
             return 0
     return 1
 
-def eval_rf(file,G,all2all,all_pairs,eval_difficulty='strict'):
-    #evaluate route finding given one question
-    with open(file,'r') as f:
-        result_json = json.load(f)
-    
-    if not 'path' in result_json.keys():
-        print(file,'path not existed, skip eval')
-        return -1,-1,-1
-    
-    cutoff=get_cutoff(result_json)
-
-    src_node=result_json["src_node"]
-    dst_node=result_json["dst_node"]
-    path=result_json['path']
-
-    pair=find_node_pair(src_node,dst_node,all_pairs)
-    
-    
-    if pair is None:
-        print(file,'pair is none, skip eval')
-        return -1,-1,-1
-        
-    
-    if pair['num_paths']<1:
-        print(file,'pair unreachable, skip eval')
-        return -1,-1,-1
-    
-    if min(pair['path_min_cutoffs'])>cutoff:
-        print(file,f"path_min_cutoffs {min(pair['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
-        return -1,-1,-1
-    
-    
-    flag_easy=nice_eval(G, path,src_node,dst_node,eval_difficulty)
-    flag_harsh=harsh_eval(G, path,src_node,dst_node)
-    
-    shortest_path=None
-    for p in all2all:
-        if p["src_node"]==src_node and p["dst_node"]==dst_node and p["diff_shortest"]==0:
-            shortest_path=p
-            break
-    if shortest_path is None:
-        print("error, shortest path not found")
-    flag_hard=shortest_path["all_steps_seen_in_forward"] is not True
-    
-    return flag_easy,flag_harsh,flag_hard
-
-def eval_rf_gpt_batch(game_name,result_dir,G,all2all,all_pairs,model_name='gpt-4',eval_difficulty='strict'):
-    task_type='pathgen'
-    src_dir=osp.join(result_dir,game_name,'results',f"{task_type}-{model_name}")
-    file_list=[]
-    for file in os.listdir(src_dir):
-        file_list.append(osp.join(src_dir,file))
-    easy_cnt=0
-    harsh_cnt=0
-    total=0
-    
-    hard_total=0
-    hard_easy=0
-    hard_harsh=0
-    
-    norm_total=0
-    norm_easy=0
-    norm_harsh=0
-    for file in file_list:  
-        try:
-            easy,harsh,hard=eval_rf(file,G,all2all,all_pairs,eval_difficulty)
-        except Exception as e:
-            print(file,e)
-            continue
-        if easy!=-1:
-            easy_cnt+=easy
-            harsh_cnt+=harsh
-            total+=1
-            if hard:
-                hard_total+=1
-                hard_easy+=easy
-                hard_harsh+=harsh
-            else:
-                norm_total+=1
-                norm_easy+=easy
-                norm_harsh+=harsh
-   
-    return {
-    'success_cnt': easy_cnt,
-    'reasoning_cnt': harsh_cnt,
-    'total': total,
-    'hard_success_cnt': hard_easy,
-    'hard_reasoning_cnt': hard_harsh,
-    'hard_total': hard_total,
-    'easy_success_cnt': norm_easy,
-    'easy_reasoning_cnt': norm_harsh,
-    'easy_total': norm_total,
-}
-
-
-# new eval function sets, for both route_finding and dest_finding
 def success_eval(G, path,src_node,dst_node,actions=None,eval_difficulty='strict',task_type='pathgen'):
     assert task_type in ['pathgen','stepnav']
 
@@ -405,6 +200,25 @@ def reasoning_eval(G, path,src_node,dst_node,actions,task_type):
         return harsh_eval(G, path, src_node, path[-1]['node'])
 
 
+def get_task_id(result_json):
+    return result_json['task_id']
+
+
+# general eval functions 
+def get_cutoff(result_json):
+    # load the json and read off the config field
+
+    if "load_path" in result_json["config"].keys():
+        load_path = result_json["config"]["load_path"]
+        # get the last num from walkthrough json filename in the config field, iterate to find walkthrough json
+        for path in load_path:
+            if "walkthrough" in path:
+                cutoff = path.split("/")[-1].split(".")[1].split("_")[-1]
+                cutoff = int(cutoff)
+                return cutoff
+    elif "cut_off" in result_json["config"].keys():
+        return int(result_json["config"]["cut_off"])
+    
 def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathgen'):
     #evaluate both route finding and destination finding
     # 'pathgen' for rf, 'stepnav' for df
@@ -414,40 +228,63 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
     with open(file,'r') as f:
         result_json = json.load(f)
     
-    if not 'path' in result_json.keys():
-        print(file,'path not existed, skip eval')
+
+    # step1: check cutoff
+    cutoff=get_cutoff(result_json)
+    task_id=get_task_id(result_json)
+    path_gt=None
+    pair_gt=None
+    if task_type=='pathgen':
+        pair_gt=find_pair(task_id,all_pairs)
+        if pair_gt is None:
+            print(file,'pair is none, skip eval')
+            return -1,-1,-1
+    else:
+        path_gt=find_path(task_id,all2all)
+        if path_gt is None:
+            print(file,'path is none, skip eval')
+            return -1,-1,-1  
+    if task_type=='pathgen' and min(pair_gt['path_min_cutoffs'])>cutoff:
+        print(file,f"pair_min_cutoffs {min(pair_gt['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
+        return -1,-1,-1
+    elif task_type=='stepnav' and path_gt['path_min_cutoff']>cutoff:
+        print(file,f"path_min_cutoffs {path_gt['path_min_cutoff']} > {cutoff} exceeded, skip eval")
         return -1,-1,-1
     
-    cutoff=get_cutoff(result_json)
+
+    # step2: check answer format
+    if not 'path' in result_json.keys():
+        print(file,'path not existed, skip eval')
+        return -2,-1,-1
+    
+    path=result_json['path']
+
+    if not isinstance(path,list):
+        print(file,'path is not list')
+        return -2,-1,-1
+    
+    if len(path)==0:
+        return -2,-1,-1
+    
+    for idx,edge in enumerate(path):
+        if not isinstance(edge,dict):
+            print(file,'path edge is not dict')
+            return -2,-1,-1
+        
+        if 'prev_node' not in edge.keys() or 'node' not in edge.keys() or 'action' not in edge.keys():
+            print(file,'path edge key error')
+            return -2,-1,-1
+        
+        if not isinstance(path[idx]['prev_node'],str) or not isinstance(path[idx]['node'],str) or not isinstance(path[idx]['action'],str):
+            print(file,'path edge value error')
+            return -2,-1,-1
+        
 
     src_node=result_json["src_node"]
     dst_node=result_json["dst_node"]
-    path=result_json['path']
-
     actions=None
     if task_type=='stepnav':
         actions=result_json["action_list"]
-
-    pair=find_node_pair(src_node,dst_node,all_pairs)
-    
-    
-    if (not isinstance(path[-1],dict)) or ('node' not in path[-1].keys()):
-        print(file,'path format error')
-        return -1,-1,-1
-    
-    if pair is None:
-        print(file,'pair is none, skip eval')
-        return -1,-1,-1
-        
-    
-    if pair['num_paths']<1:
-        print(file,'pair unreachable, skip eval')
-        return -1,-1,-1
-    
-    if min(pair['path_min_cutoffs'])>cutoff:
-        print(file,f"path_min_cutoffs {min(pair['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
-        return -1,-1,-1
-    
     
     flag_easy=success_eval(G, path,src_node,dst_node,actions,eval_difficulty,task_type)
     flag_harsh=reasoning_eval(G, path,src_node,dst_node,actions,task_type)
@@ -495,13 +332,26 @@ def eval_gpt_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',
     norm_total=0
     norm_easy=0
     norm_harsh=0
+
+    format_fail=0
+    total_file=0
     for file in file_list:  
-        try:
-            easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type)
-        except Exception as e:
-            print(file,e)
-            continue
+        # try:
+        #     easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type)
+        # except Exception as e:
+        #     print(file,e)
+        #     continue
+
+
+        easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type)
+
         if easy!=-1:
+            total_file+=1
+        if easy==-2:
+            format_fail+=1
+
+
+        if easy>=0:
             easy_cnt+=easy
             harsh_cnt+=harsh
             total+=1
@@ -524,6 +374,8 @@ def eval_gpt_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',
     'easy_success_cnt': norm_easy,
     'easy_reasoning_cnt': norm_harsh,
     'easy_total': norm_total,
+    'total_evaluted': total_file,
+    'total_format_failed':format_fail,
 }
 
 def get_csv(rst_dict,path):

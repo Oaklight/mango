@@ -8,19 +8,20 @@ import pandas as pd
 from collections import deque
 import time
 # general eval functions 
-def get_cutoff(result):
-    # load the json and read off the config field
-    if "step_num" in result.keys():
-        return int(result["step_num"])
-    else:
-        raise Exception("step_num not existed ")
         
-def find_node_pair(src_node,dst_node,all_pairs):
+def find_pair(task_id,all_pairs):
     pair = None
     for pair in all_pairs:
-        if pair['src_node']==src_node and pair['dst_node']==dst_node:
+        if pair['id']==task_id:
             return pair
     return pair
+
+def find_path(task_id,all2all):
+    path = None
+    for path in all2all:
+        if path['id']==task_id:
+            return path
+    return path
 
 # edit distance score
 def normalized_edit_distance(s1, s2):
@@ -200,6 +201,15 @@ def reasoning_eval(G, path,src_node,dst_node,actions,task_type):
                 return False
         return harsh_eval(G, path, src_node, path[-1]['node'])
 
+def get_cutoff(result):
+    # load the json and read off the config field
+    if "step_num" in result.keys():
+        return int(result["step_num"])
+    else:
+        raise Exception("step_num not existed ")
+
+def get_task_id(result_json):
+    return result_json['sample_id']
 
 def llama_parse_response(path_str:str)->list:
     try:
@@ -222,6 +232,30 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
     with open(file,'r') as f:
         result_json = json.load(f)
     
+
+    # step1: check cutoff
+    cutoff=get_cutoff(result_json)
+    task_id=get_task_id(result_json)
+    path_gt=None
+    pair_gt=None
+    if task_type=='pathgen':
+        pair_gt=find_pair(task_id,all_pairs)
+        if pair_gt is None:
+            print(file,'pair is none, skip eval')
+            return -1,-1,-1
+    else:
+        path_gt=find_path(task_id,all2all)
+        if path_gt is None:
+            print(file,'path is none, skip eval')
+            return -1,-1,-1  
+    if task_type=='pathgen' and min(pair_gt['path_min_cutoffs'])>cutoff:
+        print(file,f"pair_min_cutoffs {min(pair_gt['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
+        return -1,-1,-1
+    elif task_type=='stepnav' and path_gt['path_min_cutoff']>cutoff:
+        print(file,f"path_min_cutoffs {path_gt['path_min_cutoff']} > {cutoff} exceeded, skip eval")
+        return -1,-1,-1
+    
+    # step2: check answer format
     if not 'path' in result_json.keys():
         print(file,'path key not existed')
         return -2,-1,-1
@@ -236,6 +270,10 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
         return -2,-1,-1
     
     for idx,edge in enumerate(path):
+        if not isinstance(edge,dict):
+            print(file,'path edge not dict error')
+            return -2,-1,-1
+        
         if 'location_before' not in edge.keys() or 'location_after' not in edge.keys():
             print(file,'path key error')
             return -2,-1,-1
@@ -250,42 +288,17 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
         path[idx]["node"]=edge['location_after']
 
 
-
-
-    cutoff=get_cutoff(result_json)
-
     src_node=result_json["src_node"]
     dst_node=result_json["dst_node"]
-    
-
     actions=None
     if task_type=='stepnav':
         actions=[]
         for edge in result_json["path_gt"]:
             actions.append(edge["action"])
-
-    pair=find_node_pair(src_node,dst_node,all_pairs)
-    
-    
-    if pair is None:
-        print(file,'pair is none, skip eval')
-        return -1,-1,-1
-        
-    
-    if pair['num_paths']<1:
-        print(file,'pair unreachable, skip eval')
-        return -1,-1,-1
-    
-    if min(pair['path_min_cutoffs'])>cutoff:
-        print(file,f"path_min_cutoffs {min(pair['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
-        return -1,-1,-1
-    
     
     flag_easy=success_eval(G, path,src_node,dst_node,actions,eval_difficulty,task_type)
     flag_harsh=reasoning_eval(G, path,src_node,dst_node,actions,task_type)
     
-    # hard for rf
-
     if task_type=='pathgen':
         shortest_path=None
         for p in all2all:
@@ -340,11 +353,12 @@ def eval_llama_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen
             print(file,e)
             continue
         #easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type)
-        total_file+=1
+        if easy!=-1:
+            total_file+=1
         if easy==-2:
             format_fail+=1
 
-        if easy!=-1 or easy!=-2:
+        if easy>=0:
             easy_cnt+=easy
             harsh_cnt+=harsh
             total+=1
