@@ -2,6 +2,8 @@
 
 ## What's MANGO?
 
+**MANGO**: A Benchmark for Evaluating **Ma**pping and **N**avi**g**ati**o**n Abilities of Large Language Models
+
 Large language models such as ChatGPT and GPT-4 have recently achieved astonishing performances on a variety of natural language processing tasks.
 In this paper, we take an initiative to investigate their capacities of text-based mapping and navigation.
 We propose MANGO, a benchmark that includes 53 mazes taken from a suite of textgames.
