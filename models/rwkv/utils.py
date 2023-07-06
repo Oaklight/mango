@@ -3,8 +3,8 @@ import re
 import time
 import os
 import sys
-sys.path.append('/remote-home/pli/mango/kangrui/code/utils')
-from clean_utils import compute_hash_for_pair, compute_hash_for_path
+# sys.path.append('/remote-home/pli/mango/kangrui/code/utils')
+# from clean_utils import compute_hash_for_pair, compute_hash_for_path
 """
 def compute_hash_for_path(path:list,feature_list=["prev_node","node","action"]):
     # compute hash for a path:
