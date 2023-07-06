@@ -42,9 +42,7 @@ def main(
     world_size = dist.get_world_size()
 
     time_s = time.time()
-    model, tokenizer = init_model(rwkv_dir, ckpt_dir)
-    model = model.to(device_id)
-    tokenizer = tokenizer.to(device_id)
+    model, tokenizer = init_model(rwkv_dir, ckpt_dir, device_id)
 
     data_folder = '{}/data'.format(mango_folder)
     data_intermediate_folder = '{}/data-intermediate'.format(mango_folder)

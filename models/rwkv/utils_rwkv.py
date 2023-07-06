@@ -18,7 +18,7 @@ import time
 
 ########################################################################################################
 
-def init_model(rwkv_dir, model_path):
+def init_model(rwkv_dir, model_path, device_id):
     sys.path.append(rwkv_dir)
     from src.model_run import RWKV_RNN
     from src.utils import TOKENIZER
@@ -40,8 +40,8 @@ def init_model(rwkv_dir, model_path):
     args.grad_cp = 0
     args.my_pos_emb = 0
 
-    model = RWKV_RNN(args)
-    tokenizer = TOKENIZER(rwkv_dir + "/20B_tokenizer.json")
+    model = RWKV_RNN(args).to('cuda:{}'.format(device_id))
+    tokenizer = TOKENIZER(rwkv_dir + "/20B_tokenizer.json").to('cuda:{}'.format(device_id))
     print ("model and tokenizer loaded!!!")
     return model, tokenizer
 
