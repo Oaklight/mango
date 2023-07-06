@@ -1,0 +1,58 @@
+nohup: ignoring input
+
+RWKV_JIT_ON 1
+
+blocks.0.ln1.weight              float16    cuda:0    5120      
+blocks.0.ln1.bias                float16    cuda:0    5120      
+blocks.0.ln2.weight              float16    cuda:0    5120      
+blocks.0.ln2.bias                float16    cuda:0    5120      
+blocks.0.att.time_decay          float32    cuda:0    5120      
+blocks.0.att.time_first          float32    cuda:0    5120      
+blocks.0.att.time_mix_k          float16    cuda:0    5120      
+blocks.0.att.time_mix_v          float16    cuda:0    5120      
+blocks.0.att.time_mix_r          float16    cuda:0    5120      
+blocks.0.att.key.weight          float16    cuda:0    5120  5120
+blocks.0.att.value.weight        float16    cuda:0    5120  5120
+blocks.0.att.receptance.weight   float16    cuda:0    5120  5120
+blocks.0.att.output.weight       float16    cuda:0    5120  5120
+blocks.0.ffn.time_mix_k          float16    cuda:0    5120      
+blocks.0.ffn.time_mix_r          float16    cuda:0    5120      
+blocks.0.ffn.key.weight          float16    cuda:0    5120 20480
+blocks.0.ffn.receptance.weight   float16    cuda:0    5120  5120
+blocks.0.ffn.value.weight        float16    cuda:0   20480  5120
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+ln_out.weight                    float16    cuda:0    5120      
+ln_out.bias                      float16    cuda:0    5120      
+head.weight                      float16    cuda:0   50277  5120
+
+n_layer 40 n_embd 5120 ctx_len 100000
+model and tokenizer loaded!!!
+==> game name list:  ['905', 'advent', 'adventureland', 'afflicted', 'anchor', 'awaken', 'balances', 'ballyhoo', 'curses', 'cutthroat', 'deephome', 'detective', 'dragon', 'enchanter', 'enter', 'gold', 'hhgg', 'hollywood', 'huntdark', 'infidel', 'inhumane', 'jewel', 'karn', 'library', 'loose', 'lostpig', 'ludicorp', 'lurking', 'moonlit', 'murdac', 'night', 'omniquest', 'partyfoul', 'pentari', 'planetfall', 'plundered', 'reverb', 'seastalker', 'sherlock', 'snacktime', 'sorcerer', 'spellbrkr', 'spirit', 'temple', 'trinity', 'tryst205', 'wishbringer', 'yomomma', 'zenon', 'zork1', 'zork2', 'zork3', 'ztuu']
+processing game lurking ...
+  0%|          | 0/240 [00:00<?, ?it/s]  0%|          | 0/240 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "./rwkv_infer_route.py", line 108, in <module>
+    fire.Fire(main)
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/site-packages/fire/core.py", line 475, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/site-packages/fire/core.py", line 691, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "./rwkv_infer_route.py", line 94, in main
+    exist, task_info = check_pair_exist(task_info, old_folder=old_folder)
+  File "/remote-home/pli/mango/models/rwkv/utils.py", line 71, in check_pair_exist
+    json_file_list = [read_json('{}/{}'.format(old_folder, name)) for name in json_file_names] # old
+  File "/remote-home/pli/mango/models/rwkv/utils.py", line 71, in <listcomp>
+    json_file_list = [read_json('{}/{}'.format(old_folder, name)) for name in json_file_names] # old
+  File "/remote-home/pli/mango/models/rwkv/utils.py", line 97, in read_json
+    json_object = json.load(f)
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/remote-home/pli/anaconda3/envs/rwkv/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 40 column 9 (char 18757)
