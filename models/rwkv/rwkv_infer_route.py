@@ -41,19 +41,17 @@ def main(
     world_size = dist.get_world_size()
 
     time_s = time.time()
-    model, tokenizer = init_model(rwkv_dir, ckpt_dir)
-    model = model.to(device_id)
-    tokenizer = tokenizer.to(device_id)
+    model, tokenizer = init_model(rwkv_dir, ckpt_dir, device_id)
 
     data_folder = '{}/data'.format(mango_folder)
     game_name_list = sorted(os.listdir(data_folder))
     print ("==> game name list: ", game_name_list)
+
     if end_game_idx == 10000:
         end_game_idx = len(game_name_list)
-    
     game_num = end_game_idx - start_game_idx
-    tmp_start_game_idx = start_game_idx + (rank/world_size) * game_num
-    tmp_end_game_idx = start_game_idx + (rank/world_size) * game_num
+    tmp_start_game_idx = int(start_game_idx + (rank/world_size) * game_num)
+    tmp_end_game_idx = int(start_game_idx + ((rank+1)/world_size) * game_num)
 
     for game_name in game_name_list[tmp_start_game_idx:tmp_end_game_idx]:
         print ("gpu {} processing game {} ...".format(rank, game_name))
