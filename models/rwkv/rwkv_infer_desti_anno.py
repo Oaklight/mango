@@ -115,6 +115,7 @@ def main(
                 "task": "stepnav",
                 'src_node': src_node,
                 'dst_node': dst_node,
+                "path_gt": path_gt,
                 "sample_id": sample_id,
                 "pretext": prefix_walkthrough_anno,
                 'step_num': step_num_anno,
