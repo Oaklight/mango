@@ -25,7 +25,7 @@ def compute_hash_for_path(path:list,feature_list=["prev_node","node","action"]):
 
 def check_path_exist(task_info, old_folder, mango_folder):
     sys.path.append(mango_folder + '/kangrui/code/utils')
-    from clean_utils import compute_hash_for_pair, compute_hash_for_path
+    from clean_utils import compute_hash_for_path
     # task_id = task_info['sample_id']
 
     task_path_gt = task_info['path_gt']
@@ -39,10 +39,13 @@ def check_path_exist(task_info, old_folder, mango_folder):
 
     json_file_names = os.listdir(old_folder)
     json_file_list = [read_json('{}/{}'.format(old_folder, name)) for name in json_file_names] # old
+    json_file_list = [x for x in json_file_list if x is not None]
 
     path_gt_list = [item["path_gt"] for item in json_file_list]
     path_gt_list_new = []
     for path_gt in path_gt_list:
+        if path_gt == []:
+            continue
         new_path = []
         for item in path_gt:
             tmp = item
@@ -69,11 +72,13 @@ def check_path_exist(task_info, old_folder, mango_folder):
 
 def check_pair_exist(task_info, old_folder, mango_folder):
     sys.path.append(mango_folder + '/kangrui/code/utils')
-    from clean_utils import compute_hash_for_pair, compute_hash_for_path
-    
+    from clean_utils import compute_hash_for_pair
+
     task_id = task_info['sample_id']
     json_file_names = os.listdir(old_folder)
     json_file_list = [read_json('{}/{}'.format(old_folder, name)) for name in json_file_names] # old
+    json_file_list = [x for x in json_file_list if x is not None]
+
     hash_ids= [compute_hash_for_pair(item) for item in json_file_list]
 
     exist = False
@@ -98,8 +103,11 @@ def read_txt(txt_path):
 
 
 def read_json(json_path):
-    with open(json_path, 'r') as f:
-        json_object = json.load(f)
+    try:
+        with open(json_path, 'r') as f:
+            json_object = json.load(f)
+    except:
+        json_object = None
     return json_object
 
 def save_json(save_path, save_object):
