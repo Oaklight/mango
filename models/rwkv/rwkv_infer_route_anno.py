@@ -38,8 +38,9 @@ def main(
     setup()
     rank = dist.get_rank()
     device_id = rank % torch.cuda.device_count()
-    print(f'Current rank {rank}')
     world_size = dist.get_world_size()
+    print(f'Current rank {rank}')
+    print(f'World size {world_size}')
 
     time_s = time.time()
     model, tokenizer = init_model(rwkv_dir, ckpt_dir, device_id)
