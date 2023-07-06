@@ -102,7 +102,7 @@ def main(
                 'save_file': save_file,
                 "time": now_str
             }
-            old_folder = mango_folder + '/data_backup_pli/rwkv_results_processed/{}/results/stepnav_llama_anno'.format(task_info['game_name'])
+            old_folder = mango_folder + '/mango-inhouse-llms/rwkv_results_processed/{}/results/stepnav_llama_anno'.format(task_info['game_name'])
             exist, task_info = check_path_exist(task_info, old_folder=old_folder, mango_folder=mango_folder)
             if exist:
                 save_json(task_info['save_file'], task_info)
