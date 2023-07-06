@@ -18,6 +18,14 @@ sys.path.append(os.getcwd())
 from utils_rwkv import init_model, rwkv_infer
 from utils import read_json, read_txt, cutoff_walkthrough, process, check_pair_exist, save_json, convert_moves2walkthrough_anno
 
+import torch.distributed as dist
+def setup():
+    dist.init_process_group('nccl')
+
+def destroy():
+    dist.destroy_process_group()
+
+
 def main(
     rwkv_dir: str,
     ckpt_dir: str,
@@ -27,15 +35,30 @@ def main(
     start_game_idx: int = 0,
     end_game_idx: int = 10000
 ):
+    setup()
+    rank = dist.get_rank()
+    device_id = rank % torch.cuda.device_count()
+    print(f'Current rank {rank}')
+    world_size = dist.get_world_size()
+
     time_s = time.time()
     model, tokenizer = init_model(rwkv_dir, ckpt_dir)
+    model = model.to(device_id)
+    tokenizer = tokenizer.to(device_id)
 
     data_folder = '{}/data'.format(mango_folder)
     data_intermediate_folder = '{}/data-intermediate'.format(mango_folder)
 
     game_name_list = sorted(os.listdir(data_folder))
     print ("==> game name list: ", game_name_list)
-    for game_name in game_name_list[start_game_idx:end_game_idx]:
+
+    if end_game_idx == 10000:
+        end_game_idx = len(game_name_list)
+    game_num = end_game_idx - start_game_idx
+    tmp_start_game_idx = int(start_game_idx + (rank/world_size) * game_num)
+    tmp_end_game_idx = int(start_game_idx + ((rank+1)/world_size) * game_num)
+
+    for game_name in game_name_list[tmp_start_game_idx:tmp_end_game_idx]:
         print ("processing game {} ...".format(game_name))
 
         # action_space
@@ -111,7 +134,7 @@ def main(
             time_s = time.time()
 
         print ("Good Job!")
-
+    destroy()
 
 if __name__ == "__main__":
     fire.Fire(main)
