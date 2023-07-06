@@ -1,473 +1,0 @@
-nohup: ignoring input
-
-RWKV_JIT_ON 1
-
-blocks.0.ln1.weight              float16    cuda:0    5120      
-blocks.0.ln1.bias                float16    cuda:0    5120      
-blocks.0.ln2.weight              float16    cuda:0    5120      
-blocks.0.ln2.bias                float16    cuda:0    5120      
-blocks.0.att.time_decay          float32    cuda:0    5120      
-blocks.0.att.time_first          float32    cuda:0    5120      
-blocks.0.att.time_mix_k          float16    cuda:0    5120      
-blocks.0.att.time_mix_v          float16    cuda:0    5120      
-blocks.0.att.time_mix_r          float16    cuda:0    5120      
-blocks.0.att.key.weight          float16    cuda:0    5120  5120
-blocks.0.att.value.weight        float16    cuda:0    5120  5120
-blocks.0.att.receptance.weight   float16    cuda:0    5120  5120
-blocks.0.att.output.weight       float16    cuda:0    5120  5120
-blocks.0.ffn.time_mix_k          float16    cuda:0    5120      
-blocks.0.ffn.time_mix_r          float16    cuda:0    5120      
-blocks.0.ffn.key.weight          float16    cuda:0    5120 20480
-blocks.0.ffn.receptance.weight   float16    cuda:0    5120  5120
-blocks.0.ffn.value.weight        float16    cuda:0   20480  5120
-..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-ln_out.weight                    float16    cuda:0    5120      
-ln_out.bias                      float16    cuda:0    5120      
-head.weight                      float16    cuda:0   50277  5120
-
-n_layer 40 n_embd 5120 ctx_len 100000
-model and tokenizer loaded!!!
-==> game name list:  ['905', 'advent', 'adventureland', 'afflicted', 'anchor', 'awaken', 'balances', 'ballyhoo', 'curses', 'cutthroat', 'deephome', 'detective', 'dragon', 'enchanter', 'enter', 'gold', 'hhgg', 'hollywood', 'huntdark', 'infidel', 'inhumane', 'jewel', 'karn', 'library', 'loose', 'lostpig', 'ludicorp', 'lurking', 'moonlit', 'murdac', 'night', 'omniquest', 'partyfoul', 'pentari', 'planetfall', 'plundered', 'reverb', 'seastalker', 'sherlock', 'snacktime', 'sorcerer', 'spellbrkr', 'spirit', 'temple', 'trinity', 'tryst205', 'wishbringer', 'yomomma', 'zenon', 'zork1', 'zork2', 'zork3', 'ztuu']
-processing game gold ...
-  0%|          | 0/143 [00:00<?, ?it/s]  1%|          | 1/143 [00:01<02:46,  1.17s/it]  3%|▎         | 5/143 [00:33<16:07,  7.01s/it]  8%|▊         | 11/143 [00:33<05:29,  2.49s/it]  8%|▊         | 11/143 [00:49<05:29,  2.49s/it]  8%|▊         | 12/143 [01:02<13:06,  6.00s/it] 13%|█▎        | 18/143 [01:02<05:51,  2.81s/it] 13%|█▎        | 18/143 [01:20<05:51,  2.81s/it] 15%|█▍        | 21/143 [01:30<09:24,  4.63s/it] 17%|█▋        | 25/143 [01:58<10:44,  5.46s/it] 22%|██▏       | 31/143 [01:58<05:52,  3.15s/it] 22%|██▏       | 31/143 [02:10<05:52,  3.15s/it] 22%|██▏       | 32/143 [02:27<10:10,  5.50s/it] 24%|██▍       | 35/143 [02:50<10:57,  6.09s/it] 26%|██▌       | 37/143 [03:18<13:43,  7.77s/it] 27%|██▋       | 39/143 [03:39<14:31,  8.38s/it] 28%|██▊       | 40/143 [04:04<18:24, 10.73s/it] 32%|███▏      | 46/143 [04:32<12:00,  7.43s/it] 33%|███▎      | 47/143 [05:00<15:43,  9.83s/it] 34%|███▍      | 49/143 [05:28<17:02, 10.87s/it] 35%|███▍      | 50/143 [05:53<20:02, 12.93s/it] 36%|███▌      | 51/143 [06:15<22:24, 14.62s/it] 40%|███▉      | 57/143 [06:15<08:20,  5.81s/it] 44%|████▍     | 63/143 [06:15<04:10,  3.13s/it] 44%|████▍     | 63/143 [06:30<04:10,  3.13s/it] 47%|████▋     | 67/143 [06:38<04:57,  3.92s/it] 48%|████▊     | 69/143 [07:06<07:03,  5.72s/it] 50%|█████     | 72/143 [07:35<08:00,  6.77s/it] 55%|█████▍    | 78/143 [08:03<06:21,  5.88s/it] 55%|█████▌    | 79/143 [08:31<08:28,  7.95s/it] 57%|█████▋    | 82/143 [08:52<07:48,  7.68s/it] 58%|█████▊    | 83/143 [09:20<10:10, 10.17s/it] 62%|██████▏   | 89/143 [09:20<04:29,  4.99s/it] 62%|██████▏   | 89/143 [09:40<04:29,  4.99s/it] 64%|██████▎   | 91/143 [09:48<05:51,  6.77s/it] 65%|██████▌   | 93/143 [10:07<06:06,  7.32s/it] 66%|██████▋   | 95/143 [10:25<06:10,  7.71s/it] 67%|██████▋   | 96/143 [10:50<08:05, 10.32s/it] 69%|██████▊   | 98/143 [11:19<08:33, 11.41s/it] 69%|██████▉   | 99/143 [11:47<10:28, 14.28s/it] 73%|███████▎  | 104/143 [12:10<05:51,  9.02s/it] 73%|███████▎  | 105/143 [12:37<07:14, 11.45s/it] 75%|███████▍  | 107/143 [13:05<07:18, 12.18s/it] 76%|███████▌  | 108/143 [13:29<08:10, 14.03s/it] 76%|███████▌  | 109/143 [13:51<08:51, 15.63s/it] 77%|███████▋  | 110/143 [14:09<08:56, 16.26s/it] 78%|███████▊  | 111/143 [14:10<06:42, 12.57s/it] 80%|████████  | 115/143 [14:18<03:01,  6.47s/it] 80%|████████  | 115/143 [14:30<03:01,  6.47s/it] 81%|████████  | 116/143 [14:46<04:34, 10.17s/it] 84%|████████▍ | 120/143 [14:46<01:59,  5.19s/it] 86%|████████▌ | 123/143 [14:48<01:11,  3.55s/it] 86%|████████▌ | 123/143 [15:00<01:11,  3.55s/it] 87%|████████▋ | 125/143 [15:06<01:29,  4.95s/it] 89%|████████▉ | 127/143 [15:34<01:57,  7.35s/it] 90%|████████▉ | 128/143 [15:37<01:39,  6.62s/it] 90%|████████▉ | 128/143 [15:50<01:39,  6.62s/it] 91%|█████████ | 130/143 [16:07<01:59,  9.18s/it] 94%|█████████▍| 135/143 [16:07<00:34,  4.37s/it] 94%|█████████▍| 135/143 [16:20<00:34,  4.37s/it] 96%|█████████▌| 137/143 [16:35<00:39,  6.59s/it] 97%|█████████▋| 138/143 [16:36<00:29,  5.84s/it] 98%|█████████▊| 140/143 [16:38<00:13,  4.35s/it]100%|██████████| 143/143 [16:38<00:00,  6.98s/it]
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f904c71009009d7f1be7df58ce3e9f5598a7f6647b8d17d48286e4cc1dc5c824.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f904c71009009d7f1be7df58ce3e9f5598a7f6647b8d17d48286e4cc1dc5c824.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0a1d42ea0032fbcb58252f1e1c9c045749d50c10c2a41f4c81150ffbd11e3411.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0a1d42ea0032fbcb58252f1e1c9c045749d50c10c2a41f4c81150ffbd11e3411.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_73b6e02907a50289a8e1ece81c86a046eb7551f2ba31fa7edf3f014e5679cd8a.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_73b6e02907a50289a8e1ece81c86a046eb7551f2ba31fa7edf3f014e5679cd8a.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0602cd2de801153ac457c762099d17e55e92d80c7a84e53593aed305e2bbda45.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0602cd2de801153ac457c762099d17e55e92d80c7a84e53593aed305e2bbda45.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 19.54s, generation 12.51s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_3b36f208ed10c1d74aee8ebf9694afc14624413489d4a3182fd78e4730393c87.json
-#Structure acc: 0/1
-#Time used: 13.054391531149546 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ed012e568511a0dc722f5b2e70e1262e48aca2789e8c563819c912faa7e8627c.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ed012e568511a0dc722f5b2e70e1262e48aca2789e8c563819c912faa7e8627c.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_69e1ea02205ef7fe2ef8428149fec1d2584a8cc286d29054370a6bf3977bd0c6.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_69e1ea02205ef7fe2ef8428149fec1d2584a8cc286d29054370a6bf3977bd0c6.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_c52067e4c4b985c206bebaff476e32a6fbedf37d367e184c38625f2b9107dbff.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_c52067e4c4b985c206bebaff476e32a6fbedf37d367e184c38625f2b9107dbff.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b658bef1aa8bd89289f97102130c3f6f5a6395ec9fec5552ab1ac995a39d416c.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b658bef1aa8bd89289f97102130c3f6f5a6395ec9fec5552ab1ac995a39d416c.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_afbc91841be4a9dce75ff915f5c17a4e31270316e528e9aa1ed178f57ddcf30b.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_afbc91841be4a9dce75ff915f5c17a4e31270316e528e9aa1ed178f57ddcf30b.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_23266d7ff9d1c0dc0c4b2febcf2342626001493288aa3ffa349d5c6837776709.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_23266d7ff9d1c0dc0c4b2febcf2342626001493288aa3ffa349d5c6837776709.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 17.4s, generation 11.41s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_dcc13a9a50bbc593ba18196b6c9f17ddc466c71406ca48a7eba84bb0cf4502db.json
-#Structure acc: 0/1
-#Time used: 0.4822236657142639 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bf0ec4e4785b35a9ba9880b6c2f98d1f1717a3823fb38e84449dfa42d1dc5c92.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bf0ec4e4785b35a9ba9880b6c2f98d1f1717a3823fb38e84449dfa42d1dc5c92.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8ff4b59c3e444d0eb0ab7fcdb9fc38b355b977b145ae83f5077483d42a19c901.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8ff4b59c3e444d0eb0ab7fcdb9fc38b355b977b145ae83f5077483d42a19c901.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_592270c88c401c67c38882a32ac0fa5c0e296cbf62ee921d395fe9bea0deae33.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_592270c88c401c67c38882a32ac0fa5c0e296cbf62ee921d395fe9bea0deae33.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_aae81566aaab26d5d4771c42f2792ed5a58581d1982bdf3dc04fab6d8273cec5.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_aae81566aaab26d5d4771c42f2792ed5a58581d1982bdf3dc04fab6d8273cec5.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4e24a484297087571052632f20bd1e0c6e9c6dde4adc78e5a5dac83998517cf2.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4e24a484297087571052632f20bd1e0c6e9c6dde4adc78e5a5dac83998517cf2.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_e9cbee0e7a8128558dbb883d737888b34ea808d43da74a56b3d07ef26f217e7d.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_e9cbee0e7a8128558dbb883d737888b34ea808d43da74a56b3d07ef26f217e7d.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_03e44bc5a66595ca12bef84a45ab787fc203e31cc03ca262a30199ca00be5fc6.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_03e44bc5a66595ca12bef84a45ab787fc203e31cc03ca262a30199ca00be5fc6.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_65ddc5accfd65a901ee16b3144dddc8decdc5285bde7a5a2b1a007ed45bbbad3.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_65ddc5accfd65a901ee16b3144dddc8decdc5285bde7a5a2b1a007ed45bbbad3.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.8s, generation 11.37s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8f68d0cfdc06cda6cdaddc25784adc34d2d1b22cb12634ae5811c246141b5725.json
-#Structure acc: 0/1
-#Time used: 0.47211097478866576 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fedca6a3c629ee03875446a8d8db56c6447e9808cd1701badc39b10e4783a960.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fedca6a3c629ee03875446a8d8db56c6447e9808cd1701badc39b10e4783a960.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b2bb88c48e8ed793cfef338c931e89753dbdf15892600ccae6ac00e5c16139e3.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b2bb88c48e8ed793cfef338c931e89753dbdf15892600ccae6ac00e5c16139e3.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_20e46f3160cfb04db956c004d80bd14d7bfdbdaac1cfdd1efb0fac27d7b5dbcf.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_20e46f3160cfb04db956c004d80bd14d7bfdbdaac1cfdd1efb0fac27d7b5dbcf.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.77s, generation 11.35s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_70331f84a84bd6f843058a55b8461d7fc3307a24ad19693b3d6f771f943382d5.json
-#Structure acc: 0/1
-#Time used: 0.4697818398475647 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8cb9d92ae23c99c65cac04e13abc9a31b6b17e13b76102df56c65db61409d06b.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8cb9d92ae23c99c65cac04e13abc9a31b6b17e13b76102df56c65db61409d06b.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8e73b2416233fec7840d18714f12d9cdf2f20eb1cedbf13bb3a9a4e8e01d2bd4.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8e73b2416233fec7840d18714f12d9cdf2f20eb1cedbf13bb3a9a4e8e01d2bd4.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2273c7594e546c7d553710f8cfa613c534c63e0a54b9adb2ab00023e0a98d683.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2273c7594e546c7d553710f8cfa613c534c63e0a54b9adb2ab00023e0a98d683.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0f5d222fd7b604c7cad2ef339604047b0f6cac80d9ea77f01d96b1c2a012044c.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0f5d222fd7b604c7cad2ef339604047b0f6cac80d9ea77f01d96b1c2a012044c.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fcbd341284a32b9810744963b513076e72b43d153adff525c69192c8624e4ded.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fcbd341284a32b9810744963b513076e72b43d153adff525c69192c8624e4ded.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_6db6d85558af3e0e99ec514604138142d5e1fe17c5c72575c805bfce0e595c65.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_6db6d85558af3e0e99ec514604138142d5e1fe17c5c72575c805bfce0e595c65.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 17.41s, generation 11.33s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b1b8a147248626f32aaaab36cc2365dbc7e37e170d8eff44893c0ae6786bf7b7.json
-#Structure acc: 0/1
-#Time used: 0.48115214506785076 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_83fc18f889d50aa3681cccb27b8d27b7bd47c3bfa38a5b1f0e5f4462274a988e.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_83fc18f889d50aa3681cccb27b8d27b7bd47c3bfa38a5b1f0e5f4462274a988e.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_91f7354c0c831da4ca57582da08e2f7da9bd213cc6a0cfe3a36830b7384782e0.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_91f7354c0c831da4ca57582da08e2f7da9bd213cc6a0cfe3a36830b7384782e0.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.66s, generation 6.02s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_3275f840c301df80a2deb34a55071eb2e7df0acf1c61d36b366fd5c39dad7505.json
-#Structure acc: 1/1
-#Time used: 0.3788795789082845 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_59d341a97aa82090788a79f6efec89fb24795771dc684517d9fa9678cfa99c7e.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_59d341a97aa82090788a79f6efec89fb24795771dc684517d9fa9678cfa99c7e.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.65s, generation 11.36s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_7d0bc87ed773306f3200a225cf00d3ff5a08155097b1761ca54ebfba87b0ab7f.json
-#Structure acc: 0/1
-#Time used: 0.4675325989723206 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4a535afc8e91095492bc233a79e9c687bbb01ccacaba01696a597f04d14dcca8.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4a535afc8e91095492bc233a79e9c687bbb01ccacaba01696a597f04d14dcca8.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.94s, generation 3.8s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_1a698d9fcf522e90d9866e6797d1310d2e306ba634c45cce50d46cb929e6911d.json
-#Structure acc: 1/1
-#Time used: 0.3463380018870036 min
-task not in hash ids.
-
-
---- preprocess 17.14s, generation 7.71s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_98e5750dc3312be32988420c3a0ca1fde6d8a882c9c74a5ecc526f6564194ff6.json
-#Structure acc: 1/1
-#Time used: 0.41445300181706746 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a2235a794eebf448dd64448aab853004003597fd611526c6358d20e71354dda7.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a2235a794eebf448dd64448aab853004003597fd611526c6358d20e71354dda7.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f4663d86b81f3af09be0041ab00d1f6abd2b81136a69b072cddf1f782f600ca7.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f4663d86b81f3af09be0041ab00d1f6abd2b81136a69b072cddf1f782f600ca7.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_1ceb9ff42a53d0b193a76da280090db0744f9b6e0b02639aa61f97ebe6127686.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_1ceb9ff42a53d0b193a76da280090db0744f9b6e0b02639aa61f97ebe6127686.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a63cc63478e0ccb4ec9d03a3be23b4d832faa9b35b8d68af9ab320fa5560fb72.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a63cc63478e0ccb4ec9d03a3be23b4d832faa9b35b8d68af9ab320fa5560fb72.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_97f0cd7ebcb39ba2b880c86a5cb520e837f46871632e7c7aab3610affa4f5837.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_97f0cd7ebcb39ba2b880c86a5cb520e837f46871632e7c7aab3610affa4f5837.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.89s, generation 11.37s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_9c5f2850dcbda18b28ecd3efcecec21f47f9eebd37d844dae5f57455a048cd90.json
-#Structure acc: 0/1
-#Time used: 0.47285303274790447 min
-task not in hash ids.
-
-
---- preprocess 16.8s, generation 11.33s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b9972b648bc465a5087d6216569d16e49f79cf31314d73d5f3fa045a3edef112.json
-#Structure acc: 0/1
-#Time used: 0.4691988190015157 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b8840c012a1d85ce5e285b6f6053604dc7164db7cadc961f30e149f41e8526e9.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b8840c012a1d85ce5e285b6f6053604dc7164db7cadc961f30e149f41e8526e9.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.69s, generation 11.35s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4f94e059af43353e7149c82945d2aa1d423c450811cf6fbf7dc665569da9ccfc.json
-#Structure acc: 0/1
-#Time used: 0.4680384318033854 min
-task not in hash ids.
-
-
---- preprocess 16.71s, generation 7.77s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_62f04dc49468ee0db79657432aac990c4f85b39ae2918d69df64dee49488484a.json
-#Structure acc: 1/1
-#Time used: 0.4083606163660685 min
-task not in hash ids.
-
-
---- preprocess 16.73s, generation 5.72s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_c5c5e895eb26d6d666a32301bb80059bab44ee3fb1731fbe472cdd7728ea16d8.json
-#Structure acc: 1/1
-#Time used: 0.3744210243225098 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_91285685d38fa41c460f48fcdeb05bc10791948aa41173f803b0db235a796987.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_91285685d38fa41c460f48fcdeb05bc10791948aa41173f803b0db235a796987.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a0af6d0fc1930c98982da8b10e9c4c819049e7b3ff9e3f48cbad9df5b150eb81.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a0af6d0fc1930c98982da8b10e9c4c819049e7b3ff9e3f48cbad9df5b150eb81.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_55ed2e9292b6a6e54f605c72a86166325166932da61652e72e68b3790a13446b.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_55ed2e9292b6a6e54f605c72a86166325166932da61652e72e68b3790a13446b.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_311ea7def3641978b63022b4069a177eb809e6077d61bc7933f9e325f15d0ee6.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_311ea7def3641978b63022b4069a177eb809e6077d61bc7933f9e325f15d0ee6.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_834aa8c6ad53f12dc4c5b0b26da2ed648d8bff22ad753f0d038f6a9238c21168.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_834aa8c6ad53f12dc4c5b0b26da2ed648d8bff22ad753f0d038f6a9238c21168.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8b7a0409bf3c695ddc595b550b6271c1cd34f76ad5a8a42985f378c88b4e8e66.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8b7a0409bf3c695ddc595b550b6271c1cd34f76ad5a8a42985f378c88b4e8e66.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_20317d8533be87c170ad428fd574ba1ae063616d2c587ddef1993fd1aa917f44.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_20317d8533be87c170ad428fd574ba1ae063616d2c587ddef1993fd1aa917f44.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_9ed323f9acba6d777841898b81327d2b358ad831c8f1d78fd926d3c2a7878259.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_9ed323f9acba6d777841898b81327d2b358ad831c8f1d78fd926d3c2a7878259.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a991280fa6c75a7665550acedca94538f33035d6a446a3cf6c26bc95d58490e7.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a991280fa6c75a7665550acedca94538f33035d6a446a3cf6c26bc95d58490e7.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2d6da560c24268aa748fc5e054c13d7a8311d3cc888c940c251b424cab8f7d19.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2d6da560c24268aa748fc5e054c13d7a8311d3cc888c940c251b424cab8f7d19.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_31dc06dc44dae24816b0973b0dfd31e0d790fce03b99e8b786c2f8587e7b93f3.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_31dc06dc44dae24816b0973b0dfd31e0d790fce03b99e8b786c2f8587e7b93f3.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_01cf519c4bcbfb06d9e65e5c5b6bb315f9d1dddcbfac69d2362167d7d82eb5fe.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_01cf519c4bcbfb06d9e65e5c5b6bb315f9d1dddcbfac69d2362167d7d82eb5fe.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_53ae3da9ba7809d700a36e2caabc73190fa27441e9ee0f5125df4348af8a0c9e.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_53ae3da9ba7809d700a36e2caabc73190fa27441e9ee0f5125df4348af8a0c9e.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_978319c516375b660a71b87d623ac8f0e7253730a16475f75e2443904bf90627.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_978319c516375b660a71b87d623ac8f0e7253730a16475f75e2443904bf90627.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fde83553a646dc9797104a1895e8291a2396fceda8b78d04297b314fd4c4382f.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fde83553a646dc9797104a1895e8291a2396fceda8b78d04297b314fd4c4382f.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.66s, generation 6.06s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_41be7d71c9a163d0e387419b8e3d68d60697aae42faf1182b3cc448238861015.json
-#Structure acc: 1/1
-#Time used: 0.38334720929463706 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_6b375cdd00b3dd773a7fb1bf417036e47e7b1ad6973a270baa920ceda6250b44.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_6b375cdd00b3dd773a7fb1bf417036e47e7b1ad6973a270baa920ceda6250b44.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.63s, generation 11.32s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d8ca51331d222b63698d36d62fba79e7bf8a2fbad8962693039ee6aa63602b46.json
-#Structure acc: 0/1
-#Time used: 0.4663778742154439 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bb226e5c25123f2227aebc15b7a53097ef0e538d53dc433bb00b9c63bc056269.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bb226e5c25123f2227aebc15b7a53097ef0e538d53dc433bb00b9c63bc056269.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f1e65432bf42212540adb14b0cfaaec0c02ef9492b39e763ade8577b57694f35.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f1e65432bf42212540adb14b0cfaaec0c02ef9492b39e763ade8577b57694f35.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 17.11s, generation 11.36s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_39561ff184c1764b32dc349855e90e6cede1b9fda1e4ad5d6186c6a96e23332c.json
-#Structure acc: 0/1
-#Time used: 0.47541631062825523 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0645d070c1fd5fddaf8cc6d9273316a8c082940958689c21b412625de44b6d5e.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0645d070c1fd5fddaf8cc6d9273316a8c082940958689c21b412625de44b6d5e.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_092f304a02bb6229fbfe45fa9928044922de3a1379c18eb362c175d756878403.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_092f304a02bb6229fbfe45fa9928044922de3a1379c18eb362c175d756878403.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d5f738ca40ec538966d55d430fd7eb1eda3f60950056decb5cb281d1c3561f73.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d5f738ca40ec538966d55d430fd7eb1eda3f60950056decb5cb281d1c3561f73.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_495c16e7f84040823539d2b79d42607288e0063782398e1923a20bb0b899fadc.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_495c16e7f84040823539d2b79d42607288e0063782398e1923a20bb0b899fadc.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fd78a24d35c1b9d9751c05829b5747c11c448a02049343527e463cce222f27f9.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_fd78a24d35c1b9d9751c05829b5747c11c448a02049343527e463cce222f27f9.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 17.03s, generation 11.33s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d765b2b41ed04482e7f3fdea68cc54068b91537c84965ef97dbc9ad3a04435e6.json
-#Structure acc: 0/1
-#Time used: 0.4744640588760376 min
-task not in hash ids.
-
-
---- preprocess 16.72s, generation 10.87s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b3349717e014ad9fa10e809982bd32d2071746b8b6a1ce287b01e756fc008631.json
-#Structure acc: 1/1
-#Time used: 0.4600444197654724 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_030d8831ae614530fcca1349c208f70caec82de443e14cbc384dd1e73c599e13.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_030d8831ae614530fcca1349c208f70caec82de443e14cbc384dd1e73c599e13.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_690ad548ab723b2e726acb5fb689ecf38bd23c11ff839943b375767c91b0e094.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_690ad548ab723b2e726acb5fb689ecf38bd23c11ff839943b375767c91b0e094.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.81s, generation 4.24s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d8f7cd0670cffb01df824b12098ab6991888f5ddf344b05e3fd6da476ed3d926.json
-#Structure acc: 1/1
-#Time used: 0.3517459273338318 min
-task not in hash ids.
-
-
---- preprocess 16.8s, generation 11.36s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_44adfeb110fcdae05768f35c6655daeec4a2df7216126ed48796f1c474dfc818.json
-#Structure acc: 0/1
-#Time used: 0.46968655586242675 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_83240de839b70513e18dd36165768d712432b6eb3ed57b15ef35aca2cb667de4.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_83240de839b70513e18dd36165768d712432b6eb3ed57b15ef35aca2cb667de4.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_63d48a1286877c970b414b1909bac96994cb47b96b080698798cae3d352b4dcd.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_63d48a1286877c970b414b1909bac96994cb47b96b080698798cae3d352b4dcd.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_53aad565a745c8537535be445e3f2c4908c08876d536bb0fb78eefe94b6c0a74.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_53aad565a745c8537535be445e3f2c4908c08876d536bb0fb78eefe94b6c0a74.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bef6c769c3015cfabce7fc86480123379cabc7b446f4dfbec0c44ad1f908996a.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bef6c769c3015cfabce7fc86480123379cabc7b446f4dfbec0c44ad1f908996a.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ae69c087448793bc6a1cc6f514c9e2cce6bd4dfd189df7083549e9d3cccc082e.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ae69c087448793bc6a1cc6f514c9e2cce6bd4dfd189df7083549e9d3cccc082e.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5a1e49577313201f0e723d807fbbd9150261c6cee8b698342ae4df9232b5cdeb.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5a1e49577313201f0e723d807fbbd9150261c6cee8b698342ae4df9232b5cdeb.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5d40b95fac3a32e959d4dba7f4295b1a1c19f5d7050f51d77541a735353d6d04.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5d40b95fac3a32e959d4dba7f4295b1a1c19f5d7050f51d77541a735353d6d04.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.77s, generation 11.34s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4c9098a29e7ddfb6fa00cbbf0d0a6a82fa2d8c0625437bd901b79404127498f7.json
-#Structure acc: 0/1
-#Time used: 0.4707499027252197 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_521c15cf9ac878a5b17c466bd0eb2608936b69b80cc4eb9925bef7f10db1c465.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_521c15cf9ac878a5b17c466bd0eb2608936b69b80cc4eb9925bef7f10db1c465.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.76s, generation 1.81s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_69518e701652455e6a6532b5fd89cc4ad5c94deb70d4a04165465cfa64f557fb.json
-#Structure acc: 1/1
-#Time used: 0.31009355386098225 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_e177f140524ea31ed102131470eddacca503a07a3330d8cc5232b37e45f50cd8.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_e177f140524ea31ed102131470eddacca503a07a3330d8cc5232b37e45f50cd8.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.77s, generation 1.11s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_abe95666c00435e26f10e2854333e15b1fc2c70185323e17bca9164cd270920d.json
-#Structure acc: 1/1
-#Time used: 0.2985801935195923 min
-task not in hash ids.
-
-
---- preprocess 16.73s, generation 8.96s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_707d5aa02f83ea7987c8b33fe35aa24dd246cc8af6a4f59b47e7211cbb995564.json
-#Structure acc: 1/1
-#Time used: 0.4285857478777568 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f5f81db42310795ec2f9cdaa268814be79b55d2e5ed3aa291d7cf994ccc17790.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f5f81db42310795ec2f9cdaa268814be79b55d2e5ed3aa291d7cf994ccc17790.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.73s, generation 11.31s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_97d7ce0578ed30ec68752cf20089d3bc4cf2d9265cca0cf9c80f1e0a0bb131cc.json
-#Structure acc: 0/1
-#Time used: 0.46799659729003906 min
-task not in hash ids.
-
-
---- preprocess 16.69s, generation 11.3s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_86f38e41775ebd9fb4f122a7579783bb83c90a4ce949a8a8b53a795db52f8037.json
-#Structure acc: 0/1
-#Time used: 0.46676020622253417 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d263b2cae0cc9e5cb63b659f1ed4dd031c29b1309ab9dc0e8e83c16ccbdbe7be.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d263b2cae0cc9e5cb63b659f1ed4dd031c29b1309ab9dc0e8e83c16ccbdbe7be.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_c5bbe5ffe8c7c896d6a14dab1394862d5e8798db78f75e527ce5474d921c8c44.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_c5bbe5ffe8c7c896d6a14dab1394862d5e8798db78f75e527ce5474d921c8c44.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b52a142b8c8d9f725b84a17a5c1d4b16088b796b83120690c8ff4926b303e512.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b52a142b8c8d9f725b84a17a5c1d4b16088b796b83120690c8ff4926b303e512.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8951e30361e62b8d74872691bfe1e1033153e4972aab8fa52fb6e330e8b275eb.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_8951e30361e62b8d74872691bfe1e1033153e4972aab8fa52fb6e330e8b275eb.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.65s, generation 7.07s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f7b65e51ae10e3d7525284e69ed9206a88a9a8c15b89fbc4ae89ac011743756c.json
-#Structure acc: 1/1
-#Time used: 0.39680227835973103 min
-task not in hash ids.
-
-
---- preprocess 16.93s, generation 9.85s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2f7c3bfd2f96c83a73d75332fe5e482748b7e47e6cccf592a2fa79719171b11c.json
-#Structure acc: 1/1
-#Time used: 0.4468125661214193 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_000ad998995fe58902265760553e774ffcb1730a0ae85336bc60ae98d6eb45ee.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_000ad998995fe58902265760553e774ffcb1730a0ae85336bc60ae98d6eb45ee.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.77s, generation 11.29s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_753378b487cade0e5d78ea7e458fa7e95b274c9defbb735afbbeeea5f0a50314.json
-#Structure acc: 0/1
-#Time used: 0.4687374512354533 min
-task not in hash ids.
-
-
---- preprocess 16.72s, generation 3.59s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_9f1101fd13c56df12308dfb9aeb271024d35a2c299e80df4b9003f3f88c692ea.json
-#Structure acc: 1/1
-#Time used: 0.38758420944213867 min
-task not in hash ids.
-
-
---- preprocess 16.76s, generation 3.99s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_23f9cd68b2b015842ef1389d63151dd6c661ae370734a205c2763b4bf491174b.json
-#Structure acc: 1/1
-#Time used: 0.37217253843943277 min
-task not in hash ids.
-
-
---- preprocess 16.7s, generation 1.73s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f82687b2b3af7e3a0301ca2a308f4c7a809da566701918d6ccdbcb11ce8ec848.json
-#Structure acc: 1/1
-#Time used: 0.3096442778905233 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bc09dea5a782f4289203d35c4b4a46ce388ce13da7e544c5b9cae5968b8fe1d2.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bc09dea5a782f4289203d35c4b4a46ce388ce13da7e544c5b9cae5968b8fe1d2.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4b82085a745135bd9cf1697737f6883df9cd3db46ca705496207509a171968e6.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4b82085a745135bd9cf1697737f6883df9cd3db46ca705496207509a171968e6.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_208f9aa67e8e0263b715c9671c2d3f544b6639bfde26586bbfeb7b8d3cf80da4.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_208f9aa67e8e0263b715c9671c2d3f544b6639bfde26586bbfeb7b8d3cf80da4.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a84ccaafafbf12b04ff5a76cfdb686f247e04af541b93dd028dd198023c8c7b3.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_a84ccaafafbf12b04ff5a76cfdb686f247e04af541b93dd028dd198023c8c7b3.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b50972d8337a19a570cf6da41eb130625dbe317153b851fc3571376afe7a2e72.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b50972d8337a19a570cf6da41eb130625dbe317153b851fc3571376afe7a2e72.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.83s, generation 11.34s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b2ef11e9cea0e0294c738e8fbb88382229c58edad1de4cf9251a80110f4cf66a.json
-#Structure acc: 0/1
-#Time used: 0.6093180894851684 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bbbf164020b434d37b7199086bb31fb61c6b119b9a26d2a7404c951d5fe80de0.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_bbbf164020b434d37b7199086bb31fb61c6b119b9a26d2a7404c951d5fe80de0.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_258312dbd4b324ff46d8293be3eb1218f711dd4c5439563b35af24df739d082f.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_258312dbd4b324ff46d8293be3eb1218f711dd4c5439563b35af24df739d082f.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b8300c4d7cc3c5071471e114cca2f6993efa80b642af023bde524f85321e5a10.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b8300c4d7cc3c5071471e114cca2f6993efa80b642af023bde524f85321e5a10.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2f5dbd81a0fe3d8e2e25fd594970740f59e9371a205d1841d84aaeaab94be677.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_2f5dbd81a0fe3d8e2e25fd594970740f59e9371a205d1841d84aaeaab94be677.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0f926a2a548066e5e5c7ae27af2f19b4a6041956eb35ad10175de21186ae13f7.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0f926a2a548066e5e5c7ae27af2f19b4a6041956eb35ad10175de21186ae13f7.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_3977eee827c8ee659db91c63b0f5678a2aa0f69483bb0953586aac1486f5afc6.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_3977eee827c8ee659db91c63b0f5678a2aa0f69483bb0953586aac1486f5afc6.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f8625cafe0141ee08c7591ba0cb50044cd865c750db90232e48c2cf5701b34ef.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f8625cafe0141ee08c7591ba0cb50044cd865c750db90232e48c2cf5701b34ef.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_77d21f7aa977d12e25c3d67499a7274bc373a4754d47a59bf7b1ee5f6391a538.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_77d21f7aa977d12e25c3d67499a7274bc373a4754d47a59bf7b1ee5f6391a538.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.79s, generation 1.4s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0f36722dac041697a69fc78f0fb63b234473f77378032cda630b7b28092aa4db.json
-#Structure acc: 1/1
-#Time used: 0.334514848391215 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_6305edb2ab24e41ad7db12f3eccb2e6c7b15913028fd30305fbb25f3405650cf.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_6305edb2ab24e41ad7db12f3eccb2e6c7b15913028fd30305fbb25f3405650cf.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.88s, generation 11.31s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f0eaa0c5cd05b1053e8e9a87e2d4933f61f63c0c017661902d5735d0e2b6332f.json
-#Structure acc: 0/1
-#Time used: 0.471285887559255 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4cd737ed2ba61001f4a497b4344dcbe41b5dcc480918d5e03d73143a17432381.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_4cd737ed2ba61001f4a497b4344dcbe41b5dcc480918d5e03d73143a17432381.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b620e0a0bdd5106cdac0cb9790e77b41fb42dcb9c57074953f1b68007f37c5fc.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b620e0a0bdd5106cdac0cb9790e77b41fb42dcb9c57074953f1b68007f37c5fc.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.57s, generation 11.29s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ba463cdf8f24e02944b4db38d6cf360ea6cbee003d2015b41018550501c0970f.json
-#Structure acc: 0/1
-#Time used: 0.5402040282885233 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d4ee85d4ec2daed1ac7ef83da823da9989e8ffaf243f3e3fbdd998d2de51be35.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_d4ee85d4ec2daed1ac7ef83da823da9989e8ffaf243f3e3fbdd998d2de51be35.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5874f4c49feae9ebb3a459248d78629163df3669669b13956c3bc5226712d9cc.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5874f4c49feae9ebb3a459248d78629163df3669669b13956c3bc5226712d9cc.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f9aec4c3a652215ffa52fbb090f59cb858de7557277f4b94c77a5fa9b866e6d0.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_f9aec4c3a652215ffa52fbb090f59cb858de7557277f4b94c77a5fa9b866e6d0.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_851a759f646baf11f356a418db80f54e84d8844ebde09550a76182392ad26845.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_851a759f646baf11f356a418db80f54e84d8844ebde09550a76182392ad26845.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b62613c22e1b9bdb57a5404554d66e4bd218d5fc799c25a4cbfc27861d9a733b.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_b62613c22e1b9bdb57a5404554d66e4bd218d5fc799c25a4cbfc27861d9a733b.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_21022f5ceea6f48e48ff68cf72805e1d885c491a3e8b98c402a44451dc21cc4e.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_21022f5ceea6f48e48ff68cf72805e1d885c491a3e8b98c402a44451dc21cc4e.json exist in pre experiments!!! update and continue ...
-task not in hash ids.
-
-
---- preprocess 16.66s, generation 11.3s file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_5e3835e31435cac80e79fcc6fbc2b0ec9d4c54d902d60d9f9794ce51db74bb36.json
-#Structure acc: 0/1
-#Time used: 0.46885494391123456 min
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0ad97c750b2c642e591f6413b3c5e4c430a69d3fc6525ca5a2f436d931a1d5db.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_0ad97c750b2c642e591f6413b3c5e4c430a69d3fc6525ca5a2f436d931a1d5db.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ef2fc4fdad85d9027fe7dbb7f3c8cebce8aca703ebe968aa0d681a2f05ce3913.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_ef2fc4fdad85d9027fe7dbb7f3c8cebce8aca703ebe968aa0d681a2f05ce3913.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_76255c380ed2475207fe1b517a39721b8bb4bb090240d5704a7227d1d6e9df91.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_76255c380ed2475207fe1b517a39721b8bb4bb090240d5704a7227d1d6e9df91.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_05890752874ad061d3863e68f4add68ebcae36e90e362fd5f509150a096e7cf0.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_05890752874ad061d3863e68f4add68ebcae36e90e362fd5f509150a096e7cf0.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_1bfa24094ea3889d4b1f52ba46767a0fee1ca6c55a57f359935cb8af415b1527.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_1bfa24094ea3889d4b1f52ba46767a0fee1ca6c55a57f359935cb8af415b1527.json exist in pre experiments!!! update and continue ...
-file saved to /remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_9418fc72cc7cbbae8d0ef6738c52fc71bdc4284c6fcd4a52042b8076feba2c0a.json
-/remote-home/pli/mango/model_results/rwkv_results_0705/gold/results/path_gen_rwkv/results_sample_id_9418fc72cc7cbbae8d0ef6738c52fc71bdc4284c6fcd4a52042b8076feba2c0a.json exist in pre experiments!!! update and continue ...
-Good Job!
-processing game hhgg ...
-  0%|          | 0/39 [00:00<?, ?it/s]  3%|▎         | 1/39 [00:31<19:40, 31.07s/it]  5%|▌         | 2/39 [00:49<14:26, 23.41s/it]  8%|▊         | 3/39 [01:11<13:43, 22.88s/it] 10%|█         | 4/39 [01:31<12:46, 21.90s/it] 13%|█▎        | 5/39 [01:47<11:13, 19.81s/it] 15%|█▌        | 6/39 [02:15<12:17, 22.35s/it] 18%|█▊        | 7/39 [02:42<12:46, 23.94s/it]
