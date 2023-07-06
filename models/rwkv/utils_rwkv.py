@@ -25,7 +25,7 @@ def init_model(rwkv_dir, model_path, device_id):
 
     args = types.SimpleNamespace()
 
-    args.RUN_DEVICE = "cuda"  # cuda // cpu
+    args.RUN_DEVICE = "cuda:{}".format(device_id)  # cuda // cpu
     # fp16 (good for GPU, does NOT support CPU) // fp32 (good for CPU) // bf16 (worse accuracy, supports CPU)
     args.FLOAT_MODE = "fp16"
 
@@ -40,8 +40,8 @@ def init_model(rwkv_dir, model_path, device_id):
     args.grad_cp = 0
     args.my_pos_emb = 0
 
-    model = RWKV_RNN(args).to('cuda:{}'.format(device_id))
-    tokenizer = TOKENIZER(rwkv_dir + "/20B_tokenizer.json").to('cuda:{}'.format(device_id))
+    model = RWKV_RNN(args)
+    tokenizer = TOKENIZER(rwkv_dir + "/20B_tokenizer.json")
     print ("model and tokenizer loaded!!!")
     return model, tokenizer
 
