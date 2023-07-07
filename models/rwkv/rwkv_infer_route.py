@@ -48,13 +48,7 @@ def main(
     game_name_list = sorted(os.listdir(data_folder))
     print ("==> game name list: ", game_name_list)
 
-    if end_game_idx == 10000:
-        end_game_idx = len(game_name_list)
-    game_num = end_game_idx - start_game_idx
-    tmp_start_game_idx = int(start_game_idx + (rank/world_size) * game_num)
-    tmp_end_game_idx = int(start_game_idx + ((rank+1)/world_size) * game_num)
-
-    for game_name in game_name_list[tmp_start_game_idx:tmp_end_game_idx]:
+    for game_name in game_name_list[start_game_idx:end_game_idx]:
         print ("gpu {} processing game {} ...".format(rank, game_name))
 
         # action_space
@@ -77,7 +71,11 @@ def main(
         all_pairs_path = '{}/{}/{}.all_pairs.json'.format(data_folder, game_name, game_name)
         all_pairs_dict = read_json(all_pairs_path)
 
-        for pair in tqdm(all_pairs_dict):
+        task_num = len(all_pairs_dict)
+        tmp_start_idx = int((rank/world_size) * task_num)
+        tmp_end_idx = int(((rank+1)/world_size) * task_num)
+
+        for pair in tqdm(all_pairs_dict[tmp_start_idx:tmp_end_idx]):
             src_node = pair['src_node']
             dst_node = pair['dst_node']
             sample_id = pair['id']
