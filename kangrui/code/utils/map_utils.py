@@ -1,69 +1,66 @@
 import os
 import os.path as osp
 import networkx as nx
-import matplotlib.pyplot as plt
 import json
-import hashlib
-import shutil
-import subprocess
+import matplotlib.pyplot as plt
 
-# build graph for game 
-# used for data-intermediate
+def get_game_info(map_dir,game_name):
+    all2all_path=osp.join(map_dir,game_name,f'{game_name}.all2all.json')
+    all_pairs_path=osp.join(map_dir,game_name,f'{game_name}.all_pairs.json')
+    edges_path=osp.join(map_dir,game_name,f'{game_name}.edges.json')
+    actions_path=osp.join(map_dir,game_name,f'{game_name}.actions.json')
+    locations_path=osp.join(map_dir,game_name,f'{game_name}.locations.json')
+    walkthrough_path=osp.join(map_dir,game_name,f'{game_name}.walkthrough')
+    
+    with open(all2all_path,'r') as f:
+        all2all = json.load(f)
+    with open(all_pairs_path,'r') as f:
+        all_pairs= json.load(f)
+    with open(edges_path,'r') as f:
+        edges= json.load(f)
+    with open(actions_path,'r') as f:
+        actions= json.load(f)
+    with open(locations_path,'r') as f:
+        locations= json.load(f)
+    with open(walkthrough_path, 'r') as file:
+        walkthrough = file.read()
 
-def get_edge(file_path)->list:
-    # load edge from .human or .reversed
-    edges = []
 
-    with open(file_path, 'r') as file:
-        for line in file:
-            
-            line_components = line.strip().split('-->')
-            start_node=line_components[0].strip()
-            action=line_components[1].strip()
-            
-            end_node,left=line_components[2].strip().split(', step ')
-            
-            if ", desc: " in left:# reverse
-                left.strip().split(", desc: ")
-                step,desc=left.strip().split(", desc: ")
-                step=step.strip()
-                if "None" in desc:
-                    desc='reverse'
-                else:
-                    continue
-            else:
-                step=left.strip()
-                desc='forward'
-            
-
-            # build the edge dict and add it to the list
-            edge = {
-                'start_node': start_node,
-                'action': action,
-                'end_node': end_node,
-                'step': int(step),
-                'desc': desc,
-            }
-
-            edges.append(edge)
-
-    return edges
-
-def build_graph(edges):
     G = nx.DiGraph()
     for edge in edges:
-        G.add_edge(edge['start_node'], edge['end_node'], action=edge['action'], step=edge['step'], desc=edge['desc'])
-    return G
+        G.add_edge(edge['prev_node'], edge['node'], action=edge['action'], step_min_cutoff=edge["step_min_cutoff"], seen_in_forward=edge["seen_in_forward"])
 
-def add_edges_to_graph(G, edges):
-    for edge in edges:
-        G.add_edge(edge['start_node'], edge['end_node'], action=edge['action'], step=edge['step'], desc=edge['desc'])
-    return G
+    return G,actions,locations,all2all,all_pairs,walkthrough
 
-def build_graph_from_edges(forward_edge,reverse_edge):
-    G=build_graph(forward_edge)
-    add_edges_to_graph(G, reverse_edge)
-    return G
+def get_game_info_with_G_eval(map_dir,game_name):
+    reverse_dict = {
+    "up": "down",
+    "down": "up",
+    "north": "south",
+    "south": "north",
+    "east": "west",
+    "west": "east",
+    "northeast": "southwest",
+    "northwest": "southeast",
+    "southeast": "northwest",
+    "southwest": "northeast"
+}
+    G,actions,locations,all2all,all_pairs,walkthrough=get_game_info(map_dir,game_name)
+    G_eval = nx.MultiDiGraph()
+    for (u, v, data) in G.edges(data=True):
+        # If the 'action' attribute of the edge is in reverse_direction_dict
+        if data.get('action') in reverse_dict:
+            # Add an edge in the reverse direction in G_reverse
+            if G.has_edge(v, u) and G.edges[v, u]['action'] == reverse_dict[data['action']]:
+                continue
+            G_eval.add_edge(v, u, action=reverse_dict[data['action']])
+    for (u, v, data) in G.edges(data=True):
+        G_eval.add_edge(u, v, **data)
+    return G_eval,G,actions,locations,all2all,all_pairs,walkthrough
+    
+
+    
+
 
 def find_all_paths(G):
     all_paths = []
@@ -75,7 +72,7 @@ def find_all_paths(G):
     return all_paths
 
 def show_graph_info(G):
-    plt.figure(figsize=(30, 30))
+    plt.figure(figsize=(20, 20))
     nx.draw(G, with_labels=True, node_size=3000, node_color="skyblue", font_size=25)
     plt.show()
     all_paths=find_all_paths(G)
@@ -86,40 +83,5 @@ def show_graph_info(G):
     
     print(len(list(nx.strongly_connected_components(G))))
     
-def build_graph_for_game(map_dir,game_name):
-    human_path=osp.join(map_dir,game_name,f'{game_name}.map.human')
-    reversed_path=osp.join(map_dir,game_name,f'{game_name}.map.reversed')
-    human_edge=get_edge(human_path)
-    reversed_edge=get_edge(reversed_path)
-    G=build_graph_from_edges(human_edge,reversed_edge)
-    return G
-
-def get_game_info(map_dir,game_name):
-    all2all_path=osp.join(map_dir,game_name,f'{game_name}.all2all.json')
-    all_pairs_path=osp.join(map_dir,game_name,f'{game_name}.all_pairs.json')
-    anno2code_path=osp.join(map_dir,game_name,f'{game_name}.anno2code.json')
-    code2anno_path=osp.join(map_dir,game_name,f'{game_name}.code2anno.json')
     
-    with open(all2all_path,'r') as f:
-        all2all = json.load(f)
-    with open(all_pairs_path,'r') as f:
-        all_pairs= json.load(f)
-    with open(anno2code_path,'r') as f:
-         anno2code= json.load(f)
-    with open(code2anno_path,'r') as f:
-        code2anno= json.load(f)
-    G=build_graph_for_game(map_dir,game_name)
-
-
-    human_path=osp.join(map_dir,game_name,f'{game_name}.map.human')
-    forward_edges=get_edge(human_path)
-    forward_edge_dict={}
-    for edge in forward_edges:
-        forward_edge_dict[(edge['start_node'],edge['end_node'])]=edge['desc']
-
-    for edge in G.edges(data=True):
-        key=(edge[0],edge[1])
-        if key in forward_edge_dict.keys():
-            edge[2]['desc']=forward_edge_dict[key]
     
-    return G,all2all,all_pairs,anno2code,code2anno
