@@ -94,5 +94,5 @@ fi
 echo "Done releasing"
 
 # run release_status.py to update status sheet
-python src/release_status.py
+python src/release_status.py -i $map_path -o $release_dir -s $release_dir/release_status.csv
 echo "Done updating status sheet"
