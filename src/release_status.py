@@ -24,6 +24,16 @@
 import os
 import csv
 import json
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--map_dev', '-i', type=str, required=True, help='path to map_dev folder')
+parser.add_argument('--map_release', '-o', type=str, required=True, help='path to map_release folder')
+parser.add_argument('--status_sheet', '-s', type=str, required=True, help='path to status sheet')
+args = parser.parse_args()
+# assert existance of map_dev, map_release, status_sheet
+assert os.path.exists(args.map_dev), f"map_dev folder {args.map_dev} does not exist"
+assert os.path.exists(args.map_release), f"map_release folder {args.map_release} does not exist"
 
 # get all games in map_dev
 map_dev = 'data/maps/'
