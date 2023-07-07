@@ -14,12 +14,12 @@ from utils.utils import find_json,read_json,save_json
 from tqdm import tqdm
 
 
-def call_openai_with_retry(model,message,temperature,stop=None):
+def call_openai_with_retry(model,message,temperature,stop=None,sleep_time=1.0,retry_cnt=4):
     i = 0
-    while i < 4:
-        time.sleep(i * 0.1)
+    while i < retry_cnt:
+        time.sleep(i * sleep_time)
         try:
-            return call_openai(model,message,temperature,stop=None)
+            return call_openai(model,message,temperature,stop=stop)
         except Exception as e:
             print(e)
             i += 1
