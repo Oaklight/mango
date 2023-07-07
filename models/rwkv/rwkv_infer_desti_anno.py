@@ -50,13 +50,8 @@ def main(
 
     game_name_list = sorted(os.listdir(data_folder))
     print ("==> game name list: ", game_name_list)
-    if end_game_idx == 10000:
-        end_game_idx = len(game_name_list)
-    game_num = end_game_idx - start_game_idx
-    tmp_start_game_idx = int(start_game_idx + (rank/world_size) * game_num)
-    tmp_end_game_idx = int(start_game_idx + ((rank+1)/world_size) * game_num)
 
-    for game_name in game_name_list[tmp_start_game_idx:tmp_end_game_idx]:
+    for game_name in game_name_list[start_game_idx:end_game_idx]:
         print ("processing game {} ...".format(game_name))
 
         # action_space
@@ -87,8 +82,10 @@ def main(
         all2all_path = '{}/{}/{}.all2all.json'.format(data_folder, game_name, game_name)
         all2all_dict = read_json(all2all_path)
 
-        task_info_list = [] 
-        for traj in tqdm(all2all_dict):
+        task_num = len(all2all_dict)
+        tmp_start_idx = int((rank/world_size) * task_num)
+        tmp_end_idx = int(((rank+1)/world_size) * task_num)
+        for traj in tqdm(all2all_dict[tmp_start_idx:tmp_end_idx]):
             src_node = traj['src_node']
             dst_node = traj['dst_node']
             path_gt = traj['path_details']
