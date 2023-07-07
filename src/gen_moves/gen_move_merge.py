@@ -2,38 +2,15 @@
 # read in game.anno2code.json and game.code2anno.json
 
 import argparse
-import os
 import json
+import os
+import sys
 
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
 
-def anno_to_code(anno: str, anno2code: dict):
-    """
-    convert annotation to code
-    anno and keys in anno2code may not be in the same case, so lower case all keys in anno2code
-    """
-    anno = anno.lower()
-    anno2code = {k.lower(): v for k, v in anno2code.items()}
-
-    if anno in anno2code:
-        return anno2code[anno][0]
-    else:
-        print(f"anno [{anno}] is not in anno2code")
-        return None
-
-
-def code_to_annos(code: str, code2anno: dict):
-    """
-    convert code to annotation
-    code and keys in code2anno may not be in the same case, so lower case all keys in code2anno
-    """
-    code = code.lower()
-    code2anno = {k.lower(): v for k, v in code2anno.items()}
-
-    if code in code2anno:
-        return code2anno[code]
-    else:
-        print(f"code [{code}] is not in code2anno")
-        return None
+from gen_paths.digraph import anno_to_code
 
 
 if __name__ == "__main__":

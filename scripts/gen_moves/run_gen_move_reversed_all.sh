@@ -2,7 +2,7 @@
 
 # path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_reversed_all.sh -j <jericho_path> [-g <game_name>]"
+    echo "Usage: ./run_gen_move_reversed_all.sh -j <jericho_path> -i <input_dir> [-g <game_name>]"
     exit 1
 fi
 
@@ -13,10 +13,11 @@ fi
 #         j) jericho_path=${OPTARG};;
 #     esac
 # done
-while getopts j:g: flag
+while getopts j:i:g: flag
 do
     case "${flag}" in
         j) jericho_path=${OPTARG};;
+        i) input_dir=${OPTARG};;
         g) game_name=${OPTARG};;
     esac
 done
@@ -32,9 +33,9 @@ then
         python ./src/gen_moves/gen_move_reversed.py -g $filename \
         -j $jericho_path \
         --max_steps 70 \
-        -idir ./data/maps \
-        -odir ./data/maps
-        python ./src/gen_moves/gen_move_merge.py -p ./data/maps -g $filename
+        -idir $input_dir \
+        -odir $input_dir
+        python ./src/gen_moves/gen_move_merge.py -p $input_dir -g $filename
     done
     echo "Good Job!"
 fi
@@ -43,7 +44,7 @@ echo "Generating for $game_name..."
 python ./src/gen_moves/gen_move_reversed.py -g $game_name \
 -j $jericho_path \
 --max_steps 70 \
--idir ./data/maps \
--odir ./data/maps
-python ./src/gen_moves/gen_move_merge.py -p ./data/maps -g $game_name
+-idir $input_dir \
+-odir $input_dir
+python ./src/gen_moves/gen_move_merge.py -p $input_dir -g $game_name
 echo "Good Job!"

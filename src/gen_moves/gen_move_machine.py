@@ -33,7 +33,7 @@ def gen_move_machine(args):
     # env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
     game_file_path = None
     for game_file in glob.glob(f"{args.jericho_path}/*"):
-        if game_name in game_file:
+        if game_name == os.path.splitext(os.path.basename(game_file))[0]:
             game_file_path = game_file
             break
     if game_file_path is None:
@@ -73,6 +73,8 @@ def gen_move_machine(args):
 
             location_before = location_after
             location_before_id = location_after_id
+
+            # print(step_idx, unabbreviate(act), act)
 
     output_dir = args.output_dir + '/' + game_name.split('.')[0]
     if os.path.exists(output_dir) == False:

@@ -1,9 +1,12 @@
 import argparse
 import csv
+import glob
 import json
 import os
 from pathlib import Path
 from jericho import FrotzEnv
+from jericho.util import unabbreviate
+
 
 direction_abbrv_dict = {
     "e": "east",
@@ -132,19 +135,23 @@ def read_csv(path_in, max_steps=70):
 
 def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
     # get files in jericho_path, one of game_name.z3 or game_name.z5 or game_name.z8 must exist
-    jericho_files = os.listdir(jericho_path)
-    jericho_files = [
-        file for file in jericho_files if file.startswith(game_name)
-    ]  # len must be 1
-    jericho_path_for_game = os.path.join(jericho_path, jericho_files[0])
+    game_file_path = None
+    for game_file in glob.glob(f"{args.jericho_path}/*"):
+        if game_name == os.path.splitext(os.path.basename(game_file))[0]:
+            game_file_path = game_file
+            break
+    if game_file_path is None:
+        print(f"Game file {game_name} not found in {args.jericho_path}")
+        return -1
+    env = FrotzEnv(game_file_path)
+    env.reset()
 
-    env = FrotzEnv(jericho_path_for_game)
     # walkthrough
     walkthrough = env.get_walkthrough()
     walkthrough = [
         direction_abbrv_dict[item.lower()]
         if item.lower() in direction_vocab_abbrv
-        else item.lower()
+        else unabbreviate(item).lower()
         for item in walkthrough
     ]
 
@@ -180,6 +187,7 @@ def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
                         move["step_num"],
                     )
                 )
+                # print(step_idx, move["act"])
     print("Saved to {}".format(output_file))
     print("Good Job!")
 
