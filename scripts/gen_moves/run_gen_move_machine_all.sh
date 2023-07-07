@@ -4,15 +4,16 @@
 #theatre env.get_player_location() == None
 # path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_machine_all.sh -j <jericho_path> [-g <game>]"
+    echo "Usage: ./run_gen_move_machine_all.sh -j <jericho_path> -i <input_dir> [-g <game>]"
     exit 1
 fi
 
 # parse the arguments
-while getopts j:g: flag
+while getopts j:i:g: flag
 do
     case "${flag}" in
         j) jericho_path=${OPTARG};;
+        i) input_dir=${OPTARG};;
         g) game_tgt=${OPTARG};;
     esac
 done
@@ -40,12 +41,14 @@ then
         python ./src/gen_moves/gen_move_machine.py -g $game \
         -j $jericho_path \
         --max_steps 70 \
-        -odir ./data/maps
+        -idir $input_dir \
+        -odir $input_dir
     done
 else
     echo "Generating for $game_tgt..."
     python ./src/gen_moves/gen_move_machine.py -g $game_tgt \
     -j $jericho_path \
     --max_steps 70 \
-    -odir ./data/maps
+    -idir $input_dir \
+    -odir $input_dir
 fi

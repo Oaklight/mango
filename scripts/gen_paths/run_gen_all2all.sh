@@ -2,21 +2,25 @@
 
 # gen_all2all.py [-h] --map MAP (--actions ACTIONS | --reverse_map REVERSE_MAP) [--output_dir OUTPUT_DIR]
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_all2all.sh -p <map_path> [-g <game>]"
+    echo "Usage: ./run_gen_all2all.sh -p <map_path> [-o <release_path>] [-g <game>]"
     exit 1
 fi
 
 # parse the arguments
-while getopts p:g: flag
+while getopts p:o:g: flag
 do
     case "${flag}" in
         p) map_path=${OPTARG};;
+        o) release_dir=${OPTARG};;
         g) tgt_game=${OPTARG};;
     esac
 done
 
 games=$(ls $map_path)
-
+if [ -z "$release_dir" ]
+then
+    release_dir="./data/maps-release"
+fi
 
 if [ -z "$tgt_game" ]
 then
@@ -47,7 +51,7 @@ then
     for game in $games
     do
         # release by copy game.all2all.json, game.code2anno.json, game.anno2code.json, game.walkthrough, game.moves to data/maps/game to release folder
-        release_dir="./data/maps-release"
+        # release_dir="./data/maps-release"
         mkdir -p $release_dir
         # go over each dir in map_path, check if all release file present, then release
         if [ -f "$map_path/$game/$game.all2all.json" ] && [ -f "$map_path/$game/$game.code2anno.json" ] && [ -f "$map_path/$game/$game.anno2code.json" ] && [ -f "$map_path/$game/$game.walkthrough" ] && [ -f "$map_path/$game/$game.moves" ]
@@ -68,7 +72,7 @@ then
 else
     game=$tgt_game
     # release by copy game.all2all.json, game.code2anno.json, game.anno2code.json, game.walkthrough, game.moves to data/maps/game to release folder
-    release_dir="./data/maps-release"
+    # release_dir="./data/maps-release"
     mkdir -p $release_dir
     # go over each dir in map_path, check if all release file present, then release
     if [ -f "$map_path/$game/$game.all2all.json" ] && [ -f "$map_path/$game/$game.code2anno.json" ] && [ -f "$map_path/$game/$game.anno2code.json" ] && [ -f "$map_path/$game/$game.walkthrough" ] && [ -f "$map_path/$game/$game.moves" ]

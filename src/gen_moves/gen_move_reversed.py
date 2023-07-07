@@ -103,7 +103,7 @@ def gen_move_reversed(args):
     # by cross checking with entries in glob
     game_file_path = None
     for game_file in glob.glob(f"{args.jericho_path}/*"):
-        if game_name in game_file:
+        if game_name == os.path.splitext(os.path.basename(game_file))[0]:
             game_file_path = game_file
             break
     if game_file_path is None:
