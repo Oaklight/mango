@@ -6,7 +6,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_paths.digraph import (
+from gen_paths.gamegraph import (
     build_graph_from_file,
     build_graph_from_file_with_reverse,
     get_all_paths,

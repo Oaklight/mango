@@ -10,7 +10,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_paths.digraph import anno_to_code
+from gen_paths.gamegraph import anno_to_code
 
 
 if __name__ == "__main__":

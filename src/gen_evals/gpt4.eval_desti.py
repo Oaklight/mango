@@ -15,7 +15,7 @@ from gen_evals.utils import (
     recompute_for_uuid,
     skip_due_to_cutoff,
 )
-from gen_paths.digraph import build_graph_from_file_with_reverse
+from gen_paths.gamegraph import build_graph_from_file_with_reverse
 
 
 if __name__ == "__main__":

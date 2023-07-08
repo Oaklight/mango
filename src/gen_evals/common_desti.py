@@ -8,7 +8,7 @@ parent = os.path.dirname(current)
 sys.path.append(parent)
 
 from gen_evals.utils import check_format, extract_actions
-from gen_paths.digraph import anno_to_code, walk_path_to_dst, walk_and_label_path
+from gen_paths.gamegraph import anno_to_code, walk_path_to_dst, walk_and_label_path
 
 
 def verify_stepnav_simple(g, anno2code, each_json_path, verbose=True):
