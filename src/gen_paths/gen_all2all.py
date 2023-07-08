@@ -61,7 +61,7 @@ if __name__ == "__main__":
             {
                 "src_node": src_node,
                 "dst_node": dst_node,
-                "num_paths": len(allPaths),
+                "num_paths": len(expanded_simple_paths),
                 "path_min_cutoffs": [
                     path["path_min_cutoff"] for path in current_all_paths_json
                 ],

@@ -111,10 +111,10 @@ def build_graph_from_file(
     # sort by step_number
     edges_to_add.sort(key=lambda x: x[3])
 
-    prev_step_number = -1
-    for src_node, dst_node, direction, step_number in edges_to_add:
-        assert step_number > prev_step_number, "step_number must be increasing"
-        prev_step_number = step_number
+    prev_step_num = -1
+    for src_node, dst_node, direction, step_num in edges_to_add:
+        assert step_num > prev_step_num, "step_num must be increasing"
+        prev_step_num = step_num
 
         # add edges with attributes
         # only add triplet (src, dst, direction) once, and store the minimum step_num
@@ -298,7 +298,7 @@ def get_all_paths(g: object, src: str, dst: str):
                 ]
 
                 expanded_path = generate_combinations(expanded_path, edges_with_attrs)
-        expanded_simple_paths.extend(expanded_path)
+            expanded_simple_paths.extend(expanded_path)
 
         return expanded_simple_paths
     except networkx.exception.NetworkXNoPath:
