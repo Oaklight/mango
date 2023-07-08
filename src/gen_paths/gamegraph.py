@@ -79,7 +79,8 @@ def build_graph_from_file(
         load_valid_actions(action_file)
     # build graph from file
 
-    G = networkx.DiGraph()
+    # use MultiDiGraph instead to accomodate special game with multiple valid action between two nodes
+    G = networkx.MultiDiGraph()
 
     for line in lines:
         line = line.strip("\ufeff").strip()
@@ -104,7 +105,17 @@ def build_graph_from_file(
         elements = [each.strip().lower() for each in path.split("-->")]
         print(elements)
         src_node, direction, dst_node = elements
-        G.add_edge(src_node, dst_node, direction=direction)
+
+        # add edges with attributes
+        # only add triplet (src, dst, direction) once, and store the minimum step_num
+        if (src_node, dst_node, direction) not in [
+            (u, v, data["direction"]) for u, v, data in G.edges(data=True)
+        ]:
+            G.add_edge(src_node, dst_node, direction=direction, step_num=step_num)
+        else:
+            for u, v, data in G.edges(data=True):
+                if (u, v, data["direction"]) == (src_node, dst_node, direction):
+                    data["step_num"] = min(data["step_num"], step_num)
 
     return G
 
@@ -200,7 +211,17 @@ def build_graph_from_file_with_reverse(
     G_forward = build_graph_from_file(path_file, action_file=None, verbose=verbose)
     G_backward = build_graph_from_file(reverse_file, action_file=None, verbose=verbose)
 
-    G = networkx.compose(G_forward, G_backward)
+    # use G_forward as the base graph, add edges from G_backward
+    # if and only if triplet (src, dst, direction) not in G_forward.edges(data=True)
+    G = G_forward.copy()
+    for edge in G_backward.edges(data=True):
+        src, dst, attrs = edge
+        direction = attrs["direction"]
+        if (src, dst, direction) not in [
+            (u, v, data["direction"]) for u, v, data in G.edges(data=True)
+        ]:
+            G.add_edge(src, dst, **attrs)
+
     setattr(G, "forward", G_forward)
     setattr(G, "backward", G_backward)
 
