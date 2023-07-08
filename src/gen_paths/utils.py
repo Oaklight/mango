@@ -3,6 +3,8 @@ import argparse
 import hashlib
 import json
 
+import itertools
+
 
 def print_green(text, inline=False):
     if not inline:
@@ -216,3 +218,52 @@ def compare_path_details(path1, path2):
             return False
 
     return True
+
+
+def generate_combinations(list1, list2):
+    """
+    generate all combinations of list1 and list2, output flattened list of tuples
+    e.g. list1 = [1, 2], list2 = [3, 4]
+    return [(1, 3), (1, 4), (2, 3), (2, 4)]
+    e.g. list1 = [(1, 3), (1, 4), (2, 3), (2, 4)], list2 = [5, 6]
+    return [(1, 3, 5), (1, 3, 6), (1, 4, 5), (1, 4, 6), (2, 3, 5), (2, 3, 6), (2, 4, 5), (2, 4, 6)]
+
+    However, how to handle list of iterables when the iterables should be treated as a single element?
+    e.g. list1 = [[1, 2], [3, 4]], list2 = [[5, 6], [7, 8]]
+    return [[1, 2, 5, 6], [1, 2, 7, 8], [3, 4, 5, 6], [3, 4, 7, 8]]
+
+    How to achieve this? First, we need to build a hash map of uuid to list elements, then we can
+    use itertools.product to generate the combinations, then we can use the hash map to convert
+    the uuid back to the list elements
+
+    in case of empty list, return the other list but with each element wrapped in a list
+    """
+
+    # first build a hash map of uuid to list elements
+    if len(list1) == 0:
+        combinations = [[each] for each in list2]
+    elif len(list2) == 0:
+        combinations = [[each] for each in list1]
+    else:
+        uuid_map = {}
+        uuid_lst1 = []
+        uuid_lst2 = []
+
+        for i, item in enumerate(list1):
+            uuid_map[i] = item
+            uuid_lst1.append(i)
+        for i, item in enumerate(list2):
+            uuid_map[i + len(list1)] = item
+            uuid_lst2.append(i + len(list1))
+
+        # print(uuid_map)
+        # print(uuid_lst1, uuid_lst2)
+
+        combinations = list(itertools.product(uuid_lst1, uuid_lst2))
+        # print(combinations)
+
+        combinations = [
+            [*uuid_map[sub_comb], uuid_map[item]] for sub_comb, item in combinations
+        ]
+
+    return combinations

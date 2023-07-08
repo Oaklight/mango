@@ -8,7 +8,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_paths.utils import print_color
+from gen_paths.utils import generate_combinations, print_color
 
 opposite_directions = {
     "east": "west",
@@ -82,6 +82,7 @@ def build_graph_from_file(
     # use MultiDiGraph instead to accomodate special game with multiple valid action between two nodes
     G = networkx.MultiDiGraph()
 
+    edges_to_add = []
     for line in lines:
         line = line.strip("\ufeff").strip()
         print_color(line, "b", inline=True)
@@ -105,6 +106,15 @@ def build_graph_from_file(
         elements = [each.strip().lower() for each in path.split("-->")]
         print(elements)
         src_node, direction, dst_node = elements
+        edges_to_add.append((src_node, dst_node, direction, step_num))
+
+    # sort by step_number
+    edges_to_add.sort(key=lambda x: x[3])
+
+    prev_step_number = -1
+    for src_node, dst_node, direction, step_number in edges_to_add:
+        assert step_number > prev_step_number, "step_number must be increasing"
+        prev_step_number = step_number
 
         # add edges with attributes
         # only add triplet (src, dst, direction) once, and store the minimum step_num
@@ -113,9 +123,7 @@ def build_graph_from_file(
         ]:
             G.add_edge(src_node, dst_node, direction=direction, step_num=step_num)
         else:
-            for u, v, data in G.edges(data=True):
-                if (u, v, data["direction"]) == (src_node, dst_node, direction):
-                    data["step_num"] = min(data["step_num"], step_num)
+            pass
 
     return G
 
@@ -270,11 +278,29 @@ def get_shortest_path(g: object, src: str, dst: str):
 
 def get_all_paths(g: object, src: str, dst: str):
     """
-    get all paths from src to dst
+    get all paths from src to dst in MultiDiGraph
+    then format the path to a list of quaduples (src, dst, direction, step_num)
     """
     try:
-        paths = networkx.all_simple_paths(g, src, dst)
-        return list(paths)
+        simple_paths = networkx.all_simple_paths(g, src, dst)
+        expanded_simple_paths = []
+
+        for path in simple_paths:
+            expanded_path = []
+            for i in range(len(path) - 1):
+                # get all variants of edges between path[i] and path[i+1]
+                src = path[i]
+                dst = path[i + 1]
+                edges_attrs = g.get_edge_data(src, dst)
+                edges_with_attrs = [
+                    (src, dst, data["direction"], data["step_num"])
+                    for data in edges_attrs.values()
+                ]
+
+                expanded_path = generate_combinations(expanded_path, edges_with_attrs)
+        expanded_simple_paths.extend(expanded_path)
+
+        return expanded_simple_paths
     except networkx.exception.NetworkXNoPath:
         return []
 
@@ -442,39 +468,41 @@ def get_edge_direction(G, n1, n2):
         print("Edge not found.")
 
 
-def get_path_json(g, path, shortest_length=None, node_step_map: dict = None):
+def get_path_json(g, path, shortest_length=None):
     """
     return path json
+    path is a list of quadruplets (prev_node, node, action, step_num)
     """
     # get src_node and dst_node and print them
-    src_node = path[0]
-    dst_node = path[-1]
+    src_node = path[0][0]
+    dst_node = path[-1][1]
 
     path_json = {"src_node": src_node, "dst_node": dst_node}
     if shortest_length:
         diff_shortest = len(path) - shortest_length
         path_json["diff_shortest"] = diff_shortest
 
-    prev_node = path[0]
     path_details = []
-    if len(path) == 1:
+    if len(path) == 0:
         pass
     else:
-        for node in path[1:]:
-            seen = g.forward.has_edge(prev_node, node)
-            direction = get_edge_direction(g, prev_node, node)
-            # path_details.append((prev_node, node, direction, seen))
+        for edge in path:
+            prev_node, node, direction, step_num = edge
+            if (prev_node, node, direction) in [
+                (u, v, data["direction"]) for u, v, data in g.forward.edges(data=True)
+            ]:
+                seen = True
+            else:
+                seen = False
+
             # use dict instead
             entry = {
                 "prev_node": prev_node,
                 "node": node,
                 "action": direction,
                 "seen_in_forward": seen,
+                "step_min_cutoff": step_num,
             }
-            if node_step_map is not None:
-                entry["step_min_cutoff"] = max(
-                    node_step_map[prev_node], node_step_map[node]
-                )
             path_details.append(entry)
             prev_node = node
     path_json["path_details"] = path_details
@@ -489,9 +517,10 @@ def get_path_json(g, path, shortest_length=None, node_step_map: dict = None):
     return path_json
 
 
-def get_all_paths_json(g, all_paths, diff_shortest=False, node_step_map: dict = None):
+def get_all_paths_json(g, all_paths, diff_shortest=False):
     """
     iterate over all paths and print each
+    all_paths is the expanded simple paths. Outter most list the collection of simple paths. Inner lists are lists of edge quadruplets (src_node, dst_node, direction, step_num)
     """
     path_json_list = []
     if len(all_paths) == 0:
@@ -504,11 +533,9 @@ def get_all_paths_json(g, all_paths, diff_shortest=False, node_step_map: dict = 
 
     for path in all_paths:
         if diff_shortest:
-            path_json = get_path_json(
-                g, path, shortest_length=shortest_len, node_step_map=node_step_map
-            )
+            path_json = get_path_json(g, path, shortest_length=shortest_len)
         else:
-            path_json = get_path_json(g, path, node_step_map=node_step_map)
+            path_json = get_path_json(g, path)
         path_json_list.append(path_json)
 
     return path_json_list
