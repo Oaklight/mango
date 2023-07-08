@@ -11,7 +11,7 @@ parent = os.path.dirname(current)
 sys.path.append(parent)
 
 from gen_paths.utils import compute_hash, compare_path_details
-from gen_paths.digraph import anno_to_code
+from gen_paths.gamegraph import anno_to_code
 
 MAP_DIR = "./data/maps"
 INFER_DIR = "../gpt-games-results"
