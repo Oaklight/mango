@@ -46,14 +46,14 @@
         "node": "Office",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 9
+        "step_min_cutoff": 7
     },
     {
         "prev_node": "Office",
         "node": "File Room",
         "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 7
+        "step_min_cutoff": 9
     },
     {
         "prev_node": "Office",
@@ -95,14 +95,14 @@
         "node": "Narrow Street",
         "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 20
+        "step_min_cutoff": 13
     },
     {
         "prev_node": "University Court",
         "node": "Library",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 15
+        "step_min_cutoff": 18
     },
     {
         "prev_node": "University Court",
@@ -126,11 +126,25 @@
         "step_min_cutoff": 22
     },
     {
+        "prev_node": "Whateley Bridge",
+        "node": "Narrow Street",
+        "action": "north",
+        "seen_in_forward": false,
+        "step_min_cutoff": 21
+    },
+    {
         "prev_node": "Town Square",
         "node": "Riverwalk",
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 23
+    },
+    {
+        "prev_node": "Town Square",
+        "node": "Whateley Bridge",
+        "action": "north",
+        "seen_in_forward": false,
+        "step_min_cutoff": 22
     },
     {
         "prev_node": "Riverwalk",
@@ -168,11 +182,25 @@
         "step_min_cutoff": 26
     },
     {
+        "prev_node": "Scenic View",
+        "node": "Chilly Avenue",
+        "action": "northeast",
+        "seen_in_forward": false,
+        "step_min_cutoff": 25
+    },
+    {
         "prev_node": "Outside the House",
         "node": "Foyer",
         "action": "north",
         "seen_in_forward": true,
         "step_min_cutoff": 28
+    },
+    {
+        "prev_node": "Outside the House",
+        "node": "Scenic View",
+        "action": "southeast",
+        "seen_in_forward": false,
+        "step_min_cutoff": 26
     },
     {
         "prev_node": "Foyer",
@@ -193,7 +221,7 @@
         "node": "Master Bedroom",
         "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 32
+        "step_min_cutoff": 50
     },
     {
         "prev_node": "Upstairs Landing",
@@ -221,7 +249,7 @@
         "node": "Upstairs Landing",
         "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 50
+        "step_min_cutoff": 32
     },
     {
         "prev_node": "Bathroom",
@@ -245,6 +273,13 @@
         "step_min_cutoff": 56
     },
     {
+        "prev_node": "Dining Room",
+        "node": "Foyer",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 52
+    },
+    {
         "prev_node": "Kitchen",
         "node": "Pantry",
         "action": "northwest",
@@ -252,11 +287,25 @@
         "step_min_cutoff": 61
     },
     {
+        "prev_node": "Kitchen",
+        "node": "Dining Room",
+        "action": "south",
+        "seen_in_forward": false,
+        "step_min_cutoff": 56
+    },
+    {
         "prev_node": "Pantry",
         "node": "Cellar",
         "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 64
+    },
+    {
+        "prev_node": "Pantry",
+        "node": "Kitchen",
+        "action": "southeast",
+        "seen_in_forward": false,
+        "step_min_cutoff": 61
     },
     {
         "prev_node": "Cellar",

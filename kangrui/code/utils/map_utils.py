@@ -4,6 +4,8 @@ import networkx as nx
 import json
 import matplotlib.pyplot as plt
 
+
+
 def get_game_info(map_dir,game_name):
     all2all_path=osp.join(map_dir,game_name,f'{game_name}.all2all.json')
     all_pairs_path=osp.join(map_dir,game_name,f'{game_name}.all_pairs.json')

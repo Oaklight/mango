@@ -9,7 +9,7 @@ import openai
 import time
 import traceback
 
-from utils.new_map_utils import get_game_info
+from utils.map_utils import get_game_info
 from utils.utils import find_json,read_json,save_json
 from tqdm import tqdm
 

@@ -223,7 +223,9 @@ def llama_parse_response(path_str:str)->list:
             return None
     return path_lst
 
-def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathgen'):
+
+
+def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathgen',eval_set=None):
     #evaluate both route finding and destination finding
     # 'pathgen' for rf, 'stepnav' for df
 
@@ -231,11 +233,17 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
 
     with open(file,'r') as f:
         result_json = json.load(f)
-    
 
+    task_id=get_task_id(result_json)
+
+    # step0: check setlimit:
+    if eval_set is not None: 
+        if task_id not in eval_set:
+            # print(file,'task_id not in eval_set, skip eval')
+            return -1,-1,-1
+        
     # step1: check cutoff
     cutoff=get_cutoff(result_json)
-    task_id=get_task_id(result_json)
     path_gt=None
     pair_gt=None
     if task_type=='pathgen':
@@ -324,7 +332,93 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
     
     return flag_easy,flag_harsh,flag_hard
 
-def eval_llama_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='gpt-4',eval_difficulty='strict'):
+def get_valid_task(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathgen'):
+    #evaluate both route finding and destination finding
+    # 'pathgen' for rf, 'stepnav' for df
+
+    assert task_type in ['pathgen','stepnav']
+
+    with open(file,'r') as f:
+        result_json = json.load(f)
+    
+
+    # step1: check cutoff
+    cutoff=get_cutoff(result_json)
+    task_id=get_task_id(result_json)
+    path_gt=None
+    pair_gt=None
+    if task_type=='pathgen':
+        pair_gt=find_pair(task_id,all_pairs)
+        if pair_gt is None:
+            print(file,'pair is none, skip eval')
+            return None
+    else:
+        path_gt=find_path(task_id,all2all)
+        if path_gt is None:
+            print(file,'path is none, skip eval')
+            return None
+    if task_type=='pathgen' and min(pair_gt['path_min_cutoffs'])>cutoff:
+        print(file,f"pair_min_cutoffs {min(pair_gt['path_min_cutoffs'])} > {cutoff} exceeded, skip eval")
+        return None
+    elif task_type=='stepnav' and path_gt['path_min_cutoff']>cutoff:
+        print(file,f"path_min_cutoffs {path_gt['path_min_cutoff']} > {cutoff} exceeded, skip eval")
+        return None
+    
+    # step2: check answer format
+    if not 'path' in result_json.keys():
+        print(file,'path key not existed')
+        return None
+    
+    if isinstance(result_json['path'],str):
+        path=llama_parse_response(result_json['path'])
+    elif isinstance(result_json['path'],list):
+        path=result_json['path']
+
+    if path is None:
+        print(file,'path parsing error')
+        return None
+    
+    for idx,edge in enumerate(path):
+        if not isinstance(edge,dict):
+            print(file,'path edge not dict error')
+            return None
+        
+        if 'location_before' not in edge.keys() or 'location_after' not in edge.keys():
+            print(file,'path key error')
+            return None
+        
+        if not isinstance(path[idx]["location_before"],str) or not isinstance(path[idx]["location_after"],str):
+            print(file,'path value error')
+            return None
+    
+    
+    
+    
+    return task_id
+
+def get_llama_valid_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='llama',eval_difficulty='strict'):
+    rst=set()
+    if task_type=='pathgen':
+        src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_name}")
+    else:
+        src_dir=osp.join(result_dir,game_name,'results',f"step_navi_{model_name}")
+
+    
+    file_list=[]
+    for file in os.listdir(src_dir):
+        file_list.append(osp.join(src_dir,file))
+    
+    for file in file_list:  
+        try:
+            task_id=get_valid_task(file,G,all2all,all_pairs,eval_difficulty,task_type)
+            if task_id is not None:
+               rst.add(task_id) 
+        except Exception as e:
+            print(file,e)
+            continue
+    return rst
+
+def eval_llama_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='gpt-4',eval_difficulty='strict',eval_set=None):
     if task_type=='pathgen':
         src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_name}")
     else:
@@ -348,7 +442,10 @@ def eval_llama_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen
     total_file=0
     for file in file_list:  
         try:
-            easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type)
+            if eval_set is not None:
+                easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type,eval_set)
+            else:
+                easy,harsh,hard=eval_game(file,G,all2all,all_pairs,eval_difficulty,task_type)
         except Exception as e:
             print(file,e)
             continue
