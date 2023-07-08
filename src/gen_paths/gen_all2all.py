@@ -16,7 +16,6 @@ from gen_paths.gamegraph import (
 )
 from gen_paths.utils import confirm_continue, get_args_all2all
 
-
 if __name__ == "__main__":
     args = get_args_all2all()
     confirm_continue()
@@ -28,12 +27,12 @@ if __name__ == "__main__":
 
     plot_graph(g)
 
-    # load node_step_map
-    node_step_map = None
-    if args.node_step_map:
-        with open(args.node_step_map, "r") as f:
-            node_step_map = json.load(f)
-            node_step_map = {k.lower(): int(v) for k, v in node_step_map.items()}
+    # # load node_step_map
+    # node_step_map = None
+    # if args.node_step_map:
+    #     with open(args.node_step_map, "r") as f:
+    #         node_step_map = json.load(f)
+    #         node_step_map = {k.lower(): int(v) for k, v in node_step_map.items()}
 
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
@@ -47,9 +46,14 @@ if __name__ == "__main__":
     all_paths_json = []
     for src_node, dst_node in all_pairs:
         print(f"Generating paths from {src_node} to {dst_node}...")
-        allPaths = get_all_paths(g, src=src_node, dst=dst_node)
+
+        # simple_paths of MultiDiGraph is still a list of list of nodes
+        # but we want it to be a list of quadruples (src, dst, direction, step_num)
+        # so we need to expand the simple_paths
+        expanded_simple_paths = get_all_paths(g, src=src_node, dst=dst_node)
+
         current_all_paths_json = get_all_paths_json(
-            g, allPaths, diff_shortest=True, node_step_map=node_step_map
+            g, expanded_simple_paths, diff_shortest=True
         )
         all_paths_json += current_all_paths_json
 
