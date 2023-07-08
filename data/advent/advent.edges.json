@@ -4,49 +4,70 @@
         "node": "Inside Building",
         "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 1
+        "step_min_cutoff": 3
     },
     {
         "prev_node": "End Of Road",
         "node": "In A Valley",
-        "action": "down",
+        "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 4
     },
     {
         "prev_node": "Inside Building",
         "node": "End Of Road",
-        "action": "get axe",
+        "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 3
+        "step_min_cutoff": 1
     },
     {
         "prev_node": "Inside Building",
         "node": "At \"Y2\"",
-        "action": "down",
+        "action": "plugh",
         "seen_in_forward": true,
         "step_min_cutoff": 34
     },
     {
         "prev_node": "In A Valley",
         "node": "At Slit In Streambed",
-        "action": "get ox",
+        "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 5
     },
     {
+        "prev_node": "In A Valley",
+        "node": "End Of Road",
+        "action": "north",
+        "seen_in_forward": false,
+        "step_min_cutoff": 4
+    },
+    {
         "prev_node": "At Slit In Streambed",
         "node": "Outside Grate",
-        "action": "bunyon",
+        "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 6
     },
     {
+        "prev_node": "At Slit In Streambed",
+        "node": "In A Valley",
+        "action": "north",
+        "seen_in_forward": false,
+        "step_min_cutoff": 5
+    },
+    {
         "prev_node": "Outside Grate",
         "node": "Below the Grate",
-        "action": "west",
+        "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 9
+    },
+    {
+        "prev_node": "Outside Grate",
+        "node": "At Slit In Streambed",
+        "action": "north",
+        "seen_in_forward": false,
+        "step_min_cutoff": 6
     },
     {
         "prev_node": "Below the Grate",
@@ -58,121 +79,163 @@
     {
         "prev_node": "In Cobble",
         "node": "In Debris Room",
-        "action": "get axe",
+        "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 12
     },
     {
+        "prev_node": "In Cobble",
+        "node": "Below the Grate",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 10
+    },
+    {
         "prev_node": "In Debris Room",
         "node": "Sloping E/W Canyon",
-        "action": "east",
+        "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 14
     },
     {
+        "prev_node": "In Debris Room",
+        "node": "In Cobble",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 12
+    },
+    {
         "prev_node": "Sloping E/W Canyon",
         "node": "Orange River Chamber",
-        "action": "climb tree",
+        "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 15
     },
     {
+        "prev_node": "Sloping E/W Canyon",
+        "node": "In Debris Room",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 14
+    },
+    {
         "prev_node": "Orange River Chamber",
         "node": "At Top of Small Pit",
-        "action": "down",
+        "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 17
     },
     {
+        "prev_node": "Orange River Chamber",
+        "node": "Sloping E/W Canyon",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 15
+    },
+    {
         "prev_node": "At Top of Small Pit",
         "node": "In Hall of Mists",
-        "action": "chop tree",
+        "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 18
     },
     {
+        "prev_node": "At Top of Small Pit",
+        "node": "Orange River Chamber",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 17
+    },
+    {
         "prev_node": "In Hall of Mists",
         "node": "Low Room",
-        "action": "drop axe",
-        "seen_in_forward": true,
-        "step_min_cutoff": 19
-    },
-    {
-        "prev_node": "In Hall of Mists",
-        "node": "Hall of the Mountain King",
-        "action": "drop ox",
-        "seen_in_forward": true,
-        "step_min_cutoff": 22
-    },
-    {
-        "prev_node": "Low Room",
-        "node": "In Hall of Mists",
-        "action": "drop fruit",
+        "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 21
     },
     {
+        "prev_node": "In Hall of Mists",
+        "node": "Hall of the Mountain King",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 22
+    },
+    {
+        "prev_node": "In Hall of Mists",
+        "node": "At Top of Small Pit",
+        "action": "up",
+        "seen_in_forward": false,
+        "step_min_cutoff": 18
+    },
+    {
+        "prev_node": "Low Room",
+        "node": "In Hall of Mists",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
+    },
+    {
         "prev_node": "Hall of the Mountain King",
         "node": "Low N/S Passage",
-        "action": "down",
+        "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 25
+        "step_min_cutoff": 36
     },
     {
         "prev_node": "Hall of the Mountain King",
         "node": "Secret E/W Canyon Above Tight Canyon",
-        "action": "south",
+        "action": "southwest",
         "seen_in_forward": true,
         "step_min_cutoff": 37
     },
     {
         "prev_node": "Low N/S Passage",
         "node": "At \"Y2\"",
-        "action": "drop rubies",
+        "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 28
+        "step_min_cutoff": 35
     },
     {
         "prev_node": "Low N/S Passage",
         "node": "Hall of the Mountain King",
-        "action": "down",
+        "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 36
+        "step_min_cutoff": 25
     },
     {
         "prev_node": "At \"Y2\"",
         "node": "Inside Building",
-        "action": "down",
+        "action": "plugh",
         "seen_in_forward": true,
         "step_min_cutoff": 29
     },
     {
         "prev_node": "At \"Y2\"",
         "node": "Low N/S Passage",
-        "action": "light lamp",
+        "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 35
+        "step_min_cutoff": 28
     },
     {
         "prev_node": "Secret E/W Canyon Above Tight Canyon",
         "node": "Secret Canyon",
-        "action": "get bladder",
+        "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 38
+        "step_min_cutoff": 42
     },
     {
         "prev_node": "Secret E/W Canyon Above Tight Canyon",
         "node": "N/S Canyon",
-        "action": "west",
+        "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 43
     },
     {
         "prev_node": "Secret Canyon",
         "node": "Secret E/W Canyon Above Tight Canyon",
-        "action": "get flint",
+        "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 42
+        "step_min_cutoff": 38
     },
     {
         "prev_node": "N/S Canyon",
@@ -184,119 +247,126 @@
     {
         "prev_node": "In Tall E/W Canyon",
         "node": "In Swiss Cheese Room",
-        "action": "get rug",
+        "action": "north",
         "seen_in_forward": true,
         "step_min_cutoff": 45
     },
     {
         "prev_node": "In Swiss Cheese Room",
         "node": "At East End of Twopit Room",
-        "action": "down",
+        "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 46
+        "step_min_cutoff": 52
     },
     {
         "prev_node": "In Swiss Cheese Room",
         "node": "In Swiss Cheese Room",
-        "action": "drop flint",
+        "action": "northwest",
         "seen_in_forward": true,
         "step_min_cutoff": 53
     },
     {
         "prev_node": "In Swiss Cheese Room",
         "node": "Oriental Room",
-        "action": "drop bladder",
+        "action": "northwest",
         "seen_in_forward": true,
         "step_min_cutoff": 54
     },
     {
         "prev_node": "In Swiss Cheese Room",
         "node": "In Soft Room",
-        "action": "get bladder",
+        "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 66
+        "step_min_cutoff": 68
     },
     {
         "prev_node": "In Swiss Cheese Room",
         "node": "Bedquilt",
-        "action": "drop mud",
+        "action": "northeast",
         "seen_in_forward": true,
         "step_min_cutoff": 69
     },
     {
+        "prev_node": "In Swiss Cheese Room",
+        "node": "In Tall E/W Canyon",
+        "action": "south",
+        "seen_in_forward": false,
+        "step_min_cutoff": 45
+    },
+    {
         "prev_node": "At East End of Twopit Room",
         "node": "At West End of Twopit Room",
-        "action": "get net",
-        "seen_in_forward": true,
-        "step_min_cutoff": 47
-    },
-    {
-        "prev_node": "At East End of Twopit Room",
-        "node": "In Swiss Cheese Room",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 52
-    },
-    {
-        "prev_node": "At West End of Twopit Room",
-        "node": "In West Pit",
-        "action": "up",
-        "seen_in_forward": true,
-        "step_min_cutoff": 48
-    },
-    {
-        "prev_node": "At West End of Twopit Room",
-        "node": "At East End of Twopit Room",
-        "action": "turn off lamp",
+        "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 51
     },
     {
+        "prev_node": "At East End of Twopit Room",
+        "node": "In Swiss Cheese Room",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 46
+    },
+    {
+        "prev_node": "At West End of Twopit Room",
+        "node": "In West Pit",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 50
+    },
+    {
+        "prev_node": "At West End of Twopit Room",
+        "node": "At East End of Twopit Room",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 47
+    },
+    {
         "prev_node": "In West Pit",
         "node": "At West End of Twopit Room",
-        "action": "away",
+        "action": "up",
         "seen_in_forward": true,
         "step_min_cutoff": 50
     },
     {
         "prev_node": "Oriental Room",
         "node": "Misty Cavern",
-        "action": "take mud",
+        "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 55
+        "step_min_cutoff": 63
     },
     {
         "prev_node": "Oriental Room",
         "node": "In Swiss Cheese Room",
-        "action": "get flint",
+        "action": "southeast",
         "seen_in_forward": true,
-        "step_min_cutoff": 65
+        "step_min_cutoff": 54
     },
     {
         "prev_node": "Misty Cavern",
         "node": "Alcove",
-        "action": "north",
+        "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 56
     },
     {
         "prev_node": "Misty Cavern",
         "node": "Oriental Room",
-        "action": "drop net",
+        "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 63
+        "step_min_cutoff": 55
     },
     {
         "prev_node": "Alcove",
         "node": "Plover Room",
-        "action": "get fish",
+        "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 58
+        "step_min_cutoff": 60
     },
     {
         "prev_node": "Alcove",
         "node": "Misty Cavern",
-        "action": "drop fish",
+        "action": "northwest",
         "seen_in_forward": true,
         "step_min_cutoff": 62
     },
@@ -305,20 +375,27 @@
         "node": "Alcove",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 60
+        "step_min_cutoff": 58
     },
     {
         "prev_node": "In Soft Room",
         "node": "In Swiss Cheese Room",
-        "action": "go stump",
+        "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 68
+        "step_min_cutoff": 66
     },
     {
         "prev_node": "Bedquilt",
         "node": "At Complex Junction",
-        "action": "down",
+        "action": "east",
         "seen_in_forward": true,
+        "step_min_cutoff": 70
+    },
+    {
+        "prev_node": "At Complex Junction",
+        "node": "Bedquilt",
+        "action": "west",
+        "seen_in_forward": false,
         "step_min_cutoff": 70
     }
 ]
