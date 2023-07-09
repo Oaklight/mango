@@ -50,13 +50,6 @@
     },
     {
         "prev_node": "Front of the Church",
-        "node": "Church Porch",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 49
-    },
-    {
-        "prev_node": "Front of the Church",
         "node": "Top of Oak Tree",
         "action": "climb ladder",
         "seen_in_forward": true,
@@ -70,13 +63,6 @@
         "step_min_cutoff": 9
     },
     {
-        "prev_node": "East Side of the Church",
-        "node": "Front of the Church",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 10
-    },
-    {
         "prev_node": "Church Porch",
         "node": "Vestibule",
         "action": "north",
@@ -85,17 +71,31 @@
     },
     {
         "prev_node": "Church Porch",
-        "node": "Vestibule",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 50
-    },
-    {
-        "prev_node": "Church Porch",
         "node": "Front of the Church",
         "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 41
+    },
+    {
+        "prev_node": "Top of Oak Tree",
+        "node": "Belfry",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 44
+    },
+    {
+        "prev_node": "Top of Oak Tree",
+        "node": "Front of the Church",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 47
+    },
+    {
+        "prev_node": "East Side of the Church",
+        "node": "Front of the Church",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 10
     },
     {
         "prev_node": "Vestibule",
@@ -113,17 +113,24 @@
     },
     {
         "prev_node": "Vestibule",
-        "node": "Steeple Chamber",
-        "action": "climb ladder",
-        "seen_in_forward": true,
-        "step_min_cutoff": 52
-    },
-    {
-        "prev_node": "Vestibule",
         "node": "Church Porch",
         "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 40
+    },
+    {
+        "prev_node": "Belfry",
+        "node": "Steeple Chamber",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 36
+    },
+    {
+        "prev_node": "Belfry",
+        "node": "Top of Oak Tree",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 46
     },
     {
         "prev_node": "Sanctuary",
@@ -138,27 +145,6 @@
         "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 31
-    },
-    {
-        "prev_node": "Pulpit",
-        "node": "Small Office",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 19
-    },
-    {
-        "prev_node": "Pulpit",
-        "node": "Sanctuary",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 30
-    },
-    {
-        "prev_node": "Small Office",
-        "node": "Pulpit",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 29
     },
     {
         "prev_node": "Steeple Chamber",
@@ -182,32 +168,18 @@
         "step_min_cutoff": 53
     },
     {
-        "prev_node": "Belfry",
-        "node": "Steeple Chamber",
-        "action": "down",
-        "seen_in_forward": true,
-        "step_min_cutoff": 36
-    },
-    {
-        "prev_node": "Belfry",
-        "node": "Top of Oak Tree",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 46
-    },
-    {
-        "prev_node": "Top of Oak Tree",
-        "node": "Belfry",
+        "prev_node": "Pulpit",
+        "node": "Small Office",
         "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 44
+        "step_min_cutoff": 19
     },
     {
-        "prev_node": "Top of Oak Tree",
-        "node": "Front of the Church",
-        "action": "down",
+        "prev_node": "Pulpit",
+        "node": "Sanctuary",
+        "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 47
+        "step_min_cutoff": 30
     },
     {
         "prev_node": "Inner Chamber",
@@ -215,5 +187,12 @@
         "action": "south",
         "seen_in_forward": false,
         "step_min_cutoff": 53
+    },
+    {
+        "prev_node": "Small Office",
+        "node": "Pulpit",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 29
     }
 ]
