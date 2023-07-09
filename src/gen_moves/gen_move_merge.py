@@ -13,6 +13,62 @@ sys.path.append(parent)
 from gen_paths.gamegraph import anno_to_code
 
 
+def deduplicate_minstep(human_map_path, reversed_map_path):
+    """
+    read in human and reversed map, use human map as the base
+    drop duplicated (src, dst, action), keep the one with smallest step number (which appears earlier in the walkthrough)
+    drop duplicated (src, dst, action) in reversed map that has already appeared in human map
+    """
+    human_lines = {}
+    with open(human_map_path, "r") as f:
+        for line in f:
+            line = line.strip()
+            if line == "":
+                continue
+            line, step_num = line.split(", step ")
+            line = line.split(" --> ")
+            src = line[0]
+            dst = line[2]
+            triplet = (src, dst, line[1])
+            if triplet not in human_lines:
+                human_lines[triplet] = int(step_num)
+            else:
+                human_lines[triplet] = min(human_lines[triplet], int(step_num))
+    # dump back to map.human
+    with open(human_map_path, "w") as f:
+        for triplet, step_num in human_lines.items():
+            f.write(
+                f"{triplet[0]} --> {triplet[2]} --> {triplet[1]}, step {step_num}\n"
+            )
+
+    reversed_lines = {}
+    with open(reversed_map_path, "r") as f:
+        for line in f:
+            line = line.strip()
+            if line == "":
+                continue
+            line_step, desc = line.split(", desc: ")
+            if desc != "None":
+                continue
+            line, step_num = line_step.split(", step ")
+            line = line.split(" --> ")
+            src = line[0]
+            dst = line[2]
+            triplet = (src, dst, line[1])
+            if triplet in human_lines:
+                continue
+            if triplet not in reversed_lines:
+                reversed_lines[triplet] = int(step_num)
+            else:
+                reversed_lines[triplet] = min(reversed_lines[triplet], int(step_num))
+    # dump back to map.reversed
+    with open(reversed_map_path, "w") as f:
+        for triplet, step_num in reversed_lines.items():
+            f.write(
+                f"{triplet[0]} --> {triplet[2]} --> {triplet[1]}, step {step_num}, desc: None\n"
+            )
+
+
 if __name__ == "__main__":
     # argparse
     parser = argparse.ArgumentParser()
@@ -76,9 +132,15 @@ if __name__ == "__main__":
             dst_code = anno_to_code(dst, anno2code)
             if src_code is None or dst_code is None:
                 # abort!
-                print(f"[{args.game}.map.human] | abort! [at step {step_num}] src or dst is None: ", src, dst)
+                print(
+                    f"[{args.game}.map.human] | abort! [at step {step_num}] src or dst is None: ",
+                    src,
+                    dst,
+                )
                 exit(1)
-            human_lines.append(f"{src_code} --> {line[1]} --> {dst_code}, step {step_num}")
+            human_lines.append(
+                f"{src_code} --> {line[1]} --> {dst_code}, step {step_num}"
+            )
     # dump back to map.human
     with open(map_human_path, "w") as f:
         for line in human_lines:
@@ -103,7 +165,9 @@ if __name__ == "__main__":
             if src_code is None or dst_code is None:
                 # abort!
                 print(
-                    f"[{args.game}.map.reversed] | abort! [at step {step_num}] src or dst is None: ", src, dst
+                    f"[{args.game}.map.reversed] | abort! [at step {step_num}] src or dst is None: ",
+                    src,
+                    dst,
                 )
                 exit(1)
             reversed_lines.append(
@@ -113,5 +177,7 @@ if __name__ == "__main__":
     with open(map_reversed_path, "w") as f:
         for line in reversed_lines:
             f.write(f"{line}\n")
+
+    deduplicate_minstep(map_human_path, map_reversed_path)
 
     print(f"[{args.game}.map.reversed] | node merge & naming space convertion DONE!")
