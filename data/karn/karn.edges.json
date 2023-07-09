@@ -28,13 +28,6 @@
         "step_min_cutoff": 20
     },
     {
-        "prev_node": "Workshop",
-        "node": "Corridor",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 19
-    },
-    {
         "prev_node": "Rocky Clearing",
         "node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
         "action": "northwest",
@@ -46,7 +39,14 @@
         "node": "Rocky Trail (clearing to west)",
         "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 68
+        "step_min_cutoff": 43
+    },
+    {
+        "prev_node": "Workshop",
+        "node": "Corridor",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
     },
     {
         "prev_node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
@@ -60,7 +60,21 @@
         "node": "Rocky Clearing",
         "action": "southeast",
         "seen_in_forward": true,
-        "step_min_cutoff": 67
+        "step_min_cutoff": 42
+    },
+    {
+        "prev_node": "Rocky Trail (clearing to west)",
+        "node": "Rocky Trail (Trail widens eastward and narrows northwest)",
+        "action": "southeast",
+        "seen_in_forward": true,
+        "step_min_cutoff": 44
+    },
+    {
+        "prev_node": "Rocky Trail (clearing to west)",
+        "node": "Rocky Clearing",
+        "action": "west",
+        "seen_in_forward": false,
+        "step_min_cutoff": 43
     },
     {
         "prev_node": "Mountain Trail (up east, down southwest)",
@@ -74,7 +88,21 @@
         "node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
         "action": "southwest",
         "seen_in_forward": true,
-        "step_min_cutoff": 66
+        "step_min_cutoff": 41
+    },
+    {
+        "prev_node": "Rocky Trail (Trail widens eastward and narrows northwest)",
+        "node": "Lakeside",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 45
+    },
+    {
+        "prev_node": "Rocky Trail (Trail widens eastward and narrows northwest)",
+        "node": "Rocky Trail (clearing to west)",
+        "action": "northwest",
+        "seen_in_forward": false,
+        "step_min_cutoff": 44
     },
     {
         "prev_node": "Mountain Trail (carved steps to the south)",
@@ -95,7 +123,7 @@
         "node": "Mountain Trail (up east, down southwest)",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 65
+        "step_min_cutoff": 40
     },
     {
         "prev_node": "Ruins",
@@ -116,7 +144,7 @@
         "node": "Mountain Trail (carved steps to the south)",
         "action": "southwest",
         "seen_in_forward": true,
-        "step_min_cutoff": 64
+        "step_min_cutoff": 39
     },
     {
         "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
@@ -140,39 +168,25 @@
         "step_min_cutoff": 38
     },
     {
+        "prev_node": "Mountain Trail (up west, down east)",
+        "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 63
+    },
+    {
+        "prev_node": "Mountain Trail (up west, down east)",
+        "node": "Mountain Trail (blackened tree beside trail)",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 62
+    },
+    {
         "prev_node": "Bottom of Cliff",
         "node": "Narrow Cleft",
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 37
-    },
-    {
-        "prev_node": "Rocky Trail (clearing to west)",
-        "node": "Rocky Trail (Trail widens eastward and narrows northwest)",
-        "action": "southeast",
-        "seen_in_forward": true,
-        "step_min_cutoff": 69
-    },
-    {
-        "prev_node": "Rocky Trail (clearing to west)",
-        "node": "Rocky Clearing",
-        "action": "west",
-        "seen_in_forward": false,
-        "step_min_cutoff": 43
-    },
-    {
-        "prev_node": "Rocky Trail (Trail widens eastward and narrows northwest)",
-        "node": "Lakeside",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 70
-    },
-    {
-        "prev_node": "Rocky Trail (Trail widens eastward and narrows northwest)",
-        "node": "Rocky Trail (clearing to west)",
-        "action": "northwest",
-        "seen_in_forward": false,
-        "step_min_cutoff": 44
     },
     {
         "prev_node": "Lakeside",
@@ -229,19 +243,5 @@
         "action": "southeast",
         "seen_in_forward": false,
         "step_min_cutoff": 58
-    },
-    {
-        "prev_node": "Mountain Trail (up west, down east)",
-        "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 63
-    },
-    {
-        "prev_node": "Mountain Trail (up west, down east)",
-        "node": "Mountain Trail (blackened tree beside trail)",
-        "action": "east",
-        "seen_in_forward": false,
-        "step_min_cutoff": 62
     }
 ]

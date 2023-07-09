@@ -11,7 +11,7 @@
         "node": "Street, by Pizza Parlor",
         "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 41
+        "step_min_cutoff": 6
     },
     {
         "prev_node": "Pizza Parlor",
@@ -25,7 +25,7 @@
         "node": "Street, Near Courthouse",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 60
+        "step_min_cutoff": 7
     },
     {
         "prev_node": "Street, by Pizza Parlor",
@@ -53,7 +53,7 @@
         "node": "Downtown",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 61
+        "step_min_cutoff": 15
     },
     {
         "prev_node": "Street, Near Courthouse",
@@ -61,6 +61,20 @@
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 36
+    },
+    {
+        "prev_node": "Street, by Department Store",
+        "node": "Clothing Department",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 44
+    },
+    {
+        "prev_node": "Street, by Department Store",
+        "node": "Street, by Pizza Parlor",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 59
     },
     {
         "prev_node": "Courthouse",
@@ -74,7 +88,7 @@
         "node": "Office Building",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 64
+        "step_min_cutoff": 16
     },
     {
         "prev_node": "Downtown",
@@ -84,11 +98,32 @@
         "step_min_cutoff": 35
     },
     {
+        "prev_node": "Clothing Department",
+        "node": "Cosmetics Department",
+        "action": "southeast",
+        "seen_in_forward": true,
+        "step_min_cutoff": 45
+    },
+    {
+        "prev_node": "Clothing Department",
+        "node": "Street, by Department Store",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 50
+    },
+    {
+        "prev_node": "Clothing Department",
+        "node": "Hardware Department",
+        "action": "southwest",
+        "seen_in_forward": true,
+        "step_min_cutoff": 54
+    },
+    {
         "prev_node": "Office Building",
         "node": "Office Building, Second Floor",
         "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 65
+        "step_min_cutoff": 17
     },
     {
         "prev_node": "Office Building",
@@ -109,7 +144,7 @@
         "node": "Office Building, Third Floor",
         "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 66
+        "step_min_cutoff": 20
     },
     {
         "prev_node": "Office Building, Second Floor",
@@ -123,7 +158,7 @@
         "node": "Office Building, Second Floor",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 32
+        "step_min_cutoff": 19
     },
     {
         "prev_node": "Office Building, Third Floor",
@@ -154,46 +189,18 @@
         "step_min_cutoff": 21
     },
     {
+        "prev_node": "Roof of Office Building",
+        "node": "Mayor's Office",
+        "action": "jump",
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
+    },
+    {
         "prev_node": "hangin' out",
         "node": "Law Office",
         "action": "jump",
         "seen_in_forward": true,
         "step_min_cutoff": 31
-    },
-    {
-        "prev_node": "Street, by Department Store",
-        "node": "Clothing Department",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 53
-    },
-    {
-        "prev_node": "Street, by Department Store",
-        "node": "Street, by Pizza Parlor",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 59
-    },
-    {
-        "prev_node": "Clothing Department",
-        "node": "Cosmetics Department",
-        "action": "southeast",
-        "seen_in_forward": true,
-        "step_min_cutoff": 45
-    },
-    {
-        "prev_node": "Clothing Department",
-        "node": "Street, by Department Store",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 58
-    },
-    {
-        "prev_node": "Clothing Department",
-        "node": "Hardware Department",
-        "action": "southwest",
-        "seen_in_forward": true,
-        "step_min_cutoff": 54
     },
     {
         "prev_node": "Cosmetics Department",
@@ -208,12 +215,5 @@
         "action": "northeast",
         "seen_in_forward": true,
         "step_min_cutoff": 57
-    },
-    {
-        "prev_node": "Roof of Office Building",
-        "node": "Mayor's Office",
-        "action": "jump",
-        "seen_in_forward": true,
-        "step_min_cutoff": 70
     }
 ]

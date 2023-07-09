@@ -51,6 +51,13 @@
     {
         "prev_node": "North End of Garden",
         "node": "Gazebo",
+        "action": "enter gazebo",
+        "seen_in_forward": true,
+        "step_min_cutoff": 8
+    },
+    {
+        "prev_node": "North End of Garden",
+        "node": "Gazebo",
         "action": "in",
         "seen_in_forward": true,
         "step_min_cutoff": 64
@@ -60,14 +67,14 @@
         "node": "Formal Garden",
         "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 68
+        "step_min_cutoff": 11
     },
     {
         "prev_node": "Gazebo",
         "node": "North End of Garden",
         "action": "out",
         "seen_in_forward": true,
-        "step_min_cutoff": 67
+        "step_min_cutoff": 10
     },
     {
         "prev_node": "Formal Garden",
@@ -112,25 +119,11 @@
         "step_min_cutoff": 61
     },
     {
-        "prev_node": "Carousel Room",
-        "node": "Topiary",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 18
-    },
-    {
-        "prev_node": "Carousel Room",
-        "node": "Marble Hall",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 20
-    },
-    {
         "prev_node": "Topiary",
         "node": "Carousel Room",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 70
+        "step_min_cutoff": 15
     },
     {
         "prev_node": "Topiary",
@@ -138,6 +131,27 @@
         "action": "north",
         "seen_in_forward": false,
         "step_min_cutoff": 69
+    },
+    {
+        "prev_node": "Carousel Room",
+        "node": "Topiary",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 14
+    },
+    {
+        "prev_node": "Carousel Room",
+        "node": "Topiary",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 19
+    },
+    {
+        "prev_node": "Carousel Room",
+        "node": "Marble Hall",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 20
     },
     {
         "prev_node": "Marble Hall",
@@ -196,6 +210,13 @@
         "step_min_cutoff": 57
     },
     {
+        "prev_node": "Ledge in Ravine",
+        "node": "Deep Ford",
+        "action": "south",
+        "seen_in_forward": false,
+        "step_min_cutoff": 23
+    },
+    {
         "prev_node": "Tiny Room",
         "node": "Dreary Room",
         "action": "north",
@@ -210,13 +231,6 @@
         "step_min_cutoff": 37
     },
     {
-        "prev_node": "Dreary Room",
-        "node": "Tiny Room",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 36
-    },
-    {
         "prev_node": "End of Ledge",
         "node": "Dragon Room",
         "action": "north",
@@ -229,6 +243,13 @@
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 56
+    },
+    {
+        "prev_node": "Dreary Room",
+        "node": "Tiny Room",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 36
     },
     {
         "prev_node": "Dragon Room",
@@ -266,6 +287,13 @@
         "step_min_cutoff": 49
     },
     {
+        "prev_node": "Dragon's Lair",
+        "node": "Dragon Room",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 54
+    },
+    {
         "prev_node": "Cool Room",
         "node": "Ice Room",
         "action": "west",
@@ -285,12 +313,5 @@
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 47
-    },
-    {
-        "prev_node": "Dragon's Lair",
-        "node": "Dragon Room",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 54
     }
 ]

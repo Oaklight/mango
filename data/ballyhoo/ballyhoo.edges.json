@@ -4,7 +4,7 @@
         "node": "Connection",
         "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 61
+        "step_min_cutoff": 1
     },
     {
         "prev_node": "In the Wings",
@@ -25,14 +25,14 @@
         "node": "Beside the Big Top",
         "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 36
+        "step_min_cutoff": 3
     },
     {
         "prev_node": "Connection",
         "node": "In the Wings",
         "action": "north",
         "seen_in_forward": true,
-        "step_min_cutoff": 55
+        "step_min_cutoff": 14
     },
     {
         "prev_node": "Connection",
@@ -49,11 +49,32 @@
         "step_min_cutoff": 13
     },
     {
+        "prev_node": "Performance Ring",
+        "node": "Platform (west side)",
+        "action": "up",
+        "seen_in_forward": true,
+        "step_min_cutoff": 17
+    },
+    {
+        "prev_node": "Performance Ring",
+        "node": "In the Wings",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 34
+    },
+    {
+        "prev_node": "Under the Bleachers",
+        "node": "In the Wings",
+        "action": "southwest",
+        "seen_in_forward": true,
+        "step_min_cutoff": 60
+    },
+    {
         "prev_node": "Beside the Big Top",
         "node": "Back Yard",
         "action": "south",
         "seen_in_forward": true,
-        "step_min_cutoff": 37
+        "step_min_cutoff": 5
     },
     {
         "prev_node": "Beside the Big Top",
@@ -61,6 +82,48 @@
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 54
+    },
+    {
+        "prev_node": "Midway Entrance",
+        "node": "Menagerie",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 65
+    },
+    {
+        "prev_node": "Midway Entrance",
+        "node": "Connection",
+        "action": "west",
+        "seen_in_forward": false,
+        "step_min_cutoff": 63
+    },
+    {
+        "prev_node": "Near White Wagon",
+        "node": "Connection",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 13
+    },
+    {
+        "prev_node": "Near White Wagon",
+        "node": "Back Yard",
+        "action": "west",
+        "seen_in_forward": false,
+        "step_min_cutoff": 11
+    },
+    {
+        "prev_node": "Platform (west side)",
+        "node": "on the tightrope",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 18
+    },
+    {
+        "prev_node": "Platform (west side)",
+        "node": "Performance Ring",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 32
     },
     {
         "prev_node": "Back Yard",
@@ -91,74 +154,25 @@
         "step_min_cutoff": 53
     },
     {
+        "prev_node": "Menagerie",
+        "node": "Menagerie Nook",
+        "action": "southeast",
+        "seen_in_forward": true,
+        "step_min_cutoff": 66
+    },
+    {
+        "prev_node": "Menagerie",
+        "node": "Midway Entrance",
+        "action": "north",
+        "seen_in_forward": false,
+        "step_min_cutoff": 65
+    },
+    {
         "prev_node": "Inside Prop Tent",
         "node": "Back Yard",
         "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 52
-    },
-    {
-        "prev_node": "Near White Wagon",
-        "node": "Connection",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 13
-    },
-    {
-        "prev_node": "Near White Wagon",
-        "node": "Back Yard",
-        "action": "west",
-        "seen_in_forward": false,
-        "step_min_cutoff": 11
-    },
-    {
-        "prev_node": "Performance Ring",
-        "node": "Platform (west side)",
-        "action": "up",
-        "seen_in_forward": true,
-        "step_min_cutoff": 17
-    },
-    {
-        "prev_node": "Performance Ring",
-        "node": "In the Wings",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 34
-    },
-    {
-        "prev_node": "Platform (west side)",
-        "node": "on the tightrope",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 18
-    },
-    {
-        "prev_node": "Platform (west side)",
-        "node": "Performance Ring",
-        "action": "down",
-        "seen_in_forward": true,
-        "step_min_cutoff": 32
-    },
-    {
-        "prev_node": "on the tightrope",
-        "node": "Platform (east side)",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 23
-    },
-    {
-        "prev_node": "on the tightrope",
-        "node": "Platform (west side)",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 30
-    },
-    {
-        "prev_node": "Platform (east side)",
-        "node": "on the tightrope",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 25
+        "step_min_cutoff": 10
     },
     {
         "prev_node": "Camp, East",
@@ -189,6 +203,27 @@
         "step_min_cutoff": 42
     },
     {
+        "prev_node": "on the tightrope",
+        "node": "Platform (east side)",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 23
+    },
+    {
+        "prev_node": "on the tightrope",
+        "node": "Platform (west side)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 30
+    },
+    {
+        "prev_node": "Platform (east side)",
+        "node": "on the tightrope",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 25
+    },
+    {
         "prev_node": "Clown Alley",
         "node": "Camp, West",
         "action": "search tray",
@@ -196,39 +231,11 @@
         "step_min_cutoff": 50
     },
     {
-        "prev_node": "Under the Bleachers",
-        "node": "In the Wings",
-        "action": "southwest",
-        "seen_in_forward": true,
-        "step_min_cutoff": 60
-    },
-    {
-        "prev_node": "Midway Entrance",
-        "node": "Menagerie",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 65
-    },
-    {
-        "prev_node": "Midway Entrance",
-        "node": "Connection",
-        "action": "west",
-        "seen_in_forward": false,
-        "step_min_cutoff": 63
-    },
-    {
-        "prev_node": "Menagerie",
-        "node": "Menagerie Nook",
-        "action": "southeast",
-        "seen_in_forward": true,
-        "step_min_cutoff": 66
-    },
-    {
-        "prev_node": "Menagerie",
-        "node": "Midway Entrance",
+        "prev_node": "Clown Alley",
+        "node": "Camp, West",
         "action": "north",
         "seen_in_forward": false,
-        "step_min_cutoff": 65
+        "step_min_cutoff": 45
     },
     {
         "prev_node": "Menagerie Nook",
