@@ -24,44 +24,9 @@ opposite_directions = {
 }
 
 
-def load_valid_actions(action_file):
-    """
-    load valid action files. Each file has two sections
-    - Directions
-    - Non directions
-    """
-    # test if action_file not exist, create an empty txt file
-    try:
-        with open(action_file, "r") as f:
-            pass
-    except FileNotFoundError:
-        with open(action_file, "w") as f:
-            pass
-
-    with open(action_file, "r") as f:
-        for line in f:
-            line = line.strip().lower()
-            if line == "direction:":
-                continue
-            elif line == "non direction:":
-                break
-            # skip empty line
-            elif line == "":
-                continue
-
-            # parse non-empty lines
-            print("line: ", line)
-            from_dir, to_dir = [each.strip().lower() for each in line.split("--")]
-            opposite_directions[from_dir] = to_dir
-            opposite_directions[to_dir] = from_dir
-            # TODO: see if we need to check allowed action in "non-directions"?
-
-    print(opposite_directions)
-
 
 def build_graph_from_file(
     path_file: str = "data/game.map",
-    action_file: str = "data/game.actions",
     verbose: bool = True,
 ) -> object:
     """
@@ -73,10 +38,6 @@ def build_graph_from_file(
     with open(path_file, "r") as f:
         lines = f.readlines()
 
-    if action_file is None:
-        print("No action file provided, skip reverse links.")
-    else:
-        load_valid_actions(action_file)
     # build graph from file
 
     # use MultiDiGraph instead to accomodate special game with multiple valid action between two nodes
@@ -216,8 +177,8 @@ def build_graph_from_file_with_reverse(
     # exit(-1)
     # In some cases, human map may contain more or less entries than the machine forward map.
     # reverse map is from machine forward map.
-    G_forward = build_graph_from_file(path_file, action_file=None, verbose=verbose)
-    G_backward = build_graph_from_file(reverse_file, action_file=None, verbose=verbose)
+    G_forward = build_graph_from_file(path_file, verbose=verbose)
+    G_backward = build_graph_from_file(reverse_file, verbose=verbose)
 
     # use G_forward as the base graph, add edges from G_backward
     # if and only if triplet (src, dst, direction) not in G_forward.edges(data=True)
