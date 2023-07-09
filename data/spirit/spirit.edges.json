@@ -22,6 +22,13 @@
     },
     {
         "prev_node": "Hallway (near your quarters)",
+        "node": "Hallway (west end)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 9
+    },
+    {
+        "prev_node": "Hallway (near your quarters)",
         "node": "Hallway (near quarters of Palemon and TuffBerry)",
         "action": "east",
         "seen_in_forward": true,
@@ -63,6 +70,55 @@
         "step_min_cutoff": 61
     },
     {
+        "prev_node": "Monastery Gardens",
+        "node": "Cloister Walkway",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 12
+    },
+    {
+        "prev_node": "Monastery Gardens",
+        "node": "Hallway (west end)",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 24
+    },
+    {
+        "prev_node": "Cloister Walkway",
+        "node": "Main Hall",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 13
+    },
+    {
+        "prev_node": "Cloister Walkway",
+        "node": "Monastery Gardens",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 23
+    },
+    {
+        "prev_node": "Main Hall",
+        "node": "Monastery Chapel(Exit on the south side)",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 14
+    },
+    {
+        "prev_node": "Main Hall",
+        "node": "Cloister Walkway",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 22
+    },
+    {
+        "prev_node": "Monastery Chapel(Exit on the south side)",
+        "node": "Main Hall",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 21
+    },
+    {
         "prev_node": "Hallway (near quarters of Palemon and TuffBerry)",
         "node": "Hallway (east end)",
         "action": "east",
@@ -91,48 +147,6 @@
         "step_min_cutoff": 48
     },
     {
-        "prev_node": "Monastery Gardens",
-        "node": "Cloister Walkway",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 12
-    },
-    {
-        "prev_node": "Monastery Gardens",
-        "node": "Hallway (west end)",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 24
-    },
-    {
-        "prev_node": "Hallway (second floor, west)",
-        "node": "Hallway (second floor, east)",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 51
-    },
-    {
-        "prev_node": "Hallway (second floor, west)",
-        "node": "Hallway (west end)",
-        "action": "down",
-        "seen_in_forward": true,
-        "step_min_cutoff": 60
-    },
-    {
-        "prev_node": "Hallway (basement)",
-        "node": "Refectory",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 62
-    },
-    {
-        "prev_node": "Hallway (basement)",
-        "node": "Hallway (west end)",
-        "action": "up",
-        "seen_in_forward": false,
-        "step_min_cutoff": 61
-    },
-    {
         "prev_node": "Hallway (east end)",
         "node": "Brother Toolbox's Quarters",
         "action": "south",
@@ -145,6 +159,13 @@
         "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 34
+    },
+    {
+        "prev_node": "Brother Toolbox's Quarters",
+        "node": "Hallway (east end)",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 33
     },
     {
         "prev_node": "Brother TuffBerry's Quarters",
@@ -168,18 +189,25 @@
         "step_min_cutoff": 47
     },
     {
-        "prev_node": "Cloister Walkway",
-        "node": "Main Hall",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 13
-    },
-    {
-        "prev_node": "Cloister Walkway",
-        "node": "Monastery Gardens",
+        "prev_node": "Hidden Sanctum",
+        "node": "Brother Palemon's Quarters",
         "action": "east",
         "seen_in_forward": true,
-        "step_min_cutoff": 23
+        "step_min_cutoff": 46
+    },
+    {
+        "prev_node": "Hallway (second floor, west)",
+        "node": "Hallway (second floor, east)",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 51
+    },
+    {
+        "prev_node": "Hallway (second floor, west)",
+        "node": "Hallway (west end)",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 60
     },
     {
         "prev_node": "Hallway (second floor, east)",
@@ -203,6 +231,34 @@
         "step_min_cutoff": 59
     },
     {
+        "prev_node": "Steeple Room",
+        "node": "Hallway (second floor, east)",
+        "action": "southwest",
+        "seen_in_forward": true,
+        "step_min_cutoff": 54
+    },
+    {
+        "prev_node": "Monastery Library",
+        "node": "Hallway (second floor, east)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 58
+    },
+    {
+        "prev_node": "Hallway (basement)",
+        "node": "Refectory",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 62
+    },
+    {
+        "prev_node": "Hallway (basement)",
+        "node": "Hallway (west end)",
+        "action": "up",
+        "seen_in_forward": false,
+        "step_min_cutoff": 61
+    },
+    {
         "prev_node": "Refectory",
         "node": "Monastery Kitchen",
         "action": "north",
@@ -222,55 +278,6 @@
         "action": "west",
         "seen_in_forward": false,
         "step_min_cutoff": 62
-    },
-    {
-        "prev_node": "Main Hall",
-        "node": "Monastery Chapel(Exit on the south side)",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 14
-    },
-    {
-        "prev_node": "Main Hall",
-        "node": "Cloister Walkway",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 22
-    },
-    {
-        "prev_node": "Monastery Chapel(Exit on the south side)",
-        "node": "Main Hall",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 21
-    },
-    {
-        "prev_node": "Brother Toolbox's Quarters",
-        "node": "Hallway (east end)",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 33
-    },
-    {
-        "prev_node": "Hidden Sanctum",
-        "node": "Brother Palemon's Quarters",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 46
-    },
-    {
-        "prev_node": "Steeple Room",
-        "node": "Hallway (second floor, east)",
-        "action": "southwest",
-        "seen_in_forward": true,
-        "step_min_cutoff": 54
-    },
-    {
-        "prev_node": "Monastery Library",
-        "node": "Hallway (second floor, east)",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 58
     },
     {
         "prev_node": "Monastery Kitchen",

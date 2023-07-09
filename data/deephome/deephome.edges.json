@@ -49,20 +49,6 @@
         "step_min_cutoff": 39
     },
     {
-        "prev_node": "Railway Station (Main Hall)",
-        "node": "railcar",
-        "action": "enter car",
-        "seen_in_forward": true,
-        "step_min_cutoff": 41
-    },
-    {
-        "prev_node": "Railway Station (Main Hall)",
-        "node": "Main Hall",
-        "action": "east",
-        "seen_in_forward": false,
-        "step_min_cutoff": 40
-    },
-    {
         "prev_node": "S. Main Street",
         "node": "Intersection",
         "action": "south",
@@ -75,20 +61,6 @@
         "action": "north",
         "seen_in_forward": true,
         "step_min_cutoff": 38
-    },
-    {
-        "prev_node": "railcar",
-        "node": "Railway Station (Smithy Court)",
-        "action": "out",
-        "seen_in_forward": true,
-        "step_min_cutoff": 43
-    },
-    {
-        "prev_node": "railcar",
-        "node": "Railway Station (Soldiers' Barracks)",
-        "action": "out",
-        "seen_in_forward": true,
-        "step_min_cutoff": 61
     },
     {
         "prev_node": "Intersection",
@@ -147,13 +119,6 @@
         "step_min_cutoff": 28
     },
     {
-        "prev_node": "City Generator",
-        "node": "Extreme South Main Street",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 35
-    },
-    {
         "prev_node": "Ore Mines",
         "node": "Mining Center",
         "action": "north",
@@ -168,6 +133,41 @@
         "step_min_cutoff": 27
     },
     {
+        "prev_node": "City Generator",
+        "node": "Extreme South Main Street",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 35
+    },
+    {
+        "prev_node": "Railway Station (Main Hall)",
+        "node": "railcar",
+        "action": "enter car",
+        "seen_in_forward": true,
+        "step_min_cutoff": 41
+    },
+    {
+        "prev_node": "Railway Station (Main Hall)",
+        "node": "Main Hall",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 40
+    },
+    {
+        "prev_node": "railcar",
+        "node": "Railway Station (Smithy Court)",
+        "action": "out",
+        "seen_in_forward": true,
+        "step_min_cutoff": 43
+    },
+    {
+        "prev_node": "railcar",
+        "node": "Railway Station (Soldiers' Barracks)",
+        "action": "out",
+        "seen_in_forward": true,
+        "step_min_cutoff": 61
+    },
+    {
         "prev_node": "Railway Station (Smithy Court)",
         "node": "Smithy Court",
         "action": "northwest",
@@ -180,13 +180,6 @@
         "action": "enter car",
         "seen_in_forward": true,
         "step_min_cutoff": 59
-    },
-    {
-        "prev_node": "Railway Station (Soldiers' Barracks)",
-        "node": "Soldiers' Barracks",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 62
     },
     {
         "prev_node": "Smithy Court",
@@ -238,34 +231,6 @@
         "step_min_cutoff": 58
     },
     {
-        "prev_node": "Soldiers' Barracks",
-        "node": "Training Grounds",
-        "action": "southwest",
-        "seen_in_forward": true,
-        "step_min_cutoff": 63
-    },
-    {
-        "prev_node": "Soldiers' Barracks",
-        "node": "Armory",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 68
-    },
-    {
-        "prev_node": "Soldiers' Barracks",
-        "node": "Mess Hall",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 70
-    },
-    {
-        "prev_node": "Soldiers' Barracks",
-        "node": "Railway Station (Soldiers' Barracks)",
-        "action": "east",
-        "seen_in_forward": false,
-        "step_min_cutoff": 62
-    },
-    {
         "prev_node": "Blacksmith",
         "node": "Smithy Court",
         "action": "northeast",
@@ -308,6 +273,41 @@
         "step_min_cutoff": 57
     },
     {
+        "prev_node": "Railway Station (Soldiers' Barracks)",
+        "node": "Soldiers' Barracks",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 62
+    },
+    {
+        "prev_node": "Soldiers' Barracks",
+        "node": "Training Grounds",
+        "action": "southwest",
+        "seen_in_forward": true,
+        "step_min_cutoff": 63
+    },
+    {
+        "prev_node": "Soldiers' Barracks",
+        "node": "Armory",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 68
+    },
+    {
+        "prev_node": "Soldiers' Barracks",
+        "node": "Mess Hall",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
+    },
+    {
+        "prev_node": "Soldiers' Barracks",
+        "node": "Railway Station (Soldiers' Barracks)",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 62
+    },
+    {
         "prev_node": "Training Grounds",
         "node": "Waterfall",
         "action": "southwest",
@@ -322,6 +322,13 @@
         "step_min_cutoff": 67
     },
     {
+        "prev_node": "Waterfall",
+        "node": "Training Grounds",
+        "action": "northeast",
+        "seen_in_forward": true,
+        "step_min_cutoff": 66
+    },
+    {
         "prev_node": "Armory",
         "node": "Soldiers' Barracks",
         "action": "east",
@@ -334,12 +341,5 @@
         "action": "north",
         "seen_in_forward": false,
         "step_min_cutoff": 70
-    },
-    {
-        "prev_node": "Waterfall",
-        "node": "Training Grounds",
-        "action": "northeast",
-        "seen_in_forward": true,
-        "step_min_cutoff": 66
     }
 ]

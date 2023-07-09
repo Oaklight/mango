@@ -63,32 +63,25 @@
         "step_min_cutoff": 18
     },
     {
-        "prev_node": "Hall of Stone",
-        "node": "Ruins Room",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 29
-    },
-    {
-        "prev_node": "Cliff Middle",
-        "node": "Cliff Top",
-        "action": "up",
-        "seen_in_forward": true,
-        "step_min_cutoff": 42
-    },
-    {
-        "prev_node": "Cave Entrance",
-        "node": "Cave",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 70
-    },
-    {
         "prev_node": "taken by roc",
         "node": "In Roc Nest",
         "action": "wait",
         "seen_in_forward": true,
         "step_min_cutoff": 22
+    },
+    {
+        "prev_node": "In Roc Nest",
+        "node": "Packed Earth",
+        "action": "blorple 1",
+        "seen_in_forward": true,
+        "step_min_cutoff": 27
+    },
+    {
+        "prev_node": "Hall of Stone",
+        "node": "Ruins Room",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 29
     },
     {
         "prev_node": "Ruins Room",
@@ -105,6 +98,13 @@
         "step_min_cutoff": 29
     },
     {
+        "prev_node": "Cliff Middle",
+        "node": "Cliff Top",
+        "action": "up",
+        "seen_in_forward": true,
+        "step_min_cutoff": 42
+    },
+    {
         "prev_node": "Cliff Top",
         "node": "Boulder(Large boulder above you and cliff below you)",
         "action": "up",
@@ -117,20 +117,6 @@
         "action": "down",
         "seen_in_forward": false,
         "step_min_cutoff": 42
-    },
-    {
-        "prev_node": "Cave",
-        "node": "Cave Entrance",
-        "action": "south",
-        "seen_in_forward": false,
-        "step_min_cutoff": 70
-    },
-    {
-        "prev_node": "In Roc Nest",
-        "node": "Packed Earth",
-        "action": "blorple 1",
-        "seen_in_forward": true,
-        "step_min_cutoff": 27
     },
     {
         "prev_node": "Boulder(Large boulder above you and cliff below you)",
@@ -215,5 +201,19 @@
         "action": "blorple 1",
         "seen_in_forward": true,
         "step_min_cutoff": 68
+    },
+    {
+        "prev_node": "Cave Entrance",
+        "node": "Cave",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
+    },
+    {
+        "prev_node": "Cave",
+        "node": "Cave Entrance",
+        "action": "south",
+        "seen_in_forward": false,
+        "step_min_cutoff": 70
     }
 ]
