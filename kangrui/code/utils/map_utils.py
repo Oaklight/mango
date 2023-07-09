@@ -28,7 +28,7 @@ def get_game_info(map_dir,game_name):
         walkthrough = file.read()
 
 
-    G = nx.DiGraph()
+    G = nx.MultiDiGraph()
     for edge in edges:
         G.add_edge(edge['prev_node'], edge['node'], action=edge['action'], step_min_cutoff=edge["step_min_cutoff"], seen_in_forward=edge["seen_in_forward"])
 
@@ -50,14 +50,16 @@ def get_game_info_with_G_eval(map_dir,game_name):
     G,actions,locations,all2all,all_pairs,walkthrough=get_game_info(map_dir,game_name)
     G_eval = nx.MultiDiGraph()
     for (u, v, data) in G.edges(data=True):
-        # If the 'action' attribute of the edge is in reverse_direction_dict
-        if data.get('action') in reverse_dict:
-            # Add an edge in the reverse direction in G_reverse
-            if G.has_edge(v, u) and G.edges[v, u]['action'] == reverse_dict[data['action']]:
-                continue
-            G_eval.add_edge(v, u, action=reverse_dict[data['action']])
-    for (u, v, data) in G.edges(data=True):
         G_eval.add_edge(u, v, **data)
+    for (u, v, data) in G.edges(data=True):
+        # If the 'action' attribute of the edge is in reverse_direction_dict
+        action_=data.get('action')
+        if action_ in reverse_dict.keys():
+            # Add an edge in the reverse direction in G_reverse
+            reverse_action=reverse_dict[action_]
+            if G_eval.has_edge(v, u) and reverse_action in set(value['action'] for value in G_eval[v][u].values()):
+                continue
+            G_eval.add_edge(v, u, action=reverse_action)
     return G_eval,G,actions,locations,all2all,all_pairs,walkthrough
     
 
