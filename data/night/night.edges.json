@@ -7,11 +7,25 @@
         "step_min_cutoff": 1
     },
     {
+        "prev_node": "Computer Site",
+        "node": "Hall Outside Computer Site",
+        "action": "northeast",
+        "seen_in_forward": true,
+        "step_min_cutoff": 1
+    },
+    {
         "prev_node": "Hall Outside Computer Site",
         "node": "Hall (3rd floor, middle of north/south hall)",
         "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 2
+    },
+    {
+        "prev_node": "Hall Outside Computer Site",
+        "node": "Stairwell (Third Floor)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 9
     },
     {
         "prev_node": "Hall Outside Computer Site",
@@ -42,6 +56,20 @@
         "step_min_cutoff": 8
     },
     {
+        "prev_node": "Hall Outside Elevator (3rd floor)",
+        "node": "Hall (3rd floor, middle of north/south hall)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 7
+    },
+    {
+        "prev_node": "Stairwell (Third Floor)",
+        "node": "Stairwell (Second Floor)",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 10
+    },
+    {
         "prev_node": "Stairwell (Third Floor)",
         "node": "Stairwell (Second Floor)",
         "action": "down",
@@ -56,18 +84,18 @@
         "step_min_cutoff": 52
     },
     {
-        "prev_node": "Hall Outside Elevator (3rd floor)",
-        "node": "Hall (3rd floor, middle of north/south hall)",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 7
-    },
-    {
         "prev_node": "Stairwell (Second Floor)",
         "node": "Stairwell (First Floor)",
         "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 11
+    },
+    {
+        "prev_node": "Stairwell (Second Floor)",
+        "node": "Outside Physics Office",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 23
     },
     {
         "prev_node": "Stairwell (Second Floor)",
@@ -98,20 +126,6 @@
         "step_min_cutoff": 22
     },
     {
-        "prev_node": "Outside Physics Office",
-        "node": "Hall (2nd floor, middle of north/south hall)",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 24
-    },
-    {
-        "prev_node": "Outside Physics Office",
-        "node": "Stairwell (Second Floor)",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 50
-    },
-    {
         "prev_node": "Hall (1st floor, north end of north/south hall)",
         "node": "Hall (1st floor, middle of north/south hall)",
         "action": "south",
@@ -124,20 +138,6 @@
         "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 21
-    },
-    {
-        "prev_node": "Hall (2nd floor, middle of north/south hall)",
-        "node": "Maze of Twisty Passages (stop 1)",
-        "action": "go panel",
-        "seen_in_forward": true,
-        "step_min_cutoff": 29
-    },
-    {
-        "prev_node": "Hall (2nd floor, middle of north/south hall)",
-        "node": "Outside Physics Office",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 49
     },
     {
         "prev_node": "Hall (1st floor, middle of north/south hall)",
@@ -175,11 +175,60 @@
         "step_min_cutoff": 18
     },
     {
+        "prev_node": "Outside Physics Office",
+        "node": "Hall (2nd floor, middle of north/south hall)",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 24
+    },
+    {
+        "prev_node": "Outside Physics Office",
+        "node": "Hall (2nd floor, middle of north/south hall)",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 24
+    },
+    {
+        "prev_node": "Outside Physics Office",
+        "node": "Stairwell (Second Floor)",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 50
+    },
+    {
+        "prev_node": "Hall (2nd floor, middle of north/south hall)",
+        "node": "Maze of Twisty Passages (stop 1)",
+        "action": "go panel",
+        "seen_in_forward": true,
+        "step_min_cutoff": 29
+    },
+    {
+        "prev_node": "Hall (2nd floor, middle of north/south hall)",
+        "node": "Maze of Twisty Passages (stop 1)",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 64
+    },
+    {
+        "prev_node": "Hall (2nd floor, middle of north/south hall)",
+        "node": "Outside Physics Office",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 49
+    },
+    {
         "prev_node": "Maze of Twisty Passages (stop 1)",
         "node": "Maze of Twisty Passages (stop 2)",
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 30
+    },
+    {
+        "prev_node": "Maze of Twisty Passages (stop 1)",
+        "node": "Maze of Twisty Passages (stop 2)",
+        "action": "follow mouse",
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
     },
     {
         "prev_node": "Maze of Twisty Passages (stop 1)",
@@ -250,6 +299,13 @@
         "action": "follow mouse",
         "seen_in_forward": true,
         "step_min_cutoff": 37
+    },
+    {
+        "prev_node": "Maze of Twisty Passages (stop 6)",
+        "node": "Gnome's Lair",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 42
     },
     {
         "prev_node": "Maze of Twisty Passages (stop 6)",

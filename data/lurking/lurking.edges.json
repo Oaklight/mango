@@ -8,6 +8,13 @@
     },
     {
         "prev_node": "Terminal Room",
+        "node": "Second Floor",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 2
+    },
+    {
+        "prev_node": "Terminal Room",
         "node": "Place",
         "action": "again",
         "seen_in_forward": true,
@@ -42,6 +49,13 @@
         "step_min_cutoff": 52
     },
     {
+        "prev_node": "Kitchen",
+        "node": "Second Floor",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 21
+    },
+    {
         "prev_node": "Place",
         "node": "Basalt Bowl",
         "action": "down",
@@ -49,11 +63,25 @@
         "step_min_cutoff": 34
     },
     {
-        "prev_node": "Kitchen",
-        "node": "Second Floor",
-        "action": "east",
+        "prev_node": "Basalt Bowl",
+        "node": "At Platform",
+        "action": "wait",
         "seen_in_forward": true,
-        "step_min_cutoff": 21
+        "step_min_cutoff": 35
+    },
+    {
+        "prev_node": "Basalt Bowl",
+        "node": "Place",
+        "action": "up",
+        "seen_in_forward": false,
+        "step_min_cutoff": 34
+    },
+    {
+        "prev_node": "At Platform",
+        "node": "Terminal Room",
+        "action": "wait",
+        "seen_in_forward": true,
+        "step_min_cutoff": 38
     },
     {
         "prev_node": "Elevator",
@@ -77,20 +105,6 @@
         "step_min_cutoff": 52
     },
     {
-        "prev_node": "Basalt Bowl",
-        "node": "At Platform",
-        "action": "wait",
-        "seen_in_forward": true,
-        "step_min_cutoff": 35
-    },
-    {
-        "prev_node": "Basalt Bowl",
-        "node": "Place",
-        "action": "up",
-        "seen_in_forward": false,
-        "step_min_cutoff": 34
-    },
-    {
         "prev_node": "Basement",
         "node": "Temporary Basement",
         "action": "east",
@@ -112,13 +126,6 @@
         "step_min_cutoff": 53
     },
     {
-        "prev_node": "At Platform",
-        "node": "Terminal Room",
-        "action": "wait",
-        "seen_in_forward": true,
-        "step_min_cutoff": 38
-    },
-    {
         "prev_node": "Temporary Basement",
         "node": "Temporary Lab",
         "action": "up",
@@ -133,6 +140,13 @@
         "step_min_cutoff": 62
     },
     {
+        "prev_node": "Temporary Lab",
+        "node": "Temporary Basement",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 60
+    },
+    {
         "prev_node": "Aero Basement",
         "node": "Stairway",
         "action": "west",
@@ -145,13 +159,6 @@
         "action": "east",
         "seen_in_forward": false,
         "step_min_cutoff": 63
-    },
-    {
-        "prev_node": "Temporary Lab",
-        "node": "Temporary Basement",
-        "action": "down",
-        "seen_in_forward": true,
-        "step_min_cutoff": 60
     },
     {
         "prev_node": "Stairway",

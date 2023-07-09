@@ -15,6 +15,13 @@
     },
     {
         "prev_node": "Cool Cavern",
+        "node": "Mineralized Corridor",
+        "action": "northwest",
+        "seen_in_forward": true,
+        "step_min_cutoff": 4
+    },
+    {
+        "prev_node": "Cool Cavern",
         "node": "East-West Passage",
         "action": "west",
         "seen_in_forward": true,
@@ -49,20 +56,6 @@
         "step_min_cutoff": 40
     },
     {
-        "prev_node": "East-West Passage",
-        "node": "Carved Steps",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 18
-    },
-    {
-        "prev_node": "East-West Passage",
-        "node": "Cool Cavern",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 38
-    },
-    {
         "prev_node": "Tight Fit",
         "node": "Fifth Layer Dropoff",
         "action": "up",
@@ -77,18 +70,25 @@
         "step_min_cutoff": 15
     },
     {
-        "prev_node": "Narrow Passage",
-        "node": "Gaseous Geyser",
-        "action": "west",
+        "prev_node": "Fifth Layer Dropoff",
+        "node": "Tight Fit",
+        "action": "down",
         "seen_in_forward": true,
-        "step_min_cutoff": 41
+        "step_min_cutoff": 14
     },
     {
-        "prev_node": "Narrow Passage",
-        "node": "Mineralized Corridor",
+        "prev_node": "East-West Passage",
+        "node": "Carved Steps",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 18
+    },
+    {
+        "prev_node": "East-West Passage",
+        "node": "Cool Cavern",
         "action": "east",
-        "seen_in_forward": false,
-        "step_min_cutoff": 40
+        "seen_in_forward": true,
+        "step_min_cutoff": 38
     },
     {
         "prev_node": "Carved Steps",
@@ -112,11 +112,46 @@
         "step_min_cutoff": 37
     },
     {
-        "prev_node": "Fifth Layer Dropoff",
-        "node": "Tight Fit",
+        "prev_node": "Moss-Filled Cave",
+        "node": "Cleaning Closet",
         "action": "down",
         "seen_in_forward": true,
-        "step_min_cutoff": 14
+        "step_min_cutoff": 26
+    },
+    {
+        "prev_node": "Moss-Filled Cave",
+        "node": "Carved Steps",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 29
+    },
+    {
+        "prev_node": "Cleaning Closet",
+        "node": "Moss-Filled Cave",
+        "action": "up",
+        "seen_in_forward": true,
+        "step_min_cutoff": 28
+    },
+    {
+        "prev_node": "Lonely Burial Ground",
+        "node": "Carved Steps",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 36
+    },
+    {
+        "prev_node": "Narrow Passage",
+        "node": "Gaseous Geyser",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 41
+    },
+    {
+        "prev_node": "Narrow Passage",
+        "node": "Mineralized Corridor",
+        "action": "east",
+        "seen_in_forward": false,
+        "step_min_cutoff": 40
     },
     {
         "prev_node": "Gaseous Geyser",
@@ -140,34 +175,6 @@
         "step_min_cutoff": 41
     },
     {
-        "prev_node": "Moss-Filled Cave",
-        "node": "Cleaning Closet",
-        "action": "down",
-        "seen_in_forward": true,
-        "step_min_cutoff": 26
-    },
-    {
-        "prev_node": "Moss-Filled Cave",
-        "node": "Carved Steps",
-        "action": "south",
-        "seen_in_forward": true,
-        "step_min_cutoff": 29
-    },
-    {
-        "prev_node": "Lonely Burial Ground",
-        "node": "Carved Steps",
-        "action": "north",
-        "seen_in_forward": true,
-        "step_min_cutoff": 36
-    },
-    {
-        "prev_node": "Cleaning Closet",
-        "node": "Moss-Filled Cave",
-        "action": "up",
-        "seen_in_forward": true,
-        "step_min_cutoff": 28
-    },
-    {
         "prev_node": "Shaft Base",
         "node": "Middle Shaft",
         "action": "up",
@@ -180,13 +187,6 @@
         "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 57
-    },
-    {
-        "prev_node": "Quarry",
-        "node": "Gaseous Geyser",
-        "action": "east",
-        "seen_in_forward": true,
-        "step_min_cutoff": 70
     },
     {
         "prev_node": "Middle Shaft",
@@ -222,5 +222,12 @@
         "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 54
+    },
+    {
+        "prev_node": "Quarry",
+        "node": "Gaseous Geyser",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
     }
 ]

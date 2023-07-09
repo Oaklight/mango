@@ -21,11 +21,25 @@
         "step_min_cutoff": 7
     },
     {
+        "prev_node": "North of House",
+        "node": "Behind House",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 7
+    },
+    {
         "prev_node": "Forest Path",
         "node": "Up a Tree",
         "action": "up",
         "seen_in_forward": true,
         "step_min_cutoff": 3
+    },
+    {
+        "prev_node": "Forest Path",
+        "node": "North of House",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 6
     },
     {
         "prev_node": "Forest Path",
@@ -42,13 +56,6 @@
         "step_min_cutoff": 52
     },
     {
-        "prev_node": "Behind House",
-        "node": "Kitchen",
-        "action": "west",
-        "seen_in_forward": true,
-        "step_min_cutoff": 9
-    },
-    {
         "prev_node": "Up a Tree",
         "node": "Forest Path",
         "action": "down",
@@ -56,11 +63,32 @@
         "step_min_cutoff": 5
     },
     {
-        "prev_node": "Forest",
-        "node": "Forest Path",
-        "action": "east",
+        "prev_node": "Behind House",
+        "node": "Kitchen",
+        "action": "west",
         "seen_in_forward": true,
-        "step_min_cutoff": 52
+        "step_min_cutoff": 9
+    },
+    {
+        "prev_node": "Behind House",
+        "node": "Kitchen",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 9
+    },
+    {
+        "prev_node": "Kitchen",
+        "node": "Living Room",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 12
+    },
+    {
+        "prev_node": "Kitchen",
+        "node": "Living Room",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 12
     },
     {
         "prev_node": "Kitchen",
@@ -98,11 +126,25 @@
         "step_min_cutoff": 25
     },
     {
+        "prev_node": "Living Room",
+        "node": "Cellar",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 25
+    },
+    {
         "prev_node": "Attic",
         "node": "Kitchen",
         "action": "down",
         "seen_in_forward": true,
         "step_min_cutoff": 19
+    },
+    {
+        "prev_node": "Cellar",
+        "node": "The Troll Room",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 27
     },
     {
         "prev_node": "Cellar",
@@ -127,10 +169,24 @@
     },
     {
         "prev_node": "The Troll Room",
+        "node": "East-West Passage",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 30
+    },
+    {
+        "prev_node": "The Troll Room",
         "node": "Cellar",
         "action": "south",
         "seen_in_forward": false,
         "step_min_cutoff": 27
+    },
+    {
+        "prev_node": "East-West Passage",
+        "node": "Round Room",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 31
     },
     {
         "prev_node": "East-West Passage",
@@ -155,10 +211,24 @@
     },
     {
         "prev_node": "Round Room",
+        "node": "Engravings Cave",
+        "action": "southeast",
+        "seen_in_forward": true,
+        "step_min_cutoff": 32
+    },
+    {
+        "prev_node": "Round Room",
         "node": "East-West Passage",
         "action": "west",
         "seen_in_forward": false,
         "step_min_cutoff": 31
+    },
+    {
+        "prev_node": "Engravings Cave",
+        "node": "Dome Room",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 33
     },
     {
         "prev_node": "Engravings Cave",
@@ -183,10 +253,24 @@
     },
     {
         "prev_node": "Dome Room",
+        "node": "Torch Room",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 35
+    },
+    {
+        "prev_node": "Dome Room",
         "node": "Engravings Cave",
         "action": "west",
         "seen_in_forward": false,
         "step_min_cutoff": 33
+    },
+    {
+        "prev_node": "Torch Room",
+        "node": "Temple",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 38
     },
     {
         "prev_node": "Torch Room",
@@ -204,10 +288,24 @@
     },
     {
         "prev_node": "Temple",
+        "node": "Altar",
+        "action": "south",
+        "seen_in_forward": true,
+        "step_min_cutoff": 39
+    },
+    {
+        "prev_node": "Temple",
         "node": "Egyptian Room",
         "action": "east",
         "seen_in_forward": true,
         "step_min_cutoff": 46
+    },
+    {
+        "prev_node": "Temple",
+        "node": "Egyptian Room",
+        "action": "down",
+        "seen_in_forward": true,
+        "step_min_cutoff": 70
     },
     {
         "prev_node": "Altar",
@@ -229,5 +327,12 @@
         "action": "west",
         "seen_in_forward": true,
         "step_min_cutoff": 49
+    },
+    {
+        "prev_node": "Forest",
+        "node": "Forest Path",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 52
     }
 ]
