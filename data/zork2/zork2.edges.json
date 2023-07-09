@@ -51,6 +51,13 @@
     {
         "prev_node": "North End of Garden",
         "node": "Gazebo",
+        "action": "enter gazebo",
+        "seen_in_forward": true,
+        "step_min_cutoff": 8
+    },
+    {
+        "prev_node": "North End of Garden",
+        "node": "Gazebo",
         "action": "in",
         "seen_in_forward": true,
         "step_min_cutoff": 64
@@ -60,7 +67,21 @@
         "node": "Formal Garden",
         "action": "south",
         "seen_in_forward": true,
+        "step_min_cutoff": 11
+    },
+    {
+        "prev_node": "North End of Garden",
+        "node": "Formal Garden",
+        "action": "south",
+        "seen_in_forward": true,
         "step_min_cutoff": 68
+    },
+    {
+        "prev_node": "Gazebo",
+        "node": "North End of Garden",
+        "action": "out",
+        "seen_in_forward": true,
+        "step_min_cutoff": 10
     },
     {
         "prev_node": "Gazebo",
@@ -116,6 +137,20 @@
         "node": "Topiary",
         "action": "north",
         "seen_in_forward": true,
+        "step_min_cutoff": 14
+    },
+    {
+        "prev_node": "Carousel Room",
+        "node": "Topiary",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 16
+    },
+    {
+        "prev_node": "Carousel Room",
+        "node": "Topiary",
+        "action": "north",
+        "seen_in_forward": true,
         "step_min_cutoff": 18
     },
     {
@@ -124,6 +159,27 @@
         "action": "north",
         "seen_in_forward": true,
         "step_min_cutoff": 20
+    },
+    {
+        "prev_node": "Topiary",
+        "node": "Carousel Room",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 15
+    },
+    {
+        "prev_node": "Topiary",
+        "node": "Carousel Room",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 17
+    },
+    {
+        "prev_node": "Topiary",
+        "node": "Carousel Room",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 19
     },
     {
         "prev_node": "Topiary",

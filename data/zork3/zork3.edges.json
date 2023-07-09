@@ -11,6 +11,13 @@
         "node": "Barren Area",
         "action": "west",
         "seen_in_forward": true,
+        "step_min_cutoff": 4
+    },
+    {
+        "prev_node": "Junction",
+        "node": "Barren Area",
+        "action": "west",
+        "seen_in_forward": true,
         "step_min_cutoff": 58
     },
     {
@@ -39,6 +46,13 @@
         "node": "Cliff",
         "action": "west",
         "seen_in_forward": true,
+        "step_min_cutoff": 5
+    },
+    {
+        "prev_node": "Barren Area",
+        "node": "Cliff",
+        "action": "west",
+        "seen_in_forward": true,
         "step_min_cutoff": 59
     },
     {
@@ -60,6 +74,13 @@
         "node": "Cliff Ledge",
         "action": "down",
         "seen_in_forward": true,
+        "step_min_cutoff": 60
+    },
+    {
+        "prev_node": "Cliff",
+        "node": "Cliff Ledge",
+        "action": "down",
+        "seen_in_forward": true,
         "step_min_cutoff": 70
     },
     {
@@ -67,7 +88,21 @@
         "node": "Engravings Room",
         "action": "northeast",
         "seen_in_forward": true,
+        "step_min_cutoff": 10
+    },
+    {
+        "prev_node": "Damp Passage",
+        "node": "Engravings Room",
+        "action": "northeast",
+        "seen_in_forward": true,
         "step_min_cutoff": 13
+    },
+    {
+        "prev_node": "Damp Passage",
+        "node": "Junction",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 17
     },
     {
         "prev_node": "Damp Passage",
@@ -158,6 +193,13 @@
         "node": "Underwater",
         "action": "down",
         "seen_in_forward": true,
+        "step_min_cutoff": 24
+    },
+    {
+        "prev_node": "On the Lake",
+        "node": "Underwater",
+        "action": "down",
+        "seen_in_forward": true,
         "step_min_cutoff": 42
     },
     {
@@ -173,6 +215,13 @@
         "action": "south",
         "seen_in_forward": true,
         "step_min_cutoff": 45
+    },
+    {
+        "prev_node": "Underwater",
+        "node": "On the Lake",
+        "action": "get amulet",
+        "seen_in_forward": true,
+        "step_min_cutoff": 26
     },
     {
         "prev_node": "Underwater",

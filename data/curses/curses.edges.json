@@ -4,6 +4,13 @@
         "node": "Old Furniture",
         "action": "south",
         "seen_in_forward": true,
+        "step_min_cutoff": 2
+    },
+    {
+        "prev_node": "Attic",
+        "node": "Old Furniture",
+        "action": "south",
+        "seen_in_forward": true,
         "step_min_cutoff": 30
     },
     {
@@ -11,7 +18,21 @@
         "node": "Old Winery",
         "action": "north",
         "seen_in_forward": true,
+        "step_min_cutoff": 6
+    },
+    {
+        "prev_node": "Attic",
+        "node": "Old Winery",
+        "action": "north",
+        "seen_in_forward": true,
         "step_min_cutoff": 65
+    },
+    {
+        "prev_node": "Old Furniture",
+        "node": "Attic",
+        "action": "north",
+        "seen_in_forward": true,
+        "step_min_cutoff": 5
     },
     {
         "prev_node": "Old Furniture",
@@ -26,6 +47,13 @@
         "action": "southeast",
         "seen_in_forward": true,
         "step_min_cutoff": 31
+    },
+    {
+        "prev_node": "Old Winery",
+        "node": "Aunt Jemima's Lair",
+        "action": "west",
+        "seen_in_forward": true,
+        "step_min_cutoff": 7
     },
     {
         "prev_node": "Old Winery",
@@ -60,6 +88,13 @@
         "node": "Potting Room",
         "action": "west",
         "seen_in_forward": true,
+        "step_min_cutoff": 12
+    },
+    {
+        "prev_node": "Aunt Jemima's Lair",
+        "node": "Potting Room",
+        "action": "west",
+        "seen_in_forward": true,
         "step_min_cutoff": 69
     },
     {
@@ -75,6 +110,13 @@
         "action": "push wireless north",
         "seen_in_forward": true,
         "step_min_cutoff": 11
+    },
+    {
+        "prev_node": "Potting Room",
+        "node": "Aunt Jemima's Lair",
+        "action": "east",
+        "seen_in_forward": true,
+        "step_min_cutoff": 24
     },
     {
         "prev_node": "Potting Room",
