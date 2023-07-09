@@ -248,25 +248,32 @@ def gen_move_reversed(args):
             if item["act"] != None and item["step_num"] in human_forward_nodes:
                 # human forward map: src_node --> direction --> dst_node
                 # reversed map: dst_node --> opposite_direction --> src_node
+                # as long as the conflict is deem resolved, the entries from human and machine should have the same set of nodes, whenever the step_num is the same
+                if not (
+                    item["location_before"].strip().lower()
+                    == human_forward_nodes[item["step_num"]][1]
+                    and item["location_after"].strip().lower()
+                    == human_forward_nodes[item["step_num"]][0]
+                ):
+                    print(
+                        f"step_num: {item['step_num']} is not good",
+                        f"human forward nodes: {human_forward_nodes[item['step_num']]}",
+                        f"machine reversed nodes: {(item['location_before'], item['location_after'])}",
+                        sep="\n",
+                    )
+                    continue
+                # assert (
+                #     item["location_before"].strip().lower()
+                #     == human_forward_nodes[item["step_num"]][1]
+                #     and item["location_after"].strip().lower()
+                #     == human_forward_nodes[item["step_num"]][0]
+                # ), f"step_num: {item['step_num']} is not good, human forward nodes: {human_forward_nodes[item['step_num']]}, machine reversed nodes: {(item['location_before'], item['location_after'])}\nALERT: [gen_move_merge.py might be ran already]"
                 print(
                     f"step_num: {item['step_num']} is good",
                     f"human forward nodes: {human_forward_nodes[item['step_num']]}",
                     f"machine reversed nodes: {(item['location_before'], item['location_after'])}",
                     sep="\n",
                 )
-                # as long as the conflict is deem resolved, the entries from human and machine should have the same set of nodes, whenever the step_num is the same
-                # if (
-                #     item["location_before"].strip().lower()
-                #     == human_forward_nodes[item["step_num"]][1]
-                #     and item["location_after"].strip().lower()
-                #     == human_forward_nodes[item["step_num"]][0]
-                # ):
-                assert (
-                    item["location_before"].strip().lower()
-                    == human_forward_nodes[item["step_num"]][1]
-                    and item["location_after"].strip().lower()
-                    == human_forward_nodes[item["step_num"]][0]
-                ), f"step_num: {item['step_num']} is not good, human forward nodes: {human_forward_nodes[item['step_num']]}, machine reversed nodes: {(item['location_before'], item['location_after'])}\nALERT: [gen_move_merge.py might be ran already]"
                 fout.write(
                     "{} (obj{}) --> {} --> {} (obj{}), step {}, desc: {}\n".format(
                         item["location_before"],
