@@ -28,7 +28,7 @@ def get_game_info(map_dir,game_name):
         walkthrough = file.read()
 
 
-    G = nx.DiGraph()
+    G = nx.MultiDiGraph()
     for edge in edges:
         G.add_edge(edge['prev_node'], edge['node'], action=edge['action'], step_min_cutoff=edge["step_min_cutoff"], seen_in_forward=edge["seen_in_forward"])
 
