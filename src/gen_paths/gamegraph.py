@@ -24,7 +24,6 @@ opposite_directions = {
 }
 
 
-
 def build_graph_from_file(
     path_file: str = "data/game.map",
     verbose: bool = True,
@@ -245,6 +244,8 @@ def get_all_paths(g: object, src: str, dst: str):
     """
     try:
         simple_paths = networkx.all_simple_paths(g, src, dst)
+        simple_paths = list(set([tuple(path) for path in simple_paths]))
+        simple_paths.sort(key=lambda x: len(x))
         expanded_simple_paths = []
 
         for path in simple_paths:
