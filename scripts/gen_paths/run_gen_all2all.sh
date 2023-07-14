@@ -2,17 +2,20 @@
 
 # gen_all2all.py [-h] --map MAP (--actions ACTIONS | --reverse_map REVERSE_MAP) [--output_dir OUTPUT_DIR]
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_all2all.sh -p <map_path> [-o <release_path>] [-g <game>]"
+    echo "Usage: ./run_gen_all2all.sh -p <map_path> [-o <release_path>] [-g <game>] [--no_confirm]"
     exit 1
 fi
 
 # parse the arguments
-while getopts p:o:g: flag
+while getopts p:o:g:-: flag
 do
     case "${flag}" in
         p) map_path=${OPTARG};;
         o) release_dir=${OPTARG};;
         g) tgt_game=${OPTARG};;
+        -) case "${OPTARG}" in
+               no_confirm) no_confirm=true;;
+           esac;;
     esac
 done
 
@@ -31,7 +34,12 @@ then
         map_reversed="$map_path/$game/$game.map.reversed"
         node_step_map="$map_path/$game/$game.node_step.json"
         output_dir="$map_path/$game"
-        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
+        if [ -z "$no_confirm" ]
+        then
+            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
+        else
+            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir --no_confirm
+        fi
     done
 else
     game=$tgt_game
@@ -39,7 +47,12 @@ else
     map_reversed="$map_path/$game/$game.map.reversed"
     node_step_map="$map_path/$game/$game.node_step.json"
     output_dir="$map_path/$game"
-    python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
+    if [ -z "$no_confirm" ]
+    then
+        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
+    else
+        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir --no_confirm
+    fi
 fi
 
 echo "Done generating all2all"
