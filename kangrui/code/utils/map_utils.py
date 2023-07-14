@@ -5,7 +5,6 @@ import json
 import matplotlib.pyplot as plt
 
 
-
 def get_game_info(map_dir,game_name):
     all2all_path=osp.join(map_dir,game_name,f'{game_name}.all2all.json')
     all_pairs_path=osp.join(map_dir,game_name,f'{game_name}.all_pairs.json')
@@ -86,6 +85,10 @@ def show_graph_info(G):
     print("Strongly connected components:", list(nx.strongly_connected_components(G)))
     
     print(len(list(nx.strongly_connected_components(G))))
+
+
+
+
     
     
     

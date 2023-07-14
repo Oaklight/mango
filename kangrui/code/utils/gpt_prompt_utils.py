@@ -42,10 +42,8 @@ def to_chat_json(role,text):
             "content": text
         }
     ]
-      
-def get_pretext(actions,locations,walkthrough,token_size_limit,model_name):
-    
-    def get_cut_off_and_walkthrough_text(walkthrough:str,token_size_limit:int,model_name:str):
+
+def get_cut_off_and_walkthrough_text(walkthrough:str,token_size_limit:int,model_name:str):
         encoder = tiktoken.encoding_for_model(model_name)
         enc = encoder.encode(walkthrough)
         if len(enc) > token_size_limit:
@@ -59,6 +57,9 @@ def get_pretext(actions,locations,walkthrough,token_size_limit,model_name):
         walkthrough_text = walkthrough.split('NUM: {}'.format(cut_off_number + 1))[0]
 
         return walkthrough_text,cut_off_number
+     
+def get_pretext(actions,locations,walkthrough,token_size_limit,model_name):
+    
 
     def get_action_text(actions:list)->str:
         action_text = f"The allowed actions are: {actions}"
