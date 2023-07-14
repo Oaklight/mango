@@ -396,7 +396,9 @@ def get_valid_task(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='
     
     return task_id
 
-def get_llama_valid_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='llama',eval_difficulty='strict'):
+def get_llama_rwkv_valid_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='llama',eval_difficulty='strict'):
+
+    assert model_name in ["llama","llama_anno","rwkv","rwkv_anno"]
     rst=set()
     if task_type=='pathgen':
         src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_name}")
@@ -418,7 +420,8 @@ def get_llama_valid_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pa
             continue
     return rst
 
-def eval_llama_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='gpt-4',eval_difficulty='strict',eval_set=None):
+def eval_llama_rwkv_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='llama',eval_difficulty='strict',eval_set=None):
+    assert model_name in ["llama","llama_anno","rwkv","rwkv_anno"]
     if task_type=='pathgen':
         src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_name}")
     else:

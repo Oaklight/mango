@@ -234,6 +234,15 @@ def eval_game(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='pathg
         if task_id not in eval_set:
             # print(file,'task_id not in eval_set, skip eval')
             return -1,-1,-1
+    else:
+        if task_type=='pathgen':
+            if task_id not in set([value['id'] for value in all_pairs]):
+                print(file,'task_id not in eval_set, skip eval')
+                return -1,-1,-1
+        else:
+            if task_id not in set([value['id'] for value in all2all]):
+                print(file,'task_id not in eval_set, skip eval')
+                return -1,-1,-1
         
     # step1: check cutoff
     cutoff=get_cutoff(result_json)
@@ -465,6 +474,8 @@ def eval_gpt_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',
     'total_evaluted': total_file,
     'total_format_failed':format_fail,
 }
+
+
 
 def get_csv(rst_dict,path):
     fieldnames = ['name', 'success_rate', 'reasoning_acc','easy_success_rate', 'hard_success_rate','easy_reasoning_acc','hard_reasoning_acc',]  
