@@ -2303,52 +2303,6 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Inner Chamber",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 53
-            }
-        ],
-        "step_count": 5,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": true,
-        "id": "28a050e99470231e01baf4644143d614b8d196a9cc09df635fc484a771830a0f"
-    },
-    {
-        "src_node": "East Side of the Church",
-        "dst_node": "Inner Chamber",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "East Side of the Church",
-                "node": "Front of the Church",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 10
-            },
-            {
-                "prev_node": "Front of the Church",
                 "node": "Top of Oak Tree",
                 "action": "climb ladder",
                 "seen_in_forward": true,
@@ -2380,6 +2334,52 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
         "id": "16df734d07b6a8d7f544fc0f3ea9d766f5f414ee292801c57355aaefb490d342"
+    },
+    {
+        "src_node": "East Side of the Church",
+        "dst_node": "Inner Chamber",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "East Side of the Church",
+                "node": "Front of the Church",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 10
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Inner Chamber",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            }
+        ],
+        "step_count": 5,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true,
+        "id": "28a050e99470231e01baf4644143d614b8d196a9cc09df635fc484a771830a0f"
     },
     {
         "src_node": "East Side of the Church",
@@ -3817,59 +3817,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Belfry",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 34,
-        "all_steps_seen_in_forward": true,
-        "id": "e2c714db34f2fa46ae41f9c02836d943972b6a00d1b98929ce3040e293d6ca6d"
-    },
-    {
-        "src_node": "Graveyard",
-        "dst_node": "Belfry",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -3908,6 +3855,59 @@
         "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true,
         "id": "413ce05821d53e42fb2dda4b49a10559fc6fd7996ee7c224c5d0ecaeb302f058"
+    },
+    {
+        "src_node": "Graveyard",
+        "dst_node": "Belfry",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Belfry",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true,
+        "id": "e2c714db34f2fa46ae41f9c02836d943972b6a00d1b98929ce3040e293d6ca6d"
     },
     {
         "src_node": "Graveyard",
@@ -4305,59 +4305,6 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Inner Chamber",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 53
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": true,
-        "id": "02a68503930f210435e8fe2260cd150d32194c61b28392368f2ed6947e62c810"
-    },
-    {
-        "src_node": "Graveyard",
-        "dst_node": "Inner Chamber",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
                 "node": "Top of Oak Tree",
                 "action": "climb ladder",
                 "seen_in_forward": true,
@@ -4389,6 +4336,59 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
         "id": "b13a00f7dda0510515055299b97d218d7c311c4740e08fa8647caae2bcd8438b"
+    },
+    {
+        "src_node": "Graveyard",
+        "dst_node": "Inner Chamber",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Inner Chamber",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true,
+        "id": "02a68503930f210435e8fe2260cd150d32194c61b28392368f2ed6947e62c810"
     },
     {
         "src_node": "Graveyard",
@@ -4616,73 +4616,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Vestibule",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Sanctuary",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            },
-            {
-                "prev_node": "Sanctuary",
-                "node": "Pulpit",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 16
-            }
-        ],
-        "step_count": 8,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true,
-        "id": "7360b590f452f107b17192a9075403712dc2b2780902f8cbcf8defb169267d24"
-    },
-    {
-        "src_node": "Graveyard",
-        "dst_node": "Pulpit",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -4735,6 +4668,73 @@
         "path_min_cutoff": 16,
         "all_steps_seen_in_forward": true,
         "id": "c109dc25ac5bc7a4390eed586a62e96a606ba5046fcd57108ace5a4c2c13d5cc"
+    },
+    {
+        "src_node": "Graveyard",
+        "dst_node": "Pulpit",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Top of Oak Tree",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Vestibule",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Sanctuary",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            },
+            {
+                "prev_node": "Sanctuary",
+                "node": "Pulpit",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 8,
+        "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true,
+        "id": "7360b590f452f107b17192a9075403712dc2b2780902f8cbcf8defb169267d24"
     },
     {
         "src_node": "Graveyard",
@@ -4877,66 +4877,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Vestibule",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Sanctuary",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            }
-        ],
-        "step_count": 7,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true,
-        "id": "14aab6cf0194e92aad7961a31151b6d743b254eb0f88d453937ff2772c3a1d85"
-    },
-    {
-        "src_node": "Graveyard",
-        "dst_node": "Sanctuary",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -4982,6 +4922,66 @@
         "path_min_cutoff": 15,
         "all_steps_seen_in_forward": true,
         "id": "dbacfad31f4f731803d11e4847a98e5b9ff1dec671da78c7379b986311be5a9d"
+    },
+    {
+        "src_node": "Graveyard",
+        "dst_node": "Sanctuary",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Top of Oak Tree",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Vestibule",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Sanctuary",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            }
+        ],
+        "step_count": 7,
+        "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true,
+        "id": "14aab6cf0194e92aad7961a31151b6d743b254eb0f88d453937ff2772c3a1d85"
     },
     {
         "src_node": "Graveyard",
@@ -5830,59 +5830,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Vestibule",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true,
-        "id": "c60fd4d9f9d44b56e6d15a34308d9252a42f7dc04a8b84456e8f07c4869b69a9"
-    },
-    {
-        "src_node": "Graveyard",
-        "dst_node": "Vestibule",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -5921,6 +5868,59 @@
         "path_min_cutoff": 14,
         "all_steps_seen_in_forward": true,
         "id": "89e2d83b3aac8f50f394ee8b453a786712ddf1b1cb01210ac01e5c74c8204ba1"
+    },
+    {
+        "src_node": "Graveyard",
+        "dst_node": "Vestibule",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Top of Oak Tree",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Vestibule",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true,
+        "id": "c60fd4d9f9d44b56e6d15a34308d9252a42f7dc04a8b84456e8f07c4869b69a9"
     },
     {
         "src_node": "Graveyard",
@@ -6074,66 +6074,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Belfry",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            }
-        ],
-        "step_count": 7,
-        "path_min_cutoff": 34,
-        "all_steps_seen_in_forward": true,
-        "id": "c620d317efa8789978654d154e899ef61594314209af304e80755e27881df448"
-    },
-    {
-        "src_node": "In the Mud",
-        "dst_node": "Belfry",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "In the Mud",
-                "node": "Graveyard",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -6172,6 +6112,66 @@
         "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true,
         "id": "612b8f83df79eddf34947775cf3cf098789de2738d61fb8323e20c3ef1904109"
+    },
+    {
+        "src_node": "In the Mud",
+        "dst_node": "Belfry",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "In the Mud",
+                "node": "Graveyard",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Belfry",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 7,
+        "path_min_cutoff": 34,
+        "all_steps_seen_in_forward": true,
+        "id": "c620d317efa8789978654d154e899ef61594314209af304e80755e27881df448"
     },
     {
         "src_node": "In the Mud",
@@ -6650,66 +6650,6 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Inner Chamber",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 53
-            }
-        ],
-        "step_count": 7,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": true,
-        "id": "854a6a56e721e45edfbbf487305c0325ac81d0aad4a0e2992249e8f40ccb7cd0"
-    },
-    {
-        "src_node": "In the Mud",
-        "dst_node": "Inner Chamber",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "In the Mud",
-                "node": "Graveyard",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
                 "node": "Top of Oak Tree",
                 "action": "climb ladder",
                 "seen_in_forward": true,
@@ -6745,7 +6685,7 @@
     {
         "src_node": "In the Mud",
         "dst_node": "Inner Chamber",
-        "diff_shortest": 2,
+        "diff_shortest": 0,
         "path_details": [
             {
                 "prev_node": "In the Mud",
@@ -6763,24 +6703,10 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "North Side of the Church",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 8
-            },
-            {
-                "prev_node": "North Side of the Church",
-                "node": "East Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 9
-            },
-            {
-                "prev_node": "East Side of the Church",
                 "node": "Front of the Church",
-                "action": "south",
+                "action": "southeast",
                 "seen_in_forward": true,
-                "step_min_cutoff": 10
+                "step_min_cutoff": 4
             },
             {
                 "prev_node": "Front of the Church",
@@ -6811,10 +6737,10 @@
                 "step_min_cutoff": 53
             }
         ],
-        "step_count": 9,
+        "step_count": 7,
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
-        "id": "ca1413ff2da6319938108f8075fa6a90216dc9deeb58a33bc6df2aab2442f01f"
+        "id": "854a6a56e721e45edfbbf487305c0325ac81d0aad4a0e2992249e8f40ccb7cd0"
     },
     {
         "src_node": "In the Mud",
@@ -6889,6 +6815,80 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
         "id": "de81d891932c1f04a40e676629fc971d7d9e7febe8ed91ec49b18471a8da1033"
+    },
+    {
+        "src_node": "In the Mud",
+        "dst_node": "Inner Chamber",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "In the Mud",
+                "node": "Graveyard",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "North Side of the Church",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "North Side of the Church",
+                "node": "East Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "East Side of the Church",
+                "node": "Front of the Church",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 10
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Inner Chamber",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            }
+        ],
+        "step_count": 9,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true,
+        "id": "ca1413ff2da6319938108f8075fa6a90216dc9deeb58a33bc6df2aab2442f01f"
     },
     {
         "src_node": "In the Mud",
@@ -7003,80 +7003,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Vestibule",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Sanctuary",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            },
-            {
-                "prev_node": "Sanctuary",
-                "node": "Pulpit",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 16
-            }
-        ],
-        "step_count": 9,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true,
-        "id": "f01b2ee070210d6cd4ee2f3f97d5bd023d87c8550ba6c6effa9caecf32cb6290"
-    },
-    {
-        "src_node": "In the Mud",
-        "dst_node": "Pulpit",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "In the Mud",
-                "node": "Graveyard",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -7129,6 +7055,80 @@
         "path_min_cutoff": 16,
         "all_steps_seen_in_forward": true,
         "id": "4ff8137993b3b86fe8940d967b33a748c53637283ed57abc786e927a6b474756"
+    },
+    {
+        "src_node": "In the Mud",
+        "dst_node": "Pulpit",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "In the Mud",
+                "node": "Graveyard",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Top of Oak Tree",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Vestibule",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Sanctuary",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            },
+            {
+                "prev_node": "Sanctuary",
+                "node": "Pulpit",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 9,
+        "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true,
+        "id": "f01b2ee070210d6cd4ee2f3f97d5bd023d87c8550ba6c6effa9caecf32cb6290"
     },
     {
         "src_node": "In the Mud",
@@ -7292,73 +7292,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Vestibule",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Sanctuary",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            }
-        ],
-        "step_count": 8,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true,
-        "id": "884400e361a74dba09da8b7e99209ee7da3114ea0501546df7562b06288a791b"
-    },
-    {
-        "src_node": "In the Mud",
-        "dst_node": "Sanctuary",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "In the Mud",
-                "node": "Graveyard",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -7404,6 +7337,73 @@
         "path_min_cutoff": 15,
         "all_steps_seen_in_forward": true,
         "id": "7a69ce166c12beae79a632d496009bfe3ec31ac1f594b0ad9bb1d97bea6defe5"
+    },
+    {
+        "src_node": "In the Mud",
+        "dst_node": "Sanctuary",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "In the Mud",
+                "node": "Graveyard",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Top of Oak Tree",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Vestibule",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Sanctuary",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            }
+        ],
+        "step_count": 8,
+        "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true,
+        "id": "884400e361a74dba09da8b7e99209ee7da3114ea0501546df7562b06288a791b"
     },
     {
         "src_node": "In the Mud",
@@ -7574,87 +7574,6 @@
             },
             {
                 "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Vestibule",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Sanctuary",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            },
-            {
-                "prev_node": "Sanctuary",
-                "node": "Pulpit",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 16
-            },
-            {
-                "prev_node": "Pulpit",
-                "node": "Small Office",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 19
-            }
-        ],
-        "step_count": 10,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true,
-        "id": "843320aef25cb3ab616ac923a883ea3a2be50dd3ab72d272e40e8cb6e3c92e90"
-    },
-    {
-        "src_node": "In the Mud",
-        "dst_node": "Small Office",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "In the Mud",
-                "node": "Graveyard",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "Graveyard",
-                "node": "West Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "West Side of the Church",
                 "node": "North Side of the Church",
                 "action": "north",
                 "seen_in_forward": true,
@@ -7714,6 +7633,87 @@
         "path_min_cutoff": 19,
         "all_steps_seen_in_forward": true,
         "id": "7201a61623995b3e2fec133f219f74f3a8310d58ad6ea246e8adb56deb2d9fc2"
+    },
+    {
+        "src_node": "In the Mud",
+        "dst_node": "Small Office",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "In the Mud",
+                "node": "Graveyard",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "Graveyard",
+                "node": "West Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "Front of the Church",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Top of Oak Tree",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Vestibule",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Sanctuary",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            },
+            {
+                "prev_node": "Sanctuary",
+                "node": "Pulpit",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "Pulpit",
+                "node": "Small Office",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 19
+            }
+        ],
+        "step_count": 10,
+        "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true,
+        "id": "843320aef25cb3ab616ac923a883ea3a2be50dd3ab72d272e40e8cb6e3c92e90"
     },
     {
         "src_node": "In the Mud",
@@ -7838,30 +7838,30 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
+                "node": "Top of Oak Tree",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Belfry",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Steeple Chamber",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             }
         ],
         "step_count": 6,
-        "path_min_cutoff": 33,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true,
-        "id": "28d7f228ba6384e2e5e727796719ac795eaf7ddee8796f19ee7d4ed2261f7830"
+        "id": "6a78e6888d37acb42a748a873744b8f0dffd077d9df49b72537d897b568c4e17"
     },
     {
         "src_node": "In the Mud",
@@ -7891,30 +7891,30 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Top of Oak Tree",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Belfry",
+                "node": "Church Porch",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "Belfry",
-                "node": "Steeple Chamber",
-                "action": "down",
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             }
         ],
         "step_count": 6,
-        "path_min_cutoff": 44,
+        "path_min_cutoff": 33,
         "all_steps_seen_in_forward": true,
-        "id": "6a78e6888d37acb42a748a873744b8f0dffd077d9df49b72537d897b568c4e17"
+        "id": "28d7f228ba6384e2e5e727796719ac795eaf7ddee8796f19ee7d4ed2261f7830"
     },
     {
         "src_node": "In the Mud",
@@ -8845,45 +8845,6 @@
             },
             {
                 "prev_node": "Steeple Chamber",
-                "node": "Belfry",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Top of Oak Tree",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 46
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Front of the Church",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 47
-            }
-        ],
-        "step_count": 4,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": false,
-        "id": "eab1487eeeb431f20ae7b4b0047b61e36c3c3dce3d3a357fb5922f657f9a7552"
-    },
-    {
-        "src_node": "Inner Chamber",
-        "dst_node": "Front of the Church",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "Inner Chamber",
-                "node": "Steeple Chamber",
-                "action": "south",
-                "seen_in_forward": false,
-                "step_min_cutoff": 53
-            },
-            {
-                "prev_node": "Steeple Chamber",
                 "node": "Vestibule",
                 "action": "down",
                 "seen_in_forward": true,
@@ -8908,6 +8869,45 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": false,
         "id": "a573edfed83474132c8c8f9818a31171043ba03d99a57b94b997838289e23632"
+    },
+    {
+        "src_node": "Inner Chamber",
+        "dst_node": "Front of the Church",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "Inner Chamber",
+                "node": "Steeple Chamber",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Belfry",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Top of Oak Tree",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 46
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Front of the Church",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 47
+            }
+        ],
+        "step_count": 4,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false,
+        "id": "eab1487eeeb431f20ae7b4b0047b61e36c3c3dce3d3a357fb5922f657f9a7552"
     },
     {
         "src_node": "Inner Chamber",
@@ -9029,59 +9029,6 @@
             },
             {
                 "prev_node": "Steeple Chamber",
-                "node": "Belfry",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Top of Oak Tree",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 46
-            },
-            {
-                "prev_node": "Top of Oak Tree",
-                "node": "Front of the Church",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 47
-            },
-            {
-                "prev_node": "Front of the Church",
-                "node": "West Side of the Church",
-                "action": "northwest",
-                "seen_in_forward": true,
-                "step_min_cutoff": 7
-            },
-            {
-                "prev_node": "West Side of the Church",
-                "node": "North Side of the Church",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 8
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": false,
-        "id": "a89eb994f29b5a6e6dba42d0e49e960da6f8538ea1504615c957a7c7f053441c"
-    },
-    {
-        "src_node": "Inner Chamber",
-        "dst_node": "North Side of the Church",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "Inner Chamber",
-                "node": "Steeple Chamber",
-                "action": "south",
-                "seen_in_forward": false,
-                "step_min_cutoff": 53
-            },
-            {
-                "prev_node": "Steeple Chamber",
                 "node": "Vestibule",
                 "action": "down",
                 "seen_in_forward": true,
@@ -9120,6 +9067,59 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": false,
         "id": "56d58d2c2665fdc4477b608d109b50df6ac3e1399dd98d593e87ebaa7ffc7fd9"
+    },
+    {
+        "src_node": "Inner Chamber",
+        "dst_node": "North Side of the Church",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "Inner Chamber",
+                "node": "Steeple Chamber",
+                "action": "south",
+                "seen_in_forward": false,
+                "step_min_cutoff": 53
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Belfry",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Top of Oak Tree",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 46
+            },
+            {
+                "prev_node": "Top of Oak Tree",
+                "node": "Front of the Church",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 47
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "West Side of the Church",
+                "action": "northwest",
+                "seen_in_forward": true,
+                "step_min_cutoff": 7
+            },
+            {
+                "prev_node": "West Side of the Church",
+                "node": "North Side of the Church",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": false,
+        "id": "a89eb994f29b5a6e6dba42d0e49e960da6f8538ea1504615c957a7c7f053441c"
     },
     {
         "src_node": "Inner Chamber",
@@ -9992,59 +9992,6 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Inner Chamber",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 53
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": true,
-        "id": "9d937de0fc90984713cfe3f443a84aad36a1b1cfca83b1ed2a54002b591b7922"
-    },
-    {
-        "src_node": "North Side of the Church",
-        "dst_node": "Inner Chamber",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "North Side of the Church",
-                "node": "East Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 9
-            },
-            {
-                "prev_node": "East Side of the Church",
-                "node": "Front of the Church",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 10
-            },
-            {
-                "prev_node": "Front of the Church",
                 "node": "Top of Oak Tree",
                 "action": "climb ladder",
                 "seen_in_forward": true,
@@ -10076,6 +10023,59 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
         "id": "7f45bb8c35e16d770b5bbe5afabed9023d81f7206d3fc4fb36916e283e7723b3"
+    },
+    {
+        "src_node": "North Side of the Church",
+        "dst_node": "Inner Chamber",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "North Side of the Church",
+                "node": "East Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "East Side of the Church",
+                "node": "Front of the Church",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 10
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Inner Chamber",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true,
+        "id": "9d937de0fc90984713cfe3f443a84aad36a1b1cfca83b1ed2a54002b591b7922"
     },
     {
         "src_node": "North Side of the Church",
@@ -11650,52 +11650,6 @@
             },
             {
                 "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Belfry",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            },
-            {
-                "prev_node": "Belfry",
-                "node": "Top of Oak Tree",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 46
-            }
-        ],
-        "step_count": 5,
-        "path_min_cutoff": 46,
-        "all_steps_seen_in_forward": true,
-        "id": "4ab5c702f8a4b95812b6cd97859441e1aec9a3dc8ab003e1226ef54fedc108a7"
-    },
-    {
-        "src_node": "Pulpit",
-        "dst_node": "Top of Oak Tree",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "Pulpit",
-                "node": "Sanctuary",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 30
-            },
-            {
-                "prev_node": "Sanctuary",
-                "node": "Vestibule",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 31
-            },
-            {
-                "prev_node": "Vestibule",
                 "node": "Church Porch",
                 "action": "south",
                 "seen_in_forward": true,
@@ -11720,6 +11674,52 @@
         "path_min_cutoff": 43,
         "all_steps_seen_in_forward": true,
         "id": "82bc5df09794e6f526377eda1d585293030c2dc8a5715df4715f04e23bb37598"
+    },
+    {
+        "src_node": "Pulpit",
+        "dst_node": "Top of Oak Tree",
+        "diff_shortest": 0,
+        "path_details": [
+            {
+                "prev_node": "Pulpit",
+                "node": "Sanctuary",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 30
+            },
+            {
+                "prev_node": "Sanctuary",
+                "node": "Vestibule",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 31
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Belfry",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "Belfry",
+                "node": "Top of Oak Tree",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 46
+            }
+        ],
+        "step_count": 5,
+        "path_min_cutoff": 46,
+        "all_steps_seen_in_forward": true,
+        "id": "4ab5c702f8a4b95812b6cd97859441e1aec9a3dc8ab003e1226ef54fedc108a7"
     },
     {
         "src_node": "Pulpit",
@@ -17420,52 +17420,6 @@
             },
             {
                 "prev_node": "Front of the Church",
-                "node": "Church Porch",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "Church Porch",
-                "node": "Vestibule",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "Vestibule",
-                "node": "Steeple Chamber",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "Steeple Chamber",
-                "node": "Inner Chamber",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 53
-            }
-        ],
-        "step_count": 5,
-        "path_min_cutoff": 53,
-        "all_steps_seen_in_forward": true,
-        "id": "f34ba7ebcc27161ace011acead08a648188b8a789acf6261ae26401ba2ecd874"
-    },
-    {
-        "src_node": "West Side of the Church",
-        "dst_node": "Inner Chamber",
-        "diff_shortest": 0,
-        "path_details": [
-            {
-                "prev_node": "West Side of the Church",
-                "node": "Front of the Church",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "Front of the Church",
                 "node": "Top of Oak Tree",
                 "action": "climb ladder",
                 "seen_in_forward": true,
@@ -17501,28 +17455,14 @@
     {
         "src_node": "West Side of the Church",
         "dst_node": "Inner Chamber",
-        "diff_shortest": 2,
+        "diff_shortest": 0,
         "path_details": [
             {
                 "prev_node": "West Side of the Church",
-                "node": "North Side of the Church",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 8
-            },
-            {
-                "prev_node": "North Side of the Church",
-                "node": "East Side of the Church",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 9
-            },
-            {
-                "prev_node": "East Side of the Church",
                 "node": "Front of the Church",
-                "action": "south",
+                "action": "southeast",
                 "seen_in_forward": true,
-                "step_min_cutoff": 10
+                "step_min_cutoff": 4
             },
             {
                 "prev_node": "Front of the Church",
@@ -17553,10 +17493,10 @@
                 "step_min_cutoff": 53
             }
         ],
-        "step_count": 7,
+        "step_count": 5,
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
-        "id": "5cecb85afb75127cbd3e5b93f221f8997f111d838034266b6abb0aca809aad83"
+        "id": "f34ba7ebcc27161ace011acead08a648188b8a789acf6261ae26401ba2ecd874"
     },
     {
         "src_node": "West Side of the Church",
@@ -17617,6 +17557,66 @@
         "path_min_cutoff": 53,
         "all_steps_seen_in_forward": true,
         "id": "226eac76a3c703d25fe222e17794f8890796859c577c843fd91d98ca24e8e9a6"
+    },
+    {
+        "src_node": "West Side of the Church",
+        "dst_node": "Inner Chamber",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "West Side of the Church",
+                "node": "North Side of the Church",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 8
+            },
+            {
+                "prev_node": "North Side of the Church",
+                "node": "East Side of the Church",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 9
+            },
+            {
+                "prev_node": "East Side of the Church",
+                "node": "Front of the Church",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 10
+            },
+            {
+                "prev_node": "Front of the Church",
+                "node": "Church Porch",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "Church Porch",
+                "node": "Vestibule",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "Vestibule",
+                "node": "Steeple Chamber",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "Steeple Chamber",
+                "node": "Inner Chamber",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 53
+            }
+        ],
+        "step_count": 7,
+        "path_min_cutoff": 53,
+        "all_steps_seen_in_forward": true,
+        "id": "5cecb85afb75127cbd3e5b93f221f8997f111d838034266b6abb0aca809aad83"
     },
     {
         "src_node": "West Side of the Church",
