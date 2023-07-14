@@ -24,44 +24,8 @@ opposite_directions = {
 }
 
 
-def load_valid_actions(action_file):
-    """
-    load valid action files. Each file has two sections
-    - Directions
-    - Non directions
-    """
-    # test if action_file not exist, create an empty txt file
-    try:
-        with open(action_file, "r") as f:
-            pass
-    except FileNotFoundError:
-        with open(action_file, "w") as f:
-            pass
-
-    with open(action_file, "r") as f:
-        for line in f:
-            line = line.strip().lower()
-            if line == "direction:":
-                continue
-            elif line == "non direction:":
-                break
-            # skip empty line
-            elif line == "":
-                continue
-
-            # parse non-empty lines
-            print("line: ", line)
-            from_dir, to_dir = [each.strip().lower() for each in line.split("--")]
-            opposite_directions[from_dir] = to_dir
-            opposite_directions[to_dir] = from_dir
-            # TODO: see if we need to check allowed action in "non-directions"?
-
-    print(opposite_directions)
-
-
 def build_graph_from_file(
     path_file: str = "data/game.map",
-    action_file: str = "data/game.actions",
     verbose: bool = True,
 ) -> object:
     """
@@ -73,10 +37,6 @@ def build_graph_from_file(
     with open(path_file, "r") as f:
         lines = f.readlines()
 
-    if action_file is None:
-        print("No action file provided, skip reverse links.")
-    else:
-        load_valid_actions(action_file)
     # build graph from file
 
     # use MultiDiGraph instead to accomodate special game with multiple valid action between two nodes
@@ -155,69 +115,70 @@ def build_graph_from_file_with_reverse(
     # backward entry: North of House (obj81) --> south --> West of House (obj180), step 1, desc: North of House || You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
     # backward entry with non-None description is an invalid path
     # i-th reverse entry must have bigger or equal step_num than i-th forward entry
-    reverse_nodes = {}
-    forward_nodes = {}
-    for i in range(num_lines_reverse):
-        # get step_num and path
-        line_reverse = lines_reverse[i].strip("\ufeff").strip()
-        line_reverse, skip_flag = line_reverse.split(", desc:")
-        line_reverse = line_reverse.strip()
-        skip_flag = skip_flag.strip()
-        if skip_flag != "None":
-            print("skip invalid path", line_reverse, f"[{skip_flag}]")
-            continue
-        if len(line_reverse) == 0:
-            continue
-        path_reverse, step_num_reverse = [
-            each.strip().lower() for each in line_reverse.split(", step")
-        ]
-        step_num_reverse = int(step_num_reverse)
-        # get src_node, direction, dst_node
-        elements_reverse = [each.strip().lower() for each in path_reverse.split("-->")]
-        print(elements_reverse)
-        src_node_reverse, _, dst_node_reverse = elements_reverse
-        reverse_nodes[step_num_reverse] = (src_node_reverse, dst_node_reverse)
+    # reverse_nodes = {}
+    # forward_nodes = {}
+    # for i in range(num_lines_reverse):
+    #     # get step_num and path
+    #     line_reverse = lines_reverse[i].strip("\ufeff").strip()
+    #     line_reverse, skip_flag = line_reverse.split(", desc:")
+    #     line_reverse = line_reverse.strip()
+    #     skip_flag = skip_flag.strip()
+    #     if skip_flag != "None":
+    #         print("skip invalid path", line_reverse, f"[{skip_flag}]")
+    #         continue
+    #     if len(line_reverse) == 0:
+    #         continue
+    #     path_reverse, step_num_reverse = [
+    #         each.strip().lower() for each in line_reverse.split(", step")
+    #     ]
+    #     step_num_reverse = int(step_num_reverse)
+    #     # get src_node, direction, dst_node
+    #     elements_reverse = [each.strip().lower() for each in path_reverse.split("-->")]
+    #     print(elements_reverse)
+    #     src_node_reverse, _, dst_node_reverse = elements_reverse
+    #     reverse_nodes[step_num_reverse] = (src_node_reverse, dst_node_reverse)
 
-    print("\n\n\n\n\n\n")
-    for i in range(num_lines_forward):
-        # get step_num and path
-        line_forward = lines_forward[i].strip("\ufeff").strip()
-        if len(line_forward) == 0:
-            continue
-        path_forward, step_num_forward = [
-            each.strip().lower() for each in line_forward.split(", step")
-        ]
-        step_num_forward = int(step_num_forward)
-        # get src_node, direction, dst_node
-        elements_forward = [each.strip().lower() for each in path_forward.split("-->")]
-        print(elements_forward)
-        src_node_forward, _, dst_node_forward = elements_forward
-        forward_nodes[step_num_forward] = (src_node_forward, dst_node_forward)
+    # print("\n\n\n\n\n\n")
+    # for i in range(num_lines_forward):
+    #     # get step_num and path
+    #     line_forward = lines_forward[i].strip("\ufeff").strip()
+    #     if len(line_forward) == 0:
+    #         continue
+    #     path_forward, step_num_forward = [
+    #         each.strip().lower() for each in line_forward.split(", step")
+    #     ]
+    #     step_num_forward = int(step_num_forward)
+    #     # get src_node, direction, dst_node
+    #     elements_forward = [each.strip().lower() for each in path_forward.split("-->")]
+    #     print(elements_forward)
+    #     src_node_forward, _, dst_node_forward = elements_forward
+    #     forward_nodes[step_num_forward] = (src_node_forward, dst_node_forward)
 
-    # check if reverse map has same set of nodes as forward map
-    for step_num in reverse_nodes:
-        assert (
-            step_num in forward_nodes
-        ), "reverse map should have less or equal number of edges than forward map"
-        # since namespace converted, we just need to check forward node has the same id as reverse node
-        forward_id = forward_nodes[step_num][0].split("(")[-1].split(")")[0]
-        assert forward_id in reverse_nodes[step_num][1], (
-            f"[{step_num}] forward src_node should be in reverse dst_node",
-            forward_nodes[step_num][0],
-            reverse_nodes[step_num][1],
-        )
-        forward_id = forward_nodes[step_num][1].split("(")[-1].split(")")[0]
-        assert forward_id in reverse_nodes[step_num][0], (
-            f"[{step_num}] forward dst_node should be in reverse src_node",
-            forward_nodes[step_num][1],
-            reverse_nodes[step_num][0],
-        )
-        print(reverse_nodes[step_num], forward_nodes[step_num])
+    # # check if reverse map has same set of nodes as forward map
+    # for step_num in reverse_nodes:
+    #     assert (
+    #         step_num in forward_nodes
+    #     ), "reverse map should have less or equal number of edges than forward map"
+    #     # since namespace converted, we just need to check forward node has the same id as reverse node
+    #     forward_id = forward_nodes[step_num][0].split("(")[-1].split(")")[0]
+    #     assert forward_id in reverse_nodes[step_num][1], (
+    #         f"[{step_num}] forward src_node should be in reverse dst_node",
+    #         forward_nodes[step_num][0],
+    #         reverse_nodes[step_num][1],
+    #     )
+    #     forward_id = forward_nodes[step_num][1].split("(")[-1].split(")")[0]
+    #     assert forward_id in reverse_nodes[step_num][0], (
+    #         f"[{step_num}] forward dst_node should be in reverse src_node",
+    #         forward_nodes[step_num][1],
+    #         reverse_nodes[step_num][0],
+    #     )
+    #     print(reverse_nodes[step_num], forward_nodes[step_num])
+
     # exit(-1)
     # In some cases, human map may contain more or less entries than the machine forward map.
     # reverse map is from machine forward map.
-    G_forward = build_graph_from_file(path_file, action_file=None, verbose=verbose)
-    G_backward = build_graph_from_file(reverse_file, action_file=None, verbose=verbose)
+    G_forward = build_graph_from_file(path_file, verbose=verbose)
+    G_backward = build_graph_from_file(reverse_file, verbose=verbose)
 
     # use G_forward as the base graph, add edges from G_backward
     # if and only if triplet (src, dst, direction) not in G_forward.edges(data=True)
@@ -283,6 +244,8 @@ def get_all_paths(g: object, src: str, dst: str):
     """
     try:
         simple_paths = networkx.all_simple_paths(g, src, dst)
+        simple_paths = list(set([tuple(path) for path in simple_paths]))
+        simple_paths.sort(key=lambda x: len(x))
         expanded_simple_paths = []
 
         for path in simple_paths:

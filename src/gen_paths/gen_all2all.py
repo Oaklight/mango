@@ -18,7 +18,8 @@ from gen_paths.utils import confirm_continue, get_args_all2all
 
 if __name__ == "__main__":
     args = get_args_all2all()
-    confirm_continue()
+    if args.no_confirm is False:
+        confirm_continue()
 
     if args.reverse_map:
         g = build_graph_from_file_with_reverse(args.map, args.reverse_map)

@@ -2245,24 +2245,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -2290,24 +2290,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -3720,58 +3720,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "belfry (obj111)",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 34,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "graveyard (obj37)",
-        "dst_node": "belfry (obj111)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -3808,6 +3756,58 @@
         ],
         "step_count": 6,
         "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "graveyard (obj37)",
+        "dst_node": "belfry (obj111)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "church porch (obj68)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "belfry (obj111)",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 34,
         "all_steps_seen_in_forward": true
     },
     {
@@ -4198,24 +4198,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -4250,24 +4250,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -4503,72 +4503,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "sanctuary (obj75)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            },
-            {
-                "prev_node": "sanctuary (obj75)",
-                "node": "pulpit (obj83)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 16
-            }
-        ],
-        "step_count": 8,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "graveyard (obj37)",
-        "dst_node": "pulpit (obj83)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -4619,6 +4553,72 @@
         ],
         "step_count": 8,
         "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "graveyard (obj37)",
+        "dst_node": "pulpit (obj83)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "vestibule (obj73)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "sanctuary (obj75)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            },
+            {
+                "prev_node": "sanctuary (obj75)",
+                "node": "pulpit (obj83)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 8,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -4760,65 +4760,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "sanctuary (obj75)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            }
-        ],
-        "step_count": 7,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "graveyard (obj37)",
-        "dst_node": "sanctuary (obj75)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -4862,6 +4803,65 @@
         ],
         "step_count": 7,
         "path_min_cutoff": 15,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "graveyard (obj37)",
+        "dst_node": "sanctuary (obj75)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "vestibule (obj73)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "sanctuary (obj75)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            }
+        ],
+        "step_count": 7,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -5697,58 +5697,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            }
-        ],
-        "step_count": 6,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "graveyard (obj37)",
-        "dst_node": "vestibule (obj73)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -5785,6 +5733,58 @@
         ],
         "step_count": 6,
         "path_min_cutoff": 14,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "graveyard (obj37)",
+        "dst_node": "vestibule (obj73)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "vestibule (obj73)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            }
+        ],
+        "step_count": 6,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -5936,65 +5936,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "belfry (obj111)",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            }
-        ],
-        "step_count": 7,
-        "path_min_cutoff": 34,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "in the mud (obj33)",
-        "dst_node": "belfry (obj111)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "in the mud (obj33)",
-                "node": "graveyard (obj37)",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -6031,6 +5972,65 @@
         ],
         "step_count": 7,
         "path_min_cutoff": 44,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "in the mud (obj33)",
+        "dst_node": "belfry (obj111)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "in the mud (obj33)",
+                "node": "graveyard (obj37)",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "church porch (obj68)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 11
+            },
+            {
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "belfry (obj111)",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            }
+        ],
+        "step_count": 7,
+        "path_min_cutoff": 34,
         "all_steps_seen_in_forward": true
     },
     {
@@ -6501,24 +6501,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -6560,24 +6560,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -6633,24 +6633,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -6706,24 +6706,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -6848,79 +6848,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "sanctuary (obj75)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            },
-            {
-                "prev_node": "sanctuary (obj75)",
-                "node": "pulpit (obj83)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 16
-            }
-        ],
-        "step_count": 9,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "in the mud (obj33)",
-        "dst_node": "pulpit (obj83)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "in the mud (obj33)",
-                "node": "graveyard (obj37)",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -6971,6 +6898,79 @@
         ],
         "step_count": 9,
         "path_min_cutoff": 16,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "in the mud (obj33)",
+        "dst_node": "pulpit (obj83)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "in the mud (obj33)",
+                "node": "graveyard (obj37)",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "vestibule (obj73)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "sanctuary (obj75)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            },
+            {
+                "prev_node": "sanctuary (obj75)",
+                "node": "pulpit (obj83)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            }
+        ],
+        "step_count": 9,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -7133,72 +7133,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "sanctuary (obj75)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            }
-        ],
-        "step_count": 8,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "in the mud (obj33)",
-        "dst_node": "sanctuary (obj75)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "in the mud (obj33)",
-                "node": "graveyard (obj37)",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -7242,6 +7176,72 @@
         ],
         "step_count": 8,
         "path_min_cutoff": 15,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "in the mud (obj33)",
+        "dst_node": "sanctuary (obj75)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "in the mud (obj33)",
+                "node": "graveyard (obj37)",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "vestibule (obj73)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "sanctuary (obj75)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            }
+        ],
+        "step_count": 8,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -7411,86 +7411,6 @@
             },
             {
                 "prev_node": "west side of the church (obj43)",
-                "node": "front of the church (obj51)",
-                "action": "southeast",
-                "seen_in_forward": true,
-                "step_min_cutoff": 4
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 44
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 36
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
-                "action": "down",
-                "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "sanctuary (obj75)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 15
-            },
-            {
-                "prev_node": "sanctuary (obj75)",
-                "node": "pulpit (obj83)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 16
-            },
-            {
-                "prev_node": "pulpit (obj83)",
-                "node": "small office (obj88)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 19
-            }
-        ],
-        "step_count": 10,
-        "path_min_cutoff": 44,
-        "all_steps_seen_in_forward": true
-    },
-    {
-        "src_node": "in the mud (obj33)",
-        "dst_node": "small office (obj88)",
-        "diff_shortest": 2,
-        "path_details": [
-            {
-                "prev_node": "in the mud (obj33)",
-                "node": "graveyard (obj37)",
-                "action": "up",
-                "seen_in_forward": true,
-                "step_min_cutoff": 1
-            },
-            {
-                "prev_node": "graveyard (obj37)",
-                "node": "west side of the church (obj43)",
-                "action": "east",
-                "seen_in_forward": true,
-                "step_min_cutoff": 3
-            },
-            {
-                "prev_node": "west side of the church (obj43)",
                 "node": "north side of the church (obj45)",
                 "action": "north",
                 "seen_in_forward": true,
@@ -7548,6 +7468,86 @@
         ],
         "step_count": 10,
         "path_min_cutoff": 19,
+        "all_steps_seen_in_forward": true
+    },
+    {
+        "src_node": "in the mud (obj33)",
+        "dst_node": "small office (obj88)",
+        "diff_shortest": 2,
+        "path_details": [
+            {
+                "prev_node": "in the mud (obj33)",
+                "node": "graveyard (obj37)",
+                "action": "up",
+                "seen_in_forward": true,
+                "step_min_cutoff": 1
+            },
+            {
+                "prev_node": "graveyard (obj37)",
+                "node": "west side of the church (obj43)",
+                "action": "east",
+                "seen_in_forward": true,
+                "step_min_cutoff": 3
+            },
+            {
+                "prev_node": "west side of the church (obj43)",
+                "node": "front of the church (obj51)",
+                "action": "southeast",
+                "seen_in_forward": true,
+                "step_min_cutoff": 4
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "vestibule (obj73)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "sanctuary (obj75)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 15
+            },
+            {
+                "prev_node": "sanctuary (obj75)",
+                "node": "pulpit (obj83)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 16
+            },
+            {
+                "prev_node": "pulpit (obj83)",
+                "node": "small office (obj88)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 19
+            }
+        ],
+        "step_count": 10,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -7672,28 +7672,28 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             }
         ],
         "step_count": 6,
-        "path_min_cutoff": 33,
+        "path_min_cutoff": 44,
         "all_steps_seen_in_forward": true
     },
     {
@@ -7724,28 +7724,28 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             }
         ],
         "step_count": 6,
-        "path_min_cutoff": 44,
+        "path_min_cutoff": 33,
         "all_steps_seen_in_forward": true
     },
     {
@@ -8660,24 +8660,24 @@
             },
             {
                 "prev_node": "steeple chamber (obj98)",
-                "node": "belfry (obj111)",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "top of oak tree (obj55)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 46
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "front of the church (obj51)",
+                "node": "vestibule (obj73)",
                 "action": "down",
                 "seen_in_forward": true,
-                "step_min_cutoff": 47
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "church porch (obj68)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 40
+            },
+            {
+                "prev_node": "church porch (obj68)",
+                "node": "front of the church (obj51)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 41
             }
         ],
         "step_count": 4,
@@ -8698,24 +8698,24 @@
             },
             {
                 "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
+                "node": "belfry (obj111)",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "top of oak tree (obj55)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 46
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "front of the church (obj51)",
                 "action": "down",
                 "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "church porch (obj68)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 40
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "front of the church (obj51)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 41
+                "step_min_cutoff": 47
             }
         ],
         "step_count": 4,
@@ -8840,24 +8840,24 @@
             },
             {
                 "prev_node": "steeple chamber (obj98)",
-                "node": "belfry (obj111)",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "top of oak tree (obj55)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 46
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "front of the church (obj51)",
+                "node": "vestibule (obj73)",
                 "action": "down",
                 "seen_in_forward": true,
-                "step_min_cutoff": 47
+                "step_min_cutoff": 38
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "church porch (obj68)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 40
+            },
+            {
+                "prev_node": "church porch (obj68)",
+                "node": "front of the church (obj51)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 41
             },
             {
                 "prev_node": "front of the church (obj51)",
@@ -8892,24 +8892,24 @@
             },
             {
                 "prev_node": "steeple chamber (obj98)",
-                "node": "vestibule (obj73)",
+                "node": "belfry (obj111)",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "top of oak tree (obj55)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 46
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "front of the church (obj51)",
                 "action": "down",
                 "seen_in_forward": true,
-                "step_min_cutoff": 38
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "church porch (obj68)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 40
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "front of the church (obj51)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 41
+                "step_min_cutoff": 47
             },
             {
                 "prev_node": "front of the church (obj51)",
@@ -9781,24 +9781,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -9833,24 +9833,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -11406,28 +11406,28 @@
             },
             {
                 "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 33
-            },
-            {
-                "prev_node": "steeple chamber (obj98)",
-                "node": "belfry (obj111)",
-                "action": "climb rope",
-                "seen_in_forward": true,
-                "step_min_cutoff": 34
-            },
-            {
-                "prev_node": "belfry (obj111)",
-                "node": "top of oak tree (obj55)",
+                "node": "church porch (obj68)",
                 "action": "south",
                 "seen_in_forward": true,
-                "step_min_cutoff": 46
+                "step_min_cutoff": 40
+            },
+            {
+                "prev_node": "church porch (obj68)",
+                "node": "front of the church (obj51)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 41
+            },
+            {
+                "prev_node": "front of the church (obj51)",
+                "node": "top of oak tree (obj55)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 43
             }
         ],
         "step_count": 5,
-        "path_min_cutoff": 46,
+        "path_min_cutoff": 43,
         "all_steps_seen_in_forward": true
     },
     {
@@ -11451,28 +11451,28 @@
             },
             {
                 "prev_node": "vestibule (obj73)",
-                "node": "church porch (obj68)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 40
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "front of the church (obj51)",
-                "action": "south",
-                "seen_in_forward": true,
-                "step_min_cutoff": 41
-            },
-            {
-                "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
+                "node": "steeple chamber (obj98)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 43
+                "step_min_cutoff": 33
+            },
+            {
+                "prev_node": "steeple chamber (obj98)",
+                "node": "belfry (obj111)",
+                "action": "climb rope",
+                "seen_in_forward": true,
+                "step_min_cutoff": 34
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "top of oak tree (obj55)",
+                "action": "south",
+                "seen_in_forward": true,
+                "step_min_cutoff": 46
             }
         ],
         "step_count": 5,
-        "path_min_cutoff": 43,
+        "path_min_cutoff": 46,
         "all_steps_seen_in_forward": true
     },
     {
@@ -17039,24 +17039,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -17084,24 +17084,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -17143,24 +17143,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "church porch (obj68)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 11
-            },
-            {
-                "prev_node": "church porch (obj68)",
-                "node": "vestibule (obj73)",
-                "action": "north",
-                "seen_in_forward": true,
-                "step_min_cutoff": 14
-            },
-            {
-                "prev_node": "vestibule (obj73)",
-                "node": "steeple chamber (obj98)",
+                "node": "top of oak tree (obj55)",
                 "action": "climb ladder",
                 "seen_in_forward": true,
-                "step_min_cutoff": 33
+                "step_min_cutoff": 43
+            },
+            {
+                "prev_node": "top of oak tree (obj55)",
+                "node": "belfry (obj111)",
+                "action": "north",
+                "seen_in_forward": true,
+                "step_min_cutoff": 44
+            },
+            {
+                "prev_node": "belfry (obj111)",
+                "node": "steeple chamber (obj98)",
+                "action": "down",
+                "seen_in_forward": true,
+                "step_min_cutoff": 36
             },
             {
                 "prev_node": "steeple chamber (obj98)",
@@ -17202,24 +17202,24 @@
             },
             {
                 "prev_node": "front of the church (obj51)",
-                "node": "top of oak tree (obj55)",
-                "action": "climb ladder",
-                "seen_in_forward": true,
-                "step_min_cutoff": 43
-            },
-            {
-                "prev_node": "top of oak tree (obj55)",
-                "node": "belfry (obj111)",
+                "node": "church porch (obj68)",
                 "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 44
+                "step_min_cutoff": 11
             },
             {
-                "prev_node": "belfry (obj111)",
-                "node": "steeple chamber (obj98)",
-                "action": "down",
+                "prev_node": "church porch (obj68)",
+                "node": "vestibule (obj73)",
+                "action": "north",
                 "seen_in_forward": true,
-                "step_min_cutoff": 36
+                "step_min_cutoff": 14
+            },
+            {
+                "prev_node": "vestibule (obj73)",
+                "node": "steeple chamber (obj98)",
+                "action": "climb ladder",
+                "seen_in_forward": true,
+                "step_min_cutoff": 33
             },
             {
                 "prev_node": "steeple chamber (obj98)",
