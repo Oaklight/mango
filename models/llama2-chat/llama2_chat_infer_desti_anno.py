@@ -44,8 +44,6 @@ def main(
     print ("==> game name list: ", game_name_list)
 
     for game_name in game_name_list[start_game_idx:end_game_idx]:
-        if game_name in ['night']:
-            continue
         print ("processing game {} ...".format(game_name))
 
         # action_space
