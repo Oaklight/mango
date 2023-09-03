@@ -1,0 +1,2 @@
+# "gpt-4", "gpt-3.5-turbo"
+python src/play_games/play_game.py --model_name "gpt-4" --game_name "zork1.z5" --jericho_path "./z-machine-games-master/jericho-game-suite" --cache_dir "src/play_games/cache" --max_steps 120
