@@ -1,5 +1,8 @@
 [
     {
+        "valid_actions": [
+            "Init"
+        ],
         "act": "Init",
         "observation": "\nA beautiful day in Bostwin! You are awakened by a ray of sunlight peeking through a window shade and rise refreshed after a restful night's sleep.  You've given your Company a weekend pass to get some R&R after your last grueling mission.  Wasting precious little time your entire company took off for the city proper to pack in as much drinking, carousing, brawling, wenching and other relaxing pursuits as possible in 48 hours.  In the fields of battle your men are an elite unit of trained professionals.  Off-duty they're pretty much like every other bunch of soldiers you've ever served with. \n\nA weekend off and what to do? After the challenges of the past year when you were first promoted and assumed command of Charlie Company you've nearly forgotton what free time is and what you're supposed to do with it.\n\nPentari\nAn Interactive Prequel To First Light \nCopyright 1998 (C) Howard A. Sherman.  All Rights Reserved. \nType 'Info' For Information About This Game or 'Help' for Instructions.\nRelease 6 / Serial number 030206 / Inform v6.21 Library 6/10 \n\nYour Quarters\nRank certainly does have its privileges.  When you were a lowly lieutenant you had to share cramped quarters with a fellow lieutenant at your previous assignment.  Commanding a company of your own affords you the luxury of private, spacious quarters just outside the barracks themselves. As a further abuse of your power your chest and bunk are not standard issue items from the Pentari millitary supply center.\n\nYou can see a postcard here.",
         "reward": 0,
@@ -10,6 +13,11 @@
         }
     },
     {
+        "valid_actions": [
+            "take postcard",
+            "put sword down",
+            "north"
+        ],
         "act": "take postcard",
         "observation": "Taken.",
         "reward": 0,
@@ -20,6 +28,12 @@
         }
     },
     {
+        "valid_actions": [
+            "put postcard down",
+            "put sword down",
+            "put all down",
+            "north"
+        ],
         "act": "put postcard down",
         "observation": "Dropped.",
         "reward": 0,
@@ -30,16 +44,11 @@
         }
     },
     {
-        "act": "\"take postcard\"",
-        "observation": "That's not a verb I recognise.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 3,
-            "score": 0
-        }
-    },
-    {
+        "valid_actions": [
+            "take postcard",
+            "put sword down",
+            "north"
+        ],
         "act": "take postcard",
         "observation": "Taken.",
         "reward": 0,
@@ -50,6 +59,12 @@
         }
     },
     {
+        "valid_actions": [
+            "put postcard down",
+            "put sword down",
+            "put all down",
+            "north"
+        ],
         "act": "put postcard down",
         "observation": "Dropped.",
         "reward": 0,
@@ -60,6 +75,26 @@
         }
     },
     {
+        "valid_actions": [
+            "take postcard",
+            "put sword down",
+            "north"
+        ],
+        "act": "selected action: \"north",
+        "observation": "That's not a verb I recognise.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 5,
+            "score": 0
+        }
+    },
+    {
+        "valid_actions": [
+            "take postcard",
+            "put sword down",
+            "north"
+        ],
         "act": "north",
         "observation": "\nCharlie Company Compound\nYour company compound consists of three large buildings bordering a large, open area where company formations precede the orders of the day.  To the west the Company's supply building can be seen while directly ahead of you lies your company's barracks which seem quieter than a crypt.  Off to the east you hear the distant shouts of another Company drilling.  Poor souls.",
         "reward": 0,
@@ -70,6 +105,11 @@
         }
     },
     {
+        "valid_actions": [
+            "put sword down",
+            "north",
+            "south"
+        ],
         "act": "north",
         "observation": "\nCharlie Company Barracks\nIf the Army of Bostwin were to publish a new edition of the soldier's handbook, a picture of this barracks should be included as the example other companies should follow.  The floors are polished to an almost blinding shine while each of the bunks lining both sides of this building are perfectly made.  Every locker next to each bunk is closed and locked. Not a single scrap of paper, not one article of clothing, nay not even a dust particle looks out of place.  The powerful smell of high quantities of pine cleaner nearly burns your nostrils. Damn, you run a good comapny.\n\nYou can see a Pentarian Transporter here.",
         "reward": 0,
@@ -80,8 +120,14 @@
         }
     },
     {
-        "act": "get in other",
-        "observation": "(the Pentarian Transporter)\nYou get into the Pentarian Transporter.",
+        "valid_actions": [
+            "enter",
+            "get in other",
+            "put other down",
+            "south"
+        ],
+        "act": "enter",
+        "observation": "\nThe Charlie Company Barracks (in the Pentarian Transporter)",
         "reward": 0,
         "done": false,
         "info": {
@@ -90,6 +136,11 @@
         }
     },
     {
+        "valid_actions": [
+            "city",
+            "get up",
+            "put sword down"
+        ],
         "act": "city",
         "observation": "\nYour vision swims as your sight of the barracks blurs into a myriad of chaotic colors. You feel a moment of disorientation...\n\nAs you begin to materialize your eyes grow wide as you realize you're not in front of the Bank of Bostwin, where the transporter usually takes you in the city.  You're not even outdoors, you're indoors! What the hell is going on here...?\n\nEntrance Hall\nYour footsteps echo loudly as you walk through this room taking in the vast expanse of its size.  The walls rise majestically upward and outward to form a huge room which, curiously, is empty.  You can't help but wonder why such a large room is needed for the straight-forward task of accepting guests and visitors. To the east a wide open arch leads to what must be a library while to the north you hardly help but notice a huge, semi-circular marble staircase leading up to parts unknown.\n\n[Your score has just gone up by five points.]",
         "reward": 5,
@@ -100,16 +151,11 @@
         }
     },
     {
-        "act": "\"north\"",
-        "observation": "That's not a verb I recognise.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 9,
-            "score": 5
-        }
-    },
-    {
+        "valid_actions": [
+            "north",
+            "east",
+            "put sword down"
+        ],
         "act": "north",
         "observation": "\nMain Hall\nAs you enter this great hall you can sense power and majesty.  The ceiling extends far above you while the walls stretch out seemingly for miles. From the entrance hall this room seemed somehow smaller than it actually is. Despite the availability of real estate in this room it's sparsely furnished.  A couple of comfortable chairs are tossed about almost haphazzardly in various corners.\nA huge marble staircase winds upstairs to parts unknown while large archways lead east and west.\n\nYou can see a fine scroll here.",
         "reward": 0,
@@ -120,6 +166,11 @@
         }
     },
     {
+        "valid_actions": [
+            "take scroll",
+            "put sword down",
+            "south"
+        ],
         "act": "take scroll",
         "observation": "Taken.",
         "reward": 0,
@@ -130,8 +181,15 @@
         }
     },
     {
-        "act": "luminus",
-        "observation": "\nAs you invoke the magic imbued in the scroll it does a cursory inspection of your inventory and decides to turn an item in your inventory into something one might see in a futuristic science fiction movie; your sword is now a perfectly useful source of light among it's other inherent uses.  Unfortunately, the light is excessively bright; you're forced to squint for the pain to your eyes",
+        "valid_actions": [
+            "luminus",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "put scroll down",
+        "observation": "Dropped.",
         "reward": 0,
         "done": false,
         "info": {
@@ -140,6 +198,11 @@
         }
     },
     {
+        "valid_actions": [
+            "take scroll",
+            "put sword down",
+            "south"
+        ],
         "act": "put sword down",
         "observation": "Dropped.",
         "reward": 0,
@@ -150,6 +213,12 @@
         }
     },
     {
+        "valid_actions": [
+            "take sword",
+            "take scroll",
+            "take all",
+            "south"
+        ],
         "act": "take sword",
         "observation": "Taken.",
         "reward": 0,
@@ -160,8 +229,13 @@
         }
     },
     {
-        "act": "south",
-        "observation": "\nEntrance Hall",
+        "valid_actions": [
+            "take scroll",
+            "put sword down",
+            "south"
+        ],
+        "act": "take scroll",
+        "observation": "Taken.",
         "reward": 0,
         "done": false,
         "info": {
@@ -170,8 +244,16 @@
         }
     },
     {
-        "act": "put sword down",
-        "observation": "Dropped.",
+        "valid_actions": [
+            "luminus",
+            "east",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine scroll: Dropped.\nfine Pentarian sword: Dropped.",
         "reward": 0,
         "done": false,
         "info": {
@@ -180,8 +262,14 @@
         }
     },
     {
-        "act": "north",
-        "observation": "\nMain Hall",
+        "valid_actions": [
+            "take sword",
+            "take scroll",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "fine Pentarian sword: Taken.\nfine scroll: Taken.\n(chair): That's hardly portable.",
         "reward": 0,
         "done": false,
         "info": {
@@ -190,8 +278,15 @@
         }
     },
     {
-        "act": "north",
-        "observation": "You can't go that way.",
+        "valid_actions": [
+            "luminus",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine scroll: Dropped.\nfine Pentarian sword: Dropped.",
         "reward": 0,
         "done": false,
         "info": {
@@ -200,8 +295,15 @@
         }
     },
     {
-        "act": "east",
-        "observation": "\n\"Drat it! I'll bring you here myself!\"\nYou feel a momentary sensation of vertigo...\n\n\nLibrary\nThis is a vast chamber lined floor to ceiling with bookcases filled to capacity with books.  You haven't seen such a collection of knowledge since your academy days.  A cursory glance at some bookshelves reveal several titles on various topics of magic, history, philosophy, science and a hundred other topics.  A few large tables with chairs are in the center of the room inviting anyone to make use of these impressive facilities.\n\nThe wizard Morden is here staring at you, the smallest of smiles on his face.\n\nYou can also see a copy of The Legends and Lore of Pentari here.",
+        "valid_actions": [
+            "take sword",
+            "take scroll",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "fine Pentarian sword: Taken.\nfine scroll: Taken.\n(chair): That's hardly portable.",
         "reward": 0,
         "done": false,
         "info": {
@@ -210,8 +312,15 @@
         }
     },
     {
-        "act": "take other",
-        "observation": "(the copy of The Legends and Lore of Pentari)\nTaken.",
+        "valid_actions": [
+            "luminus",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine scroll: Dropped.\nfine Pentarian sword: Dropped.",
         "reward": 0,
         "done": false,
         "info": {
@@ -220,8 +329,14 @@
         }
     },
     {
-        "act": "west",
-        "observation": "\nEntrance Hall\n\nYou can see a fine Pentarian sword here.",
+        "valid_actions": [
+            "take sword",
+            "take scroll",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "fine Pentarian sword: Taken.\nfine scroll: Taken.\n(chair): That's hardly portable.",
         "reward": 0,
         "done": false,
         "info": {
@@ -230,8 +345,16 @@
         }
     },
     {
-        "act": "take sword",
-        "observation": "Taken.",
+        "valid_actions": [
+            "luminus",
+            "east",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "east",
+        "observation": "\n\"Drat it! I'll bring you here myself!\"\nYou feel a momentary sensation of vertigo...\n\n\nLibrary\nThis is a vast chamber lined floor to ceiling with bookcases filled to capacity with books.  You haven't seen such a collection of knowledge since your academy days.  A cursory glance at some bookshelves reveal several titles on various topics of magic, history, philosophy, science and a hundred other topics.  A few large tables with chairs are in the center of the room inviting anyone to make use of these impressive facilities.\n\nThe wizard Morden is here staring at you, the smallest of smiles on his face.\n\nYou can also see a copy of The Legends and Lore of Pentari here.",
         "reward": 0,
         "done": false,
         "info": {
@@ -240,8 +363,18 @@
         }
     },
     {
-        "act": "put lore down",
-        "observation": "Dropped.",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "take other",
+            "put other down",
+            "put sword down",
+            "put all down",
+            "push other to floor",
+            "west"
+        ],
+        "act": "take other",
+        "observation": "(the copy of The Legends and Lore of Pentari)\nTaken.",
         "reward": 0,
         "done": false,
         "info": {
@@ -250,8 +383,17 @@
         }
     },
     {
-        "act": "put sword down",
-        "observation": "Dropped.",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "put other down",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "west"
+        ],
+        "act": "put other down",
+        "observation": "(the copy of The Legends and Lore of Pentari down)\nDropped.",
         "reward": 0,
         "done": false,
         "info": {
@@ -260,8 +402,18 @@
         }
     },
     {
-        "act": "take all",
-        "observation": "fine Pentarian sword: Taken.\ncopy of The Legends and Lore of Pentari: Taken.",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "take other",
+            "put other down",
+            "put sword down",
+            "put all down",
+            "push other to floor",
+            "west"
+        ],
+        "act": "take other",
+        "observation": "(the copy of The Legends and Lore of Pentari)\nTaken.",
         "reward": 0,
         "done": false,
         "info": {
@@ -270,8 +422,17 @@
         }
     },
     {
-        "act": "north",
-        "observation": "\nMain Hall",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "put other down",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "west"
+        ],
+        "act": "west",
+        "observation": "\nEntrance Hall",
         "reward": 0,
         "done": false,
         "info": {
@@ -280,8 +441,18 @@
         }
     },
     {
-        "act": "covert",
-        "observation": "\nSpots in all the colors of the rainbow dance in front of your eyes as you feel yourself displaced...\n\n\nYou find yourself in the deep recesses of Vamvevmew's castle and instantly a wave of fear and depression hit you as hard as any enemy ever has.  Your hand shoots right for your sword in its scabbard on reflex and you grip the hilt so hard your knuckles whiten.\n\nCastle\nYou are at the center of an intersection which runs east to west as well as north to south.",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put scroll down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
         "reward": 0,
         "done": false,
         "info": {
@@ -290,8 +461,17 @@
         }
     },
     {
-        "act": "south",
-        "observation": "\nCastle Entrance\nThis large open area stands just inside the castle's gate and would be the place all visitors would first go before being allowed entrance to the castle proper.  A guard station, long abandoned, is here. A corridor stretches into the castle itself to the north.\n\nYou can see a Magical Seal here.",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "put lore down",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "put lore down",
+        "observation": "Dropped.",
         "reward": 0,
         "done": false,
         "info": {
@@ -300,273 +480,1405 @@
         }
     },
     {
-        "act": "hit seal",
-        "observation": "Your fist smashes the ward, shattering it into a cloud of shimmering dust.\n\n[Your score has just gone up by ten points.]",
-        "reward": 10,
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "take lore",
+            "east",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "take lore",
+        "observation": "Taken.",
+        "reward": 0,
         "done": false,
         "info": {
             "moves": 29,
-            "score": 15
+            "score": 5
         }
     },
     {
-        "act": "north",
-        "observation": "\nCastle",
+        "valid_actions": [
+            "covert",
+            "luminus",
+            "put lore down",
+            "put sword down",
+            "put scroll down",
+            "put all down",
+            "south"
+        ],
+        "act": "luminus",
+        "observation": "\nAs you invoke the magic imbued in the scroll it does a cursory inspection of your inventory and decides to turn an item in your inventory into something one might see in a futuristic science fiction movie; your sword is now a perfectly useful source of light among it's other inherent uses.  Unfortunately, the light is excessively bright; you're forced to squint for the pain to your eyes",
         "reward": 0,
         "done": false,
         "info": {
             "moves": 30,
-            "score": 15
+            "score": 5
         }
     },
     {
-        "act": "south",
-        "observation": "\nCastle Entrance",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 31,
-            "score": 15
-        }
-    },
-    {
-        "act": "north",
-        "observation": "\nCastle",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 32,
-            "score": 15
-        }
-    },
-    {
-        "act": "north",
-        "observation": "\nMain Hall\nThis once majestic room was where visitors would come to relax and meet with the formal lord of the castle in a somewhat informal atmosphere. Several large comfortable couches are scattered about, dusty and altogether squalid.  Many large tapestries still hang on the walls but are horribly faded from age.  Large open archways lead east and west while a huge fireplace dominates the center of the room against the northern wall.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 33,
-            "score": 15
-        }
-    },
-    {
-        "act": "north",
-        "observation": "\nMain Hall, by the Fireplace\nYou are at the northern end of the main hall taking in the panorama of what was once a majestic area where perhaps treaties were signed, strategies laid and plans foiled.\n\nYou can see a Large Fireplace here.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 34,
-            "score": 15
-        }
-    },
-    {
-        "act": "put all down",
-        "observation": "copy of The Legends and Lore of Pentari: Dropped.\nfine Pentarian sword: Dropped.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 35,
-            "score": 15
-        }
-    },
-    {
-        "act": "take all",
-        "observation": "fine Pentarian sword: Taken.\ncopy of The Legends and Lore of Pentari: Taken.\nLarge Fireplace: That's fixed in place.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 36,
-            "score": 15
-        }
-    },
-    {
-        "act": "put all down",
-        "observation": "copy of The Legends and Lore of Pentari: Dropped.\nfine Pentarian sword: Dropped.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 37,
-            "score": 15
-        }
-    },
-    {
-        "act": "take all",
-        "observation": "fine Pentarian sword: Taken.\ncopy of The Legends and Lore of Pentari: Taken.\nLarge Fireplace: That's fixed in place.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 38,
-            "score": 15
-        }
-    },
-    {
-        "act": "enter",
-        "observation": "\nThe Main Hall, by the Fireplace (in the Large Fireplace)\n\nYou can see a dirty scroll here.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 39,
-            "score": 15
-        }
-    },
-    {
-        "act": "get scroll",
-        "observation": "Taken.\n\n[Your score has just gone up by ten points.]",
-        "reward": 10,
-        "done": false,
-        "info": {
-            "moves": 40,
-            "score": 25
-        }
-    },
-    {
-        "act": "get up",
-        "observation": "\nMain Hall, by the Fireplace\n\nYou can see a Large Fireplace here.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 41,
-            "score": 25
-        }
-    },
-    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
         "act": "put sword down",
         "observation": "Dropped.",
         "reward": 0,
         "done": false,
         "info": {
-            "moves": 42,
-            "score": 25
+            "moves": 31,
+            "score": 5
         }
     },
     {
-        "act": "south",
-        "observation": "\nMain Hall",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 43,
-            "score": 25
-        }
-    },
-    {
-        "act": "fwoosh",
-        "observation": "You call down a huge fireball which washes you over.  By some work of the magic, you only feel slightly warm from this event.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 44,
-            "score": 25
-        }
-    },
-    {
-        "act": "west",
-        "observation": "\nArmory\nMany death-dealing weapons of every type were stored here.  Several tall racks probably held spears while shorter ones mounted against the wall stored various kinds of swords.  Other wall mounts, also empty, give you no idea what sort of weapons may have been held by them.  A large archway north is partially blocked by collapsed stones and rubble.\n\nYou can see a jewel encrusted dagger here.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 45,
-            "score": 25
-        }
-    },
-    {
-        "act": "take other",
-        "observation": "(the jewel encrusted dagger)\nTaken.\n\n[Your score has just gone up by five points.]",
-        "reward": 5,
-        "done": false,
-        "info": {
-            "moves": 46,
-            "score": 30
-        }
-    },
-    {
-        "act": "put all down",
-        "observation": "jewel encrusted dagger: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 47,
-            "score": 30
-        }
-    },
-    {
-        "act": "north",
-        "observation": "\nTreasury\nIn times past the vast wealth of the Duke would be stored here.  Alas, with the castle taken and the Duke gone so with him went his riches. As you remember your history lessons, you recall the genealogy of the Dukes of Bostwin and their love of collecting treasures.  You could only imagine what vast treasures were contained in this room long ago. \n\nA finely crafted oaken chest is here.",
-        "reward": 0,
-        "done": false,
-        "info": {
-            "moves": 48,
-            "score": 30
-        }
-    },
-    {
-        "act": "take chest",
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "take sword",
         "observation": "Taken.",
         "reward": 0,
         "done": false,
         "info": {
-            "moves": 49,
-            "score": 30
+            "moves": 32,
+            "score": 5
         }
     },
     {
-        "act": "put chest down",
-        "observation": "Dropped.\n\nThe Dark Elf walks in.",
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put sword down",
+        "observation": "Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 33,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 34,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall\n\nYou can see a fine Pentarian sword here.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 35,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "take sword",
+        "observation": "Taken.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 36,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put sword down",
+        "observation": "Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 37,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 38,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall\n\nYou can see a fine Pentarian sword here.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 39,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "take sword",
+        "observation": "Taken.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 40,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put sword down",
+        "observation": "Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 41,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 42,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall\n\nYou can see a fine Pentarian sword here.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 43,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take sword",
+            "put lore down",
+            "south"
+        ],
+        "act": "take sword",
+        "observation": "Taken.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 44,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 45,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 46,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 47,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 48,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 49,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
         "reward": 0,
         "done": false,
         "info": {
             "moves": 50,
-            "score": 30
+            "score": 5
         }
     },
     {
-        "act": "take chest",
-        "observation": "Taken.\n\nThe Dark Elf leaves the room",
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
         "reward": 0,
         "done": false,
         "info": {
             "moves": 51,
-            "score": 30
+            "score": 5
         }
     },
     {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
         "act": "north",
-        "observation": "\nBarracks\nWhile the bulk of the Duke's men were housed outside the castle, the Duke always kept a contingent of soldiers close at hand.  This room at one time housed the Duke's personal guard; the elite of his army.  Looking around you are reminded of your own company's barracks and you suddenly wish for a few of your own troops to be here with you now.\n\nYou can see The Dark Elf here.\n\nThe Dark Elf leaves the room",
+        "observation": "\nMain Hall",
         "reward": 0,
         "done": false,
         "info": {
             "moves": 52,
-            "score": 30
+            "score": 5
         }
     },
     {
-        "act": "put chest down",
-        "observation": "Dropped.\n\nThe Dark Elf walks in.",
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
         "reward": 0,
         "done": false,
         "info": {
             "moves": 53,
-            "score": 30
+            "score": 5
         }
     },
     {
-        "act": "take chest",
-        "observation": "Taken.\n\nThe Dark Elf walks around as if looking for something.",
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
         "reward": 0,
         "done": false,
         "info": {
             "moves": 54,
-            "score": 30
+            "score": 5
         }
     },
     {
-        "act": "hit elf",
-        "observation": "He splits you in half as easily if he were splitting a chicken.\n\n\n    *** You have died ***\n\n\nIn that game you scored 30 out of a possible 70, in 54 turns.\n\nWould you like to RESTART, RESTORE a saved game, UNDO your last move or QUIT",
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
         "reward": 0,
-        "done": true,
+        "done": false,
         "info": {
-            "moves": 54,
-            "score": 30
+            "moves": 55,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 56,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 57,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 58,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 59,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 60,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 61,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 62,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 63,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 64,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 65,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 66,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 67,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 68,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 69,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 70,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 71,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 72,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 73,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 74,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 75,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 76,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 77,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 78,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 79,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 80,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 81,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 82,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 83,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 84,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 85,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 86,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 87,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 88,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 89,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 90,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 91,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "east",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 92,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 93,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 94,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 95,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "north",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down"
+        ],
+        "act": "north",
+        "observation": "\nMain Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 96,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 97,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 98,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 99,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 100,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 101,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 102,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 103,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 104,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 105,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 106,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "put all down",
+        "observation": "fine Pentarian sword: Dropped.\ncopy of The Legends and Lore of Pentari: Dropped.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 107,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "take lore",
+            "take sword",
+            "take all",
+            "south"
+        ],
+        "act": "take all",
+        "observation": "copy of The Legends and Lore of Pentari: Taken.\nfine Pentarian sword: Taken.\n(chair): That's hardly portable.",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 108,
+            "score": 5
+        }
+    },
+    {
+        "valid_actions": [
+            "covert",
+            "east",
+            "put lore down",
+            "put sword down",
+            "put all down",
+            "south"
+        ],
+        "act": "south",
+        "observation": "\nEntrance Hall",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 109,
+            "score": 5
         }
     }
 ]
