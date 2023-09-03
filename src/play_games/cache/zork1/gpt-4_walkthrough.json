@@ -1,0 +1,772 @@
+[
+    {
+        "act": "Init",
+        "observation": "Copyright (c) 1981, 1982, 1983 Infocom, Inc. All rights reserved.\nZORK is a registered trademark of Infocom, Inc.\nRevision 88 / Serial number 840726\n\nWest of House\nYou are standing in an open field west of a white house, with a boarded front door.\nThere is a small mailbox here.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 0,
+            "score": 0
+        }
+    },
+    {
+        "act": "open mailbox",
+        "observation": "Opening the small mailbox reveals a leaflet.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 1,
+            "score": 0
+        }
+    },
+    {
+        "act": "take leaflet",
+        "observation": "Taken.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 2,
+            "score": 0
+        }
+    },
+    {
+        "act": "close mailbox",
+        "observation": "Closed.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 3,
+            "score": 0
+        }
+    },
+    {
+        "act": "north",
+        "observation": "North of House\nYou are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 4,
+            "score": 0
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Forest Path\nThis is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 5,
+            "score": 0
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Clearing\nYou are in a clearing, with a forest surrounding you on all sides. A path leads south.\nOn the ground is a pile of leaves.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 6,
+            "score": 0
+        }
+    },
+    {
+        "act": "pull leaves",
+        "observation": "Done.\nIn disturbing the pile of leaves, a grating is revealed.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 7,
+            "score": 0
+        }
+    },
+    {
+        "act": "take leaves",
+        "observation": "Taken.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 8,
+            "score": 0
+        }
+    },
+    {
+        "act": "put leaves in grating",
+        "observation": "It won't fit through the grating.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 9,
+            "score": 0
+        }
+    },
+    {
+        "act": "south",
+        "observation": "Forest Path\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 10,
+            "score": 0
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North of House\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 11,
+            "score": 0
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Forest Path\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 12,
+            "score": 0
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Clearing\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 13,
+            "score": 0
+        }
+    },
+    {
+        "act": "put leaflet in grating",
+        "observation": "The leaflet goes through the grating into the darkness below.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 14,
+            "score": 0
+        }
+    },
+    {
+        "act": "south",
+        "observation": "Forest Path\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 15,
+            "score": 0
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North of House\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 16,
+            "score": 0
+        }
+    },
+    {
+        "act": "east",
+        "observation": "Behind House\nYou are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is slightly ajar.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 17,
+            "score": 0
+        }
+    },
+    {
+        "act": "open window",
+        "observation": "With great effort, you open the window far enough to allow entry.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 18,
+            "score": 0
+        }
+    },
+    {
+        "act": "enter window",
+        "observation": "Kitchen\nYou are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open.\nOn the table is an elongated brown sack, smelling of hot peppers.\nA bottle is sitting on the table.\nThe glass bottle contains:\n  A quantity of water\n\n",
+        "reward": 10,
+        "done": false,
+        "info": {
+            "moves": 19,
+            "score": 10
+        }
+    },
+    {
+        "act": "take all",
+        "observation": "brown sack: Taken.\nglass bottle: Taken.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 20,
+            "score": 10
+        }
+    },
+    {
+        "act": "open sack",
+        "observation": "Opening the brown sack reveals a lunch, and a clove of garlic.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 21,
+            "score": 10
+        }
+    },
+    {
+        "act": "take all from sack",
+        "observation": "lunch: Taken.\nclove of garlic: Taken.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 22,
+            "score": 10
+        }
+    },
+    {
+        "act": "west",
+        "observation": "Living Room\nYou are in the living room. There is a doorway to the east, a wooden door with strange gothic lettering to the west, which appears to be nailed shut, a trophy case, and a large oriental rug in the center of the room.\nAbove the trophy case hangs an elvish sword of great antiquity.\nA battery-powered brass lantern is on the trophy case.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 23,
+            "score": 10
+        }
+    },
+    {
+        "act": "take all",
+        "observation": "trophy case: The trophy case is securely fastened to the wall.\nsword: Taken.\nbrass lantern: Taken.\ncarpet: The rug is extremely heavy and cannot be carried.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 24,
+            "score": 10
+        }
+    },
+    {
+        "act": "turn on lantern",
+        "observation": "The brass lantern is now on.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 25,
+            "score": 10
+        }
+    },
+    {
+        "act": "push rug",
+        "observation": "With a great effort, the rug is moved to one side of the room, revealing the dusty cover of a closed trap door.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 26,
+            "score": 10
+        }
+    },
+    {
+        "act": "open trap",
+        "observation": "The door reluctantly opens to reveal a rickety staircase descending into darkness.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 27,
+            "score": 10
+        }
+    },
+    {
+        "act": "down",
+        "observation": "The trap door crashes shut, and you hear someone barring it.\n\nCellar\nYou are in a dark and damp cellar with a narrow passageway leading north, and a crawlway to the south. On the west is the bottom of a steep metal ramp which is unclimbable.\nYour sword is glowing with a faint blue glow.\n\n",
+        "reward": 25,
+        "done": false,
+        "info": {
+            "moves": 28,
+            "score": 35
+        }
+    },
+    {
+        "act": "north",
+        "observation": "The Troll Room\nThis is a small room with passages to the east and south and a forbidding hole leading west. Bloodstains and deep scratches (perhaps made by an axe) mar the walls.\nA nasty-looking troll, brandishing a bloody axe, blocks all passages out of the room.\nYour sword has begun to glow very brightly.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 29,
+            "score": 35
+        }
+    },
+    {
+        "act": "hit troll with sword",
+        "observation": "The fatal blow strikes the troll square in the heart:  He dies.\nAlmost as soon as the troll breathes his last breath, a cloud of sinister black fog envelops him, and when the fog lifts, the carcass has disappeared.\nYour sword is no longer glowing.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 30,
+            "score": 35
+        }
+    },
+    {
+        "act": "west",
+        "observation": "Maze\nThis is part of a maze of twisty little passages, all alike.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 31,
+            "score": 35
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Maze\nThis is part of a maze of twisty little passages, all alike.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 32,
+            "score": 35
+        }
+    },
+    {
+        "act": "east",
+        "observation": "The Troll Room\nThere is a bloody axe here.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 33,
+            "score": 35
+        }
+    },
+    {
+        "act": "take axe",
+        "observation": "Your load is too heavy.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 34,
+            "score": 35
+        }
+    },
+    {
+        "act": "put down leaves",
+        "observation": "Dropped.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 35,
+            "score": 35
+        }
+    },
+    {
+        "act": "take axe",
+        "observation": "Taken.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 36,
+            "score": 35
+        }
+    },
+    {
+        "act": "east",
+        "observation": "East-West Passage\nThis is a narrow east-west passageway. There is a narrow stairway leading down at the north end of the room.\n\n",
+        "reward": 5,
+        "done": false,
+        "info": {
+            "moves": 37,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Chasm\nA chasm runs southwest to northeast and the path follows it. You are on the south side of the chasm, where a crack opens into a passage.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 38,
+            "score": 40
+        }
+    },
+    {
+        "act": "northeast",
+        "observation": "Reservoir South\nYou are in a long room on the south shore of a large lake, far too deep and wide for crossing.\nThere is a path along the stream to the east or west, a steep pathway climbing southwest along the edge of a chasm, and a path leading into a canyon to the southeast.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 39,
+            "score": 40
+        }
+    },
+    {
+        "act": "southwest",
+        "observation": "Chasm\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 40,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North-South Passage\nThis is a high north-south passage, which forks to the northeast.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 41,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Chasm\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 42,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 43,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "Round Room\nThis is a circular stone room with passages in all directions. Several of them have unfortunately been blocked by cave-ins.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 44,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 45,
+            "score": 40
+        }
+    },
+    {
+        "act": "northeast",
+        "observation": "Deep Canyon\nYou are on the south edge of a deep canyon. Passages lead off to the east, northwest and southwest. A stairway leads down. You can hear the sound of flowing water from below.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 46,
+            "score": 40
+        }
+    },
+    {
+        "act": "down",
+        "observation": "Loud Room\nThis is a large room with a ceiling which cannot be detected from the ground. There is a narrow passage from east to west and a stone stairway leading upward. The room is deafeningly loud with an undetermined rushing sound. The sound seems to reverberate from all of the walls, making it difficult even to think.\nOn the ground is a large platinum bar.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 46,
+            "score": 40
+        }
+    },
+    {
+        "act": "take platinum bar",
+        "observation": "bar bar ...\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 46,
+            "score": 40
+        }
+    },
+    {
+        "act": "up",
+        "observation": "Deep Canyon\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 47,
+            "score": 40
+        }
+    },
+    {
+        "act": "east",
+        "observation": "Dam\nYou are standing on the top of the Flood Control Dam #3, which was quite a tourist attraction in times far distant. There are paths to the north, south, and west, and a scramble down.\nThe sluice gates on the dam are closed. Behind the dam, there can be seen a wide reservoir. Water is pouring over the top of the now abandoned dam.\nThere is a control panel here, on which a large metal bolt is mounted. Directly above the bolt is a small green plastic bubble.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 48,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "Reservoir South\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 49,
+            "score": 40
+        }
+    },
+    {
+        "act": "southwest",
+        "observation": "Chasm\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 50,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "You can't go that way.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 51,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 52,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "Round Room\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 53,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "East-West Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 54,
+            "score": 40
+        }
+    },
+    {
+        "act": "east",
+        "observation": "Round Room\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 55,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 56,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Chasm\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 57,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 58,
+            "score": 40
+        }
+    },
+    {
+        "act": "northeast",
+        "observation": "Deep Canyon\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 59,
+            "score": 40
+        }
+    },
+    {
+        "act": "down",
+        "observation": "Loud Room\nOn the ground is a large platinum bar.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 59,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "Round Room\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 60,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "East-West Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 61,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "The Troll Room\nOn the ground is a pile of leaves.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 62,
+            "score": 40
+        }
+    },
+    {
+        "act": "east",
+        "observation": "East-West Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 63,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Chasm\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 64,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 65,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "Round Room\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 66,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "East-West Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 67,
+            "score": 40
+        }
+    },
+    {
+        "act": "west",
+        "observation": "The Troll Room\nOn the ground is a pile of leaves.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 68,
+            "score": 40
+        }
+    },
+    {
+        "act": "east",
+        "observation": "East-West Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 69,
+            "score": 40
+        }
+    },
+    {
+        "act": "north",
+        "observation": "Chasm\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 70,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "North-South Passage\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 71,
+            "score": 40
+        }
+    },
+    {
+        "act": "south",
+        "observation": "Round Room\nSomeone carrying a large bag is casually leaning against one of the walls here. He does not speak, but it is clear from his aspect that the bag will be taken only over his dead body.\nYour sword has begun to glow very brightly.\n\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 72,
+            "score": 40
+        }
+    },
+    {
+        "act": "hit thief with axe",
+        "observation": "Clang! Crash! The thief parries.\nThe thief bows formally, raises his stiletto, and with a wry grin, ends the battle and your life.\nIt appears that that last blow was too much for you. I'm afraid you are dead.\n \n   ****  You have died  **** \n\nNow, let's take a look here... Well, you probably deserve another chance. I can't quite fix you up completely, but you can't have everything.\n\nForest\nThis is a forest, with trees in all directions. To the east, there appears to be sunlight.\n\n",
+        "reward": -10,
+        "done": true,
+        "info": {
+            "moves": 73,
+            "score": 30
+        }
+    }
+]

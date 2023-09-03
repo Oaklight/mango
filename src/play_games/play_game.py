@@ -3,6 +3,7 @@
 """
 
 import os
+import time
 import argparse
 import json
 from tqdm import tqdm
@@ -21,6 +22,7 @@ def play_game(args):
     reward = 0
     observation, info = env.reset()
     act_info = {
+        'valid_actions': ['Init'],
         'act': 'Init',
         'observation': observation,
         'reward': reward,
@@ -31,16 +33,18 @@ def play_game(args):
     walkthrough_list.append(act_info)
 
     for step_num in range(max_steps):
+        print ("==> step num: ", step_num)
         valid_actions = env.get_valid_actions()
         prompt = '- history: {}\n- new observation: {}\n- valid actions: {}\nPlease select an action from the valid actions list. Please just tell me the selected action without any extra words.'.format(history_steps, observation,valid_actions)
         try:
-            act = api_complete(system_prompt=system_prompt, prompt = prompt, model=model_name).strip()
-        except:
-            print ("This model's maximum context length is 4097 tokens.")
+            act = api_complete(system_prompt=system_prompt, prompt = prompt, model=model_name).strip().strip('"').strip("'")
+        except Exception as e:
+            print ("exception: ", e)
             break
         history_steps += '\nobservation: {}\nselected action: "{}"\nreward: {}\n'.format(observation, act, reward)
         observation, reward, done, info = env.step(act)
         sample_info = {
+            'valid_actions': valid_actions,
             'act': act,
             'observation': observation,
             'reward': reward,
