@@ -23,3 +23,14 @@ prompt: "-hints: if you go **, you will get to **; if you go **, you will get to
 | pentari.z5  |   5 (exceed max steps, max:5)     |   5 (exceed max steps, max:5)                       |
 
 ps: "extra info: ", gpt3.5 scores, pentari.z5: 5 (RetryError, max:5)
+
+## 09-06 meeting
+- [ ] walkthrough --> #revisited steps/#all steps --> rank all the games 
+- [ ] baseline CoT
+- [ ] goal-based CoT? How to design
+
+
+Research Topics: 
+- Goal Alignment
+- Game Goal Alignment
+- Graph into Prompt
