@@ -35,12 +35,12 @@ def main():
             else:
                 location_history.add(move[2].strip())
             all_steps += 1
-            
+
         if all_steps == 0:
             revisited_ratio = 0
         else:
             revisited_ratio = revisited_steps/all_steps
-        return_list.append(['game: {}'.format(game_name), 'revisited steps: {}'.format(revisited_steps), 'all steps: {}'.format(all_steps), 'revisited ratio: {}'.format(revisited_ratio)])
+        return_list.append([game_name, revisited_steps, all_steps, revisited_ratio])
 
     sorted_return_list = sorted(return_list,key = lambda x: x[2],reverse=True)
     for item in sorted_return_list:
