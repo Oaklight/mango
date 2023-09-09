@@ -3,95 +3,99 @@ rank game: #revisited steps/#all steps --> rank all the games
 """
 
 import os
-import csv
 import re 
+from collections import defaultdict
 
 direction_list = ['east', 'west', 'north', 'south', 'northeast', 'northwest', 'southeast', 'up', 'down']
+opposite_direction_dict = {
+    'east': 'west',
+    'west': 'east',
+    'north': 'south',
+    'south': 'north',
+    'northeast': 'southwest',
+    'southwest': 'northeast',
+    'northwest': 'southeast',
+    'southeast': 'northwest',
+    'up': 'up',
+    'down': 'down'
+}
 
+def extract_location(step):
+    location = re.search(r'==>OBSERVATION:(.*?)\n', step).group(1).strip()
+    if location == '>': # sherlock
+        location = re.search(r'==>OBSERVATION: >\n(.*?)\n', step).group(1).strip()
+    return location
 
-def calc_walkthrough():
+def rank_game():
+    max_steps = 70
+    print ("max_steps: {}".format(max_steps))
+
     games_folder = './data'
     game_names = os.listdir(games_folder)
-    print (game_names)
+
+    dataset = {} # history, valid action, map, golden action
 
     return_list = []
     for game_name in game_names:
         walkthrough_file_path = os.path.join(games_folder, game_name, game_name + '.walkthrough')
         with open(walkthrough_file_path, 'r', encoding='utf-8') as fin:
             walkthrough = fin.read()
-            steps = walkthrough.split('===========')
+            steps = walkthrough.split('===========')[1:]
 
-        location_history = set()
         revisited_steps = 0
-        all_steps = 0
+        transition_steps = 0
         walkthrough_length = 0
+        step_idx_list = []
 
-        for step in steps:
+        map = defaultdict(dict)
+        last_location = 'Init'
+        for step_idx, step in enumerate(steps[:max_steps]):
+            # extract action
             if 'ACT' not in step:
                 continue
             action = re.search(r'==>ACT:(.*?)\n', step).group(1).strip()
-            if action in set(direction_list):
-                location = re.search(r'==>OBSERVATION:(.*?)\n', step).group(1).strip()
-                if location == '>': # sherlock
-                    location = re.search(r'==>OBSERVATION: >\n(.*?)\n', step).group(1).strip()
 
-                if location in location_history:
+            # transition action
+            if action in set(direction_list):
+                location = extract_location(step)
+                if location == last_location:
+                    continue
+                transition_steps += 1
+
+                if len(map) == 0:
+                    map[last_location] = {
+                        location: action
+                    }
+                    map[location] = {
+                        last_location: opposite_direction_dict[action]
+                    }
+                elif location not in map:
+                    map[last_location][location] = action
+                    map[location] = {
+                        last_location: opposite_direction_dict[action]
+                    }
+                elif location not in map[last_location] or map[last_location][location] != action:
+                    map[last_location][location] = action
+                    map[location][last_location] = opposite_direction_dict[action]
+                elif map[last_location][location] == action: # revisit
                     revisited_steps += 1
-                else:
-                    location_history.add(location)
-                all_steps += 1
+                    step_idx_list.append(step_idx)
+                last_location = location
+
             walkthrough_length +=1 
 
-        if all_steps == 0:
+        if transition_steps == 0:
             revisited_ratio = 0
         else:
-            revisited_ratio = revisited_steps/all_steps
-        return_list.append([game_name, revisited_steps, all_steps, walkthrough_length, revisited_ratio])
+            revisited_ratio = revisited_steps/transition_steps
+        if revisited_steps < 10 or transition_steps < 20:
+            continue
+        return_list.append([game_name, revisited_steps, transition_steps, walkthrough_length, revisited_ratio, step_idx_list])
+
     sorted_return_list = sorted(return_list,key = lambda x: x[4],reverse=True)
     for item in sorted_return_list:
         print (item)
     print ("Well Done!")
                 
-
 if __name__ == '__main__':
-    calc_walkthrough()
-
-
-"""
-def calc_valid_moves():
-    games_folder = './data-intermediate'
-    game_names = os.listdir(games_folder)
-    print (game_names)
-
-    return_list = []
-    for game_name in game_names:
-        valid_moves_file_path = os.path.join(games_folder, game_name, game_name + '.valid_moves.csv')
-        with open(valid_moves_file_path, 'r', encoding='utf-8') as fin:
-            lines = list(csv.reader(fin))[1:]
-            valid_moves = [line[:3] for line in lines]
-
-        location_history = set()
-        revisited_steps = 0
-        all_steps = 0
-        for move in valid_moves:
-            if move[1] == '':
-                continue
-            location_history.add(move[1].strip())
-
-            if move[2] in location_history:
-                revisited_steps += 1
-            else:
-                location_history.add(move[2].strip())
-            all_steps += 1
-
-        if all_steps == 0:
-            revisited_ratio = 0
-        else:
-            revisited_ratio = revisited_steps/all_steps
-        return_list.append([game_name, revisited_steps, all_steps, revisited_ratio])
-
-    sorted_return_list = sorted(return_list,key = lambda x: x[3],reverse=True)
-    for item in sorted_return_list:
-        print (item)
-    print ("Well Done!")
-"""
+    rank_game()

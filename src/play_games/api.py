@@ -11,14 +11,19 @@ openai.api_key = os.environ.get('OPENAI_API_KEY')
 openai.organization = os.environ.get('OPENAI_API_ORG')
 
 
-@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(10))
+@retry(wait=wait_random_exponential(min=5, max=60), stop=stop_after_attempt(6))
 def api_complete(system_prompt, prompt, model="gpt-3.5-turbo", temperature=0.0):
-    completion = openai.ChatCompletion.create(
-    model=model,
-    temperature=temperature,
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": prompt},
-    ]
-    )
-    return completion.choices[0].message['content']
+    try:
+        completion = openai.ChatCompletion.create(
+        model=model,
+        temperature=temperature,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": prompt},
+        ]
+        )
+        return completion.choices[0].message['content']
+    except openai.error.InvalidRequestError as e:
+        return 'Invalid Request.'
+    except Exception as e:
+        raise

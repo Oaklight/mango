@@ -1,0 +1,87 @@
+[
+    {
+        "valid_actions": [
+            "Init"
+        ],
+        "act": "Init",
+        "observation": "\n\n\n\n[Type \"help\" for more information about this version]\n\nDetective\nBy Matt Barringer.\nPorted by Stuart Moore.\nStuart_Moore@my-deja.com\nRelease 1 / Serial number 000715 / Inform v6.21 Library 6/10 SD\n\n<< Chief's office >>\nYou are standing in the Chief's office. He is telling you \"The Mayor was murdered yeaterday night at 12:03 am. I want you to solve it before we get any bad publicity or the FBI has to come in. \"Yessir!\" You reply. He hands you a sheet of paper. Once you have read it, go north or west.\n\nYou can see a piece of white paper here.\n\n[Your score has just gone up by ten points.]\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 1,
+            "score": 10
+        },
+        "prompt": ""
+    },
+    {
+        "valid_actions": [
+            "east",
+            "take paper",
+            "west",
+            "north"
+        ],
+        "response": "take paper",
+        "act": "take paper",
+        "observation": "\nTaken.\n\n[Your score has just gone up by ten points.]\n",
+        "reward": 10,
+        "done": false,
+        "info": {
+            "moves": 2,
+            "score": 20
+        },
+        "prompt": "- history: \n- new observation: \n\n\n\n[Type \"help\" for more information about this version]\n\nDetective\nBy Matt Barringer.\nPorted by Stuart Moore.\nStuart_Moore@my-deja.com\nRelease 1 / Serial number 000715 / Inform v6.21 Library 6/10 SD\n\n<< Chief's office >>\nYou are standing in the Chief's office. He is telling you \"The Mayor was murdered yeaterday night at 12:03 am. I want you to solve it before we get any bad publicity or the FBI has to come in. \"Yessir!\" You reply. He hands you a sheet of paper. Once you have read it, go north or west.\n\nYou can see a piece of white paper here.\n\n[Your score has just gone up by ten points.]\n\nChoose an appropriate action from the valid actions list: ['east', 'take paper', 'west', 'north']\nPlease just tell me the selected action without any extra words."
+    },
+    {
+        "valid_actions": [
+            "east",
+            "west",
+            "put paper down",
+            "north"
+        ],
+        "response": "north",
+        "act": "north",
+        "observation": "\n\n<< Outside >>\nYou are outside in the cold. To the east is a dead end. To the west is the rest of the street. Papers are blowing around. It's amazingly cold for this time of year.\n",
+        "reward": 0,
+        "done": false,
+        "info": {
+            "moves": 3,
+            "score": 20
+        },
+        "prompt": "- history: \nobservation: \n\n\n\n[Type \"help\" for more information about this version]\n\nDetective\nBy Matt Barringer.\nPorted by Stuart Moore.\nStuart_Moore@my-deja.com\nRelease 1 / Serial number 000715 / Inform v6.21 Library 6/10 SD\n\n<< Chief's office >>\nYou are standing in the Chief's office. He is telling you \"The Mayor was murdered yeaterday night at 12:03 am. I want you to solve it before we get any bad publicity or the FBI has to come in. \"Yessir!\" You reply. He hands you a sheet of paper. Once you have read it, go north or west.\n\nYou can see a piece of white paper here.\n\n[Your score has just gone up by ten points.]\n\nselected action: \"take paper\"\nreward: 0\n\n- new observation: \nTaken.\n\n[Your score has just gone up by ten points.]\n\nChoose an appropriate action from the valid actions list: ['east', 'west', 'put paper down', 'north']\nPlease just tell me the selected action without any extra words."
+    },
+    {
+        "valid_actions": [
+            "north",
+            "west",
+            "put paper down"
+        ],
+        "response": "west",
+        "act": "west",
+        "observation": "\n\n<< Outside >>\nYou are still on the streets. To the north is a restraunt where the mayor ate often. To the east is the Mayor's home.\n\n[Your score has just gone up by ten points.]\n",
+        "reward": 10,
+        "done": false,
+        "info": {
+            "moves": 4,
+            "score": 30
+        },
+        "prompt": "- history: \nobservation: \n\n\n\n[Type \"help\" for more information about this version]\n\nDetective\nBy Matt Barringer.\nPorted by Stuart Moore.\nStuart_Moore@my-deja.com\nRelease 1 / Serial number 000715 / Inform v6.21 Library 6/10 SD\n\n<< Chief's office >>\nYou are standing in the Chief's office. He is telling you \"The Mayor was murdered yeaterday night at 12:03 am. I want you to solve it before we get any bad publicity or the FBI has to come in. \"Yessir!\" You reply. He hands you a sheet of paper. Once you have read it, go north or west.\n\nYou can see a piece of white paper here.\n\n[Your score has just gone up by ten points.]\n\nselected action: \"take paper\"\nreward: 0\n\nobservation: \nTaken.\n\n[Your score has just gone up by ten points.]\n\nselected action: \"north\"\nreward: 10\n\n- new observation: \n\n<< Outside >>\nYou are outside in the cold. To the east is a dead end. To the west is the rest of the street. Papers are blowing around. It's amazingly cold for this time of year.\n\n- extra info: If you go south, you will get to \"Init\";\nChoose an appropriate action from the valid actions list: ['north', 'west', 'put paper down']\nPlease just tell me the selected action without any extra words."
+    },
+    {
+        "valid_actions": [
+            "west",
+            "east",
+            "north",
+            "put paper down"
+        ],
+        "response": "north",
+        "act": "north",
+        "observation": "\n\n<< Restraunt >>\nYou are about to enter the restraunt when two guys jump you. They take your wallet and beat you a bit. Then you flash your badge and that riles them. Your body was discovered in a river 10 miles away.\n\n\n    *** You have died ***\n\n\nIn that game you scored 30 out of a possible 360, in 4 turns.\n\nWould you like to RESTART, RESTORE a saved game, give the FULL score for that game or QUIT?",
+        "reward": 0,
+        "done": true,
+        "info": {
+            "moves": 4,
+            "score": 30
+        },
+        "prompt": "- history: \nobservation: \n\n\n\n[Type \"help\" for more information about this version]\n\nDetective\nBy Matt Barringer.\nPorted by Stuart Moore.\nStuart_Moore@my-deja.com\nRelease 1 / Serial number 000715 / Inform v6.21 Library 6/10 SD\n\n<< Chief's office >>\nYou are standing in the Chief's office. He is telling you \"The Mayor was murdered yeaterday night at 12:03 am. I want you to solve it before we get any bad publicity or the FBI has to come in. \"Yessir!\" You reply. He hands you a sheet of paper. Once you have read it, go north or west.\n\nYou can see a piece of white paper here.\n\n[Your score has just gone up by ten points.]\n\nselected action: \"take paper\"\nreward: 0\n\nobservation: \nTaken.\n\n[Your score has just gone up by ten points.]\n\nselected action: \"north\"\nreward: 10\n\nobservation: \n\n<< Outside >>\nYou are outside in the cold. To the east is a dead end. To the west is the rest of the street. Papers are blowing around. It's amazingly cold for this time of year.\n\nselected action: \"west\"\nreward: 0\n\n- new observation: \n\n<< Outside >>\nYou are still on the streets. To the north is a restraunt where the mayor ate often. To the east is the Mayor's home.\n\n[Your score has just gone up by ten points.]\n\n- extra info: If you go south, you will get to \"Init\";If you go west, you will get to \"<< Outside >>\";If you go east, you will get to \"<< Outside >>\";\nChoose an appropriate action from the valid actions list: ['west', 'east', 'north', 'put paper down']\nPlease just tell me the selected action without any extra words."
+    }
+]
