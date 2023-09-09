@@ -27,7 +27,7 @@ def extract_location(step):
     return location
 
 def rank_game():
-    max_steps = 70
+    max_steps = 71
     print ("max_steps: {}".format(max_steps))
 
     games_folder = './data'
