@@ -18,7 +18,6 @@ pip install -r requirements.txt
 
 有的游戏非常冗长，建议不要一次性生成所有的machine steps（比如spirit，有1000多步），而是**分批生成标注，比如每次处理100步**，这样**可以避免检查脚本丢给你太多的machine only steps导致没法阅读**。
 
-```bash
 
 ### 标注valid moves
 
