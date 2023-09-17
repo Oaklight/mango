@@ -16,6 +16,9 @@ pip install -r requirements.txt
 
 ## 以night为例
 
+有的游戏非常冗长，建议不要一次性生成所有的machine steps（比如spirit，有1000多步），而是**分批生成标注，比如每次处理100步**，这样**可以避免检查脚本丢给你太多的machine only steps导致没法阅读**。
+
+
 ### 标注valid moves
 
 打开[night.walkthrough](./night/night.walkthrough)和[night.valid_moves.csv](./night/night.valid_moves.csv)，按照下面的格式标注：
@@ -23,12 +26,18 @@ pip install -r requirements.txt
 | Step Num | Location Before                                | Location After                                 |
 |----------|------------------------------------------------|------------------------------------------------|
 | 1        | Computer Site                                  | Hall Outside Computer Site                     |
-| 2        | Hall Outside Computer Site                     | "Hall (3rd floor, middle of north/south hall)" |
-| 3        | "Hall (3rd floor, middle of north/south hall)" | Hall Outside Elevator (3rd floor)              |
+| 2        | Hall Outside Computer Site                     | Hall (3rd floor, middle of north/south hall) |
+| 3        | Hall (3rd floor, middle of north/south hall) | Hall Outside Elevator (3rd floor)              |
 | 4        |                                                |                                                |
 | 5        |                                                |                                                |
 
 原则是“从哪里到哪里”，当且仅当“位置”发生变化时才标注，比如上面的第4、5行，没有发生位置变化，所以不需要标注。
+
+### 同名地点的标注
+
+有一些位置名称可以直接从description找到，但是有的时候需要你手动补上特征信息，比如上面的Hall，否则无法体现出不同楼层之间的区别。**这些信息可能一开始不易察觉，但往后看到的内容越多你就会发现一些同名地点之间的区别，请即刻补上这些特征信息**
+
+### 标注工具推荐
 
 推荐使用visual studio code的“edit csv”[插件](https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv)，或使用excel打开csv文件。但请注意excel的保存格式，确保写回csv文件时不会改变原有的格式或引入乱码。
 
