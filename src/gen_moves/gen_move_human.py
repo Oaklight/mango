@@ -205,6 +205,12 @@ def get_args():
         type=str,
         default="z-machine-games-master/jericho-game-suite",
     )
+    parser.add_argument(
+        "--max_step",
+        "-s",
+        type=int,
+        default=70,
+    )
     args = parser.parse_args()
     # output_dir is the same folder as walkthrough_file: ../../data/maps/omniquest/omniquest.valid_moves.csv
     # if walkthrough_file is not provided, then output_dir is the same folder as valid_move_csv
@@ -221,7 +227,7 @@ if __name__ == "__main__":
     args = get_args()
 
     if args.valid_move_csv:
-        valid_moves = read_csv(args.valid_move_csv)
+        valid_moves = read_csv(args.valid_move_csv, args.max_step)
     else:
         valid_moves = walkthrough_annotated_to_valid_moves(args.walkthrough_file)
 
