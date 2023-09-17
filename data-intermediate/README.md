@@ -16,7 +16,15 @@ pip install -r requirements.txt
 
 ## 以night为例
 
-有的游戏非常冗长，建议不要一次性生成所有的machine steps（比如spirit，有1000多步），而是**分批生成标注，比如每次处理100步**，这样**可以避免检查脚本丢给你太多的machine only steps导致没法阅读**。
+### 生成machine map
+
+通过检查[night.walkthrough](./night/night.walkthrough)的内容，可以发现最多有90步，所以我们可以这样生成machine map：
+
+```bash
+(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90
+```
+
+注意：有的游戏非常冗长，建议不要一次性生成所有的machine steps（比如spirit，有1000多步），而是**分批生成标注，比如每次处理100步**，这样**可以避免检查脚本丢给你太多的machine only steps导致没法阅读**。
 
 
 ### 标注valid moves
