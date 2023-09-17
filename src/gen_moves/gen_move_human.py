@@ -133,7 +133,7 @@ def read_csv(path_in, max_steps=70):
     return valid_moves
 
 
-def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
+def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir, max_steps):
     # get files in jericho_path, one of game_name.z3 or game_name.z5 or game_name.z8 must exist
     game_file_path = None
     for game_file in glob.glob(f"{args.jericho_path}/*"):
@@ -155,7 +155,7 @@ def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir):
         for item in walkthrough
     ]
 
-    max_steps = min(len(walkthrough), 70)
+    max_steps = min(len(walkthrough), max_steps)
     print("Game: {}, Max steps: {}".format(game_name, max_steps))
 
     # convert valid_moves to list, sorted by step number, int
@@ -232,4 +232,4 @@ if __name__ == "__main__":
         valid_moves = walkthrough_annotated_to_valid_moves(args.walkthrough_file)
 
     # jericho_path_for_game = args.jericho_path + '/' + args.game_name + '.z5'
-    generate_move_human(valid_moves, args.jericho_path, args.game_name, args.output_dir)
+    generate_move_human(valid_moves, args.jericho_path, args.game_name, args.output_dir, args.max_step)
