@@ -1,31 +1,80 @@
-hilltop (obj237) --> south --> post office (obj226), step 1
-post office (obj226) --> north --> hilltop (obj237), step 4
-hilltop (obj237) --> west --> outside cemetery (obj204), step 5
-outside cemetery (obj204) --> yes --> creepy corner (obj62), step 7
-creepy corner (obj62) --> north --> spooky copse (obj224), step 8
-spooky copse (obj224) --> west --> twilight glen (obj59), step 9
-twilight glen (obj59) --> east --> spooky copse (obj224), step 10
-spooky copse (obj224) --> down --> open grave (obj58), step 11
-open grave (obj58) --> up --> spooky copse (obj224), step 13
-spooky copse (obj224) --> south --> creepy corner (obj62), step 14
-creepy corner (obj62) --> east --> outside cemetery (obj204), step 15
-outside cemetery (obj204) --> east --> hilltop (obj237), step 16
-hilltop (obj237) --> east --> outside cottage (obj201), step 17
-outside cottage (obj201) --> north --> rotary south (obj220), step 19
-rotary south (obj220) --> north --> park (obj173), step 22
-park (obj173) --> north --> rotary north (obj144), step 25
-rotary north (obj144) --> north --> south bridge (obj93), step 26
-south bridge (obj93) --> north --> bridge (obj91), step 27
-bridge (obj91) --> north --> north bridge (obj89), step 28
-north bridge (obj89) --> east --> cliff bottom (obj85), step 29
-cliff bottom (obj85) --> up --> steep trail (obj80), step 30
-steep trail (obj80) --> up --> cliff edge (obj79), step 36
-cliff edge (obj79) --> in --> shoppe (obj76), step 38
-shoppe (obj76) --> wait --> cliff edge (obj79), step 47
-cliff edge (obj79) --> down --> fog (obj81), step 48
-fog (obj81) --> down --> cliff bottom (obj85), step 54
-cliff bottom (obj85) --> west --> north bridge (obj89), step 57
-north bridge (obj89) --> south --> bridge (obj91), step 64
-bridge (obj91) --> south --> south bridge (obj93), step 65
-south bridge (obj93) --> west --> river outlet (obj123), step 66
-river outlet (obj123) --> south --> lake edge (obj130), step 67
+Hilltop --> south --> Post Office, step 1
+Post Office --> north --> Hilltop, step 4
+Hilltop --> west --> Outside Cemetery, step 5
+Outside Cemetery --> yes --> Creepy Corner, step 7
+Creepy Corner --> north --> Spooky Copse, step 8
+Spooky Copse --> west --> Twilight Glen, step 9
+Twilight Glen --> east --> Spooky Copse, step 10
+Spooky Copse --> down --> Open Grave, step 11
+Open Grave --> up --> Spooky Copse, step 13
+Spooky Copse --> south --> Creepy Corner, step 14
+Creepy Corner --> east --> Outside Cemetery, step 15
+Outside Cemetery --> east --> Hilltop, step 16
+Hilltop --> east --> Outside Cottage, step 17
+Outside Cottage --> north --> Rotary South, step 19
+Rotary South --> north --> Park, step 22
+Park --> north --> Rotary North, step 25
+Rotary North --> north --> South of Bridge, step 26
+South of Bridge --> north --> Bridge, step 27
+Bridge --> north --> North of Bridge, step 28
+North of Bridge --> east --> Cliff Bottom, step 29
+Cliff Bottom --> up --> Steep Trail, step 30
+Steep Trail --> up --> Cliff Edge, step 36
+Cliff Edge --> in --> Magick Shoppe, step 38
+Magick Shoppe --> wait --> Cliff Edge, step 47
+Cliff Edge --> down --> Fog, step 48
+Fog --> down --> Cliff Bottom, step 54
+Cliff Bottom --> west --> North of Bridge, step 57
+North of Bridge --> south --> Bridge, step 64
+Bridge --> south --> South of Bridge, step 65
+South of Bridge --> west --> River Outlet, step 66
+River Outlet --> south --> Lake Edge, step 67
+Lake Edge --> blow it --> fog-shrouded beach (Misty Island), step 74
+fog-shrouded beach (Misty Island) --> west --> Throne Room, step 75
+Throne Room --> blow whistle --> Lake Edge, step 79
+Lake Edge --> yes --> Twilight Glen, step 81
+Twilight Glen --> east --> Spooky Copse, step 82
+Spooky Copse --> down --> Open Grave, step 83
+Open Grave --> north --> Underground (hole in south wall), step 84
+Underground (hole in south wall) --> east --> Underground (hole overhead), step 85
+Underground (hole overhead) --> up --> Jail Cell, step 88
+Jail Cell --> down --> Underground (hole overhead), step 90
+Underground (hole overhead) --> north --> Underground (overhead hole to the south), step 92
+Underground (overhead hole to the south) --> east --> Grue's Nest, step 93
+Grue's Nest --> west --> Underground (overhead hole to the south), step 97
+Underground (overhead hole to the south) --> west --> Underground (large stump overhead), step 98
+Underground (large stump overhead) --> up --> Lookout Hill, step 100
+Lookout Hill --> north --> River Outlet, step 101
+River Outlet --> east --> South of Bridge, step 102
+South of Bridge --> east --> Rocky Path, step 103
+Rocky Path --> south --> West of House, step 104
+West of House --> north --> Rocky Path, step 109
+Rocky Path --> east --> Lighthouse, step 110
+Lighthouse --> west --> Rocky Path, step 112
+Rocky Path --> west --> South of Bridge, step 113
+South of Bridge --> south --> Rotary North, step 114
+Rotary North --> south --> Park, step 117
+Park --> east --> Rotary East, step 121
+Rotary East --> in --> Theater Lobby, step 123
+Theater Lobby --> north --> Inside Theater, step 125
+Inside Theater --> out --> Theater Lobby, step 128
+Theater Lobby --> yes --> Rotary East, step 130
+Rotary East --> east --> Pleasure Wharf, step 131
+Pleasure Wharf --> south --> Video Arcade, step 134
+Video Arcade --> yes --> Hilltop, step 142
+Hilltop --> south --> Vestibule, step 144
+Vestibule --> wait --> Torture Chamber, step 145
+Torture Chamber --> up --> Round Chamber, step 155
+Round Chamber --> up --> Fuzziness, step 156
+Fuzziness --> wear glasses --> Laboratory, step 157
+Laboratory --> down --> Fuzziness, step 161
+Fuzziness --> remove glasses --> Round Chamber, step 162
+Round Chamber --> north --> Vestibule, step 165
+Vestibule --> north --> Hilltop, step 166
+Hilltop --> east --> Outside Cottage, step 167
+Outside Cottage --> in --> Cottage, step 170
+Cottage --> out --> Outside Cottage, step 172
+Outside Cottage --> north --> Rotary South, step 174
+Rotary South --> in --> Circulation Desk, step 176
+Circulation Desk --> south --> Museum, step 178
+Museum --> yes --> Cliff Edge, step 183
