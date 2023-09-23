@@ -1,5 +1,9 @@
 请检查这张[表格](https://docs.google.com/spreadsheets/d/1NRHMsjMrTWFl8vc14YGEd2rQ6MiExCjYCwwRMeJGs14/edit?usp=sharing)，确保每个人标注的都是不同的游戏，不要重复标注。
 
+为了保持数据一致性，不要改变之前的标注，直接从71步开始。过程中如发现之前的标注有问题，请备注到表格中，并及时在群里讨论。
+
+有五个游戏被标为红色，这些游戏的jericho engine在特定步骤会出现问题，导致无法正常运行。所以请暂时不要标注这些游戏，等方案讨论确定之后再开始。
+
 
 ## 安装环境
 
