@@ -11,18 +11,6 @@ direction_abbrv_dict = {'e': 'east', 'w': 'west', 'n': 'north', 's': 'south',
                         'u': 'up', 'd': 'down'} # jericho.defines.ABBRV_DICT
 direction_vocab_abbrv = direction_abbrv_dict.keys()
 direction_vocab = direction_abbrv_dict.values()
-opposite_direction_dict = {
-    'east': 'west',
-    'west': 'east',
-    'north': 'south',
-    'south': 'north',
-    'northeast': 'southwest',
-    'southwest': 'northeast',
-    'northwest': 'southeast',
-    'southeast': 'northwest',
-    'up': 'up',
-    'down': 'down'
-}
 
 def gen_move_machine(args):
     game_name = args.game_name

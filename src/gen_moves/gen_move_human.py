@@ -22,19 +22,6 @@ direction_abbrv_dict = {
 }  # jericho.defines.ABBRV_DICT
 direction_vocab_abbrv = direction_abbrv_dict.keys()
 direction_vocab = direction_abbrv_dict.values()
-opposite_direction_dict = {
-    "east": "west",
-    "west": "east",
-    "north": "south",
-    "south": "north",
-    "northeast": "southwest",
-    "southwest": "northeast",
-    "northwest": "southeast",
-    "southeast": "northwest",
-    "up": "up",
-    "down": "down",
-}
-
 
 # argparse to read in annotated walkthrough file, check file extension for either txt or markdown mode
 # output valid moves to json file
