@@ -2,64 +2,6 @@
 
 
 ## results
-### 2023/09/26
-
-|          | gpt3.5 acc (without map) | gpt3.5 acc (with map)| gpt4 acc (without map) | gpt4 acc (with map)|
-|----------|-------------------------|----------------------|-------------------------|----------------------|
-| 905 | 0/0 | 0/0 | 0/0 | 0/0 |
-| advent | 3/9 | 3/9 |  4/9 | 6/9 |
-| adventureland | 1/7 | 1/7 |  3/7 | 5/7 |
-| afflicted | 0/12 | 4/12 | 3/12 | 4/12 |
-| anchor |  0/2  | 0/2 | 2/2 | 2/2 |
-| awaken | 1/7 | 1/7 | 5/7  | 7/7 |
-| balances | 0/3 | 2/3 | 2/3 | 2/3 |
-| ballyhoo | 1/6 | 1/6 | 3/6 | 2/6 |
-| curses | 3/7 | 3/7 | 3/7 | 6/7 |
-| cutthroat | 4/5 | 5/5 | 4/5 | 5/5 |
-| deephome | 3/10 | 6/10 |  |  |
-| detective | 5/6 | 6/6 |  |  |
-| dragon | 2/6 | 2/6 |  |  |
-| enchanter | 0/1 | 1/1 |  |  |
-| enter | 0/0 | 0/0 | 0/0 | 0/0 |
-| gold  | 1/7 | 2/7 |  |  |
-| hhgg | 0/0 | 0/0 | 0/0 | 0/0 |
-| hollywood | 3/6 | 3/6 |     |  |
-| huntdark | 0/0 | 0/0 | 0/0 | 0/0 |
-| infidel | 1/4 | 2/4 |  |  |
-| inhumane | 1/2 | 2/2 |  |  |
-| jewel | 0/10 | 1/10 |  |  |
-| karn | 0/8 | 0/8 |  |  |
-| library | 2/5 | 3/5 |  |  |
-| loose | 3/4 | 3/4 |         |  |           
-| lostpig | 0/1  | 0/1 |  |  |
-| ludicorp | 2/13  | 4/13 |  |  |
-| lurking.z3 | 1/4 | 0/4 |  |  |
-| moonlit.z5 | 0/2  | 1/2 |  |  |
-| murdac.z5 | 1/2 | 1/2 |  |  |
-| night | 8/16 | 9/16 |  |  |
-| omniquest.z5 | 2/11 | 1/11 |  |  |
-| partyfoul.z8 | 0/2 | 1/2 |  |  |
-| pentari | 4/13 | 4/13 |  |  |
-| planetfall.z3 | 3/6 | 5/6 |  |  |
-| plundered.z3 | 0/0 | 0/0  | 0/0 | 0/0 |
-| reverb.z5 | 0/2 | 0/2 |  |  |
-| seastalker.z3 | 0/2 | 0/2 |  |  |
-| sherlock.z5 |  |  |    |  |        (error)
-| snacktime | 0/3 | 0/3 |  |  |
-| sorcerer | 4/5 | 4/5 |  |  |
-| spellbrkr | 1/1 | 1/1 |  |  |
-| spirit | 5/14 | 8/14 |  |  |
-| temple | 1/2 | 1/2 |  |  |
-| trinity |  |  |  |  |     (error)
-| tryst205 | 0/3 | 3/3 |  |  |
-| wishbringer | 0/1 | 1/1 |  |  |
-| yomomma | 0/4 | 1/4 |  |  |
-| zenon | 1/5 | 4/5 |  |  |
-| zork1 | 3/18 | 5/18 | 12/18 | 13/18 |
-| zork2 | 3/9 | 5/9 |  |  |
-| zork3 | 0/6 | 1/6 |  |  |
-| ztuu | 1/9  | 1/9 |  |  |
-
 
 
 
