@@ -11,7 +11,7 @@ openai.api_key = os.environ.get('OPENAI_API_KEY')
 openai.organization = os.environ.get('OPENAI_API_ORG')
 
 
-@retry(wait=wait_random_exponential(min=5, max=60), stop=stop_after_attempt(6))
+@retry(wait=wait_random_exponential(min=20, max=60), stop=stop_after_attempt(6))
 def api_complete(system_prompt, prompt, model="gpt-3.5-turbo", temperature=0.0):
     try:
         completion = openai.ChatCompletion.create(
