@@ -40,6 +40,7 @@ def gen_move_machine(args):
     move_list = []
     for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
         observation, reward, done, info = env.step(act)
+        print(step_idx, env.get_player_location())
         try:
             location_after = env.get_player_location().name.strip().lower()
         except:
