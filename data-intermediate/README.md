@@ -15,6 +15,21 @@
 conda create -n mango python=3.11
 conda activate mango
 pip install -r requirements.txt
+python3 -m spacy download en_core_web_sm
+
+# 下载游戏包
+wget https://github.com/BYU-PCCL/z-machine-games/archive/master.zip
+unzip master.zip
+
+# # 参考文件夹结构
+# - z-machine-games
+#     - ...
+#     - jericho-game-suite # 后面需要定位到这个jericho game packages
+#     - ... 
+# - mango
+#     - ...
+#     - data-intermediate # 在这里面找要标注的文件
+#     - ...
 ```
 ## key program to use
 
