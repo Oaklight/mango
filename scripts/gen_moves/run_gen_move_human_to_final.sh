@@ -46,7 +46,7 @@ function generate_for_game {
         if [ ! -f $map_machine ] || [ ! -f $map_human ] ; then
             echo "File $map_machine or $map_human not exists"
         else
-            python ./src/gen_moves/gen_move_final.py -d $path/$1
+            python ./src/gen_moves/gen_move_final.py -d $path/$1 -s $max_step
             # check if anno2code.json and code2anno.json exist after previous line, if not, then the annotation is not resolved. map.human should be removed until the annotation is resolved
             anno2code="$path/$1/$1.anno2code.json"
             code2anno="$path/$1/$1.code2anno.json"
@@ -62,7 +62,7 @@ function generate_for_game {
                 fi
             fi
             # extract nodes' first appearance step info when everything ready
-            python ./src/gen_moves/gen_node_step_map.py -m $path -g $game_tgt
+            python ./src/gen_moves/gen_node_step_map.py -m $path -g $game_tgt -s $max_step
         fi
     fi
 }
