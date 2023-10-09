@@ -32,6 +32,8 @@ if __name__ == "__main__":
         default=None,
         help="game name to extract node-step map",
     )
+    parser.add_argument("--max_step", "-s", type=int, default=70)
+
     args = parser.parse_args()
     MAP_DIR = args.map_dir
     tgt_game = args.game
@@ -76,6 +78,9 @@ if __name__ == "__main__":
                 continue
 
             step = df["Step Num"][i]
+            if step > args.max_step:
+                continue
+
             node_before = df["Location Before"][i].strip()
             node_after = df["Location After"][i].strip()
             # print(step, node_before, node_after)

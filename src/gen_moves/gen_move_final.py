@@ -7,7 +7,7 @@ from collections import OrderedDict
 
 
 # helper function to get such dict
-def get_dict(lines):
+def get_dict(lines, cutoff=None):
     """
     example of machine and human lines
     machine: west house (obj180) --> north --> north house (obj81), step 1
@@ -21,6 +21,8 @@ def get_dict(lines):
             continue
         path_str, step_str = line.split(", step ")
         step = int(step_str)
+        if cutoff is not None and step > cutoff:
+            continue
         elements = path_str.split(" --> ")
         src = elements[0].strip()
         act = elements[1].strip()
@@ -37,6 +39,12 @@ def get_args():
         type=str,
         help="path to game data dir containing game.map.machine and game.map.human",
         required=True,
+    )
+    parser.add_argument(
+        "--max_step",
+        "-s",
+        type=int,
+        default=70,
     )
 
     args = parser.parse_args()
@@ -171,8 +179,8 @@ def load_both_maps(args):
         human_lines = f.readlines()
 
     # create a dict of machine/human line number to {src, dst, action}
-    machine_dict = get_dict(machine_lines)
-    human_dict = get_dict(human_lines)
+    machine_dict = get_dict(machine_lines, cutoff=args.max_step)
+    human_dict = get_dict(human_lines, cutoff=args.max_step)
     return machine_dict, human_dict
 
 
@@ -242,7 +250,7 @@ if __name__ == "__main__":
         anno2code[anno] = list(anno2code[anno])
         # sort anno2code entry
         anno2code[anno].sort()
-    
+
     # prompt to alert unusual cases
     # multiple machine code map to the same human anno
     for code in code2anno.keys():
