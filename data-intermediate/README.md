@@ -12,9 +12,10 @@
 # cd /home/xxx/xxx/gamegpt_utils (旧repo名)
 # cd /home/xxx/xxx/mango (新repo名)
 
-conda create -n mango python=3.11
+conda create -n mango python=3.11 #python=3.8 also works
 conda activate mango
 pip install -r requirements.txt
+pip install https://github.com/MarcCote/jericho/archive/refs/heads/fix_obj_num.zip
 python3 -m spacy download en_core_web_sm
 
 # 下载游戏包
