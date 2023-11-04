@@ -12,20 +12,22 @@
 
 # if not provided, prints the help message
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_human_to_final.sh -p <path> -j <jericho_env> [-g <game>] [-s <max_step>]"
+    echo "Usage: ./run_gen_move_human_to_final.sh -p <path> -j <jericho_env> [-g <game>] [-s <max_step>] [-a]"
     exit 1
 fi
 
 # parse the arguments
-while getopts p:g:j:s: flag
+while getopts p:j:g:s:a opt
 do
-    case "${flag}" in
-        p) path=${OPTARG};;
-        g) game_tgt=${OPTARG};;
-        j) jericho_env=${OPTARG};;
-        s) max_step=${OPTARG};;
+    case $opt in
+        p) path="$OPTARG";;
+        j) jericho_env="$OPTARG";;
+        g) game_tgt="$OPTARG";;
+        s) max_step="$OPTARG";;
+        a) walk_acts="true";;
     esac
 done
+
 
 if [ -z "$max_step" ]
 then
@@ -40,7 +42,12 @@ function generate_for_game {
     if [ ! -f $valid_moves ]; then
         echo "File $valid_moves not exists"
     else
-        python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env -s $max_step
+        if [ -z "$walk_acts" ]
+        then
+            python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env -s $max_step
+        else
+            python ./src/gen_moves/gen_move_human.py -c $valid_moves -j $jericho_env -s $max_step -acts
+        fi
         map_machine="$path/$1/$1.map.machine"
         map_human="$path/$1/$1.map.human"
         if [ ! -f $map_machine ] || [ ! -f $map_human ] ; then
