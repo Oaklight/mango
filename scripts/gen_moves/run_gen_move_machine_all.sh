@@ -4,7 +4,7 @@
 #theatre env.get_player_location() == None
 # path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_machine_all.sh -j <jericho_path> -o <output_dir> [-g <game>] [-s <max_steps>] [-a]"
+    echo "Usage: ./run_gen_move_machine_all.sh -j <jericho_path> -o <output_dir> [-g <game_name>] [-s <max_steps>] [-a]"
     exit 1
 fi
 
@@ -14,7 +14,7 @@ do
     case $opt in
         j) jericho_path="$OPTARG";;
         o) output_dir="$OPTARG";;
-        g) game_tgt="$OPTARG";;
+        g) game_name="$OPTARG";;
         s) max_steps="$OPTARG";;
         a) walk_acts="true";;
     esac
@@ -33,7 +33,7 @@ do
     game=${game%.*}
 
     # skip if game name is empty, or game name provided and not equal to game name
-    if [ -z "$game_tgt" ] || [ "$game_tgt" == "$game" ]
+    if [ -z "$game_name" ] || [ "$game_name" == "$game" ]
     then
         if [ -z "$walk_acts" ]
         then
