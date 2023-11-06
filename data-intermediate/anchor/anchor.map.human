@@ -1,33 +1,264 @@
-outside the real estate office (obj105) --> southeast --> alley (obj107), step 1
-alley (obj107) --> climb can --> garbage can (obj110), step 3
-garbage can (obj110) --> up --> file room (obj622), step 4
-file room (obj622) --> west --> office (obj627), step 5
-office (obj627) --> east --> file room (obj622), step 7
-office (obj627) --> west --> outside the real estate office (obj105), step 11
-outside the real estate office (obj105) --> west --> narrow street (obj118), step 12
-narrow street (obj118) --> west --> junction (obj127), step 13
-junction (obj127) --> northwest --> university court (obj164), step 14
-university court (obj164) --> west --> library (obj598), step 15
-library (obj598) --> east --> university court (obj164), step 18
-university court (obj164) --> southeast --> junction (obj127), step 19
-junction (obj127) --> east --> narrow street (obj118), step 20
-narrow street (obj118) --> south --> whateley bridge (obj169), step 21
-whateley bridge (obj169) --> south --> town square (obj172), step 22
-town square (obj172) --> east --> riverwalk (obj188), step 23
-riverwalk (obj188) --> south --> chilly avenue (obj208), step 24
-chilly avenue (obj208) --> southwest --> scenic view (obj230), step 25
-scenic view (obj230) --> northwest --> outside the house (obj270), step 26
-outside the house (obj270) --> north --> foyer (obj276), step 28
-foyer (obj276) --> up --> upstairs landing (obj278), step 31
-upstairs landing (obj278) --> north --> master bedroom (obj279), step 32
-master bedroom (obj279) --> west --> bathroom (obj289), step 35
-bathroom (obj289) --> east --> master bedroom (obj279), step 37
-master bedroom (obj279) --> lie in bed --> four-poster bed (obj282), step 38
-four-poster bed (obj282) --> leave bed --> master bedroom (obj279), step 46
-master bedroom (obj279) --> south --> upstairs landing (obj278), step 50
-upstairs landing (obj278) --> down --> foyer (obj276), step 51
-foyer (obj276) --> west --> dining room (obj362), step 52
-dining room (obj362) --> north --> kitchen (obj368), step 56
-kitchen (obj368) --> northwest --> pantry (obj386), step 61
-pantry (obj386) --> down --> cellar (obj390), step 64
-cellar (obj390) --> south --> storage (obj404), step 65
+Outside the Real Estate Office --> southeast --> Alley, step 1
+Alley --> climb can --> the lower edge of the window, step 3
+the lower edge of the window --> up --> File Room, step 4
+File Room --> west --> Office, step 5
+Office --> east --> File Room, step 7
+File Room --> west --> Office, step 9
+Office --> west --> Outside the Real Estate Office, step 11
+Outside the Real Estate Office --> west --> Narrow Street, step 12
+Narrow Street --> west --> Junction, step 13
+Junction --> northwest --> University Court, step 14
+University Court --> west --> Library, step 15
+Library --> east --> University Court, step 18
+University Court --> southeast --> Junction, step 19
+Junction --> east --> Narrow Street, step 20
+Narrow Street --> south --> Whateley Bridge, step 21
+Whateley Bridge --> south --> Town Square, step 22
+Town Square --> east --> Riverwalk, step 23
+Riverwalk --> south --> Chilly Avenue, step 24
+Chilly Avenue --> southwest --> Scenic View, step 25
+Scenic View --> northwest --> Outside the House, step 26
+Outside the House --> north --> Foyer, step 28
+Foyer --> up --> Upstairs Landing, step 31
+Upstairs Landing --> north --> Master Bedroom, step 32
+Master Bedroom --> west --> Bathroom, step 35
+Bathroom --> east --> Master Bedroom, step 37
+Master Bedroom --> lie in bed --> bed, step 38
+bed --> leave bed --> Master Bedroom, step 46
+Master Bedroom --> south --> Upstairs Landing, step 50
+Upstairs Landing --> down --> Foyer, step 51
+Foyer --> west --> Dining Room, step 52
+Dining Room --> north --> Kitchen, step 56
+Kitchen --> northwest --> Pantry, step 61
+Pantry --> down --> Cellar, step 64
+Cellar --> south --> Storage, step 65
+Storage --> north --> Cellar, step 73
+Cellar --> up --> Pantry, step 74
+Pantry --> southeast --> Kitchen, step 75
+Kitchen --> east --> Back Hall, step 76
+Back Hall --> east --> Gallery, step 77
+Gallery --> south --> Sitting Room, step 80
+Sitting Room --> west --> Foyer, step 85
+Foyer --> up --> Upstairs Landing, step 86
+Upstairs Landing --> east --> Upstairs Hall, step 87
+Upstairs Hall --> north --> Library, step 88
+Library --> south --> Upstairs Hall, step 98
+Upstairs Hall --> south --> Children's Bedroom, step 99
+Children's Bedroom --> north --> Upstairs Hall, step 106
+Upstairs Hall --> west --> Upstairs Landing, step 107
+Upstairs Landing --> down --> Foyer, step 108
+Foyer --> north --> Back Hall, step 109
+Back Hall --> west --> Kitchen, step 110
+Kitchen --> north --> Path Behind the House, step 112
+Path Behind the House --> northwest --> Family Plot, step 113
+Family Plot --> down --> In the Crypt, step 115
+In the Crypt --> up --> Family Plot, step 120
+Family Plot --> southeast --> Path Behind the House, step 121
+Path Behind the House --> south --> Kitchen, step 122
+Kitchen --> east --> Back Hall, step 125
+Back Hall --> south --> Foyer, step 126
+Foyer --> south --> Outside the House, step 128
+Outside the House --> southeast --> Scenic View, step 129
+Scenic View --> northeast --> Chilly Avenue, step 130
+Chilly Avenue --> north --> Riverwalk, step 131
+Riverwalk --> west --> Town Square, step 132
+Town Square --> south --> Courthouse, step 135
+Courthouse --> south --> Courthouse Basement, step 136
+Courthouse Basement --> southeast --> Birth Records, step 137
+Birth Records --> northwest --> Courthouse Basement, step 143
+Courthouse Basement --> southwest --> Death Records, step 144
+Death Records --> northeast --> Courthouse Basement, step 150
+Courthouse Basement --> north --> Courthouse, step 151
+Courthouse --> north --> Town Square, step 152
+Town Square --> north --> Whateley Bridge, step 153
+Whateley Bridge --> north --> Narrow Street, step 154
+Narrow Street --> west --> Junction, step 155
+Junction --> northwest --> University Court, step 156
+University Court --> west --> Library, step 157
+Library --> north --> Circulation Desk, step 158
+Circulation Desk --> south --> Library, step 166
+Library --> east --> University Court, step 167
+University Court --> southeast --> Junction, step 168
+Junction --> east --> Narrow Street, step 169
+Narrow Street --> north --> Local Pub, step 170
+Local Pub --> south --> Narrow Street, step 175
+Narrow Street --> northwest --> Twisting Lane, step 176
+Twisting Lane --> west --> Hidden Court, step 178
+Hidden Court --> south --> The Cauldron, step 179
+The Cauldron --> north --> Hidden Court, step 184
+Hidden Court --> east --> Twisting Lane, step 185
+Twisting Lane --> southwest --> Narrow Street, step 186
+Narrow Street --> south --> Whateley Bridge, step 187
+Whateley Bridge --> south --> Town Square, step 188
+Town Square --> east --> Riverwalk, step 189
+Riverwalk --> east --> Vacant Lot, step 190
+Vacant Lot --> southeast --> Wharf, step 200
+Wharf --> northwest --> Vacant Lot, step 202
+Vacant Lot --> west --> Riverwalk, step 203
+Riverwalk --> south --> Chilly Avenue, step 204
+Chilly Avenue --> southwest --> Scenic View, step 205
+Scenic View --> northwest --> Outside the House, step 206
+Outside the House --> north --> Foyer, step 207
+Foyer --> up --> Upstairs Landing, step 209
+Upstairs Landing --> east --> Upstairs Hall, step 210
+Upstairs Hall --> north --> Library, step 211
+Library --> east --> Study, step 212
+Study --> west --> Library, step 220
+Library --> south --> Upstairs Hall, step 221
+Upstairs Hall --> up --> Attic, step 223
+Attic --> north --> Attic Cell, step 230
+Attic Cell --> south --> Attic, step 233
+Attic --> down --> Upstairs Hall, step 234
+Upstairs Hall --> west --> Upstairs Landing, step 235
+Upstairs Landing --> north --> Master Bedroom, step 236
+Master Bedroom --> west --> Bathroom, step 237
+Bathroom --> east --> Master Bedroom, step 239
+Master Bedroom --> lie in bed --> bed, step 242
+bed --> leave bed --> Master Bedroom, step 247
+Master Bedroom --> south --> Upstairs Landing, step 251
+Upstairs Landing --> east --> Upstairs Hall, step 252
+Upstairs Hall --> north --> Library, step 253
+Library --> east --> Study, step 254
+Study --> southwest --> Narrow Corridor (southwest to Study), step 257
+Narrow Corridor (southwest to Study) --> west --> Narrow Corridor (hole on wall, through middle of ceiling), step 258
+Narrow Corridor (hole on wall, through middle of ceiling) --> east --> Narrow Corridor (hole on wall, through portrait over fireplace), step 260
+Narrow Corridor (hole on wall, through portrait over fireplace) --> northwest --> Narrow Corridor (hole on wall, seeing wine cellar), step 262
+Narrow Corridor (hole on wall, seeing wine cellar) --> southwest --> Narrow Corridor (northwest to Observatory), step 264
+Narrow Corridor (northwest to Observatory) --> southeast --> Observatory, step 265
+Observatory --> southeast --> Crawlspace, step 268
+Crawlspace --> east --> Attic, step 269
+Attic --> down --> Upstairs Hall, step 270
+Upstairs Hall --> west --> Upstairs Landing, step 271
+Upstairs Landing --> down --> Foyer, step 272
+Foyer --> north --> Back Hall, step 273
+Back Hall --> west --> Kitchen, step 274
+Kitchen --> northwest --> Pantry, step 275
+Pantry --> down --> Cellar, step 276
+Cellar --> east --> Wine Cellar, step 277
+Wine Cellar --> north --> Windy Passage, step 284
+Windy Passage --> north --> Edge of the Pit, step 285
+Edge of the Pit --> north --> Other Side, step 286
+Other Side --> northeast --> Great Stairs, step 287
+Great Stairs --> down --> Bottom of Stairs (door set into north wall), step 288
+Bottom of Stairs (door set into north wall) --> north --> Burial Mound, step 290
+Burial Mound --> south --> Bottom of Stairs (door set into north wall), step 291
+Bottom of Stairs (door set into north wall) --> up --> Great Stairs, step 292
+Great Stairs --> southwest --> Other Side, step 293
+Other Side --> northwest --> Crawlspace, step 294
+Crawlspace --> east --> Attic, step 295
+Attic --> down --> Upstairs Hall, step 296
+Upstairs Hall --> west --> Upstairs Landing, step 297
+Upstairs Landing --> down --> Foyer, step 298
+Foyer --> south --> Outside the House, step 299
+Outside the House --> southeast --> Scenic View, step 300
+Scenic View --> northeast --> Chilly Avenue, step 301
+Chilly Avenue --> south --> Deserted Lane, step 302
+Deserted Lane --> south --> Down the Road, step 303
+Down the Road --> west --> Trampled Path, step 305
+Trampled Path --> southwest --> Abandoned Slaughterhouse, step 306
+Abandoned Slaughterhouse --> west --> Crumbled Ruin, step 307
+Crumbled Ruin --> south --> Old Stone Well, step 310
+Old Stone Well --> down --> In the Well, step 312
+In the Well --> up --> Old Stone Well, step 315
+Old Stone Well --> north --> Crumbled Ruin, step 316
+Crumbled Ruin --> south --> Old Stone Well, step 318
+Old Stone Well --> down --> In the Well, step 319
+In the Well --> hide under bones --> under bones, step 320
+under bones --> up --> In the Well, step 322
+In the Well --> up --> Old Stone Well, step 323
+Old Stone Well --> north --> Crumbled Ruin, step 324
+Crumbled Ruin --> east --> Abandoned Slaughterhouse, step 325
+Abandoned Slaughterhouse --> northeast --> Trampled Path, step 326
+Trampled Path --> east --> Down the Road, step 327
+Down the Road --> north --> Deserted Lane, step 328
+Deserted Lane --> east --> Churchyard, step 329
+Churchyard --> southeast --> Behind the Church, step 330
+Behind the Church --> down --> Church Cellar, step 332
+Church Cellar --> west --> Empty Stairwell, step 338
+Empty Stairwell --> jump onto riser --> Broken Stairs, step 340
+Broken Stairs --> north --> Vestibule, step 341
+Vestibule --> east --> Chapel, step 343
+Chapel --> east --> Behind the Chapel, step 345
+Behind the Chapel --> up --> Steeple, step 346
+Steeple --> down --> Behind the Chapel, step 349
+Behind the Chapel --> west --> Chapel, step 350
+Chapel --> west --> Vestibule, step 351
+Vestibule --> south --> Broken Stairs, step 352
+Broken Stairs --> down --> Hanging From the Rope, step 355
+Hanging From the Rope --> drop rope --> Vaulted Tunnel, step 356
+Vaulted Tunnel --> northwest --> Sewer Tunnel, step 360
+Sewer Tunnel --> north --> Dripping Tunnel, step 361
+Dripping Tunnel --> north --> Broken Tunnel, step 362
+Broken Tunnel --> up --> Outflow Tunnel, step 366
+Outflow Tunnel --> east --> Narrow Beach, step 367
+Narrow Beach --> west --> Alley, step 368
+Alley --> northwest --> Outside the Real Estate Office, step 369
+Outside the Real Estate Office --> east --> Office, step 370
+Office --> west --> Outside the Real Estate Office, step 376
+Outside the Real Estate Office --> west --> Narrow Street, step 377
+Narrow Street --> west --> Junction, step 378
+Junction --> north --> Mill Road, step 379
+Mill Road --> west --> Entrance to the Paper Mill, step 380
+Entrance to the Paper Mill --> north --> Shanty Town, step 381
+Shanty Town --> give teddy to woman --> #11 Mill Town Road, step 383
+#11 Mill Town Road --> west --> Shanty Town, step 387
+Shanty Town --> south --> Entrance to the Paper Mill, step 388
+Entrance to the Paper Mill --> south --> Bare Foundations, step 389
+Bare Foundations --> north --> Maintenance Access Tunnel (south end of tunnel), step 393
+Maintenance Access Tunnel (south end of tunnel) --> north --> Maintenance Access Tunnel (center of tunnel), step 398
+Maintenance Access Tunnel (center of tunnel) --> north --> Maintenance Access Tunnel (north end of tunnel), step 399
+Maintenance Access Tunnel (north end of tunnel) --> north --> Mill Floor, step 403
+Mill Floor --> pull lever --> Catwalk, step 406
+Catwalk --> north --> Workshop, step 408
+Workshop --> south --> Catwalk, step 418
+Catwalk --> down --> Mill Floor, on the block of heavy equipment, step 419
+Mill Floor, on the block of heavy equipment --> jump off equipment --> Mill Floor, step 420
+Mill Floor --> south --> Maintenance Access Tunnel (north end of tunnel), step 421
+Maintenance Access Tunnel (north end of tunnel) --> south --> Maintenance Access Tunnel (center of tunnel), step 422
+Maintenance Access Tunnel (center of tunnel) --> south --> Maintenance Access Tunnel (south end of tunnel), step 423
+Maintenance Access Tunnel (south end of tunnel) --> south --> Bare Foundations, step 424
+Bare Foundations --> northeast --> Entrance to the Paper Mill, step 425
+Entrance to the Paper Mill --> east --> Mill Road, step 426
+Mill Road --> east --> Breakwater, step 427
+Breakwater --> northeast --> At the Foot of the Lighthouse, step 428
+At the Foot of the Lighthouse --> east --> Bottom of the Lighthouse, step 429
+Bottom of the Lighthouse --> up --> Top of the Lighthouse, step 430
+Top of the Lighthouse --> down --> Bottom of the Lighthouse, step 431
+Bottom of the Lighthouse --> wait --> Padded Cell (door in west wall), step 433
+Padded Cell (door in west wall) --> break door --> Hallway (north end, barred window to the north), step 435
+Hallway (north end, barred window to the north) --> south --> Hallway (middle of north/south hallway, doors lead east and west), step 443
+Hallway (middle of north/south hallway, doors lead east and west) --> south --> Hallway (south end, blood-stained window in western cell door), step 444
+Hallway (south end, blood-stained window in western cell door) --> west --> Padded Cell (door in east wall, blood-stained), step 447
+Padded Cell (door in east wall, blood-stained) --> east --> Hallway (south end, blood-stained window in western cell door), step 452
+Hallway (south end, blood-stained window in western cell door) --> south --> Top of Stairs, step 454
+Top of Stairs --> down --> Bottom of Stairs (leading to to asylum's second floor), step 455
+Bottom of Stairs (leading to to asylum's second floor) --> north --> Hallway (south end, south doorway leading to bottom of a stairway), step 459
+Hallway (south end, south doorway leading to bottom of a stairway) --> north --> Hallway (barred gate to lobby to the north), step 460
+Hallway (barred gate to lobby to the north) --> north --> Waiting Room, step 466
+Waiting Room --> north --> Asylum Courtyard, step 467
+Asylum Courtyard --> north --> Dark Corner, step 468
+Dark Corner --> east --> Town Square, step 471
+Town Square --> north --> Whateley Bridge, step 480
+Whateley Bridge --> north --> Narrow Street, step 483
+Narrow Street --> west --> Junction, step 484
+Junction --> north --> Mill Road, step 485
+Mill Road --> east --> Breakwater, step 486
+Breakwater --> northeast --> At the Foot of the Lighthouse, step 487
+At the Foot of the Lighthouse --> east --> Bottom of the Lighthouse, step 490
+Bottom of the Lighthouse --> up --> Top of the Lighthouse, step 491
+Top of the Lighthouse --> give mirror 1 to michael --> Island of Flesh, step 496
+Island of Flesh --> west --> Rocky Spur, step 508
+Rocky Spur --> southwest --> At the Foot of the Lighthouse, step 509
+At the Foot of the Lighthouse --> southwest --> Breakwater, step 510
+Breakwater --> west --> Mill Road, step 511
+Mill Road --> west --> Entrance to the Paper Mill, step 512
+Entrance to the Paper Mill --> north --> Shanty Town, step 513
+Shanty Town --> south --> Entrance to the Paper Mill, step 515
+Entrance to the Paper Mill --> east --> Mill Road, step 516
+Mill Road --> south --> Junction, step 517
+Junction --> east --> Narrow Street, step 518
+Narrow Street --> south --> Whateley Bridge, step 519
+Whateley Bridge --> south --> Town Square, step 520
+Town Square --> touch obelisk --> Burial Mound, step 521
+Burial Mound --> wait --> Home, step 528
+Home --> go north --> Your Bathroom, step 529
