@@ -23,6 +23,7 @@ direction_abbrv_dict = {
 direction_vocab_abbrv = direction_abbrv_dict.keys()
 direction_vocab = direction_abbrv_dict.values()
 
+
 # argparse to read in annotated walkthrough file, check file extension for either txt or markdown mode
 # output valid moves to json file
 def walkthrough_annotated_to_valid_moves(walkthrough_file, csv_or_json: str = "csv"):
@@ -120,7 +121,9 @@ def read_csv(path_in, max_steps=70):
     return valid_moves
 
 
-def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir, max_steps):
+def generate_move_human(
+    valid_moves: dict, jericho_path, game_name, output_dir, max_steps
+):
     # get files in jericho_path, one of game_name.z3 or game_name.z5 or game_name.z8 must exist
     game_file_path = None
     for game_file in glob.glob(f"{args.jericho_path}/*"):
@@ -133,13 +136,29 @@ def generate_move_human(valid_moves: dict, jericho_path, game_name, output_dir, 
     env = FrotzEnv(game_file_path)
     env.reset()
 
-    # walkthrough
-    walkthrough = env.get_walkthrough()
+    # use provided walkthrough_acts or load from game env
+    walkthrough_acts = []
+    if args.walk_acts:
+        # with open(args.walk_acts, "r", encoding="utf-8") as fin:
+        with open(
+            f"{output_dir}/{game_name}.walkthrough_acts", "r", encoding="utf-8"
+        ) as fin:
+            for line in fin:
+                # sometimes there are void action, use whatever after ":"
+                act = line.split(":")[1].strip()
+                walkthrough_acts.append(act)
+        print(
+            f"Walkthrough Acts provided has been loaded, total {len(walkthrough_acts)} steps"
+        )
+    else:
+        # walkthrough
+        walkthrough_acts = env.get_walkthrough()
+
     walkthrough = [
         direction_abbrv_dict[item.lower()]
         if item.lower() in direction_vocab_abbrv
         else unabbreviate(item).lower()
-        for item in walkthrough
+        for item in walkthrough_acts
     ]
 
     max_steps = min(len(walkthrough), max_steps)
@@ -198,6 +217,13 @@ def get_args():
         type=int,
         default=70,
     )
+    parser.add_argument(
+        "--walk_acts",
+        "-acts",
+        action="store_true",
+        default=False,
+        help="Override walkthrough acts with *.walkthrough_acts file",
+    )
     args = parser.parse_args()
     # output_dir is the same folder as walkthrough_file: ../../data/maps/omniquest/omniquest.valid_moves.csv
     # if walkthrough_file is not provided, then output_dir is the same folder as valid_move_csv
@@ -219,4 +245,6 @@ if __name__ == "__main__":
         valid_moves = walkthrough_annotated_to_valid_moves(args.walkthrough_file)
 
     # jericho_path_for_game = args.jericho_path + '/' + args.game_name + '.z5'
-    generate_move_human(valid_moves, args.jericho_path, args.game_name, args.output_dir, args.max_step)
+    generate_move_human(
+        valid_moves, args.jericho_path, args.game_name, args.output_dir, args.max_step
+    )
