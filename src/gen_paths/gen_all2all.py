@@ -28,13 +28,6 @@ if __name__ == "__main__":
 
     plot_graph(g)
 
-    # # load node_step_map
-    # node_step_map = None
-    # if args.node_step_map:
-    #     with open(args.node_step_map, "r") as f:
-    #         node_step_map = json.load(f)
-    #         node_step_map = {k.lower(): int(v) for k, v in node_step_map.items()}
-
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
     # this has some issue: AB or BA will be included, not both

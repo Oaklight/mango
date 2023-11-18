@@ -115,8 +115,28 @@ def gen_move_reversed(args):
     location_before = env.get_player_location().name.strip().lower()
     location_before_id = env.get_player_location().num
 
-    # walkthrough
-    walkthrough_acts = env.get_walkthrough()
+    # create output dir if not exist
+    output_dir = args.output_dir + "/" + game_name_raw
+    if os.path.exists(output_dir) == False:
+        os.makedirs(output_dir)
+
+    # use provided walkthrough_acts or load from game env
+    walkthrough_acts = []
+    if args.walk_acts:
+        # with open(args.walk_acts, "r", encoding="utf-8") as fin:
+        with open(
+            f"{output_dir}/{game_name}.walkthrough_acts", "r", encoding="utf-8"
+        ) as fin:
+            for line in fin:
+                # sometimes there are void action, use whatever after ":"
+                act = line.split(":")[1].strip()
+                walkthrough_acts.append(act)
+        print(
+            f"Walkthrough Acts provided has been loaded, total {len(walkthrough_acts)} steps"
+        )
+    else:
+        # walkthrough
+        walkthrough_acts = env.get_walkthrough()
 
     map_reversed_list = []
 
@@ -238,9 +258,6 @@ def gen_move_reversed(args):
             location_before_id = location_after_id
             print("================")
 
-    output_dir = args.output_dir + "/" + game_name_raw
-    if os.path.exists(output_dir) == False:
-        os.makedirs(output_dir)
 
     output_file = "{}/{}.map.reversed".format(output_dir, game_name_raw)
     with open(output_file, "w", encoding="utf-8") as fout:
@@ -303,6 +320,13 @@ def parse_args():
     parser.add_argument("--max_steps", type=int, default=70)
     parser.add_argument("--input_dir", "-idir", type=str, default="./data/maps")
     parser.add_argument("--output_dir", "-odir", type=str, default="./data/maps")
+    parser.add_argument(
+        "--walk_acts",
+        "-acts",
+        action="store_true",
+        default=False,
+        help="Override walkthrough acts with *.walkthrough_acts file",
+    )
     return parser.parse_args()
 
 
