@@ -214,15 +214,14 @@ if __name__ == "__main__":
         else:
             anno2code[dst_anno].add(dst_code)
 
-        if i == 0:
-            # first line, start node is the start node of the first line
-            src_code = machine_dict[step_num]["src"]
-            src_anno = human_dict[step_num]["src"]
-            code2anno[src_code] = src_anno
-            if src_anno not in anno2code:
-                anno2code[src_anno] = set([src_code])
-            else:
-                anno2code[src_anno].add(src_code)
+        # src_code also needs to be checked in every time, in case of disconnection in machine code.
+        src_code = machine_dict[step_num]["src"]
+        src_anno = human_dict[step_num]["src"]
+        code2anno[src_code] = src_anno
+        if src_anno not in anno2code:
+            anno2code[src_anno] = set([src_code])
+        else:
+            anno2code[src_anno].add(src_code)
 
     # then process the human_only_steps, which are annotated by human but not machine
     for step_num in human_only_steps:
