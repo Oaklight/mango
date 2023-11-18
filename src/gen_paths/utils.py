@@ -100,7 +100,6 @@ def get_args_all2all():
     group.add_argument("--reverse_map", "-r", type=str)
 
     parser.add_argument("--output_dir", "-odir", type=str)
-    parser.add_argument("--node_step_map", "-nsm", type=str)
     parser.add_argument("--no_confirm", "-nc", action="store_true")
     args = parser.parse_args()
 

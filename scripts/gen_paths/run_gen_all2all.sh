@@ -32,26 +32,24 @@ then
         # python src/gen_paths/gen_all2all.py -m ./data/maps/zork3/zork3.map.human -r ./data/maps/zork3/zork3.map.reversed -odir ./data/maps/zork3
         map_human="$map_path/$game/$game.map.human"
         map_reversed="$map_path/$game/$game.map.reversed"
-        node_step_map="$map_path/$game/$game.node_step.json"
         output_dir="$map_path/$game"
         if [ -z "$no_confirm" ]
         then
-            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
+            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir
         else
-            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir --no_confirm
+            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir --no_confirm
         fi
     done
 else
     game=$tgt_game
     map_human="$map_path/$game/$game.map.human"
     map_reversed="$map_path/$game/$game.map.reversed"
-    node_step_map="$map_path/$game/$game.node_step.json"
     output_dir="$map_path/$game"
     if [ -z "$no_confirm" ]
     then
-        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir
+        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir
     else
-        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -nsm $node_step_map -odir $output_dir --no_confirm
+        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir --no_confirm
     fi
 fi
 
