@@ -39,13 +39,13 @@ Step Num,Location Before,Location After,taken_action
 38,mad scientist's laboratory,high tunnel (to the west of lab),west
 39,,,throw plank
 40,high tunnel (to the west of lab),wooden plank in east/west tunnel,west
-41,wooden plank in east/west tunnel,"high tunnel (east/west, alcove off to north) ",west
+41,wooden plank in east/west tunnel,"high tunnel (east/west, alcove off to north)",west
 42,,,take plank
 43,,,throw rod
 44,,,throw plank
-45,"high tunnel (east/west, alcove off to north) ",alcove,north
-46,alcove,"high tunnel (east/west, alcove off to north) ",south
-47,"high tunnel (east/west, alcove off to north) ","high tunnel (east/west, path to west)",west
+45,"high tunnel (east/west, alcove off to north)",alcove,north
+46,alcove,"high tunnel (east/west, alcove off to north)",south
+47,"high tunnel (east/west, alcove off to north)","high tunnel (east/west, path to west)",west
 48,"high tunnel (east/west, path to west)",secret cavern,west
 49,,,take bowl
 50,secret cavern,low damp chamber,south
@@ -54,8 +54,8 @@ Step Num,Location Before,Location After,taken_action
 53,,,take stone
 54,low damp chamber,secret cavern,north
 55,secret cavern,"high tunnel (east/west, path to west)",east
-56,"high tunnel (east/west, path to west)","high tunnel (east/west, alcove off to north) ",east
-57,"high tunnel (east/west, alcove off to north) ",wooden plank in east/west tunnel,east
+56,"high tunnel (east/west, path to west)","high tunnel (east/west, alcove off to north)",east
+57,"high tunnel (east/west, alcove off to north)",wooden plank in east/west tunnel,east
 58,wooden plank in east/west tunnel,high tunnel (to the west of lab),east
 59,high tunnel (to the west of lab),mad scientist's laboratory,east
 60,,,take pillow
@@ -73,16 +73,16 @@ Step Num,Location Before,Location After,taken_action
 72,living room of haunted house,deserted railway platform,east
 73,,,drop pillow
 74,,,take peridots
-75,deserted railway platform,long dark east-west tunnel,north
-76,long dark east-west tunnel,cross-roads,east
+75,deserted railway platform,east-west railway tunnel,north
+76,east-west railway tunnel,cross-roads,east
 77,cross-roads,south of sentry-post,north
 78,,,blow shawm
 79,south of sentry-post,centaur point,north
 80,,,take perfume
 81,centaur point,south of sentry-post,south
 82,south of sentry-post,cross-roads,south
-83,cross-roads,passage north-south with sideway to southeast and west,east
-84,passage north-south with sideway to southeast and west,large quadrangular cellar,south
+83,cross-roads,passage north/south (sideway to southeast and west),east
+84,passage north/south (sideway to southeast and west),large quadrangular cellar,south
 85,,,drop perfume
 86,,,drop peridots
 87,,,drop bowl
@@ -100,10 +100,10 @@ Step Num,Location Before,Location After,taken_action
 99,passage to northwest and east with steps down,room with three-wise-monkey painting,down
 100,,,drop lamp
 101,,,look
-102,room with three-wise-monkey painting,pitch dark,south
+102,room with three-wise-monkey painting,pitch dark 102,south
 103,,,gnoeval
 104,,,take all
-105,pitch dark,room with three-wise-monkey painting,north
+105,pitch dark 102,room with three-wise-monkey painting,north
 106,,,take lamp
 107,room with three-wise-monkey painting,passage to northwest and east with steps down,up
 108,passage to northwest and east with steps down,"passage fork to north, southeast and southwest",northwest
@@ -118,12 +118,12 @@ Step Num,Location Before,Location After,taken_action
 117,,,take lamp
 118,large quadrangular cellar,cobwebbed passage,northeast
 119,cobwebbed passage,small chamber with large black hole in the floor,northeast
-120,small chamber with large black hole in the floor,pitch dark,down
-121,pitch dark,room like alternative universe,south
+120,small chamber with large black hole in the floor,pitch dark 120,down
+121,pitch dark 120,room like alternative universe,south
 122,,,take bread
 123,,,oozelumny
-124,room like alternative universe,pitch dark,north
-125,pitch dark,small chamber with large black hole in the floor,up
+124,room like alternative universe,pitch dark 120,north
+125,pitch dark 120,small chamber with large black hole in the floor,up
 126,small chamber with large black hole in the floor,pitch dark 126,northeast
 127,pitch dark 126,small chamber with large black hole in the floor,southwest
 128,small chamber with large black hole in the floor,pitch dark 128,east
@@ -142,7 +142,7 @@ Step Num,Location Before,Location After,taken_action
 141,pitch dark 140,pitch dark 141,northeast
 142,pitch dark 141,pitch dark 142,northeast
 143,pitch dark 142,pitch dark 143,north
-144,pitch dark 17,small chamber with large black hole in the floor,down
+144,pitch dark 143,small chamber with large black hole in the floor,down
 145,small chamber with large black hole in the floor,cobwebbed passage,southwest
 146,cobwebbed passage,large quadrangular cellar,southwest
 147,,,drop myrrh
@@ -150,156 +150,156 @@ Step Num,Location Before,Location After,taken_action
 149,,,feed pigeon
 150,,,take pigeon
 151,cobwebbed passage,large quadrangular cellar,southwest
-152,large quadrangular cellar,passage north-south with sideway to southeast and west,north
-153,passage north-south with sideway to southeast and west,cross-roads,west
+152,large quadrangular cellar,passage north/south (sideway to southeast and west),north
+153,passage north/south (sideway to southeast and west),cross-roads,west
 154,,,take dummy
-155,,,south
+155,cross-roads,Astrologer's Sanctum,south
 156,,,drop pigeon
 157,,,look
 158,,,agganrw
 159,,,take statuette
-160,,,north
-161,,,west
-162,,,west
-163,,,north
+160,Astrologer's Sanctum,cross-roads,north
+161,cross-roads,east-west railway tunnel,west
+162,east-west railway tunnel,north end of beach,west
+163,north end of beach,edge of an estuary,north
 164,,,take dodo
-165,,,south
-166,,,east
-167,,,east
-168,,,east
-169,,,north
-170,,,down
-171,,,wait
-172,,,south
-173,,,south
+165,edge of an estuary,north end of beach,south
+166,north end of beach,east-west railway tunnel,east
+167,east-west railway tunnel,cross-roads,east
+168,cross-roads,passage north/south (sideway to southeast and west),east
+169,passage north/south (sideway to southeast and west),passage north/south (damp passageway leading down),north
+170,passage north/south (damp passageway leading down),deep hollow full of steam (damp passage leading up and out),down
+171,deep hollow full of steam (damp passage leading up and out),passage north/south (damp passageway leading down),wait
+172,passage north/south (damp passageway leading down),passage north/south (sideway to southeast and west),south
+173,passage north/south (sideway to southeast and west),large quadrangular cellar,south
 174,,,drop dodo
 175,,,drop statuette
 176,,,take bowl
-177,,,south
-178,,,southwest
+177,large quadrangular cellar,"passage fork to north, southeast and southwest",south
+178,"passage fork to north, southeast and southwest",a pool of sparkling water,southwest
 179,,,fill bowl
-180,,,northeast
-181,,,north
-182,,,west
-183,,,west
-184,,,west
-185,,,west
-186,,,west
-187,,,west
-188,,,west
-189,,,south
+180,a pool of sparkling water,"passage fork to north, southeast and southwest",northeast
+181,"passage fork to north, southeast and southwest",large quadrangular cellar,north
+182,large quadrangular cellar,mad scientist's laboratory,west
+183,mad scientist's laboratory,high tunnel (to the west of lab),west
+184,high tunnel (to the west of lab),wooden plank in east/west tunnel,west
+185,wooden plank in east/west tunnel,"high tunnel (east/west, alcove off to north)",west
+186,"high tunnel (east/west, alcove off to north)","high tunnel (east/west, path to west)",west
+187,"high tunnel (east/west, path to west)",secret cavern,west
+188,secret cavern,beach,west
+189,beach,south of beach (a cove),south
 190,,,look
-191,,,north
-192,,,east
-193,,,east
-194,,,east
-195,,,east
-196,,,east
-197,,,east
-198,,,east
+191,south of beach (a cove),beach,north
+192,beach,secret cavern,east
+193,secret cavern,"high tunnel (east/west, path to west)",east
+194,"high tunnel (east/west, path to west)","high tunnel (east/west, alcove off to north)",east
+195,"high tunnel (east/west, alcove off to north)",wooden plank in east/west tunnel,east
+196,wooden plank in east/west tunnel,high tunnel (to the west of lab),east
+197,high tunnel (to the west of lab),mad scientist's laboratory,east
+198,mad scientist's laboratory,large quadrangular cellar,east
 199,,,drop bowl
 200,,,take beads
 201,,,take tiepin
 202,,,take sword
-203,,,east
-204,,,down
-205,,,down
+203,large quadrangular cellar,complicated junction of passages,east
+204,complicated junction of passages,ante-room to the dungeons,down
+205,ante-room to the dungeons,deepest and dankest dungeon,down
 206,,,prick dummy
 207,,,drop dummy
-208,,,up
-209,,,up
-210,,,west
+208,deepest and dankest dungeon,ante-room to the dungeons,up
+209,ante-room to the dungeons,complicated junction of passages,up
+210,complicated junction of passages,large quadrangular cellar,west
 211,,,drop pin
-212,,,northeast
+212,large quadrangular cellar,cobwebbed passage,northeast
 213,,,get wig
-214,,,up
-215,,,up
+214,cobwebbed passage,at the foot of hill,up
+215,at the foot of hill,at the top of the hill,up
 216,,,take staff
-217,,,down
-218,,,down
-219,,,southwest
-220,,,east
-221,,,down
+217,at the top of the hill,at the foot of hill,down
+218,at the foot of hill,cobwebbed passage,down
+219,cobwebbed passage,large quadrangular cellar,southwest
+220,large quadrangular cellar,complicated junction of passages,east
+221,complicated junction of passages,ante-room to the dungeons,down
 222,,,south
-223,,,up
-224,,,west
-225,,,northeast
-226,,,up
-227,,,up
-228,,,down
-229,,,down
-230,,,southwest
-231,,,west
-232,,,west
-233,,,west
-234,,,west
-235,,,west
-236,,,west
-237,,,west
-238,,,south
+223,ante-room to the dungeons,complicated junction of passages,up
+224,complicated junction of passages,large quadrangular cellar,west
+225,large quadrangular cellar,cobwebbed passage,northeast
+226,cobwebbed passage,at the foot of hill,up
+227,at the foot of hill,at the top of the hill,up
+228,at the top of the hill,at the foot of hill,down
+229,at the foot of hill,cobwebbed passage,down
+230,cobwebbed passage,large quadrangular cellar,southwest
+231,large quadrangular cellar,mad scientist's laboratory,west
+232,mad scientist's laboratory,high tunnel (to the west of lab),west
+233,high tunnel (to the west of lab),wooden plank in east/west tunnel,west
+234,wooden plank in east/west tunnel,"high tunnel (east/west, alcove off to north)",west
+235,"high tunnel (east/west, alcove off to north)","high tunnel (east/west, path to west)",west
+236,"high tunnel (east/west, path to west)",secret cavern,west
+237,secret cavern,beach,west
+238,beach,south of beach (a cove),south
 239,,,wave scroll
-240,,,west
-241,,,west
-242,,,west
+240,south of beach (a cove),east/west causeway,west
+241,east/west causeway,eastern tip of Cannibal Island,west
+242,eastern tip of Cannibal Island,centre of Cannibal Island,west
 243,,,wave beads
-244,,,west
-245,,,northeast
-246,,,east
-247,,,southeast
-248,,,southwest
+244,centre of Cannibal Island,western tip of Cannibal Island,west
+245,western tip of Cannibal Island,northwestern tip of Cannibal Island,northeast
+246,northwestern tip of Cannibal Island,northeastern tip of Cannibal Island,east
+247,northeastern tip of Cannibal Island,eastern tip of Cannibal Island,southeast
+248,eastern tip of Cannibal Island,southeastern tip of Cannibal Island,southwest
 249,,,dig
 250,,,take hoard
-251,,,west
-252,,,east
-253,,,northeast
+251,southeastern tip of Cannibal Island,southwestern tip of Cannibal Island,west
+252,southwestern tip of Cannibal Island,southeastern tip of Cannibal Island,east
+253,southeastern tip of Cannibal Island,eastern tip of Cannibal Island,northeast
 254,,,exodus
-255,,,east
-256,,,east
-257,,,north
-258,,,east
-259,,,east
-260,,,east
-261,,,east
-262,,,east
-263,,,east
-264,,,east
+255,eastern tip of Cannibal Island,east/west causeway,east
+256,east/west causeway,south of beach (a cove),east
+257,south of beach (a cove),beach,north
+258,beach,secret cavern,east
+259,secret cavern,"high tunnel (east/west, path to west)",east
+260,"high tunnel (east/west, path to west)","high tunnel (east/west, alcove off to north)",east
+261,"high tunnel (east/west, alcove off to north)",wooden plank in east/west tunnel,east
+262,wooden plank in east/west tunnel,high tunnel (to the west of lab),east
+263,high tunnel (to the west of lab),mad scientist's laboratory,east
+264,mad scientist's laboratory,large quadrangular cellar,east
 265,,,drop bible
 266,,,drop sword
 267,,,drop hoard
-268,,,east
+268,large quadrangular cellar,complicated junction of passages,east
 269,,,drop wig
-270,,,down
+270,complicated junction of passages,ante-room to the dungeons,down
 271,,,south
-272,,,up
-273,,,west
-274,,,northeast
-275,,,up
-276,,,up
+272,ante-room to the dungeons,complicated junction of passages,up
+273,complicated junction of passages,large quadrangular cellar,west
+274,large quadrangular cellar,cobwebbed passage,northeast
+275,cobwebbed passage,at the foot of hill,up
+276,at the foot of hill,at the top of the hill,up
 277,,,take amethysts
-278,,,down
-279,,,down
-280,,,southwest
+278,at the top of the hill,at the foot of hill,down
+279,at the foot of hill,cobwebbed passage,down
+280,cobwebbed passage,large quadrangular cellar,southwest
 281,,,take all
-282,,,north
-283,,,north
-284,,,north
+282,large quadrangular cellar,passage north/south (sideway to southeast and west),north
+283,passage north/south (sideway to southeast and west),passage north/south (damp passageway leading down),north
+284,passage north/south (damp passageway leading down),in the keep,north
 285,,,drop all
 286,,,take lamp
-287,,,south
-288,,,south
-289,,,south
+287,in the keep,passage north/south (damp passageway leading down),south
+288,passage north/south (damp passageway leading down),passage north/south (sideway to southeast and west),south
+289,passage north/south (sideway to southeast and west),large quadrangular cellar,south
 290,,,take all
-291,,,north
-292,,,north
-293,,,north
+291,large quadrangular cellar,passage north/south (sideway to southeast and west),north
+292,passage north/south (sideway to southeast and west),passage north/south (damp passageway leading down),north
+293,passage north/south (damp passageway leading down),in the keep,north
 294,,,drop all
 295,,,get lamp
-296,,,south
-297,,,south
-298,,,south
+296,in the keep,passage north/south (damp passageway leading down),south
+297,passage north/south (damp passageway leading down),passage north/south (sideway to southeast and west),south
+298,passage north/south (sideway to southeast and west),large quadrangular cellar,south
 299,,,take all
-300,,,north
-301,,,north
-302,,,north
-303,,,sword
-304,,,throw sword into lake
+300,large quadrangular cellar,passage north/south (sideway to southeast and west),north
+301,passage north/south (sideway to southeast and west),passage north/south (damp passageway leading down),north
+302,passage north/south (damp passageway leading down),in the keep,north
+303,in the keep,edge of a large calm lake,sword
+304,edge of a large calm lake,land of Heroes of Murdac,throw sword into lake
