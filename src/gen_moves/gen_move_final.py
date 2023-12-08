@@ -89,7 +89,7 @@ def sanity_check(machine_dict, human_dict):
     )
 
     # further sanity check on common steps, to see if src, act, dst are the same
-    conflict_anno_list = node_conflict_check(machine_dict, human_dict, common_steps)
+    conflict_anno_dict = node_conflict_check(machine_dict, human_dict, common_steps)
 
     # print to notify user
     print(
@@ -101,8 +101,9 @@ def sanity_check(machine_dict, human_dict):
         "- [num: {}] human only steps: {}".format(
             len(human_only_steps), human_only_steps
         ),
-        "- [num: {}] conflict annotations on common steps: {}".format(
-            len(conflict_anno_list), conflict_anno_list
+        "- [num: {}] conflict annotations on common steps: \n\t{}".format(
+            len(conflict_anno_dict), 
+            '\n\t'.join([str(k) + ": " + str(v) for k, v in conflict_anno_dict.items()])
         ),
         sep="\n",
     )
@@ -113,7 +114,7 @@ def sanity_check(machine_dict, human_dict):
     if (
         len(machine_only_steps) == 0
         and len(human_only_steps) == 0
-        and len(conflict_anno_list) == 0
+        and len(conflict_anno_dict) == 0
     ):
         print("No difference found, exiting...")
         return common_steps, machine_only_steps, human_only_steps
@@ -148,7 +149,7 @@ def node_conflict_check(machine_dict, human_dict, common_steps):
         code_step_map[code].add((step, which))
 
     # create mapping of human anno with machine code at each step. check if machine code exist already. If not, add it to the mapping. if exist but different, put into conflict list
-    conflict_anno_list = {}  # conflict list, from code (unique) to anno (list)
+    conflict_anno_dict = {}  # conflict list, from code (unique) to anno (list)
     code2anno_tmp = {}  # tmp mapping of code to anno, for tracking and debugging
     anno_step_map = {}  # where each anno appears
     code_step_map = {}  # where each code appears
@@ -159,17 +160,17 @@ def node_conflict_check(machine_dict, human_dict, common_steps):
 
     for code in code2anno_tmp:
         if len(code2anno_tmp[code]) > 1:
-            conflict_anno_list[code] = list(code2anno_tmp[code])
+            conflict_anno_dict[code] = list(code2anno_tmp[code])
             # collect where each conflicted anno appears, by replacing anno with tuple of (anno, [step_num])
-            conflict_anno_list[code] = [
+            conflict_anno_dict[code] = [
                 (
                     anno,
                     sorted(list(anno_step_map[anno].intersection(code_step_map[code]))),
                 )
-                for anno in conflict_anno_list[code]
+                for anno in conflict_anno_dict[code]
             ]
 
-    return conflict_anno_list
+    return conflict_anno_dict
 
 
 def load_both_maps(args):
