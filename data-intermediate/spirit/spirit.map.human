@@ -135,17 +135,17 @@ Fountain --> south --> Jungle Garden, step 242
 Jungle Garden --> west --> Flower Garden, step 243
 Flower Garden --> south --> Gardener's Storehouse, step 244
 Gardener's Storehouse --> north --> Flower Garden, step 254
-Flower Garden --> north --> Plants Garden, step 255
-Plants Garden --> south --> Flower Garden, step 259
+Flower Garden --> north --> Decorative Plants Garden, step 255
+Decorative Plants Garden --> south --> Flower Garden, step 259
 Flower Garden --> northwest --> Conservatory Entrance, step 260
 Conservatory Entrance --> west --> Anthar East, step 261
 Anthar East --> south --> Swank Waterfront, step 262
 Swank Waterfront --> north --> Anthar East, step 268
 Anthar East --> west --> Anthar West, step 269
 Anthar West --> south --> Delbin's Pub, step 270
-Anthar West --> north --> Anthar West, step 280
-Anthar West --> west --> Greater Anthar, step 281
-Greater Anthar --> down --> Greater Anthar GUS Station, step 282
+Delbin's Pub --> north --> Anthar West, step 280
+Anthar West --> west --> Entrance to Greater Anthar, step 281
+Entrance to Greater Anthar --> down --> Greater Anthar GUS Station, step 282
 Greater Anthar GUS Station --> south --> Greater Anthar Train Platform, step 284
 Greater Anthar Train Platform --> south --> Subway car3 (Greater Anthar GUS Station), step 287
 Subway car3 (Greater Anthar GUS Station) --> wait --> Subway car3(Gurth City station), step 289
@@ -286,7 +286,7 @@ On Fublio Bay (in the small sailboat1) --> north --> Grassland Beach (in the sma
 Grassland Beach (in the small sailboat1) --> exit --> Grassland Beach, step 557
 Grassland Beach --> north --> Southern Fublio Valley, step 558
 Southern Fublio Valley --> south --> Grassland Beach, step 559
-Near Submerged Lighthouse --> learn fiznav --> Grassland Beach, step 561
+Near Submerged Lighthouse --> learn fiznav --> , step 561
 Grassland Beach --> enter boat --> small sailboat2, step 563
 small sailboat2 --> south --> On Fublio Bay (in the small sailboat2), step 564
 On Fublio Bay (in the small sailboat2) --> northeast --> Near Submerged Lighthouse (in the small sailboat2), step 565
@@ -300,11 +300,10 @@ Grassland Beach (in the small sailboat) --> exit --> Grassland Beach, step 576
 Grassland Beach --> west --> Farm, step 577
 Farm --> northeast --> Southern Fublio Valley, step 579
 Southern Fublio Valley --> north --> Abandoned Bank, step 580
-Abandoned Bank --> read memo --> BANK WORKER GUIDELINES, step 581
-BANK WORKER GUIDELINES --> south --> Southern Fublio Valley, step 592
+Abandoned Bank --> south --> Southern Fublio Valley, step 592
 Southern Fublio Valley --> down --> Fublio Valley GUS Station, step 593
 Fublio Valley GUS Station --> southeast --> Fublio Valley Train Platform, step 595
-Fublio Valley GUS Station --> east --> Subway car9(Fublio Valley GUS Station), step 596
+Fublio Valley Train Platform --> east --> Subway car9(Fublio Valley GUS Station), step 596
 Subway car9(Fublio Valley GUS Station) --> wait --> Subway car9(Aragain station), step 598
 Subway car9(Aragain station) --> west --> Aragain Train Platform, step 599
 Aragain Train Platform --> down --> Aragain Train Platform (lower), step 600
@@ -399,7 +398,8 @@ Palace Entrance Hall --> east --> Royal Bedroom, step 800
 Royal Bedroom --> down --> Palace Entrance Hall, step 813
 Palace Entrance Hall --> south --> Audience Hall, step 814
 Audience Hall --> north --> Palace Entrance Hall, step 823
-Palace Entrance Hall --> east --> Royal Museum, step 825
+Palace Entrance Hall --> north --> Courtyard, step 824
+Courtyard --> east --> Royal Museum, step 825
 Royal Museum --> south --> South Exhibit Room, step 826
 South Exhibit Room --> north --> Royal Museum, step 828
 Royal Museum --> north --> North Exhibit Room, step 829
@@ -508,10 +508,10 @@ Bare Chamber1 --> east --> Small Chamber1, step 1006
 Small Chamber1 --> west --> Bare Chamber2, step 1008
 Bare Chamber2 --> east --> Small Chamber2, step 1010
 Small Chamber2 --> west --> Bare Chamber3, step 1013
-Bare Chamber3 --> up --> Collapsed Chamber1, step 1015
+Bare Chamber3 --> up --> Collapsed Chamber, step 1015
 Collapsed Chamber --> east --> Low Chamber, step 1019
-Low Chamber --> west --> Collapsed Chamber2, step 1022
-Collapsed Chamber2 --> down --> Bare Chamber4, step 1025
+Low Chamber --> west --> Collapsed Chamber, step 1022
+Collapsed Chamber --> down --> Bare Chamber4, step 1025
 Bare Chamber4 --> down --> Bare Chamber5, step 1026
 Bare Chamber5 --> east --> Small Chamber3, step 1027
 Small Chamber3 --> west --> Bare Chamber6, step 1030
@@ -545,8 +545,8 @@ Strange Lab --> stand on disc --> Ethereal Plane of Atrii, step 1064
 Ethereal Plane of Atrii --> huncho me --> Strange Room, step 1076
 Strange Room --> east --> Strange Kitchen, step 1078
 Strange Kitchen --> west --> Strange Room, step 1081
-into the set of curtains(in the Strange Room) --> enter curtain --> into the set of curtains(in the Strange Room), step 1084
-into the set of curtains(in the Strange Room) --> exit --> get out of the set of curtains(in the Strange Room), step 1089
+Strange Room(into the set of curtains) --> enter curtain --> Strange Room(into the set of curtains), step 1084
+Strange Room(into the set of curtains) --> exit --> Strange Room, step 1089
 Strange Room --> west --> Strange Bedroom, step 1092
 Strange Bedroom --> wake implementor --> Ethereal Plane of Atrii, step 1097
 Ethereal Plane of Atrii --> enter square --> On Frozen River, step 1101
@@ -577,7 +577,8 @@ Mystical Cave --> push purple --> Front of House, step 1138
 Front of House --> east --> Construction Site, step 1140
 Construction Site --> break wall --> Mystical Cave, step 1146
 Mystical Cave --> northwest --> Cave Intersection, step 1149
-Cave Intersection --> up --> Storeroom, step 1151
+Cave Intersection --> west --> Caverns, step 1150
+Caverns --> up --> Storeroom, step 1151
 Storeroom --> west --> Refectory, step 1152
 Refectory --> west --> Hallway (basement), step 1153
 Hallway (basement) --> up --> Hallway (west end), step 1154
@@ -606,14 +607,14 @@ Southern Fublio Valley --> south --> Grassland Beach, step 1188
 Grassland Beach --> enter boat --> Grassland Beach(into the small sailboat), step 1189
 Grassland Beach(into the small sailboat) --> south --> On Fublio Bay (in the small sailboat), step 1190
 On Fublio Bay (in the small sailboat) --> southeast --> Volcanic Island (in the small sailboat), step 1191
-Volcanic Island (in the small sailboat) --> exit --> Volcanic Island(get out of the small sailboat), step 1192
-get out of the small sailboat --> south --> South Part of Island, step 1193
+Volcanic Island (in the small sailboat) --> exit --> Volcanic Island, step 1192
+Volcanic Island --> south --> South Part of Island, step 1193
 South Part of Island --> north --> Volcanic Island, step 1196
 Volcanic Island --> enter boat --> Volcanic Island(into the small sailboat), step 1197
 Volcanic Island(into the small sailboat) --> northwest --> On Fublio Bay (in the small sailboat), step 1198
 On Fublio Bay (in the small sailboat) --> north --> Grassland Beach (in the small sailboat), step 1199
-Grassland Beach (in the small sailboat) --> exit --> Grassland Beach (get out of the small sailboat), step 1200
-Grassland Beach (get out of the small sailboat) --> north --> Southern Fublio Valley, step 1201
+Grassland Beach (in the small sailboat) --> exit --> Grassland Beach, step 1200
+Grassland Beach --> north --> Southern Fublio Valley, step 1201
 Southern Fublio Valley --> down --> Fublio Valley GUS Station, step 1202
 Fublio Valley GUS Station --> southeast --> Fublio Valley Train Platform, step 1205
 Fublio Valley Train Platform --> east --> Subway car18(Fublio Valley GUS Station), step 1207
