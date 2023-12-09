@@ -110,17 +110,14 @@ Frostham --> southwest --> Governor's House, Waiting Room, step 173
 Governor's House, Waiting Room --> south --> Governor's Office, step 188
 Governor's Office --> north --> Governor's House, Waiting Room, step 191
 Governor's House, Waiting Room --> northeast --> Frostham, step 192
-Subway Entrance --> south --> Frostham GUS Station, step 193
+Frostham --> south --> Subway Entrance, step 193
+Subway Entrance --> down --> Frostham GUS Station, step 194
 Frostham GUS Station --> southeast --> Frostham Train Platform, step 196
-Frostham Train Platform --> east --> subway car(Frostham GUS Station), step 198
-subway car(Frostham GUS Station) --> spells --> subway car (Aragain station), step 200
-subway car (Aragain station) --> read newspaper --> subway car (Fublio station), step 204
-subway car (Fublio station) --> drop newspaper --> subway car (Aragain station), step 208
-subway car (Aragain station) --> west --> Aragain Train Platform, step 209
+Frostham Train Platform --> east --> subway car (north/south, start from Frostham), step 198
+subway car (north/south, start from Frostham) --> west --> Aragain Train Platform, step 209
 Aragain Train Platform --> down --> Aragain Train Platform (lower), step 210
-Aragain Train Platform (lower) --> south --> Subway car2(Aragain station), step 213
-Subway car2(Aragain station) --> wait --> Subway car2(Greater Anthar station), step 215
-Subway car2(Greater Anthar station) --> north --> Greater Anthar Train Platform, step 216
+Aragain Train Platform (lower) --> south --> subway car (east/west), step 213
+subway car (east/west) --> north --> Greater Anthar Train Platform, step 216
 Greater Anthar Train Platform --> north --> Greater Anthar GUS Station, step 217
 Greater Anthar GUS Station --> up --> Entrance to Greater Anthar, step 218
 Entrance to Greater Anthar --> east --> Anthar West, step 219
@@ -147,15 +144,11 @@ Delbin's Pub --> north --> Anthar West, step 280
 Anthar West --> west --> Entrance to Greater Anthar, step 281
 Entrance to Greater Anthar --> down --> Greater Anthar GUS Station, step 282
 Greater Anthar GUS Station --> south --> Greater Anthar Train Platform, step 284
-Greater Anthar Train Platform --> south --> Subway car3 (Greater Anthar GUS Station), step 287
-Subway car3 (Greater Anthar GUS Station) --> wait --> Subway car3(Gurth City station), step 289
-Subway car3(Gurth City station) --> north --> Gurth City Train Platform (lower), step 290
+Greater Anthar Train Platform --> south --> subway car (east/west), step 287
+subway car (east/west) --> north --> Gurth City Train Platform (lower), step 290
 Gurth City Train Platform (lower) --> up --> Gurth City Train Platform, step 291
-Gurth City Train Platform --> west --> Subway car4(Gurth City station), step 292
-Subway car4(Gurth City station) --> foblub yupple --> Subway car4(Miznia station), step 294
-Subway car4(Miznia station） --> wait --> Subway car4(Gurth City station）, step 298
-Subway car4(Gurth City station） --> wait --> Subway car4(New Borphee station）, step 302
-Subway car4(New Borphee station） --> east --> New Borphee Train Platform, step 303
+Gurth City Train Platform --> west --> subway car (north/south, start from Gurth City), step 292
+subway car (north/south, start from Gurth City) --> east --> New Borphee Train Platform, step 303
 New Borphee Train Platform --> northeast --> New Borphee GUS Station, step 304
 New Borphee GUS Station --> up --> Downtown New Borphee, step 305
 Downtown New Borphee --> north --> Business District, step 306
@@ -196,10 +189,8 @@ City Streets --> east --> Business District, step 369
 Business District --> south --> Downtown New Borphee, step 370
 Downtown New Borphee --> down --> New Borphee GUS Station, step 371
 New Borphee GUS Station --> southwest --> New Borphee Train Platform, step 373
-New Borphee Train Platform --> west --> Subway car5(New Borphee GUS Station), step 380
-Subway car5(New Borphee GUS Station) --> wait --> Subway car5(Gurth City station), step 382
-Subway car5(Gurth City station) --> wait --> Subway car5(Miznia station), step 386
-Subway car5(Miznia station) --> east --> Miznia Train Platform, step 387
+New Borphee Train Platform --> west --> subway car (north/south, start from Gurth City), step 380
+subway car (north/south, start from Gurth City) --> east --> Miznia Train Platform, step 387
 Miznia Train Platform --> northeast --> Miznia GUS Station, step 388
 Miznia GUS Station --> up --> Mizniaport, step 389
 Mizniaport --> northeast --> In Front of Swank House, step 390
@@ -226,9 +217,8 @@ City Limits --> east --> Miznia Suburbs, step 439
 Miznia Suburbs --> east --> Mizniaport, step 440
 Mizniaport --> down --> Miznia GUS Station, step 441
 Miznia GUS Station --> southwest --> Miznia Train Platform, step 443
-Miznia Train Platform --> west --> Subway car6(Miznia GUS Station), step 447
-Subway car6(Miznia GUS Station) --> wait --> Subway car6(Gurth City station), step 449
-Subway car6(Gurth City station) --> east --> Gurth City Train Platform, step 451
+Miznia Train Platform --> west --> subway car (north/south, start from Gurth City), step 447
+subway car (north/south, start from Gurth City) --> east --> Gurth City Train Platform, step 451
 Gurth City Train Platform --> northeast --> Gurth City GUS Station, step 452
 Gurth City GUS Station --> up --> Gurth City Streets, step 453
 Gurth City Streets --> southeast --> North District, step 455
@@ -246,16 +236,11 @@ North District --> northwest --> Gurth City Streets, step 474
 Gurth City Streets --> down --> Gurth City GUS Station, step 475
 Gurth City GUS Station --> southwest --> Gurth City Train Platform, step 479
 Gurth City Train Platform --> down --> Gurth City Train Platform (lower), step 480
-Gurth City Train Platform (lower) --> south --> Subway car7(Gurth City GUS Station), step 481
-Subway car7(Gurth City GUS Station) --> wait --> Subway car7(Greater Anthar station), step 483
-Subway car7(Greater Anthar station) --> wait --> Subway car7(Aragain station), step 487
-Subway car7(Aragain station) --> north --> Aragain Train Platform (lower), step 488
+Gurth City Train Platform (lower) --> south --> subway car (east/west), step 481
+subway car (east/west) --> north --> Aragain Train Platform (lower), step 488
 Aragain Train Platform (lower) --> up --> Aragain Train Platform, step 489
-Aragain Train Platform --> east --> Subway car8(Aragain station), step 490
-Subway car8(Aragain station) --> wait --> Subway car8(Fublio station), step 492
-Subway car8(Fublio station) --> wait --> Subway car8(Aragain statio), step 496
-Subway car8(Aragain statio) --> wait --> Subway car8(Frostham station), step 500
-Subway car8(Frostham station) --> west --> Frostham Train Platform, step 501
+Aragain Train Platform --> east --> subway car (north/south, start from Frostham), step 490
+subway car (north/south, start from Frostham) --> west --> Frostham Train Platform, step 501
 Frostham Train Platform --> northwest --> Frostham GUS Station, step 502
 Frostham GUS Station --> up --> Subway Entrance, step 503
 Subway Entrance --> north --> Frostham, step 504
@@ -264,10 +249,8 @@ Ski Resort --> east --> Frostham, step 512
 Frostham --> south --> Subway Entrance, step 513
 Subway Entrance --> down --> Frostham GUS Station, step 514
 Frostham GUS Station --> southeast --> Frostham Train Platform, step 516
-Frostham Train Platform --> east --> Subway car9(Frostham GUS Station), step 517
-Subway car9(Frostham GUS Station) --> wait --> Subway car9(Aragain station), step 519
-Subway car9(Aragain station) --> wait --> Subway car9(Fublio station), step 523
-Subway car9(Fublio station) --> west --> Fublio Valley Train Platform, step 524
+Frostham Train Platform --> east --> subway car (north/south, start from Frostham), step 517
+subway car (north/south, start from Frostham) --> west --> Fublio Valley Train Platform, step 524
 Fublio Valley Train Platform --> northwest --> Fublio Valley GUS Station, step 525
 Fublio Valley GUS Station --> up --> Southern Fublio Valley, step 526
 Southern Fublio Valley --> southwest --> Farm, step 527
@@ -280,22 +263,21 @@ Grassland Beach --> east --> On Peninsula, step 546
 On Peninsula --> southeast --> Bottom of Lighthouse, step 547
 Bottom of Lighthouse --> northwest --> On Peninsula, step 548
 On Peninsula --> west --> Grassland Beach, step 549
-Grassland Beach --> enter boat --> small sailboat1, step 552
-small sailboat1 --> south --> On Fublio Bay (in the small sailboat1), step 554
-On Fublio Bay (in the small sailboat1) --> north --> Grassland Beach (in the small sailboat1), step 556
-Grassland Beach (in the small sailboat1) --> exit --> Grassland Beach, step 557
+Grassland Beach --> enter boat --> in small sailboat, step 552
+in small sailboat --> south --> On Fublio Bay (in the small sailboat), step 554
+On Fublio Bay (in the small sailboat) --> north --> Grassland Beach (in the small sailboat), step 556
+Grassland Beach (in the small sailboat) --> exit --> Grassland Beach, step 557
 Grassland Beach --> north --> Southern Fublio Valley, step 558
 Southern Fublio Valley --> south --> Grassland Beach, step 559
-Near Submerged Lighthouse --> learn fiznav --> , step 561
-Grassland Beach --> enter boat --> small sailboat2, step 563
-small sailboat2 --> south --> On Fublio Bay (in the small sailboat2), step 564
-On Fublio Bay (in the small sailboat2) --> northeast --> Near Submerged Lighthouse (in the small sailboat2), step 565
-Near Submerged Lighthouse (in the small sailboat2) --> exit --> Near Submerged Lighthouse, step 566
+Grassland Beach --> enter boat --> in small sailboat, step 563
+in small sailboat --> south --> On Fublio Bay (in the small sailboat), step 564
+On Fublio Bay (in the small sailboat) --> northeast --> Near Submerged Lighthouse (in the small sailboat), step 565
+Near Submerged Lighthouse (in the small sailboat) --> exit --> Near Submerged Lighthouse, step 566
 Near Submerged Lighthouse --> east --> Lighthouse, upper level, step 568
 Lighthouse, upper level --> west --> Near Submerged Lighthouse, step 572
-Near Submerged Lighthouse --> enter boat --> small sailboat3, step 573
-small sailboat3 --> southwest --> On Fublio Bay (in the small sailboat3), step 574
-On Fublio Bay (in the small sailboat3) --> north --> Grassland Beach (in the small sailboat), step 575
+Near Submerged Lighthouse --> enter boat --> in small sailboat, step 573
+in small sailboat --> southwest --> On Fublio Bay (in the small sailboat), step 574
+On Fublio Bay (in the small sailboat) --> north --> Grassland Beach (in the small sailboat), step 575
 Grassland Beach (in the small sailboat) --> exit --> Grassland Beach, step 576
 Grassland Beach --> west --> Farm, step 577
 Farm --> northeast --> Southern Fublio Valley, step 579
@@ -303,13 +285,11 @@ Southern Fublio Valley --> north --> Abandoned Bank, step 580
 Abandoned Bank --> south --> Southern Fublio Valley, step 592
 Southern Fublio Valley --> down --> Fublio Valley GUS Station, step 593
 Fublio Valley GUS Station --> southeast --> Fublio Valley Train Platform, step 595
-Fublio Valley Train Platform --> east --> Subway car9(Fublio Valley GUS Station), step 596
-Subway car9(Fublio Valley GUS Station) --> wait --> Subway car9(Aragain station), step 598
-Subway car9(Aragain station) --> west --> Aragain Train Platform, step 599
+Fublio Valley Train Platform --> east --> subway car (north/south, start from Frostham), step 596
+subway car (north/south, start from Frostham) --> west --> Aragain Train Platform, step 599
 Aragain Train Platform --> down --> Aragain Train Platform (lower), step 600
-Aragain Train Platform (lower) --> south --> Subway car10(Aragain station), step 607
-Subway car10(Aragain station) --> wait --> Subway car10(Greater Anthar station), step 609
-Subway car10(Greater Anthar station) --> north --> Greater Anthar Train Platform, step 610
+Aragain Train Platform (lower) --> south --> subway car (east/west), step 607
+subway car (east/west) --> north --> Greater Anthar Train Platform, step 610
 Greater Anthar Train Platform --> north --> Greater Anthar GUS Station, step 611
 Greater Anthar GUS Station --> up --> Entrance to Greater Anthar, step 612
 Entrance to Greater Anthar --> east --> Anthar West, step 613
@@ -324,8 +304,8 @@ Anthar East --> northwest --> Entrance to Flathead Stadium, step 625
 Entrance to Flathead Stadium --> north --> In Flathead Stadium, upper seats, step 627
 In Flathead Stadium, upper seats --> north --> In Flathead Stadium, lower seats, step 628
 In Flathead Stadium, lower seats --> north --> Near Locker Room, step 631
-Near Locker Room --> north --> Locker Room, step 635
-Locker Room --> south --> Locker Room, step 644
+Near Locker Room --> north --> Flathead Field, step 635
+Flathead Field --> south --> Locker Room, step 644
 Locker Room --> south --> Near Locker Room, step 647
 Near Locker Room --> south --> In Flathead Stadium, lower seats, step 648
 In Flathead Stadium, lower seats --> south --> In Flathead Stadium, upper seats, step 649
@@ -336,11 +316,8 @@ Delbin's Pub --> north --> Anthar West, step 654
 Anthar West --> west --> Entrance to Greater Anthar, step 655
 Entrance to Greater Anthar --> down --> Greater Anthar GUS Station, step 656
 Greater Anthar GUS Station --> south --> Greater Anthar Train Platform, step 659
-Greater Anthar Train Platform --> south --> Subway car11(Greater Anthar GUS Station), step 661
-Subway car11(Greater Anthar GUS Station) --> wait --> Subway car11(Aragain station), step 663
-Subway car11(Aragain station) --> wait --> Subway car11(Greater Anthar station), step 667
-Subway car11(Greater Anthar station) --> wait --> Subway car11(Gurth City station), step 671
-Subway car11(Gurth City station) --> north --> Gurth City Train Platform (lower), step 672
+Greater Anthar Train Platform --> south --> subway car (east/west), step 661
+subway car (east/west) --> north --> Gurth City Train Platform (lower), step 672
 Gurth City Train Platform (lower) --> up --> Gurth City Train Platform, step 673
 Gurth City Train Platform --> northeast --> Gurth City GUS Station, step 674
 Gurth City GUS Station --> up --> Gurth City Streets, step 675
@@ -363,35 +340,33 @@ North District --> northwest --> Gurth City Streets, step 729
 Gurth City Streets --> down --> Gurth City GUS Station, step 730
 Gurth City GUS Station --> southwest --> Gurth City Train Platform, step 736
 Gurth City Train Platform --> down --> Gurth City Train Platform (lower), step 737
-Gurth City Train Platform (lower) --> south --> Subway car12(Gurth City GUS Station), step 742
-Subway car12(Gurth City GUS Station) --> wait --> Subway car12(Greater Anthar Station), step 744
-Subway car12(Greater Anthar Station) --> wait --> Subway car12(Aragain Station), step 748
-Subway car12(Aragain Station) --> north --> Aragain Train Platform (lower), step 749
+Gurth City Train Platform (lower) --> south --> subway car (east/west), step 742
+subway car (east/west) --> north --> Aragain Train Platform (lower), step 749
 Aragain Train Platform (lower) --> up --> Aragain Train Platform, step 750
 Aragain Train Platform --> northwest --> Aragain GUS Station, step 751
 Aragain GUS Station --> up --> Aragain North, step 752
 Aragain North --> south --> Aragain Entrance, step 753
 Aragain Entrance --> south --> Courtyard, step 756
 Courtyard --> west --> Warm Room, step 757
-Warm Room --> down --> On Giant White Cube1, step 759
-On Giant White Cube1 --> west --> On wood beam1(west), step 765
-On wood beam1(west) --> west --> On Giant White Cube2, step 766
-On Giant White Cube2 --> south --> On wood beam2(south), step 767
-On wood beam2(south) --> south --> On Giant White Cube3, step 768
-On Giant White Cube3 --> west --> On wood beam3(west), step 770
-On wood beam3(west) --> east --> On Giant White Cube4, step 771
-On Giant White Cube4 --> north --> on wood beam4(north), step 774
-on wood beam4(north) --> north --> On Giant White Cube5, step 775
-On Giant White Cube5 --> west --> On wood beam5(west), step 777
-On wood beam5(west) --> east --> On Giant White Cube6, step 778
-On Giant White Cube6 --> south --> On wood beam6(south), step 781
-On wood beam6(south) --> south --> On Giant White Cube7, step 782
-On Giant White Cube7 --> south --> On wood beam7(south), step 786
-On wood beam7(south) --> south --> On Giant White Cube8, step 787
-On Giant White Cube8 --> east --> On wood beam8(east), step 791
-On wood beam8(east) --> east --> On Giant White Cube9, step 792
-On Giant White Cube9 --> enter hole --> On Giant White Cube10, step 796
-On Giant White Cube10 --> up --> Warm Room, step 797
+Warm Room --> down --> On Giant White Cube 1 (level -1), step 759
+On Giant White Cube 1 (level -1) --> west --> On wood beam 1 (level -1), step 765
+On wood beam 1 (level -1) --> west --> On Giant White Cube 2 (level -1), step 766
+On Giant White Cube 2 (level -1) --> south --> On wood beam 2 (level -1), step 767
+On wood beam 2 (level -1) --> south --> On Giant White Cube 3 (level -1), step 768
+On Giant White Cube 3 (level -1) --> west --> On wood beam 3 (level -2), step 770
+On wood beam 3 (level -2) --> east --> On Giant White Cube 4 (level -2), step 771
+On Giant White Cube 4 (level -2) --> north --> on wood beam 4 (level -2), step 774
+on wood beam 4 (level -2) --> north --> On Giant White Cube 5 (level -2), step 775
+On Giant White Cube 5 (level -2) --> west --> On wood beam 5 (level -3), step 777
+On wood beam 5 (level -3) --> east --> On Giant White Cube 6 (level -3), step 778
+On Giant White Cube 6 (level -3) --> south --> On wood beam 6 (level -3), step 781
+On wood beam 6 (level -3) --> south --> On Giant White Cube 7 (level -3), step 782
+On Giant White Cube 7 (level -3) --> south --> On wood beam 7 (level -3), step 786
+On wood beam 7 (level -3) --> south --> On Giant White Cube 8 (level -3), step 787
+On Giant White Cube 8 (level -3) --> east --> On wood beam 8 (level -3), step 791
+On wood beam 8 (level -3) --> east --> On Giant White Cube 9 (level -3), step 792
+On Giant White Cube 9 (level -3) --> enter hole --> On Giant White Cube 1 (level -1), step 796
+On Giant White Cube 1 (level -1) --> up --> Warm Room, step 797
 Warm Room --> east --> Courtyard, step 798
 Courtyard --> south --> Palace Entrance Hall, step 799
 Palace Entrance Hall --> east --> Royal Bedroom, step 800
@@ -410,14 +385,11 @@ Aragain Entrance --> north --> Aragain North, step 839
 Aragain North --> down --> Aragain GUS Station, step 840
 Aragain GUS Station --> southeast --> Aragain Train Platform, step 843
 Aragain Train Platform --> down --> Aragain Train Platform (lower), step 844
-Aragain Train Platform (lower) --> south --> Subway car13(Aragain GUS Station), step 850
-Subway car13(Aragain GUS Station) --> wait --> Subway car13(Greater Anthar Station), step 852
-Subway car13(Greater Anthar Station) --> wait --> Subway car13(Gurth City Station), step 856
-Subway car13(Gurth City Station) --> north --> Gurth City Train Platform (lower), step 857
+Aragain Train Platform (lower) --> south --> subway car (east/west), step 850
+subway car (east/west) --> north --> Gurth City Train Platform (lower), step 857
 Gurth City Train Platform (lower) --> up --> Gurth City Train Platform, step 858
-Gurth City Train Platform --> west --> Subway car14(Gurth City Station), step 859
-Subway car14(Gurth City Station) --> wait --> Subway car14(New Borphee Station), step 861
-Subway car14(New Borphee Station) --> east --> New Borphee Train Platform, step 862
+Gurth City Train Platform --> west --> subway car (north/south, start from Gurth City), step 859
+subway car (north/south, start from Gurth City) --> east --> New Borphee Train Platform, step 862
 New Borphee Train Platform --> northeast --> New Borphee GUS Station, step 863
 New Borphee GUS Station --> up --> Downtown New Borphee, step 864
 Downtown New Borphee --> north --> Business District, step 865
@@ -484,13 +456,12 @@ North Quad --> east --> Science Center, step 960
 Science Center --> east --> Engineering Labs, step 961
 Engineering Labs --> south --> Strange Lab, step 967
 Strange Lab --> stand on disc --> Ethereal Plane of Atrii, step 969
-Ethereal Plane of Atrii --> south --> Dark Tunnel, step 972
+Ethereal Plane of Atrii --> southwest --> Ethereal Plane of Atrii (upright rectangular hole in center), step 970
+Ethereal Plane of Atrii (upright rectangular hole in center) --> southwest --> Ethereal Plane of Atrii (large black hole to the south), step 971
+Ethereal Plane of Atrii (large black hole to the south) --> south --> Dark Tunnel, step 972
 Dark Tunnel --> south --> Gurth City Train Platform, step 974
-Gurth City Train Platform --> west --> Subway car15, step 980
-Subway car15 --> wait --> Subway car15(New Borphee station), step 982
-Subway car15(New Borphee station) --> wait --> Subway car15(Gurth City station), step 986
-Subway car15(Gurth City station) --> wait --> Subway car15(Miznia station), step 990
-Subway car15(Miznia station) --> east --> Miznia Train Platform, step 991
+Gurth City Train Platform --> west --> subway car (north/south, start from Gurth City), step 980
+subway car (north/south, start from Gurth City) --> east --> Miznia Train Platform, step 991
 Miznia Train Platform --> northeast --> Miznia GUS Station, step 992
 Miznia GUS Station --> up --> Mizniaport, step 993
 Mizniaport --> west --> Miznia Suburbs, step 994
@@ -503,19 +474,20 @@ Hidden Ruins --> north --> Pyramid Entrance, step 1000
 Pyramid Entrance --> east --> Statue Room, step 1001
 Statue Room --> push statue west --> Pyramid Entrance, step 1002
 Pyramid Entrance --> push statue north --> Strange Chamber, step 1003
-Strange Chamber --> north --> Bare Chamber1, step 1005
-Bare Chamber1 --> east --> Small Chamber1, step 1006
-Small Chamber1 --> west --> Bare Chamber2, step 1008
-Bare Chamber2 --> east --> Small Chamber2, step 1010
-Small Chamber2 --> west --> Bare Chamber3, step 1013
-Bare Chamber3 --> up --> Collapsed Chamber, step 1015
+Strange Chamber --> north --> Bare Chamber (stone ladder heading upwards), step 1005
+Bare Chamber (stone ladder heading upwards) --> east --> Small Chamber (funnel-like depression in the center), step 1006
+Small Chamber (funnel-like depression in the center) --> west --> Bare Chamber (stone ladder heading upwards), step 1008
+Bare Chamber (stone ladder heading upwards) --> up --> Bare Chamber (stone ladder heading upwards and downwards), step 1009
+Bare Chamber (stone ladder heading upwards and downwards) --> east --> Small Chamber (sunken pool of dirty blackish water), step 1010
+Small Chamber (sunken pool of dirty blackish water) --> west --> Bare Chamber (stone ladder heading upwards and downwards), step 1013
+Bare Chamber (stone ladder heading upwards and downwards) --> up --> Collapsed Chamber, step 1015
 Collapsed Chamber --> east --> Low Chamber, step 1019
 Low Chamber --> west --> Collapsed Chamber, step 1022
-Collapsed Chamber --> down --> Bare Chamber4, step 1025
-Bare Chamber4 --> down --> Bare Chamber5, step 1026
-Bare Chamber5 --> east --> Small Chamber3, step 1027
-Small Chamber3 --> west --> Bare Chamber6, step 1030
-Bare Chamber6 --> south --> Strange Chamber, step 1031
+Collapsed Chamber --> down --> Bare Chamber (stone ladder heading upwards and downwards), step 1025
+Bare Chamber (stone ladder heading upwards and downwards) --> down --> Bare Chamber (stone ladder heading upwards), step 1026
+Bare Chamber (stone ladder heading upwards) --> east --> Small Chamber (funnel-like depression in the center), step 1027
+Small Chamber (funnel-like depression in the center) --> west --> Bare Chamber (stone ladder heading upwards), step 1030
+Bare Chamber (stone ladder heading upwards) --> south --> Strange Chamber, step 1031
 Strange Chamber --> south --> Pyramid Entrance, step 1032
 Pyramid Entrance --> south --> Hidden Ruins, step 1033
 Hidden Ruins --> east --> Swamp, step 1034
@@ -526,10 +498,8 @@ City Limits --> east --> Miznia Suburbs, step 1038
 Miznia Suburbs --> east --> Mizniaport, step 1039
 Mizniaport --> down --> Miznia GUS Station, step 1040
 Miznia GUS Station --> southwest --> Miznia Train Platform, step 1042
-Miznia Train Platform --> west --> Subway car16(Miznia GUS Station), step 1045
-Subway car16(Miznia GUS Station) --> wait --> Subway car16(Gurth City Station), step 1047
-Subway car16(Gurth City Station) --> wait --> Subway car16(New Borphee Station), step 1051
-Subway car16(New Borphee Station) --> east --> New Borphee Train Platform, step 1052
+Miznia Train Platform --> west --> subway car (north/south, start from Gurth City), step 1045
+subway car (north/south, start from Gurth City) --> east --> New Borphee Train Platform, step 1052
 New Borphee Train Platform --> northeast --> New Borphee GUS Station, step 1053
 New Borphee GUS Station --> up --> Downtown New Borphee, step 1054
 Downtown New Borphee --> north --> Business District, step 1055
@@ -542,14 +512,21 @@ North Quad --> east --> Science Center, step 1061
 Science Center --> east --> Engineering Labs, step 1062
 Engineering Labs --> south --> Strange Lab, step 1063
 Strange Lab --> stand on disc --> Ethereal Plane of Atrii, step 1064
-Ethereal Plane of Atrii --> huncho me --> Strange Room, step 1076
+Ethereal Plane of Atrii --> southeast --> Ethereal Plane of Atrii (flat glass-like square in center), step 1065
+Ethereal Plane of Atrii (flat glass-like square in center) --> southeast --> Ethereal Plane of Atrii (ripped parchment), step 1066
+Ethereal Plane of Atrii (ripped parchment) --> southwest --> Ethereal Plane of Atrii (odd-shaped depression in gray plane), step 1068
+Ethereal Plane of Atrii (odd-shaped depression in gray plane) --> southwest --> Ethereal Plane of Atrii (odd streaks of light overhead), step 1069
+Ethereal Plane of Atrii (odd streaks of light overhead) --> huncho me --> Strange Room, step 1076
 Strange Room --> east --> Strange Kitchen, step 1078
 Strange Kitchen --> west --> Strange Room, step 1081
-Strange Room(into the set of curtains) --> enter curtain --> Strange Room(into the set of curtains), step 1084
-Strange Room(into the set of curtains) --> exit --> Strange Room, step 1089
+Strange Room --> enter curtain --> Strange Room (into the set of curtains), step 1084
+Strange Room (into the set of curtains) --> exit --> Strange Room, step 1089
 Strange Room --> west --> Strange Bedroom, step 1092
-Strange Bedroom --> wake implementor --> Ethereal Plane of Atrii, step 1097
-Ethereal Plane of Atrii --> enter square --> On Frozen River, step 1101
+Strange Bedroom --> wake implementor --> Ethereal Plane of Atrii (odd streaks of light overhead), step 1097
+Ethereal Plane of Atrii (odd streaks of light overhead) --> northeast --> Ethereal Plane of Atrii (odd-shaped depression in gray plane), step 1098
+Ethereal Plane of Atrii (odd-shaped depression in gray plane) --> north --> Ethereal Plane of Atrii (flat glass-like square in center), step 1099
+Ethereal Plane of Atrii (flat glass-like square in center) --> enter square --> On Frozen River (huge snow bluffs), step 1101
+On Frozen River (huge snow bluffs) --> west --> On Frozen River, step 1103
 On Frozen River --> north --> North of Frozen River, step 1104
 North of Frozen River --> north --> Snowy Intersection, step 1105
 Snowy Intersection --> north --> Rocky Mountain Trail, step 1106
@@ -567,14 +544,14 @@ Storeroom --> down --> Caverns, step 1119
 Caverns --> east --> Cave Intersection, step 1120
 Cave Intersection --> southeast --> Mystical Cave, step 1121
 Mystical Cave --> push purple --> Giant Cavern, step 1124
-Giant Cavern --> jump --> Snowy Intersection, step 1125
-Snowy Intersection --> put silver rod in top --> Mystical Cave, step 1128
+Giant Cavern --> jump --> Snowy Intersection (dissimilar), step 1125
+Snowy Intersection (dissimilar) --> put silver rod in top --> Mystical Cave, step 1128
 Mystical Cave --> push purple --> On strange boat, step 1130
 On strange boat --> drop green rod --> Mystical Cave, step 1132
-Mystical Cave --> push purple --> Entrance to Flathead Stadium, step 1134
-Entrance to Flathead Stadium --> wait --> Mystical Cave, step 1136
-Mystical Cave --> push purple --> Front of House, step 1138
-Front of House --> east --> Construction Site, step 1140
+Mystical Cave --> push purple --> Entrance to Flathead Stadium (dissimilar), step 1134
+Entrance to Flathead Stadium (dissimilar) --> wait --> Mystical Cave, step 1136
+Mystical Cave --> push purple --> Front of House (dissimilar), step 1138
+Front of House (dissimilar) --> east --> Construction Site, step 1140
 Construction Site --> break wall --> Mystical Cave, step 1146
 Mystical Cave --> northwest --> Cave Intersection, step 1149
 Cave Intersection --> west --> Caverns, step 1150
@@ -591,39 +568,35 @@ Rocky Mountain Trail --> south --> Snowy Intersection, step 1160
 Snowy Intersection --> south --> North of Frozen River, step 1164
 North of Frozen River --> south --> On Frozen River, step 1165
 On Frozen River --> south --> South of Frozen River, step 1166
-Frostham GUS Station --> south --> Valley Trail, step 1167
+South of Frozen River --> south --> Valley Trail, step 1167
 Valley Trail --> south --> Frostham Outskirts, step 1168
 Frostham Outskirts --> south --> Frostham, step 1169
 Frostham --> south --> Subway Entrance, step 1170
 Subway Entrance --> down --> Frostham GUS Station, step 1171
 Frostham GUS Station --> southeast --> Frostham Train Platform, step 1174
-Frostham Train Platform --> east --> Subway car17(Frostham GUS Station), step 1178
-Subway car17(Frostham GUS Station) --> wait --> Subway car17(Aragain Station), step 1180
-Subway car17(Aragain Station) --> wait --> Subway car17(Fublio Station), step 1184
-Fublio --> west --> Fublio Valley Train Platform, step 1185
+Frostham Train Platform --> east --> subway car (north/south, start from Frostham), step 1178
+subway car (north/south, start from Frostham) --> west --> Fublio Valley Train Platform, step 1185
 Fublio Valley Train Platform --> northwest --> Fublio Valley GUS Station, step 1186
 Fublio Valley GUS Station --> up --> Southern Fublio Valley, step 1187
 Southern Fublio Valley --> south --> Grassland Beach, step 1188
-Grassland Beach --> enter boat --> Grassland Beach(into the small sailboat), step 1189
-Grassland Beach(into the small sailboat) --> south --> On Fublio Bay (in the small sailboat), step 1190
+Grassland Beach --> enter boat --> Grassland Beach (in the small sailboat), step 1189
+Grassland Beach (in the small sailboat) --> south --> On Fublio Bay (in the small sailboat), step 1190
 On Fublio Bay (in the small sailboat) --> southeast --> Volcanic Island (in the small sailboat), step 1191
 Volcanic Island (in the small sailboat) --> exit --> Volcanic Island, step 1192
 Volcanic Island --> south --> South Part of Island, step 1193
 South Part of Island --> north --> Volcanic Island, step 1196
-Volcanic Island --> enter boat --> Volcanic Island(into the small sailboat), step 1197
-Volcanic Island(into the small sailboat) --> northwest --> On Fublio Bay (in the small sailboat), step 1198
+Volcanic Island --> enter boat --> Volcanic Island (in the small sailboat), step 1197
+Volcanic Island (in the small sailboat) --> northwest --> On Fublio Bay (in the small sailboat), step 1198
 On Fublio Bay (in the small sailboat) --> north --> Grassland Beach (in the small sailboat), step 1199
 Grassland Beach (in the small sailboat) --> exit --> Grassland Beach, step 1200
 Grassland Beach --> north --> Southern Fublio Valley, step 1201
 Southern Fublio Valley --> down --> Fublio Valley GUS Station, step 1202
 Fublio Valley GUS Station --> southeast --> Fublio Valley Train Platform, step 1205
-Fublio Valley Train Platform --> east --> Subway car18(Fublio Valley GUS Station), step 1207
-Subway car18(Fublio Valley GUS Station) --> wait --> Subway car18(Aragain Station), step 1209
-Subway car18(Aragain Station) --> west --> Aragain Train Platform, step 1211
+Fublio Valley Train Platform --> east --> subway car (north/south, start from Frostham), step 1207
+subway car (north/south, start from Frostham) --> west --> Aragain Train Platform, step 1211
 Aragain Train Platform --> down --> Aragain Train Platform (lower), step 1212
-Aragain Train Platform (lower) --> south --> Subway car18(Aragain Station), step 1213
-Subway car18(Aragain Station) --> wait --> Subway car18(Greater Anthar Station), step 1215
-Subway car18(Greater Anthar Station) --> north --> Greater Anthar Train Platform, step 1216
+Aragain Train Platform (lower) --> south --> subway car (east/west), step 1213
+subway car (east/west) --> north --> Greater Anthar Train Platform, step 1216
 Greater Anthar Train Platform --> north --> Greater Anthar GUS Station, step 1217
 Greater Anthar GUS Station --> up --> Entrance to Greater Anthar, step 1218
 Entrance to Greater Anthar --> east --> Anthar West, step 1219
@@ -632,11 +605,8 @@ Entrance to Flathead Stadium --> southwest --> Anthar West, step 1224
 Anthar West --> west --> Entrance to Greater Anthar, step 1225
 Entrance to Greater Anthar --> down --> Greater Anthar GUS Station, step 1226
 Greater Anthar GUS Station --> south --> Greater Anthar Train Platform, step 1232
-Greater Anthar Train Platform --> south --> Subway car19(Greater Anthar GUS Station), step 1233
-Subway car19(Greater Anthar GUS Station) --> wait --> Subway car19(Aragain Station), step 1235
-Subway car19(Aragain Station) --> wait --> Subway car19(Greater Anthar Station), step 1239
-Subway car19(Greater Anthar Station) --> wait --> Subway car19(Gurth City Station), step 1243
-Subway car19(Gurth City Station) --> north --> Gurth City Train Platform (lower), step 1244
+Greater Anthar Train Platform --> south --> subway car (east/west), step 1233
+subway car (east/west) --> north --> Gurth City Train Platform (lower), step 1244
 Gurth City Train Platform (lower) --> up --> Gurth City Train Platform, step 1245
 Gurth City Train Platform --> northeast --> Gurth City GUS Station, step 1246
 Gurth City GUS Station --> up --> Gurth City Streets, step 1247
@@ -646,3 +616,5 @@ Market District --> south --> South District, step 1250
 South District --> east --> Front of House, step 1251
 Front of House --> east --> Entrance Room, step 1252
 Entrance Room --> down --> Basement, step 1253
+Basement --> join golden rod to brown rod --> Nothingness, step 1259
+Nothingness --> throw brown at black --> lying on a beach, step 1264
