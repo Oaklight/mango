@@ -48,7 +48,7 @@ def parse_args():
 def extract_actions(walkthrough_actions_file):
     with open(walkthrough_actions_file) as f:
         lines = f.readlines()
-        actions = [unabbreviate_actions(line.split(":")[1].strip()) for line in lines]
+        actions = [unabbreviate_actions(line.split(":")[1].strip().lower()) for line in lines]
 
     return actions
 
