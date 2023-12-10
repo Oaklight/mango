@@ -2,12 +2,14 @@ import matplotlib.pyplot as plt
 
 
 vertex = {}
-current_vertex = None  # tuple (x, y)
-vertex_visited = {}  # {(x, y): [step_visited, ...]}
-vertex_names = {}  # {(x, y): vertex_name, ...}
-vertex_sequence = []  # [(x, y),...]
-special_vertices = []  # [(x, y),...]
-action_sequence = []  # [(direction, dist, step_num[, special]), ...]
+current_vertex = None  # current coordinates, (x, y)
+vertex_sequence = []  # sequence of vertices for plotting, [(x, y),...]
+vertex_names = {}  # dict of first visit name, for display {(x, y): vertex_name, ...}
+vertex_visited = {}  # dict of visited steps per vertex, {(x, y): [step_visited, ...]}
+special_vertices = []  # list of special vertices, [(x, y),...]
+action_sequence = (
+    []
+)  # sequence of actions, [(direction, dist, step_num[, special]), ...]
 
 plt.ion()  # Turn on interactive mode
 fig, ax = plt.subplots()
@@ -70,7 +72,7 @@ def _get_color(which):
 def get_shape_color(vertex):
     is_special = vertex in special_vertices
     is_current = vertex == current_vertex
-    is_start = vertex == "A"
+    is_start = vertex == (0, 0)
     if is_special:
         color = _get_color("special")
         shape = _get_shape("special")
@@ -88,22 +90,22 @@ def get_shape_color(vertex):
 
 
 def init_map():
-    global vertex, current_vertex, vertex_visited, vertex_names, vertex_sequence
+    global current_vertex, vertex_sequence, vertex_names, vertex_visited, special_vertices
 
     init_step = input("Enter the initial step number: ")
     current_vertex = (0, 0)
-    vertex_sequence.append(current_vertex)
-    vertex_names[current_vertex] = str(init_step)
-    vertex_visited[current_vertex] = [init_step]
-    
+    vertex_sequence.append(current_vertex)  # for plotting
+    vertex_names[current_vertex] = str(init_step)  # for display
+    vertex_visited[current_vertex] = [init_step]  # for visit record
+
     plot_graph()
     print(f"======== [{init_step}] done ========")
 
 
 def move(direction, distance, step_num, special=False):
-    global vertex, current_vertex, vertex_visited, vertex_names, vertex_sequence
+    global current_vertex, vertex_sequence, vertex_names, vertex_visited, special_vertices, action_sequence
 
-    (x, y) = vertex_names[current_vertex]
+    (x, y) = current_vertex
 
     if direction == "north" or direction == "n":
         y += distance
@@ -114,16 +116,17 @@ def move(direction, distance, step_num, special=False):
     if direction == "west" or direction == "w":
         x -= distance
 
-    current_vertex = step_num
-    vertex_names[current_vertex] = (x, y)
-    vertex_sequence.append(current_vertex)
+    current_vertex = (x, y)
+    vertex_sequence.append(current_vertex)  # for plotting
+    vertex_names[current_vertex] = str(step_num)  # for display
     if special:
         special_vertices.append(current_vertex)
+    action_sequence.append((direction, distance, step_num, special))
 
-    if (x, y) not in vertex_visited:
-        vertex_visited[(x, y)] = [step_num]
+    if current_vertex not in vertex_visited:
+        vertex_visited[current_vertex] = [step_num]
     else:
-        vertex_visited[(x, y)].append(step_num)
+        vertex_visited[current_vertex].append(step_num)
 
     plot_graph()
     print(f"======== [{step_num}] done ========")
@@ -141,7 +144,7 @@ def plot_graph():
 
     prev_x, prev_y = 0, 0
     for vertex in vertex_sequence:
-        x, y = vertex_names[vertex]
+        x, y = vertex
         shape, color = get_shape_color(vertex)
         # draw the vertex on the graph with the given shape and color, and label it with the vertex name
         ax.plot(
@@ -149,12 +152,12 @@ def plot_graph():
             y,
             marker=shape,
             color=color,
-            label=vertex,
+            label=vertex_names[vertex],
             markeredgewidth=1,
             markeredgecolor="black",
             markersize=10,
         )
-        ax.annotate(vertex, (x, y), color="black")
+        ax.annotate(vertex_names[vertex], (x, y), color="black")
 
         # draw the edge between the previous vertex and the current vertex
         ax.plot([prev_x, x], [prev_y, y], color="black")
@@ -179,6 +182,12 @@ def save_local():
     with open("special_vertices.txt", "w") as f:
         for vertex in special_vertices:
             f.write(f"{vertex}\n")
+
+    # save action sequence
+    with open("action_sequence.txt", "w") as f:
+        for action in action_sequence:
+            line = ", ".join([str(e) for e in action])
+            f.write(line + "\n")
 
     print("State saved!")
 
