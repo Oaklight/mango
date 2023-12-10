@@ -1,18 +1,135 @@
-south junction (obj2) --> north --> front porch (obj182), step 1
-front porch (obj182) --> north --> foyer (obj120), step 5
-foyer (obj120) --> north --> game room (obj95), step 7
-game room (obj95) --> east --> short hall (obj229), step 28
-short hall (obj229) --> east --> screening room (obj233), step 29
-screening room (obj233) --> south --> projection booth (obj69), step 30
-projection booth (obj69) --> north --> screening room (obj233), step 41
-screening room (obj233) --> west --> short hall (obj229), step 43
-short hall (obj229) --> west --> game room (obj95), step 44
-game room (obj95) --> south --> foyer (obj120), step 45
-foyer (obj120) --> west --> living room (obj79), step 46
-living room (obj79) --> east --> foyer (obj120), step 50
-foyer (obj120) --> east --> hallway (obj226), step 51
-hallway (obj226) --> east --> parlor (obj5), step 60
-parlor (obj5) --> down --> crawl space, north (obj189), step 63
-crawl space, north (obj189) --> south --> crawl space, south (obj102), step 64
-crawl space, south (obj102) --> north --> crawl space, north (obj189), step 67
-crawl space, north (obj189) --> up --> parlor (obj5), step 68
+South Junction --> north --> Front Porch, step 1
+Front Porch --> north --> Foyer, step 5
+Foyer --> north --> Game Room, step 7
+Game Room --> east --> Short Hall, step 28
+Short Hall --> east --> Screening Room, step 29
+Screening Room --> south --> Projection Booth, step 30
+Projection Booth --> north --> Screening Room, step 41
+Screening Room --> west --> Short Hall, step 43
+Short Hall --> west --> Game Room, step 44
+Game Room --> south --> Foyer, step 45
+Foyer --> west --> Living Room, step 46
+Living Room --> east --> Foyer, step 50
+Foyer --> east --> Hallway, step 51
+Hallway --> east --> Parlor, step 60
+Parlor --> down --> Crawl Space, North, step 63
+Crawl Space, North --> south --> Crawl Space, South, step 64
+Crawl Space, South --> north --> Crawl Space, North, step 67
+Crawl Space, North --> up --> Parlor, step 68
+Parlor --> down --> Crawl Space, North, step 71
+Crawl Space, North --> north --> Small Passage, step 72
+Small Passage --> south --> Crawl Space, North, step 74
+Crawl Space, North --> up --> Parlor, step 75
+Parlor --> west --> Hallway, step 78
+Hallway --> west --> Foyer, step 79
+Foyer --> north --> Game Room, step 83
+Game Room --> north --> Patio, step 86
+Patio --> south --> Game Room, step 88
+Game Room --> south --> Foyer, step 89
+Foyer --> in --> Closet, step 91
+Closet --> out --> Upstairs Hall, Middle, step 94
+Upstairs Hall, Middle --> west --> Upstairs Hall, West, step 96
+Upstairs Hall, West --> south --> Upstairs Bathroom, step 97
+Upstairs Bathroom --> north --> Upstairs Hall, West, step 100
+Upstairs Hall, West --> east --> Upstairs Hall, Middle, step 101
+Upstairs Hall, Middle --> east --> Upstairs Hall, East, step 102
+Upstairs Hall, East --> south --> Guest Room, step 106
+Guest Room --> north --> Upstairs Hall, East, step 108
+Upstairs Hall, East --> west --> Upstairs Hall, Middle, step 109
+Upstairs Hall, Middle --> down --> Foyer, step 110
+Foyer --> west --> Living Room, step 112
+Living Room --> in --> Fireplace, step 113
+Fireplace --> up --> In the Chimney (west side one, stop 1), step 118
+In the Chimney (west side one, stop 1) --> up --> In the Chimney (west side one, stop 2), step 119
+In the Chimney (west side one, stop 2) --> up --> West End of Roof, step 120
+West End of Roof --> east --> East End of Roof, step 121
+East End of Roof --> down --> In the Chimney (east side one, only leading upward), step 122
+In the Chimney (east side one, only leading upward) --> up --> East End of Roof, step 124
+East End of Roof --> west --> West End of Roof, step 125
+West End of Roof --> down --> In the Chimney (west side one, stop 2), step 126
+In the Chimney (west side one, stop 2) --> down --> In the Chimney (west side one, stop 1), step 127
+In the Chimney (west side one, stop 1) --> down --> Fireplace, step 128
+Fireplace --> out --> Living Room, step 130
+Living Room --> north --> Dining Room, step 131
+Dining Room --> west --> Kitchen, step 132
+Kitchen --> down --> Celler, step 133
+Celler --> up --> Kitchen, step 146
+Kitchen --> east --> Dining Room, step 148
+Dining Room --> south --> Living Room, step 151
+Living Room --> east --> Foyer, step 154
+Foyer --> north --> Game Room, step 155
+Game Room --> west --> Dining Room, step 156
+Dining Room --> west --> Kitchen, step 157
+Kitchen --> down --> Celler, step 158
+Celler --> up --> Kitchen, step 160
+Kitchen --> east --> Dining Room, step 161
+Dining Room --> east --> Game Room, step 162
+Game Room --> south --> Foyer, step 163
+Foyer --> up --> Upstairs Hall, Middle, step 164
+Upstairs Hall, Middle --> in --> Closet, step 165
+Closet --> out --> Foyer, step 169
+Foyer --> north --> Game Room, step 170
+Game Room --> west --> Dining Room, step 171
+Dining Room --> west --> Kitchen, step 172
+Kitchen --> down --> Celler, step 173
+Celler --> up --> Kitchen, step 174
+Kitchen --> east --> Dining Room, step 175
+Dining Room --> east --> Game Room, step 176
+Game Room --> south --> Foyer, step 177
+Foyer --> north --> Game Room, step 183
+Game Room --> north --> Patio, step 184
+Patio --> north --> Garden, South, step 185
+Garden, South --> northwest --> Garden, West, step 186
+Garden, West --> northeast --> Garden, North, step 188
+Garden, North --> north --> Entrance to Hedge Maze, step 189
+Entrance to Hedge Maze --> north --> Maze (to N-S-E-W, north to entrance), step 190
+Maze (to N-S-E-W, north to entrance) --> west --> Maze (to N-E, 40 ft from E), step 191
+Maze (to N-E, 40 ft from E) --> north --> Maze (to S-E-W, 40 ft from S), step 192
+Maze (S-E-W, 40 ft from S) --> west --> Maze (to N-E, 20 ft from E), step 193
+Maze (to N-E, 20 ft from E) --> north --> Maze (to S-W, 20 ft from S), step 194
+Maze (to S-W, 20 ft from S) --> west --> Maze (to S-E, 20 ft from E), step 195
+Maze (to S-E, 20 ft from E) --> south --> Maze (to N-W, 20 ft from N), step 196
+Maze (to N-W, 20 ft from N) --> west --> Maze (to N-E-W, 40 ft from E), step 197
+Maze (to N-E-W, 40 ft from E) --> west --> Maze (to N-E, 40 ft from E), step 198
+Maze (to N-E, 40 ft from E) --> north --> Maze (to S-W, 20 ft from S), step 199
+Entrance to Hedge Maze --> south --> Garden, North, step 303
+Garden, North --> north --> Entrance to Hedge Maze, step 304
+Entrance to Hedge Maze --> east --> Northeast Junction, step 305
+Northeast Junction --> north --> Cannon Emplacement, step 306
+Cannon Emplacement --> east --> Northeast Junction, step 315
+Northeast Junction --> east --> Top Landing, step 316
+Top Landing --> down --> Beach, step 319
+Beach --> south --> Bottom Landing, step 325
+Bottom Landing --> west --> Grotto, step 326
+Grotto --> dive --> Surface of Grotto Pool, step 327
+Surface of Grotto Pool --> down --> Grotto, Underwater, step 328
+Grotto, Underwater --> down --> Underwater Passage (mild current flowing east), step 329
+Underwater Passage (mild current flowing east) --> west --> Underwater Passage (current coming from above and flowing east), step 330
+Underwater Passage (current coming from above and flowing east) --> up --> Underwater, step 331
+Underwater --> up --> Surface of Pool, step 332
+Surface of Pool --> north --> Ledge, step 333
+Ledge --> north --> Tunnel, step 336
+Tunnel --> up --> Bomb Shelter, step 337
+Bomb Shelter --> enter right end of plank --> on the right end of the plank, step 340
+on the right end of the plank --> wait --> Cliff, step 341
+Cliff --> down --> Bomb Shelter, step 345
+Bomb Shelter --> up --> Cliff, step 355
+Cliff --> up --> Cannon Emplacement, step 357
+Cannon Emplacement --> east --> Northeast Junction, step 358
+Northeast Junction --> east --> Top Landing, step 359
+Top Landing --> west --> Northeast Junction, step 361
+Northeast Junction --> west --> Entrance to Hedge Maze, step 362
+Entrance to Hedge Maze --> south --> Garden, North, step 363
+Garden, North --> southeast --> Garden, East, step 366
+Garden, East --> southwest --> Garden, South, step 367
+Garden, South --> south --> Patio, step 368
+Patio --> south --> Game Room, step 369
+Game Room --> south --> Foyer, step 370
+Foyer --> in --> Closet, step 371
+Closet --> out --> Foyer, step 373
+Foyer --> up --> Upstairs Hall, Middle, step 374
+Upstairs Hall, Middle --> in --> Top of Closet, step 376
+Top of Closet --> out --> Attic, step 380
+Attic --> down --> Upstairs Hall, Middle, step 385
+Upstairs Hall, Middle --> in --> Closet, step 387
+Closet --> put peg in hole --> Prop Vault, step 388
