@@ -2,7 +2,7 @@
 
 # path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_reversed_all.sh -j <jericho_path> -i <input_dir> [-g <game_name>]"
+    echo "Usage: ./run_gen_move_reversed_all.sh -j <jericho_path> -i <input_dir> [-g <game_name>] [-a]"
     exit 1
 fi
 
@@ -13,38 +13,42 @@ fi
 #         j) jericho_path=${OPTARG};;
 #     esac
 # done
-while getopts j:i:g: flag
+while getopts j:i:g:a flag
 do
     case "${flag}" in
         j) jericho_path=${OPTARG};;
         i) input_dir=${OPTARG};;
         g) game_name=${OPTARG};;
+        a) walk_acts="true";;
     esac
 done
 
-# if g not provided, generate for all games
-if [ -z "$game_name" ]
-then
-    echo "Generating for all games..."
-    files=$(ls $jericho_path)
-    for filename in $files
-    do
-        echo $filename
-        python ./src/gen_moves/gen_move_reversed.py -g $filename \
-        -j $jericho_path \
-        --max_steps 70 \
-        -idir $input_dir \
-        -odir $input_dir
-        python ./src/gen_moves/gen_move_merge.py -p $input_dir -g $filename
-    done
-    echo "Good Job!"
-fi
-# generate for a specific game
-echo "Generating for $game_name..."
-python ./src/gen_moves/gen_move_reversed.py -g $game_name \
--j $jericho_path \
---max_steps 70 \
--idir $input_dir \
--odir $input_dir
-python ./src/gen_moves/gen_move_merge.py -p $input_dir -g $game_name
-echo "Good Job!"
+games=$(ls $jericho_path)
+for game in $games
+do
+    # process to remove extensions
+    game=${game%.*}
+    
+    # skip if game name is empty, or game name provided and not equal to game name
+    if [ -z "$game_name" ] || [ "$game_name" == "$game" ]
+    then
+        if [ -z "$walk_acts" ]
+        then
+            echo "Generating for $game..."
+            python ./src/gen_moves/gen_move_reversed.py -g $game \
+            -j $jericho_path \
+            --max_steps 70 \
+            -idir $input_dir \
+            -odir $input_dir
+        else
+            echo "Generating for $game..."
+            python ./src/gen_moves/gen_move_reversed.py -g $game \
+            -j $jericho_path \
+            --max_steps 70 \
+            -idir $input_dir \
+            -odir $input_dir \
+            -acts
+        fi
+        python ./src/gen_moves/gen_move_merge.py -p $input_dir -g $game
+    fi
+done
