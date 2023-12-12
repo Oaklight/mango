@@ -1,3 +1,5 @@
+import argparse
+
 import matplotlib.pyplot as plt
 
 
@@ -12,7 +14,51 @@ action_sequence = (
 )  # sequence of actions, [(direction, dist, step_num[, special]), ...]
 
 plt.ion()  # Turn on interactive mode
-fig, ax = plt.subplots()
+fig, ax = None, None
+
+HELP_MSG = """
+Interactively label a maze-like map. A maze-like map is a grid of vertices
+with a start vertex and a goal vertex. The start vertex is marked with a
+blue sqaure, the goal vertex is marked with a purple diamond, and all other vertices are
+marked with a circle. The current vertex is marked as a green plus.
+
+The user can move the current vertex to a new location by specifying the
+direction and distance to move. The direction can be one of the four
+cardinal directions (north, south, east, west), or the special direction
+"save" to save the current map, "quit" or "done" to quit the program.
+
+
+Available instructions:
+    # you can use space or comma to separate the instruction elements
+    # normal instructions
+        - north/n distance step_idx
+        - south/s distance step_idx
+        - east/e distance step_idx
+        - west/w distance step_idx
+    # special instruction
+    - save
+    - quit
+    - done
+
+Examples:
+    - n 10 191
+    - south 1 203
+    - save
+    - quit
+    - done
+    
+"""
+
+ACTIONS = [
+    "north",
+    "n",
+    "south",
+    "s",
+    "east",
+    "e",
+    "west",
+    "w",
+]
 
 
 def safe_input(prompt):
@@ -90,7 +136,7 @@ def get_shape_color(vertex):
 
 
 def init_map():
-    global current_vertex, vertex_sequence, vertex_names, vertex_visited, special_vertices
+    global current_vertex, vertex_sequence, vertex_names, vertex_visited, special_vertices, fig, ax
 
     init_step = input("Enter the initial step number: ")
     current_vertex = (0, 0)
@@ -98,6 +144,7 @@ def init_map():
     vertex_names[current_vertex] = str(init_step)  # for display
     vertex_visited[current_vertex] = [init_step]  # for visit record
 
+    fig, ax = plt.subplots()
     plot_graph()
     print(f"======== [{init_step}] done ========")
 
@@ -170,6 +217,11 @@ def plot_graph():
     ax.figure.canvas.flush_events()
 
 
+def get_args():
+    parser = argparse.ArgumentParser(description=HELP_MSG)
+    return parser.parse_args()
+
+
 def save_local():
     # save the graph
     plt.savefig("graph.png")
@@ -193,16 +245,27 @@ def save_local():
 
 
 if __name__ == "__main__":
+    get_args()
+
     init_map()
     while True:
         instruction = safe_input("Enter next step: ").replace(",", " ")
-        if instruction == "quit":
+        if instruction == "quit" or instruction == "done":
             break
         if instruction == "save":
             save_local()
             continue
 
         elements = [e.strip() for e in instruction.split()]
+        if elements[0] not in ACTIONS:
+            print("Invalid action")
+            continue
+        if elements[1].isdigit() is False:
+            print("Invalid distance")
+            continue
+        if elements[2].isdigit() is False:
+            print("Invalid step number")
+            continue
         print(elements)
 
         direction, distance, step_num = elements[:3]
@@ -212,38 +275,3 @@ if __name__ == "__main__":
         move(direction, int(distance), int(step_num), special)
 
     save_local()
-
-# # Example usage:
-# initial_step = int(input("Enter the initial step number: "))
-# graph_drawer = GraphDrawer(initial_step)
-
-# # Draw the initial point as a blue square
-# graph_drawer.draw_vertex("A", marker="s", color="blue")
-
-# print(
-#     "\nEnter instructions in the format 'direction, distance, steps' (e.g., 'west, 20, 189')"
-# )
-# print("For special locations, use '!'. Example: 'west, 20, 300, !'\n")
-
-# while True:
-#     instruction = input("Enter next step: ")
-
-#     if not instruction:
-#         break
-
-#     parts = instruction.split(", ")
-#     direction, distance, steps = parts[:3]
-
-#     distance = int(distance)
-#     steps = int(steps)
-
-#     if len(parts) == 4 and parts[3] == "!":
-#         graph_drawer.move(direction, distance, steps, mark=True)
-#     else:
-#         graph_drawer.move(direction, distance, steps)
-
-# # Plot the final graph
-# graph_drawer.plot_graph()
-
-# plt.ioff()  # Turn off interactive mode
-# plt.show()  # Keep the final plot open until closed by the user
