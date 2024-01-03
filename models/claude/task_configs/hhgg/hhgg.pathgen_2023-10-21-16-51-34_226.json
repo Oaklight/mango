@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "pitch black",
+    "dst_node": "Vogon Hold",
+    "path_gt": [
+        {
+            "prev_node": "pitch black",
+            "node": "Bedroom",
+            "action": "get up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Bedroom",
+            "node": "Front Porch",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Front Porch",
+            "node": "Front of House",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Front of House",
+            "node": "Country Lane",
+            "action": "follow ford",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Country Lane",
+            "node": "Dark",
+            "action": "push green button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Dark",
+            "node": "Vogon Hold",
+            "action": "examine shadow",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Blue Ridge Mountain Sports",
+    "dst_node": "East Path",
+    "path_gt": [
+        {
+            "prev_node": "Blue Ridge Mountain Sports",
+            "node": "Twisting Passageway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "East Path",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

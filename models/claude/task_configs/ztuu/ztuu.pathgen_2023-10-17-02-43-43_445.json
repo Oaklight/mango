@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Hall of Science Lobby",
+    "dst_node": "Souvenir Stand",
+    "path_gt": [
+        {
+            "prev_node": "Hall of Science Lobby",
+            "node": "Cultural Complex",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Cultural Complex",
+            "node": "Convention Center Lobby",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Convention Center Lobby",
+            "node": "Souvenir Stand",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        }
+    ]
+}

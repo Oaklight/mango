@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Twisting Passageway",
+    "dst_node": "Cylindrical Room",
+    "path_gt": [
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "Slimy Passageway",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Giant Cavern",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Cylindrical Room",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Inner Chamber",
+    "dst_node": "North Side of the Church",
+    "path_gt": [
+        {
+            "prev_node": "Inner Chamber",
+            "node": "Steeple Chamber",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Steeple Chamber",
+            "node": "Vestibule",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Church Porch",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Church Porch",
+            "node": "Front of the Church",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "West Side of the Church",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "West Side of the Church",
+            "node": "North Side of the Church",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ]
+}

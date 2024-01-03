@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "sandpit",
+    "dst_node": "alley (north/south)",
+    "path_gt": [
+        {
+            "prev_node": "sandpit",
+            "node": "old untended grave",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "old untended grave",
+            "node": "outside the house",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "brick wall (destroyed at some point)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "brick wall (destroyed at some point)",
+            "node": "alley (north/south)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

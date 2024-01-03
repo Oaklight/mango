@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Captain's Quarters",
+    "dst_node": "Main Deck",
+    "path_gt": [
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "the ledge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "the ledge",
+            "node": "On the Ladder",
+            "action": "climb rope",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "On the Ladder",
+            "node": "poop deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "poop deck",
+            "node": "Quarterdeck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "Main Deck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

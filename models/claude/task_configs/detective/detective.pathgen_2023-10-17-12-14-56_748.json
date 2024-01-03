@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside (crossroads)",
+    "dst_node": "Back of Music Store",
+    "path_gt": [
+        {
+            "prev_node": "Outside (crossroads)",
+            "node": "Outside (north end, east only available)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Outside (north end, east only available)",
+            "node": "Music Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Music Store",
+            "node": "Back of Music Store",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ]
+}

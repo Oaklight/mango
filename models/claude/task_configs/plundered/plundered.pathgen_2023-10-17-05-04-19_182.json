@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "the ledge",
+    "dst_node": "cask",
+    "path_gt": [
+        {
+            "prev_node": "the ledge",
+            "node": "On the Ladder",
+            "action": "climb rope",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "On the Ladder",
+            "node": "poop deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "poop deck",
+            "node": "Quarterdeck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "cask",
+            "action": "sit in cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ]
+}

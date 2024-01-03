@@ -1,0 +1,78 @@
+{
+    "task": "stepnav",
+    "src_node": "North End of a Road",
+    "dst_node": "Inn Cellar",
+    "path_gt": [
+        {
+            "prev_node": "North End of a Road",
+            "node": "South End of a Road",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "South End of a Road",
+            "node": "Lake in the Forest",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "Tree Stump",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Tree Stump",
+            "node": "Forest Pathway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Forest Pathway",
+            "node": "Cottage",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Cottage",
+            "node": "Cave Entrance",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Cave Entrance",
+            "node": "Swampy Ground",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "Abandoned Inn",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Inside the Inn",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Inside the Inn",
+            "node": "Inn Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

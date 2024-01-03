@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Narrow Street",
+    "dst_node": "File Room",
+    "path_gt": [
+        {
+            "prev_node": "Narrow Street",
+            "node": "Outside the Real Estate Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Outside the Real Estate Office",
+            "node": "Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Office",
+            "node": "File Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

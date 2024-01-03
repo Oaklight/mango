@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Slag Pit",
+    "dst_node": "railcar",
+    "path_gt": [
+        {
+            "prev_node": "Slag Pit",
+            "node": "Smithy Court",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Smithy Court",
+            "node": "Railway Station (Smithy Court)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Railway Station (Smithy Court)",
+            "node": "railcar",
+            "action": "enter car",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        }
+    ]
+}

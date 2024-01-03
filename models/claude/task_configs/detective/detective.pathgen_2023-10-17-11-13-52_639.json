@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Bedroom",
+    "dst_node": "Video Store",
+    "path_gt": [
+        {
+            "prev_node": "Bedroom",
+            "node": "Hallway (Mayer's House, east/west intersect, exit to north)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hallway (Mayer's House, east/west intersect, exit to north)",
+            "node": "Outside (video store to east)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Outside (video store to east)",
+            "node": "Video Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ]
+}

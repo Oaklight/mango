@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Tight Crawl",
+    "dst_node": "Dull Room",
+    "path_gt": [
+        {
+            "prev_node": "Tight Crawl",
+            "node": "Smallish Cave",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Smallish Cave",
+            "node": "Cramped Cavern",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cramped Cavern",
+            "node": "Dull Room",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/huntdark/results/"
+}

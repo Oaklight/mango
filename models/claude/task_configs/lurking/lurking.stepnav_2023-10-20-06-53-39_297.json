@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Elevator",
+    "dst_node": "Computer Center",
+    "path_gt": [
+        {
+            "prev_node": "Elevator",
+            "node": "Second Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Computer Center",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

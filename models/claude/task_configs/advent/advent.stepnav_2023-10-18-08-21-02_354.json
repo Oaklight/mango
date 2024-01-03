@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "In West Pit",
+    "dst_node": "Misty Cavern",
+    "path_gt": [
+        {
+            "prev_node": "In West Pit",
+            "node": "At West End of Twopit Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "At West End of Twopit Room",
+            "node": "At East End of Twopit Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "At East End of Twopit Room",
+            "node": "In Swiss Cheese Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "In Swiss Cheese Room",
+            "node": "Oriental Room",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Oriental Room",
+            "node": "Misty Cavern",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        }
+    ],
+    "save_path": "outputs/advent/results/"
+}

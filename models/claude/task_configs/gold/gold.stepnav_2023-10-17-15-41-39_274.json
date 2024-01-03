@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "In the enchanted forest",
+    "dst_node": "On the porch",
+    "path_gt": [
+        {
+            "prev_node": "In the enchanted forest",
+            "node": "On a path in the forest",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "On a path in the forest",
+            "node": "At a fork in the path",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "At a fork in the path",
+            "node": "In a clearing in the forest",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "In a clearing in the forest",
+            "node": "On the porch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ],
+    "save_path": "outputs/gold/results/"
+}

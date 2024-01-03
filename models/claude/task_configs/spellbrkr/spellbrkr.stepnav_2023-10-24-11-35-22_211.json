@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Stone Hut",
+    "dst_node": "Cliff Top",
+    "path_gt": [
+        {
+            "prev_node": "Stone Hut",
+            "node": "Mountain Top",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Mountain Top",
+            "node": "Boulder(A long oblong boulder below you)",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Boulder(A long oblong boulder below you)",
+            "node": "Boulder(A nice oblong boulder above you and another large one below you)",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Boulder(A nice oblong boulder above you and another large one below you)",
+            "node": "Boulder(Large boulder above you and cliff below you)",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Boulder(Large boulder above you and cliff below you)",
+            "node": "Cliff Top",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 47
+        }
+    ],
+    "save_path": "outputs/spellbrkr/results/"
+}

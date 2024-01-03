@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Captain's Quarters",
+    "dst_node": "Sleeping Cupboard",
+    "path_gt": [
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Sleeping Cupboard",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

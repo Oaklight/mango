@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Living Room",
+    "dst_node": "Short Hall",
+    "path_gt": [
+        {
+            "prev_node": "Living Room",
+            "node": "Foyer",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Game Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Game Room",
+            "node": "Short Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ],
+    "save_path": "outputs/hollywood/results/"
+}

@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Castle Forge",
+    "dst_node": "Cottage",
+    "path_gt": [
+        {
+            "prev_node": "Castle Forge",
+            "node": "Wasteland by a Castle",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Wasteland by a Castle",
+            "node": "Pebbled Beach",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Pebbled Beach",
+            "node": "Lake in the Forest",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "Tree Stump",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Tree Stump",
+            "node": "Forest Pathway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Forest Pathway",
+            "node": "Cottage",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 28
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

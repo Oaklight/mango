@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Platform (west side)",
+    "dst_node": "Under the Bleachers",
+    "path_gt": [
+        {
+            "prev_node": "Platform (west side)",
+            "node": "Performance Ring",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Performance Ring",
+            "node": "In the Wings",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Under the Bleachers",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "the entrance of tunnel",
+    "dst_node": "Stage",
+    "path_gt": [
+        {
+            "prev_node": "the entrance of tunnel",
+            "node": "tunnel",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "tunnel",
+            "node": "Cultural Complex",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Cultural Complex",
+            "node": "Theater",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Theater",
+            "node": "Stage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        }
+    ],
+    "save_path": "outputs/ztuu/results/"
+}

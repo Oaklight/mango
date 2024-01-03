@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Underwater",
+    "dst_node": "pitch black 1",
+    "path_gt": [
+        {
+            "prev_node": "Underwater",
+            "node": "On the Lake",
+            "action": "get can",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "On the Lake",
+            "node": "Southern Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Southern Shore",
+            "node": "pitch black 1",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

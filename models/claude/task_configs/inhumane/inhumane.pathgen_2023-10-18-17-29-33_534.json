@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Exercise-Wheel Room",
+    "dst_node": "Door Near Blades",
+    "path_gt": [
+        {
+            "prev_node": "Exercise-Wheel Room",
+            "node": "Bottom of Shaft",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Bottom of Shaft",
+            "node": "Landing",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Landing",
+            "node": "T Intersection",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Door Near Blades",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ]
+}

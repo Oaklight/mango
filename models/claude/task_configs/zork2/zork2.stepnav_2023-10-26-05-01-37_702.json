@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Dreary Room",
+    "dst_node": "Deep Ford",
+    "path_gt": [
+        {
+            "prev_node": "Dreary Room",
+            "node": "Tiny Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Tiny Room",
+            "node": "Ledge in Ravine",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Ledge in Ravine",
+            "node": "Deep Ford",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 23
+        }
+    ],
+    "save_path": "outputs/zork2/results/"
+}

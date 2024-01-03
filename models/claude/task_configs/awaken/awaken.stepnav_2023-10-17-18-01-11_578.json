@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Small Office",
+    "dst_node": "West Side of the Church",
+    "path_gt": [
+        {
+            "prev_node": "Small Office",
+            "node": "Pulpit",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Pulpit",
+            "node": "Sanctuary",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Sanctuary",
+            "node": "Vestibule",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Steeple Chamber",
+            "action": "climb ladder",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Steeple Chamber",
+            "node": "Belfry",
+            "action": "climb rope",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Belfry",
+            "node": "Top of Oak Tree",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Top of Oak Tree",
+            "node": "Front of the Church",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "West Side of the Church",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ],
+    "save_path": "outputs/awaken/results/"
+}

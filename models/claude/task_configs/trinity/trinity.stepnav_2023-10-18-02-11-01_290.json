@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Palace Gate",
+    "dst_node": "Round Pond",
+    "path_gt": [
+        {
+            "prev_node": "Palace Gate",
+            "node": "Flower Walk",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Flower Walk",
+            "node": "The Wabe",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "The Wabe",
+            "node": "Broad Walk",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Broad Walk",
+            "node": "Round Pond",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/trinity/results/"
+}

@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Aft Hold",
+    "dst_node": "poop deck",
+    "path_gt": [
+        {
+            "prev_node": "Aft Hold",
+            "node": "Hold",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Main Deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Quarterdeck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "poop deck",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        }
+    ]
+}

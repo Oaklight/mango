@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Extreme South Main Street",
+    "dst_node": "Coal Mines",
+    "path_gt": [
+        {
+            "prev_node": "Extreme South Main Street",
+            "node": "Mining Center",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Mining Center",
+            "node": "Coal Mines",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

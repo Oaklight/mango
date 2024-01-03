@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Twisting Passageway",
+    "dst_node": "Rice Room",
+    "path_gt": [
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Musty Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Musty Corridor",
+            "node": "Rice Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 56
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

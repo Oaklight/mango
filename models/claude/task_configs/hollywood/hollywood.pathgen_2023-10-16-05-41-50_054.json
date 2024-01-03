@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "South Junction",
+    "dst_node": "Short Hall",
+    "path_gt": [
+        {
+            "prev_node": "South Junction",
+            "node": "Front Porch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Front Porch",
+            "node": "Foyer",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Game Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Game Room",
+            "node": "Short Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ]
+}

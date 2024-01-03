@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Clown Alley",
+    "dst_node": "Menagerie",
+    "path_gt": [
+        {
+            "prev_node": "Clown Alley",
+            "node": "Camp, West",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Camp, West",
+            "node": "Inside Prop Tent",
+            "action": "go under wall",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Inside Prop Tent",
+            "node": "Back Yard",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Back Yard",
+            "node": "Beside the Big Top",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Beside the Big Top",
+            "node": "Connection",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Midway Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Midway Entrance",
+            "node": "Menagerie",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

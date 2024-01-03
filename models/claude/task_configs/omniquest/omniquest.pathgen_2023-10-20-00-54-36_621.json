@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Ice Room",
+    "dst_node": "Musty Corridor",
+    "path_gt": [
+        {
+            "prev_node": "Ice Room",
+            "node": "Chilly Corridor",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "South Lake",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Musty Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 57
+        }
+    ]
+}

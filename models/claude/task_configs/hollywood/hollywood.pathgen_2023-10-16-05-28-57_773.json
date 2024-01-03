@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Game Room",
+    "dst_node": "South Junction",
+    "path_gt": [
+        {
+            "prev_node": "Game Room",
+            "node": "Foyer",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Front Porch",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Front Porch",
+            "node": "South Junction",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 1
+        }
+    ]
+}

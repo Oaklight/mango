@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Pantry",
+    "dst_node": "bed",
+    "path_gt": [
+        {
+            "prev_node": "Pantry",
+            "node": "Kitchen",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Dining Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "Foyer",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Upstairs Landing",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Upstairs Landing",
+            "node": "Master Bedroom",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Master Bedroom",
+            "node": "bed",
+            "action": "lie in bed",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

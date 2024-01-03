@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Attic",
+    "dst_node": "Airing Cupboard",
+    "path_gt": [
+        {
+            "prev_node": "Attic",
+            "node": "Old Winery",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Old Winery",
+            "node": "Aunt Jemima's Lair",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Aunt Jemima's Lair",
+            "node": "Airing Cupboard",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/curses/results/"
+}

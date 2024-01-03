@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Lancaster Gate",
+    "dst_node": "Meadow",
+    "path_gt": [
+        {
+            "prev_node": "Lancaster Gate",
+            "node": "Lancaster Walk",
+            "action": "push pram south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Lancaster Walk",
+            "node": "Long Water",
+            "action": "open umbrella",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Long Water",
+            "node": "Wading",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Wading",
+            "node": "Meadow",
+            "action": "inventory",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        }
+    ],
+    "save_path": "outputs/trinity/results/"
+}

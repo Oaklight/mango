@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Captain's Quarters, on the bed",
+    "dst_node": "Sleeping Cupboard",
+    "path_gt": [
+        {
+            "prev_node": "Captain's Quarters, on the bed",
+            "node": "Captain's Quarters",
+            "action": "stand up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Sleeping Cupboard",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ]
+}

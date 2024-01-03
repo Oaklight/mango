@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Storage Tent",
+    "dst_node": "Key Room",
+    "path_gt": [
+        {
+            "prev_node": "Storage Tent",
+            "node": "Center of Camp",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "Roboff's Tent",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Round Room",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Corridor Near Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Corridor Near Pit",
+            "node": "On the Platform",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "On the Platform",
+            "node": "West of the Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West of the Pit",
+            "node": "Key Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

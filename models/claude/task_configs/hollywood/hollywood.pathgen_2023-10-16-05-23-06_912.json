@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Crawl Space, South",
+    "dst_node": "Screening Room",
+    "path_gt": [
+        {
+            "prev_node": "Crawl Space, South",
+            "node": "Crawl Space, North",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Crawl Space, North",
+            "node": "Parlor",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Parlor",
+            "node": "Hallway",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Foyer",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Game Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Game Room",
+            "node": "Short Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Short Hall",
+            "node": "Screening Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        }
+    ]
+}

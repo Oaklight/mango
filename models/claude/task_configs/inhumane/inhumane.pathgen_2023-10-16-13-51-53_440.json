@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "T-Intersection (east/west/south, west to Round Room)",
+    "dst_node": "Outside Door",
+    "path_gt": [
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Round Room",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Corridor at Doorway",
+            "node": "Glue Pit",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Glue Pit",
+            "node": "Outside Door",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        }
+    ]
+}

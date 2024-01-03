@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "West of House",
+    "dst_node": "Up a Tree",
+    "path_gt": [
+        {
+            "prev_node": "West of House",
+            "node": "North of House",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "North of House",
+            "node": "Forest Path",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Forest Path",
+            "node": "Up a Tree",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/zork1/results/"
+}

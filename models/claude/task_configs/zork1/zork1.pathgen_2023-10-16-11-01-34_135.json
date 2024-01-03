@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "West of House",
+    "dst_node": "East-West Passage",
+    "path_gt": [
+        {
+            "prev_node": "West of House",
+            "node": "North of House",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "North of House",
+            "node": "Behind House",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Behind House",
+            "node": "Kitchen",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Living Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Living Room",
+            "node": "Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Cellar",
+            "node": "The Troll Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "The Troll Room",
+            "node": "East-West Passage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ]
+}

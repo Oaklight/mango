@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Bottom of Cliff",
+    "dst_node": "Plain",
+    "path_gt": [
+        {
+            "prev_node": "Bottom of Cliff",
+            "node": "Narrow Cleft",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Narrow Cleft",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Mountain Trail (up west, down east)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Mountain Trail (up west, down east)",
+            "node": "Mountain Trail (blackened tree beside trail)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Mountain Trail (blackened tree beside trail)",
+            "node": "Plain",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Front Porch",
+    "dst_node": "Crawl Space, South",
+    "path_gt": [
+        {
+            "prev_node": "Front Porch",
+            "node": "Foyer",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Hallway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Parlor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Parlor",
+            "node": "Crawl Space, North",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Crawl Space, North",
+            "node": "Crawl Space, South",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ]
+}

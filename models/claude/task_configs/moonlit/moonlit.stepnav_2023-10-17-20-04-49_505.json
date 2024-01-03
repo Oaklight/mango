@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Skeletal Banquet",
+    "dst_node": "Moonlit Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Skeletal Banquet",
+            "node": "Undying Garden",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Undying Garden",
+            "node": "Shadow Armory",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Shadow Armory",
+            "node": "Moonlit Chamber",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ],
+    "save_path": "outputs/moonlit/results/"
+}

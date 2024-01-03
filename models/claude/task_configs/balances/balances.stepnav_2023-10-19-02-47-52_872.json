@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Track, outside Temple",
+    "dst_node": "Gorse Bushes",
+    "path_gt": [
+        {
+            "prev_node": "Track, outside Temple",
+            "node": "Crest of Hill",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Crest of Hill",
+            "node": "Cave Mouth",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Cave Mouth",
+            "node": "Gorse Bushes",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ],
+    "save_path": "outputs/balances/results/"
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Exercise-Wheel Room",
+    "dst_node": "Corridor Near Pit",
+    "path_gt": [
+        {
+            "prev_node": "Exercise-Wheel Room",
+            "node": "Round Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Corridor Near Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

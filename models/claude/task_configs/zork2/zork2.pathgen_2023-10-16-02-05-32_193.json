@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Ice Room",
+    "dst_node": "Dragon's Lair",
+    "path_gt": [
+        {
+            "prev_node": "Ice Room",
+            "node": "Cool Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Cool Room",
+            "node": "Stone Bridge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Stone Bridge",
+            "node": "Dragon Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Dragon Room",
+            "node": "Dragon's Lair",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        }
+    ]
+}

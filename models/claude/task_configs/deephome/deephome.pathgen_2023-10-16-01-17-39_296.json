@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "the abandoned city of Deephome",
+    "dst_node": "Railway Station (Main Hall)",
+    "path_gt": [
+        {
+            "prev_node": "the abandoned city of Deephome",
+            "node": "Northern Guard Post",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Northern Guard Post",
+            "node": "Main Hall",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Railway Station (Main Hall)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        }
+    ]
+}

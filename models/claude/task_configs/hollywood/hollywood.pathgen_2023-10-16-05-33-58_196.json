@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Parlor",
+    "dst_node": "Projection Booth",
+    "path_gt": [
+        {
+            "prev_node": "Parlor",
+            "node": "Hallway",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Foyer",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Game Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Game Room",
+            "node": "Short Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Short Hall",
+            "node": "Screening Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Screening Room",
+            "node": "Projection Booth",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ]
+}

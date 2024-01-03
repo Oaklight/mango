@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Carpenter's Shop",
+    "dst_node": "Blacksmith",
+    "path_gt": [
+        {
+            "prev_node": "Carpenter's Shop",
+            "node": "Smithy Court",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Smithy Court",
+            "node": "Blacksmith",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

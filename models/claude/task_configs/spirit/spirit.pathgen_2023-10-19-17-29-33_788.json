@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Main Hall",
+    "dst_node": "Storeroom",
+    "path_gt": [
+        {
+            "prev_node": "Main Hall",
+            "node": "Cloister Walkway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Cloister Walkway",
+            "node": "Monastery Gardens",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Monastery Gardens",
+            "node": "Hallway (west end)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (basement)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Hallway (basement)",
+            "node": "Refectory",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Refectory",
+            "node": "Storeroom",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "The Troll Room",
+    "dst_node": "Engravings Cave",
+    "path_gt": [
+        {
+            "prev_node": "The Troll Room",
+            "node": "East-West Passage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "East-West Passage",
+            "node": "Round Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Engravings Cave",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Gazebo",
+    "dst_node": "Marble Hall",
+    "path_gt": [
+        {
+            "prev_node": "Gazebo",
+            "node": "North End of Garden",
+            "action": "out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "North End of Garden",
+            "node": "Formal Garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Formal Garden",
+            "node": "Path Near Stream",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Path Near Stream",
+            "node": "Marble Hall",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/zork2/results/"
+}

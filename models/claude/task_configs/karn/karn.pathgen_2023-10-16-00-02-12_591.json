@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Rocky Clearing",
+    "dst_node": "On Top of the Saucer",
+    "path_gt": [
+        {
+            "prev_node": "Rocky Clearing",
+            "node": "Rocky Trail (clearing to west)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Rocky Trail (clearing to west)",
+            "node": "Rocky Trail (Trail widens eastward and narrows northwest)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Rocky Trail (Trail widens eastward and narrows northwest)",
+            "node": "Lakeside",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Ledge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Ledge",
+            "node": "On Top of the Saucer",
+            "action": "climb scarf",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Lift(down button and a door to south)",
+    "dst_node": "Landing",
+    "path_gt": [
+        {
+            "prev_node": "Lift(down button and a door to south)",
+            "node": "Hall",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Corridor(east to old cell and north to hall)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Corridor(east to old cell and north to hall)",
+            "node": "Corridor(east old cell and stretches further west)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Corridor(east old cell and stretches further west)",
+            "node": "Landing",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/zenon/results/"
+}

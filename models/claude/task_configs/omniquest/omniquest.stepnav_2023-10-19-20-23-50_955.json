@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "East Path",
+    "dst_node": "Musty Corridor",
+    "path_gt": [
+        {
+            "prev_node": "East Path",
+            "node": "South Lake",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Musty Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 57
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Forecastle",
+    "dst_node": "Shallows",
+    "path_gt": [
+        {
+            "prev_node": "Forecastle",
+            "node": "Main Deck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Quarterdeck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "cask",
+            "action": "sit in cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "cask",
+            "node": "Shallows",
+            "action": "get out of cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

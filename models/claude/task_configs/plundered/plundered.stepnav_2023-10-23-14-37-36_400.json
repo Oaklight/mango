@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "Deck",
+    "dst_node": "Shallows",
+    "path_gt": [
+        {
+            "prev_node": "Deck",
+            "node": "Captain's Quarters, on the bed",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Captain's Quarters, on the bed",
+            "node": "Captain's Quarters",
+            "action": "stand up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Aft Hold",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Aft Hold",
+            "node": "Hold",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Main Deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Quarterdeck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "cask",
+            "action": "sit in cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "cask",
+            "node": "Shallows",
+            "action": "get out of cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

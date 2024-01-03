@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Bar (western side)",
+    "dst_node": "Dark corner (SE corner)",
+    "path_gt": [
+        {
+            "prev_node": "Bar (western side)",
+            "node": "Dance floor (center of the club)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Dance floor (center of the club)",
+            "node": "Entrance (southern side)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Entrance (southern side)",
+            "node": "Dark corner (SE corner)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/yomomma/results/"
+}

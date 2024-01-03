@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "At Slit In Streambed",
+    "dst_node": "Low N/S Passage",
+    "path_gt": [
+        {
+            "prev_node": "At Slit In Streambed",
+            "node": "In A Valley",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "In A Valley",
+            "node": "End Of Road",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "End Of Road",
+            "node": "Inside Building",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Inside Building",
+            "node": "At \"Y2\"",
+            "action": "plugh",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "At \"Y2\"",
+            "node": "Low N/S Passage",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        }
+    ]
+}

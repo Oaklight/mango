@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "West of House",
+    "dst_node": "Attic",
+    "path_gt": [
+        {
+            "prev_node": "West of House",
+            "node": "North of House",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "North of House",
+            "node": "Behind House",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Behind House",
+            "node": "Kitchen",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Attic",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ]
+}

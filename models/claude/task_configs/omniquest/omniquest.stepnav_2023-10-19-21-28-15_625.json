@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Guardian Chamber",
+    "dst_node": "East Path",
+    "path_gt": [
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "West Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "East Path",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

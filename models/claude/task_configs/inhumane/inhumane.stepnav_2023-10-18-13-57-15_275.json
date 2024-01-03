@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Bottom of Shaft",
+    "dst_node": "Roboff's Tent",
+    "path_gt": [
+        {
+            "prev_node": "Bottom of Shaft",
+            "node": "Landing",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Landing",
+            "node": "T Intersection",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Door Near Blades",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Door Near Blades",
+            "node": "Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Stalagmite Room",
+            "node": "North Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "North Stalagmite Room",
+            "node": "Round Room",
+            "action": "push button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

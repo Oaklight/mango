@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Low Room",
+    "dst_node": "End Of Road",
+    "path_gt": [
+        {
+            "prev_node": "Low Room",
+            "node": "In Hall of Mists",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "In Hall of Mists",
+            "node": "Hall of the Mountain King",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Hall of the Mountain King",
+            "node": "Low N/S Passage",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Low N/S Passage",
+            "node": "At \"Y2\"",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "At \"Y2\"",
+            "node": "Inside Building",
+            "action": "plugh",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Inside Building",
+            "node": "End Of Road",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/advent/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+    "dst_node": "Inside Stump",
+    "path_gt": [
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Meadow",
+            "action": "away",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Dismal Swamp",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

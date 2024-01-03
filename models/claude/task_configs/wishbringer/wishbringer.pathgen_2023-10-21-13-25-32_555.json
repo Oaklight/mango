@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Post Office",
+    "dst_node": "Creepy Corner",
+    "path_gt": [
+        {
+            "prev_node": "Post Office",
+            "node": "Hilltop",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Hilltop",
+            "node": "Outside Cemetery",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Outside Cemetery",
+            "node": "Creepy Corner",
+            "action": "yes",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ]
+}

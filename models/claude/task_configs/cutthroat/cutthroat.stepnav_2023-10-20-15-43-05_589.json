@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Vacant Lot",
+    "dst_node": "Upstairs Hallway",
+    "path_gt": [
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Wharf Road (north to McGinty Salvage)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Wharf Road (north to McGinty Salvage)",
+            "node": "Wharf Road (end of east/west road)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Wharf Road (end of east/west road)",
+            "node": "Red Boar Inn",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Red Boar Inn",
+            "node": "Upstairs Hallway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 14
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

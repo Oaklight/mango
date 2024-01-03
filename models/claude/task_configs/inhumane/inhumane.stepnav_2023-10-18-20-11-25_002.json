@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Exercise-Wheel Room",
+    "dst_node": "Glue Pit",
+    "path_gt": [
+        {
+            "prev_node": "Exercise-Wheel Room",
+            "node": "Round Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Corridor at Doorway",
+            "node": "Glue Pit",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

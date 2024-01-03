@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Pub",
+    "dst_node": "Vogon Hold",
+    "path_gt": [
+        {
+            "prev_node": "Pub",
+            "node": "Country Lane",
+            "action": "exit",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Country Lane",
+            "node": "Dark",
+            "action": "push green button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Dark",
+            "node": "Vogon Hold",
+            "action": "examine shadow",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        }
+    ]
+}

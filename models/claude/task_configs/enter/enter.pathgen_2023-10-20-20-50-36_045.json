@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Office",
+    "dst_node": "Room 8",
+    "path_gt": [
+        {
+            "prev_node": "Office",
+            "node": "Hall Near Office",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        },
+        {
+            "prev_node": "Hall Near Office",
+            "node": "North-South Hall--North End",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "North-South Hall--North End",
+            "node": "Room 8",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        }
+    ]
+}

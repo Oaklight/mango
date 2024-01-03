@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Cottage",
+    "dst_node": "Abandoned Inn",
+    "path_gt": [
+        {
+            "prev_node": "Cottage",
+            "node": "Cave Entrance",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Cave Entrance",
+            "node": "Swampy Ground",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "Abandoned Inn",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 9
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Elevator",
+    "dst_node": "Basalt Bowl",
+    "path_gt": [
+        {
+            "prev_node": "Elevator",
+            "node": "Second Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Terminal Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Terminal Room",
+            "node": "Place",
+            "action": "again",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Place",
+            "node": "Basalt Bowl",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

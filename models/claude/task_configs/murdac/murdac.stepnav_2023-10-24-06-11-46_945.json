@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "brick wall (destroyed at some point)",
+    "dst_node": "outside the house",
+    "path_gt": [
+        {
+            "prev_node": "brick wall (destroyed at some point)",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "shrubbery",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "shrubbery",
+            "node": "remnants of a bonfire",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "remnants of a bonfire",
+            "node": "flower garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "outside the house",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

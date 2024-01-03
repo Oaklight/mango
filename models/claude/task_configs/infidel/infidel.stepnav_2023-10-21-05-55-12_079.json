@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Work Tent",
+    "dst_node": "Fire Pit",
+    "path_gt": [
+        {
+            "prev_node": "Work Tent",
+            "node": "Outside Work Tent",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Outside Work Tent",
+            "node": "Outside Supply Tent",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside Supply Tent",
+            "node": "Outside Your Tent",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Fire Pit",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 15
+        }
+    ],
+    "save_path": "outputs/infidel/results/"
+}

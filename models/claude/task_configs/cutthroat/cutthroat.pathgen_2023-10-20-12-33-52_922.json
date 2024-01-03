@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Back Alley (back door of McGinty Salvage)",
+    "dst_node": "Winding Road (start of southwest-ward road)",
+    "path_gt": [
+        {
+            "prev_node": "Back Alley (back door of McGinty Salvage)",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Vacant Lot",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Wharf Road (north to McGinty Salvage)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Wharf Road (north to McGinty Salvage)",
+            "node": "Wharf Road (end of east/west road)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Wharf Road (end of east/west road)",
+            "node": "Winding Road (start of southwest-ward road)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        }
+    ]
+}

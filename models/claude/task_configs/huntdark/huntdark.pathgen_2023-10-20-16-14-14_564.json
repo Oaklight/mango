@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Small Cave",
+    "dst_node": "Canyon Wall",
+    "path_gt": [
+        {
+            "prev_node": "Small Cave",
+            "node": "Cramped Room",
+            "action": "right",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Cramped Room",
+            "node": "Base of Canyon",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Base of Canyon",
+            "node": "Canyon Wall",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        }
+    ]
+}

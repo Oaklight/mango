@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Master Bathroom",
+    "dst_node": "Mark's Room",
+    "path_gt": [
+        {
+            "prev_node": "Master Bathroom",
+            "node": "Master Bedroom",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Master Bedroom",
+            "node": "Upstairs Hallway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Upstairs Hallway",
+            "node": "Mark's Room",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ]
+}

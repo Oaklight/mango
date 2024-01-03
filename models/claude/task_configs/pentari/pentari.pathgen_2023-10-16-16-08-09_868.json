@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Charlie Company Compound",
+    "dst_node": "Armory",
+    "path_gt": [
+        {
+            "prev_node": "Charlie Company Compound",
+            "node": "Charlie Company Barracks",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Charlie Company Barracks",
+            "node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+            "node": "Entrance Hall",
+            "action": "city",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Entrance Hall",
+            "node": "Library",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Library",
+            "node": "Castle",
+            "action": "covert",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Castle",
+            "node": "Main Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Armory",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ]
+}

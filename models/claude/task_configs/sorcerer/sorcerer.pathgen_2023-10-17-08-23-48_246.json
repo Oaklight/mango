@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Store Room",
+    "dst_node": "quarters",
+    "path_gt": [
+        {
+            "prev_node": "Store Room",
+            "node": "Lobby",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Lobby",
+            "node": "Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "quarters",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 4
+        }
+    ]
+}

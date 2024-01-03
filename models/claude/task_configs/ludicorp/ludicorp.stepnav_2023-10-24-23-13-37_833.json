@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Bike Shed",
+    "dst_node": "East Of Office",
+    "path_gt": [
+        {
+            "prev_node": "Bike Shed",
+            "node": "West Of Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "West Of Office",
+            "node": "Front Of The Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "East Of Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

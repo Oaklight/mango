@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Sleeping Room",
+    "dst_node": "Sitting Room (on the long soft thing)",
+    "path_gt": [
+        {
+            "prev_node": "Sleeping Room",
+            "node": "Sitting Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Sitting Room",
+            "node": "Sitting Room (on the long soft thing)",
+            "action": "get on couch",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ],
+    "save_path": "outputs/snacktime/results/"
+}

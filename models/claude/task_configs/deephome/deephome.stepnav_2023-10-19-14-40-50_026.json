@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Intersection",
+    "dst_node": "Mess Hall",
+    "path_gt": [
+        {
+            "prev_node": "Intersection",
+            "node": "S. Main Street",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "S. Main Street",
+            "node": "N. Main Street",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "N. Main Street",
+            "node": "Main Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Railway Station (Main Hall)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Railway Station (Main Hall)",
+            "node": "railcar",
+            "action": "enter car",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "railcar",
+            "node": "Railway Station (Soldiers' Barracks)",
+            "action": "out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Railway Station (Soldiers' Barracks)",
+            "node": "Soldiers' Barracks",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Soldiers' Barracks",
+            "node": "Mess Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

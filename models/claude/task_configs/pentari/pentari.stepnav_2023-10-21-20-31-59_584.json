@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Dining Room",
+    "dst_node": "Castle Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Dining Room",
+            "node": "Spiral Stairway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Main Hall",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Castle",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Castle",
+            "node": "Castle Entrance",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

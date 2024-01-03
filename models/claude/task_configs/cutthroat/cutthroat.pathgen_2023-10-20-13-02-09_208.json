@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Red Boar Inn",
+    "dst_node": "Winding Road (north to swamp)",
+    "path_gt": [
+        {
+            "prev_node": "Red Boar Inn",
+            "node": "Wharf Road (end of east/west road)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Wharf Road (end of east/west road)",
+            "node": "Winding Road (start of southwest-ward road)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Winding Road (start of southwest-ward road)",
+            "node": "Winding Road (north to swamp)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ]
+}

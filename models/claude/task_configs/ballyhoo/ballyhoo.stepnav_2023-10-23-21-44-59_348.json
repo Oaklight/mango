@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "In the Wings",
+    "dst_node": "Beside the Big Top",
+    "path_gt": [
+        {
+            "prev_node": "In the Wings",
+            "node": "Connection",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Near White Wagon",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Near White Wagon",
+            "node": "Back Yard",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Back Yard",
+            "node": "Beside the Big Top",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

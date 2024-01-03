@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Grasslands, near Hut",
+    "dst_node": "Track, outside Temple",
+    "path_gt": [
+        {
+            "prev_node": "Grasslands, near Hut",
+            "node": "Pocket Valley",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Pocket Valley",
+            "node": "Edge of Chasm",
+            "action": "mount horse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Edge of Chasm",
+            "node": "Crest of Hill",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Crest of Hill",
+            "node": "Track, outside Temple",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        }
+    ]
+}

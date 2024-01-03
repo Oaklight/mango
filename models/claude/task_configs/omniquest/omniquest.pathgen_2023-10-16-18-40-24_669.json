@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Cylindrical Room",
+    "dst_node": "Jeweled Room",
+    "path_gt": [
+        {
+            "prev_node": "Cylindrical Room",
+            "node": "Giant Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Slimy Passageway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Guardian Chamber",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "Jeweled Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ]
+}

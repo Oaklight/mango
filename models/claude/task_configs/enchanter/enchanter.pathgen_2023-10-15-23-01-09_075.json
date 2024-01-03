@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Shady Brook",
+    "dst_node": "Inside Shack",
+    "path_gt": [
+        {
+            "prev_node": "Shady Brook",
+            "node": "Trail Head",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Trail Head",
+            "node": "Trail",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Trail",
+            "node": "Outside of Shack",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside of Shack",
+            "node": "Inside Shack",
+            "action": "enter shack",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ]
+}

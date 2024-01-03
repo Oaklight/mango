@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Shady Brook",
+    "dst_node": "Western Road",
+    "path_gt": [
+        {
+            "prev_node": "Shady Brook",
+            "node": "Trail Head",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Trail Head",
+            "node": "Eastern Fork",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Eastern Fork",
+            "node": "Western Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Gazebo",
+    "dst_node": "End of Ledge",
+    "path_gt": [
+        {
+            "prev_node": "Gazebo",
+            "node": "North End of Garden",
+            "action": "out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "North End of Garden",
+            "node": "Formal Garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Formal Garden",
+            "node": "Topiary",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Topiary",
+            "node": "Carousel Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Carousel Room",
+            "node": "Marble Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Marble Hall",
+            "node": "Deep Ford",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Deep Ford",
+            "node": "Ledge in Ravine",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Ledge in Ravine",
+            "node": "End of Ledge",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/zork2/results/"
+}

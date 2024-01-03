@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Western Shore",
+    "dst_node": "Underwater",
+    "path_gt": [
+        {
+            "prev_node": "Western Shore",
+            "node": "On the Lake",
+            "action": "jump lake",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "On the Lake",
+            "node": "Underwater",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

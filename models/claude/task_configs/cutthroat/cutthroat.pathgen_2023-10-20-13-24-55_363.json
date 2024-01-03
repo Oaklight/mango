@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Vacant Lot",
+    "dst_node": "Ocean Road (north end of north/south road)",
+    "path_gt": [
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Ocean Road (north end of north/south road)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ]
+}

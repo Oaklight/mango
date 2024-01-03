@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "VIP lounge (NW corner)",
+    "dst_node": "Dark corner (SE corner)",
+    "path_gt": [
+        {
+            "prev_node": "VIP lounge (NW corner)",
+            "node": "Bar (western side)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Bar (western side)",
+            "node": "Dance floor (center of the club)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Dance floor (center of the club)",
+            "node": "Dark corner (SE corner)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/yomomma/results/"
+}

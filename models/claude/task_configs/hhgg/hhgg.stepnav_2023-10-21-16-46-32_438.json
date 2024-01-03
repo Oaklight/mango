@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Country Lane",
+    "dst_node": "Captain's Quarters, in the poetry appreciation chair",
+    "path_gt": [
+        {
+            "prev_node": "Country Lane",
+            "node": "Dark",
+            "action": "push green button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Dark",
+            "node": "Vogon Hold",
+            "action": "examine shadow",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Vogon Hold",
+            "node": "Captain's Quarters, in the poetry appreciation chair",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        }
+    ],
+    "save_path": "outputs/hhgg/results/"
+}

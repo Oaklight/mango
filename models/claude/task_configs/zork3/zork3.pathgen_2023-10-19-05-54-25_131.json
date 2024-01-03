@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Cliff",
+    "dst_node": "Underwater",
+    "path_gt": [
+        {
+            "prev_node": "Cliff",
+            "node": "Barren Area",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Barren Area",
+            "node": "Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Junction",
+            "node": "Creepy Crawl",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Creepy Crawl",
+            "node": "Foggy Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Foggy Room",
+            "node": "Lake Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Lake Shore",
+            "node": "On the Lake",
+            "action": "jump lake",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "On the Lake",
+            "node": "Underwater",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ]
+}

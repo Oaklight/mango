@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Statue Room",
+    "dst_node": "Closet",
+    "path_gt": [
+        {
+            "prev_node": "Statue Room",
+            "node": "Fountain Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Fountain Room",
+            "node": "Table Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Table Room",
+            "node": "Closet",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        }
+    ],
+    "save_path": "outputs/lostpig/results/"
+}

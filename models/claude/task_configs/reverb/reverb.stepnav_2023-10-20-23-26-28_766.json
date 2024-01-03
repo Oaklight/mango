@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Cosmetics Department",
+    "dst_node": "Pizza Parlor",
+    "path_gt": [
+        {
+            "prev_node": "Cosmetics Department",
+            "node": "Clothing Department",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Clothing Department",
+            "node": "Street, by Department Store",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Street, by Department Store",
+            "node": "Street, by Pizza Parlor",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Street, by Pizza Parlor",
+            "node": "Pizza Parlor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

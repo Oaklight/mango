@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Deserted Village",
+    "dst_node": "Shady Brook",
+    "path_gt": [
+        {
+            "prev_node": "Deserted Village",
+            "node": "Village Outskirts",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Village Outskirts",
+            "node": "Eastern Fork",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Eastern Fork",
+            "node": "Trail Head",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Trail Head",
+            "node": "Shady Brook",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Shore Road (east end of east/west road)",
+    "dst_node": "Back Alley (south to vacant lot)",
+    "path_gt": [
+        {
+            "prev_node": "Shore Road (east end of east/west road)",
+            "node": "Ocean Road (south end of north/south road)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Ocean Road (south end of north/south road)",
+            "node": "Ocean Road (halfway of north/south road)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Ocean Road (halfway of north/south road)",
+            "node": "Ocean Road (north end of north/south road)",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Ocean Road (north end of north/south road)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

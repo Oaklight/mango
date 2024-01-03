@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "File Room",
+    "dst_node": "Town Square",
+    "path_gt": [
+        {
+            "prev_node": "File Room",
+            "node": "Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Office",
+            "node": "Outside the Real Estate Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Outside the Real Estate Office",
+            "node": "Narrow Street",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Whateley Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Whateley Bridge",
+            "node": "Town Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

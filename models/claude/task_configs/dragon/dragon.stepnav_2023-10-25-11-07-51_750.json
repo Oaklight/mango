@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Cave Entrance",
+    "dst_node": "South End of a Road",
+    "path_gt": [
+        {
+            "prev_node": "Cave Entrance",
+            "node": "Swampy Ground",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "North End of a Road",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "North End of a Road",
+            "node": "South End of a Road",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

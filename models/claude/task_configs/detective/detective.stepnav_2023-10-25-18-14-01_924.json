@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Outside (north end, east only available)",
+    "dst_node": "Outside (Holiday Inn to north, Doughnut King to east, the Wall to west)",
+    "path_gt": [
+        {
+            "prev_node": "Outside (north end, east only available)",
+            "node": "Music Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Music Store",
+            "node": "Back of Music Store",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Back of Music Store",
+            "node": "Alley",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Alley",
+            "node": "Police Station",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Police Station",
+            "node": "Outside (Holiday Inn to north, Doughnut King to east, the Wall to west)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/detective/results/"
+}

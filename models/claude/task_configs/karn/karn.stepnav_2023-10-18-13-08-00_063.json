@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "On Top of the Saucer",
+    "dst_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+    "path_gt": [
+        {
+            "prev_node": "On Top of the Saucer",
+            "node": "Plain",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Plain",
+            "node": "Mountain Trail (blackened tree beside trail)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Mountain Trail (blackened tree beside trail)",
+            "node": "Mountain Trail (up west, down east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Mountain Trail (up west, down east)",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        }
+    ],
+    "save_path": "outputs/karn/results/"
+}

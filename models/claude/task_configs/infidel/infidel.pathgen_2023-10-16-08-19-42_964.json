@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Barge Chamber (southern section)",
+    "dst_node": "Temple Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Barge Chamber (southern section)",
+            "node": "Barge Chamber (southwest corner)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Barge Chamber (southwest corner)",
+            "node": "Barge Chamber (northwest corner)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Barge Chamber (northwest corner)",
+            "node": "Barge Chamber (north to back side of barge)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Barge Chamber (north to back side of barge)",
+            "node": "Steep Passageway\uff08the top of a steep)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Steep Passageway\uff08the top of a steep)",
+            "node": "Steep Passageway(midway down)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Steep Passageway(midway down)",
+            "node": "Steep Passageway(the north end of a descending passageway)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Steep Passageway(the north end of a descending passageway)",
+            "node": "Temple Chamber",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "South Junction",
+    "dst_node": "Game Room",
+    "path_gt": [
+        {
+            "prev_node": "South Junction",
+            "node": "Front Porch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Front Porch",
+            "node": "Foyer",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Game Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ],
+    "save_path": "outputs/hollywood/results/"
+}

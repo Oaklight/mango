@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Pantry",
+    "dst_node": "Storage",
+    "path_gt": [
+        {
+            "prev_node": "Pantry",
+            "node": "Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Cellar",
+            "node": "Storage",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

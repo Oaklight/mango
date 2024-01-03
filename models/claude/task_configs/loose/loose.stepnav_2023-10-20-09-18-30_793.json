@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Clock Tower Stairs",
+    "dst_node": "Outside the Cottage",
+    "path_gt": [
+        {
+            "prev_node": "Clock Tower Stairs",
+            "node": "Inside the School",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Inside the School",
+            "node": "Schoolyard",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Schoolyard",
+            "node": "Hilltop",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Hilltop",
+            "node": "Meadow Behind the Bungalow",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Meadow Behind the Bungalow",
+            "node": "Outside the Bungalow",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Outside the Bungalow",
+            "node": "Outside the Cottage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        }
+    ],
+    "save_path": "outputs/loose/results/"
+}

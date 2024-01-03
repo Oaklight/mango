@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Hall",
+    "dst_node": "Dismal Swamp",
+    "path_gt": [
+        {
+            "prev_node": "Hall",
+            "node": "Hole",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Hole",
+            "node": "Root Chamber",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Root Chamber",
+            "node": "Inside Stump",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Dismal Swamp",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ]
+}

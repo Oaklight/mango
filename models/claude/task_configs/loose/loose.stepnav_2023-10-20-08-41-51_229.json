@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Forest",
+    "dst_node": "Country Lane",
+    "path_gt": [
+        {
+            "prev_node": "Forest",
+            "node": "Deep Forest",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Deep Forest",
+            "node": "Country Lane",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/loose/results/"
+}

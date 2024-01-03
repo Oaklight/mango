@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Ramshackle Hut",
+    "dst_node": "on the beautiful red carpet",
+    "path_gt": [
+        {
+            "prev_node": "Ramshackle Hut",
+            "node": "Grasslands, near Hut",
+            "action": "out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Grasslands, near Hut",
+            "node": "Pocket Valley",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Pocket Valley",
+            "node": "Edge of Chasm",
+            "action": "mount horse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Edge of Chasm",
+            "node": "on the beautiful red carpet",
+            "action": "sit on carpet",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        }
+    ]
+}

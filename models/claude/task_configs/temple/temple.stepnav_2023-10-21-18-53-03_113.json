@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Road (north/south)",
+    "dst_node": "Library",
+    "path_gt": [
+        {
+            "prev_node": "Road (north/south)",
+            "node": "Crossroads",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Crossroads",
+            "node": "Road (east/west)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Road (east/west)",
+            "node": "A Dark Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "A Dark Hallway",
+            "node": "Library",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/temple/results/"
+}

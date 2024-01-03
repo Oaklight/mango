@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Rocky Trail (clearing to west)",
+    "dst_node": "Narrow Cleft",
+    "path_gt": [
+        {
+            "prev_node": "Rocky Trail (clearing to west)",
+            "node": "Rocky Clearing",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Rocky Clearing",
+            "node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "node": "Mountain Trail (up east, down southwest)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Mountain Trail (up east, down southwest)",
+            "node": "Mountain Trail (carved steps to the south)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Mountain Trail (carved steps to the south)",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Narrow Cleft",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ]
+}

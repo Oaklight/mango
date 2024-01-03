@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Outside Physics Office",
+    "dst_node": "Gnome's Lair",
+    "path_gt": [
+        {
+            "prev_node": "Outside Physics Office",
+            "node": "Hall (2nd floor, middle of north/south hall)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hall (2nd floor, middle of north/south hall)",
+            "node": "Maze of Twisty Passages (stop 1)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 1)",
+            "node": "Maze of Twisty Passages (stop 2)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 2)",
+            "node": "Maze of Twisty Passages (stop 3)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 3)",
+            "node": "Maze of Twisty Passages (stop 4)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 4)",
+            "node": "Maze of Twisty Passages (stop 5)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 5)",
+            "node": "Maze of Twisty Passages (stop 6)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 6)",
+            "node": "Gnome's Lair",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Outside (video store to east)",
+    "dst_node": "McDonalds",
+    "path_gt": [
+        {
+            "prev_node": "Outside (video store to east)",
+            "node": "Video Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Video Store",
+            "node": "Outside (crossroads)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Outside (crossroads)",
+            "node": "McDonalds",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        }
+    ],
+    "save_path": "outputs/detective/results/"
+}

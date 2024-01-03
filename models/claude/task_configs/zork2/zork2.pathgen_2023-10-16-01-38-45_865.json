@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Cool Room",
+    "dst_node": "Ledge in Ravine",
+    "path_gt": [
+        {
+            "prev_node": "Cool Room",
+            "node": "Stone Bridge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Stone Bridge",
+            "node": "Dragon Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Dragon Room",
+            "node": "End of Ledge",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "End of Ledge",
+            "node": "Ledge in Ravine",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        }
+    ]
+}

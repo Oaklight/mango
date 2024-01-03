@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Dish Room",
+    "dst_node": "Lavatory",
+    "path_gt": [
+        {
+            "prev_node": "Dish Room",
+            "node": "Winding Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Winding Hall",
+            "node": "Galley Kitchen",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Galley Kitchen",
+            "node": "Dining Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "Bar",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Bar",
+            "node": "Lavatory",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ]
+}

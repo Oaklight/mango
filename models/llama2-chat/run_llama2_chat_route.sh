@@ -1,10 +1,41 @@
-export TARGET_FOLDER=/remote-home/share/llama_v2
+#!/bin/sh
+
+export TARGET_FOLDER=/home-nfs/pengli/workspace/projects/llama/ckpts
 export MODEL_NAME=llama-2-13b-chat
 
-CUDA_VISIBLE_DEVICES=1,2 torchrun \
---nproc_per_node 2 --master_port 22344 ./llama2_chat_infer_route.py \
+MASTER_PORT=42345
+START_GAME_IDX=0
+END_GAME_IDX=1000
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --master_port)
+      MASTER_PORT="$2"
+      shift 2
+      ;;
+    --start_game_idx)
+      START_GAME_IDX="$2"
+      shift 2
+      ;;
+    --end_game_idx)
+      END_GAME_IDX="$2"
+      shift 2
+      ;;
+    *)
+      echo "Unknown option: $1"
+      exit 1
+      ;;
+  esac
+done
+
+torchrun \
+--nproc_per_node 2 --master_port "$MASTER_PORT" ./llama2_chat_infer_route.py \
 --ckpt_dir $TARGET_FOLDER/$MODEL_NAME \
---tokenizer_path $TARGET_FOLDER/tokenizer.model \
---mango_folder /remote-home/pli/mango \
---save_folder /remote-home/pli/mango/model_results/llama2_chat_results_0721 \
---max_batch_size 4 > ../outs/llama2_chat_13b_route_a800.out 2>&1 & # 2, 28
+--tokenizer_path /home-nfs/pengli/workspace/projects/llama/tokenizer.model \
+--mango_folder /home-nfs/pengli/workspace/projects/mango \
+--save_folder /home-nfs/pengli/workspace/projects/mango/model_results/llama2_chat_results_1111 \
+--max_batch_size 4 \
+--start_game_idx "$START_GAME_IDX" \
+--end_game_idx "$END_GAME_IDX"
+
+# > ../outs/codellama_instruct_13b_route_ttic.out 2>&1 & # 2, 28

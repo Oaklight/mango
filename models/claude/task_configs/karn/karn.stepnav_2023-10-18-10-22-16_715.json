@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Bottom of Cliff",
+    "dst_node": "Mountain Trail (up east, down southwest)",
+    "path_gt": [
+        {
+            "prev_node": "Bottom of Cliff",
+            "node": "Narrow Cleft",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Narrow Cleft",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Mountain Trail (carved steps to the south)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Mountain Trail (carved steps to the south)",
+            "node": "Mountain Trail (up east, down southwest)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        }
+    ],
+    "save_path": "outputs/karn/results/"
+}

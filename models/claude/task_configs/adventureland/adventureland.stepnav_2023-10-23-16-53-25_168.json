@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+    "dst_node": "Meadow",
+    "path_gt": [
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Meadow",
+            "action": "away",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

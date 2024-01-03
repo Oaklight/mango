@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Courthouse",
+    "dst_node": "Street, by Pizza Parlor",
+    "path_gt": [
+        {
+            "prev_node": "Courthouse",
+            "node": "Street, Near Courthouse",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Street, Near Courthouse",
+            "node": "Street, by Pizza Parlor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

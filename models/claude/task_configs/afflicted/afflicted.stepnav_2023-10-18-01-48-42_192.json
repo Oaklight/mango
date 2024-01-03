@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Crypt",
+    "dst_node": "Bar",
+    "path_gt": [
+        {
+            "prev_node": "Crypt",
+            "node": "Dish Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Dish Room",
+            "node": "Winding Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Winding Hall",
+            "node": "Galley Kitchen",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Galley Kitchen",
+            "node": "Dining Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "Bar",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        }
+    ],
+    "save_path": "outputs/afflicted/results/"
+}

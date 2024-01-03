@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall",
+    "dst_node": "Control Room",
+    "path_gt": [
+        {
+            "prev_node": "Hall",
+            "node": "Corridor(east to old cell and north to hall)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Corridor(east to old cell and north to hall)",
+            "node": "Control Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ],
+    "save_path": "outputs/zenon/results/"
+}

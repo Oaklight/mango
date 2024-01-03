@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Door Near Blades",
+    "dst_node": "Hall Full of Fur",
+    "path_gt": [
+        {
+            "prev_node": "Door Near Blades",
+            "node": "T Intersection",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Landing",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Round Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Corridor at Doorway",
+            "node": "Glue Pit",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Glue Pit",
+            "node": "Outside Door",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Outside Door",
+            "node": "Hall Full of Fur",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

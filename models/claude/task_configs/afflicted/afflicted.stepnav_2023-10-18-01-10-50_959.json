@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Crypt",
+    "dst_node": "Refrigerator",
+    "path_gt": [
+        {
+            "prev_node": "Crypt",
+            "node": "Dish Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Dish Room",
+            "node": "Winding Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Winding Hall",
+            "node": "Refrigerator",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/afflicted/results/"
+}

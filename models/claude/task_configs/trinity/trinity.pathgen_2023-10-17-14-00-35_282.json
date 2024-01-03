@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Palace Gate",
+    "dst_node": "Lancaster Gate",
+    "path_gt": [
+        {
+            "prev_node": "Palace Gate",
+            "node": "Flower Walk",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Flower Walk",
+            "node": "The Wabe",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "The Wabe",
+            "node": "Broad Walk",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Broad Walk",
+            "node": "Round Pond",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Round Pond",
+            "node": "Black Lion Gate",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Black Lion Gate",
+            "node": "Inverness Terrace",
+            "action": "push pram east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Inverness Terrace",
+            "node": "Lancaster Gate",
+            "action": "push pram east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ]
+}

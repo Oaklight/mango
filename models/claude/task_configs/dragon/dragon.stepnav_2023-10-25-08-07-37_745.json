@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Swampy Ground",
+    "dst_node": "Forest Pathway",
+    "path_gt": [
+        {
+            "prev_node": "Swampy Ground",
+            "node": "Cave Entrance",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Cave Entrance",
+            "node": "Cottage",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Cottage",
+            "node": "Forest Pathway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

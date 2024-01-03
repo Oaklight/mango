@@ -1,0 +1,78 @@
+{
+    "task": "stepnav",
+    "src_node": "Long Corridor, West End",
+    "dst_node": "Bottom Of The Well",
+    "path_gt": [
+        {
+            "prev_node": "Long Corridor, West End",
+            "node": "Storeroom",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Storeroom",
+            "node": "Delivery Bay",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Delivery Bay",
+            "node": "The Delivery Bay Gateway",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "The Delivery Bay Gateway",
+            "node": "The Main Carpark",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "The Main Carpark",
+            "node": "Front Of The Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "East Of Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Damp Corner",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Damp Corner",
+            "node": "Storage Shed Door",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Storage Shed Door",
+            "node": "Abandoned Well",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Abandoned Well",
+            "node": "Bottom Of The Well",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

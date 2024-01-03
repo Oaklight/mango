@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Monastery Gardens",
+    "dst_node": "Your Quarters",
+    "path_gt": [
+        {
+            "prev_node": "Monastery Gardens",
+            "node": "Hallway (west end)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (near your quarters)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Hallway (near your quarters)",
+            "node": "Your Quarters",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 8
+        }
+    ]
+}

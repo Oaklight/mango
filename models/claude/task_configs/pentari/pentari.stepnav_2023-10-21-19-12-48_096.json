@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Castle Dungeon",
+    "dst_node": "Treasury",
+    "path_gt": [
+        {
+            "prev_node": "Castle Dungeon",
+            "node": "Spiral Stairway",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Main Hall",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Armory",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Armory",
+            "node": "Treasury",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

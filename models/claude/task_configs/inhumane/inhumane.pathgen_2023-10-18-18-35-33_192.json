@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Stalagmite Room",
+    "dst_node": "Landing",
+    "path_gt": [
+        {
+            "prev_node": "Stalagmite Room",
+            "node": "North Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "North Stalagmite Room",
+            "node": "Round Room",
+            "action": "push button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ]
+}

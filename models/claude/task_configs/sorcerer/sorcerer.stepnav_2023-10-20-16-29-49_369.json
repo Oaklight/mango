@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Belboz's Quarters",
+    "dst_node": "Meadow",
+    "path_gt": [
+        {
+            "prev_node": "Belboz's Quarters",
+            "node": "Hallway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Helistar's Quarters",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Helistar's Quarters",
+            "node": "Twisted Forest",
+            "action": "aimfiz belboz",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Twisted Forest",
+            "node": "Forest Edge",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Forest Edge",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        }
+    ],
+    "save_path": "outputs/sorcerer/results/"
+}

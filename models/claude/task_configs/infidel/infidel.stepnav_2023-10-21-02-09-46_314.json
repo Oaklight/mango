@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Your Tent",
+    "dst_node": "Desert (out of sight of encampment)",
+    "path_gt": [
+        {
+            "prev_node": "Your Tent",
+            "node": "Outside Your Tent",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Northern Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Northern Path",
+            "node": "Desert (within sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Desert (within sight of encampment)",
+            "node": "Desert (out of sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ],
+    "save_path": "outputs/infidel/results/"
+}

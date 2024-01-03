@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Bridge",
+    "dst_node": "Rotary South",
+    "path_gt": [
+        {
+            "prev_node": "Bridge",
+            "node": "South of Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "South of Bridge",
+            "node": "Rotary North",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Rotary North",
+            "node": "Park",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Park",
+            "node": "Rotary South",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        }
+    ]
+}

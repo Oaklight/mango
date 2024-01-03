@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Some Bushes",
+    "dst_node": "Bike Shed",
+    "path_gt": [
+        {
+            "prev_node": "Some Bushes",
+            "node": "East Of Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Front Of The Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "West Of Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "West Of Office",
+            "node": "Bike Shed",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ]
+}

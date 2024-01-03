@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Canyon Entrance",
+    "dst_node": "Intersection",
+    "path_gt": [
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Endless Beach",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Endless Beach",
+            "node": "Ocean",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Ocean",
+            "node": "Island Coast",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Island Coast",
+            "node": "Cylindrical Room",
+            "action": "push rock",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cylindrical Room",
+            "node": "Giant Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Small Cavern",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Small Cavern",
+            "node": "Twisting Passageway",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

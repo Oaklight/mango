@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Northern Guard Post",
+    "dst_node": "railcar",
+    "path_gt": [
+        {
+            "prev_node": "Northern Guard Post",
+            "node": "Main Hall",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Railway Station (Main Hall)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Railway Station (Main Hall)",
+            "node": "railcar",
+            "action": "enter car",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Storeroom",
+    "dst_node": "West Of Office",
+    "path_gt": [
+        {
+            "prev_node": "Storeroom",
+            "node": "Delivery Bay",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Delivery Bay",
+            "node": "The Delivery Bay Gateway",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "The Delivery Bay Gateway",
+            "node": "The Main Carpark",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "The Main Carpark",
+            "node": "Front Of The Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "West Of Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ]
+}

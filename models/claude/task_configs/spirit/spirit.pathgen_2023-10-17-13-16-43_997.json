@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Monastery Chapel",
+    "dst_node": "Hallway (near quarters of Palemon and TuffBerry)",
+    "path_gt": [
+        {
+            "prev_node": "Monastery Chapel",
+            "node": "Your Quarters",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Your Quarters",
+            "node": "Hallway (near your quarters)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Hallway (near your quarters)",
+            "node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ]
+}

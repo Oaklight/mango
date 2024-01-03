@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Guild Hall",
+    "dst_node": "Cave Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Guild Hall",
+            "node": "Belwit Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Belwit Square",
+            "node": "Packed Earth",
+            "action": "blorple 1",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Packed Earth",
+            "node": "Cave Entrance",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        }
+    ],
+    "save_path": "outputs/spellbrkr/results/"
+}

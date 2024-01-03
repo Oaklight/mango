@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Cabin",
+    "dst_node": "the ledge",
+    "path_gt": [
+        {
+            "prev_node": "Cabin",
+            "node": "Deck",
+            "action": "yes",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Deck",
+            "node": "Captain's Quarters, on the bed",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Captain's Quarters, on the bed",
+            "node": "Captain's Quarters",
+            "action": "stand up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "the ledge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ]
+}

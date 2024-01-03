@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Front Porch",
+    "dst_node": "Country Lane",
+    "path_gt": [
+        {
+            "prev_node": "Front Porch",
+            "node": "Front of House",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Front of House",
+            "node": "Country Lane",
+            "action": "follow ford",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        }
+    ]
+}

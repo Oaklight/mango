@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Treasury",
+    "dst_node": "Dining Room",
+    "path_gt": [
+        {
+            "prev_node": "Treasury",
+            "node": "Armory",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Armory",
+            "node": "Main Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Spiral Stairway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Dining Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ]
+}

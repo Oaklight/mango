@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Near the Nile",
+    "dst_node": "Work Tent",
+    "path_gt": [
+        {
+            "prev_node": "Near the Nile",
+            "node": "Outside Your Tent",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Outside Supply Tent",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Outside Supply Tent",
+            "node": "Outside Work Tent",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside Work Tent",
+            "node": "Work Tent",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        }
+    ],
+    "save_path": "outputs/infidel/results/"
+}

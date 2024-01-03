@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "End of Path(an exit to the northeast and a raincoat here)",
+    "dst_node": "End of Path(an exit to the northeast)",
+    "path_gt": [
+        {
+            "prev_node": "End of Path(an exit to the northeast and a raincoat here)",
+            "node": "Fork in Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Fork in Path",
+            "node": "End of Path(an exit to the northeast)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

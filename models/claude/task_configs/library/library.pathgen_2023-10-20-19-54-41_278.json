@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Second Floor Stacks",
+    "dst_node": "Lobby",
+    "path_gt": [
+        {
+            "prev_node": "Second Floor Stacks",
+            "node": "Second Floor Stairwell",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Second Floor Stairwell",
+            "node": "Ground Floor Stairwell",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Ground Floor Stairwell",
+            "node": "Ground Floor Stacks",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Ground Floor Stacks",
+            "node": "Lobby",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ]
+}

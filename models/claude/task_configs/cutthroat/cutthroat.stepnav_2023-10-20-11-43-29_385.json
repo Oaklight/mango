@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Vacant Lot",
+    "dst_node": "Back Alley (east end of east/west alley)",
+    "path_gt": [
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

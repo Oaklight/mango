@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Dorm Corridor",
+    "dst_node": "Tool Room",
+    "path_gt": [
+        {
+            "prev_node": "Dorm Corridor",
+            "node": "Corridor Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Corridor Junction",
+            "node": "Mech Corridor North",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Mech Corridor North",
+            "node": "Mech Corridor",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Mech Corridor",
+            "node": "Mech Corridor South",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Mech Corridor South",
+            "node": "Tool Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ]
+}

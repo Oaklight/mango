@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Office Building, Second Floor",
+    "dst_node": "Pizza Parlor",
+    "path_gt": [
+        {
+            "prev_node": "Office Building, Second Floor",
+            "node": "Office Building",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Office Building",
+            "node": "Downtown",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Downtown",
+            "node": "Street, Near Courthouse",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Street, Near Courthouse",
+            "node": "Street, by Pizza Parlor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Street, by Pizza Parlor",
+            "node": "Pizza Parlor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ]
+}

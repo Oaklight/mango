@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Dorm Corridor",
+    "dst_node": "Large Office",
+    "path_gt": [
+        {
+            "prev_node": "Dorm Corridor",
+            "node": "Corridor Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Corridor Junction",
+            "node": "Admin Corridor South",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Admin Corridor South",
+            "node": "Admin Corridor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Admin Corridor",
+            "node": "Admin Corridor North",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Admin Corridor North",
+            "node": "Small Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Small Office",
+            "node": "Large Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Hold",
+    "dst_node": "cask",
+    "path_gt": [
+        {
+            "prev_node": "Hold",
+            "node": "Main Deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Quarterdeck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "cask",
+            "action": "sit in cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ]
+}

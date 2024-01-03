@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Forest Edge",
+    "dst_node": "Hidden Cave",
+    "path_gt": [
+        {
+            "prev_node": "Forest Edge",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "River Bank",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "River Bank",
+            "node": "River Bed",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "River Bed",
+            "node": "Hidden Cave",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        }
+    ],
+    "save_path": "outputs/sorcerer/results/"
+}

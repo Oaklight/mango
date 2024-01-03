@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Wharf Road (north to Outfitters International)",
+    "dst_node": "Back Alley (west end of east/west alley)",
+    "path_gt": [
+        {
+            "prev_node": "Wharf Road (north to Outfitters International)",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Vacant Lot",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Back Alley (back door of McGinty Salvage)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Back Alley (back door of McGinty Salvage)",
+            "node": "Back Alley (west end of east/west alley)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

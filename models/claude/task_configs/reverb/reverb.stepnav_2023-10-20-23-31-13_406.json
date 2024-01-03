@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Downtown",
+    "dst_node": "Courthouse",
+    "path_gt": [
+        {
+            "prev_node": "Downtown",
+            "node": "Street, Near Courthouse",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Street, Near Courthouse",
+            "node": "Courthouse",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

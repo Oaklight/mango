@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Corner Of the Carpark",
+    "dst_node": "Long Corridor, West End",
+    "path_gt": [
+        {
+            "prev_node": "Corner Of the Carpark",
+            "node": "The Main Carpark",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "The Main Carpark",
+            "node": "The Delivery Bay Gateway",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "The Delivery Bay Gateway",
+            "node": "Delivery Bay",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Delivery Bay",
+            "node": "Storeroom",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Storeroom",
+            "node": "Long Corridor, West End",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Chilly Corridor",
+    "dst_node": "Guardian Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "Rice Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Rice Room",
+            "node": "Musty Corridor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Musty Corridor",
+            "node": "South Lake",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "East Path",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "East Path",
+            "node": "Intersection",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Guardian Chamber",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

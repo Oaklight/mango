@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Dome Room",
+    "dst_node": "Altar",
+    "path_gt": [
+        {
+            "prev_node": "Dome Room",
+            "node": "Torch Room",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Torch Room",
+            "node": "Temple",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Temple",
+            "node": "Altar",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ],
+    "save_path": "outputs/zork1/results/"
+}

@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Ocean Road (north end of north/south road)",
+    "dst_node": "Back Alley (west end of east/west alley)",
+    "path_gt": [
+        {
+            "prev_node": "Ocean Road (north end of north/south road)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Back Alley (back door of McGinty Salvage)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Back Alley (back door of McGinty Salvage)",
+            "node": "Back Alley (west end of east/west alley)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ]
+}

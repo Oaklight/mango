@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "outside the house",
+    "dst_node": "shrubbery",
+    "path_gt": [
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "shrubbery",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

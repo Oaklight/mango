@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Storage Room",
+    "dst_node": "Inside Cupboard",
+    "path_gt": [
+        {
+            "prev_node": "Storage Room",
+            "node": "Old Winery",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Old Winery",
+            "node": "Attic",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Attic",
+            "node": "Old Furniture",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Old Furniture",
+            "node": "Over the East Wing",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Over the East Wing",
+            "node": "East Annexe",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "East Annexe",
+            "node": "Inside Cupboard",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        }
+    ]
+}
