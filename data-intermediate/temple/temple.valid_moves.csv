@@ -1,222 +1,182 @@
-Step Num,Location Before,Location After
-1,,
-2,,
-3,Void,Roof
-4,,
-5,,
-6,Roof,Study
-7,,
-8,,
-9,,
-10,,
-11,,
-12,,
-13,,
-14,,
-15,,
-16,Study,Hall
-17,,
-18,Hall,Study
-19,Study,Storage
-20,,
-21,,
-22,,
-23,Storage,Study
-24,Study,Hall
-25,,
-26,,
-27,,
-28,Hall,Before A Dark Tower
-29,,
-30,Before A Dark Tower,Public Square
-31,,
-32,,
-33,,
-34,Public Square,Road
-35,,
-36,Road,A Dark Hallway
-37,,
-38,A Dark Hallway,Library
-39,,
-40,,
-41,,
-42,,
-43,,
-44,,
-45,,
-46,,
-47,,
-48,,
-49,,
-50,Library,A Dark Hallway
-51,A Dark Hallway,Road
-52,Road,Crossroads
-53,Crossroads,Road (north/south)
-54,Road (north/south),Crossroads
-55,Crossroads,Dead End
-56,,
-57,,
-58,,
-59,,
-60,Dead End,Stairs
-61,Stairs,"Corridor "
-62,,
-63,,
-64,"Corridor ","Corridor "
-65,"Corridor ",Chamber
-66,,
-67,Chamber,"Corridor "
-68,"Corridor ",Rock Chamber
-69,,
-70,,
-71,,
-72,,
-73,Rock Chamber,Corridor
-74,Corridor,Chamber
-75,Chamber,Corridor
-76,Corridor,Corridor
-77,Corridor,Stairs
-78,,
-79,Stairs,Dead End
-80,Dead End,Crossroads
-81,Crossroads,Road
-82,Road,Public Square
-83,Public Square,Road
-84,,
-85,,
-86,Road,Temple
-87,,
-88,Temple,Road
-89,Road,Public Square
-90,Public Square,Before A Dark Tower
-91,Before A Dark Tower,Hall
-92,Hall,Study
-93,,
-94,,
-95,Study,Dark Chamber
-96,,
-97,Dark Chamber,Temple
-98,,
-99,,
-100,,
-101,,
-102,,
-103,,
-104,Temple,Hall
-105,Hall,Before A Dark Tower
-106,Before A Dark Tower,Public Square
-107,Public Square,Road
-108,Road,Crossroads
-109,Crossroads,Dead End
-110,Dead End,Stairs
-111,Stairs,Corridor
-112,Corridor,Corridor
-113,Corridor,Chamber
-114,Chamber,Corridor
-115,Corridor,Rock Chamber
-116,,
-117,,
-118,,
-119,,
-120,,
-121,,
-122,,
-123,,
-124,,
-125,Rock Chamber,Corridor
-126,,
-127,,
-128,,
-129,Corridor,Chamber
-130,,
-131,,
-132,,
-133,,
-134,Chamber,Corridor
-135,Corridor,Rock Chamber
-136,,
-137,,
-138,,
-139,,
-140,,
-141,,
-142,Rock Chamber,Corridor
-143,Corridor,Chamber
-144,,
-145,Chamber,Corridor
-146,,
-147,Corridor,Corridor
-148,Corridor,Stairs
-149,Stairs,Dead End
-150,,
-151,,
-152,Dead End,Crossroads
-153,Crossroads,Road
-154,Road,Public Square
-155,,
-156,,
-157,,
-158,,
-159,Public Square,Deserted Hall
-160,,
-161,,
-162,,
-163,,
-164,,
-165,,
-166,,
-167,,
-168,,
-169,,
-170,,
-171,Deserted Hall,Public Square
-172,Public Square,Road
-173,Road,Temple
-174,,
-175,,
-176,,
-177,,
-178,,
-179,Temple,Stage
-180,,
-181,,
-182,,
-183,,
-184,,
-185,,
-186,,
-187,,
-188,,
-189,,
-190,,
-191,,
-192,,
-193,,
-194,,
-195,,
-196,,
-197,,
-198,,
-199,,
-200,,
-201,,
-202,,
-203,,
-204,,
-205,,
-206,,
-207,,
-208,,
-209,,
-210,,
-211,,
-212,,
-213,,
-214,,
-215,,
-216,,
-217,,
-218,,
-,,
-,,
-,,
+Step Num,Location Before,Location After,taken_action
+1,,,x me
+2,,,x shadow
+3,Void,Roof,x shape
+4,,,pull railing
+5,,,x statue
+6,Roof,Study,down
+7,,,x paper
+8,,,take paper
+9,,,x table
+10,,,x writing
+11,,,x man
+12,,,touch man
+13,,,x books
+14,,,x dust
+15,,,x desk
+16,Study,Hall,down
+17,,,x door
+18,Hall,Study,up
+19,Study,Storage,south
+20,,,take vial
+21,,,take vial
+22,,,take vial
+23,Storage,Study,north
+24,Study,Hall,down
+25,,,stand on charles
+26,,,unlock door with key
+27,,,open door
+28,Hall,Before A Dark Tower,south
+29,,,x tower
+30,Before A Dark Tower,Public Square,southwest
+31,,,x sandstone
+32,,,x temple
+33,,,ask charles about temple
+34,Public Square,Road,west
+35,,,x crack
+36,Road,A Dark Hallway,north
+37,,,x carvings
+38,A Dark Hallway,Library,north
+39,,,x carvings
+40,,,x skeleton
+41,,,take note
+42,,,x note
+43,,,show note to charles
+44,,,x skeleton
+45,,,x torn clothes
+46,,,take book
+47,,,x book
+48,,,x vial
+49,,,x mukhtar
+50,Library,A Dark Hallway,south
+51,A Dark Hallway,Road,south
+52,Road,Crossroads,west
+53,Crossroads,Road (north/south),north
+54,Road (north/south),Crossroads,south
+55,Crossroads,Dead End,south
+56,,,x cat
+57,,,x slabs
+58,,,search slabs
+59,,,move slab
+60,Dead End,Stairs,down
+61,Stairs,Corridor,down
+62,,,x carvings
+63,,,x blocks
+64,Corridor,Corridor (west-leading sideway collapsed),north
+65,Corridor (west-leading sideway collapsed),Chamber,north
+66,,,x trapdoor
+67,Chamber,Corridor (east-west),east
+68,Corridor (east-west),Rock Chamber,east
+69,,,x stove
+70,,,x kettle
+71,,,x rack
+72,,,x chest
+73,Rock Chamber,Corridor (east-west),west
+74,Corridor (east-west),Chamber,west
+75,Chamber,Corridor (west-leading sideway collapsed),south
+76,Corridor (west-leading sideway collapsed),Corridor,south
+77,Corridor,Stairs,south
+78,,,ask charles about chest
+79,Stairs,Dead End,up
+80,Dead End,Crossroads,north
+81,Crossroads,Road,east
+82,Road,Public Square,east
+83,Public Square,Road (temple-like at south end),south
+84,,,x mural
+85,,,listen
+86,Road (temple-like at south end),Temple,south
+87,,,x huge statue
+88,Temple,Road (temple-like at south end),north
+89,Road (temple-like at south end),Public Square,north
+90,Public Square,Before A Dark Tower,northeast
+91,Before A Dark Tower,Hall,north
+92,Hall,Study,up
+93,,,put mukhtar on table
+94,,,read writing
+95,Study,Dark Chamber,x paper
+96,,,x old man
+97,Dark Chamber,Temple,z
+98,,,z
+99,Temple,Study,z
+100,,,x mukhtar
+101,,,x writing
+102,,,x horriblis
+103,,,x statue
+104,Study,Hall,down
+105,Hall,Before A Dark Tower,south
+106,Before A Dark Tower,Public Square,southwest
+107,Public Square,Road,west
+108,Road,Crossroads,west
+109,Crossroads,Dead End,south
+110,Dead End,Stairs,down
+111,Stairs,Corridor,down
+112,Corridor,Corridor (west-leading sideway collapsed),north
+113,Corridor (west-leading sideway collapsed),Chamber,north
+114,Chamber,Corridor (east-west),east
+115,Corridor (east-west),Rock Chamber,east
+116,,,take yellow powder
+117,,,put yellow powder in kettle
+118,,,take red powder
+119,,,put red powder in kettle
+120,,,take kettle
+121,,,put kettle on stove
+122,,,turn on stove
+123,,,draw symbol on me
+124,,,take bottle
+125,Rock Chamber,Corridor (east-west),west
+126,,,west
+127,,,x thing
+128,,,throw bottle at thing
+129,Corridor (east-west),Chamber (badly damaged),west
+130,,,yell
+131,,,south
+132,,,z
+133,,,z
+134,Chamber (badly damaged),Corridor (east-west),east
+135,Corridor (east-west),Rock Chamber,east
+136,,,look under stove
+137,,,unlock chest with brass key
+138,,,open chest
+139,,,take all from chest
+140,,,x crowbar
+141,,,x photograph
+142,Rock Chamber,Corridor (east-west),west
+143,Corridor (east-west),Chamber (badly damaged),west
+144,,,move stone
+145,Chamber (badly damaged),Corridor (west-leading sideway collapsed),south
+146,,,show photograph to charles
+147,Corridor (west-leading sideway collapsed),Corridor,south
+148,Corridor,Stairs,south
+149,Stairs,Dead End,up
+150,,,throw iron key at cat
+151,,,take iron key
+152,Dead End,Crossroads,north
+153,Crossroads,Road,east
+154,Road,Public Square,east
+155,,,listen to wall
+156,,,x wall
+157,,,x door
+158,,,open door
+159,Public Square,Deserted Hall,east
+160,,,x device
+161,,,x column
+162,,,x bulbs
+163,,,x lever
+164,,,pull lever
+165,,,z
+166,,,z
+167,,,z
+168,,,z
+169,,,enter cloud
+170,,,pull lever
+171,Deserted Hall,Public Square,west
+172,Public Square,Road (temple-like at south end),south
+173,Road (temple-like at south end),Temple,south
+174,,,z
+175,,,z
+176,,,z
+177,,,z
+178,,,z
+179,Temple,Stage,z
+180,,,z
+181,,,z
