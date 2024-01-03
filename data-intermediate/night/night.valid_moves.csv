@@ -1,91 +1,91 @@
-Step Num,Location Before,Location After
-1,Computer Site,Hall Outside Computer Site
-2,Hall Outside Computer Site,"Hall (3rd floor, middle of north/south hall)"
-3,"Hall (3rd floor, middle of north/south hall)",Hall Outside Elevator (3rd floor)
-4,,
-5,,
-6,,
-7,Hall Outside Elevator (3rd floor),"Hall (3rd floor, middle of north/south hall)"
-8,"Hall (3rd floor, middle of north/south hall)",Hall Outside Computer Site
-9,Hall Outside Computer Site,Stairwell (Third Floor)
-10,Stairwell (Third Floor),Stairwell (Second Floor)
-11,Stairwell (Second Floor),Stairwell (First Floor)
-12,Stairwell (First Floor),"Hall (1st floor, north end of north/south hall)"
-13,"Hall (1st floor, north end of north/south hall)","Hall (1st floor, middle of north/south hall)"
-14,"Hall (1st floor, middle of north/south hall)",Hall Outside Elevator (1st floor)
-15,,
-16,Hall Outside Elevator (1st floor),Janitor's Closet
-17,,
-18,Janitor's Closet,Hall Outside Elevator (1st floor)
-19,Hall Outside Elevator (1st floor),"Hall (1st floor, middle of north/south hall)"
-20,"Hall (1st floor, middle of north/south hall)","Hall (1st floor, north end of north/south hall)"
-21,"Hall (1st floor, north end of north/south hall)",Stairwell (First Floor)
-22,Stairwell (First Floor),Stairwell (Second Floor)
-23,Stairwell (Second Floor),Outside Physics Office
-24,Outside Physics Office,"Hall (2nd floor, middle of north/south hall)"
-25,,
-26,,
-27,,
-28,,
-29,"Hall (2nd floor, middle of north/south hall)",Maze of Twisty Passages (stop 1)
-30,Maze of Twisty Passages (stop 1)," Maze of Twisty Passages (stop 2)"
-31,,
-32,,
-33," Maze of Twisty Passages (stop 2)"," Maze of Twisty Passages (stop 3)"
-34," Maze of Twisty Passages (stop 3)"," Maze of Twisty Passages (stop 4)"
-35," Maze of Twisty Passages (stop 4)"," Maze of Twisty Passages (stop 5)"
-36," Maze of Twisty Passages (stop 5)"," Maze of Twisty Passages (stop 6)"
-37," Maze of Twisty Passages (stop 6)",Gnome's Lair
-38,,
-39,,
-40,,
-41,,
-42,Gnome's Lair," Maze of Twisty Passages (stop 6)"
-43," Maze of Twisty Passages (stop 6)"," Maze of Twisty Passages (stop 5)"
-44," Maze of Twisty Passages (stop 5)"," Maze of Twisty Passages (stop 4)"
-45," Maze of Twisty Passages (stop 4)"," Maze of Twisty Passages (stop 3)"
-46," Maze of Twisty Passages (stop 3)",Maze of Twisty Passages (stop 2)
-47,Maze of Twisty Passages (stop 2),Maze of Twisty Passages (stop 1)
-48,Maze of Twisty Passages (stop 1),"Hall (2nd floor, middle of north/south hall)"
-49,"Hall (2nd floor, middle of north/south hall)",Outside Physics Office
-50,Outside Physics Office,Stairwell (Second Floor)
-51,Stairwell (Second Floor),Stairwell (Third Floor)
-52,Stairwell (Third Floor),Hall Outside Computer Site
-53,Hall Outside Computer Site,Computer Site
-54,,
-55,,
-56,,
-57,,
-58,,
-59,Computer Site,Hall Outside Computer Site
-60,Hall Outside Computer Site,Stairwell (Third Floor)
-61,Stairwell (Third Floor),Stairwell (Second Floor)
-62,Stairwell (Second Floor),Outside Physics Office
-63,Outside Physics Office,"Hall (2nd floor, middle of north/south hall)"
-64,"Hall (2nd floor, middle of north/south hall)",Maze of Twisty Passages (stop 1)
-65,,
-66,,
-67,,
-68,,
-69,,
-70,Maze of Twisty Passages (stop 1),Maze of Twisty Passages (stop 2)
-71,Maze of Twisty Passages (stop 2),Maze of Twisty Passages (stop 3)
-72,Maze of Twisty Passages (stop 3),Maze of Twisty Passages (stop 4)
-73,Maze of Twisty Passages (stop 4),Maze of Twisty Passages (stop 5)
-74,Maze of Twisty Passages (stop 5),Maze of Twisty Passages (stop 6)
-75,Maze of Twisty Passages (stop 6),Gnome's Lair
-76,,
-77,,
-78,Gnome's Lair,Maze of Twisty Passages (stop 6)
-79,Maze of Twisty Passages (stop 6),Maze of Twisty Passages (stop 5)
-80,Maze of Twisty Passages (stop 5),Maze of Twisty Passages (stop 4)
-81,Maze of Twisty Passages (stop 4),Maze of Twisty Passages (stop 3)
-82,Maze of Twisty Passages (stop 3),Maze of Twisty Passages (stop 2)
-83,Maze of Twisty Passages (stop 2),Maze of Twisty Passages (stop 1)
-84,Maze of Twisty Passages (stop 1),"Hall (2nd floor, middle of north/south hall)"
-85,"Hall (2nd floor, middle of north/south hall)",Outside Physics Office
-86,Outside Physics Office,Stairwell (Second Floor)
-87,Stairwell (Second Floor),Stairwell (Third Floor)
-88,Stairwell (Third Floor),Hall Outside Computer Site
-89,Hall Outside Computer Site,Computer Site
-90,,
+Step Num,Location Before,Location After,taken_action
+1,Computer Site,Hall Outside Computer Site,northeast
+2,Hall Outside Computer Site,"Hall (3rd floor, middle of north/south hall)",south
+3,"Hall (3rd floor, middle of north/south hall)",Hall Outside Elevator (3rd floor),east
+4,,,open box
+5,,,pull hose
+6,,,take light
+7,Hall Outside Elevator (3rd floor),"Hall (3rd floor, middle of north/south hall)",west
+8,"Hall (3rd floor, middle of north/south hall)",Hall Outside Computer Site,north
+9,Hall Outside Computer Site,Stairwell (Third Floor),west
+10,Stairwell (Third Floor),Stairwell (Second Floor),down
+11,Stairwell (Second Floor),Stairwell (First Floor),down
+12,Stairwell (First Floor),"Hall (1st floor, north end of north/south hall)",east
+13,"Hall (1st floor, north end of north/south hall)","Hall (1st floor, middle of north/south hall)",south
+14,"Hall (1st floor, middle of north/south hall)",Hall Outside Elevator (1st floor),east
+15,,,open door
+16,Hall Outside Elevator (1st floor),Janitor's Closet,south
+17,,,listen
+18,Janitor's Closet,Hall Outside Elevator (1st floor),north
+19,Hall Outside Elevator (1st floor),"Hall (1st floor, middle of north/south hall)",west
+20,"Hall (1st floor, middle of north/south hall)","Hall (1st floor, north end of north/south hall)",north
+21,"Hall (1st floor, north end of north/south hall)",Stairwell (First Floor),west
+22,Stairwell (First Floor),Stairwell (Second Floor),up
+23,Stairwell (Second Floor),Outside Physics Office,east
+24,Outside Physics Office,"Hall (2nd floor, middle of north/south hall)",south
+25,,,push fountain
+26,,,open panel
+27,,,turn on light
+28,,,go panel
+29,"Hall (2nd floor, middle of north/south hall)",Maze of Twisty Passages (stop 1),go panel
+30,Maze of Twisty Passages (stop 1), Maze of Twisty Passages (stop 2),east
+31,,,z
+32,,,z
+33, Maze of Twisty Passages (stop 2), Maze of Twisty Passages (stop 3),follow mouse
+34, Maze of Twisty Passages (stop 3), Maze of Twisty Passages (stop 4),follow mouse
+35, Maze of Twisty Passages (stop 4), Maze of Twisty Passages (stop 5),follow mouse
+36, Maze of Twisty Passages (stop 5), Maze of Twisty Passages (stop 6),follow mouse
+37, Maze of Twisty Passages (stop 6),Gnome's Lair,follow mouse
+38,,,get printer
+39,,,ask gnome about prinout
+40,,,west
+41,,,x sign
+42,Gnome's Lair, Maze of Twisty Passages (stop 6),west
+43, Maze of Twisty Passages (stop 6), Maze of Twisty Passages (stop 5),west
+44, Maze of Twisty Passages (stop 5), Maze of Twisty Passages (stop 4),west
+45, Maze of Twisty Passages (stop 4), Maze of Twisty Passages (stop 3),east
+46, Maze of Twisty Passages (stop 3),Maze of Twisty Passages (stop 2),east
+47,Maze of Twisty Passages (stop 2),Maze of Twisty Passages (stop 1),west
+48,Maze of Twisty Passages (stop 1),"Hall (2nd floor, middle of north/south hall)",up
+49,"Hall (2nd floor, middle of north/south hall)",Outside Physics Office,north
+50,Outside Physics Office,Stairwell (Second Floor),west
+51,Stairwell (Second Floor),Stairwell (Third Floor),up
+52,Stairwell (Third Floor),Hall Outside Computer Site,east
+53,Hall Outside Computer Site,Computer Site,southwest
+54,,,click ftp
+55,,,click if-archive
+56,,,click designers_manual
+57,,,click lpr
+58,,,take manual
+59,Computer Site,Hall Outside Computer Site,northeast
+60,Hall Outside Computer Site,Stairwell (Third Floor),west
+61,Stairwell (Third Floor),Stairwell (Second Floor),down
+62,Stairwell (Second Floor),Outside Physics Office,east
+63,Outside Physics Office,"Hall (2nd floor, middle of north/south hall)",south
+64,"Hall (2nd floor, middle of north/south hall)",Maze of Twisty Passages (stop 1),down
+65,,,z
+66,,,z
+67,,,z
+68,,,z
+69,,,z
+70,Maze of Twisty Passages (stop 1),Maze of Twisty Passages (stop 2),follow mouse
+71,Maze of Twisty Passages (stop 2),Maze of Twisty Passages (stop 3),follow mouse
+72,Maze of Twisty Passages (stop 3),Maze of Twisty Passages (stop 4),follow mouse
+73,Maze of Twisty Passages (stop 4),Maze of Twisty Passages (stop 5),follow mouse
+74,Maze of Twisty Passages (stop 5),Maze of Twisty Passages (stop 6),follow mouse
+75,Maze of Twisty Passages (stop 6),Gnome's Lair,follow mouse
+76,,,give manual
+77,,,take printer
+78,Gnome's Lair,Maze of Twisty Passages (stop 6),west
+79,Maze of Twisty Passages (stop 6),Maze of Twisty Passages (stop 5),west
+80,Maze of Twisty Passages (stop 5),Maze of Twisty Passages (stop 4),west
+81,Maze of Twisty Passages (stop 4),Maze of Twisty Passages (stop 3),east
+82,Maze of Twisty Passages (stop 3),Maze of Twisty Passages (stop 2),east
+83,Maze of Twisty Passages (stop 2),Maze of Twisty Passages (stop 1),west
+84,Maze of Twisty Passages (stop 1),"Hall (2nd floor, middle of north/south hall)",up
+85,"Hall (2nd floor, middle of north/south hall)",Outside Physics Office,north
+86,Outside Physics Office,Stairwell (Second Floor),west
+87,Stairwell (Second Floor),Stairwell (Third Floor),up
+88,Stairwell (Third Floor),Hall Outside Computer Site,east
+89,Hall Outside Computer Site,Computer Site,southwest
+90,,,put printer on table
