@@ -1,10 +1,10 @@
-Console Room --> east --> Corridor, step 6
-Corridor --> south --> Workshop, step 8
-Workshop --> north --> Corridor, step 19
-Corridor --> west --> Console Room, step 20
+Console Room --> east --> Corridor (door on south wall, continues east), step 6
+Corridor (door on south wall, continues east) --> south --> Workshop, step 8
+Workshop --> north --> Corridor (door on south wall, continues east), step 19
+Corridor (door on south wall, continues east) --> west --> Console Room, step 20
 Console Room --> west --> Rocky Clearing, step 23
-Rocky Clearing --> northwest --> Mountain Trail, step 24
-Mountain Trail --> northeast --> Mountain Trail (up east, down southwest), step 25
+Rocky Clearing --> northwest --> Mountain Trail (up northeast), step 24
+Mountain Trail (up northeast) --> northeast --> Mountain Trail (up east, down southwest), step 25
 Mountain Trail (up east, down southwest) --> east --> Mountain Trail (carved steps to the south), step 26
 Mountain Trail (carved steps to the south) --> up --> Ruins, step 27
 Ruins --> down --> Mountain Trail (carved steps to the south), step 31
@@ -15,8 +15,8 @@ Bottom of Cliff --> east --> Narrow Cleft, step 37
 Narrow Cleft --> southeast --> Mountain Trail (cleft to northwest, down southwest, down east), step 38
 Mountain Trail (cleft to northwest, down southwest, down east) --> southwest --> Mountain Trail (carved steps to the south), step 39
 Mountain Trail (carved steps to the south) --> west --> Mountain Trail (up east, down southwest), step 40
-Mountain Trail (up east, down southwest) --> southwest --> Mountain Trail, step 41
-Mountain Trail --> southeast --> Rocky Clearing, step 42
+Mountain Trail (up east, down southwest) --> southwest --> Mountain Trail (up northeast), step 41
+Mountain Trail (up northeast) --> southeast --> Rocky Clearing, step 42
 Rocky Clearing --> east --> Rocky Trail, step 43
 Rocky Trail --> southeast --> Rocky Trail (Trail widens eastward and narrows northwest), step 44
 Rocky Trail (Trail widens eastward and narrows northwest) --> east --> Lakeside, step 45
@@ -28,8 +28,8 @@ Mountain Trail (blackened tree beside trail) --> west --> Mountain Trail (up wes
 Mountain Trail (up west, down east) --> west --> Mountain Trail (cleft to northwest, down southwest, down east), step 63
 Mountain Trail (cleft to northwest, down southwest, down east) --> southwest --> Mountain Trail (carved steps to the south), step 64
 Mountain Trail (carved steps to the south) --> west --> Mountain Trail (up east, down southwest), step 65
-Mountain Trail (up east, down southwest) --> southwest --> Mountain Trail, step 66
-Mountain Trail --> southeast --> Rocky Clearing, step 67
+Mountain Trail (up east, down southwest) --> southwest --> Mountain Trail (up northeast), step 66
+Mountain Trail (up northeast) --> southeast --> Rocky Clearing, step 67
 Rocky Clearing --> east --> Rocky Trail, step 68
 Rocky Trail --> southeast --> Rocky Trail (Trail widens eastward and narrows northwest), step 69
 Rocky Trail (Trail widens eastward and narrows northwest) --> east --> Lakeside, step 70
@@ -39,104 +39,105 @@ Lakeside --> west --> Rocky Trail (Trail widens eastward and narrows northwest),
 Rocky Trail (Trail widens eastward and narrows northwest) --> northwest --> Rocky Trail, step 76
 Rocky Trail --> west --> Rocky Clearing, step 77
 Rocky Clearing --> enter tardis --> Console Room, step 78
-Console Room --> east --> Corridor, step 80
-Corridor --> east --> Corridor, step 81
-Corridor --> north --> Storage Room, step 84
-Storage Room --> south --> Corridor, step 88
-Corridor --> west --> Corridor, step 89
-Corridor --> west --> Console Room, step 90
+Console Room --> east --> Corridor (door on south wall, continues east), step 80
+Corridor (door on south wall, continues east) --> east --> Corridor (east-west, storage room doorway to the north), step 81
+Corridor (east-west, storage room doorway to the north) --> north --> Storage Room (main storage room), step 84
+Storage Room (main storage room) --> south --> Corridor (east-west, storage room doorway to the north), step 88
+Corridor (east-west, storage room doorway to the north) --> west --> Corridor (door on south wall, continues east), step 89
+Corridor (door on south wall, continues east) --> west --> Console Room, step 90
 Console Room --> west --> Rocky Clearing, step 96
-Rocky Clearing --> west --> Dark Passage, step 99
-Dark Passage --> south --> Dark Passage, step 102
-Dark Passage --> west --> Temple of the Sisterhood of Karn, step 104
-Temple of the Sisterhood of Karn --> east --> Dark Passage, step 111
-Dark Passage --> north --> Dark Passage, step 113
-Dark Passage --> east --> Rocky Clearing, step 114
-Rocky Clearing --> northwest --> Mountain Trail, step 115
-Mountain Trail --> west --> Stoney Trail, step 116
-Stoney Trail --> south --> Stoney Trail, step 117
-Stoney Trail --> east --> Above Clearing, step 118
-Above Clearing --> west --> Stoney Trail, step 123
-Stoney Trail --> north --> Stoney Trail, step 124
-Stoney Trail --> east --> Mountain Trail, step 125
-Mountain Trail --> southeast --> Rocky Clearing, step 126
+Rocky Clearing --> west --> Dark Passage (opening to east, continue to south, dim passage), step 99
+Dark Passage (opening to east, continue to south, dim passage) --> south --> Dark Passage (to west, more light to north), step 102
+Dark Passage (to west, more light to north) --> west --> Temple of the Sisterhood of Karn, step 104
+Temple of the Sisterhood of Karn --> east --> Dark Passage (to west, more light to north), step 111
+Dark Passage (to west, more light to north) --> north --> Dark Passage (opening to east, continue to south, dim passage), step 113
+Dark Passage (opening to east, continue to south, dim passage) --> east --> Rocky Clearing, step 114
+Rocky Clearing --> northwest --> Mountain Trail (up northeast), step 115
+Mountain Trail (up northeast) --> west --> Stoney Trail (downwards to north and south, upwards to east), step 116
+Stoney Trail (downwards to north and south, upwards to east) --> south --> Stoney Trail (downhill to east, uphill to south), step 117
+Stoney Trail (downhill to east, uphill to south) --> east --> Above Clearing, step 118
+Above Clearing --> west --> Stoney Trail (downhill to east, uphill to south), step 123
+Stoney Trail (downhill to east, uphill to south) --> north --> Stoney Trail (downwards to north and south, upwards to east), step 124
+Stoney Trail (downwards to north and south, upwards to east) --> east --> Mountain Trail (up northeast), step 125
+Mountain Trail (up northeast) --> southeast --> Rocky Clearing, step 126
 Rocky Clearing --> enter tardis --> Console Room, step 128
-Console Room --> west --> Storage Room, step 157
-Storage Room --> north --> Corridor, step 162
-Corridor --> west --> Corridor, step 163
-Corridor --> east --> Corridor, step 168
-Corridor --> south --> Storage Room, step 169
-Storage Room --> down --> Maintenance Shaft, step 170
-Maintenance Shaft --> northwest --> Maintenance Shaft, step 172
-Maintenance Shaft --> northeast --> Maintenance Shaft, step 175
-Maintenance Shaft --> north --> Maintenance Shaft, step 176
-Maintenance Shaft --> up --> Small Room, step 179
-Small Room --> east --> Corridor, step 180
-Corridor --> south --> Corridor, step 181
-Corridor --> east --> Docking Bay, step 183
-Docking Bay --> west --> Corridor, step 184
-Corridor --> east --> Docking Bay, step 193
-Docking Bay --> down --> Maintenance Shaft, step 195
-Maintenance Shaft --> north --> Maintenance Shaft, step 197
-Maintenance Shaft --> west --> Maintenance Shaft, step 198
-Maintenance Shaft --> northwest --> Maintenance Shaft, step 200
-Maintenance Shaft --> up --> Survellance Room, step 202
-Survellance Room --> east --> Corridor, step 209
-Corridor --> south --> Corridor, step 210
-Corridor --> south --> Corridor, step 211
-Corridor --> south --> Corridor, step 212
-Corridor --> east --> Corridor, step 213
-Corridor --> west --> Corridor, step 214
-Corridor --> west --> Corridor, step 215
-Corridor --> west --> Maintenance Shaft, step 216
-Maintenance Shaft --> southeast --> Maintenance Shaft, step 226
-Maintenance Shaft --> up --> Storage Room, step 229
-Storage Room --> north --> Corridor, step 231
-Corridor --> west --> Corridor, step 232
-Corridor --> west --> Reactor Room, step 235
-Reactor Room --> down --> Maintenance Shaft, step 241
-Maintenance Shaft --> east --> Maintenance Shaft, step 243
-Maintenance Shaft --> west --> Maintenance Shaft, step 249
-Maintenance Shaft --> up --> Reactor Room, step 251
-Reactor Room --> east --> Maintenance Shaft, step 263
-Maintenance Shaft --> northeast --> Maintenance Shaft, step 268
-Maintenance Shaft --> north --> Maintenance Shaft, step 269
-Maintenance Shaft --> up --> Small Room, step 271
-Small Room --> down --> Maintenance Shaft, step 275
-Maintenance Shaft --> up --> Small Room, step 277
-Small Room --> east --> Corridor, step 280
-Corridor --> south --> Corridor, step 281
-Corridor --> south --> Corridor, step 282
-Corridor --> west --> Corridor, step 283
-Corridor --> south --> Storage Room, step 284
-Storage Room --> push table north --> Corridor, step 285
-Corridor --> push table east --> Corridor, step 286
-Corridor --> push table north --> Corridor, step 287
-Corridor --> push table north --> Corridor, step 288
-Corridor --> push table north --> Corridor, step 289
-Corridor --> push table east --> Corridor, step 290
-Corridor --> push table east --> Corridor, step 292
-Corridor --> push table south --> Prison Cell, step 296
-Prison Cell --> exit --> Prison Cell, step 300
-Prison Cell --> north --> Corridor, step 307
-Corridor --> west --> Corridor, step 308
-Corridor --> west --> Corridor, step 309
-Corridor --> east --> Corridor, step 312
-Corridor --> east --> Corridor, step 313
-Corridor --> west --> Corridor, step 324
-Corridor --> north --> Flight Deck, step 325
-Flight Deck --> south --> Corridor, step 327
-Corridor --> west --> Corridor, step 328
-Corridor --> south --> Corridor, step 329
-Corridor --> south --> Corridor, step 330
-Corridor --> south --> Corridor, step 331
-Corridor --> east --> Corridor, step 332
-Corridor --> south --> Corridor, step 333
-Corridor --> west --> Strange Chamber, step 336
-Strange Chamber --> east --> Corridor, step 349
-Corridor --> north --> Corridor, step 350
-Corridor --> west --> Corridor, step 351
-Corridor --> west --> Corridor, step 352
-Corridor --> south --> Storage Room, step 353
-Storage Room --> enter tardis --> Console Room, step 354
+Console Room --> west --> Storage Room (cramped, a metal hatch here), step 157
+Storage Room (cramped, a metal hatch here) --> north --> Corridor (east-west, archway on south wall), step 162
+Corridor (east-west, archway on south wall) --> west --> Corridor (west end, metal door on west wall), step 163
+Corridor (west end, metal door on west wall) --> east --> Corridor (east-west, archway on south wall), step 168
+Corridor (east-west, archway on south wall) --> south --> Storage Room (cramped, a metal hatch here), step 169
+Storage Room (cramped, a metal hatch here) --> down --> Maintenance Shaft (to northwest, ladder leading up), step 170
+Maintenance Shaft (to northwest, ladder leading up) --> northwest --> Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall), step 172
+Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall) --> northeast --> Maintenance Shaft (to north and southwest), step 175
+Maintenance Shaft (to north and southwest) --> north --> Maintenance Shaft (to south, ladder leading up), step 176
+Maintenance Shaft (to south, ladder leading up) --> up --> Small Room, step 179
+Small Room --> east --> Corridor (north-south, small room to the west), step 180
+Corridor (north-south, small room to the west) --> south --> Corridor (north-south, metal door on eastern wall), step 181
+Corridor (north-south, metal door on eastern wall) --> east --> Docking Bay, step 183
+Docking Bay --> west --> Corridor (north-south, metal door on eastern wall), step 184
+Corridor (north-south, metal door on eastern wall) --> east --> Docking Bay, step 193
+Docking Bay --> down --> Maintenance Shaft (to north, ladder leading up), step 195
+Maintenance Shaft (to north, ladder leading up) --> north --> Maintenance Shaft (to south and west), step 197
+Maintenance Shaft (to south and west) --> west --> Maintenance Shaft (to northwest and east), step 198
+Maintenance Shaft (to northwest and east) --> northwest --> Maintenance Shaft (to southeast, ladder leading up), step 200
+Maintenance Shaft (to southeast, ladder leading up) --> up --> Survellance Room, step 202
+Survellance Room --> east --> Corridor (turn to south and east, door leading west), step 209
+Corridor (turn to south and east, door leading west) --> south --> Corridor (north-south, small room to the west), step 210
+Corridor (north-south, small room to the west) --> south --> Corridor (north-south, metal door on eastern wall), step 211
+Corridor (north-south, metal door on eastern wall) --> south --> Corridor (junction to north, east and west, sensor in ceiling), step 212
+Corridor (junction to north, east and west, sensor in ceiling) --> east --> Corridor (turn to west and south), step 213
+Corridor (turn to west and south) --> west --> Corridor (junction to north, east and west, sensor in ceiling), step 214
+Corridor (junction to north, east and west, sensor in ceiling) --> west --> Corridor (east-west, archway on south wall), step 215
+Corridor (east-west, archway on south wall) --> west --> Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall), step 216
+Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall) --> southeast --> Maintenance Shaft (to northwest, ladder leading up), step 226
+Maintenance Shaft (to northwest, ladder leading up) --> up --> Storage Room (cramped, a metal hatch here), step 229
+Storage Room (cramped, a metal hatch here) --> north --> Corridor (east-west, archway on south wall), step 231
+Corridor (east-west, archway on south wall) --> west --> Corridor (west end, metal door on west wall), step 232
+Corridor (west end, metal door on west wall) --> west --> Reactor Room, step 235
+Reactor Room --> down --> Maintenance Shaft (to east, ladder leading up), step 241
+Maintenance Shaft (to east, ladder leading up) --> east --> Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall), step 243
+Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall) --> west --> Maintenance Shaft (to east, ladder leading up), step 249
+Maintenance Shaft (to east, ladder leading up) --> up --> Reactor Room, step 251
+Reactor Room --> east --> Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall), step 263
+Maintenance Shaft (to west, northeast, southeast, small metal box attached to wall) --> northeast --> Maintenance Shaft (to north and southwest), step 268
+Maintenance Shaft (to north and southwest) --> north --> Maintenance Shaft (to south, ladder leading up), step 269
+Maintenance Shaft (to south, ladder leading up) --> up --> Small Room, step 271
+Small Room --> down --> Maintenance Shaft (to south, ladder leading up), step 275
+Maintenance Shaft (to south, ladder leading up) --> up --> Small Room, step 277
+Small Room --> east --> Corridor (north-south, small room to the west), step 280
+Corridor (north-south, small room to the west) --> south --> Corridor (north-south, metal door on eastern wall), step 281
+Corridor (north-south, metal door on eastern wall) --> south --> Corridor (junction to north, east and west, sensor in ceiling), step 282
+Corridor (junction to north, east and west, sensor in ceiling) --> west --> Corridor (east-west, archway on south wall), step 283
+Corridor (east-west, archway on south wall) --> south --> Storage Room (cramped, a metal hatch here), step 284
+Storage Room (cramped, a metal hatch here) --> push table north --> Corridor (east-west, archway on south wall), step 285
+Corridor (east-west, archway on south wall) --> push table east --> Corridor (junction to north, east and west, sensor in ceiling), step 286
+Corridor (junction to north, east and west, sensor in ceiling) --> push table north --> Corridor (north-south, metal door on eastern wall), step 287
+Corridor (north-south, metal door on eastern wall) --> push table north --> Corridor (north-south, small room to the west), step 288
+Corridor (north-south, small room to the west) --> push table north --> Corridor (turn to south and east, door leading west), step 289
+Corridor (turn to south and east, door leading west) --> push table east --> Corridor (east-west, large sliding door to north), step 290
+Corridor (east-west, large sliding door to north) --> push table east --> Corridor (east end, seamless steel door on south wall), step 292
+Corridor (east end, seamless steel door on south wall) --> push table south --> Prison Cell, step 296
+Prison Cell --> climb on table --> On Table, step 297
+On Table --> exit --> Prison Cell, step 300
+Prison Cell --> north --> Corridor (east end, seamless steel door on south wall), step 307
+Corridor (east end, seamless steel door on south wall) --> west --> Corridor (east-west, large sliding door to north), step 308
+Corridor (east-west, large sliding door to north) --> west --> Corridor (turn to south and east, door leading west), step 309
+Corridor (turn to south and east, door leading west) --> east --> Corridor (east-west, large sliding door to north), step 312
+Corridor (east-west, large sliding door to north) --> east --> Corridor (east end, seamless steel door on south wall), step 313
+Corridor (east end, seamless steel door on south wall) --> west --> Corridor (east-west, large sliding door to north), step 324
+Corridor (east-west, large sliding door to north) --> north --> Flight Deck, step 325
+Flight Deck --> south --> Corridor (east-west, large sliding door to north), step 327
+Corridor (east-west, large sliding door to north) --> west --> Corridor (turn to south and east, door leading west), step 328
+Corridor (turn to south and east, door leading west) --> south --> Corridor (north-south, small room to the west), step 329
+Corridor (north-south, small room to the west) --> south --> Corridor (north-south, metal door on eastern wall), step 330
+Corridor (north-south, metal door on eastern wall) --> south --> Corridor (junction to north, east and west, sensor in ceiling), step 331
+Corridor (junction to north, east and west, sensor in ceiling) --> east --> Corridor (turn to west and south), step 332
+Corridor (turn to west and south) --> south --> Corridor (south end, large sliding door on west wall), step 333
+Corridor (south end, large sliding door on west wall) --> west --> Strange Chamber, step 336
+Strange Chamber --> east --> Corridor (south end, large sliding door on west wall), step 349
+Corridor (south end, large sliding door on west wall) --> north --> Corridor (turn to west and south), step 350
+Corridor (turn to west and south) --> west --> Corridor (junction to north, east and west, sensor in ceiling), step 351
+Corridor (junction to north, east and west, sensor in ceiling) --> west --> Corridor (east-west, archway on south wall), step 352
+Corridor (east-west, archway on south wall) --> south --> Storage Room (cramped, a metal hatch here), step 353
+Storage Room (cramped, a metal hatch here) --> enter tardis --> Console Room, step 354
 Console Room --> west --> Gallifrey, step 361
