@@ -63,14 +63,14 @@ Dam --> south --> Deep Canyon, step 103
 Deep Canyon --> down --> Loud Room, step 104
 Loud Room --> west --> Round Room, step 105
 Round Room --> south --> Narrow Passage, step 106
-Narrow Passage --> south --> Mirror Room, step 107
-Mirror Room --> east --> Cave, step 108
-Cave --> down --> Entrance to Hades, step 109
+Narrow Passage --> south --> Mirror Room (south to Narrow Passage), step 107
+Mirror Room (south to Narrow Passage) --> east --> Cave (staircase down to entrance to Hades), step 108
+Cave (staircase down to entrance to Hades) --> down --> Entrance to Hades, step 109
 Entrance to Hades --> south --> Land of the Dead, step 118
 Land of the Dead --> north --> Entrance to Hades, step 120
-Entrance to Hades --> up --> Cave, step 121
-Cave --> north --> Mirror Room, step 122
-Mirror Room --> north --> Narrow Passage, step 123
+Entrance to Hades --> up --> Cave (staircase down to entrance to Hades), step 121
+Cave (staircase down to entrance to Hades) --> north --> Mirror Room (south to Narrow Passage), step 122
+Mirror Room (south to Narrow Passage) --> north --> Narrow Passage, step 123
 Narrow Passage --> north --> Round Room, step 124
 Round Room --> west --> East-West Passage, step 125
 East-West Passage --> west --> The Troll Room, step 126
@@ -78,14 +78,14 @@ The Troll Room --> south --> Cellar, step 127
 Cellar --> up --> Living Room, step 128
 Living Room --> down --> Cellar, step 131
 Cellar --> north --> The Troll Room, step 132
-The Troll Room --> west --> Maze, step 133
-Maze --> west --> Maze, step 134
-Maze --> west --> Maze, step 135
-Maze --> up --> Maze, step 136
-Maze --> southwest --> Maze, step 139
-Maze --> east --> Maze, step 140
-Maze --> south --> Maze, step 141
-Maze --> southeast --> Cyclops Room, step 142
+The Troll Room --> west --> Maze (133), step 133
+Maze (133) --> west --> Maze (134), step 134
+Maze (134) --> west --> Maze (135), step 135
+Maze (135) --> up --> Maze (skeleton here), step 136
+Maze (skeleton here) --> southwest --> Maze (139), step 139
+Maze (139) --> east --> Maze (140), step 140
+Maze (140) --> south --> Maze (141), step 141
+Maze (141) --> southeast --> Cyclops Room, step 142
 Cyclops Room --> east --> Strange Passage, step 144
 Strange Passage --> east --> Living Room, step 145
 Living Room --> down --> Cellar, step 148
@@ -116,9 +116,10 @@ Cellar --> north --> The Troll Room, step 181
 The Troll Room --> east --> East-West Passage, step 182
 East-West Passage --> east --> Round Room, step 183
 Round Room --> south --> Narrow Passage, step 184
-Narrow Passage --> south --> Mirror Room, step 185
-Mirror Room --> east --> Cave, step 187
-Cave --> down --> Atlantis Room, step 188
+Narrow Passage --> south --> Mirror Room (south to Narrow Passage), step 185
+Mirror Room (south to Narrow Passage) --> touch mirror --> Mirror Room (another), step 186
+Mirror Room (another) --> east --> Cave (staircase down to Atlantis Room), step 187
+Cave (staircase down to Atlantis Room) --> down --> Atlantis Room, step 188
 Atlantis Room --> south --> Reservoir North, step 190
 Reservoir North --> south --> Reservoir, step 192
 Reservoir --> south --> Reservoir South, step 193
@@ -136,7 +137,10 @@ East-West Passage --> east --> Round Room, step 207
 Round Room --> east --> Loud Room, step 208
 Loud Room --> east --> Damp Cave, step 209
 Damp Cave --> east --> White Cliffs Beach, step 210
-White Cliffs Beach --> get out of boat --> Shore, step 225
+White Cliffs Beach --> enter boat --> White Cliffs Beach (in magic boat), step 218
+White Cliffs Beach (in magic boat) --> launch --> Frigid River (in magic boat), step 219
+Frigid River (in magic boat) --> land --> Shore (in magic boat), step 224
+Shore (in magic boat) --> get out of boat --> Shore, step 225
 Shore --> north --> Sandy Beach, step 226
 Sandy Beach --> northeast --> Sandy Cave, step 231
 Sandy Cave --> southwest --> Sandy Beach, step 238
@@ -161,8 +165,8 @@ Living Room --> east --> Kitchen, step 277
 Kitchen --> east --> Behind House, step 278
 Behind House --> north --> North of House, step 279
 North of House --> north --> Forest Path, step 280
-Forest Path --> east --> Forest, step 281
-Forest --> west --> Forest Path, step 284
+Forest Path --> east --> Forest (dimly lit), step 281
+Forest (dimly lit) --> west --> Forest Path, step 284
 Forest Path --> south --> North of House, step 285
 North of House --> east --> Behind House, step 286
 Behind House --> west --> Kitchen, step 287
@@ -172,8 +176,9 @@ Cellar --> north --> The Troll Room, step 294
 The Troll Room --> east --> East-West Passage, step 295
 East-West Passage --> east --> Round Room, step 296
 Round Room --> south --> Narrow Passage, step 297
-Narrow Passage --> south --> Mirror Room, step 298
-Mirror Room --> north --> Cold Passage, step 300
+Narrow Passage --> south --> Mirror Room (south to Narrow Passage), step 298
+Mirror Room (south to Narrow Passage) --> touch mirror --> Mirror Room (another), step 299
+Mirror Room (another) --> north --> Cold Passage, step 300
 Cold Passage --> west --> Slide Room, step 301
 Slide Room --> north --> Mine Entrance, step 302
 Mine Entrance --> west --> Squeaky Room, step 303
@@ -181,29 +186,29 @@ Squeaky Room --> north --> Bat Room, step 304
 Bat Room --> east --> Shaft Room, step 305
 Shaft Room --> north --> Smelly Room, step 309
 Smelly Room --> down --> Gas Room, step 310
-Gas Room --> east --> Coal Mine, step 311
-Coal Mine --> northeast --> Coal Mine, step 312
-Coal Mine --> southeast --> Coal Mine, step 313
-Coal Mine --> southwest --> Coal Mine, step 314
-Coal Mine --> down --> Ladder Top, step 315
+Gas Room --> east --> Coal Mine (311), step 311
+Coal Mine (311) --> northeast --> Coal Mine (312), step 312
+Coal Mine (312) --> southeast --> Coal Mine (313), step 313
+Coal Mine (313) --> southwest --> Coal Mine (314), step 314
+Coal Mine (314) --> down --> Ladder Top, step 315
 Ladder Top --> down --> Ladder Bottom, step 316
 Ladder Bottom --> south --> Dead End, step 317
 Dead End --> north --> Ladder Bottom, step 319
 Ladder Bottom --> up --> Ladder Top, step 320
-Ladder Top --> up --> Coal Mine, step 321
-Coal Mine --> north --> Coal Mine, step 322
-Coal Mine --> east --> Coal Mine, step 323
-Coal Mine --> south --> Coal Mine, step 324
-Coal Mine --> north --> Gas Room, step 325
+Ladder Top --> up --> Coal Mine (314), step 321
+Coal Mine (314) --> north --> Coal Mine (313), step 322
+Coal Mine (313) --> east --> Coal Mine (312), step 323
+Coal Mine (312) --> south --> Coal Mine (311), step 324
+Coal Mine (311) --> north --> Gas Room, step 325
 Gas Room --> up --> Smelly Room, step 326
 Smelly Room --> south --> Shaft Room, step 327
 Shaft Room --> north --> Smelly Room, step 330
 Smelly Room --> down --> Gas Room, step 331
-Gas Room --> east --> Coal Mine, step 332
-Coal Mine --> northeast --> Coal Mine, step 333
-Coal Mine --> southeast --> Coal Mine, step 334
-Coal Mine --> southwest --> Coal Mine, step 335
-Coal Mine --> down --> Ladder Top, step 336
+Gas Room --> east --> Coal Mine (311), step 332
+Coal Mine (311) --> northeast --> Coal Mine (312), step 333
+Coal Mine (312) --> southeast --> Coal Mine (313), step 334
+Coal Mine (313) --> southwest --> Coal Mine (314), step 335
+Coal Mine (314) --> down --> Ladder Top, step 336
 Ladder Top --> down --> Ladder Bottom, step 337
 Ladder Bottom --> west --> Timber Room, step 338
 Timber Room --> west --> Drafty Room, step 340
@@ -212,11 +217,11 @@ Machine Room --> north --> Drafty Room, step 349
 Drafty Room --> east --> Timber Room, step 353
 Timber Room --> east --> Ladder Bottom, step 356
 Ladder Bottom --> up --> Ladder Top, step 357
-Ladder Top --> up --> Coal Mine, step 358
-Coal Mine --> north --> Coal Mine, step 359
-Coal Mine --> east --> Coal Mine, step 360
-Coal Mine --> south --> Coal Mine, step 361
-Coal Mine --> north --> Gas Room, step 362
+Ladder Top --> up --> Coal Mine (314), step 358
+Coal Mine (314) --> north --> Coal Mine (313), step 359
+Coal Mine (313) --> east --> Coal Mine (312), step 360
+Coal Mine (312) --> south --> Coal Mine (311), step 361
+Coal Mine (311) --> north --> Gas Room, step 362
 Gas Room --> up --> Smelly Room, step 364
 Smelly Room --> south --> Shaft Room, step 365
 Shaft Room --> west --> Bat Room, step 368
@@ -236,3 +241,4 @@ Kitchen --> east --> Behind House, step 392
 Behind House --> north --> North of House, step 393
 North of House --> west --> West of House, step 394
 West of House --> southwest --> Stone Barrow, step 395
+Stone Barrow --> west --> Inside the Barrow, step 396
