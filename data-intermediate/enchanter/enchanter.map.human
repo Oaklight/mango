@@ -1,30 +1,133 @@
-fork (obj42) --> northeast --> outside shack (obj227), step 1
-outside shack (obj227) --> enter shack --> inside shack (obj244), step 2
-inside shack (obj244) --> exit shack --> outside shack (obj227), step 7
-outside shack (obj227) --> northeast --> trail (obj96), step 8
-trail (obj96) --> southeast --> trail head (obj102), step 9
-trail head (obj102) --> northeast --> shady brook (obj89), step 10
-shady brook (obj89) --> southwest --> trail head (obj102), step 12
-trail head (obj102) --> southeast --> eastern fork (obj189), step 13
-eastern fork (obj189) --> southwest --> village outskirts (obj249), step 14
-village outskirts (obj249) --> southwest --> deserted village (obj196), step 15
-deserted village (obj196) --> northeast --> village outskirts (obj249), step 19
-village outskirts (obj249) --> northeast --> eastern fork (obj189), step 20
-eastern fork (obj189) --> east --> western road (obj173), step 21
-western road (obj173) --> east --> outside gate (obj101), step 22
-outside gate (obj101) --> east --> inside gate (obj243), step 25
-inside gate (obj243) --> north --> pebbled path (obj219), step 26
-pebbled path (obj219) --> north --> tower (obj225), step 28
-tower (obj225) --> up --> jewel room (obj123), step 29
-jewel room (obj123) --> down --> tower (obj225), step 39
-tower (obj225) --> east --> hall mirrors one (obj172), step 40
-hall mirrors one (obj172) --> east --> hall mirrors two (obj125), step 41
-hall mirrors two (obj125) --> east --> hall mirrors three (obj70), step 42
-hall mirrors three (obj70) --> east --> hall mirrors four (obj229), step 43
-hall mirrors four (obj229) --> east --> north gate (obj64), step 44
-north gate (obj64) --> north --> forest (obj95), step 47
-forest (obj95) --> east --> swamp (obj32), step 55
-swamp (obj32) --> west --> forest (obj95), step 61
-forest (obj95) --> south --> north gate (obj64), step 63
-north gate (obj64) --> south --> library (obj146), step 64
-library (obj146) --> north --> north gate (obj64), step 69
+Fork --> northeast --> Outside of Shack, step 1
+Outside of Shack --> enter shack --> Inside Shack, step 2
+Inside Shack --> exit shack --> Outside of Shack, step 7
+Outside of Shack --> northeast --> Trail, step 8
+Trail --> southeast --> Trail Head, step 9
+Trail Head --> northeast --> Shady Brook, step 10
+Shady Brook --> southwest --> Trail Head, step 12
+Trail Head --> southeast --> Eastern Fork, step 13
+Eastern Fork --> southwest --> Village Outskirts, step 14
+Village Outskirts --> southwest --> Deserted Village, step 15
+Deserted Village --> northeast --> Village Outskirts, step 19
+Village Outskirts --> northeast --> Eastern Fork, step 20
+Eastern Fork --> east --> Western Road, step 21
+Western Road --> east --> Outside Gate, step 22
+Outside Gate --> east --> Inside Gate, step 25
+Inside Gate --> north --> Pebbled Path, step 26
+Pebbled Path --> north --> Tower, step 28
+Tower --> up --> Jewel Room, step 29
+Jewel Room --> down --> Tower, step 39
+Tower --> east --> Hall of Mirrors One, step 40
+Hall of Mirrors One --> east --> Hall of Mirrors Two, step 41
+Hall of Mirrors Two --> east --> Hall of Mirrors Three, step 42
+Hall of Mirrors Three --> east --> Hall of Mirrors Four, step 43
+Hall of Mirrors Four --> east --> North Gate, step 44
+North Gate --> north --> Forest, step 47
+Forest --> east --> Swamp, step 55
+Swamp --> west --> Forest, step 61
+Forest --> south --> North Gate, step 63
+North Gate --> south --> Library, step 64
+Library --> north --> North Gate, step 69
+North Gate --> west --> Hall of Mirrors Four, step 75
+Hall of Mirrors Four --> west --> Hall of Mirrors Three, step 76
+Hall of Mirrors Three --> west --> Hall of Mirrors Two, step 77
+Hall of Mirrors Two --> west --> Hall of Mirrors One, step 78
+Hall of Mirrors One --> west --> Tower, step 79
+Tower --> south --> Pebbled Path, step 80
+Pebbled Path --> south --> Inside Gate, step 81
+Inside Gate --> south --> West Hall, step 82
+West Hall --> south --> Tower, step 83
+Tower --> up --> Bedroom, step 84
+Bedroom --> lie down --> fourposter feather bed, step 86
+fourposter feather bed --> stand up --> Bedroom, step 87
+Bedroom --> down --> Tower, step 93
+Tower --> east --> South Hall, step 94
+South Hall --> south --> Dungeon, step 95
+Dungeon --> north --> Cell, step 97
+Cell --> east --> Secret Passage, step 100
+Secret Passage --> west --> Cell, step 104
+Cell --> south --> Dungeon, step 105
+Dungeon --> up --> South Hall, step 106
+South Hall --> east --> Gallery, step 107
+Gallery --> east --> South Gate, step 108
+South Gate --> south --> Meadow, step 109
+Meadow --> southeast --> Beach, step 110
+Beach --> northwest --> Meadow, step 114
+Meadow --> north --> South Gate, step 115
+South Gate --> east --> Tower, step 116
+Tower --> up --> Engine Room, step 117
+Engine Room --> down --> Tower, step 124
+Tower --> west --> South Gate, step 125
+South Gate --> west --> Gallery, step 126
+Gallery --> west --> South Hall, step 138
+South Hall --> north --> Closet, step 139
+Closet --> south --> South Hall, step 143
+South Hall --> east --> Gallery, step 144
+Gallery --> east --> South Gate, step 145
+South Gate --> north --> East Hall, step 146
+East Hall --> north --> Banquet Hall, step 147
+Banquet Hall --> north --> Junction, step 148
+Junction --> wait --> Cell, step 149
+Cell --> wait --> Sacrificial Altar, step 151
+Sacrificial Altar --> down --> Temple, step 152
+Temple --> west --> Courtyard (center of a large courtyard), step 153
+Courtyard (center of a large courtyard) --> west --> Courtyard (westernmost point in a large open courtyard), step 154
+Courtyard (westernmost point in a large open courtyard) --> south --> Closet, step 155
+Closet --> south --> South Hall, step 159
+South Hall --> west --> Tower, step 160
+Tower --> up --> Bedroom, step 161
+Bedroom --> lie down --> fourposter feather bed, step 162
+fourposter feather bed --> stand up --> Bedroom, step 163
+Bedroom --> down --> Tower, step 164
+Tower --> north --> West Hall, step 165
+West Hall --> north --> Inside Gate, step 166
+Inside Gate --> north --> Pebbled Path, step 167
+Pebbled Path --> north --> Tower, step 168
+Tower --> east --> Hall of Mirrors One, step 171
+Hall of Mirrors One --> east --> Hall of Mirrors Two, step 172
+Hall of Mirrors Two --> east --> Hall of Mirrors Three, step 173
+Hall of Mirrors Three --> east --> Hall of Mirrors Four, step 174
+Hall of Mirrors Four --> show egg to adventurer then east --> North Gate, step 178
+North Gate --> east --> Guarded Door, step 179
+Guarded Door --> up --> Map Room, step 183
+Map Room --> down --> Guarded Door, step 188
+Guarded Door --> west --> North Gate, step 189
+North Gate --> west --> Hall of Mirrors Four, step 190
+Hall of Mirrors Four --> west --> Hall of Mirrors Three, step 191
+Hall of Mirrors Three --> west --> Hall of Mirrors Two, step 192
+Hall of Mirrors Two --> west --> Hall of Mirrors One, step 193
+Hall of Mirrors One --> west --> Tower, step 194
+Tower --> south --> Pebbled Path, step 195
+Pebbled Path --> south --> Inside Gate, step 196
+Inside Gate --> south --> West Hall, step 197
+West Hall --> south --> Tower, step 198
+Tower --> east --> South Hall, step 200
+South Hall --> south --> Dungeon, step 201
+Dungeon --> down --> Translucent Room, step 202
+Translucent Room --> east --> Translucent Room, step 209
+Translucent Room --> up --> Dungeon, step 221
+Dungeon --> up --> South Hall, step 222
+South Hall --> north --> Closet, step 223
+Closet --> north --> Courtyard (westernmost point in a large open courtyard), step 228
+Courtyard (westernmost point in a large open courtyard) --> west --> Inside Gate, step 229
+Inside Gate --> west --> Outside Gate, step 230
+Outside Gate --> west --> Western Road, step 231
+Western Road --> west --> Eastern Fork, step 233
+Eastern Fork --> northwest --> Trail Head, step 234
+Trail Head --> northeast --> Shady Brook, step 235
+Shady Brook --> southwest --> Trail Head, step 237
+Trail Head --> southeast --> Eastern Fork, step 238
+Eastern Fork --> east --> Western Road, step 239
+Western Road --> east --> Outside Gate, step 240
+Outside Gate --> east --> Inside Gate, step 241
+Inside Gate --> south --> West Hall, step 242
+West Hall --> south --> Tower, step 243
+Tower --> east --> South Hall, step 249
+South Hall --> east --> Gallery, step 250
+Gallery --> east --> South Gate, step 253
+South Gate --> north --> East Hall, step 254
+East Hall --> north --> Banquet Hall, step 255
+Banquet Hall --> north --> Junction, step 256
+Junction --> east --> Landing, step 257
+Landing --> east --> Winding Stair, step 258
+Winding Stair --> east --> Warlock's Tower, step 262
