@@ -36,11 +36,13 @@ unzip master.zip
 
 ```bash
 # 生成machine code
-(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90
+(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90 -a
 
 # 转换并校验human label
-(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90
+(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90 -a
 ```
+
+请注意，新加入的“-a”参数，会强制使用仓库里缓存的walkthrough actions，以保证不同jericho版本变化时，action sequence不会改变。请默认使用这个参数。
 
 
 ## 以night为例
