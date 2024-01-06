@@ -4,6 +4,63 @@
 
 有五个游戏被标为红色，这些游戏的jericho engine在特定步骤会出现问题，导致无法正常运行。所以请暂时不要标注这些游戏，等方案讨论确定之后再开始。
 
+# ============== 2024.01.06 更新 ==============
+
+分配重新调整过了，https://docs.google.com/spreadsheets/d/1NRHMsjMrTWFl8vc14YGEd2rQ6MiExCjYCwwRMeJGs14/edit#gid=0
+每个人的总游戏量是差不多的
+
+这次我们focus在标注今天讨论的几种遗留问题上：
+
+- 所有需要chain of actions的地点，在关键状态变化位置添加标注，比如下面这个例子：
+
+```
+    ===========
+    ==>STEP NUM: 109
+    ==>ACT: southwest
+    ==>OBSERVATION: Tower Core
+
+    ===========
+    ==>STEP NUM: 110
+    ==>ACT: north
+    ==>OBSERVATION: Upper Elevator
+
+    ===========
+    ==>STEP NUM: 111
+    ==>ACT: press down button
+    ==>OBSERVATION: The elevator door slides shut. After a moment, you feel a sensation of vertical movement.
+
+    ===========
+    ==>STEP NUM: 112
+    ==>ACT: wait
+    ==>OBSERVATION: Time passes...
+
+    ===========
+    ==>STEP NUM: 113
+    ==>ACT: wait
+    ==>OBSERVATION: Time passes...
+    The elevator door slides open.
+
+    ===========
+    ==>STEP NUM: 114
+    ==>ACT: south
+    ==>OBSERVATION: Elevator Lobby
+```
+
+标注为：
+
+| step num | location before | location after |
+| --- | --- | --- |
+| 109 | Common Room | Tower Core |
+| 110 | Tower Core | Elevator (Tower Core) |
+| 111 | Elevator (Tower Core) | Elevator (Elevator Lobby) |
+| 112 | | |
+| 113 | | |
+| 114 | Elevator (Elevator Lobby) | Elevator Lobby |
+
+- 对于car, cab, boat, ship, handcar, etc. 一类交通工具，如有主动enter, exit这一类动作，也做上述类似处理
+
+
+# ============== old content below ==============
 
 ## 安装环境
 
