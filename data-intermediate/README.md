@@ -11,8 +11,10 @@
 
 这次我们focus在标注今天讨论的几种遗留问题上：
 
-- 所有需要chain of actions的地点，在关键状态变化位置添加标注，比如下面这个例子：
+### Chain of Actions
 
+- 比如下面这个例子：
+planetfall
 ```
     ===========
     ==>STEP NUM: 109
@@ -59,9 +61,102 @@
 
 - 对于car, cab, boat, ship, handcar, etc. 一类交通工具，如有主动enter, exit这一类动作，也做上述类似处理
 
-允许同一个地点，通过同一个动作到达不同位置。通常是lift, elevator, 或者ship, car, boat这一类的vehicle
-如果已经发生添加，会在检查程序中体现为，conflict或human only。
+允许同一个地点，通过同一个动作到达不同位置，比如这里的Upper Elevator --> south --> Elevator Lobby/Tower Core。
 
+通常是lift, elevator, 或者ship, car, boat这一类的vehicle。
+
+如果已经发生添加，会在检查程序中体现为，conflict或human only。请revert back
+
+### answerable step
+- zork 1例子
+```
+===========
+==>STEP NUM: 14
+==>ACT: east
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+
+===========
+==>STEP NUM: 15
+==>ACT: up
+==>OBSERVATION: You have moved into a dark place.
+It is pitch black. You are likely to be eaten by a grue.
+
+===========
+==>STEP NUM: 16
+==>ACT: light lamp
+==>OBSERVATION: The brass lantern is now on.
+
+Attic
+This is the attic. The only exit is a stairway leading down.
+A large coil of rope is lying in the corner.
+On a table is a nasty-looking knife.
+```
+
+| step num | location before | location after | Answerable |
+| --- | --- | --- | --- |
+| 14 |  | Kitchen | |
+| 15 | Kitchen | Attic | 16 |
+| 16 | | | |
+
+添加一栏“answerable”信息。在上述例子里，step 15填写实际地点，但是由于Attic的位置是step 16才知道，于是answerable填16。其他普通情况默认可以空着。
+
+### 同地点多名称
+- lostpig例子 
+```
+===========
+==>STEP NUM: 51
+==>ACT: east
+==>OBSERVATION: Closet
+It dark. Grunk see lots of shadow. Grunk see doorway to east and west, too. But mostly shadow.
+
+Chhhkkkrrcht! What that strange noise?
+
+===========
+==>STEP NUM: 52
+==>ACT: examine shadow
+==>OBSERVATION: Shadow just dark, but in lots of different shape and size.
+
+Shkkrnnnnk!
+
+===========
+...
+===========
+==>STEP NUM: 61
+==>ACT: look
+==>OBSERVATION: Gnome Room
+This look like room for little person. It have bed that too little for Grunk. It have trunk that too little for Grunk. It have desk that too little for Grunk. Desk have stool that too little for Grunk. Room have doorway to east and west too, but them not so little. That good, because if doorway too little for Grunk, not know how Grunk get back out of room.
+
+Gnome sitting on stool looking at Grunk.
+
+On top of shelf there ball (that make light).
+
+Gnome open up desk drawer and take out strange helmet. Him take out little box, too. Then him put them both on desk.
+
+===========
+```
+方案1：按照前70步骤来标注，所有的gnome room都叫closet。潜在的问题：后续closet再没出现过，这个地点都叫gnome room，可能增加llm的推理难度。
+| step num | location before | location after | Answerable |
+| --- | --- | --- | --- |
+| 51 | Table Room | Closet |  |
+| 52 |  |  |  |
+| ... |  |  |  |
+| 61 | | | |
+
+方案2：按照出现最多的次数的内容标注，closet改为gnome room，answerable为61。潜在问题：70步内容改动。
+| step num | location before | location after | Answerable |
+| --- | --- | --- | --- |
+| 51 | Table Room | Gnome Room | 61 |
+| 52 |  |  |  |
+| ... |  |  |  |
+| 61 |  |  |  |
+
+方案3：改动walkthrough，在walkthrough内统一个名字，比如 Closet，维持前70步的内容不变。
 
 # ============== old content below ==============
 
