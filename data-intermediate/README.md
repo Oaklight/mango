@@ -158,6 +158,11 @@ Gnome open up desk drawer and take out strange helmet. Him take out little box, 
 
 方案3：改动walkthrough，在walkthrough内统一个名字，比如 Closet，维持前70步的内容不变。
 
+### 对于前70步修改的discuss
+1. 遗留的typo
+2. machine code不同但未区分，主要影响：karn的corridor，sorcerer的hallway，enchanter的tower
+3. 增加answerable
+
 # ============== old content below ==============
 
 ## 安装环境
