@@ -51,13 +51,16 @@
 | step num | location before | location after |
 | --- | --- | --- |
 | 109 | Common Room | Tower Core |
-| 110 | Tower Core | Elevator (Tower Core) |
-| 111 | Elevator (Tower Core) | Elevator (Elevator Lobby) |
+| 110 | Tower Core | Upper Elevator |
+| 111 | | |
 | 112 | | |
 | 113 | | |
-| 114 | Elevator (Elevator Lobby) | Elevator Lobby |
+| 114 | Upper Elevator | Elevator Lobby |
 
 - 对于car, cab, boat, ship, handcar, etc. 一类交通工具，如有主动enter, exit这一类动作，也做上述类似处理
+
+允许同一个地点，通过同一个动作到达不同位置。通常是lift, elevator, 或者ship, car, boat这一类的vehicle
+如果已经发生添加，会在检查程序中体现为，conflict或human only。
 
 
 # ============== old content below ==============
