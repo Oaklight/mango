@@ -139,16 +139,9 @@ On top of shelf there ball (that make light).
 Gnome open up desk drawer and take out strange helmet. Him take out little box, too. Then him put them both on desk.
 
 ===========
-```
-方案1：按照前70步骤来标注，所有的gnome room都叫closet。潜在的问题：后续closet再没出现过，这个地点都叫gnome room，可能增加llm的推理难度。
-| step num | location before | location after | Answerable |
-| --- | --- | --- | --- |
-| 51 | Table Room | Closet |  |
-| 52 |  |  |  |
-| ... |  |  |  |
-| 61 | | | |
 
-方案2：按照出现最多的次数的内容标注，closet改为gnome room，answerable为61。潜在问题：70步内容改动。
+按照出现最多的次数的内容标注，closet改为gnome room，answerable为61。
+
 | step num | location before | location after | Answerable |
 | --- | --- | --- | --- |
 | 51 | Table Room | Gnome Room | 61 |
@@ -156,12 +149,6 @@ Gnome open up desk drawer and take out strange helmet. Him take out little box, 
 | ... |  |  |  |
 | 61 |  |  |  |
 
-方案3：改动walkthrough，在walkthrough内统一个名字，比如 Closet，维持前70步的内容不变。
-
-### 对于前70步修改的discuss
-1. 遗留的typo
-2. machine code不同但未区分，主要影响：karn的corridor，sorcerer的hallway，enchanter的tower
-3. 增加answerable
 
 # ============== old content below ==============
 
