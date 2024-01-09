@@ -139,7 +139,7 @@ On top of shelf there ball (that make light).
 Gnome open up desk drawer and take out strange helmet. Him take out little box, too. Then him put them both on desk.
 
 ===========
-
+```
 按照出现最多的次数的内容标注，closet改为gnome room，answerable为61。
 
 | step num | location before | location after | Answerable |
