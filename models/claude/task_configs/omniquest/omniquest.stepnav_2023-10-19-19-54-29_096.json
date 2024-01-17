@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Chilly Corridor",
+    "dst_node": "Intersection",
+    "path_gt": [
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "Rice Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Rice Room",
+            "node": "Musty Corridor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Musty Corridor",
+            "node": "South Lake",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "East Path",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "East Path",
+            "node": "Intersection",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

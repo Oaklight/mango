@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Dark Room",
+    "dst_node": "Dead End",
+    "path_gt": [
+        {
+            "prev_node": "Dark Room",
+            "node": "Over the East Wing",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Over the East Wing",
+            "node": "East Annexe",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "East Annexe",
+            "node": "Dead End",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ],
+    "save_path": "outputs/curses/results/"
+}

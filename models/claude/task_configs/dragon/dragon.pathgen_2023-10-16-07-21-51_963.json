@@ -1,0 +1,70 @@
+{
+    "task": "pathgen",
+    "src_node": "Inn Cellar",
+    "dst_node": "Castle Hallway",
+    "path_gt": [
+        {
+            "prev_node": "Inn Cellar",
+            "node": "Inside the Inn",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Inside the Inn",
+            "node": "Abandoned Inn",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Swampy Ground",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "North End of a Road",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "North End of a Road",
+            "node": "South End of a Road",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "South End of a Road",
+            "node": "Wasteland by a Castle",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Wasteland by a Castle",
+            "node": "Castle Forge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Castle Forge",
+            "node": "Forbidding Castle",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Forbidding Castle",
+            "node": "Castle Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Hallway",
+    "dst_node": "Corridor(east to old cell and north to hall)",
+    "path_gt": [
+        {
+            "prev_node": "Hallway",
+            "node": "Lift(up button and a door to north)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Lift(up button and a door to north)",
+            "node": "Lift(down button and a door to south)",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Lift(down button and a door to south)",
+            "node": "Hall",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Corridor(east to old cell and north to hall)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        }
+    ]
+}

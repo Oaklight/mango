@@ -1,71 +1,362 @@
-Step Num,Location Before,Location After,,
-1,pitch black,Bedroom,(turn on light) pitch black 作为起始地点还是 bedroom作为起始地点,
-2,,,,*:同一房间内不同家具处的情景变换
-3,,,,"Notes: "
-4,,,,1. Just annotate the steps where the location has changed
-5,,,,"2. The locations are like ''Living Room"", ""Small Clearing"""
-6,,,,
-7,,,,
-8,Bedroom,Front Porch,,
-9,,,,
-10,Front Porch,Front of House,,
-11,,,,
-12,,,,
-13,,,,
-14,,,,
-15,,,,
-16,,,,
-17,,,,
-18,,,,
-19,Front of House,Country Lane,,
-20,Country Lane,Pub,,
-21,,,,
-22,,,,
-23,,,,
-24,,,,
-25,,,,
-26,Pub,Country Lane,,
-27,,,,
-28,,,,
-29,,,,
-30,,,,
-31,,,,
-32,,,,
-33,,,,
-34,,,,
-35,,,,
-36,,,,
-37,,,,
-38,Country Lane,Dark,,
-39,,,,
-40,,,,
-41,,,,
-42,,,,
-43,,,,
-44,Dark,Vogon Hold,,
-45,,,,
-46,,,,
-47,,,,
-48,,,,
-49,,,,
-50,,,,
-51,,,,
-52,,,,
-53,,,,
-54,,,,
-55,,,,
-56,,,,
-57,,,,
-58,,,,
-59,Vogon Hold,"Captain's Quarters, in the poetry appreciation chair",,
-60,,,,
-61,,,,
-62,,,,
-63,,,,
-64,,,,
-65,,,,
-66,,,,
-67,,,,
-68,,,,
-69,,,,
-70,"Captain's Quarters, in the poetry appreciation chair",Vogon Hold,,
+Step Num,Location Before,Location After,Unnamed: 3,Unnamed: 4,taken_action
+1,pitch black,Bedroom,(turn on light) pitch black 作为起始地点还是 bedroom作为起始地点,,get up
+2,,,,*:同一房间内不同家具处的情景变换,turn on light
+3,,,,Notes: ,get gown
+4,,,,1. Just annotate the steps where the location has changed,wear gown
+5,,,,"2. The locations are like ''Living Room"", ""Small Clearing""",look in pocket
+6,,,,,take analgesic
+7,,,,,get all
+8,Bedroom,Front Porch,,,south
+9,,,,,get mail
+10,Front Porch,Front of House,,,south
+11,,,,,lie down in front of bulldozer
+12,,,,,wait
+13,,,,,wait
+14,,,,,wait
+15,,,,,wait
+16,,,,,wait
+17,,,,,wait
+18,,,,,wait
+19,Front of House,Country Lane,,,follow ford
+20,Country Lane,Pub,,,enter pub
+21,,,,,look shelf
+22,,,,,buy sandwich
+23,,,,,drink beer
+24,,,,,drink beer
+25,,,,,drink beer
+26,Pub,Country Lane,,,exit
+27,,,,,feed dog sandwich
+28,,,,,get towel
+29,,,,,wait
+30,,,,,wait
+31,,,,,wait
+32,,,,,wait
+33,,,,,wait
+34,,,,,wait
+35,,,,,wait
+36,,,,,wait
+37,,,,,get device
+38,Country Lane,Dark,,,push green button
+39,,,,,north
+40,,,,,south
+41,,,,,north
+42,,,,,south
+43,,,,,smell
+44,Dark,Vogon Hold,,,examine shadow
+45,,,,,eat peanuts
+46,,,,,take off gown
+47,,,,,put gown on hook
+48,,,,,put towel over drain
+49,,,,,wait
+50,,,,,get satchel
+51,,,,,put satchel in front of panel
+52,,,,,put mail on satchel
+53,,,,,push dispenser button
+54,,,,,get gown
+55,,,,,wear gown
+56,,,,,get all
+57,,,,,push switch
+58,,,,,z
+59,Vogon Hold,"Captain's Quarters, in the poetry appreciation chair",,,z
+60,,,,,z
+61,,,,,z
+62,,,,,z
+63,,,,,z
+64,,,,,z
+65,,,,,enjoy poetry
+66,,,,,z
+67,,,,,z
+68,,,,,z
+69,,,,,z
+70,"Captain's Quarters, in the poetry appreciation chair",Vogon Hold,,,z
+71,,,,,type "bleem"
+72,,,,,get plotter
+73,,,,,z
+74,,,,,z
+75,Vogon Hold,Airlock,,,z
+76,,,,,examine thumb
+77,Airlock,Dark,,,press green button
+78,,,,,north
+79,,,,,south
+80,,,,,north
+81,,,,,south
+82,,,,,listen
+83,Dark,Entry Bay Number Two,,,aft
+84,Entry Bay Number Two,Bridge,,,read brochure
+85,,,,,z
+86,,,,,z
+87,,,,,inventory
+88,,,,,take pincer
+89,,,,,put all into thing
+90,Bridge,"Corridor, Fore End",,,down
+91,"Corridor, Fore End",Galley,,,port
+92,,,,,touch pad
+93,,,,,get cup
+94,Galley,"Corridor, Fore End",,,starboard
+95,"Corridor, Fore End","Corridor, Aft End",,,aft
+96,,,,,aft
+97,,,,,yes
+98,,,,,yes
+99,,,,,aft
+100,"Corridor, Aft End",Engine Room,,,no
+101,,,,,look
+102,,,,,look
+103,,,,,drop thing
+104,,,,,get rasp
+105,,,,,get pliers
+106,,,,,put rasp into thing
+107,,,,,put pliers into thing
+108,,,,,get improbability drive
+109,Engine Room,"Corridor, Aft End",,,fore
+110,"Corridor, Aft End","Corridor, Fore End",,,fore
+111,"Corridor, Fore End",Bridge,,,up
+112,,,,,drop drive
+113,,,,,drop cup
+114,,,,,drop plotter
+115,,,,,z
+116,,,,,drop plotter
+117,,,,,z
+118,,,,,drop plotter
+119,,,,,put small plug in plotter
+120,,,,,put bit in cup
+121,Bridge,Dark,,,turn on drive
+122,,,,,north
+123,,,,,south
+124,,,,,north
+125,,,,,south
+126,,,,,smell
+127,Dark,Lair,,,look at shadow
+128,,,,,say my name
+129,Lair,Beast's Outer Lair,,,east
+130,,,,,examine memorial
+131,,,,,get sharp stone
+132,,,,,put towel on your head
+133,,,,,carve my name on the memorial
+134,,,,,remove towel
+135,,,,,drop stone
+136,Beast's Outer Lair,Lair,,,west
+137,Lair,Inner Lair,,,southwest
+138,,,,,get interface
+139,Inner Lair,Dark,,,z
+140,,,,,z
+141,,,,,z
+142,,,,,z
+143,,,,,z
+144,,,,,hear the dark
+145,Dark,Entry Bay Number Two,,,aft
+146,Entry Bay Number Two,"Corridor, Fore End",,,aft
+147,"Corridor, Fore End",Bridge,,,up
+148,Bridge,"Corridor, Fore End",,,down
+149,"Corridor, Fore End",Galley,,,port
+150,,,,,open panel
+151,,,,,take circuit
+152,,,,,insert interface in nutrimat
+153,,,,,close panel
+154,,,,,touch pad
+155,Galley,"Corridor, Fore End",,,starboard
+156,"Corridor, Fore End",Bridge,,,up
+157,,,,,put large plug in large receptacle
+158,,,,,z
+159,,,,,turn on drive
+160,Bridge,"Corridor, Fore End",,,down
+161,"Corridor, Fore End",Galley,,,port
+162,,,,,get tea
+163,Galley,"Corridor, Fore End",,,starboard
+164,"Corridor, Fore End",Bridge,,,up
+165,,,,,drop tea
+166,,,,,z
+167,,,,,z
+168,,,,,z
+169,,,,,z
+170,,,,,z
+171,,,,,z
+172,,,,,z
+173,,,,,z
+174,,,,,z
+175,,,,,z
+176,,,,,remove bit
+177,,,,,put bit in tea
+178,Bridge,Dark,,,turn on drive
+179,,,,,z
+180,,,,,touch
+181,,,,,touch
+182,Dark,Living Room,,,drink liquid
+183,,,,,examine arthur
+184,,,,,drop wine
+185,,,,,get fluff
+186,,,,,open bag
+187,,,,,put fluff in bag
+188,,,,,get wine
+189,,,,,z
+190,Living Room,Dark,,,z
+191,,,,,z
+192,,,,,z
+193,,,,,z
+194,,,,,z
+195,,,,,hear
+196,Dark,Entry Bay Number Two,,,aft
+197,Entry Bay Number Two,"Corridor, Fore End",,,aft
+198,"Corridor, Fore End",Bridge,,,up
+199,,,,,open handbag
+200,,,,,get tweezers
+201,,,,,get fluff
+202,,,,,put all in thing
+203,Bridge,Dark,,,turn on drive
+204,,,,,z
+205,,,,,touch
+206,,,,,touch
+207,,,,,touch
+208,,,,,touch
+209,Dark,Inside the Sperm Whale,,,drink liquid
+210,,,,,get flowerpot
+211,,,,,put it in thing
+212,,,,,examine thumb
+213,,,,,press red button
+214,,,,,give thumb to robot
+215,,,,,z
+216,,,,,show warranty
+217,Inside the Sperm Whale,Dark,,,press green button
+218,,,,,z
+219,,,,,z
+220,,,,,z
+221,,,,,z
+222,,,,,hear
+223,Dark,Entry Bay Number Two,,,aft
+224,Entry Bay Number Two,"Corridor, Fore End",,,aft
+225,"Corridor, Fore End",Bridge,,,up
+226,Bridge,Dark,,,turn on drive
+227,,,,,see
+228,,,,,see
+229,,,,,see
+230,,,,,see
+231,Dark,"Presidential Speedboat, in the pilot seat",,,examine light
+232,,,,,look under seat
+233,,,,,unlock box with key
+234,,,,,get glass
+235,,,,,get wrench
+236,,,,,push autopilot button
+237,,,,,steer towards rocky spire
+238,,,,,z
+239,,,,,z
+240,,,,,z
+241,"Presidential Speedboat, in the pilot seat",Presidential Speedboat,,,stand up
+242,Presidential Speedboat,Dais,,,out
+243,,,,,wave at crowd
+244,,,,,z
+245,,,,,z
+246,,,,,z
+247,,,,,"guards, drop rifles"
+248,,,,,"trillian, shoot rifles"
+249,Dais,Dark,,,enter
+250,,,,,z
+251,,,,,z
+252,,,,,z
+253,,,,,z
+254,,,,,hear
+255,Dark,Entry Bay Number Two,,,aft
+256,Entry Bay Number Two,"Corridor, Fore End",,,aft
+257,"Corridor, Fore End","Corridor, Aft End",,,aft
+258,"Corridor, Aft End",Hatchway,,,down
+259,,,,,get fluff
+260,,,,,get tools
+261,Hatchway,"Corridor, Aft End",,,up
+262,"Corridor, Aft End","Corridor, Fore End",,,fore
+263,"Corridor, Fore End",Bridge,,,up
+264,Bridge,Dark,,,turn on drive
+265,,,,,see
+266,Dark,Country Lane,,,examine light
+267,Country Lane,Front of House,,,north
+268,,,,,open satchel
+269,,,,,get fluff
+270,,,,,get towel
+271,,,,,give towel to arthur
+272,,,,,idiot
+273,,,,,walk around bulldozer
+274,,,,,"prosser, lie in the mud"
+275,Front of House,Country Lane,,,south
+276,Country Lane,Pub,,,west
+277,,,,,buy beer
+278,,,,,buy peanuts
+279,,,,,drink beer
+280,,,,,drink beer
+281,Pub,Country Lane,,,east
+282,Country Lane,Front of House,,,north
+283,,,,,give fluff to arthur
+284,,,,,z
+285,,,,,z
+286,Front of House,Dark,,,z
+287,,,,,z
+288,,,,,z
+289,,,,,z
+290,,,,,z
+291,,,,,hear
+292,Dark,Entry Bay Number Two,,,aft
+293,Entry Bay Number Two,"Corridor, Fore End",,,aft
+294,"Corridor, Fore End",Bridge,,,up
+295,,,,,i
+296,Bridge,Dark,,,turn on drive
+297,,,,,hear
+298,,,,,hear
+299,,,,,hear
+300,,,,,z
+301,,,,,hear
+302,,,,,hear
+303,,,,,hear
+304,,,,,hear
+305,Dark,War Chamber,,,aft
+306,,,,,get awl
+307,,,,,z
+308,,,,,z
+309,,,,,z
+310,War Chamber,Maze,,,z
+311,,,,,north
+312,,,,,north
+313,,,,,north
+314,Maze,Dark,,,get particule
+315,,,,,z
+316,,,,,z
+317,,,,,z
+318,,,,,z
+319,,,,,hear
+320,Dark,Entry Bay Number Two,,,aft
+321,Entry Bay Number Two,"Corridor, Fore End",,,aft
+322,"Corridor, Fore End",Bridge,,,up
+323,,,,,remove bit
+324,,,,,take tea
+325,,,,,i
+326,,,,,take no tea
+327,,,,,i
+328,,,,,plant fluff in flowerpot
+329,,,,,seat
+330,,,,,plant fluff in flowerpot
+331,,,,,satchel
+332,,,,,plant fluff in flowerpot
+333,,,,,jacket
+334,,,,,plant fluff in flowerpot
+335,,,,,z
+336,,,,,z
+337,,,,,z
+338,,,,,port
+339,,,,,examine plant
+340,,,,,get fruit
+341,Bridge,"Corridor, Fore End",,,down
+342,"Corridor, Fore End","Corridor, Aft End",,,aft
+343,,,,,port
+344,,,,,open door
+345,,,,,drink tea
+346,"Corridor, Aft End",Marvin's Pantry,,,port
+347,,,,,get chisel
+348,,,,,"marvin, open the hatch"
+349,Marvin's Pantry,"Corridor, Aft End",,,starboard
+350,"Corridor, Aft End",Hatchway,,,down
+351,,,,,eat fruit
+352,,,,,drop all but pincer
+353,,,,,take pincer
+354,,,,,drop thing
+355,,,,,i
+356,Hatchway,Access Space,,,starboard
+357,,,,,z
+358,,,,,z
+359,,,,,give pincer to marvin
+360,Access Space,Hatchway,,,port
+361,Hatchway,Ramp,,,down

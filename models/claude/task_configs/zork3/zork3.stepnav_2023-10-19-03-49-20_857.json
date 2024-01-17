@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Cliff Ledge",
+    "dst_node": "Junction",
+    "path_gt": [
+        {
+            "prev_node": "Cliff Ledge",
+            "node": "Cliff",
+            "action": "grab rope",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Cliff",
+            "node": "Barren Area",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Barren Area",
+            "node": "Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

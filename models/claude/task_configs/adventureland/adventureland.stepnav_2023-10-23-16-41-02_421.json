@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+    "dst_node": "Cavern",
+    "path_gt": [
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Meadow",
+            "action": "away",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Dismal Swamp",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Root Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Root Chamber",
+            "node": "Hole",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Hole",
+            "node": "Hall",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Cavern",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

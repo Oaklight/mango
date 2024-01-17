@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "South Branch",
+    "dst_node": "In Your Tent",
+    "path_gt": [
+        {
+            "prev_node": "South Branch",
+            "node": "Round Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Center of Camp",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "In Your Tent",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

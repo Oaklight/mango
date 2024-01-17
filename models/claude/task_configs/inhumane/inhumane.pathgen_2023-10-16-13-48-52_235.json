@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "T-Intersection (east/west/south, west to Round Room)",
+    "dst_node": "Bottom of Shaft",
+    "path_gt": [
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Round Room",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Bottom of Shaft",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        }
+    ]
+}

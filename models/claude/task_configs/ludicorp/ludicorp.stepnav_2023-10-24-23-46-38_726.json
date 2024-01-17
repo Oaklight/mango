@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Main Entrance",
+    "dst_node": "Some Bushes",
+    "path_gt": [
+        {
+            "prev_node": "Main Entrance",
+            "node": "Front Of The Office",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "East Of Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Some Bushes",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

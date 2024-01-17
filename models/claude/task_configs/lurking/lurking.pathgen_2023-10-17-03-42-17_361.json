@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Temporary Lab",
+    "dst_node": "Kitchen",
+    "path_gt": [
+        {
+            "prev_node": "Temporary Lab",
+            "node": "Temporary Basement",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Temporary Basement",
+            "node": "Basement",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Basement",
+            "node": "Computer Center",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Computer Center",
+            "node": "Second Floor",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Kitchen",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ]
+}

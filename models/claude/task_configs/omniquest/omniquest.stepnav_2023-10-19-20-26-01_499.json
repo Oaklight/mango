@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "East Path",
+    "dst_node": "South Lake",
+    "path_gt": [
+        {
+            "prev_node": "East Path",
+            "node": "Intersection",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

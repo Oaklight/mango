@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "In the Mud",
+    "dst_node": "Front of the Church",
+    "path_gt": [
+        {
+            "prev_node": "In the Mud",
+            "node": "Graveyard",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Graveyard",
+            "node": "West Side of the Church",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "West Side of the Church",
+            "node": "Front of the Church",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ]
+}

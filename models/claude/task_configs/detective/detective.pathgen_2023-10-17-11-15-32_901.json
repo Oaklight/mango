@@ -1,0 +1,63 @@
+{
+    "task": "pathgen",
+    "src_node": "Chief's office",
+    "dst_node": "Hallway (Mayer's House, east/west intersect, exit to north)",
+    "path_gt": [
+        {
+            "prev_node": "Chief's office",
+            "node": "Outside (dead end to east)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside (dead end to east)",
+            "node": "Outside (restaurant to north, mayer home to east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Outside (restaurant to north, mayer home to east)",
+            "node": "Mayor's house (scene of crime)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Mayor's house (scene of crime)",
+            "node": "Upstairs Hallway (Mayer's House)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Upstairs Hallway (Mayer's House)",
+            "node": "Hallway (Mayer's House, east end, room to north)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Hallway (Mayer's House, east end, room to north)",
+            "node": "Hallway (Mayer's House, \"Guests\" door to east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Hallway (Mayer's House, \"Guests\" door to east)",
+            "node": "Hallway (Mayer's House, room to west, room to east)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Hallway (Mayer's House, room to west, room to east)",
+            "node": "Hallway (Mayer's House, east/west intersect, exit to north)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ]
+}

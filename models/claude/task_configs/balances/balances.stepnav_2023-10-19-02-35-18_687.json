@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Crowded Bazaar",
+    "dst_node": "Track, outside Temple",
+    "path_gt": [
+        {
+            "prev_node": "Crowded Bazaar",
+            "node": "on the beautiful red carpet",
+            "action": "sit on carpet",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "on the beautiful red carpet",
+            "node": "Crest of Hill",
+            "action": "stand",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Crest of Hill",
+            "node": "Track, outside Temple",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        }
+    ],
+    "save_path": "outputs/balances/results/"
+}

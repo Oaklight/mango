@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Corridor (north/south)",
+    "dst_node": "Rock Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Corridor (north/south)",
+            "node": "Chamber",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Chamber",
+            "node": "Corridor (east/west)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Corridor (east/west)",
+            "node": "Rock Chamber",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ],
+    "save_path": "outputs/temple/results/"
+}

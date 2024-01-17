@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "Dragon's Lair",
+    "dst_node": "Gazebo",
+    "path_gt": [
+        {
+            "prev_node": "Dragon's Lair",
+            "node": "Dragon Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Dragon Room",
+            "node": "End of Ledge",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "End of Ledge",
+            "node": "Ledge in Ravine",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Ledge in Ravine",
+            "node": "Deep Ford",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Deep Ford",
+            "node": "Marble Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Marble Hall",
+            "node": "Path Near Stream",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Path Near Stream",
+            "node": "Formal Garden",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Formal Garden",
+            "node": "North End of Garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "North End of Garden",
+            "node": "Gazebo",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/zork2/results/"
+}

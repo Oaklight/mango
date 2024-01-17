@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "secret cavern",
+    "dst_node": "alcove",
+    "path_gt": [
+        {
+            "prev_node": "secret cavern",
+            "node": "high tunnel (east/west, path to west)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "high tunnel (east/west, path to west)",
+            "node": "high tunnel (east/west, alcove off to north)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "high tunnel (east/west, alcove off to north)",
+            "node": "alcove",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

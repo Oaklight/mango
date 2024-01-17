@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Edge of Chasm",
+    "dst_node": "Bend",
+    "path_gt": [
+        {
+            "prev_node": "Edge of Chasm",
+            "node": "Crater",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Crater",
+            "node": "Edge of Crater",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Edge of Crater",
+            "node": "Bend",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/sorcerer/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "221-B Baker Street",
+    "dst_node": "Holmes's Bedroom",
+    "path_gt": [
+        {
+            "prev_node": "221-B Baker Street",
+            "node": "entry hall",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "entry hall",
+            "node": "Vestibule",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Holmes's Study",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Holmes's Study",
+            "node": "Holmes's Bedroom",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ],
+    "save_path": "outputs/sherlock/results/"
+}

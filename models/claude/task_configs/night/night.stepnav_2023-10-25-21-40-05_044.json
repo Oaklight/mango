@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall (3rd floor, middle of north/south hall)",
+    "dst_node": "Maze of Twisty Passages (stop 2)",
+    "path_gt": [
+        {
+            "prev_node": "Hall (3rd floor, middle of north/south hall)",
+            "node": "Hall Outside Computer Site",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Hall Outside Computer Site",
+            "node": "Stairwell (Third Floor)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Stairwell (Third Floor)",
+            "node": "Stairwell (Second Floor)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Stairwell (Second Floor)",
+            "node": "Outside Physics Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Outside Physics Office",
+            "node": "Hall (2nd floor, middle of north/south hall)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hall (2nd floor, middle of north/south hall)",
+            "node": "Maze of Twisty Passages (stop 1)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 1)",
+            "node": "Maze of Twisty Passages (stop 2)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

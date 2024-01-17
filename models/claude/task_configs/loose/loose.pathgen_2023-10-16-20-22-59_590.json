@@ -1,0 +1,63 @@
+{
+    "task": "pathgen",
+    "src_node": "Schoolyard",
+    "dst_node": "Rickety Fence",
+    "path_gt": [
+        {
+            "prev_node": "Schoolyard",
+            "node": "Hilltop",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Hilltop",
+            "node": "Meadow Behind the Bungalow",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Meadow Behind the Bungalow",
+            "node": "Outside the Bungalow",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Outside the Bungalow",
+            "node": "Outside the Cottage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Outside the Cottage",
+            "node": "Country Lane",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Country Lane",
+            "node": "Deep Forest",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Deep Forest",
+            "node": "Forest",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Forest",
+            "node": "Rickety Fence",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        }
+    ]
+}

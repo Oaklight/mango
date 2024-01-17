@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Tower",
+    "dst_node": "Outside Gate",
+    "path_gt": [
+        {
+            "prev_node": "Tower",
+            "node": "Pebbled Path",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Pebbled Path",
+            "node": "Inside Gate",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Inside Gate",
+            "node": "Outside Gate",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        }
+    ]
+}

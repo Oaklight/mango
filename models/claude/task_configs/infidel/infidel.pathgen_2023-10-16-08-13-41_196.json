@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Barge Chamber (southwest corner)",
+    "dst_node": "the entrance of a narrow hallway",
+    "path_gt": [
+        {
+            "prev_node": "Barge Chamber (southwest corner)",
+            "node": "Barge Chamber (southern section)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Barge Chamber (southern section)",
+            "node": "at a bend in the Narrow Hallway",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "at a bend in the Narrow Hallway",
+            "node": "the entrance of a narrow hallway",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 62
+        }
+    ]
+}

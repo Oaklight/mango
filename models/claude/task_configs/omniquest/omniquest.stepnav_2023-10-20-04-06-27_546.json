@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Ice Room",
+    "dst_node": "Intersection",
+    "path_gt": [
+        {
+            "prev_node": "Ice Room",
+            "node": "Chilly Corridor",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "South Lake",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "West Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Intersection",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

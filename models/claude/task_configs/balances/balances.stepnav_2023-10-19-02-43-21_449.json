@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Pocket Valley",
+    "dst_node": "Gorse Bushes",
+    "path_gt": [
+        {
+            "prev_node": "Pocket Valley",
+            "node": "Edge of Chasm",
+            "action": "mount horse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Edge of Chasm",
+            "node": "Crest of Hill",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Crest of Hill",
+            "node": "Cave Mouth",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Cave Mouth",
+            "node": "Gorse Bushes",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ],
+    "save_path": "outputs/balances/results/"
+}

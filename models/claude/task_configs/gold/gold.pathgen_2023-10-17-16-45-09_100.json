@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "On the porch",
+    "dst_node": "In the sitting room",
+    "path_gt": [
+        {
+            "prev_node": "On the porch",
+            "node": "In a clearing in the forest",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "In a clearing in the forest",
+            "node": "In the garden",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "In the garden",
+            "node": "At the top of the beanstalk",
+            "action": "climb beanstalk",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "At the top of the beanstalk",
+            "node": "On the roof",
+            "action": "jump to roof",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "On the roof",
+            "node": "In the kitchen",
+            "action": "climb down chimney",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "In the kitchen",
+            "node": "In the hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "In the hall",
+            "node": "In the sitting room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        }
+    ]
+}

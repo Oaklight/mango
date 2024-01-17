@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Bridge",
+    "dst_node": "Cliff Edge",
+    "path_gt": [
+        {
+            "prev_node": "Bridge",
+            "node": "North of Bridge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "North of Bridge",
+            "node": "Cliff Bottom",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Cliff Bottom",
+            "node": "Steep Trail",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Steep Trail",
+            "node": "Cliff Edge",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ],
+    "save_path": "outputs/wishbringer/results/"
+}

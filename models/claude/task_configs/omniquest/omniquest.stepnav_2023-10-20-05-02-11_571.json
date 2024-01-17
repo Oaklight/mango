@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Ocean",
+    "dst_node": "Large Clearing",
+    "path_gt": [
+        {
+            "prev_node": "Ocean",
+            "node": "Endless Beach",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Endless Beach",
+            "node": "Canyon Entrance",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Small Path",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Small Path",
+            "node": "Large Clearing",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

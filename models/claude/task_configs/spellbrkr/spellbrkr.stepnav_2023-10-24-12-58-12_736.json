@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Meadow",
+    "dst_node": "In Roc Nest",
+    "path_gt": [
+        {
+            "prev_node": "Meadow",
+            "node": "Packed Earth",
+            "action": "blorple 1",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Packed Earth",
+            "node": "Midair",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Midair",
+            "node": "taken by roc",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "taken by roc",
+            "node": "In Roc Nest",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ],
+    "save_path": "outputs/spellbrkr/results/"
+}

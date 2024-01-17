@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Chasm",
+    "dst_node": "Maze (exit West, Up)",
+    "path_gt": [
+        {
+            "prev_node": "Chasm",
+            "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Maze (exit West, Up)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 43
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

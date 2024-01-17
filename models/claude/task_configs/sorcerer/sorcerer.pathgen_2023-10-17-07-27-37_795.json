@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Belboz's Quarters",
+    "dst_node": "Library",
+    "path_gt": [
+        {
+            "prev_node": "Belboz's Quarters",
+            "node": "Hallway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Lobby",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Lobby",
+            "node": "Library",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ]
+}

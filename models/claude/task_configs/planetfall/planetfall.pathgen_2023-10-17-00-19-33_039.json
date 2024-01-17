@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Admin Corridor North",
+    "dst_node": "Mech Corridor South",
+    "path_gt": [
+        {
+            "prev_node": "Admin Corridor North",
+            "node": "Admin Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Admin Corridor",
+            "node": "Admin Corridor South",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Admin Corridor South",
+            "node": "Corridor Junction",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Corridor Junction",
+            "node": "Mech Corridor North",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Mech Corridor North",
+            "node": "Mech Corridor",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Mech Corridor",
+            "node": "Mech Corridor South",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ]
+}

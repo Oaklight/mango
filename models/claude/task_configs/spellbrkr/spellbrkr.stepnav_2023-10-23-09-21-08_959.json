@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Cliff Top",
+    "dst_node": "Cave Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Cliff Top",
+            "node": "Boulder(Large boulder above you and cliff below you)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Boulder(Large boulder above you and cliff below you)",
+            "node": "Boulder(A nice oblong boulder above you and another large one below you)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Boulder(A nice oblong boulder above you and another large one below you)",
+            "node": "Boulder(A long oblong boulder below you)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Boulder(A long oblong boulder below you)",
+            "node": "Mountain Top",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Mountain Top",
+            "node": "Soft Room",
+            "action": "blorple 2",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Soft Room",
+            "node": "Meadow",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Packed Earth",
+            "action": "blorple 1",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Packed Earth",
+            "node": "Cave Entrance",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        }
+    ],
+    "save_path": "outputs/spellbrkr/results/"
+}

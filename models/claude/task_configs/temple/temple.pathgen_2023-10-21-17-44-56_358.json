@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "A Dark Hallway",
+    "dst_node": "Chamber",
+    "path_gt": [
+        {
+            "prev_node": "A Dark Hallway",
+            "node": "Road (east/west)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Road (east/west)",
+            "node": "Crossroads",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Crossroads",
+            "node": "Dead End",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Dead End",
+            "node": "Stairs",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Stairs",
+            "node": "Corridor (near stairs)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Corridor (near stairs)",
+            "node": "Corridor (north/south)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Corridor (north/south)",
+            "node": "Chamber",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ]
+}

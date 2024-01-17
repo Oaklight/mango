@@ -1,71 +1,251 @@
-Step Num,Location Before,Location After
-1,,
-2,Your Tent,Outside Your Tent
-3,Outside Your Tent,Outside Supply Tent
-4,Outside Supply Tent,Supply Tent
-5,,
-6,,
-7,Supply Tent,Outside Supply Tent
-8,Outside Supply Tent,Outside Work Tent
-9,Outside Work Tent,Work Tent
-10,,
-11,,
-12,Work Tent,Outside Work Tent
-13,Outside Work Tent,Fire Pit
-14,,
-15,Fire Pit,Outside Your Tent
-16,Outside Your Tent,Your Tent
-17,,
-18,,
-19,,
-20,,
-21,,
-22,,
-23,,
-24,Your Tent,Outside Your Tent
-25,Outside Your Tent,Near the Nile
-26,Near the Nile,River Bank
-27,,
-28,,
-29,,
-30,,
-31,,
-32,,
-33,,
-34,,
-35,River Bank,Near the Nile
-36,Near the Nile,Outside Your Tent
-37,Outside Your Tent,Northern Path
-38,Northern Path,Desert (within sight of encampment)
-39,Desert (within sight of encampment),Desert (out of sight of encampment)
-40,,
-41,,
-42,,
-43,,
-44,,
-45,,
-46,,
-47,Desert (out of sight of encampment),Chamber of Ra
-48,,
-49,,
-50,,
-51,,
-52,,
-53,,
-54,,
-55,,
-56,,
-57,,
-58,,
-59,,
-60,Chamber of Ra,South Landing
-61,South Landing,the entrance of a narrow hallway
-62,the entrance of a narrow hallway,at a bend in the Narrow Hallway
-63,at a bend in the Narrow Hallway,Barge Chamber (southern section)
-64,Barge Chamber (southern section),Barge Chamber (southwest corner)
-65,Barge Chamber (southwest corner),Barge Chamber (northwest corner)
-66,Barge Chamber (northwest corner),Barge Chamber (north to back side of barge)
-67,Barge Chamber (north to back side of barge),Steep Passageway（the top of a steep)
-68,Steep Passageway（the top of a steep),Steep Passageway(midway down)
-69,Steep Passageway(midway down),Steep Passageway(the north end of a descending passageway)
-70,Steep Passageway(the north end of a descending passageway),Temple Chamber
+Step Num,Location Before,Location After,taken_action
+1,,,get out of cot
+2,Your Tent,Outside Your Tent,south
+3,Outside Your Tent,Outside Supply Tent,southwest
+4,Outside Supply Tent,Supply Tent,west
+5,,,get pickaxe
+6,,,get shovel
+7,Supply Tent,Outside Supply Tent,east
+8,Outside Supply Tent,Outside Work Tent,southeast
+9,Outside Work Tent,Work Tent,south
+10,,,read note
+11,,,get knapsack
+12,Work Tent,Outside Work Tent,north
+13,Outside Work Tent,Fire Pit,north
+14,,,get matchbook
+15,Fire Pit,Outside Your Tent,north
+16,Outside Your Tent,Your Tent,north
+17,,,smash padlock with pickaxe
+18,,,remove padlock
+19,,,drop padlock
+20,,,open trunk
+21,,,get beef
+22,,,get map
+23,,,eat beef
+24,Your Tent,Outside Your Tent,south
+25,Outside Your Tent,Near the Nile,west
+26,Near the Nile,River Bank,west
+27,,,drink water
+28,,,drop knapsack
+29,,,get canteen
+30,,,open canteen
+31,,,fill canteen
+32,,,close canteen
+33,,,put canteen in knapsack
+34,,,get knapsack
+35,River Bank,Near the Nile,east
+36,Near the Nile,Outside Your Tent,east
+37,Outside Your Tent,Northern Path,east
+38,Northern Path,Desert (within sight of encampment),southeast
+39,Desert (within sight of encampment),Desert (out of sight of encampment),southeast
+40,,,dig in sand
+41,,,dig in sand
+42,,,dig in sand
+43,,,dig in sand
+44,,,dig in sand
+45,,,open map
+46,,,insert cube in opening
+47,Desert (out of sight of encampment),Chamber of Ra,down
+48,,,drop map
+49,,,open jar
+50,,,get torch
+51,,,dip torch in liquid
+52,,,close jar
+53,,,drop knapsack
+54,,,put jar in knapsack
+55,,,open matchbook
+56,,,get match
+57,,,close matchbook
+58,,,strike match
+59,,,light torch
+60,Chamber of Ra,South Landing,south
+61,South Landing,the entrance of a narrow hallway,south
+62,the entrance of a narrow hallway,at a bend in the Narrow Hallway,northeast
+63,at a bend in the Narrow Hallway,Barge Chamber (southern section),northwest
+64,Barge Chamber (southern section),Barge Chamber (southwest corner),west
+65,Barge Chamber (southwest corner),Barge Chamber (northwest corner),north
+66,Barge Chamber (northwest corner),Barge Chamber (north to back side of barge),east
+67,Barge Chamber (north to back side of barge),Steep Passageway（the top of a steep),north
+68,Steep Passageway（the top of a steep),Steep Passageway(midway down),north
+69,Steep Passageway(midway down),Steep Passageway(the north end of a descending passageway),north
+70,Steep Passageway(the north end of a descending passageway),Temple Chamber,north
+71,Temple Chamber,Inner Chamber,north
+72,Inner Chamber,Golden Room,west
+73,Golden Room,Golden Alcove,south
+74,,,get golden chalice
+75,Golden Alcove,Golden Room,north
+76,Golden Room,Inner Chamber,east
+77,Inner Chamber,Silver Room,east
+78,Silver Room,Silver Alcove,south
+79,,,get silver chalice
+80,Silver Alcove,Silver Room,north
+81,Silver Room,Inner Chamber,west
+82,Inner Chamber,Temple Chamber,south
+83,Temple Chamber,Steep Passageway(the north end of a descending passageway),south
+84,Steep Passageway(the north end of a descending passageway),Steep Passageway(midway down),south
+85,Steep Passageway(midway down),Steep Passageway（the top of a steep),south
+86,Steep Passageway（the top of a steep),Barge Chamber (north to back side of barge),south
+87,Barge Chamber (north to back side of barge),Barge Chamber (northwest corner),west
+88,Barge Chamber (northwest corner),Barge Chamber (southwest corner),south
+89,Barge Chamber (southwest corner),Barge Chamber (southern section),east
+90,Barge Chamber (southern section),Center of Barge,north
+91,Center of Barge,Fore Cabin,west
+92,,,get scroll
+93,Fore Cabin,Center of Barge,east
+94,Center of Barge,Aft Cabin,east
+95,Aft Cabin,Below Deck,down
+96,Below Deck,West End of Hold,west
+97,,,examine slot
+98,,,put torch in golden chalice
+99,,,remove shim
+100,,,drop all
+101,,,raise beam
+102,,,get all
+103,,,drop shovel
+104,,,drop shim
+105,West End of Hold,Below Deck,east
+106,Below Deck,Aft Cabin,up
+107,Aft Cabin,Center of Barge,west
+108,,,get beam
+109,Center of Barge,Barge Chamber (southern section),south
+110,Barge Chamber (southern section),at a bend in the Narrow Hallway,southeast
+111,at a bend in the Narrow Hallway,the entrance of a narrow hallway,southwest
+112,the entrance of a narrow hallway,South Landing,north
+113,South Landing,Chamber of Ra,north
+114,,,put golden chalice in knapsack
+115,,,put silver chalice in knapsack
+116,,,get rope
+117,,,get torch
+118,,,tie rope to altar
+119,,,throw rope north
+120,,,get knapsack
+121,Chamber of Ra,Circular Room,north
+122,,,push statue
+123,,,get head
+124,Circular Room,Southwest Hallway,roll statue sw
+125,,,drop knapsack
+126,Southwest Hallway,Circular Room,northeast
+127,Circular Room,Northeast Hallway,northeast
+128,Northeast Hallway,Room of Selkis,northeast
+129,,,get ruby cluster
+130,,,read hieroglyphs
+131,Room of Selkis,Northeast Hallway,southwest
+132,Northeast Hallway,Circular Room,southwest
+133,,,get golden cluster
+134,Circular Room,Southwest Hallway,southwest
+135,,,put golden cluster in knapsack
+136,,,put ruby cluster in knapsack
+137,,,get all
+138,Southwest Hallway,Circular Room,roll statue ne
+139,Circular Room,Northeast Hallway,roll statue ne
+140,,,drop all
+141,,,get torch
+142,Northeast Hallway,Circular Room,southwest
+143,Circular Room,Southwest Hallway,southwest
+144,Southwest Hallway,Room of Isis,southwest
+145,,,get emerald cluster
+146,,,read hieroglyphs
+147,Room of Isis,Southwest Hallway,northeast
+148,Southwest Hallway,Circular Room,northeast
+149,Circular Room,Northeast Hallway,northeast
+150,,,put emerald cluster in knapsack
+151,,,get all
+152,Northeast Hallway,Circular Room,roll statue sw
+153,Circular Room,Northwest Hallway,roll statue nw
+154,,,drop all
+155,,,get torch
+156,Northwest Hallway,Circular Room,southeast
+157,Circular Room,Southeast Hallway,southeast
+158,Southeast Hallway,Room of Neith,southeast
+159,,,get opal cluster
+160,,,read hieroglyphs
+161,Room of Neith,Southeast Hallway,northwest
+162,Southeast Hallway,Circular Room,northwest
+163,Circular Room,Northwest Hallway,northwest
+164,,,put opal cluster in knapsack
+165,,,get all
+166,Northwest Hallway,Circular Room,roll statue se
+167,Circular Room,Southeast Hallway,roll statue se
+168,,,drop all
+169,,,get torch
+170,Southeast Hallway,Circular Room,northwest
+171,Circular Room,Northwest Hallway,northwest
+172,Northwest Hallway,Room of Nephthys,northwest
+173,,,get diamond cluster
+174,,,read hieroglyphs
+175,Room of Nephthys,Northwest Hallway,southeast
+176,Northwest Hallway,Circular Room,southeast
+177,Circular Room,Southeast Hallway,southeast
+178,,,get all
+179,,,drop head
+180,Southeast Hallway,Circular Room,northwest
+181,Circular Room,Chamber of Ra,up
+182,Chamber of Ra,"Cube (to north, south, east, west)",west
+183,"Cube (to north, south, east, west)","Cube (to north, east)",south
+184,"Cube (to north, east)","Cube (to north, west)",east
+185,,,read scroll
+186,,,remove first brick
+187,,,drop first brick
+188,,,remove third brick
+189,,,drop third brick
+190,,,remove fifth brick
+191,,,drop fifth brick
+192,,,drop scroll
+193,"Cube (to north, west)",Turning Passage,east
+194,Turning Passage,Top of Stairway,north
+195,Top of Stairway,Bottom of Stairs,down
+196,,,hit plaster with pickaxe
+197,Bottom of Stairs,Narrow Passageway (east end),west
+198,Narrow Passageway (east end),Narrow Passageway (middle),west
+199,Narrow Passageway (middle),Narrow Passageway (west end),west
+200,,,insert beam in niches
+201,,,stand on beam
+202,,,hit plaster with pickaxe
+203,,,open door
+204,Narrow Passageway (west end),Antechamber (west wall paint marriage of Isis and Osiris),west
+205,,,get beam
+206,Antechamber (west wall paint marriage of Isis and Osiris),Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra),south
+207,,,put beam across doorway
+208,,,open door
+209,Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra),Annex,west
+210,,,put diamond cluster in first hole
+211,,,drop knapsack
+212,,,get jar
+213,,,open jar
+214,,,pour liquid on torch
+215,,,put jar in knapsack
+216,,,get opal
+217,,,get ruby
+218,,,get emerald
+219,,,insert ruby cluster in second hole
+220,,,insert emerald cluster in third hole
+221,,,insert opal cluster in fourth hole
+222,,,open slab
+223,,,get book
+224,,,get knapsack
+225,Annex,Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra),east
+226,,,get beam
+227,Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra),Antechamber (west wall paint marriage of Isis and Osiris),north
+228,Antechamber (west wall paint marriage of Isis and Osiris),Antechamber (north end),north
+229,,,put beam under lintel
+230,,,break seal with pickaxe
+231,,,open door
+232,Antechamber (north end),Burial Chamber,north
+233,,,put book in large recess
+234,Burial Chamber,Treasury,east
+235,,,drop knapsack
+236,,,get canteen
+237,,,get silver chalice
+238,,,get golden chalice
+239,,,put golden chalice on left disc
+240,,,put silver chalice on right disc
+241,,,open canteen
+242,,,pour water in silver chalice
+243,,,get scarab
+244,Treasury,Burial Chamber,west
+245,,,put scarab in small recess
+246,,,turn neith
+247,,,turn selkis
+248,,,turn isis
+249,,,turn nephthys
+250,,,open quartz cover

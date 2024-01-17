@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "End Of Road",
+    "dst_node": "Below the Grate",
+    "path_gt": [
+        {
+            "prev_node": "End Of Road",
+            "node": "In A Valley",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "In A Valley",
+            "node": "At Slit In Streambed",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "At Slit In Streambed",
+            "node": "Outside Grate",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Outside Grate",
+            "node": "Below the Grate",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        }
+    ]
+}

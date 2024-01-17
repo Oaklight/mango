@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Bog",
+    "dst_node": "Tree Top",
+    "path_gt": [
+        {
+            "prev_node": "Bog",
+            "node": "Lakeside",
+            "action": "swim",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Dismal Swamp",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Tree Top",
+            "action": "climb tree",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ]
+}

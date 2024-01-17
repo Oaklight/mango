@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall Full of Fur",
+    "dst_node": "Center of Camp",
+    "path_gt": [
+        {
+            "prev_node": "Hall Full of Fur",
+            "node": "Glass Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Glass Hall",
+            "node": "End of glass hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "End of glass hall",
+            "node": "Round Room",
+            "action": "take necklace",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Center of Camp",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

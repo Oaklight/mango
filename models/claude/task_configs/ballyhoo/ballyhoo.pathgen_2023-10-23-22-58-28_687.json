@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Menagerie Nook",
+    "dst_node": "Performance Ring",
+    "path_gt": [
+        {
+            "prev_node": "Menagerie Nook",
+            "node": "Menagerie",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Menagerie",
+            "node": "Midway Entrance",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Midway Entrance",
+            "node": "Connection",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Connection",
+            "node": "In the Wings",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Performance Ring",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ]
+}

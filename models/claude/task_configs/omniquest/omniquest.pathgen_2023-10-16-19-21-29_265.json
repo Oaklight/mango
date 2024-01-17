@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Jeweled Room",
+    "dst_node": "Slimy Passageway",
+    "path_gt": [
+        {
+            "prev_node": "Jeweled Room",
+            "node": "Guardian Chamber",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "West Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Intersection",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "Slimy Passageway",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ]
+}

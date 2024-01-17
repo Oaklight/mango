@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Middle Shaft",
+    "dst_node": "Narrow Passage",
+    "path_gt": [
+        {
+            "prev_node": "Middle Shaft",
+            "node": "Shaft Base",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Shaft Base",
+            "node": "Gaseous Geyser",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Narrow Passage",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/jewel/results/"
+}

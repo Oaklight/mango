@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Cylindrical Room",
+    "dst_node": "Small Cavern",
+    "path_gt": [
+        {
+            "prev_node": "Cylindrical Room",
+            "node": "Giant Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Small Cavern",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Monastery Gardens",
+    "dst_node": "Refectory",
+    "path_gt": [
+        {
+            "prev_node": "Monastery Gardens",
+            "node": "Hallway (west end)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (basement)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Hallway (basement)",
+            "node": "Refectory",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        }
+    ],
+    "save_path": "outputs/spirit/results/"
+}

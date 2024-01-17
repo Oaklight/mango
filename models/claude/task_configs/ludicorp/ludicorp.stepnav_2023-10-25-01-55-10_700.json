@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Corner Of the Carpark",
+    "dst_node": "Delivery Bay",
+    "path_gt": [
+        {
+            "prev_node": "Corner Of the Carpark",
+            "node": "The Main Carpark",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "The Main Carpark",
+            "node": "The Delivery Bay Gateway",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "The Delivery Bay Gateway",
+            "node": "Delivery Bay",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Small Cavern",
+    "dst_node": "South Lake",
+    "path_gt": [
+        {
+            "prev_node": "Small Cavern",
+            "node": "Giant Cavern",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Slimy Passageway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "East Path",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "East Path",
+            "node": "South Lake",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

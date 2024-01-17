@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Some Bushes",
+    "dst_node": "The Main Carpark",
+    "path_gt": [
+        {
+            "prev_node": "Some Bushes",
+            "node": "East Of Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Front Of The Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "The Main Carpark",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ]
+}

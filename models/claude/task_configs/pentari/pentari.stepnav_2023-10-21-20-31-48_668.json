@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Dining Room",
+    "dst_node": "Castle Dungeon",
+    "path_gt": [
+        {
+            "prev_node": "Dining Room",
+            "node": "Spiral Stairway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Castle Dungeon",
+            "action": "get in floor",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

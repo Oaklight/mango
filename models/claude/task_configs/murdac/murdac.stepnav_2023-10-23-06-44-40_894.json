@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "alcove",
+    "dst_node": "mad scientist's laboratory",
+    "path_gt": [
+        {
+            "prev_node": "alcove",
+            "node": "high tunnel (east/west, alcove off to north)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "high tunnel (east/west, alcove off to north)",
+            "node": "wooden plank in east/west tunnel",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "wooden plank in east/west tunnel",
+            "node": "high tunnel (to the west of lab)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "high tunnel (to the west of lab)",
+            "node": "mad scientist's laboratory",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

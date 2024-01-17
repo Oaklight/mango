@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Barren Area",
+    "dst_node": "Scenic Vista",
+    "path_gt": [
+        {
+            "prev_node": "Barren Area",
+            "node": "Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Junction",
+            "node": "Creepy Crawl",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Creepy Crawl",
+            "node": "Foggy Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Foggy Room",
+            "node": "Lake Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Lake Shore",
+            "node": "On the Lake",
+            "action": "jump lake",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "On the Lake",
+            "node": "Western Shore",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Western Shore",
+            "node": "Scenic Vista",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

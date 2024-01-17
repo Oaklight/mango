@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Behind the Counter",
+    "dst_node": "Law Office",
+    "path_gt": [
+        {
+            "prev_node": "Behind the Counter",
+            "node": "Pizza Parlor",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Pizza Parlor",
+            "node": "Street, by Pizza Parlor",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Street, by Pizza Parlor",
+            "node": "Street, Near Courthouse",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Street, Near Courthouse",
+            "node": "Downtown",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Downtown",
+            "node": "Office Building",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Office Building",
+            "node": "Office Building, Second Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Office Building, Second Floor",
+            "node": "Law Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ]
+}

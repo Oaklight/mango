@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Quarterdeck",
+    "dst_node": "Galley",
+    "path_gt": [
+        {
+            "prev_node": "Quarterdeck",
+            "node": "Main Deck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Forecastle",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Forecastle",
+            "node": "Galley",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        }
+    ]
+}

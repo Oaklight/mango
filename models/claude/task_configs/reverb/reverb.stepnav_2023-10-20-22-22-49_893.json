@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Street, by Department Store",
+    "dst_node": "Hardware Department",
+    "path_gt": [
+        {
+            "prev_node": "Street, by Department Store",
+            "node": "Clothing Department",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Clothing Department",
+            "node": "Hardware Department",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

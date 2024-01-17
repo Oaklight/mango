@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Office Building",
+    "dst_node": "Hardware Department",
+    "path_gt": [
+        {
+            "prev_node": "Office Building",
+            "node": "Downtown",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Downtown",
+            "node": "Street, Near Courthouse",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Street, Near Courthouse",
+            "node": "Street, by Pizza Parlor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Street, by Pizza Parlor",
+            "node": "Street, by Department Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Street, by Department Store",
+            "node": "Clothing Department",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Clothing Department",
+            "node": "Hardware Department",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall Outside Computer Site",
+    "dst_node": "Hall Outside Elevator (3rd floor)",
+    "path_gt": [
+        {
+            "prev_node": "Hall Outside Computer Site",
+            "node": "Hall (3rd floor, middle of north/south hall)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Hall (3rd floor, middle of north/south hall)",
+            "node": "Hall Outside Elevator (3rd floor)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

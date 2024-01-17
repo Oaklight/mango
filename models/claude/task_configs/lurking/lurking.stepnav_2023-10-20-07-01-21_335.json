@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Kitchen",
+    "dst_node": "Elevator",
+    "path_gt": [
+        {
+            "prev_node": "Kitchen",
+            "node": "Second Floor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Elevator",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

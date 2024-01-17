@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Helistar's Quarters",
+    "dst_node": "Library",
+    "path_gt": [
+        {
+            "prev_node": "Helistar's Quarters",
+            "node": "Hallway",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Lobby",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Lobby",
+            "node": "Library",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ]
+}

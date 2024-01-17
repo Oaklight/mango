@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "in Darkness",
+    "dst_node": "Smallish Cave",
+    "path_gt": [
+        {
+            "prev_node": "in Darkness",
+            "node": "Bottom of Pit",
+            "action": "left",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Bottom of Pit",
+            "node": "Tight Crawl",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Tight Crawl",
+            "node": "Smallish Cave",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        }
+    ]
+}

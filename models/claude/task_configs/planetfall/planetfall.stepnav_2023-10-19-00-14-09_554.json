@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Mech Corridor",
+    "dst_node": "Admin Corridor North",
+    "path_gt": [
+        {
+            "prev_node": "Mech Corridor",
+            "node": "Mech Corridor North",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Mech Corridor North",
+            "node": "Corridor Junction",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Corridor Junction",
+            "node": "Admin Corridor South",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Admin Corridor South",
+            "node": "Admin Corridor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Admin Corridor",
+            "node": "Admin Corridor North",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ],
+    "save_path": "outputs/planetfall/results/"
+}

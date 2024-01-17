@@ -1,0 +1,91 @@
+{
+    "task": "pathgen",
+    "src_node": "End of Path(an exit to the northeast and a raincoat here)",
+    "dst_node": "South Lake",
+    "path_gt": [
+        {
+            "prev_node": "End of Path(an exit to the northeast and a raincoat here)",
+            "node": "Fork in Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Fork in Path",
+            "node": "Small Path",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Small Path",
+            "node": "Canyon Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Endless Beach",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Endless Beach",
+            "node": "Ocean",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Ocean",
+            "node": "Island Coast",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Island Coast",
+            "node": "Cylindrical Room",
+            "action": "push rock",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cylindrical Room",
+            "node": "Giant Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Slimy Passageway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        }
+    ]
+}

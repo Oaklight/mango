@@ -1,0 +1,63 @@
+{
+    "task": "pathgen",
+    "src_node": "Pebbled Path",
+    "dst_node": "Inside Shack",
+    "path_gt": [
+        {
+            "prev_node": "Pebbled Path",
+            "node": "Inside Gate",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Inside Gate",
+            "node": "Outside Gate",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Outside Gate",
+            "node": "Western Road",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Western Road",
+            "node": "Eastern Fork",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Eastern Fork",
+            "node": "Trail Head",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Trail Head",
+            "node": "Trail",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Trail",
+            "node": "Outside of Shack",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside of Shack",
+            "node": "Inside Shack",
+            "action": "enter shack",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ]
+}

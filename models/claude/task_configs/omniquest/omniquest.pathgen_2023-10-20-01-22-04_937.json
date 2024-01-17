@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Slimy Passageway",
+    "dst_node": "Chilly Corridor",
+    "path_gt": [
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Chilly Corridor",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        }
+    ]
+}

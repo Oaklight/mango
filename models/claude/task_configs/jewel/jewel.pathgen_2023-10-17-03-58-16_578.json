@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Gaseous Geyser",
+    "dst_node": "On the Ledge",
+    "path_gt": [
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Shaft Base",
+            "action": "climb porous wall",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Shaft Base",
+            "node": "Middle Shaft",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Middle Shaft",
+            "node": "Top of the Shaft",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Top of the Shaft",
+            "node": "On the Ledge",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        }
+    ]
+}

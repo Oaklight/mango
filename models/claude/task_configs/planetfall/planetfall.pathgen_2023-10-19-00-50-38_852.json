@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Courtyard",
+    "dst_node": "Corridor Junction",
+    "path_gt": [
+        {
+            "prev_node": "Courtyard",
+            "node": "Plain Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Plain Hall",
+            "node": "Rec Corridor",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Rec Corridor",
+            "node": "Mess Corridor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Mess Corridor",
+            "node": "Dorm Corridor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Dorm Corridor",
+            "node": "Corridor Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ]
+}

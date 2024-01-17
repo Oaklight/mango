@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "large quadrangular cellar",
+    "dst_node": "shrubbery",
+    "path_gt": [
+        {
+            "prev_node": "large quadrangular cellar",
+            "node": "inside the hut",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "inside the hut",
+            "node": "outside the house",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "shrubbery",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        }
+    ]
+}

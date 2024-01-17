@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall Outside Elevator (1st floor)",
+    "dst_node": "Hall (1st floor, north end of north/south hall)",
+    "path_gt": [
+        {
+            "prev_node": "Hall Outside Elevator (1st floor)",
+            "node": "Hall (1st floor, middle of north/south hall)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Hall (1st floor, middle of north/south hall)",
+            "node": "Hall (1st floor, north end of north/south hall)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

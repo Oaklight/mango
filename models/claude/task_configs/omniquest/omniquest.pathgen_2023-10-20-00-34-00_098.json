@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "End of Path(an exit to the northeast and a raincoat here)",
+    "dst_node": "Canyon Path",
+    "path_gt": [
+        {
+            "prev_node": "End of Path(an exit to the northeast and a raincoat here)",
+            "node": "Fork in Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Fork in Path",
+            "node": "Small Path",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Small Path",
+            "node": "Canyon Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Canyon Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ]
+}

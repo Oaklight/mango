@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "the entrance of tunnel",
+    "dst_node": "Convention Hall",
+    "path_gt": [
+        {
+            "prev_node": "the entrance of tunnel",
+            "node": "tunnel",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "tunnel",
+            "node": "Cultural Complex",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Cultural Complex",
+            "node": "Convention Center Lobby",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Convention Center Lobby",
+            "node": "Convention Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        }
+    ]
+}

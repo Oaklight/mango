@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Alcove at End of Corridor",
+    "dst_node": "T-Intersection (east/west/south, west to Round Room)",
+    "path_gt": [
+        {
+            "prev_node": "Alcove at End of Corridor",
+            "node": "South Branch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "South Branch",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        }
+    ]
+}

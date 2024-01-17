@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Abandoned Inn",
+    "dst_node": "Forest Pathway",
+    "path_gt": [
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Swampy Ground",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "North End of a Road",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "North End of a Road",
+            "node": "South End of a Road",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "South End of a Road",
+            "node": "Wasteland by a Castle",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Wasteland by a Castle",
+            "node": "Pebbled Beach",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Pebbled Beach",
+            "node": "Lake in the Forest",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "Tree Stump",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Tree Stump",
+            "node": "Forest Pathway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

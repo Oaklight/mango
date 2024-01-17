@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Large Clearing",
+    "dst_node": "Cylindrical Room",
+    "path_gt": [
+        {
+            "prev_node": "Large Clearing",
+            "node": "Small Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Small Path",
+            "node": "Canyon Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Endless Beach",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Endless Beach",
+            "node": "Ocean",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Ocean",
+            "node": "Island Coast",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Island Coast",
+            "node": "Cylindrical Room",
+            "action": "push rock",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

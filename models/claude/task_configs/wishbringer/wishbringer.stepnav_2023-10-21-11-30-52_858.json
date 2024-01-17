@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "Cliff Bottom",
+    "dst_node": "Post Office",
+    "path_gt": [
+        {
+            "prev_node": "Cliff Bottom",
+            "node": "North of Bridge",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "North of Bridge",
+            "node": "Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Bridge",
+            "node": "South of Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "South of Bridge",
+            "node": "Rotary North",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Rotary North",
+            "node": "Park",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Park",
+            "node": "Rotary South",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Rotary South",
+            "node": "Outside Cottage",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Outside Cottage",
+            "node": "Hilltop",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Hilltop",
+            "node": "Post Office",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        }
+    ],
+    "save_path": "outputs/wishbringer/results/"
+}

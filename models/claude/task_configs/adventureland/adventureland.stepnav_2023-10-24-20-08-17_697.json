@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Chasm",
+    "dst_node": "Root Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Chasm",
+            "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Meadow",
+            "action": "away",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Dismal Swamp",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Root Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

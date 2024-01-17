@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Inside the Lighthouse Ruins",
+    "dst_node": "Cave Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Inside the Lighthouse Ruins",
+            "node": "Beside a Ruined Lighthouse",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Beside a Ruined Lighthouse",
+            "node": "Pebbled Beach",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Pebbled Beach",
+            "node": "Lake in the Forest",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "Tree Stump",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Tree Stump",
+            "node": "Forest Pathway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Forest Pathway",
+            "node": "Cottage",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Cottage",
+            "node": "Cave Entrance",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

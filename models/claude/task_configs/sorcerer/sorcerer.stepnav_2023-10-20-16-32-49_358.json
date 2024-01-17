@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Your Quarters, in the bed",
+    "dst_node": "Forest Edge",
+    "path_gt": [
+        {
+            "prev_node": "Your Quarters, in the bed",
+            "node": "quarters",
+            "action": "get up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "quarters",
+            "node": "Hallway",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Helistar's Quarters",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Helistar's Quarters",
+            "node": "Twisted Forest",
+            "action": "aimfiz belboz",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Twisted Forest",
+            "node": "Forest Edge",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        }
+    ],
+    "save_path": "outputs/sorcerer/results/"
+}

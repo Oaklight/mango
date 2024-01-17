@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Tool Room",
+    "dst_node": "Mech Corridor",
+    "path_gt": [
+        {
+            "prev_node": "Tool Room",
+            "node": "Mech Corridor South",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Mech Corridor South",
+            "node": "Mech Corridor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/planetfall/results/"
+}

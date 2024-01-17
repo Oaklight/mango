@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "West of House",
+    "dst_node": "Behind House",
+    "path_gt": [
+        {
+            "prev_node": "West of House",
+            "node": "North of House",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "North of House",
+            "node": "Behind House",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ],
+    "save_path": "outputs/zork1/results/"
+}

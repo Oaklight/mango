@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "At Platform",
+    "dst_node": "Place",
+    "path_gt": [
+        {
+            "prev_node": "At Platform",
+            "node": "Terminal Room",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Terminal Room",
+            "node": "Place",
+            "action": "again",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ]
+}

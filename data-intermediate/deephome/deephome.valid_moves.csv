@@ -1,71 +1,328 @@
-Step Num,Location Before,Location After,step 0??ACT: Init,Secret Entrance
-1,,,,
-2,,,,
-3,,,,"Notes: "
-4,the abandoned city of Deephome,Northern Guard Post,,1. Just annotate the steps where the location has changed
-5,,,,"2. The locations are like ''Living Room"", ""Small Clearing"""
-6,,,,
-7,,,,
-8,,,,
-9,,,,
-10,,,,
-11,Northern Guard Post,Main Hall,,
-12,,,,
-13,,,,
-14,,,,
-15,,,,
-16,Main Hall,N. Main Street,,
-17,N. Main Street,S. Main Street,,
-18,S. Main Street,Intersection,,
-19,Intersection,Extreme South Main Street,,
-20,Extreme South Main Street,Mining Center,,
-21,Mining Center,Ore Mines,,
-22,,,,
-23,Ore Mines,Mining Center,,
-24,Mining Center,Coal Mines,,
-25,,,,
-26,,,,
-27,Coal Mines,Mining Center,,
-28,Mining Center,Extreme South Main Street,,
-29,Extreme South Main Street,City Generator,,
-30,,,,
-31,,,,
-32,,,,
-33,,,,
-34,,,,
-35,City Generator,Extreme South Main Street,,
-36,Extreme South Main Street,Intersection,,
-37,Intersection,S. Main Street,,
-38,S. Main Street,N. Main Street,,
-39,N. Main Street,Main Hall,,
-40,Main Hall,"Railway Station (Main Hall)",,
-41,"Railway Station (Main Hall)",railcar,"具体地点命名 ",
-42,,,,
-43,railcar,"Railway Station (Smithy Court)",,
-44,"Railway Station (Smithy Court)",Smithy Court,,
-45,Smithy Court,Blacksmith,,
-46,,,,
-47,Blacksmith,Smithy Court,,
-48,Smithy Court,Silversmith,,
-49,Silversmith,Smithy Court,,
-50,Smithy Court,Carpenter's Shop,,
-51,Carpenter's Shop,Smithy Court,,
-52,Smithy Court,Common Forge,,
-53,Common Forge,Smithy Court,,
-54,Smithy Court,Slag Pit,,
-55,Slag Pit,Smithy Court,,
-56,Smithy Court,Goldsmith,,
-57,Goldsmith,Smithy Court,,
-58,Smithy Court,"Railway Station (Smithy Court)",,
-59,"Railway Station (Smithy Court)",railcar,,
-60,,,,
-61,railcar,"Railway Station (Soldiers' Barracks)",,
-62,"Railway Station (Soldiers' Barracks)",Soldiers' Barracks,,
-63,Soldiers' Barracks,Training Grounds,,
-64,Training Grounds,Waterfall,,
-65,,,,
-66,Waterfall,Training Grounds,,
-67,Training Grounds,Soldiers' Barracks,,
-68,Soldiers' Barracks,Armory,,
-69,Armory,Soldiers' Barracks,,
-70,Soldiers' Barracks,Mess Hall,,
+Step Num,Location Before,Location After,step 0??ACT: Init,Secret Entrance,taken_action
+1,,,,,read note
+2,,,,,x door
+3,,,,Notes: ,push mountain
+4,the abandoned city of Deephome,Northern Guard Post,,1. Just annotate the steps where the location has changed,southwest
+5,,,,"2. The locations are like ''Living Room"", ""Small Clearing""",open cabinet
+6,,,,,l in cabinet
+7,,,,,take shield
+8,,,,,take sword
+9,,,,,search table
+10,,,,,read letter
+11,Northern Guard Post,Main Hall,,,southwest
+12,,,,,read warning note
+13,,,,,get torch
+14,,,,,wait
+15,,,,,wait
+16,Main Hall,N. Main Street,,,south
+17,N. Main Street,S. Main Street,,,south
+18,S. Main Street,Intersection,,,south
+19,Intersection,Extreme South Main Street,,,south
+20,Extreme South Main Street,Mining Center,,,south
+21,Mining Center,Ore Mines,,,south
+22,,,,,get pickaxe
+23,Ore Mines,Mining Center,,,north
+24,Mining Center,Coal Mines,,,east
+25,,,,,dig rock with axe
+26,,,,,take coal
+27,Coal Mines,Mining Center,,,west
+28,Mining Center,Extreme South Main Street,,,north
+29,Extreme South Main Street,City Generator,,,east
+30,,,,,open furnace
+31,,,,,put coal in furnace
+32,,,,,close furnace
+33,,,,,x generator
+34,,,,,pull lever
+35,City Generator,Extreme South Main Street,,,west
+36,Extreme South Main Street,Intersection,,,north
+37,Intersection,S. Main Street,,,north
+38,S. Main Street,N. Main Street,,,north
+39,N. Main Street,Main Hall,,,north
+40,Main Hall,Railway Station (Main Hall),,,west
+41,Railway Station (Main Hall),railcar,具体地点命名 ,,enter car
+42,,,,,push yellow
+43,railcar,Railway Station (Smithy Court),,,out
+44,Railway Station (Smithy Court),Smithy Court,,,northwest
+45,Smithy Court,Blacksmith,,,southwest
+46,,,,,get gear
+47,Blacksmith,Smithy Court,,,northeast
+48,Smithy Court,Silversmith,,,west
+49,Silversmith,Smithy Court,,,east
+50,Smithy Court,Carpenter's Shop,,,northwest
+51,Carpenter's Shop,Smithy Court,,,southeast
+52,Smithy Court,Common Forge,,,north
+53,Common Forge,Smithy Court,,,south
+54,Smithy Court,Slag Pit,,,northeast
+55,Slag Pit,Smithy Court,,,southwest
+56,Smithy Court,Goldsmith,,,east
+57,Goldsmith,Smithy Court,,,west
+58,Smithy Court,Railway Station (Smithy Court),,,southeast
+59,Railway Station (Smithy Court),railcar,,,enter car
+60,,,,,push green button
+61,railcar,Railway Station (Soldiers' Barracks),,,out
+62,Railway Station (Soldiers' Barracks),Soldiers' Barracks,,,west
+63,Soldiers' Barracks,Training Grounds,,,southwest
+64,Training Grounds,Waterfall,,,southwest
+65,,,,,x terrock
+66,Waterfall,Training Grounds,,,northeast
+67,Training Grounds,Soldiers' Barracks,,,northeast
+68,Soldiers' Barracks,Armory,,,west
+69,Armory,Soldiers' Barracks,,,east
+70,Soldiers' Barracks,Mess Hall,,,south
+71,Mess Hall,Soldiers' Barracks,,,north
+72,Soldiers' Barracks,Railway Station (Soldiers' Barracks),,,east
+73,Railway Station (Soldiers' Barracks),railcar,,,enter car
+74,,,,,push yellow button
+75,railcar,Railway Station (Main Hall),,,out
+76,Railway Station (Main Hall),Main Hall,,,east
+77,Main Hall,N. Main Street,,,south
+78,N. Main Street,S. Main Street,,,south
+79,S. Main Street,Dwarven Library,,,east
+80,,,,,l up terrock in leshosh
+81,Dwarven Library,S. Main Street,,,west
+82,S. Main Street,Intersection,,,south
+83,Intersection,East Royal Road,,,west
+84,East Royal Road,West Royal Road,,,west
+85,,,,,get moss
+86,West Royal Road,East Royal Road,,,east
+87,East Royal Road,Intersection,,,east
+88,Intersection,S. Main Street,,,north
+89,S. Main Street,N. Main Street,,,north
+90,N. Main Street,Main Hall,,,north
+91,Main Hall,Railway Station (Main Hall),,,west
+92,Railway Station (Main Hall),railcar,,,enter car
+93,,,,,push green button
+94,railcar,Railway Station (Soldiers' Barracks),,,out
+95,Railway Station (Soldiers' Barracks),Soldiers' Barracks,,,west
+96,Soldiers' Barracks,Training Grounds,,,southwest
+97,Training Grounds,Waterfall,,,southwest
+98,,,,,put moss in nest
+99,,,,,x pipe
+100,,,,,push rod
+101,Waterfall,Training Grounds,,,northeast
+102,Training Grounds,Soldiers' Barracks,,,northeast
+103,Soldiers' Barracks,Railway Station (Soldiers' Barracks),,,east
+104,Railway Station (Soldiers' Barracks),railcar,,,enter car
+105,,,,,push yellow button
+106,railcar,Railway Station (Main Hall),,,out
+107,Railway Station (Main Hall),Main Hall,,,east
+108,Main Hall,N. Main Street,,,south
+109,N. Main Street,S. Main Street,,,south
+110,S. Main Street,Intersection,,,south
+111,Intersection,Extreme South Main Street,,,south
+112,Extreme South Main Street,Water Works,,,southwest
+113,,,,,turn wheel
+114,Water Works,Extreme South Main Street,,,northeast
+115,Extreme South Main Street,Intersection,,,north
+116,Intersection,Eastern Guard Post,,,east
+117,Eastern Guard Post,City Gates,,,southeast
+118,,,,,x panel
+119,,,,,open hatch
+120,,,,,l in hatch
+121,,,,,put gear on post
+122,,,,,push lever
+123,,,,,push button
+124,City Gates,Deephome Entrance,,,south
+125,Deephome Entrance,Southern Road,,,south
+126,Southern Road,Wooded Path,,,south
+127,Wooded Path,Town of Ember,,,south
+128,Town of Ember,Shops,,,west
+129,Shops,Town of Ember,,,east
+130,Town of Ember,Ember's Town Square,,,south
+131,Ember's Town Square,Ember Tool Shop,,,west
+132,,,,,ask man about hammer
+133,,,,,ask man about eranti
+134,Ember Tool Shop,Ember's Town Square,,,east
+135,Ember's Town Square,Pond,,,south
+136,,,,,wear shield
+137,,,,,wield sword
+138,,,,,kill eranti
+139,,,,,kill eranti
+140,,,,,kill eranti
+141,,,,,kill eranti
+142,Pond,Ember's Town Square,,,north
+143,Ember's Town Square,Ember Tool Shop,,,west
+144,,,,,get hammer
+145,Ember Tool Shop,Ember's Town Square,,,east
+146,Ember's Town Square,Town of Ember,,,north
+147,Town of Ember,Wooded Path,,,north
+148,Wooded Path,Southern Road,,,north
+149,Southern Road,Deephome Entrance,,,north
+150,Deephome Entrance,Western Road,,,west
+151,Western Road,Great Woods Limits,,,west
+152,,,,,read sign
+153,Great Woods Limits,Forest 153,,,west
+154,Forest 153,Forest 154,,,southwest
+155,Forest 154,Forest 155,,,west
+156,Forest 155,Forest 156,,,south
+157,Forest 156,Forest 157,,,east
+158,Forest 157,Forest 158,,,north
+159,Forest 158,Forest 159,,,west
+160,Forest 159,Forest Clearing,,,east
+161,,,,,x clover
+162,,,,,get clover
+163,,,,,read sign
+164,Forest Clearing,Forest 153,,,south
+165,Forest 153,Great Woods Limits,,,east
+166,Great Woods Limits,Western Road,,,east
+167,Western Road,Deephome Entrance,,,east
+168,Deephome Entrance,City Gates,,,north
+169,City Gates,Eastern Guard Post,,,northwest
+170,Eastern Guard Post,Intersection,,,west
+171,Intersection,S. Main Street,,,north
+172,S. Main Street,N. Main Street,,,north
+173,N. Main Street,Main Hall,,,north
+174,Main Hall,Railway Station (Main Hall),,,west
+175,Railway Station (Main Hall),railcar,,,enter car
+176,,,,,push yellow button
+177,railcar,Railway Station (Smithy Court),,,out
+178,Railway Station (Smithy Court),Smithy Court,,,northwest
+179,Smithy Court,Blacksmith,,,southwest
+180,,,,,get scraps
+181,,,,,open forge
+182,,,,,light coal
+183,,,,,put scraps in forge
+184,,,,,wait
+185,,,,,wait
+186,,,,,get scraps
+187,,,,,put scraps on anvil
+188,,,,,hammer scraps
+189,,,,,get sharp pick
+190,Blacksmith,Smithy Court,,,northeast
+191,Smithy Court,Railway Station (Smithy Court),,,southeast
+192,Railway Station (Smithy Court),railcar,,,enter car
+193,,,,,push red button
+194,railcar,Railway Station (Treasury),,,out
+195,Railway Station (Treasury),Treasury Antechamber,,,southwest
+196,Treasury Antechamber,The Common Bank,,,north
+197,,,,,x box
+198,,,,,pick lock with sharp pick
+199,,,,,open box
+200,,,,,l in box
+201,,,,,take key
+202,The Common Bank,Treasury Antechamber,,,south
+203,,,,,unlock door with key
+204,,,,,open door
+205,Treasury Antechamber,The Treasury,,,west
+206,,,,,ask spirit for name
+207,,,,,search valuables
+208,,,,,get coin
+209,The Treasury,Treasury Antechamber,,,east
+210,Treasury Antechamber,Railway Station (Treasury),,,northeast
+211,Railway Station (Treasury),railcar,,,enter car
+212,,,,,push yellow button
+213,railcar,Railway Station (Main Hall),,,out
+214,Railway Station (Main Hall),Main Hall,,,east
+215,Main Hall,N. Main Street,,,south
+216,N. Main Street,S. Main Street,,,south
+217,S. Main Street,Great Temple of Kraxis,,,west
+218,,,,,ask spirit for name
+219,Great Temple of Kraxis,S. Main Street,,,east
+220,S. Main Street,Intersection,,,south
+221,Intersection,East Royal Road,,,west
+222,East Royal Road,Lesser Noble's Palace,,,south
+223,Lesser Noble's Palace,East Royal Road,,,north
+224,East Royal Road,West Royal Road,,,west
+225,West Royal Road,Greater Noble's Palace,,,north
+226,Greater Noble's Palace,West Royal Road,,,south
+227,West Royal Road,Outer Court,,,west
+228,Outer Court,Throne Room,,,west
+229,,,,,ask spirit for name
+230,Throne Room,Outer Court,,,east
+231,Outer Court,West Royal Road,,,east
+232,West Royal Road,East Royal Road,,,east
+233,East Royal Road,Intersection,,,east
+234,Intersection,S. Main Street,,,north
+235,S. Main Street,Dwarven Library,,,east
+236,,,,,look up kebarn in leshosh
+237,,,,,look up partaim in fresto
+238,,,,,look up indanaz in leshosh
+239,,,,,look up ternalim in fresto
+240,,,,,look up cholok in leshosh
+241,,,,,look up yetzuiz in fresto
+242,,,,,look up squirrel in leshosh
+243,Dwarven Library,S. Main Street,,,west
+244,S. Main Street,Intersection,,,south
+245,Intersection,Eastern Guard Post,,,east
+246,Eastern Guard Post,City Gates,,,southeast
+247,City Gates,Deephome Entrance,,,south
+248,Deephome Entrance,Southern Road,,,south
+249,Southern Road,Wooded Path,,,south
+250,Wooded Path,Town of Ember,,,south
+251,Town of Ember,Ember's Town Square,,,south
+252,Ember's Town Square,Small Shack,,,east
+253,,,,,x chest
+254,,,,,pick lock with sharp pick
+255,,,,,open chest
+256,,,,,drop sword
+257,,,,,drop shield
+258,,,,,get net
+259,Small Shack,Ember's Town Square,,,west
+260,Ember's Town Square,Town of Ember,,,north
+261,Town of Ember,Wooded Path,,,north
+262,,,,,dig ground with axe
+263,,,,,put net on hole
+264,,,,,get acorns
+265,,,,,put acorns in net
+266,Wooded Path,Large Tree,,,climb tree
+267,Large Tree,Wooded Path,,,climb down
+268,,,,,get net
+269,Wooded Path,Southern Road,,,north
+270,Southern Road,Deephome Entrance,,,north
+271,Deephome Entrance,City Gates,,,north
+272,City Gates,Eastern Guard Post,,,northwest
+273,Eastern Guard Post,Intersection,,,west
+274,Intersection,East Royal Road,,,west
+275,East Royal Road,West Royal Road,,,west
+276,West Royal Road,Outer Court,,,west
+277,Outer Court,Throne Room,,,west
+278,,,,,open net
+279,Throne Room,Outer Court,,,east
+280,Outer Court,West Royal Road,,,east
+281,West Royal Road,East Royal Road,,,east
+282,East Royal Road,Intersection,,,east
+283,Intersection,S. Main Street,,,north
+284,S. Main Street,N. Main Street,,,north
+285,N. Main Street,Scrivener's,,,west
+286,,,,,open desk
+287,,,,,get paper
+288,Scrivener's,N. Main Street,,,east
+289,N. Main Street,Bakery,,,east
+290,,,,,drop hammer
+291,,,,,drop pickaxe
+292,,,,,get bottle
+293,,,,,fill bottle
+294,Bakery,N. Main Street,,,west
+295,N. Main Street,S. Main Street,,,south
+296,S. Main Street,Great Temple of Kraxis,,,west
+297,,,,,burn paper
+298,,,,,drop coin
+299,,,,,pour water on coin
+300,,,,,put ashes on coin
+301,,,,,put clover on coin
+302,,,,,pray to kraxis
+303,,,,,manaz
+304,,,,,take coin
+305,Great Temple of Kraxis,S. Main Street,,,east
+306,S. Main Street,N. Main Street,,,north
+307,N. Main Street,Bakery,,,east
+308,,,,,fill bottle
+309,Bakery,N. Main Street,,,west
+310,N. Main Street,Clothier,,,northeast
+311,Clothier,N. Main Street,,,southwest
+312,N. Main Street,Main Hall,,,north
+313,Main Hall,Dwarven Village,,,up
+314,Dwarven Village,Main Hall,,,down
+315,Main Hall,Railway Station (Main Hall),,,west
+316,Railway Station (Main Hall),railcar,,,enter car
+317,,,,,push red button
+318,railcar,Railway Station (Treasury),,,out
+319,Railway Station (Treasury),Treasury Antechamber,,,southwest
+320,Treasury Antechamber,The Treasury,,,west
+321,,,,,drop net
+322,,,,,open net
+323,,,,,put coin in net
+324,,,,,pour water on net
+325,,,,,get coin
+326,,,,,pray to kraxis
+327,,,,,manaz

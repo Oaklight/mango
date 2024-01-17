@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Chamber Of Horrors",
+    "dst_node": "Birdcage Walk",
+    "path_gt": [
+        {
+            "prev_node": "Chamber Of Horrors",
+            "node": "Madame Tussaud's",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Madame Tussaud's",
+            "node": "Marylebone Road",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Marylebone Road",
+            "node": "Tottenham Court Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Tottenham Court Road",
+            "node": "cab",
+            "action": "enter cab",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "cab",
+            "node": "Whitehall",
+            "action": "get out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Whitehall",
+            "node": "Parliament Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Parliament Square",
+            "node": "Birdcage Walk",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Vestibule",
+    "dst_node": "Small Office",
+    "path_gt": [
+        {
+            "prev_node": "Vestibule",
+            "node": "Sanctuary",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Sanctuary",
+            "node": "Pulpit",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Pulpit",
+            "node": "Small Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        }
+    ],
+    "save_path": "outputs/awaken/results/"
+}

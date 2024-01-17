@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Ground Floor Stacks",
+    "dst_node": "Computer Lab",
+    "path_gt": [
+        {
+            "prev_node": "Ground Floor Stacks",
+            "node": "Ground Floor Stairwell",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Ground Floor Stairwell",
+            "node": "Second Floor Stairwell",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Second Floor Stairwell",
+            "node": "Second Floor Stacks",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Second Floor Stacks",
+            "node": "Computer Lab",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ]
+}

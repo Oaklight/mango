@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Quarterdeck",
+    "dst_node": "Landing",
+    "path_gt": [
+        {
+            "prev_node": "Quarterdeck",
+            "node": "Main Deck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Hold",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Aft Hold",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Aft Hold",
+            "node": "Landing",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

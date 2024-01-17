@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Control Room",
+    "dst_node": "Cell",
+    "path_gt": [
+        {
+            "prev_node": "Control Room",
+            "node": "Corridor(east to old cell and north to hall)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Corridor(east to old cell and north to hall)",
+            "node": "Corridor(east old cell and stretches further west)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Corridor(east old cell and stretches further west)",
+            "node": "Landing",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Cell",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 15
+        }
+    ]
+}

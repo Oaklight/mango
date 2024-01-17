@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Downtown",
+    "dst_node": "Law Office",
+    "path_gt": [
+        {
+            "prev_node": "Downtown",
+            "node": "Office Building",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Office Building",
+            "node": "Office Building, Second Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Office Building, Second Floor",
+            "node": "Law Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ]
+}

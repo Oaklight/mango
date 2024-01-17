@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Under the Bleachers",
+    "dst_node": "Menagerie",
+    "path_gt": [
+        {
+            "prev_node": "Under the Bleachers",
+            "node": "In the Wings",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Connection",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Midway Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Midway Entrance",
+            "node": "Menagerie",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

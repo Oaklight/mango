@@ -11,7 +11,7 @@ import datetime
 from tqdm import tqdm
 
 
-sys.path.append('/remote-home/pli/llama2')
+sys.path.append('/home-nfs/pengli/workspace/projects/llama')
 from llama import Llama
 from typing import Optional
 from utils import read_json, read_txt, cutoff_walkthrough, process
@@ -27,7 +27,7 @@ def main(
     top_p: float = 0.95,
     max_seq_len: int = 4096,
     start_game_idx: int = 0,
-    end_game_idx: int = 10000
+    end_game_idx: int = 10000,
 ):
     time_s = time.time()
     local_rank = int(os.environ.get("LOCAL_RANK", 0))
@@ -75,7 +75,7 @@ def main(
             sample_id = pair['id']
 
             question_path_gen = """!!! Can you find a path from '{}' to '{}'?\nFormat the output as a python list of python dictionary with keys 'location_before', 'action' and 'location_after'.\n{}\n{}\n""".format(src_node, dst_node, action_space_prompt, place_name_prompt)
-            question_path_gen += "\nAnswer: [{{'location_before': '{}', 'action': ".format(src_node)
+            # question_path_gen += "\nAnswer: [{{'location_before': '{}', 'action': ".format(src_node)
             prefix_path_gen = ''.join((prefix_walkthrough, question_path_gen))
 
             save_path = '{}/{}/results/path_gen_llama'.format(save_folder, game_name)

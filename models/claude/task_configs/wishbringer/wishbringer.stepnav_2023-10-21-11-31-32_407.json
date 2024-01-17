@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Cliff Bottom",
+    "dst_node": "Magick Shoppe",
+    "path_gt": [
+        {
+            "prev_node": "Cliff Bottom",
+            "node": "Steep Trail",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Steep Trail",
+            "node": "Cliff Edge",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Cliff Edge",
+            "node": "Magick Shoppe",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/wishbringer/results/"
+}

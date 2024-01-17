@@ -1,18 +1,235 @@
-south junction (obj2) --> north --> front porch (obj182), step 1
-front porch (obj182) --> north --> foyer (obj120), step 5
-foyer (obj120) --> north --> game room (obj95), step 7
-game room (obj95) --> east --> short hall (obj229), step 28
-short hall (obj229) --> east --> screening room (obj233), step 29
-screening room (obj233) --> south --> projection booth (obj69), step 30
-projection booth (obj69) --> north --> screening room (obj233), step 41
-screening room (obj233) --> west --> short hall (obj229), step 43
-short hall (obj229) --> west --> game room (obj95), step 44
-game room (obj95) --> south --> foyer (obj120), step 45
-foyer (obj120) --> west --> living room (obj79), step 46
-living room (obj79) --> east --> foyer (obj120), step 50
-foyer (obj120) --> east --> hallway (obj226), step 51
-hallway (obj226) --> east --> parlor (obj5), step 60
-parlor (obj5) --> down --> crawl space, north (obj189), step 63
-crawl space, north (obj189) --> south --> crawl space, south (obj102), step 64
-crawl space, south (obj102) --> north --> crawl space, north (obj189), step 67
-crawl space, north (obj189) --> up --> parlor (obj5), step 68
+South Junction --> north --> Front Porch, step 1
+Front Porch --> north --> Foyer, step 5
+Foyer --> north --> Game Room, step 7
+Game Room --> east --> Short Hall, step 28
+Short Hall --> east --> Screening Room, step 29
+Screening Room --> south --> Projection Booth, step 30
+Projection Booth --> north --> Screening Room, step 41
+Screening Room --> west --> Short Hall, step 43
+Short Hall --> west --> Game Room, step 44
+Game Room --> south --> Foyer, step 45
+Foyer --> west --> Living Room, step 46
+Living Room --> east --> Foyer, step 50
+Foyer --> east --> Hallway, step 51
+Hallway --> east --> Parlor, step 60
+Parlor --> down --> Crawl Space, North, step 63
+Crawl Space, North --> south --> Crawl Space, South, step 64
+Crawl Space, South --> north --> Crawl Space, North, step 67
+Crawl Space, North --> up --> Parlor, step 68
+Parlor --> down --> Crawl Space, North, step 71
+Crawl Space, North --> north --> Small Passage, step 72
+Small Passage --> south --> Crawl Space, North, step 74
+Crawl Space, North --> up --> Parlor, step 75
+Parlor --> west --> Hallway, step 78
+Hallway --> west --> Foyer, step 79
+Foyer --> north --> Game Room, step 83
+Game Room --> north --> Patio, step 86
+Patio --> south --> Game Room, step 88
+Game Room --> south --> Foyer, step 89
+Foyer --> in --> Closet, step 91
+Closet --> out --> Upstairs Hall, Middle, step 94
+Upstairs Hall, Middle --> west --> Upstairs Hall, West, step 96
+Upstairs Hall, West --> south --> Upstairs Bathroom, step 97
+Upstairs Bathroom --> north --> Upstairs Hall, West, step 100
+Upstairs Hall, West --> east --> Upstairs Hall, Middle, step 101
+Upstairs Hall, Middle --> east --> Upstairs Hall, East, step 102
+Upstairs Hall, East --> south --> Guest Room, step 106
+Guest Room --> north --> Upstairs Hall, East, step 108
+Upstairs Hall, East --> west --> Upstairs Hall, Middle, step 109
+Upstairs Hall, Middle --> down --> Foyer, step 110
+Foyer --> west --> Living Room, step 112
+Living Room --> in --> Fireplace, step 113
+Fireplace --> up --> In the Chimney (west side one, stop 1), step 118
+In the Chimney (west side one, stop 1) --> up --> In the Chimney (west side one, stop 2), step 119
+In the Chimney (west side one, stop 2) --> up --> West End of Roof, step 120
+West End of Roof --> east --> East End of Roof, step 121
+East End of Roof --> down --> In the Chimney (east side one, only leading upward), step 122
+In the Chimney (east side one, only leading upward) --> up --> East End of Roof, step 124
+East End of Roof --> west --> West End of Roof, step 125
+West End of Roof --> down --> In the Chimney (west side one, stop 2), step 126
+In the Chimney (west side one, stop 2) --> down --> In the Chimney (west side one, stop 1), step 127
+In the Chimney (west side one, stop 1) --> down --> Fireplace, step 128
+Fireplace --> out --> Living Room, step 130
+Living Room --> north --> Dining Room, step 131
+Dining Room --> west --> Kitchen, step 132
+Kitchen --> down --> Celler, step 133
+Celler --> up --> Kitchen, step 146
+Kitchen --> east --> Dining Room, step 148
+Dining Room --> south --> Living Room, step 151
+Living Room --> east --> Foyer, step 154
+Foyer --> north --> Game Room, step 155
+Game Room --> west --> Dining Room, step 156
+Dining Room --> west --> Kitchen, step 157
+Kitchen --> down --> Celler, step 158
+Celler --> up --> Kitchen, step 160
+Kitchen --> east --> Dining Room, step 161
+Dining Room --> east --> Game Room, step 162
+Game Room --> south --> Foyer, step 163
+Foyer --> up --> Upstairs Hall, Middle, step 164
+Upstairs Hall, Middle --> in --> Closet, step 165
+Closet --> out --> Foyer, step 169
+Foyer --> north --> Game Room, step 170
+Game Room --> west --> Dining Room, step 171
+Dining Room --> west --> Kitchen, step 172
+Kitchen --> down --> Celler, step 173
+Celler --> up --> Kitchen, step 174
+Kitchen --> east --> Dining Room, step 175
+Dining Room --> east --> Game Room, step 176
+Game Room --> south --> Foyer, step 177
+Foyer --> north --> Game Room, step 183
+Game Room --> north --> Patio, step 184
+Patio --> north --> Garden, South, step 185
+Garden, South --> northwest --> Garden, West, step 186
+Garden, West --> northeast --> Garden, North, step 188
+Garden, North --> north --> Entrance to Hedge Maze, step 189
+Entrance to Hedge Maze --> north --> Hedge Maze (190), step 190
+Hedge Maze (190) --> west --> Hedge Maze (191), step 191
+Hedge Maze (191) --> north --> Hedge Maze (192), step 192
+Hedge Maze (192) --> west --> Hedge Maze (193), step 193
+Hedge Maze (193) --> north --> Hedge Maze (194), step 194
+Hedge Maze (194) --> west --> Hedge Maze (195), step 195
+Hedge Maze (195) --> south --> Hedge Maze (196), step 196
+Hedge Maze (196) --> west --> Hedge Maze (197), step 197
+Hedge Maze (197) --> west --> Hedge Maze (198), step 198
+Hedge Maze (198) --> north --> Hedge Maze (199), step 199
+Hedge Maze (199) --> west --> Hedge Maze (200), step 200
+Hedge Maze (200) --> south --> Hedge Maze (201), step 201
+Hedge Maze (201) --> east --> Hedge Maze (202), step 202
+Hedge Maze (202) --> south --> Hedge Maze (203), step 203
+Hedge Maze (203) --> east --> Hedge Maze (204), step 204
+Hedge Maze (204) --> north --> Hedge Maze (205), step 205
+Hedge Maze (205) --> east --> Hedge Maze (206), step 206
+Hedge Maze (206) --> south --> Hedge Maze (207), step 207
+Hedge Maze (207) --> west --> Hedge Maze (208), step 208
+Hedge Maze (208) --> north --> Hedge Maze (209), step 209
+Hedge Maze (209) --> west --> Hedge Maze (210), step 210
+Hedge Maze (210) --> south --> Hedge Maze (211), step 211
+Hedge Maze (211) --> west --> Hedge Maze (212), step 212
+Hedge Maze (212) --> north --> Hedge Maze (213), step 213
+Hedge Maze (213) --> west --> Hedge Maze (214), step 214
+Hedge Maze (214) --> south --> Hedge Maze (215), step 215
+Hedge Maze (215) --> west --> Hedge Maze (216), step 216
+Hedge Maze (216) --> north --> Hedge Maze (217), step 217
+Hedge Maze (217) --> east --> Hedge Maze (218), step 218
+Hedge Maze (218) --> north --> Hedge Maze (219), step 219
+Hedge Maze (219) --> east --> Hedge Maze (220), step 220
+Hedge Maze (220) --> north --> Hedge Maze (221), step 221
+Hedge Maze (221) --> east --> Hedge Maze (222), step 222
+Hedge Maze (222) --> east --> Hedge Maze (223), step 223
+Hedge Maze (223) --> north --> Hedge Maze (224), step 224
+Hedge Maze (224) --> east --> Hedge Maze (225), step 225
+Hedge Maze (225) --> south --> Hedge Maze (226), step 226
+Hedge Maze (226) --> east --> Hedge Maze (227), step 227
+Hedge Maze (227) --> east --> Hedge Maze (228), step 228
+Hedge Maze (228) --> south --> Hedge Maze (229), step 229
+Hedge Maze (229) --> east --> Hedge Maze (230), step 230
+Hedge Maze (230) --> north --> Hedge Maze (231), step 231
+Hedge Maze (231) --> east --> Hedge Maze (232), step 232
+Hedge Maze (232) --> north --> Hedge Maze (233), step 233
+Hedge Maze (233) --> east --> Hedge Maze (234), step 234
+Hedge Maze (234) --> south --> Hedge Maze (235), step 235
+Hedge Maze (235) --> south --> Hedge Maze (236), step 236
+Hedge Maze (236) --> south --> Hedge Maze (237), step 237
+Hedge Maze (237) --> west --> Hedge Maze (238), step 238
+Hedge Maze (238) --> west --> Hedge Maze (239), step 239
+Hedge Maze (239) --> south --> Hedge Maze (240), step 240
+Hedge Maze (240) --> east --> Hedge Maze (241), step 241
+Hedge Maze (241) --> north --> Hedge Maze (242), step 242
+Hedge Maze (242) --> west --> Hedge Maze (243), step 243
+Hedge Maze (243) --> south --> Hedge Maze (244), step 244
+Hedge Maze (244) --> north --> Hedge Maze (243), step 248
+Hedge Maze (243) --> east --> Hedge Maze (242), step 249
+Hedge Maze (242) --> south --> Hedge Maze (241), step 250
+Hedge Maze (241) --> west --> Hedge Maze (240), step 251
+Hedge Maze (240) --> north --> Hedge Maze (239), step 252
+Hedge Maze (239) --> east --> Hedge Maze (238), step 253
+Hedge Maze (238) --> east --> Hedge Maze (237), step 254
+Hedge Maze (237) --> north --> Hedge Maze (236), step 255
+Hedge Maze (236) --> north --> Hedge Maze (235), step 256
+Hedge Maze (235) --> north --> Hedge Maze (234), step 257
+Hedge Maze (234) --> west --> Hedge Maze (233), step 258
+Hedge Maze (233) --> south --> Hedge Maze (232), step 259
+Hedge Maze (232) --> west --> Hedge Maze (231), step 260
+Hedge Maze (231) --> south --> Hedge Maze (230), step 261
+Hedge Maze (230) --> west --> Hedge Maze (229), step 262
+Hedge Maze (229) --> north --> Hedge Maze (228), step 263
+Hedge Maze (228) --> west --> Hedge Maze (227), step 264
+Hedge Maze (227) --> west --> Hedge Maze (226), step 265
+Hedge Maze (226) --> north --> Hedge Maze (225), step 266
+Hedge Maze (225) --> west --> Hedge Maze (224), step 267
+Hedge Maze (224) --> south --> Hedge Maze (223), step 268
+Hedge Maze (223) --> west --> Hedge Maze (222), step 269
+Hedge Maze (222) --> west --> Hedge Maze (221), step 270
+Hedge Maze (221) --> south --> Hedge Maze (220), step 271
+Hedge Maze (220) --> west --> Hedge Maze (219), step 272
+Hedge Maze (219) --> south --> Hedge Maze (218), step 273
+Hedge Maze (218) --> west --> Hedge Maze (217), step 274
+Hedge Maze (217) --> south --> Hedge Maze (216), step 275
+Hedge Maze (216) --> east --> Hedge Maze (215), step 276
+Hedge Maze (215) --> north --> Hedge Maze (214), step 277
+Hedge Maze (214) --> east --> Hedge Maze (213), step 278
+Hedge Maze (213) --> south --> Hedge Maze (212), step 279
+Hedge Maze (212) --> east --> Hedge Maze (211), step 280
+Hedge Maze (211) --> north --> Hedge Maze (210), step 281
+Hedge Maze (210) --> east --> Hedge Maze (209), step 282
+Hedge Maze (209) --> south --> Hedge Maze (208), step 283
+Hedge Maze (208) --> east --> Hedge Maze (207), step 284
+Hedge Maze (207) --> north --> Hedge Maze (206), step 285
+Hedge Maze (206) --> west --> Hedge Maze (205), step 286
+Hedge Maze (205) --> south --> Hedge Maze (204), step 287
+Hedge Maze (204) --> west --> Hedge Maze (203), step 288
+Hedge Maze (203) --> north --> Hedge Maze (202), step 289
+Hedge Maze (202) --> west --> Hedge Maze (201), step 290
+Hedge Maze (201) --> north --> Hedge Maze (200), step 291
+Hedge Maze (200) --> east --> Hedge Maze (199), step 292
+Hedge Maze (199) --> south --> Hedge Maze (198), step 293
+Hedge Maze (198) --> east --> Hedge Maze (197), step 294
+Hedge Maze (197) --> east --> Hedge Maze (196), step 295
+Hedge Maze (196) --> north --> Hedge Maze (195), step 296
+Hedge Maze (195) --> east --> Hedge Maze (194), step 297
+Hedge Maze (194) --> south --> Hedge Maze (193), step 298
+Hedge Maze (193) --> east --> Hedge Maze (192), step 299
+Hedge Maze (192) --> south --> Hedge Maze (191), step 300
+Hedge Maze (191) --> east --> Hedge Maze (190), step 301
+Hedge Maze (190) --> south --> Entrance to Hedge Maze, step 302
+Entrance to Hedge Maze --> south --> Garden, North, step 303
+Garden, North --> north --> Entrance to Hedge Maze, step 304
+Entrance to Hedge Maze --> east --> Northeast Junction, step 305
+Northeast Junction --> north --> Cannon Emplacement, step 306
+Cannon Emplacement --> east --> Northeast Junction, step 315
+Northeast Junction --> east --> Top Landing, step 316
+Top Landing --> down --> Beach, step 319
+Beach --> south --> Bottom Landing, step 325
+Bottom Landing --> west --> Grotto, step 326
+Grotto --> dive --> Surface of Grotto Pool, step 327
+Surface of Grotto Pool --> down --> Grotto, Underwater, step 328
+Grotto, Underwater --> down --> Underwater Passage (mild current flowing east), step 329
+Underwater Passage (mild current flowing east) --> west --> Underwater Passage (current coming from above and flowing east), step 330
+Underwater Passage (current coming from above and flowing east) --> up --> Underwater, step 331
+Underwater --> up --> Surface of Pool, step 332
+Surface of Pool --> north --> Ledge, step 333
+Ledge --> north --> Tunnel, step 336
+Tunnel --> up --> Bomb Shelter, step 337
+Bomb Shelter --> enter right end of plank --> on the right end of the plank, step 340
+on the right end of the plank --> wait --> Cliff, step 341
+Cliff --> down --> Bomb Shelter, step 345
+Bomb Shelter --> up --> Cliff, step 355
+Cliff --> up --> Cannon Emplacement, step 357
+Cannon Emplacement --> east --> Northeast Junction, step 358
+Northeast Junction --> east --> Top Landing, step 359
+Top Landing --> west --> Northeast Junction, step 361
+Northeast Junction --> west --> Entrance to Hedge Maze, step 362
+Entrance to Hedge Maze --> south --> Garden, North, step 363
+Garden, North --> southeast --> Garden, East, step 366
+Garden, East --> southwest --> Garden, South, step 367
+Garden, South --> south --> Patio, step 368
+Patio --> south --> Game Room, step 369
+Game Room --> south --> Foyer, step 370
+Foyer --> in --> Closet, step 371
+Closet --> out --> Foyer, step 373
+Foyer --> up --> Upstairs Hall, Middle, step 374
+Upstairs Hall, Middle --> in --> Top of Closet, step 376
+Top of Closet --> out --> Attic, step 380
+Attic --> down --> Upstairs Hall, Middle, step 385
+Upstairs Hall, Middle --> in --> Closet, step 387
+Closet --> put peg in hole --> Prop Vault, step 388

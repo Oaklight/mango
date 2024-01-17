@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Jewel Room",
+    "dst_node": "Inside Gate",
+    "path_gt": [
+        {
+            "prev_node": "Jewel Room",
+            "node": "Tower",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Tower",
+            "node": "Pebbled Path",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Pebbled Path",
+            "node": "Inside Gate",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        }
+    ],
+    "save_path": "outputs/enchanter/results/"
+}

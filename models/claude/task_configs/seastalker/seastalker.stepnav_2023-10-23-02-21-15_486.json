@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "lab center",
+    "dst_node": "south part",
+    "path_gt": [
+        {
+            "prev_node": "lab center",
+            "node": "north part",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "north part",
+            "node": "east part",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "east part",
+            "node": "south part",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ],
+    "save_path": "outputs/seastalker/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Grove",
+    "dst_node": "Bog",
+    "path_gt": [
+        {
+            "prev_node": "Grove",
+            "node": "Dismal Swamp",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Meadow",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Bog",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Ice Room",
+    "dst_node": "Small Cavern",
+    "path_gt": [
+        {
+            "prev_node": "Ice Room",
+            "node": "Chilly Corridor",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "South Lake",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "West Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Intersection",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "Slimy Passageway",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Giant Cavern",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Small Cavern",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Foggy Room",
+    "dst_node": "Southern Shore",
+    "path_gt": [
+        {
+            "prev_node": "Foggy Room",
+            "node": "Lake Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Lake Shore",
+            "node": "On the Lake",
+            "action": "jump lake",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "On the Lake",
+            "node": "Southern Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        }
+    ]
+}

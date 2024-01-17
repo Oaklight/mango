@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Computer Center",
+    "dst_node": "Basalt Bowl",
+    "path_gt": [
+        {
+            "prev_node": "Computer Center",
+            "node": "Second Floor",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Terminal Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Terminal Room",
+            "node": "Place",
+            "action": "again",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Place",
+            "node": "Basalt Bowl",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

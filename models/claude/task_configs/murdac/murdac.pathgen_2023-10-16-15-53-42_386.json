@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "alley (north end)",
+    "dst_node": "vegetable garden",
+    "path_gt": [
+        {
+            "prev_node": "alley (north end)",
+            "node": "alley (north/south)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "alley (north/south)",
+            "node": "brick wall (destroyed at some point)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "brick wall (destroyed at some point)",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        }
+    ]
+}

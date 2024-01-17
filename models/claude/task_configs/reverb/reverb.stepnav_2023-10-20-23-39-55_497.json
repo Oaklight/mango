@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Hardware Department",
+    "dst_node": "Street, by Pizza Parlor",
+    "path_gt": [
+        {
+            "prev_node": "Hardware Department",
+            "node": "Clothing Department",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Clothing Department",
+            "node": "Street, by Department Store",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Street, by Department Store",
+            "node": "Street, by Pizza Parlor",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "East Side of the Church",
+    "dst_node": "Inner Chamber",
+    "path_gt": [
+        {
+            "prev_node": "East Side of the Church",
+            "node": "Front of the Church",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "Top of Oak Tree",
+            "action": "climb ladder",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Top of Oak Tree",
+            "node": "Belfry",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Belfry",
+            "node": "Steeple Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Steeple Chamber",
+            "node": "Inner Chamber",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ]
+}

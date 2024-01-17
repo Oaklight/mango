@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Round Room",
+    "dst_node": "Storage Tent",
+    "path_gt": [
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Center of Camp",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "Storage Tent",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Damp Corner",
+    "dst_node": "Bottom Of The Well",
+    "path_gt": [
+        {
+            "prev_node": "Damp Corner",
+            "node": "Storage Shed Door",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Storage Shed Door",
+            "node": "Abandoned Well",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Abandoned Well",
+            "node": "Bottom Of The Well",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ]
+}

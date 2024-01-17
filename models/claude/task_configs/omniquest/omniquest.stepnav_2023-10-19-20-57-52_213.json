@@ -1,0 +1,85 @@
+{
+    "task": "stepnav",
+    "src_node": "Endless Beach",
+    "dst_node": "Jeweled Room",
+    "path_gt": [
+        {
+            "prev_node": "Endless Beach",
+            "node": "Ocean",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Ocean",
+            "node": "Island Coast",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Island Coast",
+            "node": "Cylindrical Room",
+            "action": "push rock",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cylindrical Room",
+            "node": "Giant Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Slimy Passageway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "East Path",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "East Path",
+            "node": "South Lake",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "West Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Guardian Chamber",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "Jeweled Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

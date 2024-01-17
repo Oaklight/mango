@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Beside a Ruined Lighthouse",
+    "dst_node": "Swampy Ground",
+    "path_gt": [
+        {
+            "prev_node": "Beside a Ruined Lighthouse",
+            "node": "Pebbled Beach",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Pebbled Beach",
+            "node": "Lake in the Forest",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "South End of a Road",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "South End of a Road",
+            "node": "North End of a Road",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "North End of a Road",
+            "node": "Swampy Ground",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

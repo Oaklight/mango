@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+    "dst_node": "Main Hall",
+    "path_gt": [
+        {
+            "prev_node": "The Charlie Company Barracks (in the Pentarian Transporter)",
+            "node": "Entrance Hall",
+            "action": "city",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Entrance Hall",
+            "node": "Library",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Library",
+            "node": "Castle",
+            "action": "covert",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Castle",
+            "node": "Main Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

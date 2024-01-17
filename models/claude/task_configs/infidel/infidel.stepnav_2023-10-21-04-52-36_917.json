@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Outside Supply Tent",
+    "dst_node": "Chamber of Ra",
+    "path_gt": [
+        {
+            "prev_node": "Outside Supply Tent",
+            "node": "Outside Your Tent",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Northern Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Northern Path",
+            "node": "Desert (within sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Desert (within sight of encampment)",
+            "node": "Desert (out of sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Desert (out of sight of encampment)",
+            "node": "Chamber of Ra",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        }
+    ],
+    "save_path": "outputs/infidel/results/"
+}

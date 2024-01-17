@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Ocean Road (north end of north/south road)",
+    "dst_node": "Mariners' Trust",
+    "path_gt": [
+        {
+            "prev_node": "Ocean Road (north end of north/south road)",
+            "node": "Ocean Road (halfway of north/south road)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Ocean Road (halfway of north/south road)",
+            "node": "Ocean Road (south end of north/south road)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Ocean Road (south end of north/south road)",
+            "node": "Shore Road (east end of east/west road)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Shore Road (east end of east/west road)",
+            "node": "Mariners' Trust",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        }
+    ]
+}

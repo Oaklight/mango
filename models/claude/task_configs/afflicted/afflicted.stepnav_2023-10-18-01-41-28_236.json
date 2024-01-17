@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Lavatory",
+    "dst_node": "19th Street",
+    "path_gt": [
+        {
+            "prev_node": "Lavatory",
+            "node": "Bar",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Bar",
+            "node": "Dining Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "19th Street",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        }
+    ],
+    "save_path": "outputs/afflicted/results/"
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Fork in Path",
+    "dst_node": "Endless Beach",
+    "path_gt": [
+        {
+            "prev_node": "Fork in Path",
+            "node": "Small Path",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Small Path",
+            "node": "Canyon Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Endless Beach",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

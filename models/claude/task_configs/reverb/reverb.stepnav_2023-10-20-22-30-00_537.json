@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Street, Near Courthouse",
+    "dst_node": "Law Office",
+    "path_gt": [
+        {
+            "prev_node": "Street, Near Courthouse",
+            "node": "Downtown",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Downtown",
+            "node": "Office Building",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Office Building",
+            "node": "Office Building, Second Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Office Building, Second Floor",
+            "node": "Office Building, Third Floor",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Office Building, Third Floor",
+            "node": "Roof of Office Building",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Roof of Office Building",
+            "node": "Mayor's Office",
+            "action": "jump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        },
+        {
+            "prev_node": "Mayor's Office",
+            "node": "hangin' out",
+            "action": "jump out window",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "hangin' out",
+            "node": "Law Office",
+            "action": "jump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

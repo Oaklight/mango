@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Meadow Behind the Bungalow",
+    "dst_node": "Inside the Clock Tower",
+    "path_gt": [
+        {
+            "prev_node": "Meadow Behind the Bungalow",
+            "node": "Hilltop",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Hilltop",
+            "node": "Schoolyard",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Schoolyard",
+            "node": "Inside the School",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Inside the School",
+            "node": "Clock Tower Stairs",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Clock Tower Stairs",
+            "node": "Inside the Clock Tower",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        }
+    ],
+    "save_path": "outputs/loose/results/"
+}

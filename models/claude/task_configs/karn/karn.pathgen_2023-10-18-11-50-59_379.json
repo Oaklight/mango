@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Mountain Trail (up east, down southwest)",
+    "dst_node": "Rocky Trail (clearing to west)",
+    "path_gt": [
+        {
+            "prev_node": "Mountain Trail (up east, down southwest)",
+            "node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "node": "Rocky Clearing",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Rocky Clearing",
+            "node": "Rocky Trail (clearing to west)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        }
+    ]
+}

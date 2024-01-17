@@ -1,71 +1,365 @@
-Step Num,Location Before,Location After
-1,,
-2,Front Of The Office,The Main Carpark
-3,The Main Carpark,Corner Of the Carpark
-4,,
-5,,
-6,,
-7,,
-8,,
-9,,
-10,,
-11,Corner Of the Carpark,Corner Of the Carpark
-12,Corner Of the Carpark,The Main Carpark
-13,The Main Carpark,Front Of The Office
-14,Front Of The Office,East Of Office
-15,East Of Office,Damp Corner
-16,Damp Corner,Storage Shed Door
-17,Storage Shed Door,Storage Shed
-18,,
-19,,
-20,,
-21,,
-22,,
-23,Storage Shed,Storage Shed Door
-24,Storage Shed Door,Abandoned Well
-25,,
-26,,
-27,,
-28,Abandoned Well,Bottom Of The Well
-29,,
-30,,
-31,,
-32,Bottom Of The Well,Abandoned Well
-33,Abandoned Well,Storage Shed Door
-34,Storage Shed Door,Damp Corner
-35,Damp Corner,East Of Office
-36,,
-37,East Of Office,Some Bushes
-38,Some Bushes,Maintanence Stairwell (Top)
-39,Maintanence Stairwell (Top),Maintanence Stairwell (Bottom)
-40,Maintanence Stairwell (Bottom),Generator Room
-41,,
-42,,
-43,,
-44,Generator Room,Maintanence Stairwell (Bottom)
-45,Maintanence Stairwell (Bottom),Maintanence Stairwell (Top)
-46,Maintanence Stairwell (Top),Some Bushes
-47,Some Bushes,East Of Office
-48,East Of Office,Front Of The Office
-49,Front Of The Office,Main Entrance
-50,,
-51,,
-52,Main Entrance,Front Of The Office
-53,Front Of The Office,West Of Office
-54,West Of Office,Bike Shed
-55,Bike Shed,West Of Office
-56,West Of Office,Front Of The Office
-57,Front Of The Office,The Main Carpark
-58,The Main Carpark,The Delivery Bay Gateway
-59,,
-60,,
-61,,
-62,,
-63,,
-64,The Delivery Bay Gateway,Delivery Bay
-65,Delivery Bay,Storeroom
-66,,
-67,,
-68,Storeroom,"Long Corridor, West End"
-69,"Long Corridor, West End",North-South Corridoor
-70,North-South Corridoor,Vault Door
+Step Num,Location Before,Location After,taken_action
+1,,,x building
+2,Front Of The Office,The Main Carpark,south
+3,The Main Carpark,Corner Of the Carpark,southeast
+4,,,x car
+5,,,open car
+6,,,enter car
+7,,,x car
+8,,,smell car
+9,,,x gun
+10,,,take gun
+11,Corner Of the Carpark,Corner Of the Carpark,out
+12,Corner Of the Carpark,The Main Carpark,northwest
+13,The Main Carpark,Front Of The Office,north
+14,Front Of The Office,East Of Office,east
+15,East Of Office,Damp Corner,east
+16,Damp Corner,Storage Shed Door,south
+17,Storage Shed Door,Storage Shed,east
+18,,,x ladder
+19,,,x pots
+20,,,x wire
+21,,,x statue
+22,,,take all
+23,Storage Shed,Storage Shed Door,west
+24,Storage Shed Door,Abandoned Well,south
+25,,,x well
+26,,,x footprints
+27,,,x plants
+28,Abandoned Well,Bottom Of The Well,down
+29,,,x water
+30,,,x fuse
+31,,,take fuse
+32,Bottom Of The Well,Abandoned Well,up
+33,Abandoned Well,Storage Shed Door,north
+34,Storage Shed Door,Damp Corner,north
+35,Damp Corner,East Of Office,west
+36,,,x bushes
+37,East Of Office,Some Bushes,south
+38,Some Bushes,Maintanence Stairwell (Top),south
+39,Maintanence Stairwell (Top),Maintanence Stairwell (Bottom),down
+40,Maintanence Stairwell (Bottom),Generator Room,northeast
+41,,,x label
+42,,,x generator
+43,,,put fuse in generator
+44,Generator Room,Maintanence Stairwell (Bottom),southwest
+45,Maintanence Stairwell (Bottom),Maintanence Stairwell (Top),up
+46,Maintanence Stairwell (Top),Some Bushes,north
+47,Some Bushes,East Of Office,north
+48,East Of Office,Front Of The Office,west
+49,Front Of The Office,Main Entrance,north
+50,,,x door
+51,,,open door
+52,Main Entrance,Front Of The Office,south
+53,Front Of The Office,West Of Office,west
+54,West Of Office,Bike Shed,west
+55,Bike Shed,West Of Office,east
+56,West Of Office,Front Of The Office,east
+57,Front Of The Office,The Main Carpark,south
+58,The Main Carpark,The Delivery Bay Gateway,west
+59,,,x gate
+60,,,x panel
+61,,,x button
+62,,,x grill
+63,,,push button
+64,The Delivery Bay Gateway,Delivery Bay,west
+65,Delivery Bay,Storeroom,north
+66,,,x boxes
+67,,,x clingfilm
+68,Storeroom,"Long Corridor, West End",north
+69,"Long Corridor, West End",North-South Corridoor,north
+70,North-South Corridoor,Vault Door,north
+71,,,x keypad
+72,Vault Door,Cloakroom,east
+73,Cloakroom,Kitchen,north
+74,,,x cupboard
+75,,,x counter
+76,Kitchen,Meeting Area,east
+77,,,x cooler
+78,Meeting Area,Garden (North Side),south
+79,,,x trees
+80,,,x flowers
+81,,,x paper
+82,Garden (North Side),Up The Paper Tree,up
+83,Up The Paper Tree,Garden (North Side),down
+84,Garden (North Side),Garden (East Side),east
+85,Garden (East Side),Garden Shed,south
+86,,,x key
+87,,,take key
+88,Garden Shed,Garden (South Side),west
+89,,,x fountain
+90,,,x water
+91,Garden (South Side),Garden (North Side),north
+92,Garden (North Side),Meeting Area,north
+93,Meeting Area,Copier Room,east
+94,,,x copier
+95,,,x tray
+96,,,open tray
+97,,,take paper
+98,,,x paper
+99,Copier Room,Stationary Cupboard,east
+100,,,x shelves
+101,Stationary Cupboard,Top Of The Shelves,up
+102,,,x pen
+103,,,take pen
+104,Top Of The Shelves,Stationary Cupboard,down
+105,Stationary Cupboard,Office (doors leading north and south),south
+106,,,x desks
+107,,,x chairs
+108,,,x computers
+109,Office (doors leading north and south),"Office (doors leading north and west, another office to west)",south
+110,"Office (doors leading north and west, another office to west)",Office (doors leading east and south),west
+111,Office (doors leading east and south),"Long Corridor, Middle (door leading south)",south
+112,"Long Corridor, Middle (door leading south)","Long Corridor, East End",east
+113,"Long Corridor, East End",Security Control Room,south
+114,,,x cupboard
+115,,,unlock cupboard with key
+116,,,open cupboard
+117,,,x knife
+118,,,take knife
+119,Security Control Room,"Long Corridor, East End",north
+120,"Long Corridor, East End","Long Corridor, Middle (door leading south)",west
+121,"Long Corridor, Middle (door leading south)","Long Corridor, Middle (reception lobby to south, door to north leading outside)",west
+122,"Long Corridor, Middle (reception lobby to south, door to north leading outside)",Entrance Lobby,south
+123,,,x desk
+124,,,x cup
+125,,,take cup
+126,,,x coffee
+127,Entrance Lobby,"Long Corridor, Middle (reception lobby to south, door to north leading outside)",north
+128,"Long Corridor, Middle (reception lobby to south, door to north leading outside)","Long Corridor, Middle (stairwell to north)",west
+129,"Long Corridor, Middle (stairwell to north)","Long Corridor, West End",west
+130,"Long Corridor, West End",Storeroom,south
+131,,,cut clingfilm with knife
+132,,,x patch
+133,,,x knife
+134,Storeroom,"Long Corridor, West End",north
+135,"Long Corridor, West End","Long Corridor, Middle (stairwell to north)",east
+136,"Long Corridor, Middle (stairwell to north)",Stairwell (Ground Floor),north
+137,Stairwell (Ground Floor),Stairwell (First Floor),up
+138,Stairwell (First Floor),Landing,south
+139,,,x window
+140,,,x carpark
+141,,,shoot window
+142,Landing,Project Space,east
+143,,,x whiteboard
+144,,,x marker
+145,,,take marker
+146,,,write on whiteboard with marker
+147,Project Space,Crawl Space,south
+148,,,x toner
+149,,,take toner
+150,Crawl Space,Project Space,north
+151,Project Space,Hallway,east
+152,Hallway,Corner Office,east
+153,Corner Office,Waiting Room,north
+154,Waiting Room,Board Room,north
+155,,,x screen
+156,Board Room,Card Room,north
+157,,,x machine
+158,Card Room,Chocolate Room,west
+159,,,x bar
+160,,,take bar
+161,,,eat bar
+162,Chocolate Room,Office (doors leading east and west),west
+163,Office (doors leading east and west),Office (doors leading south and east),west
+164,Office (doors leading south and east),"Office (doors leading north and west, bathroom to west)",south
+165,"Office (doors leading north and west, bathroom to west)",Bathroom,west
+166,,,x cubicles
+167,Bathroom,Gangway,south
+168,,,drop all
+169,Gangway,Janitors Cupboard,south
+170,,,x dispenser
+171,,,push button
+172,,,x blank card
+173,Janitors Cupboard,Gangway,north
+174,,,take all
+175,Gangway,Bathroom,north
+176,Bathroom,"Office (doors leading north and west, bathroom to west)",east
+177,"Office (doors leading north and west, bathroom to west)",Office (doors leading south and east),north
+178,Office (doors leading south and east),Office (doors leading east and west),east
+179,Office (doors leading east and west),Chocolate Room,east
+180,Chocolate Room,Card Room,east
+181,Card Room,Board Room,south
+182,Board Room,Waiting Room,south
+183,Waiting Room,Printing Room,west
+184,,,x printer
+185,,,x slot
+186,,,open slot
+187,,,put toner in slot
+188,,,close slot
+189,,,x tray
+190,,,open tray
+191,,,put sheet in tray
+192,,,close tray
+193,,,x light
+194,,,x button
+195,,,push button
+196,,,x sheet
+197,Printing Room,Waiting Room,east
+198,Waiting Room,Corner Office,south
+199,Corner Office,Hallway,west
+200,Hallway,Project Space,west
+201,Project Space,Landing,west
+202,Landing,Stairwell (First Floor),north
+203,Stairwell (First Floor),Stairwell (Ground Floor),down
+204,Stairwell (Ground Floor),"Long Corridor, Middle (stairwell to north)",south
+205,"Long Corridor, Middle (stairwell to north)","Long Corridor, West End",west
+206,"Long Corridor, West End",North-South Corridoor,north
+207,North-South Corridoor,Vault Door,north
+208,,,x keypad
+209,,,push button 1
+210,,,push button 7
+211,,,push button 3
+212,,,push button 9
+213,,,push button enter
+214,Vault Door,The Base Of Wintermute's Tower,north
+215,The Base Of Wintermute's Tower,Tower Door,up
+216,Tower Door,Tower Lobby,west
+217,Tower Lobby,Tower Control Room,up
+218,,,x door
+219,,,x papers
+220,Tower Control Room,Tower Lobby,down
+221,Tower Lobby,Tower Door,east
+222,Tower Door,The Base Of Wintermute's Tower,down
+223,The Base Of Wintermute's Tower,Vault Door,south
+224,Vault Door,North-South Corridoor,south
+225,North-South Corridoor,"Long Corridor, West End",south
+226,"Long Corridor, West End","Long Corridor, Middle (stairwell to north)",east
+227,"Long Corridor, Middle (stairwell to north)",Stairwell (Ground Floor),north
+228,Stairwell (Ground Floor),Stairwell (First Floor),up
+229,Stairwell (First Floor),Stairwell (Second Floor),up
+230,Stairwell (Second Floor),Second Floor Lobby,south
+231,Second Floor Lobby,South West Corner,west
+232,,,x city
+233,South West Corner,Stock Room,north
+234,Stock Room,Waste Disposal,north
+235,Waste Disposal,Stock Room,south
+236,Stock Room,South West Corner,south
+237,South West Corner,Second Floor Lobby,east
+238,Second Floor Lobby,Games Room,east
+239,,,x arcade
+240,,,play arcade
+241,,,x pool
+242,,,play pool
+243,Games Room,Balcony,south
+244,Balcony,Games Room,north
+245,Games Room,Meeting Room,east
+246,Meeting Room,Ante Room,east
+247,Ante Room,Maintainance Bay,north
+248,,,x duct
+249,,,x pipe
+250,,,put patch on pipe
+251,Maintainance Bay,Eric Control Centre,north
+252,,,x console
+253,Eric Control Centre,Server Room A,north
+254,,,x servers
+255,Server Room A,Server Room B,west
+256,,,west
+257,,,x door
+258,,,open door
+259,Server Room B,Airlock,west
+260,,,x slot
+261,Airlock,Server Room B,east
+262,Server Room B,Server Room A,east
+263,Server Room A,Eric Control Centre,south
+264,Eric Control Centre,Maintainance Bay,south
+265,Maintainance Bay,Ante Room,south
+266,Ante Room,Meeting Room,west
+267,Meeting Room,Games Room,west
+268,Games Room,Second Floor Lobby,west
+269,Second Floor Lobby,Stairwell (Second Floor),north
+270,Stairwell (Second Floor),Stairwell (Roof),up
+271,Stairwell (Roof),Roof (West),west
+272,Roof (West),Roof (North),northeast
+273,Roof (North),Roof (East),southeast
+274,,,x drain
+275,,,pour coffee in drain
+276,,,x pass
+277,Roof (East),Roof (South),southwest
+278,Roof (South),Roof (West),northwest
+279,Roof (West),Stairwell (Roof),east
+280,Stairwell (Roof),Stairwell (Second Floor),down
+281,Stairwell (Second Floor),Second Floor Lobby,south
+282,Second Floor Lobby,Games Room,east
+283,Games Room,Meeting Room,east
+284,Meeting Room,Ante Room,east
+285,Ante Room,Maintainance Bay,north
+286,Maintainance Bay,Eric Control Centre,north
+287,Eric Control Centre,Server Room A,north
+288,Server Room A,Server Room B,west
+289,Server Room B,Airlock,west
+290,,,close outer door
+291,,,put pass in slot
+292,Airlock,Robot Chamber,west
+293,,,x robot
+294,,,x plaque
+295,Robot Chamber,Airlock,east
+296,,,put pass in slot
+297,,,open outer door
+298,Airlock,Server Room B,east
+299,Server Room B,Server Room A,east
+300,Server Room A,Eric Control Centre,south
+301,Eric Control Centre,Maintainance Bay,south
+302,Maintainance Bay,Ante Room,south
+303,Ante Room,Meeting Room,west
+304,Meeting Room,Games Room,west
+305,Games Room,Second Floor Lobby,west
+306,Second Floor Lobby,Stairwell (Second Floor),north
+307,Stairwell (Second Floor),Stairwell (First Floor),down
+308,Stairwell (First Floor),Landing,south
+309,Landing,Project Space,east
+310,Project Space,Hallway,east
+311,Hallway,Corner Office,east
+312,Corner Office,Waiting Room,north
+313,Waiting Room,Board Room,north
+314,Board Room,Card Room,north
+315,,,x machine
+316,,,punch cat_robot->desist(); on blank card
+317,Card Room,Board Room,south
+318,Board Room,Waiting Room,south
+319,Waiting Room,Corner Office,south
+320,Corner Office,Hallway,west
+321,Hallway,Project Space,west
+322,Project Space,Landing,west
+323,Landing,Stairwell (First Floor),north
+324,Stairwell (First Floor),Stairwell (Second Floor),up
+325,Stairwell (Second Floor),Second Floor Lobby,south
+326,Second Floor Lobby,Games Room,east
+327,Games Room,Meeting Room,east
+328,Meeting Room,Ante Room,east
+329,Ante Room,Maintainance Bay,north
+330,Maintainance Bay,Eric Control Centre,north
+331,Eric Control Centre,Server Room A,north
+332,Server Room A,Server Room B,west
+333,Server Room B,Airlock,west
+334,,,close outer
+335,,,put pass in slot
+336,Airlock,Robot Chamber,west
+337,,,put card in slot
+338,Robot Chamber,Store Room,south
+339,,,x keys
+340,,,take keys
+341,Store Room,Robot Chamber,north
+342,Robot Chamber,Airlock,east
+343,,,put pass in slot
+344,,,open outer
+345,Airlock,Server Room B,east
+346,Server Room B,Server Room A,east
+347,Server Room A,Eric Control Centre,south
+348,Eric Control Centre,Maintainance Bay,south
+349,Maintainance Bay,Ante Room,south
+350,Ante Room,Meeting Room,west
+351,Meeting Room,Games Room,west
+352,Games Room,Second Floor Lobby,west
+353,Second Floor Lobby,Stairwell (Second Floor),north
+354,Stairwell (Second Floor),Stairwell (First Floor),down
+355,Stairwell (First Floor),Stairwell (Ground Floor),down
+356,Stairwell (Ground Floor),"Long Corridor, Middle (stairwell to north)",south
+357,"Long Corridor, Middle (stairwell to north)","Long Corridor, West End",west
+358,"Long Corridor, West End",North-South Corridoor,north
+359,North-South Corridoor,Vault Door,north
+360,Vault Door,The Base Of Wintermute's Tower,north
+361,The Base Of Wintermute's Tower,Tower Door,up
+362,Tower Door,Tower Lobby,west
+363,Tower Lobby,Tower Control Room,up
+364,,,unlock door with keys

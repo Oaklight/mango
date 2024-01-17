@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "The Cafe",
+    "dst_node": "Room 4",
+    "path_gt": [
+        {
+            "prev_node": "The Cafe",
+            "node": "North-South Hall--Mid Way",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "North-South Hall--Mid Way",
+            "node": "Hall Near Room 2",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Hall Near Room 2",
+            "node": "North-South Hall--South End",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "North-South Hall--South End",
+            "node": "Room 4",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        }
+    ],
+    "save_path": "outputs/enter/results/"
+}

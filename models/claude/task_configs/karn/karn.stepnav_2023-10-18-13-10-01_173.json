@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Plain",
+    "dst_node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
+    "path_gt": [
+        {
+            "prev_node": "Plain",
+            "node": "Mountain Trail (blackened tree beside trail)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Mountain Trail (blackened tree beside trail)",
+            "node": "Mountain Trail (up west, down east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Mountain Trail (up west, down east)",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Mountain Trail (carved steps to the south)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Mountain Trail (carved steps to the south)",
+            "node": "Mountain Trail (up east, down southwest)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Mountain Trail (up east, down southwest)",
+            "node": "Mountain Trail (up northeast, clearing to southeast, stoney trail leads west)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/karn/results/"
+}

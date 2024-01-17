@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Monastery Gardens",
+    "dst_node": "Hallway (second floor, east)",
+    "path_gt": [
+        {
+            "prev_node": "Monastery Gardens",
+            "node": "Hallway (west end)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (second floor, west)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Hallway (second floor, west)",
+            "node": "Hallway (second floor, east)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        }
+    ],
+    "save_path": "outputs/spirit/results/"
+}

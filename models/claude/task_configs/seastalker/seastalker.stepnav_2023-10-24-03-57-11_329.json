@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "east part",
+    "dst_node": "SCIMITAR",
+    "path_gt": [
+        {
+            "prev_node": "east part",
+            "node": "south part",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "south part",
+            "node": "north walkway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "north walkway",
+            "node": "SCIMITAR",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        }
+    ],
+    "save_path": "outputs/seastalker/results/"
+}

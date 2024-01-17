@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Behind the Counter",
+    "dst_node": "Hardware Department",
+    "path_gt": [
+        {
+            "prev_node": "Behind the Counter",
+            "node": "Pizza Parlor",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Pizza Parlor",
+            "node": "Street, by Pizza Parlor",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Street, by Pizza Parlor",
+            "node": "Street, by Department Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Street, by Department Store",
+            "node": "Clothing Department",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Clothing Department",
+            "node": "Hardware Department",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

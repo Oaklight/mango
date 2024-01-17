@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Under the Bleachers",
+    "dst_node": "Midway Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Under the Bleachers",
+            "node": "In the Wings",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Connection",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Midway Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        }
+    ]
+}

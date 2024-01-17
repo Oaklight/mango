@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Game Room",
+    "dst_node": "Projection Booth",
+    "path_gt": [
+        {
+            "prev_node": "Game Room",
+            "node": "Short Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Short Hall",
+            "node": "Screening Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Screening Room",
+            "node": "Projection Booth",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ],
+    "save_path": "outputs/hollywood/results/"
+}

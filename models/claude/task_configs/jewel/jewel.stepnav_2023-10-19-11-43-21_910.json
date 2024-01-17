@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Top of the Shaft",
+    "dst_node": "Carved Steps",
+    "path_gt": [
+        {
+            "prev_node": "Top of the Shaft",
+            "node": "Middle Shaft",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Middle Shaft",
+            "node": "Shaft Base",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Shaft Base",
+            "node": "Gaseous Geyser",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Narrow Passage",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Narrow Passage",
+            "node": "Mineralized Corridor",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Mineralized Corridor",
+            "node": "Cool Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Cool Cavern",
+            "node": "East-West Passage",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "East-West Passage",
+            "node": "Carved Steps",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ],
+    "save_path": "outputs/jewel/results/"
+}

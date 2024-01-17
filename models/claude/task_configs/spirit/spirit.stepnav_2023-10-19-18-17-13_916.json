@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Hallway (basement)",
+    "dst_node": "Brother Toolbox's Quarters",
+    "path_gt": [
+        {
+            "prev_node": "Hallway (basement)",
+            "node": "Hallway (west end)",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (near your quarters)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Hallway (near your quarters)",
+            "node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "node": "Hallway (east end)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Hallway (east end)",
+            "node": "Brother Toolbox's Quarters",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ],
+    "save_path": "outputs/spirit/results/"
+}

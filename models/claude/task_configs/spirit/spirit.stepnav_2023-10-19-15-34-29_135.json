@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Brother Palemon's Quarters",
+    "dst_node": "Monastery Kitchen",
+    "path_gt": [
+        {
+            "prev_node": "Brother Palemon's Quarters",
+            "node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "node": "Hallway (near your quarters)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Hallway (near your quarters)",
+            "node": "Hallway (west end)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (basement)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Hallway (basement)",
+            "node": "Refectory",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Refectory",
+            "node": "Monastery Kitchen",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        }
+    ],
+    "save_path": "outputs/spirit/results/"
+}

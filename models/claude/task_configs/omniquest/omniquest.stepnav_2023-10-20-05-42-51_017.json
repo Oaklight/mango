@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Small Cavern",
+    "dst_node": "Jeweled Room",
+    "path_gt": [
+        {
+            "prev_node": "Small Cavern",
+            "node": "Twisting Passageway",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Guardian Chamber",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "Jeweled Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Outside the House",
+    "dst_node": "Riverwalk",
+    "path_gt": [
+        {
+            "prev_node": "Outside the House",
+            "node": "Scenic View",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Scenic View",
+            "node": "Chilly Avenue",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Chilly Avenue",
+            "node": "Riverwalk",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

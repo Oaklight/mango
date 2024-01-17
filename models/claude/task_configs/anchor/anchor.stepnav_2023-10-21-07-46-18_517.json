@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Dining Room",
+    "dst_node": "Bathroom",
+    "path_gt": [
+        {
+            "prev_node": "Dining Room",
+            "node": "Foyer",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Upstairs Landing",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Upstairs Landing",
+            "node": "Master Bedroom",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Master Bedroom",
+            "node": "Bathroom",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

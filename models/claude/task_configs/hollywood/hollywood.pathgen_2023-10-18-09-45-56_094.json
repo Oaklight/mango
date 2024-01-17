@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Game Room",
+    "dst_node": "Parlor",
+    "path_gt": [
+        {
+            "prev_node": "Game Room",
+            "node": "Foyer",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Hallway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Parlor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        }
+    ]
+}

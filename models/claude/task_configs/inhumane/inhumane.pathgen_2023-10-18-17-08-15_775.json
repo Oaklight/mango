@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Center of Camp",
+    "dst_node": "T-Intersection (east/west/south, east to Round Room)",
+    "path_gt": [
+        {
+            "prev_node": "Center of Camp",
+            "node": "Roboff's Tent",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Round Room",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        }
+    ]
+}

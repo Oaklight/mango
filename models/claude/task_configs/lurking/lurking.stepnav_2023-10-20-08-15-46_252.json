@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Infinite Corridor (middle of east/west corridor)",
+    "dst_node": "Aero Basement",
+    "path_gt": [
+        {
+            "prev_node": "Infinite Corridor (middle of east/west corridor)",
+            "node": "Infinite Corridor (west end of east/west corridor)",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Infinite Corridor (west end of east/west corridor)",
+            "node": "Aero Lobby",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Aero Lobby",
+            "node": "Stairway",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Stairway",
+            "node": "Aero Basement",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

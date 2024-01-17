@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Forest",
+    "dst_node": "Inside Stump",
+    "path_gt": [
+        {
+            "prev_node": "Forest",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Dismal Swamp",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Corridor Near Pit",
+    "dst_node": "Corridor at Doorway",
+    "path_gt": [
+        {
+            "prev_node": "Corridor Near Pit",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Round Room",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ]
+}

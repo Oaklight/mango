@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "remnants of a bonfire",
+    "dst_node": "alley (north end)",
+    "path_gt": [
+        {
+            "prev_node": "remnants of a bonfire",
+            "node": "flower garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "brick wall (destroyed at some point)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "brick wall (destroyed at some point)",
+            "node": "alley (north/south)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "alley (north/south)",
+            "node": "alley (north end)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

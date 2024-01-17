@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Narrow Passage",
+    "dst_node": "Fifth Layer Dropoff",
+    "path_gt": [
+        {
+            "prev_node": "Narrow Passage",
+            "node": "Mineralized Corridor",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Mineralized Corridor",
+            "node": "Tight Fit",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Tight Fit",
+            "node": "Fifth Layer Dropoff",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ]
+}

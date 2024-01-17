@@ -1,0 +1,105 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside (video store to east)",
+    "dst_node": "Hallway (sauna to west, Pool A to east)",
+    "path_gt": [
+        {
+            "prev_node": "Outside (video store to east)",
+            "node": "Video Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Video Store",
+            "node": "Outside (crossroads)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Outside (crossroads)",
+            "node": "Outside (north end, east only available)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Outside (north end, east only available)",
+            "node": "Music Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Music Store",
+            "node": "Back of Music Store",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Back of Music Store",
+            "node": "Alley",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Alley",
+            "node": "Police Station",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Police Station",
+            "node": "Outside (Holiday Inn to north, Doughnut King to east, the Wall to west)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Outside (Holiday Inn to north, Doughnut King to east, the Wall to west)",
+            "node": "Holiday Inn",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Holiday Inn",
+            "node": "Holiday Inn 15th Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Holiday Inn 15th Floor",
+            "node": "Hallway (15th Floor, Room 1-7)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Hallway (15th Floor, Room 1-7)",
+            "node": "Hallway (15th Floor, east/west intersection)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Hallway (15th Floor, east/west intersection)",
+            "node": "Hallway (15th Floor, Room 19-22)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Hallway (15th Floor, Room 19-22)",
+            "node": "Hallway (sauna to west, Pool A to east)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        }
+    ]
+}

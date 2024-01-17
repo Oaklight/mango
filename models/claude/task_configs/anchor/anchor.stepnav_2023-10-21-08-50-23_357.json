@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Whateley Bridge",
+    "dst_node": "Library",
+    "path_gt": [
+        {
+            "prev_node": "Whateley Bridge",
+            "node": "Narrow Street",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Junction",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Junction",
+            "node": "University Court",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "University Court",
+            "node": "Library",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

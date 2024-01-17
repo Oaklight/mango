@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Roof of Office Building",
+    "dst_node": "Law Office",
+    "path_gt": [
+        {
+            "prev_node": "Roof of Office Building",
+            "node": "Mayor's Office",
+            "action": "jump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        },
+        {
+            "prev_node": "Mayor's Office",
+            "node": "hangin' out",
+            "action": "jump out window",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "hangin' out",
+            "node": "Law Office",
+            "action": "jump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

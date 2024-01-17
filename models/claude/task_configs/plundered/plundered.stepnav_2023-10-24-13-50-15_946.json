@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Crew's Quarters",
+    "dst_node": "Captain's Quarters",
+    "path_gt": [
+        {
+            "prev_node": "Crew's Quarters",
+            "node": "Hold",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Aft Hold",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Aft Hold",
+            "node": "Landing",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Captain's Quarters",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

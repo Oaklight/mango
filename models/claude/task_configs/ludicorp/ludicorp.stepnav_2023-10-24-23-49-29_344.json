@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "Maintanence Stairwell (Bottom)",
+    "dst_node": "Long Corridor, West End",
+    "path_gt": [
+        {
+            "prev_node": "Maintanence Stairwell (Bottom)",
+            "node": "Maintanence Stairwell (Top)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Maintanence Stairwell (Top)",
+            "node": "Some Bushes",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Some Bushes",
+            "node": "East Of Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Front Of The Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "The Main Carpark",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "The Main Carpark",
+            "node": "The Delivery Bay Gateway",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "The Delivery Bay Gateway",
+            "node": "Delivery Bay",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Delivery Bay",
+            "node": "Storeroom",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Storeroom",
+            "node": "Long Corridor, West End",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

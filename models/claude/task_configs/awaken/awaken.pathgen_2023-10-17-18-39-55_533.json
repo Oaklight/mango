@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Pulpit",
+    "dst_node": "Top of Oak Tree",
+    "path_gt": [
+        {
+            "prev_node": "Pulpit",
+            "node": "Sanctuary",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Sanctuary",
+            "node": "Vestibule",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Church Porch",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Church Porch",
+            "node": "Front of the Church",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "Top of Oak Tree",
+            "action": "climb ladder",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        }
+    ]
+}

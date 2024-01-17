@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Western Road",
+    "dst_node": "Shady Brook",
+    "path_gt": [
+        {
+            "prev_node": "Western Road",
+            "node": "Eastern Fork",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Eastern Fork",
+            "node": "Trail Head",
+            "action": "northwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Trail Head",
+            "node": "Shady Brook",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ],
+    "save_path": "outputs/enchanter/results/"
+}

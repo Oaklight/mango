@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Root Chamber",
+    "dst_node": "Grove",
+    "path_gt": [
+        {
+            "prev_node": "Root Chamber",
+            "node": "Inside Stump",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Dismal Swamp",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Grove",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

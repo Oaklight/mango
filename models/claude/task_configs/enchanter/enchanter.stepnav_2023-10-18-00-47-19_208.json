@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Trail",
+    "dst_node": "Inside Shack",
+    "path_gt": [
+        {
+            "prev_node": "Trail",
+            "node": "Outside of Shack",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside of Shack",
+            "node": "Inside Shack",
+            "action": "enter shack",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/enchanter/results/"
+}

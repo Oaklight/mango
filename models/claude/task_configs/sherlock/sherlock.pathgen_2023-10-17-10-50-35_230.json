@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Madame Tussaud's",
+    "dst_node": "Houses Of Parliament",
+    "path_gt": [
+        {
+            "prev_node": "Madame Tussaud's",
+            "node": "Marylebone Road",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Marylebone Road",
+            "node": "Tottenham Court Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Tottenham Court Road",
+            "node": "cab",
+            "action": "enter cab",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "cab",
+            "node": "Whitehall",
+            "action": "get out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Whitehall",
+            "node": "Parliament Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Parliament Square",
+            "node": "Houses Of Parliament",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "North End of a Road",
+    "dst_node": "Rocky Mountains",
+    "path_gt": [
+        {
+            "prev_node": "North End of a Road",
+            "node": "Swampy Ground",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "Abandoned Inn",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Rocky Mountains",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 1
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

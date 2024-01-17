@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Small Clearing",
+    "dst_node": "Endless Beach",
+    "path_gt": [
+        {
+            "prev_node": "Small Clearing",
+            "node": "Canyon Path",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Canyon Path",
+            "node": "Canyon Entrance",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Endless Beach",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Moss-Filled Cave",
+    "dst_node": "Fifth Layer of the Earth's Crust",
+    "path_gt": [
+        {
+            "prev_node": "Moss-Filled Cave",
+            "node": "Carved Steps",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Carved Steps",
+            "node": "East-West Passage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "East-West Passage",
+            "node": "Cool Cavern",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Cool Cavern",
+            "node": "Fifth Layer of the Earth's Crust",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 3
+        }
+    ]
+}

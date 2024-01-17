@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Stone Bridge",
+    "dst_node": "Marble Hall",
+    "path_gt": [
+        {
+            "prev_node": "Stone Bridge",
+            "node": "Dragon Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Dragon Room",
+            "node": "End of Ledge",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "End of Ledge",
+            "node": "Ledge in Ravine",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Ledge in Ravine",
+            "node": "Deep Ford",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Deep Ford",
+            "node": "Marble Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        }
+    ]
+}

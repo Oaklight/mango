@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Ore Mines",
+    "dst_node": "Intersection",
+    "path_gt": [
+        {
+            "prev_node": "Ore Mines",
+            "node": "Mining Center",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Mining Center",
+            "node": "Extreme South Main Street",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Extreme South Main Street",
+            "node": "Intersection",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

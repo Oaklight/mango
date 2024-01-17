@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Door Near Blades",
+    "dst_node": "Center of Camp",
+    "path_gt": [
+        {
+            "prev_node": "Door Near Blades",
+            "node": "T Intersection",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Landing",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Bottom of Shaft",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Bottom of Shaft",
+            "node": "Exercise-Wheel Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Exercise-Wheel Room",
+            "node": "Round Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Center of Camp",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "T-Intersection (east/west/south, west to Round Room)",
+    "dst_node": "Storage Tent",
+    "path_gt": [
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Round Room",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Center of Camp",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "Storage Tent",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

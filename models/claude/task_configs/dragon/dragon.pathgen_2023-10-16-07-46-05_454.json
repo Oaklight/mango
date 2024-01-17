@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Rocky Mountains",
+    "dst_node": "Inn Cellar",
+    "path_gt": [
+        {
+            "prev_node": "Rocky Mountains",
+            "node": "Abandoned Inn",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Inside the Inn",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Inside the Inn",
+            "node": "Inn Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ]
+}

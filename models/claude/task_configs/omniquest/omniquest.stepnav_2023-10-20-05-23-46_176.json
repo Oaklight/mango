@@ -1,0 +1,85 @@
+{
+    "task": "stepnav",
+    "src_node": "Sandy Beach",
+    "dst_node": "Musty Corridor",
+    "path_gt": [
+        {
+            "prev_node": "Sandy Beach",
+            "node": "Island Coast",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Island Coast",
+            "node": "Cylindrical Room",
+            "action": "push rock",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cylindrical Room",
+            "node": "Giant Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Small Cavern",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Small Cavern",
+            "node": "Twisting Passageway",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Chilly Corridor",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "Rice Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Rice Room",
+            "node": "Musty Corridor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

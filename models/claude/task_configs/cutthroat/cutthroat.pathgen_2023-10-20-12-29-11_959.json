@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Back Alley (south to vacant lot)",
+    "dst_node": "Shore Road (east end of east/west road)",
+    "path_gt": [
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Ocean Road (halfway of north/south road)",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Ocean Road (halfway of north/south road)",
+            "node": "Ocean Road (south end of north/south road)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Ocean Road (south end of north/south road)",
+            "node": "Shore Road (east end of east/west road)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        }
+    ]
+}

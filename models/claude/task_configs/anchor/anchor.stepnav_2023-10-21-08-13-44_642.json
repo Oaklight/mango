@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Narrow Street",
+    "dst_node": "Riverwalk",
+    "path_gt": [
+        {
+            "prev_node": "Narrow Street",
+            "node": "Whateley Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Whateley Bridge",
+            "node": "Town Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Town Square",
+            "node": "Riverwalk",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

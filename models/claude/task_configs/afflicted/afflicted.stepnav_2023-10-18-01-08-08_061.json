@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Refrigerator",
+    "dst_node": "Dining Room",
+    "path_gt": [
+        {
+            "prev_node": "Refrigerator",
+            "node": "Winding Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Winding Hall",
+            "node": "Galley Kitchen",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Galley Kitchen",
+            "node": "Dining Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/afflicted/results/"
+}

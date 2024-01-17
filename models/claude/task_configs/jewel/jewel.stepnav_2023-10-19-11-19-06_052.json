@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Middle Shaft",
+    "dst_node": "Fifth Layer Dropoff",
+    "path_gt": [
+        {
+            "prev_node": "Middle Shaft",
+            "node": "Shaft Base",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Shaft Base",
+            "node": "Gaseous Geyser",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Narrow Passage",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Narrow Passage",
+            "node": "Mineralized Corridor",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Mineralized Corridor",
+            "node": "Tight Fit",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Tight Fit",
+            "node": "Fifth Layer Dropoff",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/jewel/results/"
+}

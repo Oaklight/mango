@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Pantry",
+    "dst_node": "Foyer",
+    "path_gt": [
+        {
+            "prev_node": "Pantry",
+            "node": "Kitchen",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Dining Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "Foyer",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

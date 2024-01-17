@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Parlour",
+    "dst_node": "Vestibule",
+    "path_gt": [
+        {
+            "prev_node": "Parlour",
+            "node": "entry hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "entry hall",
+            "node": "Vestibule",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/sherlock/results/"
+}

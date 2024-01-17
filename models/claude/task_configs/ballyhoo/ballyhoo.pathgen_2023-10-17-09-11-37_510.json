@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Clown Alley",
+    "dst_node": "Beside the Big Top",
+    "path_gt": [
+        {
+            "prev_node": "Clown Alley",
+            "node": "Camp, West",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Camp, West",
+            "node": "Inside Prop Tent",
+            "action": "go under wall",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Inside Prop Tent",
+            "node": "Back Yard",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Back Yard",
+            "node": "Beside the Big Top",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ]
+}

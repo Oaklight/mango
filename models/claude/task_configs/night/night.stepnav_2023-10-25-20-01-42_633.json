@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Stairwell (First Floor)",
+    "dst_node": "Computer Site",
+    "path_gt": [
+        {
+            "prev_node": "Stairwell (First Floor)",
+            "node": "Stairwell (Second Floor)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Stairwell (Second Floor)",
+            "node": "Stairwell (Third Floor)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Stairwell (Third Floor)",
+            "node": "Hall Outside Computer Site",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Hall Outside Computer Site",
+            "node": "Computer Site",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

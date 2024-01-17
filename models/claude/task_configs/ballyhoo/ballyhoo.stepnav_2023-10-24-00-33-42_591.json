@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Under the Bleachers",
+    "dst_node": "Inside Prop Tent",
+    "path_gt": [
+        {
+            "prev_node": "Under the Bleachers",
+            "node": "In the Wings",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Connection",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Beside the Big Top",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Beside the Big Top",
+            "node": "Back Yard",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Back Yard",
+            "node": "Inside Prop Tent",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

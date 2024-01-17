@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Grove",
+    "dst_node": "Root Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Grove",
+            "node": "Dismal Swamp",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Root Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        }
+    ]
+}

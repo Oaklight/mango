@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Rock Chamber",
+    "dst_node": "Corridor (near stairs)",
+    "path_gt": [
+        {
+            "prev_node": "Rock Chamber",
+            "node": "Corridor (east/west)",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Corridor (east/west)",
+            "node": "Chamber",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Chamber",
+            "node": "Corridor (north/south)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Corridor (north/south)",
+            "node": "Corridor (near stairs)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        }
+    ]
+}

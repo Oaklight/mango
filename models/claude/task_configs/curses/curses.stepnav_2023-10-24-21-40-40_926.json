@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Attic",
+    "dst_node": "Disused Observatory",
+    "path_gt": [
+        {
+            "prev_node": "Attic",
+            "node": "Old Furniture",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Old Furniture",
+            "node": "Over the East Wing",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Over the East Wing",
+            "node": "Disused Observatory",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        }
+    ],
+    "save_path": "outputs/curses/results/"
+}

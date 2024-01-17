@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Elevator",
+    "dst_node": "Place",
+    "path_gt": [
+        {
+            "prev_node": "Elevator",
+            "node": "Second Floor",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Terminal Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Terminal Room",
+            "node": "Place",
+            "action": "again",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

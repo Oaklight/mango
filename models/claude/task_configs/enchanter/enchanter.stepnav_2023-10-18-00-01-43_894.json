@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall of Mirrors Three",
+    "dst_node": "Library",
+    "path_gt": [
+        {
+            "prev_node": "Hall of Mirrors Three",
+            "node": "Hall of Mirrors Four",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Hall of Mirrors Four",
+            "node": "North Gate",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "North Gate",
+            "node": "Library",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/enchanter/results/"
+}

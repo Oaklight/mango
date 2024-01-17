@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Kemp's office",
+    "dst_node": "crawl space",
+    "path_gt": [
+        {
+            "prev_node": "Kemp's office",
+            "node": "corridor",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "corridor",
+            "node": "east part",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "east part",
+            "node": "south part",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "south part",
+            "node": "north walkway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "north walkway",
+            "node": "SCIMITAR",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "SCIMITAR",
+            "node": "crawl space",
+            "action": "enter access panel",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        }
+    ]
+}

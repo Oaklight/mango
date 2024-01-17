@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall Near Room 11",
+    "dst_node": "Room 7",
+    "path_gt": [
+        {
+            "prev_node": "Hall Near Room 11",
+            "node": "Hall Near Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Hall Near Office",
+            "node": "North-South Hall--North End",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "North-South Hall--North End",
+            "node": "Hall Near Room 7",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Hall Near Room 7",
+            "node": "Room 7",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ],
+    "save_path": "outputs/enter/results/"
+}

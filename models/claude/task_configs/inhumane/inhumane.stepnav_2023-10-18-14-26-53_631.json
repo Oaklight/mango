@@ -1,0 +1,85 @@
+{
+    "task": "stepnav",
+    "src_node": "Door Near Blades",
+    "dst_node": "Demon Room",
+    "path_gt": [
+        {
+            "prev_node": "Door Near Blades",
+            "node": "T Intersection",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Landing",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Bottom of Shaft",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Bottom of Shaft",
+            "node": "Exercise-Wheel Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Exercise-Wheel Room",
+            "node": "Round Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Corridor Near Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Corridor Near Pit",
+            "node": "On the Platform",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "On the Platform",
+            "node": "West of the Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West of the Pit",
+            "node": "Key Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Key Room",
+            "node": "Demon Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Old Winery",
+    "dst_node": "Dark Room",
+    "path_gt": [
+        {
+            "prev_node": "Old Winery",
+            "node": "Attic",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Attic",
+            "node": "Old Furniture",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Old Furniture",
+            "node": "Over the East Wing",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Over the East Wing",
+            "node": "Dark Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        }
+    ],
+    "save_path": "outputs/curses/results/"
+}

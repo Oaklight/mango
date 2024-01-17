@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Guild Hall",
+    "dst_node": "Hall of Stone",
+    "path_gt": [
+        {
+            "prev_node": "Guild Hall",
+            "node": "Belwit Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Belwit Square",
+            "node": "Packed Earth",
+            "action": "blorple 1",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Packed Earth",
+            "node": "Hall of Stone",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        }
+    ]
+}

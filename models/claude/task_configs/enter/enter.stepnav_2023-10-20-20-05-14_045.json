@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall Near Office",
+    "dst_node": "The Enterprise Closet",
+    "path_gt": [
+        {
+            "prev_node": "Hall Near Office",
+            "node": "North-South Hall--North End",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "North-South Hall--North End",
+            "node": "Hall Near Room 7",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Hall Near Room 7",
+            "node": "North-South Hall--Mid Way",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "North-South Hall--Mid Way",
+            "node": "The Cafe",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "The Cafe",
+            "node": "The Enterprise Closet",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ],
+    "save_path": "outputs/enter/results/"
+}

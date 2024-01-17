@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Misty Cavern",
+    "dst_node": "In Soft Room",
+    "path_gt": [
+        {
+            "prev_node": "Misty Cavern",
+            "node": "Oriental Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Oriental Room",
+            "node": "In Swiss Cheese Room",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "In Swiss Cheese Room",
+            "node": "In Soft Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        }
+    ],
+    "save_path": "outputs/advent/results/"
+}

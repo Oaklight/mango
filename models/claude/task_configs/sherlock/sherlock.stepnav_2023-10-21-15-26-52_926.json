@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "cab",
+    "dst_node": "Houses Of Parliament",
+    "path_gt": [
+        {
+            "prev_node": "cab",
+            "node": "Whitehall",
+            "action": "get out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Whitehall",
+            "node": "Parliament Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Parliament Square",
+            "node": "Houses Of Parliament",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ],
+    "save_path": "outputs/sherlock/results/"
+}

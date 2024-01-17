@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Public Square",
+    "dst_node": "Corridor (near stairs)",
+    "path_gt": [
+        {
+            "prev_node": "Public Square",
+            "node": "Road (east/west)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Road (east/west)",
+            "node": "Crossroads",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Crossroads",
+            "node": "Dead End",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Dead End",
+            "node": "Stairs",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Stairs",
+            "node": "Corridor (near stairs)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ]
+}

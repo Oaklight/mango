@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Maze of Twisty Passages (stop 3)",
+    "dst_node": "Hall (3rd floor, middle of north/south hall)",
+    "path_gt": [
+        {
+            "prev_node": "Maze of Twisty Passages (stop 3)",
+            "node": "Maze of Twisty Passages (stop 2)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 2)",
+            "node": "Maze of Twisty Passages (stop 1)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 1)",
+            "node": "Hall (2nd floor, middle of north/south hall)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Hall (2nd floor, middle of north/south hall)",
+            "node": "Outside Physics Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Outside Physics Office",
+            "node": "Stairwell (Second Floor)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Stairwell (Second Floor)",
+            "node": "Stairwell (Third Floor)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Stairwell (Third Floor)",
+            "node": "Hall Outside Computer Site",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Hall Outside Computer Site",
+            "node": "Hall (3rd floor, middle of north/south hall)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

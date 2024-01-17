@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Forest Pathway",
+    "dst_node": "North End of a Road",
+    "path_gt": [
+        {
+            "prev_node": "Forest Pathway",
+            "node": "Tree Stump",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Tree Stump",
+            "node": "Lake in the Forest",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "South End of a Road",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "South End of a Road",
+            "node": "North End of a Road",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

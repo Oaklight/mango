@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Kitchen",
+    "dst_node": "Storage",
+    "path_gt": [
+        {
+            "prev_node": "Kitchen",
+            "node": "Pantry",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Pantry",
+            "node": "Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Cellar",
+            "node": "Storage",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ]
+}

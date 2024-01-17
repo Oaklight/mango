@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Castle Entrance",
+    "dst_node": "Dining Room",
+    "path_gt": [
+        {
+            "prev_node": "Castle Entrance",
+            "node": "Castle",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Castle",
+            "node": "Main Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Spiral Stairway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Dining Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Vacant Lot",
+    "dst_node": "The Shanty",
+    "path_gt": [
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Wharf Road (north to Outfitters International)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International)",
+            "node": "Wharf Road (east end of east/west road)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Wharf Road (east end of east/west road)",
+            "node": "The Shanty",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

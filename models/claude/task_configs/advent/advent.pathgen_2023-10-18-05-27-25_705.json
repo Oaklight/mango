@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "End Of Road",
+    "dst_node": "Hall of the Mountain King",
+    "path_gt": [
+        {
+            "prev_node": "End Of Road",
+            "node": "Inside Building",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Inside Building",
+            "node": "At \"Y2\"",
+            "action": "plugh",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "At \"Y2\"",
+            "node": "Low N/S Passage",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Low N/S Passage",
+            "node": "Hall of the Mountain King",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ]
+}

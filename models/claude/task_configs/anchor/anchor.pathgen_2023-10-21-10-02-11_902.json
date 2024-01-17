@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Whateley Bridge",
+    "dst_node": "File Room",
+    "path_gt": [
+        {
+            "prev_node": "Whateley Bridge",
+            "node": "Narrow Street",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Outside the Real Estate Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Outside the Real Estate Office",
+            "node": "Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Office",
+            "node": "File Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        }
+    ]
+}

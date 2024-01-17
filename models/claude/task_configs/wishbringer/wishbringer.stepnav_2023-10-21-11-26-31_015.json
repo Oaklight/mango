@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Bridge",
+    "dst_node": "Lake Edge",
+    "path_gt": [
+        {
+            "prev_node": "Bridge",
+            "node": "South of Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "South of Bridge",
+            "node": "River Outlet",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "River Outlet",
+            "node": "Lake Edge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        }
+    ],
+    "save_path": "outputs/wishbringer/results/"
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "entry hall",
+    "dst_node": "Holmes's Bedroom",
+    "path_gt": [
+        {
+            "prev_node": "entry hall",
+            "node": "Vestibule",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Holmes's Study",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Holmes's Study",
+            "node": "Holmes's Bedroom",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ]
+}

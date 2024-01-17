@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Captain's Quarters",
+    "dst_node": "Lawn",
+    "path_gt": [
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "the ledge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "the ledge",
+            "node": "On the Ladder",
+            "action": "climb rope",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "On the Ladder",
+            "node": "poop deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "poop deck",
+            "node": "Quarterdeck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "cask",
+            "action": "sit in cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "cask",
+            "node": "Shallows",
+            "action": "get out of cask",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Shallows",
+            "node": "Beach",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Beach",
+            "node": "Lawn",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

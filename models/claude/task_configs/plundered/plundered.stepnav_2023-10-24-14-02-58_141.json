@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Forecastle",
+    "dst_node": "On the Ladder",
+    "path_gt": [
+        {
+            "prev_node": "Forecastle",
+            "node": "Main Deck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Quarterdeck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Quarterdeck",
+            "node": "poop deck",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "poop deck",
+            "node": "On the Ladder",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 44
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

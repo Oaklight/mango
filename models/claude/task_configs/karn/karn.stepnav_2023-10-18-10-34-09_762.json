@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Lakeside",
+    "dst_node": "Bottom of Cliff",
+    "path_gt": [
+        {
+            "prev_node": "Lakeside",
+            "node": "Ledge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Ledge",
+            "node": "On Top of the Saucer",
+            "action": "climb scarf",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "On Top of the Saucer",
+            "node": "Plain",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Plain",
+            "node": "Mountain Trail (blackened tree beside trail)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Mountain Trail (blackened tree beside trail)",
+            "node": "Mountain Trail (up west, down east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Mountain Trail (up west, down east)",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Narrow Cleft",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Narrow Cleft",
+            "node": "Bottom of Cliff",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/karn/results/"
+}
