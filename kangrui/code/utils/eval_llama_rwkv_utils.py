@@ -398,12 +398,25 @@ def get_valid_task(file,G,all2all,all_pairs,eval_difficulty='strict',task_type='
 
 def get_llama_rwkv_valid_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='llama',eval_difficulty='strict'):
 
-    assert model_name in ["llama","llama_anno","rwkv","rwkv_anno"]
+    assert "llama" in model_name or "rwkv" in model_name
+    assert task_type in ['pathgen','stepnav']
+    if "llama" in model_name:
+        if "anno" in model_name:
+            model_path_name="llama_anno"
+        else:
+            model_path_name="llama"
+    elif "rwkv" in model_name:
+        if "anno" in model_name:
+            model_path_name="rwkv_anno"
+        else:
+           model_path_name="rwkv"
+    else:
+        print(f"model name error:{model_name}")
     rst=set()
     if task_type=='pathgen':
-        src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_name}")
+        src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_path_name}")
     else:
-        src_dir=osp.join(result_dir,game_name,'results',f"step_navi_{model_name}")
+        src_dir=osp.join(result_dir,game_name,'results',f"step_navi_{model_path_name}")
 
     
     file_list=[]
@@ -421,11 +434,24 @@ def get_llama_rwkv_valid_batch(game_name,result_dir,G,all2all,all_pairs,task_typ
     return rst
 
 def eval_llama_rwkv_batch(game_name,result_dir,G,all2all,all_pairs,task_type='pathgen',model_name='llama',eval_difficulty='strict',eval_set=None):
-    assert model_name in ["llama","llama_anno","rwkv","rwkv_anno"]
-    if task_type=='pathgen':
-        src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_name}")
+    assert "llama" in model_name or "rwkv" in model_name
+    assert task_type in ['pathgen','stepnav']
+    if "llama" in model_name:
+        if "anno" in model_name:
+            model_path_name="llama_anno"
+        else:
+            model_path_name="llama"
+    elif "rwkv" in model_name:
+        if "anno" in model_name:
+            model_path_name="rwkv_anno"
+        else:
+           model_path_name="rwkv"
     else:
-        src_dir=osp.join(result_dir,game_name,'results',f"step_navi_{model_name}")
+        print(f"model name error:{model_name}")
+    if task_type=='pathgen':
+        src_dir=osp.join(result_dir,game_name,'results',f"path_gen_{model_path_name}")
+    else:
+        src_dir=osp.join(result_dir,game_name,'results',f"step_navi_{model_path_name}")
     file_list=[]
     for file in os.listdir(src_dir):
         file_list.append(osp.join(src_dir,file))
