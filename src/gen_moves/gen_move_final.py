@@ -298,7 +298,7 @@ if __name__ == "__main__":
         if len(anno2code[anno]) > 1:
             for code in anno2code[anno]:
                 print(
-                    f"Warning: human anno [{anno}] map to the same machine code [{code}]"
+                    f"Warning: human anno [{anno}] map to different machine code [{code}]"
                 )
 
     # write to json file
