@@ -14,8 +14,6 @@ def get_dict(lines, cutoff=None):
     human: west of house --> north --> north of house, step 1
     matching lines must have the same step number
     """
-    if cutoff == -1:
-        cutoff = len(lines)
     d = {}
     for line in lines:
         line = line.strip()
@@ -181,6 +179,9 @@ def load_both_maps(args):
     with open(args.human_anno, "r") as f:
         human_lines = f.readlines()
 
+    if args.max_step == -1:
+        _, step_str = human_lines[-1].split(", step ")
+        args.max_step = int(step_str)
     # create a dict of machine/human line number to {src, dst, action}
     machine_dict = get_dict(machine_lines, cutoff=args.max_step)
     human_dict = get_dict(human_lines, cutoff=args.max_step)
