@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Anteroom",
+    "dst_node": "Root Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Anteroom",
+            "node": "Cavern",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Cavern",
+            "node": "Hall",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Hole",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Hole",
+            "node": "Root Chamber",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        }
+    ]
+}

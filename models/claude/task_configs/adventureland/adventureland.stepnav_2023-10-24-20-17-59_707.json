@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "Forest",
+    "dst_node": "Maze (exit North, South, East, Down)",
+    "path_gt": [
+        {
+            "prev_node": "Forest",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Dismal Swamp",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Root Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Root Chamber",
+            "node": "Hole",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Hole",
+            "node": "Hall",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Cavern",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Cavern",
+            "node": "Maze (exit North, South, East, Down)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

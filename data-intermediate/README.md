@@ -4,6 +4,153 @@
 
 有五个游戏被标为红色，这些游戏的jericho engine在特定步骤会出现问题，导致无法正常运行。所以请暂时不要标注这些游戏，等方案讨论确定之后再开始。
 
+# ============== 2024.01.06 更新 ==============
+
+分配重新调整过了，https://docs.google.com/spreadsheets/d/1NRHMsjMrTWFl8vc14YGEd2rQ6MiExCjYCwwRMeJGs14/edit#gid=0
+每个人的总游戏量是差不多的
+
+这次我们focus在标注今天讨论的几种遗留问题上：
+
+### Chain of Actions
+
+- 比如下面这个例子：
+planetfall
+```
+    ===========
+    ==>STEP NUM: 109
+    ==>ACT: southwest
+    ==>OBSERVATION: Tower Core
+
+    ===========
+    ==>STEP NUM: 110
+    ==>ACT: north
+    ==>OBSERVATION: Upper Elevator
+
+    ===========
+    ==>STEP NUM: 111
+    ==>ACT: press down button
+    ==>OBSERVATION: The elevator door slides shut. After a moment, you feel a sensation of vertical movement.
+
+    ===========
+    ==>STEP NUM: 112
+    ==>ACT: wait
+    ==>OBSERVATION: Time passes...
+
+    ===========
+    ==>STEP NUM: 113
+    ==>ACT: wait
+    ==>OBSERVATION: Time passes...
+    The elevator door slides open.
+
+    ===========
+    ==>STEP NUM: 114
+    ==>ACT: south
+    ==>OBSERVATION: Elevator Lobby
+```
+
+标注为：
+
+| step num | location before | location after |
+| --- | --- | --- |
+| 109 | Common Room | Tower Core |
+| 110 | Tower Core | Upper Elevator |
+| 111 | | |
+| 112 | | |
+| 113 | | |
+| 114 | Upper Elevator | Elevator Lobby |
+
+- 对于car, cab, boat, ship, handcar, etc. 一类交通工具，如有主动enter, exit这一类动作，也做上述类似处理
+
+允许同一个地点，通过同一个动作到达不同位置，比如这里的Upper Elevator --> south --> Elevator Lobby/Tower Core。
+
+通常是lift, elevator, 或者ship, car, boat这一类的vehicle。
+
+如果已经发生添加，会在检查程序中体现为，conflict或human only。请revert back
+
+### answerable step
+- zork 1例子
+```
+===========
+==>STEP NUM: 14
+==>ACT: east
+==>OBSERVATION: Kitchen
+A bottle is sitting on the table.
+The glass bottle contains:
+  A quantity of water
+There is a brown sack here.
+The brown sack contains:
+  A lunch
+
+===========
+==>STEP NUM: 15
+==>ACT: up
+==>OBSERVATION: You have moved into a dark place.
+It is pitch black. You are likely to be eaten by a grue.
+
+===========
+==>STEP NUM: 16
+==>ACT: light lamp
+==>OBSERVATION: The brass lantern is now on.
+
+Attic
+This is the attic. The only exit is a stairway leading down.
+A large coil of rope is lying in the corner.
+On a table is a nasty-looking knife.
+```
+
+| step num | location before | location after | Answerable |
+| --- | --- | --- | --- |
+| 14 |  | Kitchen | |
+| 15 | Kitchen | Attic | 16 |
+| 16 | | | |
+
+添加一栏“answerable”信息。在上述例子里，step 15填写实际地点，但是由于Attic的位置是step 16才知道，于是answerable填16。其他普通情况默认可以空着。
+
+### 同地点多名称
+- lostpig例子 
+```
+===========
+==>STEP NUM: 51
+==>ACT: east
+==>OBSERVATION: Closet
+It dark. Grunk see lots of shadow. Grunk see doorway to east and west, too. But mostly shadow.
+
+Chhhkkkrrcht! What that strange noise?
+
+===========
+==>STEP NUM: 52
+==>ACT: examine shadow
+==>OBSERVATION: Shadow just dark, but in lots of different shape and size.
+
+Shkkrnnnnk!
+
+===========
+...
+===========
+==>STEP NUM: 61
+==>ACT: look
+==>OBSERVATION: Gnome Room
+This look like room for little person. It have bed that too little for Grunk. It have trunk that too little for Grunk. It have desk that too little for Grunk. Desk have stool that too little for Grunk. Room have doorway to east and west too, but them not so little. That good, because if doorway too little for Grunk, not know how Grunk get back out of room.
+
+Gnome sitting on stool looking at Grunk.
+
+On top of shelf there ball (that make light).
+
+Gnome open up desk drawer and take out strange helmet. Him take out little box, too. Then him put them both on desk.
+
+===========
+```
+按照出现最多的次数的内容标注，closet改为gnome room，answerable为61。
+
+| step num | location before | location after | Answerable |
+| --- | --- | --- | --- |
+| 51 | Table Room | Gnome Room | 61 |
+| 52 |  |  |  |
+| ... |  |  |  |
+| 61 |  |  |  |
+
+
+# ============== old content below ==============
 
 ## 安装环境
 
@@ -36,11 +183,13 @@ unzip master.zip
 
 ```bash
 # 生成machine code
-(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90
+(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90 -a
 
 # 转换并校验human label
-(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90
+(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90 -a
 ```
+
+请注意，新加入的“-a”参数，会强制使用仓库里缓存的walkthrough actions，以保证不同jericho版本变化时，action sequence不会改变。请默认使用这个参数。
 
 
 ## 以night为例

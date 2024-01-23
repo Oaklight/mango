@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Quarry",
+    "dst_node": "Shaft Base",
+    "path_gt": [
+        {
+            "prev_node": "Quarry",
+            "node": "Gaseous Geyser",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        },
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Shaft Base",
+            "action": "climb porous wall",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        }
+    ],
+    "save_path": "outputs/jewel/results/"
+}

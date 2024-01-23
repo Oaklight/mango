@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "East Path",
+    "dst_node": "Jeweled Room",
+    "path_gt": [
+        {
+            "prev_node": "East Path",
+            "node": "South Lake",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "West Path",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Guardian Chamber",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "Jeweled Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

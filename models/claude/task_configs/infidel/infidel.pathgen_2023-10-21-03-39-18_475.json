@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Supply Tent",
+    "dst_node": "Fire Pit",
+    "path_gt": [
+        {
+            "prev_node": "Supply Tent",
+            "node": "Outside Supply Tent",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Outside Supply Tent",
+            "node": "Outside Work Tent",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside Work Tent",
+            "node": "Fire Pit",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ]
+}

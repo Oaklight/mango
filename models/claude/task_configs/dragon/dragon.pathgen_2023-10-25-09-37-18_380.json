@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Rocky Mountains",
+    "dst_node": "Cottage",
+    "path_gt": [
+        {
+            "prev_node": "Rocky Mountains",
+            "node": "Abandoned Inn",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Swampy Ground",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "Cave Entrance",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Cave Entrance",
+            "node": "Cottage",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Near White Wagon",
+    "dst_node": "Back Yard",
+    "path_gt": [
+        {
+            "prev_node": "Near White Wagon",
+            "node": "Connection",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Beside the Big Top",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Beside the Big Top",
+            "node": "Back Yard",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Narrow Tunnel",
+    "dst_node": "Formal Garden",
+    "path_gt": [
+        {
+            "prev_node": "Narrow Tunnel",
+            "node": "Foot Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Foot Bridge",
+            "node": "Great Cavern",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Great Cavern",
+            "node": "Dark Tunnel",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Dark Tunnel",
+            "node": "North End of Garden",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "North End of Garden",
+            "node": "Formal Garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        }
+    ]
+}

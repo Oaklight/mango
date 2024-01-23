@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Forest",
+    "dst_node": "Tree Top",
+    "path_gt": [
+        {
+            "prev_node": "Forest",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Dismal Swamp",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Tree Top",
+            "action": "climb tree",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

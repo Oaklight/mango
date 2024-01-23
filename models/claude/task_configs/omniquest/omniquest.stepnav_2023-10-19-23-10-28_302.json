@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Small Cavern",
+    "dst_node": "East Path",
+    "path_gt": [
+        {
+            "prev_node": "Small Cavern",
+            "node": "Twisting Passageway",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "East Path",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

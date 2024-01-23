@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Deck Nine",
+    "dst_node": "Balcony",
+    "path_gt": [
+        {
+            "prev_node": "Deck Nine",
+            "node": "Escape Pod",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Escape Pod",
+            "node": "Underwater",
+            "action": "out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Underwater",
+            "node": "Crag",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Crag",
+            "node": "Balcony",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        }
+    ]
+}

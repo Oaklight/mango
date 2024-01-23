@@ -9,7 +9,7 @@ import time
 import datetime
 from tqdm import tqdm
 
-sys.path.append('/remote-home/pli/llama2')
+sys.path.append('/home-nfs/pengli/workspace/projects/llama')
 from llama import Llama
 from typing import Optional
 from utils import read_json, read_txt, cutoff_walkthrough, process, check_path_exist, save_json
@@ -44,7 +44,7 @@ def main(
 
     for game_name in game_name_list[start_game_idx:end_game_idx]:
         print ("processing game {} ...".format(game_name))
-
+        
         # action_space
         action_space_file = '{}/{}/{}.actions.json'.format(data_folder, game_name, game_name)
         action_space_list = read_json(action_space_file)
@@ -83,7 +83,7 @@ def main(
             action_list = [step['action'] for step in path_gt]
             sample_id = traj['id']
             question_step_navi = """!!! Starting from location '{}', perform a list of action {}, where are you now?\nDescribe the trajectory in a python list of python dictionary with keys 'location_before', 'action' and 'location_after'.\n{}\n{}\n""".format(src_node, action_list, action_space_prompt, place_name_prompt)
-            question_step_navi += "\nAnswer: [{{'location_before': '{}', 'action': '{}', 'location_after': ".format(src_node, action_list[0])
+            # question_step_navi += "\nAnswer: [{{'location_before': '{}', 'action': '{}', 'location_after': ".format(src_node, action_list[0])
         
             prefix_step_navi = ''.join((prefix_walkthrough, question_step_navi))
 

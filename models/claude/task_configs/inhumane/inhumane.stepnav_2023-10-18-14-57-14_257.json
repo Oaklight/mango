@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Glass Hall",
+    "dst_node": "Door Near Blades",
+    "path_gt": [
+        {
+            "prev_node": "Glass Hall",
+            "node": "End of glass hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "End of glass hall",
+            "node": "Round Room",
+            "action": "take necklace",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Landing",
+            "node": "T Intersection",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Door Near Blades",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

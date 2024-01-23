@@ -1,0 +1,77 @@
+{
+    "task": "pathgen",
+    "src_node": "Officer's Room",
+    "dst_node": "Armoury",
+    "path_gt": [
+        {
+            "prev_node": "Officer's Room",
+            "node": "Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Office",
+            "node": "Hallway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Lift(up button and a door to north)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Lift(up button and a door to north)",
+            "node": "Lift(down button and a door to south)",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Lift(down button and a door to south)",
+            "node": "Hall",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Corridor(east to old cell and north to hall)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Corridor(east to old cell and north to hall)",
+            "node": "Corridor(east old cell and stretches further west)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Corridor(east old cell and stretches further west)",
+            "node": "Landing",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Corridor(south into a room and west to old cell)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Corridor(south into a room and west to old cell)",
+            "node": "Armoury",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Small Office",
+    "dst_node": "Corridor Junction",
+    "path_gt": [
+        {
+            "prev_node": "Small Office",
+            "node": "Admin Corridor North",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Admin Corridor North",
+            "node": "Admin Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Admin Corridor",
+            "node": "Admin Corridor South",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Admin Corridor South",
+            "node": "Corridor Junction",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        }
+    ],
+    "save_path": "outputs/planetfall/results/"
+}

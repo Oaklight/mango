@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside",
+    "dst_node": "Table Room",
+    "path_gt": [
+        {
+            "prev_node": "Outside",
+            "node": "Hole",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Hole",
+            "node": "Fountain Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Fountain Room",
+            "node": "Table Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ]
+}

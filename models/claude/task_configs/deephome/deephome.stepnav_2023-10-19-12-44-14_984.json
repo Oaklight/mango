@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "S. Main Street",
+    "dst_node": "City Generator",
+    "path_gt": [
+        {
+            "prev_node": "S. Main Street",
+            "node": "Intersection",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "Extreme South Main Street",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Extreme South Main Street",
+            "node": "City Generator",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

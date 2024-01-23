@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Carpenter's Shop",
+    "dst_node": "Railway Station (Soldiers' Barracks)",
+    "path_gt": [
+        {
+            "prev_node": "Carpenter's Shop",
+            "node": "Smithy Court",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Smithy Court",
+            "node": "Railway Station (Smithy Court)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Railway Station (Smithy Court)",
+            "node": "railcar",
+            "action": "enter car",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "railcar",
+            "node": "Railway Station (Soldiers' Barracks)",
+            "action": "out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/deephome/results/"
+}

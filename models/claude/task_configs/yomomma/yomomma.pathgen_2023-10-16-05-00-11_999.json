@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Dark corner (SE corner)",
+    "dst_node": "Hall of Fame (eastern side)",
+    "path_gt": [
+        {
+            "prev_node": "Dark corner (SE corner)",
+            "node": "Dance floor (center of the club)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        },
+        {
+            "prev_node": "Dance floor (center of the club)",
+            "node": "Artist hangout (NE corner)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Artist hangout (NE corner)",
+            "node": "Hall of Fame (eastern side)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ]
+}

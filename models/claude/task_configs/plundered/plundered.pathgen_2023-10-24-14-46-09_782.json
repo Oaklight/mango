@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Aft Hold",
+    "dst_node": "On the Ladder",
+    "path_gt": [
+        {
+            "prev_node": "Aft Hold",
+            "node": "Landing",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Captain's Quarters",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "the ledge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "the ledge",
+            "node": "On the Ladder",
+            "action": "climb rope",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        }
+    ]
+}

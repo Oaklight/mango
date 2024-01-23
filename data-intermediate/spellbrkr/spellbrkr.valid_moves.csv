@@ -1,71 +1,413 @@
-Step Num,Location Before,Location After,
-1,,,
-2,,,
-3,,,
-4,,,
-5,Council Chamber,Guild Hall,
-6,,,
-7,Guild Hall,Belwit Square,
-8,,,
-9,,,
-10,,,
-11,,,
-12,,,
-13,Belwit Square,Packed Earth,(frotz burin)
-14,,,
-15,,,
-16,Packed Earth,Midair,
-17,,,
-18,Midair,taken by roc,
-19,,,
-20,,,
-21,,,
-22,taken by roc,In Roc Nest,
-23,,,
-24,,,
-25,,,
-26,,,
-27,In Roc Nest,Packed Earth,
-28,Packed Earth,Hall of Stone,
-29,Hall of Stone,Ruins Room,
-30,,,
-31,,,
-32,,,
-33,,,
-34,,,
-35,,,
-36,,,
-37,Ruins Room,Packed Earth,
-38,Packed Earth,Cliff Middle,
-39,,,
-40,,,
-41,,,
-42,Cliff Middle,Cliff Top,
-43,,,
-44,,,
-45,,,
-46,,,
-47,Cliff Top,Boulder(Large boulder above you and cliff below you),
-48,Boulder(Large boulder above you and cliff below you),Boulder(A nice oblong boulder above you and another large one below you),
-49,Boulder(A nice oblong boulder above you and another large one below you),Boulder(A long oblong boulder below you),
-50,Boulder(A long oblong boulder below you),Mountain Top,
-51,,,
-52,,,
-53,Mountain Top,Stone Hut,
-54,,,
-55,,,
-56,,,
-57,Stone Hut,Mountain Top,
-58,,,
-59,,,
-60,,,
-61,,,
-62,,,
-63,Mountain Top,Soft Room,
-64,Soft Room,Meadow,
-65,,,
-66,,,
-67,,,
-68,Meadow,Packed Earth,
-69,Packed Earth,Cave Entrance,
-70,Cave Entrance,Cave,
+Step Num,Location Before,Location After,Unnamed: 3,taken_action
+1,,,,z
+2,,,,z
+3,,,,z
+4,,,,z
+5,Council Chamber,Guild Hall,,south
+6,,,,take bread
+7,Guild Hall,Belwit Square,,south
+8,,,,learn lesoch
+9,,,,cast lesoch
+10,,,,take cube
+11,,,,write 1 on cube
+12,,,,learn blorple
+13,Belwit Square,Packed Earth,(frotz burin),blorple 1
+14,,,,frotz burin
+15,,,,down
+16,Packed Earth,Midair,,down
+17,,,,z
+18,Midair,taken by roc,,z
+19,,,,z
+20,,,,z
+21,,,,z
+22,taken by roc,In Roc Nest,,z
+23,,,,get stained scroll
+24,,,,read stained scroll
+25,,,,gnusto caskly
+26,,,,learn blorple
+27,In Roc Nest,Packed Earth,,blorple 1
+28,Packed Earth,Hall of Stone,,east
+29,Hall of Stone,Ruins Room,,south
+30,,,,take zipper
+31,,,,open zipper
+32,,,,reach in zipper
+33,,,,look in zipper
+34,,,,take flimsy scroll
+35,,,,read flimsy scroll
+36,,,,learn blorple
+37,Ruins Room,Packed Earth,,blorple 1
+38,Packed Earth,Cliff Middle,,south
+39,,,,take dirty scroll
+40,,,,read dirty scroll
+41,,,,gnusto throck
+42,Cliff Middle,Cliff Top,,up
+43,,,,z
+44,,,,z
+45,,,,z
+46,,,,cast girgol
+47,Cliff Top,Boulder(Large boulder above you and cliff below you),,up
+48,Boulder(Large boulder above you and cliff below you),Boulder(A nice oblong boulder above you and another large one below you),,up
+49,Boulder(A nice oblong boulder above you and another large one below you),Boulder(A long oblong boulder below you),,up
+50,Boulder(A long oblong boulder below you),Mountain Top,,up
+51,,,,take coin
+52,,,,examine coin
+53,Mountain Top,Stone Hut,,west
+54,,,,learn caskly
+55,,,,caskly hut
+56,,,,take cube
+57,Stone Hut,Mountain Top,,east
+58,,,,put coin in zipper
+59,,,,put bread in zipper
+60,,,,put knife in zipper
+61,,,,write 2 on cube
+62,,,,learn blorple
+63,Mountain Top,Soft Room,,blorple 2
+64,Soft Room,Meadow,,south
+65,,,,pull weed
+66,,,,pull weed
+67,,,,learn blorple
+68,Meadow,Packed Earth,,blorple 1
+69,Packed Earth,Cave Entrance,,west
+70,Cave Entrance,Cave,,north
+71,,,,learn yomin
+72,,,,yomin ogre
+73,,,,plant weed
+74,,,,learn throck
+75,,,,throck weed
+76,Cave,Ogre Lair,,down
+77,,,,take dusty scroll
+78,,,,take gold box
+79,Ogre Lair,Cave,,up
+80,Cave,Cave Entrance,,south
+81,,,,read dusty scroll
+82,,,,gnusto espnis
+83,,,,open box
+84,,,,take cube
+85,,,,put box in zipper
+86,,,,write 3 on cube
+87,,,,learn blorple
+88,Cave Entrance,Water Room,,blorple 3
+89,,,,take bread from zipper
+90,,,,learn blorple
+91,,,,drop all except bread
+92,Water Room,Mid-Ocean,,south
+93,,,,drop bread
+94,,,,take cube
+95,,,,take bottle
+96,Mid-Ocean,Water Room,,blorple 3
+97,,,,open bottle
+98,,,,look in bottle
+99,,,,take damp scroll
+100,,,,read damp scroll
+101,,,,take all
+102,,,,gnusto liskon
+103,,,,take 1
+104,Water Room,Oubliette,,north
+105,,,,sleep
+106,,,,enter outflow pipe
+107,,,,learn liskon
+108,,,,liskon self
+109,,,,enter inflow pipe
+110,,,,z
+111,,,,z
+112,,,,z
+113,,,,learn liskon
+114,,,,liskon me
+115,,,,z
+116,,,,z
+117,,,,learn liskon
+118,,,,liskon me
+119,,,,frotz bottle
+120,,,,learn blorple
+121,,,,drop all except bottle
+122,,,,take 3
+123,Oubliette,In Pipe,,enter outflow pipe
+124,In Pipe,"In Pipe (north side knocked out, moss and slime covered)",,west
+125,,,,take cube
+126,"In Pipe (north side knocked out, moss and slime covered)",Ruined Pipe,,west
+127,Ruined Pipe,Ruins Room,,climb out of pipe
+128,Ruins Room,Water Room,,blorple 3
+129,Water Room,Oubliette,,north
+130,,,,take all
+131,,,,put bottle in zipper
+132,,,,write 4 on cube
+133,,,,learn blorple
+134,Oubliette,Packed Earth,,blorple 1
+135,Packed Earth,Hall of Stone,,east
+136,Hall of Stone,Smooth Room,,north
+137,,,,learn liskon
+138,,,,liskon snake
+139,Smooth Room,North of Serpent,,north
+140,North of Serpent,Temple,,north
+141,,,,take cube
+142,,,,learn malyon
+143,,,,malyon idol
+144,,,,learn espnis
+145,,,,learn malyon
+146,,,,malyon idol
+147,,,,z
+148,,,,espnis idol
+149,,,,z
+150,Temple,rodent idol,,climb idol
+151,,,,look in mouth
+152,,,,take cube
+153,rodent idol,Temple,,down
+154,,,,write 5 on cube
+155,,,,learn blorple
+156,Temple,Air Room,,blorple 5
+157,Air Room,Glacier,,north
+158,,,,take white scroll
+159,,,,learn blorple
+160,Glacier,Air Room,,blorple 5
+161,Air Room,Bazaar,,west
+162,,,,read white scroll
+163,,,,gnusto tinsot
+164,Bazaar,Emporium,,east
+165,,,,examine blue carpet
+166,,,,take coin from zipper
+167,,,,point at blue carpet
+168,,,,buy blue carpet
+169,,,,offer 300
+170,,,,offer 400
+171,,,,offer 500
+172,,,,take blue carpet
+173,Emporium,Bazaar,,exit
+174,,,,learn blorple
+175,Bazaar,Water Room,,blorple 3
+176,,,,learn tinsot
+177,,,,learn tinsot
+178,,,,learn tinsot
+179,,,,learn tinsot
+180,,,,put all in zipper
+181,,,,take burin
+182,,,,close zipper
+183,Water Room,Oubliette,,north
+184,,,,rezrov door
+185,,,,tinsot channel
+186,,,,tinsot channel
+187,,,,tinsot channel
+188,,,,z
+189,,,,z
+190,,,,z
+191,,,,tinsot water
+192,Oubliette,ice floe,,enter
+193,ice floe,Dungeon,,up
+194,,,,take cube
+195,,,,open zipper
+196,,,,get book
+197,,,,write 6 on cube
+198,Dungeon,Dungeon East End,,east
+199,Dungeon East End,Dungeon Cell,,north
+200,,,,rezrov cabinet
+201,,,,take moldy book
+202,,,,learn caskly
+203,,,,caskly moldy book
+204,,,,read moldy book
+205,,,,gnusto snavig
+206,Dungeon Cell,Dungeon East End,,south
+207,Dungeon East End,Dungeon,,west
+208,Dungeon,Guard Tower,,up
+209,,,,drop carpet
+210,Guard Tower,beautiful blue carpet,,sit on carpet
+211,,,,up
+212,,,,west
+213,,,,west
+214,,,,west
+215,,,,west
+216,,,,down
+217,beautiful blue carpet,In Roc Nest,,get off carpet
+218,,,,pick up cube
+219,In Roc Nest,beautiful blue carpet,,sit on carpet
+220,,,,up
+221,,,,east
+222,,,,east
+223,,,,east
+224,,,,east
+225,,,,down
+226,beautiful blue carpet,Guard Tower,,get off carpet
+227,,,,take carpet
+228,,,,write 7 on cube
+229,Guard Tower,Dungeon,,down
+230,,,,learn blorple
+231,Dungeon,Water Room,,blorple 3
+232,,,,sleep
+233,,,,learn snavig
+234,,,,learn blorple
+235,,,,put spell book in zipper
+236,,,,close zipper
+237,Water Room,Mid-Ocean,,south
+238,,,,get 3
+239,,,,snavig grouper
+240,Mid-Ocean,Ocean Floor,,down
+241,,,,z
+242,,,,z
+243,,,,z
+244,,,,z
+245,,,,get all
+246,Ocean Floor,Mid-Ocean,,up
+247,Mid-Ocean,Water Room,,blorple 3
+248,,,,sleep
+249,,,,write 8 on cube
+250,,,,open zipper
+251,,,,take spell book from zipper
+252,Water Room,Oubliette,,north
+253,,,,learn blorple
+254,Oubliette,Light Room,,blorple 8
+255,Light Room,Volcano Base,,west
+256,,,,learn tinsot
+257,,,,tinsot fragment
+258,,,,take fragment
+259,,,,put all in zipper except book
+260,,,,learn blorple
+261,,,,take 4
+262,Volcano Base,Changing Room,,blorple 4
+263,Changing Room,Bare Room,,north
+264,,,,take compass rose
+265,,,,learn blorple
+266,Bare Room,Changing Room,,blorple 4
+267,Changing Room,Carving Room,,west
+268,,,,put compass rose in carving
+269,,,,take compass rose
+270,Carving Room,"Octagonal Room (east, northeast, southeast and southwest runes are lead, the rest are of silver)",,north
+271,,,,touch nw rune with rose
+272,"Octagonal Room (east, northeast, southeast and southwest runes are lead, the rest are of silver)","Octagonal Room (northeast, northwest, southeast and southwest runes are lead, the rest are of silver)",,northwest
+273,,,,touch w rune with rose
+274,"Octagonal Room (northeast, northwest, southeast and southwest runes are lead, the rest are of silver)","Octagonal Room (west, northwest and southwest runes are lead, the rest are of silver)",,west
+275,,,,touch ne rune with rose
+276,"Octagonal Room (west, northwest and southwest runes are lead, the rest are of silver)","Octagonal Room (west rune is gold, the north, northeast and northwest runes are lead, the rest are of silver)",,northeast
+277,,,,rezrov alabaster
+278,"Octagonal Room (west rune is gold, the north, northeast and northwest runes are lead, the rest are of silver)",Octagonal Room (runes are all of lead),,west
+279,,,,take cube
+280,,,,take burin from zipper
+281,,,,write 9 on cube
+282,,,,learn blorple
+283,Octagonal Room (runes are all of lead),No Place,,blorple 9
+284,No Place,Plain,,south
+285,,,,take fragment from zipper
+286,,,,give fragment to green rock
+287,Plain,green rock,,sit on green rock
+288,,,,l
+289,,,,"rock, n"
+290,,,,"rock, sw"
+291,,,,"rock, e"
+292,,,,"rock, s"
+293,,,,"rock, e"
+294,,,,"rock, e"
+295,green rock,brown rock,,jump to brown rock
+296,,,,get cube
+297,,,,write 10 on cube
+298,,,,learn blorple
+299,brown rock,Dark Room,,blorple 10
+300,Dark Room,Dark Cave,,down
+301,,,,learn snavig
+302,,,,"drop all except 10, book"
+303,Dark Cave,Grue Cave,,down
+304,,,,snavig grue
+305,Grue Cave,Light Pool,,down
+306,Light Pool,On Pillar,,climb pillar
+307,,,,take cube
+308,,,,z
+309,,,,z
+310,,,,z
+311,,,,learn blorple
+312,On Pillar,Dark Room,,blorple 10
+313,Dark Room,Dark Cave,,down
+314,,,,take all
+315,,,,write 11 on cube
+316,,,,learn blorple
+317,Dark Cave,Fire Room,,blorple 11
+318,Fire Room,Volcano,,north
+319,,,,take box
+320,,,,examine box
+321,,,,put 10 in box
+322,,,,take 10
+323,,,,throw box at outcropping
+324,,,,learn blorple
+325,Volcano,Dark Room,,blorple 10
+326,Dark Room,Outcropping,,up
+327,,,,take box
+328,,,,take cube
+329,,,,write 12 on cube
+330,,,,put all in zipper
+331,,,,take book
+332,,,,take 7
+333,,,,learn blorple
+334,Outcropping,String Room,,blorple 7
+335,String Room,Enchanters' Retreat,,south
+336,,,,ask belboz about me
+337,,,,berknip
+338,,,,ask belboz about cube
+339,,,,ask belboz about figure
+340,,,,take 9
+341,,,,learn blorple
+342,Enchanters' Retreat,No Place,,blorple 9
+343,No Place,Inner Vault,,east
+344,,,,rezrov door
+345,,,,put all except book in zipper
+346,Inner Vault,Outer Vault,,north
+347,,,,learn jindak
+348,,,,learn jindak
+349,,,,learn jindak
+350,,,,learn blorple
+351,,,,"take x1,x2,x7,x8"
+352,,,,jindak
+353,,,,"put x1, x2, x7 on first pile"
+354,,,,"get x3, x4, x5, x6"
+355,,,,put x8 on second pile
+356,,,,get x12
+357,,,,put x12 on first pile
+358,,,,l
+359,,,,jindak
+360,,,,drop all cubes
+361,,,,"take x1, x2, x7, x12"
+362,,,,drop all cubes
+363,,,,"take x8, x9, x10, x11"
+364,,,,drop all cubes
+365,,,,"take x1, x10"
+366,,,,put x1 in first
+367,,,,put x10 in second
+368,,,,jindak
+369,,,,take x10
+370,Outer Vault,Sand Room,,blorple x10
+371,Sand Room,Dungeon Cell (below Sand Room),,down
+372,,,,take key from zipper
+373,,,,unlock cabinet with key
+374,,,,open cabinet
+375,,,,take vellum scroll
+376,,,,read vellum scroll
+377,,,,learn rezrov
+378,,,,learn blorple
+379,,,,learn blorple
+380,,,,learn girgol
+381,,,,put book in cabinet
+382,,,,close cabinet
+383,,,,lock cabinet with key
+384,,,,rezrov door
+385,Dungeon Cell (below Sand Room),Sand Room,,blorple x10
+386,Sand Room,Ruins Room (outh end of a vast chamber),,up
+387,,,,open sack
+388,,,,take flimsy scroll
+389,,,,take burin
+390,,,,copy flimsy scroll to vellum scroll
+391,,,,take sack
+392,,,,empty zipper into sack
+393,,,,put flimsy scroll in zipper
+394,,,,close zipper
+395,,,,drop zipper
+396,,,,take 12
+397,Ruins Room (outh end of a vast chamber),Magic Room,,blorple 12
+398,Magic Room,Castle,,east
+399,,,,z
+400,,,,z
+401,,,,z
+402,,,,take knife
+403,,,,z
+404,,,,z
+405,,,,z
+406,,,,z
+407,,,,z
+408,,,,z
+409,,,,cast girgol
+410,,,,take 12
+411,,,,put sack in tesseract
+412,,,,z

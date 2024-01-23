@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Castle Hallway",
+    "dst_node": "Wasteland by a Castle",
+    "path_gt": [
+        {
+            "prev_node": "Castle Hallway",
+            "node": "Forbidding Castle",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Forbidding Castle",
+            "node": "Castle Forge",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Castle Forge",
+            "node": "Wasteland by a Castle",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

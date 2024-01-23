@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Armory",
+    "dst_node": "The Main Hall, by the Fireplace (in the Large Fireplace)",
+    "path_gt": [
+        {
+            "prev_node": "Armory",
+            "node": "Main Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Main Hall, by the Fireplace",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Main Hall, by the Fireplace",
+            "node": "The Main Hall, by the Fireplace (in the Large Fireplace)",
+            "action": "enter",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "the ledge",
+    "dst_node": "Quarterdeck",
+    "path_gt": [
+        {
+            "prev_node": "the ledge",
+            "node": "Captain's Quarters",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Aft Hold",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Aft Hold",
+            "node": "Hold",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Main Deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Quarterdeck",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

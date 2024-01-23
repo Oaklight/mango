@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Maze (exit North, South, East, Down)",
+    "dst_node": "Tree Top",
+    "path_gt": [
+        {
+            "prev_node": "Maze (exit North, South, East, Down)",
+            "node": "Maze (exit West, Up)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Maze (exit West, Up)",
+            "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Meadow",
+            "action": "away",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Dismal Swamp",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Tree Top",
+            "action": "climb tree",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

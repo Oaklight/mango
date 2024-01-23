@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Ruins",
+    "dst_node": "Narrow Cleft",
+    "path_gt": [
+        {
+            "prev_node": "Ruins",
+            "node": "Mountain Trail (carved steps to the south)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Mountain Trail (carved steps to the south)",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Narrow Cleft",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/karn/results/"
+}

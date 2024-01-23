@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "At a fork in the path",
+    "dst_node": "In the hall",
+    "path_gt": [
+        {
+            "prev_node": "At a fork in the path",
+            "node": "In a clearing in the forest",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "In a clearing in the forest",
+            "node": "In the garden",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "In the garden",
+            "node": "At the top of the beanstalk",
+            "action": "climb beanstalk",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "At the top of the beanstalk",
+            "node": "On the roof",
+            "action": "jump to roof",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "On the roof",
+            "node": "In the kitchen",
+            "action": "climb down chimney",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "In the kitchen",
+            "node": "In the hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ],
+    "save_path": "outputs/gold/results/"
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "In Your Tent",
+    "dst_node": "In a Pit",
+    "path_gt": [
+        {
+            "prev_node": "In Your Tent",
+            "node": "Center of Camp",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "In the Desert",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "In the Desert",
+            "node": "Bottom of a Hole",
+            "action": "dig",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Bottom of a Hole",
+            "node": "In a Pit",
+            "action": "put amulet in slot",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

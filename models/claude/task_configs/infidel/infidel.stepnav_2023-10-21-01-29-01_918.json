@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Chamber of Ra",
+    "dst_node": "Barge Chamber (southwest corner)",
+    "path_gt": [
+        {
+            "prev_node": "Chamber of Ra",
+            "node": "South Landing",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "South Landing",
+            "node": "the entrance of a narrow hallway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "the entrance of a narrow hallway",
+            "node": "at a bend in the Narrow Hallway",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "at a bend in the Narrow Hallway",
+            "node": "Barge Chamber (southern section)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Barge Chamber (southern section)",
+            "node": "Barge Chamber (southwest corner)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/infidel/results/"
+}

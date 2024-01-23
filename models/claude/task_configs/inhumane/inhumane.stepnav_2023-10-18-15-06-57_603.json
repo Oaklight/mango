@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Hall Full of Fur",
+    "dst_node": "Corridor at Doorway",
+    "path_gt": [
+        {
+            "prev_node": "Hall Full of Fur",
+            "node": "Glass Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Glass Hall",
+            "node": "End of glass hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "End of glass hall",
+            "node": "Round Room",
+            "action": "take necklace",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

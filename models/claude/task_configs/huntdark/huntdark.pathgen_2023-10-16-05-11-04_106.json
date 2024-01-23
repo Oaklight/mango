@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Bottom of Pit",
+    "dst_node": "Cramped Cavern",
+    "path_gt": [
+        {
+            "prev_node": "Bottom of Pit",
+            "node": "Tight Crawl",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Tight Crawl",
+            "node": "Smallish Cave",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Smallish Cave",
+            "node": "Cramped Cavern",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        }
+    ]
+}

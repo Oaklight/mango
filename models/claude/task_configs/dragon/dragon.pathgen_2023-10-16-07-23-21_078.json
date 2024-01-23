@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Inn Cellar",
+    "dst_node": "North End of a Road",
+    "path_gt": [
+        {
+            "prev_node": "Inn Cellar",
+            "node": "Inside the Inn",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Inside the Inn",
+            "node": "Abandoned Inn",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Swampy Ground",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "North End of a Road",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        }
+    ]
+}

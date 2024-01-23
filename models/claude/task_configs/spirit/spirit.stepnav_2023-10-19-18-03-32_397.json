@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Brother Toolbox's Quarters",
+    "dst_node": "Brother Palemon's Quarters",
+    "path_gt": [
+        {
+            "prev_node": "Brother Toolbox's Quarters",
+            "node": "Hallway (east end)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Hallway (east end)",
+            "node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "node": "Brother Palemon's Quarters",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/spirit/results/"
+}

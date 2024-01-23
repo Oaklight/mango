@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Stage",
+    "dst_node": "Souvenir Stand",
+    "path_gt": [
+        {
+            "prev_node": "Stage",
+            "node": "Theater",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Theater",
+            "node": "Cultural Complex",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Cultural Complex",
+            "node": "Convention Center Lobby",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Convention Center Lobby",
+            "node": "Souvenir Stand",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        }
+    ],
+    "save_path": "outputs/ztuu/results/"
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Closet",
+    "dst_node": "Statue Room",
+    "path_gt": [
+        {
+            "prev_node": "Closet",
+            "node": "Table Room",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Table Room",
+            "node": "Fountain Room",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Fountain Room",
+            "node": "Statue Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        }
+    ]
+}

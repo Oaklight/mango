@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Armoury",
+    "dst_node": "Hallway",
+    "path_gt": [
+        {
+            "prev_node": "Armoury",
+            "node": "Corridor(south into a room and west to old cell)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Corridor(south into a room and west to old cell)",
+            "node": "Landing",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Corridor(east old cell and stretches further west)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Corridor(east old cell and stretches further west)",
+            "node": "Corridor(east to old cell and north to hall)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Corridor(east to old cell and north to hall)",
+            "node": "Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Lift(down button and a door to south)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Lift(down button and a door to south)",
+            "node": "Lift(up button and a door to north)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Lift(up button and a door to north)",
+            "node": "Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        }
+    ],
+    "save_path": "outputs/zenon/results/"
+}

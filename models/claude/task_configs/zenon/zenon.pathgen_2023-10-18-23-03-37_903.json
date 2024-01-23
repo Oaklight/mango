@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Landing",
+    "dst_node": "Armoury",
+    "path_gt": [
+        {
+            "prev_node": "Landing",
+            "node": "Corridor(south into a room and west to old cell)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Corridor(south into a room and west to old cell)",
+            "node": "Armoury",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        }
+    ]
+}

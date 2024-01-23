@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Top of Oak Tree",
+    "dst_node": "Vestibule",
+    "path_gt": [
+        {
+            "prev_node": "Top of Oak Tree",
+            "node": "Belfry",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Belfry",
+            "node": "Steeple Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Steeple Chamber",
+            "node": "Vestibule",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ],
+    "save_path": "outputs/awaken/results/"
+}

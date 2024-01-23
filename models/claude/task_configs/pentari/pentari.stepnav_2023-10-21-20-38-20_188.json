@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "The Main Hall, by the Fireplace (in the Large Fireplace)",
+    "dst_node": "Kitchen",
+    "path_gt": [
+        {
+            "prev_node": "The Main Hall, by the Fireplace (in the Large Fireplace)",
+            "node": "Main Hall, by the Fireplace",
+            "action": "get up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Main Hall, by the Fireplace",
+            "node": "Main Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Spiral Stairway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Dining Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "Kitchen",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

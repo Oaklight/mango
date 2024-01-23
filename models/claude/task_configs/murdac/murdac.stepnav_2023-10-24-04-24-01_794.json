@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "alcove",
+    "dst_node": "rock garden",
+    "path_gt": [
+        {
+            "prev_node": "alcove",
+            "node": "high tunnel (east/west, alcove off to north)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "high tunnel (east/west, alcove off to north)",
+            "node": "wooden plank in east/west tunnel",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "wooden plank in east/west tunnel",
+            "node": "high tunnel (to the west of lab)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "high tunnel (to the west of lab)",
+            "node": "mad scientist's laboratory",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "mad scientist's laboratory",
+            "node": "large quadrangular cellar",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "large quadrangular cellar",
+            "node": "inside the hut",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "inside the hut",
+            "node": "outside the house",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

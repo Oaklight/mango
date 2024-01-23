@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Cramped Room",
+    "dst_node": "Rising Path",
+    "path_gt": [
+        {
+            "prev_node": "Cramped Room",
+            "node": "Base of Canyon",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Base of Canyon",
+            "node": "Canyon Wall",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Canyon Wall",
+            "node": "Rising Path",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        }
+    ]
+}

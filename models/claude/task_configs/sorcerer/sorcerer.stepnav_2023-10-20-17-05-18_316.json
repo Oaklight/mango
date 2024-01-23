@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Library",
+    "dst_node": "River Bed",
+    "path_gt": [
+        {
+            "prev_node": "Library",
+            "node": "Lobby",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Lobby",
+            "node": "Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "Helistar's Quarters",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Helistar's Quarters",
+            "node": "Twisted Forest",
+            "action": "aimfiz belboz",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Twisted Forest",
+            "node": "Forest Edge",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Forest Edge",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "River Bank",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "River Bank",
+            "node": "River Bed",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        }
+    ],
+    "save_path": "outputs/sorcerer/results/"
+}

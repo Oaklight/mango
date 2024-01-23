@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Guest Room",
+    "dst_node": "Den",
+    "path_gt": [
+        {
+            "prev_node": "Guest Room",
+            "node": "Living Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Living Room",
+            "node": "Kitchen",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Den",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ],
+    "save_path": "outputs/partyfoul/results/"
+}

@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Ocean Road (halfway of north/south road)",
+    "dst_node": "The Shanty",
+    "path_gt": [
+        {
+            "prev_node": "Ocean Road (halfway of north/south road)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Vacant Lot",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Wharf Road (north to Outfitters International)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International)",
+            "node": "Wharf Road (east end of east/west road)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Wharf Road (east end of east/west road)",
+            "node": "The Shanty",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

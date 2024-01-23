@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Stairway",
+    "dst_node": "Computer Center",
+    "path_gt": [
+        {
+            "prev_node": "Stairway",
+            "node": "Aero Basement",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Aero Basement",
+            "node": "Basement",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Basement",
+            "node": "Computer Center",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

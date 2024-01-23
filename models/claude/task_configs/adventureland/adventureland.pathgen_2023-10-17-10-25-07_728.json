@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+    "dst_node": "Maze (exit North, South, East, Down)",
+    "path_gt": [
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Maze (exit West, Up)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 43
+        },
+        {
+            "prev_node": "Maze (exit West, Up)",
+            "node": "Maze (exit North, South, East, Down)",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        }
+    ]
+}

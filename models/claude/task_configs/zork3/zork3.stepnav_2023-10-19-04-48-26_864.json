@@ -1,0 +1,85 @@
+{
+    "task": "stepnav",
+    "src_node": "Junction",
+    "dst_node": "Water Slide",
+    "path_gt": [
+        {
+            "prev_node": "Junction",
+            "node": "Creepy Crawl",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Creepy Crawl",
+            "node": "Foggy Room",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Foggy Room",
+            "node": "Lake Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Lake Shore",
+            "node": "On the Lake",
+            "action": "jump lake",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "On the Lake",
+            "node": "Southern Shore",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Southern Shore",
+            "node": "pitch black 1",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "pitch black 1",
+            "node": "pitch black 2",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "pitch black 2",
+            "node": "Key Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Key Room",
+            "node": "Aqueduct",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Aqueduct",
+            "node": "High Arch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "High Arch",
+            "node": "Water Slide",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

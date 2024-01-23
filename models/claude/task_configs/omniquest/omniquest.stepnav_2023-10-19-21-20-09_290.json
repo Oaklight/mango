@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Giant Cavern",
+    "dst_node": "Ice Room",
+    "path_gt": [
+        {
+            "prev_node": "Giant Cavern",
+            "node": "Slimy Passageway",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "East Path",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "East Path",
+            "node": "South Lake",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Musty Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Musty Corridor",
+            "node": "Rice Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Rice Room",
+            "node": "Chilly Corridor",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "Ice Room",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

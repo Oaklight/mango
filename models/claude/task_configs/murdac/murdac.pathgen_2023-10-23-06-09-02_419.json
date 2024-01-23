@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "sandpit",
+    "dst_node": "large quadrangular cellar",
+    "path_gt": [
+        {
+            "prev_node": "sandpit",
+            "node": "old untended grave",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "old untended grave",
+            "node": "outside the house",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "inside the hut",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "inside the hut",
+            "node": "large quadrangular cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        }
+    ]
+}

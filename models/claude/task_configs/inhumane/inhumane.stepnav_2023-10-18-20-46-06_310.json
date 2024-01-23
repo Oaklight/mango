@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "In Your Tent",
+    "dst_node": "Corridor at Doorway",
+    "path_gt": [
+        {
+            "prev_node": "In Your Tent",
+            "node": "Center of Camp",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "Roboff's Tent",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Round Room",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

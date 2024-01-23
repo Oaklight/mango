@@ -161,6 +161,8 @@ def generate_move_human(
         for item in walkthrough_acts
     ]
 
+    if max_steps == -1:
+        max_steps = len(walkthrough)
     max_steps = min(len(walkthrough), max_steps)
     print("Game: {}, Max steps: {}".format(game_name, max_steps))
 

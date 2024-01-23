@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Corner Of the Carpark",
+    "dst_node": "Storage Shed Door",
+    "path_gt": [
+        {
+            "prev_node": "Corner Of the Carpark",
+            "node": "The Main Carpark",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "The Main Carpark",
+            "node": "Front Of The Office",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "East Of Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Damp Corner",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Damp Corner",
+            "node": "Storage Shed Door",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

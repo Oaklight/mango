@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "In West Pit",
+    "dst_node": "At Complex Junction",
+    "path_gt": [
+        {
+            "prev_node": "In West Pit",
+            "node": "At West End of Twopit Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "At West End of Twopit Room",
+            "node": "At East End of Twopit Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "At East End of Twopit Room",
+            "node": "In Swiss Cheese Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "In Swiss Cheese Room",
+            "node": "Bedquilt",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Bedquilt",
+            "node": "At Complex Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ]
+}

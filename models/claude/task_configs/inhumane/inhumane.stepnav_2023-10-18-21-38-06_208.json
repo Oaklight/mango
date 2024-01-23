@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Storage Tent",
+    "dst_node": "Bottom of a Hole",
+    "path_gt": [
+        {
+            "prev_node": "Storage Tent",
+            "node": "Center of Camp",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "In the Desert",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "In the Desert",
+            "node": "Bottom of a Hole",
+            "action": "dig",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

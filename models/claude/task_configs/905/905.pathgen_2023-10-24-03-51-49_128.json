@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Living room",
+    "dst_node": "Bathroom",
+    "path_gt": [
+        {
+            "prev_node": "Living room",
+            "node": "Bedroom",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Bedroom",
+            "node": "Bathroom",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ]
+}

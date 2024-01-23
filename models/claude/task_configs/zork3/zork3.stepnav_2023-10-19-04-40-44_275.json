@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "High Arch",
+    "dst_node": "Dead End",
+    "path_gt": [
+        {
+            "prev_node": "High Arch",
+            "node": "Water Slide",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Water Slide",
+            "node": "Damp Passage",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Damp Passage",
+            "node": "Engravings Room",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Engravings Room",
+            "node": "Dead End",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

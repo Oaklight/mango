@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Dark Tunnel",
+    "dst_node": "Topiary",
+    "path_gt": [
+        {
+            "prev_node": "Dark Tunnel",
+            "node": "North End of Garden",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "North End of Garden",
+            "node": "Formal Garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Formal Garden",
+            "node": "Path Near Stream",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Path Near Stream",
+            "node": "Marble Hall",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Marble Hall",
+            "node": "Carousel Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Carousel Room",
+            "node": "Topiary",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ],
+    "save_path": "outputs/zork2/results/"
+}

@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Your Room, on the bed",
+    "dst_node": "Vacant Lot",
+    "path_gt": [
+        {
+            "prev_node": "Your Room, on the bed",
+            "node": "Upstairs Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Upstairs Hallway",
+            "node": "Red Boar Inn",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Red Boar Inn",
+            "node": "Wharf Road (end of east/west road)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Wharf Road (end of east/west road)",
+            "node": "Wharf Road (north to McGinty Salvage)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Wharf Road (north to McGinty Salvage)",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Vacant Lot",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ]
+}

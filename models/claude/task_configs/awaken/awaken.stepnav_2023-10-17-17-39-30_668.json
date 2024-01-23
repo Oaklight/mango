@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "In the Mud",
+    "dst_node": "Steeple Chamber",
+    "path_gt": [
+        {
+            "prev_node": "In the Mud",
+            "node": "Graveyard",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Graveyard",
+            "node": "West Side of the Church",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "West Side of the Church",
+            "node": "Front of the Church",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "Church Porch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Church Porch",
+            "node": "Vestibule",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Steeple Chamber",
+            "action": "climb ladder",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/awaken/results/"
+}

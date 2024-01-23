@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "In Your Tent",
+    "dst_node": "Stalagmite Room",
+    "path_gt": [
+        {
+            "prev_node": "In Your Tent",
+            "node": "Center of Camp",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "Roboff's Tent",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Round Room",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Landing",
+            "node": "T Intersection",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "T Intersection",
+            "node": "Door Near Blades",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Door Near Blades",
+            "node": "Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

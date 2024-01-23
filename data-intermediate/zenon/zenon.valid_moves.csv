@@ -1,71 +1,84 @@
-Step Num,Location Before,Location After
-1,,
-2,,
-3,,
-4,,
-5,,
-6,,
-7,,
-8,,
-9,,
-10,,
-11,,
-12,,
-13,,
-14,,
-15,Cell,Landing
-16,Landing,Corridor(south into a room and west to old cell)
-17,Corridor(south into a room and west to old cell),Armoury
-18,,
-19,,
-20,,
-21,,
-22,Armoury,Corridor(south into a room and west to old cell)
-23,Corridor(south into a room and west to old cell),Landing
-24,Landing,Corridor(east old cell and stretches further west)
-25,Corridor(east old cell and stretches further west),Corridor(east to old cell and north to hall)
-26,Corridor(east to old cell and north to hall),Control Room
-27,,
-28,,
-29,,
-30,,
-31,,
-32,,
-33,,
-34,,
-35,Control Room,Corridor(east to old cell and north to hall)
-36,Corridor(east to old cell and north to hall),Hall
-37,,
-38,Hall,Lift(down button and a door to south)
-39,Lift(down button and a door to south),Lift(up button and a door to north)
-40,Lift(up button and a door to north),Hallway
-41,Hallway,Office
-42,,
-43,,
-44,,
-45,,
-46,,
-47,,
-48,,
-49,,
-50,,
-51,,
-52,,
-53,Office,Bar
-54,,
-55,,
-56,,
-57,,
-58,,
-59,Bar,Office
-60,,
-61,Office,Bar
-62,,
-63,Bar,Office
-64,Office,Officer's Room
-65,,
-66,,
-67,,
-68,,
-69,,
-70,,
+Step Num,Location Before,Location After,taken_action
+1,,,x bed
+2,,,look under bed
+3,,,x key
+4,,,x gauge
+5,,,x switch
+6,,,open guage
+7,,,push button
+8,,,push switch
+9,,,wait
+10,,,wait
+11,,,wait
+12,,,x guard
+13,,,unlock door with key
+14,,,open door
+15,Cell,Landing,south
+16,Landing,Corridor(south into a room and west to old cell),east
+17,Corridor(south into a room and west to old cell),Armoury,south
+18,,,x box
+19,,,open box
+20,,,take grenade
+21,,,x grenade
+22,Armoury,Corridor(south into a room and west to old cell),north
+23,Corridor(south into a room and west to old cell),Landing,west
+24,Landing,Corridor(east old cell and stretches further west),west
+25,Corridor(east old cell and stretches further west),Corridor(east to old cell and north to hall),west
+26,Corridor(east to old cell and north to hall),Control Room,south
+27,,,x panels
+28,,,x cupboard
+29,,,open cupboard
+30,,,pull pin
+31,,,put grenade in cupboard
+32,,,wait
+33,,,wait
+34,,,x electronics
+35,Control Room,Corridor(east to old cell and north to hall),north
+36,Corridor(east to old cell and north to hall),Hall,north
+37,,,x camera
+38,Hall,Lift(down button and a door to south),north
+39,Lift(down button and a door to south),Lift(up button and a door to north),down
+40,Lift(up button and a door to north),Hallway,north
+41,Hallway,Office,north
+42,,,x sign
+43,,,x male
+44,,,x female
+45,,,north
+46,,,ask male about female
+47,,,ask male about work
+48,,,ask male about officer
+49,,,ask male about invitation
+50,,,ask male about daddy
+51,,,ask female about male
+52,,,ask female about bar
+53,Office,Bar,east
+54,,,x sign
+55,,,x barman
+56,,,x juke
+57,,,ask barman about job
+58,,,x form
+59,Bar,Office,west
+60,,,give form to female
+61,Office,Bar,east
+62,,,give form to barman
+63,Bar,Office,west
+64,Office,Officer's Room,west
+65,,,x copier
+66,,,x table
+67,,,x officer
+68,,,ask officer about convention
+69,,,x invite
+70,,,open copier
+71,,,put invite in copier
+72,,,push button
+73,,,x copy
+74,Officer's Room,Office,east
+75,,,give copy to male
+76,Office,Hallway (north to office),north
+77,Hallway (north to office),North end of hallway,north
+78,North end of hallway,A control room,east
+79,,,x button
+80,,,push button
+81,A control room,North end of hallway,west
+82,,,open door
+83,North end of hallway,The end,north

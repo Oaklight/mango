@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Small Path",
+    "dst_node": "Small Clearing",
+    "path_gt": [
+        {
+            "prev_node": "Small Path",
+            "node": "Canyon Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Canyon Entrance",
+            "node": "Canyon Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Canyon Path",
+            "node": "Small Clearing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ]
+}

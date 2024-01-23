@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Ferry Landing",
+    "dst_node": "Ocean Road (halfway of north/south road)",
+    "path_gt": [
+        {
+            "prev_node": "Ferry Landing",
+            "node": "Shore Road (west end of east/west road)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Shore Road (west end of east/west road)",
+            "node": "Shore Road (east end of east/west road)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Shore Road (east end of east/west road)",
+            "node": "Ocean Road (south end of north/south road)",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Ocean Road (south end of north/south road)",
+            "node": "Ocean Road (halfway of north/south road)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        }
+    ]
+}

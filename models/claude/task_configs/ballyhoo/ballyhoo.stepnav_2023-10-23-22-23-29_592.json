@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Platform (east side)",
+    "dst_node": "Performance Ring",
+    "path_gt": [
+        {
+            "prev_node": "Platform (east side)",
+            "node": "on the tightrope",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "on the tightrope",
+            "node": "Platform (west side)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Platform (west side)",
+            "node": "Performance Ring",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

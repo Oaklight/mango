@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "north part",
+    "dst_node": "Kemp's office",
+    "path_gt": [
+        {
+            "prev_node": "north part",
+            "node": "east part",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "east part",
+            "node": "corridor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "corridor",
+            "node": "Kemp's office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        }
+    ]
+}

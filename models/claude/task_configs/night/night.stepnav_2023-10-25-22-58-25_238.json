@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Outside Physics Office",
+    "dst_node": "Maze of Twisty Passages (stop 3)",
+    "path_gt": [
+        {
+            "prev_node": "Outside Physics Office",
+            "node": "Hall (2nd floor, middle of north/south hall)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Hall (2nd floor, middle of north/south hall)",
+            "node": "Maze of Twisty Passages (stop 1)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 1)",
+            "node": "Maze of Twisty Passages (stop 2)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        },
+        {
+            "prev_node": "Maze of Twisty Passages (stop 2)",
+            "node": "Maze of Twisty Passages (stop 3)",
+            "action": "follow mouse",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/night/results/"
+}

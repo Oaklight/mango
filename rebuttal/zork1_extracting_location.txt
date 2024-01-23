@@ -1,0 +1,62 @@
+The following description is an observation of a character in a game. Please determine the character's location based on the description. 
+Here are some examples: 
+Example 1:
+==>ACT: north
+==>OBSERVATION: North of House
+You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.
+==>LOCATION: North of House
+
+Example 2:
+==>ACT: north
+==>OBSERVATION: Forest Path
+This is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.
+==>LOCATION: Forest Path
+
+Example 3:
+==>ACT: up
+==>OBSERVATION: Up a Tree
+You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach.
+Beside you on the branch is a small bird's nest.
+In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged by a childless songbird. The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl. Unlike most eggs, this one is hinged and closed with a delicate looking clasp. The egg appears extremely fragile.
+==>LOCATION: Up a Tree
+
+Example 4:
+==>ACT: get egg
+==>OBSERVATION: Taken.
+==>LOCATION: None
+
+Example 5:
+==>ACT: down
+==>OBSERVATION: Forest Path
+==>LOCATION: Forest Path
+If you can identify the character's location from the text, please just reply with that location; otherwise, reply with 'None':
+
+==>ACT: down
+==>OBSERVATION: Egyptian Room
+The solid-gold coffin used for the burial of Ramses II is here.
+==>LOCATION:
+North of House, Forest Path, Up a Tree, None,      Forest Path, North of House, Behind House, None, Kitchen, None, None, Living Room, None, Kitchen, Attic, None, None, None, Kitchen, None, Living Room, None, None, None, Cellar, None, The Troll Room, None, None,      East-West Passage, Round Room, Engravings Cave, Dome Room, None, Torch Room, None, None, Temple, Altar, None, None, None, None, Temple, None, Egyptian Room, None, None, Temple, Altar, Forest, Forest Path, North of House, Behind House, Kitchen, Living Room, None, None, None, None, None, Cellar, The Troll Room, East-West Passage, Round Room, Engravings Cave, Dome Room, Torch Room, Temple, Egyptian Room
+North of House, Forest Path, Up a Tree, Up a Tree, Forest Path, North of House, Behind House, None, Kitchen, None, None, Living Room, None, Kitchen, None, Attic, None, None, Kitchen, None, Living Room, None, None, None, None, Cellar, The Troll Room, None, Up a Tree, East-West Passage, Round Room, Engravings Cave, Dome Room, None, Torch Room, None, None, Temple, Altar, None, None, None, None, Temple, None, Egyptian Room, None, None, Temple, None,  Forest, Forest Path, North of House, Behind House, Kitchen, Living Room, None, None, None, None, None, Cellar, The Troll Room, East-West Passage, Round Room, Engravings Cave, Dome Room, Torch Room, Temple, Egyptian Room
+success rate: 0.9 * 70
+
+
+==>ACT: drop egg
+==>OBSERVATION: Dropped.
+==>LOCATION: Up a Tree
+
+==>STEP NUM: 50
+==>ACT: south
+==>OBSERVATION: Altar
+There is a sword here.
+==>LOCATION: None
+
+
+
+[{'location before': 'West of House', 'action': 'north', 'location after': 'North of House'}, 
+{'location before': 'North of House', 'action': 'north', 'location after': 'Forest Path'}, 
+{'location before': 'Forest Path', 'action': 'up', 'location after': 'Up...
+{'location before': 'Living Room', 'action': 'get sword', 'location after': 'Living Room'}, 
+{'location before': 'Living Room', 'action': 'move rug', 'location after': 'Living Room'}, 
+{'location before': 'Living Room', 'action': 'open trapdoor', 'location after': 'Cellar'}, 
+{'location before': 'Cellar', 'action': 'north', 'location after': 'The Troll Room'}, 
+{'location before': 'The Troll Room', 'action': 'kill troll with sword', 'location after': 'The Troll Room'}]

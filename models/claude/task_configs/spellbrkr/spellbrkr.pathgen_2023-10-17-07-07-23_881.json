@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Midair",
+    "dst_node": "Cave Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Midair",
+            "node": "taken by roc",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "taken by roc",
+            "node": "In Roc Nest",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "In Roc Nest",
+            "node": "Packed Earth",
+            "action": "blorple 1",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Packed Earth",
+            "node": "Cave Entrance",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        }
+    ]
+}

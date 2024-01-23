@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Supply Tent",
+    "dst_node": "Northern Path",
+    "path_gt": [
+        {
+            "prev_node": "Supply Tent",
+            "node": "Outside Supply Tent",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Outside Supply Tent",
+            "node": "Outside Your Tent",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Northern Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "edge of a large calm lake",
+    "dst_node": "brick wall (destroyed at some point)",
+    "path_gt": [
+        {
+            "prev_node": "edge of a large calm lake",
+            "node": "outside the house",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "brick wall (destroyed at some point)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ]
+}

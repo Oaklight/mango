@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Performance Ring",
+    "dst_node": "Platform (east side)",
+    "path_gt": [
+        {
+            "prev_node": "Performance Ring",
+            "node": "Platform (west side)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Platform (west side)",
+            "node": "on the tightrope",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "on the tightrope",
+            "node": "Platform (east side)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        }
+    ]
+}

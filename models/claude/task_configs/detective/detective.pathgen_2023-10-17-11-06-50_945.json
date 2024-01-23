@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Alley",
+    "dst_node": "Doughnut King",
+    "path_gt": [
+        {
+            "prev_node": "Alley",
+            "node": "Police Station",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Police Station",
+            "node": "Outside (Holiday Inn to north, Doughnut King to east, the Wall to west)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Outside (Holiday Inn to north, Doughnut King to east, the Wall to west)",
+            "node": "Doughnut King",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ]
+}

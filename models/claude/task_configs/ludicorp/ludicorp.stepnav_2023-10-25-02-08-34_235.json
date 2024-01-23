@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Front Of The Office",
+    "dst_node": "Abandoned Well",
+    "path_gt": [
+        {
+            "prev_node": "Front Of The Office",
+            "node": "East Of Office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Damp Corner",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Damp Corner",
+            "node": "Storage Shed Door",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Storage Shed Door",
+            "node": "Abandoned Well",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

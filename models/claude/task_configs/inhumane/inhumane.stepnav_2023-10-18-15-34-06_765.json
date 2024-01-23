@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Landing",
+    "dst_node": "On the Platform",
+    "path_gt": [
+        {
+            "prev_node": "Landing",
+            "node": "Round Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Corridor Near Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Corridor Near Pit",
+            "node": "On the Platform",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

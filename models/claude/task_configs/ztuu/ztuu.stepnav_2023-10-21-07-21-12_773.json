@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "the entrance of tunnel",
+    "dst_node": "Museum of Illusion",
+    "path_gt": [
+        {
+            "prev_node": "the entrance of tunnel",
+            "node": "tunnel",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "tunnel",
+            "node": "Cultural Complex",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Cultural Complex",
+            "node": "Hall of Science Lobby",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Hall of Science Lobby",
+            "node": "Museum of Illusion",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/ztuu/results/"
+}

@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Riverwalk",
+    "dst_node": "the lower edge of the window",
+    "path_gt": [
+        {
+            "prev_node": "Riverwalk",
+            "node": "Town Square",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Town Square",
+            "node": "Whateley Bridge",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Whateley Bridge",
+            "node": "Narrow Street",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Outside the Real Estate Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Outside the Real Estate Office",
+            "node": "Alley",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Alley",
+            "node": "the lower edge of the window",
+            "action": "climb can",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

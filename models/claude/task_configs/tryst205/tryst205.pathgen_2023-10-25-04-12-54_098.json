@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Kati's Room",
+    "dst_node": "Master Bathroom",
+    "path_gt": [
+        {
+            "prev_node": "Kati's Room",
+            "node": "Upstairs Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Upstairs Hallway",
+            "node": "Master Bedroom",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Master Bedroom",
+            "node": "Master Bathroom",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ]
+}

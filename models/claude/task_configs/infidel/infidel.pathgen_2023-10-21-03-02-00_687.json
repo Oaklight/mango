@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Northern Path",
+    "dst_node": "Chamber of Ra",
+    "path_gt": [
+        {
+            "prev_node": "Northern Path",
+            "node": "Desert (within sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Desert (within sight of encampment)",
+            "node": "Desert (out of sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Desert (out of sight of encampment)",
+            "node": "Chamber of Ra",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        }
+    ]
+}

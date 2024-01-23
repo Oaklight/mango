@@ -1,0 +1,71 @@
+{
+    "task": "stepnav",
+    "src_node": "Cabin",
+    "dst_node": "Galley",
+    "path_gt": [
+        {
+            "prev_node": "Cabin",
+            "node": "Deck",
+            "action": "yes",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Deck",
+            "node": "Captain's Quarters, on the bed",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Captain's Quarters, on the bed",
+            "node": "Captain's Quarters",
+            "action": "stand up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Captain's Quarters",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Aft Hold",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Aft Hold",
+            "node": "Hold",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Main Deck",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Forecastle",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Forecastle",
+            "node": "Galley",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        }
+    ],
+    "save_path": "outputs/plundered/results/"
+}

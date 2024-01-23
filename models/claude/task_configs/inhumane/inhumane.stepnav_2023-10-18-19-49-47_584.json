@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Door Near Blades",
+    "dst_node": "Corridor at Doorway",
+    "path_gt": [
+        {
+            "prev_node": "Door Near Blades",
+            "node": "Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Stalagmite Room",
+            "node": "North Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "North Stalagmite Room",
+            "node": "Round Room",
+            "action": "push button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, east to Round Room)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, east to Round Room)",
+            "node": "Corridor at Doorway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

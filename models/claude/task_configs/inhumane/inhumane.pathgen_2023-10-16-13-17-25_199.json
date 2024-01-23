@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside Door",
+    "dst_node": "Landing",
+    "path_gt": [
+        {
+            "prev_node": "Outside Door",
+            "node": "Hall Full of Fur",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Hall Full of Fur",
+            "node": "Glass Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Glass Hall",
+            "node": "End of glass hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "End of glass hall",
+            "node": "Round Room",
+            "action": "take necklace",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "Landing",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ]
+}

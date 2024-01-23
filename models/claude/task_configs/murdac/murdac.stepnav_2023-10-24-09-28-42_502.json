@@ -1,0 +1,92 @@
+{
+    "task": "stepnav",
+    "src_node": "rock garden",
+    "dst_node": "alcove",
+    "path_gt": [
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "vegetable garden",
+            "node": "shrubbery",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "shrubbery",
+            "node": "remnants of a bonfire",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "remnants of a bonfire",
+            "node": "flower garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "outside the house",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "inside the hut",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "inside the hut",
+            "node": "large quadrangular cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "large quadrangular cellar",
+            "node": "mad scientist's laboratory",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "mad scientist's laboratory",
+            "node": "high tunnel (to the west of lab)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "high tunnel (to the west of lab)",
+            "node": "wooden plank in east/west tunnel",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "wooden plank in east/west tunnel",
+            "node": "high tunnel (east/west, alcove off to north)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "high tunnel (east/west, alcove off to north)",
+            "node": "alcove",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

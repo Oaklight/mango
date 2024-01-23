@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Meadow",
+    "dst_node": "Hole",
+    "path_gt": [
+        {
+            "prev_node": "Meadow",
+            "node": "Dismal Swamp",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Inside Stump",
+            "action": "go stump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Root Chamber",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Root Chamber",
+            "node": "Hole",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ]
+}

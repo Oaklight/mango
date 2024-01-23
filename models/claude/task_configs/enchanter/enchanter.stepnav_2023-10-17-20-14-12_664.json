@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Deserted Village",
+    "dst_node": "Outside Gate",
+    "path_gt": [
+        {
+            "prev_node": "Deserted Village",
+            "node": "Village Outskirts",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Village Outskirts",
+            "node": "Eastern Fork",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Eastern Fork",
+            "node": "Western Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "Western Road",
+            "node": "Outside Gate",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        }
+    ],
+    "save_path": "outputs/enchanter/results/"
+}

@@ -1,0 +1,21 @@
+{
+    "task": "pathgen",
+    "src_node": "Narrow Cleft",
+    "dst_node": "Mountain Trail (up west, down east)",
+    "path_gt": [
+        {
+            "prev_node": "Narrow Cleft",
+            "node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Mountain Trail (cleft to northwest, down southwest, down east)",
+            "node": "Mountain Trail (up west, down east)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        }
+    ]
+}

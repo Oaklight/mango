@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Waterfall",
+    "dst_node": "Railway Station (Soldiers' Barracks)",
+    "path_gt": [
+        {
+            "prev_node": "Waterfall",
+            "node": "Training Grounds",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Training Grounds",
+            "node": "Soldiers' Barracks",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Soldiers' Barracks",
+            "node": "Railway Station (Soldiers' Barracks)",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 62
+        }
+    ]
+}

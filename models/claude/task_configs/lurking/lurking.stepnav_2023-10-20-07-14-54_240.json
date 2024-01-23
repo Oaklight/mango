@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Temporary Lab",
+    "dst_node": "Stairway",
+    "path_gt": [
+        {
+            "prev_node": "Temporary Lab",
+            "node": "Temporary Basement",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Temporary Basement",
+            "node": "Basement",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Basement",
+            "node": "Aero Basement",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Aero Basement",
+            "node": "Stairway",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

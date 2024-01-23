@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Officer's Room",
+    "dst_node": "Bar",
+    "path_gt": [
+        {
+            "prev_node": "Officer's Room",
+            "node": "Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Office",
+            "node": "Bar",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/zenon/results/"
+}

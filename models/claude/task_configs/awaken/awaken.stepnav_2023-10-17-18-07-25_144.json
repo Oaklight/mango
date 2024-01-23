@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Top of Oak Tree",
+    "dst_node": "Inner Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Top of Oak Tree",
+            "node": "Front of the Church",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "Church Porch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Church Porch",
+            "node": "Vestibule",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Steeple Chamber",
+            "action": "climb ladder",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Steeple Chamber",
+            "node": "Inner Chamber",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ],
+    "save_path": "outputs/awaken/results/"
+}

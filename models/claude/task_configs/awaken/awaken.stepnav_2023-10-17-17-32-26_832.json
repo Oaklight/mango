@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Graveyard",
+    "dst_node": "Steeple Chamber",
+    "path_gt": [
+        {
+            "prev_node": "Graveyard",
+            "node": "West Side of the Church",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "West Side of the Church",
+            "node": "North Side of the Church",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "North Side of the Church",
+            "node": "East Side of the Church",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "East Side of the Church",
+            "node": "Front of the Church",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Front of the Church",
+            "node": "Church Porch",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Church Porch",
+            "node": "Vestibule",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Vestibule",
+            "node": "Steeple Chamber",
+            "action": "climb ladder",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        }
+    ],
+    "save_path": "outputs/awaken/results/"
+}

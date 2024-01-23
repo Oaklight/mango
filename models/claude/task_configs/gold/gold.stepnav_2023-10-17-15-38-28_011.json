@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "In a small meadow",
+    "dst_node": "On a path in the forest",
+    "path_gt": [
+        {
+            "prev_node": "In a small meadow",
+            "node": "In the garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "In the garden",
+            "node": "In a clearing in the forest",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "In a clearing in the forest",
+            "node": "At a fork in the path",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "At a fork in the path",
+            "node": "On a path in the forest",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        }
+    ],
+    "save_path": "outputs/gold/results/"
+}

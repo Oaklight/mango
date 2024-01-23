@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside Work Tent",
+    "dst_node": "Desert (out of sight of encampment)",
+    "path_gt": [
+        {
+            "prev_node": "Outside Work Tent",
+            "node": "Fire Pit",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Fire Pit",
+            "node": "Outside Your Tent",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Northern Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Northern Path",
+            "node": "Desert (within sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Desert (within sight of encampment)",
+            "node": "Desert (out of sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        }
+    ]
+}

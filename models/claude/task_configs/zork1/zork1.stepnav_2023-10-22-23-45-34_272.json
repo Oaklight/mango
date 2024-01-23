@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "North of House",
+    "dst_node": "Living Room",
+    "path_gt": [
+        {
+            "prev_node": "North of House",
+            "node": "Behind House",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Behind House",
+            "node": "Kitchen",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Living Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        }
+    ],
+    "save_path": "outputs/zork1/results/"
+}

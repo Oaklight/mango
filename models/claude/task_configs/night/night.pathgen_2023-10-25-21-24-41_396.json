@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Stairwell (Third Floor)",
+    "dst_node": "Janitor's Closet",
+    "path_gt": [
+        {
+            "prev_node": "Stairwell (Third Floor)",
+            "node": "Stairwell (Second Floor)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "Stairwell (Second Floor)",
+            "node": "Stairwell (First Floor)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Stairwell (First Floor)",
+            "node": "Hall (1st floor, north end of north/south hall)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Hall (1st floor, north end of north/south hall)",
+            "node": "Hall (1st floor, middle of north/south hall)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Hall (1st floor, middle of north/south hall)",
+            "node": "Hall Outside Elevator (1st floor)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Hall Outside Elevator (1st floor)",
+            "node": "Janitor's Closet",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ]
+}

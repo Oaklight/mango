@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Lobby",
+    "dst_node": "quarters",
+    "path_gt": [
+        {
+            "prev_node": "Lobby",
+            "node": "Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Hallway",
+            "node": "quarters",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 4
+        }
+    ],
+    "save_path": "outputs/sorcerer/results/"
+}

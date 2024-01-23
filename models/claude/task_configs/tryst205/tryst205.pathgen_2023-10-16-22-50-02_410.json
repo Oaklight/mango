@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Inside Somewhere",
+    "dst_node": "Master Bathroom",
+    "path_gt": [
+        {
+            "prev_node": "Inside Somewhere",
+            "node": "Upstairs Hallway",
+            "action": "wait",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Upstairs Hallway",
+            "node": "Master Bedroom",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Master Bedroom",
+            "node": "Master Bathroom",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ]
+}

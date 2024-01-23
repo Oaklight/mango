@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Hallway (second floor, west)",
+    "dst_node": "Hallway (near quarters of Palemon and TuffBerry)",
+    "path_gt": [
+        {
+            "prev_node": "Hallway (second floor, west)",
+            "node": "Hallway (west end)",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (near your quarters)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Hallway (near your quarters)",
+            "node": "Hallway (near quarters of Palemon and TuffBerry)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        }
+    ]
+}

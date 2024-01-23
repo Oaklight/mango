@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "East-West Passage",
+    "dst_node": "Kitchen",
+    "path_gt": [
+        {
+            "prev_node": "East-West Passage",
+            "node": "The Troll Room",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "The Troll Room",
+            "node": "Cellar",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cellar",
+            "node": "Living Room",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "Living Room",
+            "node": "Kitchen",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ]
+}

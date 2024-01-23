@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "mad scientist's laboratory",
+    "dst_node": "vegetable garden",
+    "path_gt": [
+        {
+            "prev_node": "mad scientist's laboratory",
+            "node": "large quadrangular cellar",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "large quadrangular cellar",
+            "node": "inside the hut",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "inside the hut",
+            "node": "outside the house",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "rock garden",
+            "node": "vegetable garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

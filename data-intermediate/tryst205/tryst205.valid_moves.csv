@@ -1,71 +1,519 @@
-Step Num,Location Before,Location After
-1,,
-2,On the Floor,Upstairs Hallway
-3,,
-4,Upstairs Hallway,Master Bedroom
-5,,
-6,,
-7,,
-8,,
-9,,
-10,Master Bedroom,Master Bathroom
-11,,
-12,,
-13,,
-14,,
-15,Master Bathroom,Master Bedroom
-16,,
-17,,
-18,,
-19,,
-20,Master Bedroom,Upstairs Hallway
-21,Upstairs Hallway,Kids' Bathroom
-22,,
-23,,
-24,,
-25,,
-26,,
-27,,
-28,,
-29,Kids' Bathroom,Upstairs Hallway
-30,Upstairs Hallway,Mark's Room
-31,,
-32,Mark's Room,Upstairs Hallway
-33,,
-34,Upstairs Hallway,on bench
-35,,
-36,on bench,Upstairs Hallway
-37,,
-38,,
-39,,
-40,Upstairs Hallway,Kati's Room
-41,,
-42,,
-43,,
-44,,
-45,Kati's Room,Upstairs Hallway
-46,Upstairs Hallway,Mark's Room
-47,,
-48,,
-49,,
-50,,
-51,,
-52,,
-53,Mark's Room,Upstairs Hallway
-54,Upstairs Hallway,Inside Somewhere
-55,,
-56,,
-57,,
-58,,
-59,,
-60,,
-61,,
-62,,
-63,,
-64,,
-65,,
-66,Inside Somewhere,Upstairs Hallway
-67,,
-68,,
-69,Upstairs Hallway,Mark's Room
-70,,
+Step Num,Location Before,Location After,taken_action
+1,,,stand
+2,On the Floor,Upstairs Hallway,stand
+3,,,get gum
+4,Upstairs Hallway,Master Bedroom,north
+5,,,x gnome
+6,,,ask george about bag
+7,,,ask george about beetlebaum
+8,,,ask george about frank
+9,,,ask george about gumball
+10,Master Bedroom,Master Bathroom,west
+11,,,open closet
+12,,,take bag
+13,,,x bag
+14,,,open bag
+15,Master Bathroom,Master Bedroom,east
+16,,,x dresser
+17,,,open drawer
+18,,,take gloves
+19,,,wear gloves
+20,Master Bedroom,Upstairs Hallway,south
+21,Upstairs Hallway,Kids' Bathroom,east
+22,,,open curtain
+23,,,get soap
+24,,,put soap on zipper
+25,,,open bag
+26,,,drop soap
+27,,,remove gloves
+28,,,drop gloves
+29,Kids' Bathroom,Upstairs Hallway,west
+30,Upstairs Hallway,Mark's Room,northeast
+31,,,get bench
+32,Mark's Room,Upstairs Hallway,south
+33,,,drop bench
+34,Upstairs Hallway,on bench,stand on bench
+35,,,get key
+36,on bench,Upstairs Hallway,exit
+37,,,unlock door with key
+38,,,drop key
+39,,,open door
+40,Upstairs Hallway,Kati's Room,south
+41,,,search clothes
+42,,,get pack
+43,,,open closet
+44,,,get safe
+45,Kati's Room,Upstairs Hallway,north
+46,Upstairs Hallway,Mark's Room,northeast
+47,,,x pack
+48,,,read label
+49,,,shake pack
+50,,,put pack on gum
+51,,,drop pack
+52,,,get gum
+53,Mark's Room,Upstairs Hallway,south
+54,Upstairs Hallway,Inside Somewhere,chew gum
+55,,,x paper
+56,,,get paper
+57,,,wait
+58,,,wait
+59,,,wait
+60,,,blow dust
+61,,,blow dust
+62,,,blow dust
+63,,,x paper
+64,,,dehlila
+65,,,wait
+66,Inside Somewhere,Upstairs Hallway,wait
+67,,,take bag
+68,,,take safe
+69,Upstairs Hallway,Mark's Room,northeast
+70,,,x safe
+71,,,shake safe
+72,,,open safe
+73,,,give safe to mark
+74,,,get key
+75,Mark's Room,Upstairs Hallway,south
+76,Upstairs Hallway,Master Bedroom,north
+77,Master Bedroom,Master Bathroom,west
+78,,,dehlila
+79,,,open door
+80,Master Bathroom,Master Closet,south
+81,,,get box
+82,,,unlock box with key
+83,,,open box
+84,,,open trapdoor
+85,,,drop all
+86,Master Closet,Secret Cellar,down
+87,,,get gum
+88,,,chew gum
+89,Secret Cellar,Clearing,
+90,Clearing,Shady Path,west
+91,,,south
+92,Shady Path,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",west
+93,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Blind Canyon,northeast
+94,Blind Canyon,Track Crossing,north
+95,Track Crossing,Dusty Road,north
+96,Dusty Road,Deadeye Gulch,north
+97,,,read sign
+98,Deadeye Gulch,East Main Street,west
+99,East Main Street,West Main Street,west
+100,West Main Street,General Store,north
+101,,,look under floorboard
+102,,,get match
+103,,,get gum
+104,,,open box then get cube
+105,,,x door
+106,,,tear cloth
+107,General Store,Garden,west
+108,,,x stalk
+109,,,get corn
+110,Garden,General Store,east
+111,General Store,West Main Street,south
+112,,,south
+113,,,x jail
+114,West Main Street,Unattended Trees,west
+115,Unattended Trees,Tree Top,up
+116,,,x nest
+117,,,look in nest
+118,,,get note
+119,,,read note
+120,Tree Top,Unattended Trees,down
+121,Unattended Trees,West Main Street,east
+122,West Main Street,East Main Street,east
+123,East Main Street,Bank,north
+124,,,get pan
+125,,,x pan
+126,,,look in hole
+127,Bank,Vault,north
+128,,,x machine
+129,,,look under table
+130,,,read green
+131,,,drop green
+132,Vault,Bank,south
+133,Bank,East Main Street,south
+134,East Main Street,Saloon,south
+135,,,x table
+136,,,x writing
+137,,,clean table with cloth
+138,,,x machine
+139,,,read crumpled
+140,,,drop crumpled
+141,,,set first wheel to 9
+142,,,set second wheel to 2
+143,,,set third wheel to 8
+144,,,set fourth wheel to 9
+145,,,set fifth wheel to 3
+146,,,x wheels
+147,Saloon,East Main Street,north
+148,East Main Street,Deadeye Gulch,east
+149,Deadeye Gulch,Dusty Road,south
+150,Dusty Road,Track Crossing,south
+151,Track Crossing,Blind Canyon,south
+152,Blind Canyon,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",southwest
+153,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Clear Creek,southwest
+154,,,x magnetite
+155,,,put pan in water
+156,,,shake pan
+157,,,get gold
+158,,,drop pan
+159,,,put cloth in water
+160,Clear Creek,"Trail (to northeast and south, small grassy ridge)",southwest
+161,"Trail (to northeast and south, small grassy ridge)","Trail (less vegetation to the southeast and southwest, clear path leading north)",south
+162,,,get sprig
+163,"Trail (less vegetation to the southeast and southwest, clear path leading north)","Trail (to northeast and south, small grassy ridge)",north
+164,"Trail (to northeast and south, small grassy ridge)",Clear Creek,northeast
+165,Clear Creek,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",northeast
+166,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Blind Canyon,northeast
+167,Blind Canyon,Track Crossing,north
+168,Track Crossing,Dusty Road,north
+169,Dusty Road,Deadeye Gulch,north
+170,Deadeye Gulch,East Main Street,west
+171,East Main Street,Bank,north
+172,Bank,Vault,north
+173,,,x machine
+174,,,put gold in plate
+175,,,pull lever
+176,,,get coin
+177,,,x coin
+178,Vault,Bank,south
+179,Bank,East Main Street,south
+180,East Main Street,Saloon,south
+181,,,x slot
+182,,,put coin in slot
+183,,,pull lever
+184,,,get bottle
+185,,,open bottle
+186,,,drop cork
+187,,,clean table with cloth
+188,,,drop cloth
+189,,,read writing
+190,Saloon,East Main Street,north
+191,East Main Street,Deadeye Gulch,east
+192,Deadeye Gulch,Outside Livery,north
+193,,,north
+194,,,open door
+195,,,x door
+196,,,x paint splotches
+197,,,touch red
+198,,,touch orange
+199,,,touch yellow
+200,,,touch blue
+201,,,touch orange
+202,,,touch blue
+203,,,open door
+204,Outside Livery,Livery Stable,north
+205,Livery Stable,horse stall,enter stall
+206,,,get shovel
+207,horse stall,Livery Stable,exit
+208,Livery Stable,Hayloft,up
+209,,,get fork
+210,Hayloft,Livery Stable,down
+211,Livery Stable,Corral,east
+212,,,x grass
+213,,,search grass
+214,,,get tin
+215,Corral,Livery Stable,west
+216,Livery Stable,Outside Livery,south
+217,Outside Livery,Deadeye Gulch,south
+218,Deadeye Gulch,East Main Street,west
+219,East Main Street,Deadeye Gulch,east
+220,Deadeye Gulch,Dusty Road,south
+221,Dusty Road,Boot Hill,east
+222,,,dig plot with shovel
+223,,,dig plot with shovel
+224,,,dig plot with shovel
+225,,,dig plot with shovel
+226,,,drop shovel
+227,,,get boots
+228,,,search boots
+229,,,read note
+230,,,give corn to bird
+231,,,wear boots
+232,Boot Hill,Dusty Road,west
+233,Dusty Road,Deadeye Gulch,north
+234,Deadeye Gulch,East Main Street,west
+235,East Main Street,West Main Street,west
+236,West Main Street,Unattended Trees,west
+237,Unattended Trees,Fork in the Road,west
+238,,,get spoon
+239,Fork in the Road,Bottom of Crow Hill,northwest
+240,Bottom of Crow Hill,Top of Crow Hill,northeast
+241,Top of Crow Hill,Over the Hill,north
+242,,,get lantern
+243,Over the Hill,Top of Crow Hill,south
+244,Top of Crow Hill,Burned Down Shack,west
+245,,,read sign
+246,,,read book
+247,,,put cube in cauldron
+248,,,put gum in cauldron
+249,,,put sprig in cauldron
+250,,,mix cauldron with spoon
+251,,,get gumball
+252,,,drop spoon
+253,,,x sketch
+254,,,ask george about dehlila
+255,,,ask george about gumball
+256,,,ask george about town
+257,Burned Down Shack,Top of Crow Hill,east
+258,Top of Crow Hill,Bottom of Crow Hill,southwest
+259,Bottom of Crow Hill,Fork in the Road,southeast
+260,Fork in the Road,Unattended Trees,east
+261,Unattended Trees,West Main Street,east
+262,West Main Street,East Main Street,east
+263,,,drop all
+264,,,take bottle
+265,,,take gumball
+266,East Main Street,Saloon,south
+267,,,chew gum
+268,,,drink whiskey
+269,,,x barkeep
+270,,,ask barkeep about thad
+271,,,north
+272,,,x thad
+273,,,shoot thad
+274,,,get boots
+275,,,wear boots
+276,Saloon,Storage Room,east
+277,,,get knife
+278,,,x knife
+279,Storage Room,Saloon,west
+280,Saloon,East Main Street,north
+281,,,get tin
+282,East Main Street,Deadeye Gulch,east
+283,Deadeye Gulch,Dusty Road,south
+284,Dusty Road,Track Crossing,south
+285,Track Crossing,Blind Canyon,south
+286,Blind Canyon,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",southwest
+287,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Shady Path,east
+288,,,open tin
+289,,,get balm
+290,,,wear balm
+291,Shady Path,Beaver Dam,south
+292,,,x rock
+293,,,sharpen knife on rock
+294,,,get berries
+295,,,eat berries
+296,Beaver Dam,Shady Path,north
+297,,,drop tin
+298,Shady Path,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",west
+299,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Clear Creek,southwest
+300,Clear Creek,"Trail (to northeast and south, small grassy ridge)",southwest
+301,"Trail (to northeast and south, small grassy ridge)","Trail (less vegetation to the southeast and southwest, clear path leading north)",south
+302,"Trail (less vegetation to the southeast and southwest, clear path leading north)",End of the Trail,southeast
+303,,,cut branch with knife
+304,,,get stick
+305,End of the Trail,"Trail (less vegetation to the southeast and southwest, clear path leading north)",northwest
+306,"Trail (less vegetation to the southeast and southwest, clear path leading north)","Trail (to northeast and south, small grassy ridge)",north
+307,"Trail (to northeast and south, small grassy ridge)",Clear Creek,northeast
+308,Clear Creek,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",northeast
+309,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Blind Canyon,northeast
+310,Blind Canyon,Track Crossing,north
+311,Track Crossing,Dusty Road,north
+312,Dusty Road,Deadeye Gulch,north
+313,Deadeye Gulch,East Main Street,west
+314,East Main Street,West Main Street,west
+315,West Main Street,General Store,north
+316,,,get gum
+317,General Store,West Main Street,south
+318,West Main Street,East Main Street,east
+319,East Main Street,Bank,north
+320,,,chew gum
+321,,,put gum on stick
+322,,,put stick in hole
+323,,,drop stick
+324,,,get locket
+325,,,wear locket
+326,Bank,East Main Street,south
+327,,,get all
+328,East Main Street,West Main Street,west
+329,West Main Street,Unattended Trees,west
+330,Unattended Trees,Fork in the Road,west
+331,Fork in the Road,Cactus Patch,southwest
+332,Cactus Patch,Outside Mine Entrance,south
+333,Outside Mine Entrance,Oil Patch,east
+334,Oil Patch,"Just Off the Ground, On the Derrick",up
+335,,,say wheel
+336,"Just Off the Ground, On the Derrick","About Half Way Up, On the Derrick",up
+337,,,say candle
+338,"About Half Way Up, On the Derrick","Almost to the Top, On the Derrick",up
+339,,,say oil
+340,"Almost to the Top, On the Derrick","Platform, On the Derrick",up
+341,,,get can
+342,"Platform, On the Derrick","Almost to the Top, On the Derrick",down
+343,,,get candle
+344,"Almost to the Top, On the Derrick","About Half Way Up, On the Derrick",down
+345,,,get wheel
+346,"About Half Way Up, On the Derrick","Just Off the Ground, On the Derrick",down
+347,"Just Off the Ground, On the Derrick",Oil Patch,down
+348,Oil Patch,Outside Mine Entrance,west
+349,,,cut rope with knife
+350,,,drop knife
+351,Outside Mine Entrance,"Mine Shaft (ore car on track, exit to east)",west
+352,,,light match
+353,,,light candle with match
+354,,,drop match
+355,,,drop lantern
+356,"Mine Shaft (ore car on track, exit to east)","Mine Shaft (flame flickers towards east, near exit)",west
+357,"Mine Shaft (flame flickers towards east, near exit)",Mine Shaft (flame flickers swirls from northeast to east),west
+358,Mine Shaft (flame flickers swirls from northeast to east),Mine Shaft (flame flickers towards southwest),northeast
+359,,,look in crack
+360,,,get piece
+361,,,open locket
+362,,,put piece in locket
+363,,,close locket
+364,Mine Shaft (flame flickers towards southwest),Mine Shaft (flame swirls from west to southwest),northeast
+365,Mine Shaft (flame swirls from west to southwest),Mine Shaft (flame flickers towards east),west
+366,Mine Shaft (flame flickers towards east),Vent Room,west
+367,,,get accordion
+368,Vent Room,Mine Shaft (flame flickers towards east),east
+369,Mine Shaft (flame flickers towards east),Mine Shaft (flame swirls from west to southwest),east
+370,Mine Shaft (flame swirls from west to southwest),Mine Shaft (flame flickers towards southwest),southwest
+371,Mine Shaft (flame flickers towards southwest),Mine Shaft (flame flickers swirls from northeast to east),southwest
+372,Mine Shaft (flame flickers swirls from northeast to east),"Mine Shaft (flame flickers towards east, near exit)",east
+373,"Mine Shaft (flame flickers towards east, near exit)","Mine Shaft (ore car on track, exit to east)",east
+374,,,drop candle
+375,"Mine Shaft (ore car on track, exit to east)",Outside Mine Entrance,east
+376,Outside Mine Entrance,Oil Patch,east
+377,Oil Patch,"Just Off the Ground, On the Derrick",up
+378,"Just Off the Ground, On the Derrick","About Half Way Up, On the Derrick",up
+379,"About Half Way Up, On the Derrick","Almost to the Top, On the Derrick",up
+380,"Almost to the Top, On the Derrick","Platform, On the Derrick",up
+381,,,play accordion
+382,"Platform, On the Derrick","Almost to the Top, On the Derrick",down
+383,"Almost to the Top, On the Derrick","About Half Way Up, On the Derrick",down
+384,"About Half Way Up, On the Derrick","Just Off the Ground, On the Derrick",down
+385,"Just Off the Ground, On the Derrick",Oil Patch,down
+386,,,get rock
+387,,,x rock
+388,,,read lettering
+389,Oil Patch,Outside Mine Entrance,west
+390,Outside Mine Entrance,Cactus Patch,north
+391,Cactus Patch,Fork in the Road,northeast
+392,,,drop boots
+393,Fork in the Road,Bottom of Crow Hill,northwest
+394,Bottom of Crow Hill,Top of Crow Hill,northeast
+395,Top of Crow Hill,Burned Down Shack,west
+396,,,rub locket
+397,,,get key
+398,Burned Down Shack,Top of Crow Hill,east
+399,Top of Crow Hill,Bottom of Crow Hill,southwest
+400,Bottom of Crow Hill,Fork in the Road,southeast
+401,Fork in the Road,Unattended Trees,east
+402,Unattended Trees,West Main Street,east
+403,West Main Street,East Main Street,east
+404,East Main Street,Deadeye Gulch,east
+405,,,read sign
+406,,,cuss
+407,Deadeye Gulch,Jail,south
+408,,,get bar
+409,,,wait
+410,,,wait
+411,,,wait
+412,,,wait
+413,,,wait
+414,,,wait
+415,,,wait
+416,,,wait
+417,,,wait
+418,,,wait
+419,,,wait
+420,,,wait
+421,,,wait
+422,,,wait
+423,,,open door
+424,Jail,West Main Street,north
+425,West Main Street,East Main Street,east
+426,East Main Street,Deadeye Gulch,east
+427,Deadeye Gulch,Dusty Road,south
+428,Dusty Road,Track Crossing,south
+429,Track Crossing,Broken Track,west
+430,,,move rail with bar
+431,,,drop bar
+432,Broken Track,Track Crossing,east
+433,Track Crossing,Train Track,east
+434,,,get weeds with fork
+435,,,drop fork
+436,,,oil handcar with can
+437,,,drop can
+438,Train Track,handcar,enter handcar
+439,,,x handle
+440,,,move handle
+441,,,move handle
+442,,,move handle
+443,,,move handle
+444,handcar,End of the Line,exit
+445,,,read sign
+446,,,x door
+447,,,x wheel
+448,,,put wheel on peg
+449,,,read plaque
+450,,,turn wheel left
+451,,,turn wheel right
+452,,,turn wheel right
+453,,,turn wheel left
+454,,,turn wheel left
+455,,,turn wheel left
+456,,,turn wheel right
+457,,,open door
+458,End of the Line,Inside Sod Shack,south
+459,,,unlock box with key
+460,,,drop key
+461,,,open box
+462,,,get stick
+463,Inside Sod Shack,End of the Line,north
+464,End of the Line,handcar,enter car
+465,,,x lever
+466,,,pull lever
+467,,,move handle
+468,,,move handle
+469,,,move handle
+470,handcar,Track Crossing,exit
+471,Track Crossing,Blind Canyon,south
+472,Blind Canyon,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",southwest
+473,"Trail (northeast-southwest, covered with weed and brush, narrow footpath leading east)",Clear Creek,southwest
+474,Clear Creek,"Trail (to northeast and south, small grassy ridge)",southwest
+475,"Trail (to northeast and south, small grassy ridge)","Trail (less vegetation to the southeast and southwest, clear path leading north)",south
+476,"Trail (less vegetation to the southeast and southwest, clear path leading north)",Box Canyon,southwest
+477,Box Canyon,Hole in the Wall,west
+478,,,x pile
+479,,,put stick in pile
+480,,,throw rock at stick
+481,,,rub locket
+482,Hole in the Wall,Dry Streambed,west
+483,Dry Streambed,Rotted Tree,north
+484,Rotted Tree,Outside Old Shack,north
+485,,,get blanket
+486,,,open door
+487,,,rub locket
+488,Outside Old Shack,Biscuit Residence,west
+489,,,x cutout
+490,,,open cover
+491,,,cover opening with blanket
+492,,,x frank
+493,,,x stove
+494,,,x grille
+495,,,x flue
+496,,,x lever
+497,,,wait
+498,,,wait
+499,,,look
+500,Biscuit Residence,Outside Old Shack,east
+501,,,rub locket
+502,Outside Old Shack,Biscuit Residence,west
+503,,,pull lever
+504,,,wait
+505,,,get watch
+506,,,get apple
+507,Biscuit Residence,Outside Old Shack,east
+508,,,untie horse
+509,,,feed apple to horse
+510,Outside Old Shack,Outside Old Shack (on the horse),get on horse
+511,,,x pair
+512,Outside Old Shack (on the horse),Blind Canyon (The trail winds its way from the southwest through a shadowy canyon),blizzard
+513,,,x thad
+514,,,beetlebaum
+515,,,wait
+516,,,wait
+517,Blind Canyon (The trail winds its way from the southwest through a shadowy canyon),On the Floor (Blind Canyon),
+518,,,stand up

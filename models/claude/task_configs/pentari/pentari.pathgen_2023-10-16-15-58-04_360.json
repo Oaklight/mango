@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Armory",
+    "dst_node": "Castle Dungeon",
+    "path_gt": [
+        {
+            "prev_node": "Armory",
+            "node": "Main Hall",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Main Hall",
+            "node": "Spiral Stairway",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Spiral Stairway",
+            "node": "Castle Dungeon",
+            "action": "get in floor",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Gaseous Geyser",
+    "dst_node": "Fifth Layer of the Earth's Crust",
+    "path_gt": [
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Narrow Passage",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Narrow Passage",
+            "node": "Mineralized Corridor",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Mineralized Corridor",
+            "node": "Cool Cavern",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Cool Cavern",
+            "node": "Fifth Layer of the Earth's Crust",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/jewel/results/"
+}

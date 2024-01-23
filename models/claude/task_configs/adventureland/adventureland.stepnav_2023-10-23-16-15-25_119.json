@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Hole",
+    "dst_node": "Lakeside",
+    "path_gt": [
+        {
+            "prev_node": "Hole",
+            "node": "Root Chamber",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Root Chamber",
+            "node": "Inside Stump",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Inside Stump",
+            "node": "Dismal Swamp",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Dismal Swamp",
+            "node": "Meadow",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ],
+    "save_path": "outputs/adventureland/results/"
+}

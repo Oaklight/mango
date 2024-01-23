@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "The Enterprise Closet",
+    "dst_node": "Room 2",
+    "path_gt": [
+        {
+            "prev_node": "The Enterprise Closet",
+            "node": "The Cafe",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "The Cafe",
+            "node": "North-South Hall--Mid Way",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "North-South Hall--Mid Way",
+            "node": "Hall Near Room 2",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Hall Near Room 2",
+            "node": "Room 2",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        }
+    ]
+}

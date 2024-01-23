@@ -1,71 +1,417 @@
-Step Num,Location Before,Location After
-1,In the Wings,Connection
-2,,
-3,Connection,Beside the Big Top
-4,,
-5,Beside the Big Top,Back Yard
-6,Back Yard,Inside Prop Tent
-7,,
-8,,
-9,,
-10,Inside Prop Tent,Back Yard
-11,Back Yard,Near White Wagon
-12,,
-13,Near White Wagon,Connection
-14,Connection,In the Wings
-15,In the Wings,Performance Ring
-16,,
-17,Performance Ring,Platform (west side)
-18,Platform (west side),on the tightrope
-19,,
-20,,
-21,,
-22,,
-23,on the tightrope,Platform (east side)
-24,,
-25,Platform (east side),on the tightrope
-26,,
-27,,
-28,,
-29,,
-30,on the tightrope,Platform (west side)
-31,,
-32,Platform (west side),Performance Ring
-33,,
-34,Performance Ring,In the Wings
-35,In the Wings,Connection
-36,Connection,Beside the Big Top
-37,Beside the Big Top,Back Yard
-38,,
-39,,
-40,,
-41,Back Yard,"Camp, East"
-42,"Camp, East","Camp, West"
-43,,
-44,,
-45,"Camp, West",Clown Alley
-46,,
-47,,
-48,,
-49,,
-50,Clown Alley,"Camp, West"
-51,"Camp, West",Inside Prop Tent
-52,Inside Prop Tent,Back Yard
-53,Back Yard,Beside the Big Top
-54,Beside the Big Top,Connection
-55,Connection,In the Wings
-56,In the Wings,Under the Bleachers
-57,,
-58,,
-59,,
-60,Under the Bleachers,In the Wings
-61,In the Wings,Connection
-62,,
-63,Connection,Midway Entrance
-64,,
-65,Midway Entrance,Menagerie
-66,Menagerie,Menagerie Nook
-67,,
-68,,
-69,,
-70,,
+Step Num,Location Before,Location After,taken_action
+1,In the Wings,Connection,south
+2,,,help midget
+3,Connection,Beside the Big Top,west
+4,,,take mask
+5,Beside the Big Top,Back Yard,south
+6,Back Yard,Inside Prop Tent,west
+7,,,hide behind president
+8,,,listen to conversation
+9,,,again
+10,Inside Prop Tent,Back Yard,east
+11,Back Yard,Near White Wagon,east
+12,,,take pole
+13,Near White Wagon,Connection,north
+14,Connection,In the Wings,north
+15,In the Wings,Performance Ring,north
+16,,,drop mask
+17,Performance Ring,Platform (west side),up
+18,Platform (west side),on the tightrope,east
+19,,,east
+20,,,east
+21,,,east
+22,,,east
+23,on the tightrope,Platform (east side),east
+24,,,take balloon
+25,Platform (east side),on the tightrope,west
+26,,,west
+27,,,west
+28,,,west
+29,,,west
+30,on the tightrope,Platform (west side),west
+31,,,down
+32,Platform (west side),Performance Ring,down
+33,,,take all
+34,Performance Ring,In the Wings,south
+35,In the Wings,Connection,south
+36,Connection,Beside the Big Top,west
+37,Beside the Big Top,Back Yard,south
+38,,,untie balloon
+39,,,inhale helium
+40,,,"guard, hello"
+41,Back Yard,"Camp, East",south
+42,"Camp, East","Camp, West",west
+43,,,wear clown mask
+44,,,knock on door
+45,"Camp, West",Clown Alley,south
+46,,,take ash tray
+47,,,close door
+48,,,search ash
+49,,,take scrap
+50,Clown Alley,"Camp, West",search tray
+51,"Camp, West",Inside Prop Tent,go under wall
+52,Inside Prop Tent,Back Yard,east
+53,Back Yard,Beside the Big Top,north
+54,Beside the Big Top,Connection,east
+55,Connection,In the Wings,north
+56,In the Wings,Under the Bleachers,northeast
+57,,,search garbage
+58,,,take ticket
+59,,,punch out blue dot
+60,Under the Bleachers,In the Wings,southwest
+61,In the Wings,Connection,south
+62,,,put ticket in slot
+63,Connection,Midway Entrance,east
+64,,,ask pitchman about dr nostrum
+65,Midway Entrance,Menagerie,south
+66,Menagerie,Menagerie Nook,southeast
+67,,,look into cage
+68,,,take keys with pole
+69,,,unlock door
+70,,,open door
+71,Menagerie Nook,Inside Cage,north
+72,,,take bucket
+73,Inside Cage,Menagerie Nook,south
+74,Menagerie Nook,Menagerie,northwest
+75,Menagerie,Midway Entrance,north
+76,Midway Entrance,Connection,west
+77,Connection,Beside the Big Top,west
+78,Beside the Big Top,Back Yard,south
+79,Back Yard,Inside Prop Tent,west
+80,Inside Prop Tent,"Camp, West",south
+81,"Camp, West","Camp, East",east
+82,,,unlock compartment
+83,,,open compartment
+84,,,take whip
+85,"Camp, East",Back Yard,north
+86,Back Yard,Near White Wagon,east
+87,Near White Wagon,Connection,north
+88,,,put ticket in slot
+89,Connection,Midway Entrance,east
+90,Midway Entrance,Midway of Midway,east
+91,Midway of Midway,Far End of Midway,east
+92,Far End of Midway,West Half of Fat Lady,north
+93,West Half of Fat Lady,Eest Half of Fat Lady,northeast
+94,,,take stool
+95,Eest Half of Fat Lady,West Half of Fat Lady,northwest
+96,West Half of Fat Lady,Far End of Midway,south
+97,Far End of Midway,Midway of Midway,west
+98,Midway of Midway,Midway Entrance,west
+99,Midway Entrance,Connection,west
+100,Connection,In the Wings,north
+101,In the Wings,Performance Ring,north
+102,,,unlock cage
+103,,,open cage
+104,Performance Ring,Lions' Den,west
+105,,,whip smooth lion
+106,,,again
+107,,,again
+108,,,lift grate
+109,,,throw meat in passage
+110,Lions' Den,Performance Ring,east
+111,Performance Ring,Lions' Den,west
+112,,,lower grate
+113,,,search stand
+114,Lions' Den,Performance Ring,east
+115,Performance Ring,In the Wings,south
+116,In the Wings,Connection,south
+117,Connection,Near White Wagon,south
+118,Near White Wagon,Back Yard,west
+119,,,give case to harry
+120,Back Yard,Beside the Big Top,north
+121,Beside the Big Top,Connection,east
+122,,,put ticket in slot
+123,Connection,Midway Entrance,east
+124,Midway Entrance,Midway of Midway,east
+125,Midway of Midway,Jennifer's Boudoir,south
+126,,,show case to jenny
+127,,,give case to jenny
+128,Jennifer's Boudoir,Midway of Midway,north
+129,Midway of Midway,Hypnotist's Parlor,north
+130,,,give ticket to rimshaw
+131,Hypnotist's Parlor,Standing Room Only,"rimshaw, hypnotise me"
+132,,,wait
+133,,,wait
+134,,,wait
+135,,,wait
+136,,,buy candy from hawker
+137,,,give money to hawker
+138,,,stand
+139,,,east
+140,,,up
+141,,,east
+142,,,down
+143,,,east
+144,,,up
+145,,,east
+146,Standing Room Only,In the Wings,down
+147,In the Wings,Connection,south
+148,Connection,Long Line,stand in line
+149,,,wait
+150,,,wait
+151,Long Line,Connection,get out of long line
+152,Connection,Short Line,stand in short line
+153,,,wait
+154,Short Line,Long Line,wait
+155,,,wait
+156,,,get out of long line
+157,Long Line,Connection,yes
+158,,,stand in long line
+159,,,bite banana
+160,,,drop banana
+161,Connection,In the Wings,north
+162,,,ask hawker about candy
+163,In the Wings,Standing Room Only,up
+164,,,west
+165,,,down
+166,,,west
+167,,,up
+168,,,west
+169,,,down
+170,Standing Room Only,Leather Sofa,west
+171,Leather Sofa,Hypnotist's Parlor,stand
+172,Hypnotist's Parlor,Midway of Midway,south
+173,Midway of Midway,Midway Entrance,west
+174,Midway Entrance,Under the Bleachers,go under wall
+175,,,search garbage
+176,,,take bar
+177,Under the Bleachers,Midway Entrance,south
+178,Midway Entrance,Midway of Midway,east
+179,Midway of Midway,Far End of Midway,east
+180,Far End of Midway,West Half of Fat Lady,north
+181,West Half of Fat Lady,Eest Half of Fat Lady,northeast
+182,,,show bar to tina
+183,,,"tina, hello"
+184,,,shake hands
+185,Eest Half of Fat Lady,West Half of Fat Lady,northwest
+186,,,take radio
+187,West Half of Fat Lady,Far End of Midway,south
+188,Far End of Midway,Midway of Midway,west
+189,Midway of Midway,Midway Entrance,west
+190,Midway Entrance,Menagerie,south
+191,Menagerie,Menagerie Nook,southeast
+192,,,drop all except radio
+193,Menagerie Nook,Inside Cage,north
+194,,,take headphones
+195,Inside Cage,Menagerie Nook,south
+196,Menagerie Nook,Top of Cage,up
+197,Top of Cage,On the Tent,up
+198,,,set radio to 1170
+199,,,turn radio off
+200,,,rewind tape
+201,,,wait
+202,,,play tape
+203,,,wait
+204,,,wait
+205,,,rewind tape
+206,,,turn radio on
+207,,,record
+208,,,wait
+209,,,wait
+210,,,wait
+211,,,wait
+212,On the Tent,Top of Cage,down
+213,Top of Cage,Menagerie Nook,down
+214,,,rewind tape
+215,,,turn radio off
+216,,,take all
+217,,,drop stool and bucket
+218,Menagerie Nook,Menagerie,northwest
+219,,,unlock cage
+220,,,open cage
+221,Menagerie,Inside Mahler's Cage,west
+222,,,play tape
+223,,,search straw
+224,,,open trap door
+225,,,take ribbon
+226,Inside Mahler's Cage,Menagerie,east
+227,,,close cage
+228,Menagerie,Menagerie Nook,southeast
+229,,,take bucket
+230,Menagerie Nook,Menagerie,northwest
+231,Menagerie,Midway Entrance,north
+232,Midway Entrance,Connection,west
+233,Connection,Beside the Big Top,west
+234,Beside the Big Top,Back Yard,south
+235,Back Yard,Inside Prop Tent,west
+236,,,touch wood with pole
+237,,,take mousetrap
+238,,,drop trap
+239,Inside Prop Tent,Back Yard,east
+240,,,wait
+241,Back Yard,Inside Prop Tent,west
+242,Inside Prop Tent,Back Yard,east
+243,Back Yard,Inside Prop Tent,west
+244,,,catch mouse with bucket
+245,,,take mouse
+246,Inside Prop Tent,Back Yard,east
+247,Back Yard,Beside the Big Top,north
+248,Beside the Big Top,Connection,east
+249,,,put ticket in slot
+250,Connection,Midway Entrance,east
+251,Midway Entrance,Menagerie,south
+252,,,show mouse to elephant
+253,,,again
+254,,,wait
+255,Menagerie,Near White Wagon,southwest
+256,,,drop all
+257,Near White Wagon,On the Wagon,up
+258,,,turn crank
+259,,,look into wagon
+260,,,knock on door
+261,On the Wagon,Office,in
+262,,,lock door
+263,,,search desk
+264,,,take spreadsheet
+265,,,move desk
+266,Office,On the Wagon,up
+267,,,read spreadsheet
+268,On the Wagon,Near White Wagon,down
+269,,,take all
+270,Near White Wagon,Back Yard,west
+271,,,ask harry about eddie smaldone
+272,Back Yard,Near White Wagon,east
+273,Near White Wagon,Menagerie,northeast
+274,Menagerie,Menagerie Nook,southeast
+275,,,slide ticket under front
+276,Menagerie Nook,Blue Room,east
+277,,,take ticket
+278,,,open secret panel
+279,,,y
+280,,,north
+281,,,open secret panel
+282,Blue Room,Menagerie Nook,west
+283,Menagerie Nook,Menagerie,northwest
+284,Menagerie,Midway Entrance,north
+285,Midway Entrance,Connection,west
+286,Connection,Near White Wagon,south
+287,Near White Wagon,Menagerie,northeast
+288,Menagerie,Menagerie Nook,southeast
+289,,,slide ticket under front
+290,Menagerie Nook,Blue Room,east
+291,,,look under table
+292,,,take suitcase
+293,,,wait
+294,Blue Room,Menagerie Nook,west
+295,,,drop all
+296,Menagerie Nook,Top of Cage,up
+297,Top of Cage,On the Tent,up
+298,,,wait
+299,,,east
+300,,,wait
+301,,,take shaft
+302,,,pull shaft
+303,On the Tent,Top of Cage,down
+304,Top of Cage,Menagerie Nook,down
+305,,,"take all except key, whip, stool"
+306,Menagerie Nook,Menagerie,northwest
+307,Menagerie,Midway Entrance,north
+308,Midway Entrance,Connection,west
+309,,,fill bucket with water
+310,Connection,Near White Wagon,south
+311,Near White Wagon,Menagerie,northeast
+312,Menagerie,Midway Entrance,north
+313,,,pour water on detective
+314,,,ask detective about chelsea
+315,,,drop bucket
+316,,,take note and card
+317,,,read note
+318,Midway Entrance,Midway of Midway,east
+319,Midway of Midway,Jennifer's Boudoir,south
+320,Jennifer's Boudoir,Wardrobe Closet,up
+321,,,take all
+322,Wardrobe Closet,Jennifer's Boudoir,up
+323,Jennifer's Boudoir,Midway of Midway,north
+324,Midway of Midway,Midway Entrance,west
+325,Midway Entrance,Connection,west
+326,Connection,Beside the Big Top,west
+327,Beside the Big Top,Back Yard,south
+328,Back Yard,Inside Prop Tent,west
+329,Inside Prop Tent,"Camp, West",south
+330,"Camp, West","Camp, East",east
+331,,,show ribbon to chuckles
+332,,,show scrap to chuckles
+333,,,show note to chuckles
+334,,,show spreadsheet
+335,,,"eddie,hello"
+336,,,show card to chuckles
+337,,,search pocket
+338,,,take veil
+339,,,wear veil
+340,,,wear dress
+341,,,wear jacket
+342,,,knock on door
+343,"Camp, East",Inside Trailer,east
+344,,,close door
+345,,,take crowbar
+346,,,move moose
+347,,,open door
+348,Inside Trailer,"Camp, East",west
+349,"Camp, East","Camp, West",west
+350,,,open door with crowbar
+351,"Camp, West",Clown Alley,south
+352,,,take thumb
+353,Clown Alley,"Camp, West",north
+354,"Camp, West","Camp, East",east
+355,"Camp, East",Inside Trailer,east
+356,,,put thumb in hole
+357,,,wait
+358,,,take chelsea
+359,Inside Trailer,"Camp, East",west
+360,"Camp, East",Back Yard,north
+361,Back Yard,Near White Wagon,east
+362,Near White Wagon,Menagerie,northeast
+363,Menagerie,Midway Entrance,north
+364,Midway Entrance,Connection,west
+365,Connection,In the Wings,north
+366,In the Wings,Performance Ring,north
+367,,,clap
+368,,,"roustabout, get net"
+369,,,take off veil
+370,,,take off jacket
+371,,,take off dress
+372,,,drop all
+373,Performance Ring,Lions' Den,west
+374,,,take stand
+375,Lions' Den,Performance Ring,east
+376,,,drop stand
+377,,,take radio
+378,Performance Ring,Lion Stand,climb stand
+379,Lion Stand,Platform (west side),up
+380,,,turn radio on
+381,,,drop radio
+382,Platform (west side),Performance Ring,down
+383,,,take pole
+384,Performance Ring,Lion Stand,climb stand
+385,Lion Stand,Platform (west side),up
+386,,,up
+387,,,take radio
+388,Platform (west side),on the tightrope,east
+389,,,east
+390,,,east
+391,,,west
+392,,,west
+393,,,west
+394,on the tightrope,Platform (west side),west
+395,,,drop radio and pole
+396,Platform (west side),Performance Ring,down
+397,Performance Ring,In the Wings,south
+398,In the Wings,Connection,south
+399,Connection,Near White Wagon,south
+400,Near White Wagon,Office,east
+401,,,call wpdl
+402,Office,Near White Wagon,west
+403,Near White Wagon,Connection,north
+404,Connection,In the Wings,north
+405,In the Wings,Performance Ring,north
+406,Performance Ring,Lion Stand,climb stand
+407,Lion Stand,Platform (west side),up
+408,,,take all
+409,Platform (west side),on the tightrope,east
+410,,,east
+411,,,east
+412,,,east
+413,on the tightrope,Left Hanging,east
+414,,,wait
+415,,,wait
+416,,,wait

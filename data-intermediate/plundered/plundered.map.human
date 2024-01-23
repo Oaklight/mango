@@ -1,31 +1,90 @@
-bed (obj213) --> stand up --> cabin (obj80), step 2
-cabin (obj80) --> yes --> deck (obj77), step 11
-deck (obj77) --> wait --> bed (obj131), step 13
-bed (obj131) --> stand up --> captain's quarters (obj169), step 14
-captain's quarters (obj169) --> north --> landing (obj92), step 18
-landing (obj92) --> in --> sleeping cupboard (obj127), step 20
-sleeping cupboard (obj127) --> out --> landing (obj92), step 26
-landing (obj92) --> down --> aft hold (obj46), step 28
-aft hold (obj46) --> north --> hold (obj101), step 29
-hold (obj101) --> north --> crew's quarters (obj193), step 30
-crew's quarters (obj193) --> south --> hold (obj101), step 32
-hold (obj101) --> south --> aft hold (obj46), step 33
-aft hold (obj46) --> up --> landing (obj92), step 36
-landing (obj92) --> south --> captain's quarters (obj169), step 37
-captain's quarters (obj169) --> south --> ledge (obj27), step 39
-ledge (obj27) --> climb rope --> on ladder (obj178), step 40
-on ladder (obj178) --> up --> poop (obj185), step 44
-poop (obj185) --> north --> quarterdeck (obj189), step 45
-quarterdeck (obj189) --> north --> madeck (obj151), step 46
-madeck (obj151) --> down --> hold (obj101), step 50
-hold (obj101) --> up --> madeck (obj151), step 52
-madeck (obj151) --> north --> forecastle (obj114), step 53
-forecastle (obj114) --> in --> galley (obj134), step 56
-galley (obj134) --> out --> forecastle (obj114), step 58
-forecastle (obj114) --> south --> madeck (obj151), step 59
-madeck (obj151) --> south --> quarterdeck (obj189), step 60
-quarterdeck (obj189) --> sit in cask --> cask (obj93), step 61
-cask (obj93) --> get out of cask --> shallows (obj99), step 67
-shallows (obj99) --> west --> beach (obj73), step 68
-beach (obj73) --> north --> lawn (obj24), step 69
-lawn (obj24) --> west --> forest (obj1), step 70
+Cabin, on the bed --> stand up --> Cabin, step 2
+Cabin --> yes --> Deck, step 11
+Deck --> wait --> Captain's Quarters, on the bed, step 13
+Captain's Quarters, on the bed --> stand up --> Captain's Quarters, step 14
+Captain's Quarters --> north --> Landing, step 18
+Landing --> in --> Sleeping Cupboard, step 20
+Sleeping Cupboard --> out --> Landing, step 26
+Landing --> down --> Aft Hold, step 28
+Aft Hold --> north --> Hold, step 29
+Hold --> north --> Crew's Quarters, step 30
+Crew's Quarters --> south --> Hold, step 32
+Hold --> south --> Aft Hold, step 33
+Aft Hold --> up --> Landing, step 36
+Landing --> south --> Captain's Quarters, step 37
+Captain's Quarters --> south --> the ledge, step 39
+the ledge --> climb rope --> On the Ladder, step 40
+On the Ladder --> up --> poop deck, step 44
+poop deck --> north --> Quarterdeck, step 45
+Quarterdeck --> north --> Main Deck, step 46
+Main Deck --> down --> Hold, step 50
+Hold --> up --> Main Deck, step 52
+Main Deck --> north --> Forecastle, step 53
+Forecastle --> in --> Galley, step 56
+Galley --> out --> Forecastle, step 58
+Forecastle --> south --> Main Deck, step 59
+Main Deck --> south --> Quarterdeck, step 60
+Quarterdeck --> sit in cask --> cask, step 61
+cask --> get out of cask --> Shallows, step 67
+Shallows --> west --> Beach, step 68
+Beach --> north --> Lawn, step 69
+Lawn --> west --> Forest, step 70
+Forest --> north --> Trade Entrance, step 71
+Trade Entrance --> east --> Kitchen, step 72
+Kitchen --> west --> Trade Entrance, step 75
+Trade Entrance --> south --> Forest, step 76
+Forest --> northeast --> Clearing, step 77
+Clearing --> up --> Bedroom, step 78
+Bedroom --> north --> Upstairs Hall (leading east to a stair landing), step 82
+Upstairs Hall (leading east to a stair landing) --> east --> Stair Landing, step 83
+Stair Landing --> down --> Foyer, step 84
+Foyer --> south --> Ballroom, step 86
+Ballroom --> east --> Supper Room, step 91
+Supper Room --> north --> East Hallway, step 92
+East Hallway --> north --> Library, step 93
+Library --> north --> Stairwell, step 98
+Stairwell --> down --> Bottom of Stairwell, step 99
+Bottom of Stairwell --> east --> North Passage, step 100
+North Passage --> east --> Guard's Bunkroom, step 101
+Guard's Bunkroom --> west --> North Passage, step 104
+North Passage --> west --> Bottom of Stairwell, step 105
+Bottom of Stairwell --> south --> Anteroom, step 106
+Anteroom --> south --> Dungeon, step 113
+Dungeon --> west --> Corner, step 114
+Corner --> north --> Cell, step 117
+Cell --> south --> Corner, step 119
+Corner --> east --> Dungeon, step 120
+Dungeon --> north --> Anteroom, step 121
+Anteroom --> north --> Bottom of Stairwell, step 122
+Bottom of Stairwell --> up --> Stairwell, step 123
+Stairwell --> south --> Library, step 124
+Library --> south --> East Hallway, step 125
+East Hallway --> west --> Foyer, step 126
+Foyer --> south --> Ballroom, step 127
+Ballroom --> north --> Foyer, step 135
+Foyer --> up --> Stair Landing, step 136
+Stair Landing --> east --> Upstairs Hall (leading west to a stair landing), step 137
+Upstairs Hall (leading west to a stair landing) --> north --> Lafond's Bedroom, step 139
+Lafond's Bedroom --> south --> Upstairs Hall (leading west to a stair landing), step 154
+Upstairs Hall (leading west to a stair landing) --> west --> Stair Landing, step 155
+Stair Landing --> down --> Foyer, step 156
+Foyer --> east --> East Hallway, step 157
+East Hallway --> north --> Library, step 158
+Library --> north --> Stairwell, step 160
+Stairwell --> down --> Bottom of Stairwell, step 161
+Bottom of Stairwell --> south --> Anteroom, step 162
+Anteroom --> south --> Dungeon, step 163
+Dungeon --> north --> Anteroom, step 169
+Anteroom --> north --> Bottom of Stairwell, step 170
+Bottom of Stairwell --> up --> Stairwell, step 171
+Stairwell --> south --> Library, step 172
+Library --> south --> East Hallway, step 173
+East Hallway --> west --> Foyer, step 174
+Foyer --> up --> Stair Landing, step 175
+Stair Landing --> east --> Upstairs Hall (leading west to a stair landing), step 176
+Upstairs Hall (leading west to a stair landing) --> south --> Gallery, step 177
+Gallery --> climb down rope --> Ballroom, step 179
+Ballroom --> south --> Veranda, step 181
+Veranda --> south --> Lawn, step 182
+Lawn --> south --> Beach, step 183
+Beach --> shoot crulley --> Forecastle, step 189

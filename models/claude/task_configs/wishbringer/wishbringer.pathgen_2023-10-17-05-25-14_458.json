@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Cliff Bottom",
+    "dst_node": "Fog",
+    "path_gt": [
+        {
+            "prev_node": "Cliff Bottom",
+            "node": "Steep Trail",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Steep Trail",
+            "node": "Cliff Edge",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Cliff Edge",
+            "node": "Fog",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        }
+    ]
+}

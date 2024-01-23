@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Western Shore",
+    "dst_node": "Engravings Room",
+    "path_gt": [
+        {
+            "prev_node": "Western Shore",
+            "node": "Scenic Vista",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Scenic Vista",
+            "node": "Damp Passage",
+            "action": "touch table",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Damp Passage",
+            "node": "Engravings Room",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

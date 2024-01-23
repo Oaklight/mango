@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Junction",
+    "dst_node": "Outside the Real Estate Office",
+    "path_gt": [
+        {
+            "prev_node": "Junction",
+            "node": "Narrow Street",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Outside the Real Estate Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 12
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

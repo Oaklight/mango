@@ -1,0 +1,63 @@
+{
+    "task": "pathgen",
+    "src_node": "Lake Edge",
+    "dst_node": "Magick Shoppe",
+    "path_gt": [
+        {
+            "prev_node": "Lake Edge",
+            "node": "River Outlet",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "River Outlet",
+            "node": "South of Bridge",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "South of Bridge",
+            "node": "Bridge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Bridge",
+            "node": "North of Bridge",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "North of Bridge",
+            "node": "Cliff Bottom",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Cliff Bottom",
+            "node": "Steep Trail",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Steep Trail",
+            "node": "Cliff Edge",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Cliff Edge",
+            "node": "Magick Shoppe",
+            "action": "in",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        }
+    ]
+}

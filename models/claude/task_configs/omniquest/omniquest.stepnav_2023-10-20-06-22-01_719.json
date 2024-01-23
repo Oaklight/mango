@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Twisting Passageway",
+    "dst_node": "Ice Room",
+    "path_gt": [
+        {
+            "prev_node": "Twisting Passageway",
+            "node": "Intersection",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "West Path",
+            "action": "southwest",
+            "seen_in_forward": false,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West Path",
+            "node": "South Lake",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Musty Corridor",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Musty Corridor",
+            "node": "Rice Room",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Rice Room",
+            "node": "Chilly Corridor",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Chilly Corridor",
+            "node": "Ice Room",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

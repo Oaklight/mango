@@ -1,0 +1,78 @@
+{
+    "task": "stepnav",
+    "src_node": "Infinite Corridor (middle of east/west corridor)",
+    "dst_node": "Basalt Bowl",
+    "path_gt": [
+        {
+            "prev_node": "Infinite Corridor (middle of east/west corridor)",
+            "node": "Infinite Corridor (west end of east/west corridor)",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Infinite Corridor (west end of east/west corridor)",
+            "node": "Aero Lobby",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "Aero Lobby",
+            "node": "Stairway",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "Stairway",
+            "node": "Aero Basement",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Aero Basement",
+            "node": "Basement",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Basement",
+            "node": "Computer Center",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Computer Center",
+            "node": "Second Floor",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Second Floor",
+            "node": "Terminal Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Terminal Room",
+            "node": "Place",
+            "action": "again",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Place",
+            "node": "Basalt Bowl",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ],
+    "save_path": "outputs/lurking/results/"
+}

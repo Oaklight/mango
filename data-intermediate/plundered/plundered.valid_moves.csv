@@ -1,71 +1,190 @@
-Step Num,Location Before,Location After,
-1,,,
-2,"Cabin, on the bed",Cabin,
-3,,,
-4,,,
-5,,,
-6,,,
-7,,,
-8,,,
-9,,,
-10,,,
-11,Cabin,Deck,
-12,,,
-13,Deck,"Captain's Quarters, on the bed"
-14,"Captain's Quarters, on the bed",Captain's Quarters,
-15,,,
-16,,,
-17,,,
-18,Captain's Quarters,Landing,
-19,,,
-20,Landing,Sleeping Cupboard,
-21,,,
-22,,,
-23,,,
-24,,,
-25,,,
-26,Sleeping Cupboard,Landing,
-27,,,
-28,Landing,Aft Hold,
-29,Aft Hold,Hold,
-30,Hold,Crew's Quarters,
-31,,,
-32,Crew's Quarters,Hold,
-33,Hold,Aft Hold,
-34,,,
-35,,,
-36,Aft Hold,Landing,
-37,Landing,Captain's Quarters,
-38,,,
-39,Captain's Quarters,the ledge,
-40,the ledge,On the Ladder,
-41,,,
-42,,,
-43,,,
-44,On the Ladder,poop deck,
-45,poop deck,Quarterdeck,
-46,Quarterdeck,Main Deck,
-47,,,
-48,,,
-49,,,
-50,Main Deck,Hold,
-51,,,
-52,Hold,Main Deck,
-53,Main Deck,Forecastle,
-54,,,
-55,,,
-56,Forecastle,Galley,
-57,,,
-58,Galley,Forecastle,
-59,Forecastle,Main Deck,
-60,Main Deck,Quarterdeck,
-61,Quarterdeck,cask,
-62,,,
-63,,,
-64,,,
-65,,,
-66,,,
-67,cask,Shallows,
-68,Shallows,Beach,
-69,Beach,Lawn,
-70,Lawn,Forest,
+Step Num,Location Before,Location After,Unnamed: 3,taken_action
+1,,,,z
+2,"Cabin, on the bed",Cabin,,stand up
+3,,,,z
+4,,,,z
+5,,,,get coffer
+6,,,,z
+7,,,,hit crulley with coffer
+8,,,,z
+9,,,,z
+10,,,,read missive
+11,Cabin,Deck,,yes
+12,,,,z
+13,Deck,"Captain's Quarters, on the bed",,z
+14,"Captain's Quarters, on the bed",Captain's Quarters,,stand up
+15,,,,z
+16,,,,z
+17,,,,z
+18,Captain's Quarters,Landing,,north
+19,,,,open cupboard
+20,Landing,Sleeping Cupboard,,in
+21,,,,get clothes
+22,,,,remove frock
+23,,,,tear it
+24,,,,wear breeches
+25,,,,wear shirt
+26,Sleeping Cupboard,Landing,,out
+27,,,,z
+28,Landing,Aft Hold,,down
+29,Aft Hold,Hold,,north
+30,Hold,Crew's Quarters,,north
+31,,,,get bottle
+32,Crew's Quarters,Hold,,south
+33,Hold,Aft Hold,,south
+34,,,,open coffer
+35,,,,get invitation
+36,Aft Hold,Landing,,up
+37,Landing,Captain's Quarters,,south
+38,,,,smash window with coffer
+39,Captain's Quarters,the ledge,,south
+40,the ledge,On the Ladder,,climb rope
+41,,,,up
+42,,,,up
+43,,,,up
+44,On the Ladder,poop deck,,up
+45,poop deck,Quarterdeck,,north
+46,Quarterdeck,Main Deck,,north
+47,,,,examine barrels
+48,,,,dip rag in water
+49,,,,open hatch
+50,Main Deck,Hold,,down
+51,,,,throw rag at fire
+52,Hold,Main Deck,,up
+53,Main Deck,Forecastle,,north
+54,,,,examine winch
+55,,,,raise lever
+56,Forecastle,Galley,,in
+57,,,,get dagger
+58,Galley,Forecastle,,out
+59,Forecastle,Main Deck,,south
+60,Main Deck,Quarterdeck,,south
+61,Quarterdeck,cask,,sit in cask
+62,,,,cut line with dagger
+63,,,,cut line with dagger
+64,,,,get pork
+65,,,,z
+66,,,,z
+67,cask,Shallows,,get out of cask
+68,Shallows,Beach,,west
+69,Beach,Lawn,,north
+70,Lawn,Forest,,west
+71,Forest,Trade Entrance,,north
+72,Trade Entrance,Kitchen,,east
+73,,,,z
+74,,,,get garter
+75,Kitchen,Trade Entrance,,west
+76,Trade Entrance,Forest,,south
+77,Forest,Clearing,,northeast
+78,Clearing,Bedroom,,up
+79,,,,remove clothes
+80,,,,get gown
+81,,,,wear it
+82,Bedroom,Upstairs Hall (leading east to a stair landing),,north
+83,Upstairs Hall (leading east to a stair landing),Stair Landing,,east
+84,Stair Landing,Foyer,,down
+85,,,,show invitation to butler
+86,Foyer,Ballroom,,south
+87,,,,z
+88,,,,z
+89,,,,z
+90,,,,z
+91,Ballroom,Supper Room,,east
+92,Supper Room,East Hallway,,north
+93,East Hallway,Library,,north
+94,,,,examine bookcase
+95,,,,get treatise
+96,,,,get hat
+97,,,,press island
+98,Library,Stairwell,,north
+99,Stairwell,Bottom of Stairwell,,down
+100,Bottom of Stairwell,North Passage,,east
+101,North Passage,Guard's Bunkroom,,east
+102,,,,get key
+103,,,,get horn
+104,Guard's Bunkroom,North Passage,,west
+105,North Passage,Bottom of Stairwell,,west
+106,Bottom of Stairwell,Anteroom,,south
+107,,,,examine bottle
+108,,,,read label
+109,,,,put laudanum on pork
+110,,,,give pork to crocodile
+111,,,,z
+112,,,,z
+113,Anteroom,Dungeon,,south
+114,Dungeon,Corner,,west
+115,,,,unlock door with key
+116,,,,open it
+117,Corner,Cell,,north
+118,,,,give garter to papa
+119,Cell,Corner,,south
+120,Corner,Dungeon,,east
+121,Dungeon,Anteroom,,north
+122,Anteroom,Bottom of Stairwell,,north
+123,Bottom of Stairwell,Stairwell,,up
+124,Stairwell,Library,,south
+125,Library,East Hallway,,south
+126,East Hallway,Foyer,,west
+127,Foyer,Ballroom,,south
+128,,,,z
+129,,,,z
+130,,,,z
+131,,,,north
+132,,,,z
+133,,,,z
+134,,,,z
+135,Ballroom,Foyer,,north
+136,Foyer,Stair Landing,,up
+137,Stair Landing,Upstairs Hall (leading west to a stair landing),,east
+138,,,,open door
+139,Upstairs Hall (leading west to a stair landing),Lafond's Bedroom,,north
+140,,,,drink wine
+141,,,,pour wine in green goblet
+142,,,,pour wine in blue goblet
+143,,,,put laudanum in blue goblet
+144,,,,get spices
+145,,,,blow spices at lafond
+146,,,,get tray
+147,,,,wave it in moonlight
+148,,,,south
+149,,,,give blue goblet to butler
+150,,,,z
+151,,,,z
+152,,,,z
+153,,,,z
+154,Lafond's Bedroom,Upstairs Hall (leading west to a stair landing),,south
+155,Upstairs Hall (leading west to a stair landing),Stair Landing,,west
+156,Stair Landing,Foyer,,down
+157,Foyer,East Hallway,,east
+158,East Hallway,Library,,north
+159,,,,open portrait
+160,Library,Stairwell,,north
+161,Stairwell,Bottom of Stairwell,,down
+162,Bottom of Stairwell,Anteroom,,south
+163,Anteroom,Dungeon,,south
+164,,,,get rapier
+165,,,,attack crulley
+166,,,,again
+167,,,,wake falcon with salts
+168,,,,unlock chain with brooch
+169,Dungeon,Anteroom,,north
+170,Anteroom,Bottom of Stairwell,,north
+171,Bottom of Stairwell,Stairwell,,up
+172,Stairwell,Library,,south
+173,Library,East Hallway,,south
+174,East Hallway,Foyer,,west
+175,Foyer,Stair Landing,,up
+176,Stair Landing,Upstairs Hall (leading west to a stair landing),,east
+177,Upstairs Hall (leading west to a stair landing),Gallery,,south
+178,,,,untie rope
+179,Gallery,Ballroom,,climb down rope
+180,,,,get all
+181,Ballroom,Veranda,,south
+182,Veranda,Lawn,,south
+183,Lawn,Beach,,south
+184,,,,z
+185,,,,z
+186,,,,yes
+187,,,,get pistol
+188,,,,load it
+189,Beach,Forecastle,,shoot crulley

@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Damp Corner",
+    "dst_node": "Main Entrance",
+    "path_gt": [
+        {
+            "prev_node": "Damp Corner",
+            "node": "East Of Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "East Of Office",
+            "node": "Front Of The Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Front Of The Office",
+            "node": "Main Entrance",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        }
+    ],
+    "save_path": "outputs/ludicorp/results/"
+}

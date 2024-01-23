@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Forest Path",
+    "dst_node": "Cellar",
+    "path_gt": [
+        {
+            "prev_node": "Forest Path",
+            "node": "North of House",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "North of House",
+            "node": "Behind House",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Behind House",
+            "node": "Kitchen",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Living Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Living Room",
+            "node": "Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        }
+    ]
+}

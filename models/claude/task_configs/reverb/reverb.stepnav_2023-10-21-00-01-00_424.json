@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Pizza Parlor",
+    "dst_node": "Street, by Department Store",
+    "path_gt": [
+        {
+            "prev_node": "Pizza Parlor",
+            "node": "Street, by Pizza Parlor",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Street, by Pizza Parlor",
+            "node": "Street, by Department Store",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        }
+    ],
+    "save_path": "outputs/reverb/results/"
+}

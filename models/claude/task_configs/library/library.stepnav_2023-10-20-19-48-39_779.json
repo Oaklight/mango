@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Second Floor Stairwell",
+    "dst_node": "Lobby",
+    "path_gt": [
+        {
+            "prev_node": "Second Floor Stairwell",
+            "node": "Ground Floor Stairwell",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Ground Floor Stairwell",
+            "node": "Ground Floor Stacks",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Ground Floor Stacks",
+            "node": "Lobby",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ],
+    "save_path": "outputs/library/results/"
+}

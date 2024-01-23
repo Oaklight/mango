@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "West Path",
+    "dst_node": "Chilly Corridor",
+    "path_gt": [
+        {
+            "prev_node": "West Path",
+            "node": "Intersection",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "East Path",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "East Path",
+            "node": "South Lake",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "South Lake",
+            "node": "Chilly Corridor",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Near White Wagon",
+    "dst_node": "Platform (west side)",
+    "path_gt": [
+        {
+            "prev_node": "Near White Wagon",
+            "node": "Connection",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Connection",
+            "node": "In the Wings",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Performance Ring",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Performance Ring",
+            "node": "Platform (west side)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        }
+    ]
+}

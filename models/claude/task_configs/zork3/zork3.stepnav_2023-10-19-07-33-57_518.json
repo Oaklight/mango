@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Damp Passage",
+    "dst_node": "Cliff",
+    "path_gt": [
+        {
+            "prev_node": "Damp Passage",
+            "node": "Junction",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Junction",
+            "node": "Barren Area",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "Barren Area",
+            "node": "Cliff",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        }
+    ],
+    "save_path": "outputs/zork3/results/"
+}

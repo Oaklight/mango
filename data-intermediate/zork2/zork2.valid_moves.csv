@@ -1,71 +1,298 @@
-Step Num,Location Before,Location After,
-1,,,
-2,Inside the Barrow,Narrow Tunnel,
-3,Narrow Tunnel,Foot Bridge,
-4,Foot Bridge,Great Cavern,
-5,Great Cavern,Dark Tunnel,(light lamp)
-6,,,
-7,Dark Tunnel,North End of Garden,
-8,North End of Garden,Gazebo,
-9,,,
-10,Gazebo,North End of Garden,
-11,North End of Garden,Formal Garden,
-12,Formal Garden,Path Near Stream,
-13,Path Near Stream,Carousel Room,
-14,Carousel Room,Topiary,
-15,Topiary,Carousel Room,
-16,Carousel Room,Topiary,
-17,Topiary,Carousel Room,
-18,Carousel Room,Topiary,
-19,Topiary,Carousel Room,
-20,Carousel Room,Marble Hall,
-21,Marble Hall,Deep Ford,
-22,,,
-23,Deep Ford,Ledge in Ravine,
-24,Ledge in Ravine,Tiny Room,
-25,,,
-26,,,
-27,,,
-28,,,
-29,,,
-30,,,
-31,,,
-32,,,
-33,,,
-34,Tiny Room,Dreary Room,
-35,,,
-36,Dreary Room,Tiny Room,
-37,Tiny Room,Ledge in Ravine,
-38,Ledge in Ravine,End of Ledge,
-39,End of Ledge,Dragon Room,
-40,,,
-41,Dragon Room,Stone Bridge,
-42,,,
-43,Stone Bridge,Cool Room,
-44,,,
-45,Cool Room,Ice Room,
-46,,,
-47,Ice Room,Cool Room,
-48,Cool Room,Stone Bridge,
-49,Stone Bridge,Dragon Room,
-50,Dragon Room,Dragon's Lair,
-51,,,
-52,,,
-53,,,
-54,Dragon's Lair,Dragon Room,
-55,Dragon Room,End of Ledge,
-56,End of Ledge,Ledge in Ravine,
-57,Ledge in Ravine,Deep Ford,
-58,Deep Ford,Marble Hall,
-59,,,
-60,,,
-61,Marble Hall,Path Near Stream,
-62,Path Near Stream,Formal Garden,
-63,Formal Garden,North End of Garden,
-64,North End of Garden,Gazebo,
-65,,,
-66,,,
-67,Gazebo,North End of Garden,
-68,North End of Garden,Formal Garden,
-69,Formal Garden,Topiary,
-70,Topiary,Carousel Room,
+Step Num,Location Before,Location After,Unnamed: 3,taken_action
+1,,,,get lamp and sword
+2,Inside the Barrow,Narrow Tunnel,,south
+3,Narrow Tunnel,Foot Bridge,,south
+4,Foot Bridge,Great Cavern,,south
+5,Great Cavern,Dark Tunnel,(light lamp),south
+6,,,,light lamp
+7,Dark Tunnel,North End of Garden,,southeast
+8,North End of Garden,Gazebo,,enter gazebo
+9,,,,"get teapot, mat, letter opener, matchbook and paper"
+10,Gazebo,North End of Garden,,out
+11,North End of Garden,Formal Garden,,south
+12,Formal Garden,Path Near Stream,,west
+13,Path Near Stream,Carousel Room,,southwest
+14,Carousel Room,Topiary,,north
+15,Topiary,Carousel Room,,west
+16,Carousel Room,Topiary,,north
+17,Topiary,Carousel Room,,west
+18,Carousel Room,Topiary,,north
+19,Topiary,Carousel Room,,west
+20,Carousel Room,Marble Hall,,north
+21,Marble Hall,Deep Ford,,north
+22,,,,fill pot with water
+23,Deep Ford,Ledge in Ravine,,north
+24,Ledge in Ravine,Tiny Room,,up
+25,,,,open lid
+26,,,,put mat under door
+27,,,,put opener in keyhole
+28,,,,remove opener and drop it
+29,,,,pull mat
+30,,,,get key
+31,,,,unlock door with key
+32,,,,open door
+33,,,,drop key
+34,Tiny Room,Dreary Room,,north
+35,,,,get blue sphere
+36,Dreary Room,Tiny Room,,south
+37,Tiny Room,Ledge in Ravine,,down
+38,Ledge in Ravine,End of Ledge,,west
+39,End of Ledge,Dragon Room,,north
+40,,,,hit dragon with sword
+41,Dragon Room,Stone Bridge,,south
+42,,,,hit dragon with sword
+43,Stone Bridge,Cool Room,,south
+44,,,,hit dragon with sword
+45,Cool Room,Ice Room,,west
+46,,,,drop sword
+47,Ice Room,Cool Room,,east
+48,Cool Room,Stone Bridge,,north
+49,Stone Bridge,Dragon Room,,north
+50,Dragon Room,Dragon's Lair,,north
+51,,,,open chest
+52,,,,open chest
+53,,,,get dragon
+54,Dragon's Lair,Dragon Room,,south
+55,Dragon Room,End of Ledge,,east
+56,End of Ledge,Ledge in Ravine,,east
+57,Ledge in Ravine,Deep Ford,,down
+58,Deep Ford,Marble Hall,,south
+59,,,,wait
+60,,,,wait
+61,Marble Hall,Path Near Stream,,east
+62,Path Near Stream,Formal Garden,,east
+63,Formal Garden,North End of Garden,,north
+64,North End of Garden,Gazebo,,in
+65,,,,wait
+66,,,,wait
+67,Gazebo,North End of Garden,,out
+68,North End of Garden,Formal Garden,,south
+69,Formal Garden,Topiary,,south
+70,Topiary,Carousel Room,,west
+71,Carousel Room,Marble Hall,,southeast
+72,Marble Hall,Carousel Room,,south
+73,Carousel Room,Menhir Room,,southeast
+74,Menhir Room,Carousel Room,,north
+75,Carousel Room,Menhir Room,,southeast
+76,Menhir Room,Carousel Room,,north
+77,Carousel Room,Cool Room,,southeast
+78,Cool Room,Carousel Room,,southeast
+79,Carousel Room,Riddle Room,,southeast
+80,,,,answer "a well"
+81,Riddle Room,Pearl Room,,east
+82,Pearl Room,Circular Room,,east
+83,,,,drop dragon and paper
+84,Circular Room,bucket,,get in bucket
+85,,,,drop water
+86,bucket,Top of Well,,get out of bucket
+87,Top of Well,Tea Room,,east
+88,,,,drop teapot
+89,,,,"get red, blue and green cake"
+90,Tea Room,Posts Room,,eat green
+91,Posts Room,Pool Room,,east
+92,,,,put red cake in pool
+93,,,,get candy
+94,Pool Room,Posts Room,,west
+95,Posts Room,Tea Room,,eat blue cake
+96,Tea Room,Low Room,,northwest
+97,,,,"robot, east and south"
+98,Low Room,Machine Room,,east
+99,Machine Room,Dingy Closet,,south
+100,Dingy Closet,Cage,,get red sphere
+101,Cage,Dingy Closet,,"robot, lift cage"
+102,,,,get red sphere
+103,,,,"robot, north and press triangular button"
+104,Dingy Closet,Machine Room,,north
+105,Machine Room,Low Room,,west
+106,Low Room,Machine Room,,southeast
+107,Machine Room,Low Room,,west
+108,Low Room,Machine Room,,southeast
+109,Machine Room,Low Room,,west
+110,Low Room,Tea Room,,southeast
+111,,,,get teapot
+112,Tea Room,Top of Well,,west
+113,Top of Well,bucket,,get in bucket
+114,,,,fill teapot
+115,bucket,Circular Room,,get out of bucket
+116,Circular Room,Pearl Room,,west
+117,Pearl Room,Riddle Room,,west
+118,Riddle Room,Carousel Room,,northwest
+119,,,,"drop teapot, rose, candy and gold key"
+120,Carousel Room,Riddle Room,,southeast
+121,Riddle Room,Pearl Room,,east
+122,Pearl Room,Circular Room,,east
+123,,,,get dragon and paper
+124,Circular Room,Pearl Room,,west
+125,,,,get necklace
+126,Pearl Room,Riddle Room,,west
+127,Riddle Room,Carousel Room,,northwest
+128,,,,open box
+129,,,,drop necklace and dragon
+130,Carousel Room,Marble Hall,,north
+131,,,,get brick
+132,Marble Hall,Carousel Room,,south
+133,Carousel Room,Cobwebby Corridor,,southwest
+134,,,,get string
+135,Cobwebby Corridor,Carousel Room,,northeast
+136,Carousel Room,Cool Room,,northwest
+137,Cool Room,Ice Room,,west
+138,Ice Room,Lava Room,,west
+139,,,,get ruby
+140,Lava Room,Volcano Bottom,,south
+141,,,,open receptacle
+142,,,,put paper in receptacle
+143,Volcano Bottom,basket,,get in basket
+144,,,,strike match
+145,,,,burn paper
+146,,,,wait
+147,,,,wait
+148,,,,west
+149,,,,tie wire to hook
+150,basket,Narrow Ledge,,get out of basket
+151,Narrow Ledge,Library,,south
+152,,,,read white book
+153,,,,drop it
+154,,,,open purple book
+155,,,,get stamp
+156,Library,Narrow Ledge,,north
+157,,,,put string in brick
+158,,,,get zorkmid
+159,Narrow Ledge,basket,,get in basket
+160,,,,untie wire
+161,,,,wait
+162,,,,wait
+163,,,,wait
+164,,,,wait
+165,,,,drop all
+166,,,,west
+167,,,,tie wire to hook
+168,,,,wait
+169,,,,wait
+170,,,,wait
+171,,,,wait
+172,,,,take all
+173,basket,Wide Ledge,,get out of basket
+174,Wide Ledge,Dusty Room,,south
+175,,,,put brick in hole
+176,,,,light match
+177,,,,burn string
+178,Dusty Room,Wide Ledge,,north
+179,Wide Ledge,Dusty Room,,south
+180,,,,get crown
+181,,,,examine card
+182,Dusty Room,Wide Ledge,,north
+183,Wide Ledge,basket,,get in basket
+184,,,,close receptacle
+185,,,,untie wire
+186,,,,wait
+187,,,,wait
+188,,,,wait
+189,,,,wait
+190,,,,wait
+191,,,,wait
+192,basket,Volcano Bottom,,get out of basket
+193,Volcano Bottom,Lava Room,,north
+194,Lava Room,Ice Room,,east
+195,Ice Room,Cool Room,,east
+196,Cool Room,Carousel Room,,southeast
+197,,,,"drop crown, stamp, zorkmid and ruby"
+198,Carousel Room,Cool Room,,northwest
+199,Cool Room,Stone Bridge,,north
+200,Stone Bridge,Dragon Room,,north
+201,Dragon Room,Fresco Room,,west
+202,Fresco Room,Bank Entrance,,west
+203,Bank Entrance,West Teller's Room,,northwest
+204,West Teller's Room,Safety Depository,,west
+205,Safety Depository,Chairman's Office,,south
+206,,,,get portrait
+207,Chairman's Office,Safety Depository,,north
+208,Safety Depository,Small Room,,go through curtain
+209,Small Room,Safety Depository,,go through south wall
+210,Safety Depository,Vault,,go through curtain
+211,,,,get bills
+212,Vault,Safety Depository,,go through north wall
+213,,,,drop portrait and bills
+214,Safety Depository,West Teller's Room,,west
+215,West Teller's Room,Safety Depository,,west
+216,,,,get portrait and bills
+217,Safety Depository,West Viewing Room,,go through curtain
+218,West Viewing Room,Bank Entrance,,south
+219,Bank Entrance,Fresco Room,,east
+220,Fresco Room,Dragon Room,,east
+221,Dragon Room,Stone Bridge,,south
+222,Stone Bridge,Cool Room,,south
+223,Cool Room,Carousel Room,,southeast
+224,Carousel Room,Menhir Room,,south
+225,Menhir Room,Stairway,,south
+226,Stairway,Oddly-angled Room (marble stairway leading upwards),,down
+227,Oddly-angled Room (marble stairway leading upwards),Oddly-angled Room (diamond window vertex 1),,southwest
+228,,,,get club
+229,Oddly-angled Room (diamond window vertex 1),Oddly-angled Room (diamond window vertex 2),,southeast
+230,Oddly-angled Room (diamond window vertex 2),Oddly-angled Room (diamond window vertex 3),,northeast
+231,Oddly-angled Room (diamond window vertex 3),Oddly-angled Room (diamond window vertex 4),,northwest
+232,Oddly-angled Room (diamond window vertex 4),Oddly-angled Room (diamond window vertex 1),,southwest
+233,Oddly-angled Room (diamond window vertex 1),Oddly-angled Room (marble stairway leading upwards),,south
+234,Oddly-angled Room (marble stairway leading upwards),Stairway,,up
+235,Stairway,Menhir Room,,north
+236,Menhir Room,Carousel Room,,north
+237,,,,drop matchbook
+238,,,,get candy and gold key
+239,,,,wait
+240,,,,wait
+241,,,,wait
+242,Carousel Room,Cobwebby Corridor,,southwest
+243,Cobwebby Corridor,Guarded Room,,southwest
+244,,,,give candy to lizard
+245,,,,unlock door with key
+246,,,,open door
+247,Guarded Room,Wizard's Workshop,,south
+248,Wizard's Workshop,Wizard's Workroom,,west
+249,,,,put blue sphere in sapphire stand
+250,,,,put red sphere in ruby stand
+251,Wizard's Workroom,Aquarium Room,,west
+252,,,,turn off lamp
+253,,,,throw club at aquarium
+254,,,,get clear sphere
+255,Aquarium Room,Wizard's Workroom,,east
+256,,,,put clear sphere in diamond stand
+257,,,,get sphere
+258,Wizard's Workroom,Pentagram Room,,south
+259,,,,put sphere on pentagram
+260,,,,"give gold key, portrait and bills to demon"
+261,Pentagram Room,Wizard's Workroom,,north
+262,Wizard's Workroom,Wizard's Workshop,,east
+263,,,,turn on lamp
+264,Wizard's Workshop,Guarded Room,,north
+265,Guarded Room,"Cobwebby Corridor
+",,north
+266,Cobwebby Corridor,Carousel Room,,northeast
+267,,,,"get violin, necklace, ruby, zorkmid, stamp, crown and dragon"
+268,Carousel Room,Cobwebby Corridor,,southwest
+269,Cobwebby Corridor,Guarded Room,,southwest
+270,Guarded Room,Wizard's Workshop,,south
+271,Wizard's Workshop,Wizard's Workroom,,west
+272,Wizard's Workroom,Pentagram Room,,south
+273,,,,"give violin, necklace, ruby, stamp, zorkmid, crown and dragon to demon"
+274,,,,"demon, give me wand"
+275,,,,get wand
+276,Pentagram Room,Wizard's Workroom,,north
+277,Wizard's Workroom,Wizard's Workshop,,east
+278,Wizard's Workshop,Guarded Room,,north
+279,Guarded Room,Cobwebby Corridor,,north
+280,Cobwebby Corridor,Carousel Room,,northeast
+281,Carousel Room,Menhir Room,,south
+282,,,,point wand at menhir
+283,,,,say "float"
+284,Menhir Room,Kennel,,southwest
+285,,,,get collar
+286,Kennel,Menhir Room,,northeast
+287,Menhir Room,Stairway,,south
+288,Stairway,Oddly-angled Room (marble stairway leading upwards),,down
+289,Oddly-angled Room (marble stairway leading upwards),Cerberus Room,,down
+290,,,,put collar on dog
+291,Cerberus Room,Crypt Anteroom,,east
+292,,,,open door
+293,Crypt Anteroom,Crypt,,south
+294,,,,turn off lamp
+295,,,,open secret door
+296,,,,south

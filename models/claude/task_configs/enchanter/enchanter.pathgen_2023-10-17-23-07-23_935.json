@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside of Shack",
+    "dst_node": "Eastern Fork",
+    "path_gt": [
+        {
+            "prev_node": "Outside of Shack",
+            "node": "Trail",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Trail",
+            "node": "Trail Head",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Trail Head",
+            "node": "Eastern Fork",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ]
+}

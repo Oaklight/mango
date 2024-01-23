@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Guardian Chamber",
+    "dst_node": "Giant Cavern",
+    "path_gt": [
+        {
+            "prev_node": "Guardian Chamber",
+            "node": "West Path",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 66
+        },
+        {
+            "prev_node": "West Path",
+            "node": "Intersection",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "Intersection",
+            "node": "Slimy Passageway",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        },
+        {
+            "prev_node": "Slimy Passageway",
+            "node": "Giant Cavern",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        }
+    ],
+    "save_path": "outputs/omniquest/results/"
+}

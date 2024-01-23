@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Quarterdeck",
+    "dst_node": "Crew's Quarters",
+    "path_gt": [
+        {
+            "prev_node": "Quarterdeck",
+            "node": "Main Deck",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Main Deck",
+            "node": "Hold",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Hold",
+            "node": "Crew's Quarters",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "task": "stepnav",
+    "src_node": "Wharf Road (east end of east/west road)",
+    "dst_node": "Shore Road (west end of east/west road)",
+    "path_gt": [
+        {
+            "prev_node": "Wharf Road (east end of east/west road)",
+            "node": "Wharf Road (north to Outfitters International)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 29
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International)",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "node": "Vacant Lot",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 37
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Ocean Road (halfway of north/south road)",
+            "action": "southeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Ocean Road (halfway of north/south road)",
+            "node": "Ocean Road (south end of north/south road)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Ocean Road (south end of north/south road)",
+            "node": "Shore Road (east end of east/west road)",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        },
+        {
+            "prev_node": "Shore Road (east end of east/west road)",
+            "node": "Shore Road (west end of east/west road)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 43
+        }
+    ],
+    "save_path": "outputs/cutthroat/results/"
+}

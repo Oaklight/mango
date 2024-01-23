@@ -68,9 +68,15 @@ def gen_move_machine(args):
 
     map_list = []
     move_list = []
-    for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
+    prev_observation = ""
+
+    if max_steps == -1:
+        max_steps = len(walkthrough_acts)
+    valid_acts = walkthrough_acts[:max_steps]
+
+    for step_idx, act in enumerate(valid_acts):
         observation, reward, done, info = env.step(act)
-        print(step_idx, act, env.get_player_location())
+        # print(step_idx, act, env.get_player_location())
         try:
             location_after = env.get_player_location().name.strip().lower()
         except:
@@ -83,7 +89,15 @@ def gen_move_machine(args):
             # exit(0)
 
         location_after_id = env.get_player_location().num
-        if location_after_id != location_before_id:
+
+        # any of the following conditions are met, we consider it a move
+        # some move will result in "you can't go" similar words in observation
+        conditions = [
+            location_after_id != location_before_id,
+            unabbreviate(act) in direction_vocab and not "can't" in observation,
+            act in direction_vocab_abbrv and not "can't" in observation,
+        ]
+        if any(conditions):
             map_list.append(
                 {
                     "location_before": location_before,

@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "sandpit",
+    "dst_node": "rock garden",
+    "path_gt": [
+        {
+            "prev_node": "sandpit",
+            "node": "old untended grave",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "old untended grave",
+            "node": "outside the house",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "rock garden",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        }
+    ]
+}

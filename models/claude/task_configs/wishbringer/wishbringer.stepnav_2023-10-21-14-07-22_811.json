@@ -1,0 +1,99 @@
+{
+    "task": "stepnav",
+    "src_node": "Cliff Edge",
+    "dst_node": "Spooky Copse",
+    "path_gt": [
+        {
+            "prev_node": "Cliff Edge",
+            "node": "Steep Trail",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Steep Trail",
+            "node": "Cliff Bottom",
+            "action": "down",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        },
+        {
+            "prev_node": "Cliff Bottom",
+            "node": "North of Bridge",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "North of Bridge",
+            "node": "Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        },
+        {
+            "prev_node": "Bridge",
+            "node": "South of Bridge",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        },
+        {
+            "prev_node": "South of Bridge",
+            "node": "Rotary North",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Rotary North",
+            "node": "Park",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Park",
+            "node": "Rotary South",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Rotary South",
+            "node": "Outside Cottage",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Outside Cottage",
+            "node": "Hilltop",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Hilltop",
+            "node": "Outside Cemetery",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Outside Cemetery",
+            "node": "Creepy Corner",
+            "action": "yes",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Creepy Corner",
+            "node": "Spooky Copse",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        }
+    ],
+    "save_path": "outputs/wishbringer/results/"
+}

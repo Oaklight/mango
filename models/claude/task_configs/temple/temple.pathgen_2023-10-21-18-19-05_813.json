@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Storage",
+    "dst_node": "Public Square",
+    "path_gt": [
+        {
+            "prev_node": "Storage",
+            "node": "Study",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 23
+        },
+        {
+            "prev_node": "Study",
+            "node": "Hall",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        },
+        {
+            "prev_node": "Hall",
+            "node": "Before A Dark Tower",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Before A Dark Tower",
+            "node": "Public Square",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 30
+        }
+    ]
+}

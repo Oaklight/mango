@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Library",
+    "dst_node": "Before A Dark Tower",
+    "path_gt": [
+        {
+            "prev_node": "Library",
+            "node": "A Dark Hallway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "A Dark Hallway",
+            "node": "Road (east/west)",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Road (east/west)",
+            "node": "Public Square",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Public Square",
+            "node": "Before A Dark Tower",
+            "action": "northeast",
+            "seen_in_forward": false,
+            "step_min_cutoff": 30
+        }
+    ]
+}

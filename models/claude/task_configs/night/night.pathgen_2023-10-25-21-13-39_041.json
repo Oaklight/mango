@@ -1,0 +1,35 @@
+{
+    "task": "pathgen",
+    "src_node": "Outside Physics Office",
+    "dst_node": "Computer Site",
+    "path_gt": [
+        {
+            "prev_node": "Outside Physics Office",
+            "node": "Stairwell (Second Floor)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Stairwell (Second Floor)",
+            "node": "Stairwell (Third Floor)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Stairwell (Third Floor)",
+            "node": "Hall Outside Computer Site",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Hall Outside Computer Site",
+            "node": "Computer Site",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        }
+    ]
+}

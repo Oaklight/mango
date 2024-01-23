@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "bed",
+    "dst_node": "Foyer",
+    "path_gt": [
+        {
+            "prev_node": "bed",
+            "node": "Master Bedroom",
+            "action": "leave bed",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Master Bedroom",
+            "node": "Upstairs Landing",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Upstairs Landing",
+            "node": "Foyer",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        }
+    ]
+}

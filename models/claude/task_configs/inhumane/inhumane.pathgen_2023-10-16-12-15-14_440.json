@@ -1,0 +1,63 @@
+{
+    "task": "pathgen",
+    "src_node": "Door Near Blades",
+    "dst_node": "Key Room",
+    "path_gt": [
+        {
+            "prev_node": "Door Near Blades",
+            "node": "Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Stalagmite Room",
+            "node": "North Stalagmite Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "North Stalagmite Room",
+            "node": "Round Room",
+            "action": "push button",
+            "seen_in_forward": true,
+            "step_min_cutoff": 57
+        },
+        {
+            "prev_node": "Round Room",
+            "node": "T-Intersection (east/west/south, west to Round Room)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "T-Intersection (east/west/south, west to Round Room)",
+            "node": "Corridor Near Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 59
+        },
+        {
+            "prev_node": "Corridor Near Pit",
+            "node": "On the Platform",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "On the Platform",
+            "node": "West of the Pit",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 67
+        },
+        {
+            "prev_node": "West of the Pit",
+            "node": "Key Room",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 68
+        }
+    ]
+}

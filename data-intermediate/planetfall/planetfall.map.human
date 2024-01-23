@@ -1,29 +1,196 @@
-deck nine (obj235) --> west --> escape pod (obj216), step 7
-escape pod (obj216) --> out --> underwater (obj195), step 25
-underwater (obj195) --> up --> crag (obj194), step 26
-crag (obj194) --> up --> balcony (obj193), step 27
-balcony (obj193) --> up --> winding stair (obj192), step 28
-winding stair (obj192) --> up --> courtyard (obj191), step 29
-courtyard (obj191) --> north --> plahall (obj189), step 30
-plahall (obj189) --> northeast --> rec corridor (obj183), step 31
-rec corridor (obj183) --> east --> mess corridor (obj174), step 32
-mess corridor (obj174) --> east --> dorm corridor (obj168), step 33
-dorm corridor (obj168) --> east --> junction (obj161), step 34
-junction (obj161) --> south --> mech north (obj142), step 35
-mech north (obj142) --> south --> mech corridor (obj141), step 36
-mech corridor (obj141) --> south --> mech south (obj140), step 37
-mech south (obj140) --> southwest --> tool room (obj126), step 38
-tool room (obj126) --> northeast --> mech south (obj140), step 40
-mech south (obj140) --> north --> mech corridor (obj141), step 41
-mech corridor (obj141) --> north --> mech north (obj142), step 42
-mech north (obj142) --> north --> junction (obj161), step 43
-junction (obj161) --> north --> admsouth (obj160), step 44
-admsouth (obj160) --> south --> junction (obj161), step 47
-junction (obj161) --> west --> dorm corridor (obj168), step 48
-dorm corridor (obj168) --> west --> mess corridor (obj174), step 49
-mess corridor (obj174) --> north --> storage west (obj171), step 54
-storage west (obj171) --> south --> mess corridor (obj174), step 57
-admsouth (obj160) --> north --> admcorridor (obj157), step 61
-admcorridor (obj157) --> north --> admnorth (obj155), step 65
-admnorth (obj155) --> west --> small office (obj150), step 66
-small office (obj150) --> west --> large office (obj143), step 69
+Deck Nine --> west --> Escape Pod, step 7
+Escape Pod --> get in web --> Safety Web, step 8
+Safety Web --> get out of web --> Escape Pod, step 22
+Escape Pod --> out --> Underwater, step 25
+Underwater --> up --> Crag, step 26
+Crag --> up --> Balcony, step 27
+Balcony --> up --> Winding Stair, step 28
+Winding Stair --> up --> Courtyard, step 29
+Courtyard --> north --> Plain Hall, step 30
+Plain Hall --> northeast --> Rec Corridor, step 31
+Rec Corridor --> east --> Mess Corridor, step 32
+Mess Corridor --> east --> Dorm Corridor, step 33
+Dorm Corridor --> east --> Corridor Junction, step 34
+Corridor Junction --> south --> Mech Corridor North, step 35
+Mech Corridor North --> south --> Mech Corridor, step 36
+Mech Corridor --> south --> Mech Corridor South, step 37
+Mech Corridor South --> southwest --> Tool Room, step 38
+Tool Room --> northeast --> Mech Corridor South, step 40
+Mech Corridor South --> north --> Mech Corridor, step 41
+Mech Corridor --> north --> Mech Corridor North, step 42
+Mech Corridor North --> north --> Corridor Junction, step 43
+Corridor Junction --> north --> Admin Corridor South, step 44
+Admin Corridor South --> south --> Corridor Junction, step 47
+Corridor Junction --> west --> Dorm Corridor, step 48
+Dorm Corridor --> west --> Mess Corridor, step 49
+Mess Corridor --> north --> Storage West, step 54
+Storage West --> south --> Mess Corridor, step 57
+Mess Corridor --> east --> Dorm Corridor, step 58
+Dorm Corridor --> east --> Corridor Junction, step 59
+Corridor Junction --> north --> Admin Corridor South, step 60
+Admin Corridor South --> north --> Admin Corridor, step 61
+Admin Corridor --> north --> Admin Corridor North, step 65
+Admin Corridor North --> west --> Small Office, step 66
+Small Office --> west --> Large Office, step 69
+Large Office --> east --> Small Office, step 72
+Small Office --> east --> Admin Corridor North, step 73
+Admin Corridor North --> south --> Admin Corridor, step 74
+Admin Corridor --> south --> Admin Corridor South, step 75
+Admin Corridor South --> south --> Corridor Junction, step 76
+Corridor Junction --> west --> Dorm Corridor, step 77
+Dorm Corridor --> west --> Mess Corridor, step 78
+Mess Corridor --> south --> Mess Hall, step 83
+Mess Hall --> south --> Kitchen, step 86
+Kitchen --> north --> Mess Hall, step 93
+Mess Hall --> north --> Mess Corridor, step 95
+Mess Corridor --> east --> Dorm Corridor, step 96
+Dorm Corridor --> east --> Corridor Junction, step 97
+Corridor Junction --> east --> Elevator Lobby, step 98
+Elevator Lobby --> north --> Upper Elevator, step 102
+Upper Elevator --> south --> Tower Core, step 107
+Tower Core --> northeast --> Comm Room, step 108
+Comm Room --> southwest --> Tower Core, step 109
+Tower Core --> north --> Upper Elevator, step 110
+Upper Elevator --> south --> Elevator Lobby, step 114
+Elevator Lobby --> west --> Corridor Junction, step 115
+Corridor Junction --> south --> Mech Corridor North, step 116
+Mech Corridor North --> south --> Mech Corridor, step 117
+Mech Corridor --> south --> Mech Corridor South, step 118
+Mech Corridor South --> southwest --> Tool Room, step 119
+Tool Room --> east --> Machine Shop, step 121
+Machine Shop --> east --> Robot Shop, step 125
+Robot Shop --> northwest --> Mech Corridor South, step 128
+Mech Corridor South --> north --> Mech Corridor, step 129
+Mech Corridor --> north --> Mech Corridor North, step 130
+Mech Corridor North --> north --> Corridor Junction, step 131
+Corridor Junction --> east --> Elevator Lobby, step 132
+Elevator Lobby --> north --> Upper Elevator, step 133
+Upper Elevator --> south --> Tower Core, step 138
+Tower Core --> northeast --> Comm Room, step 139
+Comm Room --> southwest --> Tower Core, step 141
+Tower Core --> north --> Upper Elevator, step 142
+Upper Elevator --> south --> Elevator Lobby, step 146
+Elevator Lobby --> west --> Corridor Junction, step 147
+Corridor Junction --> west --> Dorm Corridor, step 148
+Dorm Corridor --> south --> Dorm C, step 149
+Dorm C --> lie down --> Bed, step 150
+Bed --> stand up --> Dorm C, step 152
+Dorm C --> north --> Dorm Corridor, step 154
+Dorm Corridor --> west --> Mess Corridor, step 155
+Mess Corridor --> east --> Dorm Corridor, step 158
+Dorm Corridor --> east --> Corridor Junction, step 159
+Corridor Junction --> south --> Mech Corridor North, step 161
+Mech Corridor North --> south --> Mech Corridor, step 162
+Mech Corridor --> south --> Mech Corridor South, step 163
+Mech Corridor South --> south --> Machine Shop, step 164
+Machine Shop --> north --> Mech Corridor South, step 168
+Mech Corridor South --> north --> Mech Corridor, step 169
+Mech Corridor --> north --> Mech Corridor North, step 170
+Mech Corridor North --> north --> Corridor Junction, step 171
+Corridor Junction --> east --> Elevator Lobby, step 172
+Elevator Lobby --> north --> Upper Elevator, step 173
+Upper Elevator --> south --> Tower Core, step 178
+Tower Core --> northeast --> Comm Room, step 179
+Comm Room --> southwest --> Tower Core, step 181
+Tower Core --> north --> Upper Elevator, step 182
+Upper Elevator --> south --> Elevator Lobby, step 186
+Elevator Lobby --> west --> Corridor Junction, step 187
+Corridor Junction --> south --> Mech Corridor North, step 188
+Mech Corridor North --> south --> Mech Corridor, step 189
+Mech Corridor --> south --> Mech Corridor South, step 190
+Mech Corridor South --> south --> Machine Shop, step 191
+Machine Shop --> north --> Mech Corridor South, step 195
+Mech Corridor South --> north --> Mech Corridor, step 196
+Mech Corridor --> north --> Mech Corridor North, step 197
+Mech Corridor North --> north --> Corridor Junction, step 198
+Corridor Junction --> east --> Elevator Lobby, step 199
+Elevator Lobby --> north --> Upper Elevator, step 200
+Upper Elevator --> south --> Tower Core, step 205
+Tower Core --> northeast --> Comm Room, step 206
+Comm Room --> southwest --> Tower Core, step 208
+Tower Core --> north --> Upper Elevator, step 209
+Upper Elevator --> south --> Elevator Lobby, step 213
+Elevator Lobby --> west --> Corridor Junction, step 214
+Corridor Junction --> south --> Mech Corridor North, step 219
+Mech Corridor North --> east --> Storage East, step 220
+Storage East --> west --> Mech Corridor North, step 223
+Mech Corridor North --> south --> Mech Corridor, step 224
+Mech Corridor --> south --> Mech Corridor South, step 225
+Mech Corridor South --> southwest --> Tool Room, step 226
+Tool Room --> northeast --> Mech Corridor South, step 228
+Mech Corridor South --> north --> Mech Corridor, step 229
+Mech Corridor --> north --> Mech Corridor North, step 230
+Mech Corridor North --> north --> Corridor Junction, step 231
+Corridor Junction --> east --> Elevator Lobby, step 232
+Elevator Lobby --> south --> Lower Elevator, step 237
+Lower Elevator --> north --> Waiting Area, step 243
+Waiting Area --> east --> Kalamontee Platform, step 244
+Kalamontee Platform --> south --> Shuttle Car Alfie, step 245
+Shuttle Car Alfie --> east --> Alfie Control East, step 246
+Alfie Control East --> west --> Shuttle Car Alfie, step 275
+Shuttle Car Alfie --> north --> Lawanda Platform, step 276
+Lawanda Platform --> east --> Escalator, step 277
+Escalator --> east --> Fork, step 278
+Fork --> northeast --> Systems Corridor West, step 279
+Systems Corridor West --> north --> Repair Room, step 280
+Repair Room --> south --> Systems Corridor West, step 283
+Systems Corridor West --> east --> Systems Corridor, step 284
+Systems Corridor --> north --> Planetary Defense, step 285
+Planetary Defense --> south --> Systems Corridor, step 290
+Systems Corridor --> west --> Systems Corridor West, step 292
+Systems Corridor West --> northwest --> Infirmary, step 293
+Infirmary --> southeast --> Systems Corridor West, step 298
+Systems Corridor West --> east --> Systems Corridor, step 299
+Systems Corridor --> east --> Systems Corridor East, step 300
+Systems Corridor East --> north --> Course Control, step 301
+Course Control --> south --> Systems Corridor East, step 306
+Systems Corridor East --> south --> Library Lobby, step 307
+Library Lobby --> south --> Project Corridor East, step 308
+Project Corridor East --> east --> Main Lab, step 309
+Main Lab --> south --> Lab Storage, step 310
+Lab Storage --> north --> Main Lab, step 313
+Main Lab --> west --> Project Corridor East, step 314
+Project Corridor East --> north --> Library Lobby, step 315
+Library Lobby --> east --> Booth 3, step 316
+Booth 3 --> press 2 --> Booth 2, step 318
+Booth 2 --> west --> Elevator Lobby, step 319
+Elevator Lobby --> west --> Corridor Junction, step 320
+Corridor Junction --> south --> Mech Corridor North, step 321
+Mech Corridor North --> south --> Mech Corridor, step 322
+Mech Corridor --> south --> Mech Corridor South, step 323
+Mech Corridor South --> southwest --> Tool Room, step 324
+Tool Room --> northeast --> Mech Corridor South, step 329
+Mech Corridor South --> north --> Mech Corridor, step 330
+Mech Corridor --> north --> Mech Corridor North, step 331
+Mech Corridor North --> north --> Corridor Junction, step 332
+Corridor Junction --> east --> Elevator Lobby, step 333
+Elevator Lobby --> east --> Booth 2, step 334
+Booth 2 --> press 3 --> Booth 3, step 336
+Booth 3 --> west --> Library Lobby, step 337
+Library Lobby --> south --> Project Corridor East, step 338
+Project Corridor East --> south --> Computer Room, step 339
+Computer Room --> north --> Project Corridor East, step 340
+Project Corridor East --> east --> Main Lab, step 341
+Main Lab --> southeast --> Bio Lock West, step 343
+Bio Lock West --> east --> Bio Lock East, step 344
+Bio Lock East --> west --> Bio Lock West, step 353
+Bio Lock West --> west --> Main Lab, step 355
+Main Lab --> southwest --> Computer Room, step 356
+Computer Room --> south --> Booth, step 358
+Booth --> type 384 --> Station 384, step 360
+Station 384 --> east --> Strip Near Station, step 361
+Strip Near Station --> north --> Middle of Strip, step 362
+Middle of Strip --> north --> Strip Near Relay, step 363
+Strip Near Relay --> south --> Middle of Strip, step 375
+Middle of Strip --> south --> Strip Near Station, step 377
+Strip Near Station --> west --> Auxiliary Booth, step 378
+Auxiliary Booth --> north --> Lab Office, step 379
+Lab Office --> west --> Bio Lab, step 385
+Bio Lab --> west --> Bio Lock East, step 387
+Bio Lock East --> west --> Bio Lock West, step 388
+Bio Lock West --> west --> Main Lab, step 390
+Main Lab --> west --> Project Corridor East, step 391
+Project Corridor East --> west --> Project Corridor, step 392
+Project Corridor --> south --> Project Office, step 393
+Project Office --> south --> Cryo-elevator, step 394
+Cryo-elevator --> north --> Cryo-anteroom, step 399

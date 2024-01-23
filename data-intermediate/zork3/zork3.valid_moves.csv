@@ -1,71 +1,274 @@
-Step Num,Location Before,Location After,,
-1,,,,
-2,Endless Stair,Junction,(light lamp),
-3,,,,"Notes: "
-4,Junction,Barren Area,,1. Just annotate the steps where the location has changed
-5,Barren Area,Cliff,,"2. The locations are like ''Living Room"", ""Small Clearing"""
-6,,,,
-7,Cliff,Barren Area,,
-8,Barren Area,Junction,,
-9,Junction,Damp Passage,,
-10,Damp Passage,Engravings Room,,
-11,Engravings Room,Dead End,,
-12,Dead End,Damp Passage,,
-13,Damp Passage,Engravings Room,,
-14,,,,
-15,,,,
-16,Engravings Room,Damp Passage,,
-17,Damp Passage,Junction,,
-18,Junction,Creepy Crawl,,
-19,Creepy Crawl,Foggy Room,,
-20,Foggy Room,Lake Shore,,
-21,,,,
-22,,,,
-23,Lake Shore,On the Lake,,
-24,On the Lake,Underwater,,
-25,,,,
-26,Underwater,On the Lake,,
-27,On the Lake,Western Shore,,
-28,Western Shore,Scenic Vista,,
-29,,,,
-30,,,,
-31,,,,
-32,,,,
-33,Scenic Vista,Room 8,,
-34,,,,
-35,,,,
-36,,,,
-37,Scenic Vista,Damp Passage,,
-38,,,,
-39,,,,
-40,Scenic Vista,Western Shore,,
-41,Western Shore,On the Lake,,
-42,On the Lake,Underwater,,
-43,,,,
-44,Underwater,On the Lake,,
-45,On the Lake,Southern Shore,,
-46,Southern Shore,pitch black 1,,
-47,,,,
-48,pitch black 1,pitch black 2,,
-49,pitch black 2,Key Room,,
-50,,,,
-51,,,,
-52,Key Room,Aqueduct,,
-53,Aqueduct,High Arch,,
-54,High Arch,Water Slide,,
-55,Water Slide,Damp Passage,,
-56,,,,
-57,Damp Passage,Junction,,
-58,Junction,Barren Area,,
-59,Barren Area,Cliff,,
-60,Cliff,Cliff Ledge,,
-61,,,,
-62,,,,
-63,,,,
-64,,,,
-65,,,,
-66,,,,
-67,,,,
-68,Cliff Ledge,Cliff,,
-69,,,,
-70,Cliff,Cliff Ledge,,
+Step Num,Location Before,Location After,Unnamed: 3,Unnamed: 4,taken_action
+1,,,,,get lamp
+2,Endless Stair,Junction,(light lamp),,south
+3,,,,"Notes: ",light lamp
+4,Junction,Barren Area,,1. Just annotate the steps where the location has changed,west
+5,Barren Area,Cliff,,"2. The locations are like ''Living Room"", ""Small Clearing""",west
+6,,,,,get bread
+7,Cliff,Barren Area,,,east
+8,Barren Area,Junction,,,east
+9,Junction,Damp Passage,,,east
+10,Damp Passage,Engravings Room,,,northeast
+11,Engravings Room,Dead End,,,southeast
+12,Dead End,Damp Passage,,,west
+13,Damp Passage,Engravings Room,,,northeast
+14,,,,,wake up old man
+15,,,,,give bread to old man
+16,Engravings Room,Damp Passage,,,southwest
+17,Damp Passage,Junction,,,west
+18,Junction,Creepy Crawl,,,south
+19,Creepy Crawl,Foggy Room,,,south
+20,Foggy Room,Lake Shore,,,south
+21,,,,,turn off lamp
+22,,,,,drop lamp
+23,Lake Shore,On the Lake,,,jump lake
+24,On the Lake,Underwater,,,down
+25,,,,,get amulet
+26,Underwater,On the Lake,,,get amulet
+27,On the Lake,Western Shore,,,west
+28,Western Shore,Scenic Vista,,,south
+29,,,,,get torch
+30,,,,,wait
+31,,,,,wait
+32,,,,,wait
+33,Scenic Vista,Room 8,,,touch table
+34,,,,,get can
+35,,,,,wait
+36,,,,,wait
+37,Scenic Vista,Damp Passage,,,touch table
+38,,,,,drop torch
+39,,,,,wait
+40,Scenic Vista,Western Shore,,,north
+41,Western Shore,On the Lake,,,jump lake
+42,On the Lake,Underwater,,,down
+43,,,,,get can
+44,Underwater,On the Lake,,,get can
+45,On the Lake,Southern Shore,,,south
+46,Southern Shore,pitch black 1,,,south
+47,,,,,spray repellant on myself
+48,pitch black 1,pitch black 2,,,south
+49,pitch black 2,Key Room,,,east
+50,,,,,get key
+51,,,,,move cover
+52,Key Room,Aqueduct,,,down
+53,Aqueduct,High Arch,,,north
+54,High Arch,Water Slide,,,north
+55,Water Slide,Damp Passage,,,north
+56,,,,,get torch
+57,Damp Passage,Junction,,,west
+58,Junction,Barren Area,,,west
+59,Barren Area,Cliff,,,west
+60,Cliff,Cliff Ledge,,,down
+61,,,,,wait
+62,,,,,wait
+63,,,,,tie chest to rope
+64,,,,,wait
+65,,,,,wait
+66,,,,,wait
+67,,,,,wait
+68,Cliff Ledge,Cliff,,,grab rope
+69,,,,,get chest
+70,Cliff,Cliff Ledge,,,down
+71,Cliff Ledge,Cliff Base,,,down
+72,Cliff Base,Flathead Ocean,,,south
+73,,,,,wait
+74,,,,,wait
+75,,,,,wait
+76,,,,,wait
+77,,,,,wait
+78,,,,,wait
+79,,,,,wait
+80,,,,,wait
+81,,,,,wait
+82,,,,,wait
+83,,,,,hello sailor
+84,,,,,get vial
+85,Flathead Ocean,Land of Shadow (to all directions),,,east
+86,,,,,wait
+87,,,,,wait
+88,,,,,wait
+89,,,,,wait
+90,,,,,wait
+91,,,,,wait
+92,,,,,wait
+93,,,,,wait
+94,,,,,wait
+95,,,,,wait
+96,,,,,wait
+97,,,,,wait
+98,,,,,wait
+99,,,,,wait
+100,,,,,wait
+101,,,,,wait
+102,,,,,kill figure with sword
+103,,,,,kill figure with sword
+104,,,,,kill figure with sword
+105,,,,,kill figure with sword
+106,,,,,kill figure with sword
+107,,,,,kill figure with sword
+108,,,,,remove hood
+109,,,,,drop sword
+110,,,,,get cloak
+111,Land of Shadow (to all directions),Land of Shadow (to west and south),,,northeast
+112,Land of Shadow (to west and south),Land of Shadow (eastern end),,,east
+113,Land of Shadow (eastern end),Creepy Crawl,,,east
+114,Creepy Crawl,Junction,,,north
+115,Junction,Damp Passage,,,east
+116,Damp Passage,Engravings Room,,,northeast
+117,,,,,open door
+118,Engravings Room,Button Room,,,north
+119,Button Room,Beam Room,,,north
+120,,,,,drop chest
+121,Beam Room,Button Room,,,south
+122,Button Room,Engravings Room,,,south
+123,Engravings Room,Damp Passage,,,southwest
+124,Damp Passage,Junction,,,west
+125,Junction,Creepy Crawl,,,south
+126,Creepy Crawl,Tight Squeeze,,,east
+127,Tight Squeeze,Crystal Grotto,,,east
+128,Crystal Grotto,Royal Hall,,,south
+129,Royal Hall,Great Door,,,south
+130,Great Door,Museum Entrance,,,east
+131,Museum Entrance,Technology Museum,,,north
+132,Technology Museum,Museum Entrance,,,push golden machine south
+133,,,,,open stone door
+134,Museum Entrance,Jewel Room,,,push golden machine east
+135,,,,,examine machine
+136,,,,,read plaque
+137,Jewel Room,Gold Machine,,,get in machine
+138,,,,,set dial to 776
+139,Gold Machine,Jewel Room (unfinished),,,press button
+140,,,,,wait
+141,,,,,wait
+142,,,,,wait
+143,,,,,wait
+144,,,,,wait
+145,,,,,get ring
+146,,,,,open door
+147,Jewel Room (unfinished),Museum Entrance (unfinished),,,west
+148,,,,,open wooden door
+149,Museum Entrance (unfinished),Technology Museum (unfinished),,,north
+150,,,,,lift seat
+151,,,,,hide ring under seat
+152,Technology Museum (unfinished),Gold Machine,,,get in golden machine
+153,,,,,set dial to 948
+154,,,,,press button
+155,Gold Machine,Technology Museum,,,get out of golden machine
+156,,,,,lift seat
+157,,,,,open wooden door
+158,Technology Museum,Museum Entrance,,,south
+159,,,,,open stone door
+160,Museum Entrance,Jewel Room,,,east
+161,,,,,get all
+162,Jewel Room,Museum Entrance,,,west
+163,Museum Entrance,Royal Puzzle Entrance,,,south
+164,Royal Puzzle Entrance,Room in a Puzzle,,,down
+165,,,,,press south wall
+166,,,,,east
+167,,,,,south
+168,,,,,east
+169,,,,,east
+170,,,,,press south wall
+171,,,,,get book
+172,,,,,press south wall
+173,,,,,press west wall
+174,,,,,again
+175,,,,,east
+176,,,,,east
+177,,,,,north
+178,,,,,north
+179,,,,,north
+180,,,,,north
+181,,,,,press east wall
+182,,,,,west
+183,,,,,south
+184,,,,,south
+185,,,,,south
+186,,,,,south
+187,,,,,east
+188,,,,,east
+189,,,,,north
+190,,,,,north
+191,,,,,north
+192,,,,,press west wall
+193,,,,,north
+194,,,,,west
+195,,,,,press south wall
+196,,,,,east
+197,,,,,east
+198,,,,,south
+199,,,,,south
+200,,,,,south
+201,,,,,west
+202,,,,,west
+203,,,,,north
+204,,,,,press east wall
+205,,,,,west
+206,,,,,west
+207,,,,,west
+208,,,,,north
+209,,,,,north
+210,,,,,west
+211,,,,,north
+212,,,,,press east wall
+213,,,,,again
+214,,,,,again
+215,,,,,south
+216,,,,,press south wall
+217,,,,,north
+218,,,,,east
+219,,,,,east
+220,,,,,south
+221,,,,,press south wall
+222,,,,,west
+223,,,,,press west wall
+224,,,,,again
+225,,,,,south
+226,,,,,west
+227,,,,,press north wall
+228,,,,,again
+229,,,,,again
+230,,,,,west
+231,,,,,north
+232,Room in a Puzzle,Royal Puzzle Entrance,,,up
+233,Royal Puzzle Entrance,Museum Entrance,,,north
+234,Museum Entrance,Great Door,,,west
+235,Great Door,Royal Hall,,,north
+236,Royal Hall,Crystal Grotto,,,north
+237,Crystal Grotto,Tight Squeeze,,,west
+238,Tight Squeeze,Creepy Crawl,,,west
+239,Creepy Crawl,Junction,,,north
+240,Junction,Damp Passage,,,east
+241,Damp Passage,Engravings Room,,,northeast
+242,Engravings Room,Button Room,,,north
+243,,,,,press button
+244,Button Room,Beam Room,,,north
+245,Beam Room,Hallway (large mirror fills north side of hallway),,,north
+246,Hallway (large mirror fills north side of hallway),Inside Mirror,,,north
+247,,,,,raise short pole
+248,,,,,press white panel
+249,,,,,again
+250,,,,,lower short pole
+251,,,,,push pine panel
+252,Inside Mirror,Hallway (identical stone statues to the north),,,north
+253,,,,,open vial
+254,,,,,drink liquid
+255,Hallway (identical stone statues to the north),Hallway (identical stone statues on either side),,,north
+256,Hallway (identical stone statues on either side),Hallway (identical stone statues to the south),,,north
+257,Hallway (identical stone statues to the south),Dungeon Entrance,,,north
+258,Dungeon Entrance,Narrow Corridor,,,knock on door
+259,Narrow Corridor,South Corridor,,,north
+260,South Corridor,East Corridor,,,east
+261,East Corridor,North Corridor,,,north
+262,North Corridor,Parapet,,,north
+263,,,,,read book
+264,,,,,turn dial to 4
+265,,,,,press button
+266,,,,,"dungeon master, wait"
+267,Parapet,North Corridor,,,south
+268,,,,,open cell door
+269,North Corridor,Prison Cell,,,south
+270,,,,,"dungeon master, turn dial to 8 and press button"
+271,,,,,unlock bronze door with key
+272,,,,,open it
+273,Prison Cell,Treasury of Zork,,,south

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Hallway (basement)",
+    "dst_node": "Hallway (second floor, east)",
+    "path_gt": [
+        {
+            "prev_node": "Hallway (basement)",
+            "node": "Hallway (west end)",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Hallway (west end)",
+            "node": "Hallway (second floor, west)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Hallway (second floor, west)",
+            "node": "Hallway (second floor, east)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        }
+    ]
+}

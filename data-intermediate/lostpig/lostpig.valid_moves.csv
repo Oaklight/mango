@@ -1,71 +1,147 @@
-Step Num,Location Before,Location After
-1,,
-2,,
-3,,
-4,,
-5,,
-6,,
-7,Outside,Hole
-8,,
-9,,
-10,,
-11,,
-12,,
-13,,
-14,Hole,Fountain Room
-15,,
-16,,
-17,,
-18,,
-19,,
-20,,
-21,,
-22,,
-23,Fountain Room,Statue Room
-24,,
-25,,
-26,,
-27,,
-28,,
-29,,
-30,Statue Room,Fountain Room
-31,Fountain Room,Table Room
-32,,
-33,,
-34,,
-35,,
-36,,
-37,,
-38,,
-39,,
-40,,
-41,,
-42,,
-43,,
-44,,
-45,,
-46,,
-47,,
-48,,
-49,,
-50,,
-51,Table Room,Closet
-52,,
-53,,
-54,,
-55,,
-56,,
-57,,
-58,,
-59,,
-60,,
-61,,
-62,,
-63,,
-64,,
-65,,
-66,,
-67,,
-68,,
-69,,
-70,Closet,Shelf Room
+Step Num,Location Before,Location After,Answerable,taken_action
+1,,,,x me
+2,,,,inventory
+3,,,,x farm
+4,,,,x forest
+5,,,,look for pig
+6,,,,listen
+7,Outside,Hole,,northeast
+8,,,,x stairs
+9,,,,x metal thing
+10,,,,take tube and torch
+11,,,,look inside tube
+12,,,,blow in tube
+13,,,,x crack
+14,Hole,Fountain Room,,east
+15,,,,x pig
+16,,,,follow pig
+17,,,,catch it
+18,,,,x fountain
+19,,,,x bowl
+20,,,,x coin
+21,,,,x curtain
+22,,,,x man
+23,Fountain Room,Statue Room,,north
+24,,,,x west mural
+25,,,,x east mural
+26,,,,x statue
+27,,,,x hat
+28,,,,take it
+29,,,,wear it
+30,Statue Room,Fountain Room,,south
+31,Fountain Room,Table Room,,southwest
+32,,,,x box
+33,,,,put coin in slot
+34,,,,pull lever
+35,,,,x brick
+36,,,,take it
+37,,,,smell it
+38,,,,taste it
+39,,,,eat it
+40,,,,x dent
+41,,,,hit box
+42,,,,take coin
+43,,,,put coin in slot
+44,,,,pull lever
+45,,,,hit box
+46,,,,take all from basket
+47,,,,put coin in slot
+48,,,,take all from basket
+49,,,,x chair
+50,,,,take it
+51,Table Room,Gnome Room,61,east
+52,,,,x shadow
+53,,,,listen
+54,,,,shout
+55,,,,greet gnome
+56,,,,tell gnome about grunk
+57,,,,ask gnome about statue
+58,,,,ask what gnome looking for
+59,,,,look under bed
+60,,,,talk to gnome about mogglev
+61,,,,look
+62,,,,look under bed
+63,,,,open trunk
+64,,,,x ball
+65,,,,take ball
+66,,,,show torch to gnome
+67,,,,ask gnome about fire
+68,,,,show brick to gnome
+69,,,,ask gnome about mother
+70,Gnome Room,Shelf Room,,east
+71,,,,x shelf
+72,,,,x top shelf
+73,,,,drop chair
+74,Shelf Room,On Chair,,stand on chair
+75,,,,x top shelf
+76,,,,take book
+77,,,,x it
+78,On Chair,Shelf Room,,get down
+79,,,,open chest
+80,,,,take pole
+81,,,,x it
+82,Shelf Room,Gnome Room,,west
+83,,,,show pole to gnome
+84,,,,ask gnome about color magnet
+85,,,,show book to gnome
+86,,,,give book to gnome
+87,,,,east
+88,,,,ask gnome about page
+89,Gnome Room,Shelf Room,,east
+90,Shelf Room,Fountain Room,,northwest
+91,Fountain Room,Cave With Stream,,east
+92,,,,x river
+93,,,,x thing
+94,,,,take thing
+95,,,,cross river
+96,,,,touch thing with pole
+97,,,,x key
+98,,,,take water
+99,,,,fill hat with water
+100,Cave With Stream,Fountain Room,,west
+101,Fountain Room,Shelf Room,,southeast
+102,,,,unlock chest
+103,,,,open it
+104,,,,pour water on powder
+105,,,,light torch with fire
+106,Shelf Room,Fountain Room,,northwest
+107,Fountain Room,Hole,,west
+108,,,,x crack
+109,,,,take paper
+110,,,,take paper with pole
+111,,,,burn pole with torch
+112,,,,take paper with pole
+113,Hole,Fountain Room,,east
+114,Fountain Room,Table Room,,southwest
+115,Table Room,Gnome Room,,east
+116,,,,give paper to gnome
+117,,,,wait
+118,Gnome Room,Shelf Room,,go to pig
+119,,,,show brick to pig
+120,,,,drop all bricks
+121,,,,z
+122,,,,z
+123,,,,z
+124,,,,z
+125,,,,take pig
+126,Shelf Room,Statue Room,,go to statue
+127,,,,x hand
+128,,,,put torch in hand
+129,Statue Room,Windy Cave,,north
+130,,,,x windy tunnel
+131,,,,north
+132,Windy Cave,Statue Room,,south
+133,,,,take torch
+134,Statue Room,Gnome Room,,go to gnome
+135,,,,ask gnome for ball
+136,,,,give torch to gnome
+137,,,,thank gnome
+138,Gnome Room,Windy Cave,,go to windy cave
+139,Windy Cave,Twisty Cave,,north
+140,Twisty Cave,Confusing Room,,east
+141,,,,drop pole
+142,Confusing Room,Dark Hole,,northwest
+143,,,,play whistle
+144,Dark Hole,Probably New Tunnel,,southeast
+145,Probably New Tunnel,Some Other Cave,,enter hole
+146,Some Other Cave,Forest,,follow gnome

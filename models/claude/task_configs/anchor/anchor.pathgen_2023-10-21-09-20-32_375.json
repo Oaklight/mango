@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Library",
+    "dst_node": "Alley",
+    "path_gt": [
+        {
+            "prev_node": "Library",
+            "node": "University Court",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "University Court",
+            "node": "Junction",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Junction",
+            "node": "Narrow Street",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Outside the Real Estate Office",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Outside the Real Estate Office",
+            "node": "Alley",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        }
+    ]
+}

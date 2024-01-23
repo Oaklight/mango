@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Bottom of Pit",
+    "dst_node": "Base of Canyon",
+    "path_gt": [
+        {
+            "prev_node": "Bottom of Pit",
+            "node": "Tight Crawl",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Tight Crawl",
+            "node": "Smallish Cave",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "Smallish Cave",
+            "node": "Cramped Cavern",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 27
+        },
+        {
+            "prev_node": "Cramped Cavern",
+            "node": "Dull Room",
+            "action": "ahead",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Dull Room",
+            "node": "Largish Dome",
+            "action": "left",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Largish Dome",
+            "node": "Small Cave",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Small Cave",
+            "node": "Cramped Room",
+            "action": "right",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Cramped Room",
+            "node": "Base of Canyon",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        }
+    ],
+    "save_path": "outputs/huntdark/results/"
+}

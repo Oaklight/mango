@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Low Room",
+    "dst_node": "In Cobble",
+    "path_gt": [
+        {
+            "prev_node": "Low Room",
+            "node": "In Hall of Mists",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 21
+        },
+        {
+            "prev_node": "In Hall of Mists",
+            "node": "At Top of Small Pit",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "At Top of Small Pit",
+            "node": "Orange River Chamber",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Orange River Chamber",
+            "node": "Sloping E/W Canyon",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Sloping E/W Canyon",
+            "node": "In Debris Room",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "In Debris Room",
+            "node": "In Cobble",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 12
+        }
+    ],
+    "save_path": "outputs/advent/results/"
+}

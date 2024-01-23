@@ -1,71 +1,266 @@
-Step Num,Location Before,Location After
-1,Fork,Outside of Shack
-2,Outside of Shack,Inside Shack
-3,,
-4,,
-5,,
-6,,
-7,Inside Shack,Outside of Shack
-8,Outside of Shack,Trail
-9,Trail,Trail Head
-10,Trail Head,Shady Brook
-11,,
-12,Shady Brook,Trail Head
-13,Trail Head,Eastern Fork
-14,Eastern Fork,Village Outskirts
-15,Village Outskirts,Deserted Village
-16,,
-17,,
-18,,
-19,Deserted Village,Village Outskirts
-20,Village Outskirts,Eastern Fork
-21,Eastern Fork,Western Road
-22,Western Road,Outside Gate
-23,,
-24,,
-25,Outside Gate,Inside Gate
-26,Inside Gate,Pebbled Path
-27,,
-28,Pebbled Path,Tower
-29,Tower,Jewel Room
-30,,
-31,,
-32,,
-33,,
-34,,
-35,,
-36,,
-37,,
-38,,
-39,Jewel Room,Tower
-40,Tower,Hall of Mirrors One
-41,Hall of Mirrors One,Hall of Mirrors Two
-42,Hall of Mirrors Two,Hall of Mirrors Three
-43,Hall of Mirrors Three,Hall of Mirrors Four
-44,Hall of Mirrors Four,North Gate
-45,,
-46,,
-47,North Gate,Forest
-48,,
-49,,
-50,,
-51,,
-52,,
-53,,
-54,,
-55,Forest,Swamp
-56,,
-57,,
-58,,
-59,,
-60,,
-61,Swamp,Forest
-62,,
-63,Forest,North Gate
-64,North Gate,Library
-65,,
-66,,
-67,,
-68,,
-69,Library,North Gate
-70,,
+Step Num,Location Before,Location After,taken_action
+1,Fork,Outside of Shack,northeast
+2,Outside of Shack,Inside Shack,enter shack
+3,,,open oven
+4,,,get bread
+5,,,take jug
+6,,,take lantern
+7,Inside Shack,Outside of Shack,exit shack
+8,Outside of Shack,Trail,northeast
+9,Trail,Trail Head,southeast
+10,Trail Head,Shady Brook,northeast
+11,,,fill jug
+12,Shady Brook,Trail Head,southwest
+13,Trail Head,Eastern Fork,southeast
+14,Eastern Fork,Village Outskirts,southwest
+15,Village Outskirts,Deserted Village,southwest
+16,,,south
+17,,,read scroll
+18,,,gnusto rezrov spell
+19,Deserted Village,Village Outskirts,northeast
+20,Village Outskirts,Eastern Fork,northeast
+21,Eastern Fork,Western Road,east
+22,Western Road,Outside Gate,east
+23,,,learn rezrov
+24,,,rezrov gate
+25,Outside Gate,Inside Gate,east
+26,Inside Gate,Pebbled Path,north
+27,,,frotz lantern
+28,Pebbled Path,Tower,north
+29,Tower,Jewel Room,up
+30,,,get egg
+31,,,examine it
+32,,,turn handle
+33,,,press knob
+34,,,pull slide
+35,,,move crank
+36,,,push button
+37,,,get shredded scroll
+38,,,read it
+39,Jewel Room,Tower,down
+40,Tower,Hall of Mirrors One,east
+41,Hall of Mirrors One,Hall of Mirrors Two,east
+42,Hall of Mirrors Two,Hall of Mirrors Three,east
+43,Hall of Mirrors Three,Hall of Mirrors Four,east
+44,Hall of Mirrors Four,North Gate,east
+45,,,learn rezrov
+46,,,rezrov gate
+47,North Gate,Forest,north
+48,,,get crumpled scroll
+49,,,read it
+50,,,gnusto krebf spell
+51,,,learn krebf
+52,,,krebf shredded scroll
+53,,,read faded scroll
+54,,,gnusto zifmia spell
+55,Forest,Swamp,east
+56,,,learn nitfol
+57,,,nitfol frogs
+58,,,look under lily pad
+59,,,read damp scroll
+60,,,gnusto cleesh spell
+61,Swamp,Forest,west
+62,,,drink water
+63,Forest,North Gate,south
+64,North Gate,Library,south
+65,,,examine tracks
+66,,,reach into hole
+67,,,take book
+68,,,eat bread
+69,Library,North Gate,north
+70,,,examine dusty book
+71,,,read of unseen terror
+72,,,drop dusty book
+73,,,read frayed scroll
+74,,,gnusto gondar spell
+75,North Gate,Hall of Mirrors Four,west
+76,Hall of Mirrors Four,Hall of Mirrors Three,west
+77,Hall of Mirrors Three,Hall of Mirrors Two,west
+78,Hall of Mirrors Two,Hall of Mirrors One,west
+79,Hall of Mirrors One,Tower,west
+80,Tower,Pebbled Path,south
+81,Pebbled Path,Inside Gate,south
+82,Inside Gate,West Hall,south
+83,West Hall,Tower (base of southwest tower),south
+84,Tower (base of southwest tower),Bedroom,up
+85,,,wait
+86,Bedroom,On fourposter feather bed,lie down
+87,On fourposter feather bed,Bedroom,stand up
+88,,,examine post
+89,,,press button
+90,,,get gold leaf scroll
+91,,,read it
+92,,,gnusto vaxum spell
+93,Bedroom,Tower (base of southwest tower),down
+94,Tower (base of southwest tower),South Hall,east
+95,South Hall,Dungeon,south
+96,,,open door
+97,Dungeon,Cell (dungeon cell with writing on the walls),north
+98,,,read writings
+99,,,move block
+100,Cell (dungeon cell with writing on the walls),Secret Passage,east
+101,,,get stained scroll
+102,,,read it
+103,,,gnusto exex spell
+104,Secret Passage,Cell (dungeon cell with writing on the walls),west
+105,Cell (dungeon cell with writing on the walls),Dungeon,south
+106,Dungeon,South Hall,up
+107,South Hall,Gallery,east
+108,Gallery,South Gate,east
+109,South Gate,Meadow,south
+110,Meadow,Beach,southeast
+111,,,learn nitfol
+112,,,nitfol turtle
+113,,,"turtle, follow me"
+114,Beach,Meadow,northwest
+115,Meadow,South Gate,north
+116,South Gate,Tower (base of southeast tower),east
+117,Tower (base of southeast tower),Engine Room,up
+118,,,learn exex
+119,,,exex turtle
+120,,,drink water
+121,,,"turtle, se and get scroll then nw"
+122,,,read brittle scroll
+123,,,get it
+124,Engine Room,Tower (base of southeast tower),down
+125,Tower (base of southeast tower),South Gate,west
+126,South Gate,Gallery,west
+127,,,turn off lantern
+128,,,look
+129,,,move lighted portrait
+130,,,get black scroll
+131,,,read it
+132,,,gnusto ozmoo spell
+133,,,get candle
+134,,,learn frotz
+135,,,frotz candle
+136,,,learn frotz
+137,,,learn ozmoo
+138,Gallery,South Hall,west
+139,South Hall,Closet,north
+140,,,frotz lantern
+141,,,drop all but candle
+142,,,eat bread
+143,Closet,South Hall,south
+144,South Hall,Gallery,east
+145,Gallery,South Gate,east
+146,South Gate,East Hall,north
+147,East Hall,Banquet Hall,north
+148,Banquet Hall,Junction,north
+149,Junction,Cell (prison cell in north tower of temple),wait
+150,,,ozmoo myself
+151,Cell (prison cell in north tower of temple),Sacrificial Altar,wait
+152,Sacrificial Altar,Temple,down
+153,Temple,Courtyard (center of a large courtyard),west
+154,Courtyard (center of a large courtyard),Courtyard (westernmost point in a large open courtyard),west
+155,Courtyard (westernmost point in a large open courtyard),Closet,south
+156,,,cut rope with dagger
+157,,,drop dagger
+158,,,get all but dagger
+159,Closet,South Hall,south
+160,South Hall,Tower (base of southwest tower),west
+161,Tower (base of southwest tower),Bedroom,up
+162,Bedroom,On fourposter feather bed,lie down
+163,On fourposter feather bed,Bedroom,stand up
+164,Bedroom,Tower (base of southwest tower),down
+165,Tower (base of southwest tower),West Hall,north
+166,West Hall,Inside Gate,north
+167,Inside Gate,Pebbled Path,north
+168,Pebbled Path,Tower,north
+169,,,learn zifmia
+170,,,learn vaxum
+171,Tower,Hall of Mirrors One,east
+172,Hall of Mirrors One,Hall of Mirrors Two,east
+173,Hall of Mirrors Two,Hall of Mirrors Three,east
+174,Hall of Mirrors Three,Hall of Mirrors Four,east
+175,,,zifmia adventurer
+176,,,learn blorb
+177,,,vaxum adventurer
+178,Hall of Mirrors Four,North Gate,show egg to adventurer then east
+179,North Gate,Guarded Door,east
+180,,,"adventurer, open door"
+181,,,wait
+182,,,blorb adventurer
+183,Guarded Door,Map Room,up
+184,,,drop egg
+185,,,drink water
+186,,,get pencil
+187,,,get map
+188,Map Room,Guarded Door,down
+189,Guarded Door,North Gate,west
+190,North Gate,Hall of Mirrors Four,west
+191,Hall of Mirrors Four,Hall of Mirrors Three,west
+192,Hall of Mirrors Three,Hall of Mirrors Two,west
+193,Hall of Mirrors Two,Hall of Mirrors One,west
+194,Hall of Mirrors One,Tower,west
+195,Tower,Pebbled Path,south
+196,Pebbled Path,Inside Gate,south
+197,Inside Gate,West Hall,south
+198,West Hall,Tower (base of southwest tower),south
+199,,,eat bread
+200,Tower (base of southwest tower),South Hall,east
+201,South Hall,Dungeon,south
+202,Dungeon,Translucent Room (an exit to the south),down
+203,,,read map
+204,,,draw line from f to p
+205,,,wait
+206,,,erase line between b and r
+207,,,erase line between m and v
+208,,,draw line from b to j
+209,Translucent Room (an exit to the south),"Translucent Room (passages to west, southwest, southeast)",east
+210,"Translucent Room (passages to west, southwest, southeast)","Translucent Room (passages to northwest, southeast)",southeast
+211,"Translucent Room (passages to northwest, southeast)","Translucent Room (passages to northwest, southwest)",southeast
+212,"Translucent Room (passages to northwest, southwest)",Translucent Room (an exit to northeast),southwest
+213,,,drop map
+214,,,drop pencil
+215,,,get scroll
+216,,,read it
+217,Translucent Room (an exit to northeast),"Translucent Room (passages to northwest, southwest)",northeast
+218,"Translucent Room (passages to northwest, southwest)","Translucent Room (passages to northwest, southeast)",northwest
+219,"Translucent Room (passages to northwest, southeast)","Translucent Room (passages to west, southwest, southeast)",northwest
+220,"Translucent Room (passages to west, southwest, southeast)",Translucent Room (an exit to the south),west
+221,Translucent Room (an exit to the south),Dungeon,up
+222,Dungeon,South Hall,up
+223,South Hall,Closet,north
+224,,,open box
+225,,,get vellum scroll
+226,,,read it
+227,,,gnusto melbor spell
+228,Closet,Courtyard (westernmost point in a large open courtyard),north
+229,Courtyard (westernmost point in a large open courtyard),Inside Gate,west
+230,Inside Gate,Outside Gate,west
+231,Outside Gate,Western Road,west
+232,,,drink water
+233,Western Road,Eastern Fork,west
+234,Eastern Fork,Trail Head,northwest
+235,Trail Head,Shady Brook,northeast
+236,,,fill jug
+237,Shady Brook,Trail Head,southwest
+238,Trail Head,Eastern Fork,southeast
+239,Eastern Fork,Western Road,east
+240,Western Road,Outside Gate,east
+241,Outside Gate,Inside Gate,east
+242,Inside Gate,West Hall,south
+243,West Hall,Tower (base of southwest tower),south
+244,,,learn melbor
+245,,,sleep
+246,,,learn vaxum
+247,,,learn gondar
+248,,,learn melbor
+249,Tower (base of southwest tower),South Hall,east
+250,South Hall,Gallery,east
+251,,,melbor myself
+252,,,eat bread
+253,Gallery,South Gate,east
+254,South Gate,East Hall,north
+255,East Hall,Banquet Hall,north
+256,Banquet Hall,Junction,north
+257,Junction,Landing,east
+258,Landing,Winding Stair,east
+259,Winding Stair,In midair,kulcad stairs
+260,,,read ornate scroll
+261,,,izyuk myself
+262,In midair,Warlock's Tower,east
+263,,,gondar dragon
+264,,,vaxum being
+265,,,guncho krill

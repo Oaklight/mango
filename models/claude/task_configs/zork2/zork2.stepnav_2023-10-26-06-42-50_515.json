@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "North End of Garden",
+    "dst_node": "Path Near Stream",
+    "path_gt": [
+        {
+            "prev_node": "North End of Garden",
+            "node": "Formal Garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Formal Garden",
+            "node": "Topiary",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 69
+        },
+        {
+            "prev_node": "Topiary",
+            "node": "Carousel Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Carousel Room",
+            "node": "Marble Hall",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Marble Hall",
+            "node": "Path Near Stream",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        }
+    ],
+    "save_path": "outputs/zork2/results/"
+}

@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Western Road",
+    "dst_node": "Hall of Mirrors Two",
+    "path_gt": [
+        {
+            "prev_node": "Western Road",
+            "node": "Outside Gate",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Outside Gate",
+            "node": "Inside Gate",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Inside Gate",
+            "node": "Pebbled Path",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Pebbled Path",
+            "node": "Tower",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Tower",
+            "node": "Hall of Mirrors One",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Hall of Mirrors One",
+            "node": "Hall of Mirrors Two",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        }
+    ]
+}

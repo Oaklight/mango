@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "River Bank",
+    "dst_node": "Your Tent",
+    "path_gt": [
+        {
+            "prev_node": "River Bank",
+            "node": "Near the Nile",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 35
+        },
+        {
+            "prev_node": "Near the Nile",
+            "node": "Outside Your Tent",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 36
+        },
+        {
+            "prev_node": "Outside Your Tent",
+            "node": "Your Tent",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ],
+    "save_path": "outputs/infidel/results/"
+}

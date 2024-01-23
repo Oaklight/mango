@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Hole",
+    "dst_node": "Shelf Room",
+    "path_gt": [
+        {
+            "prev_node": "Hole",
+            "node": "Fountain Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        },
+        {
+            "prev_node": "Fountain Room",
+            "node": "Table Room",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Table Room",
+            "node": "Closet",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 51
+        },
+        {
+            "prev_node": "Closet",
+            "node": "Shelf Room",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 70
+        }
+    ],
+    "save_path": "outputs/lostpig/results/"
+}

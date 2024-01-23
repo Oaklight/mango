@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Chasm",
+    "dst_node": "Bog",
+    "path_gt": [
+        {
+            "prev_node": "Chasm",
+            "node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 48
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; arrow down)",
+            "node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 49
+        },
+        {
+            "prev_node": "Maze (exit North, South, East, West, Up, Down; rock ALADDIN)",
+            "node": "Meadow",
+            "action": "away",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Bog",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ]
+}

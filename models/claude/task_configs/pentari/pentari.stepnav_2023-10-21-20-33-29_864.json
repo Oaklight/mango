@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Entrance Hall",
+    "dst_node": "Castle",
+    "path_gt": [
+        {
+            "prev_node": "Entrance Hall",
+            "node": "Library",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Library",
+            "node": "Castle",
+            "action": "covert",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        }
+    ],
+    "save_path": "outputs/pentari/results/"
+}

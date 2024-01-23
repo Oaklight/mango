@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Cell",
+    "dst_node": "Corridor(south into a room and west to old cell)",
+    "path_gt": [
+        {
+            "prev_node": "Cell",
+            "node": "Landing",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Landing",
+            "node": "Corridor(south into a room and west to old cell)",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ],
+    "save_path": "outputs/zenon/results/"
+}

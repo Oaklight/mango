@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Forest",
+    "dst_node": "Bog",
+    "path_gt": [
+        {
+            "prev_node": "Forest",
+            "node": "Meadow",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Meadow",
+            "node": "Lakeside",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Lakeside",
+            "node": "Bog",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ]
+}

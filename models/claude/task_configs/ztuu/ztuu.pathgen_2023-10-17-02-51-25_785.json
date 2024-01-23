@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "the entrance of tunnel",
+    "dst_node": "Janitor's Closet",
+    "path_gt": [
+        {
+            "prev_node": "the entrance of tunnel",
+            "node": "tunnel",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "tunnel",
+            "node": "Cultural Complex",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "Cultural Complex",
+            "node": "Hall of Science Lobby",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Hall of Science Lobby",
+            "node": "Museum of Adventure",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 58
+        },
+        {
+            "prev_node": "Museum of Adventure",
+            "node": "Janitor's Closet",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        }
+    ]
+}

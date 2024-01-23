@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Closet",
+    "dst_node": "Outside (restaurant to north, mayer home to east)",
+    "path_gt": [
+        {
+            "prev_node": "Closet",
+            "node": "Chief's office",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Chief's office",
+            "node": "Outside (dead end to east)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 8
+        },
+        {
+            "prev_node": "Outside (dead end to east)",
+            "node": "Outside (restaurant to north, mayer home to east)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        }
+    ]
+}

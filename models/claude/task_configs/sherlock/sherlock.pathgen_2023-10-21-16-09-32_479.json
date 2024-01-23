@@ -1,0 +1,42 @@
+{
+    "task": "pathgen",
+    "src_node": "Vestibule",
+    "dst_node": "Madame Tussaud's",
+    "path_gt": [
+        {
+            "prev_node": "Vestibule",
+            "node": "entry hall",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "entry hall",
+            "node": "221-B Baker Street",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "221-B Baker Street",
+            "node": "York Place",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "York Place",
+            "node": "Marylebone Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Marylebone Road",
+            "node": "Madame Tussaud's",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        }
+    ]
+}

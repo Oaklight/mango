@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Platform (west side)",
+    "dst_node": "Menagerie",
+    "path_gt": [
+        {
+            "prev_node": "Platform (west side)",
+            "node": "Performance Ring",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 32
+        },
+        {
+            "prev_node": "Performance Ring",
+            "node": "In the Wings",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "In the Wings",
+            "node": "Connection",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Midway Entrance",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Midway Entrance",
+            "node": "Menagerie",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 65
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

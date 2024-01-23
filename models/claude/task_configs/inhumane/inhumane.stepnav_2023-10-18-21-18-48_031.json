@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Round Room",
+    "dst_node": "Bottom of a Hole",
+    "path_gt": [
+        {
+            "prev_node": "Round Room",
+            "node": "Roboff's Tent",
+            "action": "up",
+            "seen_in_forward": false,
+            "step_min_cutoff": 22
+        },
+        {
+            "prev_node": "Roboff's Tent",
+            "node": "Center of Camp",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Center of Camp",
+            "node": "In the Desert",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "In the Desert",
+            "node": "Bottom of a Hole",
+            "action": "dig",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        }
+    ],
+    "save_path": "outputs/inhumane/results/"
+}

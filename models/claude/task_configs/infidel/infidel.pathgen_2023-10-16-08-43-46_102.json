@@ -1,0 +1,56 @@
+{
+    "task": "pathgen",
+    "src_node": "Northern Path",
+    "dst_node": "Barge Chamber (southern section)",
+    "path_gt": [
+        {
+            "prev_node": "Northern Path",
+            "node": "Desert (within sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Desert (within sight of encampment)",
+            "node": "Desert (out of sight of encampment)",
+            "action": "southeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 39
+        },
+        {
+            "prev_node": "Desert (out of sight of encampment)",
+            "node": "Chamber of Ra",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        },
+        {
+            "prev_node": "Chamber of Ra",
+            "node": "South Landing",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "South Landing",
+            "node": "the entrance of a narrow hallway",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "the entrance of a narrow hallway",
+            "node": "at a bend in the Narrow Hallway",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 62
+        },
+        {
+            "prev_node": "at a bend in the Narrow Hallway",
+            "node": "Barge Chamber (southern section)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        }
+    ]
+}

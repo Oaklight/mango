@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "old untended grave",
+    "dst_node": "remnants of a bonfire",
+    "path_gt": [
+        {
+            "prev_node": "old untended grave",
+            "node": "outside the house",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "outside the house",
+            "node": "flower garden",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 1
+        },
+        {
+            "prev_node": "flower garden",
+            "node": "remnants of a bonfire",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 17
+        }
+    ],
+    "save_path": "outputs/murdac/results/"
+}

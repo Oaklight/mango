@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "In A Valley",
+    "dst_node": "Sloping E/W Canyon",
+    "path_gt": [
+        {
+            "prev_node": "In A Valley",
+            "node": "At Slit In Streambed",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "At Slit In Streambed",
+            "node": "Outside Grate",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 6
+        },
+        {
+            "prev_node": "Outside Grate",
+            "node": "Below the Grate",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Below the Grate",
+            "node": "In Cobble",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        },
+        {
+            "prev_node": "In Cobble",
+            "node": "In Debris Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "In Debris Room",
+            "node": "Sloping E/W Canyon",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ],
+    "save_path": "outputs/advent/results/"
+}

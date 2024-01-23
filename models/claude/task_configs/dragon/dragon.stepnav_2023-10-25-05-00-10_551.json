@@ -1,0 +1,92 @@
+{
+    "task": "stepnav",
+    "src_node": "Castle Forge",
+    "dst_node": "Inn Cellar",
+    "path_gt": [
+        {
+            "prev_node": "Castle Forge",
+            "node": "Forbidding Castle",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Forbidding Castle",
+            "node": "Castle Hallway",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Castle Hallway",
+            "node": "Top of a Tower",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Top of a Tower",
+            "node": "Wasteland by a Castle",
+            "action": "jump",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Wasteland by a Castle",
+            "node": "Pebbled Beach",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 38
+        },
+        {
+            "prev_node": "Pebbled Beach",
+            "node": "Lake in the Forest",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 31
+        },
+        {
+            "prev_node": "Lake in the Forest",
+            "node": "South End of a Road",
+            "action": "north",
+            "seen_in_forward": false,
+            "step_min_cutoff": 60
+        },
+        {
+            "prev_node": "South End of a Road",
+            "node": "North End of a Road",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 19
+        },
+        {
+            "prev_node": "North End of a Road",
+            "node": "Swampy Ground",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 20
+        },
+        {
+            "prev_node": "Swampy Ground",
+            "node": "Abandoned Inn",
+            "action": "east",
+            "seen_in_forward": false,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Abandoned Inn",
+            "node": "Inside the Inn",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Inside the Inn",
+            "node": "Inn Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        }
+    ],
+    "save_path": "outputs/dragon/results/"
+}

@@ -1,0 +1,43 @@
+{
+    "task": "stepnav",
+    "src_node": "Midway Entrance",
+    "dst_node": "Camp, West",
+    "path_gt": [
+        {
+            "prev_node": "Midway Entrance",
+            "node": "Connection",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Connection",
+            "node": "Near White Wagon",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Near White Wagon",
+            "node": "Back Yard",
+            "action": "west",
+            "seen_in_forward": false,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Back Yard",
+            "node": "Camp, East",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Camp, East",
+            "node": "Camp, West",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 42
+        }
+    ],
+    "save_path": "outputs/ballyhoo/results/"
+}

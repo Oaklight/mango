@@ -1,0 +1,29 @@
+{
+    "task": "stepnav",
+    "src_node": "Mess Corridor",
+    "dst_node": "Admin Corridor South",
+    "path_gt": [
+        {
+            "prev_node": "Mess Corridor",
+            "node": "Dorm Corridor",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 33
+        },
+        {
+            "prev_node": "Dorm Corridor",
+            "node": "Corridor Junction",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 34
+        },
+        {
+            "prev_node": "Corridor Junction",
+            "node": "Admin Corridor South",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        }
+    ],
+    "save_path": "outputs/planetfall/results/"
+}

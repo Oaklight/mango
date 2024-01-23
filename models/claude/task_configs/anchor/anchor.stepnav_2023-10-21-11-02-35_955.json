@@ -1,0 +1,64 @@
+{
+    "task": "stepnav",
+    "src_node": "Riverwalk",
+    "dst_node": "Cellar",
+    "path_gt": [
+        {
+            "prev_node": "Riverwalk",
+            "node": "Chilly Avenue",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "Chilly Avenue",
+            "node": "Scenic View",
+            "action": "southwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Scenic View",
+            "node": "Outside the House",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 26
+        },
+        {
+            "prev_node": "Outside the House",
+            "node": "Foyer",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 28
+        },
+        {
+            "prev_node": "Foyer",
+            "node": "Dining Room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Dining Room",
+            "node": "Kitchen",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Kitchen",
+            "node": "Pantry",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 61
+        },
+        {
+            "prev_node": "Pantry",
+            "node": "Cellar",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

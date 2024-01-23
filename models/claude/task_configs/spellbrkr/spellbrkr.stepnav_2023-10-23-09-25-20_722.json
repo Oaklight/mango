@@ -1,0 +1,36 @@
+{
+    "task": "stepnav",
+    "src_node": "Council Chamber",
+    "dst_node": "Midair",
+    "path_gt": [
+        {
+            "prev_node": "Council Chamber",
+            "node": "Guild Hall",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Guild Hall",
+            "node": "Belwit Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 7
+        },
+        {
+            "prev_node": "Belwit Square",
+            "node": "Packed Earth",
+            "action": "blorple 1",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        },
+        {
+            "prev_node": "Packed Earth",
+            "node": "Midair",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 16
+        }
+    ],
+    "save_path": "outputs/spellbrkr/results/"
+}

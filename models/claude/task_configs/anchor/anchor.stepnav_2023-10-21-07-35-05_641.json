@@ -1,0 +1,50 @@
+{
+    "task": "stepnav",
+    "src_node": "Alley",
+    "dst_node": "Junction",
+    "path_gt": [
+        {
+            "prev_node": "Alley",
+            "node": "the lower edge of the window",
+            "action": "climb can",
+            "seen_in_forward": true,
+            "step_min_cutoff": 3
+        },
+        {
+            "prev_node": "the lower edge of the window",
+            "node": "File Room",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        },
+        {
+            "prev_node": "File Room",
+            "node": "Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 5
+        },
+        {
+            "prev_node": "Office",
+            "node": "Outside the Real Estate Office",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 11
+        },
+        {
+            "prev_node": "Outside the Real Estate Office",
+            "node": "Narrow Street",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Narrow Street",
+            "node": "Junction",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 13
+        }
+    ],
+    "save_path": "outputs/anchor/results/"
+}

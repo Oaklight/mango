@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Dead End",
+    "dst_node": "Barren Area",
+    "path_gt": [
+        {
+            "prev_node": "Dead End",
+            "node": "Damp Passage",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 12
+        },
+        {
+            "prev_node": "Damp Passage",
+            "node": "Junction",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 17
+        },
+        {
+            "prev_node": "Junction",
+            "node": "Barren Area",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 4
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "task": "pathgen",
+    "src_node": "Endless Stair",
+    "dst_node": "Engravings Room",
+    "path_gt": [
+        {
+            "prev_node": "Endless Stair",
+            "node": "Junction",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 2
+        },
+        {
+            "prev_node": "Junction",
+            "node": "Damp Passage",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 9
+        },
+        {
+            "prev_node": "Damp Passage",
+            "node": "Engravings Room",
+            "action": "northeast",
+            "seen_in_forward": true,
+            "step_min_cutoff": 10
+        }
+    ]
+}

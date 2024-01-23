@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "221-B Baker Street",
+    "dst_node": "Birdcage Walk",
+    "path_gt": [
+        {
+            "prev_node": "221-B Baker Street",
+            "node": "York Place",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 24
+        },
+        {
+            "prev_node": "York Place",
+            "node": "Marylebone Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 25
+        },
+        {
+            "prev_node": "Marylebone Road",
+            "node": "Tottenham Court Road",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 50
+        },
+        {
+            "prev_node": "Tottenham Court Road",
+            "node": "cab",
+            "action": "enter cab",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "cab",
+            "node": "Whitehall",
+            "action": "get out",
+            "seen_in_forward": true,
+            "step_min_cutoff": 56
+        },
+        {
+            "prev_node": "Whitehall",
+            "node": "Parliament Square",
+            "action": "south",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Parliament Square",
+            "node": "Birdcage Walk",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ],
+    "save_path": "outputs/sherlock/results/"
+}

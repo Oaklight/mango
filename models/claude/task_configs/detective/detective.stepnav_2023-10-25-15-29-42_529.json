@@ -1,0 +1,22 @@
+{
+    "task": "stepnav",
+    "src_node": "Upstairs Hallway (Mayer's House)",
+    "dst_node": "Dining room",
+    "path_gt": [
+        {
+            "prev_node": "Upstairs Hallway (Mayer's House)",
+            "node": "Mayor's house (scene of crime)",
+            "action": "south",
+            "seen_in_forward": false,
+            "step_min_cutoff": 18
+        },
+        {
+            "prev_node": "Mayor's house (scene of crime)",
+            "node": "Dining room",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 14
+        }
+    ],
+    "save_path": "outputs/detective/results/"
+}

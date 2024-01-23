@@ -1,0 +1,57 @@
+{
+    "task": "stepnav",
+    "src_node": "Tight Fit",
+    "dst_node": "On the Ledge",
+    "path_gt": [
+        {
+            "prev_node": "Tight Fit",
+            "node": "Mineralized Corridor",
+            "action": "down",
+            "seen_in_forward": true,
+            "step_min_cutoff": 15
+        },
+        {
+            "prev_node": "Mineralized Corridor",
+            "node": "Narrow Passage",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 40
+        },
+        {
+            "prev_node": "Narrow Passage",
+            "node": "Gaseous Geyser",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 41
+        },
+        {
+            "prev_node": "Gaseous Geyser",
+            "node": "Shaft Base",
+            "action": "climb porous wall",
+            "seen_in_forward": true,
+            "step_min_cutoff": 44
+        },
+        {
+            "prev_node": "Shaft Base",
+            "node": "Middle Shaft",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 45
+        },
+        {
+            "prev_node": "Middle Shaft",
+            "node": "Top of the Shaft",
+            "action": "up",
+            "seen_in_forward": true,
+            "step_min_cutoff": 46
+        },
+        {
+            "prev_node": "Top of the Shaft",
+            "node": "On the Ledge",
+            "action": "east",
+            "seen_in_forward": true,
+            "step_min_cutoff": 47
+        }
+    ],
+    "save_path": "outputs/jewel/results/"
+}

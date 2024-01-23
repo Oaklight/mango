@@ -1,0 +1,49 @@
+{
+    "task": "pathgen",
+    "src_node": "Ocean Road (south end of north/south road)",
+    "dst_node": "Wharf Road (north to Outfitters International former Warehouse)",
+    "path_gt": [
+        {
+            "prev_node": "Ocean Road (south end of north/south road)",
+            "node": "Ocean Road (halfway of north/south road)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 52
+        },
+        {
+            "prev_node": "Ocean Road (halfway of north/south road)",
+            "node": "Back Alley (east end of east/west alley)",
+            "action": "northwest",
+            "seen_in_forward": true,
+            "step_min_cutoff": 53
+        },
+        {
+            "prev_node": "Back Alley (east end of east/west alley)",
+            "node": "Back Alley (behind Outfitters International)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 54
+        },
+        {
+            "prev_node": "Back Alley (behind Outfitters International)",
+            "node": "Back Alley (south to vacant lot)",
+            "action": "west",
+            "seen_in_forward": true,
+            "step_min_cutoff": 55
+        },
+        {
+            "prev_node": "Back Alley (south to vacant lot)",
+            "node": "Vacant Lot",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 63
+        },
+        {
+            "prev_node": "Vacant Lot",
+            "node": "Wharf Road (north to Outfitters International former Warehouse)",
+            "action": "north",
+            "seen_in_forward": true,
+            "step_min_cutoff": 64
+        }
+    ]
+}
