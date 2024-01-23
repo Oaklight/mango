@@ -1,4 +1,5 @@
 import glob
+import sys
 from jericho import *  # https://jericho-py.readthedocs.io/en/latest/index.html
 import os
 import argparse
@@ -7,6 +8,12 @@ from jericho import *
 from jericho.util import unabbreviate
 import json
 import re
+
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+
+from gen_moves.utils import process_again
 
 direction_abbrv_dict = {
     "e": "east",
@@ -137,6 +144,7 @@ def gen_move_reversed(args):
     else:
         # walkthrough
         walkthrough_acts = env.get_walkthrough()
+    walkthrough_acts = process_again(walkthrough_acts)
 
     map_reversed_list = []
 

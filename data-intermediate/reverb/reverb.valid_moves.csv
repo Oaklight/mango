@@ -1,75 +1,75 @@
-Step Num,Location Before,Location After
-1,,
-2,,
-3,,
-4,Behind the Counter,Pizza Parlor
-5,,
-6,Pizza Parlor,"Street, by Pizza Parlor"
-7,"Street, by Pizza Parlor","Street, Near Courthouse"
-8,"Street, Near Courthouse",Courthouse
-9,,
-10,,
-11,,
-12,,
-13,,
-14,Courthouse,"Street, Near Courthouse"
-15,"Street, Near Courthouse",Downtown
-16,Downtown,Office Building
-17,Office Building,"Office Building, Second Floor"
-18,"Office Building, Second Floor",Law Office
-19,Law Office,"Office Building, Second Floor"
-20,"Office Building, Second Floor","Office Building, Third Floor"
-21,"Office Building, Third Floor",Mayor's Office
-22,,
-23,,
-24,,
-25,,
-26,Mayor's Office,hangin' out
-27,,
-28,,
-29,,
-30,,
-31,hangin' out,Law Office
-32,Law Office,"Office Building, Second Floor"
-33,"Office Building, Second Floor",Office Building
-34,Office Building,Downtown
-35,Downtown,"Street, Near Courthouse"
-36,"Street, Near Courthouse","Street, by Pizza Parlor"
-37,"Street, by Pizza Parlor",Pizza Parlor
-38,,
-39,,
-40,,
-41,Pizza Parlor,"Street, by Pizza Parlor"
-42,,
-43,"Street, by Pizza Parlor","Street, by Department Store"
-44,"Street, by Department Store",Clothing Department
-45,Clothing Department,Cosmetics Department
-46,,
-47,,
-48,,
-49,Cosmetics Department,Clothing Department
-50,Clothing Department,"Street, by Department Store"
-51,,
-52,,
-53,"Street, by Department Store",Clothing Department
-54,Clothing Department,Hardware Department
-55,,
-56,,
-57,Hardware Department,Clothing Department
-58,Clothing Department,"Street, by Department Store"
-59,"Street, by Department Store","Street, by Pizza Parlor"
-60,"Street, by Pizza Parlor","Street, Near Courthouse"
-61,"Street, Near Courthouse",Downtown
-62,,
-63,,
-64,Downtown,Office Building
-65,Office Building,"Office Building, Second Floor"
-66,"Office Building, Second Floor","Office Building, Third Floor"
-67,"Office Building, Third Floor",Roof of Office Building
-68,,
-69,,
-70,Roof of Office Building,Mayor's Office
-71,,
-72,,
-73,,
-74,,
+Step Num,Location Before,Location After,taken_action
+1,,,x counter
+2,,,read note
+3,,,get pizza box
+4,Behind the Counter,Pizza Parlor,southwest
+5,,,x note
+6,Pizza Parlor,"Street, by Pizza Parlor",south
+7,"Street, by Pizza Parlor","Street, Near Courthouse",west
+8,"Street, Near Courthouse",Courthouse,south
+9,,,x district attorney
+10,,,z
+11,,,open pizza box
+12,,,search pizza
+13,,,show file to district attorney
+14,Courthouse,"Street, Near Courthouse",north
+15,"Street, Near Courthouse",Downtown,west
+16,Downtown,Office Building,west
+17,Office Building,"Office Building, Second Floor",north
+18,"Office Building, Second Floor",Law Office,east
+19,Law Office,"Office Building, Second Floor",west
+20,"Office Building, Second Floor","Office Building, Third Floor",south
+21,"Office Building, Third Floor",Mayor's Office,east
+22,,,open window
+23,,,unlock cabinet with key
+24,,,open cabinet
+25,,,get file
+26,Mayor's Office,hangin' out,jump out window
+27,,,kick second window
+28,,,z
+29,,,z
+30,,,"jill, hold me"
+31,hangin' out,Law Office,jump
+32,Law Office,"Office Building, Second Floor",west
+33,"Office Building, Second Floor",Office Building,north
+34,Office Building,Downtown,east
+35,Downtown,"Street, Near Courthouse",east
+36,"Street, Near Courthouse","Street, by Pizza Parlor",east
+37,"Street, by Pizza Parlor",Pizza Parlor,north
+38,,,get pizza box
+39,,,open pizza box
+40,,,get bomb
+41,Pizza Parlor,"Street, by Pizza Parlor",south
+42,,,put bomb in sewer
+43,"Street, by Pizza Parlor","Street, by Department Store",east
+44,"Street, by Department Store",Clothing Department,south
+45,Clothing Department,Cosmetics Department,southeast
+46,,,get spray
+47,,,spray thug
+48,,,kick thug
+49,Cosmetics Department,Clothing Department,northwest
+50,Clothing Department,"Street, by Department Store",north
+51,,,z
+52,,,z
+53,"Street, by Department Store",Clothing Department,south
+54,Clothing Department,Hardware Department,southwest
+55,,,take hammer
+56,,,take rope
+57,Hardware Department,Clothing Department,northeast
+58,Clothing Department,"Street, by Department Store",north
+59,"Street, by Department Store","Street, by Pizza Parlor",west
+60,"Street, by Pizza Parlor","Street, Near Courthouse",west
+61,"Street, Near Courthouse",Downtown,west
+62,,,close pizza box
+63,,,show box to guard
+64,Downtown,Office Building,west
+65,Office Building,"Office Building, Second Floor",north
+66,"Office Building, Second Floor","Office Building, Third Floor",south
+67,"Office Building, Third Floor",Roof of Office Building,north
+68,,,tie rope to rod
+69,,,hold rope
+70,Roof of Office Building,Mayor's Office,jump
+71,,,break glass with hammer
+72,,,take axe
+73,,,z
+74,,,hit floor with axe
