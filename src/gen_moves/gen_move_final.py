@@ -196,13 +196,14 @@ def load_both_maps(args):
 
 
 def add_anno2code(anno2code: dict, code: str, anno: str):
-    # anno2code[anno] = {code, ...}  
+    # anno2code[anno] = {code, ...}
     if anno not in anno2code:
         anno2code[anno] = set([code])
     else:
         anno2code[anno].add(code)
-    
+
     return anno2code
+
 
 def add_code2anno(code2anno: OrderedDict, step_num: int, code: str, anno: str):
     # code2anno[code] = {
@@ -248,7 +249,7 @@ if __name__ == "__main__":
     for step_num in common_steps:
         dst_code = machine_dict[step_num]["dst"]
         dst_anno = human_dict[step_num]["dst"]
-        code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno) 
+        code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno)
         anno2code = add_anno2code(anno2code, dst_code, dst_anno)
 
         # src_code also needs to be checked in every time, in case of disconnection in machine code.
@@ -294,11 +295,10 @@ if __name__ == "__main__":
     # multiple machine code map to the same human anno
     for anno in anno2code.keys():
         if len(anno2code[anno]) > 1:
-            print(
-                "Warning: {} machine code map to the same human anno {}".format(
-                    code, code2anno[code]
+            for code in anno2code[anno]:
+                print(
+                    f"Warning: human anno [{anno}] map to the same machine code [{code}]"
                 )
-            )
 
     # write to json file
     with open(
