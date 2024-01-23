@@ -1,531 +1,532 @@
-Step Num,Location Before,Location After,
-1,Outside the Real Estate Office,Alley,
-2,,,
-3,Alley,the lower edge of the window,
-4,the lower edge of the window,File Room,
-5,File Room,Office,
-6,,,
-7,Office,File Room,
-8,,,
-9,File Room,Office,
-10,,,
-11,Office,Outside the Real Estate Office,
-12,Outside the Real Estate Office,Narrow Street,
-13,Narrow Street,Junction,
-14,Junction,University Court,
-15,University Court,Library,
-16,,,
-17,,,
-18,Library,University Court,
-19,University Court,Junction,
-20,Junction, Narrow Street,
-21, Narrow Street,Whateley Bridge,
-22,Whateley Bridge,Town Square,
-23,Town Square,Riverwalk,
-24,Riverwalk,Chilly Avenue,
-25,Chilly Avenue,Scenic View,
-26,Scenic View,Outside the House,
-27,,,
-28,Outside the House,Foyer,
-29,,,
-30,,,
-31,Foyer,Upstairs Landing,
-32,Upstairs Landing,Master Bedroom,
-33,,,
-34,,,
-35,Master Bedroom,Bathroom,
-36,,,
-37,Bathroom,Master Bedroom,
-38,Master Bedroom,bed,*
-39,,,
-40,,,
-41,,,
-42,,,
-43,,,
-44,,,
-45,,,
-46,bed,Master Bedroom,
-47,,,
-48,,,
-49,,,
-50,Master Bedroom,Upstairs Landing,
-51,Upstairs Landing,Foyer,
-52,Foyer,Dining Room,
-53,,,
-54,,,
-55,,,
-56,Dining Room,Kitchen,
-57,,,
-58,,,
-59,,,
-60,,,
-61,Kitchen,Pantry,
-62,,,
-63,,,
-64,Pantry,Cellar,
-65,Cellar,Storage,
-66,,,
-67,,,
-68,,,
-69,,,
-70,,,
-71,,,
-72,,,
-73,Storage,Cellar,
-74,Cellar,Pantry,
-75,Pantry,Kitchen,
-76,Kitchen,Back Hall,
-77,Back Hall,Gallery,
-78,,,
-79,,,
-80,Gallery,Sitting Room,
-81,,,
-82,,,
-83,,,
-84,,,
-85,Sitting Room,Foyer,
-86,Foyer,Upstairs Landing,
-87,Upstairs Landing,Upstairs Hall,
-88,Upstairs Hall,Library,
-89,,,
-90,,,
-91,,,
-92,,,
-93,,,
-94,,,
-95,,,
-96,,,
-97,,,
-98,Library,Upstairs Hall,
-99,Upstairs Hall,Children's Bedroom,
-100,,,
-101,,,
-102,,,
-103,,,
-104,,,
-105,,,
-106,Children's Bedroom,Upstairs Hall,
-107,Upstairs Hall,Upstairs Landing,
-108,Upstairs Landing,Foyer,
-109,Foyer,Back Hall,
-110,Back Hall,Kitchen,
-111,,,
-112,Kitchen,Path Behind the House,
-113,Path Behind the House,Family Plot,
-114,,,
-115,Family Plot,In the Crypt,
-116,,,
-117,,,
-118,,,
-119,,,
-120,In the Crypt,Family Plot,
-121,Family Plot,Path Behind the House,
-122,Path Behind the House,Kitchen,
-123,,,
-124,,,
-125,Kitchen,Back Hall,
-126,Back Hall,Foyer,
-127,,,
-128,Foyer,Outside the House,
-129,Outside the House,Scenic View,
-130,Scenic View,Chilly Avenue,
-131,Chilly Avenue,Riverwalk,
-132,Riverwalk,Town Square,
-133,,,
-134,,,
-135,Town Square,Courthouse,
-136,Courthouse,Courthouse Basement,
-137,Courthouse Basement,Birth Records,
-138,,,
-139,,,
-140,,,
-141,,,
-142,,,
-143,Birth Records,Courthouse Basement,
-144,Courthouse Basement,Death Records,
-145,,,
-146,,,
-147,,,
-148,,,
-149,,,
-150,Death Records,Courthouse Basement,
-151,Courthouse Basement,Courthouse,
-152,Courthouse,Town Square,
-153,Town Square,Whateley Bridge,
-154,Whateley Bridge,Narrow Street,
-155,Narrow Street,Junction,
-156,Junction,University Court,
-157,University Court,Library,
-158,Library,Circulation Desk,
-159,,,
-160,,,
-161,,,
-162,,,
-163,,,
-164,,,
-165,,,
-166,Circulation Desk,Library,
-167,Library,University Court,
-168,University Court,Junction,
-169,Junction,Narrow Street,
-170,Narrow Street,Local Pub,
-171,,,
-172,,,
-173,,,
-174,,,
-175,Local Pub,Narrow Street,
-176,Narrow Street,Twisting Lane,
-177,,,
-178,Twisting Lane,Hidden Court,
-179,Hidden Court,The Cauldron,
-180,,,
-181,,,
-182,,,
-183,,,
-184,The Cauldron,Hidden Court,
-185,Hidden Court,Twisting Lane,
-186,Twisting Lane,Narrow Street,
-187,Narrow Street,Whateley Bridge,
-188,Whateley Bridge,Town Square,
-189,Town Square,Riverwalk,
-190,Riverwalk,Vacant Lot,
-191,,,
-192,,,
-193,,,
-194,,,
-195,,,
-196,,,
-197,,,
-198,,,
-199,,,
-200,Vacant Lot,Wharf,
-201,,,
-202,Wharf,Vacant Lot,
-203,Vacant Lot,Riverwalk,
-204,Riverwalk,Chilly Avenue,
-205,Chilly Avenue,Scenic View,
-206,Scenic View,Outside the House,
-207,Outside the House,Foyer,
-208,,,
-209,Foyer,Upstairs Landing,
-210,Upstairs Landing,Upstairs Hall,
-211,Upstairs Hall,Library,
-212,Library,Study,
-213,,,
-214,,,
-215,,,
-216,,,
-217,,,
-218,,,
-219,,,
-220,Study,Library,
-221,Library,Upstairs Hall,
-222,,,
-223,Upstairs Hall,Attic,
-224,,,
-225,,,
-226,,,
-227,,,
-228,,,
-229,,,
-230,Attic,Attic Cell,
-231,,,
-232,,,
-233,Attic Cell,Attic,
-234,Attic,Upstairs Hall,
-235,Upstairs Hall,Upstairs Landing,
-236,Upstairs Landing,Master Bedroom,
-237,Master Bedroom,Bathroom,
-238,,,
-239,Bathroom,Master Bedroom,
-240,,,
-241,,,
-242,Master Bedroom,bed,
-243,,,
-244,,,
-245,,,
-246,,,
-247,bed,Master Bedroom,
-248,,,
-249,,,
-250,,,
-251,Master Bedroom,Upstairs Landing,
-252,Upstairs Landing,Upstairs Hall,
-253,Upstairs Hall,Library,
-254,Library,Study,
-255,,,
-256,,,
-257,Study,Narrow Corridor (southwest to Study),
-258,Narrow Corridor (southwest to Study),"Narrow Corridor (hole on wall, through middle of ceiling)",
-259,,,
-260,"Narrow Corridor (hole on wall, through middle of ceiling)","Narrow Corridor (hole on wall, through portrait over fireplace)",
-261,,,
-262,"Narrow Corridor (hole on wall, through portrait over fireplace)","Narrow Corridor (hole on wall, seeing wine cellar)",
-263,,,
-264,"Narrow Corridor (hole on wall, seeing wine cellar)",Narrow Corridor (northwest to Observatory),
-265,Narrow Corridor (northwest to Observatory),Observatory,
-266,,,
-267,,,
-268,Observatory,Crawlspace,
-269,Crawlspace,Attic,
-270,Attic,Upstairs Hall,
-271,Upstairs Hall,Upstairs Landing,
-272,Upstairs Landing,Foyer,
-273,Foyer,Back Hall,
-274,Back Hall,Kitchen,
-275,Kitchen,Pantry,
-276,Pantry,Cellar,
-277,Cellar,Wine Cellar,
-278,,,
-279,,,
-280,,,
-281,,,
-282,,,
-283,,,
-284,Wine Cellar,Windy Passage,
-285,Windy Passage,Edge of the Pit,
-286,Edge of the Pit,Other Side,
-287,Other Side,Great Stairs,
-288,Great Stairs,Bottom of Stairs (door set into north wall),
-289,,,
-290,Bottom of Stairs (door set into north wall),Burial Mound,
-291,Burial Mound,Bottom of Stairs (door set into north wall),
-292,Bottom of Stairs (door set into north wall),Great Stairs,
-293,Great Stairs,Other Side,
-294,Other Side,Crawlspace,
-295,Crawlspace,Attic,
-296,Attic,Upstairs Hall,
-297,Upstairs Hall,Upstairs Landing,
-298,Upstairs Landing,Foyer,
-299,Foyer,Outside the House,
-300,Outside the House,Scenic View,
-301,Scenic View,Chilly Avenue,
-302,Chilly Avenue,Deserted Lane,
-303,Deserted Lane,Down the Road,
-304,,,
-305,Down the Road,Trampled Path,
-306,Trampled Path,Abandoned Slaughterhouse,
-307,Abandoned Slaughterhouse,Crumbled Ruin,
-308,,,
-309,,,
-310,Crumbled Ruin,Old Stone Well,
-311,,,
-312,Old Stone Well,In the Well,
-313,,,
-314,,,
-315,In the Well,Old Stone Well,
-316,Old Stone Well,Crumbled Ruin,
-317,,,
-318,Crumbled Ruin,Old Stone Well,
-319,Old Stone Well,In the Well,
-320,In the Well,under bones,
-321,,,
-322,under bones,In the Well,
-323,In the Well,Old Stone Well,
-324,Old Stone Well,Crumbled Ruin,
-325,Crumbled Ruin,Abandoned Slaughterhouse,
-326,Abandoned Slaughterhouse,Trampled Path,
-327,Trampled Path,Down the Road,
-328,Down the Road,Deserted Lane,
-329,Deserted Lane,Churchyard,
-330,Churchyard,Behind the Church,
-331,,,
-332,Behind the Church,Church Cellar,
-333,,,
-334,,,
-335,,,
-336,,,
-337,,,
-338,Church Cellar,Empty Stairwell,
-339,,,
-340,Empty Stairwell,Broken Stairs,
-341,Broken Stairs,Vestibule,
-342,,,
-343,Vestibule,Chapel,
-344,,,
-345,Chapel,Behind the Chapel,
-346,Behind the Chapel,Steeple,
-347,,,
-348,,,
-349,Steeple,Behind the Chapel,
-350,Behind the Chapel,Chapel,
-351,Chapel,Vestibule,
-352,Vestibule,Broken Stairs,
-353,,,
-354,,,
-355,Broken Stairs,Hanging From the Rope,
-356,Hanging From the Rope,Vaulted Tunnel,
-357,,,
-358,,,
-359,,,
-360,Vaulted Tunnel,Sewer Tunnel,
-361,Sewer Tunnel,Dripping Tunnel,
-362,Dripping Tunnel,Broken Tunnel,
-363,,,
-364,,,
-365,,,
-366,Broken Tunnel,Outflow Tunnel,
-367,Outflow Tunnel,Narrow Beach,
-368,Narrow Beach,Alley,
-369,Alley,Outside the Real Estate Office,
-370,Outside the Real Estate Office,Office,
-371,,,
-372,,,
-373,,,
-374,,,
-375,,,
-376,Office,Outside the Real Estate Office,
-377,Outside the Real Estate Office,Narrow Street,
-378,Narrow Street,Junction,
-379,Junction,Mill Road,
-380,Mill Road,Entrance to the Paper Mill,
-381,Entrance to the Paper Mill,Shanty Town,
-382,,,
-383,Shanty Town,#11 Mill Town Road,
-384,,,
-385,,,
-386,,,
-387,#11 Mill Town Road,Shanty Town,
-388,Shanty Town,Entrance to the Paper Mill,
-389,Entrance to the Paper Mill,Bare Foundations,
-390,,,
-391,,,
-392,,,
-393,Bare Foundations,Maintenance Access Tunnel (south end of tunnel),
-394,,,
-395,,,
-396,,,
-397,,,
-398,Maintenance Access Tunnel (south end of tunnel),Maintenance Access Tunnel (center of tunnel),
-399,Maintenance Access Tunnel (center of tunnel),Maintenance Access Tunnel (north end of tunnel),
-400,,,
-401,,,
-402,,,
-403,Maintenance Access Tunnel (north end of tunnel),Mill Floor,
-404,,,
-405,,,
-406,Mill Floor,Catwalk,
-407,,,
-408,Catwalk,Workshop,
-409,,,
-410,,,
-411,,,
-412,,,
-413,,,
-414,,,
-415,,,
-416,,,
-417,,,
-418,Workshop,Catwalk,
-419,Catwalk,"Mill Floor, on the block of heavy equipment",
-420,"Mill Floor, on the block of heavy equipment",Mill Floor,
-421,Mill Floor,Maintenance Access Tunnel (north end of tunnel),
-422,Maintenance Access Tunnel (north end of tunnel),Maintenance Access Tunnel (center of tunnel),
-423,Maintenance Access Tunnel (center of tunnel),Maintenance Access Tunnel (south end of tunnel),
-424,Maintenance Access Tunnel (south end of tunnel),Bare Foundations,
-425,Bare Foundations,Entrance to the Paper Mill,
-426,Entrance to the Paper Mill,Mill Road,
-427,Mill Road,Breakwater,
-428,Breakwater,At the Foot of the Lighthouse,
-429,At the Foot of the Lighthouse,Bottom of the Lighthouse,
-430,Bottom of the Lighthouse,Top of the Lighthouse,
-431,Top of the Lighthouse,Bottom of the Lighthouse,
-432,,,
-433,Bottom of the Lighthouse,Padded Cell (door in west wall),
-434,,,
-435,Padded Cell (door in west wall),"Hallway (north end, barred window to the north)",
-436,,,
-437,,,
-438,,,
-439,,,
-440,,,
-441,,,
-442,,,
-443,"Hallway (north end, barred window to the north)","Hallway (middle of north/south hallway, doors lead east and west)",
-444,"Hallway (middle of north/south hallway, doors lead east and west)","Hallway (south end, blood-stained window in western cell door)",
-445,,,
-446,,,
-447,"Hallway (south end, blood-stained window in western cell door)","Padded Cell (door in east wall, blood-stained)",
-448,,,
-449,,,
-450,,,
-451,,,
-452,"Padded Cell (door in east wall, blood-stained)","Hallway (south end, blood-stained window in western cell door)",
-453,,,
-454,"Hallway (south end, blood-stained window in western cell door)",Top of Stairs,
-455,Top of Stairs,Bottom of Stairs (leading to to asylum's second floor),
-456,,,
-457,,,
-458,,,
-459,Bottom of Stairs (leading to to asylum's second floor),"Hallway (south end, south doorway leading to bottom of a stairway)",
-460,"Hallway (south end, south doorway leading to bottom of a stairway)",Hallway (barred gate to lobby to the north),
-461,,,
-462,,,
-463,,,
-464,,,
-465,,,
-466,Hallway (barred gate to lobby to the north),Waiting Room,
-467,Waiting Room,Asylum Courtyard,
-468,Asylum Courtyard,Dark Corner,
-469,,,
-470,,,
-471,Dark Corner,Town Square,
-472,,,
-473,,,
-474,,,
-475,,,
-476,,,
-477,,,
-478,,,
-479,,,
-480,Town Square,Whateley Bridge,
-481,,,
-482,,,
-483,Whateley Bridge,Narrow Street,
-484,Narrow Street,Junction,
-485,Junction,Mill Road,
-486,Mill Road,Breakwater,
-487,Breakwater,At the Foot of the Lighthouse,
-488,,,
-489,,,
-490,At the Foot of the Lighthouse,Bottom of the Lighthouse,
-491,Bottom of the Lighthouse,Top of the Lighthouse,
-492,,,
-493,,,
-494,,,
-495,,,
-496,Top of the Lighthouse,Island of Flesh,
-497,,,
-498,,,
-499,,,
-500,,,
-501,,,
-502,,,
-503,,,
-504,,,
-505,,,
-506,,,
-507,,,
-508,Island of Flesh,Rocky Spur,
-509,Rocky Spur,At the Foot of the Lighthouse,
-510,At the Foot of the Lighthouse,Breakwater,
-511,Breakwater,Mill Road,
-512,Mill Road,Entrance to the Paper Mill,
-513,Entrance to the Paper Mill,Shanty Town,
-514,,,
-515,Shanty Town,Entrance to the Paper Mill,
-516,Entrance to the Paper Mill,Mill Road,
-517,Mill Road,Junction,
-518,Junction,Narrow Street,
-519,Narrow Street,Whateley Bridge,
-520,Whateley Bridge,Town Square,
-521,Town Square,Burial Mound,
-522,,,
-523,,,
-524,,,
-525,,,
-526,,,
-527,,,
-528,Burial Mound,Home,
-529,Home,Your Bathroom,
-530,,,
+Step Num,Location Before,Location After,taken_action
+1,Outside the Real Estate Office,Alley,southeast
+2,,,push can against wall
+3,Alley,the lower edge of the window,climb can
+4,the lower edge of the window,File Room,up
+5,File Room,Office,west
+6,,,push play
+7,Office,File Room,east
+8,,,look up verlac
+9,File Room,Office,west
+10,,,unlock door
+11,Office,Outside the Real Estate Office,west
+12,Outside the Real Estate Office,Narrow Street,west
+13,Narrow Street,Junction,west
+14,Junction,University Court,northwest
+15,University Court,Library,west
+16,,,read book
+17,,,show keys to michael
+18,Library,University Court,east
+19,University Court,Junction,southeast
+20,Junction, Narrow Street,east
+21, Narrow Street,Whateley Bridge,south
+22,Whateley Bridge,Town Square,south
+23,Town Square,Riverwalk,east
+24,Riverwalk,Chilly Avenue,south
+25,Chilly Avenue,Scenic View,southwest
+26,Scenic View,Outside the House,northwest
+27,,,unlock door
+28,Outside the House,Foyer,north
+29,,,close door
+30,,,lock door
+31,Foyer,Upstairs Landing,up
+32,Upstairs Landing,Master Bedroom,north
+33,,,undress
+34,,,drop all
+35,Master Bedroom,Bathroom,west
+36,,,bathe
+37,Bathroom,Master Bedroom,east
+38,Master Bedroom,bed,lie in bed
+39,,,sleep
+40,,,look
+41,,,wait
+42,,,wait
+43,,,get wallet
+44,,,open wallet
+45,,,get card
+46,bed,Master Bedroom,leave bed
+47,,,dress
+48,,,get all
+49,,,wear coat
+50,Master Bedroom,Upstairs Landing,south
+51,Upstairs Landing,Foyer,down
+52,Foyer,Dining Room,west
+53,,,open cupboard
+54,,,pull lining
+55,,,read journal
+56,Dining Room,Kitchen,north
+57,,,get flashlight
+58,,,open cabinet
+59,,,get matches
+60,,,turn on flashlight
+61,Kitchen,Pantry,northwest
+62,,,get broom
+63,,,unlock door
+64,Pantry,Cellar,down
+65,Cellar,Storage,south
+66,,,search crates
+67,,,get box
+68,,,drop cardboardbox
+69,,,wipe web
+70,,,drop broom
+71,,,get key
+72,,,put key on keyring
+73,Storage,Cellar,north
+74,Cellar,Pantry,up
+75,Pantry,Kitchen,southeast
+76,Kitchen,Back Hall,east
+77,Back Hall,Gallery,east
+78,,,look at paintings
+79,,,look at scene
+80,Gallery,Sitting Room,south
+81,,,get album
+82,,,look up wilhelm in album
+83,,,look up eustacia in album
+84,,,look up croseus in album
+85,Sitting Room,Foyer,west
+86,Foyer,Upstairs Landing,up
+87,Upstairs Landing,Upstairs Hall,east
+88,Upstairs Hall,Library (in the house),north
+89,,,get volume
+90,,,look at bookshelf
+91,,,get poe
+92,,,examine safe
+93,,,turn dial to 47
+94,,,turn dial to 11
+95,,,turn dial to 3
+96,,,look in safe
+97,,,get puzzle box and flute
+98,Library (in the house),Upstairs Hall,south
+99,Upstairs Hall,Children's Bedroom,south
+100,,,open jewelry box
+101,,,get silver locket
+102,,,push bed
+103,,,look in hole
+104,,,get pages
+105,,,read pages
+106,Children's Bedroom,Upstairs Hall,north
+107,Upstairs Hall,Upstairs Landing,west
+108,Upstairs Landing,Foyer,down
+109,Foyer,Back Hall,north
+110,Back Hall,Kitchen,west
+111,,,unlock door
+112,Kitchen,Path Behind the House,north
+113,Path Behind the House,Family Plot,northwest
+114,,,unlock crypt
+115,Family Plot,In the Crypt,down
+116,,,examine coffin
+117,,,look up william on nameplate
+118,,,open william coffin
+119,,,get skull
+120,In the Crypt,Family Plot,up
+121,Family Plot,Path Behind the House,southeast
+122,Path Behind the House,Kitchen,south
+123,,,close door
+124,,,lock door
+125,Kitchen,Back Hall,east
+126,Back Hall,Foyer,south
+127,,,unlock door
+128,Foyer,Outside the House,south
+129,Outside the House,Scenic View,southeast
+130,Scenic View,Chilly Avenue,northeast
+131,Chilly Avenue,Riverwalk,north
+132,Riverwalk,Town Square,west
+133,,,get newspaper
+134,,,read newspaper
+135,Town Square,Courthouse,south
+136,Courthouse,Courthouse Basement,south
+137,Courthouse Basement,Birth Records,southeast
+138,,,look up edward in record
+139,,,look up mordecai in record
+140,,,look up elijah inrecord
+141,,,look up heinrich in record
+142,,,look up wilhelm in record
+143,Birth Records,Courthouse Basement,northwest
+144,Courthouse Basement,Death Records,southwest
+145,,,look up edward in record
+146,,,look up mordecai in record
+147,,,look up elijah inrecord
+148,,,look up heinrich in record
+149,,,look up wilhelm in record
+150,Death Records,Courthouse Basement,northeast
+151,Courthouse Basement,Courthouse,north
+152,Courthouse,Town Square,north
+153,Town Square,Whateley Bridge,north
+154,Whateley Bridge,Narrow Street,north
+155,Narrow Street,Junction,west
+156,Junction,University Court,northwest
+157,University Court,Library,west
+158,Library,Circulation Desk,north
+159,,,ring bell
+160,,,show card to librarian
+161,,,ask librarian for book
+162,,,open historical
+163,,,get slip of paper
+164,,,read slip of paper
+165,,,drop historical
+166,Circulation Desk,Library,south
+167,Library,University Court,east
+168,University Court,Junction,southeast
+169,Junction,Narrow Street,east
+170,Narrow Street,Local Pub,north
+171,,,get lantern
+172,,,south
+173,,,look under table
+174,,,get flask
+175,Local Pub,Narrow Street,south
+176,Narrow Street,Twisting Lane,northwest
+177,,,read wall
+178,Twisting Lane,Hidden Court,west
+179,Hidden Court,The Cauldron,south
+180,,,look in displaycase
+181,,,ask proprietor about amulet
+182,,,give puzzle box to proprietor
+183,,,get puzzle box
+184,The Cauldron,Hidden Court,north
+185,Hidden Court,Twisting Lane,east
+186,Twisting Lane,Narrow Street,southwest
+187,Narrow Street,Whateley Bridge,south
+188,Whateley Bridge,Town Square,south
+189,Town Square,Riverwalk,east
+190,Riverwalk,Vacant Lot,east
+191,,,give flask to bum
+192,,,ask bum about himself
+193,,,ask bum about brother
+194,,,ask bum about anna
+195,,,ask bum about crypt
+196,,,tell bum about skull
+197,,,show skull to bum
+198,,,give amulet to bum
+199,,,put copper key on keyring
+200,Vacant Lot,Wharf,southeast
+201,,,get tin
+202,Wharf,Vacant Lot,northwest
+203,Vacant Lot,Riverwalk,west
+204,Riverwalk,Chilly Avenue,south
+205,Chilly Avenue,Scenic View,southwest
+206,Scenic View,Outside the House,northwest
+207,Outside the House,Foyer,north
+208,,,close door
+209,Foyer,Upstairs Landing,up
+210,Upstairs Landing,Upstairs Hall,east
+211,Upstairs Hall,Library (in the house),north
+212,Library (in the house),Study,east
+213,,,get letter opener
+214,,,look at screen
+215,,,remove ring
+216,,,look at ring
+217,,,wear ring
+218,,,type 0628 on laptop
+219,,,look at screen
+220,Study,Library (in the house),west
+221,Library (in the house),Upstairs Hall,south
+222,,,pull cord
+223,Upstairs Hall,Attic,up
+224,,,push newspaper under door
+225,,,put letter opener in keyhole
+226,,,get newspaper
+227,,,get brass key
+228,,,put brass key on keyring
+229,,,unlock door
+230,Attic,Attic Cell,north
+231,,,search straw
+232,,,get gold locket
+233,Attic Cell,Attic,south
+234,Attic,Upstairs Hall,down
+235,Upstairs Hall,Upstairs Landing,west
+236,Upstairs Landing,Master Bedroom,north
+237,Master Bedroom,Bathroom,west
+238,,,get towel
+239,Bathroom,Master Bedroom,east
+240,,,undress
+241,,,drop all
+242,Master Bedroom,bed,lie in bed
+243,,,sleep
+244,,,sleep
+245,,,sleep
+246,,,sleep
+247,bed,Master Bedroom,leave bed
+248,,,dress
+249,,,wear coat
+250,,,get all
+251,Master Bedroom,Upstairs Landing,south
+252,Upstairs Landing,Upstairs Hall,east
+253,Upstairs Hall,Library (in the house),north
+254,Library (in the house),Study,east
+255,,,look at fireplace
+256,,,turn sphere
+257,Study,Narrow Corridor (southwest to Study),southwest
+258,Narrow Corridor (southwest to Study),"Narrow Corridor (hole on wall, through middle of ceiling)",west
+259,,,look in hole
+260,"Narrow Corridor (hole on wall, through middle of ceiling)","Narrow Corridor (hole on wall, through portrait over fireplace)",east
+261,,,look in hole
+262,"Narrow Corridor (hole on wall, through portrait over fireplace)","Narrow Corridor (hole on wall, seeing wine cellar)",northwest
+263,,,look in hole
+264,"Narrow Corridor (hole on wall, seeing wine cellar)",Narrow Corridor (northwest to Observatory),southwest
+265,Narrow Corridor (northwest to Observatory),Observatory,southeast
+266,,,put lens in telescope
+267,,,look in telescope
+268,Observatory,Crawlspace,southeast
+269,Crawlspace,Attic,east
+270,Attic,Upstairs Hall,down
+271,Upstairs Hall,Upstairs Landing,west
+272,Upstairs Landing,Foyer,down
+273,Foyer,Back Hall,north
+274,Back Hall,Kitchen,west
+275,Kitchen,Pantry,northwest
+276,Pantry,Cellar,down
+277,Cellar,Wine Cellar,east
+278,,,search wine rack
+279,,,turn c
+280,,,turn w
+281,,,turn h
+282,,,turn e
+283,,,turn m
+284,Wine Cellar,Windy Passage,north
+285,Windy Passage,Edge of the Pit,north
+286,Edge of the Pit,Other Side,north
+287,Other Side,Great Stairs,northeast
+288,Great Stairs,Bottom of Stairs (door set into north wall),down
+289,,,say ialdabaoloth
+290,Bottom of Stairs (door set into north wall),Burial Mound,north
+291,Burial Mound,Bottom of Stairs (door set into north wall),south
+292,Bottom of Stairs (door set into north wall),Great Stairs,up
+293,Great Stairs,Other Side,southwest
+294,Other Side,Crawlspace,northwest
+295,Crawlspace,Attic,east
+296,Attic,Upstairs Hall,down
+297,Upstairs Hall,Upstairs Landing,west
+298,Upstairs Landing,Foyer,down
+299,Foyer,Outside the House,south
+300,Outside the House,Scenic View,southeast
+301,Scenic View,Chilly Avenue,northeast
+302,Chilly Avenue,Deserted Lane,south
+303,Deserted Lane,Down the Road,south
+304,,,look at woods
+305,Down the Road,Trampled Path,west
+306,Trampled Path,Abandoned Slaughterhouse,southwest
+307,Abandoned Slaughterhouse,Crumbled Ruin,west
+308,,,get drawing paper
+309,,,get hook
+310,Crumbled Ruin,Old Stone Well,south
+311,,,lift plywood cover
+312,Old Stone Well,In the Well,down
+313,,,search bones
+314,,,get teddy
+315,In the Well,Old Stone Well,up
+316,Old Stone Well,Crumbled Ruin,north
+317,,,east
+318,Crumbled Ruin,Old Stone Well,south
+319,Old Stone Well,In the Well,down
+320,In the Well,under bones,hide under bones
+321,,,wait
+322,under bones,In the Well,up
+323,In the Well,Old Stone Well,up
+324,Old Stone Well,Crumbled Ruin,north
+325,Crumbled Ruin,Abandoned Slaughterhouse,east
+326,Abandoned Slaughterhouse,Trampled Path,northeast
+327,Trampled Path,Down the Road,east
+328,Down the Road,Deserted Lane,north
+329,Deserted Lane,Churchyard,east
+330,Churchyard,Behind the Church,southeast
+331,,,break padlock with hook
+332,Behind the Church,Church Cellar,down
+333,,,look at shape
+334,,,search shape
+335,,,put steel key on keyring
+336,,,look at furnace
+337,,,open hatch
+338,Church Cellar,Empty Stairwell,west
+339,,,put all in pocket
+340,Empty Stairwell,Broken Stairs,jump onto riser
+341,Broken Stairs,Vestibule,north
+342,,,get cloth
+343,Vestibule,Chapel,east
+344,,,read huge tome
+345,Chapel,Behind the Chapel,east
+346,Behind the Chapel,Steeple,up
+347,,,up
+348,,,get rope
+349,Steeple,Behind the Chapel,down
+350,Behind the Chapel,Chapel,west
+351,Chapel,Vestibule,west
+352,Vestibule,Broken Stairs,south
+353,,,drop robe in shaft
+354,,,tie rope to railing
+355,Broken Stairs,Hanging From the Rope,down
+356,Hanging From the Rope,Vaulted Tunnel,drop rope
+357,,,light flashlight
+358,,,get robe
+359,,,get lantern
+360,Vaulted Tunnel,Sewer Tunnel,northwest
+361,Sewer Tunnel,Dripping Tunnel,north
+362,Dripping Tunnel,Broken Tunnel,north
+363,,,open tin
+364,,,put oil on hatch
+365,,,open hatch
+366,Broken Tunnel,Outflow Tunnel,up
+367,Outflow Tunnel,Narrow Beach,east
+368,Narrow Beach,Alley,west
+369,Alley,Outside the Real Estate Office,northwest
+370,Outside the Real Estate Office,Office,east
+371,,,unlock drawer
+372,,,open drawer
+373,,,get all from drawer
+374,,,read letter
+375,,,put bronze key on keyring
+376,Office,Outside the Real Estate Office,west
+377,Outside the Real Estate Office,Narrow Street,west
+378,Narrow Street,Junction,west
+379,Junction,Mill Road,north
+380,Mill Road,Entrance to the Paper Mill,west
+381,Entrance to the Paper Mill,Shanty Town,north
+382,,,knock on door 11
+383,Shanty Town,#11 Mill Town Road,give teddy to woman
+384,,,look in overalls
+385,,,get long steel key
+386,,,put long steel key on keyring
+387,#11 Mill Town Road,Shanty Town,west
+388,Shanty Town,Entrance to the Paper Mill,south
+389,Entrance to the Paper Mill,Bare Foundations,south
+390,,,search thicket
+391,,,unlock hatch
+392,,,get lantern
+393,Bare Foundations,Maintenance Access Tunnel (south end of tunnel),north
+394,,,light match
+395,,,light lantern
+396,,,put towel on valve
+397,,,turn wheel
+398,Maintenance Access Tunnel (south end of tunnel),Maintenance Access Tunnel (center of tunnel),north
+399,Maintenance Access Tunnel (center of tunnel),Maintenance Access Tunnel (north end of tunnel),north
+400,,,open hatch
+401,,,wait
+402,,,wait
+403,Maintenance Access Tunnel (north end of tunnel),Mill Floor,north
+404,,,tie chain to me
+405,,,look at controls
+406,Mill Floor,Catwalk,pull lever
+407,,,untie chain
+408,Catwalk,Workshop,north
+409,,,read notes
+410,,,get caliper
+411,,,get memo
+412,,,get blueprint
+413,,,read blueprint
+414,,,get mirror 1
+415,,,put mirror 1 in caliper
+416,,,open tin
+417,,,rub oil on mirror 1
+418,Workshop,Catwalk,south
+419,Catwalk,"Mill Floor, on the block of heavy equipment",down
+420,"Mill Floor, on the block of heavy equipment",Mill Floor,jump off equipment
+421,Mill Floor,Maintenance Access Tunnel (north end of tunnel),south
+422,Maintenance Access Tunnel (north end of tunnel),Maintenance Access Tunnel (center of tunnel),south
+423,Maintenance Access Tunnel (center of tunnel),Maintenance Access Tunnel (south end of tunnel),south
+424,Maintenance Access Tunnel (south end of tunnel),Bare Foundations,south
+425,Bare Foundations,Entrance to the Paper Mill,northeast
+426,Entrance to the Paper Mill,Mill Road,east
+427,Mill Road,Breakwater,east
+428,Breakwater,At the Foot of the Lighthouse,northeast
+429,At the Foot of the Lighthouse,Bottom of the Lighthouse,east
+430,Bottom of the Lighthouse,Top of the Lighthouse,up
+431,Top of the Lighthouse,Bottom of the Lighthouse,down
+432,,,wait
+433,Bottom of the Lighthouse,Padded Cell (door in west wall),wait
+434,,,break door
+435,Padded Cell (door in west wall),"Hallway (north end, barred window to the north)",break door
+436,,,get glass
+437,,,look at window pane
+438,,,put glass in crack
+439,,,cut jacket with glass
+440,,,open closet
+441,,,wear coat
+442,,,get all from closet
+443,"Hallway (north end, barred window to the north)","Hallway (middle of north/south hallway, doors lead east and west)",south
+444,"Hallway (middle of north/south hallway, doors lead east and west)","Hallway (south end, blood-stained window in western cell door)",south
+445,,,unlock west door
+446,,,open west door
+447,"Hallway (south end, blood-stained window in western cell door)","Padded Cell (door in east wall, blood-stained)",west
+448,,,look in tear
+449,,,get torn square
+450,,,read torn square
+451,,,get needle
+452,"Padded Cell (door in east wall, blood-stained)","Hallway (south end, blood-stained window in western cell door)",east
+453,,,south
+454,"Hallway (south end, blood-stained window in western cell door)",Top of Stairs,south
+455,Top of Stairs,Bottom of Stairs (leading to to asylum's second floor),down
+456,,,get lantern
+457,,,light match
+458,,,light lantern
+459,Bottom of Stairs (leading to to asylum's second floor),"Hallway (south end, south doorway leading to bottom of a stairway)",north
+460,"Hallway (south end, south doorway leading to bottom of a stairway)",Hallway (barred gate to lobby to the north),north
+461,,,get magazine
+462,,,give magazine to madman
+463,,,get large key
+464,,,put large key on keyring
+465,,,unlock gate
+466,Hallway (barred gate to lobby to the north),Waiting Room,north
+467,Waiting Room,Asylum Courtyard,north
+468,Asylum Courtyard,Dark Corner,north
+469,,,remove coat
+470,,,wear robe
+471,Dark Corner,Town Square,east
+472,,,wait
+473,,,wait
+474,,,wait
+475,,,wait
+476,,,wait
+477,,,look
+478,,,put all in pocket
+479,,,get amulet
+480,Town Square,Whateley Bridge,north
+481,,,give gold locket to creature
+482,,,hit creature with hook
+483,Whateley Bridge,Narrow Street,north
+484,Narrow Street,Junction,west
+485,Junction,Mill Road,north
+486,Mill Road,Breakwater,east
+487,Breakwater,At the Foot of the Lighthouse,northeast
+488,,,unlock door
+489,,,open door
+490,At the Foot of the Lighthouse,Bottom of the Lighthouse,east
+491,Bottom of the Lighthouse,Top of the Lighthouse,up
+492,,,look at device
+493,,,get real mirror
+494,,,put all in pocket
+495,,,wait
+496,Top of the Lighthouse,Island of Flesh,give mirror 1 to michael
+497,,,wait
+498,,,wait
+499,,,wait
+500,,,wait
+501,,,wait
+502,,,wait
+503,,,wait
+504,,,wait
+505,,,wait
+506,,,pick cuffs with needle
+507,,,free boy
+508,Island of Flesh,Rocky Spur,west
+509,Rocky Spur,At the Foot of the Lighthouse,southwest
+510,At the Foot of the Lighthouse,Breakwater,southwest
+511,Breakwater,Mill Road,west
+512,Mill Road,Entrance to the Paper Mill,west
+513,Entrance to the Paper Mill,Shanty Town,north
+514,,,wait
+515,Shanty Town,Entrance to the Paper Mill,south
+516,Entrance to the Paper Mill,Mill Road,east
+517,Mill Road,Junction,south
+518,Junction,Narrow Street,east
+519,Narrow Street,Whateley Bridge,south
+520,Whateley Bridge,Town Square,south
+521,Town Square,Burial Mound,touch obelisk
+522,,,show ring to michael
+523,,,show amulet to michael
+524,,,cover hole 3
+525,,,cover hole 6
+526,,,play flute
+527,,,wait
+528,Burial Mound,Home,wait
+529,Home,Your Bathroom,go north
+530,,,get test
+531,,,look at little window
