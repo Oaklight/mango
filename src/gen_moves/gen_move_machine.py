@@ -31,9 +31,6 @@ direction_vocab = direction_abbrv_dict.values()
 def gen_move_machine(args):
     game_name = args.game_name
     max_steps = args.max_steps
-    if max_steps == -1:
-        max_steps = len(walkthrough_acts)
-    print("Game: {}, Max steps: {}".format(game_name, max_steps))
 
     # env
     # env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
@@ -75,6 +72,10 @@ def gen_move_machine(args):
         walkthrough_acts = env.get_walkthrough()
     # process "again"
     walkthrough_acts = process_again(walkthrough_acts)
+
+    if max_steps == -1:
+        max_steps = len(walkthrough_acts)
+    print("Game: {}, Max steps: {}".format(game_name, max_steps))
 
     map_list = []
     move_list = []
