@@ -1,6 +1,7 @@
 hilltop (obj237) --> south --> post office (obj226), step 1
 post office (obj226) --> north --> hilltop (obj237), step 4
 hilltop (obj237) --> west --> outside cemetery (obj204), step 5
+outside cemetery (obj204) --> west --> outside cemetery (obj204), step 6
 outside cemetery (obj204) --> yes --> creepy corner (obj62), step 7
 creepy corner (obj62) --> north --> spooky copse (obj224), step 8
 spooky copse (obj224) --> west --> twilight glen (obj59), step 9
@@ -19,10 +20,20 @@ south bridge (obj93) --> north --> bridge (obj91), step 27
 bridge (obj91) --> north --> north bridge (obj89), step 28
 north bridge (obj89) --> east --> cliff bottom (obj85), step 29
 cliff bottom (obj85) --> up --> steep trail (obj80), step 30
+steep trail (obj80) --> west --> steep trail (obj80), step 31
+steep trail (obj80) --> north --> steep trail (obj80), step 32
+steep trail (obj80) --> up --> steep trail (obj80), step 33
+steep trail (obj80) --> east --> steep trail (obj80), step 34
+steep trail (obj80) --> south --> steep trail (obj80), step 35
 steep trail (obj80) --> up --> cliff edge (obj79), step 36
 cliff edge (obj79) --> in --> shoppe (obj76), step 38
 shoppe (obj76) --> wait --> cliff edge (obj79), step 47
 cliff edge (obj79) --> down --> fog (obj81), step 48
+fog (obj81) --> north --> fog (obj81), step 49
+fog (obj81) --> west --> fog (obj81), step 50
+fog (obj81) --> down --> fog (obj81), step 51
+fog (obj81) --> south --> fog (obj81), step 52
+fog (obj81) --> east --> fog (obj81), step 53
 fog (obj81) --> down --> cliff bottom (obj85), step 54
 cliff bottom (obj85) --> west --> north bridge (obj89), step 57
 north bridge (obj89) --> south --> bridge (obj91), step 64
@@ -32,6 +43,7 @@ river outlet (obj123) --> south --> lake edge (obj130), step 67
 lake edge (obj130) --> blow it --> misty island (obj19), step 74
 misty island (obj19) --> west --> thrroom (obj17), step 75
 thrroom (obj17) --> blow whistle --> lake edge (obj130), step 79
+lake edge (obj130) --> south --> lake edge (obj130), step 80
 lake edge (obj130) --> yes --> twilight glen (obj59), step 81
 twilight glen (obj59) --> east --> spooky copse (obj224), step 82
 spooky copse (obj224) --> down --> open grave (obj58), step 83
