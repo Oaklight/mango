@@ -89,11 +89,15 @@ def gen_move_machine(args):
             # exit(0)
 
         location_after_id = env.get_player_location().num
-        if (
-            location_after_id != location_before_id
-            or unabbreviate(act) in direction_vocab
-            or act in direction_vocab_abbrv
-        ):
+
+        # any of the following conditions are met, we consider it a move
+        # some move will result in "you can't go" similar words in observation
+        conditions = [
+            location_after_id != location_before_id,
+            unabbreviate(act) in direction_vocab and not "can't" in observation,
+            act in direction_vocab_abbrv and not "can't" in observation,
+        ]
+        if any(conditions):
             map_list.append(
                 {
                     "location_before": location_before,

@@ -14,6 +14,8 @@ def get_dict(lines, cutoff=None):
     human: west of house --> north --> north of house, step 1
     matching lines must have the same step number
     """
+    if cutoff == -1:
+        cutoff = len(lines)
     d = {}
     for line in lines:
         line = line.strip()
