@@ -88,6 +88,8 @@ def gen_move_reversed(args):
     game_name = args.game_name
     game_name_raw = game_name.split(".")[0]
     max_steps = args.max_steps
+    if max_steps == -1:
+        max_steps = len(walkthrough_acts)
     print("Game: {}, Max steps: {}".format(game_name, max_steps))
 
     # code2anno dict

@@ -31,6 +31,8 @@ direction_vocab = direction_abbrv_dict.values()
 def gen_move_machine(args):
     game_name = args.game_name
     max_steps = args.max_steps
+    if max_steps == -1:
+        max_steps = len(walkthrough_acts)
     print("Game: {}, Max steps: {}".format(game_name, max_steps))
 
     # env
@@ -78,8 +80,6 @@ def gen_move_machine(args):
     move_list = []
     prev_observation = ""
 
-    if max_steps == -1:
-        max_steps = len(walkthrough_acts)
     valid_acts = walkthrough_acts[:max_steps]
 
     for step_idx, act in enumerate(valid_acts):
