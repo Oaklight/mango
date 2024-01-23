@@ -131,7 +131,6 @@ def sanity_check(machine_dict, human_dict):
                     common_steps,
                     machine_only_steps,
                     human_only_steps,
-                    conflict_anno_dict,
                 )
             else:
                 print("Invalid input, please enter y or n")
@@ -236,7 +235,6 @@ if __name__ == "__main__":
         common_steps,
         machine_only_steps,
         human_only_steps,
-        conflict_anno_dict,
     ) = sanity_check(machine_dict, human_dict)
     print("Reload both maps after resolution")
     machine_dict, human_dict = load_both_maps(args)
@@ -252,13 +250,13 @@ if __name__ == "__main__":
     for step_num in common_steps:
         dst_code = machine_dict[step_num]["dst"]
         dst_anno = human_dict[step_num]["dst"]
-        code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno, 'dst')
+        code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno, "dst")
         anno2code = add_anno2code(anno2code, dst_code, dst_anno)
 
         # src_code also needs to be checked in every time, in case of disconnection in machine code.
         src_code = machine_dict[step_num]["src"]
         src_anno = human_dict[step_num]["src"]
-        code2anno = add_code2anno(code2anno, step_num, src_code, src_anno, 'src')
+        code2anno = add_code2anno(code2anno, step_num, src_code, src_anno, "src")
         anno2code = add_anno2code(anno2code, src_code, src_anno)
 
     # then process the human_only_steps, which are annotated by human but not machine
@@ -271,13 +269,13 @@ if __name__ == "__main__":
         if src_anno not in anno2code:
             prompt = f"Please enter the code for {src_anno} (no previous step): "
             src_code = input(prompt).strip()
-            code2anno = add_code2anno(code2anno, step_num, src_code, src_anno, 'src')
+            code2anno = add_code2anno(code2anno, step_num, src_code, src_anno, "src")
             anno2code = add_anno2code(anno2code, src_code, src_anno)
 
         if dst_anno not in anno2code:
             prompt = f"Please enter the code for {dst_anno} (no previous step): "
             dst_code = input(prompt).strip()
-            code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno, 'dst')
+            code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno, "dst")
             anno2code = add_anno2code(anno2code, dst_code, dst_anno)
 
     # cast anno2code entry from set to list and sort it
