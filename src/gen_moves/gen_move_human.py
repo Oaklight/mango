@@ -4,9 +4,15 @@ import glob
 import json
 import os
 from pathlib import Path
+import sys
 from jericho import FrotzEnv
 from jericho.util import unabbreviate
 
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+
+from gen_moves.utils import process_again
 
 direction_abbrv_dict = {
     "e": "east",
@@ -153,6 +159,7 @@ def generate_move_human(
     else:
         # walkthrough
         walkthrough_acts = env.get_walkthrough()
+    walkthrough_acts = process_again(walkthrough_acts)
 
     walkthrough = [
         direction_abbrv_dict[item.lower()]
