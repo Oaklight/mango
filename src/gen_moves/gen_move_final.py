@@ -102,8 +102,10 @@ def sanity_check(machine_dict, human_dict):
             len(human_only_steps), human_only_steps
         ),
         "- [num: {}] conflict annotations on common steps: \n\t{}".format(
-            len(conflict_anno_dict), 
-            '\n\t'.join([str(k) + ": " + str(v) for k, v in conflict_anno_dict.items()])
+            len(conflict_anno_dict),
+            "\n\t".join(
+                [str(k) + ": " + str(v) for k, v in conflict_anno_dict.items()]
+            ),
         ),
         sep="\n",
     )
@@ -125,7 +127,12 @@ def sanity_check(machine_dict, human_dict):
                 print("Please manually review difference\n")
                 exit()
             elif signal == "y":
-                return common_steps, machine_only_steps, human_only_steps
+                return (
+                    common_steps,
+                    machine_only_steps,
+                    human_only_steps,
+                    conflict_anno_dict,
+                )
             else:
                 print("Invalid input, please enter y or n")
 
@@ -188,6 +195,31 @@ def load_both_maps(args):
     return machine_dict, human_dict
 
 
+def add_anno2code(anno2code: dict, code: str, anno: str):
+    # anno2code[anno] = {code, ...}  
+    if anno not in anno2code:
+        anno2code[anno] = set([code])
+    else:
+        anno2code[anno].add(code)
+    
+    return anno2code
+
+def add_code2anno(code2anno: OrderedDict, step_num: int, code: str, anno: str):
+    # code2anno[code] = {
+    #   'anno': [step_num, ...]
+    # }
+    # print(type(code2anno), type(code), type(code2anno[code]))
+    if code not in code2anno:
+        code2anno[code] = {anno: set([step_num])}
+    else:
+        if anno not in code2anno[code]:
+            code2anno[code][anno] = set([step_num])
+        else:
+            code2anno[code][anno].add(step_num)
+
+    return code2anno
+
+
 if __name__ == "__main__":
     args = get_args()
 
@@ -196,9 +228,12 @@ if __name__ == "__main__":
     # go over each line in game.map.machine, grab nodeCode and find the corresponding node name in game.map.human
     machine_dict, human_dict = load_both_maps(args)
 
-    common_steps, machine_only_steps, human_only_steps = sanity_check(
-        machine_dict, human_dict
-    )
+    (
+        common_steps,
+        machine_only_steps,
+        human_only_steps,
+        conflict_anno_dict,
+    ) = sanity_check(machine_dict, human_dict)
     print("Reload both maps after resolution")
     machine_dict, human_dict = load_both_maps(args)
 
@@ -209,55 +244,56 @@ if __name__ == "__main__":
     assumption: human annotation is a connected graph, each line is a edge. Thus, the end node of current line must be the start node of next line. I only need to check matching of end node of each line. and start node of the first line.
     """
     # first process the common_steps, which are the same in both machine and human
-    for i, step_num in enumerate(common_steps):
+    print("processing common steps...")
+    for step_num in common_steps:
         dst_code = machine_dict[step_num]["dst"]
         dst_anno = human_dict[step_num]["dst"]
-        code2anno[dst_code] = dst_anno
-        if dst_anno not in anno2code:
-            anno2code[dst_anno] = set([dst_code])
-        else:
-            anno2code[dst_anno].add(dst_code)
+        code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno) 
+        anno2code = add_anno2code(anno2code, dst_code, dst_anno)
 
         # src_code also needs to be checked in every time, in case of disconnection in machine code.
         src_code = machine_dict[step_num]["src"]
         src_anno = human_dict[step_num]["src"]
-        code2anno[src_code] = src_anno
-        if src_anno not in anno2code:
-            anno2code[src_anno] = set([src_code])
-        else:
-            anno2code[src_anno].add(src_code)
+        code2anno = add_code2anno(code2anno, step_num, src_code, src_anno)
+        anno2code = add_anno2code(anno2code, src_code, src_anno)
 
     # then process the human_only_steps, which are annotated by human but not machine
+    print("processing human only steps...")
     for step_num in human_only_steps:
         # since there is no matching machine code, we can only see if there was a previous step
         src_anno = human_dict[step_num]["src"]
         dst_anno = human_dict[step_num]["dst"]
 
         if src_anno not in anno2code:
-            prompt = "Please enter the code for {} (no previous step): ".format(
-                src_anno
-            )
+            prompt = f"Please enter the code for {src_anno} (no previous step): "
             src_code = input(prompt).strip()
-            code2anno[src_code] = src_anno
-            anno2code[src_anno] = set([src_code])
-        if dst_anno not in anno2code:
-            prompt = "Please enter the code for {} (no previous step): ".format(
-                dst_anno
-            )
-            dst_code = input(prompt).strip()
-            code2anno[dst_code] = dst_anno
-            anno2code[dst_anno] = set([dst_code])
+            code2anno = add_code2anno(code2anno, step_num, src_code, src_anno)
+            anno2code = add_anno2code(anno2code, src_code, src_anno)
 
-    # cast anno2code entry from set to list
+        if dst_anno not in anno2code:
+            prompt = f"Please enter the code for {dst_anno} (no previous step): "
+            dst_code = input(prompt).strip()
+            code2anno = add_code2anno(code2anno, step_num, dst_code, dst_anno)
+            anno2code = add_anno2code(anno2code, dst_code, dst_anno)
+
+    # cast anno2code entry from set to list and sort it
     for anno in anno2code.keys():
-        anno2code[anno] = list(anno2code[anno])
-        # sort anno2code entry
-        anno2code[anno].sort()
+        anno2code[anno] = sorted(list(anno2code[anno]))
+
+    # cast code2anno entry step number to list
+    for code in code2anno.keys():
+        codemap = code2anno[code]
+        if len(codemap) == 1:  # meaning no human anno alias
+            codemap = list(codemap.keys())[0]
+        else:
+            for anno in codemap.keys():
+                codemap[anno] = sorted(list(codemap[anno]))
+        code2anno[code] = codemap
 
     # prompt to alert unusual cases
     # multiple machine code map to the same human anno
-    for code in code2anno.keys():
-        if len(anno2code[code2anno[code]]) > 1:
+    for anno in anno2code.keys():
+        if len(anno2code[anno]) > 1:
             print(
                 "Warning: {} machine code map to the same human anno {}".format(
                     code, code2anno[code]
