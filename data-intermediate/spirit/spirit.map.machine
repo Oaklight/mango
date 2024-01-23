@@ -173,6 +173,7 @@ enchanter h (bottom) (obj582) --> south --> enchanter h (top) (obj581), step 345
 enchanter h (top) (obj581) --> south --> north quad (obj562), step 346
 north quad (obj562) --> south --> center quad (obj560), step 347
 center quad (obj560) --> east --> library (obj571), step 348
+library (obj571) --> west --> library (obj571), step 351
 library (obj571) --> west --> center quad (obj560), step 354
 center quad (obj560) --> north --> north quad (obj562), step 356
 north quad (obj562) --> east --> science center (obj587), step 357
@@ -264,14 +265,20 @@ on peninsula (obj489) --> southeast --> bottom lighthouse (obj490), step 547
 bottom lighthouse (obj490) --> northwest --> on peninsula (obj489), step 548
 on peninsula (obj489) --> west --> grassl beach (obj485), step 549
 grassl beach (obj485) --> enter boat --> smilboat (obj486), step 552
+smilboat (obj486) --> south --> smilboat (obj486), step 554
+smilboat (obj486) --> north --> smilboat (obj486), step 556
 smilboat (obj486) --> exit --> grassl beach (obj485), step 557
 grassl beach (obj485) --> north --> sourn fublio vey (obj453), step 558
 sourn fublio vey (obj453) --> south --> grassl beach (obj485), step 559
 grassl beach (obj485) --> enter boat --> smilboat (obj486), step 563
+smilboat (obj486) --> south --> smilboat (obj486), step 564
+smilboat (obj486) --> northeast --> smilboat (obj486), step 565
 smilboat (obj486) --> exit --> near submerged lighthouse (obj492), step 566
 near submerged lighthouse (obj492) --> east --> lighthouseuppervel (obj496), step 568
 lighthouseuppervel (obj496) --> west --> near submerged lighthouse (obj492), step 572
 near submerged lighthouse (obj492) --> enter boat --> smilboat (obj486), step 573
+smilboat (obj486) --> southwest --> smilboat (obj486), step 574
+smilboat (obj486) --> north --> smilboat (obj486), step 575
 smilboat (obj486) --> exit --> grassl beach (obj485), step 576
 grassl beach (obj485) --> west --> farm (obj480), step 577
 farm (obj480) --> northeast --> sourn fublio vey (obj453), step 579
@@ -372,6 +379,7 @@ courtyard (obj164) --> east --> royal museum (obj166), step 825
 royal museum (obj166) --> south --> south exhibit room (obj172), step 826
 south exhibit room (obj172) --> north --> royal museum (obj166), step 828
 royal museum (obj166) --> north --> north exhibit room (obj167), step 829
+north exhibit room (obj167) --> north --> north exhibit room (obj167), step 830
 north exhibit room (obj167) --> south --> royal museum (obj166), step 836
 royal museum (obj166) --> west --> courtyard (obj164), step 837
 courtyard (obj164) --> north --> aragain entrance (obj160), step 838
@@ -574,10 +582,14 @@ fublio vey train platform (obj716) --> northwest --> fublio vey gus station (obj
 fublio vey gus station (obj693) --> up --> sourn fublio vey (obj453), step 1187
 sourn fublio vey (obj453) --> south --> grassl beach (obj485), step 1188
 grassl beach (obj485) --> enter boat --> smilboat (obj486), step 1189
+smilboat (obj486) --> south --> smilboat (obj486), step 1190
+smilboat (obj486) --> southeast --> smilboat (obj486), step 1191
 smilboat (obj486) --> exit --> volcanic isl (obj493), step 1192
 volcanic isl (obj493) --> south --> south part isl (obj494), step 1193
 south part isl (obj494) --> north --> volcanic isl (obj493), step 1196
 volcanic isl (obj493) --> enter boat --> smilboat (obj486), step 1197
+smilboat (obj486) --> northwest --> smilboat (obj486), step 1198
+smilboat (obj486) --> north --> smilboat (obj486), step 1199
 smilboat (obj486) --> exit --> grassl beach (obj485), step 1200
 grassl beach (obj485) --> north --> sourn fublio vey (obj453), step 1201
 sourn fublio vey (obj453) --> down --> fublio vey gus station (obj693), step 1202
@@ -594,6 +606,9 @@ anthar west (obj377) --> northeast --> entrance flaad stadium (obj410), step 122
 entrance flaad stadium (obj410) --> southwest --> anthar west (obj377), step 1224
 anthar west (obj377) --> west --> entrance greater anthar (obj376), step 1225
 entrance greater anthar (obj376) --> down --> greater anthar gus station (obj694), step 1226
+greater anthar gus station (obj694) --> southwest --> greater anthar gus station (obj694), step 1227
+greater anthar gus station (obj694) --> west --> greater anthar gus station (obj694), step 1228
+greater anthar gus station (obj694) --> down --> greater anthar gus station (obj694), step 1229
 greater anthar gus station (obj694) --> south --> greater anthar train platform (obj718), step 1232
 greater anthar train platform (obj718) --> south --> subwayr (obj724), step 1233
 subwayr (obj724) --> north --> gurth city train platform (lower) (obj717), step 1244

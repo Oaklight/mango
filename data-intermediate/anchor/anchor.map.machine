@@ -81,6 +81,7 @@ library (obj598) --> east --> university court (obj164), step 167
 university court (obj164) --> southeast --> junction (obj127), step 168
 junction (obj127) --> east --> narrow street (obj118), step 169
 narrow street (obj118) --> north --> local pub (obj119), step 170
+local pub (obj119) --> south --> local pub (obj119), step 172
 local pub (obj119) --> south --> narrow street (obj118), step 175
 narrow street (obj118) --> northwest --> twisting lane (obj166), step 176
 twisting lane (obj166) --> west --> hidden court (obj538), step 178
@@ -161,6 +162,7 @@ crumbled ruin (obj220) --> south --> old stone well (obj224), step 310
 old stone well (obj224) --> down --> in the well (obj227), step 312
 in the well (obj227) --> up --> old stone well (obj224), step 315
 old stone well (obj224) --> north --> crumbled ruin (obj220), step 316
+crumbled ruin (obj220) --> east --> crumbled ruin (obj220), step 317
 crumbled ruin (obj220) --> south --> old stone well (obj224), step 318
 old stone well (obj224) --> down --> in the well (obj227), step 319
 in the well (obj227) --> hide under bones --> children's bones (obj228), step 320
@@ -180,6 +182,7 @@ broken stairs (obj252) --> north --> vestibule (obj254), step 341
 vestibule (obj254) --> east --> chapel (obj256), step 343
 chapel (obj256) --> east --> behind the chapel (obj263), step 345
 behind the chapel (obj263) --> up --> steeple (obj264), step 346
+steeple (obj264) --> up --> steeple (obj264), step 347
 steeple (obj264) --> down --> behind the chapel (obj263), step 349
 behind the chapel (obj263) --> west --> chapel (obj256), step 350
 chapel (obj256) --> west --> vestibule (obj254), step 351
@@ -230,6 +233,7 @@ bottom of the lighthouse (obj508) --> wait --> (cell1) (obj562), step 433
 (hall2) (obj574) --> south --> (hall3) (obj582), step 444
 (hall3) (obj582) --> west --> (cell5) (obj589), step 447
 (cell5) (obj589) --> east --> (hall3) (obj582), step 452
+(hall3) (obj582) --> south --> (hall3) (obj582), step 453
 (hall3) (obj582) --> south --> top of stairs (obj593), step 454
 top of stairs (obj593) --> down --> bottom of stairs (obj594), step 455
 bottom of stairs (obj594) --> north --> (hall4) (obj596), step 459

@@ -2,6 +2,7 @@ forest (obj32) --> east --> meadow (obj35), step 1
 meadow (obj35) --> north --> lakeside (obj24), step 2
 lakeside (obj24) --> down --> bog (obj30), step 4
 bog (obj30) --> swim --> lakeside (obj24), step 7
+lakeside (obj24) --> south --> lakeside (obj24), step 8
 lakeside (obj24) --> west --> dismal swamp (obj43), step 9
 dismal swamp (obj43) --> west --> grove (obj40), step 10
 grove (obj40) --> east --> dismal swamp (obj43), step 14
@@ -27,6 +28,7 @@ maze (obj78) --> away --> meadow (obj35), step 50
 meadow (obj35) --> south --> dismal swamp (obj43), step 52
 dismal swamp (obj43) --> north --> meadow (obj35), step 56
 meadow (obj35) --> east --> lakeside (obj24), step 57
+lakeside (obj24) --> south --> lakeside (obj24), step 59
 lakeside (obj24) --> west --> dismal swamp (obj43), step 60
 dismal swamp (obj43) --> go stump --> inside stump (obj55), step 61
 inside stump (obj55) --> up --> dismal swamp (obj43), step 64
@@ -67,6 +69,7 @@ maze (obj82) --> up --> maze (obj78), step 112
 maze (obj78) --> away --> meadow (obj35), step 113
 meadow (obj35) --> east --> lakeside (obj24), step 115
 lakeside (obj24) --> west --> dismal swamp (obj43), step 116
+dismal swamp (obj43) --> south --> dismal swamp (obj43), step 117
 dismal swamp (obj43) --> go stump --> inside stump (obj55), step 118
 inside stump (obj55) --> down --> root chamber (obj62), step 123
 root chamber (obj62) --> down --> hole (obj65), step 124

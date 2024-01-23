@@ -94,10 +94,12 @@ cool (obj201) --> west --> ice (obj200), step 137
 ice (obj200) --> west --> lava (obj124), step 138
 lava (obj124) --> south --> volcano bottom (obj134), step 140
 volcano bottom (obj134) --> get in basket --> basket (obj98), step 143
+basket (obj98) --> west --> basket (obj98), step 148
 basket (obj98) --> get out of basket --> narrow ledge (obj129), step 150
 narrow ledge (obj129) --> south --> library (obj128), step 151
 library (obj128) --> north --> narrow ledge (obj129), step 156
 narrow ledge (obj129) --> get in basket --> basket (obj98), step 159
+basket (obj98) --> west --> basket (obj98), step 166
 basket (obj98) --> get out of basket --> wide ledge (obj126), step 173
 wide ledge (obj126) --> south --> dusty (obj125), step 174
 dusty (obj125) --> north --> wide ledge (obj126), step 178
@@ -173,3 +175,4 @@ stairway (obj189) --> down --> oddly-angled (obj182), step 288
 oddly-angled (obj182) --> down --> cerberus (obj177), step 289
 cerberus (obj177) --> east --> crypt ante (obj174), step 291
 crypt ante (obj174) --> south --> crypt (obj172), step 293
+crypt (obj172) --> south --> landing (obj168), step 296

@@ -169,6 +169,7 @@ lounge (obj59) --> north --> galley (obj60), step 273
 galley (obj60) --> south --> lounge (obj59), step 275
 lounge (obj59) --> up --> aft deck (obj67), step 276
 aft deck (obj67) --> dive in ocean --> underwater (obj56), step 297
+underwater (obj56) --> down --> underwater (obj56), step 299
 underwater (obj56) --> down --> top deck (obj53), step 301
 top deck (obj53) --> down --> middle deck (obj49), step 302
 middle deck (obj49) --> down --> below decks (obj32), step 303
@@ -187,4 +188,5 @@ below decks (obj27) --> north --> below decks (obj32), step 331
 below decks (obj32) --> up --> middle deck (obj49), step 332
 middle deck (obj49) --> up --> top deck (obj53), step 333
 top deck (obj53) --> up --> underwater (obj56), step 334
-underwater (obj56) --> up --> dinner plate (obj1), step 336
+underwater (obj56) --> up --> underwater (obj56), step 335
+underwater (obj56) --> up --> underwater (obj56), step 336
