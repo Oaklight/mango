@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # given as path of all jericho games folders
 # go over each folder and run the gen_move_human.py script on it
