@@ -186,6 +186,7 @@ def gen_move_reversed(args):
 
     map_reversed_list = []
     for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
+        halt_flag = False
         """
         for each step at step_idx, walk along walkthrough actions until step_idx, then take a reverse attempt
         """
@@ -207,6 +208,13 @@ def gen_move_reversed(args):
 
         for i in range(step_idx):
             env.step(walkthrough_acts[i])
+            if env._emulator_halted():
+                halt_flag = True
+
+                break
+        if halt_flag:
+            print(f"HALT || @{step_idx+1}, [{act}] halt the jericho engine.")
+            continue
 
         # location id AT step_idx-1
         location_before = env.get_player_location().name.strip().lower()
@@ -215,6 +223,10 @@ def gen_move_reversed(args):
 
         # take the step_idx-th step
         env.step(act)
+        if env._emulator_halted():
+            halt_flag = True
+            print(f"HALT || @{step_idx+1}, [{act}] reverse the jericho engine.")
+            continue
 
         # location id AT step_idx
         location_now = env.get_player_location().name.strip().lower()
@@ -223,10 +235,10 @@ def gen_move_reversed(args):
 
         print(f"@{step_idx+1} | [{should_fallback_code}] --> {act} --> [{arrive_code}]")
 
-        if game_name == "trinity" and location_now_id in TRINITY_STUCK_LOC_ID:
-            continue
-        if game_name == "sherlock" and location_now_id in SHERLOCK_STUCK_LOC_ID:
-            continue
+        # if game_name == "trinity" and location_now_id in TRINITY_STUCK_LOC_ID:
+        #     continue
+        # if game_name == "sherlock" and location_now_id in SHERLOCK_STUCK_LOC_ID:
+        #     continue
 
         # attempt to reverse the action
 
@@ -240,6 +252,12 @@ def gen_move_reversed(args):
         else:
             # take the reverse step
             env.step(act_revert)
+            if env._emulator_halted():
+                halt_flag = True
+                print(
+                    f"HALT || @{step_idx+1}, [{act_revert}] reverse the jericho engine."
+                )
+                continue
 
             # location id AT step_idx+1's revert
             location_after = env.get_player_location().name.strip().lower()
@@ -325,6 +343,12 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     print("Args: {}".format(args))
-    if args.game_name in ['sherlock', 'trinity']:
+    print()
+    print()
+    print("++++++++++++++++++++++++++++++++++")
+    print(args.game_name)
+    print("++++++++++++++++++++++++++++++++++")
+
+    if args.game_name in ["sherlock", "trinity"]:
         exit(-1)
     gen_move_reversed(args)
