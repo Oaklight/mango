@@ -1,19 +1,16 @@
-import glob
-import sys
-from jericho import *  # https://jericho-py.readthedocs.io/en/latest/index.html
-import os
 import argparse
+import os
+import sys
+
 from tqdm import tqdm
 from jericho import *
 from jericho.util import unabbreviate
-import json
-import re
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_moves.utils import process_again
+from gen_moves.utils import load_env, load_walkthrough_acts
 
 direction_abbrv_dict = {
     "e": "east",
@@ -48,66 +45,12 @@ TRINITY_STUCK_LOC_ID = (79, 354, 144, 355, 531, 179, 371, 121, 438, 576, 323, 31
 SHERLOCK_STUCK_LOC_ID = (111, 3, 37, 33, 93, 71, 5, 73, 1, 85, 295, 52, 57, 21, 69, 27, 12)
 
 
-def load_code2anno(input_file_path):
-    # object id --> anno str
-    with open(input_file_path, "r", encoding="utf-8") as fin:
-        code2anno_dict = json.load(fin)
-
-    return_dict = {}
-    pattern = r"\(obj(\d+)\)"
-    for key in code2anno_dict.keys():
-        match = re.search(pattern, key)
-        assert match
-        obj_number = int(match.group(1))
-        return_dict[obj_number] = code2anno_dict[key]
-    return return_dict
-
-
-def load_code2anno_new(code2anno_path):
-    assert os.path.exists(code2anno_path)
-    with open(code2anno_path, "r", encoding="utf-8") as f:
-        code2anno_dict = json.load(f)
-
-    # process to speed up query
-    for code in code2anno_dict.keys():
-        anno = code2anno_dict[
-            code
-        ]  # this may be 1. anno str, 2. a dict of {anno str: [[step, position], ...]
-    if isinstance(anno, dict):
-        # create revert link map, from {anno str: [[step, position], ...]} --> {(step, position): anno str, ...}
-        anno_dict = anno
-        revert_dict = {}
-        for anno in anno_dict.keys():
-            for entry in anno_dict[anno]:
-                # map both entry element to str
-                revert_dict[(str(entry[0]), str(entry[1]))] = anno
-        code2anno_dict[code] = revert_dict
-    return code2anno_dict
-
-
-def code2anno_decode(code2anno_dict, code: str, step_num: str, position: str):
-    if code not in code2anno_dict.keys():
-        return None
-    anno = code2anno_dict[
-        code
-    ]  # this may be 1. anno str, 2. a dict of {anno str: [[step, position], ...]}
-    if isinstance(anno, str):  # very luck :)
-        return anno
-    elif isinstance(anno, dict):  # not bad :|
-        anno_dict = anno
-        entry = (step_num, position)
-        if entry in anno_dict:
-            return anno_dict[entry]
-        else:
-            return None
-
-
 def load_forward_map_nodes(human_map_path):
     assert os.path.exists(human_map_path)
     with open(human_map_path, "r") as f:
         lines_forward = f.readlines()
 
-    human_forward_nodes = {}
+    human_forward_edges = {}
     for line in lines_forward:
         # get step_num and path
         line = line.strip("\ufeff").strip()
@@ -120,100 +63,85 @@ def load_forward_map_nodes(human_map_path):
         # get src_node, direction, dst_node
         elements_forward = [each.strip() for each in path_forward.split("-->")]
         # print(elements_forward)
-        human_forward_nodes[step_num] = tuple(elements_forward)
-    return human_forward_nodes
+        human_forward_edges[step_num] = tuple(elements_forward)
+    return human_forward_edges
+
+
+def get_potential_reverse_edges(human_forward_edges, max_steps):
+    # unabbreviate all act and get all directional forward edges
+    forward_directional_edges = {
+        step_num: (edge[0], unabbreviate(edge[1]), edge[2])
+        for step_num, edge in human_forward_edges.items()
+        if unabbreviate(edge[1]) in direction_vocab and step_num <= max_steps
+    }
+
+    potential_reverse_directional_edges = {}
+    needs_jericho_check = []
+    confirm_jericho_valid = []
+
+    for step_num, edge in forward_directional_edges.items():
+        src_anno, act, dst_anno = edge
+        act_revert = opposite_direction_dict[act]
+        reverse_edge = (dst_anno, act_revert, src_anno)
+
+        potential_reverse_directional_edges[step_num] = reverse_edge
+        if reverse_edge in forward_directional_edges.values():
+            # appeared in forward directional edge, it's valid by default.
+            confirm_jericho_valid.append(step_num)
+        else:
+            needs_jericho_check.append(step_num)
+    assert len(set(confirm_jericho_valid).intersection(set(needs_jericho_check))) == 0
+    return (
+        potential_reverse_directional_edges,
+        needs_jericho_check,
+        confirm_jericho_valid,
+    )
 
 
 def gen_move_reversed(args):
-    game_name = args.game_name
-    game_name_raw = game_name.split(".")[0]
-    max_steps = args.max_steps
-
-    # create output dir if not exist
-    output_dir = f"{args.output_dir}/{game_name_raw}"
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
-    # code2anno dict
-    code2anno_file_path = (
-        f"{args.input_dir}/{game_name_raw}/{game_name_raw}.code2anno.json"
-    )
-    code2anno_dict = load_code2anno_new(code2anno_file_path)
-
-    human_map_file_path = f"{args.input_dir}/{game_name_raw}/{game_name_raw}.map.human"
-    human_forward_nodes = load_forward_map_nodes(human_map_file_path)
-
-    machine_map_file_path = (
-        f"{args.input_dir}/{game_name_raw}/{game_name_raw}.map.machine"
-    )
-    machine_forward_nodes = set(load_forward_map_nodes(machine_map_file_path).values())
-
-    # env
-    # search for game_name in jericho_path. The real game file should be game_name.z3 or .z5 or .z8
-    # by cross checking with entries in glob
-    game_file_path = None
-    for game_file in glob.glob(f"{args.jericho_path}/*"):
-        if game_name == os.path.splitext(os.path.basename(game_file))[0]:
-            game_file_path = game_file
-            break
-    if game_file_path is None:
-        print(f"Game file {game_name} not found in {args.jericho_path}")
-        return -1
-    env = FrotzEnv(game_file_path)
-
+    env = load_env(args)
     # use provided walkthrough_acts or load from game env
-    walkthrough_acts = []
-    if args.walk_acts:
-        # with open(args.walk_acts, "r", encoding="utf-8") as fin:
-        with open(
-            f"{output_dir}/{game_name}.walkthrough_acts", "r", encoding="utf-8"
-        ) as fin:
-            for line in fin:
-                # sometimes there are void action, use whatever after ":"
-                act = line.split(":")[1].strip()
-                walkthrough_acts.append(act)
-        print(
-            f"Walkthrough Acts provided has been loaded, total {len(walkthrough_acts)} steps"
-        )
-    else:
-        # walkthrough
-        walkthrough_acts = env.get_walkthrough()
-    walkthrough_acts = process_again(walkthrough_acts)
+    walkthrough_acts = load_walkthrough_acts(args, env)
 
-    if max_steps == -1:
-        max_steps = len(walkthrough_acts)
-    print(f"Game: {game_name}, Max steps: {max_steps}")
+    if args.max_steps == -1:
+        args.max_steps = len(walkthrough_acts)
+    print(f"Game: {args.game_name}, Max steps: {args.max_steps}")
 
-    map_reversed_list = []
-    for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
-        halt_flag = False
+    # load all necessary files
+    human_map_file_path = (
+        f"{args.input_dir}/{args.game_name_raw}/{args.game_name_raw}.map.human"
+    )
+    human_forward_edges = load_forward_map_nodes(human_map_file_path)
+    (
+        potential_reverse_directional_edges,
+        needs_jericho_check,
+        confirm_jericho_valid,
+    ) = get_potential_reverse_edges(human_forward_edges, args.max_steps)
+    print(f"ATTENTION | {len(needs_jericho_check)} potential reverse edges to check!")
+
+    # for step_idx, act in enumerate(walkthrough_acts[:max_steps]):
+    for step_num in tqdm(needs_jericho_check, leave=None):
         """
-        for each step at step_idx, walk along walkthrough actions until step_idx, then take a reverse attempt
+        for each step at needs_jericho_check, walk along walkthrough actions until step_idx, then take a reverse attempt
         """
-        # if step_idx+1 not in human_map, then we can forget it :)
-        if step_idx + 1 not in human_forward_nodes.keys():
-            print(f"SKIPPING || @{step_idx+1}, [{act}] is not in the human map.")
-            continue
 
-        # first we should check if the "act" is one of the directional one? if not we can skip the entire check at this step
+        step_idx = step_num - 1
+
+        act = walkthrough_acts[step_idx]
         act = unabbreviate(act)
-        if act not in direction_vocab:
-            print(f"SKIPPING || @{step_idx+1}, [{act}] is not a directional move.")
-            continue
-        else:
-            act_revert = opposite_direction_dict[act]
+        act_revert = opposite_direction_dict[act]
 
         # reset the game env and simulate act until step_idx
         env.reset()
+        halt_flag = False
 
         for i in range(step_idx):
             env.step(walkthrough_acts[i])
             if env._emulator_halted():
                 halt_flag = True
                 break
-
         if halt_flag:
-            print(f"HALT || @{step_idx+1}, [{act}] halt the jericho engine.")
+            print(f"HALT || @{step_num}, [{act}] halt the jericho engine.")
             continue
 
         # location id AT step_idx-1
@@ -225,7 +153,7 @@ def gen_move_reversed(args):
         env.step(act)
         if env._emulator_halted():
             halt_flag = True
-            print(f"HALT || @{step_idx+1}, [{act}] reverse the jericho engine.")
+            print(f"HALT || @{step_num}, [{act}] reverse the jericho engine.")
             continue
 
         # location id AT step_idx
@@ -233,7 +161,7 @@ def gen_move_reversed(args):
         location_now_id = env.get_player_location().num
         arrive_code = f"{location_now} (obj{location_now_id})".strip()
 
-        print(f"@{step_idx+1} | [{should_fallback_code}] --> {act} --> [{arrive_code}]")
+        print(f"@{step_num} | [{should_fallback_code}] --> {act} --> [{arrive_code}]")
 
         # if game_name == "trinity" and location_now_id in TRINITY_STUCK_LOC_ID:
         #     continue
@@ -241,12 +169,11 @@ def gen_move_reversed(args):
         #     continue
 
         # attempt to reverse the action
-
         # check if reverse action is a valid option?
         valid_act_reverts = [unabbreviate(va) for va in env.get_valid_actions()]
         if act_revert not in valid_act_reverts:
             print(
-                f"SKIPPING || reverse[{act}] = [{act_revert}], but it's not a valid action @{step_idx+1}."
+                f"NON-VALID-ACTION || reverse[{act}] = [{act_revert}], but it's not a valid action @{step_num}."
             )
             continue
         else:
@@ -255,61 +182,49 @@ def gen_move_reversed(args):
             if env._emulator_halted():
                 halt_flag = True
                 print(
-                    f"HALT || @{step_idx+1}, [{act_revert}] reverse the jericho engine."
+                    f"HALT || @{step_num}, [{act_revert}] reverse the jericho engine."
                 )
                 continue
 
-            # location id AT step_idx+1's revert
+            # location id AT step_num's revert
             location_after = env.get_player_location().name.strip().lower()
             location_after_id = env.get_player_location().num
             actual_fallback_code = f"{location_after} (obj{location_after_id})".strip()
 
             if actual_fallback_code == should_fallback_code:
-                # check if (arrive_code, act_revert, actual_fallback_code) in machine forward map
-                if (
-                    arrive_code,
-                    act_revert,
-                    actual_fallback_code,
-                ) in machine_forward_nodes:
-                    print(
-                        f"HIT || [{arrive_code} --> {act_revert} --> {actual_fallback_code}] already in the machine forward map"
-                    )
-                    # continue  # still include it
-
-                else:
-                    print(
-                        f"VALID || @{step_idx+1}, {should_fallback_code} --> {act} --> {arrive_code} <-- {act_revert} <-- {actual_fallback_code}"
-                    )
-                # add to map_reversed_list
-                map_reversed_list.append(
-                    {
-                        "step_num": step_idx + 1,
-                        "act": act,
-                        "act_revert": act_revert,
-                        "location_before": location_before,
-                        "location_before_id": location_before_id,
-                        "location_now": location_now,
-                        "location_now_id": location_now_id,
-                    }
+                print(
+                    f"VALID || @{step_num}, {should_fallback_code} --> {act} --> [{arrive_code}] --> {act_revert} --> {actual_fallback_code}"
                 )
+                confirm_jericho_valid.append(step_num)
+
             else:
                 print(
-                    f"INVALID || @{step_idx+1}, {should_fallback_code} --> {act} --> {arrive_code} <-- {act_revert} <-- [{actual_fallback_code}]"
+                    f"INVALID || @{step_num}, {should_fallback_code} --> {act} --> [{arrive_code}] -x-> {act_revert} -x-> [{should_fallback_code}]"
                 )
 
-            print(f"================ done with {step_idx+1} ================")
+            print(f"================ done with {step_num} ================")
 
-    output_file = "{}/{}.map.reversed".format(output_dir, game_name_raw)
+    # add to confirmed_reverse_directional_edges
+    confirmed_reverse_directional_edges = []
+    for valid_step_num in confirm_jericho_valid:
+        (src_anno, act_revert, dst_anno) = potential_reverse_directional_edges[
+            valid_step_num
+        ]
+        confirmed_reverse_directional_edges.append(
+            {
+                "step_num": valid_step_num,
+                "act_revert": act_revert,
+                "src": src_anno,
+                "dst": dst_anno,
+            }
+        )
+
+    output_file = f"{args.output_dir}/{args.game_name_raw}.map.reversed"
     with open(output_file, "w", encoding="utf-8") as fout:
-        for item in map_reversed_list:
+        for item in confirmed_reverse_directional_edges:
             fout.write(
-                "{} (obj{}) --> {} --> {} (obj{}), step {}, desc: None\n".format(
-                    item["location_now"],
-                    item["location_now_id"],
-                    item["act_revert"],
-                    item["location_before"],
-                    item["location_before_id"],
-                    item["step_num"],
+                "{} --> {} --> {}, step {}, desc: None\n".format(
+                    item["src"], item["act_revert"], item["dst"], item["step_num"]
                 )
             )
 
@@ -336,7 +251,16 @@ def parse_args():
         default=False,
         help="Override walkthrough acts with *.walkthrough_acts file",
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+
+    args.game_name_raw = args.game_name.split(".")[0]
+    args.output_dir = f"{args.output_dir}/{args.game_name_raw}"
+
+    # create output dir if not exist
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+
+    return args
 
 
 if __name__ == "__main__":
@@ -348,6 +272,6 @@ if __name__ == "__main__":
     print(args.game_name)
     print("++++++++++++++++++++++++++++++++++")
 
-    if args.game_name in ["sherlock", "trinity"]:
-        exit(-1)
+    # if args.game_name in ["sherlock", "trinity"]:
+    #     exit(-1)
     gen_move_reversed(args)
