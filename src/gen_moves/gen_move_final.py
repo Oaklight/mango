@@ -31,7 +31,7 @@ def get_dict(lines, cutoff=None):
     return d
 
 
-def get_args():
+def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--game_data_dir",
@@ -224,7 +224,7 @@ def add_code2anno(
 
 
 if __name__ == "__main__":
-    args = get_args()
+    args = parse_args()
 
     print("Processing {}...".format(args.game_name))
     # read in game.map.human and game.map.machine

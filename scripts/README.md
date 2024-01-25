@@ -64,7 +64,7 @@ python -m spacy download en_core_web_sm
 
 ```bash
 cd gamegpt_utils
-./scripts/gen_moves/run_gen_move_human_to_all.sh -p <path> -g <game> -j <jericho_path>
+./scripts/gen_moves/run_gen_move_human_to_all.sh -j <jericho_path> -o <output_dir> -g <game>
 ```
 
 ，包括：
@@ -83,10 +83,10 @@ cd gamegpt_utils
 cd gamegpt_utils
 
 # 先生成 game.map.human，仅对存在 game.valid_moves.csv 的文件夹操作
-./scripts/gen_moves/run_gen_move_human_all.sh -p <path> -j <jericho_path>
+./scripts/gen_moves/run_gen_move_human_all.sh -j <jericho_path> -o <output_dir>
 
 # 再此基础上生成 game.anno2code.json, game.anno2code.json， 仅对 game.map.human 存在的文件夹操作
-./scripts/gen_moves/run_gen_move_final_all.sh -p <path> -j <jericho_path>
+./scripts/gen_moves/run_gen_move_final_all.sh -j <jericho_path> -o <output_dir>
 ```
 
 ## pipeline

@@ -162,8 +162,11 @@ Gnome open up desk drawer and take out strange helmet. Him take out little box, 
 conda create -n mango python=3.11 #python=3.8 also works
 conda activate mango
 pip install -r requirements.txt
-pip install https://github.com/MarcCote/jericho/archive/refs/heads/fix_obj_num.zip
 python3 -m spacy download en_core_web_sm
+wget https://github.com/MarcCote/jericho/archive/refs/heads/fix_obj_num.zip
+unzip fix_obj_num.zip
+# 修改 ./jericho-fix_obj_num/jericho/version.py，version改为"3.1.2"，保存并退出。
+pip install ./jericho-fix_obj_num
 
 # 下载游戏包
 wget https://github.com/BYU-PCCL/z-machine-games/archive/master.zip
@@ -183,14 +186,15 @@ unzip master.zip
 
 ```bash
 # 生成machine code
-(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90 -a
+(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -s 90 -g night
 
 # 转换并校验human label
-(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90 -a
+(gamegpt) cd/to/your/mango/root$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -s 90 -g night
 ```
 
-请注意，新加入的“-a”参数，会强制使用仓库里缓存的walkthrough actions，以保证不同jericho版本变化时，action sequence不会改变。请默认使用这个参数。
+~~请注意，新加入的“-a”参数，会强制使用仓库里缓存的walkthrough actions，以保证不同jericho版本变化时，action sequence不会改变。请默认使用这个参数。~~ `-a`为默认开启，不再需要手动输入。
 
+`-s` 如设置为`-1`，则为最大步数。如缺省，则为70。
 
 ## 以night为例
 
@@ -199,7 +203,7 @@ unzip master.zip
 通过检查[night.walkthrough](./night/night.walkthrough)的内容，可以发现最多有90步，所以我们可以这样生成machine map：
 
 ```bash
-(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90
+(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s -1
 ```
 
 注意：有的游戏非常冗长，建议不要一次性生成所有的machine steps（比如spirit，有1000多步），而是**分批生成标注，比如每次处理100步**，这样**可以避免检查脚本丢给你太多的machine only steps导致没法阅读**。
@@ -234,35 +238,36 @@ unzip master.zip
 # cd /home/xxx/xxx/gamegpt_utils (旧repo名)
 # cd /home/xxx/xxx/mango (新repo名)
 conda activate mango # conda activate gamegpt (旧)
-./scripts/gen_moves/run_gen_move_human_to_final.sh  -p data-intermediate -j ../z-machine-games-master/jericho-game-suite/ -g night
+./scripts/gen_moves/run_gen_move_human_to_final.sh -j ../z-machine-games-master/jericho-game-suite/ -o data-intermediate -g night -s -1
 ```
 
 如果标注一切顺利，应该看到如下输出：
 
 ```bash
-(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90
+(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -j ../z-machine-games-master/jericho-game-suite/ -o data-intermediate/ -g night -s -1
 Generating for night...
 Generating for night...
-Reading file ./data-intermediate//night/night.valid_moves.csv ing ...
+Reading file data-intermediate//night/night.valid_moves.csv ing ...
 Done.
+Walkthrough Acts provided has been loaded, total 90 steps
 Game: night, Max steps: 90
 90
-Saved to ./data-intermediate//night/night.map.human
+Saved to data-intermediate//night/night.map.human
 Good Job!
-game data dir: ./data-intermediate//night
+game data dir: data-intermediate//night
 Processing night...
 General Stats:
 - [num: 62] common steps
-- [num: 0] machine only steps: []
+- [num: 1] machine only steps: [40]
 - [num: 0] human only steps: []
-- [num: 0] conflict annotations on common steps: {}
-No difference found, exiting...
+- [num: 0] conflict annotations on common steps: 
+
+Continue? [y/n] y
 Reload both maps after resolution
+processing common steps...
+processing human only steps...
 Done processing!
 
-56
-============= extracting node-step map ===============
-processing night
 Done for night!
 ```
 
@@ -271,16 +276,17 @@ Done for night!
 1.如果有重名位置（但实际不同）的标注，你可能会看到类似如下的输出：
 
 ```bash
-(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90
+(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -j ../z-machine-games-master/jericho-game-suite/ -o data-intermediate/ -g night -s -1
 Generating for night...
 Generating for night...
-Reading file ./data-intermediate//night/night.valid_moves.csv ing ...
+Reading file data-intermediate//night/night.valid_moves.csv ing ...
 Done.
+Walkthrough Acts provided has been loaded, total 90 steps
 Game: night, Max steps: 90
 90
-Saved to ./data-intermediate//night/night.map.human
+Saved to data-intermediate//night/night.map.human
 Good Job!
-game data dir: ./data-intermediate//night
+game data dir: data-intermediate//night
 Processing night...
 General Stats:
 - [num: 62] common steps
@@ -300,7 +306,7 @@ Continue? [y/n]
 比如下面这个例子：
 
 ```bash
-(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -p ./data-intermediate/ -j ../z-machine-games-master/jericho-game-suite/ -g night -s 90
+(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_human_to_final.sh -j ../z-machine-games-master/jericho-game-suite/ -o data-intermediate/ -g night -s -1
 Generating for night...
 Generating for night...
 Reading file ./data-intermediate//night/night.valid_moves.csv ing ...
@@ -322,10 +328,14 @@ Continue? [y/n]
 可以看到从71到89都是human only steps，这种情况下，很有可能是machine map没有被更新到最完整的版本，检查后发现确实如此，所以重新生成night.map.machine
 
 ```bash
-(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -g night -s 90
+(gamegpt) pding@pding-X1:~/projects/mango/mango$ ./scripts/gen_moves/run_gen_move_machine_all.sh -j ../z-machine-games-master/jericho-game-suite/ -o ./data-intermediate/ -s -1 -g night
 Generating for night...
-Args: Namespace(game_name='night', jericho_path='../z-machine-games-master/jericho-game-suite/', max_steps=90, output_dir='./data-intermediate/', walk_md=False)
+Args: Namespace(game_name='night', jericho_path='../z-machine-games-master/jericho-game-suite/', max_steps=-1, output_dir='./data-intermediate//night', walk_acts=True, game_name_raw='night')
+Walkthrough Acts provided has been loaded, total 90 steps
 Game: night, Max steps: 90
+63 edges are valid
 Saved to ./data-intermediate//night/night.map.machine
+Saved to ./data-intermediate//night/night.moves
+All Done!
 ```
 
