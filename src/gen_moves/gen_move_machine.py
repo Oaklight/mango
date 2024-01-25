@@ -1,87 +1,41 @@
-import glob
 import sys
-from jericho import *  # https://jericho-py.readthedocs.io/en/latest/index.html
-import os
 import argparse
-from tqdm import tqdm
+import os
+
 from jericho.util import unabbreviate
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_moves.utils import process_again
-
-direction_abbrv_dict = {
-    "e": "east",
-    "w": "west",
-    "n": "north",
-    "s": "south",
-    "ne": "northeast",
-    "nw": "northwest",
-    "se": "southeast",
-    "sw": "southwest",
-    "u": "up",
-    "d": "down",
-}  # jericho.defines.ABBRV_DICT
-direction_vocab_abbrv = direction_abbrv_dict.keys()
-direction_vocab = direction_abbrv_dict.values()
+from gen_moves.utils import (
+    direction_vocab,
+    direction_vocab_abbrv,
+    load_env,
+    load_walkthrough_acts,
+)
 
 
 def gen_move_machine(args):
-    game_name = args.game_name
-    max_steps = args.max_steps
-
     # env
     # env = FrotzEnv("{}/{}".format(args.jericho_path, game_name))
-    game_file_path = None
-    for game_file in glob.glob(f"{args.jericho_path}/*"):
-        if game_name == os.path.splitext(os.path.basename(game_file))[0]:
-            game_file_path = game_file
-            break
-    if game_file_path is None:
-        print(f"Game file {game_name} not found in {args.jericho_path}")
-        return -1
-    env = FrotzEnv(game_file_path)
+    env = load_env(args)
 
     env.reset()
     location_before = env.get_player_location().name.strip().lower()
     location_before_id = env.get_player_location().num
 
-    # create output dir if not exist
-    output_dir = args.output_dir + "/" + game_name.split(".")[0]
-    if os.path.exists(output_dir) == False:
-        os.makedirs(output_dir)
-
     # use provided walkthrough_acts or load from game env
-    walkthrough_acts = []
-    if args.walk_acts:
-        # with open(args.walk_acts, "r", encoding="utf-8") as fin:
-        with open(
-            f"{output_dir}/{game_name}.walkthrough_acts", "r", encoding="utf-8"
-        ) as fin:
-            for line in fin:
-                # sometimes there are void action, use whatever after ":"
-                act = line.split(":")[1].strip()
-                walkthrough_acts.append(act)
-        print(
-            f"Walkthrough Acts provided has been loaded, total {len(walkthrough_acts)} steps"
-        )
-    else:
-        # walkthrough
-        walkthrough_acts = env.get_walkthrough()
-    # process "again"
-    walkthrough_acts = process_again(walkthrough_acts)
+    walkthrough_acts = load_walkthrough_acts(args, env)
 
-    if max_steps == -1:
-        max_steps = len(walkthrough_acts)
-    print("Game: {}, Max steps: {}".format(game_name, max_steps))
+    if args.max_steps == -1:
+        args.max_steps = len(walkthrough_acts)
+    print("Game: {}, Max steps: {}".format(args.game_name, args.max_steps))
 
     map_list = []
     move_list = []
-    prev_observation = ""
 
-    valid_acts = walkthrough_acts[:max_steps]
+    valid_acts = walkthrough_acts[: args.max_steps]
 
     for step_idx, act in enumerate(valid_acts):
         observation, reward, done, info = env.step(act)
@@ -126,9 +80,10 @@ def gen_move_machine(args):
 
     if len(map_list) == 0:
         print("No map generated!")
-        return -1
+        exit(-1)
+    print(f"{len(map_list)} edges are valid")
 
-    output_file = "{}/{}.map.machine".format(output_dir, game_name.split(".")[0])
+    output_file = f"{args.output_dir}/{args.game_name_raw}.map.machine"
     with open(output_file, "w", encoding="utf-8") as fout:
         for item in map_list:
             fout.write(
@@ -143,7 +98,7 @@ def gen_move_machine(args):
             )
     print("Saved to {}".format(output_file))
 
-    output_file = "{}/{}.moves".format(output_dir, game_name.split(".")[0])
+    output_file = f"{args.output_dir}/{args.game_name_raw}.moves"
     valid_moves = list(set(move_list).union(set(direction_vocab)))
     # sort valid_moves by str content
     valid_moves = sorted(valid_moves, key=lambda x: str(x))
@@ -151,7 +106,6 @@ def gen_move_machine(args):
         for sample in valid_moves:
             fout.write("{}\n".format(sample))
     print("Saved to {}".format(output_file))
-    print("Good Job!")
 
 
 def parse_args():
@@ -172,7 +126,16 @@ def parse_args():
         default=False,
         help="Override walkthrough acts with *.walkthrough_acts file",
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+
+    args.game_name_raw = args.game_name.split(".")[0]
+    args.output_dir = f"{args.output_dir}/{args.game_name_raw}"
+
+    # create output dir if not exist
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+
+    return args
 
 
 if __name__ == "__main__":

@@ -10,39 +10,51 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from gen_moves.utils import load_env, load_walkthrough_acts
-
-direction_abbrv_dict = {
-    "e": "east",
-    "w": "west",
-    "n": "north",
-    "s": "south",
-    "ne": "northeast",
-    "nw": "northwest",
-    "se": "southeast",
-    "sw": "southwest",
-    "u": "up",
-    "d": "down",
-}  # jericho.defines.ABBRV_DICT
-direction_vocab_abbrv = direction_abbrv_dict.keys()
-direction_vocab = direction_abbrv_dict.values()
-opposite_direction_dict = {
-    "east": "west",
-    "west": "east",
-    "north": "south",
-    "south": "north",
-    "northeast": "southwest",
-    "southwest": "northeast",
-    "northwest": "southeast",
-    "southeast": "northwest",
-    "up": "down",
-    "down": "up",
-}
+from gen_moves.utils import (
+    direction_vocab,
+    load_env,
+    load_walkthrough_acts,
+    opposite_direction_dict,
+)
 
 # post issues at jericho repo: https://github.com/microsoft/jericho/issues/64
 TRINITY_STUCK_STEPS = (8, 13, 23, 29, 33, 35, 39, 43, 47, 49, 58, 59, 60, 65, 68, 69)
-TRINITY_STUCK_LOC_ID = (79, 354, 144, 355, 531, 179, 371, 121, 438, 576, 323, 319, 575, 80, 316)
-SHERLOCK_STUCK_LOC_ID = (111, 3, 37, 33, 93, 71, 5, 73, 1, 85, 295, 52, 57, 21, 69, 27, 12)
+TRINITY_STUCK_LOC_ID = (
+    79,
+    354,
+    144,
+    355,
+    531,
+    179,
+    371,
+    121,
+    438,
+    576,
+    323,
+    319,
+    575,
+    80,
+    316,
+)
+SHERLOCK_STUCK_LOC_ID = (
+    111,
+    3,
+    37,
+    33,
+    93,
+    71,
+    5,
+    73,
+    1,
+    85,
+    295,
+    52,
+    57,
+    21,
+    69,
+    27,
+    12,
+)
 
 
 def load_forward_map_nodes(human_map_path):
@@ -109,7 +121,7 @@ def gen_move_reversed(args):
 
     # load all necessary files
     human_map_file_path = (
-        f"{args.input_dir}/{args.game_name_raw}/{args.game_name_raw}.map.human"
+        f"{args.output_dir}/{args.game_name_raw}.map.human"
     )
     human_forward_edges = load_forward_map_nodes(human_map_file_path)
     (
@@ -242,7 +254,6 @@ def parse_args():
         default="./data/z-machine-games-master/jericho-game-suite",
     )
     parser.add_argument("--max_steps", type=int, default=70)
-    parser.add_argument("--input_dir", "-idir", type=str, default="./data/maps")
     parser.add_argument("--output_dir", "-odir", type=str, default="./data/maps")
     parser.add_argument(
         "--walk_acts",

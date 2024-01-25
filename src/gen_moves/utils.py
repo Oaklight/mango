@@ -5,8 +5,35 @@ import re
 
 from jericho import FrotzEnv
 
+direction_abbrv_dict = {
+    "e": "east",
+    "w": "west",
+    "n": "north",
+    "s": "south",
+    "ne": "northeast",
+    "nw": "northwest",
+    "se": "southeast",
+    "sw": "southwest",
+    "u": "up",
+    "d": "down",
+}  # jericho.defines.ABBRV_DICT
+direction_vocab_abbrv = direction_abbrv_dict.keys()
+direction_vocab = direction_abbrv_dict.values()
+opposite_direction_dict = {
+    "east": "west",
+    "west": "east",
+    "north": "south",
+    "south": "north",
+    "northeast": "southwest",
+    "southwest": "northeast",
+    "northwest": "southeast",
+    "southeast": "northwest",
+    "up": "down",
+    "down": "up",
+}
 
-def process_again(acts):
+
+def __process_again(acts):
     for i, a in enumerate(acts):
         if a.lower() == "again":
             acts[i] = acts[i - 1]
@@ -31,24 +58,29 @@ def load_env(args):
 def load_walkthrough_acts(args, env, keep_again: bool = True):
     walkthrough_acts = []
     if args.walk_acts:
-        # with open(args.walk_acts, "r", encoding="utf-8") as fin:
-        with open(
-            f"{args.output_dir}/{args.game_name}.walkthrough_acts",
-            "r",
-            encoding="utf-8",
-        ) as fin:
-            for line in fin:
-                # sometimes there are void action, use whatever after ":"
-                act = line.split(":")[1].strip()
-                walkthrough_acts.append(act)
-        print(
-            f"Walkthrough Acts provided has been loaded, total {len(walkthrough_acts)} steps"
-        )
+        walkthrough_acts_path = f"{args.output_dir}/{args.game_name}.walkthrough_acts"
+        if os.path.exists(walkthrough_acts_path):
+            # with open(args.walk_acts, "r", encoding="utf-8") as fin:
+            with open(
+                walkthrough_acts_path,
+                "r",
+                encoding="utf-8",
+            ) as fin:
+                for line in fin:
+                    # sometimes there are void action, use whatever after ":"
+                    act = line.split(":")[1].strip()
+                    walkthrough_acts.append(act)
+            print(
+                f"Walkthrough Acts provided has been loaded, total {len(walkthrough_acts)} steps"
+            )
+        else:
+            # walkthrough
+            walkthrough_acts = env.get_walkthrough()
     else:
         # walkthrough
         walkthrough_acts = env.get_walkthrough()
     if keep_again:
-        walkthrough_acts = process_again(walkthrough_acts)
+        walkthrough_acts = __process_again(walkthrough_acts)
     return walkthrough_acts
 
 
