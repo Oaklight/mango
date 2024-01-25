@@ -210,8 +210,8 @@ def gen_move_reversed(args):
             env.step(walkthrough_acts[i])
             if env._emulator_halted():
                 halt_flag = True
-
                 break
+
         if halt_flag:
             print(f"HALT || @{step_idx+1}, [{act}] halt the jericho engine.")
             continue
@@ -274,25 +274,24 @@ def gen_move_reversed(args):
                     print(
                         f"HIT || [{arrive_code} --> {act_revert} --> {actual_fallback_code}] already in the machine forward map"
                     )
-                    continue
+                    # continue  # still include it
 
                 else:
-                    # `act` is a revertable move
                     print(
                         f"VALID || @{step_idx+1}, {should_fallback_code} --> {act} --> {arrive_code} <-- {act_revert} <-- {actual_fallback_code}"
                     )
-                    # add to map_reversed_list
-                    map_reversed_list.append(
-                        {
-                            "step_num": step_idx + 1,
-                            "act": act,
-                            "act_revert": act_revert,
-                            "location_before": location_before,
-                            "location_before_id": location_before_id,
-                            "location_now": location_now,
-                            "location_now_id": location_now_id,
-                        }
-                    )
+                # add to map_reversed_list
+                map_reversed_list.append(
+                    {
+                        "step_num": step_idx + 1,
+                        "act": act,
+                        "act_revert": act_revert,
+                        "location_before": location_before,
+                        "location_before_id": location_before_id,
+                        "location_now": location_now,
+                        "location_now_id": location_now_id,
+                    }
+                )
             else:
                 print(
                     f"INVALID || @{step_idx+1}, {should_fallback_code} --> {act} --> {arrive_code} <-- {act_revert} <-- [{actual_fallback_code}]"
