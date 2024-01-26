@@ -1,10 +1,64 @@
-study (obj32) --> up --> roof (obj29), step 6, desc: None
-before a dark tower (obj54) --> north --> hall (obj49), step 28, desc: None
-public square (obj56) --> northeast --> before a dark tower (obj54), step 30, desc: None
-road (obj61) --> east --> public square (obj56), step 34, desc: None
-crossroads (obj63) --> east --> road (obj61), step 52, desc: None
-dead end (obj65) --> north --> crossroads (obj63), step 55, desc: None
-corridor (obj106) --> south --> corridor (obj102), step 64, desc: None
-chamber (obj114) --> south --> corridor (obj106), step 65, desc: None
-corridor (obj116) --> west --> chamber (obj114), step 67, desc: None
-rock chamber (obj120) --> west --> corridor (obj116), step 68, desc: None
+Study --> up --> Roof, step 6, desc: None
+Hall --> up --> Study, step 16, desc: None
+Study --> down --> Hall, step 18, desc: None
+Storage --> north --> Study, step 19, desc: None
+Study --> south --> Storage, step 23, desc: None
+Hall --> up --> Study, step 24, desc: None
+Before A Dark Tower --> north --> Hall, step 28, desc: None
+Public Square --> northeast --> Before A Dark Tower, step 30, desc: None
+Road (east/west) --> east --> Public Square, step 34, desc: None
+A Dark Hallway --> south --> Road (east/west), step 36, desc: None
+Library --> south --> A Dark Hallway, step 38, desc: None
+A Dark Hallway --> north --> Library, step 50, desc: None
+Road (east/west) --> north --> A Dark Hallway, step 51, desc: None
+Crossroads --> east --> Road (east/west), step 52, desc: None
+Road (north/south) --> south --> Crossroads, step 53, desc: None
+Crossroads --> north --> Road (north/south), step 54, desc: None
+Dead End --> north --> Crossroads, step 55, desc: None
+Stairs --> up --> Dead End, step 60, desc: None
+Corridor (north/south) --> south --> Corridor (near stairs), step 64, desc: None
+Chamber --> south --> Corridor (north/south), step 65, desc: None
+Corridor (east/west) --> west --> Chamber, step 67, desc: None
+Rock Chamber --> west --> Corridor (east/west), step 68, desc: None
+Corridor (east/west) --> east --> Rock Chamber, step 73, desc: None
+Chamber --> east --> Corridor (east/west), step 74, desc: None
+Corridor (north/south) --> north --> Chamber, step 75, desc: None
+Corridor (near stairs) --> north --> Corridor (north/south), step 76, desc: None
+Dead End --> down --> Stairs, step 79, desc: None
+Crossroads --> south --> Dead End, step 80, desc: None
+Road (east/west) --> west --> Crossroads, step 81, desc: None
+Public Square --> west --> Road (east/west), step 82, desc: None
+Road (temple-like at south end) --> north --> Public Square, step 83, desc: None
+Temple --> north --> Road (temple-like at south end), step 86, desc: None
+Road (temple-like at south end) --> south --> Temple, step 88, desc: None
+Public Square --> south --> Road (temple-like at south end), step 89, desc: None
+Before A Dark Tower --> southwest --> Public Square, step 90, desc: None
+Hall --> south --> Before A Dark Tower, step 91, desc: None
+Study --> down --> Hall, step 92, desc: None
+Hall --> up --> Study, step 104, desc: None
+Before A Dark Tower --> north --> Hall, step 105, desc: None
+Public Square --> northeast --> Before A Dark Tower, step 106, desc: None
+Road (east/west) --> east --> Public Square, step 107, desc: None
+Crossroads --> east --> Road (east/west), step 108, desc: None
+Dead End --> north --> Crossroads, step 109, desc: None
+Stairs --> up --> Dead End, step 110, desc: None
+Corridor (north/south) --> south --> Corridor (near stairs), step 112, desc: None
+Chamber --> south --> Corridor (north/south), step 113, desc: None
+Corridor (east/west) --> west --> Chamber, step 114, desc: None
+Rock Chamber --> west --> Corridor (east/west), step 115, desc: None
+Corridor (east/west) --> east --> Rock Chamber, step 125, desc: None
+Chamber (badly damaged) --> east --> Corridor (east/west), step 129, desc: None
+Corridor (east/west) --> west --> Chamber (badly damaged), step 134, desc: None
+Rock Chamber --> west --> Corridor (east/west), step 135, desc: None
+Corridor (east/west) --> east --> Rock Chamber, step 142, desc: None
+Chamber (badly damaged) --> east --> Corridor (east/west), step 143, desc: None
+Corridor (north/south) --> north --> Chamber (badly damaged), step 145, desc: None
+Corridor (near stairs) --> north --> Corridor (north/south), step 147, desc: None
+Dead End --> down --> Stairs, step 149, desc: None
+Crossroads --> south --> Dead End, step 152, desc: None
+Road (east/west) --> west --> Crossroads, step 153, desc: None
+Public Square --> west --> Road (east/west), step 154, desc: None
+Deserted Hall --> west --> Public Square, step 159, desc: None
+Public Square --> east --> Deserted Hall, step 171, desc: None
+Road (temple-like at south end) --> north --> Public Square, step 172, desc: None
+Temple --> north --> Road (temple-like at south end), step 173, desc: None

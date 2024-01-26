@@ -1,6 +1,65 @@
-meadow (obj35) --> west --> forest (obj32), step 1, desc: None
-hole (obj65) --> up --> root chamber (obj62), step 30, desc: None
-hall (obj67) --> up --> hole (obj65), step 34, desc: None
-cavern (obj68) --> up --> hall (obj67), step 36, desc: None
-maze (obj76) --> up --> maze (obj75), step 41, desc: None
-maze (obj78) --> east --> maze (obj76), step 43, desc: None
+Meadow --> west --> Forest, step 1, desc: None
+Grove --> east --> Dismal Swamp, step 10, desc: None
+Dismal Swamp --> west --> Grove, step 14, desc: None
+Root Chamber --> up --> Inside Stump, step 25, desc: None
+Inside Stump --> down --> Root Chamber, step 27, desc: None
+Root Chamber --> up --> Inside Stump, step 29, desc: None
+Hole --> up --> Root Chamber, step 30, desc: None
+Hall --> up --> Hole, step 34, desc: None
+Cavern --> up --> Hall, step 36, desc: None
+Anteroom --> north --> Cavern, step 37, desc: None
+Cavern --> south --> Anteroom, step 39, desc: None
+Maze (exit North, South, East, West, Up, Down; rock ALADDIN) --> east --> Maze (exit West, Up), step 43, desc: None
+Chasm --> up --> Maze (exit North, South, East, West, Up, Down; arrow down), step 46, desc: None
+Maze (exit North, South, East, West, Up, Down; arrow down) --> down --> Chasm, step 48, desc: None
+Dismal Swamp --> north --> Meadow, step 52, desc: None
+Meadow --> south --> Dismal Swamp, step 56, desc: None
+Root Chamber --> up --> Inside Stump, step 70, desc: None
+Hole --> up --> Root Chamber, step 71, desc: None
+Hall --> up --> Hole, step 72, desc: None
+Cavern --> up --> Hall, step 74, desc: None
+Anteroom --> north --> Cavern, step 75, desc: None
+Royal Chamber --> down --> Anteroom, step 76, desc: None
+Throne Room --> west --> Ledge by the throne room, step 83, desc: None
+Ledge by the throne room --> east --> Throne Room, step 85, desc: None
+Royal Chamber --> east --> Ledge, step 87, desc: None
+Anteroom --> up --> Royal Chamber, step 88, desc: None
+Cavern --> south --> Anteroom, step 89, desc: None
+Hall --> down --> Cavern, step 90, desc: None
+Hole --> down --> Hall, step 91, desc: None
+Root Chamber --> down --> Hole, step 92, desc: None
+Inside Stump --> down --> Root Chamber, step 93, desc: None
+Root Chamber --> up --> Inside Stump, step 95, desc: None
+Hole --> up --> Root Chamber, step 96, desc: None
+Hall --> up --> Hole, step 97, desc: None
+Cavern --> up --> Hall, step 98, desc: None
+Anteroom --> north --> Cavern, step 99, desc: None
+Royal Chamber --> down --> Anteroom, step 100, desc: None
+Anteroom --> up --> Royal Chamber, step 102, desc: None
+Cavern --> south --> Anteroom, step 103, desc: None
+Maze (exit North, South, East, West, Up, Down; rock ALADDIN) --> east --> Maze (exit West, Up), step 106, desc: None
+Chasm --> up --> Maze (exit North, South, East, West, Up, Down; arrow down), step 108, desc: None
+Maze (exit North, South, East, West, Up, Down; arrow down) --> down --> Chasm, step 111, desc: None
+Root Chamber --> up --> Inside Stump, step 123, desc: None
+Hole --> up --> Root Chamber, step 124, desc: None
+Hall --> up --> Hole, step 125, desc: None
+Cavern --> up --> Hall, step 127, desc: None
+Octagonal Hive --> south --> Cavern, step 128, desc: None
+Cavern --> north --> Octagonal Hive, step 132, desc: None
+Hall --> down --> Cavern, step 133, desc: None
+Hole --> down --> Hall, step 134, desc: None
+Root Chamber --> down --> Hole, step 135, desc: None
+Inside Stump --> down --> Root Chamber, step 136, desc: None
+Meadow --> south --> Dismal Swamp, step 138, desc: None
+Root Chamber --> up --> Inside Stump, step 144, desc: None
+Hole --> up --> Root Chamber, step 145, desc: None
+Hall --> up --> Hole, step 146, desc: None
+Cavern --> up --> Hall, step 147, desc: None
+Octagonal Hive --> south --> Cavern, step 148, desc: None
+Cavern --> north --> Octagonal Hive, step 151, desc: None
+Hall --> down --> Cavern, step 152, desc: None
+Hole --> down --> Hall, step 153, desc: None
+Root Chamber --> down --> Hole, step 154, desc: None
+Inside Stump --> down --> Root Chamber, step 155, desc: None
+Meadow --> south --> Dismal Swamp, step 160, desc: None
+Dismal Swamp --> north --> Meadow, step 163, desc: None

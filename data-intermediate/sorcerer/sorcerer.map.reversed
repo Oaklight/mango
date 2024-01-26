@@ -1,15 +1,86 @@
-hallway (obj50) --> east --> quarters (obj17), step 4, desc: None
-hallway (obj50) --> north --> hallway (obj50), step 16, desc: None
-helistar's quarters (obj13) --> east --> hallway (obj50), step 40, desc: None
-meadow (obj137) --> west --> forest edge (obj168), step 46, desc: None
-river bed (obj3) --> up --> river bank (obj163), step 50, desc: None
-hidden cave (obj203) --> southwest --> river bed (obj3), step 51, desc: None
-torture chamber (obj148) --> north --> pbones (obj154), step 56, desc: None
-dungeon (obj5) --> east --> torture chamber (obj148), step 58, desc: None
-bend (obj114) --> east --> highway (obj52), step 60, desc: None
-edge crater (obj246) --> northeast --> bend (obj114), step 61, desc: None
-crater (obj8) --> northeast --> edge crater (obj246), step 62, desc: None
-edge chasm (obj242) --> east --> crater (obj8), step 63, desc: None
-bpassage (obj80) --> east --> edge chasm (obj242), step 67, desc: None
-elbow room (obj108) --> east --> bpassage (obj80), step 68, desc: None
-tree room (obj160) --> south --> elbow room (obj108), step 69, desc: None
+Hallway (wooden door leading north) --> east --> quarters, step 4, desc: None
+Belboz's Quarters --> east --> Hallway (wooden door leading north), step 7, desc: None
+Hallway (wooden door leading north) --> west --> Belboz's Quarters, step 15, desc: None
+Hallway (marble archway leading south) --> north --> Hallway (wooden door leading north), step 16, desc: None
+Lobby --> north --> Hallway (marble archway leading south), step 17, desc: None
+Store Room --> east --> Lobby, step 18, desc: None
+Lobby --> west --> Store Room, step 20, desc: None
+Library --> west --> Lobby, step 24, desc: None
+Lobby --> east --> Library, step 28, desc: None
+Cellar --> up --> Lobby, step 29, desc: None
+Lobby --> down --> Cellar, step 36, desc: None
+Hallway (marble archway leading south) --> south --> Lobby, step 39, desc: None
+Helistar's Quarters --> east --> Hallway (marble archway leading south), step 40, desc: None
+Meadow --> west --> Forest Edge, step 46, desc: None
+River Bank --> southwest --> Meadow, step 47, desc: None
+Hidden Cave --> southwest --> River Bed, step 51, desc: None
+Torture Chamber --> north --> Pit of Bones, step 56, desc: None
+Dungeon --> east --> Torture Chamber, step 58, desc: None
+Highway --> up --> Dungeon, step 59, desc: None
+Bend --> east --> Highway, step 60, desc: None
+Edge of Crater --> northeast --> Bend, step 61, desc: None
+Crater --> northeast --> Edge of Crater, step 62, desc: None
+Edge of Chasm --> east --> Crater, step 63, desc: None
+Bare Passage --> east --> Edge of Chasm, step 67, desc: None
+Elbow Room --> east --> Bare Passage, step 68, desc: None
+Tree Room --> south --> Elbow Room, step 69, desc: None
+Elbow Room --> north --> Tree Room, step 71, desc: None
+Bare Passage --> west --> Elbow Room, step 72, desc: None
+Edge of Chasm --> west --> Bare Passage, step 74, desc: None
+Crater --> west --> Edge of Chasm, step 75, desc: None
+Edge of Crater --> southwest --> Crater, step 76, desc: None
+Bend --> southwest --> Edge of Crater, step 77, desc: None
+Highway --> west --> Bend, step 78, desc: None
+Toll Gate --> west --> Highway, step 79, desc: None
+Outside Store --> west --> Toll Gate, step 83, desc: None
+End of Highway --> west --> Outside Store, step 84, desc: None
+Entrance Hall --> south --> End of Highway, step 85, desc: None
+Outside Glass Arch --> south --> Entrance Hall, step 86, desc: None
+Inside the Glass Maze --> west --> Outside Glass Arch, step 94, desc: None
+Outside Glass Arch --> east --> Inside the Glass Maze, step 137, desc: None
+Entrance Hall --> north --> Outside Glass Arch, step 141, desc: None
+End of Highway --> north --> Entrance Hall, step 142, desc: None
+Stone Hut --> west --> End of Highway, step 143, desc: None
+End of Highway --> east --> Stone Hut, step 149, desc: None
+Outside Store --> east --> End of Highway, step 150, desc: None
+Toll Gate --> east --> Outside Store, step 151, desc: None
+Highway --> east --> Toll Gate, step 152, desc: None
+Dungeon --> down --> Highway, step 153, desc: None
+Ruins --> down --> Dungeon, step 154, desc: None
+Drawbridge --> east --> Ruins, step 155, desc: None
+Meadow --> east --> Drawbridge, step 156, desc: None
+River Bank --> southwest --> Meadow, step 158, desc: None
+Fort Entrance --> northwest --> River Bank, step 159, desc: None
+Parade Ground --> west --> Fort Entrance, step 160, desc: None
+Gun Emplacement --> west --> Parade Ground, step 165, desc: None
+Parade Ground --> east --> Gun Emplacement, step 170, desc: None
+Fort Entrance --> east --> Parade Ground, step 171, desc: None
+River Bank --> southeast --> Fort Entrance, step 174, desc: None
+Meadow --> northeast --> River Bank, step 175, desc: None
+Forest Edge --> east --> Meadow, step 176, desc: None
+Snake Pit --> up --> Forest Edge, step 177, desc: None
+Slimy Room --> up --> Snake Pit, step 178, desc: None
+Crater --> north --> Slimy Room, step 179, desc: None
+Winding Tunnel --> north --> Crater, step 180, desc: None
+Park Entrance --> northeast --> Winding Tunnel, step 181, desc: None
+East End of Midway --> east --> Park Entrance, step 184, desc: None
+West End of Midway --> east --> East End of Midway, step 185, desc: None
+Arcade --> north --> West End of Midway, step 186, desc: None
+West End of Midway --> south --> Arcade, step 195, desc: None
+East End of Midway --> west --> West End of Midway, step 196, desc: None
+Park Entrance --> west --> East End of Midway, step 197, desc: None
+Winding Tunnel --> southwest --> Park Entrance, step 198, desc: None
+Hall of Carvings --> north --> Winding Tunnel, step 199, desc: None
+Sooty Room --> north --> Hall of Carvings, step 203, desc: None
+Dial Room --> west --> Coal Bin Room, step 210, desc: None
+Shaft Bottom --> west --> Dial Room, step 213, desc: None
+Shaft Top --> down --> Shaft Bottom, step 215, desc: None
+Top of Chute --> east --> Coal Mine Winding Tunnel (218), step 219, desc: None
+Surface of Lagoon --> west --> Lagoon Shore, step 238, desc: None
+Lagoon Floor --> up --> Surface of Lagoon, step 239, desc: None
+Surface of Lagoon --> down --> Lagoon Floor, step 243, desc: None
+Lagoon Shore --> east --> Surface of Lagoon, step 244, desc: None
+Ocean Shore North --> southwest --> Lagoon Shore, step 247, desc: None
+Mouth of River --> south --> Ocean Shore North, step 248, desc: None
+Grue Lair --> east --> Mouth of River, step 250, desc: None
+Mammoth Cavern --> east --> Grue Lair, step 251, desc: None

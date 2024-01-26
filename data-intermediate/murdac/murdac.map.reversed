@@ -1,6 +1,190 @@
-(path4) (obj58) --> north --> (path3) (obj57), step 12, desc: None
-(path1) (obj55) --> south --> (path5) (obj59), step 17, desc: None
-(inhut) (obj54) --> south --> (start) (obj53), step 32, desc: None
-(cellar) (obj66) --> up --> (inhut) (obj54), step 36, desc: None
-(junction) (obj111) --> west --> (cellar) (obj66), step 62, desc: None
-(house1) (obj113) --> west --> (junction) (obj111), step 63, desc: None
+brick wall (destroyed at some point) --> south --> vegetable garden, step 4, desc: None
+alley (north/south) --> south --> brick wall (destroyed at some point), step 5, desc: None
+alley (north end) --> south --> alley (north/south), step 6, desc: None
+alley (north/south) --> north --> alley (north end), step 8, desc: None
+brick wall (destroyed at some point) --> north --> alley (north/south), step 10, desc: None
+vegetable garden --> north --> brick wall (destroyed at some point), step 11, desc: None
+shrubbery --> north --> vegetable garden, step 12, desc: None
+remnants of a bonfire --> west --> shrubbery, step 15, desc: None
+flower garden --> south --> remnants of a bonfire, step 17, desc: None
+old untended grave --> east --> outside the house, step 19, desc: None
+sandpit --> south --> old untended grave, step 20, desc: None
+old untended grave --> north --> sandpit, step 23, desc: None
+outside the house --> west --> old untended grave, step 25, desc: None
+edge of a large calm lake --> west --> outside the house, step 26, desc: None
+outside the house --> east --> edge of a large calm lake, step 29, desc: None
+inside the hut --> south --> outside the house, step 32, desc: None
+large quadrangular cellar --> up --> inside the hut, step 36, desc: None
+mad scientist's laboratory --> east --> large quadrangular cellar, step 37, desc: None
+high tunnel (to the west of lab) --> east --> mad scientist's laboratory, step 38, desc: None
+wooden plank in east/west tunnel --> east --> high tunnel (to the west of lab), step 40, desc: None
+high tunnel (east/west, alcove off to north) --> east --> wooden plank in east/west tunnel, step 41, desc: None
+alcove --> south --> high tunnel (east/west, alcove off to north), step 45, desc: None
+high tunnel (east/west, alcove off to north) --> north --> alcove, step 46, desc: None
+high tunnel (east/west, path to west) --> east --> high tunnel (east/west, alcove off to north), step 47, desc: None
+secret cavern --> east --> high tunnel (east/west, path to west), step 48, desc: None
+low damp chamber --> north --> secret cavern, step 50, desc: None
+secret cavern --> south --> low damp chamber, step 54, desc: None
+high tunnel (east/west, path to west) --> west --> secret cavern, step 55, desc: None
+high tunnel (east/west, alcove off to north) --> west --> high tunnel (east/west, path to west), step 56, desc: None
+wooden plank in east/west tunnel --> west --> high tunnel (east/west, alcove off to north), step 57, desc: None
+high tunnel (to the west of lab) --> west --> wooden plank in east/west tunnel, step 58, desc: None
+mad scientist's laboratory --> west --> high tunnel (to the west of lab), step 59, desc: None
+large quadrangular cellar --> west --> mad scientist's laboratory, step 61, desc: None
+complicated junction of passages --> west --> large quadrangular cellar, step 62, desc: None
+entrance hall to haunted house --> west --> complicated junction of passages, step 63, desc: None
+small bedroom in haunted house --> east --> large bedroom in haunted house, step 65, desc: None
+large bedroom in haunted house --> west --> small bedroom in haunted house, step 66, desc: None
+pantry of haunted house --> east --> large bedroom in haunted house, step 67, desc: None
+kitchen of haunted house --> south --> study of haunted house, step 69, desc: None
+living room of haunted house --> north --> study of haunted house, step 70, desc: None
+cross-roads --> west --> east-west railway tunnel, step 76, desc: None
+south of sentry-post --> south --> cross-roads, step 77, desc: None
+centaur point --> south --> south of sentry-post, step 79, desc: None
+south of sentry-post --> north --> centaur point, step 81, desc: None
+cross-roads --> north --> south of sentry-post, step 82, desc: None
+passage north/south (sideway to southeast and west) --> west --> cross-roads, step 83, desc: None
+large quadrangular cellar --> north --> passage north/south (sideway to southeast and west), step 84, desc: None
+passage fork to north, southeast and southwest --> north --> large quadrangular cellar, step 90, desc: None
+passage to northwest and east with steps down --> northwest --> passage fork to north, southeast and southwest, step 91, desc: None
+manticore's lair --> west --> passage to northwest and east with steps down, step 93, desc: None
+disused mineshaft --> south --> manticore's lair, step 94, desc: None
+manticore's lair --> north --> disused mineshaft, step 97, desc: None
+passage to northwest and east with steps down --> east --> manticore's lair, step 98, desc: None
+room with three-wise-monkey painting --> up --> passage to northwest and east with steps down, step 99, desc: None
+pitch dark (102) --> north --> room with three-wise-monkey painting, step 102, desc: None
+room with three-wise-monkey painting --> south --> pitch dark (102), step 105, desc: None
+passage to northwest and east with steps down --> down --> room with three-wise-monkey painting, step 107, desc: None
+passage fork to north, southeast and southwest --> southeast --> passage to northwest and east with steps down, step 108, desc: None
+large quadrangular cellar --> south --> passage fork to north, southeast and southwest, step 109, desc: None
+complicated junction of passages --> west --> large quadrangular cellar, step 110, desc: None
+lion's den --> southwest --> complicated junction of passages, step 111, desc: None
+complicated junction of passages --> northeast --> lion's den, step 114, desc: None
+large quadrangular cellar --> east --> complicated junction of passages, step 115, desc: None
+cobwebbed passage --> southwest --> large quadrangular cellar, step 118, desc: None
+small chamber with large black hole in the floor --> southwest --> cobwebbed passage, step 119, desc: None
+pitch dark (120) --> up --> small chamber with large black hole in the floor, step 120, desc: None
+room like alternative universe --> north --> pitch dark (120), step 121, desc: None
+pitch dark (120) --> south --> room like alternative universe, step 124, desc: None
+small chamber with large black hole in the floor --> down --> pitch dark (120), step 125, desc: None
+pitch dark (126) --> southwest --> small chamber with large black hole in the floor, step 126, desc: None
+small chamber with large black hole in the floor --> northeast --> pitch dark (126), step 127, desc: None
+pitch dark (130) --> southeast --> pitch dark (129), step 130, desc: None
+grisly-looking cavern with large black hole in the floor --> northwest --> pitch dark (132), step 133, desc: None
+pitch dark (136) --> southeast --> pitch dark (135), step 136, desc: None
+pitch dark (137) --> southeast --> pitch dark (136), step 137, desc: None
+pitch dark (141) --> southwest --> pitch dark (140), step 141, desc: None
+pitch dark (142) --> southwest --> pitch dark (141), step 142, desc: None
+cobwebbed passage --> northeast --> small chamber with large black hole in the floor, step 145, desc: None
+large quadrangular cellar --> northeast --> cobwebbed passage, step 146, desc: None
+cobwebbed passage --> southwest --> large quadrangular cellar, step 148, desc: None
+large quadrangular cellar --> northeast --> cobwebbed passage, step 151, desc: None
+passage north/south (sideway to southeast and west) --> south --> large quadrangular cellar, step 152, desc: None
+cross-roads --> east --> passage north/south (sideway to southeast and west), step 153, desc: None
+Astrologer's Sanctum --> north --> cross-roads, step 155, desc: None
+cross-roads --> south --> Astrologer's Sanctum, step 160, desc: None
+east-west railway tunnel --> east --> cross-roads, step 161, desc: None
+north end of beach --> east --> east-west railway tunnel, step 162, desc: None
+edge of an estuary --> south --> north end of beach, step 163, desc: None
+north end of beach --> north --> edge of an estuary, step 165, desc: None
+east-west railway tunnel --> west --> north end of beach, step 166, desc: None
+cross-roads --> west --> east-west railway tunnel, step 167, desc: None
+passage north/south (sideway to southeast and west) --> west --> cross-roads, step 168, desc: None
+passage north/south (damp passageway leading down) --> south --> passage north/south (sideway to southeast and west), step 169, desc: None
+passage north/south (sideway to southeast and west) --> north --> passage north/south (damp passageway leading down), step 172, desc: None
+large quadrangular cellar --> north --> passage north/south (sideway to southeast and west), step 173, desc: None
+passage fork to north, southeast and southwest --> north --> large quadrangular cellar, step 177, desc: None
+a pool of sparkling water --> northeast --> passage fork to north, southeast and southwest, step 178, desc: None
+passage fork to north, southeast and southwest --> southwest --> a pool of sparkling water, step 180, desc: None
+large quadrangular cellar --> south --> passage fork to north, southeast and southwest, step 181, desc: None
+mad scientist's laboratory --> east --> large quadrangular cellar, step 182, desc: None
+high tunnel (to the west of lab) --> east --> mad scientist's laboratory, step 183, desc: None
+wooden plank in east/west tunnel --> east --> high tunnel (to the west of lab), step 184, desc: None
+high tunnel (east/west, alcove off to north) --> east --> wooden plank in east/west tunnel, step 185, desc: None
+high tunnel (east/west, path to west) --> east --> high tunnel (east/west, alcove off to north), step 186, desc: None
+secret cavern --> east --> high tunnel (east/west, path to west), step 187, desc: None
+beach --> east --> secret cavern, step 188, desc: None
+south of beach (a cove) --> north --> beach, step 189, desc: None
+beach --> south --> south of beach (a cove), step 191, desc: None
+secret cavern --> west --> beach, step 192, desc: None
+high tunnel (east/west, path to west) --> west --> secret cavern, step 193, desc: None
+high tunnel (east/west, alcove off to north) --> west --> high tunnel (east/west, path to west), step 194, desc: None
+wooden plank in east/west tunnel --> west --> high tunnel (east/west, alcove off to north), step 195, desc: None
+high tunnel (to the west of lab) --> west --> wooden plank in east/west tunnel, step 196, desc: None
+mad scientist's laboratory --> west --> high tunnel (to the west of lab), step 197, desc: None
+large quadrangular cellar --> west --> mad scientist's laboratory, step 198, desc: None
+complicated junction of passages --> west --> large quadrangular cellar, step 203, desc: None
+ante-room to the dungeons --> up --> complicated junction of passages, step 204, desc: None
+deepest and dankest dungeon --> up --> ante-room to the dungeons, step 205, desc: None
+ante-room to the dungeons --> down --> deepest and dankest dungeon, step 208, desc: None
+complicated junction of passages --> down --> ante-room to the dungeons, step 209, desc: None
+large quadrangular cellar --> east --> complicated junction of passages, step 210, desc: None
+cobwebbed passage --> southwest --> large quadrangular cellar, step 212, desc: None
+at the foot of hill --> down --> cobwebbed passage, step 214, desc: None
+at the top of the hill --> down --> at the foot of hill, step 215, desc: None
+at the foot of hill --> up --> at the top of the hill, step 217, desc: None
+cobwebbed passage --> up --> at the foot of hill, step 218, desc: None
+large quadrangular cellar --> northeast --> cobwebbed passage, step 219, desc: None
+complicated junction of passages --> west --> large quadrangular cellar, step 220, desc: None
+ante-room to the dungeons --> up --> complicated junction of passages, step 221, desc: None
+complicated junction of passages --> down --> ante-room to the dungeons, step 223, desc: None
+large quadrangular cellar --> east --> complicated junction of passages, step 224, desc: None
+cobwebbed passage --> southwest --> large quadrangular cellar, step 225, desc: None
+at the foot of hill --> down --> cobwebbed passage, step 226, desc: None
+at the top of the hill --> down --> at the foot of hill, step 227, desc: None
+at the foot of hill --> up --> at the top of the hill, step 228, desc: None
+cobwebbed passage --> up --> at the foot of hill, step 229, desc: None
+large quadrangular cellar --> northeast --> cobwebbed passage, step 230, desc: None
+mad scientist's laboratory --> east --> large quadrangular cellar, step 231, desc: None
+high tunnel (to the west of lab) --> east --> mad scientist's laboratory, step 232, desc: None
+wooden plank in east/west tunnel --> east --> high tunnel (to the west of lab), step 233, desc: None
+high tunnel (east/west, alcove off to north) --> east --> wooden plank in east/west tunnel, step 234, desc: None
+high tunnel (east/west, path to west) --> east --> high tunnel (east/west, alcove off to north), step 235, desc: None
+secret cavern --> east --> high tunnel (east/west, path to west), step 236, desc: None
+beach --> east --> secret cavern, step 237, desc: None
+south of beach (a cove) --> north --> beach, step 238, desc: None
+east/west causeway --> east --> south of beach (a cove), step 240, desc: None
+eastern tip of Cannibal Island --> east --> east/west causeway, step 241, desc: None
+centre of Cannibal Island --> east --> eastern tip of Cannibal Island, step 242, desc: None
+western tip of Cannibal Island --> east --> centre of Cannibal Island, step 244, desc: None
+northeastern tip of Cannibal Island --> west --> northwestern tip of Cannibal Island, step 246, desc: None
+eastern tip of Cannibal Island --> northwest --> northeastern tip of Cannibal Island, step 247, desc: None
+southeastern tip of Cannibal Island --> northeast --> eastern tip of Cannibal Island, step 248, desc: None
+southwestern tip of Cannibal Island --> east --> southeastern tip of Cannibal Island, step 251, desc: None
+southeastern tip of Cannibal Island --> west --> southwestern tip of Cannibal Island, step 252, desc: None
+eastern tip of Cannibal Island --> southwest --> southeastern tip of Cannibal Island, step 253, desc: None
+east/west causeway --> west --> eastern tip of Cannibal Island, step 255, desc: None
+south of beach (a cove) --> west --> east/west causeway, step 256, desc: None
+beach --> south --> south of beach (a cove), step 257, desc: None
+secret cavern --> west --> beach, step 258, desc: None
+high tunnel (east/west, path to west) --> west --> secret cavern, step 259, desc: None
+high tunnel (east/west, alcove off to north) --> west --> high tunnel (east/west, path to west), step 260, desc: None
+wooden plank in east/west tunnel --> west --> high tunnel (east/west, alcove off to north), step 261, desc: None
+high tunnel (to the west of lab) --> west --> wooden plank in east/west tunnel, step 262, desc: None
+mad scientist's laboratory --> west --> high tunnel (to the west of lab), step 263, desc: None
+large quadrangular cellar --> west --> mad scientist's laboratory, step 264, desc: None
+complicated junction of passages --> west --> large quadrangular cellar, step 268, desc: None
+ante-room to the dungeons --> up --> complicated junction of passages, step 270, desc: None
+complicated junction of passages --> down --> ante-room to the dungeons, step 272, desc: None
+large quadrangular cellar --> east --> complicated junction of passages, step 273, desc: None
+cobwebbed passage --> southwest --> large quadrangular cellar, step 274, desc: None
+at the foot of hill --> down --> cobwebbed passage, step 275, desc: None
+at the top of the hill --> down --> at the foot of hill, step 276, desc: None
+at the foot of hill --> up --> at the top of the hill, step 278, desc: None
+cobwebbed passage --> up --> at the foot of hill, step 279, desc: None
+large quadrangular cellar --> northeast --> cobwebbed passage, step 280, desc: None
+passage north/south (sideway to southeast and west) --> south --> large quadrangular cellar, step 282, desc: None
+passage north/south (damp passageway leading down) --> south --> passage north/south (sideway to southeast and west), step 283, desc: None
+in the keep --> south --> passage north/south (damp passageway leading down), step 284, desc: None
+passage north/south (damp passageway leading down) --> north --> in the keep, step 287, desc: None
+passage north/south (sideway to southeast and west) --> north --> passage north/south (damp passageway leading down), step 288, desc: None
+large quadrangular cellar --> north --> passage north/south (sideway to southeast and west), step 289, desc: None
+passage north/south (sideway to southeast and west) --> south --> large quadrangular cellar, step 291, desc: None
+passage north/south (damp passageway leading down) --> south --> passage north/south (sideway to southeast and west), step 292, desc: None
+in the keep --> south --> passage north/south (damp passageway leading down), step 293, desc: None
+passage north/south (damp passageway leading down) --> north --> in the keep, step 296, desc: None
+passage north/south (sideway to southeast and west) --> north --> passage north/south (damp passageway leading down), step 297, desc: None
+large quadrangular cellar --> north --> passage north/south (sideway to southeast and west), step 298, desc: None
+passage north/south (sideway to southeast and west) --> south --> large quadrangular cellar, step 300, desc: None
+passage north/south (damp passageway leading down) --> south --> passage north/south (sideway to southeast and west), step 301, desc: None
+in the keep --> south --> passage north/south (damp passageway leading down), step 302, desc: None

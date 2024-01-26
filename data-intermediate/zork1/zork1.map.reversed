@@ -1,8 +1,191 @@
-kitchen (obj203) --> east --> behind house (obj79), step 9, desc: None
-troll (obj102) --> south --> cellar (obj72), step 27, desc: None
-east-west passage (obj41) --> west --> troll (obj102), step 30, desc: None
-round (obj107) --> west --> east-west passage (obj41), step 31, desc: None
-engravings cave (obj96) --> northwest --> round (obj107), step 32, desc: None
-dome (obj133) --> west --> engravings cave (obj96), step 33, desc: None
-forest path (obj75) --> west --> forest (obj78), step 52, desc: None
-cellar (obj72) --> up --> living (obj193), step 62, desc: None
+Forest Path --> south --> North of House, step 2, desc: None
+Up a Tree --> down --> Forest Path, step 3, desc: None
+Forest Path --> up --> Up a Tree, step 5, desc: None
+North of House --> north --> Forest Path, step 6, desc: None
+Kitchen --> east --> Behind House, step 9, desc: None
+Living Room --> east --> Kitchen, step 12, desc: None
+Kitchen --> west --> Living Room, step 14, desc: None
+Attic --> down --> Kitchen, step 15, desc: None
+Kitchen --> up --> Attic, step 19, desc: None
+Living Room --> east --> Kitchen, step 21, desc: None
+Cellar --> up --> Living Room, step 25, desc: None
+The Troll Room --> south --> Cellar, step 27, desc: None
+East-West Passage --> west --> The Troll Room, step 30, desc: None
+Round Room --> west --> East-West Passage, step 31, desc: None
+Engravings Cave --> northwest --> Round Room, step 32, desc: None
+Dome Room --> west --> Engravings Cave, step 33, desc: None
+Altar --> north --> Temple, step 39, desc: None
+Temple --> south --> Altar, step 44, desc: None
+Egyptian Room --> west --> Temple, step 46, desc: None
+Temple --> east --> Egyptian Room, step 49, desc: None
+Altar --> north --> Temple, step 50, desc: None
+Forest Path --> west --> Forest, step 52, desc: None
+North of House --> north --> Forest Path, step 53, desc: None
+Kitchen --> east --> Behind House, step 55, desc: None
+Living Room --> east --> Kitchen, step 56, desc: None
+Cellar --> up --> Living Room, step 62, desc: None
+The Troll Room --> south --> Cellar, step 63, desc: None
+East-West Passage --> west --> The Troll Room, step 64, desc: None
+Round Room --> west --> East-West Passage, step 65, desc: None
+Engravings Cave --> northwest --> Round Room, step 66, desc: None
+Dome Room --> west --> Engravings Cave, step 67, desc: None
+Egyptian Room --> up --> Temple, step 70, desc: None
+Temple --> down --> Egyptian Room, step 72, desc: None
+Altar --> north --> Temple, step 73, desc: None
+Forest Path --> west --> Forest, step 75, desc: None
+North of House --> north --> Forest Path, step 76, desc: None
+Kitchen --> east --> Behind House, step 78, desc: None
+Living Room --> east --> Kitchen, step 79, desc: None
+Cellar --> up --> Living Room, step 85, desc: None
+East of Chasm --> north --> Cellar, step 86, desc: None
+Gallery --> west --> East of Chasm, step 87, desc: None
+East of Chasm --> east --> Gallery, step 89, desc: None
+Cellar --> south --> East of Chasm, step 90, desc: None
+The Troll Room --> south --> Cellar, step 91, desc: None
+East-West Passage --> west --> The Troll Room, step 92, desc: None
+Round Room --> west --> East-West Passage, step 93, desc: None
+Loud Room --> west --> Round Room, step 94, desc: None
+Deep Canyon --> down --> Loud Room, step 97, desc: None
+Dam Lobby --> south --> Dam, step 99, desc: None
+Dam --> north --> Dam Lobby, step 102, desc: None
+Loud Room --> up --> Deep Canyon, step 104, desc: None
+Round Room --> east --> Loud Room, step 105, desc: None
+Narrow Passage --> north --> Round Room, step 106, desc: None
+Mirror Room (south to Narrow Passage) --> north --> Narrow Passage, step 107, desc: None
+Entrance to Hades --> up --> Cave (staircase down to entrance to Hades), step 109, desc: None
+Land of the Dead --> north --> Entrance to Hades, step 118, desc: None
+Entrance to Hades --> south --> Land of the Dead, step 120, desc: None
+Cave (staircase down to entrance to Hades) --> down --> Entrance to Hades, step 121, desc: None
+Narrow Passage --> south --> Mirror Room (south to Narrow Passage), step 123, desc: None
+Round Room --> south --> Narrow Passage, step 124, desc: None
+East-West Passage --> east --> Round Room, step 125, desc: None
+The Troll Room --> east --> East-West Passage, step 126, desc: None
+Cellar --> north --> The Troll Room, step 127, desc: None
+Living Room --> down --> Cellar, step 128, desc: None
+Cellar --> up --> Living Room, step 131, desc: None
+The Troll Room --> south --> Cellar, step 132, desc: None
+Maze (133) --> east --> The Troll Room, step 133, desc: None
+Maze (140) --> west --> Maze (139), step 140, desc: None
+Cyclops Room --> northwest --> Maze (141), step 142, desc: None
+Strange Passage --> west --> Cyclops Room, step 144, desc: None
+Living Room --> west --> Strange Passage, step 145, desc: None
+Cellar --> up --> Living Room, step 148, desc: None
+The Troll Room --> south --> Cellar, step 149, desc: None
+East-West Passage --> west --> The Troll Room, step 150, desc: None
+Round Room --> west --> East-West Passage, step 151, desc: None
+North-South Passage --> south --> Round Room, step 152, desc: None
+Deep Canyon --> southwest --> North-South Passage, step 153, desc: None
+Dam Base --> up --> Dam, step 155, desc: None
+Dam --> down --> Dam Base, step 157, desc: None
+Dam Lobby --> south --> Dam, step 158, desc: None
+Maintenance Room --> south --> Dam Lobby, step 159, desc: None
+Dam Lobby --> north --> Maintenance Room, step 164, desc: None
+Dam --> north --> Dam Lobby, step 165, desc: None
+Reservoir South --> east --> Dam, step 168, desc: None
+Stream View --> east --> Reservoir South, step 169, desc: None
+Reservoir South --> west --> Stream View, step 170, desc: None
+Chasm --> northeast --> Reservoir South, step 171, desc: None
+North-South Passage --> north --> Chasm, step 172, desc: None
+Round Room --> north --> North-South Passage, step 173, desc: None
+East-West Passage --> east --> Round Room, step 174, desc: None
+The Troll Room --> east --> East-West Passage, step 175, desc: None
+Cellar --> north --> The Troll Room, step 176, desc: None
+Living Room --> down --> Cellar, step 177, desc: None
+Cellar --> up --> Living Room, step 180, desc: None
+The Troll Room --> south --> Cellar, step 181, desc: None
+East-West Passage --> west --> The Troll Room, step 182, desc: None
+Round Room --> west --> East-West Passage, step 183, desc: None
+Narrow Passage --> north --> Round Room, step 184, desc: None
+Mirror Room (south to Narrow Passage) --> north --> Narrow Passage, step 185, desc: None
+Atlantis Room --> up --> Cave (staircase down to Atlantis Room), step 188, desc: None
+Reservoir North --> north --> Atlantis Room, step 190, desc: None
+Reservoir --> north --> Reservoir North, step 192, desc: None
+Reservoir South --> north --> Reservoir, step 193, desc: None
+Chasm --> northeast --> Reservoir South, step 194, desc: None
+North-South Passage --> north --> Chasm, step 195, desc: None
+Round Room --> north --> North-South Passage, step 196, desc: None
+East-West Passage --> east --> Round Room, step 197, desc: None
+The Troll Room --> east --> East-West Passage, step 198, desc: None
+Cellar --> north --> The Troll Room, step 199, desc: None
+Living Room --> down --> Cellar, step 200, desc: None
+Cellar --> up --> Living Room, step 204, desc: None
+The Troll Room --> south --> Cellar, step 205, desc: None
+East-West Passage --> west --> The Troll Room, step 206, desc: None
+Round Room --> west --> East-West Passage, step 207, desc: None
+Loud Room --> west --> Round Room, step 208, desc: None
+Damp Cave --> west --> Loud Room, step 209, desc: None
+White Cliffs Beach --> west --> Damp Cave, step 210, desc: None
+Sandy Beach --> south --> Shore, step 226, desc: None
+Sandy Cave --> southwest --> Sandy Beach, step 231, desc: None
+Sandy Beach --> northeast --> Sandy Cave, step 238, desc: None
+Shore --> north --> Sandy Beach, step 239, desc: None
+Aragain Falls --> north --> Shore, step 240, desc: None
+On the Rainbow --> east --> Aragain Falls, step 242, desc: None
+End of Rainbow --> east --> On the Rainbow, step 243, desc: None
+Rocky Ledge --> down --> Canyon Bottom, step 246, desc: None
+Behind House --> east --> Clearing, step 249, desc: None
+Kitchen --> east --> Behind House, step 250, desc: None
+Living Room --> east --> Kitchen, step 251, desc: None
+Strange Passage --> east --> Living Room, step 258, desc: None
+Cyclops Room --> east --> Strange Passage, step 259, desc: None
+Treasure Room --> down --> Cyclops Room, step 260, desc: None
+Cyclops Room --> up --> Treasure Room, step 270, desc: None
+Strange Passage --> west --> Cyclops Room, step 271, desc: None
+Living Room --> west --> Strange Passage, step 272, desc: None
+Kitchen --> west --> Living Room, step 277, desc: None
+Behind House --> west --> Kitchen, step 278, desc: None
+Forest Path --> south --> North of House, step 280, desc: None
+Forest (dimly lit) --> west --> Forest Path, step 281, desc: None
+Forest Path --> east --> Forest (dimly lit), step 284, desc: None
+North of House --> north --> Forest Path, step 285, desc: None
+Kitchen --> east --> Behind House, step 287, desc: None
+Living Room --> east --> Kitchen, step 288, desc: None
+Cellar --> up --> Living Room, step 293, desc: None
+The Troll Room --> south --> Cellar, step 294, desc: None
+East-West Passage --> west --> The Troll Room, step 295, desc: None
+Round Room --> west --> East-West Passage, step 296, desc: None
+Narrow Passage --> north --> Round Room, step 297, desc: None
+Mirror Room (south to Narrow Passage) --> north --> Narrow Passage, step 298, desc: None
+Cold Passage --> south --> Mirror Room (another), step 300, desc: None
+Slide Room --> east --> Cold Passage, step 301, desc: None
+Mine Entrance --> south --> Slide Room, step 302, desc: None
+Squeaky Room --> east --> Mine Entrance, step 303, desc: None
+Bat Room --> south --> Squeaky Room, step 304, desc: None
+Shaft Room --> west --> Bat Room, step 305, desc: None
+Smelly Room --> south --> Shaft Room, step 309, desc: None
+Gas Room --> up --> Smelly Room, step 310, desc: None
+Ladder Top --> up --> Coal Mine (314), step 315, desc: None
+Ladder Bottom --> up --> Ladder Top, step 316, desc: None
+Dead End --> north --> Ladder Bottom, step 317, desc: None
+Ladder Bottom --> south --> Dead End, step 319, desc: None
+Ladder Top --> down --> Ladder Bottom, step 320, desc: None
+Coal Mine (314) --> down --> Ladder Top, step 321, desc: None
+Smelly Room --> down --> Gas Room, step 326, desc: None
+Shaft Room --> north --> Smelly Room, step 327, desc: None
+Smelly Room --> south --> Shaft Room, step 330, desc: None
+Gas Room --> up --> Smelly Room, step 331, desc: None
+Ladder Top --> up --> Coal Mine (314), step 336, desc: None
+Ladder Bottom --> up --> Ladder Top, step 337, desc: None
+Timber Room --> east --> Ladder Bottom, step 338, desc: None
+Drafty Room --> east --> Timber Room, step 340, desc: None
+Machine Room --> north --> Drafty Room, step 342, desc: None
+Drafty Room --> south --> Machine Room, step 349, desc: None
+Timber Room --> west --> Drafty Room, step 353, desc: None
+Ladder Bottom --> west --> Timber Room, step 356, desc: None
+Ladder Top --> down --> Ladder Bottom, step 357, desc: None
+Coal Mine (314) --> down --> Ladder Top, step 358, desc: None
+Smelly Room --> down --> Gas Room, step 364, desc: None
+Shaft Room --> north --> Smelly Room, step 365, desc: None
+Bat Room --> east --> Shaft Room, step 368, desc: None
+Squeaky Room --> north --> Bat Room, step 370, desc: None
+Mine Entrance --> west --> Squeaky Room, step 371, desc: None
+Slide Room --> north --> Mine Entrance, step 372, desc: None
+Living Room --> down --> Cellar, step 375, desc: None
+Strange Passage --> east --> Living Room, step 380, desc: None
+Cyclops Room --> east --> Strange Passage, step 381, desc: None
+Treasure Room --> down --> Cyclops Room, step 382, desc: None
+Cyclops Room --> up --> Treasure Room, step 384, desc: None
+Strange Passage --> west --> Cyclops Room, step 385, desc: None
+Living Room --> west --> Strange Passage, step 386, desc: None
+Kitchen --> west --> Living Room, step 391, desc: None
+Behind House --> west --> Kitchen, step 392, desc: None

@@ -1,8 +1,124 @@
-basalt bowl (obj134) --> up --> place (obj152), step 34, desc: None
-computer center (obj65) --> up --> second floor (obj137), step 52, desc: None
-basement (obj27) --> up --> computer center (obj65), step 53, desc: None
-aero basement (obj158) --> east --> basement (obj27), step 63, desc: None
-stairway (obj35) --> east --> aero basement (obj158), step 64, desc: None
-aero lobby (obj136) --> down --> stairway (obj35), step 65, desc: None
-infinite corridor (obj218) --> north --> aero lobby (obj136), step 66, desc: None
-infinite corridor (obj214) --> west --> infinite corridor (obj218), step 68, desc: None
+Second Floor --> north --> Terminal Room, step 2, desc: None
+Kitchen --> east --> Second Floor, step 3, desc: None
+Second Floor --> west --> Kitchen, step 21, desc: None
+Terminal Room --> south --> Second Floor, step 22, desc: None
+Basalt Bowl --> up --> Place, step 34, desc: None
+Second Floor --> north --> Terminal Room, step 43, desc: None
+Elevator --> north --> Second Floor, step 47, desc: None
+Second Floor --> south --> Elevator, step 51, desc: None
+Computer Center --> up --> Second Floor, step 52, desc: None
+Basement --> up --> Computer Center, step 53, desc: None
+Temporary Basement --> west --> Basement, step 54, desc: None
+Temporary Lab --> down --> Temporary Basement, step 57, desc: None
+Temporary Basement --> up --> Temporary Lab, step 60, desc: None
+Basement --> east --> Temporary Basement, step 62, desc: None
+Aero Basement --> east --> Basement, step 63, desc: None
+Stairway --> east --> Aero Basement, step 64, desc: None
+Aero Lobby --> down --> Stairway, step 65, desc: None
+Infinite Corridor (west end of east/west corridor) --> north --> Aero Lobby, step 66, desc: None
+Infinite Corridor (middle of east/west corridor) --> west --> Infinite Corridor (west end of east/west corridor), step 68, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> west --> Infinite Corridor (middle of east/west corridor), step 72, desc: None
+Great Dome --> down --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 73, desc: None
+On the Great Dome --> down --> Roof of Great Dome, step 78, desc: None
+Roof of Great Dome --> up --> On the Great Dome, step 82, desc: None
+Great Dome --> up --> Top of Dome, step 84, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> up --> Great Dome, step 85, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> west --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 86, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> east --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 89, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> west --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 94, desc: None
+Infinite Corridor (east end of east/west corridor) --> west --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 95, desc: None
+Fruits and Nuts --> south --> Infinite Corridor (east end of east/west corridor), step 96, desc: None
+Cluttered Passage --> up --> Fruits and Nuts, step 97, desc: None
+Brown Basement --> northwest --> Cluttered Passage, step 98, desc: None
+Brown Building --> down --> Brown Basement, step 101, desc: None
+Top Floor --> down --> Brown Building, step 102, desc: None
+Inside Dome --> down --> Skyscraper Roof, step 106, desc: None
+Skyscraper Roof --> up --> Inside Dome, step 107, desc: None
+Inside Dome --> down --> Skyscraper Roof, step 109, desc: None
+Skyscraper Roof --> up --> Inside Dome, step 113, desc: None
+Brown Building --> up --> Top Floor, step 115, desc: None
+Small Courtyard --> north --> Brown Building, step 116, desc: None
+Brown Building --> south --> Small Courtyard, step 118, desc: None
+Brown Basement --> up --> Brown Building, step 119, desc: None
+Cluttered Passage --> southeast --> Brown Basement, step 120, desc: None
+Fruits and Nuts --> down --> Cluttered Passage, step 121, desc: None
+Infinite Corridor (east end of east/west corridor) --> north --> Fruits and Nuts, step 122, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> east --> Infinite Corridor (east end of east/west corridor), step 123, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> east --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 124, desc: None
+Infinite Corridor (middle of east/west corridor) --> east --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 125, desc: None
+Infinite Corridor (west end of east/west corridor) --> east --> Infinite Corridor (middle of east/west corridor), step 126, desc: None
+Aero Lobby --> south --> Infinite Corridor (west end of east/west corridor), step 127, desc: None
+Stairway --> up --> Aero Lobby, step 128, desc: None
+Aero Basement --> west --> Stairway, step 129, desc: None
+Brick Tunnel --> up --> Ancient Storage, step 143, desc: None
+Renovated Cave --> south --> Brick Tunnel, step 144, desc: None
+Before the Altar --> up --> Renovated Cave, step 145, desc: None
+Renovated Cave --> down --> Before the Altar, step 147, desc: None
+Brick Tunnel --> north --> Renovated Cave, step 148, desc: None
+Ancient Storage --> down --> Brick Tunnel, step 149, desc: None
+Dead Storage --> east --> Ancient Storage, step 150, desc: None
+Temporary Basement --> east --> Dead Storage, step 151, desc: None
+Basement --> east --> Temporary Basement, step 153, desc: None
+Aero Basement --> east --> Basement, step 154, desc: None
+Stairway --> east --> Aero Basement, step 155, desc: None
+Aero Lobby --> down --> Stairway, step 156, desc: None
+Infinite Corridor (west end of east/west corridor) --> north --> Aero Lobby, step 157, desc: None
+Infinite Corridor (middle of east/west corridor) --> west --> Infinite Corridor (west end of east/west corridor), step 158, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> west --> Infinite Corridor (middle of east/west corridor), step 159, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> west --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 160, desc: None
+Infinite Corridor (east end of east/west corridor) --> west --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 161, desc: None
+Chemistry Building --> north --> Infinite Corridor (east end of east/west corridor), step 162, desc: None
+Cinderblock Tunnel --> up --> Lab, step 173, desc: None
+Lab --> down --> Cinderblock Tunnel, step 176, desc: None
+Department of Alchemy --> south --> Lab, step 184, desc: None
+Chemistry Building --> south --> Department of Alchemy, step 186, desc: None
+Infinite Corridor (east end of east/west corridor) --> south --> Chemistry Building, step 188, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> east --> Infinite Corridor (east end of east/west corridor), step 189, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> east --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 190, desc: None
+Infinite Corridor (middle of east/west corridor) --> east --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 191, desc: None
+Infinite Corridor (west end of east/west corridor) --> east --> Infinite Corridor (middle of east/west corridor), step 192, desc: None
+Aero Lobby --> south --> Infinite Corridor (west end of east/west corridor), step 193, desc: None
+Infinite Corridor (west end of east/west corridor) --> north --> Aero Lobby, step 194, desc: None
+Infinite Corridor (middle of east/west corridor) --> west --> Infinite Corridor (west end of east/west corridor), step 195, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> west --> Infinite Corridor (middle of east/west corridor), step 196, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> west --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 197, desc: None
+Infinite Corridor (east end of east/west corridor) --> west --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 198, desc: None
+Infinite Corridor (east/west corridor, glass-fronted emergency cabinet) --> east --> Infinite Corridor (east end of east/west corridor), step 199, desc: None
+Infinite Corridor (east/west corridor, a wall socket on one wall) --> east --> Infinite Corridor (east/west corridor, glass-fronted emergency cabinet), step 200, desc: None
+Infinite Corridor (middle of east/west corridor) --> east --> Infinite Corridor (east/west corridor, a wall socket on one wall), step 201, desc: None
+Infinite Corridor (west end of east/west corridor) --> east --> Infinite Corridor (middle of east/west corridor), step 202, desc: None
+Aero Lobby --> south --> Infinite Corridor (west end of east/west corridor), step 203, desc: None
+Stairway --> up --> Aero Lobby, step 204, desc: None
+Subbasement --> up --> Stairway, step 207, desc: None
+Tomb --> southeast --> Subbasement, step 209, desc: None
+Steam Tunnel (metal ladder leading up) --> up --> Tomb, step 214, desc: None
+Steam Tunnel (pressure release valve) --> west --> Steam Tunnel (metal ladder leading up), step 215, desc: None
+Steam Tunnel (narrow, archaic, mostly bricks) --> west --> Steam Tunnel (pressure release valve), step 222, desc: None
+Steam Tunnel (coaxial cable disappearing upwards) --> west --> Steam Tunnel (narrow, archaic, mostly bricks), step 223, desc: None
+Steam Tunnel (narrow, archaic, mostly bricks) --> east --> Steam Tunnel (coaxial cable disappearing upwards), step 226, desc: None
+Steam Tunnel (pressure release valve) --> east --> Steam Tunnel (narrow, archaic, mostly bricks), step 227, desc: None
+Steam Tunnel (metal ladder leading up) --> east --> Steam Tunnel (pressure release valve), step 228, desc: None
+Tomb --> down --> Steam Tunnel (metal ladder leading up), step 229, desc: None
+Subbasement --> northwest --> Tomb, step 232, desc: None
+Stairway --> down --> Subbasement, step 234, desc: None
+Aero Basement --> west --> Stairway, step 235, desc: None
+Basement --> west --> Aero Basement, step 236, desc: None
+Computer Center --> down --> Basement, step 237, desc: None
+Basement --> up --> Computer Center, step 239, desc: None
+Concrete Box --> up --> Basement, step 243, desc: None
+Basement --> down --> Concrete Box, step 247, desc: None
+Computer Center --> down --> Basement, step 250, desc: None
+Second Floor --> down --> Computer Center, step 251, desc: None
+Computer Center --> up --> Second Floor, step 253, desc: None
+Basement --> up --> Computer Center, step 254, desc: None
+Concrete Box --> up --> Basement, step 259, desc: None
+Steam Tunnel (coaxial cable disappearing upwards) --> south --> Concrete Box, step 262, desc: None
+Steam Tunnel (narrow, archaic, mostly bricks) --> east --> Steam Tunnel (coaxial cable disappearing upwards), step 263, desc: None
+Steam Tunnel (pressure release valve) --> east --> Steam Tunnel (narrow, archaic, mostly bricks), step 264, desc: None
+Steam Tunnel (metal ladder leading up) --> east --> Steam Tunnel (pressure release valve), step 265, desc: None
+Steam Tunnel (a ladder in the east) --> east --> Steam Tunnel (metal ladder leading up), step 266, desc: None
+Steam Tunnel Entrance --> east --> Steam Tunnel (a ladder in the east), step 267, desc: None
+Large Chamber --> up --> Muddy Tunnel, step 269, desc: None
+Wet Tunnel (hand pointing north) --> up --> Large Chamber, step 271, desc: None
+Wet Tunnel (hand pointing down 2) --> north --> Wet Tunnel (hand pointing south 2), step 275, desc: None
+Wet Tunnel (south wall with moldy slime) --> up --> Wet Tunnel (hand pointing down 2), step 276, desc: None
