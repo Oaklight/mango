@@ -17,45 +17,6 @@ from gen_moves.utils import (
     opposite_direction_dict,
 )
 
-# post issues at jericho repo: https://github.com/microsoft/jericho/issues/64
-TRINITY_STUCK_STEPS = (8, 13, 23, 29, 33, 35, 39, 43, 47, 49, 58, 59, 60, 65, 68, 69)
-TRINITY_STUCK_LOC_ID = (
-    79,
-    354,
-    144,
-    355,
-    531,
-    179,
-    371,
-    121,
-    438,
-    576,
-    323,
-    319,
-    575,
-    80,
-    316,
-)
-SHERLOCK_STUCK_LOC_ID = (
-    111,
-    3,
-    37,
-    33,
-    93,
-    71,
-    5,
-    73,
-    1,
-    85,
-    295,
-    52,
-    57,
-    21,
-    69,
-    27,
-    12,
-)
-
 
 def load_forward_map_nodes(human_map_path):
     assert os.path.exists(human_map_path)
@@ -120,9 +81,7 @@ def gen_move_reversed(args):
     print(f"Game: {args.game_name}, Max steps: {args.max_steps}")
 
     # load all necessary files
-    human_map_file_path = (
-        f"{args.output_dir}/{args.game_name_raw}.map.human"
-    )
+    human_map_file_path = f"{args.output_dir}/{args.game_name_raw}.map.human"
     human_forward_edges = load_forward_map_nodes(human_map_file_path)
     (
         potential_reverse_directional_edges,
@@ -136,6 +95,18 @@ def gen_move_reversed(args):
         """
         for each step at needs_jericho_check, walk along walkthrough actions until step_idx, then take a reverse attempt
         """
+
+        # I realize the issue seems to be env of Sherlock and Trinity can't be `reset` multiple times. But we can always recreate the env instead of env.reset()
+        # post issues at jericho repo: https://github.com/microsoft/jericho/issues/64
+        skip_conditions = [
+            args.game_name == "trinity",
+            args.game_name == "sherlock",
+        ]
+        if any(skip_conditions):
+            print(
+                f"RELOADING | reloading jericho environment for {args.game_name} @{step_num}"
+            )
+            env = load_env(args)
 
         step_idx = step_num - 1
 
@@ -175,11 +146,6 @@ def gen_move_reversed(args):
 
         print(f"@{step_num} | [{should_fallback_code}] --> {act} --> [{arrive_code}]")
 
-        # if game_name == "trinity" and location_now_id in TRINITY_STUCK_LOC_ID:
-        #     continue
-        # if game_name == "sherlock" and location_now_id in SHERLOCK_STUCK_LOC_ID:
-        #     continue
-
         # attempt to reverse the action
         # check if reverse action is a valid option?
         valid_act_reverts = [unabbreviate(va) for va in env.get_valid_actions()]
@@ -218,7 +184,8 @@ def gen_move_reversed(args):
 
     # add to confirmed_reverse_directional_edges
     confirmed_reverse_directional_edges = []
-    for valid_step_num in confirm_jericho_valid:
+    # must be sorted, otherwise edge will not arrange by step_num
+    for valid_step_num in sorted(confirm_jericho_valid):
         (src_anno, act_revert, dst_anno) = potential_reverse_directional_edges[
             valid_step_num
         ]
@@ -283,6 +250,4 @@ if __name__ == "__main__":
     print(args.game_name)
     print("++++++++++++++++++++++++++++++++++")
 
-    # if args.game_name in ["sherlock", "trinity"]:
-    #     exit(-1)
     gen_move_reversed(args)
