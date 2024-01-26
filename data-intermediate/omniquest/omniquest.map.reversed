@@ -1,17 +1,35 @@
-small path (obj34) --> west --> large clearing (obj28), step 2, desc: None
-canyon entrance (obj41) --> west --> small path (obj34), step 14, desc: None
-endless beach (obj55) --> southeast --> canyon entrance (obj41), step 20, desc: None
-ocean (obj61) --> south --> endless beach (obj55), step 22, desc: None
-giant cavern (obj74) --> northwest --> cylindrical room (obj69), step 30, desc: None
-small cavern (obj77) --> southwest --> giant cavern (obj74), step 31, desc: None
-twisting passageway (obj89) --> northwest --> small cavern (obj77), step 32, desc: None
-east path (obj102) --> northwest --> intersection (obj99), step 41, desc: None
-south lake (obj107) --> northeast --> east path (obj102), step 45, desc: None
-chilly corridor (obj108) --> northwest --> south lake (obj107), step 46, desc: None
-rice room (obj113) --> northeast --> chilly corridor (obj108), step 53, desc: None
-musty corridor (obj111) --> south --> rice room (obj113), step 56, desc: None
-south lake (obj107) --> south --> musty corridor (obj111), step 57, desc: None
-west path (obj106) --> southeast --> south lake (obj107), step 58, desc: None
-intersection (obj99) --> southwest --> west path (obj106), step 67, desc: None
-slimy passageway (obj86) --> southeast --> intersection (obj99), step 68, desc: None
-giant cavern (obj74) --> south --> slimy passageway (obj86), step 69, desc: None
+Small Path --> west --> Large Clearing, step 2, desc: None
+Fork in Path --> north --> Small Path, step 3, desc: None
+End of Path(an exit to the northeast) --> northeast --> Fork in Path, step 4, desc: None
+Fork in Path --> southwest --> End of Path(an exit to the northeast), step 6, desc: None
+End of Path(an exit to the northeast and a raincoat here) --> northwest --> Fork in Path, step 7, desc: None
+Fork in Path --> southeast --> End of Path(an exit to the northeast and a raincoat here), step 12, desc: None
+Small Path --> south --> Fork in Path, step 13, desc: None
+Canyon Entrance --> west --> Small Path, step 14, desc: None
+Canyon Path --> west --> Canyon Entrance, step 15, desc: None
+Small Clearing --> south --> Canyon Path, step 16, desc: None
+Canyon Path --> north --> Small Clearing, step 18, desc: None
+Canyon Entrance --> east --> Canyon Path, step 19, desc: None
+Ocean --> south --> Endless Beach, step 22, desc: None
+Sandy Beach --> south --> Island Coast, step 24, desc: None
+Island Coast --> north --> Sandy Beach, step 26, desc: None
+Small Cavern --> southwest --> Giant Cavern, step 31, desc: None
+Blue Ridge Mountain Sports --> south --> Twisting Passageway, step 34, desc: None
+Dirt Cave --> west --> Blue Ridge Mountain Sports, step 36, desc: None
+Blue Ridge Mountain Sports --> east --> Dirt Cave, step 38, desc: None
+Twisting Passageway --> north --> Blue Ridge Mountain Sports, step 39, desc: None
+Ice Room --> northwest --> Chilly Corridor, step 48, desc: None
+Chilly Corridor --> southeast --> Ice Room, step 52, desc: None
+Musty Corridor --> south --> Rice Room, step 56, desc: None
+South Lake --> south --> Musty Corridor, step 57, desc: None
+Guardian Chamber --> east --> West Path, step 59, desc: None
+Jeweled Room --> east --> Guardian Chamber, step 61, desc: None
+Guardian Chamber --> west --> Jeweled Room, step 65, desc: None
+West Path --> west --> Guardian Chamber, step 66, desc: None
+Giant Cavern --> south --> Slimy Passageway, step 69, desc: None
+Small Cavern --> southwest --> Giant Cavern, step 70, desc: None
+Organ Room --> south --> Small Cavern, step 71, desc: None
+Small Cavern --> north --> Organ Room, step 73, desc: None
+Giant Cavern --> northeast --> Small Cavern, step 74, desc: None
+Cold Passage --> east --> Giant Cavern, step 75, desc: None
+Ledge --> east --> Cold Passage, step 76, desc: None

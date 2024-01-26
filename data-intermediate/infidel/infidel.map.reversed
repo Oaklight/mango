@@ -1,19 +1,102 @@
-outside supply tent (obj68) --> northeast --> outside tent (obj72), step 3, desc: None
-outside work tent (obj64) --> northwest --> outside supply tent (obj68), step 8, desc: None
-fire pit (obj78) --> south --> outside work tent (obj64), step 13, desc: None
-outside tent (obj72) --> south --> fire pit (obj78), step 15, desc: None
-northern path (obj70) --> west --> outside tent (obj72), step 37, desc: None
-desert (obj58) --> northwest --> northern path (obj70), step 38, desc: None
-desert (obj54) --> northwest --> desert (obj58), step 39, desc: None
-ra (obj206) --> up --> desert (obj54), step 47, desc: None
-south landing (obj123) --> north --> ra (obj206), step 60, desc: None
-narrow (obj122) --> north --> south landing (obj123), step 61, desc: None
-narrow (obj121) --> southwest --> narrow (obj122), step 62, desc: None
-barge (obj120) --> southeast --> narrow (obj121), step 63, desc: None
-barge (obj117) --> east --> barge (obj120), step 64, desc: None
-barge (obj116) --> south --> barge (obj117), step 65, desc: None
-barge (obj115) --> west --> barge (obj116), step 66, desc: None
-steep passageway (obj20) --> south --> barge (obj115), step 67, desc: None
-steep passageway (obj19) --> south --> steep passageway (obj20), step 68, desc: None
-steep passageway (obj18) --> south --> steep passageway (obj19), step 69, desc: None
-temple (obj17) --> south --> steep passageway (obj18), step 70, desc: None
+Outside Your Tent --> north --> Your Tent, step 2, desc: None
+Outside Supply Tent --> northeast --> Outside Your Tent, step 3, desc: None
+Supply Tent --> east --> Outside Supply Tent, step 4, desc: None
+Outside Supply Tent --> west --> Supply Tent, step 7, desc: None
+Outside Work Tent --> northwest --> Outside Supply Tent, step 8, desc: None
+Work Tent --> north --> Outside Work Tent, step 9, desc: None
+Outside Work Tent --> south --> Work Tent, step 12, desc: None
+Fire Pit --> south --> Outside Work Tent, step 13, desc: None
+Outside Your Tent --> south --> Fire Pit, step 15, desc: None
+Your Tent --> south --> Outside Your Tent, step 16, desc: None
+Outside Your Tent --> north --> Your Tent, step 24, desc: None
+Near the Nile --> east --> Outside Your Tent, step 25, desc: None
+River Bank --> east --> Near the Nile, step 26, desc: None
+Near the Nile --> west --> River Bank, step 35, desc: None
+Outside Your Tent --> west --> Near the Nile, step 36, desc: None
+Northern Path --> west --> Outside Your Tent, step 37, desc: None
+Desert (within sight of encampment) --> northwest --> Northern Path, step 38, desc: None
+Desert (out of sight of encampment) --> northwest --> Desert (within sight of encampment), step 39, desc: None
+Chamber of Ra --> up --> Desert (out of sight of encampment), step 47, desc: None
+South Landing --> north --> Chamber of Ra, step 60, desc: None
+the entrance of a narrow hallway --> north --> South Landing, step 61, desc: None
+at a bend in the Narrow Hallway --> southwest --> the entrance of a narrow hallway, step 62, desc: None
+Barge Chamber (southern section) --> southeast --> at a bend in the Narrow Hallway, step 63, desc: None
+Barge Chamber (southwest corner) --> east --> Barge Chamber (southern section), step 64, desc: None
+Barge Chamber (northwest corner) --> south --> Barge Chamber (southwest corner), step 65, desc: None
+Barge Chamber (north to back side of barge) --> west --> Barge Chamber (northwest corner), step 66, desc: None
+Steep Passageway（the top of a steep) --> south --> Barge Chamber (north to back side of barge), step 67, desc: None
+Steep Passageway(midway down) --> south --> Steep Passageway（the top of a steep), step 68, desc: None
+Steep Passageway(the north end of a descending passageway) --> south --> Steep Passageway(midway down), step 69, desc: None
+Temple Chamber --> south --> Steep Passageway(the north end of a descending passageway), step 70, desc: None
+Inner Chamber --> south --> Temple Chamber, step 71, desc: None
+Golden Room --> east --> Inner Chamber, step 72, desc: None
+Golden Alcove --> north --> Golden Room, step 73, desc: None
+Golden Room --> south --> Golden Alcove, step 75, desc: None
+Inner Chamber --> west --> Golden Room, step 76, desc: None
+Silver Room --> west --> Inner Chamber, step 77, desc: None
+Silver Alcove --> north --> Silver Room, step 78, desc: None
+Silver Room --> south --> Silver Alcove, step 80, desc: None
+Inner Chamber --> east --> Silver Room, step 81, desc: None
+Temple Chamber --> north --> Inner Chamber, step 82, desc: None
+Steep Passageway(the north end of a descending passageway) --> north --> Temple Chamber, step 83, desc: None
+Steep Passageway(midway down) --> north --> Steep Passageway(the north end of a descending passageway), step 84, desc: None
+Steep Passageway（the top of a steep) --> north --> Steep Passageway(midway down), step 85, desc: None
+Barge Chamber (north to back side of barge) --> north --> Steep Passageway（the top of a steep), step 86, desc: None
+Barge Chamber (northwest corner) --> east --> Barge Chamber (north to back side of barge), step 87, desc: None
+Barge Chamber (southwest corner) --> north --> Barge Chamber (northwest corner), step 88, desc: None
+Barge Chamber (southern section) --> west --> Barge Chamber (southwest corner), step 89, desc: None
+Center of Barge --> south --> Barge Chamber (southern section), step 90, desc: None
+Fore Cabin --> east --> Center of Barge, step 91, desc: None
+Center of Barge --> west --> Fore Cabin, step 93, desc: None
+Aft Cabin --> west --> Center of Barge, step 94, desc: None
+Below Deck --> up --> Aft Cabin, step 95, desc: None
+West End of Hold --> east --> Below Deck, step 96, desc: None
+Below Deck --> west --> West End of Hold, step 105, desc: None
+Aft Cabin --> down --> Below Deck, step 106, desc: None
+Center of Barge --> east --> Aft Cabin, step 107, desc: None
+Barge Chamber (southern section) --> north --> Center of Barge, step 109, desc: None
+at a bend in the Narrow Hallway --> northwest --> Barge Chamber (southern section), step 110, desc: None
+the entrance of a narrow hallway --> northeast --> at a bend in the Narrow Hallway, step 111, desc: None
+South Landing --> south --> the entrance of a narrow hallway, step 112, desc: None
+Chamber of Ra --> south --> South Landing, step 113, desc: None
+Circular Room --> southwest --> Southwest Hallway, step 126, desc: None
+Northeast Hallway --> southwest --> Circular Room, step 127, desc: None
+Room of Selkis --> southwest --> Northeast Hallway, step 128, desc: None
+Northeast Hallway --> northeast --> Room of Selkis, step 131, desc: None
+Circular Room --> northeast --> Northeast Hallway, step 132, desc: None
+Southwest Hallway --> northeast --> Circular Room, step 134, desc: None
+Circular Room --> northeast --> Northeast Hallway, step 142, desc: None
+Southwest Hallway --> northeast --> Circular Room, step 143, desc: None
+Room of Isis --> northeast --> Southwest Hallway, step 144, desc: None
+Southwest Hallway --> southwest --> Room of Isis, step 147, desc: None
+Circular Room --> southwest --> Southwest Hallway, step 148, desc: None
+Northeast Hallway --> southwest --> Circular Room, step 149, desc: None
+Circular Room --> northwest --> Northwest Hallway, step 156, desc: None
+Southeast Hallway --> northwest --> Circular Room, step 157, desc: None
+Room of Neith --> northwest --> Southeast Hallway, step 158, desc: None
+Southeast Hallway --> southeast --> Room of Neith, step 161, desc: None
+Circular Room --> southeast --> Southeast Hallway, step 162, desc: None
+Northwest Hallway --> southeast --> Circular Room, step 163, desc: None
+Circular Room --> southeast --> Southeast Hallway, step 170, desc: None
+Northwest Hallway --> southeast --> Circular Room, step 171, desc: None
+Room of Nephthys --> southeast --> Northwest Hallway, step 172, desc: None
+Northwest Hallway --> northwest --> Room of Nephthys, step 175, desc: None
+Circular Room --> northwest --> Northwest Hallway, step 176, desc: None
+Southeast Hallway --> northwest --> Circular Room, step 177, desc: None
+Circular Room --> southeast --> Southeast Hallway, step 180, desc: None
+Cube (to north, east) --> north --> Cube (to north, south, east, west), step 183, desc: None
+Cube (to north, west) --> west --> Cube (to north, east), step 184, desc: None
+Turning Passage --> west --> Cube (to north, west), step 193, desc: None
+Top of Stairway --> south --> Turning Passage, step 194, desc: None
+Narrow Passageway (east end) --> east --> Bottom of Stairs, step 197, desc: None
+Narrow Passageway (middle) --> east --> Narrow Passageway (east end), step 198, desc: None
+Narrow Passageway (west end) --> east --> Narrow Passageway (middle), step 199, desc: None
+Antechamber (west wall paint marriage of Isis and Osiris) --> east --> Narrow Passageway (west end), step 204, desc: None
+Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra) --> north --> Antechamber (west wall paint marriage of Isis and Osiris), step 206, desc: None
+Annex --> east --> Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra), step 209, desc: None
+Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra) --> west --> Annex, step 225, desc: None
+Antechamber (west wall paint marriage of Isis and Osiris) --> south --> Antechamber (south wall paint baskets of lotus whose petals framing Amun Ra), step 227, desc: None
+Antechamber (north end) --> south --> Antechamber (west wall paint marriage of Isis and Osiris), step 228, desc: None
+Burial Chamber --> south --> Antechamber (north end), step 232, desc: None
+Treasury --> west --> Burial Chamber, step 234, desc: None
+Burial Chamber --> east --> Treasury, step 244, desc: None

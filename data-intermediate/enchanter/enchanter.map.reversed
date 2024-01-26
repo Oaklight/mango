@@ -1,13 +1,121 @@
-trail (obj96) --> southwest --> outside shack (obj227), step 8, desc: None
-trail head (obj102) --> northwest --> trail (obj96), step 9, desc: None
-eastern fork (obj189) --> northwest --> trail head (obj102), step 13, desc: None
-western road (obj173) --> west --> eastern fork (obj189), step 21, desc: None
-outside gate (obj101) --> west --> western road (obj173), step 22, desc: None
-inside gate (obj243) --> west --> outside gate (obj101), step 25, desc: None
-pebbled path (obj219) --> south --> inside gate (obj243), step 26, desc: None
-tower (obj225) --> south --> pebbled path (obj219), step 28, desc: None
-hall mirrors one (obj172) --> west --> tower (obj225), step 40, desc: None
-hall mirrors two (obj125) --> west --> hall mirrors one (obj172), step 41, desc: None
-hall mirrors three (obj70) --> west --> hall mirrors two (obj125), step 42, desc: None
-hall mirrors four (obj229) --> west --> hall mirrors three (obj70), step 43, desc: None
-north gate (obj64) --> west --> hall mirrors four (obj229), step 44, desc: None
+Shady Brook --> southwest --> Trail Head, step 10, desc: None
+Trail Head --> northeast --> Shady Brook, step 12, desc: None
+Eastern Fork --> northwest --> Trail Head, step 13, desc: None
+Village Outskirts --> northeast --> Eastern Fork, step 14, desc: None
+Deserted Village --> northeast --> Village Outskirts, step 15, desc: None
+Village Outskirts --> southwest --> Deserted Village, step 19, desc: None
+Eastern Fork --> southwest --> Village Outskirts, step 20, desc: None
+Western Road --> west --> Eastern Fork, step 21, desc: None
+Outside Gate --> west --> Western Road, step 22, desc: None
+Inside Gate --> west --> Outside Gate, step 25, desc: None
+Pebbled Path --> south --> Inside Gate, step 26, desc: None
+Tower --> south --> Pebbled Path, step 28, desc: None
+Jewel Room --> down --> Tower, step 29, desc: None
+Tower --> up --> Jewel Room, step 39, desc: None
+Hall of Mirrors One --> west --> Tower, step 40, desc: None
+Hall of Mirrors Two --> west --> Hall of Mirrors One, step 41, desc: None
+Hall of Mirrors Three --> west --> Hall of Mirrors Two, step 42, desc: None
+Hall of Mirrors Four --> west --> Hall of Mirrors Three, step 43, desc: None
+North Gate --> west --> Hall of Mirrors Four, step 44, desc: None
+Forest --> south --> North Gate, step 47, desc: None
+Swamp --> west --> Forest, step 55, desc: None
+Forest --> east --> Swamp, step 61, desc: None
+North Gate --> north --> Forest, step 63, desc: None
+Library --> north --> North Gate, step 64, desc: None
+North Gate --> south --> Library, step 69, desc: None
+Hall of Mirrors Four --> east --> North Gate, step 75, desc: None
+Hall of Mirrors Three --> east --> Hall of Mirrors Four, step 76, desc: None
+Hall of Mirrors Two --> east --> Hall of Mirrors Three, step 77, desc: None
+Hall of Mirrors One --> east --> Hall of Mirrors Two, step 78, desc: None
+Tower --> east --> Hall of Mirrors One, step 79, desc: None
+Pebbled Path --> north --> Tower, step 80, desc: None
+Inside Gate --> north --> Pebbled Path, step 81, desc: None
+West Hall --> north --> Inside Gate, step 82, desc: None
+Tower (base of southwest tower) --> north --> West Hall, step 83, desc: None
+Bedroom --> down --> Tower (base of southwest tower), step 84, desc: None
+Tower (base of southwest tower) --> up --> Bedroom, step 93, desc: None
+South Hall --> west --> Tower (base of southwest tower), step 94, desc: None
+Cell (dungeon cell with writing on the walls) --> south --> Dungeon, step 97, desc: None
+Secret Passage --> west --> Cell (dungeon cell with writing on the walls), step 100, desc: None
+Cell (dungeon cell with writing on the walls) --> east --> Secret Passage, step 104, desc: None
+Dungeon --> north --> Cell (dungeon cell with writing on the walls), step 105, desc: None
+Gallery --> west --> South Hall, step 107, desc: None
+South Gate --> west --> Gallery, step 108, desc: None
+Meadow --> north --> South Gate, step 109, desc: None
+Beach --> northwest --> Meadow, step 110, desc: None
+Meadow --> southeast --> Beach, step 114, desc: None
+South Gate --> south --> Meadow, step 115, desc: None
+Tower (base of southeast tower) --> west --> South Gate, step 116, desc: None
+Engine Room --> down --> Tower (base of southeast tower), step 117, desc: None
+Tower (base of southeast tower) --> up --> Engine Room, step 124, desc: None
+South Gate --> east --> Tower (base of southeast tower), step 125, desc: None
+Gallery --> east --> South Gate, step 126, desc: None
+South Hall --> east --> Gallery, step 138, desc: None
+Closet --> south --> South Hall, step 139, desc: None
+South Hall --> north --> Closet, step 143, desc: None
+Gallery --> west --> South Hall, step 144, desc: None
+South Gate --> west --> Gallery, step 145, desc: None
+East Hall --> south --> South Gate, step 146, desc: None
+Banquet Hall --> south --> East Hall, step 147, desc: None
+Courtyard (center of a large courtyard) --> east --> Temple, step 153, desc: None
+Courtyard (westernmost point in a large open courtyard) --> east --> Courtyard (center of a large courtyard), step 154, desc: None
+Closet --> north --> Courtyard (westernmost point in a large open courtyard), step 155, desc: None
+South Hall --> north --> Closet, step 159, desc: None
+Tower (base of southwest tower) --> east --> South Hall, step 160, desc: None
+Bedroom --> down --> Tower (base of southwest tower), step 161, desc: None
+Tower (base of southwest tower) --> up --> Bedroom, step 164, desc: None
+West Hall --> south --> Tower (base of southwest tower), step 165, desc: None
+Inside Gate --> south --> West Hall, step 166, desc: None
+Pebbled Path --> south --> Inside Gate, step 167, desc: None
+Tower --> south --> Pebbled Path, step 168, desc: None
+Hall of Mirrors One --> west --> Tower, step 171, desc: None
+Hall of Mirrors Two --> west --> Hall of Mirrors One, step 172, desc: None
+Hall of Mirrors Three --> west --> Hall of Mirrors Two, step 173, desc: None
+Hall of Mirrors Four --> west --> Hall of Mirrors Three, step 174, desc: None
+Guarded Door --> west --> North Gate, step 179, desc: None
+Map Room --> down --> Guarded Door, step 183, desc: None
+Guarded Door --> up --> Map Room, step 188, desc: None
+North Gate --> east --> Guarded Door, step 189, desc: None
+Hall of Mirrors Four --> east --> North Gate, step 190, desc: None
+Hall of Mirrors Three --> east --> Hall of Mirrors Four, step 191, desc: None
+Hall of Mirrors Two --> east --> Hall of Mirrors Three, step 192, desc: None
+Hall of Mirrors One --> east --> Hall of Mirrors Two, step 193, desc: None
+Tower --> east --> Hall of Mirrors One, step 194, desc: None
+Pebbled Path --> north --> Tower, step 195, desc: None
+Inside Gate --> north --> Pebbled Path, step 196, desc: None
+West Hall --> north --> Inside Gate, step 197, desc: None
+Tower (base of southwest tower) --> north --> West Hall, step 198, desc: None
+South Hall --> west --> Tower (base of southwest tower), step 200, desc: None
+Translucent Room (an exit to the south) --> up --> Dungeon, step 202, desc: None
+Translucent Room (passages to west, southwest, southeast) --> west --> Translucent Room (an exit to the south), step 209, desc: None
+Translucent Room (passages to northwest, southeast) --> northwest --> Translucent Room (passages to west, southwest, southeast), step 210, desc: None
+Translucent Room (passages to northwest, southwest) --> northwest --> Translucent Room (passages to northwest, southeast), step 211, desc: None
+Translucent Room (an exit to northeast) --> northeast --> Translucent Room (passages to northwest, southwest), step 212, desc: None
+Translucent Room (passages to northwest, southwest) --> southwest --> Translucent Room (an exit to northeast), step 217, desc: None
+Translucent Room (passages to northwest, southeast) --> southeast --> Translucent Room (passages to northwest, southwest), step 218, desc: None
+Translucent Room (passages to west, southwest, southeast) --> southeast --> Translucent Room (passages to northwest, southeast), step 219, desc: None
+Translucent Room (an exit to the south) --> east --> Translucent Room (passages to west, southwest, southeast), step 220, desc: None
+Dungeon --> down --> Translucent Room (an exit to the south), step 221, desc: None
+Closet --> south --> South Hall, step 223, desc: None
+Courtyard (westernmost point in a large open courtyard) --> south --> Closet, step 228, desc: None
+Inside Gate --> east --> Courtyard (westernmost point in a large open courtyard), step 229, desc: None
+Outside Gate --> east --> Inside Gate, step 230, desc: None
+Western Road --> east --> Outside Gate, step 231, desc: None
+Eastern Fork --> east --> Western Road, step 233, desc: None
+Trail Head --> southeast --> Eastern Fork, step 234, desc: None
+Shady Brook --> southwest --> Trail Head, step 235, desc: None
+Trail Head --> northeast --> Shady Brook, step 237, desc: None
+Eastern Fork --> northwest --> Trail Head, step 238, desc: None
+Western Road --> west --> Eastern Fork, step 239, desc: None
+Outside Gate --> west --> Western Road, step 240, desc: None
+Inside Gate --> west --> Outside Gate, step 241, desc: None
+West Hall --> north --> Inside Gate, step 242, desc: None
+Tower (base of southwest tower) --> north --> West Hall, step 243, desc: None
+South Hall --> west --> Tower (base of southwest tower), step 249, desc: None
+Gallery --> west --> South Hall, step 250, desc: None
+South Gate --> west --> Gallery, step 253, desc: None
+East Hall --> south --> South Gate, step 254, desc: None
+Banquet Hall --> south --> East Hall, step 255, desc: None
+Junction --> south --> Banquet Hall, step 256, desc: None
+Landing --> west --> Junction, step 257, desc: None
+Winding Stair --> west --> Landing, step 258, desc: None
