@@ -2,29 +2,62 @@
 
 # gen_all2all.py [-h] --map MAP (--actions ACTIONS | --reverse_map REVERSE_MAP) [--output_dir OUTPUT_DIR]
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_release.sh -p <map_path> [-o <release_path>] [-g <game>]"
+    echo "Usage: ./gen_all2all.sh -p <map_path> [-o <release_path>] [-g <game>] [--no_confirm]"
     exit 1
 fi
 
 # parse the arguments
-while getopts p:o:g: flag
+while getopts p:o:g:-: flag
 do
     case "${flag}" in
         p) map_path=${OPTARG};;
-        o) release_path=${OPTARG};;
-        g) game=${OPTARG};;
+        o) release_dir=${OPTARG};;
+        g) tgt_game=${OPTARG};;
+        -) case "${OPTARG}" in
+               no_confirm) no_confirm=true;;
+           esac;;
     esac
 done
 
 games=$(ls $map_path)
-if [ -z "$release_path" ]
+if [ -z "$release_dir" ]
 then
-    release_path="./data/maps-release"
+    release_dir="./data/maps-release"
 fi
+
+if [ -z "$tgt_game" ]
+then
+    for game in $games
+    do
+        # python src/gen_paths/gen_all2all.py -m ./data/maps/zork3/zork3.map.human -r ./data/maps/zork3/zork3.map.reversed -odir ./data/maps/zork3
+        map_human="$map_path/$game/$game.map.human"
+        map_reversed="$map_path/$game/$game.map.reversed"
+        output_dir="$map_path/$game"
+        if [ -z "$no_confirm" ]
+        then
+            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir
+        else
+            python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir --no_confirm
+        fi
+    done
+else
+    game=$tgt_game
+    map_human="$map_path/$game/$game.map.human"
+    map_reversed="$map_path/$game/$game.map.reversed"
+    output_dir="$map_path/$game"
+    if [ -z "$no_confirm" ]
+    then
+        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir
+    else
+        python src/gen_paths/gen_all2all.py -m $map_human -r $map_reversed -odir $output_dir --no_confirm
+    fi
+fi
+
+echo "Done generating all2all"
 
 # GAME RELEASE
 # if g not specified, release all games
-if [ -z "$game" ]
+if [ -z "$tgt_game" ]
 then
     for game in $games
     do
@@ -48,6 +81,7 @@ then
         fi
     done
 else
+    game=$tgt_game
     # release by copy game.all2all.json, game.code2anno.json, game.anno2code.json, game.walkthrough, game.moves to data/maps/game to release folder
     # release_dir="./data/maps-release"
     mkdir -p $release_dir
@@ -68,5 +102,8 @@ else
     fi
 fi
 
+echo "Done releasing"
+
 # run release_status.py to update status sheet
 python src/release_status.py -i $map_path -o $release_dir -s $release_dir/release_status.csv
+echo "Done updating status sheet"

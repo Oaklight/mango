@@ -2,7 +2,7 @@
 
 # path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_reversed_all.sh -j <jericho_path> -o <output_dir> [-g <game_name>] [-s <max_steps>]"
+    echo "Usage: ./gen_map_reversed_all.sh -j <jericho_path> -o <output_dir> [-g <game_name>] [-s <max_steps>]"
     exit 1
 fi
 

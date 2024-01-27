@@ -1,21 +1,28 @@
 #!/bin/bash
 
-#lgop.z3 error
+#lgop.z3 unsupportedGameWarning
+#theatre env.get_player_location() == None
 # path=${1:-'./data/z-machine-games-master/jericho-game-suite'}
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_walkthrough_all.sh -j <jericho_path> -o <output_dir> [-g <game_name>]"
+    echo "Usage: ./gen_map_machine_all.sh -j <jericho_path> -o <output_dir> [-g <game_name>] [-s <max_steps>]"
     exit 1
 fi
 
-# # parse the arguments
-while getopts j:o:g: flag
+# parse the arguments
+while getopts j:o:g:s: opt
 do
-    case "${flag}" in
-        j) jericho_path=${OPTARG};;
-        o) output_dir=${OPTARG};;
-        g) game_name=${OPTARG};;
+    case $opt in
+        j) jericho_path="$OPTARG";;
+        o) output_dir="$OPTARG";;
+        g) game_name="$OPTARG";;
+        s) max_steps="$OPTARG";;
     esac
 done
+
+if [ -z "$max_steps" ]
+then
+    max_steps=70
+fi
 
 # rewrite the bash logic, iter over all games, if game_name provided, skip the rest
 games=$(ls $jericho_path)
@@ -28,11 +35,12 @@ do
     if [ -z "$game_name" ] || [ "$game_name" == "$game" ]
     then
         echo "Generating for $game..."
-        python ./src/gen_moves/gen_walkthrough.py -g $game \
+        python ./src/gen_moves/gen_move_machine.py -g $game \
         -j $jericho_path \
+        --max_steps $max_steps \
         -odir $output_dir \
         -acts
     fi
 done
 
-echo "Good Job!"
+echo "All Done!"
