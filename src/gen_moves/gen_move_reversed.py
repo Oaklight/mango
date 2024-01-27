@@ -149,7 +149,8 @@ def gen_move_reversed(args):
         # attempt to reverse the action
         # check if reverse action is a valid option?
         valid_act_reverts = [unabbreviate(va) for va in env.get_valid_actions()]
-        if act_revert not in valid_act_reverts:
+        # in some special cases, valid_act_reverts could be a sentence with directional action term
+        if not any([act_revert in va for va in valid_act_reverts]):
             print(
                 f"NON-VALID-ACTION || reverse[{act}] = [{act_revert}], but it's not a valid action @{step_num}."
             )
