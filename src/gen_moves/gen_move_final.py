@@ -7,7 +7,7 @@ from collections import OrderedDict
 
 
 # helper function to get such dict
-def get_dict(lines, cutoff=None):
+def get_dict(lines, cutoff=None, split_answerable: bool = False):
     """
     example of machine and human lines
     machine: west house (obj180) --> north --> north house (obj81), step 1
@@ -20,14 +20,21 @@ def get_dict(lines, cutoff=None):
         if len(line) == 0:
             continue
         path_str, step_str = line.split(", step ")
-        step = int(step_str)
+        if split_answerable:
+            step_str, answerable_str = step_str.split(", answerable")
+            step = int(step_str)
+            answerable = int(answerable_str)
+        else:
+            step = int(step_str)
+            answerable = step
+
         if cutoff is not None and step > cutoff:
             continue
         elements = path_str.split("-->")
         src = elements[0].strip()
         act = elements[1].strip()
         dst = elements[2].strip()
-        d[step] = {"src": src, "dst": dst, "act": act}
+        d[step] = {"src": src, "dst": dst, "act": act, "answerable": answerable}
     return d
 
 
@@ -187,10 +194,11 @@ def load_both_maps(args):
 
     if args.max_step == -1:
         _, step_str = human_lines[-1].split(", step ")
+        step_str, _ = step_str.split(", answerable ")
         args.max_step = int(step_str)
     # create a dict of machine/human line number to {src, dst, action}
     machine_dict = get_dict(machine_lines, cutoff=args.max_step)
-    human_dict = get_dict(human_lines, cutoff=args.max_step)
+    human_dict = get_dict(human_lines, cutoff=args.max_step, split_answerable=True)
     return machine_dict, human_dict
 
 
