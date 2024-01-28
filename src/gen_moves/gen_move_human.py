@@ -103,8 +103,8 @@ def generate_move_human(valid_moves: dict, game_name, output_dir, max_steps):
                         move["src_node"],
                         move["act"],
                         move["dst_node"],
-                        int(move["step_num"]),
-                        int(move["answerable"]),
+                        int(float(move["step_num"])),
+                        int(float(move["answerable"])),
                     )
                 )
                 # print(step_idx, move["act"])
