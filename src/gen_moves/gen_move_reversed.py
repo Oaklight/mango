@@ -154,6 +154,7 @@ def gen_move_reversed(args):
             print(
                 f"NON-VALID-ACTION || reverse[{act}] = [{act_revert}], but it's not a valid action @{step_num}."
             )
+            print("VALID ACTIONS:", valid_act_reverts)
             continue
         else:
             # take the reverse step
