@@ -5,6 +5,7 @@ import os
 import sys
 
 import networkx
+from tqdm import tqdm
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
@@ -281,7 +282,7 @@ if __name__ == "__main__":
 
     g_edges = []
     for src, dst, attrs in G.edges(data=True):
-        print(attrs)
+        # print(attrs)
         g_edges.append(
             {
                 "src_node": src,
@@ -306,7 +307,7 @@ if __name__ == "__main__":
     with open(args.nodes, "w") as f:
         json.dump(g_nodes, f, indent=4)
 
-    plot_graph(G)
+    # plot_graph(G)
 
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
@@ -319,7 +320,7 @@ if __name__ == "__main__":
     f_all2all = open(args.all2all, "w")
     f_allpairs = open(args.allpairs, "w")
 
-    for src_node, dst_node in all_pairs:
+    for src_node, dst_node in tqdm(all_pairs):
         print(f"Generating paths from {src_node} to {dst_node}...")
 
         # simple_paths of MultiDiGraph is still a list of list of nodes

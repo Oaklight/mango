@@ -44,7 +44,7 @@ def load_forward_map_nodes(human_map_path):
 
 def get_potential_reverse_edges(human_forward_edges, max_steps):
     # unabbreviate all act and get all directional forward edges
-    forward_directional_edges = {
+    forward_directional_edges_complete = {
         step_num: (
             edge[0],
             unabbreviate(edge[1]),
@@ -54,18 +54,19 @@ def get_potential_reverse_edges(human_forward_edges, max_steps):
         for step_num, edge in human_forward_edges.items()
         if unabbreviate(edge[1]) in direction_vocab and step_num <= max_steps
     }
+    forward_directional_edges = [tuple(edge[:3]) for edge in forward_directional_edges_complete.values()]
 
     potential_reverse_directional_edges = {}
     needs_jericho_check = []
     confirm_jericho_valid = []
 
-    for step_num, edge in forward_directional_edges.items():
+    for step_num, edge in forward_directional_edges_complete.items():
         src_anno, act, dst_anno, answerable_num = edge
         act_revert = opposite_direction_dict[act]
         reverse_edge = (dst_anno, act_revert, src_anno, answerable_num)
-
         potential_reverse_directional_edges[step_num] = reverse_edge
-        if reverse_edge in forward_directional_edges.values():
+
+        if tuple(reverse_edge[:3]) in forward_directional_edges:
             # appeared in forward directional edge, it's valid by default.
             confirm_jericho_valid.append(step_num)
         else:
