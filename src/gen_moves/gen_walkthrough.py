@@ -2,9 +2,9 @@ import argparse
 import os
 import sys
 
-from tqdm import tqdm
-
 from jericho.util import unabbreviate
+
+from tqdm import tqdm
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
@@ -69,14 +69,9 @@ def gen_walkthrough(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--game_name", "-g", type=str)
-    parser.add_argument(
-        "--jericho_path",
-        "-j",
-        type=str,
-        default="./data/z-machine-games-master/jericho-game-suite",
-    )
-    parser.add_argument("--output_dir", "-odir", type=str, default="./data/maps")
+    parser.add_argument("--game_name", "-g", type=str, required=True)
+    parser.add_argument("--jericho_path", "-j", type=str, required=True)
+    parser.add_argument("--output_dir", "-odir", type=str, required=True)
     parser.add_argument(
         "--walk_acts",
         "-acts",

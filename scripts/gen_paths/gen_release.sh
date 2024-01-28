@@ -2,7 +2,7 @@
 
 # gen_all2all.py [-h] --map MAP (--actions ACTIONS | --reverse_map REVERSE_MAP) [--output_dir OUTPUT_DIR]
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_release.sh -p <map_path> [-o <release_path>] [-g <game>]"
+    echo "Usage: ./gen_release.sh -p <map_path> [-o <release_path>] [-g <game>]"
     exit 1
 fi
 

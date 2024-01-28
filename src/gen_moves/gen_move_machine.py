@@ -1,6 +1,6 @@
-import sys
 import argparse
 import os
+import sys
 
 from jericho.util import unabbreviate
 
@@ -110,15 +110,10 @@ def gen_move_machine(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--game_name", "-g", type=str)
-    parser.add_argument(
-        "--jericho_path",
-        "-j",
-        type=str,
-        default="./data/z-machine-games-master/jericho-game-suite",
-    )
+    parser.add_argument("--game_name", "-g", type=str, required=True)
+    parser.add_argument("--jericho_path", "-j", type=str, required=True)
     parser.add_argument("--max_steps", type=int, default=70)
-    parser.add_argument("--output_dir", "-odir", type=str, default="./data/maps")
+    parser.add_argument("--output_dir", "-odir", type=str, required=True)
     parser.add_argument(
         "--walk_acts",
         "-acts",

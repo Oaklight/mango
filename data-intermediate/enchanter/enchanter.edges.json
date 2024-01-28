@@ -1,0 +1,882 @@
+[
+    {
+        "src_node": "fork",
+        "dst_node": "outside of shack",
+        "action": "northeast",
+        "seen_in_forward": 1,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 1
+    },
+    {
+        "src_node": "outside of shack",
+        "dst_node": "inside shack",
+        "action": "enter shack",
+        "seen_in_forward": 2,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 2
+    },
+    {
+        "src_node": "outside of shack",
+        "dst_node": "trail",
+        "action": "northeast",
+        "seen_in_forward": 8,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 8
+    },
+    {
+        "src_node": "inside shack",
+        "dst_node": "outside of shack",
+        "action": "exit shack",
+        "seen_in_forward": 7,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 7
+    },
+    {
+        "src_node": "trail",
+        "dst_node": "trail head",
+        "action": "southeast",
+        "seen_in_forward": 9,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 9
+    },
+    {
+        "src_node": "trail head",
+        "dst_node": "shady brook",
+        "action": "northeast",
+        "seen_in_forward": 10,
+        "seen_in_reversed": 12,
+        "edge_min_step": 10
+    },
+    {
+        "src_node": "trail head",
+        "dst_node": "eastern fork",
+        "action": "southeast",
+        "seen_in_forward": 13,
+        "seen_in_reversed": 234,
+        "edge_min_step": 13
+    },
+    {
+        "src_node": "shady brook",
+        "dst_node": "trail head",
+        "action": "southwest",
+        "seen_in_forward": 12,
+        "seen_in_reversed": 10,
+        "edge_min_step": 10
+    },
+    {
+        "src_node": "eastern fork",
+        "dst_node": "village outskirts",
+        "action": "southwest",
+        "seen_in_forward": 14,
+        "seen_in_reversed": 20,
+        "edge_min_step": 14
+    },
+    {
+        "src_node": "eastern fork",
+        "dst_node": "western road",
+        "action": "east",
+        "seen_in_forward": 21,
+        "seen_in_reversed": 233,
+        "edge_min_step": 21
+    },
+    {
+        "src_node": "eastern fork",
+        "dst_node": "trail head",
+        "action": "northwest",
+        "seen_in_forward": 234,
+        "seen_in_reversed": 13,
+        "edge_min_step": 13
+    },
+    {
+        "src_node": "village outskirts",
+        "dst_node": "deserted village",
+        "action": "southwest",
+        "seen_in_forward": 15,
+        "seen_in_reversed": 19,
+        "edge_min_step": 15
+    },
+    {
+        "src_node": "village outskirts",
+        "dst_node": "eastern fork",
+        "action": "northeast",
+        "seen_in_forward": 20,
+        "seen_in_reversed": 14,
+        "edge_min_step": 14
+    },
+    {
+        "src_node": "deserted village",
+        "dst_node": "village outskirts",
+        "action": "northeast",
+        "seen_in_forward": 19,
+        "seen_in_reversed": 15,
+        "edge_min_step": 15
+    },
+    {
+        "src_node": "western road",
+        "dst_node": "outside gate",
+        "action": "east",
+        "seen_in_forward": 22,
+        "seen_in_reversed": 231,
+        "edge_min_step": 22
+    },
+    {
+        "src_node": "western road",
+        "dst_node": "eastern fork",
+        "action": "west",
+        "seen_in_forward": 233,
+        "seen_in_reversed": 21,
+        "edge_min_step": 21
+    },
+    {
+        "src_node": "outside gate",
+        "dst_node": "inside gate",
+        "action": "east",
+        "seen_in_forward": 25,
+        "seen_in_reversed": 230,
+        "edge_min_step": 25
+    },
+    {
+        "src_node": "outside gate",
+        "dst_node": "western road",
+        "action": "west",
+        "seen_in_forward": 231,
+        "seen_in_reversed": 22,
+        "edge_min_step": 22
+    },
+    {
+        "src_node": "inside gate",
+        "dst_node": "pebbled path",
+        "action": "north",
+        "seen_in_forward": 26,
+        "seen_in_reversed": 81,
+        "edge_min_step": 26
+    },
+    {
+        "src_node": "inside gate",
+        "dst_node": "west hall",
+        "action": "south",
+        "seen_in_forward": 82,
+        "seen_in_reversed": 166,
+        "edge_min_step": 82
+    },
+    {
+        "src_node": "inside gate",
+        "dst_node": "outside gate",
+        "action": "west",
+        "seen_in_forward": 230,
+        "seen_in_reversed": 25,
+        "edge_min_step": 25
+    },
+    {
+        "src_node": "inside gate",
+        "dst_node": "courtyard (westernmost point in a large open courtyard)",
+        "action": "east",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 229,
+        "edge_min_step": 229
+    },
+    {
+        "src_node": "pebbled path",
+        "dst_node": "tower",
+        "action": "north",
+        "seen_in_forward": 28,
+        "seen_in_reversed": 80,
+        "edge_min_step": 28
+    },
+    {
+        "src_node": "pebbled path",
+        "dst_node": "inside gate",
+        "action": "south",
+        "seen_in_forward": 81,
+        "seen_in_reversed": 26,
+        "edge_min_step": 26
+    },
+    {
+        "src_node": "tower",
+        "dst_node": "jewel room",
+        "action": "up",
+        "seen_in_forward": 29,
+        "seen_in_reversed": 39,
+        "edge_min_step": 29
+    },
+    {
+        "src_node": "tower",
+        "dst_node": "hall of mirrors one",
+        "action": "east",
+        "seen_in_forward": 40,
+        "seen_in_reversed": 79,
+        "edge_min_step": 40
+    },
+    {
+        "src_node": "tower",
+        "dst_node": "pebbled path",
+        "action": "south",
+        "seen_in_forward": 80,
+        "seen_in_reversed": 28,
+        "edge_min_step": 28
+    },
+    {
+        "src_node": "jewel room",
+        "dst_node": "tower",
+        "action": "down",
+        "seen_in_forward": 39,
+        "seen_in_reversed": 29,
+        "edge_min_step": 29
+    },
+    {
+        "src_node": "hall of mirrors one",
+        "dst_node": "hall of mirrors two",
+        "action": "east",
+        "seen_in_forward": 41,
+        "seen_in_reversed": 78,
+        "edge_min_step": 41
+    },
+    {
+        "src_node": "hall of mirrors one",
+        "dst_node": "tower",
+        "action": "west",
+        "seen_in_forward": 79,
+        "seen_in_reversed": 40,
+        "edge_min_step": 40
+    },
+    {
+        "src_node": "hall of mirrors two",
+        "dst_node": "hall of mirrors three",
+        "action": "east",
+        "seen_in_forward": 42,
+        "seen_in_reversed": 77,
+        "edge_min_step": 42
+    },
+    {
+        "src_node": "hall of mirrors two",
+        "dst_node": "hall of mirrors one",
+        "action": "west",
+        "seen_in_forward": 78,
+        "seen_in_reversed": 41,
+        "edge_min_step": 41
+    },
+    {
+        "src_node": "hall of mirrors three",
+        "dst_node": "hall of mirrors four",
+        "action": "east",
+        "seen_in_forward": 43,
+        "seen_in_reversed": 76,
+        "edge_min_step": 43
+    },
+    {
+        "src_node": "hall of mirrors three",
+        "dst_node": "hall of mirrors two",
+        "action": "west",
+        "seen_in_forward": 77,
+        "seen_in_reversed": 42,
+        "edge_min_step": 42
+    },
+    {
+        "src_node": "hall of mirrors four",
+        "dst_node": "north gate",
+        "action": "east",
+        "seen_in_forward": 44,
+        "seen_in_reversed": 75,
+        "edge_min_step": 44
+    },
+    {
+        "src_node": "hall of mirrors four",
+        "dst_node": "north gate",
+        "action": "show egg to adventurer then east",
+        "seen_in_forward": 178,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 178
+    },
+    {
+        "src_node": "hall of mirrors four",
+        "dst_node": "hall of mirrors three",
+        "action": "west",
+        "seen_in_forward": 76,
+        "seen_in_reversed": 43,
+        "edge_min_step": 43
+    },
+    {
+        "src_node": "north gate",
+        "dst_node": "forest",
+        "action": "north",
+        "seen_in_forward": 47,
+        "seen_in_reversed": 63,
+        "edge_min_step": 47
+    },
+    {
+        "src_node": "north gate",
+        "dst_node": "library",
+        "action": "south",
+        "seen_in_forward": 64,
+        "seen_in_reversed": 69,
+        "edge_min_step": 64
+    },
+    {
+        "src_node": "north gate",
+        "dst_node": "hall of mirrors four",
+        "action": "west",
+        "seen_in_forward": 75,
+        "seen_in_reversed": 44,
+        "edge_min_step": 44
+    },
+    {
+        "src_node": "north gate",
+        "dst_node": "guarded door",
+        "action": "east",
+        "seen_in_forward": 179,
+        "seen_in_reversed": 189,
+        "edge_min_step": 179
+    },
+    {
+        "src_node": "forest",
+        "dst_node": "swamp",
+        "action": "east",
+        "seen_in_forward": 55,
+        "seen_in_reversed": 61,
+        "edge_min_step": 55
+    },
+    {
+        "src_node": "forest",
+        "dst_node": "north gate",
+        "action": "south",
+        "seen_in_forward": 63,
+        "seen_in_reversed": 47,
+        "edge_min_step": 47
+    },
+    {
+        "src_node": "swamp",
+        "dst_node": "forest",
+        "action": "west",
+        "seen_in_forward": 61,
+        "seen_in_reversed": 55,
+        "edge_min_step": 55
+    },
+    {
+        "src_node": "library",
+        "dst_node": "north gate",
+        "action": "north",
+        "seen_in_forward": 69,
+        "seen_in_reversed": 64,
+        "edge_min_step": 64
+    },
+    {
+        "src_node": "west hall",
+        "dst_node": "tower (base of southwest tower)",
+        "action": "south",
+        "seen_in_forward": 83,
+        "seen_in_reversed": 165,
+        "edge_min_step": 83
+    },
+    {
+        "src_node": "west hall",
+        "dst_node": "inside gate",
+        "action": "north",
+        "seen_in_forward": 166,
+        "seen_in_reversed": 82,
+        "edge_min_step": 82
+    },
+    {
+        "src_node": "tower (base of southwest tower)",
+        "dst_node": "bedroom",
+        "action": "up",
+        "seen_in_forward": 84,
+        "seen_in_reversed": 93,
+        "edge_min_step": 84
+    },
+    {
+        "src_node": "tower (base of southwest tower)",
+        "dst_node": "south hall",
+        "action": "east",
+        "seen_in_forward": 94,
+        "seen_in_reversed": 160,
+        "edge_min_step": 94
+    },
+    {
+        "src_node": "tower (base of southwest tower)",
+        "dst_node": "west hall",
+        "action": "north",
+        "seen_in_forward": 165,
+        "seen_in_reversed": 83,
+        "edge_min_step": 83
+    },
+    {
+        "src_node": "bedroom",
+        "dst_node": "on fourposter feather bed",
+        "action": "lie down",
+        "seen_in_forward": 86,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 86
+    },
+    {
+        "src_node": "bedroom",
+        "dst_node": "tower (base of southwest tower)",
+        "action": "down",
+        "seen_in_forward": 93,
+        "seen_in_reversed": 84,
+        "edge_min_step": 84
+    },
+    {
+        "src_node": "on fourposter feather bed",
+        "dst_node": "bedroom",
+        "action": "stand up",
+        "seen_in_forward": 87,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 87
+    },
+    {
+        "src_node": "south hall",
+        "dst_node": "dungeon",
+        "action": "south",
+        "seen_in_forward": 95,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 95
+    },
+    {
+        "src_node": "south hall",
+        "dst_node": "dungeon",
+        "action": "down",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 106,
+        "edge_min_step": 106
+    },
+    {
+        "src_node": "south hall",
+        "dst_node": "gallery",
+        "action": "east",
+        "seen_in_forward": 107,
+        "seen_in_reversed": 138,
+        "edge_min_step": 107
+    },
+    {
+        "src_node": "south hall",
+        "dst_node": "closet",
+        "action": "north",
+        "seen_in_forward": 139,
+        "seen_in_reversed": 143,
+        "edge_min_step": 139
+    },
+    {
+        "src_node": "south hall",
+        "dst_node": "tower (base of southwest tower)",
+        "action": "west",
+        "seen_in_forward": 160,
+        "seen_in_reversed": 94,
+        "edge_min_step": 94
+    },
+    {
+        "src_node": "dungeon",
+        "dst_node": "cell (dungeon cell with writing on the walls)",
+        "action": "north",
+        "seen_in_forward": 97,
+        "seen_in_reversed": 105,
+        "edge_min_step": 97
+    },
+    {
+        "src_node": "dungeon",
+        "dst_node": "south hall",
+        "action": "up",
+        "seen_in_forward": 106,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 106
+    },
+    {
+        "src_node": "dungeon",
+        "dst_node": "translucent room (an exit to the south)",
+        "action": "down",
+        "seen_in_forward": 202,
+        "seen_in_reversed": 221,
+        "edge_min_step": 202
+    },
+    {
+        "src_node": "cell (dungeon cell with writing on the walls)",
+        "dst_node": "secret passage",
+        "action": "east",
+        "seen_in_forward": 100,
+        "seen_in_reversed": 104,
+        "edge_min_step": 100
+    },
+    {
+        "src_node": "cell (dungeon cell with writing on the walls)",
+        "dst_node": "dungeon",
+        "action": "south",
+        "seen_in_forward": 105,
+        "seen_in_reversed": 97,
+        "edge_min_step": 97
+    },
+    {
+        "src_node": "secret passage",
+        "dst_node": "cell (dungeon cell with writing on the walls)",
+        "action": "west",
+        "seen_in_forward": 104,
+        "seen_in_reversed": 100,
+        "edge_min_step": 100
+    },
+    {
+        "src_node": "gallery",
+        "dst_node": "south gate",
+        "action": "east",
+        "seen_in_forward": 108,
+        "seen_in_reversed": 126,
+        "edge_min_step": 108
+    },
+    {
+        "src_node": "gallery",
+        "dst_node": "south hall",
+        "action": "west",
+        "seen_in_forward": 138,
+        "seen_in_reversed": 107,
+        "edge_min_step": 107
+    },
+    {
+        "src_node": "south gate",
+        "dst_node": "meadow",
+        "action": "south",
+        "seen_in_forward": 109,
+        "seen_in_reversed": 115,
+        "edge_min_step": 109
+    },
+    {
+        "src_node": "south gate",
+        "dst_node": "tower (base of southeast tower)",
+        "action": "east",
+        "seen_in_forward": 116,
+        "seen_in_reversed": 125,
+        "edge_min_step": 116
+    },
+    {
+        "src_node": "south gate",
+        "dst_node": "gallery",
+        "action": "west",
+        "seen_in_forward": 126,
+        "seen_in_reversed": 108,
+        "edge_min_step": 108
+    },
+    {
+        "src_node": "south gate",
+        "dst_node": "east hall",
+        "action": "north",
+        "seen_in_forward": 146,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 146
+    },
+    {
+        "src_node": "meadow",
+        "dst_node": "beach",
+        "action": "southeast",
+        "seen_in_forward": 110,
+        "seen_in_reversed": 114,
+        "edge_min_step": 110
+    },
+    {
+        "src_node": "meadow",
+        "dst_node": "south gate",
+        "action": "north",
+        "seen_in_forward": 115,
+        "seen_in_reversed": 109,
+        "edge_min_step": 109
+    },
+    {
+        "src_node": "beach",
+        "dst_node": "meadow",
+        "action": "northwest",
+        "seen_in_forward": 114,
+        "seen_in_reversed": 110,
+        "edge_min_step": 110
+    },
+    {
+        "src_node": "tower (base of southeast tower)",
+        "dst_node": "engine room",
+        "action": "up",
+        "seen_in_forward": 117,
+        "seen_in_reversed": 124,
+        "edge_min_step": 117
+    },
+    {
+        "src_node": "tower (base of southeast tower)",
+        "dst_node": "south gate",
+        "action": "west",
+        "seen_in_forward": 125,
+        "seen_in_reversed": 116,
+        "edge_min_step": 116
+    },
+    {
+        "src_node": "engine room",
+        "dst_node": "tower (base of southeast tower)",
+        "action": "down",
+        "seen_in_forward": 124,
+        "seen_in_reversed": 117,
+        "edge_min_step": 117
+    },
+    {
+        "src_node": "closet",
+        "dst_node": "south hall",
+        "action": "south",
+        "seen_in_forward": 143,
+        "seen_in_reversed": 139,
+        "edge_min_step": 139
+    },
+    {
+        "src_node": "closet",
+        "dst_node": "courtyard (westernmost point in a large open courtyard)",
+        "action": "north",
+        "seen_in_forward": 228,
+        "seen_in_reversed": 155,
+        "edge_min_step": 155
+    },
+    {
+        "src_node": "east hall",
+        "dst_node": "banquet hall",
+        "action": "north",
+        "seen_in_forward": 147,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 147
+    },
+    {
+        "src_node": "east hall",
+        "dst_node": "south gate",
+        "action": "south",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 146,
+        "edge_min_step": 146
+    },
+    {
+        "src_node": "banquet hall",
+        "dst_node": "junction",
+        "action": "north",
+        "seen_in_forward": 148,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 148
+    },
+    {
+        "src_node": "banquet hall",
+        "dst_node": "east hall",
+        "action": "south",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 147,
+        "edge_min_step": 147
+    },
+    {
+        "src_node": "junction",
+        "dst_node": "cell (prison cell in north tower of temple)",
+        "action": "wait",
+        "seen_in_forward": 149,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 149
+    },
+    {
+        "src_node": "junction",
+        "dst_node": "landing",
+        "action": "east",
+        "seen_in_forward": 257,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 257
+    },
+    {
+        "src_node": "junction",
+        "dst_node": "banquet hall",
+        "action": "south",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 256,
+        "edge_min_step": 256
+    },
+    {
+        "src_node": "cell (prison cell in north tower of temple)",
+        "dst_node": "sacrificial altar",
+        "action": "wait",
+        "seen_in_forward": 151,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 151
+    },
+    {
+        "src_node": "sacrificial altar",
+        "dst_node": "temple",
+        "action": "down",
+        "seen_in_forward": 152,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 152
+    },
+    {
+        "src_node": "temple",
+        "dst_node": "courtyard (center of a large courtyard)",
+        "action": "west",
+        "seen_in_forward": 153,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 153
+    },
+    {
+        "src_node": "courtyard (center of a large courtyard)",
+        "dst_node": "courtyard (westernmost point in a large open courtyard)",
+        "action": "west",
+        "seen_in_forward": 154,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 154
+    },
+    {
+        "src_node": "courtyard (center of a large courtyard)",
+        "dst_node": "temple",
+        "action": "east",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 153,
+        "edge_min_step": 153
+    },
+    {
+        "src_node": "courtyard (westernmost point in a large open courtyard)",
+        "dst_node": "closet",
+        "action": "south",
+        "seen_in_forward": 155,
+        "seen_in_reversed": 228,
+        "edge_min_step": 155
+    },
+    {
+        "src_node": "courtyard (westernmost point in a large open courtyard)",
+        "dst_node": "inside gate",
+        "action": "west",
+        "seen_in_forward": 229,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 229
+    },
+    {
+        "src_node": "courtyard (westernmost point in a large open courtyard)",
+        "dst_node": "courtyard (center of a large courtyard)",
+        "action": "east",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 154,
+        "edge_min_step": 154
+    },
+    {
+        "src_node": "guarded door",
+        "dst_node": "map room",
+        "action": "up",
+        "seen_in_forward": 183,
+        "seen_in_reversed": 188,
+        "edge_min_step": 183
+    },
+    {
+        "src_node": "guarded door",
+        "dst_node": "north gate",
+        "action": "west",
+        "seen_in_forward": 189,
+        "seen_in_reversed": 179,
+        "edge_min_step": 179
+    },
+    {
+        "src_node": "map room",
+        "dst_node": "guarded door",
+        "action": "down",
+        "seen_in_forward": 188,
+        "seen_in_reversed": 183,
+        "edge_min_step": 183
+    },
+    {
+        "src_node": "translucent room (an exit to the south)",
+        "dst_node": "translucent room (passages to west, southwest, southeast)",
+        "action": "east",
+        "seen_in_forward": 209,
+        "seen_in_reversed": 220,
+        "edge_min_step": 209
+    },
+    {
+        "src_node": "translucent room (an exit to the south)",
+        "dst_node": "dungeon",
+        "action": "up",
+        "seen_in_forward": 221,
+        "seen_in_reversed": 202,
+        "edge_min_step": 202
+    },
+    {
+        "src_node": "translucent room (passages to west, southwest, southeast)",
+        "dst_node": "translucent room (passages to northwest, southeast)",
+        "action": "southeast",
+        "seen_in_forward": 210,
+        "seen_in_reversed": 219,
+        "edge_min_step": 210
+    },
+    {
+        "src_node": "translucent room (passages to west, southwest, southeast)",
+        "dst_node": "translucent room (an exit to the south)",
+        "action": "west",
+        "seen_in_forward": 220,
+        "seen_in_reversed": 209,
+        "edge_min_step": 209
+    },
+    {
+        "src_node": "translucent room (passages to northwest, southeast)",
+        "dst_node": "translucent room (passages to northwest, southwest)",
+        "action": "southeast",
+        "seen_in_forward": 211,
+        "seen_in_reversed": 218,
+        "edge_min_step": 211
+    },
+    {
+        "src_node": "translucent room (passages to northwest, southeast)",
+        "dst_node": "translucent room (passages to west, southwest, southeast)",
+        "action": "northwest",
+        "seen_in_forward": 219,
+        "seen_in_reversed": 210,
+        "edge_min_step": 210
+    },
+    {
+        "src_node": "translucent room (passages to northwest, southwest)",
+        "dst_node": "translucent room (an exit to northeast)",
+        "action": "southwest",
+        "seen_in_forward": 212,
+        "seen_in_reversed": 217,
+        "edge_min_step": 212
+    },
+    {
+        "src_node": "translucent room (passages to northwest, southwest)",
+        "dst_node": "translucent room (passages to northwest, southeast)",
+        "action": "northwest",
+        "seen_in_forward": 218,
+        "seen_in_reversed": 211,
+        "edge_min_step": 211
+    },
+    {
+        "src_node": "translucent room (an exit to northeast)",
+        "dst_node": "translucent room (passages to northwest, southwest)",
+        "action": "northeast",
+        "seen_in_forward": 217,
+        "seen_in_reversed": 212,
+        "edge_min_step": 212
+    },
+    {
+        "src_node": "landing",
+        "dst_node": "winding stair",
+        "action": "east",
+        "seen_in_forward": 258,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 258
+    },
+    {
+        "src_node": "landing",
+        "dst_node": "junction",
+        "action": "west",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 257,
+        "edge_min_step": 257
+    },
+    {
+        "src_node": "winding stair",
+        "dst_node": "in midair",
+        "action": "kulcad stairs",
+        "seen_in_forward": 259,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 259
+    },
+    {
+        "src_node": "winding stair",
+        "dst_node": "landing",
+        "action": "west",
+        "seen_in_forward": 9999,
+        "seen_in_reversed": 258,
+        "edge_min_step": 258
+    },
+    {
+        "src_node": "in midair",
+        "dst_node": "warlock's tower",
+        "action": "east",
+        "seen_in_forward": 262,
+        "seen_in_reversed": 9999,
+        "edge_min_step": 262
+    }
+]

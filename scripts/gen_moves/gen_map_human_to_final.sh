@@ -8,11 +8,11 @@
 # game is the name of the game to run on
 # jericho_path is the output_dir to the jericho game suite
 
-# example: ./run_gen_move_human_to_final.sh -p ./data/maps -g adventure -j ../z-machine-games-master/jericho-game-suite
+# example: ./gen_map_human_to_final.sh -p ./data/maps -g adventure -j ../z-machine-games-master/jericho-game-suite
 
 # if not provided, prints the help message
 if [ $# -eq 0 ]; then
-    echo "Usage: ./run_gen_move_human_to_final.sh -j <jericho_path> -o <output_dir> [-g <game_name>] [-s <max_step>]"
+    echo "Usage: ./gen_map_human_to_final.sh -j <jericho_path> -o <output_dir> [-g <game_name>] [-s <max_step>]"
     exit 1
 fi
 

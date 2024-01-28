@@ -23,7 +23,7 @@ def get_dict(lines, cutoff=None):
         step = int(step_str)
         if cutoff is not None and step > cutoff:
             continue
-        elements = path_str.split(" --> ")
+        elements = path_str.split("-->")
         src = elements[0].strip()
         act = elements[1].strip()
         dst = elements[2].strip()

@@ -149,10 +149,12 @@ def gen_move_reversed(args):
         # attempt to reverse the action
         # check if reverse action is a valid option?
         valid_act_reverts = [unabbreviate(va) for va in env.get_valid_actions()]
-        if act_revert not in valid_act_reverts:
+        # in some special cases, valid_act_reverts could be a sentence with directional action term
+        if not any([act_revert in va for va in valid_act_reverts]):
             print(
                 f"NON-VALID-ACTION || reverse[{act}] = [{act_revert}], but it's not a valid action @{step_num}."
             )
+            print("VALID ACTIONS:", valid_act_reverts)
             continue
         else:
             # take the reverse step
@@ -213,15 +215,10 @@ def gen_move_reversed(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--game_name", "-g", type=str)
-    parser.add_argument(
-        "--jericho_path",
-        "-j",
-        type=str,
-        default="./data/z-machine-games-master/jericho-game-suite",
-    )
+    parser.add_argument("--game_name", "-g", type=str, required=True)
+    parser.add_argument("--jericho_path", "-j", type=str, required=True)
     parser.add_argument("--max_steps", type=int, default=70)
-    parser.add_argument("--output_dir", "-odir", type=str, default="./data/maps")
+    parser.add_argument("--output_dir", "-odir", type=str, required=True)
     parser.add_argument(
         "--walk_acts",
         "-acts",
