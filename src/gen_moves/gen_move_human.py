@@ -102,7 +102,7 @@ def generate_move_human(valid_moves: dict, game_name, output_dir, max_steps):
 def get_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--valid_move_csv", "-c", type=str, default=None)
+    parser.add_argument("--valid_move_csv", "-c", type=str, default=None, required=True)
     parser.add_argument(
         "--jericho_path",
         "-j",
