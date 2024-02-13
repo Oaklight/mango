@@ -5,6 +5,7 @@ import os
 import sys
 
 import networkx
+from tqdm import tqdm
 
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
@@ -23,14 +24,13 @@ def parse_edge(edge_str, reversed_detected=False):
     edge_str = edge_str.lower()
 
     edge_str, step_num = [x.strip() for x in edge_str.split(", step")]
+    step_num, answerable_num = step_num.split(", answerable")
     src, act, dst = [x.strip() for x in edge_str.split("-->")]
 
-    return ((src, act, dst), int(step_num))
+    return ((src, act, dst), int(step_num), int(answerable_num))
 
 
-def process_edges_from_map_file(
-    path_file: str = "data/game.map",
-) -> object:
+def process_edges_from_map_file(path_file: str):
     """
     builds a graph from a csv file,
     - forward path: path (src_node --> action --> dst_node), step_num
@@ -47,11 +47,16 @@ def process_edges_from_map_file(
     reversed_detected = "desc:" in lines[0]
 
     for line in lines:
-        edge, step_num = parse_edge(line, reversed_detected)
+        edge, step_num, answerable_num = parse_edge(line, reversed_detected)
+        assert isinstance(answerable_num, int)
         if edge in edges_to_add:
-            edges_to_add[edge].append(step_num)
+            edges_to_add[edge]["step_num"].append(step_num)
+            edges_to_add[edge]["answerable_num"].append(answerable_num)
         else:
-            edges_to_add[edge] = [step_num]
+            edges_to_add[edge] = {
+                "step_num": [step_num],
+                "answerable_num": [answerable_num],
+            }
 
     return edges_to_add
 
@@ -84,18 +89,26 @@ def build_graph_from_file_with_reverse(
     edges_all = {}
     for edge, step_nums in edges_forward_dict.items():
         edges_all[edge] = {
-            "seen_in_forward": min(step_nums),
+            "seen_in_forward": min(step_nums["step_num"]),
             "seen_in_reversed": STEP_INF,
+            "seen_in_forward_answerable": min(step_nums["answerable_num"]),
+            "seen_in_reversed_answerable": STEP_INF,
         }
     for edge, step_nums in edges_reversed_dict.items():
         if edge not in edges_all:
             edges_all[edge] = {
                 "seen_in_forward": STEP_INF,
-                "seen_in_reversed": min(step_nums),
+                "seen_in_reversed": min(step_nums["step_num"]),
+                "seen_in_forward_answerable": STEP_INF,
+                "seen_in_reversed_answerable": min(step_nums["answerable_num"]),
             }
         else:
             edges_all[edge]["seen_in_reversed"] = min(
-                edges_all[edge]["seen_in_reversed"], *step_nums
+                edges_all[edge]["seen_in_reversed"], *step_nums["step_num"]
+            )
+            edges_all[edge]["seen_in_reversed_answerable"] = min(
+                edges_all[edge]["seen_in_reversed_answerable"],
+                *step_nums["answerable_num"],
             )
 
     # use MultiDiGraph instead to accomodate special game with multiple valid action between two nodes
@@ -228,6 +241,12 @@ def get_path_json(g, path, shortest_length=None):
                 "edge_min_step": min(
                     attrs["seen_in_forward"], attrs["seen_in_reversed"]
                 ),
+                "seen_in_forward_answerable": attrs["seen_in_forward_answerable"],
+                "seen_in_reversed_answerable": attrs["seen_in_reversed_answerable"],
+                "edge_min_step_answerable": min(
+                    attrs["seen_in_forward_answerable"],
+                    attrs["seen_in_reversed_answerable"],
+                ),
             }
             path_details.append(entry)
 
@@ -238,9 +257,15 @@ def get_path_json(g, path, shortest_length=None):
     path_json["path_seen_in_forward"] = max(
         [each["seen_in_forward"] for each in path_details]
     )
+    path_json["path_seen_in_forward_answerable"] = max(
+        [each["seen_in_forward_answerable"] for each in path_details]
+    )
 
     # the minimum step_num to see all the edges in either map.human or map.reversed
     path_json["path_min_step"] = max([each["edge_min_step"] for each in path_details])
+    path_json["path_min_step_answerable"] = max(
+        [each["edge_min_step_answerable"] for each in path_details]
+    )
 
     return path_json
 
@@ -255,9 +280,9 @@ if __name__ == "__main__":
     print(f"NUM(G.node) = {len(G.nodes())}")
     print(f"NUM(G.edges) = {len(G.edges())}")
 
-
     g_edges = []
     for src, dst, attrs in G.edges(data=True):
+        # print(attrs)
         g_edges.append(
             {
                 "src_node": src,
@@ -268,6 +293,12 @@ if __name__ == "__main__":
                 "edge_min_step": min(
                     attrs["seen_in_forward"], attrs["seen_in_reversed"]
                 ),
+                "seen_in_forward_answerable": attrs["seen_in_forward_answerable"],
+                "seen_in_reversed_answerable": attrs["seen_in_reversed_answerable"],
+                "edge_min_step_answerable": min(
+                    attrs["seen_in_forward_answerable"],
+                    attrs["seen_in_reversed_answerable"],
+                ),
             }
         )
     g_nodes = list(G.nodes())
@@ -276,7 +307,7 @@ if __name__ == "__main__":
     with open(args.nodes, "w") as f:
         json.dump(g_nodes, f, indent=4)
 
-    plot_graph(G)
+    # plot_graph(G)
 
     # generate pair-wise all paths between all nodes
     # get generator of zip of any two different nodes from graph
@@ -289,7 +320,7 @@ if __name__ == "__main__":
     f_all2all = open(args.all2all, "w")
     f_allpairs = open(args.allpairs, "w")
 
-    for src_node, dst_node in all_pairs:
+    for src_node, dst_node in tqdm(all_pairs):
         print(f"Generating paths from {src_node} to {dst_node}...")
 
         # simple_paths of MultiDiGraph is still a list of list of nodes
@@ -310,6 +341,10 @@ if __name__ == "__main__":
             ],
             "path_seen_in_forward": [
                 path["path_seen_in_forward"] for path in current_all_paths_json
+            ],
+            "path_seen_in_forward_answerable": [
+                path["path_seen_in_forward_answerable"]
+                for path in current_all_paths_json
             ],
         }
         # all_pairs_dict.append(current_all_pairs_json)

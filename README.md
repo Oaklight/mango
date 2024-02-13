@@ -18,6 +18,31 @@ repo for paper: *MANGO: A Benchmark for Evaluating <u>Ma</u>pping and <u>N</u>av
 
 <!-- /TOC -->
 
+## data-intermediate
+
+Because some json files are huge, we use tar.zst to package the data.
+
+1. to compress the data
+
+```bash
+tar -I 'zstd' -cvf data-intermediate.tar.zst --exclude='*.md' data-intermediate/ # exclude README.md and challenging_parsing.md
+```
+
+2. to decompress the data to `your_folder/`
+
+first you should make sure `your_folder/` exist. If not, create it.
+
+silently
+```bash
+tar -I 'zstd -d' -xf data-intermediate.tar.zst -C your_folder/
+```
+or, with progress verbose
+```bash
+zstd -d -c data-intermediate.tar.zst | tar -xvf - -C your_folder/
+```
+
+## ===================== OLD CONTENT =====================
+
 ## Data: game maps
 
 There are 3 major subfolders under "data" directory:

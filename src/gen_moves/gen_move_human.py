@@ -27,6 +27,12 @@ def read_csv(path_in, max_steps=70):
         step_num_idx = header.index("Step Num")
         location_before_idx = header.index("Location Before")
         location_after_idx = header.index("Location After")
+
+        if "Answerable" in header:
+            answerable_idx = header.index("Answerable")
+        else:
+            answerable_idx = header.index("Step Num")
+
         for i, row in enumerate(csv_reader):
             if i == max_steps:
                 break
@@ -34,11 +40,17 @@ def read_csv(path_in, max_steps=70):
             location_before = row[location_before_idx].strip()
             location_after = row[location_after_idx].strip()
             valid_move = location_before != ""
+
+            answerable = row[answerable_idx].strip()
+            if answerable == "":
+                answerable = step_num
+
             valid_moves[step_num] = {
                 "step_num": step_num,
                 "src_node": location_before,
                 "dst_node": location_after,
                 "valid_move": valid_move,
+                "answerable": answerable,
             }
     print("Done.")
     return valid_moves
@@ -87,11 +99,12 @@ def generate_move_human(valid_moves: dict, game_name, output_dir, max_steps):
                 )
             if move["valid_move"]:
                 fout.write(
-                    "{} --> {} --> {}, step {}\n".format(
+                    "{} --> {} --> {}, step {}, answerable {}\n".format(
                         move["src_node"],
                         move["act"],
                         move["dst_node"],
-                        move["step_num"],
+                        int(float(move["step_num"])),
+                        int(float(move["answerable"])),
                     )
                 )
                 # print(step_idx, move["act"])

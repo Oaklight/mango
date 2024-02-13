@@ -31,34 +31,42 @@ def load_forward_map_nodes(human_map_path):
             continue
 
         path_forward, step_num = [each.strip() for each in line.split(", step")]
+        step_num, answerable_num = step_num.split(", answerable")
         step_num = int(step_num)
+        answerable_num = int(answerable_num)
 
         # get src_node, direction, dst_node
         elements_forward = [each.strip() for each in path_forward.split("-->")]
         # print(elements_forward)
-        human_forward_edges[step_num] = tuple(elements_forward)
+        human_forward_edges[step_num] = tuple(elements_forward + [answerable_num])
     return human_forward_edges
 
 
 def get_potential_reverse_edges(human_forward_edges, max_steps):
     # unabbreviate all act and get all directional forward edges
-    forward_directional_edges = {
-        step_num: (edge[0], unabbreviate(edge[1]), edge[2])
+    forward_directional_edges_complete = {
+        step_num: (
+            edge[0],
+            unabbreviate(edge[1]),
+            edge[2],
+            edge[3],
+        )  # edge[3] is answerable_num
         for step_num, edge in human_forward_edges.items()
         if unabbreviate(edge[1]) in direction_vocab and step_num <= max_steps
     }
+    forward_directional_edges = [tuple(edge[:3]) for edge in forward_directional_edges_complete.values()]
 
     potential_reverse_directional_edges = {}
     needs_jericho_check = []
     confirm_jericho_valid = []
 
-    for step_num, edge in forward_directional_edges.items():
-        src_anno, act, dst_anno = edge
+    for step_num, edge in forward_directional_edges_complete.items():
+        src_anno, act, dst_anno, answerable_num = edge
         act_revert = opposite_direction_dict[act]
-        reverse_edge = (dst_anno, act_revert, src_anno)
-
+        reverse_edge = (dst_anno, act_revert, src_anno, answerable_num)
         potential_reverse_directional_edges[step_num] = reverse_edge
-        if reverse_edge in forward_directional_edges.values():
+
+        if tuple(reverse_edge[:3]) in forward_directional_edges:
             # appeared in forward directional edge, it's valid by default.
             confirm_jericho_valid.append(step_num)
         else:
@@ -188,15 +196,19 @@ def gen_move_reversed(args):
     confirmed_reverse_directional_edges = []
     # must be sorted, otherwise edge will not arrange by step_num
     for valid_step_num in sorted(confirm_jericho_valid):
-        (src_anno, act_revert, dst_anno) = potential_reverse_directional_edges[
-            valid_step_num
-        ]
+        (
+            src_anno,
+            act_revert,
+            dst_anno,
+            answerable_num,
+        ) = potential_reverse_directional_edges[valid_step_num]
         confirmed_reverse_directional_edges.append(
             {
                 "step_num": valid_step_num,
                 "act_revert": act_revert,
                 "src": src_anno,
                 "dst": dst_anno,
+                "answerable": answerable_num,
             }
         )
 
@@ -204,8 +216,12 @@ def gen_move_reversed(args):
     with open(output_file, "w", encoding="utf-8") as fout:
         for item in confirmed_reverse_directional_edges:
             fout.write(
-                "{} --> {} --> {}, step {}, desc: None\n".format(
-                    item["src"], item["act_revert"], item["dst"], item["step_num"]
+                "{} --> {} --> {}, step {}, answerable {}, desc: None\n".format(
+                    item["src"],
+                    item["act_revert"],
+                    item["dst"],
+                    item["step_num"],
+                    item["answerable"],
                 )
             )
 
