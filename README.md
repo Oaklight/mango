@@ -25,6 +25,12 @@ say we have `origin` as git remote in the beginning, and we want to use an addit
 First, add the new remote repo:
 `git remote add temphosting git@github.com:Oaklight/mgwb.git`
 
+When pull code changes:
+```bash
+git pull origin # if changes were synced to origin
+git pull temphosting # if changes were synced to temphosting
+```
+
 When push code changes:
 ```bash
 git push origin
