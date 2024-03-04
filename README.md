@@ -19,6 +19,24 @@ deploy to github pages
 mkdocs gh-deploy
 ```
 
+## push and deploy to different repos
+say we have `origin` as git remote in the beginning, and we want to use an additional `mgwb` repo to track the development of the website.
+
+First, add the new remote repo:
+`git remote add temphosting git@github.com:Oaklight/mgwb.git`
+
+When push code changes:
+```bash
+git push origin
+git push temphosting
+```
+
+when deploy gh-pages:
+```bash
+mkdocs gh-deploy -r origin
+mkdocs gh-deploy -r temphosting
+```
+
 ## Structure
 
 ```bash
