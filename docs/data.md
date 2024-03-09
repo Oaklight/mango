@@ -2,13 +2,19 @@
 
 ## Data location
 
-TODO: pesumably, we will host the data on a public cloud storage service? (e.g., Google Drive, Huggingface, etc.)
-TODO: Or we use signup sheet to get the data?
+Our data are hosted on Huggingface.
+We provide access to the following collections:
 
-## Data format
+| Name | Description | Purpose |
+| --------------- | ----------- | ------- |
+| [data/huggingface](https://huggingface.co/datasets/gpt-games/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark |
+| [data-intermediate/huggingface](https://huggingface.co/datasets/gpt-games/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version |
 
-TODO: copy the intro part from current github readme
 
-## Data statistics
+## Word-only vs Word+ID
 
-TODO: some stats?
+**word-only**: We have one version where all nodes are labeled by additional descriptive text to distinguish different locations with similar names.
+
+**word+ID**: In addition, we also prepared another version, where nodes are labeled using minimaly fixed Jericho simulator names with randomized id.
+
+We primarily rely on the word-only version as benchmark, yet providing word+ID version for diverse benchmark settings.
