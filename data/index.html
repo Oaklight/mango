@@ -246,15 +246,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-format" class="md-nav__link">
-    Data format
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-statistics" class="md-nav__link">
-    Data statistics
+  <a href="#word-only-vs-wordid" class="md-nav__link">
+    Word-only vs Word+ID
   </a>
   
 </li>
@@ -346,15 +339,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-format" class="md-nav__link">
-    Data format
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-statistics" class="md-nav__link">
-    Data statistics
+  <a href="#word-only-vs-wordid" class="md-nav__link">
+    Word-only vs Word+ID
   </a>
   
 </li>
@@ -376,12 +362,33 @@
 
 <h1 id="data">Data</h1>
 <h2 id="data-location">Data location</h2>
-<p>TODO: pesumably, we will host the data on a public cloud storage service? (e.g., Google Drive, Huggingface, etc.)
-TODO: Or we use signup sheet to get the data?</p>
-<h2 id="data-format">Data format</h2>
-<p>TODO: copy the intro part from current github readme</p>
-<h2 id="data-statistics">Data statistics</h2>
-<p>TODO: some stats?</p>
+<p>Our data are hosted on Huggingface.
+We provide access to the following collections:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/datasets/gpt-games/data">data/huggingface</a></td>
+<td>A cleaned collection that only contains test-ready releases</td>
+<td>Good for LLM benchmark</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/datasets/gpt-games/data-intermediate">data-intermediate/huggingface</a></td>
+<td>A full collection with all of our labeling and intermediate files</td>
+<td>If you are interested in dig deeper into data labeling, or derive further customized version</td>
+</tr>
+</tbody>
+</table>
+<h2 id="word-only-vs-wordid">Word-only vs Word+ID</h2>
+<p><strong>word-only</strong>: We have one version where all nodes are labeled by additional descriptive text to distinguish different locations with similar names.</p>
+<p><strong>word+ID</strong>: In addition, we also prepared another version, where nodes are labeled using minimaly fixed Jericho simulator names with randomized id.</p>
+<p>We primarily rely on the word-only version as benchmark, yet providing word+ID version for diverse benchmark settings.</p>
 
 
 
