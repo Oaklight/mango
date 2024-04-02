@@ -7,8 +7,8 @@ We provide access to the following collections:
 
 | Name | Description | Purpose | variations |
 | --------------- | ----------- | ------- | -------- |
-| [data](https://huggingface.co/datasets/mango-ttic/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark | - data.tar.zst <br> - data-objid.tar.zst <br> - data-randid.tar.zst |
-| [data-intermediate](https://huggingface.co/datasets/mango-ttic/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version | - data-intermediate.tar.zst <br> - data-intermediate-objid.tar.zst <br> - data-intermediate-randid.tar.zst |
+| [data](https://huggingface.co/datasets/mango-ttic/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark | - data <br> - data-objid <br> - data-randid |
+| [data-intermediate](https://huggingface.co/datasets/mango-ttic/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version | - data-intermediate <br> - data-intermediate-objid <br> - data-intermediate-randid |
 
 *note:* if your connection to huggingface.co is slow, you can find us on [Huggingface mirror](https://hf-mirror.com/mango-ttic)
 
@@ -70,7 +70,7 @@ We use `data.tar.zst` as an example here.
 
 #### by directly download
 
-![](assets/images/direct_download.png)
+![](assets/images/direct_download_data.png)
 
 #### by git
 
