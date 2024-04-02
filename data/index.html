@@ -261,6 +261,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#70-step-vs-all-step-version" class="md-nav__link">
+    70-step vs all-step version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#word-only-wordid" class="md-nav__link">
     Word-only &amp; Word+ID
   </a>
@@ -436,6 +443,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#70-step-vs-all-step-version" class="md-nav__link">
+    70-step vs all-step version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#word-only-wordid" class="md-nav__link">
     Word-only &amp; Word+ID
   </a>
@@ -566,10 +580,16 @@ all intermediate files we used during data annotation and generation. Here is th
 └── night.walkthrough_acts  # action sequences exported from Jericho simulator
 </code></pre>
 <h2 id="variations">Variations</h2>
-<!-- ### 70-step vs all-step version
-
-In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both `data` and `data-intermediate` collection. -->
-
+<h3 id="70-step-vs-all-step-version">70-step vs all-step version</h3>
+<p>In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both <code>data</code> and <code>data-intermediate</code> collection.</p>
+<ul>
+<li>
+<p><strong>70-step</strong> <code>data[-intermediate]-70steps.tar.zst</code>: contains the first 70 steps of each walkthrough. If the complete walkthrough is shorter than 70 steps, then all steps are used.</p>
+</li>
+<li>
+<p><strong>All-step</strong> <code>data[-intermediate].tar.zst</code>: contains all steps of each walkthrough.</p>
+</li>
+</ul>
 <h3 id="word-only-wordid">Word-only &amp; Word+ID</h3>
 <ul>
 <li>
