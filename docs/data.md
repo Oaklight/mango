@@ -7,8 +7,8 @@ We provide access to the following collections:
 
 | Name | Description | Purpose | variations |
 | --------------- | ----------- | ------- | -------- |
-| [data/huggingface](https://huggingface.co/datasets/mango-ttic/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark | - data.tar.zst <br> - data-objid.tar.zst <br> - data-randid.tar.zst |
-| [data-intermediate/huggingface](https://huggingface.co/datasets/mango-ttic/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version | - data-intermediate.tar.zst <br> - data-intermediate-objid.tar.zst <br> - data-intermediate-randid.tar.zst |
+| [data](https://huggingface.co/datasets/mango-ttic/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark | - data.tar.zst <br> - data-objid.tar.zst <br> - data-randid.tar.zst |
+| [data-intermediate](https://huggingface.co/datasets/mango-ttic/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version | - data-intermediate.tar.zst <br> - data-intermediate-objid.tar.zst <br> - data-intermediate-randid.tar.zst |
 
 *note:* if your connection to huggingface.co is slow, you can find us on [Huggingface mirror](https://hf-mirror.com/mango-ttic)
 
@@ -48,9 +48,9 @@ data-intermediate/night/
 
 ## Variations
 
-### 70-step vs all-step version
+<!-- ### 70-step vs all-step version
 
-In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both `data` and `data-intermediate` collection.
+In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both `data` and `data-intermediate` collection. -->
 
 ### Word-only & Word+ID
 
