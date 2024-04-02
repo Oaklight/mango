@@ -246,9 +246,76 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#word-only-vs-wordid" class="md-nav__link">
-    Word-only vs Word+ID
+  <a href="#variations" class="md-nav__link">
+    Variations
   </a>
+  
+    <nav class="md-nav" aria-label="Variations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#70-step-vs-all-step-version" class="md-nav__link">
+    70-step vs all-step version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-only-wordid" class="md-nav__link">
+    Word-only &amp; Word+ID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    How to use
+  </a>
+  
+    <nav class="md-nav" aria-label="How to use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-download-data-from-huggingface" class="md-nav__link">
+    1. Download data from Huggingface
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Download data from Huggingface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#by-directly-download" class="md-nav__link">
+    by directly download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-git" class="md-nav__link">
+    by git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-decompress-to-your_folder" class="md-nav__link">
+    2. Decompress to your_folder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -339,9 +406,76 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#word-only-vs-wordid" class="md-nav__link">
-    Word-only vs Word+ID
+  <a href="#variations" class="md-nav__link">
+    Variations
   </a>
+  
+    <nav class="md-nav" aria-label="Variations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#70-step-vs-all-step-version" class="md-nav__link">
+    70-step vs all-step version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-only-wordid" class="md-nav__link">
+    Word-only &amp; Word+ID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    How to use
+  </a>
+  
+    <nav class="md-nav" aria-label="How to use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-download-data-from-huggingface" class="md-nav__link">
+    1. Download data from Huggingface
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Download data from Huggingface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#by-directly-download" class="md-nav__link">
+    by directly download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-git" class="md-nav__link">
+    by git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-decompress-to-your_folder" class="md-nav__link">
+    2. Decompress to your_folder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -362,7 +496,7 @@
 
 <h1 id="data">Data</h1>
 <h2 id="data-location">Data location</h2>
-<p>Our data are hosted on Huggingface.
+<p>Our data are hosted on <a href="https://huggingface.co/mango-ttic">Huggingface</a>.
 We provide access to the following collections:</p>
 <table>
 <thead>
@@ -370,6 +504,7 @@ We provide access to the following collections:</p>
 <th>Name</th>
 <th>Description</th>
 <th>Purpose</th>
+<th>variations</th>
 </tr>
 </thead>
 <tbody>
@@ -377,18 +512,59 @@ We provide access to the following collections:</p>
 <td><a href="https://huggingface.co/datasets/mango-ttic/data">data/huggingface</a></td>
 <td>A cleaned collection that only contains test-ready releases</td>
 <td>Good for LLM benchmark</td>
+<td>- data.tar.zst <br> - data-objid.tar.zst <br> - data-randid.tar.zst</td>
 </tr>
 <tr>
 <td><a href="https://huggingface.co/datasets/mango-ttic/data-intermediate">data-intermediate/huggingface</a></td>
 <td>A full collection with all of our labeling and intermediate files</td>
 <td>If you are interested in dig deeper into data labeling, or derive further customized version</td>
+<td>- data-intermediate.tar.zst <br> - data-intermediate-objid.tar.zst <br> - data-intermediate-randid.tar.zst</td>
 </tr>
 </tbody>
 </table>
-<h2 id="word-only-vs-wordid">Word-only vs Word+ID</h2>
-<p><strong>word-only</strong>: We have one version where all nodes are labeled by additional descriptive text to distinguish different locations with similar names.</p>
-<p><strong>word+ID</strong>: In addition, we also prepared another version, where nodes are labeled using minimaly fixed Jericho simulator names with randomized id.</p>
+<p><em>note:</em> if your connection to huggingface.co is slow, you can find us on <a href="https://hf-mirror.com/mango-ttic">Huggingface mirror</a></p>
+<h2 id="variations">Variations</h2>
+<h3 id="70-step-vs-all-step-version">70-step vs all-step version</h3>
+<p>In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both <code>data</code> and <code>data-intermediate</code> collection.</p>
+<h3 id="word-only-wordid">Word-only &amp; Word+ID</h3>
+<ul>
+<li>
+<p><strong>word-only</strong> <code>data[-intermediate].tar.zst</code>: We have one version where all nodes are labeled by additional descriptive text to distinguish different locations with similar names. </p>
+</li>
+<li>
+<p><strong>word + jericho ID</strong> <code>data[-intermediate]-objid.tar.zst</code>: In addition, we also prepared another version, where nodes are labeled using minimaly fixed names with object id from Jericho simulator.</p>
+</li>
+<li>
+<p><strong>word + random ID</strong> <code>data[-intermediate]-randid.tar.zst</code>: A variation of the Jericho ID version, where the Jericho object id replaced with randomly generated integer.</p>
+</li>
+</ul>
 <p>We primarily rely on the word-only version as benchmark, yet providing word+ID version for diverse benchmark settings.</p>
+<h2 id="how-to-use">How to use</h2>
+<p>Because some json files are huge, we use tar.zst to package the data.</p>
+<h3 id="1-download-data-from-huggingface">1. Download <code>data</code> from Huggingface</h3>
+<h4 id="by-directly-download">by directly download</h4>
+<p><img alt="" src="../assets/images/direct_download.png" /></p>
+<h4 id="by-git">by git</h4>
+<p>Make sure you have git-lfs installed (https://git-lfs.com)</p>
+<pre><code class="language-bash">git lfs install
+git clone https://huggingface.co/datasets/mango-ttic/data
+# or, use hf-mirror if your connection to huggingface.co is slow
+# git clone https://hf-mirror.com/datasets/mango-ttic/data
+</code></pre>
+<p>If you want to clone without large files - just their pointers</p>
+<pre><code class="language-bash">GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/mango-ttic/data
+# or
+# GIT_LFS_SKIP_SMUDGE=1 git clone https://hf-mirror.com/datasets/mango-ttic/data
+</code></pre>
+<h3 id="2-decompress-to-your_folder">2. Decompress to <code>your_folder</code></h3>
+<p>Before decompressing the data, make sure <code>your_folder</code> exists. If not, create it by <code>mkdir -p your_folder</code> .</p>
+<p>Some files are large, please be patient.</p>
+<p>silently decompress</p>
+<pre><code class="language-bash">tar -I 'zstd -d' -xf data.tar.zst -C your_folder
+</code></pre>
+<p>or, verbosely decompress</p>
+<pre><code class="language-bash">zstd -d -c data.tar.zst | tar -xvf - -C your_folder
+</code></pre>
 
 
 
