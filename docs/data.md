@@ -6,9 +6,9 @@ Our data are hosted on [Huggingface](https://huggingface.co/mango-ttic).
 We provide access to the following collections:
 
 | Name | Description | Purpose | variations |
-| --------------- | ----------- | ------- | -------- |
-| [data](https://huggingface.co/datasets/mango-ttic/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark | - data <br> - data-objid <br> - data-randid |
-| [data-intermediate](https://huggingface.co/datasets/mango-ttic/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version | - data-intermediate <br> - data-intermediate-objid <br> - data-intermediate-randid |
+| ------ | ----------- | ------- | --------------- |
+| [data](https://huggingface.co/datasets/mango-ttic/data) | A cleaned collection that only contains test-ready releases | Good for LLM benchmark | - data <br> - \*-objid <br> - \*-randid <br> - \*-70steps |
+| [data-intermediate](https://huggingface.co/datasets/mango-ttic/data-intermediate) | A full collection with all of our labeling and intermediate files | If you are interested in dig deeper into data labeling, or derive further customized version | - data-intermediate <br> - \*-objid <br> - \*-randid <br> - \*-70steps |
 
 *note:* if your connection to huggingface.co is slow, you can find us on [Huggingface mirror](https://hf-mirror.com/mango-ttic)
 
