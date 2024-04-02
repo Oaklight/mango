@@ -261,13 +261,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#70-step-vs-all-step-version" class="md-nav__link">
-    70-step vs all-step version
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#word-only-wordid" class="md-nav__link">
     Word-only &amp; Word+ID
   </a>
@@ -443,13 +436,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#70-step-vs-all-step-version" class="md-nav__link">
-    70-step vs all-step version
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#word-only-wordid" class="md-nav__link">
     Word-only &amp; Word+ID
   </a>
@@ -538,13 +524,13 @@ We provide access to the following collections:</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://huggingface.co/datasets/mango-ttic/data">data/huggingface</a></td>
+<td><a href="https://huggingface.co/datasets/mango-ttic/data">data</a></td>
 <td>A cleaned collection that only contains test-ready releases</td>
 <td>Good for LLM benchmark</td>
 <td>- data.tar.zst <br> - data-objid.tar.zst <br> - data-randid.tar.zst</td>
 </tr>
 <tr>
-<td><a href="https://huggingface.co/datasets/mango-ttic/data-intermediate">data-intermediate/huggingface</a></td>
+<td><a href="https://huggingface.co/datasets/mango-ttic/data-intermediate">data-intermediate</a></td>
 <td>A full collection with all of our labeling and intermediate files</td>
 <td>If you are interested in dig deeper into data labeling, or derive further customized version</td>
 <td>- data-intermediate.tar.zst <br> - data-intermediate-objid.tar.zst <br> - data-intermediate-randid.tar.zst</td>
@@ -580,8 +566,10 @@ all intermediate files we used during data annotation and generation. Here is th
 └── night.walkthrough_acts  # action sequences exported from Jericho simulator
 </code></pre>
 <h2 id="variations">Variations</h2>
-<h3 id="70-step-vs-all-step-version">70-step vs all-step version</h3>
-<p>In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both <code>data</code> and <code>data-intermediate</code> collection.</p>
+<!-- ### 70-step vs all-step version
+
+In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both `data` and `data-intermediate` collection. -->
+
 <h3 id="word-only-wordid">Word-only &amp; Word+ID</h3>
 <ul>
 <li>
