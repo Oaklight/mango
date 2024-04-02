@@ -48,9 +48,13 @@ data-intermediate/night/
 
 ## Variations
 
-<!-- ### 70-step vs all-step version
+### 70-step vs all-step version
 
-In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both `data` and `data-intermediate` collection. -->
+In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both `data` and `data-intermediate` collection.
+
+* **70-step** `data[-intermediate]-70steps.tar.zst`: contains the first 70 steps of each walkthrough. If the complete walkthrough is shorter than 70 steps, then all steps are used.
+
+* **All-step** `data[-intermediate].tar.zst`: contains all steps of each walkthrough.
 
 ### Word-only & Word+ID
 
