@@ -12,6 +12,40 @@ We provide access to the following collections:
 
 *note:* if your connection to huggingface.co is slow, you can find us on [Huggingface mirror](https://hf-mirror.com/mango-ttic)
 
+## Folder Structure
+
+Each folder inside `data` contains the cleaned up files used during LLM inference and results evaluations. Here is the tree structure from game `data/night` .
+
+```bash
+data/night/
+├── night.actions.json      # list of mentioned actions
+├── night.all2all.json      # all simple paths between any 2 locations
+├── night.all_pairs.json    # all connectivity between any 2 locations
+├── night.edges.json        # list of all edges
+├── night.locations.json    # list of all locations
+└── night.walkthrough       # enriched walkthrough exported from Jericho simulator
+```
+
+Each folder inside `data-intermediate` contains
+all intermediate files we used during data annotation and generation. Here is the tree structure from game `data-intermediate/night` .
+
+```bash
+data-intermediate/night/
+├── night.all2all.json      # all simple paths between any 2 nodes
+├── night.all_pairs.json    # all connectivity between any 2 nodes 
+├── night.anno2code.json    # annotation to codename mapping
+├── night.code2anno.json    # codename to annotation mapping
+├── night.edges.json        # list of all edges
+├── night.map.human         # human map derived from human annotation
+├── night.map.machine       # machine map derived from exported action sequences
+├── night.map.reversed      # reverse map derived from human annotation map
+├── night.moves             # list of mentioned actions
+├── night.nodes.json        # list of all nodes
+├── night.valid_moves.csv   # human annotation
+├── night.walkthrough       # enriched walkthrough exported from Jericho simulator
+└── night.walkthrough_acts  # action sequences exported from Jericho simulator
+```
+
 ## Variations
 
 ### 70-step vs all-step version
@@ -20,19 +54,19 @@ In our paper, we benchmark using the first 70 steps of the walkthrough from each
 
 ### Word-only & Word+ID
 
-* **word-only** `data[-intermediate].tar.zst`: We have one version where all nodes are labeled by additional descriptive text to distinguish different locations with similar names. 
+* **Word-only** `data[-intermediate].tar.zst`: Nodes are annotated by additional descriptive text to distinguish different locations with similar names.
 
-* **word + jericho ID** `data[-intermediate]-objid.tar.zst`: In addition, we also prepared another version, where nodes are labeled using minimaly fixed names with object id from Jericho simulator.
+* **Word + Object ID** `data[-intermediate]-objid.tar.zst`:  variation of the word-only version, where nodes are labeled using minimaly fixed names with object id from Jericho simulator.
 
-* **word + random ID** `data[-intermediate]-randid.tar.zst`: A variation of the Jericho ID version, where the Jericho object id replaced with randomly generated integer.
+* **Word + Random ID** `data[-intermediate]-randid.tar.zst`: variation of the Jericho ID version, where the Jericho object id replaced with randomly generated integer.
 
-We primarily rely on the word-only version as benchmark, yet providing word+ID version for diverse benchmark settings.
+We primarily rely on the **word-only** version as benchmark, yet providing word+ID version for diverse benchmark settings.
 
 ## How to use
 
-Because some json files are huge, we use tar.zst to package the data.
+We use `data.tar.zst` as an example here.
 
-### 1. Download `data` from Huggingface
+### 1. download from Huggingface
 
 #### by directly download
 
@@ -40,37 +74,28 @@ Because some json files are huge, we use tar.zst to package the data.
 
 #### by git
 
-Make sure you have git-lfs installed (https://git-lfs.com)
+Make sure you have [git-lfs](https://git-lfs.com) installed
 
 ```bash
 git lfs install
 git clone https://huggingface.co/datasets/mango-ttic/data
+
 # or, use hf-mirror if your connection to huggingface.co is slow
 # git clone https://hf-mirror.com/datasets/mango-ttic/data
 ```
 
-If you want to clone without large files - just their pointers
+### 2. decompress
 
-```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/mango-ttic/data
-# or
-# GIT_LFS_SKIP_SMUDGE=1 git clone https://hf-mirror.com/datasets/mango-ttic/data
-```
-
-### 2. Decompress to `your_folder`
-
-Before decompressing the data, make sure `your_folder` exists. If not, create it by `mkdir -p your_folder` .
-
-Some files are large, please be patient.
+Because some json files are huge, we use tar.zst to package the data.
 
 silently decompress
 
 ```bash
-tar -I 'zstd -d' -xf data.tar.zst -C your_folder
+tar -I 'zstd -d' -xf data.tar.zst
 ```
 
 or, verbosely decompress
 
 ```bash
-zstd -d -c data.tar.zst | tar -xvf - -C your_folder
+zstd -d -c data.tar.zst | tar -xvf -
 ```
