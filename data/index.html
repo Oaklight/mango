@@ -527,13 +527,13 @@ We provide access to the following collections:</p>
 <td><a href="https://huggingface.co/datasets/mango-ttic/data">data</a></td>
 <td>A cleaned collection that only contains test-ready releases</td>
 <td>Good for LLM benchmark</td>
-<td>- data.tar.zst <br> - data-objid.tar.zst <br> - data-randid.tar.zst</td>
+<td>- data <br> - data-objid <br> - data-randid</td>
 </tr>
 <tr>
 <td><a href="https://huggingface.co/datasets/mango-ttic/data-intermediate">data-intermediate</a></td>
 <td>A full collection with all of our labeling and intermediate files</td>
 <td>If you are interested in dig deeper into data labeling, or derive further customized version</td>
-<td>- data-intermediate.tar.zst <br> - data-intermediate-objid.tar.zst <br> - data-intermediate-randid.tar.zst</td>
+<td>- data-intermediate <br> - data-intermediate-objid <br> - data-intermediate-randid</td>
 </tr>
 </tbody>
 </table>
@@ -587,7 +587,7 @@ In our paper, we benchmark using the first 70 steps of the walkthrough from each
 <p>We use <code>data.tar.zst</code> as an example here.</p>
 <h3 id="1-download-from-huggingface">1. download from Huggingface</h3>
 <h4 id="by-directly-download">by directly download</h4>
-<p><img alt="" src="../assets/images/direct_download.png" /></p>
+<p><img alt="" src="../assets/images/direct_download_data.png" /></p>
 <h4 id="by-git">by git</h4>
 <p>Make sure you have <a href="https://git-lfs.com">git-lfs</a> installed</p>
 <pre><code class="language-bash">git lfs install
