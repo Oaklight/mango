@@ -246,6 +246,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#variations" class="md-nav__link">
     Variations
   </a>
@@ -281,11 +288,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-download-data-from-huggingface" class="md-nav__link">
-    1. Download data from Huggingface
+  <a href="#1-download-from-huggingface" class="md-nav__link">
+    1. download from Huggingface
   </a>
   
-    <nav class="md-nav" aria-label="1. Download data from Huggingface">
+    <nav class="md-nav" aria-label="1. download from Huggingface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -308,8 +315,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-decompress-to-your_folder" class="md-nav__link">
-    2. Decompress to your_folder
+  <a href="#2-decompress" class="md-nav__link">
+    2. decompress
   </a>
   
 </li>
@@ -406,6 +413,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#variations" class="md-nav__link">
     Variations
   </a>
@@ -441,11 +455,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-download-data-from-huggingface" class="md-nav__link">
-    1. Download data from Huggingface
+  <a href="#1-download-from-huggingface" class="md-nav__link">
+    1. download from Huggingface
   </a>
   
-    <nav class="md-nav" aria-label="1. Download data from Huggingface">
+    <nav class="md-nav" aria-label="1. download from Huggingface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -468,8 +482,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-decompress-to-your_folder" class="md-nav__link">
-    2. Decompress to your_folder
+  <a href="#2-decompress" class="md-nav__link">
+    2. decompress
   </a>
   
 </li>
@@ -523,47 +537,69 @@ We provide access to the following collections:</p>
 </tbody>
 </table>
 <p><em>note:</em> if your connection to huggingface.co is slow, you can find us on <a href="https://hf-mirror.com/mango-ttic">Huggingface mirror</a></p>
+<h2 id="folder-structure">Folder Structure</h2>
+<p>Each folder inside <code>data</code> contains the cleaned up files used during LLM inference and results evaluations. Here is the tree structure from game <code>data/night</code> .</p>
+<pre><code class="language-bash">data/night/
+├── night.actions.json      # list of mentioned actions
+├── night.all2all.json      # all simple paths between any 2 locations
+├── night.all_pairs.json    # all connectivity between any 2 locations
+├── night.edges.json        # list of all edges
+├── night.locations.json    # list of all locations
+└── night.walkthrough       # enriched walkthrough exported from Jericho simulator
+</code></pre>
+<p>Each folder inside <code>data-intermediate</code> contains
+all intermediate files we used during data annotation and generation. Here is the tree structure from game <code>data-intermediate/night</code> .</p>
+<pre><code class="language-bash">data-intermediate/night/
+├── night.all2all.json      # all simple paths between any 2 nodes
+├── night.all_pairs.json    # all connectivity between any 2 nodes 
+├── night.anno2code.json    # annotation to codename mapping
+├── night.code2anno.json    # codename to annotation mapping
+├── night.edges.json        # list of all edges
+├── night.map.human         # human map derived from human annotation
+├── night.map.machine       # machine map derived from exported action sequences
+├── night.map.reversed      # reverse map derived from human annotation map
+├── night.moves             # list of mentioned actions
+├── night.nodes.json        # list of all nodes
+├── night.valid_moves.csv   # human annotation
+├── night.walkthrough       # enriched walkthrough exported from Jericho simulator
+└── night.walkthrough_acts  # action sequences exported from Jericho simulator
+</code></pre>
 <h2 id="variations">Variations</h2>
 <h3 id="70-step-vs-all-step-version">70-step vs all-step version</h3>
 <p>In our paper, we benchmark using the first 70 steps of the walkthrough from each game. We also provide all-step versions of both <code>data</code> and <code>data-intermediate</code> collection.</p>
 <h3 id="word-only-wordid">Word-only &amp; Word+ID</h3>
 <ul>
 <li>
-<p><strong>word-only</strong> <code>data[-intermediate].tar.zst</code>: We have one version where all nodes are labeled by additional descriptive text to distinguish different locations with similar names. </p>
+<p><strong>Word-only</strong> <code>data[-intermediate].tar.zst</code>: Nodes are annotated by additional descriptive text to distinguish different locations with similar names.</p>
 </li>
 <li>
-<p><strong>word + jericho ID</strong> <code>data[-intermediate]-objid.tar.zst</code>: In addition, we also prepared another version, where nodes are labeled using minimaly fixed names with object id from Jericho simulator.</p>
+<p><strong>Word + Object ID</strong> <code>data[-intermediate]-objid.tar.zst</code>:  variation of the word-only version, where nodes are labeled using minimaly fixed names with object id from Jericho simulator.</p>
 </li>
 <li>
-<p><strong>word + random ID</strong> <code>data[-intermediate]-randid.tar.zst</code>: A variation of the Jericho ID version, where the Jericho object id replaced with randomly generated integer.</p>
+<p><strong>Word + Random ID</strong> <code>data[-intermediate]-randid.tar.zst</code>: variation of the Jericho ID version, where the Jericho object id replaced with randomly generated integer.</p>
 </li>
 </ul>
-<p>We primarily rely on the word-only version as benchmark, yet providing word+ID version for diverse benchmark settings.</p>
+<p>We primarily rely on the <strong>word-only</strong> version as benchmark, yet providing word+ID version for diverse benchmark settings.</p>
 <h2 id="how-to-use">How to use</h2>
-<p>Because some json files are huge, we use tar.zst to package the data.</p>
-<h3 id="1-download-data-from-huggingface">1. Download <code>data</code> from Huggingface</h3>
+<p>We use <code>data.tar.zst</code> as an example here.</p>
+<h3 id="1-download-from-huggingface">1. download from Huggingface</h3>
 <h4 id="by-directly-download">by directly download</h4>
 <p><img alt="" src="../assets/images/direct_download.png" /></p>
 <h4 id="by-git">by git</h4>
-<p>Make sure you have git-lfs installed (https://git-lfs.com)</p>
+<p>Make sure you have <a href="https://git-lfs.com">git-lfs</a> installed</p>
 <pre><code class="language-bash">git lfs install
 git clone https://huggingface.co/datasets/mango-ttic/data
+
 # or, use hf-mirror if your connection to huggingface.co is slow
 # git clone https://hf-mirror.com/datasets/mango-ttic/data
 </code></pre>
-<p>If you want to clone without large files - just their pointers</p>
-<pre><code class="language-bash">GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/mango-ttic/data
-# or
-# GIT_LFS_SKIP_SMUDGE=1 git clone https://hf-mirror.com/datasets/mango-ttic/data
-</code></pre>
-<h3 id="2-decompress-to-your_folder">2. Decompress to <code>your_folder</code></h3>
-<p>Before decompressing the data, make sure <code>your_folder</code> exists. If not, create it by <code>mkdir -p your_folder</code> .</p>
-<p>Some files are large, please be patient.</p>
+<h3 id="2-decompress">2. decompress</h3>
+<p>Because some json files are huge, we use tar.zst to package the data.</p>
 <p>silently decompress</p>
-<pre><code class="language-bash">tar -I 'zstd -d' -xf data.tar.zst -C your_folder
+<pre><code class="language-bash">tar -I 'zstd -d' -xf data.tar.zst
 </code></pre>
 <p>or, verbosely decompress</p>
-<pre><code class="language-bash">zstd -d -c data.tar.zst | tar -xvf - -C your_folder
+<pre><code class="language-bash">zstd -d -c data.tar.zst | tar -xvf -
 </code></pre>
 
 
