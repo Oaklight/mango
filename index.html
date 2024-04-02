@@ -229,13 +229,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-location" class="md-nav__link">
-    Data location
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#cite-us" class="md-nav__link">
     Cite Us
   </a>
@@ -344,13 +337,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-location" class="md-nav__link">
-    Data location
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#cite-us" class="md-nav__link">
     Cite Us
   </a>
@@ -375,19 +361,20 @@
 <h1 id="welcome-to-mango">Welcome to MANGO!</h1>
 <h2 id="whats-mango">What's MANGO?</h2>
 <p><strong>MANGO</strong>: A Benchmark for Evaluating <strong>Ma</strong>pping and <strong>N</strong>avi<strong>g</strong>ati<strong>o</strong>n Abilities of Large Language Models</p>
-<p>Large language models such as ChatGPT and GPT-4 have recently achieved astonishing performances on a variety of natural language processing tasks.
-In this paper, we take an initiative to investigate their capacities of text-based mapping and navigation.
-We propose MANGO, a benchmark that includes 53 mazes taken from a suite of textgames.
-Each maze is paired with a walkthrough that visits all its locations but does \emph{not} cover all the paths.
-The evaluation is zero-shot: for each maze, a large language model reads the walkthrough and answers hundreds of mapping and navigation questions such as "how should you go to Attic from West of House?" and "where are we if we go north and east from Cellar?".
-It turns out that even the best to-date language model GPT-4 fails to give correct answers to a considerable portion of the questions, significantly underperforming humans. What's worse, GPT-4 works poorly on the challenging mazes that are larger and more complex.
-Our benchmark can be used to track the advances of mapping and navigation abilities of large language models.
-It will also facilitate future research that develops methods to improve such abilities of language models.
-We host our data, source code, and evaluation programs at <a href="https://mango.ttic.edu">https://mango.ttic.edu</a>.</p>
-<h2 id="data-location">Data location</h2>
-<p>TODO: links to different sections of Mango</p>
+<p>Large language models such as ChatGPT and GPT-4 have recently achieved astonishing performance on a variety of natural language processing tasks. </p>
+<p>In this paper, we propose MANGO, a benchmark to evaluate their capabilities to perform text-based mapping and navigation. Our benchmark includes 53 mazes taken from a suite of textgames: each maze is paired with a walkthrough that visits every location but does not cover all possible paths. The task is question-answering: for each maze, a large language model reads the walkthrough and answers hundreds of mapping and navigation questions such as "How should you go to Attic from West of House?" and "Where are we if we go north and east from Cellar?". </p>
+<p>Although these questions are easy to humans, it turns out that even GPT-4, the best-to-date language model, performs poorly at answering them. Further, our experiments suggest that a strong mapping and navigation ability would benefit large language models in performing relevant downstream tasks, such as playing textgames. </p>
+<p>Our MANGO benchmark will facilitate future research on methods that improve the mapping and navigation capabilities of language models. We host our leaderboard, data, code, and evaluation program here.</p>
 <h2 id="cite-us">Cite Us</h2>
-<p>TODO: add bibtex</p>
+<pre><code class="language-bibtex">@misc{ding2024mango,
+      title={MANGO: A Benchmark for Evaluating Mapping and Navigation Abilities of Large Language Models}, 
+      author={Peng Ding and Jiading Fang and Peng Li and Kangrui Wang and Xiaochen Zhou and Mo Yu and Jing Li and Matthew R. Walter and Hongyuan Mei},
+      year={2024},
+      eprint={2403.19913},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+</code></pre>
 
 
 
