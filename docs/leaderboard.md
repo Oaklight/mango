@@ -4,7 +4,7 @@ We hold a leaderboard for evaluating model performance on our MANGO benchmark. W
 
 ## Submission
 
-We welcome new submissions to our MANGO benchmark. To submit a new result, please email [dingpeng@uchicago.edu](mailto:dingpeng@uchicago.edu) with the paper of your method. We will then update the leaderboard and link your paper accordingly.
+We welcome new submissions to our MANGO benchmark. To submit a new result, please email `[dingpeng]@@uchicago.edu` with the paper of your method. We will then update the leaderboard and link your paper accordingly.
 
 ## 🏆 Benchmark 🏆
 
