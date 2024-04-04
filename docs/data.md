@@ -90,7 +90,9 @@ git clone https://huggingface.co/datasets/mango-ttic/data
 
 ### 2. decompress
 
-Because some json files are huge, we use tar.zst to package the data.
+Because some json files are huge, we use tar.zst to package the data efficiently. <br>
+
+> You may get `zstd` from package manager like `apt install zstd` or `dnf install zstd` , or using `conda install zstd` or `mamba install zstd` , or by using pre-compiled binary distributed on [`zstd` GitHub page](https://github.com/facebook/zstd/releases).
 
 silently decompress
 
@@ -103,3 +105,6 @@ or, verbosely decompress
 ```bash
 zstd -d -c data.tar.zst | tar -xvf -
 ```
+
+<!-- ## Some stats
+ -->
