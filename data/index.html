@@ -617,13 +617,18 @@ git clone https://huggingface.co/datasets/mango-ttic/data
 # git clone https://hf-mirror.com/datasets/mango-ttic/data
 </code></pre>
 <h3 id="2-decompress">2. decompress</h3>
-<p>Because some json files are huge, we use tar.zst to package the data.</p>
+<p>Because some json files are huge, we use tar.zst to package the data efficiently. <br></p>
+<blockquote>
+<p>You may get <code>zstd</code> from package manager like <code>apt install zstd</code> or <code>dnf install zstd</code> , or using <code>conda install zstd</code> or <code>mamba install zstd</code> , or by using pre-compiled binary distributed on <a href="https://github.com/facebook/zstd/releases"><code>zstd</code> GitHub page</a>.</p>
+</blockquote>
 <p>silently decompress</p>
 <pre><code class="language-bash">tar -I 'zstd -d' -xf data.tar.zst
 </code></pre>
 <p>or, verbosely decompress</p>
 <pre><code class="language-bash">zstd -d -c data.tar.zst | tar -xvf -
 </code></pre>
+<!-- ## Some stats
+ -->
 
 
 
