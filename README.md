@@ -20,13 +20,12 @@ Our MANGO benchmark will facilitate future research on methods that improve the 
 ## Setup
 
 ```
-git clone --depth 1 git@github.com:Oaklight/mango.git
+git clone git@github.com:Oaklight/mango.git
 cd mango
 conda create -f environment.yml --name mango
 conda activate mango
 pip install -r requirements.txt
 ```
-Please remember to add `--depth 1` when cloning the code.
 
 ## Dataset
 Our data are hosted on [Huggingface](https://huggingface.co/mango-ttic). You can get more information from [this link](https://oaklight.github.io/mgwb/data/).
