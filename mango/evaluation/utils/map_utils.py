@@ -32,7 +32,7 @@ def get_game_info(map_dir:str,game_name:str):
     G = nx.MultiDiGraph()
     for edge in edges:
         G.add_edge(edge['src_node'], edge['dst_node'], action=edge['action'], 
-                   edge_min_step_answerable=edge["edge_min_step_answerable"],seen_in_forward_answerable=['seen_in_forward_answerable'])
+                   edge_min_step_answerable=edge["edge_min_step_answerable"],seen_in_forward_answerable=edge['seen_in_forward_answerable'])
 
     return G,all2all,all_pairs,actions,locations,walkthrough
 
