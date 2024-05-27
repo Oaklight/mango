@@ -39,13 +39,13 @@ def parse_raw_output(raw_output,key_mapping=None):
     check if the list is in the correct format
 
     """
-    location_before = "location_before"
-    action = "action"
-    location_after = "location_after"
+    location_before_key = "location_before"
+    action_key = "action"
+    location_after_key = "location_after"
     if key_mapping is not None:
-        location_before = key_mapping['location_before']
-        action = key_mapping['action']
-        location_after = key_mapping['location_after']
+        location_before_key = key_mapping['location_before']
+        action_key = key_mapping['action']
+        location_after_key = key_mapping['location_after']
 
     raw_output=raw_output.strip()
 
@@ -58,10 +58,10 @@ def parse_raw_output(raw_output,key_mapping=None):
         print('path is not list')
         return None
     for edge in path:
-        if location_before not in edge.keys() or location_after not in edge.keys() or action not in edge.keys():
+        if location_before_key not in edge.keys() or location_after_key not in edge.keys() or action_key not in edge.keys():
             print('path edge key error')
             return None
-        elif not isinstance(edge[location_before],str) or not isinstance(edge[location_after],str) or not isinstance(edge[action],str):
+        elif not isinstance(edge[location_before_key],str) or not isinstance(edge[location_after_key],str) or not isinstance(edge[action_key],str):
             print('path edge value error')
             return None
         
