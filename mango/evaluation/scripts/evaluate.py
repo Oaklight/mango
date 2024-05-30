@@ -86,7 +86,7 @@ def get_final_summary(list_of_dict):
     
     sum_up_key=[k for k,v in list_of_dict[0].items() if not k.endswith('average')]
     avg_by_total_keys=[k for k,v in list_of_dict[0].items() if 'error' in k and not k in sum_up_key]
-    avg_by_valid_keys=[k for k,v in list_of_dict[0].items() if 'score'  in k and not k in sum_up_key]
+    avg_by_valid_keys=[k for k,v in list_of_dict[0].items() if k not in sum_up_key and k not in avg_by_total_keys]
 
     for info in list_of_dict:
         for k,v in info.items():

@@ -236,11 +236,14 @@ class MapEvaluator:
             TaskType.DestFinding:self.eval_dest_finding,
         }
         all_info=[]
-        result_summary={
-            "all":defaultdict(int),
-            "easy":defaultdict(int),
-            "hard":defaultdict(int),
-        }        
+        summary_keys=["loose_score", "strict_score", "reasoning_score", "path_len", "parsing_error", "id_error", "step_num_error"]
+        result_summary={}
+        for k in ["all","easy","hard"]:
+            result_summary[k]={}
+            result_summary[k]["total_task"]=0
+            result_summary[k]["valid_task"]=0
+            for key in summary_keys:
+                result_summary[k][key]=0
         for file in os.listdir(map_rst_dir):
             if file.endswith('.json'):
                 rst=eval_function[task_type](os.path.join(map_rst_dir,file))
@@ -249,7 +252,6 @@ class MapEvaluator:
                     "rst":rst
                 })
         def summary(rst_sum,rst):
-            summary_keys=["loose_score", "strict_score", "reasoning_score", "path_len", "parsing_error", "id_error", "step_num_error",]
             rst_sum["total_task"]+=1
             if rst["parsing_error"]==0 and rst["id_error"]==0 and rst["step_num_error"]==0:
                 rst_sum["valid_task"]+=1
