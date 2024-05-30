@@ -54,7 +54,16 @@ python mango/inference/main.py --exp_tag debug --data_folder ./data --save_folde
 
 ## Evaluation
 
-Please refer to `mango/evaluation/eval_batch.py`.
+Please refer to `mango/evaluation/scripts/evaluate.py`.
+
+dest-finding example:
+```
+python -m  mango.evaluation.scripts.evaluate evaluate_model_dest_finding ./mango/evaluation/data/llm_output_example/claude-instant-1_desti_finding_debug  ./mango/evaluation/data/data-70steps ./mango/evaluation/data/llm_eval_exmple/df
+```
+route-finding example:
+```
+python -m  mango.evaluation.scripts.evaluate evaluate_model_route_finding ./mango/evaluation/data/llm_output_example/claude-instant-1_route_finding_debug  ./mango/evaluation/data/data-70steps ./mango/evaluation/data/llm_eval_exmple/rf
+```
 
 ## Citation
 ```bibtex
