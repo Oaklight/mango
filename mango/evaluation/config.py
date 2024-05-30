@@ -6,7 +6,7 @@ KEY_MAPPING ={
     "model_cutoff_num":"model_cutoff_num",
     "min_step_total_answerable":"min_step_total_answerable",
     "answerable":"answerable",
-    "response":"answer",
+    "response":"response",
     "location_before":"location_before",
     "location_after":"location_after",
     "action":"action",

@@ -45,7 +45,7 @@ class MapEvaluator:
     def bfs_get_multi_des(self,src_node,actions,time_limit=60):
         dest_nodes=[]
         queue = deque([(src_node, 0)])
-        start_time=time.time()
+        #start_time=time.time()
         while queue:
             # if time.time()-start_time>time_limit:
               
@@ -135,7 +135,9 @@ class MapEvaluator:
         response=infer_rst[key_mapping['response']]
         parsed_response=self.parse_llm_raw_output(response)
 
-       
+        if '[' in response and ']' in response:
+                if parsed_response is None:
+                    print(file_path)
         if sample_id not in self.all_pairs.keys():
             return_rst['id_error']=1
             return return_rst
@@ -197,8 +199,9 @@ class MapEvaluator:
         response=infer_rst[key_mapping['response']]
         action_list=infer_rst[key_mapping["action_list"]]
         parsed_response=self.parse_llm_raw_output(response)
-
-        
+        # if '[' in response and ']' in response:
+        #     if parsed_response is None:
+        #         print(file_path)
         
         if sample_id not in self.all2all.keys():
             return_rst['id_error']=1
