@@ -39,6 +39,8 @@ rm data-70steps.tar.zst
 mv data-70steps data
 ```
 
+We also provided these dataset in this repo, please refer to folder `data`.
+
 ## Inference
 We put the inference codebase in the folder `mango/inference/`.
 You can refer to the README file under this folder for more information of the codebase.
@@ -58,11 +60,11 @@ Please refer to `mango/evaluation/scripts/evaluate.py`.
 
 dest-finding example:
 ```
-python -m  mango.evaluation.scripts.evaluate evaluate_model_dest_finding ./mango/evaluation/data/llm_output_example/claude-instant-1_desti_finding_debug  ./mango/evaluation/data/data-70steps ./mango/evaluation/data/llm_eval_exmple/df
+python -m  mango.evaluation.scripts.evaluate evaluate_model_dest_finding ./examples/llm_output_example/claude-instant-1_desti_finding_debug  ./data ./examples/llm_eval_exmple/df
 ```
 route-finding example:
 ```
-python -m  mango.evaluation.scripts.evaluate evaluate_model_route_finding ./mango/evaluation/data/llm_output_example/claude-instant-1_route_finding_debug  ./mango/evaluation/data/data-70steps ./mango/evaluation/data/llm_eval_exmple/rf
+python -m  mango.evaluation.scripts.evaluate evaluate_model_route_finding ./examples/llm_output_example/claude-instant-1_route_finding_debug  ./data ./examples/llm_eval_exmple/rf
 ```
 
 ## Citation
