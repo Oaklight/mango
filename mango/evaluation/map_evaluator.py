@@ -4,6 +4,10 @@ from mango.evaluation.utils import edit_distance,parse_raw_output
 import json
 import time
 from collections import deque
+from typing import Optional
+import os
+from mango.evaluation.config import KEY_MAPPING
+from collections import defaultdict
 class EvalMetric(IntEnum):
     Strict = 0
     Loose = 1
@@ -13,7 +17,7 @@ class TaskType(IntEnum):
     DestFinding = 1
 
 class MapEvaluator:
-    def __init__(self, map_dir,map_name,key_mapping=None):
+    def __init__(self, map_dir:str,map_name:str,key_mapping:Optional[dict]=None):
         self.G_eval,\
         self.G,\
         self.actions,\
@@ -21,7 +25,9 @@ class MapEvaluator:
         self.all2all,\
         self.all_pairs,\
         self.walkthrough=get_game_info_with_G_eval(map_dir,map_name)
-        self.key_mapping=key_mapping
+        self.key_mapping=KEY_MAPPING
+        if key_mapping is not None:
+            self.key_mapping=key_mapping
 
 
     def matching_score(self,s1:str,s2:str,metric):
@@ -41,13 +47,13 @@ class MapEvaluator:
         queue = deque([(src_node, 0)])
         start_time=time.time()
         while queue:
-            if time.time()-start_time>time_limit:
+            # if time.time()-start_time>time_limit:
               
-                return dest_nodes
+            #     return dest_nodes
             current_node, step = queue.popleft()
-            
+            #print(current_node,step)
             # If we've finished all actions
-            if step == len(actions)-1:
+            if step == len(actions):
                 dest_nodes.append(current_node)
 
             # If we haven't finished all actions yet
@@ -55,7 +61,7 @@ class MapEvaluator:
                 for (_, next_node, attr) in self.G_eval.out_edges(current_node, data=True):
                     if attr['action'].lower() == actions[step].lower(): 
                         queue.append((next_node, step + 1))
-
+        #print(dest_nodes)
         return dest_nodes
     
     def eval_actions(self,path, src_node, dst_node,metric):
@@ -66,17 +72,13 @@ class MapEvaluator:
                 node_action=node_info["action"].lower()
                 action=max(actions_gt, key=lambda v: self.matching_score(node_action, v, metric))
                 path_actions.append(action)
-        
+        #print(path_actions)
         dest_nodes=self.bfs_get_multi_des(src_node,path_actions)
-        
+        #print(metric.name,dest_nodes)
         return max([self.matching_score(dst_node,node,metric) for node in dest_nodes]) if dest_nodes else 0
 
     def eval_full_path(self,path, src_node, dst_node):
-        key_mapping={ 
-            'location_before':'location_before',
-            'location_after':'location_after',
-            'action':'action',
-        } if self.key_mapping is None else self.key_mapping
+        key_mapping=self.key_mapping
         location_before_key=key_mapping['location_before']
         location_after_key=key_mapping['location_after']
         action_key=key_mapping['action']
@@ -103,18 +105,26 @@ class MapEvaluator:
 
 
     def eval_route_finding(self,file_path):
-        key_mapping={
-            'sample_id':'sample_id',
-            'game_name':'game_name',
-            'src_node':'src_node',
-            'dst_node':'dst_node',
-            'model_cutoff_num':'model_cutoff_num',
-            'min_step_total_answerable':'min_step_total_answerable',
-            'answerable':'answerable',
-            'response':'response',
-        } if self.key_mapping is None else self.key_mapping
+        key_mapping=self.key_mapping
+        return_rst={
+                'loose_score':0,
+                'strict_score':0,
+                'reasoning_score':0,
+                'path_len':0,
+                'parsing_error':0,
+                'id_error':0,
+                'step_num_error':0,
+                'is_easy':0,
+                'is_hard':0,
+            }
         with open(file_path,'r') as f:
-            infer_rst = json.load(f)
+            try:
+                infer_rst = json.load(f)
+            except Exception as e:
+                return_rst["parsing_error"]=1
+                print(file_path)
+                return return_rst
+
         sample_id=infer_rst[key_mapping['sample_id']]
         game_name=infer_rst[key_mapping['game_name']]
         src_node=infer_rst[key_mapping['src_node']]
@@ -125,18 +135,11 @@ class MapEvaluator:
         response=infer_rst[key_mapping['response']]
         parsed_response=self.parse_llm_raw_output(response)
 
-        return_rst={
-                'loose_score':0,
-                'strict_score':0,
-                'reasoning':0,
-                'is_hard':0,
-                'path_len':0,
-                'parsing_error':0,
-                'id_error':0,
-                'step_num_error':0,
-                'is_easy':0,
-                'is_hard':0,
-            }
+       
+        if sample_id not in self.all_pairs.keys():
+            return_rst['id_error']=1
+            return return_rst
+        
         if min_step_total_answerable>model_cutoff_num:
             return_rst['step_num_error']=1
             return return_rst
@@ -160,23 +163,30 @@ class MapEvaluator:
 
         return_rst['loose_score']=self.eval_actions(parsed_response,src_node,dst_node,EvalMetric.Loose)
         return_rst['strict_score']=self.eval_actions(parsed_response,src_node,dst_node,EvalMetric.Strict)
-        return_rst['reasoning']=self.eval_full_path(parsed_response,src_node,dst_node)
+        return_rst['reasoning_score']=self.eval_full_path(parsed_response,src_node,dst_node)
 
         return return_rst
     
     def eval_dest_finding(self,file_path):
-        key_mapping={
-            'sample_id':'sample_id',
-            'game_name':'game_name',
-            'src_node':'src_node',
-            'dst_node':'dst_node',
-            'model_cutoff_num':'model_cutoff_num',
-            'min_step_total_answerable':'min_step_total_answerable',
-            'answerable':'answerable',
-            'response':'response',
-        } if self.key_mapping is None else self.key_mapping
+        key_mapping=self.key_mapping
+        return_rst={
+                'loose_score':0,
+                'strict_score':0,
+                'reasoning_score':0,
+                'path_len':0,
+                'parsing_error':0,
+                'id_error':0,
+                'step_num_error':0,
+                'is_easy':0,
+                'is_hard':0,
+            }
         with open(file_path,'r') as f:
-            infer_rst = json.load(f)
+            try:
+                infer_rst = json.load(f)
+            except Exception as e:
+                print(file_path)
+                return_rst["parsing_error"]=1
+                return return_rst
         sample_id=infer_rst[key_mapping['sample_id']]
         game_name=infer_rst[key_mapping['game_name']]
         src_node=infer_rst[key_mapping['src_node']]
@@ -185,20 +195,15 @@ class MapEvaluator:
         min_step_total_answerable=infer_rst[key_mapping['min_step_total_answerable']]
         answerable=infer_rst[key_mapping['answerable']]
         response=infer_rst[key_mapping['response']]
+        action_list=infer_rst[key_mapping["action_list"]]
         parsed_response=self.parse_llm_raw_output(response)
 
-        return_rst={
-                'loose_score':0,
-                'strict_score':0,
-                'reasoning':0,
-                'is_hard':0,
-                'path_len':0,
-                'parsing_error':0,
-                'id_error':0,
-                'step_num_error':0,
-                'is_easy':0,
-                'is_hard':0,
-            }
+        
+        
+        if sample_id not in self.all2all.keys():
+            return_rst['id_error']=1
+            return return_rst
+        
         if min_step_total_answerable>model_cutoff_num:
             return_rst['step_num_error']=1
             return return_rst
@@ -207,6 +212,8 @@ class MapEvaluator:
             return_rst['parsing_error']=1
             return return_rst
         
+
+        
         return_rst['path_len']=len(self.all2all[sample_id]['path_details'])
         min_step_forward_answerable=self.all2all[sample_id]['min_step_forward_answerable']
         if min_step_forward_answerable>model_cutoff_num:
@@ -214,17 +221,60 @@ class MapEvaluator:
         else:
             return_rst['is_easy']=1
 
-        return_rst['loose_score']=self.matching_score(parsed_response[-1]['location_after'],dst_node,EvalMetric.Loose)
-        return_rst['strict_score']=self.matching_score(parsed_response[-1]['location_after'],dst_node,EvalMetric.Strict)
-        return_rst['reasoning']=self.eval_full_path(parsed_response,src_node,dst_node)
+        dst_nodes=self.bfs_get_multi_des(src_node, action_list)
+        return_rst['loose_score']=max([self.matching_score(dst_node,dst_node,EvalMetric.Loose) for dst_node in dst_nodes] ) if len(dst_nodes)>0 else 0
+        return_rst['strict_score']=max([self.matching_score(dst_node,dst_node,EvalMetric.Strict) for dst_node in dst_nodes] ) if len(dst_nodes)>0 else 0
+        return_rst['reasoning_score']=self.eval_full_path(parsed_response,src_node,dst_node)
 
         return return_rst
     
 
-        
 
-
+    def evaluate_map(self,map_rst_dir,task_type:TaskType):
+        eval_function={
+            TaskType.RouteFinding:self.eval_route_finding,
+            TaskType.DestFinding:self.eval_dest_finding,
+        }
+        all_info=[]
+        result_summary={
+            "all":defaultdict(int),
+            "easy":defaultdict(int),
+            "hard":defaultdict(int),
+        }        
+        for file in os.listdir(map_rst_dir):
+            if file.endswith('.json'):
+                rst=eval_function[task_type](os.path.join(map_rst_dir,file))
+                all_info.append({
+                    "file":file,
+                    "rst":rst
+                })
+        def summary(rst_sum,rst):
+            summary_keys=["loose_score", "strict_score", "reasoning_score", "path_len", "parsing_error", "id_error", "step_num_error",]
+            rst_sum["total_task"]+=1
+            if rst["parsing_error"]==0 and rst["id_error"]==0 and rst["step_num_error"]==0:
+                rst_sum["valid_task"]+=1
+            for key in summary_keys:
+                rst_sum[key]+=rst[key]
+        for info in all_info:
+            rst=info["rst"]
+            summary(result_summary["all"],rst)
+            if rst["is_easy"]==1:
+                summary(result_summary["easy"],rst)
+            if rst["is_hard"]==1:
+                summary(result_summary["hard"],rst)
         
+        
+        for k in ["all","easy","hard"]:
+            for key in ["loose_score", "strict_score", "reasoning_score", "path_len", "parsing_error", "id_error", "step_num_error",]:
+                if key in ["loose_score", "strict_score", "reasoning_score", "path_len"]:
+                    result_summary[k][key+'_average']=result_summary[k][key]/result_summary[k]["valid_task"] if result_summary[k]["valid_task"]>0 else 0
+                if key in ["parsing_error", "id_error", "step_num_error"]:
+                    result_summary[k][key+'_average']=result_summary[k][key]/result_summary[k]["total_task"] if result_summary[k]["total_task"]>0 else 0
+                       
+        return {
+            "all_info":all_info,
+            "summary":result_summary
+        }
 
             
 

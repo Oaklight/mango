@@ -52,9 +52,13 @@ def parse_raw_output(raw_output,key_mapping=None):
     first_bracket_open_index = raw_output.find('[')
     first_bracket_close_index = raw_output.find(']')
 
-    path=eval(raw_output[first_bracket_open_index:first_bracket_close_index+1])
+    try:
+        path=eval(raw_output[first_bracket_open_index:first_bracket_close_index+1])
+    except Exception as e:
+        # print('path is not in correct format, <raw_output>:',raw_output)
+        return None
     
-    if not isinstance(path,list):
+    if not isinstance(path,list) or len(path)==0:
         print('path is not list')
         return None
     for edge in path:
