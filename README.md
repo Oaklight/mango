@@ -39,7 +39,7 @@ rm data-70steps.tar.zst
 mv data-70steps data
 ```
 
-We also provided these dataset in this repo, please refer to folder `data`.
+We also provided this dataset in this repo, please refer to folder `data`.
 
 ## Inference
 We put the inference codebase in the folder `mango/inference/`.
