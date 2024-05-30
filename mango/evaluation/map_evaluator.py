@@ -82,8 +82,7 @@ class MapEvaluator:
         location_before_key=key_mapping['location_before']
         location_after_key=key_mapping['location_after']
         action_key=key_mapping['action']
-        if path[0][location_before_key]!= src_node or path[-1][location_after_key] != dst_node:
-           
+        if path[0][location_before_key]!= src_node or path[-1][location_after_key]!= dst_node:             
             return 0
         for edge in path:
             location_before=edge[location_before_key].strip()
@@ -225,10 +224,10 @@ class MapEvaluator:
             return_rst['is_easy']=1
 
         dst_nodes=self.bfs_get_multi_des(src_node, action_list)
+        print(dst_nodes)
         return_rst['loose_score']=max([self.matching_score(dst_node,dst_node,EvalMetric.Loose) for dst_node in dst_nodes] ) if len(dst_nodes)>0 else 0
         return_rst['strict_score']=max([self.matching_score(dst_node,dst_node,EvalMetric.Strict) for dst_node in dst_nodes] ) if len(dst_nodes)>0 else 0
-        return_rst['reasoning_score']=self.eval_full_path(parsed_response,src_node,dst_node)
-
+        return_rst['reasoning_score']=max(self.eval_full_path(parsed_response,src_node,dst_node) for dst_node in dst_nodes) if len(dst_nodes)>0 else 0
         return return_rst
     
 
