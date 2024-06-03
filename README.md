@@ -46,12 +46,12 @@ We put the inference codebase in the folder `mango/inference/`.
 You can refer to the README file under this folder for more information of the codebase.
 
 
-Here we show how to query the `gpt-3.5` model to perform inference:
+Here we show how to query the `gclaude-instant-1` model to perform inference:
 
 ```
-export OPENAI_API_KEY=<YOUR KEY>
+export ANTHROPIC_API_KEY=<YOUR KEY>
 
-python mango/inference/main.py --exp_tag debug --data_folder ./data --save_folder ./results --game_name '905' --task_type 'route_finding' --model_name 'gpt-3.5' 
+python mango/inference/main.py --exp_tag debug --data_folder ./data --save_folder ./results --game_name '905' --task_type 'route_finding' --model_name 'claude-instant-1' 
 ```
 
 ## Evaluation
