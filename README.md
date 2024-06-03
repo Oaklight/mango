@@ -46,7 +46,7 @@ We put the inference codebase in the folder `mango/inference/`.
 You can refer to the README file under this folder for more information of the codebase.
 
 
-Here we show how to query the `gclaude-instant-1` model to perform inference:
+Here we show how to query the `claude-instant-1` model to perform inference:
 
 ```
 export ANTHROPIC_API_KEY=<YOUR KEY>
