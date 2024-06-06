@@ -17,7 +17,7 @@ setup(
     packages=find_packages(),
     python_requires='>=3.11',
     install_requires=[
-        'packaging==24.0',
+        'packaging==23.0',
         'fire==0.6.0',
         'networkx==3.2.1',
         'matplotlib==3.7.1',
