@@ -11,7 +11,7 @@ We welcome new submissions to our MANGO benchmark. To submit a new result, pleas
 | Rank | Model                                                                       | DF (easy) | DF (hard) | RF (easy) | RF (hard) |
 |------|-----------------------------------------------------------------------------|-------|-------|-------|-------|
 | 1 🥇 | [o1-preview*](https://openai.com/index/introducing-openai-o1-preview/)       | 1.0   | 1.0   | 0.97 | 0.97   |
-| 2 🥈 | [o1-mini*](https://openai.com/index/introducing-openai-o1-preview/)          | 1.0   | 1.0   | 0.80  | 0.44  |
+| 2 🥈 | [o1-mini*](https://openai.com/index/introducing-openai-o1-preview/)          | 1.0   | 1.0   | 0.44  | 0.80  |
 | 3 🥉 | [GPT-4-0613](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) | 0.83  | 0.58  | 0.55  | 0.45  |
 | 4    | [Claude-2](https://www.anthropic.com/news/claude-2)                         | 0.81  | 0.45  | 0.47  | 0.19  |
 | 5    | [Clause-1](https://www.anthropic.com/news/100k-context-windows)             | 0.72  | 0.36  | 0.33  | 0.11  |
