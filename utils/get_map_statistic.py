@@ -4,7 +4,12 @@ import os
 import fire
 
 
-def get_map_statistic(map_dir: str, game_name: str, step_num: int = 500):
+def get_map_statistic(
+    map_dir: str,
+    game_name: str,
+    step_num: int = 500,
+    include_final_step_change: bool = False,
+):
     game_name = str(game_name)
     map_statistic = {
         "num_locations": 0,
@@ -30,6 +35,9 @@ def get_map_statistic(map_dir: str, game_name: str, step_num: int = 500):
     with open(os.path.join(map_dir, game_name, f"{game_name}.walkthrough"), "r") as f:
         map_statistic["num_steps"] = len(f.read().split("==>STEP NUM:")) - 2
         max_step_num = map_statistic["num_steps"]
+
+    if not include_final_step_change:
+        max_step_num -= 1
 
     if step_num > max_step_num:
         step_num = max_step_num
@@ -65,8 +73,13 @@ def get_map_statistic(map_dir: str, game_name: str, step_num: int = 500):
     return map_statistic
 
 
-def main(map_dir: str, game_name: str, step_num: int = 9999):
-    print(get_map_statistic(map_dir, game_name, step_num))
+def main(
+    map_dir: str,
+    game_name: str,
+    step_num: int = 9999,
+    include_final_step_change: bool = False,
+):
+    print(get_map_statistic(map_dir, game_name, step_num, include_final_step_change))
 
 
 if __name__ == "__main__":
