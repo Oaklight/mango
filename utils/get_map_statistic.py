@@ -4,17 +4,17 @@ import os
 import fire
 
 
-def get_map_statistic(map_dir, game_name, step_num=500):
+def get_map_statistic(map_dir: str, game_name: str, step_num: int = 500):
     game_name = str(game_name)
     map_statistic = {
         "num_locations": 0,
         "num_edges": 0,
         "avg_len_path": 0,
         "num_steps": 0,
-        "df_hard": 0,
         "df_easy": 0,
-        "rf_hard": 0,
+        "df_hard": 0,
         "rf_easy": 0,
+        "rf_hard": 0,
     }
     # get edges
     with open(os.path.join(map_dir, game_name, f"{game_name}.edges.json"), "r") as f:
@@ -29,6 +29,10 @@ def get_map_statistic(map_dir, game_name, step_num=500):
     # get walkthrough
     with open(os.path.join(map_dir, game_name, f"{game_name}.walkthrough"), "r") as f:
         map_statistic["num_steps"] = len(f.read().split("==>STEP NUM:")) - 2
+        max_step_num = map_statistic["num_steps"]
+
+    if step_num > max_step_num:
+        step_num = max_step_num
 
     # get all_pairs
     with open(
@@ -61,7 +65,7 @@ def get_map_statistic(map_dir, game_name, step_num=500):
     return map_statistic
 
 
-def main(map_dir, game_name, step_num=500):
+def main(map_dir: str, game_name: str, step_num: int = 9999):
     print(get_map_statistic(map_dir, game_name, step_num))
 
 
