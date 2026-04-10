@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mango-ttic"
+dynamic = ["version"]
+authors = [{ name = "ttic" }]
+description = "MANGO: A Benchmark for Evaluating Mapping and Navigation Abilities of Large Language Models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "networkx>=3.0",
+    "matplotlib>=3.7",
+    "pandas>=2.0",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+infer = [
+    "openai>=1.0",
+    "tenacity>=8.0",
+    "tiktoken>=0.7",
+    "tqdm>=4.60",
+]
+infer-legacy = [
+    "anthropic==0.26.0",
+    "openai==0.28.0",
+    "huggingface-hub>=0.23.0",
+    "tenacity>=8.0",
+    "tiktoken>=0.7",
+    "tqdm>=4.60",
+]
+dev = [
+    "ruff>=0.1.0",
+    "ty>=0.0.24",
+]
+test = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+mango-eval = "mango.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Oaklight/mango"
+
+[tool.setuptools.dynamic]
+version = {attr = "mango.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["mango*"]
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "UP"]
+ignore = ["UP007", "E501"]
+
+[tool.ty.environment]
+python-version = "3.10"
+
+[tool.ty.src]
+include = ["mango", "tests"]
+
+[tool.ty.rules]
+unresolved-import = "ignore"

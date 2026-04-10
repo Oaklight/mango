@@ -1,4 +1,6 @@
-from typing import Union
+import ast
+
+
 def edit_distance(s1: str, s2: str):
     s1 = s1.lower()
     s2 = s2.lower()
@@ -27,7 +29,7 @@ def edit_distance(s1: str, s2: str):
     return score
 
 
-def parse_raw_output(raw_output:Union[str, list], key_mapping=None):
+def parse_raw_output(raw_output: str | list, key_mapping=None):
     """
     raw_output is in the format of ... [{'location_before:','action:','location_after'}...]..., need to extract the path
     key_mapping may vary with llms
@@ -50,37 +52,39 @@ def parse_raw_output(raw_output:Union[str, list], key_mapping=None):
 
         first_bracket_open_index = raw_output.find("[")
         first_bracket_close_index = raw_output.find("]")
-        error_info=None
+        error_info = None
         try:
-            path = eval(
+            path = ast.literal_eval(
                 raw_output[first_bracket_open_index : first_bracket_close_index + 1]
             )
-        except Exception as e:
-            error_info=f"raw_output is not in correct format: {raw_output}"
-            return None,error_info
+        except (ValueError, SyntaxError):
+            error_info = f"raw_output is not in correct format: {raw_output}"
+            return None, error_info
     elif isinstance(raw_output, list):
         path = raw_output
     else:
-        error_info=f"raw_output should be either str or list: {raw_output} ({type(raw_output)})"
-        return None,error_info
+        error_info = f"raw_output should be either str or list: {raw_output} ({type(raw_output)})"
+        return None, error_info
 
     if not isinstance(path, list) or len(path) == 0:
-        error_info=f"raw_output is not in correct format: {raw_output} ({type(raw_output)})"
-        return None,error_info
+        error_info = (
+            f"raw_output is not in correct format: {raw_output} ({type(raw_output)})"
+        )
+        return None, error_info
     for edge in path:
         if (
             location_before_key not in edge.keys()
             or location_after_key not in edge.keys()
             or action_key not in edge.keys()
         ):
-            error_info=f"path edge key error: {edge}"
-            return None,error_info
+            error_info = f"path edge key error: {edge}"
+            return None, error_info
         elif (
             not isinstance(edge[location_before_key], str)
             or not isinstance(edge[location_after_key], str)
             or not isinstance(edge[action_key], str)
         ):
-            error_info=f"path edge value error: {edge}"
-            return None,error_info
+            error_info = f"path edge value error: {edge}"
+            return None, error_info
 
-    return path,None
+    return path, None

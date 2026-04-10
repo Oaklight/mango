@@ -2,13 +2,13 @@ import json
 import os
 from collections import deque
 from enum import IntEnum
-from typing import Optional
 
 from mango.evaluation.config import KEY_MAPPING
 from mango.evaluation.utils import edit_distance, parse_raw_output
 from mango.evaluation.utils.map_utils import get_game_info_with_G_eval
-import sys
 import traceback
+
+
 class EvalMetric(IntEnum):
     Strict = 0
     Loose = 1
@@ -20,7 +20,7 @@ class TaskType(IntEnum):
 
 
 class MapEvaluator:
-    def __init__(self, map_dir: str, map_name: str, key_mapping: Optional[dict] = None):
+    def __init__(self, map_dir: str, map_name: str, key_mapping: dict | None = None):
         (
             self.G_eval,
             self.G,
@@ -86,9 +86,9 @@ class MapEvaluator:
                     key=lambda v: self.matching_score(node_action, v, metric),
                 )
                 path_actions.append(action)
-        
+
         dest_nodes = self.bfs_get_multi_des(src_node, path_actions)
-        
+
         return (
             max([self.matching_score(dst_node, node, metric) for node in dest_nodes])
             if dest_nodes
@@ -110,18 +110,15 @@ class MapEvaluator:
             location_after = edge[location_after_key].strip()
             action = edge[action_key].strip()
             if not self.G_eval.has_edge(location_before, location_after):
-
                 return 0
             if not any(
                 action == data.get(action_key)
                 for _, _, data in self.G_eval.edges(location_before, data=True)
                 if _ == location_after
             ):
-
                 return 0
         for i in range(len(path) - 1):
             if path[i][location_after_key] != path[i + 1][location_before_key]:
-
                 return 0
         return 1
 
@@ -138,36 +135,38 @@ class MapEvaluator:
             "is_easy": 0,
             "is_hard": 0,
         }
-        with open(file_path, "r") as f:
+        with open(file_path) as f:
             try:
                 infer_rst = json.load(f)
-            except Exception as e:
+            except Exception:
                 return_rst["parsing_error"] = 1
-                print('file parsing error: ',file_path)
+                print("file parsing error: ", file_path)
                 return return_rst
         try:
             sample_id = infer_rst[key_mapping["sample_id"]]
-            game_name = infer_rst[key_mapping["game_name"]]
+            _game_name = infer_rst[key_mapping["game_name"]]  # noqa: F841
             src_node = infer_rst[key_mapping["src_node"]]
             dst_node = infer_rst[key_mapping["dst_node"]]
             model_cutoff_num = infer_rst[key_mapping["model_cutoff_num"]]
-            min_step_total_answerable = infer_rst[key_mapping["min_step_total_answerable"]]
-            answerable = infer_rst[key_mapping["answerable"]]
+            min_step_total_answerable = infer_rst[
+                key_mapping["min_step_total_answerable"]
+            ]
+            _answerable = infer_rst[key_mapping["answerable"]]  # noqa: F841
             response = infer_rst[key_mapping["response"]]
-        except Exception as e:
+        except Exception:
             error_info = traceback.format_exc()
-            print('file parsing error: ',file_path,error_info)
+            print("file parsing error: ", file_path, error_info)
             return_rst["parsing_error"] = 1
             return return_rst
-        
-        parsed_response,error_info = self.parse_llm_raw_output(response)
+
+        parsed_response, error_info = self.parse_llm_raw_output(response)
         if error_info is not None:
-            print('file parsing error: ',file_path,error_info)
+            print("file parsing error: ", file_path, error_info)
             return_rst["parsing_error"] = 1
             return return_rst
         if "[" in response and "]" in response:
             if parsed_response is None:
-                print('file parsing error: ',file_path)
+                print("file parsing error: ", file_path)
         if sample_id not in self.all_pairs.keys():
             return_rst["id_error"] = 1
             return return_rst
@@ -224,31 +223,33 @@ class MapEvaluator:
             "is_easy": 0,
             "is_hard": 0,
         }
-        with open(file_path, "r") as f:
+        with open(file_path) as f:
             try:
                 infer_rst = json.load(f)
-            except Exception as e:
-                print('file parsing error: ',file_path)
+            except Exception:
+                print("file parsing error: ", file_path)
                 return_rst["parsing_error"] = 1
                 return return_rst
         try:
             sample_id = infer_rst[key_mapping["sample_id"]]
-            game_name = infer_rst[key_mapping["game_name"]]
+            _game_name = infer_rst[key_mapping["game_name"]]  # noqa: F841
             src_node = infer_rst[key_mapping["src_node"]]
-            dst_node = infer_rst[key_mapping["dst_node"]]
+            _dst_node = infer_rst[key_mapping["dst_node"]]  # noqa: F841
             model_cutoff_num = infer_rst[key_mapping["model_cutoff_num"]]
-            min_step_total_answerable = infer_rst[key_mapping["min_step_total_answerable"]]
-            answerable = infer_rst[key_mapping["answerable"]]
+            min_step_total_answerable = infer_rst[
+                key_mapping["min_step_total_answerable"]
+            ]
+            _answerable = infer_rst[key_mapping["answerable"]]  # noqa: F841
             response = infer_rst[key_mapping["response"]]
             action_list = infer_rst[key_mapping["action_list"]]
-        except Exception as e:
+        except Exception:
             error_info = traceback.format_exc()
-            print('file parsing error: ',file_path,error_info)
+            print("file parsing error: ", file_path, error_info)
             return_rst["parsing_error"] = 1
             return return_rst
-        parsed_response,error_info = self.parse_llm_raw_output(response)
+        parsed_response, error_info = self.parse_llm_raw_output(response)
         if error_info is not None:
-            print('file parsing error: ',file_path,error_info)
+            print("file parsing error: ", file_path, error_info)
             return_rst["parsing_error"] = 1
             return return_rst
         if sample_id not in self.all2all.keys():
@@ -273,7 +274,7 @@ class MapEvaluator:
             return_rst["is_easy"] = 1
 
         dst_nodes = self.bfs_get_multi_des(src_node, action_list)
-        #print(dst_nodes)
+        # print(dst_nodes)
         return_rst["loose_score"] = (
             max(
                 [
