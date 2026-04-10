@@ -12,22 +12,22 @@ def get_game_info(map_dir: str, game_name: str):
     locations_path = osp.join(map_dir, game_name, f"{game_name}.locations.json")
     walkthrough_path = osp.join(map_dir, game_name, f"{game_name}.walkthrough")
     all2all = {}
-    with open(all2all_path, "r") as f:
+    with open(all2all_path) as f:
         for line in f:
             data = json.loads(line)
             all2all[data["id"]] = data
     all_pairs = {}
-    with open(all_pairs_path, "r") as f:
+    with open(all_pairs_path) as f:
         for line in f:
             data = json.loads(line)
             all_pairs[data["id"]] = data
-    with open(edges_path, "r") as f:
+    with open(edges_path) as f:
         edges = json.load(f)
-    with open(actions_path, "r") as f:
+    with open(actions_path) as f:
         actions = json.load(f)
-    with open(locations_path, "r") as f:
+    with open(locations_path) as f:
         locations = json.load(f)
-    with open(walkthrough_path, "r") as f:
+    with open(walkthrough_path) as f:
         walkthrough = f.read()
 
     G = nx.MultiDiGraph()

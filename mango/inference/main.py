@@ -9,26 +9,45 @@ import os
 
 from tqdm import tqdm
 
-from utils import load_json, load_jsonl, read_text, save_json
+from mango.inference.utils import load_json, load_jsonl, read_text, save_json
 
 
-def load_model(model_name, temperature, ckpt_dir, tokenizer_path, batch_size):
-    if model_name in ["gpt-3.5", "gpt4"]:
-        from models.gpt import GPTModel
+def load_model(
+    model_name,
+    temperature,
+    ckpt_dir,
+    tokenizer_path,
+    batch_size,
+    base_url=None,
+    api_mode="chat",
+    model_id=None,
+):
+    if model_name == "openai-compatible":
+        from mango.inference.models.openai_model import OpenAIModel
+
+        actual_model_id = model_id or os.getenv("MANGO_MODEL_NAME", "gpt-4o")
+        model = OpenAIModel(
+            model_name=actual_model_id,
+            temperature=temperature,
+            base_url=base_url,
+            api_mode=api_mode,
+        )
+    elif model_name in ["gpt-3.5", "gpt4"]:
+        from mango.inference.models.gpt import GPTModel
 
         model = GPTModel(model_name, temperature)
     elif model_name in ["claude-instant-1", "claude2"]:
-        from models.claude import ClaudeModel
+        from mango.inference.models.claude import ClaudeModel
 
         model = ClaudeModel(model_name, temperature)
     elif model_name in ["llama2"]:
-        from models.llama import LlamaModel
+        from mango.inference.models.llama import LlamaModel
 
         model = LlamaModel(
             model_name, temperature, ckpt_dir, tokenizer_path, batch_size
         )
     elif model_name in ["rwkv"]:
-        from models.rwkv import RWKVModel
+        from mango.inference.models.rwkv import RWKVModel
 
         model = RWKVModel(model_name, temperature, ckpt_dir, tokenizer_path, batch_size)
     else:
@@ -48,7 +67,31 @@ def parse_args():
     parser.add_argument(
         "--model_name",
         type=str,
-        choices=["gpt-3.5", "gpt4", "claude-instant-1", "claude2", "llama2", "rwkv"],
+        choices=[
+            "gpt-3.5",
+            "gpt4",
+            "claude-instant-1",
+            "claude2",
+            "llama2",
+            "rwkv",
+            "openai-compatible",
+        ],
+    )
+    parser.add_argument(
+        "--base_url", type=str, default=None, help="OpenAI-compatible API base URL"
+    )
+    parser.add_argument(
+        "--api_mode",
+        type=str,
+        choices=["chat", "responses"],
+        default="chat",
+        help="API mode for openai-compatible",
+    )
+    parser.add_argument(
+        "--model_id",
+        type=str,
+        default=None,
+        help="Actual model identifier for openai-compatible",
     )
     parser.add_argument("--batch_size", type=int, default=1)
     parser.add_argument("--max_token_num", type=int, default=3600)
@@ -79,11 +122,24 @@ if __name__ == "__main__":
     tokenizer_path = args.tokenizer_path
 
     if model_name in ["llama2", "rwkv"]:
-        assert (
-            ckpt_dir is not None and tokenizer_path is not None
-        ), "Please specify the ckpt_dir and tokenizer path"
+        assert ckpt_dir is not None and tokenizer_path is not None, (
+            "Please specify the ckpt_dir and tokenizer path"
+        )
 
-    model = load_model(model_name, temperature, ckpt_dir, tokenizer_path, batch_size)
+    base_url = args.base_url
+    api_mode = args.api_mode
+    model_id = args.model_id
+
+    model = load_model(
+        model_name,
+        temperature,
+        ckpt_dir,
+        tokenizer_path,
+        batch_size,
+        base_url=base_url,
+        api_mode=api_mode,
+        model_id=model_id,
+    )
 
     save_path = os.path.join(
         save_folder, f"{model_name}_{task_type}_{exp_tag}", game_name
@@ -129,7 +185,7 @@ if __name__ == "__main__":
 
             save_file = os.path.join(save_path, f"result_sample_id_{sample_id}.json")
             if os.path.exists(save_file):
-                print("{} exist!!! continue ...".format(save_file))
+                print(f"{save_file} exist!!! continue ...")
                 continue
 
             min_step_total_answerable = pair["min_step_total_answerable"]

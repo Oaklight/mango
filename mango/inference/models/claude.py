@@ -1,4 +1,5 @@
 import os
+import warnings
 
 import tiktoken
 from anthropic import AI_PROMPT, HUMAN_PROMPT, Anthropic
@@ -8,6 +9,12 @@ from tenacity import (
     retry,
     stop_after_attempt,  # for exponential backoff
     wait_random_exponential,
+)
+
+warnings.warn(
+    "This module is deprecated. Use mango.inference.models.openai_model instead.",
+    DeprecationWarning,
+    stacklevel=2,
 )
 
 
@@ -22,13 +29,12 @@ class ClaudeModel:
 
         self.tokenizer = tiktoken.encoding_for_model("gpt-4-0314")
 
-    retry(wait=wait_random_exponential(min=5, max=60), stop=stop_after_attempt(6))
-
+    @retry(wait=wait_random_exponential(min=5, max=60), stop=stop_after_attempt(6))
     def query_model(self, prompt_list):
         # TODO: Inference Time Pruning
-        assert (
-            len(prompt_list) == 1
-        ), "claude models currently only supprt querying one sample at a time."
+        assert len(prompt_list) == 1, (
+            "claude models currently only supprt querying one sample at a time."
+        )
         prompt = prompt_list[0]
 
         response = self.model_class.completions.create(
@@ -49,7 +55,7 @@ class ClaudeModel:
             cut_off_step_num = int(cut_off_text.split("NUM: ")[-2].split("\n")[0])
         if cut_off_step_num > max_step_num:
             cut_off_step_num = max_step_num
-        cut_off_text = text.split("NUM: {}".format(cut_off_step_num + 1))[0]
+        cut_off_text = text.split(f"NUM: {cut_off_step_num + 1}")[0]
         cut_off_text = "\n".join(cut_off_text.split("\n")[:-1])
         return cut_off_text, cut_off_step_num
 
@@ -71,19 +77,13 @@ class ClaudeModel:
             )
 
             action_space_list = sample["action_space_list"]
-            action_space_prompt = "The allowed actions are: {}.".format(
-                action_space_list
-            )
+            action_space_prompt = f"The allowed actions are: {action_space_list}."
 
             location_space_list = sample["location_space_list"]
-            location_space_prompt = "The list of locations are: {}.".format(
-                location_space_list
-            )
+            location_space_prompt = f"The list of locations are: {location_space_list}."
 
             sample["question"] = (
-                """!!! Can you find a path from "{}" to "{}", and format the output as a python list of python dictionary with keys 'location_before', 'action' and 'location_after'? Start your response with '['.""".format(
-                    src_node, dst_node
-                )
+                f"""!!! Can you find a path from "{src_node}" to "{dst_node}", and format the output as a python list of python dictionary with keys 'location_before', 'action' and 'location_after'? Start your response with '['."""
             )
             model_input = f"{prefix_walkthrough}\n\n{action_space_prompt}\n{location_space_prompt}\n{sample['question']}"
             input_list.append(model_input)
@@ -109,19 +109,13 @@ class ClaudeModel:
             )
 
             action_space_list = sample["action_space_list"]
-            action_space_prompt = "The allowed actions are: {}.".format(
-                action_space_list
-            )
+            action_space_prompt = f"The allowed actions are: {action_space_list}."
 
             location_space_list = sample["location_space_list"]
-            location_space_prompt = "The list of locations are: {}.".format(
-                location_space_list
-            )
+            location_space_prompt = f"The list of locations are: {location_space_list}."
 
             sample["question"] = (
-                """!!! Starting from place "{}", perform a list of action {}, where are you now? Describe the trajectory in a python list of python dictionary with keys 'location_before', 'action' and 'location_after'. Start your response with '['.""".format(
-                    src_node, action_list
-                )
+                f"""!!! Starting from place "{src_node}", perform a list of action {action_list}, where are you now? Describe the trajectory in a python list of python dictionary with keys 'location_before', 'action' and 'location_after'. Start your response with '['."""
             )
             model_input = f"{prefix_walkthrough}\n\n{action_space_prompt}\n{location_space_prompt}\n{sample['question']}"
             input_list.append(model_input)

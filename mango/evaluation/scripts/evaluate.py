@@ -2,8 +2,6 @@ import json
 import os
 from multiprocessing import Pool, cpu_count
 
-import fire
-
 from mango.evaluation.map_evaluator import MapEvaluator, TaskType
 
 
@@ -57,7 +55,7 @@ def evaluate_model(rst_dir, map_dir, output_dir, task_type):
     for map_name in map_names:
         summary_file = os.path.join(output_dir, f"{map_name}_summary.json")
         if os.path.exists(summary_file):
-            with open(summary_file, "r") as f:
+            with open(summary_file) as f:
                 all_summaries[map_name] = json.load(f)
 
     easy_all = [v["easy"] for k, v in all_summaries.items()]
@@ -90,7 +88,7 @@ def get_final_summary(list_of_dict):
 
     sum_up_key = [k for k, v in list_of_dict[0].items() if not k.endswith("average")]
     avg_by_total_keys = [
-        k for k, v in list_of_dict[0].items() if "error" in k and not k in sum_up_key
+        k for k, v in list_of_dict[0].items() if "error" in k and k not in sum_up_key
     ]
     avg_by_valid_keys = [
         k
@@ -143,11 +141,24 @@ def evaluate_model_route_finding(rst_dir, map_dir, output_dir):
 
 
 if __name__ == "__main__":
-    fire.Fire(
-        {
-            "evaluate_map_dest_finding": evaluate_map_dest_finding,
-            "evaluate_model_dest_finding": evaluate_model_dest_finding,
-            "evaluate_map_route_finding": evaluate_map_route_finding,
-            "evaluate_model_route_finding": evaluate_model_route_finding,
-        }
+    import argparse
+
+    parser = argparse.ArgumentParser(description="MANGO evaluation scripts")
+    parser.add_argument(
+        "command",
+        choices=[
+            "evaluate_map_dest_finding",
+            "evaluate_model_dest_finding",
+            "evaluate_map_route_finding",
+            "evaluate_model_route_finding",
+        ],
     )
+    parser.add_argument("args", nargs="*")
+    args = parser.parse_args()
+    func = {
+        "evaluate_map_dest_finding": evaluate_map_dest_finding,
+        "evaluate_model_dest_finding": evaluate_model_dest_finding,
+        "evaluate_map_route_finding": evaluate_map_route_finding,
+        "evaluate_model_route_finding": evaluate_model_route_finding,
+    }[args.command]
+    func(*args.args)
